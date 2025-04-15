@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: eva-decord-plus
+Version: 0.6.2
+Summary: bean's Decord Video Loader
+Home-page: https://github.com/georgia-tech-db/eva-decord
+Maintainer: Decord committers
+Maintainer-email: bean980310@gmail.com
+License: APACHE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7.0
+Requires-Dist: numpy>=1.14.0
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
