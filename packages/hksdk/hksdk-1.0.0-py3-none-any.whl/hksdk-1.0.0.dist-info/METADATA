@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: hksdk
+Version: 1.0.0
+Summary: 使用python调用海康SDK
+Home-page: https://github.com/lining808/hksdk
+Author: lining
+Author-email: 27919034@qq.com
+License: MIT
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+
