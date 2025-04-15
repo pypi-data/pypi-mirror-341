@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: resistant_kafka
+Version: 0.4
+Requires-Dist: confluent-kafka==2.8.2
+Requires-Dist: dotenv==0.9.9
+Requires-Dist: pydantic==1.10.21

@@ -1,0 +1,13 @@
+README.md
+setup.py
+resistant_kafka/__init__.py
+resistant_kafka/common_exceptions.py
+resistant_kafka/consumer.py
+resistant_kafka/consumer_schemas.py
+resistant_kafka/producer.py
+resistant_kafka/producer_schemas.py
+resistant_kafka.egg-info/PKG-INFO
+resistant_kafka.egg-info/SOURCES.txt
+resistant_kafka.egg-info/dependency_links.txt
+resistant_kafka.egg-info/requires.txt
+resistant_kafka.egg-info/top_level.txt
