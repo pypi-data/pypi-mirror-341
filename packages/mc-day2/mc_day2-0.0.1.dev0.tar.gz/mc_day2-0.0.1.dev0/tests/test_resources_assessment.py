@@ -1,0 +1,452 @@
+"""Tests for the AssessmentClient."""
+
+from unittest.mock import MagicMock, patch
+
+import pytest
+
+from day2.models.assessment import (
+    AnswerQuestionInput,
+    AnswerQuestionOutput,
+    CreateAssessmentInput,
+    CreateAssessmentOutput,
+    GetAssessmentOutput,
+    GetQuestionOutput,
+    ListAssessmentsOutput,
+    ListQuestionsOutput,
+)
+from day2.resources.assessment import AssessmentClient
+from day2.session import Session
+
+
+@pytest.fixture
+def mock_session():
+    """Create a mock session for testing."""
+    session = MagicMock(spec=Session)
+    # Add required attributes for BaseClient
+    session._config = MagicMock()
+    session._config.api_url = "https://api.example.com"
+    session._config.api_version = "v1"
+    return session
+
+
+def test_list_assessments(mock_session):
+    """Test listing assessments."""
+    # Setup
+    tenant_id = "tenant-123"
+    status = "PENDING"
+    mock_response = {
+        "Assessments": [
+            {
+                "AssessmentId": "9d85dde75568c808c46e525ed88d993c",
+                "AssessmentName": "Sandbox-1-Review",
+                "Description": "Review for Sandbox1",
+                "Status": "PENDING",
+                "AssessmentArn": "arn:aws:wellarchitected:us-east-1:123456789012:workload/9d85dde75568c808c46e525ed88d993c",
+                "Lenses": ["AWS Well-Architected Framework"],
+                "TotalQuestions": 57,
+                "AnsweredQuestions": 0,
+                "CreatedAt": "2025-04-09T06:24:34",
+                "UpdatedAt": "2025-04-09T06:24:34",
+            }
+        ],
+        "PageNumber": 1,
+        "HasMore": False,
+    }
+
+    # Set up the mock
+    with patch.object(
+        AssessmentClient, "_make_request", return_value=mock_response
+    ) as mock_make_request:
+        # Execute
+        client = AssessmentClient(mock_session)
+        result = client.list_assessments(tenant_id, status=status)
+
+        # Verify
+        mock_make_request.assert_called_once_with(
+            "GET",
+            f"tenants/{tenant_id}/assessments/",
+            params={"Status": status, "PageNumber": 1, "PageSize": 10},
+        )
+
+    # Verify the result
+    assert isinstance(result, ListAssessmentsOutput)
+    assert len(result.assessments) == 1
+    assert result.assessments[0].id == "9d85dde75568c808c46e525ed88d993c"
+    assert result.assessments[0].name == "Sandbox-1-Review"
+    assert result.assessments[0].description == "Review for Sandbox1"
+    assert result.assessments[0].status == "PENDING"
+    assert result.page_number == 1
+    assert result.has_more is False
+
+
+def test_list_assessments_with_keyword(mock_session):
+    """Test listing assessments with keyword filter."""
+    # Setup
+    tenant_id = "tenant-123"
+    status = "COMPLETED"
+    keyword = "test"
+    mock_response = {
+        "Assessments": [],
+        "PageNumber": 1,
+        "HasMore": False,
+    }
+
+    # Set up the mock
+    with patch.object(
+        AssessmentClient, "_make_request", return_value=mock_response
+    ) as mock_make_request:
+        # Execute
+        client = AssessmentClient(mock_session)
+        result = client.list_assessments(tenant_id, status=status, keyword=keyword)
+
+        # Verify
+        mock_make_request.assert_called_once_with(
+            "GET",
+            f"tenants/{tenant_id}/assessments/",
+            params={
+                "Status": status,
+                "PageNumber": 1,
+                "PageSize": 10,
+                "Keyword": keyword,
+            },
+        )
+
+    # Verify the result
+    assert isinstance(result, ListAssessmentsOutput)
+    assert len(result.assessments) == 0
+    assert result.has_more is False
+
+
+def test_get_assessment(mock_session):
+    """Test getting an assessment by ID."""
+    # Setup
+    tenant_id = "tenant-123"
+    assessment_id = "9d85dde75568c808c46e525ed88d993c"
+    mock_response = {
+        "AssessmentId": assessment_id,
+        "AnsweredQuestions": 0,
+        "CreatedAt": "2025-04-09T06:24:34",
+        "Description": "Review for Sandbox1",
+        "DiagramURL": None,
+        "Environment": "PREPRODUCTION",
+        "ImprovementStatus": "NOT_APPLICABLE",
+        "InSync": 1,
+        "Industry": "Primary_K_12",
+        "IndustryType": "Education",
+        "Lenses": ["AWS Well-Architected Framework"],
+        "Owner": "test.user@example.com",
+        "RegionCode": "us-east-1",
+        "Status": "PENDING",
+        "TotalQuestions": 57,
+        "UpdatedAt": "2025-04-09T06:24:34",
+        "AssessmentArn": "arn:aws:wellarchitected:us-east-1:123456789012:workload/9d85dde75568c808c46e525ed88d993c",
+        "AssessmentName": "Sandbox-1-Review",
+        "Scope": [
+            {
+                "AccountNumber": "111122223333",
+                "Regions": ["ap-south-1", "us-east-1", "us-east-2"],
+            },
+            {"AccountNumber": "444455556666", "Regions": ["us-east-1", "us-east-2"]},
+        ],
+        "RiskCounts": {"High": 0, "Medium": 0},
+        "LensAlias": "wellarchitected",
+        "LensArn": "arn:aws:wellarchitected::aws:lens/wellarchitected",
+        "LensVersion": "2025-02-25",
+        "LensName": "AWS Well-Architected Framework",
+        "LensStatus": "CURRENT",
+        "AWSUpdatedAt": "2025-04-09T11:54:33+05:30",
+    }
+
+    # Set up the mock
+    with patch.object(
+        AssessmentClient, "_make_request", return_value=mock_response
+    ) as mock_make_request:
+        # Execute
+        client = AssessmentClient(mock_session)
+        result = client.get_assessment(tenant_id, assessment_id)
+
+        # Verify
+        mock_make_request.assert_called_once_with(
+            "GET", f"tenants/{tenant_id}/assessments/{assessment_id}"
+        )
+
+    # Verify the result
+    assert isinstance(result, GetAssessmentOutput)
+    assert result.id == assessment_id
+    assert result.name == "Sandbox-1-Review"
+    assert result.description == "Review for Sandbox1"
+    assert result.status == "PENDING"
+
+
+def test_create_assessment(mock_session):
+    """Test creating an assessment."""
+    # Setup
+    tenant_id = "tenant-123"
+    assessment_data = CreateAssessmentInput(
+        AssessmentName="Sandbox-1-Review",
+        Description="Review for Sandbox1",
+        ReviewOwner="test.user@example.com",
+        Scope=[
+            {
+                "AccountNumber": "111122223333",
+                "Regions": ["ap-south-1", "us-east-1", "us-east-2"],
+            },
+            {"AccountNumber": "444455556666", "Regions": ["us-east-1", "us-east-2"]},
+        ],
+        Lenses=["AWS Well-Architected Framework"],
+    )
+    mock_response = {
+        "AssessmentId": "9d85dde75568c808c46e525ed88d993c",
+        "AnsweredQuestions": 0,
+        "CreatedAt": "2025-04-09T06:24:34",
+        "Description": "Review for Sandbox1",
+        "DiagramURL": None,
+        "Environment": "PREPRODUCTION",
+        "ImprovementStatus": "NOT_APPLICABLE",
+        "InSync": 1,
+        "Industry": "Primary_K_12",
+        "IndustryType": "Education",
+        "Lenses": ["AWS Well-Architected Framework"],
+        "Owner": "test.user@example.com",
+        "RegionCode": "us-east-1",
+        "Status": "PENDING",
+        "TotalQuestions": 57,
+        "UpdatedAt": "2025-04-09T06:24:34",
+        "AssessmentArn": "arn:aws:wellarchitected:us-east-1:123456789012:workload/9d85dde75568c808c46e525ed88d993c",
+        "AssessmentName": "Sandbox-1-Review",
+        "Scope": [
+            {
+                "AccountNumber": "111122223333",
+                "Regions": ["ap-south-1", "us-east-1", "us-east-2"],
+            },
+            {"AccountNumber": "444455556666", "Regions": ["us-east-1", "us-east-2"]},
+        ],
+        "RiskCounts": {"High": 0, "Medium": 0},
+        "LensAlias": "wellarchitected",
+        "LensArn": "arn:aws:wellarchitected::aws:lens/wellarchitected",
+        "LensVersion": "2025-02-25",
+        "LensName": "AWS Well-Architected Framework",
+        "LensStatus": "CURRENT",
+        "AWSUpdatedAt": "2025-04-09T11:54:33+05:30",
+    }
+
+    # Set up the mock
+    with patch.object(
+        AssessmentClient, "_make_request", return_value=mock_response
+    ) as mock_make_request:
+        # Execute
+        client = AssessmentClient(mock_session)
+        result = client.create_assessment(tenant_id, assessment_data)
+
+        # Verify
+        mock_make_request.assert_called_once_with(
+            "POST",
+            f"tenants/{tenant_id}/assessments/",
+            json={
+                "AssessmentName": "Sandbox-1-Review",
+                "Description": "Review for Sandbox1",
+                "ReviewOwner": "test.user@example.com",
+                "Scope": [
+                    {
+                        "AccountNumber": "111122223333",
+                        "Regions": ["ap-south-1", "us-east-1", "us-east-2"],
+                    },
+                    {
+                        "AccountNumber": "444455556666",
+                        "Regions": ["us-east-1", "us-east-2"],
+                    },
+                ],
+                "Lenses": ["AWS Well-Architected Framework"],
+                "Tags": None,
+            },
+        )
+
+    # Verify the result
+    assert isinstance(result, CreateAssessmentOutput)
+    assert result.id == "9d85dde75568c808c46e525ed88d993c"
+    assert result.name == "Sandbox-1-Review"
+    assert result.description == "Review for Sandbox1"
+    assert result.status == "PENDING"
+
+
+def test_list_questions(mock_session):
+    """Test listing questions for an assessment pillar."""
+    # Setup
+    tenant_id = "tenant-123"
+    assessment_id = "assessment-123"
+    pillar_id = "security"
+
+    mock_response = {
+        "Questions": [
+            {
+                "QuestionId": "securely-operate",
+                "QuestionTitle": "How do you securely operate your workload?",
+                "PillarId": "security",
+                "Reason": None,
+                "Risk": "UNANSWERED",
+            },
+            {
+                "QuestionId": "identities",
+                "QuestionTitle": "How do you manage identities for people and machines?",
+                "PillarId": "security",
+                "Reason": None,
+                "Risk": "UNANSWERED",
+            },
+        ]
+    }
+
+    # Set up the mock
+    with patch.object(
+        AssessmentClient, "_make_request", return_value=mock_response
+    ) as mock_make_request:
+        # Execute
+        client = AssessmentClient(mock_session)
+        result = client.list_questions(tenant_id, assessment_id, pillar_id)
+
+        # Verify
+        mock_make_request.assert_called_once_with(
+            "GET",
+            f"tenants/{tenant_id}/assessments/{assessment_id}/questions",
+            params={"PillarId": pillar_id},
+        )
+
+    # Verify the result
+    assert isinstance(result, ListQuestionsOutput)
+    assert len(result.questions) == 2
+    assert result.questions[0].id == "securely-operate"
+    assert result.questions[0].title == "How do you securely operate your workload?"
+    assert result.questions[0].pillar_id == "security"
+    assert result.questions[0].risk == "UNANSWERED"
+    assert result.questions[0].is_answered is False
+
+    assert result.questions[1].id == "identities"
+    assert (
+        result.questions[1].title
+        == "How do you manage identities for people and machines?"
+    )
+
+    # Verify the calculated fields
+    assert result.pillar_id == "security"
+    assert result.total_questions == 2
+    assert result.answered_questions == 0
+
+
+def test_get_question(mock_session):
+    """Test getting a specific question."""
+    # Setup
+    tenant_id = "tenant-123"
+    assessment_id = "assessment-123"
+    question_id = "securely-operate"
+
+    mock_response = {
+        "QuestionTitle": "How do you securely operate your workload?",
+        "QuestionDescription": "To securely operate your workload, you should apply overarching best practices to every area of security.",
+        "PillarId": "security",
+        "Risk": None,
+        "Reason": None,
+        "ChoiceAnswers": [],
+        "Choices": [
+            {
+                "ChoiceId": "choice-1",
+                "Title": "Implement security controls",
+                "Description": "Implement security controls description",
+            },
+            {
+                "ChoiceId": "choice-2",
+                "Title": "Regularly review security posture",
+                "Description": "Regularly review security posture description",
+            },
+        ],
+        "HelpfulResourceUrl": "https://example.com/resources",
+        "ImprovementPlanUrl": None,
+        "IsApplicable": True,
+    }
+
+    # Set up the mock
+    with patch.object(
+        AssessmentClient, "_make_request", return_value=mock_response
+    ) as mock_make_request:
+        # Execute
+        client = AssessmentClient(mock_session)
+        result = client.get_question(tenant_id, assessment_id, question_id)
+
+        # Verify
+        mock_make_request.assert_called_once_with(
+            "GET",
+            f"tenants/{tenant_id}/assessments/{assessment_id}/questions/{question_id}",
+        )
+
+    # Verify the result
+    assert isinstance(result, GetQuestionOutput)
+    assert result.id == question_id  # ID is set in the client method
+    assert result.title == "How do you securely operate your workload?"
+    assert (
+        result.description
+        == "To securely operate your workload, you should apply overarching best practices to every area of security."
+    )
+    assert result.pillar_id == "security"
+    assert result.pillar_name == "Security"  # Set in the client method
+    assert result.risk is None
+    assert result.reason is None
+    assert result.helpful_resource_url == "https://example.com/resources"
+    assert result.improvement_plan_url is None
+    assert result.is_applicable is True
+    assert result.choice_answers == []
+    assert len(result.choices) == 2
+    assert result.choices[0]["ChoiceId"] == "choice-1"
+    assert result.choices[0]["Title"] == "Implement security controls"
+    assert result.is_answered is False
+
+
+def test_answer_question(mock_session):
+    """Test answering a specific question."""
+    # Setup
+    tenant_id = "tenant-123"
+    assessment_id = "assessment-123"
+    question_id = "securely-operate"
+
+    # Input data
+    answer_data = AnswerQuestionInput(
+        Reason="ARCHITECTURE_CONSTRAINTS",
+        ChoiceUpdates={"choice-1": {"Status": "SELECTED"}},
+        Notes="Need to follow up with the security team.",
+        IsApplicable=True,
+        LensAlias="wellarchitected",
+    )
+
+    # Mock response from API - using the new format with just a success message
+    mock_response = {"Status": "Success", "Message": "Answer updated successfully"}
+
+    # Set up the mock for _make_request
+    with patch.object(
+        AssessmentClient, "_make_request", return_value=mock_response
+    ) as mock_make_request:
+        # Execute
+        client = AssessmentClient(mock_session)
+        result = client.answer_question(
+            tenant_id, assessment_id, question_id, answer_data
+        )
+
+        # Verify
+        assert mock_make_request.call_count == 1
+        call_args = mock_make_request.call_args
+        assert call_args[0][0] == "PUT"
+        assert (
+            call_args[0][1]
+            == f"tenants/{tenant_id}/assessments/{assessment_id}/questions/{question_id}"
+        )
+
+        # Check the JSON payload - should be direct, not wrapped
+        json_payload = call_args[1]["json"]
+        assert json_payload["Reason"] == "ARCHITECTURE_CONSTRAINTS"
+        assert "choice-1" in json_payload["ChoiceUpdates"]
+        assert json_payload["ChoiceUpdates"]["choice-1"]["Status"] == "SELECTED"
+        assert json_payload["Notes"] == "Need to follow up with the security team."
+        assert json_payload["IsApplicable"] == True
+        assert json_payload["LensAlias"] == "wellarchitected"
+
+    # Verify the result
+    assert isinstance(result, AnswerQuestionOutput)
+    assert result.id == question_id  # ID is set in the client method
+    assert result.status == "Success"
+    assert result.message == "Answer updated successfully"
