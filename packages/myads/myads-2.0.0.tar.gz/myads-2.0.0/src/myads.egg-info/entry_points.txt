@@ -1,0 +1,2 @@
+[console_scripts]
+myads = myads.scripts.cite_tracker:main
