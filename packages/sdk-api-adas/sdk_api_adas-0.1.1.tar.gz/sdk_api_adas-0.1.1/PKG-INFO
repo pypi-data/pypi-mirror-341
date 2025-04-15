@@ -1,0 +1,92 @@
+Metadata-Version: 2.4
+Name: sdk-api-adas
+Version: 0.1.1
+Summary: SDK para interactuar con la API ADAS protegida por AWS IAM
+Home-page: https://github.com/Transportes-Rapido-Ochoa/sdk-api-adas
+Author: Tu Nombre
+Author-email: jose.salamanca@softgic.co
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic>=1.10.0
+Requires-Dist: boto3>=1.20.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: requests_aws4auth
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# SDK API ADAS
+
+Este paquete es un SDK para interactuar con la API ADAS protegida por AWS IAM.
+
+## Instalación
+
+```bash
+pip install sdk-api-adas
+```
+
+## Ejemplo de Uso
+
+<!-- START EXAMPLE -->
+
+```python
+from sdk_api_adas.events import ApiEvents
+from sdk_api_adas.utils.data_types import Parameters
+from datetime import datetime, timedelta
+
+if __name__ == "__main__":
+    try:
+        # Initialize the API client with your credentials
+        api_client = ApiEvents(
+            base_url="https://api.example.com/",
+            aws_region="us-last-1",
+            aws_access_key="your_access_key",
+            aws_secret_key="your_access_key",
+            aws_session_token="your_session_token",  # Optional
+        )
+
+        # Define the parameters for the API request
+        parameters = Parameters(
+            start=datetime.now() - timedelta(days=30),
+            end=datetime.now(),
+        )
+
+        # Query: Get success events by state
+        events_by_state = api_client.get_success_events_by_state(parameters)
+        print("Events by state:", len(events_by_state))
+
+        # Query: Get success events by driver
+        parameters.driver_id = 123  # Set the driver ID
+        events_by_driver = api_client.get_success_events_by_driver(parameters)
+        print("Events by driver:", events_by_driver)
+
+        # Query: Get success events by type
+        parameters.event_type = "SPEEDING"  # Set the event type
+        events_by_type = api_client.get_success_events_by_type(parameters)
+        print("Events by type:", events_by_type)
+
+        # Query: Get success events by bus
+        parameters.bus_plate = "ABC123"  # Set the bus plate
+        events_by_bus = api_client.get_success_events_by_bus(parameters)
+        print("Events by bus:", events_by_bus)
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+```
+
+<!-- END EXAMPLE -->
+
+## Licencia
+
+MIT
