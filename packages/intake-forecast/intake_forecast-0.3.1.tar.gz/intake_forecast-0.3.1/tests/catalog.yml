@@ -1,0 +1,95 @@
+metadata:
+  version: 1 
+sources:
+
+  test_cyclic_forecast:
+    description: Test cyclic forecast
+    metadata:
+      name: Test cyclic forecast
+      tags:
+        - test
+        - cyclic
+        - forecast
+      variable_aliases:
+        u10: ugrd
+        v10: vgrd
+    driver: zarr_forecast
+    args:
+      urlpath: "file://{{CATALOG_DIR}}/test_%Y%m%dT%H.zarr"
+      cycle: "{{cycle}}"
+      maxstepback: "{{maxstepback}}"
+      cycle_period: 6
+    parameters:
+      cycle:
+        description: model cycle
+        type: datetime
+        default: today
+      maxstepback:
+        description: maximum cycle stepback allowed
+        type: int
+        default: 4
+
+  test_enhanced_zarr:
+    description: Test enhanced zarr
+    metadata:
+      name: Test enhanced zarr
+      tags:
+        - test
+        - enhanced
+        - zarr
+      variable_mappings:
+        u10: ugrd
+        v10: vgrd
+      variable_aliases:
+        ugrd: u10
+        vgrd: v10
+      variable_assignments:
+        u_assigned: u10
+        v_assigned: v10
+      derived_variables:
+        - name: spd
+          input_variables: ["ugrd", "vgrd"]
+          function: "intake_forecast.functions.speed"
+      utcoffset: 1
+      unit_conversions:
+        u10: "m/s,kts"
+        v10: "m/s,kts"
+    driver: zarr_enhanced
+    args:
+      urlpath: "file://{{CATALOG_DIR}}/test_20250401T00.zarr"
+
+  gfs_glob05:
+    description: NOAA Global 0.5-degree GFS model.
+    metadata:
+      name: noaa_global_gfs_model
+      coordinates:
+        time: t
+        lat: y
+        lon: x
+      details: https://nomads.ncep.noaa.gov
+      tags:
+        - noaa
+        - wind
+        - model
+        - gfs
+        - forecast
+        - global
+      derived_variables:
+        - name: wndsp
+          input_variables: [ugrd10m, vgrd10m]
+          function: intake_forecast.functions.speed
+    driver: ncdap_forecast
+    args:
+      urlpath: "https://nomads.ncep.noaa.gov/dods/gfs_0p50/gfs%Y%m%d/gfs_0p50_%Hz"
+      maxstepback: "{{maxstepback}}"
+      cycle: "{{cycle}}"
+      cycle_period: 6
+    parameters:
+      cycle:
+        description: model cycle
+        type: datetime
+        default: 20210324T00
+      maxstepback:
+        description: number of cycles to stepback before returning error
+        type: int
+        default: 4
