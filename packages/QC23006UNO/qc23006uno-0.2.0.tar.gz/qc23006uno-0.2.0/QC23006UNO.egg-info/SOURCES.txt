@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+QC23006UNO/__init__.py
+QC23006UNO/metodos.py
+QC23006UNO.egg-info/PKG-INFO
+QC23006UNO.egg-info/SOURCES.txt
+QC23006UNO.egg-info/dependency_links.txt
+QC23006UNO.egg-info/requires.txt
+QC23006UNO.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+[project]
+name = "QC23006UNO"
+version = "0.2.0"
+description = "Librería de sistemas de ecuaciones lineales y no lineales"
+authors = [{ name="Alexandra Quinteros", email="QC23006@ues.edu.sv" }]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+dependencies = ["numpy"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
