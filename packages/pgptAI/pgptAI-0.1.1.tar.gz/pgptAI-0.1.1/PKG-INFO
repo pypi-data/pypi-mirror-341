@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pgptAI
+Version: 0.1.1
+Summary: All in one AIGC API package for Python
+Home-page: UNKNOWN
+Author: QPython
+Author-email: support@qpython.org
+License: UNKNOWN
+Description: # pgptAI
+        All-in-one AIGC API package for Python
+        
+        For more info about our services, please visit our website [pgpt.cloud](https://www.pgpt.cloud/ ).
+        
+        ## Intro
+        pgptai simplifies the way you use AIGC APIs by putting everything you need together while keeping their original usages :)
+        
+        ## Installation
+        ```bash
+        pip install pgptAI
+        ```
+        
+        ## Usage
+        For now, we support the following AIGC providers' APIs, click to see their usages in pgptai:
+        * [OpenAI](docs/openai.md)
+        * [Claude](docs/claude.md)
+        * [ChatGLM2](docs/chatglm.md)
+        * [Stable Diffusion](docs/stablediffusion.md)
+        * [GeminiAI](docs/geminiai.md)
+        
+        Or, use our integrated API:
+        * [AllAI](docs/allai.md)
+        
+        And, we also provide an AIChat service based on Langchain:
+        * [AIChat](docs/aichat.md)
+        
+        Some useful tools:  
+        * [AudioAI](docs/audioai.md)
+        * [TextAI](docs/textai.md)
+        
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
