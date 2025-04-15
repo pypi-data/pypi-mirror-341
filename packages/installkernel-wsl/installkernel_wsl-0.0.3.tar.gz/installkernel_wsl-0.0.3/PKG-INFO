@@ -1,0 +1,72 @@
+Metadata-Version: 2.3
+Name: installkernel-wsl
+Version: 0.0.3
+Summary: Script and installkernel hook to copy Linux kernel to the host system and update .wslconfig.
+License: MIT
+Keywords: command line,wsl
+Author: Andrew Udvare
+Author-email: audvare@gmail.com
+Requires-Python: >=3.10,<3.14
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Typing :: Typed
+Provides-Extra: erdantic
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Requires-Dist: erdantic (<2.0) ; extra == "erdantic"
+Requires-Dist: typing-extensions (>=4.13.1,<5.0.0)
+Project-URL: Documentation, https://installkernel-wsl.readthedocs.org
+Project-URL: Homepage, https://tatsh.github.io/installkernel-wsl/
+Project-URL: Issues, https://github.com/Tatsh/installkernel-wsl/issues
+Project-URL: Repository, https://github.com/Tatsh/installkernel-wsl
+Description-Content-Type: text/markdown
+
+# installkernel-wsl
+
+[![QA](https://github.com/Tatsh/installkernel-wsl/actions/workflows/qa.yml/badge.svg)](https://github.com/Tatsh/installkernel-wsl/actions/workflows/qa.yml)
+[![Tests](https://github.com/Tatsh/installkernel-wsl/actions/workflows/tests.yml/badge.svg)](https://github.com/Tatsh/installkernel-wsl/actions/workflows/tests.yml)
+[![Coverage Status](https://coveralls.io/repos/github/Tatsh/installkernel-wsl/badge.svg?branch=master)](https://coveralls.io/github/Tatsh/installkernel-wsl?branch=master)
+[![Documentation Status](https://readthedocs.org/projects/installkernel-wsl/badge/?version=latest)](https://installkernel-wsl.readthedocs.org/?badge=latest)
+[![PyPI - Version](https://img.shields.io/pypi/v/installkernel-wsl)](https://pypi.org/project/installkernel-wsl/)
+[![GitHub tag (with filter)](https://img.shields.io/github/v/tag/Tatsh/installkernel-wsl)](https://github.com/Tatsh/installkernel-wsl/tags)
+[![License](https://img.shields.io/github/license/Tatsh/installkernel-wsl)](https://github.com/Tatsh/installkernel-wsl/blob/master/LICENSE.txt)
+[![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/Tatsh/installkernel-wsl/v0.0.3/master)](https://github.com/Tatsh/installkernel-wsl/compare/v0.0.3...master)
+
+Script and installkernel hook to copy Linux kernel to the host system and update .wslconfig.
+
+## Installation
+
+### Poetry
+
+```shell
+poetry add installkernel-wsl
+```
+
+### Pip
+
+```shell
+pip install installkernel-wsl
+```
+
+## Usage
+
+Add `-d` to show debug logs.
+
+```shell
+installkernel-wsl
+```
+
+## Usage as a hook
+
+After installation:
+
+```shell
+mkdir -p /etc/kernel/install.d
+ln -sf "$(command -v installkernel-wsl)" /etc/kernel/install.d/99-wsl-kernel.install
+```
+
