@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+trainplotkit/__init__.py
+trainplotkit/layout.py
+trainplotkit/plotgrid.py
+trainplotkit/sanity_check.py
+trainplotkit/utils.py
+trainplotkit.egg-info/PKG-INFO
+trainplotkit.egg-info/SOURCES.txt
+trainplotkit.egg-info/dependency_links.txt
+trainplotkit.egg-info/requires.txt
+trainplotkit.egg-info/top_level.txt
+trainplotkit/subplots/activations.py
+trainplotkit/subplots/basic.py
