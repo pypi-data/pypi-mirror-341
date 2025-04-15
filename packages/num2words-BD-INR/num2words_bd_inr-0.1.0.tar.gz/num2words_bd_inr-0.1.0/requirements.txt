@@ -1,0 +1,5 @@
+num2words>=0.5.10
+pytest>=7.0.0
+flake8>=4.0.0
+build>=0.7.0
+twine>=4.0.0
