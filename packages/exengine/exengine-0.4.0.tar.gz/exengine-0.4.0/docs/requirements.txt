@@ -1,0 +1,6 @@
+sphinx
+sphinx-autodoc-typehints
+sphinx-rtd-theme
+sphinx-togglebutton
+sphinx_autodoc_typehints
+sphinxcontrib.googleanalytics
