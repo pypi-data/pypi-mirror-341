@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: sdk-api-adas
+Version: 0.1.0
+Summary: SDK para interactuar con la API ADAS protegida por AWS IAM
+Home-page: https://github.com/Transportes-Rapido-Ochoa/sdk-api-adas
+Author: Tu Nombre
+Author-email: jose.salamanca@softgic.co
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic>=1.10.0
+Requires-Dist: boto3>=1.20.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: requests_aws4auth
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# SDK API ADAS
+
+Este paquete es un SDK para interactuar con la API ADAS protegida por AWS IAM.
+
+## Instalación
+
+```bash
+pip install sdk-api-adas
+```
+
+## Uso
+
+```python
+from sdk_api_adas.events import ApiEvents
+from sdk_api_adas.utils.data_types import Parameters
+```
+
+## Licencia
+
+MIT
