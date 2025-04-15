@@ -1,0 +1,30 @@
+[project]
+name = "python-luminous-mesh"
+version = "0.1.1"
+description = "A Python client for Luminous Mesh service"
+authors = [
+    {name = "Raphael",email = "camblong.raphael@epitech.eu"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "grpcio (>=1.71.0,<2.0.0)",
+    "grpcio-tools (>=1.71.0,<2.0.0)",
+    "cryptography (>=44.0.2,<45.0.0)",
+    "pyyaml (>=6.0.2,<7.0.0)",
+    "tenacity (>=9.1.2,<10.0.0)",
+    "prometheus-client (>=0.21.1,<0.22.0)",
+    "structlog (>=25.2.0,<26.0.0)",
+    "psutil (>=7.0.0,<8.0.0)"
+]
+
+[project.scripts]
+luminous-mesh = "python_luminous_mesh.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+
