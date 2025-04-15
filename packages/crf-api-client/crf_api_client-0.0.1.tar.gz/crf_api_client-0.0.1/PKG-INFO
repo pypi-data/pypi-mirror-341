@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: crf_api_client
+Version: 0.0.1
+Summary: A client for the CRF API
+Author: CRF
+Requires-Python: >=3.11
+License-File: LICENSE
+Dynamic: author
+Dynamic: requires-python
+Dynamic: summary
