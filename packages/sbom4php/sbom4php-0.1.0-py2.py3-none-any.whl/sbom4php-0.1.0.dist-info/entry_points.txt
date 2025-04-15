@@ -1,0 +1,2 @@
+[console_scripts]
+sbom4php = sbom4php.cli:main

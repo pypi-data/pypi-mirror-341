@@ -1,0 +1,10 @@
+sbom4php/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sbom4php/cli.py,sha256=Xfa3PQm24KA8ozzgq5E8lQI2C0q7JrJi7-_29Gf_ka4,4249
+sbom4php/scanner.py,sha256=cpJBbBgshQZ2bZGmLyqf65fazZgDA7yqJodwsRodyRw,15366
+sbom4php/version.py,sha256=jTIsvCf5tFUL9z9UQp7wdsOb34WPViBcEa1ikJCKtyc,100
+sbom4php-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sbom4php-0.1.0.dist-info/METADATA,sha256=PH1DqOJ4rvGAPluEmEVAcKHkHpoO3Rjlvf35QsLdgX8,5983
+sbom4php-0.1.0.dist-info/WHEEL,sha256=rF4EZyR2XVS6irmOHQIJx2SUqXLZKRMUrjsg8UwN-XQ,109
+sbom4php-0.1.0.dist-info/entry_points.txt,sha256=7hXSMe485yETD3ql_yALpDdzGjTsqir77TlR8Z6JMeA,47
+sbom4php-0.1.0.dist-info/top_level.txt,sha256=xLrRDed5yR7zJpMLbKtjawOzWa7vskGnaehGp2kslpE,9
+sbom4php-0.1.0.dist-info/RECORD,,
