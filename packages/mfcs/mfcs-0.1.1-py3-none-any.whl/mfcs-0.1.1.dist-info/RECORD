@@ -1,0 +1,8 @@
+mfcs/function_calling/__init__.py,sha256=B3PRxwgNiYcdnjsLO4jX7RnLbWsmPHPo5V2oPWf72qU,318
+mfcs/function_calling/api_result_manager.py,sha256=9p94iu6RroxnOYPCcjOOMgWXDataRCX04angBiwIXZs,2327
+mfcs/function_calling/function_prompt.py,sha256=7stSWm7j4hblJYpJoLbVZTQtWAJgIvoNxPq9wmMZhAc,4644
+mfcs/function_calling/response_parser.py,sha256=HPcJN4tnhCtFTk13h2cRA6v8iBupTFi7e0uODXZoAL4,11667
+mfcs-0.1.1.dist-info/METADATA,sha256=fg6k6-yVfUon1zULraw7trCktTVU89FI-1S0Iu4Irjg,5931
+mfcs-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mfcs-0.1.1.dist-info/licenses/LICENSE,sha256=0fbRozox6317PsNo-i5RRRofaindh6-yHwUY3O-9UY4,1064
+mfcs-0.1.1.dist-info/RECORD,,
