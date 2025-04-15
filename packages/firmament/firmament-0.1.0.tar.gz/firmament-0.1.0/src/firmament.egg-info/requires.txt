@@ -1,0 +1,16 @@
+pandas
+numpy
+scipy
+requests
+statsmodels
+pyarrow
+pegasuspy>=1.7.1
+anndata
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
