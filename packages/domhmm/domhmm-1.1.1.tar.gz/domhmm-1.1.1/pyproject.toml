@@ -1,0 +1,64 @@
+[build-system]
+requires = [
+  "setuptools >= 61.0",
+  "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "domhmm"
+description = "HMM model to determine Lo or Ld domains from coarse grained or atomistic MD simulations."
+license = {file = "LICENSE" }
+authors = [
+    {name = "Marius FW Trollmann", email = "marius.trollmann@fau.de"},
+    {name = "Yusuf Eren Tunç", email = "eren.tunc@fau.de"},
+]
+maintainers = [
+    {name = "Marius FW Trollmann", email = "marius.trollmann@fau.de"},
+    {name = "Yusuf Eren Tunç", email = "eren.tunc@fau.de"},
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "MDAnalysis>=2.0.0",
+    "hmmlearn == 0.3.2",
+    "networkx >= 3.0.0",
+    "numpy >= 1.26.0, <2.0.0",
+    "scikit-learn >= 1.4.0",
+    "scipy >= 1.13.0"
+
+]
+keywords = [
+    "molecular simulations",
+]
+dynamic = [
+    "version",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=6.0",
+    "pytest-xdist>=2.5",
+    "pytest-cov>=3.0",
+]
+doc = [
+    "sphinx",
+    "sphinx_rtd_theme",
+]
+
+# [project.urls]
+# source = "https://github.com/BioMemPhys-FAU/domhmm"
+# documentation = "https://domhmm.readthedocs.io"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = [
+    "domhmm/tests",
+]
+
+[tool.versioneer]
+VCS = "git"
+style = "pep440"
+versionfile_source = "domhmm/_version.py"
+versionfile_build = "domhmm/_version.py"
+tag_prefix = ""
