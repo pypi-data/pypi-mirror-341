@@ -1,0 +1,13 @@
+
+[cli]
+rich
+typer
+
+[develop]
+build
+cibuildwheel
+hatchling
+pytest
+pytest-cov
+twine
+wheel
