@@ -1,0 +1,12 @@
+random_compliments/__init__.py,sha256=JOYWdeFmrkbSkO80A_qzGzE004GXbaKwMUgxJ8wveFE,1392
+random_compliments/auto_start.py,sha256=kdrCJZaOMV5_TgeAoX1-z_epFjrKUHIEDI5NZvhtmQ0,5888
+random_compliments/cli.py,sha256=cSwmT0VtCkbUiTzKGNNwx38QqZB3_QsWfYDbQ9x4Ha0,3827
+random_compliments/compliment_daemon.py,sha256=ML01gZEMLynX7pz93Bfn-lVsBHEh6a9pFahp_Bn5d_8,5825
+random_compliments/compliments.py,sha256=BB5lrizTLTCM_HsTZd6uuK5l4sT8ZoQsznRSRQExzbs,6273
+random_compliments/daemon_cli.py,sha256=XsSDSqUYmGBgrQsLtQLbKYI3XvLGKHOGUDQsRh950_M,7852
+random_compliments-0.4.0.dist-info/licenses/LICENSE,sha256=B9uUqNa_lf6gvpYqbr8xJQfPFU0u4vMhVOjzRrBaaI4,1061
+random_compliments-0.4.0.dist-info/METADATA,sha256=QNcr5WrUd_HlVV3WrFRoM1YhkgKoIJmk-iUN4m3Bl0E,4578
+random_compliments-0.4.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+random_compliments-0.4.0.dist-info/entry_points.txt,sha256=2COg_YfBBmzGXidZAenv6JAdsfAd0N1N_gG4hMoVqOo,108
+random_compliments-0.4.0.dist-info/top_level.txt,sha256=M9yZ0wZ9bwW9CmAYqM6gLBPUV9Z6EMT0-NnD2OIrozU,19
+random_compliments-0.4.0.dist-info/RECORD,,
