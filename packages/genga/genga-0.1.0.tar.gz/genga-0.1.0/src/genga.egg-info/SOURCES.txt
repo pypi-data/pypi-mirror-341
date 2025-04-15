@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/genga/__init__.py
+src/genga/functions.py
+src/genga.egg-info/PKG-INFO
+src/genga.egg-info/SOURCES.txt
+src/genga.egg-info/dependency_links.txt
+src/genga.egg-info/top_level.txt

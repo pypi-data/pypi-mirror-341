@@ -1,0 +1,60 @@
+# pyproject.toml
+
+[build-system]
+# Specifies that Setuptools is needed to build the package
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# --- Required Metadata ---
+name = "genga" # Name used on PyPI and for pip install (kebab-case often preferred)
+version = "0.1.0"                     # Your package's starting version (Semantic Versioning recommended)
+authors = [
+    { name="Andres Santiago Martinez", email="as.martinez@uniandes.edu.co" },
+    # Add others if applicable
+]
+description = "A GWCNA + Co-expression networks analysis tool for gene expression analysis." # One-line summary
+
+# --- Optional but Recommended Metadata ---
+readme = "README.md" # Tells packaging tools where to find the long description
+requires-python = ">=3.8" # Specify the minimum Python version supported
+license = { file="LICENSE" } # Points to your license file (or use text="MIT", etc.)
+keywords = ["genga", "GWCNA", "graph"] # Helps users find your package
+classifiers = [
+    # Standard classifiers from: https://pypi.org/classifiers/
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License", # Choose your license
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+# --- Dependencies ---
+# List packages your code *needs* to run (these will be installed automatically by pip)
+dependencies = [
+    # "requests>=2.20.0",
+    # "numpy",
+    # "pandas",
+    # "matplotlib",
+    # "networkx",
+    # "tqdm",
+    # "pillow,
+    # "community",
+    # "seaborn",
+]
+
+# --- Optional Project URLs ---
+[project.urls]
+Homepage = "https://github.com/neurogen-uniandes/networks"
+Issues = "https://github.com/neurogen-uniandes/networks/issues"
+# Add others like Documentation, Source, etc.
+
+# --- Optional Entry Points (for creating command-line scripts) ---
+# [project.scripts]
+# my-command = "your_package_name.your_module:main_function"

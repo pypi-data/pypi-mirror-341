@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: genga
+Version: 0.1.0
+Summary: A GWCNA + Co-expression networks analysis tool for gene expression analysis.
+Author-email: Andres Santiago Martinez <as.martinez@uniandes.edu.co>
+Project-URL: Homepage, https://github.com/neurogen-uniandes/networks
+Project-URL: Issues, https://github.com/neurogen-uniandes/networks/issues
+Keywords: genga,GWCNA,graph
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Dynamic: license-file
+
+networks 🔬
+This is the official repository for the GenGa: A GWCNA + Co-expression networks analysis tool for gene expression analysis.
+
+A library for the co-expression network analysis used on the project "Spatiotemporal patterns of gene expression associated with mating stimuli in the brain of female guppies"
+
+How to use ☑️
+All functions are contained within the "functions.py"
+A simple example made with a subset of the paper data can be found in the notebook "genga.ipynb"
+Credits 🥇
+Created by B.Sc. Andrés Santiago Martínez Hernandez
+
+Feel free to contact me for any doubts regarding usage! 📫 as.martinez@uniandes.edu.co
+
+Advisors: PhD Natasha Bloch and PhD Felipe Giraldo
