@@ -1,0 +1,7 @@
+[console_scripts]
+neural-scope = advanced_analysis.cli:main
+neural-scope-analyze = advanced_analysis.cli:analyze_command
+neural-scope-mlflow = advanced_analysis.mlflow_integration:mlflow_command
+neural-scope-optimize = advanced_analysis.cli:optimize_command
+neural-scope-robustness = security.cli:robustness_command
+neural-scope-security = security.cli:security_command

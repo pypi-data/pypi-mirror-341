@@ -1,0 +1,26 @@
+# Include documentation
+include README.md
+include LICENSE
+include CONTRIBUTING.md
+include CODE_OF_CONDUCT.md
+include CHANGELOG.md
+include README_CICD.md
+include README_RUNNER.md
+include README_COMPLETE.md
+include README_FINAL.md
+
+# Include examples and notebooks
+recursive-include examples *.py
+recursive-include notebooks *.ipynb
+
+# Include tests
+recursive-include tests *.py
+
+# Include documentation
+recursive-include docs *.rst *.md *.py *.png *.jpg *.svg
+
+# Include templates
+recursive-include advanced_analysis/mlops/templates *.yml *.yaml *.groovy
+recursive-include model_sources *.py
+recursive-include security *.py
+recursive-include versioning *.py
