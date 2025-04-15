@@ -1,0 +1,12 @@
+
+[dev]
+build>=0.10
+flake8
+pyright
+pytest
+ruff
+toml-sort
+
+[test]
+pytest>=8.3.0
+pytest-runner

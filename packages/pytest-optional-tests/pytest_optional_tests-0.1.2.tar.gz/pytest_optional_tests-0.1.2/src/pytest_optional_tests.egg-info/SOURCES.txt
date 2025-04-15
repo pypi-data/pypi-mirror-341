@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+src/pytest_optional_tests.py
+src/pytest_optional_tests.egg-info/PKG-INFO
+src/pytest_optional_tests.egg-info/SOURCES.txt
+src/pytest_optional_tests.egg-info/dependency_links.txt
+src/pytest_optional_tests.egg-info/entry_points.txt
+src/pytest_optional_tests.egg-info/requires.txt
+src/pytest_optional_tests.egg-info/top_level.txt
+src/pytest_optional_tests.egg-info/zip-safe
+tests/conftest.py
+tests/test_optional_tests.py
+tests/data/x-pytest.ini
+tests/data/x-test_pot.py
