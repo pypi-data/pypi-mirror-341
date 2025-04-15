@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "leaf-hub"
+version = "0.0.1"
+description = "LabEquipment Adapter Framework Hub (LEAF-hub)"
+authors = [
+    "Matthew Crowther <b5044420@newcastle.ac.uk>",
+    "Brett Metcalfe <brett.metcalfe@hotmail.co.uk>",
+    "Jasper Koehorst <jasper.koehorst@wur.nl>"
+]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://gitlab.com/LabEquipmentAdapterFramework/leaf-hub"
+documentation = "https://leaf.systemsbiology.nl"
+
+packages = [
+    { include = "leaf-hub" }         # your actual Python module
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.scripts]
+leaf-hub = "leaf-hub.start:main"
+
+[tool.poetry.group.test.dependencies]
+pytest-xdist = "^3.6.1"
+pytest = "^8.3.4"
+coverage = "^7.6.8"
+mypy = "^1.14.1"
+
+[tool.poetry.group.dev.dependencies]
+bump2version = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "DEBUG"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
