@@ -1,0 +1,11 @@
+alkindi/__init__.py,sha256=RP6ulmWQWDl6oJAjoYSsqddycrVeXRLyiSvUdVot-lg,87
+alkindi/core.py,sha256=-F5bW9-KLt3rmqjLpPn29jVPsadaoWsP9EVVuJZvOZE,207
+alkindi/signatures.py,sha256=FV2GR6TmznxJhrwA1K27SdUwl6E5i9fJ2tBAqyUlCkA,3650
+alkindi/bindings.py,sha256=U-Mp0WruZ8lJsPbgy4dHTXxsdkl3ENHaq9yudlZAKMs,6811
+alkindi/kem.py,sha256=LGlNT-Eh4u85vWliiCZ-DGFTsS0Tz20VrqcjNWR4jc4,3885
+alkindi/_liboqs.abi3.so,sha256=kQdAU5cD9D-RasaqYNZ94kbh44m6rCqVXe8LKFl8lU4,351088
+alkindi-0.1.3.dist-info/RECORD,,
+alkindi-0.1.3.dist-info/WHEEL,sha256=11DeWYbUp9U027qYrDu4EKKwpu8CFy26MyL15HmBLKY,141
+alkindi-0.1.3.dist-info/top_level.txt,sha256=o6Bvtp6zlzW9PUOYmWA79EkUwaxUakLc45_pMgEKAz8,8
+alkindi-0.1.3.dist-info/METADATA,sha256=jgLt0Jceizh1TWtIv6wRBFH-PqPrdq97ZziOZsyx74c,6161
+alkindi-0.1.3.dist-info/licenses/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
