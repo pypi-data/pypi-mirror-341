@@ -1,0 +1,11 @@
+pyDSV/__init__.py,sha256=waO9u_J0tmM-YM5eVWq65EhlYwgTU1ETzhvgEHpCors,609
+pyDSV/csvLoader.py,sha256=M8hLwYqclHIf6Gg2GZAlLX5QmyVE5lY5Ff2cncMw6mc,2961
+pyDSV/dsvTransformer.py,sha256=beVXnoH4wf4Z1ZDHcVg3O0vDuj2pWiUmxisOo2B4eXc,6700
+tests/__init__.py,sha256=zNU8wDlFQ_XcXb8qegQtAhH-FMDIK1Szp-L-5KVn37E,454
+tests/test_csvLoader.py,sha256=gxN3KF6uOCjTPX10toI-m4-zpBuOf4SX24zFB37nAOo,1892
+tests/test_dsvTransformer.py,sha256=CooAG4dAHeMOpzUQ7mwzEECrJs-bPuOZkROGGsE3ZtA,1688
+pyDSV-0.1.0.dist-info/LICENSE,sha256=kO_f59yrk-dE2ZHn43wmLAkj8F_s2hHOW9ttwjXCnug,1077
+pyDSV-0.1.0.dist-info/METADATA,sha256=dJGrYsik_ZPC7-uSKwbv7uvHnPS5Cw0KXkzec32ao_k,4124
+pyDSV-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+pyDSV-0.1.0.dist-info/top_level.txt,sha256=K0ExOxsVl-ECeHOOgUHG-nlVQYE_IigfF0NWN2kHTSc,12
+pyDSV-0.1.0.dist-info/RECORD,,
