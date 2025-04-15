@@ -1,0 +1,12 @@
+mcp_server_monday/__init__.py,sha256=r_8pFyifaSS_Po0eIcX7xIxRbxnfPDszelDZzv77FlI,192
+mcp_server_monday/board.py,sha256=65L2PMDl2G1g0KOX-SF3mEalT2F0cz49-ehjOfK3Elg,3719
+mcp_server_monday/constants.py,sha256=qqLvRxt9qkU5M8PzHx4JB3HsTaaNINmW-E-gVMk_ixc,299
+mcp_server_monday/document.py,sha256=2x9f_7ErnRMhZVS7WHUeV34fnvg1cb9XJEz6VwpMW1o,9949
+mcp_server_monday/item.py,sha256=Ocq3nLXmgGBjrJ8gBydJq6QFMz3zIr1IUEc8Ssajbr0,9452
+mcp_server_monday/server.py,sha256=OQdLkbkB8ecce5bO9mmKk0ulygwcrbG4zAr5cqSF5Tk,1847
+mcp_server_monday/tools.py,sha256=A2YRUWqus-c_TbyuIFKHWD4UssRK_N6E8kikVZNyd6k,21408
+mcp_server_monday-0.2.8.dist-info/METADATA,sha256=utLKSjXMQe8cQVlmFKlQPfRqbja1bcU6ew2I1I1cuLU,4523
+mcp_server_monday-0.2.8.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_server_monday-0.2.8.dist-info/entry_points.txt,sha256=CkrStRk_z_FWO0Z3U5nLNJHbpVLeFlQHS5i79w3Ojd8,61
+mcp_server_monday-0.2.8.dist-info/licenses/LICENSE,sha256=btKkniDaboDo_c6yWi5ppkWEjXGuA6-qU4k7OB0tQQg,1070
+mcp_server_monday-0.2.8.dist-info/RECORD,,
