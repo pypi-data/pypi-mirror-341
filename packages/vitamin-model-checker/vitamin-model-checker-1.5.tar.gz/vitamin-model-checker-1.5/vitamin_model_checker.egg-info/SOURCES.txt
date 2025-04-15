@@ -1,0 +1,702 @@
+.gitignore
+C:\Users\lmfao\Desktop\Tesi\TESTING\output.txt
+README.md
+back_end_CS.py
+class_game.py
+example_strategy.txt
+example_train_controller.txt
+front_end_CS.py
+log.txt
+mainTest.py
+mainTestNat.py
+model_app.py
+requirements.txt
+res.txt
+results.csv
+setup.py
+tmp
+.idea/.gitignore
+.idea/VITAMIN.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.vscode/launch.json
+__pycache__/back_end_CS.cpython-310.pyc
+__pycache__/class_game.cpython-310.pyc
+__pycache__/front_end_CS.cpython-310.pyc
+data/Nuovo Documento di testo.txt
+data/OATL_model.txt
+data/OL_model.txt
+data/RABATL_model.txt
+data/RBATL_model.txt
+data/Tian Ji.txt
+data/ex_papier.txt
+data/exampleModel1.txt
+data/rover.txt
+data/test.txt
+data/tmp.txt
+examples/ATL/tianji.txt
+examples/ATL/tianjiFull.txt
+examples/CapATL/ex.txt
+examples/CapATL/ex_papier.txt
+examples/NatATL/exampleModel1.txt
+examples/OATL/OATL_model.txt
+examples/OL/OL_model.txt
+examples/RABATL/RABATL_model.txt
+examples/RABATL/sensor_network.txt
+examples/RABATL/sensor_network_mod.txt
+examples/RBATL/RBATL_model.txt
+examples/RBATL/rover.txt
+examples/RBATL/sensor_network.txt
+images/PA.jpg
+images/Pierre.jpg
+images/account.png
+images/angelo.jpg
+images/binary-image.png
+images/binary.png
+images/crypto.png
+images/flask.png
+images/gaetan.png
+images/github.png
+images/giulia.jpg
+images/hi-paris.png
+images/marco.jpg
+images/vadim.jpg
+images/zoning.png
+vitamin_model_checker.egg-info/PKG-INFO
+vitamin_model_checker.egg-info/SOURCES.txt
+vitamin_model_checker.egg-info/dependency_links.txt
+vitamin_model_checker.egg-info/requires.txt
+vitamin_model_checker.egg-info/top_level.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/100% TEST ACCURACY.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/CTLvsATLtesting.xlsx
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/~$CTLvsATLtesting.xlsx
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing1/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing1/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing1/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing1/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing1/testingATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing10/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing10/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing10/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing10/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing11/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing11/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing11/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing11/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing12/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing12/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing12/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing12/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing13/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing13/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing13/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing13/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing14/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing14/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing14/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing14/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing15/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing15/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing15/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing15/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing2/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing2/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing2/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing2/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing3/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing3/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing3/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing3/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing4/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing4/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing4/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing4/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing5/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing5/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing5/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing5/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing5/testingATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing6/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing6/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing6/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing6/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing7/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing7/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing7/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing7/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing8/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing8/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing8/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing8/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing9/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing9/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing9/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Eventually with n agents/testing9/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/NatATLvsATL.xlsx
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/~$CTLvsATLtesting.xlsx
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing1/compound test.docx
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing1/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing1/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing1/model.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing1/modified_formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing1/modified_model.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing1/result.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing10/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing10/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing10/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing10/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing11/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing11/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing11/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing11/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing12/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing12/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing12/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing12/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing13/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing13/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing13/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing13/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing14/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing14/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing14/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing14/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing15/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing15/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing15/model.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing15/result.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing2/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing2/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing2/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing2/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing3/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing3/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing3/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing3/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing4/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing4/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing4/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing4/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/10States5Agents.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/11States5Agents.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/12States5Agents.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/4States2AgentsResultsK4.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/5States2AgentsResultsK4.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/5States5AgentsResultsK4.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/6States4Agents.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/7States4Agents.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/8States5Agents.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/9States5Agents.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/Appunti tempi.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/FalseResultsOnlyK4.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/RISULTATI3AGENTI5STATIK4.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/model.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/model2Agents.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/model3Agents.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/modified_formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/modified_model.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/result.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/resultsK2.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing5/testingATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing6/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing6/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing6/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing6/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing7/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing7/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing7/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing7/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing8/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing8/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing8/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing8/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing9/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing9/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing9/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Globally with n agents/testing9/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/CTLvsATLtesting.xlsx
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/NON PUOI FARLO manca FORALL.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing1/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing1/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing1/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing1/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing1/testingATL.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing10/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing10/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing10/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing11/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing11/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing11/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing11/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing12/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing12/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing12/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing13/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing13/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing13/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing14/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing14/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing14/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing2/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing2/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing2/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing2/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing3/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing3/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing3/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing3/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing4/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing4/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing4/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing4/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing5/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing5/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing5/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing5/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing5/testingATL.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing6/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing6/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing6/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing6/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing7/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing7/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing7/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing8/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing8/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing8/testing.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing9/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing9/formula.txt
+vitamin_model_checker/Test/NatATL/Exists Until with n agents/testing9/testing.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/CTLvsATLtesting.xlsx
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing1/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing1/formula.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing1/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing1/testing.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing1/testingATL.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing10/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing10/formula.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing10/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing10/testing.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing11/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing11/formula.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing11/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing11/testing.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing12/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing12/formula.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing12/testing.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing13/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing13/formula.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing13/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing13/testing.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing14/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing14/formula.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing14/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing14/testing.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing2/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing2/formula.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing2/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing2/testing.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing3/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing3/formula.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing3/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing3/testing.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing4/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing4/formula.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing4/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing4/testing.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing5/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing5/formula.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing5/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing5/testing.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing5/testingATL.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing6/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing6/formula.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing6/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing6/testing.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing7/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing7/formula.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing7/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing7/testing.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing8/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing8/formula.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing8/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing8/testing.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing9/Risultato.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing9/formula.txt
+vitamin_model_checker/Test/NatATL/Exists next with n agents/testing9/testing.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/100% TEST ACCURACY.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/CTLvsATLtesting.xlsx
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing1/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing1/formula.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing1/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing1/testing.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing10/100% TEST ACCURACY.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing10/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing10/formula.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing10/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing10/testing.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing11/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing11/formula.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing11/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing11/testing.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing12/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing12/formula.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing12/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing12/testing.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing13/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing13/formula.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing13/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing13/testing.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing14/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing14/formula.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing14/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing14/testing.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing15/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing15/formula.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing15/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing15/testing.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing2/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing2/formula.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing2/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing2/testing.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing3/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing3/formula.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing3/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing3/testing.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing4/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing4/formula.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing4/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing4/testing.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing5/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing5/formula.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing5/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing5/testing.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing6/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing6/formula.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing6/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing6/testing.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing7/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing7/formula.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing7/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing7/testing.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing8/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing8/formula.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing8/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing8/testing.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing9/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing9/formula.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing9/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Eventually with n agents/testing9/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/natATLvsATL.xlsx
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing1/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing1/formula.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing1/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing1/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing10/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing10/formula.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing10/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing10/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing11/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing11/formula.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing11/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing11/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing12/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing12/formula.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing12/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing12/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing13/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing13/formula.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing13/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing13/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing14/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing14/formula.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing14/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing14/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing15/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing15/formula.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing15/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing15/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing2/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing2/formula.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing2/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing2/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing3/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing3/formula.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing3/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing3/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing4/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing4/formula.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing4/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing4/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing5/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing5/formula.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing5/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing5/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing6/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing6/formula.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing6/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing6/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing7/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing7/formula.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing7/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing7/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing8/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing8/formula.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing8/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing8/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing9/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing9/formula.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing9/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing9/testing.txt
+vitamin_model_checker/Test/NatATL/For All Globally with n agents/testing9/testingATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/CTLvsATLtesting.xlsx
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing1/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing1/formula.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing1/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing1/testing.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing10/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing10/formula.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing10/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing10/testing.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing11/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing11/formula.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing11/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing11/output.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing11/testATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing11/testing.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing12/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing12/formula.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing12/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing12/testing.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing13/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing13/formula.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing13/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing13/testing.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing14/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing14/formula.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing14/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing14/testing.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing2/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing2/formula.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing2/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing2/testing.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing3/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing3/formula.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing3/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing3/testing.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing4/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing4/formula.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing4/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing4/testing.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing5/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing5/formula.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing5/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing5/testing.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing6/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing6/formula.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing6/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing6/testing.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing7/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing7/formula.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing7/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing7/testing.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing8/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing8/formula.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing8/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing8/testing.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing9/Risultato.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing9/formula.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing9/formulaATL.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing9/testing.txt
+vitamin_model_checker/Test/NatATL/For All Next with n agents/testing9/testingATL.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/10States5Agents.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/11States5Agents.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/12States5Agents.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/4States2AgentsResultsK4.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/5States2AgentsResultsK4.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/5States5AgentsResultsK4.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/6States4Agents.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/7States4Agents.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/8States5Agents.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/9States5Agents.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/Appunti prestazioni.docx
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/Appunti tempi k=10.docx
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/Appunti tempi.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/FalseResultsOnlyK4.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/RISULTATI3AGENTI5STATIK4.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/formula.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/formulaATL.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/model.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/model2Agents.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/model3Agents.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/modified_formula.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/modified_model.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/result.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/resultsK2.txt
+vitamin_model_checker/Test/NatATL/Tool Analysis Testings/testingATL.txt
+vitamin_model_checker/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/logics/ATL/__init__.py
+vitamin_model_checker/logics/ATL/parser.out
+vitamin_model_checker/logics/ATL/parser.py
+vitamin_model_checker/logics/ATL/parsetab.py
+vitamin_model_checker/logics/ATL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/logics/ATL/__pycache__/parser.cpython-310.pyc
+vitamin_model_checker/logics/ATL/__pycache__/parsetab.cpython-310.pyc
+vitamin_model_checker/logics/CTL/__init__.py
+vitamin_model_checker/logics/CTL/parser.out
+vitamin_model_checker/logics/CTL/parser.py
+vitamin_model_checker/logics/CTL/parsetab.py
+vitamin_model_checker/logics/CTL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/logics/CTL/__pycache__/parser.cpython-310.pyc
+vitamin_model_checker/logics/CTL/__pycache__/parsetab.cpython-310.pyc
+vitamin_model_checker/logics/CapATL/__init__.py
+vitamin_model_checker/logics/CapATL/parser.out
+vitamin_model_checker/logics/CapATL/parser.py
+vitamin_model_checker/logics/CapATL/parsetab.py
+vitamin_model_checker/logics/CapATL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/logics/CapATL/__pycache__/parser.cpython-310.pyc
+vitamin_model_checker/logics/CapATL/__pycache__/parsetab.cpython-310.pyc
+vitamin_model_checker/logics/NatATL/__init__.py
+vitamin_model_checker/logics/NatATL/parser.out
+vitamin_model_checker/logics/NatATL/parser.py
+vitamin_model_checker/logics/NatATL/parsetab.py
+vitamin_model_checker/logics/NatATL/stringParser.py
+vitamin_model_checker/logics/NatATL/__pycache__/CTLparser.cpython-310.pyc
+vitamin_model_checker/logics/NatATL/__pycache__/NatATLtoCTL.cpython-310.pyc
+vitamin_model_checker/logics/NatATL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/logics/NatATL/__pycache__/matrixParser.cpython-310.pyc
+vitamin_model_checker/logics/NatATL/__pycache__/natatlParser.cpython-310.pyc
+vitamin_model_checker/logics/NatATL/__pycache__/parsetab.cpython-310.pyc
+vitamin_model_checker/logics/NatATL/__pycache__/stringParser.cpython-310.pyc
+vitamin_model_checker/logics/OATL/__init__.py
+vitamin_model_checker/logics/OATL/parser.out
+vitamin_model_checker/logics/OATL/parser.py
+vitamin_model_checker/logics/OATL/parsetab.py
+vitamin_model_checker/logics/OATL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/logics/OATL/__pycache__/parser.cpython-310.pyc
+vitamin_model_checker/logics/OATL/__pycache__/parsetab.cpython-310.pyc
+vitamin_model_checker/logics/OL/__init__.py
+vitamin_model_checker/logics/OL/parser.out
+vitamin_model_checker/logics/OL/parser.py
+vitamin_model_checker/logics/OL/parsetab.py
+vitamin_model_checker/logics/OL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/logics/OL/__pycache__/parser.cpython-310.pyc
+vitamin_model_checker/logics/OL/__pycache__/parsetab.cpython-310.pyc
+vitamin_model_checker/logics/RABATL/__init__.py
+vitamin_model_checker/logics/RABATL/parser.out
+vitamin_model_checker/logics/RABATL/parser.py
+vitamin_model_checker/logics/RABATL/parsetab.py
+vitamin_model_checker/logics/RABATL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/logics/RABATL/__pycache__/parser.cpython-310.pyc
+vitamin_model_checker/logics/RABATL/__pycache__/parsetab.cpython-310.pyc
+vitamin_model_checker/logics/RBATL/__init__.py
+vitamin_model_checker/logics/RBATL/parser.out
+vitamin_model_checker/logics/RBATL/parser.py
+vitamin_model_checker/logics/RBATL/parsetab.py
+vitamin_model_checker/logics/RBATL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/logics/RBATL/__pycache__/parser.cpython-310.pyc
+vitamin_model_checker/logics/RBATL/__pycache__/parsetab.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/abstract/__init__.py
+vitamin_model_checker/model_checker_interface/explicit/ATL/ATL.py
+vitamin_model_checker/model_checker_interface/explicit/ATL/__init__.py
+vitamin_model_checker/model_checker_interface/explicit/ATL/__pycache__/ATL.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/ATL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/ATLF/ATLF.py
+vitamin_model_checker/model_checker_interface/explicit/ATLF/__init__.py
+vitamin_model_checker/model_checker_interface/explicit/ATLF/pre_ATLF.py
+vitamin_model_checker/model_checker_interface/explicit/ATLF/__pycache__/ATLF.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/ATLF/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/ATLF/__pycache__/pre_ATLF.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/CTL/CTL.py
+vitamin_model_checker/model_checker_interface/explicit/CTL/__init__.py
+vitamin_model_checker/model_checker_interface/explicit/CTL/__pycache__/CTL.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/CTL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/CapATL/CapATL.py
+vitamin_model_checker/model_checker_interface/explicit/CapATL/__init__.py
+vitamin_model_checker/model_checker_interface/explicit/CapATL/classes.py
+vitamin_model_checker/model_checker_interface/explicit/CapATL/pre.py
+vitamin_model_checker/model_checker_interface/explicit/CapATL/__pycache__/CapATL.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/CapATL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/CapATL/__pycache__/classes.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/CapATL/__pycache__/functions.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/CapATL/__pycache__/pre.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/NatATL/NatATL.py
+vitamin_model_checker/model_checker_interface/explicit/NatATL/NatATLtoCTL.py
+vitamin_model_checker/model_checker_interface/explicit/NatATL/__init__.py
+vitamin_model_checker/model_checker_interface/explicit/NatATL/pruning.py
+vitamin_model_checker/model_checker_interface/explicit/NatATL/strategies.py
+vitamin_model_checker/model_checker_interface/explicit/NatATL/__pycache__/NatATL.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/NatATL/__pycache__/NatATLtoCTL.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/NatATL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/NatATL/__pycache__/modelCheckingCTL.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/NatATL/__pycache__/process_data.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/NatATL/__pycache__/pruning.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/NatATL/__pycache__/strategies.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/OATL/OATL.py
+vitamin_model_checker/model_checker_interface/explicit/OATL/__init__.py
+vitamin_model_checker/model_checker_interface/explicit/OATL/__pycache__/OATL.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/OATL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/OL/OL.py
+vitamin_model_checker/model_checker_interface/explicit/OL/__init__.py
+vitamin_model_checker/model_checker_interface/explicit/OL/__pycache__/OL.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/OL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/RABATL/RABATL.py
+vitamin_model_checker/model_checker_interface/explicit/RABATL/__init__.py
+vitamin_model_checker/model_checker_interface/explicit/RABATL/__pycache__/OATL.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/RABATL/__pycache__/RABATL.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/RABATL/__pycache__/RBATL.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/RABATL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/RBATL/RBATL.py
+vitamin_model_checker/model_checker_interface/explicit/RBATL/__init__.py
+vitamin_model_checker/model_checker_interface/explicit/RBATL/__pycache__/OATL.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/RBATL/__pycache__/RABATL.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/RBATL/__pycache__/RBATL.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/explicit/RBATL/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/model_checker_interface/implicit/__init__.py
+vitamin_model_checker/models/CGS/CGS.py
+vitamin_model_checker/models/CGS/__init__.py
+vitamin_model_checker/models/CGS/__pycache__/CGS.cpython-310.pyc
+vitamin_model_checker/models/CGS/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/models/CGS/__pycache__/read_input.cpython-310.pyc
+vitamin_model_checker/models/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/models/__pycache__/functions.cpython-310.pyc
+vitamin_model_checker/models/__pycache__/read_input.cpython-310.pyc
+vitamin_model_checker/models/capCGS/__init__.py
+vitamin_model_checker/models/capCGS/capCGS.py
+vitamin_model_checker/models/capCGS/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/models/capCGS/__pycache__/capCGS.cpython-310.pyc
+vitamin_model_checker/models/costCGS/__init__.py
+vitamin_model_checker/models/costCGS/costCGS.py
+vitamin_model_checker/models/costCGS/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/models/costCGS/__pycache__/costCGS.cpython-310.pyc
+vitamin_model_checker/utils/__init__.py
+vitamin_model_checker/utils/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/utils/experiments/ATL/experiments.py
+vitamin_model_checker/utils/experiments/RABATL/experiments.py
+vitamin_model_checker/utils/generators/CGS_generator.py
+vitamin_model_checker/utils/generators/RABCGS_generator.py
+vitamin_model_checker/utils/generators/RBCGS_generator.py
+vitamin_model_checker/utils/generators/__init__.py
+vitamin_model_checker/utils/generators/tmp
+vitamin_model_checker/utils/generators/__pycache__/CGS_generator.cpython-310.pyc
+vitamin_model_checker/utils/generators/__pycache__/RABCGS_generator.cpython-310.pyc
+vitamin_model_checker/utils/generators/__pycache__/RBCGS_generator.cpython-310.pyc
+vitamin_model_checker/utils/generators/__pycache__/__init__.cpython-310.pyc
+vitamin_model_checker/xml_data/cond.txt
+vitamin_model_checker/xml_data/convertion.py
+vitamin_model_checker/xml_data/initialisation.py
+vitamin_model_checker/xml_data/set_operation.py
+vitamin_model_checker/xml_data/test.xml
+vitamin_model_checker/xml_data/test_output_Vitamin.txt
+vitamin_model_checker/xml_data/to_cgs.py
+vitamin_model_checker/xml_data/writting.py
+vitamin_model_checker/xml_data/__pycache__/convertion.cpython-310.pyc
+vitamin_model_checker/xml_data/__pycache__/initialisation.cpython-310.pyc
+vitamin_model_checker/xml_data/__pycache__/set_operation.cpython-310.pyc
+vitamin_model_checker/xml_data/__pycache__/to_cgs.cpython-310.pyc
+vitamin_model_checker/xml_data/__pycache__/writting.cpython-310.pyc
