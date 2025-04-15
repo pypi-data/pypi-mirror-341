@@ -1,0 +1,19 @@
+[project]
+name = "bim2rdf-spklauto"
+version = "0"
+description = "BIM2RDF/speckle automate"
+readme = "README.md"
+authors = [
+    { name = "Majid alDosari", email = "majid.aldosari@pnnl.gov" }
+]
+requires-python = "==3.11.9"
+dependencies = [
+    "specklepy",
+    "rdflib", # just to make a nice ttl
+     ]
+[dependency-groups]
+dev = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
