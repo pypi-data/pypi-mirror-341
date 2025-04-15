@@ -1,0 +1,7 @@
+requests
+aiosmtpd
+python-dotenv
+colorlog
+bcrypt
+cryptography
+msal
