@@ -1,0 +1,17 @@
+palhm/__init__.py,sha256=HUvwn4TzCjC_O6HmU46u-UMrEiwrUIACvvgx18Ei7_c,25217
+palhm/__main__.py,sha256=1AE53CWciv_em0YVPWpJJZpwGxs6VL_ARzVtgAWqu0s,5756
+palhm/exceptions.py,sha256=sHEqZoaBKJjCNoI89_PCc5Z8bvsl4ySxl7NPUHQLY8I,1189
+palhm/conf/crontab,sha256=NJbnmcc8TZDHWNk-H2hP2nLE3999sY_2ccImXjQQ0-g,384
+palhm/conf/palhm-boot-report.service,sha256=MlkLaUvsquX_RADvIllFWnXZZLjheipD-69WxEmydug,234
+palhm/conf/py-debug/aws.jsonc,sha256=J8SP-ueJUZwUuJmwlpcE-XxWB4So74mnXYmjojj9lDg,3380
+palhm/conf/py-debug/localfs.jsonc,sha256=98BTu5jzN3yqNyj00fnKgqqajtA8XRcMd3MFIyqjwMc,3210
+palhm/conf/py-debug/null.jsonc,sha256=HaPcCpFunTCGt4s2I35lxkXLBCdI_zoZQ5WShlhtV2k,2744
+palhm/conf/py-debug/palhm.jsonc,sha256=6A_gZCjmIfAn1nDds9pURKA68QBX4cA-spMajV_wWtk,3523
+palhm/conf/py-debug/conf.d/core.json,sha256=mvKRmhO6MSwfWRdRmSd2G1b2LvJv-nX50iO8_a-uJuQ,1357
+palhm/conf/py-sample/sample.jsonc,sha256=6A_gZCjmIfAn1nDds9pURKA68QBX4cA-spMajV_wWtk,3523
+palhm/mod/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+palhm/mod/aws.py,sha256=bkZ196lnNIy022QTI--dx2VWotKzg53tqr5rOLPPGAA,8376
+palhm-0.0.2.dist-info/METADATA,sha256=z8peiDxVk8EPAG6r-R7LeVFhQP-p3ROoEak-Q4ZrA_U,13913
+palhm-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+palhm-0.0.2.dist-info/licenses/COPYING,sha256=YT5DibJe9HiFiUrOhISNU2bZGupmf1a2u9sVotFvpq4,1076
+palhm-0.0.2.dist-info/RECORD,,
