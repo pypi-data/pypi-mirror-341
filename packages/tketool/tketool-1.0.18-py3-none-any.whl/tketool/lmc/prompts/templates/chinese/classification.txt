@@ -1,0 +1,17 @@
+<prompts>
+
+<model name="classification_model">
+    <field name="classification_index" type="int" des="分类索引" />
+</model>
+
+<prompt name="default" output="classification_model">
+请根据以下内容进行分类，并返回对应的分类索引：
+{category_content}
+
+
+内容：
+{content}
+
+请直接输出分类索引。
+</prompt>
+</prompts> 
