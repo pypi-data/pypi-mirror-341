@@ -1,0 +1,13 @@
+hg22017uno-0.1.0.dist-info/licenses/LICENSE,sha256=RDHgHDI4rSDq35R4CAC3npy86YUnmZ81ecO7aHfmmGA,1073
+solver/__init__.py,sha256=68XYzhTWThlhXXOWNCvALRT_yGJgart65sp2qaYGNis,402
+solver/nonlinear/__init__.py,sha256=wwzI0HWMz0FUp4V66XGRfzeaK3gaQUnIjDstG8ZUpFI,40
+solver/nonlinear/bisection.py,sha256=0D84UGkqndZpZEJgo_8fWNFPQCsE9J3Xr6BTOyzTtBM,835
+solver/nonlinear/gauss_seidel.py,sha256=GwUI6ITN91W9QfmHPim20PdoqaP5OoJwm4lRehoHV1c,975
+solver/nonlinear/jacobi.py,sha256=ntvk8qFQlPbWNYhHxHGuCRpQbIzCgO-71IfH56J0xww,960
+tests/__init__.py,sha256=oTPOH5X9rOdQJapMZHSzPi_RR79ZrttpJ2BaB7sC284,60
+tests/test_linear_methods.py,sha256=8t5UTi7KsXYoUzcwhQv7Zj_KsMDDYTqCrAfa59x3YXY,1240
+tests/test_nonlinear_methods.py,sha256=X6IDnARR32oX2G0NWx3EDxi_nEw5r-6v9WR9sBjAy-8,1139
+hg22017uno-0.1.0.dist-info/METADATA,sha256=pmwhv1dDL6GyZHS0BhFhtDvlJAm37KwgZJVE77lgXJs,588
+hg22017uno-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+hg22017uno-0.1.0.dist-info/top_level.txt,sha256=hgbvCSTNT92Irsej9Xgqe1B-J_bW0Lqn6yM0GpUsDzY,13
+hg22017uno-0.1.0.dist-info/RECORD,,
