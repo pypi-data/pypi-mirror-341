@@ -1,0 +1,3 @@
+[console_scripts]
+quine=quine.cli:main
+
