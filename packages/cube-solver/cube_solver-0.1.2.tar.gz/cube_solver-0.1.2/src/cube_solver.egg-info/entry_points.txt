@@ -1,0 +1,2 @@
+[console_scripts]
+cube-solver = cube_solver.cli:app
