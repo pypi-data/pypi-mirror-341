@@ -1,0 +1,10 @@
+certifi>=2017.4.17
+
+[dev]
+imap_data_access[test]
+pre-commit
+ruff
+
+[test]
+pytest
+pytest-cov
