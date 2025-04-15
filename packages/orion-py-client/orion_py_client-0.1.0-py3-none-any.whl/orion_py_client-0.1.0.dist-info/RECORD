@@ -1,0 +1,15 @@
+orion_py_client/__init__.py,sha256=IuVF_iGb4_vvwabkzqEwIyAjWN84GzjYm10U1dkrhns,33
+orion_py_client/client.py,sha256=4fQfqECu7ZsX_ohQ15lTs20Ag6ESrP1kpXc1dlXYjTU,10030
+orion_py_client/proto/persist.proto,sha256=LVrwmbI4iHomCzlFzJQ4vRvUSp8EnX0jPEck8RafTGo,964
+orion_py_client/proto/retrieve.proto,sha256=WKAPrw_7-nR5IfmySVSteBNnpId_0s00gUKaIY5R4Vg,1109
+orion_py_client/proto/persist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orion_py_client/proto/persist/persist_pb2.py,sha256=dJAZgsE3sWD9TJv0IU9i66gKFDHI4OVs5csBAWiWGow,3223
+orion_py_client/proto/persist/persist_pb2_grpc.py,sha256=gmh8A9HhgXTVJZjDNK72zMnF4UKvGsVk9Yp8sPGVIn0,3417
+orion_py_client/proto/retrieve/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orion_py_client/proto/retrieve/retrieve_pb2.py,sha256=N4cslKUJizK1jmnskglf5MQjKFHtvRH-CCbQLkvsdGA,3650
+orion_py_client/proto/retrieve/retrieve_pb2_grpc.py,sha256=m5ZOVdpe86Ahw2dZ4y_wxo1VrCa3x2Kcb8Eyr5mw1ow,5165
+"orion_py_client/utils/__init__,py",sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orion_py_client/utils/helpers.py,sha256=vhRZqgVcPHh1LuWpJf52EUxT4LcDlij0e-4isAi-3u4,5309
+orion_py_client-0.1.0.dist-info/METADATA,sha256=rQO0RXsYJC11ieC5qi6UzTHb8hEj2eFV7nGftHxSMJY,3552
+orion_py_client-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+orion_py_client-0.1.0.dist-info/RECORD,,
