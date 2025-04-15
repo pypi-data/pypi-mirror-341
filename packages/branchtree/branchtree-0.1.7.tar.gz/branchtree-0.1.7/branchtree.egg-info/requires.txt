@@ -1,0 +1,6 @@
+
+[dev]
+black>=25.1.0
+build>=1.2.2
+taskipy>=1.14.1
+twine>=6.1.0

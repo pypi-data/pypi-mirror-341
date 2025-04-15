@@ -1,0 +1,39 @@
+[project]
+name = "branchtree"
+dynamic = ["version"]
+readme = "README.md"
+
+requires-python = ">=3.11"
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Version Control :: Git"
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "black>=25.1.0",
+    "build>=1.2.2",
+    "taskipy>=1.14.1",
+    "twine>=6.1.0"
+]
+
+[project.scripts]
+branchtree = "branchtree:cli.main"
+
+[project.urls]
+Homepage = "https://github.com/nazsolti/branchtree"
+
+[tool.setuptools.dynamic]
+version = {attr = "branchtree.__version__"}
+
+[tool.taskipy.tasks]
+install = "pip install .[dev]"
+build = "rm -rf dist && python -m build"
+publish = "twine upload dist/*"
