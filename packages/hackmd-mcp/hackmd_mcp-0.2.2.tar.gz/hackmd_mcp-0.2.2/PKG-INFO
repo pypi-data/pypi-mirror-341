@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: hackmd-mcp
+Version: 0.2.2
+Summary: A command line utility for HackMD
+Home-page: https://github.com/yourusername/hackmd_mcp
+Author: Oliver
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# HackMD MCP
+
+HackMD MCP是一個命令行工具，用於與HackMD進行交互。
+
+## 安裝
+
+```bash
+pip install hackmd-mcp
+```
+
+## 使用方法
+
+安裝後，您可以在終端機中直接使用`hackmd-mcp`命令：
+
+```bash
+hackmd-mcp --help
+```
+
+## 功能
+
+待添加功能說明...
+
+## 授權
+
+MIT
