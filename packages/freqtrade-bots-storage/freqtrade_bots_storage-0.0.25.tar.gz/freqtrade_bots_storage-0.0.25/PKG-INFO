@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: freqtrade-bots-storage
+Version: 0.0.25
+Summary: A persistent storage for freqtrade bots
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# freqtrade-bots-storage
+A persistent storage for freqtrade bots
