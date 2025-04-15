@@ -1,0 +1,12 @@
+server/__init__.py,sha256=9rG7OnYNb4JsUBUs5_8V_f4fsLdbGu_HF2eo4CJwuac,184
+server/config.py,sha256=WJ7X9dWotR_pV9R7p-4Rj-gsUrU0bExNQMz_R7XxNQ0,396
+server/sample_notebook.ipynb,sha256=XusfyCxiZxYTaxj8FWOZeMFyOJ-PwOADTHxH1pQdUy0,384
+server/server.py,sha256=64dt4kmwZ2Zlcjo9AEYa2Z5VOdQUwXKzGpu7Z0Au410,3705
+server/version.py,sha256=rPSfWgIeq2YWVPyESOAwCBt8vftsTpIkuLAGDEzyRQc,22
+server/tools/__init__.py,sha256=XqQbXN53LMXmQ8YXDxxAxa517Rs-RomocMzrXu4A6vE,597
+server/tools/definitions.py,sha256=hHO9a6RoJOtzZqk8Z3HMBLYBSatbPsZX8wnff5Yxu7I,48270
+singlestore_mcp_server-0.1.5.dist-info/METADATA,sha256=BvuUwiGe1mqwyK7siZ5MbsUMdQPUsLRQUfTDponuk0I,6097
+singlestore_mcp_server-0.1.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+singlestore_mcp_server-0.1.5.dist-info/entry_points.txt,sha256=d3J6HTyeSd5Lc07aeEsO_79bokbUYOMF1GJwOJ9jcC4,55
+singlestore_mcp_server-0.1.5.dist-info/licenses/LICENSE,sha256=IVW_2a4q3a2IU02LVYGVhbugOYMzNyHovSzSwrG0Z4w,1079
+singlestore_mcp_server-0.1.5.dist-info/RECORD,,
