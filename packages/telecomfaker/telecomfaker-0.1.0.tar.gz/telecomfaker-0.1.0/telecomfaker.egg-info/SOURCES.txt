@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+telecomfaker/__init__.py
+telecomfaker/cli.py
+telecomfaker/faker.py
+telecomfaker/models.py
+telecomfaker.egg-info/PKG-INFO
+telecomfaker.egg-info/SOURCES.txt
+telecomfaker.egg-info/dependency_links.txt
+telecomfaker.egg-info/entry_points.txt
+telecomfaker.egg-info/requires.txt
+telecomfaker.egg-info/top_level.txt
+telecomfaker/providers/__init__.py
+telecomfaker/providers/base.py
+telecomfaker/providers/local_json.py
