@@ -1,0 +1,62 @@
+[project]
+name = "tensor-regression"
+description = "A small wrapper around pytest_regressions for Tensors"
+license = "MIT"
+readme = "README.md"
+authors = [
+    { name = "Fabrice Normandin", email = "fabrice.normandin@gmail.com" },
+]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26.4", "pytest-regressions>=2.5.0", "torch>=2.0.0"]
+dynamic = ["version"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Framework :: Pytest",
+]
+pytest11 = ["tensor_regression = tensor_regression"]
+
+[project.entry-points."pytest11"]
+tensor_regression = "tensor_regression"
+
+[dependency-groups]
+dev = ["pre-commit>=4.2.0", "pytest-cov>=6.1.1"]
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+norecursedirs = [".venv"]
+addopts = ["--doctest-modules"]
+
+[tool.pytest_env]
+CUBLAS_WORKSPACE_CONFIG = ":4096:8"
+
+[tool.ruff]
+line-length = 99
+
+[tool.docformatter]
+wrap-summaries = 99
+wrap-descriptions = 99
+
+[tool.uv]
+managed = true
+
+[tool.uv-dynamic-versioning]
+vcs = "git"
+style = "semver"
+
+[build-system]
+requires = ["hatchling", "uv-dynamic-versioning"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["tensor_regression"]
+
+[tool.hatch.version]
+source = "uv-dynamic-versioning"
