@@ -1,0 +1,16 @@
+numpy
+scipy
+aspcore
+numba
+wigners
+jax
+matplotlib
+
+[examples]
+aspsim
+
+[test]
+pytest
+hypothesis
+cvxpy
+aspsim
