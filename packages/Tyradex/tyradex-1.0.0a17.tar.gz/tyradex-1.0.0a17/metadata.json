@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0.a17",
+  "authors": [
+    {"name": "LassaInora", "email": "contact@lassainora.fr"}
+  ],
+  "description": "Tyradex for Python is an easy-to-use API based on the web version of Tyradex by Yarkis and Ashzuu."
+}
