@@ -1,0 +1,6 @@
+mcp[cli]
+nltk
+
+[dev]
+ruff
+pytest
