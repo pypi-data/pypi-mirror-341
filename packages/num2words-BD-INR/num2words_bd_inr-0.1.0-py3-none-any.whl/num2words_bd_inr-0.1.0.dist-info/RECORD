@@ -1,0 +1,9 @@
+num2words_bd_inr/__init__.py,sha256=yL-dqF-FSpRxjzEhSNA4603GnfEnif4KBqTScmvsPpw,217
+num2words_bd_inr/num2words_bd_inr.py,sha256=XQ3l04edlvvS-7bTgPjeNiuLawAosU7Po73SIyKyMoY,12181
+num2words_bd_inr-0.1.0.dist-info/licenses/LICENSE,sha256=afglHY_ujAWX_wVKyjpRbHFIqbh15A3r1QlIR54F5co,1063
+tests/__init__.py,sha256=4KTOMFzu1HUyiGGWjds8yf-CoaMVydqQN504NDzgv00,57
+tests/test_num2words_bd_inr.py,sha256=rhRiIZhzUKmkXX0QpjQm5fwV3evih02-Zbflm7DwFgI,2645
+num2words_bd_inr-0.1.0.dist-info/METADATA,sha256=mp_GVnD2Hinh5vUmJLaBO6G40Wx75qJW1iNO2sqLlbk,5371
+num2words_bd_inr-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+num2words_bd_inr-0.1.0.dist-info/top_level.txt,sha256=vSd80WwuCkDDkXbEAGeNHJTWNn-zY9nRWTlMEFXN-NY,23
+num2words_bd_inr-0.1.0.dist-info/RECORD,,
