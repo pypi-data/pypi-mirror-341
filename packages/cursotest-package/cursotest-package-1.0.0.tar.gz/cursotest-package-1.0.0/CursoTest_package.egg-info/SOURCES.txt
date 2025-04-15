@@ -1,0 +1,13 @@
+README.md
+setup.py
+CursoTest/__init__.py
+CursoTest/core.py
+CursoTest_package.egg-info/PKG-INFO
+CursoTest_package.egg-info/SOURCES.txt
+CursoTest_package.egg-info/dependency_links.txt
+CursoTest_package.egg-info/top_level.txt
+cursotest_package.egg-info/PKG-INFO
+cursotest_package.egg-info/SOURCES.txt
+cursotest_package.egg-info/dependency_links.txt
+cursotest_package.egg-info/top_level.txt
+tests/test_core.py

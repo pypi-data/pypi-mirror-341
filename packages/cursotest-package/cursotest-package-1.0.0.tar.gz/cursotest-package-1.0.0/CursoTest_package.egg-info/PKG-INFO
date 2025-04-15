@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: cursotest-package
+Version: 1.0.0
+Summary: Descricao da sua lib CursoTest
+Home-page: https://github.com/igorjanuario/CursoTest
+Author: Igor Januario
+Author-email: igorjanuariod@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# CursoTest
+
+A simple example library.
+
+## Installation
+
+```sh
+pip install CursoTest
+```
+
+## Usage
+
+```python
+from CursoTest import hello_world
+
+print(hello_world())
+```
+
+
