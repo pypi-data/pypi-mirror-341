@@ -1,0 +1,11 @@
+climate_diagnostics/__init__.py,sha256=8IeAwQtMUKHaNUsNBVo7BfQBPyefpIFLTGYGnvOrnCo,2677
+climate_diagnostics/TimeSeries/TimeSeries.py,sha256=xlNOgTvMay0slNhRFYwPHiXhBRs0X5vMdxjPbocst44,33984
+climate_diagnostics/TimeSeries/Trends.py,sha256=NPdy805KDY6z3JwUxdTvFzsHvBKsWjZa3GkVmTPeev8,49678
+climate_diagnostics/TimeSeries/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+climate_diagnostics/plots/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+climate_diagnostics/plots/plot.py,sha256=dCzH2bnxbk3jhKGqvrPJKDZwIz8ZMJmx3AhwzbgQIio,34396
+climate_diagnostics-0.2.0.dist-info/licenses/LICENSE,sha256=vDDczuGKHR8xj65HYgMDF7YTMVSO5efVOPo3QNmXjAg,1083
+climate_diagnostics-0.2.0.dist-info/METADATA,sha256=28MYC1OqMqauRA5me522tCGFS_-VB4I06wUfjML14UQ,8625
+climate_diagnostics-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+climate_diagnostics-0.2.0.dist-info/top_level.txt,sha256=lDLf2g3bjJ3zovDb3rKEkPevLsvcbaHHGVUK9W3f1Ik,20
+climate_diagnostics-0.2.0.dist-info/RECORD,,
