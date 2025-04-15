@@ -1,0 +1,12 @@
+insightproto/proto/common/v1/common_pb2.py,sha256=QWwXE6ZZZtsloxAwkRaGHXgom_bBTJSGHPKRZL_NUhw,1758
+insightproto/proto/common/v1/common_pb2.pyi,sha256=zXlftNqsfEbbCnNafE-O-SYgtvGSrElYAveI8mhg7-I,1487
+insightproto/proto/datasource/v1/logsource_pb2.py,sha256=miBJVJj6dnxSU6Pq1MBGIMGs3eiyRfjfjMObELJzCMA,4519
+insightproto/proto/datasource/v1/logsource_pb2.pyi,sha256=44Tm4uff7EGhUYZL6Rg-AQM5T8OhOqK3jSpexSREWFg,7389
+insightproto/proto/datasource/v1/logsource_pb2_grpc.py,sha256=efWZiuH3RwnR3V2-RWFqixI6lT-wTrXE-KDR15bzeeA,5892
+insightproto/proto/jobs/v1/jobs_pb2.py,sha256=bnMEU9y9LW_buNHqjDFg32hV5AuoVrUahi06T7bI8eQ,3499
+insightproto/proto/jobs/v1/jobs_pb2.pyi,sha256=5R0KGd_JUYHt0c6CoehzEtaQtROiLxkSUpNRj6qHzqE,8143
+insightproto/proto/results/v1/results_pb2.py,sha256=7XMf8BPXWtYQwUlLwfzMniHlYCwx5lcv9P__bYI1eDs,4204
+insightproto/proto/results/v1/results_pb2.pyi,sha256=rUL8KR322INHkTFp_O0VUCbTLokw3oDBL0PJg7Syrd4,10744
+insight_proto-0.0.5.dist-info/METADATA,sha256=-Wi7lc-mMgIlEhaQidYt9djZgd-JPsmCTONz46f8Ckc,1250
+insight_proto-0.0.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+insight_proto-0.0.5.dist-info/RECORD,,
