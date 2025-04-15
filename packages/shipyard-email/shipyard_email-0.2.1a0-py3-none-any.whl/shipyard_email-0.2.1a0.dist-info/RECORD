@@ -1,0 +1,12 @@
+shipyard_email/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shipyard_email/email_client.py,sha256=jRDUqDnoAa5fauZrocP6JPuAWIL3qFxoy6Sk7RGDHNQ,9522
+shipyard_email/exceptions.py,sha256=fwm875T-hNcDKyRbm-kIZI_KIAnfOiDnr4HxsSY1qMQ,3540
+shipyard_email/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shipyard_email/cli/authtest.py,sha256=YW0612zCnketaCSjkPnXY2Kdx3cuVL_nwnqOAMM3Wu0,487
+shipyard_email/cli/send_conditional_email.py,sha256=YoMCmtvVyA-2jfzcBZAP1x04Rneo-J7hnpSJHzDIFYA,5661
+shipyard_email/cli/send_email.py,sha256=EautqM6fbpXzgNA0RsuK4lsCe-RaBdCHFMV_0Ev8U9c,4481
+shipyard_email/cli/send_email_with_file.py,sha256=Hh03CH6dmo5es2C3TlS7z0Giryl8Gdh5xZEI2pmAwBY,5370
+shipyard_email-0.2.1a0.dist-info/METADATA,sha256=7Krjhohhv1jmeg4RmnZrCkio5EZ4MJroRWEGdjYIGq8,275
+shipyard_email-0.2.1a0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+shipyard_email-0.2.1a0.dist-info/top_level.txt,sha256=JetgHfut4gfvid0BtX8OCq9oY5FTkOGQVIbP_L4ZBJw,15
+shipyard_email-0.2.1a0.dist-info/RECORD,,
