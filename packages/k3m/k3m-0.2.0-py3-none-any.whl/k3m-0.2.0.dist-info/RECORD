@@ -1,0 +1,13 @@
+k3m/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+k3m/clusters.py,sha256=paEt0VrUuTAxeL1MVqNLWqity5OaJEo8kfV6GuMGYRw,1073
+k3m/commands.py,sha256=icnd6RH9eR2KGx2z66vuVK42eG9LQxX_ndtDTgb6YX0,25547
+k3m/console.py,sha256=K3uw8AcUb9tLHGo62qU_CoW7T3yf_DGd7FGX-eQE7_8,2789
+k3m/migrate_json_to_db.py,sha256=zSdHPRTRLtNmgrIqQ3-KU9KyZKLPlkRVlcXaSJlaj2M,5102
+k3m/models.py,sha256=41IjWRrcq7zXaLheJZqOasW04G_DZnC1Vd5q5J1i5Qw,7181
+k3m/multipass.py,sha256=kHWP_IVuvqz1x5-uU2pbaWwhY_4QbpFiaNlYyI2Thhg,5923
+k3m/utils.py,sha256=jIAB7V94pmVsuHzab3Lw5avmY7VvykBYL6e5syAmHqc,1751
+k3m-0.2.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+k3m-0.2.0.dist-info/METADATA,sha256=kzZweaXRrvO_oNAm0j5bWmDBBYTFs6q_we49k1zfC2I,1902
+k3m-0.2.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+k3m-0.2.0.dist-info/entry_points.txt,sha256=l2_npdDE3Q_xQkEt7GAOQv2Ivd9I-a58T9ydIhvK2vc,39
+k3m-0.2.0.dist-info/RECORD,,
