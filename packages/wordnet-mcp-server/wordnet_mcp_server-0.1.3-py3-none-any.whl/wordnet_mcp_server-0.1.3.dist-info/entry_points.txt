@@ -1,0 +1,2 @@
+[console_scripts]
+wordnet-mcp = wordnet_mcp_server.app:main
