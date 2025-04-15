@@ -1,0 +1,7 @@
+openai>=1.0.0
+tqdm
+pandas
+python-dotenv
+langchain_community
+langchain
+pypdf
