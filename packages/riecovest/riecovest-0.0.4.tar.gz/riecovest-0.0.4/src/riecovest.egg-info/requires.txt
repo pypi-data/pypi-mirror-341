@@ -1,0 +1,13 @@
+numpy
+scipy
+jax
+pymanopt
+aspcore
+
+[examples]
+pandas
+soundfile
+seaborn
+seaborn_qqplot
+matplotlib
+samplerate

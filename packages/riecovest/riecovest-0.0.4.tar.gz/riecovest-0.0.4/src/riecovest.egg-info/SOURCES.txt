@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/riecovest/__init__.py
+src/riecovest/covariance_estimation.py
+src/riecovest/distance.py
+src/riecovest/matrix_operations.py
+src/riecovest/random_matrices.py
+src/riecovest.egg-info/PKG-INFO
+src/riecovest.egg-info/SOURCES.txt
+src/riecovest.egg-info/dependency_links.txt
+src/riecovest.egg-info/requires.txt
+src/riecovest.egg-info/top_level.txt
+tests/test_distance.py
