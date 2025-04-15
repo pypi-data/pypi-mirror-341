@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+discord_boteasy/__init__.py
+discord_boteasy/all.py
+discord_boteasy/runclient.py
+discord_boteasy/version.py
+discord_boteasy.egg-info/PKG-INFO
+discord_boteasy.egg-info/SOURCES.txt
+discord_boteasy.egg-info/dependency_links.txt
+discord_boteasy.egg-info/top_level.txt

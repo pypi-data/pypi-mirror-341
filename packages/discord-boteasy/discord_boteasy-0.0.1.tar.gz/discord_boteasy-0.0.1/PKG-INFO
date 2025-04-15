@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: discord_boteasy
+Version: 0.0.1
+Summary: Create Discord Bots With Ease
+Author-email: SH_Dev <glock.96.beamed@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Dynamic: requires-python
