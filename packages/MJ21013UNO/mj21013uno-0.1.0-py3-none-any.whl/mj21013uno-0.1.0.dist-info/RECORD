@@ -1,0 +1,13 @@
+lineales/__init__.py,sha256=JdASA-Zo83btO167oJiOotpIPhvGBcSYBLTbTVFbYvI,187
+lineales/cramer.py,sha256=WL7AMEdWnEmjSMg77sK2JTgWtscG8hCw8pM-JfrxivM,772
+lineales/gauss.py,sha256=PHTbVR77qvFub-ddWhELmQ_6fEzpLOUcVphxTzHnRSc,1246
+lineales/gauss_jordan.py,sha256=D2n9CwdrMISuBaurZaYs7pflfjxHC8cTBPUjtwd-ZK0,671
+lineales/gauss_seidel.py,sha256=zfJfQZNpSuYGQv9UOGlnQ1a_JH-rOxGuODgD428iZ44,1033
+lineales/jacobi.py,sha256=jV4VouMZHIi6pHAifuUgUNup2rPbcPVuYYsFZbB5ox4,740
+lineales/lu.py,sha256=OgEvTlRNMCsO4A2zh0vhxNOp-stHlM_X5mXlg51mmaw,1124
+no_lineales/__init__.py,sha256=SFIiU-SUZSH6Vp6oMRlN3NX5GeEUFYFnvNkz7WseqH0,32
+no_lineales/biseccion.py,sha256=l3_c6l_J3Io5UKaLMb_P9irSb4nbJ9I_YhhI0YevB78,410
+mj21013uno-0.1.0.dist-info/METADATA,sha256=DzTrdF2j4S_Muzh7VRXMhRZDGJk4Vumdqv77DSxuqvE,684
+mj21013uno-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mj21013uno-0.1.0.dist-info/top_level.txt,sha256=KkNu7y-htlXy8SjNRTgrcijAIFCfIJF1TTG0hh5JSyY,21
+mj21013uno-0.1.0.dist-info/RECORD,,
