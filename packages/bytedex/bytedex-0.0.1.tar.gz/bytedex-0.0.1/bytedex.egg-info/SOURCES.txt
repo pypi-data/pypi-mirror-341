@@ -1,0 +1,6 @@
+README.md
+setup.py
+bytedex.egg-info/PKG-INFO
+bytedex.egg-info/SOURCES.txt
+bytedex.egg-info/dependency_links.txt
+bytedex.egg-info/top_level.txt
