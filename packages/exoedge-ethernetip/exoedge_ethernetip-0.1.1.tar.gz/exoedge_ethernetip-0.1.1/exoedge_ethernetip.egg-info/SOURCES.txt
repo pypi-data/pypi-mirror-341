@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+exoedge_ethernetip/__init__.py
+exoedge_ethernetip/__version__.py
+exoedge_ethernetip.egg-info/PKG-INFO
+exoedge_ethernetip.egg-info/SOURCES.txt
+exoedge_ethernetip.egg-info/dependency_links.txt
+exoedge_ethernetip.egg-info/requires.txt
+exoedge_ethernetip.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+exoedge
+ifparser
+pycomm3>=0.9.0
