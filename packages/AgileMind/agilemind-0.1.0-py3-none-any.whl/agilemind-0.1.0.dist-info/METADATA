@@ -1,0 +1,185 @@
+Metadata-Version: 2.4
+Name: AgileMind
+Version: 0.1.0
+Summary: A multi-agent software development tool.
+Project-URL: Homepage, https://github.com/wnrock/AgileMind
+Project-URL: Issues, https://github.com/wnrock/AgileMind/issues
+Author: WnRock
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: altair
+Requires-Dist: annotated-types
+Requires-Dist: anyio
+Requires-Dist: astroid
+Requires-Dist: attrs
+Requires-Dist: beautifulsoup4
+Requires-Dist: blinker
+Requires-Dist: cachetools
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: click
+Requires-Dist: contourpy
+Requires-Dist: cycler
+Requires-Dist: dill
+Requires-Dist: distro
+Requires-Dist: esprima
+Requires-Dist: fonttools
+Requires-Dist: gitdb
+Requires-Dist: gitpython
+Requires-Dist: h11
+Requires-Dist: httpcore
+Requires-Dist: httpx
+Requires-Dist: idna
+Requires-Dist: isort
+Requires-Dist: jinja2
+Requires-Dist: jiter
+Requires-Dist: jsonschema
+Requires-Dist: jsonschema-specifications
+Requires-Dist: kiwisolver
+Requires-Dist: markdown-it-py
+Requires-Dist: markupsafe
+Requires-Dist: matplotlib
+Requires-Dist: mccabe
+Requires-Dist: mdurl
+Requires-Dist: mypy
+Requires-Dist: mypy-extensions
+Requires-Dist: narwhals
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: openai
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: pillow
+Requires-Dist: platformdirs
+Requires-Dist: plotly
+Requires-Dist: protobuf
+Requires-Dist: pyarrow
+Requires-Dist: pydantic
+Requires-Dist: pydantic-core
+Requires-Dist: pydeck
+Requires-Dist: pygments
+Requires-Dist: pylint
+Requires-Dist: pyparsing
+Requires-Dist: python-dateutil
+Requires-Dist: python-dotenv
+Requires-Dist: pytz
+Requires-Dist: pyyaml
+Requires-Dist: rdflib
+Requires-Dist: readchar
+Requires-Dist: referencing
+Requires-Dist: regex
+Requires-Dist: requests
+Requires-Dist: rich
+Requires-Dist: rpds-py
+Requires-Dist: six
+Requires-Dist: smmap
+Requires-Dist: sniffio
+Requires-Dist: soupsieve
+Requires-Dist: streamlit
+Requires-Dist: streamlit-agraph
+Requires-Dist: tenacity
+Requires-Dist: tiktoken
+Requires-Dist: tinycss2
+Requires-Dist: toml
+Requires-Dist: tomlkit
+Requires-Dist: tornado
+Requires-Dist: tqdm
+Requires-Dist: typing-extensions
+Requires-Dist: tzdata
+Requires-Dist: urllib3
+Requires-Dist: watchdog
+Requires-Dist: webencodings
+Description-Content-Type: text/markdown
+
+# Agile Mind
+
+## Overview
+
+Agile Mind is an AI-powered development platform that builds software repositories from natural language descriptions. It uses a LLM-based multi-agent architecture to automate the software development process, from requirements gathering to code generation and documentation.
+
+## Features
+
+- **Multi-Agent Architecture**: Specialized AI agents for different development tasks
+- **Code Generation**: Automated creation of code from requirements or descriptions
+- **Collaborative Development**: Agents can work together to solve complex programming challenges
+- **Documentation**: AI-generated documentation that stays in sync with code
+- **Checking**: Automated code review and static analysis
+
+## Online visualization
+
+Check out the online visualization of AgileMind!
+
+![AgileMindOnline](assets/main_screenshot.png)
+
+![FilesDeveloped](assets/files_screenshot.png)
+
+> Note that the online version does not support human-agent interaction and parallel processing yet. Consider using the command line version for those features.
+
+### Usage
+
+```bash
+git clone https://github.com/wnrock/AgileMind.git
+cd AgileMind
+
+pip install -r requirements.txt
+
+streamlit run web.py
+```
+
+## Quick Start
+
+### Set Up Environment Variables
+
+#### 1. Use `.env` file
+
+```bash
+cp .env.template .env
+# Then replace the placeholder values with actual credentials
+```
+
+#### 2. Set environment variables manually
+
+```bash
+export OPENAI_API_KEY="<Your_API_key>"
+export OPENAI_BASE_URL="<Your_OpenAI_API_base_url>" # Optional
+```
+
+#### 3. Pass as command-line arguments
+
+Currently only supported for Docker. Check the Docker section below.
+
+### Get Started
+
+#### 1. From PyPI
+
+```bash
+pip install AgileMind
+
+agilemind "Create a 2048 game with UI" -o output
+```
+
+#### 2. Docker
+
+```bash
+docker run -it                                      \
+    -e OPENAI_API_KEY="<Your_API_key>"              \
+    -e OPENAI_BASE_URL="<Your_OpenAI_API_base_url>" \
+    -v <Your_output_dir>:/agilemind/output          \
+    ghcr.io/wnrock/agilemind:latest                 \
+    "Create a 2048 game with UI"                    \
+    -o output
+```
+
+#### 3. From source
+
+```bash
+git clone https://github.com/wnrock/AgileMind.git
+cd AgileMind
+
+pip install -r requirements.txt
+
+python app.py "Create a 2048 game with UI" -o output
+```
