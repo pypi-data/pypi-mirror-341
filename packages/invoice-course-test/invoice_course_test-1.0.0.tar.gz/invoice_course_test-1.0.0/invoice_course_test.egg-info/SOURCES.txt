@@ -1,0 +1,8 @@
+setup.py
+invoice_course_test.egg-info/PKG-INFO
+invoice_course_test.egg-info/SOURCES.txt
+invoice_course_test.egg-info/dependency_links.txt
+invoice_course_test.egg-info/requires.txt
+invoice_course_test.egg-info/top_level.txt
+invoicing/__init__.py
+invoicing/invoice.py
