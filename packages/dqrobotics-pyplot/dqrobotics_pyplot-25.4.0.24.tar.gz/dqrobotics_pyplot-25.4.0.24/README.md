@@ -1,0 +1,58 @@
+# Quickstart: `pyplot` extensions to `dqrobotics`
+
+
+https://github.com/user-attachments/assets/e1017920-3f23-4211-8a90-34019ba6a079
+
+
+## Issues
+
+[https://github.com/MarinhoLab/dqrobotics-pyplot/issues](https://github.com/MarinhoLab/dqrobotics-pyplot/issues)
+
+## Documentation
+
+[https://marinholab.github.io/dqrobotics-pyplot/](https://marinholab.github.io/dqrobotics-pyplot/)
+
+## Installation
+
+```Console
+python3 -m pip install dqrobotics-pyplot
+```
+
+## Import
+
+```python
+from dqrobotics import *
+from matplotlib import pyplot as plt
+# Adding the prefix `dqp` to help users differentiate from `plt`
+import dqrobotics_extensions.pyplot as dqp
+```
+
+## Usage examples
+
+### Basic functionalities
+
+See the script in
+
+```Console
+src/dqrobotics_extensions/pyplot/example.py
+```
+
+or alternatively the installed version
+
+```Console
+dqrobotics_pyplot_example
+```
+
+### Animations
+
+See
+
+```Console
+src/dqrobotics_extensions/pyplot/example_animations.py
+```
+
+or alternatively the installed version
+
+```Console
+dqrobotics_pyplot_example_animation
+```
