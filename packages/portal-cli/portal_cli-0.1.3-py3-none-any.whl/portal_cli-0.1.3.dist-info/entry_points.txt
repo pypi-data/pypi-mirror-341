@@ -1,0 +1,2 @@
+[console_scripts]
+portal-cli = main_cli:cli
