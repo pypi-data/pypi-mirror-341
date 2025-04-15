@@ -1,0 +1,11 @@
+Iris/__init__.py,sha256=_xEzdTaAbexyZVhZOACgZ9bYy3XgA-rWHT0Tvhno7tY,165
+Iris/__init__.pyi,sha256=eTZgtF1cr9br6ZNfpti4DVpjsbo1qaINFYhU-EhAomc,5572
+Iris/Codec.pyi,sha256=AnaeqEeGaQ44gKYEkgYNGNe1FhT3tpkOGFu7BQ3Cfjo,4897
+Iris/Encoder/__init__.py,sha256=Nadx1J9mQTwS0fG2ftBFrwSamVWiC9ft3ySp3KH2RSM,3299
+Iris/Encoder/Encoder.cp311-win_amd64.pyd,sha256=bBEefkGNSfQjOLGDLvqRfO_6tlv86QIXkpvpgKcJ8z8,14980608
+Iris/Encoder/Encoder.pyi,sha256=N_M8QQXIIOzYag_GSabJtyM8v1GdL11B15Y-0fnvLxg,1158
+Iris/Iris.cp311-win_amd64.pyd,sha256=-RxRdooSOUQJSVNbFbFNhqE3OyGUqtpj0AWabowe5gY,14730240
+iris_codec-2025.1.0a3.dist-info/METADATA,sha256=2u75PTDmMmJMCW1aCS69hcekGtZet3z6CRewJDEWbeQ,47952
+iris_codec-2025.1.0a3.dist-info/WHEEL,sha256=xGZmaOXqwLlhmjR8ikRHIC1Wm-k3ULVrL-oi9GC-Mmc,106
+iris_codec-2025.1.0a3.dist-info/licenses/LICENSE,sha256=7yN2ud0YuCvDCKwDBZnuIi7bcLYEB3CS3n4HWqSXyZs,28211
+iris_codec-2025.1.0a3.dist-info/RECORD,,
