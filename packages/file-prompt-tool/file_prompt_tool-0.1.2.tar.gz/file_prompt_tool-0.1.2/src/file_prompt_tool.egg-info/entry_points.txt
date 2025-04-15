@@ -1,0 +1,2 @@
+[console_scripts]
+file-prompt = file_prompt_cli.cli.cli:app

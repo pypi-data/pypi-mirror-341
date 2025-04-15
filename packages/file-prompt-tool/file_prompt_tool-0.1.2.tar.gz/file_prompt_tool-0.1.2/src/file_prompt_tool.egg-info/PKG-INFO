@@ -1,0 +1,130 @@
+Metadata-Version: 2.4
+Name: file-prompt-tool
+Version: 0.1.2
+Summary: A CLI tool for dispatching file processing jobs to GCP Pub/Sub and listening for results
+Author-email: Brian Legarth <legarth7@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/legarth7/file_prompt_tool
+Project-URL: Bug-Tracker, https://github.com/legarth7/file_prompt_tool/issues
+Project-URL: Source, https://github.com/legarth7/file_prompt_tool
+Project-URL: Documentation, https://github.com/legarth7/file_prompt_tool#readme
+Keywords: gcp,gemini,llm,cli,file-processing,pubsub
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-cloud-storage>=2.0.0
+Requires-Dist: google-cloud-pubsub>=2.0.0
+Requires-Dist: google-cloud-secret-manager>=2.0.0
+Requires-Dist: python-dotenv>=0.19.0
+Requires-Dist: typer>=0.9.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: pathlib>=1.0.1
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.0.0; extra == "dev"
+Requires-Dist: black>=23.7.0; extra == "dev"
+Requires-Dist: isort>=5.12.0; extra == "dev"
+Requires-Dist: flake8>=6.1.0; extra == "dev"
+Requires-Dist: mypy>=1.5.0; extra == "dev"
+Dynamic: license-file
+
+# File Prompt CLI
+
+A CLI tool for dispatching files to GCP Pub/Sub and listening for results.
+
+## Installation
+
+```bash
+pip install file-prompt-tool
+```
+
+## Usage
+
+The CLI tool provides a single command to dispatch files to GCP Pub/Sub and listen for results:
+
+```bash
+file-prompt "*.txt" \
+  --prompt "Summarize this text" \
+  --project-id "your-project-id" \
+  --bucket "your-bucket-name" \
+  --topic "your-topic-name" \
+  --subscription "your-subscription-name"
+```
+
+### Arguments
+
+- `files`: File paths or glob patterns to process (required)
+- `--prompt`, `-p`: Prompt to use for processing (required)
+- `--project-id`: GCP project ID (required)
+- `--bucket`: GCS bucket name (required)
+- `--topic`: Pub/Sub topic name (required)
+- `--subscription`: Pub/Sub subscription name (required)
+- `--timeout`, `-t`: Timeout in seconds for processing each file (default: 300)
+- `--verbose`, `-v`: Enable verbose output (default: false)
+
+### Example
+
+```bash
+# Process all text files in the current directory
+file-prompt "*.txt" \
+  --prompt "Summarize this text" \
+  --project-id "my-project" \
+  --bucket "my-bucket" \
+  --topic "file-processing" \
+  --subscription "file-results"
+
+# Process specific files with verbose output
+file-prompt file1.txt file2.txt \
+  --prompt "Analyze this document" \
+  --project-id "my-project" \
+  --bucket "my-bucket" \
+  --topic "file-processing" \
+  --subscription "file-results" \
+  --verbose
+```
+
+## Development
+
+### Setup
+
+1. Clone the repository
+2. Install development dependencies:
+   ```bash
+   pip install -e ".[dev]"
+   ```
+
+### Running Tests
+
+```bash
+pytest
+```
+
+### Code Style
+
+The project uses:
+- Black for code formatting
+- isort for import sorting
+- flake8 for linting
+- mypy for type checking
+
+Run all checks:
+```bash
+black .
+isort .
+flake8
+mypy .
+```
+
+## License
+
+MIT
