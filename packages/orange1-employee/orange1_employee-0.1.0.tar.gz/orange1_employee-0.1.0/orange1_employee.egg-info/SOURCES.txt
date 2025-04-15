@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+orange1_employee.egg-info/PKG-INFO
+orange1_employee.egg-info/SOURCES.txt
+orange1_employee.egg-info/dependency_links.txt
+orange1_employee.egg-info/requires.txt
+orange1_employee.egg-info/top_level.txt
