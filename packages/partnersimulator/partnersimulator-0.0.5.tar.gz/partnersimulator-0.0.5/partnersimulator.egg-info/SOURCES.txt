@@ -1,0 +1,9 @@
+setup.py
+partnersimulator/__init__.py
+partnersimulator/bomb.py
+partnersimulator/partnerconstructor.py
+partnersimulator.egg-info/PKG-INFO
+partnersimulator.egg-info/SOURCES.txt
+partnersimulator.egg-info/dependency_links.txt
+partnersimulator.egg-info/requires.txt
+partnersimulator.egg-info/top_level.txt
