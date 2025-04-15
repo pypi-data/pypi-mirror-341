@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: OpenGround-SDK
+Version: 0.0.11
+Summary: OpenGround SDK
+Home-page: https://github.com/BentleySystems/OpenGround-SDK-Python
+Author: Bentley Systems Ltd
+Author-email: support@bentley.com
+Project-URL: Bug Tracker, https://github.com/BentleySystems/OpenGround-SDK-Python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# OpenGround-SDK-Python
