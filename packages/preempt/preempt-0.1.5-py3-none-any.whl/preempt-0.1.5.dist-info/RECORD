@@ -1,0 +1,6 @@
+preempt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+preempt/names_dataset.json,sha256=zqeEwRg3iqqOZGodPIXNnkHfsLb7Rh-Nhhet-2Wyxn0,94859
+preempt/utils.py,sha256=l8fvc0LC47dHesycPq9DceKHdaTOde7ZC5zN1-_j8v0,36045
+preempt-0.1.5.dist-info/METADATA,sha256=ufMvU6x-oR53WbC8BEJru9eS0bYY7sCQXGyJJrfdOQs,8349
+preempt-0.1.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+preempt-0.1.5.dist-info/RECORD,,
