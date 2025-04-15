@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: keylex
+Version: 0.0.1
+Summary: A modular library for keyword matching and extraction.
+Author-email: Konstantinos Giannopoulos <giannopoulosk.data@gmail.com>
+License: Apache License 2.0
+Requires-Python: <3.13,>=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: RapidFuzz==3.13.0
+Provides-Extra: dev
+Requires-Dist: pytest<7.0.0,>=6.2.5; extra == "dev"
+Requires-Dist: ruff<0.12.0,>=0.11.4; extra == "dev"
+Requires-Dist: mypy<0.920,>=0.910; extra == "dev"
+Dynamic: license-file
+
+# Keylex
+
+Keylex is a Python library designed for efficient and flexible keyword extraction and matching. It supports various techniques, from basic exact matching to advanced fuzzy matching, with options for industry-specific and domain-tailored use cases. The library provides extensibility through custom matchers and extractors, making it an excellent choice for NLP applications like news article analysis, content classification, and keyword detection.
+
+## Features
+
+- **Multiple Matching Strategies**: Includes exact match, case-insensitive match, fuzzy match, regex match, and more.
+- **NER Integration**: Leverages Named Entity Recognition (NER) for extracting entities from text.
+- **Fuzzy Matching**: Incorporates fuzzy matching using techniques like Levenshtein distance.
+- **Extensible**: Easily extendable with custom matchers and extractors.
+- **Industry-Specific**: Tailored options for processing news articles and other text-heavy domains.
+- **Simple API**: Easy to integrate with your existing projects.
+
+## Installation
+
+To install Keylex, use **Poetry** to manage your dependencies. If you don’t have Poetry installed, follow the instructions [here](https://python-poetry.org/docs/#installation).
+
+### Using Poetry:
+
+```bash
+poetry add keylex
+```

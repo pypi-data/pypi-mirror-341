@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+keylex/__init__.py
+keylex.egg-info/PKG-INFO
+keylex.egg-info/SOURCES.txt
+keylex.egg-info/dependency_links.txt
+keylex.egg-info/requires.txt
+keylex.egg-info/top_level.txt
+tests/test_base.py
+tests/test_exact_matcher.py
+tests/test_keyword.py
+tests/test_keyword_list.py
