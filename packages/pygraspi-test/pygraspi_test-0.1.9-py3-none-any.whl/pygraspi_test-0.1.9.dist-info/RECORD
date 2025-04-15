@@ -1,0 +1,10 @@
+pygraspi_test-0.1.9.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+src/pygraspi_test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/pygraspi_test/helloWorld/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/pygraspi_test/helloWorld/helloWorld.py,sha256=W9HrCTys7cViCuU6KXeJBQsvw8QRkrDgp6rhraBDwqA,63
+src/pygraspi_test/operations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/pygraspi_test/operations/add.py,sha256=pbv9o4V8JrGhip95ipHh0o5s1B3LH90QT9E4OLZHS7c,38
+pygraspi_test-0.1.9.dist-info/METADATA,sha256=oOszH1JnAsIaTLhp3oEiA4NGXZ_giEgU2mR3lXCU7f0,1007
+pygraspi_test-0.1.9.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pygraspi_test-0.1.9.dist-info/top_level.txt,sha256=ApXtdpxHlR3c9nDsDP6pRewekgF0XDIn41Nu3sC9EWM,15
+pygraspi_test-0.1.9.dist-info/RECORD,,
