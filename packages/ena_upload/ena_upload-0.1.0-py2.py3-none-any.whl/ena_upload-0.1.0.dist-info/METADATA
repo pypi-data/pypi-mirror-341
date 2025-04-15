@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ena_upload
+Version: 0.1.0
+Summary: A library for uploading fastq data to the 
+Author-email: Jody Phelan <jody.phelan@lshtm.ac.uk>
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: toml
+Requires-Dist: fastq_files
+Requires-Dist: openpyxl
+Requires-Dist: tqdm

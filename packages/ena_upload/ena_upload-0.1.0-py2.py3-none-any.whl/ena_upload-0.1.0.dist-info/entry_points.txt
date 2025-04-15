@@ -1,0 +1,3 @@
+[console_scripts]
+ena-upload=ena_upload:cli
+
