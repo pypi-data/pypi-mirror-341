@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+spotify_playlist_tool/__init__.py
+spotify_playlist_tool/__main__.py
+spotify_playlist_tool/tool.py
+spotify_playlist_tool.egg-info/PKG-INFO
+spotify_playlist_tool.egg-info/SOURCES.txt
+spotify_playlist_tool.egg-info/dependency_links.txt
+spotify_playlist_tool.egg-info/entry_points.txt
+spotify_playlist_tool.egg-info/requires.txt
+spotify_playlist_tool.egg-info/top_level.txt

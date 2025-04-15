@@ -1,0 +1,3 @@
+[console_scripts]
+spotify-tool = spotify_playlist_tool.tool:main
+spotify_playlist_tool = spotify_playlist_tool.tool:main
