@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+fediverse_graphs/__init__.py
+fediverse_graphs/main.py
+fediverse_graphs.egg-info/PKG-INFO
+fediverse_graphs.egg-info/SOURCES.txt
+fediverse_graphs.egg-info/dependency_links.txt
+fediverse_graphs.egg-info/requires.txt
+fediverse_graphs.egg-info/top_level.txt
+tests/__init__.py
+tests/test_loader.py
