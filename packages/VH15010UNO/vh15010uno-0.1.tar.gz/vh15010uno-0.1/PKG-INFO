@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: VH15010UNO
+Version: 0.1
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales
+Author: Ricardo Alfredo Valencia Hernández
+Author-email: vh15010@ues.edu.sv
+License: MIT
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
