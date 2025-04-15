@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: fastq_files
+Version: 0.0.2
+Summary: Package to work with fastq files
+Author-email: Jody Phelan <jody.phelan@lshtm.ac.uk>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# fastq-files
+
