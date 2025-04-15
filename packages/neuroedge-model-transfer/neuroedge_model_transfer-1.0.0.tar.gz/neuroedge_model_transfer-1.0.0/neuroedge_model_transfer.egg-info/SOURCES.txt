@@ -1,0 +1,10 @@
+LICENSE.lic
+README.md
+setup.py
+model_transfer/__init__.py
+model_transfer/neuro_persistence_sdk.py
+neuroedge_model_transfer.egg-info/PKG-INFO
+neuroedge_model_transfer.egg-info/SOURCES.txt
+neuroedge_model_transfer.egg-info/dependency_links.txt
+neuroedge_model_transfer.egg-info/requires.txt
+neuroedge_model_transfer.egg-info/top_level.txt

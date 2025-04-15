@@ -1,0 +1,1 @@
+A package to read a file from a given location and upload it to an S3 bucket
