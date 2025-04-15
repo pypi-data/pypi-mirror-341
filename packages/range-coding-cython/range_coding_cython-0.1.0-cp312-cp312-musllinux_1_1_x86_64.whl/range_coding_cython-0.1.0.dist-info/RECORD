@@ -1,0 +1,9 @@
+range_coding.cpython-312-x86_64-linux-musl.so,sha256=egl5b4QHjT1rC09e3WASgtuM9e3eouB-OjZRiESfVZ0,1817640
+src/range_coding_cython/range_coding.py,sha256=9lPlCup1djp7894EHQV0JH8YjxaMrLSKdo5q_lJERug,5575
+src/range_coding_cython/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/range_coding_cython/__init__.py,sha256=zv-JhNyrivlJ2XSHVJoWUMbUz3wMLJgU58vq-lZIZKU,100
+range_coding_cython-0.1.0.dist-info/WHEEL,sha256=7n2sOrZFPc1mbj_qaw4peOqK7LdzzXrO6OcWxQKDsvs,112
+range_coding_cython-0.1.0.dist-info/RECORD,,
+range_coding_cython-0.1.0.dist-info/top_level.txt,sha256=CMNAmtof3KosN3i2F3h-h7clyxp413fthtqbEJ3REoI,17
+range_coding_cython-0.1.0.dist-info/METADATA,sha256=kX_zlwtPZpnRTxMCcuyaL7soSEatF8t8DMPvMLbM7oM,1461
+range_coding_cython-0.1.0.dist-info/licenses/LICENSE,sha256=XuEJHq5kdVN7bBq6fyI7lpFG2kGYYSgf_VQMP7jq1RE,1068
