@@ -1,0 +1,8 @@
+pyproject.toml
+pystrand/__init__.py
+pystrand/base.py
+pystrand/client.py
+pystrands.egg-info/PKG-INFO
+pystrands.egg-info/SOURCES.txt
+pystrands.egg-info/dependency_links.txt
+pystrands.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: pystrands
+Version: 0.1.0
+Summary: A lightweight, framework-agnostic real-time library.
+Author-email: Diwakar <diwakarrankawat@gmail.com>
+License-Expression: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
