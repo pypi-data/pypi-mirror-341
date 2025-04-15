@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: llama-index-storage-chat-store-sqlite
+Version: 0.1.0
+Summary: llama-index storage-chat-store sqlite integration
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiosqlite (>=0.21.0,<0.22.0)
+Requires-Dist: llama-index-core (>=0.12.0,<0.13.0)
+Description-Content-Type: text/markdown
+
+# LlamaIndex Chat_Store Integration: SQLite Chat Store
+
+## Installation
+
+`pip install llama-index-storage-chat-store-sqlite`
+
+## Usage
+
+Using `SQLiteChatStore`, you can store your chat history remotely, without having to worry about manually persisting and loading the chat history.
+
+```python
+from llama_index.storage.chat_store.sqlite import SQLiteChatStore
+from llama_index.core.memory import ChatMemoryBuffer
+
+chat_store = SQLiteChatStore.from_uri(
+    uri="sqlite+aiosqlite:///chat_store.db",
+)
+
+chat_memory = ChatMemoryBuffer.from_defaults(
+    token_limit=3000,
+    chat_store=chat_store,
+    chat_store_key="user1",
+)
+```
+
