@@ -1,0 +1,13 @@
+pkapredict/RDkit_descriptors.py,sha256=Cc1uIDhmZ4zc2Najcy9mDm4IKzn3l_JdWLu2H1eXN9I,1284
+pkapredict/__init__.py,sha256=_Yx6XxBs45h_y441NAqO7APqaQXFLBdBOHZ_lyeTQ7s,333
+pkapredict/clean_and_visualize_pka.py,sha256=Wvk5w2cixjAeLa8mVXkFvyMlws2wHB_nP2JswBqQhvQ,1978
+pkapredict/example_descriptors_output.py,sha256=LnlRYTji9HiK0VsJx_z00B3wDspgFYh-zHiIDxT-MiI,962
+pkapredict/example_plot.py,sha256=I0keVIsniVF5dIGXPnnNWGwZp1Lt74210lsSqj4Jz-M,386
+pkapredict/load_model.py,sha256=fohN5HVhFd4Xg0zmsAGtT0-sUPpcyqbI3O1JYdkxQfU,613
+pkapredict/plot_data.py,sha256=bKLUnrnQeprMnyzPULYd55rEjxYdDK0-2P5_y5wJS6Y,1751
+pkapredict/predict_pKa.py,sha256=swNxvvNcR3EG6I64-_JBHMJ_3XZaQP88sukWg_KQChg,3198
+pkapredict/smiles_to_rdkit_descriptors.py,sha256=P-tbAL6_5yigqHrIa63v_JV5zOQAXICy0KzD7eD3tSc,739
+pkapredict-0.1.1.dist-info/METADATA,sha256=_BmOcv2szkx9D7XEPR8emZhr0ETK0WNZKh9UYRu_Vwk,5136
+pkapredict-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pkapredict-0.1.1.dist-info/licenses/LICENSE,sha256=XIUE2BYpxSdhrCW_tJ_VwqYxqIZA5ZCYwEZJfMCDSV0,1126
+pkapredict-0.1.1.dist-info/RECORD,,
