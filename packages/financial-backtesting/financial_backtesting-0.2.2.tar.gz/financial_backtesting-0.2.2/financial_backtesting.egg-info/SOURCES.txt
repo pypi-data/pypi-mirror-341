@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+backtesting/__init__.py
+backtesting/backtesting.py
+backtesting/order_class.py
+backtesting/positions.py
+financial_backtesting.egg-info/PKG-INFO
+financial_backtesting.egg-info/SOURCES.txt
+financial_backtesting.egg-info/dependency_links.txt
+financial_backtesting.egg-info/requires.txt
+financial_backtesting.egg-info/top_level.txt
