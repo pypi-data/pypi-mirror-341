@@ -1,0 +1,13 @@
+ocean4dvarnet/__init__.py,sha256=4ri2zgtqA4Ab-tkCJrldL0_a_gj7gG5KkRPU-V_0hFQ,1209
+ocean4dvarnet/data.py,sha256=DfR3Fd3kTxVcuFBsQjtLebiqQ6zMxyVn7Rn7uAavF4E,20403
+ocean4dvarnet/evaluate.py,sha256=YnOack7HPWxlliGYeZi7KWeJv5RA2JMAiBXL-3_GsKM,243
+ocean4dvarnet/models.py,sha256=ljt3xFsFj06k4db8L0q4k21vKn-BemfNWUQzTvxPxoU,18156
+ocean4dvarnet/plot.py,sha256=3u_Ptm_CeWEfh66YehgrGdUVYoIBDCANGUC8yDbw4rw,301
+ocean4dvarnet/process.py,sha256=CXnuEVd4sVZp4wv0RynJvFzCZfd-PBs-6KCm00j9Wis,289
+ocean4dvarnet/train.py,sha256=y0iSxlvBrwLSjBMem7rcDudmQOman2WZ-56DWKOk1hk,2525
+ocean4dvarnet/utils.py,sha256=RoAq1sp9me2dsaNGIJoslowq2tpd3e5le-vwwhpd_b4,22847
+ocean4dvarnet-1.0.3.dist-info/licenses/LICENSE,sha256=V-28WkHcDcfa5063ryx-DWtwE1WdI0MQut689ySa144,22158
+ocean4dvarnet-1.0.3.dist-info/METADATA,sha256=kTpZNtCFL8eqaBD_FJZDUbY5uyT6R2N_Lff8zpYNrZM,5218
+ocean4dvarnet-1.0.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ocean4dvarnet-1.0.3.dist-info/top_level.txt,sha256=ChqWi6M_M5Pvt9UmfF72AtewNi2aBwFFMkRzu8Vkqlw,14
+ocean4dvarnet-1.0.3.dist-info/RECORD,,
