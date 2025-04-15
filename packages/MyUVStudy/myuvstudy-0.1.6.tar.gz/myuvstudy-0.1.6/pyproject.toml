@@ -1,0 +1,22 @@
+[project]
+#name = "my-mcp-gaodeweather-server"
+name = "MyUVStudy"
+version = "0.1.6"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "解大劦", email = "9727005@qq.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+[project.scripts]
+myuvstudy-server = "MyUvStudy:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
