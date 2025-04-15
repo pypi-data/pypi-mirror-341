@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/freqtrade_bots_storage/__init__.py
+src/freqtrade_bots_storage.egg-info/PKG-INFO
+src/freqtrade_bots_storage.egg-info/SOURCES.txt
+src/freqtrade_bots_storage.egg-info/dependency_links.txt
+src/freqtrade_bots_storage.egg-info/top_level.txt
+src/freqtrade_bots_storage/models/__init__.py
+src/freqtrade_bots_storage/models/bot_state.py
+src/freqtrade_bots_storage/protocol/__init__.py
+src/freqtrade_bots_storage/protocol/protocol.py
+src/freqtrade_bots_storage/storages/__init__.py
+src/freqtrade_bots_storage/storages/file_storage/__init__.py
+src/freqtrade_bots_storage/storages/file_storage/file_tradig_bots_storage.py
