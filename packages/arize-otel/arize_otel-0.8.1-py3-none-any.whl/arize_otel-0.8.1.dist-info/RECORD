@@ -1,0 +1,8 @@
+arize/otel/__init__.py,sha256=SeJDFZgl0Yq9DtTU6SwJjacjWrHvb41z4ztOdT-MtCk,469
+arize/otel/otel.py,sha256=7TVoxqeUyGbHznRk_Nko12yL8jYS9POrg2OCuuIYTGQ,25931
+arize/otel/settings.py,sha256=67StNO9zQEdFOk0FqjzVCsyz_nOrQa_V2KzwkIRqL60,631
+arize/otel/version.py,sha256=Ocl79hbbH8_jdr5dGC90VR1cAvZc05Rc0tkZttUnMjo,22
+arize_otel-0.8.1.dist-info/METADATA,sha256=4tpEqYRjLwEqrjbmLNDXrr0Jrwemsgggg9N1wSerj7o,14202
+arize_otel-0.8.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+arize_otel-0.8.1.dist-info/licenses/LICENSE,sha256=GR9YahsyzxcbGwZrgjLB8_w64EQQUFTENKSPHHry4yk,1479
+arize_otel-0.8.1.dist-info/RECORD,,
