@@ -1,0 +1,17 @@
+compendium/__init__.py,sha256=TLEcPi_ImEmyyiKcOgowdSNZBnOCZjxWFvonXqhIGIM,864
+compendium/config_manager.py,sha256=FnP_dQ35XPkB9_-SohgBJw7JY-QVtw-NnM0maOMa5NE,11608
+compendium/exceptions.py,sha256=Je7vIX_L1Hjndt-q376IE_8ztwuSrTNyQdQYZkHucDw,606
+compendium/filepaths.py,sha256=g_TFdfQjmqLqZATu05AiF0jJy-ESyLCoB1S4W8LQLUg,5315
+compendium/loader.py,sha256=Z1bxo2CHY6XdM8NZtCn7r6cebfme2plAq7r7Sx55pDU,5729
+compendium/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compendium/settings.py,sha256=TdUfz_H4df-UOKUH7hKHvpuoZcYTyyHCdydDDTdJdFc,12467
+compendium/filetypes/__init__.py,sha256=Rra8yaLXf4DESEWuiphfv9nth0BV2SinyyENrl3zs4g,715
+compendium/filetypes/ini.py,sha256=R8G8mjHh8C5RXlLhdwCk6UJan62Tohid2KZ3EgEBItI,1927
+compendium/filetypes/json.py,sha256=zzT2RhsvbXgEjB6WACUvcauM1M3Du2KmuDmvJWJovL0,2152
+compendium/filetypes/toml.py,sha256=TuZ5lPMmqsXwifGe2u34bHqYDtl6J-yfwHZ2V31dVyA,2588
+compendium/filetypes/xml.py,sha256=_yBoqAmaIUhdEwojrYNAyyNaGBhPZFylwxEZVp_YCU8,2067
+compendium/filetypes/yaml.py,sha256=QxGG_VV2RHFf1rFsIYNo8kHX7a4BZQDYX14xdBUFzO4,2204
+compendium-0.1.4.dist-info/METADATA,sha256=b2z3Zk-JWHI2bOmgVNAJvq0PosYIny9wMkDSqeF6fUM,19593
+compendium-0.1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+compendium-0.1.4.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+compendium-0.1.4.dist-info/RECORD,,
