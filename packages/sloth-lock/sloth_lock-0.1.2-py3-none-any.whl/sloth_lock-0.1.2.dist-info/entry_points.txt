@@ -1,0 +1,4 @@
+[console_scripts]
+slock-dec = src.cli:decrypt
+slock-enc = src.cli:encrypt
+slock-run = src.run_encrypted:main
