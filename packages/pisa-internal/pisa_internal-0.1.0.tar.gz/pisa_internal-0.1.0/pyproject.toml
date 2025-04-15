@@ -1,0 +1,13 @@
+[project]
+name = "pisa-internal"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "gradio>=5.25.0",
+    "mcp>=1.6.0",
+]
+
+[project.scripts]
+pisa-internal = "pisa_internal.mcp:main"

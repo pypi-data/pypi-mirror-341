@@ -1,0 +1,2 @@
+[console_scripts]
+pisa-internal = pisa_internal.mcp:main
