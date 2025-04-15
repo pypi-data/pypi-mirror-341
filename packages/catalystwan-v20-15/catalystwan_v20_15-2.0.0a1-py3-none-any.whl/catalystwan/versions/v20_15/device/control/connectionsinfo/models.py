@@ -1,0 +1,4 @@
+# Copyright 2024 Cisco Systems, Inc. and its affiliates
+from typing import Literal
+
+PeerTypeParam = Literal["vbond", "vedge", "vmanage", "vsmart"]
