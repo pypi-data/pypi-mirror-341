@@ -1,0 +1,10 @@
+fedfred/__about__.py,sha256=gq_FIxcgb_C9iX0nio46QltlQK9KU16MY7C7aI892KQ,1288
+fedfred/__init__.py,sha256=xbdzorJniO44PkXbxSnLvaoUnCnEiJOagOg006BmOao,1951
+fedfred/clients.py,sha256=ZWzvy8xFr0Fcgr6MSguS1iOhq2I5hWuxT-Ewx8ClvEc,255836
+fedfred/helpers.py,sha256=vp5fb-DNR49Q_ewiytbBpzH_8xPQhTUEcXIe76PYGcw,34588
+fedfred/objects.py,sha256=3HCtDWnm4sXhsG9wAwvHvJxNZrGo6T8OI_ZVaAuedF4,13657
+fedfred/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fedfred-2.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fedfred-2.0.3.dist-info/METADATA,sha256=XYZoYls4BatOnv01MVTbstVHYcGVVJVCn5t4Jhb97ug,8240
+fedfred-2.0.3.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+fedfred-2.0.3.dist-info/RECORD,,
