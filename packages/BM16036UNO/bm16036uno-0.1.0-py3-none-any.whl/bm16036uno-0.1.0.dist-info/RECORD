@@ -1,0 +1,12 @@
+BM16036UNO/__init__.py,sha256=VGtC-uDLHv88xeVgtMy6shHiNtsEBi_UraGvD8ndpZ8,658
+BM16036UNO/biseccion.py,sha256=EFihqt9ZxGfRRe8qJySc8iPatdnjL00HNrkq9F466aw,1974
+BM16036UNO/cramer.py,sha256=XoRXvBHfjkEJAQVVaWukQyVsk2VTghWEvrLVYOpcoUw,1616
+BM16036UNO/descomposicion_lu.py,sha256=-q8s47dQwoOerDSI9NbLhAY8r13L54ZE-YqwjDkUnY8,1321
+BM16036UNO/eliminacion_gaussiana.py,sha256=atj5LH1rK4byDzu6qq1VTWW5FoMc_LXuNtMeBDgCPYA,2664
+BM16036UNO/gauss_jordan.py,sha256=JDDsZXGUP7Ca6HHLbH7BcV8QLsYZype2IKvx9BLn9-A,2291
+BM16036UNO/gauss_seidel.py,sha256=Cp5hi4lxyWeIcMiY1be0b6qKxHchvL50XDJDjHtMOqg,1746
+BM16036UNO/jacobi.py,sha256=_zRkhPgEB3GqsZzBAyBGFORQgGhqcN8DFXm6-0GKC3E,1817
+bm16036uno-0.1.0.dist-info/METADATA,sha256=sbpLTEG_zZ60gBBFA_TjRSChOAES2o60jYw_2W_FmEY,1492
+bm16036uno-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+bm16036uno-0.1.0.dist-info/top_level.txt,sha256=kjYXr8JF6E1Ow-p_uz1q2Ftr4yepd4U39LCiM36MsXU,11
+bm16036uno-0.1.0.dist-info/RECORD,,
