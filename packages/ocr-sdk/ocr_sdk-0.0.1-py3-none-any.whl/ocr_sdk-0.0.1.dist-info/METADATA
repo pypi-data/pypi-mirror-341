@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: ocr_sdk
+Version: 0.0.1
+Author: tianyishen
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-python
+
+# ocr-sdk
+
+`ocr-sdk` 是一个简易的OCR工具包，提供轻量化的OCR功能和字符识别功能。
