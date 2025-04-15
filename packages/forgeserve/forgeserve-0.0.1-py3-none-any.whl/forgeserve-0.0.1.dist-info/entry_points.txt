@@ -1,0 +1,2 @@
+[console_scripts]
+forgeserve = forgeserve.cli.main:app
