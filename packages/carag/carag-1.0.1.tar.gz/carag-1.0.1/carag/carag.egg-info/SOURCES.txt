@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+carag/carag.egg-info/PKG-INFO
+carag/carag.egg-info/SOURCES.txt
+carag/carag.egg-info/dependency_links.txt
+carag/carag.egg-info/top_level.txt
