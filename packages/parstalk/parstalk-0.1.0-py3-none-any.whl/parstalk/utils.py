@@ -1,0 +1,3 @@
+def clean_text(text: str) -> str:
+    # برای نسخه‌های بعدی: حذف نویز، علائم اضافی و...
+    return text.strip()
