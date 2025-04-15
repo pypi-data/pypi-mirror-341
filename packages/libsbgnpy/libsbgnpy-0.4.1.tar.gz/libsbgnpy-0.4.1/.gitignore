@@ -1,0 +1,26 @@
+*.pyc
+*~
+dist/
+libsbgn.egg-info/
+libsbgnpy.egg-info/
+.Rhistory
+.project
+.pydevproject
+.settings/
+.metadata
+.idea
+# coverage information
+.coverage
+htmlcov/
+libsbgnpy/examples/sbgn/test-output.sbgn
+libsbgnpy/examples/sbgn/test-output-annotation.sbgn
+coverage.xml
+build/
+
+.cache
+.tox
+
+# documentation
+.ipynb_checkpoints
+_site
+site
