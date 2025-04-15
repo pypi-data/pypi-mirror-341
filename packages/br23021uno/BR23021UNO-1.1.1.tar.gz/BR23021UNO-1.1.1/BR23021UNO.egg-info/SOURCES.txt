@@ -1,0 +1,15 @@
+README.md
+setup.py
+BR23021UNO/__init__.py
+BR23021UNO/biseccion.py
+BR23021UNO/crammer.py
+BR23021UNO/descomposicion_lu.py
+BR23021UNO/eliminacion_gauss.py
+BR23021UNO/gauss_jordan.py
+BR23021UNO/gauss_seidel.py
+BR23021UNO/jacobi.py
+BR23021UNO.egg-info/PKG-INFO
+BR23021UNO.egg-info/SOURCES.txt
+BR23021UNO.egg-info/dependency_links.txt
+BR23021UNO.egg-info/requires.txt
+BR23021UNO.egg-info/top_level.txt
