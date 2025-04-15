@@ -1,0 +1,11 @@
+data_simulator/__init__.py,sha256=2qk_JCkaJzvAR5hE7YStY-DT2_AXCPcguvt_Hrbgxik,36
+data_simulator/document_processor.py,sha256=AGFHepTiruhzGevMOzhIgQc7AzUKUqPKDe-cF5AVAsA,2276
+data_simulator/llm.py,sha256=RmkgMXAIS-FoqHueK0MouPO_iMjRUGYJqHRQEGCka5c,5196
+data_simulator/prompts.py,sha256=wkugVevj4NOKgHeJCqBsFd9jxdS_srYKvepXq6Bftxo,2197
+data_simulator/simulator.py,sha256=KDvO7TXXujb2289piQ3cDKC1-nP6yXLD9hXVhCt3tfc,7920
+data_simulator/utils.py,sha256=27qYzT8soo2gARhl5_v9cGQXT2ZaFKp7to8WTTS2fbA,890
+llm_data_simulator-0.1.0.dist-info/licenses/LICENSE,sha256=UR7obTL30OYygTfDvzqCGc1XoHG-c2O3qVSKytJeLu8,1066
+llm_data_simulator-0.1.0.dist-info/METADATA,sha256=ZBsJwbw0GnJ3DC5WjnIGQuDcFIKzLZmUZ6x6jwWRFSU,3548
+llm_data_simulator-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+llm_data_simulator-0.1.0.dist-info/top_level.txt,sha256=gJY1_TUhRQKvrpIWj3NCr25c3-32TOhZXEBTXw7akTk,15
+llm_data_simulator-0.1.0.dist-info/RECORD,,
