@@ -1,0 +1,11 @@
+pidgeotto-0.0.9.dist-info/licenses/LICENSE,sha256=X_qOp7ideqI0S9VHoVgRcdqCur7m9BaWMS4PDMAkFGM,1094
+pidgey/__init__.py,sha256=drZVsHq4jHeIdiIIXIil0ZL-Y0SEteo2hrqxxgVsaF0,985
+pidgey/builder.py,sha256=mUZuxu1DUf4rXQ4Vauwuq4Q2R3TQtQiaf022K-gkwko,7126
+pidgey/creator.py,sha256=OxWPt8DEXSDX4Nq6-8TDO93yNoFsKdBCtx0XdfAL3HU,10124
+pidgey/pidgey.py,sha256=Ve9MjuDxeDug2D7QxrHKCqlivzzcvkp-uENg3NlakyU,4750
+pidgey/server.py,sha256=GmhE_HzVv6c8WjLJeabYYYexJ7kAZ-jAuwhWwQsPG7o,3511
+pidgeotto-0.0.9.dist-info/METADATA,sha256=I4tlNTLTGASLlqyrmnQMfPfufcWRS0240-cbhllQjFA,4266
+pidgeotto-0.0.9.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pidgeotto-0.0.9.dist-info/entry_points.txt,sha256=sIGAhATe0lEKihhNDuuWh1GtYD7x_tRZW49ONwUBxIw,46
+pidgeotto-0.0.9.dist-info/top_level.txt,sha256=34vAlgK4TRPuq0Z3reCpfe0M0G37w-ID1kGlenhiNKo,7
+pidgeotto-0.0.9.dist-info/RECORD,,
