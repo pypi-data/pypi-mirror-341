@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+src/__init__.py
+src/core.py
+src/python_hash.egg-info/PKG-INFO
+src/python_hash.egg-info/SOURCES.txt
+src/python_hash.egg-info/dependency_links.txt
+src/python_hash.egg-info/requires.txt
+src/python_hash.egg-info/top_level.txt
+tests/test_core.py

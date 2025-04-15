@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: python-hash
+Version: 0.1.0
+Summary: A Python package for password hashing and comparision using bcrypt
+Author-email: Humaun Kabir <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/ihumaunkabir/python-hash
+Project-URL: Bug Tracker, https://github.com/ihumaunkabir/python-hash/issues
+Keywords: bcrypt,security,password,text,hashing
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Security :: Cryptography
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: bcrypt>=4.0.0
