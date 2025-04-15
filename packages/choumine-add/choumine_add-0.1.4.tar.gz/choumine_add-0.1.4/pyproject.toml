@@ -1,0 +1,12 @@
+[project]
+name = "choumine-add"
+version = "0.1.4"
+description = "choumine-add project description"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+]
+
+[project.scripts]
+choumine-add = "main:main"
