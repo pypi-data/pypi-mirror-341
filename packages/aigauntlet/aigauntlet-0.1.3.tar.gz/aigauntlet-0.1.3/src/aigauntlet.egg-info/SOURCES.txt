@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/BiasedEvaluatorTrial.py
+src/QuickDemoTrial.py
+src/SelfHarmTrial.py
+src/StereotypeTrial.py
+src/__init__.py
+src/_utils.py
+src/registry.py
+src/aigauntlet.egg-info/PKG-INFO
+src/aigauntlet.egg-info/SOURCES.txt
+src/aigauntlet.egg-info/dependency_links.txt
+src/aigauntlet.egg-info/requires.txt
+src/aigauntlet.egg-info/top_level.txt
+tests/test_dummy.py
