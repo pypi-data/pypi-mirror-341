@@ -1,0 +1,40 @@
+Metadata-Version: 2.2
+Name: dsproject
+Version: 0.1.0
+Summary: A Data Science project for model training and data exploration
+Home-page: https://github.com/yourusername/dsproject
+Author: ATS
+Author-email: arumugatamilselvan@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: flask
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# dsproject
+
+A reusable Data Science project template with best practices in structure, logging, modular code, and Jupyter integration.
+
+## Features
+- Modular codebase
+- Auto EDA
+- Model training
+- Plug-n-play CSV/Excel/SQL data
+- Ready for deployment or experimentation
+
+## Installation
+```bash
+pip install -e .

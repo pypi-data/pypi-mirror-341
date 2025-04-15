@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+dsproject/__init__.py
+dsproject/config.py
+dsproject/dataloader.py
+dsproject/eda.py
+dsproject/model.py
+dsproject/utils.py
+dsproject.egg-info/PKG-INFO
+dsproject.egg-info/SOURCES.txt
+dsproject.egg-info/dependency_links.txt
+dsproject.egg-info/entry_points.txt
+dsproject.egg-info/requires.txt
+dsproject.egg-info/top_level.txt
+tests/test_loader.py
