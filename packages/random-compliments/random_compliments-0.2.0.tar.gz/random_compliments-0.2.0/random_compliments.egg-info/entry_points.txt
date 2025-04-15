@@ -1,0 +1,2 @@
+[console_scripts]
+boaz-compliment = random_compliments.cli:main
