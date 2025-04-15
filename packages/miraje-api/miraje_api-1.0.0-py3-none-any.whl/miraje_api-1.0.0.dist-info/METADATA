@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: miraje-api
+Version: 1.0.0
+Requires-Dist: requests
+Requires-Dist: aiohttp
+Requires-Dist: grpcio
+Requires-Dist: pyyaml
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Dynamic: provides-extra
+Dynamic: requires-dist
