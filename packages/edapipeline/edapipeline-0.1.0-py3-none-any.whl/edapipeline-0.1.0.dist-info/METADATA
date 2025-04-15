@@ -1,0 +1,103 @@
+Metadata-Version: 2.4
+Name: edapipeline
+Version: 0.1.0
+Summary: Comprehensive Exploratory Data Analysis Pipeline
+Home-page: https://github.com/SyedNazmusSakib-SNS/EDAPipeline
+Author: Your Name
+Author-email: your.email@example.com
+Project-URL: Bug Tracker, https://github.com/SyedNazmusSakib-SNS/EDAPipeline/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scipy
+Dynamic: license-file
+
+Great progress on setting up your package structure! Let's continue with the next steps to properly publish your EDAPipeline package.
+
+## Next Steps for Publishing Your EDAPipeline Package
+
+### 1. Complete Your README.md
+
+First, let's improve your README.md with proper documentation:
+
+```markdown
+# EDAPipeline
+
+A comprehensive Exploratory Data Analysis (EDA) toolkit that streamlines the process of analyzing datasets through visualization and statistical methods.
+
+## Features
+
+- Automated data type detection (numerical, categorical, datetime)
+- Comprehensive univariate analysis for all data types
+- Correlation analysis with heatmaps
+- Bivariate analysis between different feature types
+- Datetime feature decomposition and analysis
+- Outlier detection using multiple methods
+- Customizable visualization options
+
+## Installation
+
+```bash
+pip install edapipeline
+```
+
+## Quick Start
+
+```python
+from edapipeline import EDAPipeline
+import pandas as pd
+
+# Load your dataset
+df = pd.read_csv('your_data.csv')
+
+# Initialize the pipeline
+eda = EDAPipeline(df, target_col='your_target_column')
+
+# Run the complete analysis
+eda.run_complete_analysis()
+
+# Or run specific analyses
+eda.data_overview()
+eda.analyze_numerical_features()
+eda.correlation_analysis()
+```
+
+## Dependencies
+
+- numpy
+- pandas
+- matplotlib
+- seaborn
+- scipy
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+```
+
+### 2. Create a Basic __init__.py File
+
+Edit your `src/edapipeline/__init__.py` file:
+
+```python
+"""EDAPipeline - Comprehensive EDA toolkit for data analysis."""
+
+from .core import EDAPipeline
+from .__version__ import __version__
+
+__all__ = ['EDAPipeline']
+```
+
+
