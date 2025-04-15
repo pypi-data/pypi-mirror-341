@@ -1,0 +1,17 @@
+[project]
+name = "quantplay-mcp"
+version = "0.1.16"
+description = "Quantplay MCP Server"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+]
+
+[project.scripts]
+quantplay-mcp = "quantplay_mcp.server:main"
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
