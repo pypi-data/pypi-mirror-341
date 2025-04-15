@@ -1,0 +1,11 @@
+apple_books_mcp/__init__.py,sha256=g97x9SdIC_Mpxyw5gFhupb4XA4uKfclNYE91hEs_NLI,542
+apple_books_mcp/__main__.py,sha256=nJdQQwbibBrcZkxF85WbT3mPIcq253tM-v0uoTEkrUM,92
+apple_books_mcp/server.py,sha256=OP8oeSLpJY8YNoGrNv-daxIlH53IjoiJ2aJyTR8220Y,6607
+mseep_apple_books_mcp-0.1.4.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_server.py,sha256=lMYzHAkbNdsfu-VHiFKej6dzBQyEsQem9nV5o6U9aFA,4639
+mseep_apple_books_mcp-0.1.4.dist-info/METADATA,sha256=7bE4rlRDuNrhCfFpYTTaLwk771hPJ4nbuoLH9CAmB-Y,5622
+mseep_apple_books_mcp-0.1.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mseep_apple_books_mcp-0.1.4.dist-info/entry_points.txt,sha256=MLPTiGnSdjQfw-6caePCf2631XM-T9sGhpgSnd9h4II,57
+mseep_apple_books_mcp-0.1.4.dist-info/top_level.txt,sha256=TRq6A_YZm2HhoDUodc8aT9caWVf6lA8VEAyGdNCnldE,22
+mseep_apple_books_mcp-0.1.4.dist-info/RECORD,,
