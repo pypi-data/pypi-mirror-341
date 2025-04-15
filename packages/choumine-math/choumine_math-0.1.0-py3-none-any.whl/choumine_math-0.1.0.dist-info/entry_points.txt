@@ -1,0 +1,2 @@
+[console_scripts]
+choumine-math = choumine_math:main
