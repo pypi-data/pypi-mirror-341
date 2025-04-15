@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: pylearn-flask-api-utils
+Version: 0.1.1
+Summary: Shared utilities for Pylearn Flask API
+Home-page: https://github.com/auth-inv-hub/pylearn-library-flask-api-utils
+Author: Clement Dada
+Author-email: dadaauthourity23@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: flask_jwt_extended
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# pylearn-library-api-utils
+A python library for api utilities functions for pylearn
