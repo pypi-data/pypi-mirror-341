@@ -1,0 +1,8 @@
+django_charm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_charm/cli.py,sha256=D9J-ZVVMCSie_vzX3qauMFWWM2awmiPMvsA-HrGYCz4,11498
+django_charm-0.1.9.dist-info/licenses/LICENSE,sha256=YrxVP4R6QN9peyfsi2FGLvPtQATyzm87GQapcLgfLpY,1086
+django_charm-0.1.9.dist-info/METADATA,sha256=sqC_XbadG08xUkXChCk7zuokVGuu6WZ7ZIg3k5p0N2Q,1937
+django_charm-0.1.9.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_charm-0.1.9.dist-info/entry_points.txt,sha256=mZvHxz-DccNQa1sVv-LEcDYTEZo7ICCJ92iZHdI2RCk,55
+django_charm-0.1.9.dist-info/top_level.txt,sha256=JudSKoFs6nAuukK7FR9hDAGQkk_FaJEPppljSiaOBuY,13
+django_charm-0.1.9.dist-info/RECORD,,
