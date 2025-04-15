@@ -1,0 +1,9 @@
+twsca/__init__.py,sha256=oPp359jKPHr_Pw4jQjxLiifZ9dw1NyQ4hvGTb9sZdo8,763
+twsca/analysis.py,sha256=65upySx4LFcTYAVMbIRKLDHgwAa3sfe6WVwpBc57NIM,6726
+twsca/dtw.py,sha256=680m9HJNSplu81ke4yQskBJA94U5Y0mdjTSBoJFXjJI,6871
+twsca/spectral.py,sha256=32DJOISRavtEqWjFP1YxTHrMrfaBBk4_oVwYkTQLSRA,8213
+twsca-0.1.1.dist-info/licenses/LICENSE,sha256=L5icLkmDHjBhBPO6yrco6Lkbe8Qe8oVvS8eUxr8HDXc,1072
+twsca-0.1.1.dist-info/METADATA,sha256=D_kLXBaERFkTj3HOINA7BL21rWjhwVtN4HR93ndgMzQ,5007
+twsca-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+twsca-0.1.1.dist-info/top_level.txt,sha256=biw5uDkTCrxpJzieJBIYbplGU-WYh9HaspW1IpwH3c4,6
+twsca-0.1.1.dist-info/RECORD,,
