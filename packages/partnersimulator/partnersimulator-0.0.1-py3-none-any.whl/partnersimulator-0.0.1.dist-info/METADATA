@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: partnersimulator
+Version: 0.0.1
+Summary: Partner Simulator
+Author: Aditya Jain
+Author-email: aditya.jain22@imperial.ac.uk
+Keywords: creepy,parasocial
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: openai
+Requires-Dist: polars
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+A very basic chatbot based on openAI to console lonely engineering students... not me though, my girlfriend is wonderful :)
