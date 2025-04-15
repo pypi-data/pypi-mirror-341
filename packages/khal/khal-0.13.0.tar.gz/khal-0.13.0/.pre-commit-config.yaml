@@ -1,0 +1,30 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+      - id: end-of-file-fixer
+      - id: check-toml
+      - id: check-added-large-files
+      - id: debug-statements
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.7.0
+    hooks:
+      - id: mypy
+        additional_dependencies:
+          - types-tzlocal
+          - types-freezegun
+          - types-pytz
+          - types-setuptools
+          - types-python-dateutil
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: 'v0.1.5'
+    hooks:
+      - id: ruff
+        args: ["--fix"]
+  - repo: https://github.com/netromdk/vermin
+    rev: v1.5.2
+    hooks:
+      - id: vermin
+        args: ['-t=3.9-', '--violations']
