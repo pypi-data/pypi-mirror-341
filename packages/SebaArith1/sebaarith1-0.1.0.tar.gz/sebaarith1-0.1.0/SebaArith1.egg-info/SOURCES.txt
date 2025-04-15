@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+SebaArith1/__init__.py
+SebaArith1/operators.py
+SebaArith1.egg-info/PKG-INFO
+SebaArith1.egg-info/SOURCES.txt
+SebaArith1.egg-info/dependency_links.txt
+SebaArith1.egg-info/top_level.txt
