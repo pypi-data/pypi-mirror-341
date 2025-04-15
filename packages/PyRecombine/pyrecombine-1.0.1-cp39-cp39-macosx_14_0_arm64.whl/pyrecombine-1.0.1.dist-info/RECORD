@@ -1,0 +1,7 @@
+pyrecombine/__init__.py,sha256=LNEanp8Vw8TcdUeGjdyRMCT1r5vy7g1J6w9Wbr6Mk08,2043
+pyrecombine/_recombine.cpython-39-darwin.so,sha256=LgmEJVEahTRMuP2sAuyjZtpmWxIOzgfi_QxvTUXCWGU,104672
+pyrecombine/.dylibs/libomp.dylib,sha256=3bSljmtCh0FJfvbqnhXtyam4NP0MLFsSim2OcubhIq0,735616
+pyrecombine-1.0.1.dist-info/RECORD,,
+pyrecombine-1.0.1.dist-info/WHEEL,sha256=t3YsiS49hvgWwz7zCGIjMo3e4aTMqBPdS61g-40SH3w,112
+pyrecombine-1.0.1.dist-info/METADATA,sha256=_SnNwoJM4swj06-ZzG-UekTlMA1UdKNmaeUCTXL_lkk,3264
+pyrecombine-1.0.1.dist-info/licenses/LICENSE.txt,sha256=7RTylHIjxE5iL2sdZRy5qVrTwSIg8B1W7TPJffcpOOs,1478
