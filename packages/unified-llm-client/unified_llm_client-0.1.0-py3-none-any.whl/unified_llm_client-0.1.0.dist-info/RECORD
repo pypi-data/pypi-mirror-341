@@ -1,0 +1,13 @@
+llm/__init__.py,sha256=qcWvGrWBJmemHckZeEsocprT1av5HjdAvl2zbjAr9FQ,212
+llm/anthropic.py,sha256=X7Moy56e5DbXG0E2WnNOvexzfS8KRv7suBnC_cbp0lU,8410
+llm/chat_completions.py,sha256=T7GHkj1VboA_RB3mUKgiAzaL8wzQ0866HlL-BUoFOxY,8313
+llm/client.py,sha256=PPuYCM5Pa8EfsVpoJtHPE_yliy694Z26Y91Fs_muwDw,13238
+llm/responses_api.py,sha256=wIaH3ltPckoX_SeVi3U8YGkabvUiQj-MGhGUt3nniIY,11175
+llm/tool_handling.py,sha256=Ed6j4-0kTlyDNgLU9oLF9kwd08FP8CJqiih6fiW9DNU,9566
+llm/tooling.py,sha256=8sw5cG4-QVuFjURkQbqYvg4dUTXF4n-6JWULHWi7uio,12224
+llm/types.py,sha256=G5zTYvFlLgZXpeldfWmpVgFIq-955kkkXJOvxTEQJwY,1594
+unified_llm_client-0.1.0.dist-info/licenses/LICENSE,sha256=fdH11fi2Tl0EuFqgQRg4koUnK_g7kJXm2xfCh4hahus,1066
+unified_llm_client-0.1.0.dist-info/METADATA,sha256=O7ZbpR1n_tvl5mREZLRBB9OmdYixzFLtHQ-DucXOeZw,5770
+unified_llm_client-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+unified_llm_client-0.1.0.dist-info/top_level.txt,sha256=TwpEQXP3b1MS9Y2XuGgRuo9-Kny507xt2HFZgJ5TSIY,4
+unified_llm_client-0.1.0.dist-info/RECORD,,
