@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+ZC99001UNO/__init__.py
+ZC99001UNO/ejemplos.py
+ZC99001UNO/lineal.py
+ZC99001UNO/no_lineal.py
+ZC99001UNO.egg-info/PKG-INFO
+ZC99001UNO.egg-info/SOURCES.txt
+ZC99001UNO.egg-info/dependency_links.txt
+ZC99001UNO.egg-info/requires.txt
+ZC99001UNO.egg-info/top_level.txt
