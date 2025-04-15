@@ -1,0 +1,5 @@
+[console_scripts]
+cala = cala.cli:main
+
+[gui_scripts]
+
