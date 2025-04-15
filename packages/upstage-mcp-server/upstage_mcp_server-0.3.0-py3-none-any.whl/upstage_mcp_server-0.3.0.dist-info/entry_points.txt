@@ -1,0 +1,2 @@
+[console_scripts]
+upstage-mcp-server = upstage_mcp.server:main
