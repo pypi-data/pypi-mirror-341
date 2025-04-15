@@ -1,0 +1,16 @@
+m365proxy/__init__.py,sha256=GIgF_FcesAjzYwZSeX6fryNNDhghOJwUGRxZy0nXPiU,682
+m365proxy/__main__.py,sha256=3AcfwnqljySXzPH-F1ayTt_H3YCniQMleEbufo7O7sk,781
+m365proxy/auth.py,sha256=KA5NWZD4YvS1Fa1ajk635GsAU51sGu2endovxyy9Bz8,6112
+m365proxy/cli.py,sha256=gbcf1jTaOWM7kLaHM6Mqllah4fq4YLyE3mK_KlUE9r4,8735
+m365proxy/config.py,sha256=Snzo7aidSf1DHwUYMz8aK2LsqcRkFH3JphZwlh_rW0g,16023
+m365proxy/configure.py,sha256=GyRNVdAy_PHReBkLQkPGmyZi2UkZm7Tguc_f1ccyEug,7473
+m365proxy/graph_api.py,sha256=tVGZqS5iV4lTN_RHKIJDMQJitKplY1X-HvttlKha3S0,3325
+m365proxy/mail.py,sha256=soQp__mpQe_sgKFk2AeMtwkWG_jfbTUBzmrqQMiPN-Q,7375
+m365proxy/proxies.py,sha256=6cIIxFKB0cADDn0y-k-xgWDR4x8sKWe0QnYqGcG2bPg,12047
+m365proxy/utils.py,sha256=mhg3s6bC44i7OxrfUrtLaeRTWXVgFVT0Vcbmoaqd7qI,4099
+m365proxy-1.1.2.dist-info/licenses/LICENSE,sha256=FR2OJCusCZRhp39tGMJoTEkyoeDBbffcH-6tfblpwF0,1148
+m365proxy-1.1.2.dist-info/METADATA,sha256=-gUAsvn54ua8hrxR57O2tMj1ypLP7SlvGh4RIYBXJfs,11537
+m365proxy-1.1.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+m365proxy-1.1.2.dist-info/entry_points.txt,sha256=q7VElDtAqrKSMyYeA9cvQft0y-HNtImADqCn9yYygKk,50
+m365proxy-1.1.2.dist-info/top_level.txt,sha256=IvShKV4r2Q_PLyDTFuIHx9ARUrsl_SM-rSCFnjjanmA,10
+m365proxy-1.1.2.dist-info/RECORD,,
