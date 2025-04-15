@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ankiapi/__init__.py
+ankiapi/anki_api.py
+ankiapi.egg-info/PKG-INFO
+ankiapi.egg-info/SOURCES.txt
+ankiapi.egg-info/dependency_links.txt
+ankiapi.egg-info/requires.txt
+ankiapi.egg-info/top_level.txt
+src/__init__.py
+src/anki_api.py
+test/test_package.py
