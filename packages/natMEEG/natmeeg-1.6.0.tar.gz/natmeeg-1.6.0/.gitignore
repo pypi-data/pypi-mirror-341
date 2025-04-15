@@ -1,0 +1,32 @@
+# Binaries
+*.pyc
+__pycache__/
+
+# Notebook cache
+**/.ipynb_checkpoints/
+
+# Folders
+.ideas/*
+.vscode
+
+# doc build
+docs/build/
+docs/source/_build/
+docs/source/generated/
+docs/_build/
+
+# Build from setup tool
+pyEEG.egg-info*/
+natmeeg.egg-info*/
+build/
+
+# Version file (managed by setuptools-scm)
+pyeeg/version.py
+
+# Misc
+*~
+docs/source/examples/.ipynb_checkpoints/
+examples/.*/
+docs/source/examples/.ipynb_checkpoints/TRF_wordonsets-checkpoint.ipynb
+docs/source/examples/.ipynb_checkpoints/CCA_wordvectors-checkpoint.ipynb
+docs/source/examples/.ipynb_checkpoints/CCA_envelope-checkpoint.ipynb
