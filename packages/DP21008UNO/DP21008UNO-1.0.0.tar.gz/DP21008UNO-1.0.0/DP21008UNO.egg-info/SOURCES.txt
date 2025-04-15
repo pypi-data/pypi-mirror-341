@@ -1,0 +1,9 @@
+README.md
+setup.py
+DP21008UNO/Funciones.py
+DP21008UNO/__init__.py
+DP21008UNO.egg-info/PKG-INFO
+DP21008UNO.egg-info/SOURCES.txt
+DP21008UNO.egg-info/dependency_links.txt
+DP21008UNO.egg-info/requires.txt
+DP21008UNO.egg-info/top_level.txt
