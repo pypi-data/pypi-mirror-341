@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+jl_metric/__init__.py
+jl_metric/metric.py
+jl_metric.egg-info/PKG-INFO
+jl_metric.egg-info/SOURCES.txt
+jl_metric.egg-info/dependency_links.txt
+jl_metric.egg-info/requires.txt
+jl_metric.egg-info/top_level.txt
