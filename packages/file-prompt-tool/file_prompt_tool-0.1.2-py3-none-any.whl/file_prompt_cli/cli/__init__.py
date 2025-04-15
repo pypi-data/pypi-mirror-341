@@ -1,0 +1,1 @@
+"""CLI module for file-prompt-cli.""" 
