@@ -1,0 +1,2 @@
+[console_scripts]
+itg-cli = itg_cli.__main__:cli
