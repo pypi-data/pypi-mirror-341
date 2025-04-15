@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+streamlit_state_manager/__init__.py
+streamlit_state_manager/manager.py
+streamlit_state_manager.egg-info/PKG-INFO
+streamlit_state_manager.egg-info/SOURCES.txt
+streamlit_state_manager.egg-info/dependency_links.txt
+streamlit_state_manager.egg-info/requires.txt
+streamlit_state_manager.egg-info/top_level.txt

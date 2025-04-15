@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "streamlit-state-manager"
+version = "0.2.6"
+description = "A wrapper around Streamlit's session state for easier state management"
+readme = "README.md"
+authors = [
+    {name = "Stelios Georgaras", email = "steliosgp13@gmail.com"}
+]
+license = {text = "Apache License 2.0"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "streamlit>=1.30.0",
+]
+requires-python = ">=3.9"
+
+[project.urls]
+"Homepage" = "https://github.com/steliosgrs/streamlit-state-manager"
+"Bug Tracker" = "https://github.com/steliosgrs/streamlit-state-manager/issues"
