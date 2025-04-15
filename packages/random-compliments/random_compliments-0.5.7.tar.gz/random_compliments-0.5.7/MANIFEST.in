@@ -1,0 +1,13 @@
+# Including files as meticulously as Boaz organizes his chess pieces
+
+include LICENSE
+include README.md
+include MANIFEST.in
+include scripts/post_install_hook.py
+recursive-exclude * *.py[cod]
+recursive-exclude * __pycache__
+recursive-exclude * *.so
+prune .git
+prune build
+prune dist
+exclude secret_boaz_facts.txt 
