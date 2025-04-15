@@ -1,0 +1,7 @@
+[intake.drivers]
+forecast = intake_forecast.source:ForecastSource
+ncdap_enhanced = intake_forecast.source:NCDapSource
+onncdap = intake_forecast.source:NCDapSource
+onzarr = intake_forecast.source:EnhancedZarrSource
+zarr_enhanced = intake_forecast.source:EnhancedZarrSource
+zarr_forecast = intake_forecast.source:ZarrForecastSource
