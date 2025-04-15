@@ -1,0 +1,7 @@
+README.md
+main.py
+pyproject.toml
+choumine_add.egg-info/PKG-INFO
+choumine_add.egg-info/SOURCES.txt
+choumine_add.egg-info/dependency_links.txt
+choumine_add.egg-info/top_level.txt
