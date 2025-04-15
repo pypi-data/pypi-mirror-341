@@ -1,0 +1,58 @@
+Metadata-Version: 2.4
+Name: torch_sim_atomistic
+Version: 0.2.0
+Summary: A pytorch toolkit for calculating material properties using MLIPs
+Author-email: Abhijeet Gangan <abhijeetgangan@g.ucla.edu>, Janosh Riebesell <jriebesell@radical-ai.com>, Orion Cohen <orion@radical-ai.com>, Radical AI <info@radical.ai>
+Project-URL: Repo, https://github.com/radical-ai/torch-sim
+Keywords: chemistry,interatomic-potentials,machine-learning,materials-science
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: h5py>=3.12.1
+Requires-Dist: numpy>=1.26
+Requires-Dist: tables>=3.10.2
+Requires-Dist: torch>=2
+Requires-Dist: tqdm>=4.67
+Requires-Dist: vesin-torch>=0.3.1
+Requires-Dist: vesin>=0.3.1
+Provides-Extra: test
+Requires-Dist: ase>=3.24; extra == "test"
+Requires-Dist: phonopy>=2.37.0; extra == "test"
+Requires-Dist: pymatgen>=2024.11.3; extra == "test"
+Requires-Dist: pytest-cov>=6; extra == "test"
+Requires-Dist: pytest>=8; extra == "test"
+Provides-Extra: mace
+Requires-Dist: mace-torch>=0.3.11; extra == "mace"
+Provides-Extra: mattersim
+Requires-Dist: mattersim>=0.1.2; extra == "mattersim"
+Provides-Extra: metatensor
+Requires-Dist: metatensor-torch<0.8,>=0.7; extra == "metatensor"
+Requires-Dist: metatrain[pet]>=2025.4; extra == "metatensor"
+Provides-Extra: orb
+Requires-Dist: orb-models>=0.5.2; extra == "orb"
+Provides-Extra: sevenn
+Requires-Dist: sevenn>=0.11.0; extra == "sevenn"
+Provides-Extra: graphpes
+Requires-Dist: graph-pes>=0.0.34; extra == "graphpes"
+Requires-Dist: mace-torch>=0.3.11; extra == "graphpes"
+Provides-Extra: docs
+Requires-Dist: autodoc_pydantic==2.2.0; extra == "docs"
+Requires-Dist: furo==2024.8.6; extra == "docs"
+Requires-Dist: ipython==8.34.0; extra == "docs"
+Requires-Dist: jsonschema[format]; extra == "docs"
+Requires-Dist: jupyterlab==4.3.4; extra == "docs"
+Requires-Dist: jupytext==1.16.7; extra == "docs"
+Requires-Dist: myst_parser==4.0.0; extra == "docs"
+Requires-Dist: nbsphinx>=0.9.7; extra == "docs"
+Requires-Dist: numpydoc==1.8.0; extra == "docs"
+Requires-Dist: sphinx-copybutton==0.5.2; extra == "docs"
+Requires-Dist: sphinx==8.1.3; extra == "docs"
+Requires-Dist: sphinx_design==0.6.1; extra == "docs"
+Dynamic: license-file
