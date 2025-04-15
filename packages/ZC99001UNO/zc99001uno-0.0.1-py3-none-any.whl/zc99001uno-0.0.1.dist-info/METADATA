@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: ZC99001UNO
+Version: 0.0.1
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales
+Home-page: https://github.com/jgzaldana/ZC99001UNO
+Author: Jose Zaldana
+Author-email: zc99001@ues.edu.sv
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: twine; extra == "dev"
+
+# ZC99001UNO
