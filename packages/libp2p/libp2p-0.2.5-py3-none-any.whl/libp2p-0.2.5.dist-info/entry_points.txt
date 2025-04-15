@@ -1,0 +1,6 @@
+[console_scripts]
+chat-demo = examples.chat.chat:main
+echo-demo = examples.echo.echo:main
+identify-demo = examples.identify.identify:main
+ping-demo = examples.ping.ping:main
+pubsub-demo = examples.pubsub.pubsub:main
