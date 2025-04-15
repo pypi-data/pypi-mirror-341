@@ -1,0 +1,12 @@
+sloth_lock-0.1.1.dist-info/licenses/LICENSE,sha256=jklgzu-EQbcTl_2teewcximRDGgaYloDyms37qA59gE,1067
+src/__init__.py,sha256=3GJBft7t2bOfWueH-MPwHVd_4YR6KCJujXFPUPNqw2M,79
+src/cli.py,sha256=ryTGNht7FE9LSb9ko36rQA81nGEuhNBYcbR3td3s3tk,3810
+src/run_encrypted.py,sha256=yB8lK2pDBZ4IkV3y9LhRLbqUnwkfkACroJnSs79I43U,1627
+tests/__init__.py,sha256=10Qwuoo4Ti_3QBGpkDWCR0azUyOGRoKHi_bkagTgYt0,28
+tests/sample.py,sha256=dbU35cVgPl-nMp96PNH09jCU4Vsu_nPvrzZ3D2oBf80,64
+tests/test_cli.py,sha256=XXKi7rlqJ2eUMhMKM9nRdtfuUzjgMGnlRTHBOufY-2g,2310
+sloth_lock-0.1.1.dist-info/METADATA,sha256=e8DyUx065Dj-RVguBKs1y7wqKsPOdZo1I3GDvGKIU2s,5114
+sloth_lock-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sloth_lock-0.1.1.dist-info/entry_points.txt,sha256=4kpSvEjAsnfPmpqb6WUvt2l6OrX6VSgveFMe_meBErw,74
+sloth_lock-0.1.1.dist-info/top_level.txt,sha256=KW3xgkz9NLMTcmmzgKvW8RFpCFkRIQ085qzq2diFf68,10
+sloth_lock-0.1.1.dist-info/RECORD,,

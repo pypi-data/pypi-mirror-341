@@ -1,0 +1,3 @@
+[console_scripts]
+slock = src.cli:main
+slock-run = src.run_encrypted:main
