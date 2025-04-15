@@ -1,0 +1,9 @@
+orange1_mcp_server_weaviate-0.1.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/server.py,sha256=LYrrejr8C7JVK-8nPOgPxqsOBaBWOK_0WTtIhuVyld0,8234
+src/settings.py,sha256=0ynavpxPn4kHg-DEZaX3K9aMy3kIxivwS6wymagJ3OU,164
+src/weaviate.py,sha256=FbjEr-Tp8qHWgmhWEmzxYXuloufcEMqS2O5oFrWkoL4,4265
+orange1_mcp_server_weaviate-0.1.0.dist-info/METADATA,sha256=2s862Ft-z2szfC7ZQ0I_UieSUAxFdGNdss4Ah8gKae0,1806
+orange1_mcp_server_weaviate-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+orange1_mcp_server_weaviate-0.1.0.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+orange1_mcp_server_weaviate-0.1.0.dist-info/RECORD,,
