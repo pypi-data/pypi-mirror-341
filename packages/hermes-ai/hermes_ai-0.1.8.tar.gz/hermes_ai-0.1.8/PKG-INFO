@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: hermes-ai
+Version: 0.1.8
+Summary: A ML model to classify messages, reply and summarize conversations
+Home-page: https://github.com/Talos-IA-Lab/hermes
+Author: Jose Ruben Maldonado Herrera
+Author-email: rub.maler.22@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: joblib
+Requires-Dist: nltk
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+
+# classify
+
+Description of your project.
+
+# Activate Virtual Environment
+```
+source .venv/bin/activate
+```
+
+## Installation
+
+```
+pip install -r requirements.txt
+```
+
+## Usage
+
+```
+python3 -m classify.main
+```
+
+## Running Tests
+
+```
+python3 -m unittest discover tests
+```
+
+
+## Application Programming Interface
+
+TODO: Define functions for the API
+
+### get actions
+
+TODO: Define input format and output
+

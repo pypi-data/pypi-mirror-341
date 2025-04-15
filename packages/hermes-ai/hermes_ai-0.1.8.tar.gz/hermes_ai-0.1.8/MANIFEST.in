@@ -1,0 +1,5 @@
+# Include all files in hermes_ai/models/
+recursive-include hermes_ai/models *
+
+# Include all CSV files in hermes_ai/data/
+recursive-include hermes_ai/data *.csv
