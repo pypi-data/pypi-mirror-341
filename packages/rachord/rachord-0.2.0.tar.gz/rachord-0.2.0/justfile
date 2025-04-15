@@ -1,0 +1,35 @@
+# List all available just commands.
+default:
+  just --list
+
+# Create the development environment.
+install *args:
+  uv sync --all-extras --all-groups {{args}}
+
+# Update the dependencies.
+update *args:
+  uv lock {{args}} && just install
+
+# Lint the Python package.
+lint *args:
+  uvx ruff check {{args}} .
+
+# Fix fixable linting errors.
+fix *args:
+  uvx ruff check --fix {{args}} .
+
+# Run tests using pytest.
+test *args:
+  uv run pytest {{args}}
+
+# Run the tests in watch mode.
+watch *args:
+  uv run ptw --patterns "*.py,*.md" --ignore-patterns "tests/.temp/**/*" --now . --no-header {{args}}
+
+# Build the Python wheel.
+build *args:
+  uv build {{args}}
+
+# Publish the Python package with a token.
+publish token *args:
+  uv publish --token {{token}} {{args}}

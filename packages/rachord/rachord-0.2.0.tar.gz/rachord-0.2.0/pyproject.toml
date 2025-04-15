@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rachord"
+authors = [
+    { name = "Ratio Innovations B.V.", email = "info@ratio-case.nl" }, # Maintainers of this fork
+    { name = "Kenny Pang", email = "pangkhangee@gmail.com" },          # Original openchord author, up to 0.1.9
+]
+description = "A library for plotting chord diagrams."
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["plot", "data science", "Jupyter", "network", "graph"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = ["drawsvg ~= 2.0", "numpy ~= 2.2"]
+dynamic = ["version"]
+
+[dependency-groups]
+lint = ["ruff"]
+experiment = ["jupyterlab", "pandas"]
+test = ["pytest", "pytest-cov", "pytest-examples", "pytest-watcher"]
+
+[project.urls]
+Homepage = "https://gitlab.com/ratio-case-os/python/rachord"
+"Bug Tracker" = "https://gitlab.com/ratio-case-os/python/rachord/-/issues"
+
+[tool.uv]
+package = true
+
+[tool.hatch.version]
+path = "src/rachord/__init__.py"
+
+[tool.pytest.ini_options]
+addopts = "-s --cov --cov-report xml:./.pytest_cache/coverage.xml --cov-report term-missing --basetemp ./tests/.temp"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["rachord"]
+disable_warnings = ["module-not-imported"]
+
+[tool.coverage.paths]
+source = ["rachord"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.ruff]
+line-length = 100
+lint.select = [
+    "E", # pycodestyle
+    "F", # pyflakes
+]
+target-version = "py311"
