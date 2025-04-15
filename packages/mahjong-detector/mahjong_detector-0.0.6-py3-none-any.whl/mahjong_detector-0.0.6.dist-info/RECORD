@@ -1,0 +1,9 @@
+mahjong_detector-0.0.6.dist-info/METADATA,sha256=HNbxFTUOajzh6eehH6H_L1WJMgkIKUkYESEtg03Tdck,341
+mahjong_detector-0.0.6.dist-info/WHEEL,sha256=tSfRZzRHthuv7vxpI4aehrdN9scLjk-dCJkPLzkHxGg,90
+mahjong_detector-0.0.6.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+mahjong_detector/__init__.py,sha256=FkiV24kMNG4o6Al9KmXGDsjAtNznrF25xcntKGks2Yo,550
+mahjong_detector/__main__.py,sha256=PYdCtFYu7h1YYmj6RNft1vlb-JE2Zlb_tcKwHrnINlM,205
+mahjong_detector/model.onnx,sha256=__1tKarPhQUmpEEbaLTnxKlpV-4vAPkHaYKzDf3njAc,10611399
+mahjong_detector/predict.py,sha256=UXNEBJ_lIgLyNiaz4-jHyDNBg8n4mGms69dKy9KZZBs,5648
+mahjong_detector/preprocess.py,sha256=-9anyF6CjgXLc8x76La7ka-CMzuAqC7wWvCCeaY-tI0,3009
+mahjong_detector-0.0.6.dist-info/RECORD,,
