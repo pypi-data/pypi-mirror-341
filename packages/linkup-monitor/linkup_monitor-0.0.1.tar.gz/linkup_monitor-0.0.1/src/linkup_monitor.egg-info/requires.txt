@@ -1,0 +1,4 @@
+pydantic
+pgsql
+pandas
+linkup-sdk
