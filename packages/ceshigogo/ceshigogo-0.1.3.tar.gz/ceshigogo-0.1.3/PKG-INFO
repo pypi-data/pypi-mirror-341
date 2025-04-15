@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: ceshigogo
+Version: 0.1.3
+Provides-Extra: llama
+Provides-Extra: triton
+License-File: LICENSE
