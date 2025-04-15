@@ -1,0 +1,22 @@
+[project]
+name = "bayinx"
+version = "0.2.13"
+description = "Bayesian Inference with JAX"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "equinox>=0.11.12",
+    "jax>=0.4.38",
+    "jaxtyping>=0.2.36",
+    "optax>=0.2.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+addopts = "-q --benchmark-min-rounds=30 --benchmark-columns=rounds,mean,median,stddev --benchmark-group-by=func"
+
+[dependency-groups]
+dev = ["matplotlib>=3.10.1", "pytest>=8.3.5", "pytest-benchmark>=5.1.0"]
