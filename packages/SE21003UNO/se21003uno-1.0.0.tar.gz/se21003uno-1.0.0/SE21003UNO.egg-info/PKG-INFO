@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: SE21003UNO
+Version: 1.0.0
+Summary: Librería creada para resolver sistemas de ecuaciones lineales y no lineales PARA LA MATERIA DE Cálculo Numérico para Desarrollo de Aplicaciones
+Author: Ivan Everaldo Sanchez Escobar
+Author-email: se21003@ues.edu.sv
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.21
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Libreria creada ARA LA MATERIA DE CÃ¡lculo NumÃ©rico para Desarrollo de Aplicaciones, esta libreria busca resolver de manera breve y de forma facil sistemas de ecuaciones lineales y no lineales utilizando los siguientes metodos de resoluciÃ³n:
+
+
+    EliminaciÃ³n de Gauss
+    Gauss-Jordan
+    Crammer
+    DescomposiciÃ³n LU
+    Jacobi
+    Gauss-Seidel
+    BisecciÃ³n

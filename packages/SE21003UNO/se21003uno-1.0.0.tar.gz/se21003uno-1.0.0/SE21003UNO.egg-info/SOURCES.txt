@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SE21003UNO/__init__.py
+SE21003UNO/metodos.py
+SE21003UNO.egg-info/PKG-INFO
+SE21003UNO.egg-info/SOURCES.txt
+SE21003UNO.egg-info/dependency_links.txt
+SE21003UNO.egg-info/requires.txt
+SE21003UNO.egg-info/top_level.txt
