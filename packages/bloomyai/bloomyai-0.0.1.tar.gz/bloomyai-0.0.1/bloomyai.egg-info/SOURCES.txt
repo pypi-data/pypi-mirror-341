@@ -1,0 +1,8 @@
+README.md
+core.py
+pyproject.toml
+bloomyai.egg-info/PKG-INFO
+bloomyai.egg-info/SOURCES.txt
+bloomyai.egg-info/dependency_links.txt
+bloomyai.egg-info/requires.txt
+bloomyai.egg-info/top_level.txt
