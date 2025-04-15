@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: CA21062UNO
+Version: 1.1.0
+Summary: Librería creada para la resolución de métodos numéricos para resolver sistemas lineales y no lineales
+Author: Luis Cea
+Author-email: luiscea04@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: scipy>=1.7.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# CA21062UNO - Librería de Métodos Numéricos
+Librería implementada por Luis Cea (Carnet: CA21062) para resolver sistemas de ecuaciones lineales y no lineales.

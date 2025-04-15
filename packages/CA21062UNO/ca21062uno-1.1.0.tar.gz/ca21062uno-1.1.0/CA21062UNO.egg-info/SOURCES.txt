@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+CA21062UNO/__init__.py
+CA21062UNO/metodos_numericos.py
+CA21062UNO.egg-info/PKG-INFO
+CA21062UNO.egg-info/SOURCES.txt
+CA21062UNO.egg-info/dependency_links.txt
+CA21062UNO.egg-info/requires.txt
+CA21062UNO.egg-info/top_level.txt
+test/test_metodos.py
