@@ -1,0 +1,13 @@
+numpyai/__init__.py,sha256=f1ajAdu82sPp7oHoEXARLCWZ8DqxYVqajVMYcQbtRfI,97
+numpyai/_ai.py,sha256=v-fuTxHIoCtmknhB5X001eLDXGkUPDYoS3Ga76cxW90,5346
+numpyai/_array.py,sha256=JAFbHxj2GPodcsj-jAIlreAACcYWYOty2F9PNO7-iow,10677
+numpyai/_diagnosis.py,sha256=t3RzZkpRqPldCxRZEYTwV4U7pU5D_7mfEHESrb5Kgy8,3161
+numpyai/_exceptions.py,sha256=TTwhcWpL2_1fCVNGn3RNa56SxzRX0F5VyhJi8sY3m0I,98
+numpyai/_session.py,sha256=xiOJDsrTf7tjaksypFSykjz47I12I6rH0XXq1aofZT8,8542
+numpyai/_utils.py,sha256=cIhcuyYN8gQpkyw4YZZVrRzDYWfvAOLW7pXtaaozFXE,4390
+numpyai/_validator.py,sha256=DRin1I_e8Z1le9_LoMq8yXWuwz16t7rlb6hEtlehEok,5387
+numpyai-0.2.0.dist-info/licenses/LICENSE,sha256=nwQ-dpxLwqquHjlRMpFZgkGcFAk_qMw3W1k1Q6pzY64,1093
+numpyai-0.2.0.dist-info/METADATA,sha256=BfnxKcp5eoHFAi60TIVqvDolN5S_KaI5SxyOb7hkzrA,627
+numpyai-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+numpyai-0.2.0.dist-info/top_level.txt,sha256=qnYOmp1kauAnfYU4_vWjoOeuijJqNSeVgWSTuXyedcc,8
+numpyai-0.2.0.dist-info/RECORD,,
