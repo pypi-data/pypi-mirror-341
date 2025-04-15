@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: colab-alarm
+Version: 0.1.2
+Summary: Simple audio alarm for Google Colab notebooks
+Author-email: Nidhi Parab <nidhiparabmail@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/nidhiparab/colab-alarm
+Project-URL: Bug Tracker, https://github.com/nidhiparab/colab-alarm/issues
+Project-URL: Documentation, https://github.com/nidhiparab/colab-alarm#readme
+Keywords: colab,jupyter,notification,alarm
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: ipython
+Dynamic: license-file
+
+# Colab Alarm
+
+A simple audio notification system for Google Colab notebooks. Get alerted when your long-running cells finish executing!
+
+## Why Use Colab Alarm?
+
+- **Stay Productive**: Work on other tasks while waiting for code execution
+- **Never Miss Completion**: Get audio notification exactly when cells complete
+- **Simple Integration**: Just add one line of code at the end of any cell
+- **Customizable**: Control duration and frequency of the audio alert
+
+## Installation
+
+```bash
+pip install colab-alarm
