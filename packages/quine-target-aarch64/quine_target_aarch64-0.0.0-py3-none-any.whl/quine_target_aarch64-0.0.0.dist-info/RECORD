@@ -1,0 +1,5 @@
+quine/target/aarch64/__init__.py,sha256=QCdU7uX3gdO-bVSDkwlQhYT_oK4Tzlg-gk7pPtVu-pY,144
+quine_target_aarch64-0.0.0.dist-info/COPYING.md,sha256=ADUqsZhl4juwq34PRTMiBqumpm11s_PMli_dZQjWPqQ,34260
+quine_target_aarch64-0.0.0.dist-info/METADATA,sha256=3WEoRx_mAg1foHRdypNgmB_IBkfKv3hLl-VKC9L2U9s,1417
+quine_target_aarch64-0.0.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+quine_target_aarch64-0.0.0.dist-info/RECORD,,
