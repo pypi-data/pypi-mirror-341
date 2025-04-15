@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pysegd
+Version: 4.0.1
+Home-page: 
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pytest
+Requires-Dist: scipy
+
+# PySegd
+
+Read/write SEG-D files in Python.
+
+This project is rewritten and expanded after the version from [read_segd](https://github.com/claudiodsf/read_segd),  
+licensed under the GNU Lesser General Public License v3 (LGPL v3), as a starting point.
+
+## Main Changes (2022, M.L.)
+
+- Dropped support for Python 2.
+- Removed dependency on ObsPy, making the library standalone.  
+  Traces can still be converted to ObsPy objects easily.
+- Completely rewrote the program using object-oriented syntax.  
+  Header fields and data arrays are decoded only on request, while remaining transparent for the user.
+
+### August 2022, M.L.
+
+- Implemented the writing of SEG-D files.
+
+## How It Works
+
+- The file is read using a `SegdFile` object organized as follows:
+    - `SegDFile`
+        - `BlockDecoders`
+            - `TypeDecoders`
+- The `BlockDecoders` are subclasses of the `BlockDecoder` class, which contains the structure for a given block of the file.  
+- The `TypeDecoders` are attributes that handle a specific variable. They internally manage fields of the file header or data in binary or unpacked format.  
+- When the user accesses a specific field, the decoder decodes the bytes on demand and returns the unpacked version, making the process transparent to the user.
+
+## License
+
+This project is licensed under the GNU Lesser General Public License v3.0.  
+It is derived from the project [read_segd](https://github.com/claudiodsf/read_segd), originally licensed under the GNU Lesser General Public License v3 (LGPL v3).  
+The original copyright is held by Claudio Satriano.
+
+For more details, see the LICENSE file included in this repository.
+

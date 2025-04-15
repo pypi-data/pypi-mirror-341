@@ -1,0 +1,16 @@
+pysegd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysegd/blockdecoders.py,sha256=xk-dOR_QE4CAFKRYpHu9hG4HQdH-Wf2EQo_dGbd9TY8,25766
+pysegd/control.py,sha256=tqcKa1cB_hhpRDd-fTUh_w9vJoCdvRppckdF0X2XyD8,418
+pysegd/decoding.py,sha256=rfhypsS7mTSf7gInobuxbTOhq0wi9dEPE4ID3K2cp7g,10040
+pysegd/headerfields.py,sha256=mEgpoGHXQtptmCfNJuyLzqcW1uRYuvQ6j5ahM8o84Kk,5617
+pysegd/readsegd30.py,sha256=jY_RE0Cm_4uDS5UCvibu70opzSrms9ggHczEM5X7MI8,10365
+pysegd/segddecim.py,sha256=DnprRgRjGv4VPOniI65s5c5MoB0tRZqBPulcNv7nyWU,2020
+pysegd/segdfile.py,sha256=u-4OGyY4Jk9fZWdfHaqTgNNlPqjfZwnXJbvdz7beyV4,21037
+pysegd/typedecoders.py,sha256=2qYseiJz0zSsEGZvpHioqvun7FigCYoVgDoQggoQiMo,16246
+pysegd-4.0.1.data/scripts/readsegd30.py,sha256=pOUE0joeIHUJN2y0q81t_YHfHRAVXjnLhozEnTg7oHI,10352
+pysegd-4.0.1.data/scripts/segddecim.py,sha256=cIxdYyXRJI9keIe3gYmVI4muqgy-OE1LLs_i1fvk7t8,2007
+pysegd-4.0.1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+pysegd-4.0.1.dist-info/METADATA,sha256=5n6LZnIryx1TIZShOT8TgVVFgmPLTYGOAc0KSTC8_XY,2010
+pysegd-4.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pysegd-4.0.1.dist-info/top_level.txt,sha256=uMTUy2ISp8f2JLeLgvBEzXu5VHaryn1yUZpcN9oyABE,7
+pysegd-4.0.1.dist-info/RECORD,,
