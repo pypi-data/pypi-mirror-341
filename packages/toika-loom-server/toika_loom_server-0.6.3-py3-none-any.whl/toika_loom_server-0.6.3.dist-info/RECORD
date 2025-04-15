@@ -1,0 +1,14 @@
+toika_loom_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toika_loom_server/favicon-32x32.png,sha256=GoZlb5zK_Ot2veezpRCL9HSv2fXg7dAkRw1zc62Dojk,437
+toika_loom_server/loom_server.py,sha256=hOKCQBrYVsKriiOjIErIboUkB7YW5WCTFE-HM0hzass,5105
+toika_loom_server/main.py,sha256=BU3WSJZ9MblDcCCavlUMPbhsE_w9QFjcryieDpzXbDY,445
+toika_loom_server/mock_loom.py,sha256=Hf3pvRJ-HWXP6RMectnlFfSFsaNyKq6AIsnyI_AkQwQ,2737
+toika_loom_server/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toika_loom_server/utils.py,sha256=Omo5CFeiyebpIh2611yIs2a0HIX0z8n-aaNwmd8caz0,2098
+toika_loom_server/version.py,sha256=du9nJl4rpWIZzyOhH9ebfYbKrdDobESa90hFJlLz4bQ,78
+toika_loom_server-0.6.3.dist-info/licenses/LICENSE.txt,sha256=WYC5uPw5Ygf8ajOqm8rvtkVeQ8qw9BvSYqwUpicb-ZA,1060
+toika_loom_server-0.6.3.dist-info/METADATA,sha256=s5TG19TlN4iAvJEj5-mhzqSKy-k35vJVgOMWonyNCac,1356
+toika_loom_server-0.6.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+toika_loom_server-0.6.3.dist-info/entry_points.txt,sha256=C0yXMmxf5_RiDThw-wDuT-wsnHpeGfs5KK9GtYcqaUA,73
+toika_loom_server-0.6.3.dist-info/top_level.txt,sha256=-IbAH16aBQIW30wG8TCzW8tYp7ByrDMW2NQKUEDT95c,18
+toika_loom_server-0.6.3.dist-info/RECORD,,
