@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+flask_todo_app.egg-info/PKG-INFO
+flask_todo_app.egg-info/SOURCES.txt
+flask_todo_app.egg-info/dependency_links.txt
+flask_todo_app.egg-info/requires.txt
+flask_todo_app.egg-info/top_level.txt
+flask_todo_app/static/site.css
+flask_todo_app/templates/base.html
+flask_todo_app/templates/home.html
+tests/test_app.py

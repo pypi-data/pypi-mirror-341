@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}TODO App{% endblock %}
+
+{% block content %}
+<div class="todo-container">
+    <h1 class="todo-header">TODO</h1>
+    <form action="/add" method="post" class="todo-form">
+        <input type="text" name="task" placeholder="Enter a new task" class="todo-input" required>
+        <button type="submit" class="todo-add-btn">+</button>
+    </form>
+    <ul class="todo-list" id="todo-list">
+        {% for todo in todos %}
+        <li class="todo-item {% if todo.done %}completed{% endif %}" draggable="true" data-id="{{ todo.id }}">
+            <form action="/update/{{ todo.id }}" method="post" class="todo-update-form">
+                <button type="submit" class="todo-check-btn">{{ '✔' if todo.done else '○' }}</button>
+            </form>
+            <span class="todo-text">{{ todo.task }}</span>
+            <span class="todo-date">
+                {% if todo.completion_date %}
+                    Completed: {{ todo.completion_date }}
+                {% endif %}
+            </span>
+            <form action="/delete/{{ todo.id }}" method="post" class="todo-delete-form">
+                <button type="submit" class="todo-delete-btn">✖</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<script>
+    const todoList = document.getElementById('todo-list');
+
+    let draggedItem = null;
+
+    todoList.addEventListener('dragstart', (e) => {
+        if (e.target && e.target.matches('.todo-item')) {
+            draggedItem = e.target;
+            e.target.style.opacity = '0.5';
+        }
+    });
+
+    todoList.addEventListener('dragend', (e) => {
+        if (e.target && e.target.matches('.todo-item')) {
+            e.target.style.opacity = '1';
+            draggedItem = null;
+
+            // Update the order in the backend
+            const updatedOrder = Array.from(todoList.children).map(item => item.dataset.id);
+            updateOrderOnServer(updatedOrder);
+        }
+    });
+
+    todoList.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        const afterElement = getDragAfterElement(todoList, e.clientY);
+        if (afterElement == null) {
+            todoList.appendChild(draggedItem);
+        } else {
+            todoList.insertBefore(draggedItem, afterElement);
+        }
+    });
+
+    function getDragAfterElement(container, y) {
+        const draggableElements = [...container.querySelectorAll('.todo-item:not(.dragging)')];
+
+        return draggableElements.reduce((closest, child) => {
+            const box = child.getBoundingClientRect();
+            const offset = y - box.top - box.height / 2;
+            if (offset < 0 && offset > closest.offset) {
+                return { offset: offset, element: child };
+            } else {
+                return closest;
+            }
+        }, { offset: Number.NEGATIVE_INFINITY }).element;
+    }
+
+    function updateOrderOnServer(order) {
+        fetch('/update-order', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ order }),
+        })
+        .then(response => {
+            if (!response.ok) {
+                console.error('Failed to update order on server');
+            }
+        })
+        .catch(error => console.error('Error:', error));
+    }
+</script>
+{% endblock %}

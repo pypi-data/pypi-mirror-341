@@ -1,0 +1,4 @@
+include README.md
+include setup.py
+recursive-include flask_todo_app/templates *
+recursive-include flask_todo_app/static *
