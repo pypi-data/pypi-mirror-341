@@ -1,0 +1,13 @@
+diffindiff/__init__.py,sha256=uMHWs2YFZP4cd8pG1zH8KAabRNxqD2GWDdNknaz7EVU,398
+diffindiff/didanalysis.py,sha256=UcUTnC1nCTv4Nfn2wrTpbPwhzxDwRh9D-nCAO0jIszQ,82304
+diffindiff/diddata.py,sha256=TDdlqTc6oQ4pP2nznubzNq0ot4yVp9K-OtAGl94Fi34,35767
+diffindiff/didtools.py,sha256=KJ1vwZMyHtWU4613Mqq6n_dX2MwBccYmTp1wVfEoiVE,12400
+diffindiff/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diffindiff/tests/tests_diffindiff.py,sha256=glvwyDVRo6tkYeJkz-gxNjGoFxRbJV9XgjQGVXQwEnw,12721
+diffindiff/tests/data/Corona_Hesse.xlsx,sha256=HC60Bd19RQwd-xHFg22_Atij7ijY-cdNo9fRq3zSPI4,1183519
+diffindiff/tests/data/counties_DE.csv,sha256=W_UZcUNTCIyse5Fw1XyNBkx-bVd8XgG6wiEQs2bMQKA,62157
+diffindiff/tests/data/curfew_DE.csv,sha256=YIG7iQudpfjW03dp7X195QcjEvlnCTRa4DDo9bn_lc0,2429159
+diffindiff-2.0.0.dist-info/METADATA,sha256=ufqvU0T4XXJaLgzPNOCj3SuTQ38l19z5Xqr3nABpKkk,7484
+diffindiff-2.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+diffindiff-2.0.0.dist-info/top_level.txt,sha256=ZcrJZT_ggkSA_3FTNKutKrQKNaBEG5tQDMmm8mhHm88,11
+diffindiff-2.0.0.dist-info/RECORD,,
