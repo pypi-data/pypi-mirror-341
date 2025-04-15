@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: tml-gender-guess
+Version: 0.1.1
+Summary: Gender classification pipeline based on names
+Author: José Ángel Morell
