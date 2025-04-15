@@ -1,0 +1,101 @@
+Metadata-Version: 2.4
+Name: bitsandbytes-intel
+Version: 0.0.1.dev0
+Summary: Intel-optimized version of bitsandbytes
+Maintainer-email: Titus von Köller <titus@huggingface.co>, Matthew Douglas <matthew.douglas@huggingface.co>
+License: MIT
+Project-URL: Homepage, https://github.com/bitsandbytes-foundation/bitsandbytes-intel
+Project-URL: Bug Tracker, https://github.com/bitsandbytes-foundation/bitsandbytes-intel/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 12
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bitsandbytes
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: torch<3,>=2.2
+Provides-Extra: dev
+Requires-Dist: build<2,>=1.0.0; extra == "dev"
+Requires-Dist: ruff==0.11.2; extra == "dev"
+Requires-Dist: pre-commit<4,>=3.5.0; extra == "dev"
+Requires-Dist: wheel<1,>=0.42; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest~=8.3; extra == "test"
+Dynamic: license-file
+
+# `bitsandbytes` Intel Backend
+
+Registration for Intel optimized bitsandbytes operators.
+
+## Quick Start
+
+```
+# Build and enter container
+docker compose run --build --rm bnb-intel-dev /bin/bash
+
+# Run validation (inside container):
+python -m bitsandbytes_intel
+```
+
+## Testing
+
+Expected successful output:
+```
+root@pvc-hf-1100-00:/workspace# python -m bnb_intel
+Initializing bnb_intel module
+[W414 18:23:28.291667720 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_validate_compressed_sparse_indices(bool is_crow, Tensor compressed_idx, Tensor plain_idx, int cdim, int dim, int nnz) -> ()
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: XPU
+  previous kernel: registered at /pytorch/build/aten/src/ATen/RegisterCPU.cpp:30477
+       new kernel: registered at /build/intel-pytorch-extension/build/Release/csrc/gpu/csrc/aten/generated/ATen/RegisterXPU.cpp:468 (function operator())
+2025-04-14 18:23:29,577 - bitsandbytes.cextension - WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers and GPU quantization are unavailable.
+Loading ops module
+ops module loaded
+Registering XPU implementations
+Successfully registered XPU implementation
+Registering HPU implementations
+Successfully registered HPU implementations
+🧪 Running minimal XPU backend test...
+int8_linear_matmul_xpu called with tensors of shape: torch.Size([32, 64]) torch.Size([128, 64])
+
+✅ Operator executed successfully!
+   Input shapes: torch.Size([32, 64]) x torch.Size([128, 64])
+   Output shape: torch.Size([32, 128])
+   Output device: xpu:0
+[W414 18:23:30.825181068 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_validate_compressed_sparse_indices(bool is_crow, Tensor compressed_idx, Tensor plain_idx, int cdim, int dim, int nnz) -> ()
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: XPU
+  previous kernel: registered at /pytorch/build/aten/src/ATen/RegisterCPU.cpp:30477
+       new kernel: registered at /build/intel-pytorch-extension/build/Release/csrc/gpu/csrc/aten/generated/ATen/RegisterXPU.cpp:468 (function operator())
+```
+
+## Technical Implementation
+
+Key files:
+- `src/bitsandbytes_intel/ops.py` - Intel kernel registration
+- `src/bitsandbytes_intel/__init__.py` - Autoload setup
+- `docker-compose.yml` - Build environment
+- `setup.py` - Package configuration
+
+Uses PyTorch's autoload mechanism to register:
+```
+@torch.library.impl("bitsandbytes::int8_linear_matmul", "XPU")
+```

@@ -1,0 +1,10 @@
+bitsandbytes_intel/__init__.py,sha256=Y2dMLdVvxOSUUIDyTSd0XGSWh8XN48L1kwkLv6kNCx8,325
+bitsandbytes_intel/__main__.py,sha256=QcxIGGS8u0b2YA3JAAWajqMYVlW2BxeVD20NkrUXvXI,751
+bitsandbytes_intel/cpu_xpu_common.py,sha256=xD9J585F6UimSAbVc19Za5yn6OjAfBO6aedWa2gSL9E,20189
+bitsandbytes_intel/ops.py,sha256=OLEx9N1xbZPxgNXgeeBBDPDBmGA_LRimNqF2ueE2wd4,2676
+bitsandbytes_intel-0.0.1.dev0.dist-info/licenses/LICENSE,sha256=o4pz8NgKquX5kCYHYXEYRmNK4nNAykQoQpZ-jSEd97U,1109
+bitsandbytes_intel-0.0.1.dev0.dist-info/METADATA,sha256=7PY01SzlCYx3WHXmgft_XTHGW_bzwoEzbZsFzujJ0pU,4537
+bitsandbytes_intel-0.0.1.dev0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+bitsandbytes_intel-0.0.1.dev0.dist-info/entry_points.txt,sha256=48lOQKj2asqEi1qyZDGmoMUOtdHdP6eZ96IxwIfxM_Q,74
+bitsandbytes_intel-0.0.1.dev0.dist-info/top_level.txt,sha256=EvVWnxSeTW_fQmVscVzKr0yT_tzr7THmlWMSwE_36fM,19
+bitsandbytes_intel-0.0.1.dev0.dist-info/RECORD,,

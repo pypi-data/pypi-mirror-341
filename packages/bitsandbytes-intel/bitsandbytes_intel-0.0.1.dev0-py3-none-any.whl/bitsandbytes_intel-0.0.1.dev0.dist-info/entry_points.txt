@@ -1,0 +1,2 @@
+[bitsandbytes.backends]
+bitsandbytes_intel = bitsandbytes_intel:_autoload
