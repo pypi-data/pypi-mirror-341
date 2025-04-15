@@ -1,0 +1,10 @@
+superduper_snowflake/__init__.py,sha256=qawBCc_dkFrUkNTmm2wydRApg-oREW8KrDmNvNQY5eo,281
+superduper_snowflake/data_backend.py,sha256=HtoMIdvzmkPv-w4ptz_erYhlfo9E8WqS9kx6-Wn87_o,5399
+superduper_snowflake/schema.py,sha256=47ENRW_FCIsZzVzXNQ35KzFZb-_4BYoR4kru-G-tB1s,2130
+superduper_snowflake/secrets.py,sha256=rnG6qwcCYDeLpYDzxf65mI_fJAxxk4dbEocljIcaUfg,731
+superduper_snowflake/vector_search.py,sha256=VHlZNUqSJI87-oye6U7gsMVC8LlzBWDDIb2g9MOycnQ,7025
+superduper_snowflake-0.5.27.dist-info/licenses/LICENSE,sha256=fq2WxmjewRN4VfDClVl-6CiVFZedp4y5_iGqQiXHBN8,11353
+superduper_snowflake-0.5.27.dist-info/METADATA,sha256=LK2L7aldWzQy5a_IVjipfwIIR8F1S-HVeF4SRCsts8c,14588
+superduper_snowflake-0.5.27.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+superduper_snowflake-0.5.27.dist-info/top_level.txt,sha256=wM5kMcMU4NVRrAExFjzhnzFKZ_zOhoamRdWv_OfyyGQ,21
+superduper_snowflake-0.5.27.dist-info/RECORD,,
