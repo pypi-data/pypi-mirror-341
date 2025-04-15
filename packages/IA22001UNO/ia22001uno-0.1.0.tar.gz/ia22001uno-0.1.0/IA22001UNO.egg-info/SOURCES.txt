@@ -1,0 +1,9 @@
+README.md
+setup.py
+IA22001UNO/__init__.py
+IA22001UNO/metodos.py
+IA22001UNO.egg-info/PKG-INFO
+IA22001UNO.egg-info/SOURCES.txt
+IA22001UNO.egg-info/dependency_links.txt
+IA22001UNO.egg-info/requires.txt
+IA22001UNO.egg-info/top_level.txt

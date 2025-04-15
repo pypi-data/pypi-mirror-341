@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: IA22001UNO
+Version: 0.1.0
+Summary: Creación de una librería para resolver sistemas de ecuaciones lineales y ecuaciones no lineales
+Home-page: https://github.com/ia22001MichelleIglesias/IA22001UNO
+Author: Michelle Iglesias
+Author-email: ia22001@ues.edu.sv
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# IA22001UNO - Michelle Iglesias
+
+LibrerÃ­a Python para resolver sistemas de ecuaciones lineales y no lineales.
+
+## MÃ©todos Implementados para este examen corto nÂ°1 | MichelleIglesias
+
+### MÃ©todos para sistemas lineales:
+- EliminaciÃ³n de Gauss
+- Gauss-Jordan
+- Regla de Crammer
+- DescomposiciÃ³n LU
+
+### MÃ©todos para sistemas no lineales:
+- Jacobi
+- Gauss-Seidel
+- BisecciÃ³n
+
+## InstalaciÃ³n
+
+```bash
+pip install IA22001UNO
