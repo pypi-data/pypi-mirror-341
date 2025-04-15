@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: hermes-ai
+Version: 0.1.0
+Summary: A ML model to classify messages, reply and summarize conversations
+Home-page: https://github.com/Talos-IA-Lab/hermes
+Author: Jose Ruben Maldonado Herrera
+Author-email: rub.maler.22@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click==8.1.7
+Requires-Dist: joblib==1.4.2
+Requires-Dist: nltk==3.9.1
+Requires-Dist: numpy==1.24.4
+Requires-Dist: pandas==2.0.3
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytz==2024.2
+Requires-Dist: regex==2024.11.6
+Requires-Dist: scikit-learn==1.3.2
+Requires-Dist: scipy==1.10.1
+Requires-Dist: six==1.16.0
+Requires-Dist: threadpoolctl==3.5.0
+Requires-Dist: tqdm==4.67.0
+Requires-Dist: tzdata==2024.2
+Requires-Dist: pytest==8.2.1
+Requires-Dist: pytest-watch==4.2.0
+
+# classify
+
+Description of your project.
+
+# Activate Virtual Environment
+```
+source .venv/bin/activate
+```
+
+## Installation
+
+```
+pip install -r requirements.txt
+```
+
+## Usage
+
+```
+python3 -m classify.main
+```
+
+## Running Tests
+
+```
+python3 -m unittest discover tests
+```
+
+
+## Application Programming Interface
+
+TODO: Define functions for the API
+
+### get actions
+
+TODO: Define input format and output
+
