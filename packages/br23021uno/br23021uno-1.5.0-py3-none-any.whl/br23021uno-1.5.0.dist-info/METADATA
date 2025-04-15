@@ -1,0 +1,161 @@
+Metadata-Version: 2.1
+Name: br23021uno
+Version: 1.5.0
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales.
+Author: Joyser Leonel Barrera Romero
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# BR23021UNO 
+**Autor:** [Joyser Leonel Barrera Romero]  
+**VersiÃ³n:** 1.0.0  
+**DescripciÃ³n:** LibrerÃ­a para resolver sistemas de ecuaciones lineales y no lineales utilizando mÃ©todos numÃ©ricos.
+Permite resolver ecuaciones usando los siguientes mÃ©todos : EliminaciÃ³n de Gauss, Gauss-Jordan, Regla de Crammer,DescomposiciÃ³n LU, Jacobi, Gauss-Seidel y BisecciÃ³n.   
+
+## InstalaciÃ³n  
+Para instalar la librerÃ­a, usa el siguiente comando en tu terminal:  
+```bash 
+pip install BR23021UNO 
+```
+
+## Dependencias
+Para que la librerÃ­a funcione correctamente, asegÃºrate de instalar las siguiente dependencia:
+```bash 
+pip install numpy 
+```
+## Ejemplos de uso
+    
+### biseccion:
+```py
+            #import math
+            # Definir la funciÃ³n que queremos evaluar
+            funcion = lambda x: x**4 + 0.5*(x**3) - 2*x - 5
+            #Llamar a la funcion
+            raiz, iteraciones = biseccion(funcion,100,0)
+
+            # Mostrar el resultado con 6 cifras significativas
+            print(f"Raiz de funcion por biseccion es igual a {raiz:.6f}, encontrada en un total de {iteraciones} iteraciones.")
+
+            #Salida esperada: 
+            #Raiz de funcion por biseccion es igual a 50.000000, encontrada en un total de 0 iteraciones.
+```
+### crammer:
+```py
+
+            # Matriz de coeficientes (A) y vector de tÃ©rminos independientes (b)
+            A = [
+                [2, 1, 3],
+                [3, -2, -1],
+                [1, 3, 2]
+            ]
+
+            b = [1, 0, 5]
+
+            # Resolver el sistema Ax = b usando la regla de Cramer
+            solucion = cramer(A, b)
+
+            print(f"SoluciÃ³n del sistema: {solucion}")
+
+            #Resultado esperado : SoluciÃ³n del sistema: [ 1.  2. -1.]
+```
+### descomposicion_lu:
+
+```py
+            # Definir la matriz de coeficientes (A) y el vector de tÃ©rminos independientes (b)
+            A = np.array([
+                [25, 5, 1],
+                [64,  8, 1],
+                [144,  12, 1]
+            ], dtype=float)
+
+            b = np.array([106.8, 177.2, 279.2], dtype=float)
+
+            # Resolver el sistema Ax = b usando la descomposiciÃ³n LU
+            solucion = lu_solve(A, b)
+
+            print("SoluciÃ³n del sistema:", solucion)
+            ##Resultado esperado: SoluciÃ³n del sistema: [ 0.29047619 19.69047619  1.08571429]
+```
+### eliminacion_gauss
+```py
+    # Definir la matriz de coeficientes A y el vector de tÃ©rminos independientes b
+    A = np.array([
+    [2, 3, 1],
+    [1, 1, 2],
+    [1, -1, -1]
+    ], dtype=float)
+
+    b = np.array([0, 1, -1], dtype=float)
+
+    # Resolver el sistema Ax = b usando el mÃ©todo de eliminaciÃ³n de Gauss
+    solution = gauss_elimination(A, b)
+
+    print(f"SoluciÃ³n del sistema: {solution}")
+    ##Salida esperada: SoluciÃ³n del sistema: [-0.33333333 -0.          0.66666667]
+```
+### gauss_jordan
+```py
+    # Definir la matriz de coeficientes del sistema Ax = b
+    coefficients = [
+        [1, 1, -1],
+        [1, -2, 3],
+        [2, -1, 3]
+    ]
+
+    # Definir el vector de tÃ©rminos independientes
+    ind_terms = [2, 0, 3]
+
+    # Resolver el sistema mediante el mÃ©todo de Gauss-Jordan
+    solution = gauss_jordan(coefficients, ind_terms)
+
+    # Mostrar la soluciÃ³n del sistema
+    print("SoluciÃ³n del sistema:", solution)
+    #Resultado esperado: SoluciÃ³n del sistema: [1. 2. 1.]
+```
+### gauss_seidel
+```py
+    #Definir la matriz
+    A = np.array([
+        [9, 2, -1],
+        [7, 8, 5],
+        [3, 4, -10]
+    ], dtype=float)
+
+    b = np.array([-2, 3, 6], dtype=float)
+
+    # Resolver el sistema usando el mÃ©todo de Gauss-Seidel
+    solution = gauss_seidel(A, b)
+
+    # Mostrar la soluciÃ³n encontrada
+    print("La soluciÃ³n aproximada del sistema es:", solution)
+
+    #Resultado esperado: La soluciÃ³n aproximada del sistema es: [-0.48501362  1.01226158 -0.34059946]
+
+```
+### jacobi
+```py
+    #Definimos la matriz
+    A = np.array([
+        [2, -1, 1],
+        [1, 2, -1],
+        [1, 1, 1]
+    ], dtype=float)
+
+    b = np.array([7, 6, 12], dtype=float)
+
+    # Resolver el sistema Ax = b usando el mÃ©todo de Jacobi
+    solution = jacobi(A, b)
+
+    # Mostrar la soluciÃ³n aproximada 
+    print("La soluciÃ³n aproximada del sistema es:", solution)
+
+    #Solucion esperada: La soluciÃ³n aproximada del sistema es: [3. 4. 5.]
+```
+## Contacto  
+Email: **br23021@ues.edu.sv**  
+GitHub: (https://github.com/JoyserB/BR23021UNO)  
+Universidad de El Salvador  
