@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentChef"
+version = "0.2.7"
+description = "Comprehensive toolkit for conversation dataset creation, augmentation, and analysis"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Apache 2.0"}
+authors = [
+    {name = "Leoleojames1", email = "Leoleojames1@gmail.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+keywords = ["conversation", "dataset", "augmentation", "generation", "ollama", "ai"]
+dependencies = [
+    "aiohttp>=3.11.16",
+    "beautifulsoup4>=3.2.2",
+    "gitpython>=3.1.44",
+    "llama-index>=0.12.28",
+    "llama-index-experimental>=0.5.4",
+    "matplotlib>=3.10.1",
+    "numpy>=2.2.4",
+    "ollama>=0.4.7",
+    "pandas>=2.2.3",
+    "pyyaml>=6.0.2",
+    "PyQt6>=6.8.1",
+    "requests>=2.32.3",
+    "seaborn>=0.13.2",
+    "tqdm>=4.67.1",
+    "oarc-crawlers>=0.1.2"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=25.1.0",
+    "isort>=6.0.1",
+    "flake8>=7.2.0",
+    "pytest>=8.3.5",
+    "twine>=6.1.0",
+    "build>=1.2.2.post1"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Leoleojames1/agentChef"
+"Bug Tracker" = "https://github.com/Leoleojames1/agentChef/issues"
+"Documentation" = "https://github.com/Leoleojames1/agentChef/blob/main/README.md"
+
+[project.scripts]
+agentchef = "agentChef.udrags:main"
+
+[tool.setuptools]
+packages = ["agentChef"]
+
+[tool.setuptools.package-data]
+agentChef = ["assets/*.png"]
