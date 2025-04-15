@@ -1,0 +1,13 @@
+earthkit/transforms/__init__.py,sha256=Cs0Yk6coYb6daBnrBRaEGRJv_R6z3QUZDzmOJmziS6k,1024
+earthkit/transforms/tools.py,sha256=JVUh6nwCCI4SglKhJFdL3YZq22dG9atnWWT3EwlcqzQ,14148
+earthkit/transforms/version.py,sha256=-UXII43tJWWG-Bw3-ObfEfbloOAVS2Clozd55E6zYvA,72
+earthkit/transforms/aggregate/__init__.py,sha256=YuugeR8S7F4nXrHSH7y5V4Fx7QHWOzfw2bli8e5YiBc,850
+earthkit/transforms/aggregate/climatology.py,sha256=HgLAov2beasj1eWrcmU6IwKUeThBP1ypRvbBpHqXfxw,34963
+earthkit/transforms/aggregate/general.py,sha256=dr_rbcg6HqGFQbX7GSwSMRcZkFQiWNKbhx2NYYEuS9U,11805
+earthkit/transforms/aggregate/spatial.py,sha256=O4O0z1-_gHMks5LMl-ZxDMUngdYfoea-BbTwWRiIiI4,27375
+earthkit/transforms/aggregate/temporal.py,sha256=LbnpL2HKQDdQuiNteKBZCVnaxgtE0I1S4fmUXqkbVL4,38193
+earthkit_transforms-0.4.0.dist-info/licenses/LICENSE,sha256=EXa9TeBMc3bjJ8QjcgV6rl6rc7tLDFdHIMzFD6ougSU,11382
+earthkit_transforms-0.4.0.dist-info/METADATA,sha256=FARyKDNfYai-yKqmzX1AJ3RLMT3ykDGlb2GHDSgeYyM,17869
+earthkit_transforms-0.4.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+earthkit_transforms-0.4.0.dist-info/top_level.txt,sha256=rlHOKqOMbPp3ZOnnqxjzxP3k_XvdR3AeH_mQLzGAVBI,9
+earthkit_transforms-0.4.0.dist-info/RECORD,,
