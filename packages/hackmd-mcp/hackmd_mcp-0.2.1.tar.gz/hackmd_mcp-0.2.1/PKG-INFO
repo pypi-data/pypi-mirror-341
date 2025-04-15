@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: hackmd_mcp
+Version: 0.2.1
+Summary: A package for HackMD functionality
+Home-page: https://github.com/Oliver0804/hackmd_mcp
+Author: Oliver0804
+Author-email: icetzsr@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx
+Requires-Dist: mcp
+Requires-Dist: pydantic
+
+# HackMD MCP
+
+A Python package for HackMD functionality.
+
+## Installation
+
+```bash
+pip install hackmd_mcp
+```
+
+## Usage
+
+```python
+from hackmd_mcp import your_module
+
+# Your code here
+```
+
+## License
+
+MIT
