@@ -1,0 +1,113 @@
+[project]
+name = "AgileMind"
+dynamic = ["version"]
+authors = [
+  { name="WnRock" },
+]
+description = "A multi-agent software development tool."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+dependencies = [
+    "altair",
+    "annotated-types",
+    "anyio",
+    "astroid",
+    "attrs",
+    "beautifulsoup4",
+    "blinker",
+    "cachetools",
+    "certifi",
+    "charset-normalizer",
+    "click",
+    "contourpy",
+    "cycler",
+    "dill",
+    "distro",
+    "esprima",
+    "fonttools",
+    "gitdb",
+    "GitPython",
+    "h11",
+    "httpcore",
+    "httpx",
+    "idna",
+    "isort",
+    "Jinja2",
+    "jiter",
+    "jsonschema",
+    "jsonschema-specifications",
+    "kiwisolver",
+    "markdown-it-py",
+    "MarkupSafe",
+    "matplotlib",
+    "mccabe",
+    "mdurl",
+    "mypy",
+    "mypy-extensions",
+    "narwhals",
+    "networkx",
+    "numpy",
+    "openai",
+    "packaging",
+    "pandas",
+    "pillow",
+    "platformdirs",
+    "plotly",
+    "protobuf",
+    "pyarrow",
+    "pydantic",
+    "pydantic_core",
+    "pydeck",
+    "Pygments",
+    "pylint",
+    "pyparsing",
+    "python-dateutil",
+    "python-dotenv",
+    "pytz",
+    "PyYAML",
+    "rdflib",
+    "readchar",
+    "referencing",
+    "regex",
+    "requests",
+    "rich",
+    "rpds-py",
+    "six",
+    "smmap",
+    "sniffio",
+    "soupsieve",
+    "streamlit",
+    "streamlit-agraph",
+    "tenacity",
+    "tiktoken",
+    "tinycss2",
+    "toml",
+    "tomlkit",
+    "tornado",
+    "tqdm",
+    "typing_extensions",
+    "tzdata",
+    "urllib3",
+    "watchdog",
+    "webencodings",
+]
+
+[tool.hatch.version]
+path = "agilemind/__init__.py"
+
+[project.scripts]
+agilemind = "agilemind.main:entry"
+
+[project.urls]
+Homepage = "https://github.com/wnrock/AgileMind"
+Issues = "https://github.com/wnrock/AgileMind/issues"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
