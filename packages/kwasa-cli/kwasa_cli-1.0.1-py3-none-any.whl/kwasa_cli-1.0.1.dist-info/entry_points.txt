@@ -1,0 +1,3 @@
+[console_scripts]
+custom-check = kwasa.run_checks:run_checks
+kwasa = kwasa.main:main
