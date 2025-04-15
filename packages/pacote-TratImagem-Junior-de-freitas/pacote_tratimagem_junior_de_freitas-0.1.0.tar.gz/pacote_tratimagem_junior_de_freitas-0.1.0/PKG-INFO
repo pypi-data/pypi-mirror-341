@@ -1,0 +1,55 @@
+Metadata-Version: 2.4
+Name: pacote-TratImagem-Junior-de-freitas
+Version: 0.1.0
+Summary: Funções para manipulação e visualização de imagens com scikit-image.
+Author: Junior de |Freitas
+Author-email: juniordefreitas1@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scikit-image
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# package_name
+
+Description. 
+The package package_name is used to:
+	Processing:
+		- Histrogram matching  
+		- Structural similarity
+		- Resize image
+	Utils:
+		- Read image
+		- Save image
+		
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install package_name
+```
+
+## Usage
+
+```python
+from package_name.module1_name import file1_name
+file1_name.my_function()
+```
+
+## Author
+My_name
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

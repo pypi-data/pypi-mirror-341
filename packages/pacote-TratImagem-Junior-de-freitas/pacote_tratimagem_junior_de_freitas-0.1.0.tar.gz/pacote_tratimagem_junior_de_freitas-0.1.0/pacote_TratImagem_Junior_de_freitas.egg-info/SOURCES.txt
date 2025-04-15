@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+pacote_TratImagem_Junior_de_freitas.egg-info/PKG-INFO
+pacote_TratImagem_Junior_de_freitas.egg-info/SOURCES.txt
+pacote_TratImagem_Junior_de_freitas.egg-info/dependency_links.txt
+pacote_TratImagem_Junior_de_freitas.egg-info/requires.txt
+pacote_TratImagem_Junior_de_freitas.egg-info/top_level.txt
