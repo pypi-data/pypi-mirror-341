@@ -1,0 +1,89 @@
+Metadata-Version: 2.3
+Name: python-luminous-mesh
+Version: 0.1.2
+Summary: A Python client for Luminous Mesh service
+Author: Raphael
+Author-email: camblong.raphael@epitech.eu
+Requires-Python: >=3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: cryptography (>=44.0.2,<45.0.0)
+Requires-Dist: grpcio (>=1.71.0,<2.0.0)
+Requires-Dist: grpcio-tools (>=1.71.0,<2.0.0)
+Requires-Dist: prometheus-client (>=0.21.1,<0.22.0)
+Requires-Dist: psutil (>=7.0.0,<8.0.0)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Requires-Dist: structlog (>=25.2.0,<26.0.0)
+Requires-Dist: tenacity (>=9.1.2,<10.0.0)
+Description-Content-Type: text/markdown
+
+# Python Luminous Mesh Client
+
+A Python client implementation for the Luminous Mesh service.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install python-luminous-mesh
+```
+
+Or directly from the source:
+
+```bash
+git clone https://github.com/yourusername/python-luminous-mesh.git
+cd python-luminous-mesh
+pip install .
+```
+
+## Usage
+
+You can run the Luminous Mesh client in two ways:
+
+1. Using the command-line interface:
+
+```bash
+# Using environment variables for configuration
+luminous-mesh
+
+# Using a configuration file
+luminous-mesh --config path/to/config.yaml
+```
+
+2. As a Python package:
+
+```python
+import asyncio
+from python_luminous_mesh.core.client import LuminousMeshClient
+from python_luminous_mesh.config.settings import ClientSettings
+
+async def run_client():
+    # Load settings from environment variables
+    settings = ClientSettings.from_env()
+    
+    # Or from a YAML file
+    # settings = ClientSettings.from_yaml("path/to/config.yaml")
+    
+    client = LuminousMeshClient(settings)
+    
+    if await client.connect():
+        try:
+            # Your client logic here
+            while True:
+                await asyncio.sleep(1)
+        finally:
+            await client.close()
+
+if __name__ == "__main__":
+    asyncio.run(run_client())
+```
+
+## Configuration
+
+The client can be configured either through environment variables or a YAML configuration file. See the documentation for more details on available configuration options.
+
+## License
+
+[Your License Here]
+
