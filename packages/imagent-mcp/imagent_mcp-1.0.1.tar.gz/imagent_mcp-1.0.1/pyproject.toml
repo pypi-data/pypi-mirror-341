@@ -1,0 +1,30 @@
+[project]
+name = "imagent-mcp"
+version = "1.0.1"
+description = "AI-powered local image management and organization tool"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    {name = "Dave Lee", email = "jhleeroot@gmail.com"},
+]
+keywords = ["image", "management", "processing", "ai", "organization", "mcp"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Multimedia :: Graphics",
+]
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "pillow>=11.2.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/imagent-mcp"]
