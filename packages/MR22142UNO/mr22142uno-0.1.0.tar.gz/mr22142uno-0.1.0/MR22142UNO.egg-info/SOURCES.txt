@@ -1,0 +1,9 @@
+README.md
+setup.py
+MR22142UNO/__init__.py
+MR22142UNO/metodos.py
+MR22142UNO.egg-info/PKG-INFO
+MR22142UNO.egg-info/SOURCES.txt
+MR22142UNO.egg-info/dependency_links.txt
+MR22142UNO.egg-info/requires.txt
+MR22142UNO.egg-info/top_level.txt
