@@ -1,0 +1,34 @@
+[project]
+name = "data_cache"
+authors = [{name="Statnett DataScience", email="Datascience.Drift@Statnett.no"}]
+description = "Python data cache decorator"
+keywords = ["cache", "pandas", "numpy", "decorator", "memoization"]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.10"
+dynamic = ["version"]
+
+dependencies = [
+  "numpy",
+  "pandas",
+  "tables",
+  "h5py",
+]
+
+[tool.uv]
+dev-dependencies = [
+  "pre-commit",
+  "pytest",
+  "pathos"
+]
+
+[tool.setuptools_scm]
+version_scheme="release-branch-semver"
+local_scheme = "no-local-version"
+
+[tool.ruff]
+line-length = 120
+
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
