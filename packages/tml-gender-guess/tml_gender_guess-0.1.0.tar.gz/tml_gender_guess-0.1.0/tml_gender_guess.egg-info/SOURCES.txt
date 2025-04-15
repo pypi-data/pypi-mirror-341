@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+nameLists/__init__.py
+tml_gender_guess.egg-info/PKG-INFO
+tml_gender_guess.egg-info/SOURCES.txt
+tml_gender_guess.egg-info/dependency_links.txt
+tml_gender_guess.egg-info/requires.txt
+tml_gender_guess.egg-info/top_level.txt
