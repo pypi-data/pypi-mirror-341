@@ -1,0 +1,2 @@
+[console_scripts]
+moog-sub37-mcp = moog_sub37_mcp.main:main
