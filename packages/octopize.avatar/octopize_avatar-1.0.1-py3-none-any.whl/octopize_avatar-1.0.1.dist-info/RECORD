@@ -1,0 +1,16 @@
+avatars/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+avatars/api.py,sha256=vdiVUhNLwCmgowQIlT9gAuPYfT4cKw3DYGp--X-2RTE,12082
+avatars/base_client.py,sha256=eEAwdcOcKAPDTijLytNSqseDk3LSQoJIemWokMcSA7Y,26050
+avatars/client.py,sha256=N0lC8MMErxNmhj7OXj_cmrR-CbYj0MrlepzAnqPHxrY,5161
+avatars/config.py,sha256=S7UpW5qu1bO1xBX9TThXgBmJ7Bn6sGF4-deHbRcNSxk,650
+avatars/constants.py,sha256=Gd96LLPupD6qEqp1nfy7SAFYYMNDMX_DPpfiVMN5kJU,171
+avatars/data_upload.py,sha256=joyASxjk64DcKmZ6z1edH4QXoA8vZAp96TV8o8BmtkM,3885
+avatars/log.py,sha256=ft25mVzu717vjsLyyPbjIXi79f6tLTj5Whn4sscOfis,2961
+avatars/manager.py,sha256=BVjsX460oTukaqfD-c_Qq-dtRrE46CooIdk6_pzHQ-A,2283
+avatars/models.py,sha256=j89whguq_9HWYH0N-0dUKnav7YxNefVN5kFytctsQCc,4464
+avatars/runner.py,sha256=ziCLboqOwDFpRZ4sWoql2b2rYblKY_3-UyUxEVNfE0Y,22719
+avatars/storage.py,sha256=3qAgI5e94KRyFewZHPqQuOp3mm0iMBKfEqB_idnicNE,2612
+avatars/utils.py,sha256=VNtrVnQ7ZlfEICFC_7WutlzQN4YMagYqO4QYmm2LgTA,2201
+octopize_avatar-1.0.1.dist-info/METADATA,sha256=8kVzShlZnbufFcNiNWGQByi66Z-0SpUBDb_fMVGqDA4,1686
+octopize_avatar-1.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+octopize_avatar-1.0.1.dist-info/RECORD,,
