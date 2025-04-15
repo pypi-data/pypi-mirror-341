@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/onn512/__init__.py
+src/onn512.egg-info/PKG-INFO
+src/onn512.egg-info/SOURCES.txt
+src/onn512.egg-info/dependency_links.txt
+src/onn512.egg-info/top_level.txt
