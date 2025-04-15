@@ -1,0 +1,800 @@
+Metadata-Version: 2.1
+Name: Iris-Codec
+Version: 2025.1.0a3
+Summary: Portable and blazingly fast whole slide image compression and serialization library for the Iris File Extension
+Keywords: Iris,pathology,digital pathology,whole slide image,digital slide
+Author-Email: Ryan Landvater <ryanlandvater@gmail.com>
+Maintainer-Email: Ryan Landvater <ryanlandvater@gmail.com>
+License: -----------------------------------------------------------------------------
+         Iris Codec Community License
+         -----------------------------------------------------------------------------
+         
+         MIT License
+         
+         Copyright (c) 2025 Iris Digital Pathology
+         
+         Permission is hereby granted, free of charge, to any person obtaining a copy
+         of this software and associated documentation files (the "Software"), to deal
+         in the Software without restriction, including without limitation the rights
+         to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+         copies of the Software, and to permit persons to whom the Software is
+         furnished to do so, subject to the following conditions:
+         
+         The above copyright notice and this permission notice shall be included in all
+         copies or substantial portions of the Software.
+         
+         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+         AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+         SOFTWARE.
+         
+         
+         ALL DEPENDENCY LICENSES ARE BELOW:
+         
+         -----------------------------------------------------------------------------
+         libjpeg-turbo Licenses
+         -----------------------------------------------------------------------------
+         
+         libjpeg-turbo is covered by two compatible BSD-style open source licenses:
+         
+         - The IJG (Independent JPEG Group) License, which is listed in
+           [README.ijg](README.ijg)
+         
+           This license applies to the libjpeg API library and associated programs,
+           including any code inherited from libjpeg and any modifications to that
+           code.  Note that the libjpeg-turbo SIMD source code bears the
+           [zlib License](https://opensource.org/licenses/Zlib), but in the context of
+           the overall libjpeg API library, the terms of the zlib License are subsumed
+           by the terms of the IJG License.
+         
+         - The Modified (3-clause) BSD License, which is listed below
+         
+           This license applies to the TurboJPEG API library and associated programs, as
+           well as the build system.  Note that the TurboJPEG API library wraps the
+           libjpeg API library, so in the context of the overall TurboJPEG API library,
+           both the terms of the IJG License and the terms of the Modified (3-clause)
+           BSD License apply.
+         
+         
+         Complying with the libjpeg-turbo Licenses
+         =========================================
+         
+         This section provides a roll-up of the libjpeg-turbo licensing terms, to the
+         best of our understanding.  This is not a license in and of itself.  It is
+         intended solely for clarification.
+         
+         1.  If you are distributing a modified version of the libjpeg-turbo source,
+             then:
+         
+             1.  You cannot alter or remove any existing copyright or license notices
+                 from the source.
+         
+                 **Origin**
+                 - Clause 1 of the IJG License
+                 - Clause 1 of the Modified BSD License
+                 - Clauses 1 and 3 of the zlib License
+         
+             2.  You must add your own copyright notice to the header of each source
+                 file you modified, so others can tell that you modified that file.  (If
+                 there is not an existing copyright header in that file, then you can
+                 simply add a notice stating that you modified the file.)
+         
+                 **Origin**
+                 - Clause 1 of the IJG License
+                 - Clause 2 of the zlib License
+         
+             3.  You must include the IJG README file, and you must not alter any of the
+                 copyright or license text in that file.
+         
+                 **Origin**
+                 - Clause 1 of the IJG License
+         
+         2.  If you are distributing only libjpeg-turbo binaries without the source, or
+             if you are distributing an application that statically links with
+             libjpeg-turbo, then:
+         
+             1.  Your product documentation must include a message stating:
+         
+                 This software is based in part on the work of the Independent JPEG
+                 Group.
+         
+                 **Origin**
+                 - Clause 2 of the IJG license
+         
+             2.  If your binary distribution includes or uses the TurboJPEG API, then
+                 your product documentation must include the text of the Modified BSD
+                 License (see below.)
+         
+                 **Origin**
+                 - Clause 2 of the Modified BSD License
+         
+         3.  You cannot use the name of the IJG or The libjpeg-turbo Project or the
+             contributors thereof in advertising, publicity, etc.
+         
+             **Origin**
+             - IJG License
+             - Clause 3 of the Modified BSD License
+         
+         4.  The IJG and The libjpeg-turbo Project do not warrant libjpeg-turbo to be
+             free of defects, nor do we accept any liability for undesirable
+             consequences resulting from your use of the software.
+         
+             **Origin**
+             - IJG License
+             - Modified BSD License
+             - zlib License
+         
+         
+         The Modified (3-clause) BSD License
+         ===================================
+         
+         Copyright (C)2009-2024 D. R. Commander.  All Rights Reserved.<br>
+         Copyright (C)2015 Viktor Szathmáry.  All Rights Reserved.
+         
+         Redistribution and use in source and binary forms, with or without
+         modification, are permitted provided that the following conditions are met:
+         
+         - Redistributions of source code must retain the above copyright notice,
+           this list of conditions and the following disclaimer.
+         - Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+         - Neither the name of the libjpeg-turbo Project nor the names of its
+           contributors may be used to endorse or promote products derived from this
+           software without specific prior written permission.
+         
+         THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS",
+         AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+         IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+         ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE
+         LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+         CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+         SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+         INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+         CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+         ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+         POSSIBILITY OF SUCH DAMAGE.
+         
+         
+         Why Two Licenses?
+         =================
+         
+         The zlib License could have been used instead of the Modified (3-clause) BSD
+         License, and since the IJG License effectively subsumes the distribution
+         conditions of the zlib License, this would have effectively placed
+         libjpeg-turbo binary distributions under the IJG License.  However, the IJG
+         License specifically refers to the Independent JPEG Group and does not extend
+         attribution and endorsement protections to other entities.  Thus, it was
+         desirable to choose a license that granted us the same protections for new code
+         that were granted to the IJG for code derived from their software.
+         
+         
+         -----------------------------------------------------------------------------
+         LibAOM AV1 Encoder License
+         -----------------------------------------------------------------------------
+         
+         Copyright (c) 2016, Alliance for Open Media. All rights reserved.
+         
+         Redistribution and use in source and binary forms, with or without
+         modification, are permitted provided that the following conditions
+         are met:
+         
+         1. Redistributions of source code must retain the above copyright
+            notice, this list of conditions and the following disclaimer.
+         
+         2. Redistributions in binary form must reproduce the above copyright
+            notice, this list of conditions and the following disclaimer in
+            the documentation and/or other materials provided with the
+            distribution.
+         
+         THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+         "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+         LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+         FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+         COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+         INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+         BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+         LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+         CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+         LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+         ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+         POSSIBILITY OF SUCH DAMAGE.
+         
+         
+         -----------------------------------------------------------------------------
+         LibAOM AV1 Encoder License
+         -----------------------------------------------------------------------------
+         Copyright 2019 Joe Drago. All rights reserved.
+         
+         Redistribution and use in source and binary forms, with or without
+         modification, are permitted provided that the following conditions are met:
+         
+         1. Redistributions of source code must retain the above copyright notice, this
+         list of conditions and the following disclaimer.
+         
+         2. Redistributions in binary form must reproduce the above copyright notice,
+         this list of conditions and the following disclaimer in the documentation
+         and/or other materials provided with the distribution.
+         
+         THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+         AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+         IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+         DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+         FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+         DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+         SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+         CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+         OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+         OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+         
+         
+         ------------------------------------------------------------------------------
+         
+         Files: third_party/iccjpeg/*
+         
+         In plain English:
+         
+         1. We don't promise that this software works.  (But if you find any bugs,
+            please let us know!)
+         2. You can use this software for whatever you want.  You don't have to pay us.
+         3. You may not pretend that you wrote this software.  If you use it in a
+            program, you must acknowledge somewhere in your documentation that
+            you've used the IJG code.
+         
+         In legalese:
+         
+         The authors make NO WARRANTY or representation, either express or implied,
+         with respect to this software, its quality, accuracy, merchantability, or
+         fitness for a particular purpose.  This software is provided "AS IS", and you,
+         its user, assume the entire risk as to its quality and accuracy.
+         
+         This software is copyright (C) 1991-2013, Thomas G. Lane, Guido Vollbeding.
+         All Rights Reserved except as specified below.
+         
+         Permission is hereby granted to use, copy, modify, and distribute this
+         software (or portions thereof) for any purpose, without fee, subject to these
+         conditions:
+         (1) If any part of the source code for this software is distributed, then this
+         README file must be included, with this copyright and no-warranty notice
+         unaltered; and any additions, deletions, or changes to the original files
+         must be clearly indicated in accompanying documentation.
+         (2) If only executable code is distributed, then the accompanying
+         documentation must state that "this software is based in part on the work of
+         the Independent JPEG Group".
+         (3) Permission for use of this software is granted only if the user accepts
+         full responsibility for any undesirable consequences; the authors accept
+         NO LIABILITY for damages of any kind.
+         
+         These conditions apply to any software derived from or based on the IJG code,
+         not just to the unmodified library.  If you use our work, you ought to
+         acknowledge us.
+         
+         Permission is NOT granted for the use of any IJG author's name or company name
+         in advertising or publicity relating to this software or products derived from
+         it.  This software may be referred to only as "the Independent JPEG Group's
+         software".
+         
+         We specifically permit and encourage the use of this software as the basis of
+         commercial products, provided that all warranty or liability claims are
+         assumed by the product vendor.
+         
+         
+         The Unix configuration script "configure" was produced with GNU Autoconf.
+         It is copyright by the Free Software Foundation but is freely distributable.
+         The same holds for its supporting scripts (config.guess, config.sub,
+         ltmain.sh).  Another support script, install-sh, is copyright by X Consortium
+         but is also freely distributable.
+         
+         The IJG distribution formerly included code to read and write GIF files.
+         To avoid entanglement with the Unisys LZW patent, GIF reading support has
+         been removed altogether, and the GIF writer has been simplified to produce
+         "uncompressed GIFs".  This technique does not use the LZW algorithm; the
+         resulting GIF files are larger than usual, but are readable by all standard
+         GIF decoders.
+         
+         We are required to state that
+             "The Graphics Interchange Format(c) is the Copyright property of
+             CompuServe Incorporated.  GIF(sm) is a Service Mark property of
+             CompuServe Incorporated."
+         
+         ------------------------------------------------------------------------------
+         
+         Copyright 2020 Emmanuel Gil Peyrot. All rights reserved.
+         
+         Redistribution and use in source and binary forms, with or without
+         modification, are permitted provided that the following conditions are met:
+         
+         1. Redistributions of source code must retain the above copyright notice, this
+         list of conditions and the following disclaimer.
+         
+         2. Redistributions in binary form must reproduce the above copyright notice,
+         this list of conditions and the following disclaimer in the documentation
+         and/or other materials provided with the distribution.
+         
+         THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+         AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+         IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+         DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+         FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+         DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+         SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+         CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+         OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+         OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+         
+         ------------------------------------------------------------------------------
+         
+         
+                                          Apache License
+                                    Version 2.0, January 2004
+                                 http://www.apache.org/licenses/
+         
+            TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+         
+            1. Definitions.
+         
+               "License" shall mean the terms and conditions for use, reproduction,
+               and distribution as defined by Sections 1 through 9 of this document.
+         
+               "Licensor" shall mean the copyright owner or entity authorized by
+               the copyright owner that is granting the License.
+         
+               "Legal Entity" shall mean the union of the acting entity and all
+               other entities that control, are controlled by, or are under common
+               control with that entity. For the purposes of this definition,
+               "control" means (i) the power, direct or indirect, to cause the
+               direction or management of such entity, whether by contract or
+               otherwise, or (ii) ownership of fifty percent (50%) or more of the
+               outstanding shares, or (iii) beneficial ownership of such entity.
+         
+               "You" (or "Your") shall mean an individual or Legal Entity
+               exercising permissions granted by this License.
+         
+               "Source" form shall mean the preferred form for making modifications,
+               including but not limited to software source code, documentation
+               source, and configuration files.
+         
+               "Object" form shall mean any form resulting from mechanical
+               transformation or translation of a Source form, including but
+               not limited to compiled object code, generated documentation,
+               and conversions to other media types.
+         
+               "Work" shall mean the work of authorship, whether in Source or
+               Object form, made available under the License, as indicated by a
+               copyright notice that is included in or attached to the work
+               (an example is provided in the Appendix below).
+         
+               "Derivative Works" shall mean any work, whether in Source or Object
+               form, that is based on (or derived from) the Work and for which the
+               editorial revisions, annotations, elaborations, or other modifications
+               represent, as a whole, an original work of authorship. For the purposes
+               of this License, Derivative Works shall not include works that remain
+               separable from, or merely link (or bind by name) to the interfaces of,
+               the Work and Derivative Works thereof.
+         
+               "Contribution" shall mean any work of authorship, including
+               the original version of the Work and any modifications or additions
+               to that Work or Derivative Works thereof, that is intentionally
+               submitted to Licensor for inclusion in the Work by the copyright owner
+               or by an individual or Legal Entity authorized to submit on behalf of
+               the copyright owner. For the purposes of this definition, "submitted"
+               means any form of electronic, verbal, or written communication sent
+               to the Licensor or its representatives, including but not limited to
+               communication on electronic mailing lists, source code control systems,
+               and issue tracking systems that are managed by, or on behalf of, the
+               Licensor for the purpose of discussing and improving the Work, but
+               excluding communication that is conspicuously marked or otherwise
+               designated in writing by the copyright owner as "Not a Contribution."
+         
+               "Contributor" shall mean Licensor and any individual or Legal Entity
+               on behalf of whom a Contribution has been received by Licensor and
+               subsequently incorporated within the Work.
+         
+            2. Grant of Copyright License. Subject to the terms and conditions of
+               this License, each Contributor hereby grants to You a perpetual,
+               worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+               copyright license to reproduce, prepare Derivative Works of,
+               publicly display, publicly perform, sublicense, and distribute the
+               Work and such Derivative Works in Source or Object form.
+         
+            3. Grant of Patent License. Subject to the terms and conditions of
+               this License, each Contributor hereby grants to You a perpetual,
+               worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+               (except as stated in this section) patent license to make, have made,
+               use, offer to sell, sell, import, and otherwise transfer the Work,
+               where such license applies only to those patent claims licensable
+               by such Contributor that are necessarily infringed by their
+               Contribution(s) alone or by combination of their Contribution(s)
+               with the Work to which such Contribution(s) was submitted. If You
+               institute patent litigation against any entity (including a
+               cross-claim or counterclaim in a lawsuit) alleging that the Work
+               or a Contribution incorporated within the Work constitutes direct
+               or contributory patent infringement, then any patent licenses
+               granted to You under this License for that Work shall terminate
+               as of the date such litigation is filed.
+         
+            4. Redistribution. You may reproduce and distribute copies of the
+               Work or Derivative Works thereof in any medium, with or without
+               modifications, and in Source or Object form, provided that You
+               meet the following conditions:
+         
+               (a) You must give any other recipients of the Work or
+                   Derivative Works a copy of this License; and
+         
+               (b) You must cause any modified files to carry prominent notices
+                   stating that You changed the files; and
+         
+               (c) You must retain, in the Source form of any Derivative Works
+                   that You distribute, all copyright, patent, trademark, and
+                   attribution notices from the Source form of the Work,
+                   excluding those notices that do not pertain to any part of
+                   the Derivative Works; and
+         
+               (d) If the Work includes a "NOTICE" text file as part of its
+                   distribution, then any Derivative Works that You distribute must
+                   include a readable copy of the attribution notices contained
+                   within such NOTICE file, excluding those notices that do not
+                   pertain to any part of the Derivative Works, in at least one
+                   of the following places: within a NOTICE text file distributed
+                   as part of the Derivative Works; within the Source form or
+                   documentation, if provided along with the Derivative Works; or,
+                   within a display generated by the Derivative Works, if and
+                   wherever such third-party notices normally appear. The contents
+                   of the NOTICE file are for informational purposes only and
+                   do not modify the License. You may add Your own attribution
+                   notices within Derivative Works that You distribute, alongside
+                   or as an addendum to the NOTICE text from the Work, provided
+                   that such additional attribution notices cannot be construed
+                   as modifying the License.
+         
+               You may add Your own copyright statement to Your modifications and
+               may provide additional or different license terms and conditions
+               for use, reproduction, or distribution of Your modifications, or
+               for any such Derivative Works as a whole, provided Your use,
+               reproduction, and distribution of the Work otherwise complies with
+               the conditions stated in this License.
+         
+            5. Submission of Contributions. Unless You explicitly state otherwise,
+               any Contribution intentionally submitted for inclusion in the Work
+               by You to the Licensor shall be under the terms and conditions of
+               this License, without any additional terms or conditions.
+               Notwithstanding the above, nothing herein shall supersede or modify
+               the terms of any separate license agreement you may have executed
+               with Licensor regarding such Contributions.
+         
+            6. Trademarks. This License does not grant permission to use the trade
+               names, trademarks, service marks, or product names of the Licensor,
+               except as required for reasonable and customary use in describing the
+               origin of the Work and reproducing the content of the NOTICE file.
+         
+            7. Disclaimer of Warranty. Unless required by applicable law or
+               agreed to in writing, Licensor provides the Work (and each
+               Contributor provides its Contributions) on an "AS IS" BASIS,
+               WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+               implied, including, without limitation, any warranties or conditions
+               of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+               PARTICULAR PURPOSE. You are solely responsible for determining the
+               appropriateness of using or redistributing the Work and assume any
+               risks associated with Your exercise of permissions under this License.
+         
+            8. Limitation of Liability. In no event and under no legal theory,
+               whether in tort (including negligence), contract, or otherwise,
+               unless required by applicable law (such as deliberate and grossly
+               negligent acts) or agreed to in writing, shall any Contributor be
+               liable to You for damages, including any direct, indirect, special,
+               incidental, or consequential damages of any character arising as a
+               result of this License or out of the use or inability to use the
+               Work (including but not limited to damages for loss of goodwill,
+               work stoppage, computer failure or malfunction, or any and all
+               other commercial damages or losses), even if such Contributor
+               has been advised of the possibility of such damages.
+         
+            9. Accepting Warranty or Additional Liability. While redistributing
+               the Work or Derivative Works thereof, You may choose to offer,
+               and charge a fee for, acceptance of support, warranty, indemnity,
+               or other liability obligations and/or rights consistent with this
+               License. However, in accepting such obligations, You may act only
+               on Your own behalf and on Your sole responsibility, not on behalf
+               of any other Contributor, and only if You agree to indemnify,
+               defend, and hold each Contributor harmless for any liability
+               incurred by, or claims asserted against, such Contributor by reason
+               of your accepting any such warranty or additional liability.
+         
+            END OF TERMS AND CONDITIONS
+         
+            APPENDIX: How to apply the Apache License to your work.
+         
+               To apply the Apache License to your work, attach the following
+               boilerplate notice, with the fields enclosed by brackets "[]"
+               replaced with your own identifying information. (Don't include
+               the brackets!)  The text should be enclosed in the appropriate
+               comment syntax for the file format. We also recommend that a
+               file or class name and description of purpose be included on the
+               same "printed page" as the copyright notice for easier
+               identification within third-party archives.
+         
+            Copyright [yyyy] [name of copyright owner]
+         
+            Licensed under the Apache License, Version 2.0 (the "License");
+            you may not use this file except in compliance with the License.
+            You may obtain a copy of the License at
+         
+                http://www.apache.org/licenses/LICENSE-2.0
+         
+            Unless required by applicable law or agreed to in writing, software
+            distributed under the License is distributed on an "AS IS" BASIS,
+            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+            See the License for the specific language governing permissions and
+            limitations under the License.
+         
+         ------------------------------------------------------------------------------
+         
+         Copyright 2011 The LibYuv Project Authors. All rights reserved.
+         
+         Redistribution and use in source and binary forms, with or without
+         modification, are permitted provided that the following conditions are
+         met:
+         
+           * Redistributions of source code must retain the above copyright
+             notice, this list of conditions and the following disclaimer.
+         
+           * Redistributions in binary form must reproduce the above copyright
+             notice, this list of conditions and the following disclaimer in
+             the documentation and/or other materials provided with the
+             distribution.
+         
+           * Neither the name of Google nor the names of its contributors may
+             be used to endorse or promote products derived from this software
+             without specific prior written permission.
+         
+         THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+         "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+         LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+         A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+         HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+         SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+         LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+         DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+         THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+         (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+         OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+         
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Project-URL: Homepage, https://github.com/IrisDigitalPathology/Iris-Codec
+Project-URL: Bug Reports, https://github.com/IrisDigitalPathology/Iris-Codec/issues
+Project-URL: Source, https://github.com/IrisDigitalPathology/Iris-Codec
+Requires-Python: >=3.11
+Requires-Dist: openslide-bin
+Description-Content-Type: text/markdown
+
+# Iris Codec Community Module
+
+Copyright &copy; 2025 Iris Developers; MIT Software License
+
+The Iris Codec Community module is a part of the Iris Digital Pathology project. This module allows for the reading and writing of Iris whole slide image (WSI) digital slide files (*.iris*) and allows for the decoding of Iris Codec-type compressed tile image data. This repository was designed to allow for extremely fast slide access using what we consider a very simple API as we want to simplify access to these files for you. It may downloaded as pre-compiled binaries in the [releases tab](https://github.com/IrisDigitalPathology/Iris-Codec/releases), or [may be built](README.md#c-and-c-implementations) as a static or dynamically linked C++ library or [python modules](README.md#python). We have additionally provided these python modules in prebuilt releases on the Anaconda [Conda-Forge](https://conda-forge.org) Python package manager.
+
+> [!NOTE]
+> **If you are a scanning device manufacturer or programmer developing a custom encoder/decoder, the [Iris File Extension (IFE) repository](https://github.com/IrisDigitalPathology/Iris-File-Extension) will provide the necessary calls to read, write, and validate slide files in accordance with the Iris File Extension Specification.** The current repository (Iris Codec Module) applies higher level abstractions for slide access and incorporates image codecs for image compression. The IFE repository does not. It is limited to (de)serialization and validation. The Iris Codec Module incorporates the [IFE repository](https://github.com/IrisDigitalPathology/Iris-File-Extension) as a dependency, so if you use the IFE respository instead, the Iris Codec module source files may be a helpful guide in how we choose to read and write to Iris files using the IFE's API.
+
+> [!WARNING]
+>  The Iris Codec module is still in active development. We do not anticipate altering the established API functions in the [header files](https://github.com/IrisDigitalPathology/Iris-Headers) but as we add in new features, some elements of the API may change slightly. Please check in regularly if you intend to update your dynamically linked libraries to ensure no API breaking changes have been merged. 
+
+This module has reliatively limited dependencies. As our encoder builds shift away from using OpenSlide, we will add additional library dependencies for reading vendor files. 
+- [Iris File Extension](https://github.com/IrisDigitalPathology/Iris-File-Extension)
+- [Libjpeg-turbo](https://github.com/libjpeg-turbo/libjpeg-turbo)
+- [Libavif](https://github.com/AOMediaCodec/libavif)
+- [OpenSlide](https://github.com/openslide/openslide) (*optional*, encoder-only) <p>*Note: We may remove this dependency in future releases of the encoder. At the present, this limits Windows encoder builds to x86_64 only. You must disable openslide for ARM based windows encoder builds.*
+
+*If you are a software engineer looking to help with Iris, we are always looking for additional passionate engineers to help in developing the Iris Project.*
+
+# Installation
+## Building From Source
+
+This library can be built from source using CMake. 
+
+[![Iris Codec CMake macOS CI](https://github.com/IrisDigitalPathology/Iris-Codec/actions/workflows/cmake-macos-CI.yml/badge.svg)](https://github.com/IrisDigitalPathology/Iris-Codec/actions/workflows/cmake-macos-CI.yml)\
+[![Iris Codec Linux CMake CI](https://github.com/IrisDigitalPathology/Iris-Codec/actions/workflows/cmake-linux-CI.yml/badge.svg)](https://github.com/IrisDigitalPathology/Iris-Codec/actions/workflows/cmake-linux-CI.yml)\
+[![Iris Codec Windows CMake CI](https://github.com/IrisDigitalPathology/Iris-Codec/actions/workflows/cmake-win64-CI.yml/badge.svg)](https://github.com/IrisDigitalPathology/Iris-Codec/actions/workflows/cmake-win64-CI.yml)
+
+The following shell commands clone and build the repository. Remember to `-DCMAKE_INSTALL_PREFIX` your chosen install directory if not installing system-wide. Additionally, Iris Codec CMake script is designed to look for and dynamically link [turbo-jpeg](https://github.com/libjpeg-turbo/libjpeg-turbo) and [AVIF](https://github.com/AOMediaCodec/libavif) by default; however, some implementations would rather simply build a self-contained statically linked binary without the need to dynamically load libraries. **In some instances where reliablity is key, this may be the most secure option.** Some architectures, such as iOS require this. To enable static dependency linkage, instead set `-DIRIS_BUILD_DEPENDENCIES=ON`. More info on the dependencies lookup and **cross compiling** Iris Codec in the [cmake directory](./cmake/).
+
+```sh
+git clone --depth 1 https://github.com/IrisDigitalPathology/Iris-Codec.git
+# Configure your install directory with -DCMAKE_INSTALL_PREFIX=''
+# The following CMake Arguments are the default arguments; you may remove the -DARG_NAME entries below and it will build the same. I have just included them to add clarity to optional configurations.
+cmake -B build \
+    -D IRIS_BUILD_SHARED=ON \
+    -D IRIS_BUILD_STATIC=ON \
+    -D IRIS_BUILD_ENCODER=ON \
+    -D IRIS_BUILD_DEPENDENCIES=OFF \
+    -D IRIS_BUILD_PYTHON=OFF \
+    -D IRIS_USE_OPENSLIDE=ON \
+    ./Iris-Codec
+cmake --build ./Iris-Codec/build --config Release -j$CPU_COUNT
+cmake --install ./Iris-Codec/build
+```
+## Python
+
+| Status | Name | Downloads | Version |
+| --- | --- | --- | --- | 
+| [![Conda-Build](https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/Iris-Codec-feedstock?branchName=main)](https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=25325&branchName=main)| [![Conda Recipe](https://img.shields.io/badge/recipe-iris--codec-green.svg)](https://anaconda.org/conda-forge/iris-codec) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/iris-codec.svg)](https://anaconda.org/conda-forge/iris-codec) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/iris-codec.svg)](https://anaconda.org/conda-forge/iris-codec) | 
+
+Supported Python Platforms\
+[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/iris-codec.svg)](https://anaconda.org/conda-forge/iris-codec)
+
+>[!NOTE]
+> The python Iris Codec Encoder does not support OpenSlide on Windows presently as OpenSlide does not support windows with its official Conda-Forge package. We are building in native support for vendor files and DICOM for re-encoding.
+
+Iris Codec is also available as a Python conda package on the Conda-Forge Anaconda package manager channel. The corresponding python module may also be built from source by setting `-DIRIS_BUILD_PYTHON=ON` in the above CMake command if you would rather build the module rather than install it via Anaconda. 
+
+
+```shell
+conda install -c conda-forge Iris-Codec 
+```
+
+## Javascript
+[![Iris Codec Emscripten Webassembly Build](https://github.com/IrisDigitalPathology/Iris-Codec-JavaScript/actions/workflows/emcmake.yml/badge.svg)](https://github.com/IrisDigitalPathology/Iris-Codec-JavaScript/actions/workflows/emcmake.yml)
+
+The [Iris-Codec-JavaScript repository](https://github.com/IrisDigitalPathology/Iris-Codec-JavaScript) contains the WebAssembly (WASM) build of the Iris Codec library, allowing it to be used in web browsers and Node.js applications. This implementation does not have the same dependencies, as image decoding is performed in the browser with JavaScript native codec tools. 
+
+# Implementations
+## C++
+Iris is natively a C++ program and the majority of features will first be supported in C++ followed by the other language bindings as we find time to write the bindings. 
+
+Begin by importing the [Iris Codec Core header](https://github.com/IrisDigitalPathology/Iris-Headers/blob/main/include/IrisCodecCore.hpp); it contains references to the [Iris Codec specific type definitions](https://github.com/IrisDigitalPathology/Iris-Headers/blob/main/include/IrisCodecTypes.hpp) as well as the general [Iris Core type definitions](https://github.com/IrisDigitalPathology/Iris-Headers/blob/main/include/IrisTypes.hpp). You may chose to perform your own file system validations and recovery routines. Iris will, however catch all of these as the main API methods are declared `noexcept`. Should an runtime error occur, it will be reported in the form of an `IrisResult` message, as seen in the `IrisResult validate_slide (const SlideOpenInfo&) noexcept;` call below. Successful loading of a slide file will return a valid `IrisCodec::Slide` object; failure will return a `nullptr`. 
+```cpp
+// Import the Iris Codec header
+// This import includes the types header automatically
+#import <filesystem>
+#import <Iris/IrisCodecCore.hpp>
+int main(int argc, char const *argv[])
+{
+    using namespace IrisCodec;
+    std::filesystem::path file_path = "path/to/slide_file.iris";
+
+    // You can check the file system to see if the slide exists
+    // If you choose not to, that's fine too. Iris will tell you.
+    if (!std::filesystem::exists(file_path)) {
+        printf(file_path.string() + " file does not exist\n");
+        return EXIT_FAILURE;
+    }
+
+    // You can quickly check if the header starts with Iris
+    // file extension signatures. If not, that's fine too.
+    // Iris will catch it during validation.
+    if (!is_iris_codec_file(file_path.string())) {
+        printf(file_path.string() + " is not a valid Iris slide file\n");
+        return EXIT_FAILURE;
+    }
+
+    // Create an open slide info struct. Ignore the other
+    // parameters at the moment; they will default.
+    SlideOpenInfo open_info {
+        .filePath = file_path.string();
+    };
+    // Perform a deep validation of the slide file structure
+    // This will navigate the internal offset-chain and
+    // check for violations of the IFE standard.
+    IrisResult result = validate_slide (open_info);
+    if (result != IRIS_SUCCESS) {
+        printf (result.message);
+        return EXIT_FAILURE;
+    }
+    
+    // Finally create the slide object.
+    // Most Iris objects are shared_ptrs,
+    // so Iris will handle the memory clean-up
+    auto slide = open_slide (open_info);
+    if (slide) return EXIT_SUCCESS;
+    else return EXIT_FAILURE;
+}
+```
+
+Once opened, the slide `IrisCodec::SlideInfo` structure can be loaded using the `Result get_slide_info (const Slide&, SlideInfo&) noexcept` call and used as an initialized structure containing all the information needed to navigate the slide file and read elements.
+```cpp
+// Read the slide information
+SlideInfo info;
+IrisResult result = get_slide_info (slide, info);
+if (result != IRIS_SUCCESS) {
+    printf (result.message);
+    return EXIT_FAILURE;
+}
+
+// Slide tile read info provides a simple mechanism
+// for reading slide data.
+struct SlideTileReadInfo read_info {
+    .slide                  = slide,
+    .layer                  = 0,
+    .optionalDestination    = NULL, /*wrapper can go here*/
+    .desiredFormat          = Iris::FORMAT_R8G8B8A8,
+};
+// Iterate
+for (auto& layer : info.extent.layers) {
+    for (int y_index = 0; y_index < layer.yTiles; ++y_index) {
+        for (int x_index = 0; x_index < layer.xTiles; ++x_index) {
+            // Read the tile slide tile
+            auto rgba = read_slide_tile (read_info);
+            // Do something with the tile pixel values
+            // Do not worry about clean up; the slide
+            // pixel values are in a Iris::Buffer shared_ptr
+        }
+    }
+    read_info.layer++;
+}
+if (optional_buffer) free (optional_buffer);
+```
+Decompressed slide data can be optionally read into preallocated memory. If the optional destination buffer is insufficiently sized, Iris will instead allocate a new buffer and return that new buffer with the pixel data. The `Iris::Buffer` should weakly reference the underlying memory as strongly referenced `Iris::Buffer` objects free underlying memory on deletion.
+```cpp
+char* some_GPU_upload_buffer;
+size_t tile_byte_offset;
+char* destination = some_GPU_upload_buffer + tile_byte_offest;
+size_t tile_bytes = 256*256*4;
+Iris::Buffer wrapper = Wrap_weak_buffer_fom_data (destination, tile_bytes);
+struct SlideTileReadInfo read_info {
+    .slide                  = slide,
+    .optionalDestination    = NULL, /*wrapper can go here*/
+    .desiredFormat          = Iris::FORMAT_R8G8B8A8,
+};
+Buffer result = read_slide_tile (read_info);
+if (weak_wrapper != result) {
+    printf ("Insufficient sized buffer provided");
+}
+```
+
+
+## Python
+```python
+#Import the Iris Codec Module
+from Iris import Codec
+slide_path = 'path/to/slide_file.iris'
+
+# Perform a deep validation of the slide file structure
+# This will navigate the internal offset-chain and
+# check for violations of the IFE standard.
+result = Codec.validate_slide_path(slide_path)
+if (result.success() == False):
+    raise Exception(f'Invalid slide file path: {result.message()}')
+print(f"Slide file '{slide_path}' successfully passed validation")
+
+# Open a slide file
+slide = Codec.open_slide(slide_path)
+
+# The following conditional will return True in this instance
+# as the slide has already passed validation;
+# We simply include it as an example of how to check the slide
+if (not slide):
+    raise Exception(f'Invalid slide file path: {result.message()}')
+
+# Get the slide abstraction
+result, info = slide.get_info()
+if (result.success() == False):
+    raise Exception(f'Failed to read slide information: {result.message()}')
+
+# Print the slide extent to the console
+extent = info.extent
+print(f"Slide file {extent.width} px by {extent.height}px with an encoding of {info.encoding}. The layer extents are as follows:")
+print(f'There are {len(extent.layers)} layers comprising the following dimensions:')
+for i, layer in enumerate(extent.layers):
+    print(f' Layer {i}: {layer.x_tiles} x-tiles, {layer.y_tiles} y-tiles, {layer.scale:0.0f}x scale')
+
+# Generate a quick view of a slide tile in the middle of the slide using matplotlib imshow function
+import matplotlib.pyplot as plt
+layer_index = 0
+x_index = int(extent.layers[layer_index].x_tiles/2)
+y_index = int(extent.layers[layer_index].y_tiles/2)
+tile_index = extent.layers[layer_index].x_tiles * y_index + x_index
+fig = plt.figure()
+plt.imshow(slide.read_slide_tile(layer_index,tile_index), interpolation='none')
+plt.show()
+
+```
