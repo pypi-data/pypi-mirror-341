@@ -1,0 +1,16 @@
+comfy_monday_api-0.1.0.dist-info/licenses/LICENSE,sha256=dvzl0BYEUyOlD4K5mEWlnitFS0KZfQuVIX4OZIo2yX0,1072
+src/__init__.py,sha256=UZFfLHNmjT2b3ZfZyQmJRS-oZsNnYACqbN8oPI9wKy0,379
+src/activities.py,sha256=HcKu7x2ZyyrGUYF2Osk1m3bE0WrizF45eDXTW7ZlizU,3269
+src/base.py,sha256=xe4FDYcodIAxhms10cVB_ziLYBMuIGiy9mVeUN1Ti_E,2018
+src/boards.py,sha256=W2wL8qCBEO3o11tmRV1jLv_LjByAOU4r2uvJxc6ePlU,10681
+src/files.py,sha256=2Y1l3CragND7M1Dg0cccESTwJe89qghzAAj31YX2piQ,5170
+src/items.py,sha256=0nMMkoM30ShwWelDuutchNILx_r7kQq8TAHr4D99zJw,10788
+src/subscribers.py,sha256=DrwT2CHmIemY8Ut_jlKIm7abW4jKWaEJ0e58euFNC9M,3982
+src/tags.py,sha256=ppgrv__ljx6uT8oZXLGuoxmIf3C9NkY4vRL3FeebtOE,1848
+src/teams.py,sha256=qVwhBGtM2QJZYQbvvDtBjh-O8DZ5FMmf5ofSdvCOZ8k,2771
+src/updates.py,sha256=KheYY5Ae9ern3iY6G4rHCcN0udF_MocKtkp7gNorCeU,3140
+src/users.py,sha256=aAqJKyrNAlLEOZrFntArRIKiieX4kIVhn6NNtZ_Plnk,2544
+comfy_monday_api-0.1.0.dist-info/METADATA,sha256=Zmf2CMEWwF2jnCXIdp2o1E0c4542B1ELCvsNWs-NNNk,11073
+comfy_monday_api-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+comfy_monday_api-0.1.0.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+comfy_monday_api-0.1.0.dist-info/RECORD,,
