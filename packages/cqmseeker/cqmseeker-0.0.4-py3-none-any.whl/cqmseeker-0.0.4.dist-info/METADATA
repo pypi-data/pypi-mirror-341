@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: cqmseeker
+Version: 0.0.4
+Summary: InsideOpt Seeker Windows Python 311 Distribution
+Author: Meinolf Sellmann
+Author-email: info@insideopt.com
+Keywords: insideopt,seeker,optimization
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.11.0
+License-File: LICENSE.rst
+License-File: AUTHORS.rst
+
+===========
+cqmseeker
+===========
+
+InsideOpt Seeker CQM Windows Distribution
+
+Credits
+-------
+
+This package was created with Cookiecutter_.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
