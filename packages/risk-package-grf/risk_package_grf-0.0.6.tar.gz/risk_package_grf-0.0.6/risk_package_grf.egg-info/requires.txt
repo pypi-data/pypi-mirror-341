@@ -1,0 +1,16 @@
+datetime
+gcsfs
+google-auth
+google-cloud
+google-cloud-bigquery
+google-cloud-storage
+google-oauth2
+IPython
+ipywidgets
+networkx
+numpy
+openpyxl
+pandas
+QuantLib
+scipy
+tk
