@@ -1,0 +1,1 @@
+print("ceshigogo init")
