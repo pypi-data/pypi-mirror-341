@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+isend_python_sdk.egg-info/PKG-INFO
+isend_python_sdk.egg-info/SOURCES.txt
+isend_python_sdk.egg-info/dependency_links.txt
+isend_python_sdk.egg-info/requires.txt
+isend_python_sdk.egg-info/top_level.txt
