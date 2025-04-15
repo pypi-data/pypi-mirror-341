@@ -1,0 +1,8 @@
+pytorch_focalloss-1.2.0.dist-info/licenses/LICENSE,sha256=cYSQk2XIJtICYo1GQ_No51IAVvjbOrPuVTxW-ToB2KA,1071
+torch_focalloss/__init__.py,sha256=Xna2mWVCeH1sBBhmAZ5g9CGsinRm_hJSUXXiXrdXI-w,221
+torch_focalloss/losses.py,sha256=5JMRNdT-O2JJGpmHu8yT8HL03nufhuKJS9Yjv5cgjPI,17386
+torch_focalloss/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytorch_focalloss-1.2.0.dist-info/METADATA,sha256=cHjrfouW1OT9e-WWt9WcNS2gTMvLYK-Wwq6oixuqlrk,11571
+pytorch_focalloss-1.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pytorch_focalloss-1.2.0.dist-info/top_level.txt,sha256=ncMn39C2DN9sy9G57kSBkNTc2F6yh0fwlSvCgna-Mf8,16
+pytorch_focalloss-1.2.0.dist-info/RECORD,,
