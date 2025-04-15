@@ -1,0 +1,9 @@
+# Including files that pip would otherwise ignore
+# Like including your ex in your wedding photos - uncomfortable but necessary
+
+include LICENSE
+include README.md
+global-exclude *.py[cod] __pycache__ *.so
+
+# Excluding my personal diary entries that somehow got mixed in with the source code
+exclude diary_of_a_lonely_coder.txt 

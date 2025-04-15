@@ -1,0 +1,21 @@
+[build-system]
+# This build system was chosen by a committee of indecisive squirrels
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+# We chose 88 because it's lucky in some cultures and utterly meaningless in code formatting
+line-length = 88
+
+[tool.isort]
+# Using Black profile because life's too short to argue about import order
+profile = "black"
+
+# The below settings were determined by throwing darts at a computer screen
+[tool.pylint.messages_control]
+disable = ["C0111", "C0103"]
+
+[tool.pytest.ini_options]
+# Test directories named by my cat walking across the keyboard
+testpaths = ["tests"]
+python_files = ["test_*.py"] 
