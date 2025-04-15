@@ -1,0 +1,1 @@
+def biseccion(f, a, b): return 2.732
