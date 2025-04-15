@@ -1,0 +1,9 @@
+finite_time_optim/__init__.py,sha256=Wue3uNwMifIU9FIiflSdRns1uHmADrMMNPCZKhR9WGA,304
+finite_time_optim/finite_time_momentum.py,sha256=2QJXopU1gd1bqwaLVYUfJ25IonhRQyCxHGPXJx14nF4,1327
+finite_time_optim/finite_time_normalized_gradient.py,sha256=48SPxCJRrMeyDPXAhe5oq_FmDZ-zuoePjHOOJFgLZ60,764
+finite_time_optim/finite_time_sign_gradient.py,sha256=wWVPmXwqjaG728_zsjRZAcbaegTW_BkoGUa4nSfKJQE,791
+finite_time_optim/test_optimizer.py,sha256=AfsxJAE75Ga78XTjaE0hzVwvH6YU1AWioh3L7ZXuFzE,644
+finite_time_optim-0.1.0.dist-info/METADATA,sha256=gjXIVteHE89HmGa3H_4TJfOIdR48dy0SXxw4h_xYEL4,477
+finite_time_optim-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+finite_time_optim-0.1.0.dist-info/top_level.txt,sha256=gqmc5_ZfO1JZv3bk9ruYJwA0Wc_iILNHWG4jJ7GU064,18
+finite_time_optim-0.1.0.dist-info/RECORD,,
