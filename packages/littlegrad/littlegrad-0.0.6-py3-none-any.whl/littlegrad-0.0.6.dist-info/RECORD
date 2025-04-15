@@ -1,0 +1,7 @@
+littlegrad/__init__.py,sha256=DTCpT9pnPYHOnLJNU-W_HDHWtZ0cr8acn_XvPkJxHmo,32
+littlegrad/models_eqx.py,sha256=wTVT4Izfy5lBTl9dLJcTTtLrxRHFwFuwnPrRyRM78OE,2956
+littlegrad/scorenet.py,sha256=Xr6zkaMgVaskNmupH4NfM0Fdt8l7_56gPdGJu289KLs,1911
+littlegrad-0.0.6.dist-info/METADATA,sha256=R4hRTlJigcC1IGrQpud8UIj0bmNjVpY6yYip7gboJ4c,702
+littlegrad-0.0.6.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+littlegrad-0.0.6.dist-info/top_level.txt,sha256=XRrjr-1nZAtFIUZ87RgRsEc2FH2hEN6bt8XYKeHcDwM,11
+littlegrad-0.0.6.dist-info/RECORD,,
