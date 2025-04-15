@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+simpleud/__init__.py
+simpleud/uploader.py
+simpleud.egg-info/PKG-INFO
+simpleud.egg-info/SOURCES.txt
+simpleud.egg-info/dependency_links.txt
+simpleud.egg-info/requires.txt
+simpleud.egg-info/top_level.txt
