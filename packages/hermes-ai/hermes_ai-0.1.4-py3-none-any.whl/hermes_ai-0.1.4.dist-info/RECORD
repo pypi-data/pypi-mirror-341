@@ -1,0 +1,10 @@
+hermes_ai/__init__.py,sha256=G9VxFh8mtS61pyLjce3Hczasd_coG0GOkzpBxrtfclM,145
+hermes_ai/main.py,sha256=FHcL-D8Wwrrt2NehqbxIJI7Z_2hy-9GMKjh1uAxHz-g,5369
+hermes_ai/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hermes_ai/models/__init__.py,sha256=RBbMY1BSyX9X2q6gb0SGKXfC9PcPzGzOCFOSZVTrtWg,219
+hermes_ai/models/classifier.py,sha256=q7LzmUVV5uWVtXA-GJGbNdHQ0f9-d5cipOUJgFbVAZc,1983
+hermes_ai/models/data_processor.py,sha256=w4MISEKVcQd3Osw7DMfhcyLjcyfAmYt3zvVTtgBY6uA,1158
+hermes_ai-0.1.4.dist-info/METADATA,sha256=W2ZVZ1BRrW0zIhcZ8g1qizeiMFDdltHcODSn5ugXBrc,978
+hermes_ai-0.1.4.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+hermes_ai-0.1.4.dist-info/top_level.txt,sha256=Q86yIo9mE2omNSs_ML4ZwExUjgicVb2UY8p39E8P8k8,10
+hermes_ai-0.1.4.dist-info/RECORD,,
