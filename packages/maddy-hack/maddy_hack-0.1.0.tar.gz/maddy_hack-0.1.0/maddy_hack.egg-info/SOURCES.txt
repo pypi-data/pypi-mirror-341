@@ -1,0 +1,11 @@
+setup.py
+maddy_hack/__init__.py
+maddy_hack/cycle.py
+maddy_hack/meeting.py
+maddy_hack/weight.py
+maddy_hack.egg-info/PKG-INFO
+maddy_hack.egg-info/SOURCES.txt
+maddy_hack.egg-info/dependency_links.txt
+maddy_hack.egg-info/entry_points.txt
+maddy_hack.egg-info/top_level.txt
+tests/test_custom_model.py

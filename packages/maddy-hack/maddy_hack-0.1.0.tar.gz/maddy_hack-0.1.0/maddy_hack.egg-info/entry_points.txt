@@ -1,0 +1,2 @@
+[console_scripts]
+maddy-hack = maddy_hack:main
