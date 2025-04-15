@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+GG14054UNO/__init__.py
+GG14054UNO/linear_systems.py
+GG14054UNO/nonlinear_systems.py
+GG14054UNO/utils.py
+GG14054UNO.egg-info/PKG-INFO
+GG14054UNO.egg-info/SOURCES.txt
+GG14054UNO.egg-info/dependency_links.txt
+GG14054UNO.egg-info/requires.txt
+GG14054UNO.egg-info/top_level.txt
