@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyreinst
+Version: 0.0.1
+Summary: Script to reinstall pip package
+Home-page: https://github.com/mugiseyebrows/pyreinst
+Author: Stanislav Doronin
+Author-email: mugisbrows@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+
+# pyreinst
+
+Script to reinstall pip package

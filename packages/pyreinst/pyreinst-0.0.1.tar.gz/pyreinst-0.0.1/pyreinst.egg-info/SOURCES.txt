@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+pyreinst/__init__.py
+pyreinst.egg-info/PKG-INFO
+pyreinst.egg-info/SOURCES.txt
+pyreinst.egg-info/dependency_links.txt
+pyreinst.egg-info/entry_points.txt
+pyreinst.egg-info/requires.txt
+pyreinst.egg-info/top_level.txt
