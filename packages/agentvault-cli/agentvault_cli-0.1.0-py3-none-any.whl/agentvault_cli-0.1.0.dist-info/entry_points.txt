@@ -1,0 +1,3 @@
+[console_scripts]
+agentvault_cli=agentvault_cli.main:cli
+
