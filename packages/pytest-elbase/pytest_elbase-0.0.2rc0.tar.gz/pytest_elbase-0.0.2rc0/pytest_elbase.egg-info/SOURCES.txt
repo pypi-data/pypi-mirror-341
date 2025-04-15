@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pytest_elbase/__init__.py
+pytest_elbase.egg-info/PKG-INFO
+pytest_elbase.egg-info/SOURCES.txt
+pytest_elbase.egg-info/dependency_links.txt
+pytest_elbase.egg-info/top_level.txt
