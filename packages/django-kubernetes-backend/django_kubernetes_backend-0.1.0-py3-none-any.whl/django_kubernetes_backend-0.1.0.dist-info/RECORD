@@ -1,0 +1,12 @@
+kubernetes_backend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kubernetes_backend/admin.py,sha256=rvLyHDJ3VEtWevkPia5tScbfLsYnrmE7tZlomxk62zc,2715
+kubernetes_backend/client copy.py,sha256=5a-IxGN-KydrScHh34vr-K4ucxgATPIlfr6jFFNwC0Y,2312
+kubernetes_backend/client.py,sha256=y54XJZbrOUSplqvgu18rYiWhee6DM8wyFbu48rSAT6w,4565
+kubernetes_backend/constants.py,sha256=WsLXaVMI69IYmWINM_0DBlBQYylMdT0j6JlkmveYX9c,715
+kubernetes_backend/manager.py,sha256=P-7P80uy39Mde5_oUg8LmPMJB8OzHQ7SYfP6uSxG3AM,228
+kubernetes_backend/models.py,sha256=siomNrlw5RugkBb2_SNN644LCA-vRYUot-dYnoQFPf8,9375
+kubernetes_backend/queryset.py,sha256=I3wiViJD9obZlVQspV3qcVg1wo1IPELqQFtPQv_463k,14151
+django_kubernetes_backend-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_kubernetes_backend-0.1.0.dist-info/METADATA,sha256=N43nEqxJaKrgkwL7ssfBLWOpeFNqSikGQCcGMUNRxzQ,1536
+django_kubernetes_backend-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+django_kubernetes_backend-0.1.0.dist-info/RECORD,,
