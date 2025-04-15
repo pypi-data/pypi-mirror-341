@@ -1,0 +1,2 @@
+[console_scripts]
+compliment = random_compliments.cli:main
