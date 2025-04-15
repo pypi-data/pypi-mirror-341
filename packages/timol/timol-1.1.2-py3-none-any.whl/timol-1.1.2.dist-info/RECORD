@@ -1,0 +1,16 @@
+timol/__init__.py,sha256=QPWtj5wDRTINDxVUL7XPqG3HoxHNvYOg08EnuSZB2Hc,21
+timol/custom_typing.py,sha256=J8vJ-tmz5L6pRXjrdH1Z1XYsg__LF3khhhpTMjTmMWc,167
+timol/main.py,sha256=c45E12YCNb6vV4xACd3Oa_YoJ_BLRPszxr0Q-W-8a7Y,11337
+timol/reader.py,sha256=QShGs-sdn7pp-mXMMXygBIg0_irHUHLPKi0s6Rv9zJM,2160
+timol/sidebar.py,sha256=NCoTLp1s6pNGf_6_QvRZEsrAsD_n0ddpuSPkhoASNnU,2132
+timol/test_xyz.xyz,sha256=Aqgk6JvyXyV9Iwi-tSDju-EAetqCgAA1LDKyJCoFYKA,12708
+timol/timol.tcss,sha256=X0lTu53njgnkGDq57bbSH73Etw-pWFhn3rtqT1VnqVY,381
+timol/ui.py,sha256=hJm-N7RPvWOvPAiEkWofnxiChYp4meySK87UFhJOlsc,1458
+timol/viewer.py,sha256=6Feg8PrPWB1bYO3xulenh0Ez5Bail4JhiN0SIc4zH7g,12044
+timol/cli/__init__.py,sha256=NHxWYU2TINT4_GJpAxJ0XmW4_5xZBBwZuVQjt4dE_ZM,22
+timol/cli/main.py,sha256=n9W13_b4-qyQJBQ5wdyMA6S3TsaSKqIVZhFsXsjOf40,889
+timol-1.1.2.dist-info/METADATA,sha256=hzU6VlSJDCBzAaIcXxHMfgussGMhh7qPiEqEHzhp5nQ,2269
+timol-1.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+timol-1.1.2.dist-info/entry_points.txt,sha256=waOrGBtBzdZO6LfvXKzWBeItxA-pZnPhJqdNuwTlOl0,36
+timol-1.1.2.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+timol-1.1.2.dist-info/RECORD,,
