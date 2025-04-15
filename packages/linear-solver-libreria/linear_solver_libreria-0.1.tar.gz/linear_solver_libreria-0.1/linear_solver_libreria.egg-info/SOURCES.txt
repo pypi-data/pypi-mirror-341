@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+METODOS/__init__.py
+METODOS/lineal_methods.py
+METODOS/nonlineal_methods.py
+linear_solver_libreria.egg-info/PKG-INFO
+linear_solver_libreria.egg-info/SOURCES.txt
+linear_solver_libreria.egg-info/dependency_links.txt
+linear_solver_libreria.egg-info/top_level.txt
