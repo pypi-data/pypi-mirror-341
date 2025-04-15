@@ -1,0 +1,10 @@
+sgx/__init__.py,sha256=y4Ncum3_CPMeA6ZvFxfa3wOleonHukuRlHhEXSS9RjY,16
+sgx/attestaion.py,sha256=_qEWsZV3Xw7aBv9Xd0DbodNG8fQ0_oP-wwLnI-ZVm-I,13112
+sgx/client.py,sha256=AgPXZIR_zzxXUbbs4mJoH4guMzCSI59O1CnXp2umO18,13872
+sgx/ecdh_provider.py,sha256=4seM_trdGeejiceESQRuk99jgqWFiRVrhDWRV7zD1h0,2212
+sgx/keygen.py,sha256=MjxVNu0Og6CvIwD709yfuS6aUNufyp-N59rPgJV0MS0,4614
+sgx/session.py,sha256=gAwM8KY3S1WZwetv593nfONdAAAdZW5pBiBEA41TwEc,11945
+sgx_storage_client-0.0.4.dist-info/METADATA,sha256=puf0WsamGGVFWVwMI8HkyDSqMTYEtduYySgw_yb0KJA,7568
+sgx_storage_client-0.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sgx_storage_client-0.0.4.dist-info/top_level.txt,sha256=oW7o1QqOhaMx1mmI_s0gUsUQrfxj-1UUvnZAZeOPhhw,4
+sgx_storage_client-0.0.4.dist-info/RECORD,,
