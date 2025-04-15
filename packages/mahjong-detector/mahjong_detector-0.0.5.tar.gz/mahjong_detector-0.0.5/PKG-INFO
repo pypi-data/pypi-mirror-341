@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mahjong-detector
+Version: 0.0.5
+Summary: Detect mahjong tiles from image
+Author-Email: ssttkkl <huang.wen.long@hotmail.com>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: Pillow>=11.2.1
+Requires-Dist: numpy>=2.2.4
+Requires-Dist: onnxruntime>=1.21.0
+Description-Content-Type: text/markdown
+
+# mahjong-detector
