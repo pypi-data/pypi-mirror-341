@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+memorier/main.py
+memorier.egg-info/PKG-INFO
+memorier.egg-info/SOURCES.txt
+memorier.egg-info/dependency_links.txt
+memorier.egg-info/top_level.txt
+test/test_.py
