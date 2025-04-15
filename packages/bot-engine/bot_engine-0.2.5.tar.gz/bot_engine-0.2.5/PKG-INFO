@@ -1,0 +1,75 @@
+Metadata-Version: 2.3
+Name: bot_engine
+Version: 0.2.5
+Summary: The universal bot engine framework. Made on top of pytelegrambotapi
+Author: Ca-tt
+Author-email: damir96.lukyanenko@gmail.com
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: apscheduler (>=3.11.0,<4.0.0)
+Requires-Dist: fastapi (>=0.115.12,<0.116.0)
+Requires-Dist: keyboard (>=0.13.5,<0.14.0)
+Requires-Dist: psutil (>=7.0.0,<8.0.0)
+Requires-Dist: pymongo (>=4.11.3,<5.0.0)
+Requires-Dist: pytelegrambotapi (>=4.26.0,<5.0.0)
+Requires-Dist: pytest (>=8.3.5,<9.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: uvicorn (>=0.34.0,<0.35.0)
+Requires-Dist: watchdog (>=6.0.0,<7.0.0)
+Description-Content-Type: text/markdown
+
+The universal bot engine framework. Made on top of pytelegrambotapi
+
+# Starting your development journey
+
+## Step 1. .env file example
+
+Example of ready-to-work .env file:
+```
+ENVIRONMENT=development
+PORT=8000
+
+BOT_TOKEN=your_token
+MONGODB_TOKEN=your_token
+
+ADMIN_IDS=1,2
+SUPER_ADMIN_ID=1
+```
+
+### Accessing .env data
+
+You can import all this variables from bot_engine.data.env file. 
+There you will see ready-to-use constants loaded right from your .env file.
+
+
+## Step 2. First users! (optional)
+
+You can easily create initial users in your DB by doing this:
+
+1. Create folder "data" with a file "initials_users.py". Place an array of initial users with dictionaries:
+
+INITIAL_USERS = 
+[
+    {
+        "real_name": "Valeriy",
+        "id": 123,
+        "access_level": "user" or "admin",
+        "any_other_data": any,
+    },
+    ...
+]
+
+Then call method Database().add_users(INITIAL_USERS) to fill your DB with initial users. This is an optional one-time operation for setting up your first users in DB. That's simple!
+
+
+### A data security minute
+
+You can leave the file "initials_users.py" in your project. Just add it to .gitignore to prevent the leakout of the data.
+
+
+## Step 3. Run the bot
+
+Call Bot().start() to start bot. It handles all .env file data automatically using data/env.py file - no need to import / load your .env data  
+
