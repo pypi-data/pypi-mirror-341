@@ -1,0 +1,138 @@
+Metadata-Version: 2.4
+Name: RL22021UNO
+Version: 1.0.0
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales
+Home-page: https://github.com/Mirna1111/RL22021UNO
+Author: Mirna Rivas
+Author-email: mirnarivas860@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# RL22021UNO - Librería para la resolución de sistemas de ecuaciones lineales y no lineales
+
+RL22021UNO es una librería en Python que permite resolver sistemas de ecuaciones lineales y no lineales utilizando varios métodos numéricos. Los métodos implementados son:
+
+- Eliminación de Gauss
+- Gauss-Jordan
+- Cramer
+- Descomposición LU
+- Jacobi
+- Gauss-Seidel
+- Bisección
+
+Es útil para estudiantes, ingenieros y desarrolladores que necesitan resolver sistemas de ecuaciones de manera eficiente.
+
+## Instalación
+
+Puedes instalar la librería directamente desde PyPI utilizando el siguiente comando:
+
+```bash
+pip install RL22021UNO
+
+
+#Ejemplos de uso
+
+# Eliminación de Gauss
+Este método transforma el sistema a una forma escalonada para resolverlo por sustitución hacia atrás.
+from RL22021UNO import gauss_eliminacion
+
+A = [[4, 2, 5], [2, 5, 8], [5, 4, 3]]
+B = [60.70, 92.90, 56.30]
+
+X = gauss_eliminacion(A, B)
+print(X)
+
+
+# Gauss-Jordan
+Método similar a Gauss, pero convierte la matriz en una forma reducida para obtener la solución directamente.
+from RL22021UNO import gauss_jordan
+
+A = [[4, 2, 5], [2, 5, 8], [5, 4, 3]]
+B = [60.70, 92.90, 56.30]
+
+X = gauss_jordan(A, B)
+print(X)
+
+
+# Cramer
+Utiliza determinantes para resolver sistemas lineales con el mismo número de ecuaciones e incógnitas.
+from RL22021UNO import cramer
+
+A = [[4, 2, 5], [2, 5, 8], [5, 4, 3]]
+B = [60.70, 92.90, 56.30]
+
+X = cramer(A, B)
+print(X)
+
+
+# Descomposición LU
+Descompone la matriz A en una matriz triangular inferior (L) y una superior (U).
+from RL22021UNO import lu_decomposition
+
+A = [[4, 2, 5], [2, 5, 8], [5, 4, 3]]
+B = [60.70, 92.90, 56.30]
+
+L, U = lu_decomposition(A)
+print("L:", L)
+print("U:", U)
+
+
+# Jacobi
+Método iterativo que resuelve sistemas lineales separando la matriz diagonal de las demás.
+from RL22021UNO import jacobi
+
+A = [[4, 2, 5], [2, 5, 8], [5, 4, 3]]
+B = [60.70, 92.90, 56.30]
+
+X = jacobi(A, B)
+print(X)
+
+
+# Gauss-Seidel
+Versión mejorada del método de Jacobi, usa los valores actualizados dentro de la misma iteración.
+from RL22021UNO import gauss_seidel
+
+A = [[4, 2, 5], [2, 5, 8], [5, 4, 3]]
+B = [60.70, 92.90, 56.30]
+
+X = gauss_seidel(A, B)
+print(X)
+
+
+# Bisección
+Método para encontrar raíces de ecuaciones no lineales, dividiendo el intervalo en mitades sucesivas.
+from RL22021UNO import bisection
+
+def f(x):
+    return x**2 - 4
+
+root = bisection(f, 0, 5)
+print(f"La raíz es: {root}")
+
+Requisitos
+Python 3.6 o superior
+
+NumPy
+
+
+
+
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+
+Las contribuciones son bienvenidas. Si encuentras un error o quieres sugerir mejoras, abre un issue o un pull request en GitHub.
+
+Puedes contactarme en mirnarivas860@gmail.com o en mi perfil de GitHub: [https://github.com/Mirna1111].
