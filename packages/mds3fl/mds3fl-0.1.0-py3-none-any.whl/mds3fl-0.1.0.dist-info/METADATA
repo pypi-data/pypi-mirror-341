@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mds3fl
+Version: 0.1.0
+Summary: Federated Learning framework with CNN and image input
+Author: QZG
+Author-email: qxg88@case.edu
+Requires-Python: >=3.7
+Requires-Dist: tensorflow>=2.8.0
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: Pillow
+
