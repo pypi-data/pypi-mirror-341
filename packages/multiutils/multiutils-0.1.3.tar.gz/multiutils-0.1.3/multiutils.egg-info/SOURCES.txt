@@ -1,0 +1,11 @@
+pyproject.toml
+setup.py
+multiutils/__init__.py
+multiutils/all.py
+multiutils/animations.py
+multiutils/pc_infos.py
+multiutils/version.py
+multiutils.egg-info/PKG-INFO
+multiutils.egg-info/SOURCES.txt
+multiutils.egg-info/dependency_links.txt
+multiutils.egg-info/top_level.txt
