@@ -1,0 +1,6 @@
+README.md
+setup.py
+worldchange.egg-info/PKG-INFO
+worldchange.egg-info/SOURCES.txt
+worldchange.egg-info/dependency_links.txt
+worldchange.egg-info/top_level.txt
