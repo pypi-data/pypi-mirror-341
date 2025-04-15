@@ -1,0 +1,5 @@
+quine/target/wasm32/__init__.py,sha256=Cb6MTNfWPqkr63T1JI6eoMclEoBRvoPE9CuKf0axjmk,143
+quine_target_wasm32-0.0.0.dist-info/COPYING.md,sha256=ADUqsZhl4juwq34PRTMiBqumpm11s_PMli_dZQjWPqQ,34260
+quine_target_wasm32-0.0.0.dist-info/METADATA,sha256=sROok2C1hkm1sPXSRlUXUV7kmcAl54AYmLCMMjhCAho,1403
+quine_target_wasm32-0.0.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+quine_target_wasm32-0.0.0.dist-info/RECORD,,
