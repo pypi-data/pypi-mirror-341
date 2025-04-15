@@ -1,0 +1,16 @@
+rites/__init__.py,sha256=nMJ9isNqKwbvl1UkkwnTnTtGDUA8qKRRPMby0eVGJs4,811
+rites/_version.py,sha256=eEzCndE8AL4FhonQyoMaqx0ATzLA8lGI7pfzd2XDxrs,74
+rites/chrono.py,sha256=CNtbaN7oM5Uda8NWGxjlp1ZayoKv1Ti3Q2LMA-1vTY0,6172
+rites/logger.py,sha256=lsTjBQD9SkSysrjEBdTAJBNmoqiSJbdC8BOH61iufSw,6273
+rites/rites.py,sha256=mefGHM_3iPfHhp9lNO3DH2Amk1Ahs4bs6pQ6OP1nj1s,3325
+rites/rituals.py,sha256=pYK-7SC16fw2eZZoWU8db1eQd3trKKteoKiRNm5TvWU,25159
+rites/test.py,sha256=UUNs2xcKfuhJZpSUln-jRDXeIVsQNbQiWg4HZY6WWoA,357
+rites/rituals/__init__.py,sha256=vi_Zupjc9JY11UhTmH0FF2_CKLF8-1wsNknwuqLJHyw,244
+rites/rituals/math.py,sha256=AIYtVazQzz5vAxA8XkQdaP2WNZdBV-MAbEoNMSYImoI,21011
+rites/rituals/printer.py,sha256=L1qJ_JXSCyM2CEhEBr9biINNS0oY3Q7Yts6ggNwJwxY,4789
+rites/rituals/spells.py,sha256=BNujRNQHv6QvfkR_aliGUNdbEFvLdlnu9pjYL9yvu7s,1848
+rites-0.4.2.dist-info/licenses/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+rites-0.4.2.dist-info/METADATA,sha256=PCOT3PDgQygYg6kXk7QhRMZfynDEYoDp_UVnJYLBj6o,899
+rites-0.4.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+rites-0.4.2.dist-info/top_level.txt,sha256=42Si7FQfbFbnvf1mHSNQH1uYd7RxvuQIevvVzAHbHhU,6
+rites-0.4.2.dist-info/RECORD,,
