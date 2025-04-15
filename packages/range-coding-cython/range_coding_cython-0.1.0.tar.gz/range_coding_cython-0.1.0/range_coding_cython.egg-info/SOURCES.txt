@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+range_coding_cython.egg-info/PKG-INFO
+range_coding_cython.egg-info/SOURCES.txt
+range_coding_cython.egg-info/dependency_links.txt
+range_coding_cython.egg-info/requires.txt
+range_coding_cython.egg-info/top_level.txt
+src/range_coding_cython/__init__.py
+src/range_coding_cython/py.typed
+src/range_coding_cython/range_coding.py
