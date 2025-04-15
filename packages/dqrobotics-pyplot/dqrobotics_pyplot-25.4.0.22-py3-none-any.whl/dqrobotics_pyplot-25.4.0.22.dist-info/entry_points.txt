@@ -1,0 +1,3 @@
+[console_scripts]
+dqrobotics_pyplot_example = dqrobotics_extensions.pyplot.example:main
+dqrobotics_pyplot_example_animation = dqrobotics_extensions.pyplot.example_animation:main
