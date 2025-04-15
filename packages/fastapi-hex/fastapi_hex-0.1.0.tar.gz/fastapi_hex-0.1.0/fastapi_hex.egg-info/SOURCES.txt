@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fastapi_hex.egg-info/PKG-INFO
+fastapi_hex.egg-info/SOURCES.txt
+fastapi_hex.egg-info/dependency_links.txt
+fastapi_hex.egg-info/entry_points.txt
+fastapi_hex.egg-info/requires.txt
+fastapi_hex.egg-info/top_level.txt
+proyect/__init__.py
+proyect/cli.py
+proyect/proyect_generator.py

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: fastapi-hex
+Version: 0.1.0
+Summary: CLI para generar proyectos FastAPI con arquitectura hexagonal.
+Author: Juan
+Author-email: Juan David Corrales Saldarriaga <tuemail@ejemplo.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typer[all]

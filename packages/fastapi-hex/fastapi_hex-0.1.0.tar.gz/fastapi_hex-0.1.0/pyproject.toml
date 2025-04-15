@@ -1,0 +1,11 @@
+[project]
+name = "fastapi-hex"
+version = "0.1.0"
+description = "CLI para generar proyectos FastAPI con arquitectura hexagonal."
+authors = [{ name = "Juan David Corrales Saldarriaga", email = "tuemail@ejemplo.com" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["typer[all]"]
+
+[project.scripts]
+quipus-hex = "fastapi_hex.cli:main"
