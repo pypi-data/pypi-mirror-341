@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+SL21010UNO.egg-info/PKG-INFO
+SL21010UNO.egg-info/SOURCES.txt
+SL21010UNO.egg-info/dependency_links.txt
+SL21010UNO.egg-info/requires.txt
+SL21010UNO.egg-info/top_level.txt
