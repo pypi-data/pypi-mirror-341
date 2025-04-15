@@ -1,0 +1,81 @@
+{% extends "rui_base.html" %}
+
+{% block body %}
+<link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous">
+<script src="{{ url_for('reworkui.static', filename='rework_ui_elm.js') }}"></script>
+<link href="{{ url_style_menu_css}}" rel="stylesheet"/>
+<script src="{{ url_js_menu_elm }}"></script>
+
+<div class="grid-container">
+    <div id="menu-elm">
+    </div>
+    <div class="main-content">
+        <div id="app"></div>
+    </div>
+</div>
+<script>
+
+ app = Elm.Main.init({
+     node: document.getElementById("app"),
+     flags: {baseurl : "{{homeurl}}",
+             domains : {{domains | safe }} }
+ })
+
+ app.ports.schedule_task.subscribe(
+     function(operation) {
+         let form = document.getElementById('run-form')
+         fetch(
+             `schedule2/${operation}?user=WEBUI`,
+             {method: 'PUT', body: new FormData(form), credentials: 'same-origin'}
+         ).catch(
+             error => console.log(error)
+         )
+     }
+ )
+
+ app.ports.pre_schedule_task.subscribe(
+     function() {
+         let form = document.getElementById('pre-schedule-form')
+         fetch(
+             `prepare-schedule?user=WEBUI`,
+             {method: 'PUT', body: new FormData(form), credentials: 'same-origin'}
+         ).catch(() => {
+             app.ports.pre_schedule_fail.send(error)
+         }).then(resp => {
+             if (resp.ok) {
+                 app.ports.pre_schedule_ok.send('done')
+             }
+             else {
+                 app.ports.pre_schedule_fail.send('failed')
+             }
+         })
+     }
+ )
+
+</script>
+
+ <script>
+  var menuapp = Elm.StandAloneMenu.init(
+      {
+          node: document.getElementById('menu-elm'),
+          flags: {{flags_menu | safe}}
+      }
+  );
+</script>
+<script>
+ menuapp.ports.saveMenuData.subscribe(function (data) {
+     localStorage.setItem("menuData", JSON.stringify(data));
+ });
+
+ incache = localStorage.getItem("menuData")
+ if (incache === null) {
+     incache = '{"menuIsOpen": false}'
+ }
+ menuapp.ports.loadMenuData.send(incache);
+</script>
+
+{% endblock %}
