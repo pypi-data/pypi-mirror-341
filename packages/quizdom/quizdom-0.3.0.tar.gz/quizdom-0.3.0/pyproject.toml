@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "quizdom"
+version = "0.3.0"
+description = "A playful quiz interface for learners"
+authors = ["Jamie Douglas <jamie.d@gmail.com>"]
+readme = "README.rst"
+packages = [{ include = "quizdom", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
