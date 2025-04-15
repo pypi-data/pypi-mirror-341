@@ -1,0 +1,7 @@
+README.md
+setup.py
+http_nt_pclient.egg-info/PKG-INFO
+http_nt_pclient.egg-info/SOURCES.txt
+http_nt_pclient.egg-info/dependency_links.txt
+http_nt_pclient.egg-info/requires.txt
+http_nt_pclient.egg-info/top_level.txt
