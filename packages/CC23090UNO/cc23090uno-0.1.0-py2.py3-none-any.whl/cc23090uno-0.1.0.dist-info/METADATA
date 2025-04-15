@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: CC23090UNO
+Version: 0.1.0
+Summary: Librería de resolución de sistemas de ecuaciones lineales y no lineales.
+Author-email: Diego Cruz <cc23090@ues.edu.sv>
+Description-Content-Type: text/markdown
+License-Expression: MIT
+License-File: LICENSE
+Project-URL: Home, https://github.com/1cruzcabrera/CC23090UNO
+
+# CC23090UNO
+Este es un proyecto de ejemplo para aprender a crear librerias en pyhton y de paso resolver sistemas de ecuaciones lineales y no lineales.
