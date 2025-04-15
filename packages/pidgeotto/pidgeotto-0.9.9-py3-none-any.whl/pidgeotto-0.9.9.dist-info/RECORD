@@ -1,0 +1,11 @@
+pidgeotto-0.9.9.dist-info/licenses/LICENSE,sha256=X_qOp7ideqI0S9VHoVgRcdqCur7m9BaWMS4PDMAkFGM,1094
+pidgey/__init__.py,sha256=TG-vj9r6ejLTLdJlGJwkfbJD6cy_FRwhUT8YprNU8AI,1000
+pidgey/builder.py,sha256=mUZuxu1DUf4rXQ4Vauwuq4Q2R3TQtQiaf022K-gkwko,7126
+pidgey/creator.py,sha256=j3XLX5fkcp_mrO1SoIjItqgerjN_jXPxVPxGeryEins,10133
+pidgey/pidgey.py,sha256=Eb_0x_7xa6vVNz38j-ZGrQQg2Wm5EDvmHneWlpVqQxc,4680
+pidgey/server.py,sha256=StnG9oQMKtcWzVc9IfSD5cjdeQph7h4RnMppIe0Uptk,3511
+pidgeotto-0.9.9.dist-info/METADATA,sha256=XJ0DIyLSFvcM9xo-3f1lwUmn9hcwU3-rm1HBaNz3Stg,4175
+pidgeotto-0.9.9.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pidgeotto-0.9.9.dist-info/entry_points.txt,sha256=sIGAhATe0lEKihhNDuuWh1GtYD7x_tRZW49ONwUBxIw,46
+pidgeotto-0.9.9.dist-info/top_level.txt,sha256=34vAlgK4TRPuq0Z3reCpfe0M0G37w-ID1kGlenhiNKo,7
+pidgeotto-0.9.9.dist-info/RECORD,,
