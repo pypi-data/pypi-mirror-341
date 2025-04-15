@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+murphet/__init__.py
+murphet/churn_model.py
+murphet/model.stan
+murphet/seasonality.py
+murphet.egg-info/PKG-INFO
+murphet.egg-info/SOURCES.txt
+murphet.egg-info/dependency_links.txt
+murphet.egg-info/requires.txt
+murphet.egg-info/top_level.txt
+tests/test_basics.py
