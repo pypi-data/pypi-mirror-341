@@ -1,0 +1,68 @@
+Metadata-Version: 2.4
+Name: hatch-docstring-description
+Version: 1.1.1
+Summary: A hatchling plugin to read the description from the package docstring
+Project-URL: Issues, https://github.com/flying-sheep/hatch-docstring-description/issues
+Project-URL: Source, https://github.com/flying-sheep/hatch-docstring-description
+Author-email: "Philipp A." <flying-sheep@web.de>
+License-Expression: GPL-3.0-or-later
+License-File: LICENSE.md
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Hatch
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: hatchling
+Description-Content-Type: text/x-rst
+
+hatch-docstring-description
+===========================
+
+|PyPI Version| |PyPI Python Version| |Coverage|
+
+A ``hatchling`` plugin to read the ``description`` from the package docstring like ``flit`` does.
+
+Usage
+-----
+
+#. Include it as a plugin to your ``pyproject.toml``:
+
+   .. code:: toml
+
+      [build-system]
+      requires = ["hatchling", "hatch-docstring-description"]
+      build-backend = "hatchling.build"
+
+#. Mark your ``description`` field as ``dynamic``:
+
+   .. code:: toml
+
+      [project]
+      dynamic = ["description"]
+
+#. And make sure Hatchling uses it:
+
+   .. code:: toml
+
+      [tool.hatch.metadata.hooks.docstring-description]
+
+License
+-------
+
+``hatch-docstring-description`` is distributed under the terms of the `GPL 3 (or later)`_ license.
+
+
+.. |PyPI Version| image:: https://img.shields.io/pypi/v/hatch-docstring-description.svg
+   :target: https://pypi.org/project/hatch-docstring-description
+.. |PyPI Python Version| image:: https://img.shields.io/pypi/pyversions/hatch-docstring-description.svg
+   :target: https://pypi.org/project/hatch-docstring-description
+.. |Coverage| image:: https://codecov.io/github/flying-sheep/hatch-docstring-description/branch/main/graph/badge.svg?token=FZCw1cXSTL
+   :target: https://codecov.io/github/flying-sheep/hatch-docstring-description
+
+.. _GPL 3 (or later): https://spdx.org/licenses/GPL-3.0-or-later.html
