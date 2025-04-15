@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: v4-proto
+Version: 8.0.6
+Summary: dYdX v4-chain protobufs
+Author: dYdX Trading Inc.
+Author-email: dYdX <contact@dydx.exchange>
+Project-URL: Homepage, https://docs.dydx.exchange/api_integration-full-node-streaming
+Project-URL: Issues, https://github.com/dydxprotocol/v4-chain/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: grpcio~=1.71
+Requires-Dist: grpcio-tools~=1.71
+Requires-Dist: protobuf~=5.29
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-python
+
+<p align="center"><img src="https://dydx.exchange/icon.svg?" width="256" /></p>
+
+<h1 align="center">v4-proto</h1>
+
+<div align="center">
+  <a href='https://pypi.org/project/v4-proto'>
+    <img src='https://img.shields.io/pypi/v/v4-proto.svg' alt='PyPI'/>
+  </a>
+  <a href='https://github.com/dydxprotocol/v4-chain/blob/main/v4-proto-py/LICENSE'>
+    <img src='https://img.shields.io/badge/License-AGPL_v3-blue.svg' alt='License' />
+  </a>
+</div>
+
+Generated Python package for dYdX Chain protobufs.
