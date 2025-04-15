@@ -1,0 +1,3 @@
+[console_scripts]
+vantrans = src.vantransTool.server:main
+vantrans-client = src.vantransTool.client:main

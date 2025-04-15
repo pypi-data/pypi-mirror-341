@@ -1,0 +1,82 @@
+# vantransTool
+
+一个基于MCP协议的运输工具服务，提供批量外部派车功能。
+
+## 功能特点
+
+- 支持批量外部派车
+- 支持多组订单号、供应商和指派类型
+- 基于MCP协议的高效通信
+- 完整的错误处理和日志记录
+
+## 安装
+
+```bash
+pip install vantransTool
+```
+
+## 使用方法
+
+1. 启动服务器：
+
+```bash
+python -m vantransTool.server
+```
+
+2. 使用客户端：
+
+```python
+import asyncio
+from vantransTool.client import dispatch_orders
+
+async def main():
+    dispatch_groups = [
+        {
+            "order_numbers": ["5000987906", "5000987907"],
+            "supplier_name": "上海乐增",
+            "dispatch_type": "提货"
+        }
+    ]
+    result = await dispatch_orders(dispatch_groups)
+    print(result)
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+## 配置
+
+在 `config.py` 中配置以下参数：
+
+- `BASE_URL`: API基础URL
+- `API_TOKEN`: API令牌
+- `SPACE_ID`: 空间ID
+- `SUPPLIER_DISPATCH_TABLE`: 供应商派车表ID
+- `GOODS_DETAIL_TABLE`: 货物明细表ID
+- `SUPPLIER_TABLE`: 供应商表ID
+- `SUPPLIER_VIEW`: 供应商视图ID
+
+## 开发
+
+1. 克隆仓库：
+
+```bash
+git clone https://github.com/yourusername/vantransTool.git
+cd vantransTool
+```
+
+2. 安装开发依赖：
+
+```bash
+pip install -e ".[dev]"
+```
+
+3. 运行测试：
+
+```bash
+python -m pytest
+```
+
+## 许可证
+
+MIT License 

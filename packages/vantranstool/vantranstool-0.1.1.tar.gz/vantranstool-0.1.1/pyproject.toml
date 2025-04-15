@@ -1,0 +1,52 @@
+[project]
+name = "vantranstool"
+dynamic = ["version"]
+description = "一个基于MCP协议的运输工具服务，提供批量外部派车功能"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "baiyx", email = "baiyx@example.com"},
+]
+dependencies = [
+    "mcp-client>=0.1.0",
+    "mcp-server>=0.1.0",
+    "requests>=2.31.0",
+    "fastapi>=0.109.0",
+    "uvicorn>=0.27.0",
+]
+
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[project.scripts]
+vantrans = "src.vantransTool.server:main"
+vantrans-client = "src.vantransTool.client:main"
+
+[tool.setuptools_scm]
+write_to = "src/vantransTool/_version.py"
+version_scheme = "post-release"
+local_scheme = "node-and-date"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+] 
