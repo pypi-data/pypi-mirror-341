@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+CDA_corto1/Ecuaciones_lineales.py
+CDA_corto1/Ecuaciones_no_lineales.py
+CDA_corto1/__init__.py
+CDA_corto1/utils.py
+CDA_corto1.egg-info/PKG-INFO
+CDA_corto1.egg-info/SOURCES.txt
+CDA_corto1.egg-info/dependency_links.txt
+CDA_corto1.egg-info/requires.txt
+CDA_corto1.egg-info/top_level.txt
+tests/__init__.py
+tests/test_lineal.py
+tests/test_nolinear.py
