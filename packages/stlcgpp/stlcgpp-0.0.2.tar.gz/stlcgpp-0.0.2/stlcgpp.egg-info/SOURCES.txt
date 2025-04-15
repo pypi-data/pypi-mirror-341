@@ -1,0 +1,11 @@
+README.md
+setup.py
+stlcgpp/formula.py
+stlcgpp/tests.py
+stlcgpp/utils.py
+stlcgpp/viz.py
+stlcgpp.egg-info/PKG-INFO
+stlcgpp.egg-info/SOURCES.txt
+stlcgpp.egg-info/dependency_links.txt
+stlcgpp.egg-info/requires.txt
+stlcgpp.egg-info/top_level.txt

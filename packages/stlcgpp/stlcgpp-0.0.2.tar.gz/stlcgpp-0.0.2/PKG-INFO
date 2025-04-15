@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: stlcgpp
+Version: 0.0.2
+Summary: stlcg++ with pytorch
+Author: Karen Leung
+Author-email: kymleung@uw.edu
+Requires-Dist: torch>=2.6.0
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: graphviz
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
