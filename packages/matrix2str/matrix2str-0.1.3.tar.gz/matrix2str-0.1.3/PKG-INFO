@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: matrix2str
+Version: 0.1.3
+Summary: A Python package to convert numpy matrices to formatted strings
+Author-email: TL <deahnlgon@gmail.com>
+License: MIT
+License-File: LICENSE
+Keywords: formatting,matrix,numpy
+Requires-Python: >=3.8
+Requires-Dist: numpy>=1.21.0
+Description-Content-Type: text/markdown
+
+# matrix2str
+
+A Python package to convert NumPy matrices into formatted strings with customizable precision and alignment.
+
+## Installation
+
+Install via pip:
+```bash
+pip install matrix2str
+```
