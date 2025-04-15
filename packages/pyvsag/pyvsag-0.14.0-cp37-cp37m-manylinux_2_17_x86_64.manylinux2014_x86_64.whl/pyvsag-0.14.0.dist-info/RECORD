@@ -1,0 +1,14 @@
+example.cpython-37m-x86_64-linux-gnu.so,sha256=--B4BkjdiFMF1c0sMfpwp7jLByjQXtdley3hIeI8N9M,25328
+pyvsag-0.14.0.dist-info/WHEEL,sha256=XTrbe1v1RZIwaNy2ykqZ1b32V5o3CvHsSToseXBj9JY,150
+pyvsag-0.14.0.dist-info/RECORD,,
+pyvsag-0.14.0.dist-info/METADATA,sha256=wKczbCloqIVUgdpxv3Ogo8IEekAwsWrtyyx3J4GcJNc,1279
+pyvsag-0.14.0.dist-info/top_level.txt,sha256=nkIPeyz2FEHRFIXv8SSvPlgDaGFT8XBWkYjIMyD3bCk,15
+pyvsag/__init__.py,sha256=NYK56bwYsJ_ZitQYNKJQSwZLtSokT4-vT-CGy41dflM,171
+pyvsag/_version.py,sha256=_6_bwchMKiqSDX8hN4unq15kZeuZhRBrWeKOBv_4ETs,24
+pyvsag/libgfortran.so.5,sha256=kXSW1h42lKpYY_bRuiHyNq67INZU7l8QZSfc9Cpb8vg,2723529
+pyvsag/libvsag.so,sha256=VPEFHCCCXwRNWBiJbMqIO1to71GsbHNkRpLLXz5DcnI,382376577
+pyvsag/_version.py.in,sha256=wGW-nCbdq0Zps85_40B8-gMrncNLP15LTQvlBWWmLv4,34
+pyvsag/_pyvsag.cpython-37m-x86_64-linux-gnu.so,sha256=xXMX6yJl2LuiQImFTqhcFygbM-J3z4BzFcko7JM06_4,192993
+pyvsag.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+pyvsag.libs/libaio-74c6bb01.so.1.0.1,sha256=2vRiDeOeXeL3nnigmOsQD-CL-CGomDeVqoBM1cfTqoQ,8513
+pyvsag.libs/libquadmath-96973f99.so.0.0.0,sha256=k0wi3tDn0WnE1GeIdslgUa3z2UVF2pYvYLQWWbB12js,247609
