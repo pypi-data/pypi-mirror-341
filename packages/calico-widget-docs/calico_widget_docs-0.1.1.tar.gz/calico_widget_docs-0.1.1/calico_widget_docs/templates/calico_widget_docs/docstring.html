@@ -1,0 +1,17 @@
+{% if docstring %}
+  {{docstring.description|markdown}}
+  {% if docstring.params %}
+    <ul>
+      {% for param in docstring.params %}
+        <li>
+          <code>{{param.arg_name}}</code>:
+          {{param.description|markdown}}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% elif error %}
+  <p>{{error}}<p>
+{% else %}
+  <p>No documentation found</p>
+{% endif %}

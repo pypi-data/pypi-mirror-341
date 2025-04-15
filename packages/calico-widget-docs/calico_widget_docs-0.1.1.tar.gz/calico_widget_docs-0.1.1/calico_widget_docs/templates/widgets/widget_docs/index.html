@@ -1,0 +1,27 @@
+{% docstring %}
+  The widget used to render this page
+{% enddocstring %}
+
+{{yield}}
+
+{% add_widgets_list_to_context %}
+{% for widget in widgets %}
+  <article>
+    <header>
+      <h3>
+        <a name="{{widget|widget_anchor}}"></a>
+        {{widget|widget_name}}
+        {% for app in widget.1.1 %}
+          <small>
+            {% if forloop.counter0 %}
+              <del>{{app}}</del>
+            {% else %}
+              <code>{{app}}</code>
+            {% endif %}
+          </small>
+        {% endfor %}
+      </h3>
+    </header>
+    {% doc_string widget.1.0 widget.0 %}
+  </article>
+{% endfor %}

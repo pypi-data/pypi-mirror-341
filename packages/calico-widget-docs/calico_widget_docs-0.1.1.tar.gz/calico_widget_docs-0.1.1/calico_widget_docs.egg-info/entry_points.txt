@@ -1,0 +1,2 @@
+[djp]
+calico_widget_docs = calico_widget_docs
