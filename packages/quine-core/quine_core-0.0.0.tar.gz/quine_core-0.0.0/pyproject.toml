@@ -1,0 +1,53 @@
+[project]
+name = "quine-core"
+version = "0.0.0"
+description = "Quine core library"
+authors = [{ name = "Hendrik M Halkow", email = "hendrik@halkow.com" }]
+license = { text = "AGPL-3.0-or-later" }
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+
+  "Environment :: Console",
+
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: Information Technology",
+  "Intended Audience :: Science/Research",
+
+  "License :: OSI Approved :: GNU Affero General Public License v3",
+
+  "Natural Language :: English",
+
+  "Operating System :: OS Independent",
+
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.13",
+
+  "Topic :: Software Development :: Assemblers",
+  "Topic :: Software Development :: Build Tools",
+  "Topic :: Software Development :: Compilers",
+  "Topic :: Software Development :: Testing",
+  "Topic :: System :: Boot :: Init",
+  "Topic :: System :: Operating System",
+  "Topic :: Utilities",
+]
+
+[project.urls]
+homepage = "https://quine.build"
+documentation = "https://docs.quine.build"
+repository = "https://github.com/quine-build/quine-core"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "quine-core"
+packages = [
+  { include = "quine", from = "src" }
+]
