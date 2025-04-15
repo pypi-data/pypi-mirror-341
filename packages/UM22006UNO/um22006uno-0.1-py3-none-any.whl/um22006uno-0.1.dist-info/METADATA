@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: UM22006UNO
+Version: 0.1
+Summary: Librería para resolver ecuaciones lineales y no lineales
+Home-page: https://github.com/UM22006/UM22006UNO
+Author: UM22006
+Author-email: um22006@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# UM22006UNO
+
+LibrerÃ­a para resolver sistemas de ecuaciones.
