@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "riecovest"
+version = "0.0.3"
+authors = [
+    {name = "Jesper Brunnström", email = "jesper_brunnstrom@hotmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "jax",
+    "pymanopt",
+    "aspcore",
+]
+
+[project.optional-dependencies]
+examples = [
+    "pandas",
+    "soundfile",
+    "seaborn",
+    "seaborn_qqplot",
+    "matplotlib",
+    "samplerate",
+]
+
+[project.urls]
+Documentation = "https://sounds-research.github.io/riecovest/"
+Repository = "https://github.com/SOUNDS-RESEARCH/riecovest"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
