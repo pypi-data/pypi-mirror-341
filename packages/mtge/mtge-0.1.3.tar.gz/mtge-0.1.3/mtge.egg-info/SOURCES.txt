@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+mtge/__init__.py
+mtge/libxux64.so
+mtge/mtge_calc.py
+mtge/xux64.py
+mtge.egg-info/PKG-INFO
+mtge.egg-info/SOURCES.txt
+mtge.egg-info/dependency_links.txt
+mtge.egg-info/top_level.txt
