@@ -1,0 +1,13 @@
+bohri_calendar/__init__.py,sha256=RlTioh5aR5ByfhjePFYOjQjipnQ7LD5a9pn2t_YRWcE,260
+bohri_calendar/calendar_converter.py,sha256=1PlQOtyakopSmuB0KPr2h1glVoEkmqYEgfGkVL12FRo,13625
+bohri_calendar/cli.py,sha256=nOIZvPn8CGzm5JICQJyeWGfW8X-xw-liqXbM-DA5POk,1210
+bohri_calendar/pdf_generator.py,sha256=ljRapE4k2FmpSsIKdEmqLQk6zWtz7M8i17LWWNvsW7M,19470
+src/__init__.py,sha256=RlTioh5aR5ByfhjePFYOjQjipnQ7LD5a9pn2t_YRWcE,260
+src/calendar_converter.py,sha256=1PlQOtyakopSmuB0KPr2h1glVoEkmqYEgfGkVL12FRo,13625
+src/cli.py,sha256=nOIZvPn8CGzm5JICQJyeWGfW8X-xw-liqXbM-DA5POk,1210
+src/pdf_generator.py,sha256=LL9_6h2eflZxS-XEOfrpDQYzrRtK3DOTrjO0aqkQIHk,20413
+bohri_calendar-0.1.0.dist-info/METADATA,sha256=0rbUEr8hECGGqSKQu3VoW6uENBMb1nptR6qmJ0Qbx0s,765
+bohri_calendar-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+bohri_calendar-0.1.0.dist-info/entry_points.txt,sha256=YnOQe5GwgMBZeu2HzirVAbihw9uHRV4VG-1TOGWV5-0,59
+bohri_calendar-0.1.0.dist-info/top_level.txt,sha256=TWyKrLc7kZaIy6ZCbqmX8OC5XObaCaNbCv5jwz7HwPA,15
+bohri_calendar-0.1.0.dist-info/RECORD,,
