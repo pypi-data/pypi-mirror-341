@@ -1,0 +1,2 @@
+include docx_files/*.docx
+include pkt_files/*.pkt
