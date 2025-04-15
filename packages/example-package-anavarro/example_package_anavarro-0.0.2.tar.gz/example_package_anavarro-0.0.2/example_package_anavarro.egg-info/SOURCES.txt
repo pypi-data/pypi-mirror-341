@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+example_package_anavarro/__init__.py
+example_package_anavarro/example.py
+example_package_anavarro.egg-info/PKG-INFO
+example_package_anavarro.egg-info/SOURCES.txt
+example_package_anavarro.egg-info/dependency_links.txt
+example_package_anavarro.egg-info/top_level.txt
