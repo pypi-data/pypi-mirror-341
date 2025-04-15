@@ -1,0 +1,9 @@
+README.md
+setup.py
+infosec/__init__.py
+infosec/infosec.py
+infosec_tools.egg-info/PKG-INFO
+infosec_tools.egg-info/SOURCES.txt
+infosec_tools.egg-info/dependency_links.txt
+infosec_tools.egg-info/requires.txt
+infosec_tools.egg-info/top_level.txt
