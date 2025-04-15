@@ -1,0 +1,12 @@
+maphrs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+maphrs/eletronics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+maphrs/eletronics/basic.py,sha256=v-Lpc-TugcTsNqy6DDbR0m751rFcHyFXWC-11ruYClQ,2230
+maphrs/objects/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+maphrs/objects/eletronics.py,sha256=h-UmAs2jj9RG-BSsfmtoCJuLzKezZUBG3Lf2XJMwmbg,2726
+maphrs/statistics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+maphrs/statistics/descriptive.py,sha256=vYxTXY1L9auYiYfiK4NjWiVTLDhWOo247kqIuZFv2ws,3785
+maphrs/statistics/uncertainty.py,sha256=kl-XEdAD51CKjP-l_PqeB3WZ78fa3wLNrrMnQ-X8K2E,382
+maphrs-0.0.4.dist-info/METADATA,sha256=Cb78nQlzY7Caae7_afV6XSDoXwy7bMzd_hscqj64UV0,303
+maphrs-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+maphrs-0.0.4.dist-info/entry_points.txt,sha256=bRa7ovEEjg7wNvTT7S-ZtziI4hUT43h0vWxxzPdhZhU,39
+maphrs-0.0.4.dist-info/RECORD,,
