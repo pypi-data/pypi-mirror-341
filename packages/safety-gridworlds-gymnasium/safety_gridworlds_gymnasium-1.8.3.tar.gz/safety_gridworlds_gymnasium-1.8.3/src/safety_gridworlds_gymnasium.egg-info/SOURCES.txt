@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/safety_gridworlds_gymnasium.egg-info/PKG-INFO
+src/safety_gridworlds_gymnasium.egg-info/SOURCES.txt
+src/safety_gridworlds_gymnasium.egg-info/dependency_links.txt
+src/safety_gridworlds_gymnasium.egg-info/requires.txt
+src/safety_gridworlds_gymnasium.egg-info/top_level.txt
