@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: flink-svector
+Version: 0.2.5
+Summary: A custom Git-like version control system
+Home-page: https://github.com/siddharthshah/flink
+Author: Siddharth Shah
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: firebase-admin
+Requires-Dist: tabulate
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
