@@ -1,0 +1,161 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "capf"
+description = "Command-line argument parser and framework"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "xymy", email = "thyfan@163.com" }]
+maintainers = [{ name = "xymy", email = "thyfan@163.com" }]
+keywords = ["cli"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+requires-python = ">=3.10"
+dependencies = [
+    # https://rich.readthedocs.io/en/latest/
+    "rich>=13.9",
+]
+dynamic = ["version"]
+
+[dependency-groups]
+docs = [
+    # https://www.sphinx-doc.org/en/master/
+    "sphinx>=8.1",
+    # https://pradyunsg.me/furo/
+    "furo>=2024.8",
+    # https://myst-parser.readthedocs.io/en/latest/
+    "myst-parser>=4.0",
+    # https://sphinx-copybutton.readthedocs.io/en/latest/
+    "sphinx-copybutton>=0.5.2",
+    # https://github.com/sphinx-doc/sphinx-autobuild
+    "sphinx-autobuild>=2024.10",
+]
+lint = [
+    # https://docs.astral.sh/ruff/
+    "ruff>=0.11.0",
+    # https://mypy.readthedocs.io/en/stable/
+    "mypy>=1.15",
+]
+test = [
+    # https://coverage.readthedocs.io/en/latest/
+    "coverage>=7.7",
+    # https://hypothesis.readthedocs.io/en/latest/
+    "hypothesis>=6.128",
+    # https://docs.pytest.org/en/latest/
+    "pytest>=8.3",
+    # https://pytest-cov.readthedocs.io/en/latest/
+    "pytest-cov>=6.0",
+]
+
+[tool.hatch.version]
+path = "src/capf/__init__.py"
+
+[tool.uv]
+default-groups = "all"
+
+[tool.ruff]
+target-version = "py310"
+cache-dir = ".cache/ruff"
+src = ["src"]
+line-length = 80
+show-fixes = true
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = [
+    "YTT",    # flake8-2020
+    "ASYNC",  # flake8-async
+    "S1",     # flake8-bandit
+    "BLE",    # flake8-blind-except
+    "FBT",    # flake8-boolean-trap
+    "B",      # flake8-bugbear
+    "COM818", # flake8-commas
+    "C4",     # flake8-comprehensions
+    "EXE",    # flake8-executable
+    "INT",    # flake8-gettext
+    "ISC",    # flake8-implicit-str-concat
+    "ICN",    # flake8-import-conventions
+    "LOG",    # flake8-logging
+    "G",      # flake8-logging-format
+    "PIE",    # flake8-pie
+    "PYI",    # flake8-pyi
+    "PT",     # flake8-pytest-style
+    "RSE",    # flake8-raise
+    "SIM",    # flake8-simplify
+    "SLOT",   # flake8-slots
+    "TID",    # flake8-tidy-imports
+    "TC",     # flake8-type-checking
+    "FLY",    # flynt
+    "I",      # isort
+    "C90",    # mccabe
+    "N",      # pep8-naming
+    "E",      # pycodestyle error
+    "W",      # pycodestyle warning
+    "D2",     # pydocstyle
+    "D3",     # pydocstyle
+    "D4",     # pydocstyle
+    "F",      # pyflakes
+    "PGH",    # pygrep-hooks
+    "PLE",    # pylint error
+    "PLW",    # pylint warning
+    "UP",     # pyupgrade
+    "FURB",   # refurb
+    "RUF",
+]
+ignore = [
+    # Use of assert detected
+    "S101",
+    # Use a single if statement instead of nested if statements
+    "SIM102",
+    # Use ternary operator {contents} instead of if-else-block
+    "SIM108",
+    # Exception name {name} should be named with an Error suffix
+    "N818",
+    # Line too long ({width} > {limit})
+    "E501",
+]
+
+[tool.ruff.lint.flake8-comprehensions]
+allow-dict-calls-with-keyword-arguments = true
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.mypy]
+python_version = "3.10"
+cache_dir = ".cache/mypy"
+ignore_missing_imports = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+show_error_context = true
+show_column_numbers = true
+pretty = true
+
+[tool.pyright]
+pythonVersion = "3.10"
+pythonPlatform = "All"
+typeCheckingMode = "standard"
+strictListInference = true
+strictDictionaryInference = true
+strictSetInference = true
