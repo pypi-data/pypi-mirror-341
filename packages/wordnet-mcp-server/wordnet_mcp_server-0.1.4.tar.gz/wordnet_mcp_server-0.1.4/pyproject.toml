@@ -1,0 +1,44 @@
+[project]
+name = "wordnet-mcp-server"
+version = "0.1.4"
+description = "WordNet词汇查询的MCP服务"
+authors = [
+    {name = "keepondream"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = [
+    "mcp[cli]",
+    "nltk",
+    "httpx",
+]
+
+# 添加项目URLs
+[project.urls]
+"Homepage" = "https://github.com/keepondream/wordnet-mcp-server"
+"Bug Tracker" = "https://github.com/keepondream/wordnet-mcp-server/issues"
+"Source Code" = "https://github.com/keepondream/wordnet-mcp-server"
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "pytest",
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.mcp]
+module = "wordnet_mcp_server.app"
+
+[project.scripts]
+wordnet-mcp = "wordnet_mcp_server.app:main"
+
+# 修复包结构
+[tool.hatch.build]
+packages = ["src"]
+
+[tool.hatch.build.targets.wheel.map-paths]
+"src/wordnet_mcp_server" = "wordnet_mcp_server" 

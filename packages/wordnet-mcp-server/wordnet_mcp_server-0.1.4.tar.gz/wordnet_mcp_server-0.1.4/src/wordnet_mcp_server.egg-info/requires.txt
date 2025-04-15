@@ -1,0 +1,7 @@
+mcp[cli]
+nltk
+httpx
+
+[dev]
+ruff
+pytest
