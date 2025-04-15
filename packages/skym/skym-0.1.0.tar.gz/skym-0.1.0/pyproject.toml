@@ -1,0 +1,30 @@
+[project]
+name = "skym"
+version = "0.1.0"
+description = "Python package exposing Skim functionality for fuzzy match over an iterable of strings."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name = "Ignacio Vergara Kausel", email="ivergarakausel@gmail.com"}]
+
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[dependency-groups]
+dev = [
+    "maturin>=1.8.3",
+    "pytest>=8.3.5",
+    "pytest-benchmark>=4.0.0",
+    "zig>=1.0.dev0",
+]
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+module-name = "skym.skym"
+python-source = "python"
