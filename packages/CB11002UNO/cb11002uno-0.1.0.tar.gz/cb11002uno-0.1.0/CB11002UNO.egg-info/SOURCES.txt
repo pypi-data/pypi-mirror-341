@@ -1,0 +1,10 @@
+README.md
+setup.py
+CB11002UNO/__init__.py
+CB11002UNO/lineales.py
+CB11002UNO/no_lineales.py
+CB11002UNO.egg-info/PKG-INFO
+CB11002UNO.egg-info/SOURCES.txt
+CB11002UNO.egg-info/dependency_links.txt
+CB11002UNO.egg-info/requires.txt
+CB11002UNO.egg-info/top_level.txt
