@@ -1,0 +1,225 @@
+Metadata-Version: 2.4
+Name: enemera
+Version: 0.1.0
+Summary: API client for Enemera energy data API with enhanced functionality and enums
+Home-page: https://github.com/fracasamax/enemera-api-client
+Author: Francesco Casamassima
+Author-email: Francesco Casamassima <dev@elnc.eu>
+License: MIT
+Project-URL: Homepage, https://github.com/fracasamax/enemera-api-client
+Project-URL: Bug Tracker, https://github.com/fracasamax/enemera-api-client/issues
+Project-URL: Documentation, https://github.com/fracasamax/enemera-api-client#readme
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Requires-Dist: pydantic>=1.8.0
+Requires-Dist: python-dateutil>=2.8.0
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# Enemera API Client
+
+A Python client for the Enemera energy data API. This package provides a simple interface to access energy market and grid data from Italian and European markets.
+
+## Installation
+
+```bash
+pip install enemera
+```
+
+### Optional Dependencies
+
+For data conversion features, you can install optional dependencies:
+
+```bash
+# For pandas DataFrame conversion
+pip install enemera[pandas]
+
+# For polars DataFrame conversion
+pip install enemera[polars]
+
+# For Excel export with openpyxl
+pip install enemera[excel]
+
+# For Excel export with xlsxwriter
+pip install enemera[excel-xlsxwriter]
+
+# For all data conversion features
+pip install enemera[all]
+```
+
+## Usage
+
+```python
+from enemera import EnemeraClient, Market, Area
+from datetime import datetime, timedelta
+
+# Initialize the client with your API key
+client = EnemeraClient(api_key="your_api_key_here")
+
+# Get prices for the MGP market in the NORD zone for the last week
+yesterday = datetime.now() - timedelta(days=1)
+week_ago = datetime.now() - timedelta(days=7)
+
+# Get market prices - using Market enum
+prices = client.italy.prices.get(
+    market=Market.MGP,
+    date_from=week_ago.strftime("%Y-%m-%d"),
+    date_to=yesterday.strftime("%Y-%m-%d"),
+    area=Area.NORD
+)
+
+# The response behaves like a list of price objects
+print(f"Retrieved {len(prices)} price records")
+
+# Print the prices
+for price in prices:
+    print(f"Time: {price.utc}, Market: {price.market}, Zone: {price.zone}, Price: {price.price} EUR/MWh")
+```
+
+## Data Conversion
+
+The client provides direct methods on API responses to convert data to various formats:
+
+### Converting to pandas DataFrame
+
+```python
+# Get prices data
+prices = client.prices.get(
+    market="MGP",
+    date_from="2023-01-01",
+    date_to="2023-01-07",
+    area="NORD"
+)
+
+# Convert to pandas DataFrame directly
+df = prices.to_pandas()
+
+# Analyze data
+print(df.head())
+print(f"Average price: {df['price'].mean():.2f} EUR/MWh")
+```
+
+### Converting to polars DataFrame
+
+```python
+# Convert to polars DataFrame directly
+pl_df = prices.to_polars()
+
+# Analyze data
+import polars as pl
+print(pl_df.head())
+print(f"Average price: {pl_df.select(pl.mean('price')).item():.2f} EUR/MWh")
+```
+
+### Exporting to CSV
+
+```python
+# Save to CSV file directly
+prices.to_csv("prices_data.csv", index=False)
+```
+
+### Exporting to Excel
+
+```python
+# Save to Excel file directly
+prices.to_excel(
+    "prices_data.xlsx", 
+    sheet_name="MGP Prices", 
+    index=False
+)
+
+# With additional formatting (requires pandas)
+import pandas as pd
+df = prices.to_pandas()
+
+with pd.ExcelWriter("prices_analysis.xlsx", engine="openpyxl") as writer:
+    # Raw data
+    df.to_excel(writer, sheet_name="Raw Data", index=False)
+    
+    # Daily statistics
+    daily_stats = df.groupby(df["utc"].dt.date)["price"].agg(["mean", "min", "max"])
+    daily_stats.to_excel(writer, sheet_name="Daily Stats")
+```
+
+## Multi-sheet Excel Export Example
+
+```python
+# Get both prices and volumes
+prices = client.prices.get(market="MGP", date_from="2023-01-01", date_to="2023-01-07", area="NORD")
+volumes = client.italy.exchange_volumes.get(market="MGP", date_from="2023-01-01", date_to="2023-01-07", area="NORD")
+
+# Create a multi-sheet Excel file
+import pandas as pd
+
+with pd.ExcelWriter("market_analysis.xlsx", engine="openpyxl") as writer:
+    # Prices sheet
+    prices.to_pandas().to_excel(writer, sheet_name="Prices", index=False)
+    
+    # Volumes sheet
+    volumes.to_pandas().to_excel(writer, sheet_name="Volumes", index=False)
+    
+    # Analysis sheet (custom calculations)
+    prices_df = prices.to_pandas()
+    prices_df["hour"] = prices_df["utc"].dt.hour
+    hourly_avg = prices_df.groupby("hour")["price"].mean().reset_index()
+    hourly_avg.to_excel(writer, sheet_name="Hourly Analysis", index=False)
+```
+
+## Available Endpoints
+
+The client is organized using a namespace structure:
+
+### Italy Namespace (`client.italy`)
+
+- `italy.prices.get()`: Access to the `/italy/prices/{market}/` endpoint for market prices
+- `italy.exchange_volumes.get()`: Access to the `/italy/exchange_volumes/{market}/` endpoint for market volumes
+- `italy.commercial_flows.get()`: Access to the `/italy/commercial_flows/` endpoint for cross-zonal flows
+
+For backward compatibility, prices are also available directly via `client.prices.get()`.
+
+## Enums
+
+The client provides enums for common parameters:
+
+- `Market`: Enum for Italian energy market identifiers (MGP, MI1, MI2, etc.)
+- `Area`: Enum for Italian bidding zones and macrozones (NORD, CNOR, CSUD, etc.)
+
+These enums can be used interchangeably with string values:
+
+```python
+# Using enums
+client.italy.prices.get(market=Market.MGP, area=Area.NORD, ...)
+
+# Using strings
+client.italy.prices.get(market="MGP", area="NORD", ...)
+```
+
+## Authentication
+
+The client uses API key authentication with Bearer tokens. You can obtain an API key by subscribing to the Enemera API service.
+
+## Features
+
+- Organized namespace structure for intuitive API navigation
+- Enum support for market and area identifiers
+- Handles authentication automatically
+- Converts API responses to Python objects
+- Direct conversion methods on API responses (to_pandas, to_polars, to_csv, to_excel)
+- Comprehensive error handling
+- Date formatting helpers
+- Type hints for better IDE support
+
+## License
+
+MIT
