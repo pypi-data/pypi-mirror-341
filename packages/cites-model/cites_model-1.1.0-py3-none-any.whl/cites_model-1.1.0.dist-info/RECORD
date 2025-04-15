@@ -1,0 +1,11 @@
+cites_model/__init__.py,sha256=oozOr_DKhenkM9BDaPOmtbLXhP5vtMUCjBPEjZDW4GQ,167
+cites_model/cites_common.py,sha256=IrrhERPlCLxRr0H2XhHuFxDrcjVa-B8-W5uBM1o7TgE,40925
+cites_model/cites_document.py,sha256=-aBThowe0aSNBsXe59xfKTXWenznrt_NYIk41JH8fjs,2415
+cites_model/cites_reg_card.py,sha256=ELW_Gk4KsqEgbnbBIvwF_ksZAb1XfP3WQzZ1nAqUIZg,3862
+cites_model/cites_swin.py,sha256=spArguJ95lUPsPn-c8tIkweS1lYAbZfXkHQy1lWmldA,1051
+cites_model/cites_taxon.py,sha256=BPUNjrUDTfu36lOyHGMeByegmJ8M0AES2NEBi5bP57U,5110
+cites_model-1.1.0.dist-info/licenses/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+cites_model-1.1.0.dist-info/METADATA,sha256=NaefY-IjAkdQUbOJFJCZfzSZXtaf3y31Hi-2gySWxhw,2307
+cites_model-1.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+cites_model-1.1.0.dist-info/top_level.txt,sha256=v9Z_DxzT4BiIpmSYaO8NHXcJ3jf-lphG4A_BE5dkgSg,12
+cites_model-1.1.0.dist-info/RECORD,,
