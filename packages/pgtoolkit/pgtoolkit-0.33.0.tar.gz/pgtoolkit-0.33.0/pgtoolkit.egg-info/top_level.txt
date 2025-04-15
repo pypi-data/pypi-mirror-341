@@ -1,0 +1,7 @@
+debian
+dist
+docs
+pgtoolkit
+rpm
+scripts
+tests

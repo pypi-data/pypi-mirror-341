@@ -1,0 +1,100 @@
+Metadata-Version: 2.4
+Name: pgtoolkit
+Version: 0.33.0
+Summary: PostgreSQL Support from Python
+Author-email: Dalibo <contact@dalibo.com>
+Maintainer-email: Denis Laxalde <denis.laxalde@dalibo.com>, Pierre Giraud <pierre.giraud@dalibo.com>, Julian Vanden Broeck <julian.vandenbroeck@dalibo.com>
+License: PostgreSQL
+Project-URL: Repository, https://github.com/dalibo/pgtoolkit
+Project-URL: Documentation, https://pgtoolkit.readthedocs.io/
+Keywords: postgresql,postgresql.conf,pg_hba,pgpass,pg_service.conf
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: PostgreSQL License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pgtoolkit[doc,lint,test,typing]; extra == "dev"
+Provides-Extra: lint
+Requires-Dist: black; extra == "lint"
+Requires-Dist: check-manifest; extra == "lint"
+Requires-Dist: flake8; extra == "lint"
+Requires-Dist: isort; extra == "lint"
+Requires-Dist: pyupgrade; extra == "lint"
+Provides-Extra: typing
+Requires-Dist: mypy; extra == "typing"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-asyncio; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pytest-mock; extra == "test"
+Requires-Dist: psycopg2-binary; extra == "test"
+Provides-Extra: doc
+Requires-Dist: sphinx; extra == "doc"
+Requires-Dist: sphinx-autobuild; extra == "doc"
+Requires-Dist: sphinx_rtd_theme; extra == "doc"
+Dynamic: license-file
+
+####################################
+ Postgres Cluster Support in Python
+####################################
+
+| |Tests status| |Codecov| |RTD|
+
+
+``pgtoolkit`` provides implementations to manage various file formats in Postgres
+cluster. Currently:
+
+- ``postgresql.conf``: read, edit, save.
+- ``pg_hba.conf``: render, validate and align columns.
+- ``.pgpass``: render, validate and sort lines.
+- ``pg_service.conf``: find, read, edit, render.
+- Cluster logs.
+
+It also provides a Python API for calling pg_ctl_ commands.
+
+.. _pg_ctl: https://www.postgresql.org/docs/current/app-pg-ctl.html
+
+
+.. code::
+
+   import sys
+
+   from pgtoolkit.hba import parse
+
+
+   with open('pg_hba.conf') as fo:
+       hba = parse(fo)
+
+   hba.write(sys.stdout)
+
+
+The API in this toolkit must:
+
+- Use only Python stdlib.
+- Use Postgres idioms.
+- Have full test coverage.
+- Run everywhere.
+
+
+Support
+-------
+
+`pgtoolkit <https://github.com/dalibo/pgtoolkit>`_ home on GitHub is the unique
+way of interacting with developers. Feel free to open an issue to get support.
+
+
+.. |Codecov| image:: https://codecov.io/gh/dalibo/pgtoolkit/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/dalibo/pgtoolkit
+   :alt: Code coverage report
+
+.. |Tests status| image:: https://github.com/dalibo/pgtoolkit/actions/workflows/tests.yml/badge.svg
+   :target: https://github.com/dalibo/pgtoolkit/actions/workflows/tests.yml
+   :alt: Continuous Integration report
+
+.. |RTD| image:: https://readthedocs.org/projects/pgtoolkit/badge/?version=latest
+   :target: https://pgtoolkit.readthedocs.io/en/latest/
+   :alt: Documentation
