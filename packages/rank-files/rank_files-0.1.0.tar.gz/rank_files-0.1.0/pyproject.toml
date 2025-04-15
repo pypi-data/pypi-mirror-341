@@ -1,0 +1,23 @@
+[project]
+name = "rank-files"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Jacob Williams", email = "jacobaw@gmail.com" }
+]
+requires-python = ">=3.13.2"
+dependencies = [
+    "anthropic>=0.49.0",
+    "hypothesis>=6.131.0",
+    "ollama>=0.4.7",
+    "pytest>=8.3.5",
+    "tqdm>=4.67.1",
+]
+
+[project.scripts]
+rank-files = "rank_files.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
