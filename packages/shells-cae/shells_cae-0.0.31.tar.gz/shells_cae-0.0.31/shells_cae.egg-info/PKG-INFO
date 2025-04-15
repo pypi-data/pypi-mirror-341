@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: shells-cae
+Version: 0.0.31
+Summary: Special CAЕ Library by sabbraxcaddabra&denchina
+Author-email: denisdoronichev@outlook.com
+Requires-Python: >=3.11
+Requires-Dist: numpy>=1.23.4
+Requires-Dist: cffi>=1.15.1
