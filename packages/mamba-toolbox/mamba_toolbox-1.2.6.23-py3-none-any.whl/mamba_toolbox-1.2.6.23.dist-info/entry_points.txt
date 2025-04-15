@@ -1,0 +1,2 @@
+[console_scripts]
+mamba = mamba.__main__:cli
