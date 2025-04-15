@@ -1,0 +1,33 @@
+[project]
+name = "umbitlib"
+version = "0.0.79"
+description = "A library containing functions and constants commonly used so they can be centrally hosted sourced and managed"
+authors = [
+    {name = "Ken Briercheck, Samuel Cloward, Kevin Galbraith, Luke Iremadze, Shuktika Maheshwari, Jed Nigro, Javier Prado, Martin Smith\""}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "wheel (>=0.45.1,<0.46.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "cx-oracle (>=8.3.0,<9.0.0)",
+    "pandera (>=0.22.1,<0.23.0)",
+    "sqlalchemy (>=2.0.37,<3.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "keyring (>=25.6.0,<26.0.0)",
+    "importlib (>=1.0.4,<2.0.0)",
+    "matplotlib (>=3.10.0,<4.0.0)",
+    "scipy (>=1.15.1,<2.0.0)",
+    "pyyaml (>=6.0.2,<7.0.0)",
+    "datetime (>=5.5,<6.0)",
+    "python-dateutil (>=2.9.0.post0,<3.0.0)",
+    "psycopg2 (>=2.9.10,<3.0.0)",
+    "oracledb (>=3.1.0,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
