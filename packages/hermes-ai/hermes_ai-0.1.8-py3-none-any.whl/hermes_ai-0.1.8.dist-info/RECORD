@@ -1,0 +1,17 @@
+hermes_ai/__init__.py,sha256=G9VxFh8mtS61pyLjce3Hczasd_coG0GOkzpBxrtfclM,145
+hermes_ai/main.py,sha256=NCmO5SluBwWL6mk5v4w6ofiR2srJ2pHTlTcZDDCpCTY,5642
+hermes_ai/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hermes_ai/data/messages_actions.csv,sha256=xRToEomquyphLtBsVLr6Ud0sT3t7lj4SfQe0_QWSwTw,14
+hermes_ai/data/synthetic_messages.csv,sha256=MTGZegoDpF40ezf1mJRB9NM7cq1cv71J0yJrZQwwPo8,32650
+hermes_ai/models/__init__.py,sha256=hmnEIiDpZ20Rv6M_gk89QO3U_XnaoFApljyaVtC-vNw,221
+hermes_ai/models/classifier.py,sha256=VvBaXx6PsOwi5SGUAVl5bbFi4uB20EE5VMaP5kO5nzY,2338
+hermes_ai/models/classifier_model,sha256=bgF1hdhVur8adrQtrJvp9FJOjlFKSeQmouuAJq32SO8,229263
+hermes_ai/models/data_processor.py,sha256=u-cEeQnP5qeJbb174cgYnLr0-5NMtRbEXo_9QPxXb5s,1145
+hermes_ai/models/vectorizer,sha256=ielGcD7sNKC5q7YnMSRAZNR1-wDPUPIIWXre2SSRamo,35513
+hermes_ai/models/__pycache__/__init__.cpython-38.pyc,sha256=TPmpc65l9GASBADEOv6rD3rfwpke3ZF7dU4Uf6A9MT0,413
+hermes_ai/models/__pycache__/classifier.cpython-38.pyc,sha256=77irEVYLREyyqMMHKobgEvyUJdOVC0bkiHnPg_swXyc,2005
+hermes_ai/models/__pycache__/data_processor.cpython-38.pyc,sha256=fFYY-xXNW4C__pVVL1qpmzxZBlZPxXRZmrkDu1QyDrI,1401
+hermes_ai-0.1.8.dist-info/METADATA,sha256=o_V20I_9NEPVWFbvQL4puEZn8fzca1OFQj0kvg4pnk8,978
+hermes_ai-0.1.8.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+hermes_ai-0.1.8.dist-info/top_level.txt,sha256=Q86yIo9mE2omNSs_ML4ZwExUjgicVb2UY8p39E8P8k8,10
+hermes_ai-0.1.8.dist-info/RECORD,,
