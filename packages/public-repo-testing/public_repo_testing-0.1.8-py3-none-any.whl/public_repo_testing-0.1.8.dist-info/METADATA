@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: public-repo-testing
+Version: 0.1.8
+Summary: Add your description here
+Requires-Python: >=3.12.4
+Description-Content-Type: text/markdown
+
+To build, run `uv build` then upload wheels from the `dist` folder
+
+Here is [a link to another file in the repo](https://github.com/seequentsandbox/public-repo-testing/tree/mainanother_file.md), and [another link](https://github.com/seequentsandbox/public-repo-testing/tree/main./another_file.md) and [another file](https://github.com/seequentsandbox/public-repo-testing/tree/main/another_file.md)
