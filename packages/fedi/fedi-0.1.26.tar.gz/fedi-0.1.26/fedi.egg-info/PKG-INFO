@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fedi
+Version: 0.1.26
+Author: Haykel Snoussi
+Author-email: dr.haykel.snoussi@gmail.com
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+Read the Docs
