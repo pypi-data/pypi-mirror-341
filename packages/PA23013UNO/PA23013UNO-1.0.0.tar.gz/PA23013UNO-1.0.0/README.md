@@ -1,0 +1,27 @@
+# PA23013UNO
+
+Librería Python para resolver sistemas de ecuaciones lineales y no lineales.
+
+## Descripción
+
+Esta librería proporciona una colección de métodos numéricos para resolver sistemas de ecuaciones lineales y ecuaciones no lineales. Es ideal para estudiantes, investigadores y desarrolladores que necesiten herramientas matemáticas precisas y fáciles de usar.
+
+## Métodos Implementados
+
+### Sistemas Lineales
+- **Eliminación de Gauss**: Resuelve sistemas de ecuaciones lineales usando eliminación hacia adelante y sustitución hacia atrás.
+- **Gauss-Jordan**: Resuelve sistemas de ecuaciones lineales usando eliminación completa.
+- **Regla de Cramer**: Resuelve sistemas de ecuaciones lineales usando determinantes.
+- **Descomposición LU**: Resuelve sistemas de ecuaciones lineales usando factorización LU.
+- **Método de Jacobi**: Resuelve sistemas de ecuaciones lineales usando iteraciones.
+- **Método de Gauss-Seidel**: Resuelve sistemas de ecuaciones lineales usando iteraciones mejoradas.
+
+### Ecuaciones No Lineales
+- **Método de Bisección**: Encuentra raíces de ecuaciones no lineales dividiendo intervalos.
+
+## Instalación
+
+Puedes instalar la librería directamente desde PyPI:
+
+```bash
+pip install PA23013UNO

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+PA23013UNO/__init__.py
+PA23013UNO/ejemplos.py
+PA23013UNO/metodos_lineales.py
+PA23013UNO/metodos_no_lineales.py
+PA23013UNO.egg-info/PKG-INFO
+PA23013UNO.egg-info/SOURCES.txt
+PA23013UNO.egg-info/dependency_links.txt
+PA23013UNO.egg-info/top_level.txt
