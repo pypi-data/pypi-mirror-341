@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pygraspi_test.egg-info/PKG-INFO
+pygraspi_test.egg-info/SOURCES.txt
+pygraspi_test.egg-info/dependency_links.txt
+pygraspi_test.egg-info/requires.txt
+pygraspi_test.egg-info/top_level.txt
+src/pygraspi_test/__init__.py
+src/pygraspi_test/helloWorld_elyuz/__init__.py
+src/pygraspi_test/helloWorld_elyuz/helloWorld.py
+src/pygraspi_test/operations_elyuz/__init__.py
+src/pygraspi_test/operations_elyuz/add.py
