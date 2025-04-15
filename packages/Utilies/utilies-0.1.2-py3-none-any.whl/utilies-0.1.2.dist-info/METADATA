@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: Utilies
+Version: 0.1.2
+Summary: A simple Python library
+Author-email: Krishna Murthy S <krishnamurthy.s@hpe.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
