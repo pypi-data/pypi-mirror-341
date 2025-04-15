@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: untool
+Version: 0.0.4
+Summary: Union Tool for inference on Sophgo chips
+Author-email: wlc952 <wlc952@zju.edu.cn>
+License: MIT
+Project-URL: Homepage, https://github.com/wlc952/untool-python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy<2.0.0
+Requires-Dist: transformers>=4.40.0
+
+# UnTool
+
+UnTool是一个用于Sophon芯片推理的Python工具包，支持x86_64和aarch64架构，以及SOC和PCIE两种模式。
+
+## 安装
+
+```bash
+pip install untool
+```
+
+## 使用示例
+
+```python
+import untool
+
+# 可选: 明确设置模式
+untool.set_mode('pcie')  
+
+# 使用库功能
+tensor = untool.untensor_create()
+runtime = untool.runtime_init("model.bmodel", 0)
+# 其他操作...
+```
+
+## 其他
+源代码仓库`https://www.modelscope.cn/wlc952/UnTool.git`
