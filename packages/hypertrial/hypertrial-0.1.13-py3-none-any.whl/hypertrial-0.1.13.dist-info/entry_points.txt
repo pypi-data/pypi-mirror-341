@@ -1,0 +1,2 @@
+[console_scripts]
+hypertrial = core.cli:cli_main
