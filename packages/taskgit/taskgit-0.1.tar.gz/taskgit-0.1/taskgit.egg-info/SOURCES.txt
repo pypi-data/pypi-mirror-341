@@ -1,0 +1,8 @@
+README.md
+setup.py
+taskgit.py
+taskgit.egg-info/PKG-INFO
+taskgit.egg-info/SOURCES.txt
+taskgit.egg-info/dependency_links.txt
+taskgit.egg-info/entry_points.txt
+taskgit.egg-info/top_level.txt
