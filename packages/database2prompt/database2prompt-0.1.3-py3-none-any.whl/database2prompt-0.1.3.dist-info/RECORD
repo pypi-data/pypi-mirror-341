@@ -1,0 +1,14 @@
+database2prompt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+database2prompt/database/core/database_config.py,sha256=sA4UBnN7PHw2Y6ULJBX_AkodAHU3DVjPOuySrzL9Rzc,790
+database2prompt/database/core/database_factory.py,sha256=jQurvrsLC00ua2vHMBAcoxmGnJF9EO_4tCG1x0J-Iv4,1200
+database2prompt/database/core/database_params.py,sha256=1ZjszCK9D9N2zsIwuddBnj0csWCtH3D7trITL61zbEM,1382
+database2prompt/database/core/database_strategy.py,sha256=y3r6y5pVr5K6u85Q9XxeVJ_R6H-QDMgsvT3IFDHeHj8,682
+database2prompt/database/core/metadata.py,sha256=0TxVgv9PwoqagUNWfnMeIA9mr2q5qASi7q-C29RkqTk,752
+database2prompt/database/pgsql/postgresql_strategy.py,sha256=FvLLqMhk1_OeMLk_D6-rQnA-SgFkHxNTLDq7bbYeO7M,2718
+database2prompt/database/processing/database_processor.py,sha256=f-5OpqxP62IVViEAzpyaRKzgV4BFuwSNzVjMTx_IDLc,5633
+database2prompt/main.py,sha256=juqFXsaIY7SoF4R86HywQ6LIujEMrUHnsyJiZau5eNA,1279
+database2prompt/markdown/markdown_generator.py,sha256=HVvUhssclE0wcI2kEOJjiwjxW8oLcGMGaJC83nTxIvo,1813
+database2prompt-0.1.3.dist-info/LICENSE,sha256=Y-MqjR5I8E548khaMaaXKfOxAGmQ8_fuQhlZ3dn4Vus,1061
+database2prompt-0.1.3.dist-info/METADATA,sha256=uEHHS3wl6n3sVoecNFZT9ns-NrOuimctyAjPWwOGyXk,3841
+database2prompt-0.1.3.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+database2prompt-0.1.3.dist-info/RECORD,,
