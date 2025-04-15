@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyDSV/__init__.py
+pyDSV/csvLoader.py
+pyDSV/dsvTransformer.py
+pyDSV.egg-info/PKG-INFO
+pyDSV.egg-info/SOURCES.txt
+pyDSV.egg-info/dependency_links.txt
+pyDSV.egg-info/requires.txt
+pyDSV.egg-info/top_level.txt
+tests/__init__.py
+tests/test_csvLoader.py
+tests/test_dsvTransformer.py
