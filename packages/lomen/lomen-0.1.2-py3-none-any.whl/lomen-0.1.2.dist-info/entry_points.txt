@@ -1,0 +1,2 @@
+[console_scripts]
+lomen = lomen.cli:main
