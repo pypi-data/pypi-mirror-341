@@ -1,0 +1,35 @@
+LICENSE.txt
+README.md
+setup.py
+noshot.egg-info/PKG-INFO
+noshot.egg-info/SOURCES.txt
+noshot.egg-info/dependency_links.txt
+noshot.egg-info/not-zip-safe
+noshot.egg-info/top_level.txt
+src/noshot/__init__.py
+src/noshot/main.py
+src/noshot/data/ML TS XAI/TS/10. Seasonal ARIMA Forecasting.ipynb
+src/noshot/data/ML TS XAI/TS/11. Multivariate ARIMA Forecasting.ipynb
+src/noshot/data/ML TS XAI/TS/6. ACF PACF.ipynb
+src/noshot/data/ML TS XAI/TS/7. Differencing.ipynb
+src/noshot/data/ML TS XAI/TS/8. ARMA Forecasting.ipynb
+src/noshot/data/ML TS XAI/TS/9. ARIMA Forecasting.ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 1/EDA2_chipsdatset.ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 1/EDA_IRISH_8thjan.ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 1/XAI_EX1 MODEL BIAS (FINAL).ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 1/complete_guide_to_eda_on_text_data.ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 1/deepchecksframeworks.ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 1/deepexplainers (mnist).ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 1/guidedbackpropagation.ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 1/updated_image_EDA1_with_LRP.ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 1/zebrastripes.ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 2/EXP_5.ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 2/Exp-3 (EDA-loan).ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 2/Exp-3 (EDA-movie).ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 2/Exp-4(Flower dataset).ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 2/Exp-4.ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 2/Exp_2.ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 2/Exp_7.ipynb
+src/noshot/data/ML TS XAI/XAI/XAI 2/FeatureImportance_SensitivityAnalysis.ipynb
+src/noshot/utils/__init__.py
+src/noshot/utils/shell_utils.py
