@@ -1,0 +1,9 @@
+setup.py
+littlegrad/__init__.py
+littlegrad/models_eqx.py
+littlegrad/scorenet.py
+littlegrad.egg-info/PKG-INFO
+littlegrad.egg-info/SOURCES.txt
+littlegrad.egg-info/dependency_links.txt
+littlegrad.egg-info/requires.txt
+littlegrad.egg-info/top_level.txt
