@@ -1,0 +1,7 @@
+build/
+.vscode/
+*__pycache__/
+src/IrisCodecExtension.hpp
+src/IrisCodecExtension.cpp
+src/IrisCodecCore.hpp
+src/IrisCodecTypes.hpp
