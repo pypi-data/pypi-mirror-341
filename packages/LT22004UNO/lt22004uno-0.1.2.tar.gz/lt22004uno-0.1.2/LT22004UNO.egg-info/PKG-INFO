@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: LT22004UNO
+Version: 0.1.2
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales
+Home-page: https://github.com/drumsplease-fab/CDA_corto1
+Author: Fabio Leiva
+Author-email: LT22004@ues.edu.sv
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.20.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Â¡Hola! esta libreria esta disenada para resolver sistemas de ecuaciones lineales y no lineales.
+
+## Metodos implementados
+
+### Sistemas lineales
+- Eliminacion Gaussiana
+- Gauss-Jordan
+- Regla de Cramer
+- DescomposiciÃ³n LU
+- Jacobi
+- Gauss-Seidel
+
+### Sistemas no lineales
+- Metodo de BisecciÃ³n
+
+## Instalacion
+
+```bash
+pip install 0265831UNO

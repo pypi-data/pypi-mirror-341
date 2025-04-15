@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+LT22004UNO/Ecuaciones_lineales.py
+LT22004UNO/Ecuaciones_no_lineales.py
+LT22004UNO/__init__.py
+LT22004UNO/utils.py
+LT22004UNO.egg-info/PKG-INFO
+LT22004UNO.egg-info/SOURCES.txt
+LT22004UNO.egg-info/dependency_links.txt
+LT22004UNO.egg-info/requires.txt
+LT22004UNO.egg-info/top_level.txt
+tests/__init__.py
+tests/test_lineal.py
+tests/test_nolinear.py
