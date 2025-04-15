@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ECUALI_NOLI
+Version: 0.1.1
+Summary: Paquete para resolver ecuaciones lineales y no lineales
+Home-page: https://github.com/Kenner23016/ECUALI_NOLI
+Author: Kenner Melgar
+Author-email: NM23016@ues.edu.sv
+Project-URL: Source Code, https://github.com/Kenner23016/ECUALI_NOLI
+Project-URL: Bug Tracker, https://github.com/Kenner23016/ECUALI_NOLI/issues
+Keywords: ecuaciones matemáticas algebra numerico
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

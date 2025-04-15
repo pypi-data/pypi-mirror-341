@@ -1,0 +1,7 @@
+README.md
+setup.py
+ECUALI_NOLI.egg-info/PKG-INFO
+ECUALI_NOLI.egg-info/SOURCES.txt
+ECUALI_NOLI.egg-info/dependency_links.txt
+ECUALI_NOLI.egg-info/requires.txt
+ECUALI_NOLI.egg-info/top_level.txt
