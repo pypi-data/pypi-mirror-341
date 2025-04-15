@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: robotframework-scaffold
+Version: 0.1.0
+Summary: A scaffold tool for structuring Robot Framework projects with best practices.
+License: MIT
+Author: Robot Courses
+Author-email: git@robotcourses.com.br
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Description-Content-Type: text/markdown
+
+# 🤖 Robot Framework Scaffold
+
+A command-line tool that helps you quickly scaffold a project structure for [Robot Framework](https://robotframework.org/), whether you're building tests for APIs, web applications, or mobile apps.
+
+---
+
+## 🚀 Features
+
+- Interactive CLI for project setup
+- Supports API, Web, and Mobile test project structures
+- Integration with Poetry for environment and dependency management
+- Automatically installs the appropriate libraries (Requests, SeleniumLibrary, BrowserLibrary, AppiumLibrary)
+- Creates a clean and consistent folder structure
+- Optional `base.resource` setup to store shared keywords, variables, and settings
+
+---
+
+## 📦 Installation
+
+You can install the tool locally using `pip`:
+
+```bash
+pip install robotframework-scaffold
+```
+
+---
+
+# 📁 Generated Structure
+[Under construction]
+
+---
+
+# 🐍 Poetry Integration
+[Under construction]
+
+---
+
+# 💡 Example
+[Under construction]
+
+---
+
+# 🛠️ Usage
+[Under construction]
+
+---
+
+# 📌 Requirements
+[Under construction]
+
+---
