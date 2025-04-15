@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: LinkedList-utils-version-1
+Version: 0.1.0
+Summary: A powerful custom LinkedList implementation with advanced methods.
+Home-page: https://github.com/Adhithya200503/LinkedList/blob/main/linkedList.py
+Author: Adhithya S
+Author-email: adhithya.s.200503@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LinkedList
+
+A powerful and extensible implementation of a singly linked list in Python.
+
+This `LinkedList` class supports standard linked list operations as well as advanced functional-style utilities such as `map`, `filter`, `reduce`, slicing, merging, sorting, and more. Itâ€™s perfect for learning data structures or using in custom projects that need a flexible list alternative.
+
+---
+
+## ðŸš€ Features
+
+- `append`, `push`, `pop`, `insertBefore`, `insertAfter`, `removeByValue`
+- Functional methods: `map`, `filteredList`, `reduceList`
+- Utilities: `clone`, `reverse`, `contains`, `toList`, `fromList`, `detail`, `clear`
+- Slicing: `sliceLinkedList(start, end)`
+- Sorting: `sortedList(mode="asc|desc|random|reverse")`
+- Pythonic magic methods: `__len__`, `__str__`, `__iter__`, `__getitem__`, `__setitem__`
+- Deep merge and deduplication
+- Works with loops, indexing, and native functions like `len()`
+
+---
+
+## ðŸ“¦ Installation
+
+```bash
+pip install linkedlist
+
+
