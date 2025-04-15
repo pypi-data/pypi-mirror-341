@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+dd21006UNO.egg-info/PKG-INFO
+dd21006UNO.egg-info/SOURCES.txt
+dd21006UNO.egg-info/dependency_links.txt
+dd21006UNO.egg-info/top_level.txt
