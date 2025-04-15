@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+dkbotzdb/__init__.py
+dkbotzdb.egg-info/PKG-INFO
+dkbotzdb.egg-info/SOURCES.txt
+dkbotzdb.egg-info/dependency_links.txt
+dkbotzdb.egg-info/requires.txt
+dkbotzdb.egg-info/top_level.txt
