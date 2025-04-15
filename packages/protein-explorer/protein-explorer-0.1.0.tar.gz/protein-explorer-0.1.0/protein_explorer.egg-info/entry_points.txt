@@ -1,0 +1,3 @@
+[console_scripts]
+protein-explorer = protein_explorer.cli:main
+

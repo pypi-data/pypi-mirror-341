@@ -1,0 +1,66 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="protein-explorer",
+    version="0.1.0",
+    packages=find_packages(),
+    install_requires=[
+        "requests>=2.31.0",
+        "numpy>=1.24.0",
+        "scipy>=1.11.0",
+        "networkx>=3.1",
+        "plotly>=5.16.0",
+        "scikit-learn>=1.3.0",
+        "flask>=2.3.0",
+        "biopython>=1.81",
+        "pandas>=2.0.3",
+        "pyarrow>=12.0.0",  # For feather and parquet files
+        "matplotlib>=3.7.0",
+        "seaborn>=0.12.0",
+        "tqdm>=4.66.0",
+        "joblib>=1.3.0",
+        "flask-cors>=4.0.0",
+        "flask-caching>=2.0.0",
+        "python-dotenv>=1.0.0",
+        "werkzeug>=2.3.0",
+        "jinja2>=3.1.0",
+        "pyyaml>=6.0.0",
+        "typing-extensions>=4.7.0",
+    ],
+    extras_require={
+        "database": [
+            "pymysql>=1.1.0",
+            "sqlalchemy>=2.0.0",
+        ],
+        "dev": [
+            "pytest>=7.4.0",
+            "pytest-cov>=4.1.0",
+            "flake8>=6.1.0",
+            "black>=23.7.0",
+            "pre-commit>=3.3.0",
+        ],
+    },
+    python_requires=">=3.8",
+    author="David Vanderwall",
+    author_email="dvanderwall@hms.harvard.edu",
+    description="A package for exploring protein structures and phosphorylation sites",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/class-account/protein-explorer",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Intended Audience :: Science/Research",
+        "Topic :: Scientific/Engineering :: Bio-Informatics",
+    ],
+    include_package_data=True,
+    entry_points={
+        "console_scripts": [
+            "protein-explorer=protein_explorer.cli:main",
+        ],
+    },
+)
