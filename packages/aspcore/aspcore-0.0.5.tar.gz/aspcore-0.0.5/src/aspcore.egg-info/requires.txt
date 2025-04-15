@@ -1,0 +1,16 @@
+numpy
+scipy
+numba
+numexpr
+jax
+matplotlib
+tensorly
+samplerate
+
+[extra]
+tikzplotlib
+
+[test]
+pytest
+hypothesis
+aspsim
