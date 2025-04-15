@@ -1,0 +1,451 @@
+message,action
+Forward John's email,refer previous message
+Resend last week's notes,refer previous message
+Share yesterday's details,refer previous message
+Send previous discussion,refer previous message
+Pass along earlier memo,refer previous message
+Recirculate March report,refer previous message
+Resend meeting minutes,refer previous message
+Forward client's request,refer previous message
+Share archived proposal,refer previous message
+Send prior instructions,refer previous message
+Pass on old thread,refer previous message
+Resend May's update,refer previous message
+Hey did you see the movie last night? The link was shared earlier!,refer previous message
+Just a reminder about the meeting. The details were in the previous email.,refer previous message
+Don't forget to pick up groceries. I sent you the list yesterday.,refer previous message
+Please review the document I sent last week. Your feedback is needed.,refer previous message
+Your invoice is due soon. The details were in the last message.,refer previous message
+I sent you the recipe before. Let me know how it turns out!,refer previous message
+As mentioned earlierthe deadline is Friday. Don’t forget!,refer previous message
+The party details are in my previous text. Check it out!,refer previous message
+Can you check the report I shared last week? Thanks!,refer previous message
+Your appointment confirmation was sent earlier. Please check.,refer previous message
+I shared that song with you already. Let me know if you liked it!,refer previous message
+I attached the presentation in my last email. Please look it over.,refer previous message
+The holiday plans are in my last message. Don’t miss them!,refer previous message
+Remember the budget discussion was in last week’s notes.,refer previous message
+We sent you a reminder about the event last month. Did you see it?,refer previous message
+The game scores are in the chat history. Check it out!,refer previous message
+Don’t forget to review the last few messages about the project.,refer previous message
+I sent the travel itinerary last week. Please confirm you got it!,refer previous message
+The feedback on your project was in my last email. Let me know if you saw it.,refer previous message
+The job description was sent out last week. Please refer to that.,refer previous message
+Did you check the concert details I sent you earlier?,refer previous message
+I attached the files again; they were in my previous email too.,refer previous message
+I already sent the photos from our trip. Did you receive them?,refer previous message
+The client notes were in the last meeting summary I shared.,refer previous message
+We’ve sent multiple reminders about the survey. Please take a look.,refer previous message
+Could you please forward the email John sent last Tuesday about the budget revisions to the team?,refer previous message
+I need you to resend the meeting minutes from our June 15th discussion to all new team members.,refer previous message
+Please share the client's original request from March that contains all their specific requirements with the designers.,refer previous message
+Would you mind forwarding the email thread from two weeks ago where we discussed the timeline changes?,refer previous message
+Can you send the project proposal we received in January to the new stakeholders for their reference?,refer previous message
+Please pass along the safety guidelines document that was circulated last quarter to all new hires.,refer previous message
+I need you to forward the vendor's price quote from last month to the procurement department.,refer previous message
+Could you resend the technical specifications we received in April that contain all the product details?,refer previous message
+Please share the archived email from HR that explains the new benefits package with your team.,refer previous message
+Would you forward the client feedback we got after the last product launch to marketing?,refer previous message
+Can you send me again the instructions you shared last week about the reporting process?,refer previous message
+Please circulate the approved budget document from our November meeting to all department heads.,refer previous message
+I need you to forward the original contract terms we agreed to back in February.,refer previous message
+Could you resend the training materials from the onboarding session last month to the new intern?,refer previous message
+Please share the quality assurance report from Q1 that contains all the test results with engineering.,refer previous message
+Forward to the team,forward information
+Share with stakeholders,forward information
+Send this to HR,forward information
+Pass along to IT,forward information
+Circulate to management,forward information
+Distribute to all,forward information
+Copy the department,forward information
+Route to legal,forward information
+Forward to vendors,forward information
+Share with clients,forward information
+Send to finance,forward information
+Pass to marketing,forward information
+Hey! Can you share this document with the team?,forward information
+I found this video that explains the project well. Please send it to the group.,forward information
+My doctor sent me these health tips. Forward them to your family.,forward information
+I received a photo of our last trip. Share it with everyone!,forward information
+Here’s a great article on our industry trends. Please pass it to your boss.,forward information
+Check out this presentation. Can you share it with your colleagues?,forward information
+I got this recipe video from my friend. Forward it to your family!,forward information
+This infographic on stress management is helpful. Please share it at work.,forward information
+I received a funny meme. Can you send it to the group chat?,forward information
+Here's a link to a webinar recording. Share it with anyone interested.,forward information
+This discount offer is great! Forward it to our friends.,forward information
+I got this useful document from HR. Please share it with your team.,forward information
+Check out this health app. Share it with your doctor!,forward information
+I found this inspiring video. Can you send it to our family chat?,forward information
+I received a cool DIY project guide. Share it with your friends!,forward information
+This news article is important. Please forward it to your manager.,forward information
+I got some beautiful photos from the event. Share them with everyone!,forward information
+Here’s a playlist I loved. Please share it with your coworkers.,forward information
+I received an invitation to a webinar. Can you pass it on?,forward information
+Here’s an article on financial tips. Forward it to anyone who might benefit.,forward information
+I found a great tutorial video. Can you send it to our study group?,forward information
+I got a reminder about the upcoming meeting. Share it with the team!,forward information
+This inspirational quote is powerful. Please send it to your friends.,forward information
+I received a fun video challenge. Forward it to our group!,forward information
+Here’s an amazing travel guide. Please share it with anyone planning a trip.,forward information
+Please forward this email to the entire development team so they're aware of the new requirements.,forward information
+Could you share this document with all stakeholders for review before we proceed with implementation?,forward information
+I need you to send this memo to the HR department for their records and appropriate action.,forward information
+Please circulate this announcement to all managers so they can communicate it to their teams.,forward information
+Would you mind forwarding this report to the finance team for their analysis and feedback?,forward information
+Kindly distribute this policy update to all employees so everyone is informed of the changes.,forward information
+Please pass this along to the IT department as they need to address the technical issues mentioned.,forward information
+I'd appreciate if you could share this presentation with the client for their review and approval.,forward information
+Could you send this contract to legal for their review before we sign anything official?,forward information
+Please forward these instructions to all new hires so they're prepared for orientation next week.,forward information
+Would you circulate this schedule to the entire project team so everyone knows the deadlines?,forward information
+Kindly share this feedback with the product team so they can incorporate the suggestions.,forward information
+Please send this safety alert to all facility staff immediately as it requires urgent attention.,forward information
+Could you forward this meeting summary to everyone who couldn't attend so they're up to date?,forward information
+I need you to distribute these guidelines to all contractors working on the site this month.,forward information
+Cancel our meeting,cancel appointment
+Call off tomorrow's session,cancel appointment
+Scrap the appointment,cancel appointment
+Abort the conference,cancel appointment
+Terminate scheduled call,cancel appointment
+Drop the interview,cancel appointment
+Remove calendar event,cancel appointment
+Delete the booking,cancel appointment
+Nix the lunch,cancel appointment
+Withdraw from appointment,cancel appointment
+Forget our meeting,cancel appointment
+Erase the schedule,cancel appointment
+We need to cancel tomorrow's 10 AM meeting. I'll let you know when it's rescheduled.,cancel appointment
+The 2 PM meeting is canceled. Let's reschedule for next week.,cancel appointment
+"Sorry, I can't make it for coffee on Tuesday. Can we meet another time?",cancel appointment
+The dentist canceled Friday's appointment. I'll let you know the new time.,cancel appointment
+Your check-up on Monday has been canceled. Please contact us to reschedule.,cancel appointment
+Your car service appointment on Saturday is canceled. Call to book a new time.,cancel appointment
+The 1 PM meeting is canceled. I'll send a new invite later today.,cancel appointment
+We need to cancel our 4 PM call. Can we do it tomorrow morning instead?,cancel appointment
+My doctor's appointment at 2 PM was canceled. I'll reschedule and let you know.,cancel appointment
+Your delivery for Friday has been canceled. We'll update you soon.,cancel appointment
+"Sorry, I can't meet at 7 PM on Saturday. Can we try another day?",cancel appointment
+The Thursday 3 PM meeting is canceled. Stay tuned for a new time.,cancel appointment
+Your appointment on April 10th at 9 AM has been canceled. Please call to reschedule.,cancel appointment
+Your appointment for 6 PM tomorrow has been canceled.,cancel appointment
+The 11 AM team meeting is canceled. We'll let you know the new time.,cancel appointment
+Can you cancel my 3 PM appointment for Wednesday? I can't make it.,cancel appointment
+Your July 5th appointment at 10 AM is canceled. Contact us for a new date.,cancel appointment
+I have to cancel dinner at 8 PM this Friday. Let's plan for another day.,cancel appointment
+The Monday 4 PM client meeting is canceled. I'll update you with a new time.,cancel appointment
+Meeting at 1 PM is canceled. Can you confirm availability for a new time?,cancel appointment
+Your installation appointment at 9 AM has been canceled. We will reschedule.,cancel appointment
+The family meeting at 5 PM has been canceled. I'll let you know when it's rescheduled.,cancel appointment
+The 2 PM meeting tomorrow is canceled. I'll send a new invite soon.,cancel appointment
+Your check-up next Thursday at 2 PM is canceled. Please call to reschedule.,cancel appointment
+Your service appointment for next week has been canceled. We will follow up shortly.,cancel appointment
+I need to cancel our 2pm meeting tomorrow as I have an unexpected conflict that came up.,cancel appointment
+Please cancel the team sync scheduled for Friday since we've resolved all outstanding issues already.,cancel appointment
+Would you mind removing the client call from the calendar as they've postponed indefinitely?,cancel appointment
+Let's cancel next week's project review since we've completed all deliverables ahead of schedule.,cancel appointment
+I have to call off our standing monthly meeting as I'll be on vacation that week.,cancel appointment
+We should abort the training session scheduled for tomorrow since the system won't be ready.,cancel appointment
+Please delete the conference room booking for Thursday afternoon as the event has been postponed.,cancel appointment
+I need to withdraw from my doctor's appointment tomorrow and will reschedule when I'm feeling better.,cancel appointment
+Let's scrap the investor presentation next week as we're waiting for new financial data to arrive.,cancel appointment
+Could you cancel all my meetings for Friday afternoon as I have a family emergency?,cancel appointment
+We've decided to terminate the weekly check-ins since the project has officially concluded successfully.,cancel appointment
+Please remove the budget discussion from the calendar as the figures won't be ready in time.,cancel appointment
+I need to cancel my haircut appointment tomorrow morning and will book another time next week.,cancel appointment
+Let's drop the interview schedule for tomorrow as the candidate has accepted another position elsewhere.,cancel appointment
+We should forget about the product demo this Friday since the prototype isn't working properly yet.,cancel appointment
+Reschedule our meeting,reschedule appointment
+Change tomorrow's call time,reschedule appointment
+Move appointment later,reschedule appointment
+Update conference time,reschedule appointment
+Adjust team sync,reschedule appointment
+Push meeting back,reschedule appointment
+Modify lunch plans,reschedule appointment
+Shift earlier by 30min,reschedule appointment
+Revise doctor's appointment,reschedule appointment
+Edit client call time,reschedule appointment
+Update our scheduled discussion,reschedule appointment
+Change zoom link,reschedule appointment
+Can we reschedule tomorrow's 10 AM meeting to 1 PM? Let me know if that works.,reschedule appointment
+The 2 PM meeting needs to be rescheduled. How about 11 AM next Monday?,reschedule appointment
+Can we move our coffee meeting from Tuesday to Wednesday at 4 PM?,reschedule appointment
+The dentist rescheduled my appointment to Friday at 4 PM. Can you come?,reschedule appointment
+Your check-up has been rescheduled to next Monday at 10 AM.,reschedule appointment
+Your car service appointment has been rescheduled to Saturday at 11 AM.,reschedule appointment
+Let's reschedule the 1 PM meeting to tomorrow afternoon instead.,reschedule appointment
+Can we reschedule our 4 PM call for later this week? Let me know when works.,reschedule appointment
+My doctor's appointment was moved to 3 PM. Can you still give me a ride?,reschedule appointment
+Your delivery has been rescheduled for Friday at 6 PM. Please confirm.,reschedule appointment
+Let's reschedule our meetup to 5 PM this Sunday. Does that work for you?,reschedule appointment
+The Thursday 3 PM meeting is moved to 2 PM. Please update your calendar.,reschedule appointment
+Your appointment on April 10th has been rescheduled to 10 AM.,reschedule appointment
+Your 6 PM appointment tomorrow has been rescheduled to 8 PM.,reschedule appointment
+Team meeting rescheduled to 2 PM. Please make a note of it.,reschedule appointment
+My 3 PM appointment on Wednesday is moved to 1 PM. Can you still drive me?,reschedule appointment
+Your July 5th appointment has been rescheduled to July 7th at 9 AM.,reschedule appointment
+Can we reschedule dinner to 9 PM on Friday? Let me know if that's good for you.,reschedule appointment
+The client meeting has been rescheduled to Monday at 5 PM. Please adjust.,reschedule appointment
+Can we reschedule the 1 PM meeting to tomorrow morning at 10 AM?,reschedule appointment
+Your installation appointment has been rescheduled to 11 AM next Wednesday.,reschedule appointment
+The family meeting is rescheduled to 6 PM. Can you still join?,reschedule appointment
+The 2 PM meeting tomorrow is moved to 4 PM. Please confirm availability.,reschedule appointment
+Your next Thursday 2 PM appointment has been moved to 10 AM.,reschedule appointment
+Your service appointment is rescheduled for next week at 9 AM.,reschedule appointment
+Can we reschedule tomorrow's 2pm meeting to Thursday at the same time due to a conflict?,reschedule appointment
+I need to change our weekly sync from Fridays to Wednesdays starting next week if possible.,reschedule appointment
+Would you be able to move our 11am appointment to 1pm as I have an emergency come up?,reschedule appointment
+Let's adjust our project review from 60 minutes to 90 minutes to allow more discussion time.,reschedule appointment
+Could we push back the investor call by one hour to accommodate their travel schedule?,reschedule appointment
+I'd like to modify our lunch meeting location from the cafe to the conference room instead.,reschedule appointment
+Please update the training session from Room 201 to the main auditorium as we have more attendees.,reschedule appointment
+We should change our monthly check-in from morning to afternoon sessions for better participation rates.,reschedule appointment
+Can we move the deadline discussion from Tuesday to Wednesday and extend it by 30 minutes?,reschedule appointment
+I need to revise my doctor's appointment from 3pm to 4pm on the same day if available.,reschedule appointment
+Let's adjust the client presentation from 45 minutes to one hour to include the Q&A portion.,reschedule appointment
+Would it be possible to change our standing meeting from weekly to bi-weekly starting next month?,reschedule appointment
+Can we update the conference call details to include the new dial-in number and access code?,reschedule appointment
+I'd like to modify our interview schedule to space them out with 15-minute breaks in between.,reschedule appointment
+Let's reschedule the budget review to earlier in the day as the CFO has an afternoon conflict.,reschedule appointment
+Schedule a meeting tomorrow,make appointment
+Book a 30-minute call,make appointment
+Set up a consultation,make appointment
+Plan a team sync,make appointment
+Arrange a project review,make appointment
+Add a client call,make appointment
+Create a follow-up meeting,make appointment
+Setup investor discussion,make appointment
+Schedule doctor's appointment,make appointment
+Book conference room,make appointment
+Plan lunch meeting,make appointment
+Set up interview,make appointment
+Can we schedule a meeting tomorrow at 10 AM?,make appointment
+"Hey, are you free for a quick catch-up meeting at 2 PM?",make appointment
+How about we meet for coffee next Tuesday at 4 PM?,make appointment
+Don't forget we have a dentist appointment on Friday at 3 PM.,make appointment
+Your check-up is confirmed for next Monday at 11 AM.,make appointment
+"Your car service appointment is booked for Saturday, 9 AM.",make appointment
+Please block your calendar for a meeting at 1 PM today.,make appointment
+Can we reschedule our 4 PM call to tomorrow morning?,make appointment
+Can you pick me up after my doctor's appointment at 2 PM?,make appointment
+Your delivery slot is confirmed for Friday at 5 PM.,make appointment
+Let's meet at the park at 7 PM on Saturday.,make appointment
+Meeting confirmed for Thursday at 3 PM. See you there.,make appointment
+Reminder: Your appointment is set for April 10th at 9 AM.,make appointment
+You have an appointment scheduled at 6 PM tomorrow.,make appointment
+Team meeting scheduled for 11 AM. Please join.,make appointment
+Can you drive me to my 3 PM appointment on Wednesday?,make appointment
+Your next appointment is booked for July 5th at 10 AM.,make appointment
+Can we grab dinner at 8 PM this Friday?,make appointment
+New client meeting scheduled for Monday at 4 PM.,make appointment
+Please confirm if you can join the meeting at 1 PM.,make appointment
+Your appointment for installation is scheduled for 9 AM.,make appointment
+Don't forget about our family meeting at 5 PM.,make appointment
+The client rescheduled. Can we meet tomorrow at 2 PM?,make appointment
+Your annual check-up is scheduled for 2 PM next Thursday.,make appointment
+Your service appointment has been moved to 8 AM next week.,make appointment
+Could we schedule a 30-minute call next Tuesday afternoon to discuss the quarterly marketing strategy in detail?,make appointment
+I'd like to set up an initial consultation sometime this week to review your project requirements and timeline.,make appointment
+Please book a one-hour meeting with the development team to go over the new feature specifications when possible.,make appointment
+Let's arrange a face-to-face meeting next Monday morning to finalize the contract terms before the deadline.,make appointment
+Would you be available to schedule a video conference tomorrow between 2-4pm to walk through the presentation slides?,make appointment
+We need to create a recurring weekly check-in every Wednesday at 10am starting next week for status updates.,make appointment
+Can we plan a 45-minute brainstorming session Friday afternoon to generate ideas for the upcoming campaign?,make appointment
+I'd appreciate if we could set up a meeting with the stakeholders early next week to align priorities.,make appointment
+Please schedule a technical review meeting with engineering for Thursday to evaluate the prototype before testing.,make appointment
+Let's book a conference room for Tuesday morning to have an in-depth discussion about the budget proposal.,make appointment
+Could you arrange a lunch meeting with the client next week to discuss their expansion plans?,make appointment
+We should schedule a training session for all new hires next month to cover the updated procedures.,make appointment
+I need to set up a doctor's appointment for my annual physical sometime in the next two weeks.,make appointment
+Can we create a series of weekly checkpoints to monitor progress on the implementation plan moving forward?,make appointment
+Let's organize a team-building activity for the department next Friday afternoon to boost morale after the busy season.,make appointment
+No need to respond.,ignore
+Just an FYI.,ignore
+For your information only.,ignore
+No action required.,ignore
+Read at your convenience.,ignore
+Just keeping you updated.,ignore
+Not urgent ignore.,ignore
+Disregard if received.,ignore
+No reply needed.,ignore
+Just a quick heads-up.,ignore
+Ignore this message.,ignore
+Not important delete.,ignore
+Just a reminder (no action).,ignore
+For your records only.,ignore
+No follow-up required.,ignore
+Just sharing no response.,ignore
+Noted no further action.,ignore
+FYI no need to reply.,ignore
+Ignore unless interested.,ignore
+Delete if irrelevant.,ignore
+Just wanted to say hi! Hope you're doing well.,ignore
+Happy Tuesday! Just checking in.,ignore
+Let me know if you want to catch up sometime.,ignore
+I saw this cute cat video. Thought you might like it!,ignore
+This weather is nice today isn't it?,ignore
+Just a reminder about the meeting next week.,ignore
+I found this random meme. Enjoy!,ignore
+Do you remember that song from last summer?,ignore
+I’m eating lunch. What about you?,ignore
+I just finished a great book. You should read it!,ignore
+What’s your favorite color?,ignore
+I got a new plant! It’s so cute.,ignore
+I had a weird dream last night.,ignore
+How's your day going? Just curious.,ignore
+I tried a new coffee place today.,ignore
+Did you see the game last night?,ignore
+Here’s a random quote I liked.,ignore
+Thinking of going for a walk later.,ignore
+What did you have for breakfast?,ignore
+I finally organized my closet today.,ignore
+I got a new phone! It’s cool.,ignore
+Just bought some snacks. What’s your favorite?,ignore
+I found an old photo of us!,ignore
+Did you hear about that new restaurant?,ignore
+I’ve been binge-watching a series lately.,ignore
+What are your plans for the weekend?,ignore
+I heard a funny joke. Want to hear it?,ignore
+Just finished a puzzle. It was fun!,ignore
+How’s your family doing? Just asking.,ignore
+I tried a new recipe. It turned out okay.,ignore
+What’s your go-to playlist these days?,ignore
+I saw a beautiful sunset today.,ignore
+Just got back from grocery shopping.,ignore
+I think I need a haircut soon.,ignore
+What’s your favorite dessert?,ignore
+I got a coupon for a store I never visit.,ignore
+Thinking of redecorating my room.,ignore
+I heard a song that reminded me of you.,ignore
+Just got home from work. Long day!,ignore
+I found an interesting article. No rush!,ignore
+This is just an informational update for your records with no action needed on your part at this time.,ignore
+I'm sending this FYI in case you need reference later but no response is required from you.,ignore
+Please consider this message as read-only material that doesn't warrant any follow-up or reply.,ignore
+This notification is purely for your awareness and doesn't require any kind of response from you.,ignore
+I'm sharing this information for documentation purposes only with no expectation of a reply.,ignore
+This message contains background details you might find useful but doesn't need any action.,ignore
+You can safely disregard this email as it's just an automated notification with no follow-up.,ignore
+This is simply a courtesy copy for your reference that needs no acknowledgment or response.,ignore
+Please treat this as a non-urgent informational update that you can read when convenient.,ignore
+This communication is being archived for future reference but requires no immediate attention.,ignore
+I'm including you on this thread for transparency but no action is expected from your side.,ignore
+This is one of those messages you can safely ignore unless you find it personally relevant.,ignore
+No need to reply to this as it's just a system-generated notice for your records.,ignore
+Consider this a passive update that you can file away without any required response.,ignore
+This notification is being sent to complete our records with no follow-up anticipated.,ignore
+You're receiving this as part of our standard documentation process with no action needed.,ignore
+Please regard this as a non-actionable message that doesn't require your time or response.,ignore
+This is simply a routine update that you can review or ignore at your discretion.,ignore
+I'm copying you for completeness but there's absolutely no obligation to respond to this.,ignore
+This message serves as an official record only and doesn't necessitate any reply from you.,ignore
+Hi,reply
+Hello,reply
+Whats up,reply
+Got it thanks!,reply
+Sounds good to me,reply
+I will check and confirm,reply
+Thanks for the update,reply
+No problem at all,reply
+Understood will do,reply
+Noted with thanks,reply
+I’ll get back soon,reply
+Yes that works!,reply
+Let me think first,reply
+Appreciate the quick response,reply
+You’re right thanks,reply
+I agree with you,reply
+Sorry can’t right now,reply
+Will keep you posted,reply
+Confirming receipt thanks!,reply
+Glad to hear that,reply
+Got your message thanks,reply
+Let’s discuss this later,reply
+Thanks for confirming!,reply
+Can you send me the report by end of day?,reply
+Did you get a chance to review my proposal?,reply
+What time are we meeting tomorrow?,reply
+Please confirm if you can join the call.,reply
+I need your feedback on the document I shared.,reply
+Are you available for a quick chat later?,reply
+Can you help me with this task? It’s urgent.,reply
+What are your thoughts on the new project?,reply
+I’m waiting for your reply regarding the event.,reply
+Please let me know your availability next week.,reply
+Could you clarify your point from the meeting?,reply
+Do you have any updates on the client's request?,reply
+Can you share the login details for the system?,reply
+I need your input on the budget proposal.,reply
+Are you joining the team lunch on Friday?,reply
+Please let me know if you received the files.,reply
+Can you check the status of the order?,reply
+What’s the deadline for the project submission?,reply
+Did you hear back from the vendor?,reply
+Can you provide the meeting notes from last week?,reply
+I’d appreciate your thoughts on this matter.,reply
+Are we still on for the presentation next week?,reply
+Can you confirm if the project is on track?,reply
+I need your approval to proceed with this.,reply
+What’s your opinion on the new policy changes?,reply
+Could you remind me about the meeting agenda?,reply
+Can you update me on your progress?,reply
+Do you have the time to discuss this today?,reply
+I’m waiting for your decision on the proposal.,reply
+Can you assist with the customer’s inquiry?,reply
+What’s the next step for our collaboration?,reply
+Can you send me the details for the conference?,reply
+Are you free to meet and discuss the project?,reply
+Please reply with your availability for next week.,reply
+Can you follow up with the team about the task?,reply
+What do you think about the new design?,reply
+Could you help me solve this issue ASAP?,reply
+Are you ready to present at the meeting?,reply
+Can you check your email for my last message?,reply
+Please let me know if you can attend the workshop.,reply
+Thanks for letting me know—I’ll review the details and get back to you soon with my thoughts,reply
+I appreciate your quick response! Let me check my schedule and confirm if this works for me,reply
+Got your message—thanks for the update. I’ll follow up with any questions if I have them,reply
+Understood! I’ll keep you posted once I’ve had a chance to look into this further,reply
+That makes sense to me but I’d like to double-check a few things before confirming,reply
+Thanks for sharing this information; I’ll take some time to think it over and respond,reply
+I see what you’re saying—let me discuss it with my team and circle back to you,reply
+Noted! I’ll wait for your next update before proceeding with anything on my end,reply
+I agree with your suggestion but I’d like to clarify one detail before moving forward,reply
+Thanks for the reminder! I’ll prioritize this and send you an update by end of day,reply
+I’ve received your message and will respond properly once I’ve gathered all the details,reply
+This looks good to me but I’ll need to confirm with a colleague before finalizing,reply
+Thanks for your patience—I’m still reviewing everything and will reply as soon as possible,reply
+I understand your point; let me verify a few things before giving you a definite answer,reply
+Appreciate the heads-up! I’ll let you know if I need anything else from you,reply
+Got it! I’ll hold off on making any decisions until I hear back from you,reply
+Thanks for the clarification—I’ll adjust my plans accordingly and keep you in the loop,reply
+I’ll take care of this shortly and provide an update once everything is settled,reply
+This is helpful—let me review it in more detail and follow up with any questions,reply
+I’ve noted your feedback and will incorporate it into my next steps—thanks again!,reply
+Here’s the file I mentioned in our meeting.,refer previous message
+You’ve been selected to try our new product for free.,ignore
+Are you available for a quick call later today?,reply
+Can you make it to the 10 AM call tomorrow?,make appointment
+Can you pass this message along to Sarah?,forward information
+Did you finish the presentation? Let me know.,reply
+Please reply to my email as soon as possible.,reply
+Could you share this with the marketing team?,forward information
+Take a look at these new job opportunities in your area.,ignore
+The client meeting has been postponed to next week.,make appointment
+I need your response by end of the day today.,reply
+We need to schedule the interview for next Wednesday.,make appointment
+We noticed suspicious activity on your account. Verify now!,ignore
+Let me know if you need more details on the report.,reply
+Don't forget your doctor's appointment at 3 PM today.,make appointment
+Don't miss out on our limited-time sale!,ignore
+Your package has been shipped and will arrive soon.,ignore
+Please send this document to the finance team.,forward information
+Can you confirm if you received my last message?,reply
+Please send me the contact details of the new client.,refer previous message
+You won a free vacation! Click here to claim your prize.,ignore
+"Our class has been moved to room 204, same time.",reschedule appointment
+New updates are available for your software.,ignore
+Waiting for your confirmation on the contract.,reply
+Your reservation at the restaurant is confirmed for 7 PM.,make appointment
+Please get back to me with your thoughts on the project.,reply
+Join us for an exclusive webinar on productivity hacks.,ignore
