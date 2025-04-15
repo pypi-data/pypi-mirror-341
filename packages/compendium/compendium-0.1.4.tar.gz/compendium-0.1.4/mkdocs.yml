@@ -1,0 +1,55 @@
+---
+site_name: Compendium
+site_url: https://kuwv.github.io/python-compendium/
+site_author: Jesse P. Johnson
+copyright: copywright (c) 2020 by Jesse Johnson.
+repo_url: https://github.com/kuwv/python-compendium
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+  features:
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.critic
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+
+nav:
+  - Welcome to Compendium: index.md
+  - Configuration Manager: configuration.md
+  - Schema: schema.md
+  - Settings: settings.md
+  - Development:
+    - Config Manager: development/config_manager.md
+    - Paths: development/paths.md
+    - Settings: development/settings.md
+    - Loader: development/loader.md
+    - Filetypes Base: development/filetypes.md
+    - Filetypes:
+      - Json: development/filetypes/json.md
+      - Toml: development/filetypes/toml.md
+      - Xml: development/filetypes/xml.md
+      - Yaml: development/filetypes/yaml.md

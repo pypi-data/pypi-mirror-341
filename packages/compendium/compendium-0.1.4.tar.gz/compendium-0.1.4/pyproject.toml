@@ -1,0 +1,143 @@
+[build-system]
+requires = ["hatchling>=1.11.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "compendium"
+version = "0.1.4"
+description = "Simple layered configuraion tool"
+authors = [{name="Jesse P. Johnson", email="jpj6652@gmail.com"}]
+maintainers = [{name="Jesse P. Johnson", email="jpj6652@gmail.com"}]
+requires-python = ">=3.6.2"
+license = {file = "LICENSE"}
+readme = "README.md"
+keywords = ["configuration", "configuration management"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries"
+]
+dependencies = [
+    "anytree>=2.8.0",
+    # "dataclasses>=0.8;python_version<3.7",
+    "dpath>=2.0.1",
+    # "jsonschema>=3.2.0",
+    "ruamel.yaml>=0.16.10,<1",
+    "tomlkit>=0.7.0,<1"
+    # "xmlschema>=1.2.3",
+    # "yamale>=3.0.2"
+]
+
+[project.optional-dependencies]
+xml = ["xmltodict>=0.12.0,<1"]
+build = [
+    "build",
+    "proman-versioning>=0.1.1-beta.4,<1",
+    "proman-workflows>=0.1.0a8,<1",
+    "invoke>=1.4.1"
+]
+dev = [
+    "pytest>=6.2.5",
+    "pyfakefs>=5.4.1",
+    "pytest-cov>=2.9.0",
+    "isort[pyproject]>=4.3.21",
+    "black>=24.1.0",
+    "flake8>=3.8.2",
+    "pylint>=2.9.5",
+    "bandit>=1.6.2",
+    "safety>=2.2.0",
+    "mypy>=1",
+    "mypy-extensions>=0.4.3"
+]
+docs = [
+    "docstr-coverage>=1.2.0,<2",
+    "mkdocs>=1.2.2,<2",
+    "mkdocs-material>=9,<10",
+    "mkdocstrings[python]>=0.16.2",
+    "pydocstyle[toml]>=6.1.1"
+]
+
+[project.urls]
+homepage = "https://github.com/kuwv/python-compendium"
+documentation = "https://kuwv.github.io/python-compendium"
+
+[[tool.proman.versioning.files]]
+filepath = "pyproject.toml"
+pattern = "version = \"${version}\""
+
+[[tool.proman.versioning.files]]
+filepath = "src/compendium/__init__.py"
+pattern = "__version__ = '${version}'"
+
+[[tool.proman.versioning.files]]
+filepath = "tests/test_version.py"
+pattern = "__version__ == '${version}'"
+
+[tool.pydocstyle]
+ignore = [
+    "D203",
+    "D213",
+    "D300"
+]
+
+[tool.pylint]
+fail-under = 9.0
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = [
+    "R0903",
+    "C0103",
+    "W0715"
+]
+
+[tool.pylint."FORMAT"]
+max-line-length = 79
+
+[tool.pylint."MISCELLANEOUS"]
+notes = []
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.black]
+line-length = 79
+skip-string-normalization = true
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+    | \.git
+    | \.github
+    | \.mypy_cache
+    | \.pytest_cache
+    | build
+    | dist
+    | docs
+    | site
+  )
+)
+'''
+
+[tool.mypy]
+warn_redundant_casts = true
+warn_unused_ignores = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = [
+    # "examples",
+    "tests",
+]
+addopts = "--doctest-modules"

@@ -1,0 +1,10 @@
+[[fruit.berry]]
+  name = "banana"
+
+  [fruit.berry.physical]
+    color = "yellow"
+    shape = "bent"
+
+
+[fruit.berry.hesperidium]
+children = ["hesperidium"]

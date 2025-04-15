@@ -1,0 +1,12 @@
+[tool]
+[tool.proman]
+name = "mock-project"
+version = "0.1.1"
+
+[tool.proman.default]
+root = false
+
+[tool.proman.dependencies]
+example2 = "1.0"
+
+[tool.proman.dev-dependencies]
