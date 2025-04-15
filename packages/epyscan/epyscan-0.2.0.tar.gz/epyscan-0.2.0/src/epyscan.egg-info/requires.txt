@@ -1,0 +1,16 @@
+epydeck>=1.0.0
+numpy>=1.24
+scipy>=1.10
+
+[docs]
+sphinx>=5.3
+sphinx_autodoc_typehints>=1.19
+sphinx-book-theme>=0.4.0rc1
+sphinx-argparse-cli>=1.10.0
+sphinx-inline-tabs
+
+[lint]
+ruff
+
+[tests]
+pytest>=3.3.0
