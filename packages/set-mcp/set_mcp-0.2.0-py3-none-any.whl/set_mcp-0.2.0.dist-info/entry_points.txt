@@ -1,0 +1,2 @@
+[console_scripts]
+set-mcp = set_mcp.__main__:main
