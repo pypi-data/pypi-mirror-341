@@ -1,0 +1,4 @@
+[console_scripts]
+mparsett=MTP.cli:main
+mtp=MTP.cli:main
+
