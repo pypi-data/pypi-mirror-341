@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "promptprep"
+version = "0.1.8"
+description = "A code aggregator tool for consolidating code files into a single file with an ASCII directory tree."
+authors = [{ name = "Kartik Mandar", email = "kartik4321mandar@gmail.com" }]
+license = "MIT" # Changed from table format to SPDX expression string
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["tqdm", "tiktoken"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    # Removed the deprecated License classifier
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Utilities",
+    "Topic :: Text Processing",
+]
+keywords = [
+    "code",
+    "aggregator",
+    "prompt",
+    "llm",
+    "gpt",
+    "ai",
+    "context",
+    "cli",
+    "developer-tools",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/kartikmandar/promptprep"
+"Bug Tracker" = "https://github.com/kartikmandar/promptprep/issues"
+"Repository" = "https://github.com/kartikmandar/promptprep"
+
+[project.optional-dependencies]
+highlighting = ["pygments>=2.10.0"]
+dev = [
+    "pytest>=6.0",
+    "black>=22.0",
+    "ruff",
+    "build",
+    "twine",
+    "bump-my-version",
+    "pytest-cov",
+    "pytest-mock",
+    "pygments>=2.10.0",
+]
+all = ["pygments>=2.10.0"]
+
+[project.scripts]
+promptprep = "promptprep.cli:main"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.bumpversion]
+current_version = "0.1.8"
+tag = true
+tag_name = "v{new_version}"
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
+
+# Ensure correct package discovery and case-sensitivity
+[tool.setuptools]
+# Remove explicit packages declaration to let setup.py handle it
+# This allows setup.py to determine the correct package name based on what exists

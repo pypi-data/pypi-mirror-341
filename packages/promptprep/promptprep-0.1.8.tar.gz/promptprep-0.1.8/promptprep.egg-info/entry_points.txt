@@ -1,0 +1,2 @@
+[console_scripts]
+promptprep = promptprep.cli:main
