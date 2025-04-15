@@ -1,0 +1,42 @@
+[project]
+name = "catalystwan-v20-16"
+version = "2.0.0a1"
+description = "Cisco Catalyst WAN SDK for Python :: Version 20.16"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">= 3.8"
+classifiers = [
+  # one of:
+  # "Development Status :: 3 - Alpha"
+  # "Development Status :: 4 - Beta"
+  # "Development Status :: 5 - Production/Stable"
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "Topic :: Internet",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# for nox
+[dependency-groups]
+dev = [
+  { include-group = "typing" },
+]
+typing = [
+    "mypy",
+    "pytype",
+]

@@ -1,0 +1,46 @@
+# Copyright 2024 Cisco Systems, Inc. and its affiliates
+from dataclasses import dataclass
+from dataclasses import field as _field
+from typing import Optional
+
+
+@dataclass
+class InterfaceStatisticsRes:
+    admin_status: Optional[str] = _field(default=None)
+    af_type: Optional[str] = _field(default=None)
+    bw_down: Optional[int] = _field(default=None)
+    bw_up: Optional[int] = _field(default=None)
+    device_model: Optional[str] = _field(default=None)
+    down_capacity_percentage: Optional[int] = _field(default=None)
+    entry_time: Optional[int] = _field(default=None)
+    host_name: Optional[str] = _field(default=None)
+    id: Optional[str] = _field(default=None)
+    interface: Optional[str] = _field(default=None)
+    interface_type: Optional[str] = _field(default=None)
+    oper_status: Optional[str] = _field(default=None)
+    platform_type: Optional[str] = _field(default=None)
+    rx_drops: Optional[int] = _field(default=None)
+    rx_errors: Optional[int] = _field(default=None)
+    rx_kbps: Optional[int] = _field(default=None)
+    rx_octets: Optional[int] = _field(default=None)
+    rx_pkts: Optional[int] = _field(default=None)
+    rx_pps: Optional[int] = _field(default=None)
+    statcycletime: Optional[int] = _field(default=None)
+    stats_data_id: Optional[str] = _field(default=None)
+    system_ip: Optional[str] = _field(default=None, metadata={"alias": "system-ip"})
+    tenant: Optional[str] = _field(default=None)
+    total_mbps: Optional[int] = _field(default=None)
+    tx_drops: Optional[int] = _field(default=None)
+    tx_errors: Optional[int] = _field(default=None)
+    tx_kbps: Optional[int] = _field(default=None)
+    tx_octets: Optional[int] = _field(default=None)
+    tx_pkts: Optional[int] = _field(default=None)
+    tx_pps: Optional[int] = _field(default=None)
+    up_capacity_percentage: Optional[int] = _field(default=None)
+    vdevice_name: Optional[str] = _field(default=None)
+    vip_idx: Optional[int] = _field(default=None)
+    vip_time: Optional[int] = _field(default=None)
+    vmanage_system_ip: Optional[str] = _field(default=None)
+    vnf_name: Optional[str] = _field(default=None)
+    vnic_id: Optional[str] = _field(default=None)
+    vpn_id: Optional[int] = _field(default=None)
