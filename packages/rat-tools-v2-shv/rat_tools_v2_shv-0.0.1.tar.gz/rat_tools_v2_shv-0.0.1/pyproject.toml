@@ -1,0 +1,13 @@
+[project]
+name = "rat_tools_v2_shv"
+version = "0.0.1"
+description = "Rat Tools Create Rats With Ease"
+authors = [{ name="SH_Dev", email="glock.96.beamed@gmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+dependencies = []
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

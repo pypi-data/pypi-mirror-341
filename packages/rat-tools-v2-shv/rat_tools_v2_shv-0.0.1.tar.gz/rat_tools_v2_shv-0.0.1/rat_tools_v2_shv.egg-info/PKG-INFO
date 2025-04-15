@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: rat_tools_v2_shv
+Version: 0.0.1
+Summary: Rat Tools Create Rats With Ease
+Author-email: SH_Dev <glock.96.beamed@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Dynamic: requires-python
