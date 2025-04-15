@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: scembedding-jax
+Version: 0.1.0
+Summary: A simple python package
+Author-email: Sijie Chen <chensj16@stanford.edu>
+Project-URL: Homepage, https://github.com/chansigit/scembedding-jax
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: jax
+Dynamic: license-file

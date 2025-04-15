@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+scembedding_jax/__init__.py
+scembedding_jax/model.py
+scembedding_jax.egg-info/PKG-INFO
+scembedding_jax.egg-info/SOURCES.txt
+scembedding_jax.egg-info/dependency_links.txt
+scembedding_jax.egg-info/requires.txt
+scembedding_jax.egg-info/top_level.txt

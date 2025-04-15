@@ -1,0 +1,20 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scembedding-jax"
+version = "0.1.0"
+description = "A simple python package"
+authors = [
+  { name="Sijie Chen", email="chensj16@stanford.edu" }
+]
+dependencies = [
+  "numpy",
+  "scipy",
+  "jax"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/chansigit/scembedding-jax"
