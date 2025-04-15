@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+SC19013UNO/__init__.py
+SC19013UNO/lineales.py
+SC19013UNO/no_lineales.py
+SC19013UNO.egg-info/PKG-INFO
+SC19013UNO.egg-info/SOURCES.txt
+SC19013UNO.egg-info/dependency_links.txt
+SC19013UNO.egg-info/top_level.txt
+tests/test_lineales.py
+tests/test_no_lineales.py
