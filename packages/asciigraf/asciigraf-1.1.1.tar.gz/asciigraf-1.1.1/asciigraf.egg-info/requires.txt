@@ -1,0 +1,9 @@
+colorama
+networkx
+
+[test]
+liccheck
+pre-commit
+pytest
+pytest-cov
+setuptools
