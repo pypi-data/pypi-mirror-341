@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: calico-widget-docs
+Version: 0.1
+Summary: A Calico plugin to build widget documentation
+Author: Emma Delescolle
+License: MIT
+Project-URL: Homepage, https://calico-ssg.com
+Classifier: Framework :: Django :: 5
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: calico_ssg
+Requires-Dist: docstring_parser
+
+# calico-widget-docs
+
+[![PyPI](https://img.shields.io/pypi/v/calico-widget-docs.svg)](https://pypi.org/project/calico-widget-docs/)
+[![Changelog](https://img.shields.io/github/v/release/nanuxbe/calico-widget-docs?include_prereleases&label=changelog)](https://github.com/nanuxbe/calico-widget-docs/releases)
+[![Tests](https://github.com/nanuxbe/calico-widget-docs/workflows/Test/badge.svg)](https://github.com/nanuxbe/calico-widget-docs/actions?query=workflow%3ATest)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/nanuxbe/calico-widget-docs/blob/main/LICENSE)
+
+A Calico plugin to build widget documentation
+
+## Installation
+
+First configure your Django project [to use DJP](https://djp.readthedocs.io/en/latest/installing_plugins.html).
+
+Then install this plugin in the same environment as your Django application.
+```bash
+pip install calico-widget-docs
+```
+## Usage
+
+Usage instructions go here.
+
+## Development
+
+To set up this plugin locally, first checkout the code. Then create a new virtual environment:
+```bash
+cd calico-widget-docs
+python -m venv venv
+source venv/bin/activate
+```
+Now install the dependencies and test dependencies:
+```bash
+pip install -e '.[test]'
+```
+To run the tests:
+```bash
+python -m pytest
+```
