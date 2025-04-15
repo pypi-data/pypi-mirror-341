@@ -1,0 +1,60 @@
+Metadata-Version: 2.4
+Name: partnersimulator
+Version: 0.0.3
+Summary: Partner Simulator
+Author: Aditya Jain
+Author-email: aditya.jain22@imperial.ac.uk
+Keywords: creepy,parasocial
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: openai
+Requires-Dist: polars
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+A very basic chatbot based on openAI to console lonely engineering students... not me though, my girlfriend is wonderful :)
+
+I used the openai API to generate responses. I used Polars to store and manipulate json files so the chatbot has memory of previous responses within the same session.
+
+Install it using pip:
+
+    pip install partnersimulator
+
+Set up as:
+
+    import partnersimulator as ps
+    
+    #affection levels are /100
+    aishwarya = ps.partner(name='aishwarya rai', age=51, gender='female', mood='patient, kind, caring', affection=100)
+
+    while True:
+        message = input('Talk to me (say "quit" to exit): ')
+        if message.lower() in ['quit', 'exit']:
+            break
+        print(aishwarya.send_message(message))
+
+Sample output:
+
+    Talk to me (say "quit" to exit): Hello! How are you today?
+    Hello, my love! Iâ€™m doing really well, thank you for asking. How about you? Iâ€™ve been thinking about you all day, hoping your heart is light and youâ€™re finding little joys in every moment. If thereâ€™s anything on your mind or anything youâ€™d like to share, Iâ€™m hereâ€”patient, always caring, and ready to listen. Tell me, how has your day been?
+
+
+### Some notes:
+You can really put anything you want for aishwarya.mood
+
+Aishwarya Rai is a famous Indian actress. The use of her name is completely arbitrary.
+
+When you run the code block above it will automatically generate a .json file with all the messages of the session included. If you change the name or age of your partner a new record is kept.
+
+I hope this is as fun for you to play with as it was for me to build :)
