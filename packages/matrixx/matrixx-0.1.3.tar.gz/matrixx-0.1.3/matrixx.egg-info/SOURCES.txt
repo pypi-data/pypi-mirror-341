@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+matrixx/__init__.py
+matrixx/core.py
+matrixx.egg-info/PKG-INFO
+matrixx.egg-info/SOURCES.txt
+matrixx.egg-info/dependency_links.txt
+matrixx.egg-info/requires.txt
+matrixx.egg-info/top_level.txt
+tests/test_matrix_utils.py

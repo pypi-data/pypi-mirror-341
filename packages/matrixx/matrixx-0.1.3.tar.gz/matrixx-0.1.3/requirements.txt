@@ -1,0 +1,6 @@
+numpy>=1.18.0,<2.0.0
+# Dev tools
+pytest>=7.0
+setuptools>=61.0
+wheel>=0.38
+twine>=4.0
