@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: SL21010UNO
+Version: 1.0.0
+Summary: Librería de métodos numéricos
+Home-page: https://github.com/SL21010-prn335-cicloII-2022/SL21010UNO.git
+Author: EnzoSanchez
+Author-email: sl21010@ues.edu.sv
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.19.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# SL21010UNO - Librería de Métodos Numéricos
+
+Librería implementada por Enzo Yubini Sánchez Linares (Carnet: SL21010) para resolver sistemas de ecuaciones lineales y no lineales.
+
+## Instalación
+
+```bash
+pip install SL21010UNO
