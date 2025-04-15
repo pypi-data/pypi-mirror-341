@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: flask_todo_app
+Version: 0.1.0
+Summary: A simple Flask TODO app
+Home-page: https://github.com/<your-username>/<your-repo-name>
+Author: Sergey Karpushin
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: Flask
+Requires-Dist: Flask-SQLAlchemy
+
