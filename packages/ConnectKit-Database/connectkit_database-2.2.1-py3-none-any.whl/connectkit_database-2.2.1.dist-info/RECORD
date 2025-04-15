@@ -1,0 +1,15 @@
+connectkit_database-2.2.1.dist-info/METADATA,sha256=O6qmfi99G_KAW6WZunY_AOZG327SzmzTgbYHuGvGD8g,6078
+connectkit_database-2.2.1.dist-info/WHEEL,sha256=tSfRZzRHthuv7vxpI4aehrdN9scLjk-dCJkPLzkHxGg,90
+connectkit_database-2.2.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+connectkit_database-2.2.1.dist-info/licenses/LICENSE,sha256=0oAyQFAp1lNpHcBD_djMxeRFgZnP98qXEod0OsOSUzA,1096
+database/__init__.py,sha256=G5qjrq7Lkr2Ke4WErsoDXn_BIC0_5JR4bJwtgPbxVAc,427
+database/asyncio/__init__.py,sha256=x5qhrRuV4l4GHTjJKd47ZV-WqwG9NHYhMChXwUiT0g8,265
+database/asyncio/init_base.py,sha256=lM9F0a2h-kkMxR8MLdxdff1ZX_ifMPpQ0X6KgSDjjbE,260
+database/asyncio/session.py,sha256=C3Z5RzM6YOCrXVqUxW3pw7AZsTYjW__eY9PQwS8E_kY,2995
+database/capability_check.py,sha256=Voq2A27WIQ8fOUhtvX_r-nKxIR1Ywir_-Fgmd9kmszU,628
+database/errors.py,sha256=DRTSILaQgUaM7jFLnC3YIpSYH2frn0E7w344H8EajGY,227
+database/init_base.py,sha256=ouRgvC-OEWXyuoSNCe7jZLfMytFdzE-mNpyy9XnNl98,179
+database/session.py,sha256=imi_NfCe5IlHiOTq__HwDZFslBJ-PKn4LCOu_EpiG04,2748
+database/settings.py,sha256=5oX0I6Ho8Hqgc0MKAZrMY5jSUrT4obHxQi8c8BP0cq0,3491
+database/util.py,sha256=gPR1OgKzcXz4qTmIKPJURESYW6X8HnNduxQXBFb4ILM,3987
+connectkit_database-2.2.1.dist-info/RECORD,,
