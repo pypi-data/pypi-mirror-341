@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: vantransTool
+Version: 0.1.0
+Summary: 一个基于MCP协议的运输工具服务，提供批量外部派车功能
+Author-email: Your Name <your.email@example.com>
+Requires-Python: >=3.8
+Requires-Dist: mcp-server>=0.1.4
+Requires-Dist: mcp>=1.6.0
+Requires-Dist: requests>=2.31.0

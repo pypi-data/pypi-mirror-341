@@ -1,0 +1,2 @@
+[console_scripts]
+vantrans = src.mcp_dispatch.server:main
