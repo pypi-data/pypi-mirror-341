@@ -1,0 +1,13 @@
+python-dotenv>=1.1.0
+requests>=2.32.3
+colored>=2.3.0
+types-requests>=2.32.0.20250328
+mypy>=1.15.0
+pytest-cov>=6.1.1
+pytest>=8.3.5
+ruff>=0.11.4
+pre-commit>=4.2.0
+setuptools>=78.1.0
+build>=1.2.2.post1
+hatch>=1.14.0
+twine>=6.1.0

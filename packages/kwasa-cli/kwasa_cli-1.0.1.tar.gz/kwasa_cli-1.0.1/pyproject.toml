@@ -1,0 +1,89 @@
+[project]
+name = "kwasa-cli"
+version = "1.0.1"
+description = "Simple CLI tool for cloning and updating the git repositories"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [{name = "Jeckonia Kwasa", email = "jeckonia@example.com"}]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13"
+]
+scripts = { "kwasa" = "kwasa.main:main", "custom-check" = "kwasa.run_checks:run_checks" }
+optional-dependencies = { dev = ["mypy>=1.15.0", "pytest-cov>=6.1.1", "pytest>=8.3.5", "ruff>=0.11.4", "colored>=2.3.0", "pre-commit>=4.2.0"] }
+
+dependencies = [
+    "python-dotenv>=1.1.0",
+    "requests>=2.32.3",
+    "colored>=2.3.0",
+    "types-requests>=2.32.0.20250328",
+    "mypy>=1.15.0",
+    "pytest-cov>=6.1.1",
+    "pytest>=8.3.5",
+    "ruff>=0.11.4",
+    "pre-commit>=4.2.0",
+    "setuptools>=78.1.0",
+    "build>=1.2.2.post1",
+    "hatch>=1.14.0",
+    "twine>=6.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/jeckonia49/kwasa-cli"
+Issues = "https://github.com/jeckonia49/kwasa-cli/issues"
+
+[tool.mypy]
+files = "kwasa"
+strict = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+warn_redundant_casts = true
+
+[tool.pytest.ini_options]
+addopts = """
+    --maxfail=5
+    --disable-warnings
+    --capture=no
+    --cov=kwasa
+    --cov-report=term-missing
+    --cov-report=html
+    --cov-fail-under=0
+"""
+testpaths = ["tests"]
+norecursedirs = ["setup.py"]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 88
+
+[tool.ruff.lint]
+ignore = ["E501"]
+select = ["F", "E", "W"]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "pytest-cov>=6.1.1",
+    "pytest>=8.3.5",
+    "ruff>=0.11.4",
+    "pre-commit>=4.2.0",
+    "setuptools>=78.1.0",
+    "build>=1.2.2.post1",
+    "hatch>=1.14.0",
+    "twine>=6.1.0",
+]
+
+[tool.poetry.scripts]
+kwasa = "kwasa.main:main"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["kwasa"]
