@@ -1,0 +1,5 @@
+IPRM Core and Extension Modules
+iprm
+iprm_cli
+iprm_nexus
+iprm_studio
