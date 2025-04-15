@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: httpx-spy
+Version: 0.1.0
+Summary: A tool to spy on httpx and log requests and responses.
+Requires-Python: >=3.9
+Requires-Dist: asgiref
+Requires-Dist: httpx
+Requires-Dist: orjson
+Provides-Extra: celery
+Requires-Dist: celery; extra == 'celery'
+Provides-Extra: django
+Requires-Dist: django; extra == 'django'
+Description-Content-Type: text/markdown
+
+# HTTPX Spy

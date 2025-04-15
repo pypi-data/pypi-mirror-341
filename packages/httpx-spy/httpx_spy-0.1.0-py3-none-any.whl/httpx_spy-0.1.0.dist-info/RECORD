@@ -1,0 +1,12 @@
+httpx_spy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+httpx_spy/moesif.py,sha256=IjuLuJwSWJyDujxD8QIKMqsiIOvVZlnL0_P33P-0xXU,5724
+httpx_spy/monkey.py,sha256=rqIJehx5z8Bhgn1-0df0CDlnji02MgSjzROy1D_gdJI,1727
+httpx_spy/processor.py,sha256=hrQmRJ5AqI497omvQuKslPs7aIgdfJeQcjquopkmTxU,18493
+httpx_spy/uniqueue.py,sha256=oRY4Cb8boZAI-tqr4v-sIbCWjDb8vK4o-DUaF9Ri83w,5590
+httpx_spy/django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+httpx_spy/django/apps.py,sha256=wAR2KbC0MJwFoNbnbAIJjLZAvEh98dSUrnWIT0UGsoA,486
+httpx_spy/django/common.py,sha256=pniA-MPOwdEIlPrx_G130vlxahsjXm7Wrk8O0fEmmD8,1380
+httpx_spy/django/tasks.py,sha256=GtPaXz-qUqfUJwUzxNeg1ZVy18HRdw0dCU4v7x4ixFg,360
+httpx_spy-0.1.0.dist-info/METADATA,sha256=DJYLQarcgXaj9mSXw0YsYc2bKXTMAUr8_Xz9WNqy9xc,387
+httpx_spy-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+httpx_spy-0.1.0.dist-info/RECORD,,
