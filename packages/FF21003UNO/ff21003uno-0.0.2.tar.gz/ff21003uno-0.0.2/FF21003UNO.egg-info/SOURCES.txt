@@ -1,0 +1,15 @@
+README.md
+setup.py
+FF21003UNO.egg-info/PKG-INFO
+FF21003UNO.egg-info/SOURCES.txt
+FF21003UNO.egg-info/dependency_links.txt
+FF21003UNO.egg-info/requires.txt
+FF21003UNO.egg-info/top_level.txt
+ff21003/__init__.py
+ff21003/biseccion.py
+ff21003/crammer.py
+ff21003/descomposicion_lu.py
+ff21003/eliminacion_gauss.py
+ff21003/gauss_jordan.py
+ff21003/gauss_seidel.py
+ff21003/jacobi.py
