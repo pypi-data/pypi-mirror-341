@@ -1,0 +1,9 @@
+batman-package
+celerite
+corner
+dynesty
+emcee
+h5py
+matplotlib
+numpy
+scipy
