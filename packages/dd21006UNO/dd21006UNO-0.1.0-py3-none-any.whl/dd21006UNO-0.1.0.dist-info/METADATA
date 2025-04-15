@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: dd21006UNO
+Version: 0.1.0
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales con métodos clásicos.
+Home-page: https://github.com/stevenduran/dd21006UNO
+Author: Steven Duran
+Author-email: tu.correo@dominio.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Mi Librería de Resolución de Ecuaciones
+
+Esta librería implementa varios métodos para resolver sistemas de ecuaciones lineales y no lineales. Los métodos disponibles son:
+- Eliminación de Gauss
+- Gauss-Jordan
+- Crammer
+- Descomposición LU
+- Jacobi
+- Gauss-Seidel
+- Bisección
+
+## Instalación
+
+Puedes instalar esta librería usando pip:
+
+```bash
+pip install mi_libreria
