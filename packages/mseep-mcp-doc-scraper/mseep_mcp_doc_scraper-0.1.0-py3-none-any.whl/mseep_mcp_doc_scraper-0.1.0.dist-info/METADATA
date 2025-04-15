@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: mseep-mcp_doc_scraper
+Version: 0.1.0
+Summary: MCP server for scraping documentation
+Home-page: 
+Author: mseep
+Author-email: support@skydeck.ai
+Requires-Python: >=3.6
+Requires-Dist: aiohttp
+Requires-Dist: mcp
+Requires-Dist: pydantic
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-python
