@@ -1,0 +1,2 @@
+[console_scripts]
+zotero-viewer = zotero_viewer:main

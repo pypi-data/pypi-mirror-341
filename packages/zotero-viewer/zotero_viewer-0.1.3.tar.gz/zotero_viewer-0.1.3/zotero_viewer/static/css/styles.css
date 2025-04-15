@@ -1,0 +1,552 @@
+/* Container and layout */
+.container { 
+    display: flex; 
+    margin: 0;
+    gap: 20px;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Add these styles to the top of the file */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+/* Sidebar styles */
+.sidebar { 
+    width: 280px;
+    flex-shrink: 0;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Main content area */
+.main-content { 
+    flex: 2;
+    overflow-y: hidden; /* Changed from auto to hidden */
+    padding: 8px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Reference controls */
+.reference-controls {
+    flex-shrink: 0; /* Prevent controls from shrinking */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+/* Items container */
+.items-container {
+    flex: 1; /* Take remaining space */
+    overflow-y: auto; /* Make this container scrollable */
+    padding-top: 5px;
+}
+
+/* Details panel */
+.details-panel {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Tag styles */
+.tag {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 15px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+}
+
+.selected-tag {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.tag-highlight {
+    background-color: #ffffc0;
+    border-color: #e6e600;
+}
+
+/* Close button styles */
+.close-tag {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 0.25rem;
+    margin-left: 0.25rem;
+}
+
+.close-tag:hover {
+    color: #dc3545;
+}
+
+/* Item styles */
+.item {
+    cursor: pointer;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.item-content {
+    flex: 1;
+}
+
+.item:hover {
+    background-color: #f5f5f5;
+}
+
+.item.highlighted {
+    background-color: #e6f7ff;
+    border-color: #1890ff;
+}
+
+.item input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 3px;
+    align-self: top;
+}
+
+.item-metadata {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+/* Item tags styles */
+.item-tags {
+    margin-top: 2px;
+    line-height: 1.2;
+}
+
+.item-tags .tag {
+    font-size: 0.8em;
+    padding: 2px 6px;
+    margin: 1px 2px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    height: 20px;
+}
+
+.item-tags .close-tag {
+    font-size: 0.9em;
+    padding: 0;
+    margin-left: 3px;
+}
+
+/* Filter controls */
+.filter-controls {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.clear-filter-container {
+    margin: 5px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.clear-filter {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.clear-filter:hover {
+    background-color: #d32f2f;
+}
+
+/* Bulk tagging controls */
+.bulk-tag-form {
+    margin-bottom: 10px;
+}
+
+.bulk-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Tag input container and suggestions */
+.tag-input-container {
+    position: relative;
+    flex: 1;
+    width: 100%;
+}
+
+.tag-input-container input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tag-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tag-suggestion {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.tag-suggestion:hover {
+    background-color: #f5f5f5;
+}
+
+.tag-suggestion.selected {
+    background-color: #e0f0ff;
+}
+
+/* Common tags container */
+.common-tags-container {
+    min-height: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}
+
+.common-tags-container.active {
+    visibility: visible;
+}
+
+#common-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.common-tags-label {
+    font-size: 0.9em;
+    color: #666;
+    margin-right: 5px;
+}
+
+.common-tag {
+    display: inline-flex;
+    align-items: center;
+    background: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 15px;
+    padding: 3px 10px;
+    font-size: 0.85em;
+    margin: 2px;
+}
+
+.remove-common-tag {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 0.25rem;
+    margin-left: 0.25rem;
+}
+
+.remove-common-tag:hover {
+    color: #dc3545;
+}
+
+/* Form elements */
+input[type="text"] {
+    padding: 8px;
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.add-tag-button {
+    padding: 8px 15px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Alert styles */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.alert-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Tag cloud container */
+/* Tag cloud container */
+.tag-cloud-container {
+    max-height: calc(100vh - 200px); /* Changed from 400px to be responsive to viewport height */
+    overflow-y: auto;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Tag controls */
+.tag-controls {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.tag-filter {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 36px;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    width: calc(100% - 115px);
+}
+
+.tag-sort {
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    height: 36px;
+    box-sizing: border-box;
+    width: 110px;
+    font-size: 0.9em;
+}
+
+/* Scrollbar styles */
+.tag-cloud-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tag-cloud-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.tag-cloud-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.tag-cloud-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Select all container */
+.select-all-container {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-all-container input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.select-all-container label {
+    cursor: pointer;
+}
+
+/* Sort options */
+.sort-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.sort-options span {
+    color: #666;
+}
+
+.sort-label {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.sort-label:hover {
+    background-color: #e9ecef;
+}
+
+.sort-label.active {
+    font-weight: bold;
+    background-color: #e9ecef;
+}
+
+/* Search box */
+.search-container {
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 35px 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0,123,255,0.3);
+}
+
+.clear-search-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.clear-search-button:hover {
+    color: #333;
+}
+
+/* Item details */
+#item-details-content {
+    padding: 8px;
+}
+
+.select-message {
+    color: #999;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.detail-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.detail-abstract {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.detail-tags {
+    margin-top: 10px;
+}
+
+.detail-tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 3px 8px;
+    margin: 2px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+/* References header */
+.references-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* Tag header with count */
+.tag-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.tag-count {
+    font-size: 0.9em;
+    color: #666;
+    font-weight: normal;
+}
+
+/* Refresh button */
+.refresh-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.refresh-button:hover {
+    background-color: #e0e0e0;
+}
