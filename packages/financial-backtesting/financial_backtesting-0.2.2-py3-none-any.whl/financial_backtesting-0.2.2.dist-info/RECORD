@@ -1,0 +1,9 @@
+backtesting/__init__.py,sha256=sgzNRgrDqWdeULn3c8NHr2OFuo1Nite3ZNNCdZ6ZIUs,197
+backtesting/backtesting.py,sha256=uLG1fpNTcvUGnlRFyci35-pqRcwOCoh74pgP7S1DFwo,16451
+backtesting/order_class.py,sha256=SbdiIh6k2KOh3o1IpWVwcSKq8JmEOwXxNfFH_fEMnlY,2974
+backtesting/positions.py,sha256=D9-dtjpM2F-MIPOBn5N_qpoZ1qriV5zsomuDv4-C2Ug,4985
+financial_backtesting-0.2.2.dist-info/licenses/LICENSE,sha256=4TIvTJ8AcWw_bbxxREh-zAQ0YZnHhmO6XI2uFSlVoW4,1076
+financial_backtesting-0.2.2.dist-info/METADATA,sha256=iQDGbKVZ5DWkfHLlMwTi6M1ppNCj0N0aUegySqp3qUc,6785
+financial_backtesting-0.2.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+financial_backtesting-0.2.2.dist-info/top_level.txt,sha256=TP-UsS1lkKd7MHfQDm3bM_vtXkNxZciKbARG4Do0t1M,12
+financial_backtesting-0.2.2.dist-info/RECORD,,
