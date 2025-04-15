@@ -1,0 +1,9 @@
+{
+  "input_filetype_mapping": {
+    "Csharp": "CodeToClassDiagram.parsing.csharp.ts_parser"
+  },
+  "output_diagram_mapping": {
+    "MermaidClassDiagram": "CodeToClassDiagram.diagram.mermaid_display.py",
+    "PlantUML": "CodeToClassDiagram.diagram.plantuml_display"
+  }
+}
