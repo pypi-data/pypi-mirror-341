@@ -1,0 +1,37 @@
+[project]
+name = "janito"
+version = "1.2.0"
+description = "An agent framework with built-in tools."
+authors = [
+    { name = "João Pinto", email = "joao.pinto@gmail.com" }
+]
+requires-python = ">=3.8"
+dependencies = [
+    "rich",
+    "openai",
+    "flask",
+    "pathspec",
+    "beautifulsoup4"
+]
+license = { text = "MIT" }
+readme = "README.md"
+keywords = ["agent", "framework", "tools", "automation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+homepage = "https://github.com/joaompinto/janito"
+repository = "https://github.com/joaompinto/janito"
+
+[project.scripts]
+janito = "janito.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+"janito.templates" = ["system_instructions.j2"]
