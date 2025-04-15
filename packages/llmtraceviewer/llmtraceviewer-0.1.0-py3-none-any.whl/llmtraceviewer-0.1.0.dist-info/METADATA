@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: llmtraceviewer
+Version: 0.1.0
+Summary: A tool to view LLM call traces from JSONL log files.
+Author-email: Your Name <your.email@example.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Dynamic: license-file
+
+# llmtraceviewer
+
+A Python package and CLI tool to view LLM call traces from JSONL log files. It starts a local HTTP server and serves a Next.js frontend for interactive log exploration.
+
+## Usage
+
+```sh
+llmtraceviewer <log_filename>
+```
+
+- Starts a FastAPI server
+- Serves a Next.js frontend
+- Provides an API endpoint for log data
+
+## Requirements
+- Python 3.8+
+- Node.js (for Next.js frontend)
+
+## Development
+- Backend: FastAPI
+- Frontend: Next.js (served as static files)
