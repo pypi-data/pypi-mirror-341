@@ -1,0 +1,12 @@
+capf/__init__.py,sha256=mh4qsr_oIVdW4TzFybL3USYDZMyphYLLGK1VNEjJYB4,94
+capf/adaptors.py,sha256=rluKfN_LYEfQA8ezhgml40qCb5j8WaSUmUkbLVDXioE,3611
+capf/core.py,sha256=bT8hxL6Lwa_6ODZY0XtPuz9PMT2KaoF2by7onT23dvg,9830
+capf/exceptions.py,sha256=GffPqZUCPnw7L8r5Bu7yL3_OsbweT2cmuwG-DxhphSc,538
+capf/parser.py,sha256=589ISZVW6Spyz9R466J5HMt72PTBEjes1WMxsO1sHE4,7112
+capf/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+capf/reader.py,sha256=bzCaTTK0-G2rOrdSvbn-GzNXJoTjFkX_YcDe_rxQyKs,1884
+capf/validators.py,sha256=9e0t8mE4TQK_oSTkD2TwXB61XemASHmd0C-i7hVKXxA,10987
+capf-0.1.0.dist-info/METADATA,sha256=bTsy1yqjNHx3TOCW1EFovoTWGmbNtP5f58Q7jZymZuM,1020
+capf-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+capf-0.1.0.dist-info/licenses/LICENSE,sha256=th_QhUnQlkkk3QFap3zUEPqIR9QnqHpbJmyVNBBy1ho,1082
+capf-0.1.0.dist-info/RECORD,,

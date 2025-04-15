@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: capf
+Version: 0.1.0
+Summary: Command-line argument parser and framework
+Author-email: xymy <thyfan@163.com>
+Maintainer-email: xymy <thyfan@163.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: cli
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Requires-Dist: rich>=13.9
+Description-Content-Type: text/markdown
+
+# Capf
