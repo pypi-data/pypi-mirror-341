@@ -1,0 +1,15 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v0.2
+_src_path: https://github.com/hmiladhia/package-template
+author: Dhia Hmila
+distribution_name: hatch-lazyimports
+linting_level: 1
+organisation: hmiladhia
+package_name: hatch_lazyimports
+project_description: Hatch plugin to automaticilly detect and fill lazyimport entrypoint
+project_name: hatch-lazyimports
+project_version: 0.0.1
+use_mypy: false
+use_precommit: true
+use_tox: true
+use_uv: true
