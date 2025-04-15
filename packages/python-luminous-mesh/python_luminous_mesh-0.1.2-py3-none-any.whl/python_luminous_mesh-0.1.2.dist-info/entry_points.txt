@@ -1,0 +1,3 @@
+[console_scripts]
+luminous-mesh=python_luminous_mesh.__main__:main
+
