@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "vector-bridge"
+version = "1.0.22"
+description = "A client library for accessing VectorBridge.ai: API"
+authors = []
+readme = "README.md"
+packages = [
+    {include = "vector_bridge"},
+]
+exclude = ["tests*"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests ="^2.32.3"
+pydantic ="^2.10.6"
+python-dateutil ="2.9.0.post0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["F", "I", "UP"]
