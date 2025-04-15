@@ -1,0 +1,8 @@
+ray_embedding/__init__.py,sha256=OYJT0rVaaGzY613JqgfktsCgroDnBkGOHxR2FE9UtRU,49
+ray_embedding/deploy.py,sha256=oqOhMxS5UyZ4oGhfpL7kqvrxLO8QW41sF_FHbNSJe-w,1858
+ray_embedding/dto.py,sha256=e91ejZbM_NB9WTjF1YnfuV71cajYIh0vOX8oV_g2OwM,595
+ray_embedding/embedding_model.py,sha256=PBBuntLrJiwstD9AbD2n_ElU7rYZAYK0fMSESkMsFTU,5797
+ray_embedding-0.9.9.dist-info/METADATA,sha256=XRtQFNU7mhhSXFZF1YMyIII3zW9PfTXkiUN6AEHVAkA,604
+ray_embedding-0.9.9.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ray_embedding-0.9.9.dist-info/top_level.txt,sha256=ziCblpJq1YsrryshFqxTRuRMgNuO1_tgvAAkGShATNA,14
+ray_embedding-0.9.9.dist-info/RECORD,,
