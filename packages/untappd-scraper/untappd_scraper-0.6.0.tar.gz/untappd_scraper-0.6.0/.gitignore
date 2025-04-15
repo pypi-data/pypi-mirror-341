@@ -1,0 +1,31 @@
+# temp / uninteresting files
+.python-version
+.vscode/
+.vstags
+__pycache__
+.mypy_cache
+
+# distribution
+dist/
+pip/
+pip.zip
+
+# Sphinx
+docs/_build
+docs/_static
+docs/_templates
+
+# project
+html.sqlite
+*.log
+a.html
+b.html
+conf2.py
+fadel.json
+u.json
+
+.coverage
+coverage.xml
+.testmondata
+cov.xml
+.DS_Store
