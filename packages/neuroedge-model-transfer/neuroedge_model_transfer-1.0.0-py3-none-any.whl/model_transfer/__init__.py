@@ -1,0 +1,1 @@
+from .neuro_persistence_sdk import persist_model
