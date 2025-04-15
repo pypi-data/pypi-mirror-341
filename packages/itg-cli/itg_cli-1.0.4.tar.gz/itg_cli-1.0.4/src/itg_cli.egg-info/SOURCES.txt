@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/itg_cli/__init__.py
+src/itg_cli/__main__.py
+src/itg_cli/_config.py
+src/itg_cli/_utils.py
+src/itg_cli/commands.py
+src/itg_cli/config_template.toml
+src/itg_cli.egg-info/PKG-INFO
+src/itg_cli.egg-info/SOURCES.txt
+src/itg_cli.egg-info/dependency_links.txt
+src/itg_cli.egg-info/entry_points.txt
+src/itg_cli.egg-info/requires.txt
+src/itg_cli.egg-info/top_level.txt
