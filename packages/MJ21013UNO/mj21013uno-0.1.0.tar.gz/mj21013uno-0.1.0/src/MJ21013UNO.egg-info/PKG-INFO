@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: MJ21013UNO
+Version: 0.1.0
+Summary: Libreria para resolver sistemas de ecuaciones lineales y no lineales, proyecto escolar (no usar en la vida real)
+Author-email: Byron Jimenez <byronjimenez9911@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/bydavid1/ecuaciones
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# 📐 Para resolver sistema de ecuaciones
+
+**MJ21013UNO** es una librería en Python para resolver sistemas de ecuaciones **lineales** y **no lineales**. Este es un proyecto escolar **no usar en la vida real.**
+
+---
+
+## 📦 Instalación
+
+Una vez publicada en PyPI, instalar con
+
+```bash
+pip install MJ21013UNO

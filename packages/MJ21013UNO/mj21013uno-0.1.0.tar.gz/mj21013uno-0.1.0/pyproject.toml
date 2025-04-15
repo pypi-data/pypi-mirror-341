@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MJ21013UNO"
+version = "0.1.0"
+description = "Libreria para resolver sistemas de ecuaciones lineales y no lineales, proyecto escolar (no usar en la vida real)"
+authors = [
+  { name="Byron Jimenez", email="byronjimenez9911@gmail.com" }
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project.urls]
+"Homepage" = "https://github.com/bydavid1/ecuaciones"
+
+[tool.setuptools.packages.find]
+where = ["src"]
