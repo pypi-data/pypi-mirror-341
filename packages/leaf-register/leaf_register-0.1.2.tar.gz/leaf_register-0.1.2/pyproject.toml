@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "leaf-register"
+version = "0.1.2"
+description = "Registry system for the LEAF framework"
+authors = ["Matthew Crowther <M.Crowther1@newcastle.ac.uk>"]
+readme = "README.md"
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
