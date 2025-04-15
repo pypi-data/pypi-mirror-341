@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: FF21003UNO
+Version: 0.0.2
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales
+Home-page: https://github.com/ff21003/FF21003UNO
+Author: Sofia Franco
+Author-email: ff21003@ues.edu.sv
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# FF21003UNO
+
+**FF21003UNO** es una librería en Python para resolver sistemas de ecuaciones lineales y no lineales utilizando métodos numéricos.
+
+## Descripción
+
+Esta librería incluye los siguientes métodos:
+
+- Eliminación de Gauss
+- Gauss-Jordan
+- Regla de Cramer
+- Descomposición LU
+- Método de Jacobi
+- Método de Gauss-Seidel
+- Método de Bisección (para ecuaciones no lineales)
+
+## Instalación
+
+```bash
+pip install FF21003UNO

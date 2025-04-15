@@ -1,0 +1,12 @@
+ff21003/__init__.py,sha256=S_aSeX_mMuaRpY53si-Fp7YpQaVESlqgJ88NbF72Eso,272
+ff21003/biseccion.py,sha256=3vTbM60_3FOp1yzQDGgsDm8NwdyffJh9zCEYDROsN6o,958
+ff21003/crammer.py,sha256=E9G2i8SYZ2wf1bBWLC3r1tB_sOyBwSLo5Fh55jQrC2w,842
+ff21003/descomposicion_lu.py,sha256=PwP63R9RNPFvYV47iIAkyLe2ZkzV9PsWK9lrY--J-S0,655
+ff21003/eliminacion_gauss.py,sha256=kqcQntXZFiykG-_4DV-Y8aM-Ilri_ElEJQ1kYDdC8dA,1269
+ff21003/gauss_jordan.py,sha256=1NNdwh3miaaJ2t-Xv6srojQkZRn_38yUW_qcYX9FbAg,378
+ff21003/gauss_seidel.py,sha256=00ismAGIVK_o1B67PeTyT_OgiLBRmah-s0zyrpBoW2c,1008
+ff21003/jacobi.py,sha256=TE6UN0ika-rwJKUKNXH0QwfImGBDpz8_QEMr4R1zhPc,977
+ff21003uno-0.0.2.dist-info/METADATA,sha256=d39NRChlU4c9-ncMFMJFewQhYyiyLKXy34nS6Q-2smk,983
+ff21003uno-0.0.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ff21003uno-0.0.2.dist-info/top_level.txt,sha256=RwmpOvBW-eZKlhtjm1p9xXMnKtVW7lwUa5ELkLUSw1Y,8
+ff21003uno-0.0.2.dist-info/RECORD,,
