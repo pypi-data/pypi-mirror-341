@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: quote-module
+Version: 0.0.22
+Summary: Your package description
+Home-page: https://github.com/williamchen180/quote_module
+Author: William Chen
+Author-email: williamchen180@gmail.com
+Platform: linux_x86_64
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: cryptocode
+Requires-Dist: line-notify
+Requires-Dist: matplotlib
+Requires-Dist: msgpack
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pandasql
+Requires-Dist: playsound
+Requires-Dist: plotly
+Requires-Dist: requests
+Requires-Dist: setuptools
+Requires-Dist: shioaji
+Requires-Dist: termcolor
+Requires-Dist: twine
+Requires-Dist: wheel
+
+# quote_module
