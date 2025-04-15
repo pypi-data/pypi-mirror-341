@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "EM15008UNO"
+version = "0.1.0"
+description = "Librería para resolver sistemas de ecuaciones lineales y no lineales"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+  {name = "Héctor Echegoyen Montano", email = "em15008@ues.edu.sv"}
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://pypi.org/project/EM15008UNO/"

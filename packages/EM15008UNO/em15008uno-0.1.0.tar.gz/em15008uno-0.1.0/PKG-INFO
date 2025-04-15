@@ -1,0 +1,57 @@
+Metadata-Version: 2.4
+Name: EM15008UNO
+Version: 0.1.0
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales
+Author: Héctor Echegoyen Montano
+Author-email: Héctor Echegoyen Montano <em15008@ues.edu.sv>
+License: MIT
+Project-URL: Homepage, https://pypi.org/project/EM15008UNO/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: license-file
+
+# EM15008UNO
+
+Esta libreria permite resolver sistemas de ecuaciones lineales y no lineales usando métodos clásicos como:
+
+## Métodos incluidos:
+- Eliminación de Gauss
+- Gauss-Jordan
+- Cramer
+- Descomposición LU
+- Jacobi
+- Gauss-Seidel
+- Bisección
+
+## Instalación
+```bash
+pip install EM15008UNO
+```
+## Programación Orientada a Objetos (POO)
+
+La librería `EM15008UNO` está diseñada utilizando principios de Programación Orientada a Objetos (POO). 
+
+Se definen clases que agrupan métodos relacionados:
+
+- `SistemasLineales`: contiene métodos como `gauss()`, `gauss_jordan()`, `cramer()`, `descomposicion_lu()`, `jacobi()` y `gauss_seidel()`.
+- `SistemasNoLineales`: contiene el método `biseccion()`
+
+### Ejemplo de uso:
+
+```python
+from EM15008UNO.lineales import SistemasLineales
+
+A = [[2, 1, -1],
+     [-3, -1, 2],
+     [-2, 1, 2]]
+
+b = [8, -11, -3]
+
+sl = SistemasLineales()
+x = sl.gauss(A, b)
+print("Solución por Gauss:", x)
