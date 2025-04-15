@@ -1,0 +1,2 @@
+[console_scripts]
+sbyb = sbyb.cli.commands:main
