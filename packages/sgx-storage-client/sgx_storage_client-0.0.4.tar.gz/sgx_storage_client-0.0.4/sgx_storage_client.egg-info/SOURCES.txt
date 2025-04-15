@@ -1,0 +1,14 @@
+README.md
+setup.py
+sgx/__init__.py
+sgx/attestaion.py
+sgx/client.py
+sgx/ecdh_provider.py
+sgx/keygen.py
+sgx/session.py
+sgx_storage_client.egg-info/PKG-INFO
+sgx_storage_client.egg-info/SOURCES.txt
+sgx_storage_client.egg-info/dependency_links.txt
+sgx_storage_client.egg-info/not-zip-safe
+sgx_storage_client.egg-info/requires.txt
+sgx_storage_client.egg-info/top_level.txt

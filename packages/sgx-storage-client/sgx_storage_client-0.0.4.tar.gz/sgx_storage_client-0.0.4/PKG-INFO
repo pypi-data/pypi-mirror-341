@@ -1,0 +1,268 @@
+Metadata-Version: 2.4
+Name: sgx-storage-client
+Version: 0.0.4
+Summary: sgx storage client
+Author: Maksim
+Author-email: mpe@exan.tech
+License: EULA
+Keywords: sgx security enclave dcap attestation
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests==2.32.3
+Requires-Dist: cryptography==44.0.2
+Requires-Dist: pycryptodome==3.22.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# SGX Storage Client
+
+- [Overview](#sgx-storage-client)
+- [Features](#features)
+- [Security Notes](#security-notes)
+- [Installation](#installation)
+- [Components](#components)
+- [Usage Examples](#example-usage)
+  - [Key & Passphrase Generation](#Key and passphrase Generation)
+  - [Sgx client initialization](#Sgx client initialization)
+  - [Exchange Account Management](#exchange-account-management)
+  - [Address Management](#address-management)
+  - [Whitelist Management](#whitelist-management)
+  - [User Management](#user-management)
+  - [Configurations](#configurations)
+
+
+## Overview
+
+A secure Python client for Intel SGX enclave communication implementing DCAP remote attestation and AES-GCM encrypted sessions. Designed for managing sensitive configurations in trusted execution environments.
+
+## Features
+
+- **Secure Session Protocol** - Ephemeral ECDH key exchange + AES-128-GCM encryption
+- **DCAP Remote Attestation** - Verify enclave identity through DCAP QVS
+- **Complete Management API**:
+  - Exchange account credentials storage
+  - Blockchain address whitelisting
+  - Multi-role user access control
+  - Network/currency configuration management
+- **Production-Ready Security**:
+  - MRSIGNER-based enclave verification
+  - Anti-replay protection with session nonce
+  - CMAC-based key derivation (NIST SP 800-108)
+  - Hardware-rooted trust chain
+
+## Security Notes
+
+- Ensure private keys are never stored unencrypted or logged.
+- Always validate the enclave’s identity via DCAP unless explicitly testing.
+- Use strong passphrases (≥ 16 characters or ≥ 12 mnemonic words).
+- Consider hardware protection (e.g. TPM, HSM) for production deployment.
+- Ensure TLS is used in transport when communicating with enclaves.
+
+## Installation
+
+```bash
+pip install sgx-storage-client
+```
+
+## Components
+
+ - **SGX Client** (`client.py`):
+
+    The core interface for communication with the SGX enclave.
+
+ - **Attestation Module** (`attestation.py`):
+    
+    Provides functionality for remote attestation, ensuring that the enclave is trusted.
+
+ - **Key Provider** (`key_provider.py`):
+
+    Contains RawPrivateKeyProvider (or other providers) to manage private key operations securely based on external configuration. You can implement your own key provider by implementing the ECDHProvider methods.
+
+ - **Session Handler** (`session.py`):
+    
+    Manages secure session establishment, key exchange, and encrypted payload handling.
+
+ - **Key Generation** (`keygen.py`):
+
+    Generates high‑entropy, Diceware‑style passphrases and other keys as needed for additional security.
+
+### Example usage
+
+
+
+#### Key and passphrase Generation
+
+The keygen.py module provides two main functionalities:
+
+#### Deterministic Key Pair Generation
+You can deterministically generate an EC key pair from a passphrase. This process uses:
+
+  - PBKDF2-HMAC-SHA512 to derive a 64-byte seed from the passphrase.
+  - HMAC-SHA512 to compute a scalar from a constant seed and the derived seed.
+  - The scalar is then used to build the EC private key on the SECP256R1 curve, and its associated public key is returned as concatenated bytes (X||Y).
+
+Example:
+```python
+from sgx.keygen import generate_key_pair_from_passphrase
+
+# Generate the key pair deterministically from a passphrase
+passphrase = "correct horse battery staple"
+public_key_bytes, private_scalar = generate_key_pair_from_passphrase(passphrase)
+```
+
+#### Diceware‑Style Passphrase Generation
+The generate_passphrase function creates high‑entropy passphrases by selecting random words from a supplied wordlist (https://www.eff.org/dice). You can customize options such as the number of words, delimiter, capitalization, and appending a random digit.
+
+Example:
+```python
+from sgx.keygen import generate_passphrase
+
+#Generate a 7-word passphrase with title-cased words and a trailing digit
+passphrase = generate_passphrase(num_words=7)
+```
+
+
+#### Sgx client initialization
+
+Variables:
+
+ - **MR_SIGNER** – Enclave fingerprint (MRSIGNER).
+ - **DCAP_URL** – DCAP attestation service URL.
+ - **PRIVATE_VALUE** – Your private key as an integer.
+ - **HOST** – Enclave server host.
+ - **PORT** – Enclave server port.
+ - **SP_ID** – Service Provider ID (SPID).
+
+```python
+from sgx.client import SgxClient
+from sgx.attestaion import SGXAttestationVerifier
+from sgx.ecdh_provider import RawPrivateKeyProvider
+
+# Initialize the attestation verifier
+verifier = SGXAttestationVerifier(
+    mr_signer="a1b2c3d4e5f6...", # Trusted enclave fingerprint
+    dcap_url="https://qvs.example.com/qvs/attestation/sgx/dcap/v1/report",
+    is_debug=False # Default is False, check that the enclave is not in debug mode
+)
+
+# Initialize the private key provider
+key_provider = RawPrivateKeyProvider(private_value=int('6805925192601811...44757182820103'))
+
+
+client = SgxClient(
+    host="enclave.example.com",
+    port=2241,
+    spid="11223344556677889900AABBCCDDEEFF",  # 16-byte hex Service Provider ID
+    key_provider=key_provider, # Private key for enclave authentication
+    attestation_verifier=verifier,  # Optional, use None to skip dcap verification
+)
+```
+
+#### Exchange Account Management
+```python
+client.get_accounts()
+
+client.add_account(
+   name='main-account', 
+   exchange='binance', 
+   public_key='public-key',
+   key='sercret-key', 
+   sorting_key=1, 
+   additional_data={}
+)
+
+client.update_account(
+   account_id='1binance', 
+   name='secondary-account', 
+   public_key='public-key', 
+   key='secret-key', 
+   sorting_key=1, 
+   additional_data={}
+)
+
+client.del_account('1binance')
+```
+#### Address Management
+```python
+client.get_standalone_addresses()
+
+client.add_standalone(
+    address='0xC8CD2BE653759aed7B0996315821AAe71e1FEAdF',
+    network='ETHEREUM',
+    alias='eth-address',
+    whitelist=True,
+    multisig=False,
+    currencies=['ETH', 'USDT'],
+    sorting_key=1
+)
+
+client.update_standalone(
+    address='0xC8CD2BE653759aed7B0996315821AAe71e1FEAdF',
+    network='ETHEREUM',
+    alias='eth-address-2',
+    whitelist=True,
+    multisig=False,
+    currencies=[],
+    sorting_key=1
+)
+
+client.del_standalone(address='0xC8CD2BE653759aed7B0996315821AAe71e1FEAdF', network='ETHEREUM')
+```
+
+#### Whitelist Management
+
+```python
+client.get_whitelist()
+
+client.add_whitelist(
+    address='0xC8CD2BE653759aed7B0996315821AAe71e1FEAdF',
+    network='ETHEREUM',
+    alias='trusted-address',
+    currencies=[],
+    sorting_key=1
+)
+
+client.update_whitelist(
+   address='0xC8CD2BE653759aed7B0996315821AAe71e1FEAdF',
+   network='ETHEREUM',
+   alias='trusted-address-2'
+)
+
+client.del_whitelist(
+    address='0xC8CD2BE653759aed7B0996315821AAe71e1FEAdF',
+    network='ETHEREUM',
+)
+```
+
+#### User Management
+
+```python
+client.get_users()
+
+client.add_user(
+    user='test@gamil.com', 
+    role='FULL_ACCESS', 
+    sorting_key=2
+)
+
+client.update_user(user='test@gamil.com', role='READ_ONLY', sorting_key=2)
+
+client.del_user('test@gamil.com')
+
+client.reset_user_hotp('test@gamil.com')
+```
+
+#### configurations
+
+```python
+client.get_network_coins()
+
+client.get_status()
+```
