@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+JSONavigator.egg-info/PKG-INFO
+JSONavigator.egg-info/SOURCES.txt
+JSONavigator.egg-info/dependency_links.txt
+JSONavigator.egg-info/top_level.txt
+jsoninja/__init__.py
+jsoninja/core.py
+jsoninja/exceptions.py
+jsoninja/utils.py
+tests/__init__.py
+tests/conftest.py
+tests/test_core.py
+tests/test_utils.py
