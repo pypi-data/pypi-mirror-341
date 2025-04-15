@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: BM16036UNO
+Version: 0.1.0
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales mediante varios métodos.
+Home-page: https://github.com/bm16036/BM16036UNO.git
+Author: Erick Alexander Borja Mauricio
+Author-email: bm16036@ues.edu.sv
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.18.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# BM16036UNO
+
+**BM16036UNO** Es una librería en Python diseñada para resolver sistemas de ecuaciones lineales y no lineales utilizando diversos métodos numéricos. Esta librería fue desarrollada como parte del Corto 1 de la materia Cálculo Numérico para Desarrollo de Aplicaciones para la Universidad Nacional de El Salvador, agrupa implementaciones de métodos clásicos, tales como:
+
+- **Eliminación de Gauss**
+- **Gauss-Jordan**
+- **Cramer**
+- **Descomposición LU**
+- **Jacobi**
+- **Gauss-Seidel**
+- **Bisección**
+
+## Características
+
+- **Resolución de sistemas lineales:**  
+  Implementa métodos directos (Eliminación de Gauss, Gauss-Jordan, Cramer, Descomposición LU) e iterativos (Jacobi y Gauss-Seidel) para resolver sistemas de ecuaciones.
+
+- **Resolución de ecuaciones no lineales:**  
+  Incluye el método de bisección para encontrar raíces de funciones no lineales.
+
+
+

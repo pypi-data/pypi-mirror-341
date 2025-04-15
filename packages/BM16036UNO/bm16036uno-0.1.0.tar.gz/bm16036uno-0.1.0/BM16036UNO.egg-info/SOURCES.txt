@@ -1,0 +1,15 @@
+README.md
+setup.py
+BM16036UNO/__init__.py
+BM16036UNO/biseccion.py
+BM16036UNO/cramer.py
+BM16036UNO/descomposicion_lu.py
+BM16036UNO/eliminacion_gaussiana.py
+BM16036UNO/gauss_jordan.py
+BM16036UNO/gauss_seidel.py
+BM16036UNO/jacobi.py
+BM16036UNO.egg-info/PKG-INFO
+BM16036UNO.egg-info/SOURCES.txt
+BM16036UNO.egg-info/dependency_links.txt
+BM16036UNO.egg-info/requires.txt
+BM16036UNO.egg-info/top_level.txt
