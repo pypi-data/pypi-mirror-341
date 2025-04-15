@@ -1,0 +1,12 @@
+supadantic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+supadantic/clients/__init__.py,sha256=La2l1Ffrr_HcUBm4JQqrrp1qL26FjK85NqDwuVUPgj4,68
+supadantic/clients/base.py,sha256=1zh-w4Fni24De1IS82Ok9kHKG5qxFlbCg_340Vukk_g,5475
+supadantic/clients/cache.py,sha256=iYQb-YmUIO48j-Usi9pKQuTWZpO62-u81YJoBVk_r7A,9519
+supadantic/clients/supabase.py,sha256=8XhXtpQ5FImdLKh-K4uurPg32R_tASPwcC2gcqD12H0,6340
+supadantic/models.py,sha256=4bQnnJZyVvxN2YWykPHmckNeJPw5dvy-xSI-B9M4mUw,6870
+supadantic/q_set.py,sha256=YzjYIoW1iWG93MIErk5rumxtIWJBn9IM98qsJovnO3M,11368
+supadantic/query_builder.py,sha256=74pl-hBpNgLFQE9X3_pNAQCTIxBk-xXPG0YHfyRL9jU,8004
+supadantic-0.0.6.dist-info/LICENSE,sha256=LiHguuSk5t8cNQ3SAHAG38YaQLrpbfkzidU6KuUGXSk,1074
+supadantic-0.0.6.dist-info/METADATA,sha256=VHH6GgVrgiVaL6DLkxsumz9VyJHjULHXPh40EZl8fKc,2925
+supadantic-0.0.6.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+supadantic-0.0.6.dist-info/RECORD,,
