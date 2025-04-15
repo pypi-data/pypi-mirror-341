@@ -1,0 +1,12 @@
+numpy<2,>=1.20
+scipy
+pandas
+pymoo==0.6
+scikit-optimize==0.9
+tabulate
+
+[cupy-cuda11x]
+cupy-cuda11x
+
+[cupy-cuda12x]
+cupy-cuda12x
