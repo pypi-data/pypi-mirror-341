@@ -1,0 +1,6 @@
+[console_scripts]
+boaz-daemon = random_compliments.daemon_cli:main
+compliment = random_compliments.cli:main
+
+[distutils.commands]
+post_install = random_compliments.post_install:main

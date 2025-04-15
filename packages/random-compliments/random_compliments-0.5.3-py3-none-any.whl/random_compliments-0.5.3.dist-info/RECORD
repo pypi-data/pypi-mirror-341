@@ -1,0 +1,15 @@
+random_compliments/__init__.py,sha256=r0n0QigPDNh9AiNr-3KddqbqqKHVPz9KalbxM2FcqzA,453
+random_compliments/auto_start.py,sha256=uuwLJ4pNr6oYzbX5giRK8s-Ngs1Gw3v1eRKNkzX7mCQ,1020
+random_compliments/cli.py,sha256=cSwmT0VtCkbUiTzKGNNwx38QqZB3_QsWfYDbQ9x4Ha0,3827
+random_compliments/compliment_daemon.py,sha256=QbvWILjE2_ePkB2cr0ykm4j74Vtrku8cZg2atigjSYg,2578
+random_compliments/compliments.py,sha256=BB5lrizTLTCM_HsTZd6uuK5l4sT8ZoQsznRSRQExzbs,6273
+random_compliments/daemon_cli.py,sha256=eIdaS5UNUh8F2oD2cygp1gZr3200I_W9RtksYF31IqI,1117
+random_compliments/install_hooks.py,sha256=x6W3zmUTs-6KCyJMVQY6GzHlYQRcl_K1l-h655FH39A,3338
+random_compliments/post_install.py,sha256=_uSPOVyEejtgOH40nPH-WKGBUVzdLLlqrOcOT_rCnMg,3017
+random_compliments-0.5.3.data/scripts/post_install_hook.py,sha256=f9rBiryjHsX2As3jzcQMkkCtq5vhzumncwsl6y266y8,672
+random_compliments-0.5.3.dist-info/licenses/LICENSE,sha256=B9uUqNa_lf6gvpYqbr8xJQfPFU0u4vMhVOjzRrBaaI4,1061
+random_compliments-0.5.3.dist-info/METADATA,sha256=_m1ujSBAejF2TJXSMq-iiN8kWhgdI2DXUlwnwxIChVs,3967
+random_compliments-0.5.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+random_compliments-0.5.3.dist-info/entry_points.txt,sha256=ecqZrgx_dWOj5MmENBSxVkYeGjpXnnYRtm-pitrhSAM,182
+random_compliments-0.5.3.dist-info/top_level.txt,sha256=M9yZ0wZ9bwW9CmAYqM6gLBPUV9Z6EMT0-NnD2OIrozU,19
+random_compliments-0.5.3.dist-info/RECORD,,
