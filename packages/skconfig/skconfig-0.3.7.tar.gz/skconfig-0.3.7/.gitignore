@@ -1,0 +1,8 @@
+__pycache__
+/src/skconfig.egg-info
+_build
+/dist
+.pytest_cache
+/src/skconfig/_version.py
+/docs/source/word.log
+build

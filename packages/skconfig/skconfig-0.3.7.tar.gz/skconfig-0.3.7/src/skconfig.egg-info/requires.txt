@@ -1,0 +1,7 @@
+numpy
+PyYAML>6.0.0
+appdirs
+packaging
+
+[test]
+pytest
