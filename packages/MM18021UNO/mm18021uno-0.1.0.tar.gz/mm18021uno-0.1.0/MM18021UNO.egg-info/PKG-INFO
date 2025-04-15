@@ -1,0 +1,158 @@
+Metadata-Version: 2.4
+Name: MM18021UNO
+Version: 0.1.0
+Summary: Librería de métodos numéricos para resolver ecuaciones lineales y no lineales
+Author: Claudia
+Author-email: mm18021@ues.edu.sv
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: sympy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+<<<<<<< HEAD
+# 📘 MM18021UNO
+
+**Librería de Métodos Numéricos** en Python para resolver sistemas de ecuaciones lineales y hallar raíces de funciones no lineales.
+
+---
+
+## ✅ Métodos disponibles
+
+| Método               | Descripción                                                        |
+|----------------------|--------------------------------------------------------------------|
+| `gauss`              | Eliminación de Gauss                                               |
+| `gauss_jordan`       | Eliminación de Gauss-Jordan                                        |
+| `cramer`             | Regla de Cramer                                                    |
+| `descomposicion_lu`  | Descomposición LU (retorna matrices L y U)                         |
+| `jacobi`             | Método iterativo de Jacobi                                         |
+| `gauss_seidel`       | Método iterativo de Gauss-Seidel                                   |
+| `biseccion`          | Método de bisección para encontrar raíces de funciones             |
+| `newton_raphson`     | Método de Newton-Raphson para encontrar raíces (requiere sympy)    |
+
+---
+
+## ⚙️ Instalación
+
+Para instalar localmente esta librería desde el directorio del proyecto:
+
+```bash
+pip install .
+
+## 🧪 Ejemplos de uso
+
+### Gauss
+
+```python
+from MM18021UNO import gauss
+import numpy as np
+
+A = np.array([[2, 1, -1], [-3, -1, 2], [-2, 1, 2]])
+b = np.array([8, -11, -3])
+print(gauss(A, b))
+```
+
+### Gauss-Jordan
+
+```python
+from MM18021UNO import gauss_jordan
+import numpy as np
+
+A = np.array([[2, 1], [1, 3]])
+b = np.array([8, 13])
+print(gauss_jordan(A, b))
+```
+
+### Cramer
+
+```python
+from MM18021UNO import cramer
+import numpy as np
+
+A = np.array([[2, -1], [1, 3]])
+b = np.array([1, 12])
+print(cramer(A, b))
+```
+
+### Descomposición LU
+
+```python
+from MM18021UNO import descomposicion_lu
+import numpy as np
+
+A = np.array([[2, 3], [5, 4]])
+L, U = descomposicion_lu(A)
+print("L =", L)
+print("U =", U)
+```
+
+### Jacobi
+
+```python
+from MM18021UNO import jacobi
+import numpy as np
+
+A = np.array([[10, -1, 2], [-1, 11, -1], [2, -1, 10]])
+b = np.array([6, 25, -11])
+print(jacobi(A, b))
+```
+
+### Gauss-Seidel
+
+```python
+from MM18021UNO import gauss_seidel
+import numpy as np
+
+A = np.array([[4, 1, 2], [3, 5, 1], [1, 1, 3]])
+b = np.array([4, 7, 3])
+print(gauss_seidel(A, b))
+```
+
+### Bisección
+
+```python
+from MM18021UNO import biseccion
+
+def f(x):
+    return x**3 - x - 2
+
+raiz = biseccion(f, 1, 2)
+print("Raíz aproximada:", raiz)
+```
+
+### Newton-Raphson
+
+```python
+from MM18021UNO import newton_raphson
+
+raiz = newton_raphson("x**3 - x - 2", x0=1.5)
+print("Raíz con Newton-Raphson:", raiz)
+```
+
+---
+
+## 🔧 Requisitos
+
+- Python 3.6 o superior
+- numpy
+- sympy
+=======
+# MM18021UNO
+>>>>>>> 0e04099b927e577632edfd3ead7904ffd5331bb8
