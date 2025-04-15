@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: \\wsl.localhost\Ubuntu\home\alfonso\OpenMagnetics\MVB\src\OpenMagneticsVirtualBuilder\ea.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import Sketcher
+
+# Gui.runCommand('Std_DlgMacroRecord',0)
+# Gui.runCommand('Sketcher_CompCreateFillets',0)
+# Gui.Selection.addSelection('PM_50_39_piece_scaled','Body','Sketch.Edge4',253.035,230.905,0)
+App.getDocument('PM_50_39_piece_scaled').getObject('Sketch').fillet(3,4,App.Vector(253.035088,230.905303,0),App.Vector(175.916320,-66.470434,0),71.535363,True,True,False)
+App.ActiveDocument.recompute()
+# Gui.Selection.clearSelection()
+App.ActiveDocument.recompute()
+# Macro End: \\wsl.localhost\Ubuntu\home\alfonso\OpenMagnetics\MVB\src\OpenMagneticsVirtualBuilder\ea.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
