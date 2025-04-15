@@ -1,0 +1,2 @@
+[console_scripts]
+nates = nates:cli.cli
