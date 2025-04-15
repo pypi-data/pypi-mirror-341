@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: JM21008UNO
+Version: 0.1.0
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales.
+Home-page: https://github.com/jeffreyMangandi/JM21008UNO
+Author: jeffrey juárez
+Author-email: jm21008@ues.edu.sv
+License: UNKNOWN
+Description: # JM21008UNO
+        
+        JM21008UNO es una librerÃ­a de Python diseÃ±ada para resolver sistemas de ecuaciones lineales y no lineales utilizando varios mÃ©todos numÃ©ricos. Esta librerÃ­a incluye implementaciones de los mÃ©todos de eliminaciÃ³n de Gauss, Gauss-Jordan, Cramer, descomposiciÃ³n LU y Jacobi, proporcionando una herramienta versÃ¡til para el campo de las matemÃ¡ticas y la ingenierÃ­a.
+        
+        ## MÃ©todos Disponibles
+        
+        - **EliminaciÃ³n de Gauss**: Resuelve sistemas de ecuaciones lineales mediante la eliminaciÃ³n de variables.
+        - **Gauss-Jordan**: ExtensiÃ³n del mÃ©todo de Gauss que reduce la matriz a su forma escalonada reducida.
+        - **Cramer**: Utiliza determinantes para resolver sistemas de ecuaciones lineales.
+        - **DescomposiciÃ³n LU**: Descompone una matriz en dos matrices, L (triangular inferior) y U (triangular superior), para facilitar la resoluciÃ³n del sistema.
+        - **Jacobi**: MÃ©todo iterativo que encuentra la soluciÃ³n de sistemas de ecuaciones lineales.
+        
+        ## InstalaciÃ³n
+        
+        Para instalar la librerÃ­a, puedes usar `pip`:
+        
+        ```
+        pip install JM21008UNO
+        ```
+        
+        ## Ejemplo de Uso
+        
+        ```python
+        from jm21008uno.gauss import resolver_gauss
+        from jm21008uno.gauss_jordan import resolver_gauss_jordan
+        from jm21008uno.cramer import resolver_cramer
+        from jm21008uno.lu_decomposition import resolver_lu
+        from jm21008uno.jacobi import resolver_jacobi
+        
+        # Definir una matriz de coeficientes y un vector de tÃ©rminos independientes
+        A = [[2, 1, -1], [3, 3, 9], [3, 4, 2]]
+        b = [8, 0, 3]
+        
+        # Resolver usando el mÃ©todo de eliminaciÃ³n de Gauss
+        solucion_gauss = resolver_gauss(A, b)
+        
+        # Resolver usando el mÃ©todo de Gauss-Jordan
+        solucion_gauss_jordan = resolver_gauss_jordan(A, b)
+        
+        # Resolver usando el mÃ©todo de Cramer
+        solucion_cramer = resolver_cramer(A, b)
+        
+        # Resolver usando descomposiciÃ³n LU
+        solucion_lu = resolver_lu(A, b)
+        
+        # Resolver usando el mÃ©todo de Jacobi
+        solucion_jacobi = resolver_jacobi(A, b)
+        ```
+        
+        ## Licencia
+        
+        Este proyecto estÃ¡ bajo la Licencia MIT. Consulta el archivo LICENSE para mÃ¡s detalles.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
