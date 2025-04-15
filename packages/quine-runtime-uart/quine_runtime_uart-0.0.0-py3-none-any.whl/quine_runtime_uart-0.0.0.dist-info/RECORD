@@ -1,0 +1,5 @@
+quine/runtimes/uart/__init__.py,sha256=nGseumfvpND9yCFRRzqs3Gr_VTZD_sHeIIjC63VsF8E,142
+quine_runtime_uart-0.0.0.dist-info/COPYING.md,sha256=ADUqsZhl4juwq34PRTMiBqumpm11s_PMli_dZQjWPqQ,34260
+quine_runtime_uart-0.0.0.dist-info/METADATA,sha256=jdA96GDNoLK5pTgzf6V8fulzUItckmwcRIKZw72lS1o,1391
+quine_runtime_uart-0.0.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+quine_runtime_uart-0.0.0.dist-info/RECORD,,
