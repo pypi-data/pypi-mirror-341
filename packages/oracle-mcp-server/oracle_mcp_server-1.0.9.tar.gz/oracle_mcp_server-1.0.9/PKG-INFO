@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: oracle-mcp-server
+Version: 1.0.9
+Summary: Model Context Protocol server to access oracle, supporting Oracle 11g and above.
+Author-email: MCP Oracle Server Team <mcp-oracle@example.com>
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: mcp[cli]>=1.5.0
+Requires-Dist: oracledb>=3.0.0
+Requires-Dist: python-dotenv>=1.0.1
+Description-Content-Type: text/markdown
+
+# oracle-mcp-server
+Model Context Protocol server to access oracle, supporting Oracle 11g and above.
+
+
+## Quickstart
+
+add this to your cursor `mcp.json` config files:
+
+```json
+{
+  "mcpServers": {
+    "oracle-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "oracle-mcp-server"
+      ],
+      "env": {
+        "ORACLE_CONNECTION_STRING": "username/password@hostname:password/service_name",
+        "LIB_DIR": "D:\\tools\\instantclient19.26.0.0.0dbru\\instantclient_19_26"
+      }
+    }
+  }
+}
+```
+
+### Prerequisites
+
+- UV (pacakge manager)
+- Python 3.12+
+- Cursor
+- Oracle Client
+
+
