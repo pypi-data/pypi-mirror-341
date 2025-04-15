@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+npynuma/__init__.py
+npynuma/numa.c
+npynuma/numa.pyi
+npynuma/numa_policy.py
+npynuma.egg-info/PKG-INFO
+npynuma.egg-info/SOURCES.txt
+npynuma.egg-info/dependency_links.txt
+npynuma.egg-info/requires.txt
+npynuma.egg-info/top_level.txt
