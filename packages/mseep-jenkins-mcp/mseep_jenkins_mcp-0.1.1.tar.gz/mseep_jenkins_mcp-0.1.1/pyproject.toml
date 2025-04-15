@@ -1,0 +1,43 @@
+[project]
+name = "mseep-jenkins-mcp"
+version = "0.1.1"
+description = "MCP server for managing Jenkins operations"
+authors = [
+    { name = "Kristof Jozsa" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dynamic = [
+    "dependencies",
+]
+
+[project.scripts]
+jenkins-mcp = "jenkins_mcp.server:mcp.run"
+
+[project.urls]
+Repository = "https://github.com/kjozsa/jenkins-mcp"
+
+[tool.setuptools.dynamic.dependencies]
+file = [
+    "requirements.txt",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "jenkins_mcp",
+]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+python_files = "test_*.py"
+pythonpath = [
+    ".",
+]
+
+[build-system]
+requires = [
+    "setuptools>=61.0",
+]
+build-backend = "setuptools.build_meta"
