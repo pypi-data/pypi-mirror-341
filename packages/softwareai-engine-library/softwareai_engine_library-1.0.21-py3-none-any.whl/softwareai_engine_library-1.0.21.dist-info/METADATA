@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: softwareai_engine_library
+Version: 1.0.21
+Summary: O motor da biblioteca é liberado através do pip para a sincronia do motor em múltiplos agentes
+Home-page: https://github.com/SoftwareAI-Company/SoftwareAI
+Author: ualerson
+Author-email: mediacutsstudio@gmail.com
+License: Apache-2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Flask
+Requires-Dist: Flask-CORS
+Requires-Dist: user-agents
+Requires-Dist: waitress
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+Requires-Dist: PyYAML
+Requires-Dist: docker
+Requires-Dist: discord.py
+Requires-Dist: python-telegram-bot
+Requires-Dist: setuptools
+Requires-Dist: redis
+Requires-Dist: eventlet
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Requires-Dist: flask-limiter
+Requires-Dist: flask-socketio
+Requires-Dist: pytz
+Requires-Dist: celery
+Requires-Dist: termcolor
+Requires-Dist: stripe
+Requires-Dist: openai-whisper
+Requires-Dist: torch
+Requires-Dist: uiautomator2
+Requires-Dist: opencv-python-headless
+Requires-Dist: numpy
+Requires-Dist: srt
+Requires-Dist: yt-dlp
+Requires-Dist: psutil
+Requires-Dist: schedule
+Requires-Dist: google-auth
+Requires-Dist: google-api-python-client
+Requires-Dist: websockets
+Requires-Dist: av
+Requires-Dist: firebase-admin
+Requires-Dist: transformers
+Requires-Dist: proglog
+Requires-Dist: openai
+Requires-Dist: pandas
+Requires-Dist: tiktoken
+Requires-Dist: PyGithub
+Requires-Dist: typing-extensions
+Requires-Dist: reportlab
+Requires-Dist: obsws-python
+Requires-Dist: huggingface-hub
+Requires-Dist: opencv-python
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: google-auth-httplib2
+
+# SoftwareAI Engine
+
+
+### Release v1.0.17
+#### objetivo: Adaptacao para que os multiplos agentes do chat e livraria tenha acesso de forma escalavel ao nucleo 
+
+- [x] softwareai_engine_library: FunctionsAndTools retirado pois ficará no back end da livraria
+
+### Release v1.0.0
+#### objetivo: Acoplamento da biblioteca softwareai para o funcionamento dos agentes em produção
+- adaptations and additions in `Tools` for the operation of the engine tools: 
+- [x] ``CoreEngine/Functions_And_Tools/Tools/NextRefactoring_tools.py`` added
+- [x] ``CoreEngine/Functions_And_Tools/Tools/NextReviewer_tools.py`` added
+- [x] ``CoreEngine/Functions_And_Tools/Tools/Nextunittests_tools.py`` added
+
+
+- adaptations and additions to `Submit_Outputs` for the operation of the engine tools: 
+- [x] ``CoreEngine/Functions_And_Tools/Functions/Submit_Outputs/autochangesrequestedinpullrequest.py`` adapted
+- [x] ``CoreEngine/Functions_And_Tools/Functions/Submit_Outputs/autocheckcommentspr.py`` adapted
+- [x] ``CoreEngine/Functions_And_Tools/Functions/Submit_Outputs/autoconversationissuespullrequest.py`` adapted
+- [x] ``CoreEngine/Functions_And_Tools/Functions/Submit_Outputs/autogetfilecontent.py`` adapted
+- [x] ``CoreEngine/Functions_And_Tools/Functions/Submit_Outputs/autogetstructure.py`` adapted
+- [x] ``CoreEngine/Functions_And_Tools/Functions/Submit_Outputs/autogetstructure.py`` adapted
+- [x] ``CoreEngine/Functions_And_Tools/Functions/Submit_Outputs/autopullrequest.py`` adapted
+- [x] ``CoreEngine/Functions_And_Tools/Functions/Submit_Outputs/autosave_submit_outputs.py`` adapted
+- [x] ``CoreEngine/Functions_And_Tools/Functions/Submit_Outputs/autounittests.py`` added
+- [x] ``CoreEngine/Functions_And_Tools/Functions/Submit_Outputs/autoupload_submit_outputs.py`` adapted
+- [x] ``CoreEngine/Functions_And_Tools/Functions/Submit_Outputs/create_repo_submit_outputs.py`` adapted
+
+
+
+
+
+- adaptations and additions in `Functions` for the operation of the engine tools: 
+- [x] ``CoreEngine/Functions_And_Tools/Functions/autochangesrequestedinpullrequest.py`` adapted
+- [x] adapted ``CoreEngine/Functions_And_Tools/Functions/autocheckcommentspr.py``
+- [x] ``CoreEngine/Functions_And_Tools/Functions/autoconversationpullrequest.py`` adapted
+- [x] adapted ``CoreEngine/Functions_And_Tools/Functions/autocreaterepo.py``
+- [x] ``CoreEngine/Functions_And_Tools/Functions/autogetfilecontent.py`` adapted
+- [x] ``CoreEngine/Functions_And_Tools/Functions/autogetstructure.py`` adapted
+- [x] Adapted ``CoreEngine/Functions_And_Tools/Functions/autopullrequest.py``
+- [x] adapted ``CoreEngine/Functions_And_Tools/Functions/autosave_function.py``
+- [x] ``CoreEngine/Functions_And_Tools/Functions/autounittests.py`` added
+- [x] adapted ``CoreEngine/Functions_And_Tools/Functions/autoupload_function.py``
+- [x] adapted ``CoreEngine/Functions_And_Tools/Functions/autovectorstore.py``
+
+
+
+
+
+
+
+- adaptations and additions in `EngineProcess` for the operation of engine processes: 
+- [x] ``CoreEngine/EngineProcess/EValidWebhook.py`` added for easy validation of webhook repositories on github
+
+- adaptations and additions in `CoreInicializer` for engine initialization operation: 
+- [x] ``CoreEngine/CoreInicializer/config.ini`` added
+- [x] ``CoreEngine/CoreInicializer/_init_core_.py`` adapted
+- [x] ``CoreEngine/CoreInicializer/_init_functions_.py`` adapted
+- [x] ``CoreEngine/CoreInicializer/_init_Instructions_.py`` adapted
+- [x] ``CoreEngine/CoreInicializer/_init_keys_.py`` adapted
+- [x] ``CoreEngine/CoreInicializer/_init_libs_.py`` adapted
+- [x] ``CoreEngine/CoreInitializer/_init_submit_outputs_.py`` adapted
+- [x] adapted ``CoreEngine/CoreInitializer/_init_tools_.py``
