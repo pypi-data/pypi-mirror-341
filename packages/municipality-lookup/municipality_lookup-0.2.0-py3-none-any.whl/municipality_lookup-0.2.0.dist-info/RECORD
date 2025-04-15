@@ -1,0 +1,12 @@
+municipality_lookup/__init__.py,sha256=TJ0v2Jr2Q1-dtI1C9XdqDSnwvWVljs1MWMZkNiXfOjc,1758
+municipality_lookup/database.py,sha256=ltSfmHMJqNNK47dMN3H29Om_yuQVpOw-B6x3blTHiWw,2088
+municipality_lookup/instance.py,sha256=RsOua-czsN4TvHK5fdOBq2S0tsje16fkehZ4eSXZJ5g,471
+municipality_lookup/models.py,sha256=011_4pUfwWcdsGfQpl4bpeLi1o5paeulkK9MRzhLBIk,177
+municipality_lookup/search.py,sha256=6ioJo0zw-flHLxsQE2MFMNxE0yA56cGwOiUhPwvhCA0,1796
+municipality_lookup/utils.py,sha256=KMmZmzqlHyc0wPA2DxLdXCnMA78VQzBT4ctTTy-L4tU,492
+municipality_lookup/data/comuni.csv,sha256=18oVm8TNO_2IInqFkJ8Dlc0EL8eKHcw98oDyz4E2bWI,269457
+municipality_lookup-0.2.0.dist-info/licenses/LICENSE,sha256=3ghjL-QICiOAxlfHNd0er7EhArmhxdRyUFlI-ULMdOI,1093
+municipality_lookup-0.2.0.dist-info/METADATA,sha256=U9BTf7-hV0GpeHcGgsrRDK_JibYh2nYvMBQRVLFDHpE,4061
+municipality_lookup-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+municipality_lookup-0.2.0.dist-info/top_level.txt,sha256=XNxDrQWZL7a4NMilUtNpDSLXch5dWAwz1zNkelcmNk8,20
+municipality_lookup-0.2.0.dist-info/RECORD,,
