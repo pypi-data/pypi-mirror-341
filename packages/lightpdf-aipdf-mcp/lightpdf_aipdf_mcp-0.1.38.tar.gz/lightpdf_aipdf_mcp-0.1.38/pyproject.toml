@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lightpdf-aipdf-mcp"
+version = "0.1.38"
+description = "MCP Server for LightPDF AI-PDF"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "Proprietary" }
+authors = [
+    {name = "LightPDF Team"}
+]
+dependencies = [
+    "mcp>=1.6.0",
+    "httpx>=0.28.1",
+    "httpx-sse>=0.4.0",
+    "python-dotenv>=1.1.0",
+    "uvicorn>=0.34.0",
+    "pydantic>=2.11.2",
+    "pydantic-settings>=2.8.1",
+]
+
+[project.scripts]
+lightpdf-aipdf-mcp = "lightpdf_aipdf_mcp:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lightpdf_aipdf_mcp"]
+
+[tool.hatch.build]
+exclude = ["docs/", "__pycache__/", "publish.sh", "run.py", ".env", ".gitignore"]
