@@ -1,0 +1,16 @@
+pyplaces/__about__.py,sha256=D_WW6K0MZy9R8YgkmZHtl612V21X8wEcdJf3UXriQUM,120
+pyplaces/__init__.py,sha256=77LZFWGi1R3TTF0KrWKqcrtjVhIaN2vpf_z0syNNh8U,685
+pyplaces/_conversion_utils.py,sha256=kMpIV8BEyBAcw0RP0tFpF3-fxSYLK74T_TEH8pZkWYU,973
+pyplaces/_errors.py,sha256=tfAFszJZZJvZsclGnoBVniearcCkG_iRKbmEelw0Y5E,337
+pyplaces/_geo_utils.py,sha256=5JizsIdgGSxZ5xcW9RAmNhQGkva0voU9YITpFhIOaUM,2710
+pyplaces/_io_utils.py,sha256=WeQ9jqAxVj8Y196UHe7rXVW7UqFF-d5p1o4xfVbUjgU,8032
+pyplaces/_utils.py,sha256=YsWQ5jqrUDjy7feRw6TT9T90AeF5jDsMSHEy7EqBPmQ,6507
+pyplaces/foursquare_open_places.py,sha256=xhfHfa4hxR_MxzpjpqiQZT97m75ntlNYGnhyWHewcpU,7999
+pyplaces/overture_maps.py,sha256=GuXMbjo8KYoZVqNSO7VU65GK779TfI47SPw0fV-RWWQ,19719
+pyplaces/releases/foursquare/releases.txt,sha256=ZmcRAiTFNOgKY4MAbQ5c4zCavURWCI5SUMbmOdNNEYc,75
+pyplaces/releases/overture/base_types.txt,sha256=BGJX_2zFzwij9qyIGJaB15gX1k-9qwq6KM3JLFNlaSI,92
+pyplaces/releases/overture/releases.txt,sha256=y6YCvaoehUHepDmgEbOoPGSMzDyudF_MUHGHGndW-KA,349
+pyplaces-0.1.2.dist-info/METADATA,sha256=0C5RIki1nJZidNPoGDdI6ZQ6G4NyP252yLDLZON2G9w,3253
+pyplaces-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pyplaces-0.1.2.dist-info/licenses/LICENSE.txt,sha256=ml3ppt0vuYLv06H1m0pwwp9sonf3vpyTMItMN5C9fF0,1071
+pyplaces-0.1.2.dist-info/RECORD,,
