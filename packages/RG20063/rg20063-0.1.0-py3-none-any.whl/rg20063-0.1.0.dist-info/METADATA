@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: RG20063
+Version: 0.1.0
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales
+Home-page: https://github.com/GerardoGodoy/RG20063.git
+Author: Gerardo
+Author-email: rg20063@ues.edu.sv
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# RG20063
+
+Librería en Python para resolver sistemas de ecuaciones lineales y no lineales utilizando diversos métodos numéricos.
+
+## Métodos implementados:
+
+- Eliminación de Gauss
+- Gauss-Jordan
+- Cramer
+- Descomposición LU
+- Jacobi
+- Gauss-Seidel
+- Bisección
+
+## Instalación
+
+Para instalar la librería, usa pip:
+
+```bash
+pip install RG20063
