@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=65.5.0", "wheel", "setuptools-scm", "numpy"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "natMEEG"
+dynamic = ["version"]
+description = "A library to process M/EEG data with a set of utility functions with a framework focused on continuous recordings and naturalistic stimuli."
+authors = [
+  {name = "Hugo Weissbart", email = "hugo.weissbart@donders.ru.nl"}
+]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+keywords = ["EEG", "neuroscience", "signal processing"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research"
+]
+dependencies = [
+    "numpy>=1.21.0",      
+    "scipy>=1.7.0",       
+    "scikit-learn>=1.0.0",
+    "pandas>=1.3.0",      
+    "matplotlib>=3.4.0",  
+    "h5py>=3.3.0",        
+    "psutil>=5.8.0",      
+    "tqdm>=4.62.0"        
+]
+
+[project.urls]
+Homepage = "https://github.com/Hugo-W/pyEEG"
+Documentation = "https://hugo-w.github.io/pyEEG-docs/"
+Repository = "https://github.com/Hugo-W/pyEEG"
+Issues = "https://github.com/Hugo-W/pyEEG/issues"
+
+# C Extensions
+# Setup hook does not work for now.
+# Still using a minmal setup.py to build the C extensions.
+# [tool.setuptools]
+# ext-modules = [
+#   {name = "pyeeg.bin.gammatone_c", sources = ["pyeeg/gammatone_c/gammatone_c.c"]},
+#   {name = "pyeeg.bin.makeRateMap_c", sources = ["pyeeg/gammatone_c/makeRateMap_c.c"]},
+# ]
+# setup-hooks = ["setup_hooks.numpy_includes"]
+
+[tool.setuptools.packages.find]
+where = ["pyeeg"]
+include = ["pyeeg.bin"] 
+exclude = ["tests", "docs", "*.egg-info", "build", "dist"]
+
+[tool.setuptools]
+package-dir = {"" = "pyeeg"}
+
+# This allows you to use `pip install .[docs]` to install optional dependencies.
+[project.optional-dependencies]
+mne = ["mne"]
+docs = ["sphinx", "sphinx-rtd-theme", "nbsphinx"]
+full = ["mne", "sphinx", "sphinx-rtd-theme", "nbsphinx"]
+
+[tool.setuptools.package-data]
+pyeeg = ["examples/*.ipynb", "pyeeg/bin/*dll", "pyeeg/bin/*so", "pyeeg/bin/*dylib"]
+
+[tool.setuptools_scm]
+write_to = "pyeeg/version.py"
+local_scheme = "no-local-version"
