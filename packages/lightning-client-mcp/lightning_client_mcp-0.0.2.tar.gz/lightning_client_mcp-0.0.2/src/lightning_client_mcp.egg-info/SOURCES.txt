@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/lightning_client/__init__.py
+src/lightning_client/client.py
+src/lightning_client/lightning_pb2.py
+src/lightning_client/lightning_pb2_grpc.py
+src/lightning_client_mcp.egg-info/PKG-INFO
+src/lightning_client_mcp.egg-info/SOURCES.txt
+src/lightning_client_mcp.egg-info/dependency_links.txt
+src/lightning_client_mcp.egg-info/requires.txt
+src/lightning_client_mcp.egg-info/top_level.txt
