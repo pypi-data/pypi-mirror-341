@@ -1,0 +1,4 @@
+emoji_data_python>=1.6.0
+requests>=2.32.0
+pillow>=11.2.1
+numpy>=2.2.4
