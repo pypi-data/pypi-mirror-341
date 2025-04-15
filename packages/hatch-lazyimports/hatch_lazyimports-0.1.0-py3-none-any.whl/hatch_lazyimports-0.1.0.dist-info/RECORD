@@ -1,0 +1,8 @@
+hatch_lazyimports/__init__.py,sha256=n0oj7DJxiENVMZQZmOM17e3lC_hwWmcwR4eP1YRqNP8,48
+hatch_lazyimports/hooks.py,sha256=t88DXgKetOpozxQv5wObBRXU7eCu4Gc_9AYDzOzm5ZQ,221
+hatch_lazyimports/lazyimports_hook.py,sha256=Jnc9Qr6xTD5IG8-1mHfRGyLUk3IsI8YqYWc6olzulWo,1127
+hatch_lazyimports/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hatch_lazyimports-0.1.0.dist-info/METADATA,sha256=YFTV_ITBQ7Du7x0vTUjuNxNpqawKtN7_R_nlLGELcH0,2116
+hatch_lazyimports-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+hatch_lazyimports-0.1.0.dist-info/entry_points.txt,sha256=rSP3p4IQA0_BRWKteg6TnNJDxNSnmC2oTcNPI7-yhIQ,46
+hatch_lazyimports-0.1.0.dist-info/RECORD,,
