@@ -1,0 +1,8 @@
+# Including files as meticulously as Boaz organizes his chess pieces
+
+include LICENSE
+include README.md
+global-exclude *.py[cod] __pycache__ *.so
+
+# Excluding files that even Boaz would consider unnecessary
+exclude secret_boaz_facts.txt 
