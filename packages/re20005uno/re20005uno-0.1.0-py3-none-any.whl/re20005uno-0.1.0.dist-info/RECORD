@@ -1,0 +1,13 @@
+RE20005uno/__init__.py,sha256=zS-PcGxrtqSEP426IVYRVkskEN-r2gWLRRD8shhSS5Y,242
+RE20005uno/bisection.py,sha256=gv3HulaVL_AmEKbjbD9ynW848hJpkotWXcqVon2fIi4,645
+RE20005uno/cramer.py,sha256=pK156SoNuflxaTS6RbjF2agyH13OqpuxqOJWcyY5PBE,865
+RE20005uno/gauss.py,sha256=v8Ku6drtCM4V9l2o33vQSTu2sjYhl2Rnl8cqnOHRwzA,473
+RE20005uno/gauss_jordan.py,sha256=wT_hWA6h70w7O9n1bhZseeZHTKIUxLiN3p6K-Kqabxc,517
+RE20005uno/gauss_seidel.py,sha256=yC93_Gv0xeoNXru6Rwcep7g8T5k1VSlirpdfk__w9kU,735
+RE20005uno/jacobi.py,sha256=6h83oJGwAvheWWDlO8xeKxylrIb5jz1OHYvZGlhLHqw,703
+RE20005uno/lu.py,sha256=tRlIP5CSd2H13jSNbf1rWq0imZbFFfsb2M3dlxoV1Ew,931
+re20005uno-0.1.0.dist-info/licenses/LICENSE,sha256=a99mtb8qROZYvqLuhmlasVCgbmAL9nzVzOJFrVSWLGE,3
+re20005uno-0.1.0.dist-info/METADATA,sha256=bj-KEGE2mBR7hdamwo4Q9gODZUD21LizUDDZm9y0RDg,783
+re20005uno-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+re20005uno-0.1.0.dist-info/top_level.txt,sha256=Of9IulpDrYeSDKNN3Svpuwq8PMOpN-343q9oW6GttIw,11
+re20005uno-0.1.0.dist-info/RECORD,,
