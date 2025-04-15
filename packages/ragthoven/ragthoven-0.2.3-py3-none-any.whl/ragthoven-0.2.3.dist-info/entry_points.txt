@@ -1,0 +1,3 @@
+[console_scripts]
+ragthoven=ragthoven.standalone:app
+
