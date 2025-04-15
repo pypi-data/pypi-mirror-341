@@ -1,0 +1,12 @@
+CDA_corto1/Ecuaciones_lineales.py,sha256=wy0yKnjpXKxe7EOSOk7AWc3WKos-_c1gqdE-ggYDpIw,4481
+CDA_corto1/Ecuaciones_no_lineales.py,sha256=oiEfhqgNHUjyHgjnbRl1rg24MMmGa4UwE2D8GYBF7w4,768
+CDA_corto1/__init__.py,sha256=TVWBuWaDxKvp6WMBeilCtbT_wOZVCbTJhQDhf1mDMBo,347
+CDA_corto1/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cda_corto1-0.1.1.dist-info/licenses/LICENSE,sha256=HEBsVugNwOvNQ4X_Hd9IFN3CBLYVYTVPDn8jNEgOpzo,80
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_lineal.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_nolinear.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cda_corto1-0.1.1.dist-info/METADATA,sha256=2LzwEi8LvMuyc00krCOCeeMbnX2WeFkz5jcNF1fbTP4,1125
+cda_corto1-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+cda_corto1-0.1.1.dist-info/top_level.txt,sha256=-yjYNOq5oeC0sV7RDCvfn74PSGInWec8t-W8X2kxPr4,17
+cda_corto1-0.1.1.dist-info/RECORD,,
