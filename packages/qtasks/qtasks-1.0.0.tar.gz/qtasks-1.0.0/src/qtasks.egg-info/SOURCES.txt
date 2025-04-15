@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/qtasks/__init__.py
+src/qtasks/__main__.py
+src/qtasks/qtasks.py
+src/qtasks.egg-info/PKG-INFO
+src/qtasks.egg-info/SOURCES.txt
+src/qtasks.egg-info/dependency_links.txt
+src/qtasks.egg-info/requires.txt
+src/qtasks.egg-info/top_level.txt
+tests/test_async_task.py
+tests/test_sync_task.py
