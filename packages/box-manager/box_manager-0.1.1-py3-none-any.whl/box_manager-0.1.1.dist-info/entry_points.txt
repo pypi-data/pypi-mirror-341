@@ -1,0 +1,2 @@
+[console_scripts]
+box-manager = box_manager.cli:cli
