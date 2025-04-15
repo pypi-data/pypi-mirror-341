@@ -1,0 +1,5 @@
+pyudev
+pyserial
+pysnmp
+python-vxi11
+pyhubctl

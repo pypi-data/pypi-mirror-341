@@ -1,0 +1,3 @@
+[console_scripts]
+pdu = yinstruments.pdu.cli:main
+usb_power = yinstruments.usb_power:cli
