@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/orjsonic/__init__.py
+src/orjsonic/orjsonic.py
+src/orjsonic.egg-info/PKG-INFO
+src/orjsonic.egg-info/SOURCES.txt
+src/orjsonic.egg-info/dependency_links.txt
+src/orjsonic.egg-info/requires.txt
+src/orjsonic.egg-info/top_level.txt
+tests/test_basic.py
