@@ -1,0 +1,11 @@
+flask==3.0.0
+flask-cors==5.0.1
+werkzeug==3.0.1
+crewai[tools]==0.100.0
+crewai==0.100.0
+xmltodict
+requests
+cfenv
+
+[test]
+pytest

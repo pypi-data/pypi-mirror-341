@@ -1,0 +1,33 @@
+[project]
+name = "agentic-ai-vass-tools"
+version = "0.4"
+description = "provide SAP agentic AI tools"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name = "Emanuele Dalessandro"}]
+license = "Apache-2.0"
+classifiers = []
+dependencies = [
+    "flask==3.0.0",
+    "flask-cors==5.0.1",
+    "werkzeug==3.0.1",
+    "crewai[tools]==0.100.0",
+    "crewai==0.100.0",
+    "xmltodict",
+    "requests",
+    "cfenv",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/emadal95/agentic-ai-vass-tools"
+Changelog = "https://github.com/emadal95/agentic-ai-vass-tools/releases"
+Issues = "https://github.com/emadal95/agentic-ai-vass-tools/issues"
+CI = "https://github.com/emadal95/agentic-ai-vass-tools/actions"
+
+
+[project.optional-dependencies]
+test = ["pytest"]

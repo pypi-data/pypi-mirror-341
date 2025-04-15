@@ -1,0 +1,60 @@
+Metadata-Version: 2.4
+Name: agentic-ai-vass-tools
+Version: 0.4
+Summary: provide SAP agentic AI tools
+Author: Emanuele Dalessandro
+License-Expression: Apache-2.0
+Project-URL: Homepage, https://github.com/emadal95/agentic-ai-vass-tools
+Project-URL: Changelog, https://github.com/emadal95/agentic-ai-vass-tools/releases
+Project-URL: Issues, https://github.com/emadal95/agentic-ai-vass-tools/issues
+Project-URL: CI, https://github.com/emadal95/agentic-ai-vass-tools/actions
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask==3.0.0
+Requires-Dist: flask-cors==5.0.1
+Requires-Dist: werkzeug==3.0.1
+Requires-Dist: crewai[tools]==0.100.0
+Requires-Dist: crewai==0.100.0
+Requires-Dist: xmltodict
+Requires-Dist: requests
+Requires-Dist: cfenv
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Dynamic: license-file
+
+# agentic-ai-vass-tools
+
+[![PyPI](https://img.shields.io/pypi/v/agentic-ai-vass-tools.svg)](https://pypi.org/project/agentic-ai-vass-tools/)
+[![Tests](https://github.com/emadal95/agentic-ai-vass-tools/actions/workflows/test.yml/badge.svg)](https://github.com/emadal95/agentic-ai-vass-tools/actions/workflows/test.yml)
+[![Changelog](https://img.shields.io/github/v/release/emadal95/agentic-ai-vass-tools?include_prereleases&label=changelog)](https://github.com/emadal95/agentic-ai-vass-tools/releases)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/emadal95/agentic-ai-vass-tools/blob/main/LICENSE)
+
+provide SAP agentic AI tools
+
+## Installation
+
+Install this library using `pip`:
+```bash
+pip install agentic-ai-vass-tools
+```
+## Usage
+
+Usage instructions go here.
+
+## Development
+
+To contribute to this library, first checkout the code. Then create a new virtual environment:
+```bash
+cd agentic-ai-vass-tools
+python -m venv venv
+source venv/bin/activate
+```
+Now install the dependencies and test dependencies:
+```bash
+python -m pip install -e '.[test]'
+```
+To run the tests:
+```bash
+python -m pytest
+```
