@@ -1,0 +1,64 @@
+Metadata-Version: 2.4
+Name: ozschoolbreaks
+Version: 0.4.0
+Summary: A package to get school break dates for Australian states
+Project-URL: Homepage, https://github.com/adham/ozschoolbreaks
+Project-URL: Repository, https://github.com/adham/ozschoolbreaks
+Author-email: Adham Beyki <adhambeyki@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 Your Name
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: pyyaml>=6.0.1
+Description-Content-Type: text/markdown
+
+# ozschoolbreaks
+
+A Python package to get school break dates for Australian states.
+
+## Installation
+```bash
+pip install ozschoolbreaks
+```
+
+## How to Use
+```python
+from ozschoolbreaks import get_breaks
+
+# breaks for a specific year
+breaks = get_breaks(state="NSW", years=2023)
+
+# breaks for multiple years
+breaks = get_breaks(state="NSW", years=[2023, 2024])
+
+# Print the breaks
+for break_period in breaks:
+    print(f"{break_period.start} to {break_period.end}")
+```
+
+- [x] Pass a range of years instead of one year
+
+## Notes
+- All start and end dates are **inclusive**.
