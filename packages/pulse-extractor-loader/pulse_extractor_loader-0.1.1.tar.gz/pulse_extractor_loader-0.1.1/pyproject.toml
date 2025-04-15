@@ -1,0 +1,39 @@
+[project]
+name = "pulse-extractor-loader"
+version = "0.1.1"
+description = """
+Projeto focado em criar scripts de extracão de dados de diversos tipos de sistemas externos e efetuar
+a insercão desses dados em formato parquet no Azure Data Lake Gen2
+"""
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "adlfs>=2024.12.0",
+    "polars>=1.21.0",
+    "psycopg2-binary>=2.9.10",
+    "pymongo>=3",
+    "pymongoarrow>=1.6.4",
+    "pymssql>=2.3.2",
+    "python-dotenv>=1.0.1",
+    "sqlalchemy>=2.0.37",
+    "sqlparse>=0.5.3",
+    "typer>=0.15.1",
+]
+
+[project.scripts]
+mongo_to_az = "pulseel.pipelines.mongo_to_az:mongo_to_az"
+
+[dependency-groups]
+dev = [
+    "artifacts-keyring>=0.4.0",
+    "ipython>=8.31.0",
+    "keyring>=25.6.0",
+    "pre-commit>=4.1.0",
+    "pytest>=8.3.4",
+    "testcontainers[azurite]>=4.9.1",
+]
+
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
