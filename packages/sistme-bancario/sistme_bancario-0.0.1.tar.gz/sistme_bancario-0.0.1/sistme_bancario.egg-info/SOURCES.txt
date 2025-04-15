@@ -1,0 +1,9 @@
+README.md
+setup.py
+package_name/__init__.py
+package_name/module1_name/__init__.py
+package_name/module1_name/main.py
+sistme_bancario.egg-info/PKG-INFO
+sistme_bancario.egg-info/SOURCES.txt
+sistme_bancario.egg-info/dependency_links.txt
+sistme_bancario.egg-info/top_level.txt
