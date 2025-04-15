@@ -1,0 +1,3 @@
+[console_scripts]
+boaz-daemon = random_compliments.daemon_cli:main
+compliment = random_compliments.cli:main
