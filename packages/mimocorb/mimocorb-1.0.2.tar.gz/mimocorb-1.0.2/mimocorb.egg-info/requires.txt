@@ -1,0 +1,7 @@
+NumPy
+Scipy
+Pandas
+pyarrow
+matplotlib
+pyyaml
+tk
