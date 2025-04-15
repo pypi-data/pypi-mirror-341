@@ -1,0 +1,76 @@
+"""Test classmethods."""
+
+from tests import PROGRAM
+from tests.integration.base_test import BaseTestDir
+from treestamps.grove import Grovestamps, GrovestampsConfig
+
+__all__ = ()
+
+PROGRAM_NAME = f"{PROGRAM}-tests"
+
+
+class TestCycle(BaseTestDir):
+    """Test classmethods."""
+
+    def _dump(self, config, subpaths):
+        gs = Grovestamps(config)
+
+        times = {}
+        for subpath in subpaths:
+            ts = gs.get(subpath)
+            if not ts:
+                print("No stamp from", subpath)
+            assert ts
+
+            names = (
+                "testname",
+                "test: name",
+                "test/name",
+                "Edgar Rice Burroughs/Tarzan of the Apes: Three Complete Nivels.epub",
+            )
+
+            for name in names:
+                path = subpath / name
+                times[path] = ts.set(path)
+
+        gs.dump()
+        return times
+
+    def _load(self, config, subpaths, times):
+        print(config)
+        gs = Grovestamps(config)
+
+        for subpath in subpaths:
+            ts = gs.get(subpath)
+            if not ts:
+                print("No stamp from", subpath, ts)
+            assert ts
+
+            for path, stamp in times.items():
+                if not path.is_relative_to(subpath):
+                    continue
+                loaded_stamp = ts.get(path)
+                if stamp != loaded_stamp:
+                    print("stamp mismatch:", stamp, "!=", loaded_stamp)
+                    print(path, "ts._timestamps", ts._timestamps)
+                assert stamp == loaded_stamp
+
+    def test_set_dump_load_get(self):
+        """Test it all."""
+        # Make subdirs
+        subdirs = ("a", "b", "c")
+        subpaths = []
+        for subdir in subdirs:
+            subpath = self.TMP_ROOT / subdir
+            subpath.mkdir()
+            subpaths.append(subpath)
+
+        config = GrovestampsConfig(PROGRAM_NAME, paths=subpaths, verbose=10)
+
+        times = self._dump(config, subpaths)
+
+        for subpath in subpaths:
+            stamp_path = subpath / f".{PROGRAM_NAME}_treestamps.yaml"
+            assert stamp_path.exists()
+
+        self._load(config, subpaths, times)
