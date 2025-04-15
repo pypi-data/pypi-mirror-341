@@ -1,0 +1,11 @@
+app/__init__.py,sha256=XNtX-rNicXWsGGsuJ9qsAwjwyjlP4jHrY-gnGwaCG2I,70
+app/dosya/__init__.py,sha256=bBDhhGSxgBoRPToeepM7oJULTkD2S1OjWuDDFUtK2tc,61
+app/dosya/depremler.py,sha256=eZXNBknlHYtbpjHVKg-AqYXOKeFha0zdURRU58CjxRc,2125
+app/dosya/tarih.py,sha256=Kap13B7lD2crLuyM45KtRFzoOLVqg9_NNAkEF_c7I8o,849
+app/internet/__init__.py,sha256=E23tiQy_tzebbP8_SgrEB37ZVSWGQPUJ7ccDgLJ4lCI,58
+app/internet/baglanti.py,sha256=Hd9ufaKQXGHasKogs9uTjTRjTGbE9dOAkrt24iKgJAY,1042
+son_depremler_afad_api-1.1.2.dist-info/licenses/LICENCE,sha256=aMFJwln_EeRULZ07uXH47DoReUjDds9rx_zieTQLSpM,1085
+son_depremler_afad_api-1.1.2.dist-info/METADATA,sha256=ghmgKVccF9LtLqyqUzjgYSfE3pY1vnmdP3smBLQUTzU,3180
+son_depremler_afad_api-1.1.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+son_depremler_afad_api-1.1.2.dist-info/top_level.txt,sha256=io9g7LCbfmTG1SFKgEOGXmCFB9uMP2H5lerm0HiHWQE,4
+son_depremler_afad_api-1.1.2.dist-info/RECORD,,
