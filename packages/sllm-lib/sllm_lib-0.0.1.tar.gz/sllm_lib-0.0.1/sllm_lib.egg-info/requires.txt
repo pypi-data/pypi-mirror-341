@@ -1,0 +1,5 @@
+numpy
+transformers
+platformdirs
+tqdm
+pybind11
