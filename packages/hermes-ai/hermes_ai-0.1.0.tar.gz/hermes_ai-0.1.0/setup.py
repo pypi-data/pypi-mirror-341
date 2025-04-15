@@ -1,0 +1,37 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="hermes-ai",
+    version="0.1.0",
+    packages=find_packages(),
+    install_requires=[
+        "click==8.1.7",
+        "joblib==1.4.2",
+        "nltk==3.9.1",
+        "numpy==1.24.4",
+        "pandas==2.0.3",
+        "python-dateutil==2.9.0.post0",
+        "pytz==2024.2",
+        "regex==2024.11.6",
+        "scikit-learn==1.3.2",
+        "scipy==1.10.1",
+        "six==1.16.0",
+        "threadpoolctl==3.5.0",
+        "tqdm==4.67.0",
+        "tzdata==2024.2",
+        "pytest==8.2.1",
+        "pytest-watch==4.2.0",
+    ],    
+    author="Jose Ruben Maldonado Herrera",
+    author_email="rub.maler.22@gmail.com",
+    description="A ML model to classify messages, reply and summarize conversations",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/Talos-IA-Lab/hermes",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.6",
+)
