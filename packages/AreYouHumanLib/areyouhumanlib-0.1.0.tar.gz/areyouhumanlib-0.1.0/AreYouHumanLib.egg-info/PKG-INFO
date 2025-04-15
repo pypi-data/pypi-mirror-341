@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: AreYouHumanLib
+Version: 0.1.0
+Summary: test
+Author-email: Andrzej <andrzej.krajnow1337@gmail.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: emoji_data_python>=1.6.0
+Requires-Dist: requests>=2.32.0
+Requires-Dist: pillow>=11.2.1
+Requires-Dist: numpy>=2.2.4
+
+*hi*
