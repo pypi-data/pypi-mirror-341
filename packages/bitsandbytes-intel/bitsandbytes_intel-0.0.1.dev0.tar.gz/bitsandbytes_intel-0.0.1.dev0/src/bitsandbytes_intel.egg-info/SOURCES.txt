@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/bitsandbytes_intel/__init__.py
+src/bitsandbytes_intel/__main__.py
+src/bitsandbytes_intel/cpu_xpu_common.py
+src/bitsandbytes_intel/ops.py
+src/bitsandbytes_intel.egg-info/PKG-INFO
+src/bitsandbytes_intel.egg-info/SOURCES.txt
+src/bitsandbytes_intel.egg-info/dependency_links.txt
+src/bitsandbytes_intel.egg-info/entry_points.txt
+src/bitsandbytes_intel.egg-info/requires.txt
+src/bitsandbytes_intel.egg-info/top_level.txt
