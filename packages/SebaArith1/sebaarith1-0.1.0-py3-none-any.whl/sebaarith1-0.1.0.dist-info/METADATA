@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: SebaArith1
+Version: 0.1.0
+Summary: A simple arithmetic package
+Author: Antony Seba
+Author-email: sebaantony.phd201002@iiitkottayam.ac.in
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+#SebaArith1
+
+**SebaArith1** is a simple package
+
+---
+
+you can install this package directly from PyPI
+
+pip install SebaArith1
