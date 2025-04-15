@@ -1,0 +1,43 @@
+Metadata-Version: 2.2
+Name: cyborgdb-lite
+Version: 0.9.2
+Summary: Evaluation Version of CyborgDB: The Confidential Vector Database
+Author: Cyborg Inc.
+License: Proprietary
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: C++
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Libraries
+Project-URL: Homepage, https://www.cyborg.co
+Project-URL: Documentation, https://docs.cyborg.co
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# CyborgDB
+
+The Confidential Vector DB
+
+## Developing with Mamba Environments
+
+We have three pre-set `mamba` environments available:
+
+- `py311` -> Python 3.11
+- `py312` -> Python 3.12
+- `py313` -> Python 3.13
+
+To create and activate one of these, run the following command (set the correct name in place of `py312`):
+
+```
+mamba env create -f mamba-py312.yml
+conda activate py312
+```
