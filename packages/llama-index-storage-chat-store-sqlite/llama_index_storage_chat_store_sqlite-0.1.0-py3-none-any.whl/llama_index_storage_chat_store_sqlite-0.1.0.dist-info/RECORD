@@ -1,0 +1,6 @@
+llama_index/storage/chat_store/sqlite/__init__.py,sha256=JnkPPh_aFCoreBp_c0J-UWrquOchcRmSF0PWXIJVWKY,102
+llama_index/storage/chat_store/sqlite/base.py,sha256=nujiBPWuwzzYAOc_z73SJ4zzxrdEhEMJXTq9E7_n08A,11349
+llama_index_storage_chat_store_sqlite-0.1.0.dist-info/LICENSE,sha256=JPQLUZD9rKvCTdu192Nk0V5PAwklIg6jANii3UmTyMs,1065
+llama_index_storage_chat_store_sqlite-0.1.0.dist-info/METADATA,sha256=JWs1Vylm2uVEslEKh8teGoWtj44jHNOPyQME_3oo4CY,1298
+llama_index_storage_chat_store_sqlite-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_storage_chat_store_sqlite-0.1.0.dist-info/RECORD,,
