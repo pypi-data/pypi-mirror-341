@@ -1,0 +1,2 @@
+[hatch]
+pex = hatch_pex.hooks
