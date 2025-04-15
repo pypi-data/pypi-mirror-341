@@ -1,0 +1,2 @@
+dist
+unity_app_generator
