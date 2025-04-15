@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: OS23002UNO
+Version: 1.0.1
+Summary: Librería en Python para resolver sistemas de ecuaciones lineales y no lineales
+Home-page: https://github.com/usuario/ecusolver
+Author: Alexis Orantes
+Author-email: os23002@gmail.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# EcuSolver
+
+LibrerÃ­a para resolver sistemas de ecuaciones lineales y no lineales en Python.

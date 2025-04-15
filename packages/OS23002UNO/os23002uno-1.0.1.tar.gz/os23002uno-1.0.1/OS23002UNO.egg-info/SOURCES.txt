@@ -1,0 +1,10 @@
+README.md
+setup.py
+OS23002UNO.egg-info/PKG-INFO
+OS23002UNO.egg-info/SOURCES.txt
+OS23002UNO.egg-info/dependency_links.txt
+OS23002UNO.egg-info/requires.txt
+OS23002UNO.egg-info/top_level.txt
+ecusolver/__init__.py
+ecusolver/lineales.py
+ecusolver/no_lineales.py
