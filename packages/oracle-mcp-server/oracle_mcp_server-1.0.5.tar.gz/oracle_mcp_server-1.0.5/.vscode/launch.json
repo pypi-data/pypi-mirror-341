@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MCP Oracle Server (Debug)",
+            "type": "python",
+            "request": "launch",
+            "module": "oracle_mcp_server",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src",
+                "ORACLE_CONNECTION_STRING": "${env:ORACLE_CONNECTION_STRING}",
+                "ORACLE_HOME": "${env:ORACLE_HOME}"
+            }
+        },
+        {
+            "name": "MCP Oracle Server (Dev Mode)",
+            "type": "python",
+            "request": "launch",
+            "module": "oracle_mcp_server",
+            "args": ["dev"],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src",
+                "ORACLE_CONNECTION_STRING": "${env:ORACLE_CONNECTION_STRING}",
+                "ORACLE_HOME": "${env:ORACLE_HOME}"
+            }
+        }
+    ]
+} 
