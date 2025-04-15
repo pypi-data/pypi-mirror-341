@@ -1,0 +1,9 @@
+murphet/__init__.py,sha256=b8_KJBxNxqGZ5Gt8blGzWJID5DRv1VNmb_wLO58V_p4,146
+murphet/churn_model.py,sha256=S3WewmD8bYUoyYRn_YjiwF6SYykL_kzDOPLlu59pL7M,5732
+murphet/model.stan,sha256=Q_XCZzRxPr2Y_fwD3nbGEHCUR6IhP--D5Ms6vaozfPU,2950
+murphet/seasonality.py,sha256=t4aHxhB2oREOxknGqNX925VLZu2Gifu0LFsXPAezo2k,783
+murphet-0.1.3.dist-info/licenses/LICENSE,sha256=2focLLYxeXwHECue_F89Pt_DR_FFf_jesHblC9zQpfo,1071
+murphet-0.1.3.dist-info/METADATA,sha256=pjdttmrXx420rl2I-DX-Cst0Dkv-7qRqLZnqTCkiN9Q,2797
+murphet-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+murphet-0.1.3.dist-info/top_level.txt,sha256=7sT0pMQ20urUowcgXFRoAYQWiGcdEeYLtNEtNHMFyK0,8
+murphet-0.1.3.dist-info/RECORD,,
