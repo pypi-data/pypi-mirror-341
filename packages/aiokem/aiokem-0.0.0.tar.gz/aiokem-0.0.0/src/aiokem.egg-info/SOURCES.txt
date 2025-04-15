@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/aiokem/__init__.py
+src/aiokem/main.py
+src/aiokem/py.typed
+src/aiokem.egg-info/PKG-INFO
+src/aiokem.egg-info/SOURCES.txt
+src/aiokem.egg-info/dependency_links.txt
+src/aiokem.egg-info/top_level.txt
+tests/test_main.py
