@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-0609841d69626423b2c7385baea7b82d"}, "mark": {"type": "bar"}, "encoding": {"tooltip": [{"field": "task_name", "type": "nominal"}, {"field": "duration", "type": "quantitative"}], "x": {"field": "start_time", "title": "Time", "type": "temporal"}, "x2": {"field": "end_time"}, "y": {"field": "task_name", "sort": {"field": "start_time", "order": "ascending"}, "title": "Task", "type": "nominal"}}, "height": 400, "title": "Task Timeline", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-0609841d69626423b2c7385baea7b82d": [{"task_name": "main_0", "start_time": "2025-02-01T20:21:59.984927+00:00", "end_time": "2025-02-01T20:22:06.514988+00:00", "duration": 6.530065041035414}, {"task_name": "main_doit_0", "start_time": "2025-02-01T20:22:00.488631+00:00", "end_time": "2025-02-01T20:22:03.504744+00:00", "duration": 3.016112749930471}, {"task_name": "doit_load_data_0", "start_time": "2025-02-01T20:22:00.988823+00:00", "end_time": "2025-02-01T20:22:01.994031+00:00", "duration": 1.0050981668755412}, {"task_name": "doit_load_data_1", "start_time": "2025-02-01T20:22:01.994135+00:00", "end_time": "2025-02-01T20:22:02.999307+00:00", "duration": 1.0050911656580865}, {"task_name": "doit_merge_0", "start_time": "2025-02-01T20:22:02.999416+00:00", "end_time": "2025-02-01T20:22:03.504660+00:00", "duration": 0.5051431250758469}, {"task_name": "main_doit_1", "start_time": "2025-02-01T20:22:03.504765+00:00", "end_time": "2025-02-01T20:22:06.514977+00:00", "duration": 3.010226749815047}, {"task_name": "doit_load_data_2", "start_time": "2025-02-01T20:22:04.005066+00:00", "end_time": "2025-02-01T20:22:05.009139+00:00", "duration": 1.003998416941613}, {"task_name": "doit_load_data_3", "start_time": "2025-02-01T20:22:05.009204+00:00", "end_time": "2025-02-01T20:22:06.012622+00:00", "duration": 1.003382292110473}, {"task_name": "doit_merge_1", "start_time": "2025-02-01T20:22:06.012671+00:00", "end_time": "2025-02-01T20:22:06.514919+00:00", "duration": 0.5022122911177576}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
