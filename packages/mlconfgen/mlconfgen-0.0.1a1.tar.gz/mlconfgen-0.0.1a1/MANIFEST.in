@@ -1,0 +1,16 @@
+graft src
+
+include README.md
+include LICENSE*
+include pyproject.toml
+
+prune assets
+prune demo_files
+prune web_app
+prune research_scripts
+prune server
+prune onnx_export
+exclude docker-compose.yaml
+exclude *.ipynb
+
+global-exclude *~ *.py[cod]
