@@ -1,0 +1,2 @@
+[console_scripts]
+mongo_to_az = pulseel.pipelines.mongo_to_az:mongo_to_az
