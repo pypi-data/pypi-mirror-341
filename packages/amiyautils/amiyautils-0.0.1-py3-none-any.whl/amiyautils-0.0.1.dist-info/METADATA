@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: amiyautils
+Version: 0.0.1
+Summary: 一个简单的实用工具库
+Home-page: https://github.com/AmiyaBot/Amiya-Utils
+Author: vivien8261
+Author-email: 826197021@qq.com
+License: MIT Licence
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests ~=2.27.1
+Requires-Dist: zhon ~=1.1.5
+
+# AmiyaUtils
+
+![PyPI](https://img.shields.io/pypi/v/amiyautils)
+
+一个简单的实用工具库
+
+
