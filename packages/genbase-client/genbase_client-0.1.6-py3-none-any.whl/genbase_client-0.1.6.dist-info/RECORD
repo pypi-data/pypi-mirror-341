@@ -1,0 +1,9 @@
+genbase_client-0.1.6.dist-info/METADATA,sha256=oqvcasj9QXVjTy8tRoAJMinEpGpRSuC5wPeq1BMDzZQ,14090
+genbase_client-0.1.6.dist-info/WHEEL,sha256=tSfRZzRHthuv7vxpI4aehrdN9scLjk-dCJkPLzkHxGg,90
+genbase_client-0.1.6.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+genbase_client-0.1.6.dist-info/licenses/LICENSE,sha256=tFSkarx0c083qUZuCwmThJCN7WGlo3vmL_KghqGRi1I,11348
+genbase_client/__init__.py,sha256=BZ6uPTBkoL4JKmv8eRZkBQU4UVYo8NyhKOGHo6nYFqU,475
+genbase_client/agent_run_server.py,sha256=l95Dz3MZg3nqC_QIrj318gHuoJq1gkbKlO0955Fnj4k,9194
+genbase_client/base_agent.py,sha256=tQS8FUH2Rw-UueJzLnk6piNIeJoG0sv8ioma2fW0LN8,47746
+genbase_client/types.py,sha256=fVXtTkgJVNPRBM5FL27m5Wh8XPHAHofiZcegOy9C4J8,3738
+genbase_client-0.1.6.dist-info/RECORD,,
