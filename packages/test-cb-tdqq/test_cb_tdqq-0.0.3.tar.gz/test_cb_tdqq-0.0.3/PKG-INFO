@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: test-cb-tdqq
+Version: 0.0.3
+Summary: Simple test package
+Home-page: https://github.com/yourusername/your-repo
+Author: Thuong Dang, Qiqi Chen
+Author-email: dangtuanthuong@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: torch>=2.4.1
+Requires-Dist: transformers>=4.44.2
+Requires-Dist: sentence-transformers>=3.2.0
+Requires-Dist: faiss-cpu>=1.10.0
+Requires-Dist: rank-bm25>=0.2.2
+Requires-Dist: stop-words==2018.7.23
+Provides-Extra: gpu
+Requires-Dist: faiss-gpu>=1.7.2; extra == "gpu"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
