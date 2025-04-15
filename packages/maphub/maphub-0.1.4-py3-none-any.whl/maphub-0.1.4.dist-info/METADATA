@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: maphub
+Version: 0.1.4
+Summary: A client wrapper for the MapHub API
+Author-email: MapHub <maphub@meteory.eu>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: black>=22.0; extra == "dev"
+Dynamic: license-file
+
+# maphub
+
+## Usage
+
+### Python package
+This example demonstrates how to upload a Map from the local path to a MapHub project with the name `France`.
+```python 
+from maphub import MapHubClient
+
+client = MapHubClient(api_key="your-api-key")
+france_project = client.create_project("France")
+
+client.upload_map(
+    map_name="France Population",
+    project_id=france_project['id'],
+    public=False,
+    path="path/to/GIS/data.gpkg"
+)
+```
+
+### CLI
+Coming soon...
+
