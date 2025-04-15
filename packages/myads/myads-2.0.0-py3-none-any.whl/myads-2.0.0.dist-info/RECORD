@@ -1,0 +1,9 @@
+myads/__init__.py,sha256=ZwTXZQCnAfYQWp_xpSXipaOVC3SkMWO89XMbNZfdeVQ,89
+myads/_version.py,sha256=_7OlQdbVkK4jad0CLdpI0grT-zEAb-qgFmH5mFzDXiA,22
+myads/query.py,sha256=WhA7jCB0pIIhSppoNPbe0ngG_vqdwIHvPqTwJrf7bsw,21721
+myads/scripts/cite_tracker.py,sha256=BApxY0TM3e-ehbvLzR223fZGhKHubUCz0x__3HpwJAE,33327
+myads-2.0.0.dist-info/METADATA,sha256=YqQEfjB7NfxudnCdZhbMuDQenyd7t2Zf9F46yxKho10,5343
+myads-2.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+myads-2.0.0.dist-info/entry_points.txt,sha256=_4GxCz813z1mpwrPFBovDoqjj8O62Xz4xNC12s3RPUc,58
+myads-2.0.0.dist-info/top_level.txt,sha256=uJbsV7RMGXvpnuP0tYc-vbU-ZQ4YEmW6hvJDyu7t8AA,6
+myads-2.0.0.dist-info/RECORD,,
