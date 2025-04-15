@@ -1,0 +1,2 @@
+[console_scripts]
+echo-mcp-server-for-testing = echo_mcp_server_for_testing.main:main
