@@ -1,0 +1,13 @@
+hictkpy/__init__.py,sha256=zS7tQTroxXZHy2wlR046ENuH-kgytILV3WW7vz23j7Y,689
+hictkpy/__init__.pyi,sha256=dIktrBjK7AK33SNHZ_mdbKx3XaKOvAGAchhpk0XvuDk,14164
+hictkpy/_hictkpy.cpython-310-darwin.so,sha256=QJrGfQFXKoDvY94Jhpba5_pSRYnn6-Y5zCx8dRXJCeM,29842240
+hictkpy/cooler.pyi,sha256=oFUGq9ba3NeTgGywSIjjjq_0Md7_wvGiTgqebzASpg4,2852
+hictkpy/hic.pyi,sha256=vJG9irExbRrAKPXRfLcSts6xkVQFwP_994T_AuYVE0o,2620
+hictkpy/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+hictkpy-1.2.0.dist-info/METADATA,sha256=Xf_DStMHpxtJAeMmXWPgWghLUgFu_uInKOvGZ2KFNT8,4085
+hictkpy-1.2.0.dist-info/WHEEL,sha256=QaMxkf5l2NuixoZ6Mj0GN3iuGB-MVJZere9_Te-xhjY,114
+hictkpy-1.2.0.dist-info/licenses/LICENSE,sha256=srS6Zc_-eolVJQBl2VWzpkuKS25A7arJa_z8SABhYdc,1072
+hictkpy-1.2.0.dist-info/licenses/external/licenses/project_options.LICENSE.txt,sha256=2-vSjededWQXxpBtnbaolMBrOAnS06f3CBk-9LNfS8s,1077
+hictkpy-1.2.0.dist-info/licenses/external/licenses/nanobind.LICENSE,sha256=8wUJGk5XgFhwsheijqSx8WYQ7s6EV9I3D4Iqlpa3WDY,1521
+hictkpy-1.2.0.dist-info/licenses/external/licenses/hictk.LICENSE,sha256=srS6Zc_-eolVJQBl2VWzpkuKS25A7arJa_z8SABhYdc,1072
+hictkpy-1.2.0.dist-info/RECORD,,
