@@ -1,0 +1,91 @@
+[project]
+name = "quine"
+version = "0.0.2"
+description = "Quine meta package"
+authors = [{ name = "Hendrik M Halkow", email = "hendrik@halkow.com" }]
+license = { text = "AGPL-3.0-or-later" }
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+
+  "Environment :: Console",
+
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: Information Technology",
+  "Intended Audience :: Science/Research",
+
+  "License :: OSI Approved :: GNU Affero General Public License v3",
+
+  "Natural Language :: English",
+
+  "Operating System :: OS Independent",
+
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.13",
+
+  "Topic :: Software Development :: Assemblers",
+  "Topic :: Software Development :: Build Tools",
+  "Topic :: Software Development :: Compilers",
+  "Topic :: Software Development :: Testing",
+  "Topic :: System :: Boot :: Init",
+  "Topic :: System :: Operating System",
+  "Topic :: Utilities",
+]
+
+[project.urls]
+homepage = "https://quine.build"
+documentation = "https://docs.quine.build"
+repository = "https://github.com/quine-build/quine-meta"
+
+
+[project.optional-dependencies]
+core = ["quine-core>=0.0.0,<2.0.0"]
+cli = ["quine-cli>=0.0.0,<2.0.0"]
+
+target-aarch64 = ["quine-target-aarch64>=0.0.0,<2.0.0"]
+target-riscv64 = ["quine-target-riscv64>=0.0.0,<2.0.0"]
+target-subleq = ["quine-target-subleq>=0.0.0,<2.0.0"]
+target-wasm32 = ["quine-target-wasm32>=0.0.0,<2.0.0"]
+
+runtime-qemu = ["quine-runtime-qemu>=0.0.0,<2.0.0"]
+runtime-uart = ["quine-runtime-uart>=0.0.0,<2.0.0"]
+
+observer-jtag = ["quine-observer-jtag>=0.0.0,<2.0.0"]
+observer-qemu = ["quine-observer-qemu>=0.0.0,<2.0.0"]
+
+bundle-hardware = [
+  "quine-runtime-uart>=0.0.0,<2.0.0",
+  "quine-observer-jtag>=0.0.0,<2.0.0",
+]
+
+bundle-simulator = [
+  "quine-runtime-qemu>=0.0.0,<2.0.0",
+  "quine-observer-qemu>=0.0.0,<2.0.0",
+]
+
+all = [
+  "quine-cli>=0.0.0,<2.0.0",
+  "quine-core>=0.0.0,<2.0.0",
+  "quine-observer-jtag>=0.0.0,<2.0.0",
+  "quine-observer-qemu>=0.0.0,<2.0.0",
+  "quine-runtime-qemu>=0.0.0,<2.0.0",
+  "quine-runtime-uart>=0.0.0,<2.0.0",
+  "quine-target-aarch64>=0.0.0,<2.0.0",
+  "quine-target-riscv64>=0.0.0,<2.0.0",
+  "quine-target-subleq>=0.0.0,<2.0.0",
+  "quine-target-wasm32>=0.0.0,<2.0.0",
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+packages = [
+  { include = "quine", from = "src" }
+]

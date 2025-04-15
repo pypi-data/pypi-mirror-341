@@ -1,0 +1,71 @@
+Metadata-Version: 2.3
+Name: quine
+Version: 0.0.2
+Summary: Quine meta package
+License: AGPL-3.0-or-later
+Author: Hendrik M Halkow
+Author-email: hendrik@halkow.com
+Requires-Python: >=3.13,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Assemblers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: System :: Boot :: Init
+Classifier: Topic :: System :: Operating System
+Classifier: Topic :: Utilities
+Provides-Extra: all
+Provides-Extra: bundle-hardware
+Provides-Extra: bundle-simulator
+Provides-Extra: cli
+Provides-Extra: core
+Provides-Extra: observer-jtag
+Provides-Extra: observer-qemu
+Provides-Extra: runtime-qemu
+Provides-Extra: runtime-uart
+Provides-Extra: target-aarch64
+Provides-Extra: target-riscv64
+Provides-Extra: target-subleq
+Provides-Extra: target-wasm32
+Requires-Dist: quine-cli (>=0.0.0,<2.0.0) ; extra == "all"
+Requires-Dist: quine-cli (>=0.0.0,<2.0.0) ; extra == "cli"
+Requires-Dist: quine-core (>=0.0.0,<2.0.0) ; extra == "all"
+Requires-Dist: quine-core (>=0.0.0,<2.0.0) ; extra == "core"
+Requires-Dist: quine-observer-jtag (>=0.0.0,<2.0.0) ; extra == "all"
+Requires-Dist: quine-observer-jtag (>=0.0.0,<2.0.0) ; extra == "bundle-hardware"
+Requires-Dist: quine-observer-jtag (>=0.0.0,<2.0.0) ; extra == "observer-jtag"
+Requires-Dist: quine-observer-qemu (>=0.0.0,<2.0.0) ; extra == "all"
+Requires-Dist: quine-observer-qemu (>=0.0.0,<2.0.0) ; extra == "bundle-simulator"
+Requires-Dist: quine-observer-qemu (>=0.0.0,<2.0.0) ; extra == "observer-qemu"
+Requires-Dist: quine-runtime-qemu (>=0.0.0,<2.0.0) ; extra == "all"
+Requires-Dist: quine-runtime-qemu (>=0.0.0,<2.0.0) ; extra == "bundle-simulator"
+Requires-Dist: quine-runtime-qemu (>=0.0.0,<2.0.0) ; extra == "runtime-qemu"
+Requires-Dist: quine-runtime-uart (>=0.0.0,<2.0.0) ; extra == "all"
+Requires-Dist: quine-runtime-uart (>=0.0.0,<2.0.0) ; extra == "bundle-hardware"
+Requires-Dist: quine-runtime-uart (>=0.0.0,<2.0.0) ; extra == "runtime-uart"
+Requires-Dist: quine-target-aarch64 (>=0.0.0,<2.0.0) ; extra == "all"
+Requires-Dist: quine-target-aarch64 (>=0.0.0,<2.0.0) ; extra == "target-aarch64"
+Requires-Dist: quine-target-riscv64 (>=0.0.0,<2.0.0) ; extra == "all"
+Requires-Dist: quine-target-riscv64 (>=0.0.0,<2.0.0) ; extra == "target-riscv64"
+Requires-Dist: quine-target-subleq (>=0.0.0,<2.0.0) ; extra == "all"
+Requires-Dist: quine-target-subleq (>=0.0.0,<2.0.0) ; extra == "target-subleq"
+Requires-Dist: quine-target-wasm32 (>=0.0.0,<2.0.0) ; extra == "all"
+Requires-Dist: quine-target-wasm32 (>=0.0.0,<2.0.0) ; extra == "target-wasm32"
+Project-URL: Documentation, https://docs.quine.build
+Project-URL: Homepage, https://quine.build
+Project-URL: Repository, https://github.com/quine-build/quine-meta
+Description-Content-Type: text/markdown
+
+# Quine meta package
+
