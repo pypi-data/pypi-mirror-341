@@ -1,0 +1,72 @@
+[2025-04-15T05:13:21.351229 26488] === CCACHE 4.10.2 STARTED =========================================
+[2025-04-15T05:13:21.351315 26488] Configuration file: C:\Users\JHEFF\AppData\Local\Nuitka\Nuitka\Cache\ccache\ccache.conf
+[2025-04-15T05:13:21.351330 26488] System configuration file: C:\ProgramData\ccache\ccache.conf
+[2025-04-15T05:13:21.351330 26488] Config: (default) absolute_paths_in_stderr = false
+[2025-04-15T05:13:21.351330 26488] Config: (default) base_dir = 
+[2025-04-15T05:13:21.351330 26488] Config: (environment) cache_dir = C:\Users\JHEFF\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2025-04-15T05:13:21.351330 26488] Config: (default) compiler = 
+[2025-04-15T05:13:21.351330 26488] Config: (default) compiler_check = mtime
+[2025-04-15T05:13:21.351330 26488] Config: (default) compiler_type = auto
+[2025-04-15T05:13:21.351330 26488] Config: (default) compression = true
+[2025-04-15T05:13:21.351330 26488] Config: (default) compression_level = 0
+[2025-04-15T05:13:21.351330 26488] Config: (default) cpp_extension = 
+[2025-04-15T05:13:21.351330 26488] Config: (default) debug = false
+[2025-04-15T05:13:21.351330 26488] Config: (default) debug_dir = 
+[2025-04-15T05:13:21.351330 26488] Config: (default) debug_level = 2
+[2025-04-15T05:13:21.351330 26488] Config: (default) depend_mode = false
+[2025-04-15T05:13:21.351330 26488] Config: (default) direct_mode = true
+[2025-04-15T05:13:21.351330 26488] Config: (default) disable = false
+[2025-04-15T05:13:21.351330 26488] Config: (default) extra_files_to_hash = 
+[2025-04-15T05:13:21.351330 26488] Config: (default) file_clone = false
+[2025-04-15T05:13:21.351330 26488] Config: (default) hard_link = false
+[2025-04-15T05:13:21.351330 26488] Config: (default) hash_dir = true
+[2025-04-15T05:13:21.351330 26488] Config: (default) ignore_headers_in_manifest = 
+[2025-04-15T05:13:21.351330 26488] Config: (default) ignore_options = 
+[2025-04-15T05:13:21.351330 26488] Config: (default) inode_cache = false
+[2025-04-15T05:13:21.351330 26488] Config: (default) keep_comments_cpp = false
+[2025-04-15T05:13:21.351330 26488] Config: (environment) log_file = Z:\#Codexis\#Develop\Proyect\@DPJ\dpj\dpj.onefile-build\ccache-27756.txt
+[2025-04-15T05:13:21.351330 26488] Config: (default) max_files = 0
+[2025-04-15T05:13:21.351330 26488] Config: (default) max_size = 5.0 GiB
+[2025-04-15T05:13:21.351330 26488] Config: (default) msvc_dep_prefix = Note: including file:
+[2025-04-15T05:13:21.351330 26488] Config: (default) namespace = 
+[2025-04-15T05:13:21.351330 26488] Config: (default) path = 
+[2025-04-15T05:13:21.351330 26488] Config: (default) pch_external_checksum = false
+[2025-04-15T05:13:21.351330 26488] Config: (default) prefix_command = 
+[2025-04-15T05:13:21.351330 26488] Config: (default) prefix_command_cpp = 
+[2025-04-15T05:13:21.351330 26488] Config: (default) read_only = false
+[2025-04-15T05:13:21.351330 26488] Config: (default) read_only_direct = false
+[2025-04-15T05:13:21.351330 26488] Config: (default) recache = false
+[2025-04-15T05:13:21.351330 26488] Config: (default) remote_only = false
+[2025-04-15T05:13:21.351330 26488] Config: (default) remote_storage = 
+[2025-04-15T05:13:21.351330 26488] Config: (default) reshare = false
+[2025-04-15T05:13:21.351330 26488] Config: (default) run_second_cpp = true
+[2025-04-15T05:13:21.351330 26488] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2025-04-15T05:13:21.351330 26488] Config: (default) stats = true
+[2025-04-15T05:13:21.351330 26488] Config: (default) stats_log = 
+[2025-04-15T05:13:21.351330 26488] Config: (default) temporary_dir = C:\Users\JHEFF\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2025-04-15T05:13:21.351330 26488] Config: (default) umask = 
+[2025-04-15T05:13:21.351386 26488] Command line: C:\\Users\\JHEFF\\AppData\\Local\\Nuitka\\Nuitka\\Cache\\DOWNLO~1\\gcc\\x86_64\\14.2.0posix-19.1.1-12.0.0-msvcrt-r2\\mingw64\\bin\\ccache.exe C:\\Users\\JHEFF\\AppData\\Local\\Nuitka\\Nuitka\\Cache\\DOWNLO~1\\gcc\\x86_64\\14.2.0posix-19.1.1-12.0.0-msvcrt-r2\\mingw64\\bin\\gcc.exe -o static_src\\OnefileBootstrap.o -c -std=c11 -flto=16 -fuse-linker-plugin -fno-fat-lto-objects -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_ONEFILE_MODE -IC:\\Users\\JHEFF\\AppData\\Roaming\\Python\\PYTHON~1\\SITE-P~1\\nuitka\\build\\inline_copy\\zlib -I. -IC:\\Users\\JHEFF\\AppData\\Roaming\\Python\\PYTHON~1\\SITE-P~1\\nuitka\\build\\include -IC:\\Users\\JHEFF\\AppData\\Roaming\\Python\\PYTHON~1\\SITE-P~1\\nuitka\\build\\static_src -IC:\\Users\\JHEFF\\AppData\\Roaming\\Python\\PYTHON~1\\SITE-P~1\\nuitka\\build\\inline_copy\\zstd static_src\\OnefileBootstrap.c
+[2025-04-15T05:13:21.355593 26488] Hostname: ICODEXYS
+[2025-04-15T05:13:21.355612 26488] Working directory: Z:\#Codexis\#Develop\Proyect\@DPJ\dpj\dpj.onefile-build
+[2025-04-15T05:13:21.355638 26488] Compiler: C:\Users\JHEFF\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\14.2.0posix-19.1.1-12.0.0-msvcrt-r2\mingw64\bin\gcc.exe
+[2025-04-15T05:13:21.355646 26488] Compiler type: gcc
+[2025-04-15T05:13:21.355870 26488] Detected input file: static_src\OnefileBootstrap.c
+[2025-04-15T05:13:21.355954 26488] Source file: static_src\OnefileBootstrap.c
+[2025-04-15T05:13:21.355960 26488] Object file: static_src\OnefileBootstrap.o
+[2025-04-15T05:13:21.356082 26488] Trying direct lookup
+[2025-04-15T05:13:21.356230 26488] Manifest key: 1cd8j8amfvjtn97sokaua2f702con3re0
+[2025-04-15T05:13:21.356314 26488] Retrieved 1cd8j8amfvjtn97sokaua2f702con3re0 from local storage (C:\Users\JHEFF\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/c/d8j8amfvjtn97sokaua2f702con3re0M)
+[2025-04-15T05:13:21.376878 26488] Got result key from manifest
+[2025-04-15T05:13:21.376909 26488] Result key: a917llh3qsadb9gfd5ihhvbt5j66ho4ta
+[2025-04-15T05:13:21.377087 26488] Retrieved a917llh3qsadb9gfd5ihhvbt5j66ho4ta from local storage (C:\Users\JHEFF\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/9/17llh3qsadb9gfd5ihhvbt5j66ho4taR)
+[2025-04-15T05:13:21.377516 26488] Reading embedded entry #0 .o (591497 bytes)
+[2025-04-15T05:13:21.377529 26488] Writing to static_src\OnefileBootstrap.o
+[2025-04-15T05:13:21.378508 26488] Succeeded getting cached result
+[2025-04-15T05:13:21.378544 26488] Result: direct_cache_hit
+[2025-04-15T05:13:21.378553 26488] Result: local_storage_hit
+[2025-04-15T05:13:21.378560 26488] Result: local_storage_read_hit
+[2025-04-15T05:13:21.378566 26488] Result: local_storage_read_hit
+[2025-04-15T05:13:21.378593 26488] Acquiring C:\Users\JHEFF\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/8/stats.lock
+[2025-04-15T05:13:21.379037 26488] Acquired C:\Users\JHEFF\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/8/stats.lock
+[2025-04-15T05:13:21.379761 26488] Releasing C:\Users\JHEFF\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/8/stats.lock
+[2025-04-15T05:13:21.379820 26488] Released C:\Users\JHEFF\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/8/stats.lock

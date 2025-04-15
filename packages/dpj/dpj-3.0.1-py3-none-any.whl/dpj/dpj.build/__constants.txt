@@ -1,0 +1,163 @@
+{
+  "__bytecode.const": {
+    "input_size": 5785473,
+    "blob_name": ".bytecode",
+    "blob_size": 5762551
+  },
+  "__constants.const": {
+    "input_size": 2186,
+    "blob_name": "",
+    "blob_size": 859
+  },
+  "module.__main__.const": {
+    "input_size": 13426,
+    "blob_name": "__main__",
+    "blob_size": 8381
+  },
+  "module.bcrypt.const": {
+    "input_size": 876,
+    "blob_name": "bcrypt",
+    "blob_size": 639
+  },
+  "module.cryptography.__about__.const": {
+    "input_size": 502,
+    "blob_name": "cryptography.__about__",
+    "blob_size": 284
+  },
+  "module.cryptography.const": {
+    "input_size": 593,
+    "blob_name": "cryptography",
+    "blob_size": 358
+  },
+  "module.cryptography.exceptions.const": {
+    "input_size": 1373,
+    "blob_name": "cryptography.exceptions",
+    "blob_size": 852
+  },
+  "module.cryptography.fernet.const": {
+    "input_size": 4668,
+    "blob_name": "cryptography.fernet",
+    "blob_size": 3253
+  },
+  "module.cryptography.hazmat.bindings.const": {
+    "input_size": 683,
+    "blob_name": "cryptography.hazmat.bindings",
+    "blob_size": 410
+  },
+  "module.cryptography.hazmat.const": {
+    "input_size": 583,
+    "blob_name": "cryptography.hazmat",
+    "blob_size": 324
+  },
+  "module.cryptography.hazmat.decrepit.ciphers.algorithms.const": {
+    "input_size": 1955,
+    "blob_name": "cryptography.hazmat.decrepit.ciphers.algorithms",
+    "blob_size": 1087
+  },
+  "module.cryptography.hazmat.decrepit.ciphers.const": {
+    "input_size": 847,
+    "blob_name": "cryptography.hazmat.decrepit.ciphers",
+    "blob_size": 534
+  },
+  "module.cryptography.hazmat.decrepit.const": {
+    "input_size": 709,
+    "blob_name": "cryptography.hazmat.decrepit",
+    "blob_size": 423
+  },
+  "module.cryptography.hazmat.primitives._cipheralgorithm.const": {
+    "input_size": 1876,
+    "blob_name": "cryptography.hazmat.primitives._cipheralgorithm",
+    "blob_size": 1209
+  },
+  "module.cryptography.hazmat.primitives.ciphers.algorithms.const": {
+    "input_size": 3330,
+    "blob_name": "cryptography.hazmat.primitives.ciphers.algorithms",
+    "blob_size": 2246
+  },
+  "module.cryptography.hazmat.primitives.ciphers.base.const": {
+    "input_size": 4007,
+    "blob_name": "cryptography.hazmat.primitives.ciphers.base",
+    "blob_size": 2914
+  },
+  "module.cryptography.hazmat.primitives.ciphers.const": {
+    "input_size": 1349,
+    "blob_name": "cryptography.hazmat.primitives.ciphers",
+    "blob_size": 1036
+  },
+  "module.cryptography.hazmat.primitives.ciphers.modes.const": {
+    "input_size": 5061,
+    "blob_name": "cryptography.hazmat.primitives.ciphers.modes",
+    "blob_size": 3658
+  },
+  "module.cryptography.hazmat.primitives.const": {
+    "input_size": 693,
+    "blob_name": "cryptography.hazmat.primitives",
+    "blob_size": 420
+  },
+  "module.cryptography.hazmat.primitives.hashes.const": {
+    "input_size": 4016,
+    "blob_name": "cryptography.hazmat.primitives.hashes",
+    "blob_size": 2572
+  },
+  "module.cryptography.hazmat.primitives.hmac.const": {
+    "input_size": 581,
+    "blob_name": "cryptography.hazmat.primitives.hmac",
+    "blob_size": 331
+  },
+  "module.cryptography.hazmat.primitives.padding.const": {
+    "input_size": 3521,
+    "blob_name": "cryptography.hazmat.primitives.padding",
+    "blob_size": 2513
+  },
+  "module.cryptography.utils.const": {
+    "input_size": 3166,
+    "blob_name": "cryptography.utils",
+    "blob_size": 2088
+  },
+  "module.keyboard._canonical_names.const": {
+    "input_size": 21580,
+    "blob_name": "keyboard._canonical_names",
+    "blob_size": 18681
+  },
+  "module.keyboard._darwinkeyboard.const": {
+    "input_size": 8013,
+    "blob_name": "keyboard._darwinkeyboard",
+    "blob_size": 5459
+  },
+  "module.keyboard._generic.const": {
+    "input_size": 2245,
+    "blob_name": "keyboard._generic",
+    "blob_size": 1353
+  },
+  "module.keyboard._keyboard_event.const": {
+    "input_size": 1750,
+    "blob_name": "keyboard._keyboard_event",
+    "blob_size": 1016
+  },
+  "module.keyboard._nixcommon.const": {
+    "input_size": 4560,
+    "blob_name": "keyboard._nixcommon",
+    "blob_size": 2740
+  },
+  "module.keyboard._nixkeyboard.const": {
+    "input_size": 3311,
+    "blob_name": "keyboard._nixkeyboard",
+    "blob_size": 1984
+  },
+  "module.keyboard._winkeyboard.const": {
+    "input_size": 10282,
+    "blob_name": "keyboard._winkeyboard",
+    "blob_size": 7201
+  },
+  "module.keyboard.const": {
+    "input_size": 28511,
+    "blob_name": "keyboard",
+    "blob_size": 24182
+  },
+  "module.utils.const": {
+    "input_size": 6291,
+    "blob_name": "utils",
+    "blob_size": 4030
+  },
+  "total": 3767
+}
