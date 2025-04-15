@@ -1,0 +1,5 @@
+qdeepai.egg-info/PKG-INFO
+qdeepai.egg-info/SOURCES.txt
+qdeepai.egg-info/dependency_links.txt
+qdeepai.egg-info/requires.txt
+qdeepai.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: qdeepai
+Version: 14.4.2025
+Summary: A simple wrapper for the DeepAI API
+Author: Quantung
+Requires-Dist: requests
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
