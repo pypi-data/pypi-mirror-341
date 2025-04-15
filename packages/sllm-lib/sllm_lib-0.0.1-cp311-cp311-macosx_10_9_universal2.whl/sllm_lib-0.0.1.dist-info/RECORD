@@ -1,0 +1,16 @@
+sllm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sllm/common.py,sha256=FQ2LwoncvjoFdPEPePDOSem1U_ppDqRoBYXg32GYxxM,384
+sllm/config.py,sha256=_KoBd7RHilmBg5H5ECrtOQxi4Bcu1Xq_mymlkw73hqA,3034
+sllm/train.py,sha256=DorYy6PSQC9YN9vom57Ck_O9AOP8bSlNbp27gHFtvLs,3951
+sllm/utils.py,sha256=YKj9iIuXghHClDSX2vU5lhSK-WW-V7JkeyffzbCUEHI,1467
+sllm/nn/__init__.py,sha256=ILURt7PFpdoITnO-LhLRa7cfLodbr0enUWa5JXpK5NQ,149
+sllm/nn/autodiff.py,sha256=QaMQnZBGoH-M1FeyusD0zFLEj4obrE4AqG-xNcUo6cs,8890
+sllm/nn/layers.py,sha256=J6aaM7KQ_cdlOFbxOm7oVTEaA0SktkPknmT0Qh8AjZY,18033
+sllm/nn/transformer.py,sha256=OxczmV5gZblfLFBvKKFSeuB3xKrDb6kusVfKii35xRA,15877
+sllm/ops/__init__.py,sha256=2hvvSnIAyvQOs4emEnBy1nTRs3BpC7uc9IDrlZXtkWs,42
+sllm/ops/matmul.cpython-311-darwin.so,sha256=LqiUvexEPl0Dqi59PGwt65iGzFhZwlnX99Umd1F72KI,378544
+sllm_lib-0.0.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sllm_lib-0.0.1.dist-info/METADATA,sha256=oyWlmKIHAnlfQc-G4j_zlR0LHQtblNaaFecVtPFZCSM,4719
+sllm_lib-0.0.1.dist-info/WHEEL,sha256=RbtvOFtP--plS2sXkxxM8xYfkibPkCKcYIqEe_GHrhY,114
+sllm_lib-0.0.1.dist-info/top_level.txt,sha256=Vbgti778oo5JSze0raYVPxcZEPA7YakZpnTqn7tWd4Y,5
+sllm_lib-0.0.1.dist-info/RECORD,,
