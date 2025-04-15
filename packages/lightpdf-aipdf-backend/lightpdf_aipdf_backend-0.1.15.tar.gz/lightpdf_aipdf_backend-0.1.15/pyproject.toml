@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lightpdf-aipdf-backend"
+version = "0.1.15"
+description = "Backend API for LightPDF AI-PDF"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "Proprietary" }
+authors = [
+    {name = "LightPDF Team"}
+]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "python-dotenv",
+    "openai",
+    "mcp[cli]",
+    "pydantic",
+    "python-multipart",
+    "uv",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "isort",
+]
+
+[project.scripts]
+lightpdf-aipdf-backend = "lightpdf_aipdf_backend.cli:run_server"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lightpdf_aipdf_backend"]
+
+[tool.hatch.build]
+exclude = ["__pycache__/*", "publish.sh", "run.py", ".env", ".gitignore"]
+no-sdist = true
+include = ["src/lightpdf_aipdf_backend"]
+only-packages = true
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
