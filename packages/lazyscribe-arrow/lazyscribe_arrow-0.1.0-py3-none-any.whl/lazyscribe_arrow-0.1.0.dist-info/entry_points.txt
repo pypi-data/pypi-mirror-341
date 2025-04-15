@@ -1,0 +1,2 @@
+[lazyscribe.artifact_type]
+csv = lazyscribe_arrow:CSVArtifact
