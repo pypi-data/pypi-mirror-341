@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: intake_forecast
+Version: 0.3.1
+Summary: Intake driver for cyclic zarr sources
+Author-email: Oceanum Developers <developers@oceanum.science>
+Maintainer-email: Oceanum Developers <developers@oceanum.science>
+Project-URL: bugs, https://github.com/oceanum/intake_forecast/issues
+Project-URL: changelog, https://github.com/oceanum/intake_forecast/blob/master/changelog.md
+Project-URL: homepage, https://github.com/oceanum/intake_forecast
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/x-rst
+License-File: AUTHORS.rst
+Requires-Dist: dask
+Requires-Dist: gcsfs
+Requires-Dist: intake
+Requires-Dist: intake-xarray
+Requires-Dist: typer
+Requires-Dist: xarray
+Requires-Dist: zarr
+Requires-Dist: pint
+Provides-Extra: dev
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: tox; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Dynamic: license-file
+
+===============
+intake-forecast
+===============
+
+Intake driver for cyclic zarr sources
+
+.. image:: https://img.shields.io/pypi/v/intake-forecast.svg
+    :target: https://pypi.org/project/intake-forecast/
+.. image:: https://img.shields.io/pypi/dm/intake-forecast
+    :target: https://pypistats.org/packages/intake-forecast
+    :alt: PyPI - Downloads
+.. image:: https://img.shields.io/pypi/pyversions/intake-forecast
+    :target: https://pypi.org/project/intake-forecast/
+    :alt: PyPI - Python Version
