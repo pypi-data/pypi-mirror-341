@@ -1,0 +1,24 @@
+AUTHORS.rst
+LICENSE.rst
+MANIFEST.in
+README.rst
+setup.py
+cqmseeker/__init__.py
+cqmseeker/cqmseeker.py
+cqmseeker.egg-info/PKG-INFO
+cqmseeker.egg-info/SOURCES.txt
+cqmseeker.egg-info/dependency_links.txt
+cqmseeker.egg-info/not-zip-safe
+cqmseeker.egg-info/top_level.txt
+cqmseeker/bin/coll.exe
+cqmseeker/bin/hard.exe
+cqmseeker/scripts/collect.sh
+cqmseeker/scripts/seekeragg.sh
+docs/IO License Terms.pdf
+docs/Seeker_Reference_Manual.pdf
+docs/Seeker_User_s_Manual.pdf
+docs/authors.rst
+docs/index.rst
+docs/installation.rst
+docs/readme.rst
+docs/usage.rst
