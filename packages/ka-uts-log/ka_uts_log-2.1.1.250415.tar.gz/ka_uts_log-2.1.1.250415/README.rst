@@ -1,0 +1,662 @@
+##########
+ka_uts_log
+##########
+
+Overview
+********
+
+.. start short_desc
+
+**Log Management Utilities**
+
+.. end short_desc
+
+Installation
+************
+
+.. start installation
+
+The package ``ka_uts_log`` can be installed from PyPI or Anaconda.
+
+To install with ``pip``:
+
+.. code-block:: shell
+
+	$ python -m pip install ka_uts_log
+
+To install with ``conda``:
+
+.. code-block:: shell
+
+	$ conda install -c conda-forge ka_uts_log
+
+.. end installation
+
+Package logging
+***************
+
+c.f.: **Appendix: Package Logging**
+
+Package files
+*************
+
+Classification
+==============
+
+The Files of Package ``ka_uts_log`` could be classified into the follwing file types:
+
+#. *Special files*; c.f.: **Appendix: Python package Sub-directoriess**
+
+   #. *py.typed*
+
+#. *Special package modules*
+
+   #. *__init__.py*; c.f.: **Appendix: Python package Sub-directoriess** 
+   #. *__version__.py*
+
+#. *Package modules*
+
+   #. **log.py**
+
+#. *Sub-packages*
+
+   #. *data*
+
+      #. *Special package modules*
+
+         a. *__init__.py*
+
+      #. *Yaml files*
+
+        a. *log.std.yml*
+        #. *log.usr.yml*
+
+      #. *__pycache__*
+
+Data Files
+**********
+
+Overview
+========
+
+  .. Data-Files-label:
+  .. table:: *Data Files*
+
+   +-----------+-----------------------------------------+
+   |Name       |Description                              |
+   +===========+=========================================+
+   |log.std.yml|Yaml definition file for standard logging|
+   +-----------+-----------------------------------------+
+   |log.usr.yml|Yaml definition file for user logging    |
+   +-----------+-----------------------------------------+
+
+Package Files
+*************
+
+Classification
+==============
+
+The Modules of Package ``ka_uts_log`` could be classified into the following module types:
+
+#. *Logging Modules*
+
+Logging Modules
+===============
+
+Overview
+--------
+
+  .. munication Modules-label:
+  .. table:: *munication Modules*
+
+   +------+-------------------------+
+   |Name  |Decription               |
+   +======+=========================+
+   |log.py|Logging management module|
+   +------+-------------------------+
+
+Logging module log.py
+=====================
+
+The Logging îmanagement module ``log.py`` contains the single static class ``Log``.
+
+Class Log
+---------
+
+The static Class ``Log`` contains the subsequent variables and methods.
+
+Variables
+^^^^^^^^^
+
+  .. Variables-of-class-Log-label:
+  .. table:: *Variables of class Log*
+
+   +--------+-----------+-------+-----------------------------------+
+   |Name    |Type       |Default|Description                        |
+   +========+===========+=======+===================================+
+   |cfg     |TyDic      |None   |Configuration dictionary           |
+   +--------+-----------+-------+-----------------------------------+
+   |d_pacmod|TyDic      |{}     |pacmod dictionary                  |
+   +--------+-----------+-------+-----------------------------------+
+   |pid     |TyInt      |None   |Process id                         |
+   +--------+-----------+-------+-----------------------------------+
+   |sw_init |TyBool     |None   |Initialisation switch              |
+   +--------+-----------+-------+-----------------------------------+
+   |ts      |TnTimeStamp|None   |Timestamp                          |
+   +--------+-----------+-------+-----------------------------------+
+   |ts_start|TnDateTime |None   |start timestamp in date time format|
+   +--------+-----------+-------+-----------------------------------+
+   |ts_end  |TnDateTime |None   |end timestamp in date time format  |
+   +--------+-----------+-------+-----------------------------------+
+   |ts_etime|TnDateTime |None   |elapse Time                        |
+   +--------+-----------+-------+-----------------------------------+
+   |d_timer |TyDic      |False  |Timer dictionary                   |
+   +--------+-----------+-------+-----------------------------------+
+   |Log     |TyLogger   |False  |Log class                          |
+   +--------+-----------+-------+-----------------------------------+
+   |App     |TyAny      |False  |Application class                  |
+   +--------+-----------+-------+-----------------------------------+
+   |Exit    |TyAny      |False  |Exit class                         |
+   +--------+-----------+-------+-----------------------------------+
+
+Methods
+^^^^^^^
+
+  .. Methods-of-class-Log-label:
+  .. table:: *Methods-of-class-Log*
+
+   +----+-------------------------------------------------------+
+   |Name|Description                                            |
+   +====+=======================================================+
+   |init|Initialise static variables if they are not initialized|
+   +----+-------------------------------------------------------+
+   |sh  |Show keyword arguments                                 |
+   +----+-------------------------------------------------------+
+
+Method init
+^^^^^^^^^^^
+        
+Parameter
+"""""""""
+
+  .. Parameter-of-method-init-of-class-Log-label:
+  .. table:: *Parameter of method init of class Log*
+
+   +---------+-----+-----------------+
+   |Name     |Type |Description      |
+   +=========+=====+=================+
+   |cls      |class|current class    |
+   +---------+-----+-----------------+
+   |\**kwargs|TyAny|keyword arguments|
+   +---------+-----+-----------------+
+
+Method sh_kwargs
+^^^^^^^^^^^^^^^^
+        
+Parameter
+"""""""""
+
+  .. Parameter-of-method-sh_kwargs-of-class-Loglabel:
+  .. table:: *Parameter of method sh_kwargs of class Log*
+
+   +--------+-----+--------------------+
+   |Name    |Type |Description         |
+   +========+=====+====================+
+   |cls     |class|current class       |
+   +--------+-----+--------------------+
+   |root_cls|class|root lass           |
+   +--------+-----+--------------------+
+   |d_parms |TyDic|parameter dictionary|
+   +--------+-----+--------------------+
+   |\*args  |list |arguments array     |
+   +--------+-----+--------------------+
+
+municstion Module: log.py
+============================
+
+The Module ``log.py`` contains the following static classes.
+
+  .. Classes-of-module-log.py-label:
+  .. table:: *Classes of module log.py*
+
+   +------+----------------------------------------------------+
+   |Name  |Description                                         |
+   +======+====================================================+
+   |LogEq |Log generated Equate messages                       |
+   +------+----------------------------------------------------+
+   |LogDic|Log generated Equate messages for dictionary entries|
+   +------+----------------------------------------------------+
+   |Log   |Log messages                                        |
+   +------+----------------------------------------------------+
+
+Class Log
+---------
+
+The static Class ``Log`` contains the subsequent methods.
+
+Methods
+^^^^^^^
+
+  .. Mey'athods-of-class-Log-label:
+  .. table:: *Methods of class Log*
+
+   +--------+--------------------------------------------------------------------------+
+   |Name    |Description                                                               |
+   +========+==========================================================================+
+   |Log messages                                                                       |
+   +--------+--------------------------------------------------------------------------+
+   |debug   |Log debug messages                                                        |
+   +--------+--------------------------------------------------------------------------+
+   |info    |Log info messages                                                         |
+   +--------+--------------------------------------------------------------------------+
+   |warning |Log warnning messages                                                     |
+   +--------+--------------------------------------------------------------------------+
+   |error   |Log error messages                                                        |
+   +--------+--------------------------------------------------------------------------+
+   |critcial|Log critical messages                                                     |
+   +--------+--------------------------------------------------------------------------+
+
+  .. Methods-of-class-Log-label:
+  .. table:: *Methods of class Log*
+
+   +------------------------------+----------------------------------------------------+
+   |Name                          |Description                                         |
+   +==============================+====================================================+
+   |Show methods                                                                       |
+   +------------------------------+----------------------------------------------------+
+   |sh_dir_run                    |Log debug messages                                  |
+   +------------------------------+----------------------------------------------------+
+   |sh_d_log_cfg_for_single_log   |Log info messages                                   |
+   +------------------------------+----------------------------------------------------+
+   |sh_d_log_cfg_for_multiple_logs|Log warnning messages                               |
+   +------------------------------+----------------------------------------------------+
+   |sh_d_log_cfg                  |Log warnning messages                               |
+   +------------------------------+----------------------------------------------------+
+   |sh_path_log_cfg               |Log warnning messages                               |
+   +------------------------------+----------------------------------------------------+
+
+  .. Methods-of-class-Log-label:
+  .. table:: *Methods of class Log*
+
+   +----+------------------------------------------------------------------------------+
+   |Name|Description                                                                   |
+   +====+==============================================================================+
+   |Basic methods                                                                      |
+   +----+------------------------------------------------------------------------------+
+   |init|initialise current class                                                      |
+   +----+------------------------------------------------------------------------------+
+   |sh  |initialise and show current class                                             |
+   +----+------------------------------------------------------------------------------+
+
+Class LogEq
+-----------
+
+The static Class ``LogEq`` contains the subsequent methods
+
+Methods
+^^^^^^^
+
+  .. Methods-of-class-LogEq-label:
+  .. table:: *Methods-of-class-LogEq*
+
+   +--------+--------------------------------------------------------------------------+
+   |Name    |Description                                                               |
+   +========+==========================================================================+
+   |debug   |Log generated equate message "<key> = <value>" to the debug destination   |
+   +--------+--------------------------------------------------------------------------+
+   |info    |Log generated equate message "<key> = <value>" to the info destination    |
+   +--------+--------------------------------------------------------------------------+
+   |warning |Log generated equate message "<key> = <value>" to the warning destination |
+   +--------+--------------------------------------------------------------------------+
+   |error   |Log generated equate message "<key> = <value>" to the error destination   |
+   +--------+--------------------------------------------------------------------------+
+   |critcial|Log generated equate message "<key> = <value>" to the critical destination|
+   +--------+--------------------------------------------------------------------------+
+
+All Methods use the following Parameter:
+
+Parameter
+^^^^^^^^^
+
+  .. Methods-parameter-of-class-LogEq-label:
+  .. table:: *Methods parameter of class LogEq*
+
+   +-----+-----+-------------+
+   |Name |Type |Description  |
+   +=====+=====+=============+
+   |cls  |class|current class|
+   +-----+-----+-------------+
+   |key  |TyAny|Key          |
+   +-----+-----+-------------+
+   |value|TyAny|Value        |
+   +-----+-----+-------------+
+
+Class LogDic
+------------
+
+The static Class ``LogDic`` contains the subsequent methods
+
+Methods
+^^^^^^^
+
+  .. Methods-of-class-LogDic-label:
+  .. table:: *Methods of class LogDic*
+
+   +--------+------------------------------------------------------------------------------------+
+   |Name    |Description                                                                         |
+   +========+====================================================================================+
+   |debug   |Log generated equate messages for all dictionary entries to the debug destination   |
+   +--------+------------------------------------------------------------------------------------+
+   |info    |Log generated equate messages for all dictionary entries to the info destination    |
+   +--------+------------------------------------------------------------------------------------+
+   |warning |Log generated equate messages for all dictionary entries to the warning destination |
+   +--------+------------------------------------------------------------------------------------+
+   |error   |Log generated equate messages for all dictionary entries to the error destination   |
+   +--------+------------------------------------------------------------------------------------+
+   |critical|Log generated equate messages for all dictionary entries to the critical destination|
+   +--------+------------------------------------------------------------------------------------+
+
+All Methods of Sub class Dic of class Log use the following Parameters:
+
+Parameter
+^^^^^^^^^
+
+  .. Methods-parameter-of-class-LogDic-label:
+  .. table:: *Methods parameter of class LogDic*
+
+   +----+-----+-------------+
+   |Name|Type |Description  |
+   +====+=====+=============+
+   |cls |class|current class|
+   +----+-----+-------------+
+   |dic |TyDic|Dictionary   |
+   +----+-----+-------------+
+
+Appendix
+********
+
+Package Logging
+===============
+
+Description
+-----------
+
+The Standard or user specifig logging is carried out by the log.py module of the logging
+package ka_uts_log using the configuration files **ka_std_log.yml** or **ka_usr_log.yml**
+in the configuration directory **cfg** of the logging package **ka_uts_log**.
+The Logging configuration of the logging package could be overriden by yaml files with
+the same names in the configuration directory **cfg** of the application packages.
+
+Log message types
+-----------------
+
+Logging defines log file path names for the following log message types: .
+
+#. *debug*
+#. *info*
+#. *warning*
+#. *error*
+#. *critical*
+
+Application parameter for logging
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  .. Application-parameter-used-in-log-naming-label:
+  .. table:: *Application parameter used in log naming*
+
+   +-----------------+---------------------------+----------+------------+
+   |Name             |Decription                 |Values    |Example     |
+   +=================+===========================+==========+============+
+   |dir_dat          |Application data directory |          |/otev/data  |
+   +-----------------+---------------------------+----------+------------+
+   |tenant           |Application tenant name    |          |UMH         |
+   +-----------------+---------------------------+----------+------------+
+   |package          |Application package name   |          |otev_xls_srr|
+   +-----------------+---------------------------+----------+------------+
+   |cmd              |Application command        |          |evupreg     |
+   +-----------------+---------------------------+----------+------------+
+   |pid              |Process ID                 |          |æevupreg    |
+   +-----------------+---------------------------+----------+------------+
+   |log_ts_type      |Timestamp type used in     |ts,       |ts          |
+   |                 |logging files|ts, dt       |dt        |            |
+   +-----------------+---------------------------+----------+------------+
+   |log_sw_single_dir|Enable single log directory|True,     |True        |
+   |                 |or multiple log directories|False     |            |
+   +-----------------+---------------------------+----------+------------+
+
+Log type and Log directories
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Single or multiple Application log directories can be used for each message type:
+
+  .. Log-types-and-Log-directories-label:
+  .. table:: *Log types and directoriesg*
+
+   +--------------+---------------+
+   |Log type      |Log directory  |
+   +--------+-----+--------+------+
+   |long    |short|multiple|single|
+   +========+=====+========+======+
+   |debug   |dbqs |dbqs    |logs  |
+   +--------+-----+--------+------+
+   |info    |infs |infs    |logs  |
+   +--------+-----+--------+------+
+   |warning |wrns |wrns    |logs  |
+   +--------+-----+--------+------+
+   |error   |errs |errs    |logs  |
+   +--------+-----+--------+------+
+   |critical|crts |crts    |logs  |
+   +--------+-----+--------+------+
+
+Log files naming
+^^^^^^^^^^^^^^^^
+
+Conventions
+"""""""""""
+
+  .. Naming-conventions-for-logging-file-paths-label:
+  .. table:: *Naming conventions for logging file paths*
+
+   +--------+-------------------------------------------------------+-------------------------+
+   |Type    |Directory                                              |File                     |
+   +========+=======================================================+=========================+
+   |debug   |/<dir_dat>/<tenant>/RUN/<package>/<cmd>/<Log directory>|<Log type>_<ts>_<pid>.log|
+   +--------+-------------------------------------------------------+-------------------------+
+   |info    |/<dir_dat>/<tenant>/RUN/<package>/<cmd>/<Log directory>|<Log type>_<ts>_<pid>.log|
+   +--------+-------------------------------------------------------+-------------------------+
+   |warning |/<dir_dat>/<tenant>/RUN/<package>/<cmd>/<Log directory>|<Log type>_<ts>_<pid>.log|
+   +--------+-------------------------------------------------------+-------------------------+
+   |error   |/<dir_dat>/<tenant>/RUN/<package>/<cmd>/<Log directory>|<Log type>_<ts>_<pid>.log|
+   +--------+-------------------------------------------------------+-------------------------+
+   |critical|/<dir_dat>/<tenant>/RUN/<package>/<cmd>/<Log directory>|<Log type>_<ts>_<pid>.log|
+   +--------+-------------------------------------------------------+-------------------------+
+
+Examples
+""""""""
+
+  .. Naming-examples-for-logging-file-paths-label:
+  .. table:: *Naming examples for logging file paths*
+
+   +--------+--------------------------------------------+------------------------+
+   |Type    |Directory                                   |File                    |
+   +========+============================================+========================+
+   |debug   |/data/otev/umh/RUN/otev_xls_srr/evupreg/logs|debs_1737118199_9470.log|
+   +--------+--------------------------------------------+------------------------+
+   |info    |/data/otev/umh/RUN/otev_xls_srr/evupreg/logs|infs_1737118199_9470.log|
+   +--------+--------------------------------------------+------------------------+
+   |warning |/data/otev/umh/RUN/otev_xls_srr/evupreg/logs|wrns_1737118199_9470.log|
+   +--------+--------------------------------------------+------------------------+
+   |error   |/data/otev/umh/RUN/otev_xls_srr/evupreg/logs|errs_1737118199_9470.log|
+   +--------+--------------------------------------------+------------------------+
+   |critical|/data/otev/umh/RUN/otev_xls_srr/evupreg/logs|crts_1737118199_9470.log|
+   +--------+--------------------------------------------+------------------------+
+
+Python Terminology
+==================
+
+Python package
+--------------
+
+Overview
+^^^^^^^^
+
+  .. Python package-label:
+  .. table:: *Python package*
+
+   +--------------+-----------------------------------------------------------------+
+   |Name          |Definition                                                       |
+   +==============+==========+======================================================+
+   |Python package|Python packages are directories that contains the special module |
+   |              |``__init__.py`` and other modules, packages files or directories.|
+   +--------------+-----------------------------------------------------------------+
+   |Python        |Python sub-packages are python packages which are contained in   |
+   |sub-package   |another pyhon package.                                           |
+   +--------------+-----------------------------------------------------------------+
+
+Python package sub-directories
+------------------------------
+
+Overview
+^^^^^^^^
+
+  .. Python package sub-direcories-label:
+  .. table:: *Python package sub-directories*
+
+   +--------------+-----------------------------------------+
+   |Name          |Definition                               |
+   +==============+==========+==============================+
+   |Python package|Python packages sub-directories are      |
+   |sub-directory |directories contained in python packages.|
+   +--------------+-----------------------------------------+
+   |Special Python|Special Python package sub-directories   |
+   |package       |are python package sub-directories with  |
+   |sub-directory |with a special meaning                   |
+   +--------------+-----------------------------------------+
+
+Special python package sub-directories
+--------------------------------------
+
+Overview
+^^^^^^^^
+
+  .. Special-python-package-sub-directories-label:
+  .. table:: *Special python sun-directories*
+
+   +----+------------------------------------------+
+   |Name|Description                               |
+   +====+==========================================+
+   |data|Directory for package data files.         |
+   +----+------------------------------------------+
+   |cfg |Directory for package configuration files.|
+   +----+------------------------------------------+
+
+Python package files
+--------------------
+
+Overview
+^^^^^^^^
+
+  .. Python-package-files-label:
+  .. table:: *Python package files*
+
+   +--------------+--------------------------------------------------------------------+
+   |Name          |Definition                                                          |
+   +==============+==========+=========================================================+
+   |Python        |Python packages are files within a python package.                  |
+   |package files |                                                                    |
+   +--------------+--------------------------------------------------------------------+
+   |Special python|Special python package files are package files which are not modules|
+   |package files |and used as python marker files like ``__init__.py``                |
+   +--------------+--------------------------------------------------------------------+
+   |Python package|Python modules are files with suffix ``.py``; they could be empty or|
+   |module        |contain python code; other modules can be imported into a module.   |
+   +--------------+--------------------------------------------------------------------+
+   |Special python|Special python modules like ``__init__.py`` or ``main.py`` are      |
+   |package module|python modules with special names and functionality.                |
+   +--------------+--------------------------------------------------------------------+
+
+Special python package files
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Overview
+°°°°°°°°
+
+  .. Special-python-package-files-label:
+  .. table:: *Special python package files*
+
+   +--------+--------+---------------------------------------------------------------+
+   |Name    |Type    |Description                                                    |
+   +========+========+===============================================================+
+   |py.typed|Type    |The ``py.typed`` file is a marker file used in Python packages |
+   |        |checking|to indicate that the package supports type checking. This is a |
+   |        |marker  |part of the PEP 561 standard, which provides a standardized way|
+   |        |file    |to package and distribute type information in Python.          |
+   +--------+--------+---------------------------------------------------------------+
+
+Special python package modules
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Overview
+°°°°°°°°
+
+  .. Special-Python-package-modules-label:
+  .. table:: *Special Python package modules*
+
+   +--------------+-----------+-----------------------------------------------------------------+
+   |Name          |Type       |Description                                                      |
+   +==============+===========+=================================================================+
+   |__init__.py   |Package    |The dunder (double underscore) module ``__init__.py`` is used to |
+   |              |directory  |execute initialisation code or mark the directory it contains as |
+   |              |marker     |a package. The Module enforces explicit imports and thus clear   |
+   |              |file       |namespace use and call them with the dot notation.               |
+   +--------------+-----------+-----------------------------------------------------------------+
+   |__main__.py   |entry point|The dunder module ``__main__.py`` serves as an entry point for   |
+   |              |for the    |the package. The module is executed when the package is called by|
+   |              |package    |the interpreter with the command **python -m <package name>**.   |
+   +--------------+-----------+-----------------------------------------------------------------+
+   |__version__.py|Version    |The dunder module ``__version__.py`` consist of assignment       |
+   |              |file       |statements used in Versioning.                                   |
+   +--------------+-----------+-----------------------------------------------------------------+
+
+Python elements
+---------------
+
+Overview
+°°°°°°°°
+
+  .. Python elements-label:
+  .. table:: *Python elements*
+
+   +-------------+--------------------------------------------------------------+
+   |Python method|Python methods are python functions defined in python modules.|
+   +-------------+--------------------------------------------------------------+
+   |Special      |Special python methods are python functions with special names|
+   |python method|and functionalities.                                          |
+   +-------------+--------------------------------------------------------------+
+   |Python class |Python classes are defined in python modules.                 |
+   +-------------+--------------------------------------------------------------+
+   |Python class |Python class methods are python methods defined python        |
+   |method       |classes.                                                      |
+   +-------------+--------------------------------------------------------------+
+
+Special python methods
+^^^^^^^^^^^^^^^^^^^^^^
+
+Overview
+°°°°°°°°
+
+  .. Special-python-methods-label:
+  .. table:: *Special python methods*
+
+   +--------+------------+----------------------------------------------------------+
+   |Name    |Type        |Description                                               |
+   +========+============+==========================================================+
+   |__init__|class object|The special method ``__init__`` is called when an instance|
+   |        |constructor |(object) of a class is created; instance attributes can be|
+   |        |method      |defined and initalized in the method.                     |
+   +--------+------------+----------------------------------------------------------+
+
+Table of Contents
+=================
+
+.. contents:: **Table of Content**
