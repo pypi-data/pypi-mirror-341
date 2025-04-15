@@ -1,0 +1,12 @@
+aicapture/__init__.py,sha256=seXaogpAGsHSB_TFpkaoezlxo07yz7Z1e2czVnTuFbg,1207
+aicapture/cache.py,sha256=uDIQqRRAG2QZwtbmyyh6jdiqC7t18lQ0dL_bLIaKvZY,19660
+aicapture/settings.py,sha256=9heSyIbAiwlvrRtav_S40fsI3cM6XX6EDQbreDIhOxo,4643
+aicapture/utils.py,sha256=1RvWzWsxA7FmY3loLcWBgCDraOxo7d6-MLDOMD3wgco,5322
+aicapture/vid_capture.py,sha256=7M_Rtw9ux3rdPiHoDRp60sEfopNLn6gmqLT7hUct8I8,7400
+aicapture/vision_capture.py,sha256=4hLDCme2WsdpelB0VUmXH6BWAbjXi2v_jVSap4mgMt4,2359
+aicapture/vision_models.py,sha256=lbz-tpdj8E34PSTp7sds_EoJaj6M1U2nKs0KgR8qBHg,21636
+aicapture/vision_parser.py,sha256=oSTz7hZfneLu_sgfBVxCOVyqt_Yn6J4VSvkg1p1pM4g,31233
+aicapture-0.2.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aicapture-0.2.8.dist-info/METADATA,sha256=Uoh9XEY8DWup14DKJmv1ZAFOUztnQZa_pe4dG8orcV8,8061
+aicapture-0.2.8.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+aicapture-0.2.8.dist-info/RECORD,,
