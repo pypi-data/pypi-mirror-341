@@ -1,0 +1,9 @@
+microflow/__init__.py,sha256=p7rteO52Pw1EW6O9SZV2Xubi33t7nWCzyBEgNY3gXcg,281
+microflow/event.py,sha256=-HtHJVgkQd1EybDtD5QNOLab0_3fSCB7wm5Lyf8K9nA,628
+microflow/manager.py,sha256=aYG_DLHUnY5Ll3FjH_jXzaBLkczroVvU1nwUBhOv0wY,1856
+microflow/examples/simple_agent.py,sha256=9eEM-EbSA6ZnqDbQ8eLyZ072jwGEJEcMHfcZQ_ghu7k,2360
+microflow/examples/weather_assistant.py,sha256=Md8_2xE0UCffHFzelbX8rUqFv-PPFjZ7h12lrXcWJxU,6640
+microflow-0.1.0.dist-info/METADATA,sha256=3zogd2Ok1NwCAIbphky7axRZHfZh_3Kdgfqoydp_3fo,6101
+microflow-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+microflow-0.1.0.dist-info/licenses/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+microflow-0.1.0.dist-info/RECORD,,
