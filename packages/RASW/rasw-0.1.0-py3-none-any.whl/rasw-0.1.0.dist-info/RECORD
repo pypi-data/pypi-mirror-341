@@ -1,0 +1,17 @@
+RASW/__init__.py,sha256=d2eA0Aeri8reYFtsLuX9qphl30ha7WjJrh5ySOMmOcI,1174
+RASW/cli.py,sha256=cV8ULRcPFxXnUomkzQnn3lPL0bnfcsNPNHMQInQero4,2725
+RASW/example.py,sha256=SWrOWTVlkbqAyIKm4Hwn9r-smC6GEkfyRQA3c-KNoo8,2090
+RASW/FK/2D_4_link_arm.py,sha256=NcFbUnV5C_5WxvbPi1DhWe2PMIzDAGFzDIqWf4mygrQ,2034
+RASW/FK/__init__.py,sha256=BnFFcaZ3ZHvPxnrkTpC1yNVfy9XzgeZJVRWL-5inSH4,123
+RASW/FK/forward_kinematics.py,sha256=cwI_bq-0i9CxJ3yMyq5zKJmx9f_ZuE6eubakD63OHg0,2135
+RASW/FK/Old/2D_4_link_arm backup.py,sha256=PebEKUQdgPO6J9GhPNSWIZklf_w7J8BLmDKjdL0sQdk,1501
+RASW/IK/2D_3_link_arm.py,sha256=dO86gwhFB2jwlqaXeo7jyFCNENoYVaLtHjWFfe0x-lY,1628
+RASW/IK/__init__.py,sha256=Q4i5Z24zPSBY3jvozNeksP5XlOyl9rLtc3_4NacP5Gc,123
+RASW/IK/inverse_kinematics.py,sha256=IuXsNBnbl5DPazlq5kmnNvUYJxUe9EZ8Ebne2WmVl5M,4087
+RASW/IK/Old/2D IKarm.py,sha256=3MsIQ-KRWpkB6i1sWbuHtUMAx9PDpixcuzlmoG6-Sjs,3809
+RASW/IK/Old/2D_robotic_arm.py,sha256=_dAyspUfLspPoXhTzxBwJBr9c8X88hVaa8ENZSixLtY,2294
+rasw-0.1.0.dist-info/METADATA,sha256=k_iohLHArSp-Bu4NFJBVLy_Eki2PLwJdQCFcSjX7Yjc,6286
+rasw-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+rasw-0.1.0.dist-info/entry_points.txt,sha256=YdjY-bC5Lz56nQjZ9s7jS4_CdXWeRoZ7pXtI630gaJQ,43
+rasw-0.1.0.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+rasw-0.1.0.dist-info/RECORD,,
