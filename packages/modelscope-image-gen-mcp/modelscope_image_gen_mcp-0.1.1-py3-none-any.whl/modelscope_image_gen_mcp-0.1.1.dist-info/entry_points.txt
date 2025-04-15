@@ -1,0 +1,2 @@
+[console_scripts]
+modelscope_image_gen_mcp = modelscope_image_gen_mcp:main
