@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Module",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "forgeserve",
+            // "args": ["launch", "bigscience/bloom-560m", "--backend", "vllm"],
+            // "args": ["launch", "-f","examples/vllm_basic_gpu.yaml", "--backend", "vllm"],
+            // "args": ["status", "bigscience-bloom-560m-serving"],
+            // "args": ["delete", "bigscience-bloom-560m-serving", "-y"],
+            // "args": ["list"],
+            // "args": ["logs","bigscience-bloom-560m-serving"],
+            // "args": ["launch", "qwen2.5:0.5b", "--backend", "ollama"],
+            "args": ["launch", "-f","examples/ollama_cpu_only.yaml"],
+            // "args": ["delete", "qwen2505b-serving", "-y"],
+        }
+    ]
+}
