@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: onn512
+Version: 0.0.2
+Summary: Name reservation 😎
+Author: onn512
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: requires-python
+Dynamic: summary
