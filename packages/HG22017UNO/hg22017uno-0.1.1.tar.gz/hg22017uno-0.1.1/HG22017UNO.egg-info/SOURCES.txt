@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+HG22017UNO/__init__.py
+HG22017UNO.egg-info/PKG-INFO
+HG22017UNO.egg-info/SOURCES.txt
+HG22017UNO.egg-info/dependency_links.txt
+HG22017UNO.egg-info/requires.txt
+HG22017UNO.egg-info/top_level.txt
+HG22017UNO/nonlinear/__init__.py
+HG22017UNO/nonlinear/bisection.py
+HG22017UNO/nonlinear/gauss_seidel.py
+HG22017UNO/nonlinear/jacobi.py
+tests/__init__.py
+tests/test_linear_methods.py
+tests/test_nonlinear_methods.py
