@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_twsca.py
+twsca/__init__.py
+twsca/analysis.py
+twsca/dtw.py
+twsca/spectral.py
+twsca.egg-info/PKG-INFO
+twsca.egg-info/SOURCES.txt
+twsca.egg-info/dependency_links.txt
+twsca.egg-info/requires.txt
+twsca.egg-info/top_level.txt
