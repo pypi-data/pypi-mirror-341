@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+cookbook/README.md
+cookbook/indoxRouter_cookbook.ipynb
+indoxRouter.egg-info/PKG-INFO
+indoxRouter.egg-info/SOURCES.txt
+indoxRouter.egg-info/dependency_links.txt
+indoxRouter.egg-info/requires.txt
+indoxRouter.egg-info/top_level.txt
+indoxrouter.egg-info/PKG-INFO
+indoxrouter.egg-info/SOURCES.txt
+indoxrouter.egg-info/dependency_links.txt
+indoxrouter.egg-info/requires.txt
+indoxrouter.egg-info/top_level.txt
