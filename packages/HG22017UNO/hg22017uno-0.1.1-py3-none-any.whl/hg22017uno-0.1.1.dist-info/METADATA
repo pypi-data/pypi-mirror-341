@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: HG22017UNO
+Version: 0.1.1
+Summary: A library for solving linear and nonlinear systems of equations using various methods.
+Author: Jose HErnandez
+Author-email: hg22017@ues.edu.sv
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy>=1.10
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
