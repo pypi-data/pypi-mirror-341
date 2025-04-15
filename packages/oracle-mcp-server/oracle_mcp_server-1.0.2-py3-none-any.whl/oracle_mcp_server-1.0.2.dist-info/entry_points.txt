@@ -1,0 +1,3 @@
+[console_scripts]
+dev = oracle_mcp_server:dev
+oracle-mcp-server = oracle_mcp_server:main
