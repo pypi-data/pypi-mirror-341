@@ -1,0 +1,10 @@
+pyksolve-0.0.13.dist-info/LICENSE,sha256=-7a01wauyycrFo_qtOEARiRoK13HF9zptIJhJiYVfO0,1070
+pyksolve-0.0.13.dist-info/WHEEL,sha256=bJYjb8WQy12IOgNJUB-nIaFYzFfCOeSKDIg7NuKd-h4,108
+pyksolve-0.0.13.dist-info/RECORD,,
+pyksolve-0.0.13.dist-info/top_level.txt,sha256=5A7TwEXx-8hVb7fDG8yW_iqY5dBjRG-N12Ikuh8vMJY,9
+pyksolve-0.0.13.dist-info/METADATA,sha256=F9Pf9G9TAxEqvGqIh0nerCxpRbskh1r5GZUNiPvdFmw,1032
+pyksolve.libs/libstdc++-0530927c.so.6.0.32,sha256=h2p2et0WB0CYcMcUEViWjYXOe8uir-_tHJJZui-6GRc,3537509
+pyksolve.libs/libgcc_s-1257a076.so.1,sha256=wbXWo2Qh33OuE7spB8-mVbZoEiUkvZu6ZH78pUNr9X8,168321
+pyksolve/deferred.py,sha256=CxTPsbDp87BUINSIln_z13DB9xi5JkoEqCJwGElt4HM,7481
+pyksolve/__init__.py,sha256=w7DaLmTuzJsL6E3OI9DDJDNlN1IpzroSlQlMkqe5IWo,1200
+pyksolve/solver.cpython-38-i386-linux-gnu.so,sha256=fYzlmPqm3eLjr9Lhmlp4AIb3mNnJKda8FJZbxPsQSRc,1036997
