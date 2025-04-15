@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+ocean4dvarnet/__init__.py
+ocean4dvarnet/data.py
+ocean4dvarnet/evaluate.py
+ocean4dvarnet/models.py
+ocean4dvarnet/plot.py
+ocean4dvarnet/process.py
+ocean4dvarnet/train.py
+ocean4dvarnet/utils.py
+ocean4dvarnet.egg-info/PKG-INFO
+ocean4dvarnet.egg-info/SOURCES.txt
+ocean4dvarnet.egg-info/dependency_links.txt
+ocean4dvarnet.egg-info/requires.txt
+ocean4dvarnet.egg-info/top_level.txt

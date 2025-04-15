@@ -1,0 +1,67 @@
+[project]
+name = "ocean4dvarnet"
+version = "1.0.3"
+description = "A computer program whose purpose is to apply deep learning schemes to dynamical systems and ocean remote sensing data."
+authors = [
+    { name = "Ronan Fablet", email = "ronan.fablet@imt-atlantique.fr" },
+    { name = "Quentin Febvre", email = "quentin.febvre@ifremer.fr" },
+    { name = "Pierre Haslee", email = "author@example.com" },
+    { name = "DanieL Zhu", email = "daniel.zhu@imt-atlantique.fr" },
+    { name = "Hugo Georgenthum", email = "hugo.georgenthum@imt-atlantique.fr" },
+    { name = "Braux Emmanuel", email = "emmanuel.braux@imt-atlantique.fr" },
+]
+readme = "README.md"
+requires-python = "~=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "xarray==2025.1.2",
+    "netcdf4 (>=1.7.2,<2.0.0)",
+    "numpy==1.26.4",
+    "pandas",
+    "pytorch-lightning==2.3.3",
+]
+
+[project.urls]
+Homepage = "https://github.io//CIA-Oceanix/ocean4dvarnet/"
+Documentation = "https://CIA-Oceanix.github.io/ocean4dvarnet/"
+Repository = "https://github.com/CIA-Oceanix/ocean4dvarnet"
+Issues = "https://github.com//CIA-Oceanix/ocean4dvarnet/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pylint",
+    "pytest",
+    "pytest-cov",
+    "tox",
+    "tomli",
+    "tomli-w",
+    "flake8",
+    "black",
+    "isort",
+    "mypy",
+]
+doc = [
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocstrings",
+    "mkdocstrings-python",
+]
+pypi = [
+    "build",
+    "twine",
+    "tomli",
+    "tomli-w",
+]
+
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.pylint.format]
+max-line-length = 120
