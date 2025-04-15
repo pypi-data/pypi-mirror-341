@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: BA22004UNO
+Version: 1.0.0
+Summary: esta libreria es para resolver sistemas de ecuaciones lineales y no lineales con varios metodos numericos
+Author: Tu Nombre
+Author-email: alejandrobarillas1@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
