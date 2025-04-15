@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: qtasks
+Version: 1.0.0
+Summary: Queue Tasks Framework
+Author-email: txello <txello@inbox.ru>
+Project-URL: Homepage, https://github.com/txello/qtasks
+Project-URL: Issues, https://github.com/txello/qtasks/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typing-extensions>=4.12.2
+Requires-Dist: redis>=5.2.1
+Requires-Dist: anyio>=4.9.0
+Requires-Dist: asyncio_atexit>=1.0.1
+Requires-Dist: apscheduler>=3.11.0
+Provides-Extra: rabbitmq
+Requires-Dist: aio-pika>=9.5.5; extra == "rabbitmq"
+Requires-Dist: pika>=1.3.2; extra == "rabbitmq"
+Provides-Extra: redis
+Requires-Dist: redis>=5.2.1; extra == "redis"
+Provides-Extra: kafka
+Requires-Dist: aiokafka>=0.12.0; extra == "kafka"
+Provides-Extra: dev
+Requires-Dist: aiounittest; extra == "dev"
+Dynamic: license-file
+
+# qtasks
+Asynchronous Queue Tasks
