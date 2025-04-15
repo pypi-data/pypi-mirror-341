@@ -1,0 +1,9 @@
+range_coding.cpython-312-i386-linux-gnu.so,sha256=j_aL55A77R8YjN6r3wnYfJBD7BNDh4bRrCGAFt9Xi8Y,1318688
+src/range_coding_cython/range_coding.py,sha256=9lPlCup1djp7894EHQV0JH8YjxaMrLSKdo5q_lJERug,5575
+src/range_coding_cython/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/range_coding_cython/__init__.py,sha256=zv-JhNyrivlJ2XSHVJoWUMbUz3wMLJgU58vq-lZIZKU,100
+range_coding_cython-0.1.0.dist-info/WHEEL,sha256=3Uy6ukHeTvCstCXO4Rd7xLI0OjAbjaulqK-w9ogQ64w,216
+range_coding_cython-0.1.0.dist-info/RECORD,,
+range_coding_cython-0.1.0.dist-info/top_level.txt,sha256=CMNAmtof3KosN3i2F3h-h7clyxp413fthtqbEJ3REoI,17
+range_coding_cython-0.1.0.dist-info/METADATA,sha256=kX_zlwtPZpnRTxMCcuyaL7soSEatF8t8DMPvMLbM7oM,1461
+range_coding_cython-0.1.0.dist-info/licenses/LICENSE,sha256=XuEJHq5kdVN7bBq6fyI7lpFG2kGYYSgf_VQMP7jq1RE,1068
