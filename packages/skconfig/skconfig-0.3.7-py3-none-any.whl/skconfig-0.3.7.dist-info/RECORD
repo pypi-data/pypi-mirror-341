@@ -1,0 +1,12 @@
+skconfig/__init__.py,sha256=Z-p2NGDHxstrsLbC2MREuF6Ngfg2G7kSfFAK9oVk88g,61
+skconfig/_version.py,sha256=Mzy3NhAqfY25ymly5Ji2ZQDBbOVx_D1-5ADbqwHbtak,511
+skconfig/config.py,sha256=7x2wOTD_Z8ldin_MiI6HdsF8C6ZNo6n4V34bjEwa7Ts,28187
+skconfig/tests/2010-10-22_vis_psf.yaml,sha256=BU8UQT9Qn44Od_92y9oOopPcFBYq206S3wLcdukZu6U,395
+skconfig/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skconfig/tests/test_config.py,sha256=g-j1EFOsrpzHI3lSgTqAX2meSND94SAK2moNkeM4G8k,8360
+skconfig/tests/test_configuration.yaml,sha256=xG4lsHLDSMrIR-PrDkblXqDdCraua_qaPpJEpswpByI,4181
+skconfig-0.3.7.dist-info/licenses/LICENSE,sha256=s9AVeJOyQQODg6LlP6Rpg69d_d-pqskzFeMWdYUkZUs,1066
+skconfig-0.3.7.dist-info/METADATA,sha256=HPZO25eZbNf9Ph3AEFx-nPC8JtjOBWp6XPgUc8yGog0,2373
+skconfig-0.3.7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+skconfig-0.3.7.dist-info/top_level.txt,sha256=GRCeqGSEbzfTzIixA_P6-XSYqiyjDwHWrS1V7tS04dU,9
+skconfig-0.3.7.dist-info/RECORD,,
