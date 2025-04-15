@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: tractoray
+Version: 0.0.5
+Summary: Run ray on tracto.ai
+Author: TractoAI team
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: ytsaurus-client (>=0.13.24)
