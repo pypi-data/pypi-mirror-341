@@ -1,0 +1,18 @@
+[project]
+name = "matrix2str"
+version = "0.1.4"
+description = "A Python package to convert numpy matrices to formatted strings"
+authors = [
+    { name = "TL", email = "deahnlgon@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.13.2"
+dependencies = [
+    "numpy>=2.2.3"
+]
+keywords = ["numpy", "matrix", "formatting", "matrix to string"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
