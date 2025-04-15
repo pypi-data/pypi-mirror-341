@@ -1,0 +1,17 @@
+requests
+psutil
+flask
+flask-wtf
+flask-jwt-extended
+waitress
+
+[:sys_platform == "win32"]
+pywin32
+
+[color]
+colorama
+
+[keywords]
+minecraft
+bedrock
+server
