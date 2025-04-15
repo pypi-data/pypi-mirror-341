@@ -1,0 +1,154 @@
+# Some common external tool dependencies.
+# Short for now and just holds non-pip external tools often depended on
+# by Python. But could expand this.
+
+less:
+  command_names: [less]
+  comment: |-
+    Almost always pre-installed but listing so dependency can be declared.
+  install_names: {}
+  tags:
+    - essential
+    - shell
+
+tail:
+  command_names: [tail]
+  comment: null
+  install_names: {}
+  tags:
+    - essential
+    - shell
+
+bat:
+  command_names: [batcat, bat]
+  comment: |-
+    Not available on ubuntu, but in pixi.
+  install_names:
+    brew: bat
+    pixi: bat
+    winget: sharkdp.bat
+  tags:
+    - essential
+    - shell
+
+ripgrep:
+  command_names: [rg]
+  comment: null
+  install_names:
+    brew: ripgrep
+    apt: ripgrep
+    winget: BurntSushi.ripgrep
+  tags:
+    - essential
+    - shell
+
+eza:
+  command_names: [eza]
+  comment: null
+  install_names:
+    brew: eza
+    apt: eza
+    winget: eza-community.eza
+  tags:
+    - essential
+    - shell
+
+zoxide:
+  command_names: [zoxide]
+  comment: null
+  install_names:
+    brew: zoxide
+    apt: zoxide
+    winget: ajeetdsouza.zoxide
+  tags:
+    - essential
+    - shell
+
+hexyl:
+  command_names: [hexyl]
+  comment: null
+  install_names:
+    brew: hexyl
+    apt: hexyl
+    winget: sharkdp.hexyl
+  tags:
+    - essential
+    - shell
+
+pygmentize:
+  command_names: [pygmentize]
+  comment: null
+  install_names:
+    brew: pygments
+    apt: python3-pygments
+    pip: Pygments
+
+libmagic:
+  command_names: []
+  comment: |-
+    For macOS and Linux, brew or apt gives the latest binaries. For Windows, it may be
+    easier to use pip.
+  install_names:
+    brew: libmagic
+    apt: libmagic1
+    pip: python-magic-bin
+  tags:
+    - essential
+    - library
+
+libgl1:
+  command_names: []
+  comment: |-
+    Needed on ubuntu along with ffmpeg.
+  install_names:
+    apt: libgl1
+  tags:
+    - library
+  
+ffmpeg:
+  command_names: [ffmpeg]
+  comment: |-
+    Needed by yt-dlp and many other tools.
+  install_names:
+    brew: ffmpeg
+    apt: ffmpeg
+    winget: Gyan.FFmpeg
+  tags:
+    - essential
+    - shell
+    - library
+
+imagemagick:
+  command_names: [magick]
+  comment: null
+  install_names:
+    brew: imagemagick
+    apt: imagemagick
+    winget: ImageMagick.ImageMagick
+  tags:
+    - shell
+    - library
+
+dust:
+  command_names: [dust]
+  comment: |-
+    Not available on ubuntu, but in pixi.
+  install_names:
+    brew: dust
+    pixi: dust
+    winget: bootandy.dust
+  tags:
+    - essential
+    - shell
+
+duf:
+  command_names: [duf]
+  comment: |-
+    Not in winget. Only in unstable on ubuntu, but in pixi.
+  install_names:
+    brew: duf
+    pixi: duf
+    chocolatey: duf
+  tags:
+    - essential
+    - shell
