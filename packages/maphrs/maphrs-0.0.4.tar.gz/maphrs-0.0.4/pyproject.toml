@@ -1,0 +1,22 @@
+[project]
+name = "maphrs"
+version = "0.0.4"
+description = "A comprehensive and easy package with calculation utilities"
+readme = "README.md"
+authors = [
+    { name = "Guilhermwn", email = "limaoplaykglp@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+maphrs = "maphrs:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]

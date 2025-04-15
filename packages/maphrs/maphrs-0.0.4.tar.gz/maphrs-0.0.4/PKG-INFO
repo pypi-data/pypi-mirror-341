@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: maphrs
+Version: 0.0.4
+Summary: A comprehensive and easy package with calculation utilities
+Author-email: Guilhermwn <limaoplaykglp@gmail.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Maphrs
+
+A comprehensive and easy package with calculation utilities
