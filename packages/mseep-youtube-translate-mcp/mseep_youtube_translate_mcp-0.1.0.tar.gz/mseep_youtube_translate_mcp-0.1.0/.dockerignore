@@ -1,0 +1,76 @@
+# Version control
+.git/
+.gitignore
+.gitattributes
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Logs
+*.log
+logs/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-*
+
+# OS specific
+.DS_Store
+Thumbs.db
+._*
+._.*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+
+# Project specific
+.cursor
+.coverage
+htmlcov/
+.pytest_cache/
+pytest-report.xml
+.mypy_cache/
+
+# Documentation
+docs/
+
+# Examples
+examples/
+
+# Development tools
+cleanup.sh
+
+# Jupyter Notebooks
+*.ipynb
+.ipynb_checkpoints/ 
