@@ -1,0 +1,38 @@
+[project]
+name = "box-manager"
+version = "0.1.1"
+description = "Orchestration tool for managing systemd services and process priorities in Debian systems."
+authors = [
+    { name = "rajatasusual", email = "rajatasusual@github.com" }
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "PyYAML>=6.0",
+    "click>=8.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/rajatasusual/box-manager"
+Repository = "https://github.com/rajatasusual/box-manager"
+
+[project.scripts]
+box-manager = "box_manager.cli:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-mock",
+]
+
