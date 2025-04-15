@@ -1,0 +1,28 @@
+# pyproject.toml
+
+[tool.poetry]
+name = "chatline"
+version = "0.2.0"
+authors = ["Alex Basile <basileaw@gmail.com>"]
+description = "A pretty command line interface for LLM chat."
+readme = "README.md"
+license = "MIT"
+
+[[tool.poetry.packages]]
+include = "chatline"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<4.0"
+boto3 = "*"
+httpx = "*"
+rich = "*"
+prompt-toolkit = "*"
+terminaide = "^0.1.1"
+
+[tool.poetry.group.dev.dependencies]
+fastapi = "*"
+uvicorn = "*"
