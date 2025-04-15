@@ -1,0 +1,16 @@
+addressbook/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addressbook/command_matcher.py,sha256=1Ji2Wuu5yVFs8T68HTDynxzKK4NIktOlSqojrqZKL98,3834
+addressbook/error_handler.py,sha256=voaVr52Rjt_dJoj1jynLGfWvGWfb5D46IVmDFxCTEYs,3063
+addressbook/main.py,sha256=ncDAjgMB110plqmhWLyU5-733osXakX4VaoLlCjd1cc,3728
+addressbook/utils.py,sha256=L06gbrGTndZDMhij5mdulBwX4ARYqn_GEvLEeloFgn8,2073
+addressbook/address_book/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addressbook/address_book/address_book.py,sha256=cEljVazuyKT4kaXoQS59cYjj3aEbjyFvjJ-TbZbHvoI,6832
+addressbook/address_book/handlers.py,sha256=_ZLATwzxgUe31x4AISjKvkNcB3cAhqyT-hFKeUuRYrg,8019
+addressbook/note_book/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addressbook/note_book/handlers.py,sha256=BSIu0ELf0KncNJFnqL6vFzDbMKAOqMnYbIS57MdbceY,2632
+addressbook/note_book/note_book.py,sha256=4Yc0wBx1L8qbISk6HZ9gNtwUBFFCcU-3yOVHZea-usU,4145
+goit_dev_nest_addressbook_cli-0.3.0.dist-info/METADATA,sha256=mK7QWTA4t7LHmo7XoTOivRySNMOVk5orHIKPznCoCwI,392
+goit_dev_nest_addressbook_cli-0.3.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+goit_dev_nest_addressbook_cli-0.3.0.dist-info/entry_points.txt,sha256=LSotPhkni5njZZ_Nm93hYmrd2BGleAQOaviOlqKrsjo,54
+goit_dev_nest_addressbook_cli-0.3.0.dist-info/top_level.txt,sha256=JOZ4plsJEA8Os7GpG75ylXrVKoPY2X96KRLJa26-0OU,12
+goit_dev_nest_addressbook_cli-0.3.0.dist-info/RECORD,,

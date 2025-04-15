@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: goit-dev-nest-addressbook-cli
+Version: 0.3.0
+Summary: A simple CLI assistant for managing contacts and notes
+Author: Dev Nest
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Requires-Python: >=3.8
+Requires-Dist: colorama>=0.4.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
