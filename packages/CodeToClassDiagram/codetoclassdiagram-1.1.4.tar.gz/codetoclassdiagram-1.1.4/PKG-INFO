@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: CodeToClassDiagram
+Version: 1.1.4
+Summary: Génération de diagrammes de classes à partir d’un projet source.
+Author: Votre Nom
+Requires-Dist: regex
+Requires-Dist: tree-sitter
+Requires-Dist: tree-sitter-c-sharp
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary

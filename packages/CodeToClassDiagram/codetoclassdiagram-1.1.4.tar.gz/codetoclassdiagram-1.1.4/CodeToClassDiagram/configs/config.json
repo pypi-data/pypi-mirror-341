@@ -1,0 +1,15 @@
+{
+  "exclude_files": [
+  ],
+  "input_filetype": "Csharp",
+  "output": {
+    "mode": "file",
+    "file": "diagram.md",
+    "diagram": "PlantUML",
+    "hide_implemented_interface_methods": true,
+    "hide_implemented_interface_properties": true,
+    "exclude_namespaces": [
+    ],
+    "show_dependencies": true
+  }
+}
