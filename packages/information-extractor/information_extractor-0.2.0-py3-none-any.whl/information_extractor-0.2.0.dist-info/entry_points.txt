@@ -1,0 +1,2 @@
+[console_scripts]
+ie = information_extractor.main:main
