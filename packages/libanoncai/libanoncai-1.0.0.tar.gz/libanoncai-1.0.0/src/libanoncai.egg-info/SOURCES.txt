@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/libanoncai/__init__.py
+src/libanoncai/core.py
+src/libanoncai/types.py
+src/libanoncai.egg-info/PKG-INFO
+src/libanoncai.egg-info/SOURCES.txt
+src/libanoncai.egg-info/dependency_links.txt
+src/libanoncai.egg-info/requires.txt
+src/libanoncai.egg-info/top_level.txt
