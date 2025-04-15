@@ -1,0 +1,3 @@
+[console_scripts]
+oculith=oculith.__main__:main
+
