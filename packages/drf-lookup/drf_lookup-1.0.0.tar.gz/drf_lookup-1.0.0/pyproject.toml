@@ -1,0 +1,127 @@
+[project]
+name = "drf-lookup"
+version = "1.0.0"
+description = "Helper for retrieve select options of drf fields and django-filter filters."
+authors = [
+    {name = "Grigory Mishchenko", email = "grishkokot@gmail.com"},
+]
+license = "MIT"
+readme = "README.md"
+keywords = ["drf", "django-filter"]
+repository = "https://github.com/kindlycat/drf-lookup"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Framework :: Django",
+]
+dependencies = [
+    "djangorestframework>=3.14.0",
+    "django-filter>=23.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.5",
+    "ipython>=8.35.0",
+    "ipdb>=0.13.13",
+    "ruff>=0.11.4",
+    "sphinx>=8.1.3",
+    "furo>=2024.8.6",
+    "pytest-django>=4.11.1",
+    "pytest-mock>=3.14.0",
+    "pytest-cov>=6.1.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+    "docs",
+]
+
+line-length = 79
+indent-width = 4
+
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "D100", "D101", "D102", "EXE001", "D107", "ANN003", "ANN001",
+    "ARG002", "ANN002", "D103", "D106", "D104", "ANN201", "COM812", "ISC001",
+    "ANN401", "TRY003", "EM102", "EM101", "RET503", "PLR0913"
+]
+
+fixable = ["ALL"]
+unfixable = []
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = [
+    "S101", "S106", "RUF012", "D105", "PLR2004", "FBT003", "ANN202", "ANN206",
+    "PT004", "DJ001",
+]
+
+[tool.ruff.lint.isort]
+section-order = [
+    "future", "standard-library", "third-party", "first-party", "local-folder"
+]
+lines-after-imports = 2
+combine-as-imports = true
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -v"
+
+[tool.coverage.run]
+source = ["drf_lookup"]
+
+[tool.coverage.report]
+exclude_also = [
+    "if TYPE_CHECKING:",
+    "@abc.abstractmethod",
+    "def __str__",
+]
