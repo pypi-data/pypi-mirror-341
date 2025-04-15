@@ -1,0 +1,1 @@
+from .partnerconstructor import partner
