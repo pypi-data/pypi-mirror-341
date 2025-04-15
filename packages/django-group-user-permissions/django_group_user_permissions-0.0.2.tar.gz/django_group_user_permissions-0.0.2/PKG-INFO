@@ -1,0 +1,88 @@
+Metadata-Version: 2.4
+Name: django_group_user_permissions
+Version: 0.0.2
+Summary: A Django package for managing user permissions and groups.
+Home-page: https://github.com/rimalsparsha/django_group_user_permissions
+Author: Sparsha Rimal
+Author-email: sparsharimal@gmail.com
+License: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django :: 3.2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>=3.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# DJANGO GROUP_USER_PERMISSIONS
+
+## 🔍 Overview
+
+This package was developed because Django REST Framework (DRF) does not provide a built-in solution to check **both user-level and group-level permissions** in one place.
+
+`django-group-user-permissions` is a custom DRF permission class that combines permissions assigned directly to a user and those inherited from the user’s groups. It simplifies permission handling in DRF-based APIs by dynamically checking permissions based on the request method and the model associated with the view.
+
+---
+
+## 📦 Installation
+
+```bash
+pip install django-group-user-permissions
+```
+
+⚙️ Configuration
+1. Add to INSTALLED_APPS in settings.py:
+```base
+
+INSTALLED_APPS = [
+    
+    "django-group-user-permissions",
+]
+
+```
+
+2. Import the permission class in your views:
+
+```base
+
+from django_group_user_permissions.group_user_permissions import GroupUserPermissions
+
+```
+
+3. 🚀 Usage in Views
+```base
+
+permission_classes = [GroupUserPermissions]
+
+```
+
+✅ What It Does
+Maps HTTP methods to Django permission codenames:
+
+GET → view_<modelname>
+
+POST → add_<modelname>
+
+PUT / PATCH → change_<modelname>
+
+DELETE → delete_<modelname>
+
+Checks if the user has required permission either:
+
+Directly assigned to the user
+
+Through any group the user belongs to

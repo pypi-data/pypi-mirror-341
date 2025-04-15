@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_group_user_permissions/__init__.py
+django_group_user_permissions/group_user_permissions.py
+django_group_user_permissions.egg-info/PKG-INFO
+django_group_user_permissions.egg-info/SOURCES.txt
+django_group_user_permissions.egg-info/dependency_links.txt
+django_group_user_permissions.egg-info/requires.txt
+django_group_user_permissions.egg-info/top_level.txt
