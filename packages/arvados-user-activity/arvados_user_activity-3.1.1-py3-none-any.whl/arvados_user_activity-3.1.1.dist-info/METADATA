@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: arvados-user-activity
+Version: 3.1.1
+Summary: Summarize user activity from Arvados audit logs
+Home-page: https://arvados.org
+Author: Arvados
+Author-email: info@arvados.org
+License: GNU Affero General Public License, version 3.0
+Download-URL: https://github.com/arvados/arvados.git
+Platform: UNKNOWN
+Requires-Python: ~=3.8
+Requires-Dist: arvados-python-client (==3.1.1)
+
+UNKNOWN
+
+

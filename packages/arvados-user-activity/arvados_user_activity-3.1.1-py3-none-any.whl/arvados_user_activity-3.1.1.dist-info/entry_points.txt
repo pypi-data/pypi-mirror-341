@@ -1,0 +1,3 @@
+[console_scripts]
+arv-user-activity = arvados_user_activity.main:main
+
