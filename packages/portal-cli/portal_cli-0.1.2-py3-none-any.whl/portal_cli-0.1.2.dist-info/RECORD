@@ -1,0 +1,12 @@
+commands/chart.py,sha256=NVn1oyQtpMnmQPTF8La_B5MDzEhsCQvukWBl2XypkLk,1187
+commands/deploy.py,sha256=ZWLI4Gx7Ii4LIDlnr-YU-Xwnu9xmFpY970BgDdMvA8E,399
+commands/scan.py,sha256=YtX7MlBfRSHFkHsTHeIq5P8KYBqAW1o-hG95xeaou8s,319
+commands/search.py,sha256=6UjQoKJldRoHC_FMqYoMHmY4wWG-fI_WoZEI5Sm25GQ,297
+commands/transfer.py,sha256=zUh2b-TuPXDxuxF6paTFXM6co0rGuFoOOhCy1Y2V1Iw,398
+commands/upload.py,sha256=hYm7c9pZ2MqnkjejoclDsiffBHHyhrWZwWp8lU9Lyq8,285
+portal_cli-0.1.2.dist-info/licenses/LICENSE,sha256=m5cA5ioBuGJimqWvxM20yLefENSPi4pPu74HLRnT9sM,1071
+portal_cli-0.1.2.dist-info/METADATA,sha256=VkmAQx_H-HheE96_cXt37yx85Gpbuy1AxOYLogEpups,2451
+portal_cli-0.1.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+portal_cli-0.1.2.dist-info/entry_points.txt,sha256=0xIpvNmSKud4lVU4Edyu8MO-JQJnc12gWWKISb4xLFk,44
+portal_cli-0.1.2.dist-info/top_level.txt,sha256=6dNUbRvZAy7fLWNbD4YeUosLYwGk-SVew-Swd5CfFkg,9
+portal_cli-0.1.2.dist-info/RECORD,,
