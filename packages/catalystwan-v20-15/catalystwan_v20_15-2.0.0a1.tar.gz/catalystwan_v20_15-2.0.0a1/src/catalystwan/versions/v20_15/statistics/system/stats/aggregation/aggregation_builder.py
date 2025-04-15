@@ -1,0 +1,42 @@
+# Copyright 2024 Cisco Systems, Inc. and its affiliates
+from __future__ import annotations
+
+from typing import Any, Optional
+
+from catalystwan.abc import RequestAdapterInterface
+
+
+class AggregationBuilder:
+    """
+    Builds and executes requests for operations under /statistics/system/stats/aggregation
+    """
+
+    def __init__(self, request_adapter: RequestAdapterInterface) -> None:
+        self._request_adapter = request_adapter
+
+    def get(self, query: Optional[str] = None, **kw) -> Any:
+        """
+        Get aggregated data based on input query and filters. The data can be filtered on time and other unique parameters based upon necessity and intended usage
+        GET /dataservice/statistics/system/stats/aggregation
+
+        :param query: Query filter
+        :returns: Any
+        """
+        params = {
+            "query": query,
+        }
+        return self._request_adapter.request(
+            "GET", "/dataservice/statistics/system/stats/aggregation", params=params, **kw
+        )
+
+    def post(self, payload: Any, **kw) -> Any:
+        """
+        Get aggregated data based on input query and filters. The data can be filtered on time and other unique parameters based upon necessity and intended usage
+        POST /dataservice/statistics/system/stats/aggregation
+
+        :param payload: Stats query string
+        :returns: Any
+        """
+        return self._request_adapter.request(
+            "POST", "/dataservice/statistics/system/stats/aggregation", payload=payload, **kw
+        )
