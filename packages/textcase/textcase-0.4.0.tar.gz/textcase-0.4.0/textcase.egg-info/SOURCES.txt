@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+pyproject.toml
+tests/test_boundary_custom.py
+tests/test_case_all.py
+tests/test_case_custom.py
+tests/test_case_match.py
+tests/test_non_ascii.py
+tests/test_precision.py
+tests/test_punctuation.py
+textcase/__init__.py
+textcase/py.typed
+textcase.egg-info/PKG-INFO
+textcase.egg-info/SOURCES.txt
+textcase.egg-info/dependency_links.txt
+textcase.egg-info/top_level.txt
