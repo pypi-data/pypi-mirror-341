@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: pygraspi_test
+Version: 0.1.3
+Summary: Testing out how setting up a pypi package is done correctly
+Home-page: https://github.com/kkevinmartinezz/PyTest
+Download-URL: https://github.com/kkevinmartinezz/PyTest/archive/refs/tags/v_01.3.tar.gz
+Author: Kevin E. Martinez Sanchez
+Author-email: kevin425.m@hotmail.com
+License: Apache 2.0
+Keywords: testing,pygraspi,example
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+Requires-Dist: notebook
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
