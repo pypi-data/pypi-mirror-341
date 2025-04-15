@@ -1,0 +1,11 @@
+data/*
+**/.DS_Store
+.idea/
+__pycache__/
+.ipynb_checkpoints/
+venv/
+/web_app/stspeck/frontend/node_modules
+*.onnx
+dist/
+*.egg-info/
+*.pt
