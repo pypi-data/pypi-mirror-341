@@ -1,0 +1,17 @@
+labcas/workflow/VERSION.txt,sha256=_s8jxLPCwpOB1MFMrLmYk561P1eRuZq35OC8eXLERSQ,7
+labcas/workflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labcas/workflow/dags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labcas/workflow/manager/__init__.py,sha256=_-j3w3qAFt79cuFyOcsozFoSPu1vXHPjk10N2TBM110,83
+labcas/workflow/manager/datastore.py,sha256=TTda6PkjlGvk657yWf3BsNY0MdP9PPfOUyykYgB_IH4,1071
+labcas/workflow/manager/main.py,sha256=xRiZv9WOrda8NgR4nUWujDEbGYy7kIdIAXw6rCNxc88,893
+labcas/workflow/manager/process_collection.py,sha256=0gRNLvTwzn50PNyV2haYvJ8_9H8_oBLb0ZujKjzHDh8,450
+labcas/workflow/steps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labcas/workflow/steps/alphan/process.py,sha256=bHkynLiG6SyL7m38NQBOrcc69eriY00rjqQ4vLNF18s,5691
+labcas/workflow/steps/alphan/utils.py,sha256=rXKHFkrhbWeP-XZM8hmhh_2Onu3iwDqTpdtXUGnzSuA,3408
+labcas/workflow/steps/alphan/models/unet_64_ts2.12.h5,sha256=CeIXlNM3lT3FKqiVZ2WfLvqi5ZLjR7mSkNx4JiI0qoY,705432
+labcas_workflow-0.1.10.dist-info/METADATA,sha256=pOZV-X2q4fyijiZB6NMs8EGgfw1nIHkjAcHtwkSMuOs,5891
+labcas_workflow-0.1.10.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+labcas_workflow-0.1.10.dist-info/entry_points.txt,sha256=3aeY0601v1aIZ8ol8edcVU9HqcP0AqO1Y8lLDppyZ64,63
+labcas_workflow-0.1.10.dist-info/top_level.txt,sha256=GcGRSCu8Cd5QK1rxIYu1D85xhiVP3kFPefmHlkiho5o,7
+labcas_workflow-0.1.10.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+labcas_workflow-0.1.10.dist-info/RECORD,,
