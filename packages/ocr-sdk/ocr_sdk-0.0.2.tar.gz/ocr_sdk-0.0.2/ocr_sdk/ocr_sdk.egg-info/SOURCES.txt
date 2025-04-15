@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+ocr_sdk/ocr_sdk.egg-info/PKG-INFO
+ocr_sdk/ocr_sdk.egg-info/SOURCES.txt
+ocr_sdk/ocr_sdk.egg-info/dependency_links.txt
+ocr_sdk/ocr_sdk.egg-info/top_level.txt
