@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: imgeval
+Version: 0.1.0
+Summary: Image metrics evaluation package: PSNR, SSIM, RFID, LPIPS and visualization
+Home-page: https://github.com/yourusername/imgeval
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: scikit-image
+Requires-Dist: lpips
+Requires-Dist: torchvision
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# 计算图片集相关指标
+## PSNR SSIM
+
+## rFID
+

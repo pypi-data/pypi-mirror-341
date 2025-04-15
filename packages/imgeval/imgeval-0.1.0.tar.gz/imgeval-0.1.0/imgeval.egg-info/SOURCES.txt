@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+imgeval.egg-info/PKG-INFO
+imgeval.egg-info/SOURCES.txt
+imgeval.egg-info/dependency_links.txt
+imgeval.egg-info/requires.txt
+imgeval.egg-info/top_level.txt
