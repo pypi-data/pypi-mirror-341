@@ -1,0 +1,5 @@
+[console_scripts]
+apply_cross_bones = cross_bones.apply_shifts:cli
+cross_bones = cross_bones.align_catalogues:cli
+shift_stats = cross_bones.shift_stats:cli
+unwise_cross_bones = cross_bones.unwise_align_catalogues:cli
