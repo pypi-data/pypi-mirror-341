@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "portal-cli"
+version = "0.1.1"
+authors = [
+  { name = "AI Cloud Services LLC", email = "barb.rock@k8or.com" },
+]
+description = "A CLI for portal image management."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License", #This is the correct classifier.
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "click",
+    "requests",
+]
+
+[project.scripts]
+portal-cli = "main_cli:cli"
+
+[project.urls]
+"Homepage" = "https://github.com/k8or-orbit-aws/portal-cli"
