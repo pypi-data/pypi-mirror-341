@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: t-fujita
+Version: 1.1.4
+Summary: pipx run t-fujita
+Author: t-fujita
+Author-email: t-fujita@creationline.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: rich (>=13.0.0,<14.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# t-fujita-card
+![card](./t-fujita-cards.gif)
+
+```
+pipx run t-fujita
+```
+
+[PYPI](https://pypi.org/project/t-fujita/)
+
