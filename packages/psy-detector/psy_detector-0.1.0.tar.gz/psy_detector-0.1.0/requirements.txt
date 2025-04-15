@@ -1,0 +1,8 @@
+librosa>=0.10.1
+numpy>=1.24.0
+click>=8.1.7
+soundfile>=0.12.1
+scipy>=1.10.0
+rich>=13.7.0
+matplotlib>=3.8.0
+pyaudio @ https://conda.anaconda.org/conda-forge/osx-arm64/pyaudio-0.2.13-py313h5833ebf_0.tar.bz2 
