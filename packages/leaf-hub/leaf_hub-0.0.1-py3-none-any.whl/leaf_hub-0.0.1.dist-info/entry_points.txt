@@ -1,0 +1,3 @@
+[console_scripts]
+leaf-hub=leaf-hub.start:main
+

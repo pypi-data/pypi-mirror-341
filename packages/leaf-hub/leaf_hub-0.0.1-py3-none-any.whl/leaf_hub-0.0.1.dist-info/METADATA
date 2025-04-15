@@ -1,0 +1,41 @@
+Metadata-Version: 2.3
+Name: leaf-hub
+Version: 0.0.1
+Summary: LabEquipment Adapter Framework Hub (LEAF-hub)
+License: Apache-2.0
+Author: Matthew Crowther
+Author-email: b5044420@newcastle.ac.uk
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Documentation, https://leaf.systemsbiology.nl
+Project-URL: Repository, https://gitlab.com/LabEquipmentAdapterFramework/leaf-hub
+Description-Content-Type: text/markdown
+
+Currently, adapters can be run two ways, either within a process or across multiple processes, i.e. several adapters in one process running using 1 MQTT client OR one adapter per process, each with a separate client. However, a couple of issues persist around this.
+
+
+        
+      Users must manually define the configuration of adapters within a config file. Not only the type of adapter but how many run in a single process and initiate several processes for cases where multiple are needed (config wizard WILL alleviate this issue).
+
+        
+      Users must manually initiate the process (leaf.start, etc.) on the physical machine on which the adapter is working.
+
+        
+      Unsure about how much of an issue OR reality this is, but managing an adapter-based infrastructure isn't really possible. For example, managing adapters that may be running on several equipment/servers (computers) within a lab/institute isn't exactly possible. Currently, it would require a person to interface manually with each computer OR, maybe in the future, use some of the interfacing user tools (leaf-client) when commands can be sent bi-directionally. However, this would only allow interfacing at the individual adapter level, not on a more local infrastructure level.
+
+Therefore, this issue covers the discussed idea of a LEAF-Hub style system, which allows adapters to be "spun up" and manipulated in real-time as opposed to setting all adapters in an array (both inter and intra-process) at one moment and then being immutable until they stop. Some features may include:
+
+
+        
+      Ability to start adapters externally, perhaps via MQTT.
+
+        
+      Ability to quickly define the configuration of adapters (number of adapters per process, etc).
+
+        
+      Identify and manage on a local level an array of adapters, all running on potentially disparate machines.
+
+This issue will likely lead to the creation of another repository, i.e. another tool because it will be a system that uses adapters rather than is contained within. The decision to be made will be whether the hub will use the leaf core or whether it will be an alternative. I personally believe that the hub will use the core, but will require some rework/modularisation to happen on the start.py file.
