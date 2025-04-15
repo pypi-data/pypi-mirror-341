@@ -1,0 +1,16 @@
+polycrud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polycrud/connectors/__init__.py,sha256=_rFvecPs7qu6jedWJ379UjYEPiDHDSJHlX8SCDTEjBk,305
+polycrud/connectors/base.py,sha256=R6wlBL8jPU0UAxrv9FlLSdVsNYVtGE0NevKpWHbY14A,2913
+polycrud/connectors/mongo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polycrud/connectors/mongo/async_mongo.py,sha256=7VRbTobKc0SDmPxyHCsXJYJJ5Euag2eAHRe7GnvrvNk,10930
+polycrud/connectors/mongo/sync_mongo.py,sha256=pd6LI9HM1lNw08zyFSNZni7-jpokNr6-TKzsFyf43Xo,10114
+polycrud/connectors/mysql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polycrud/connectors/mysql/async_mysql.py,sha256=yc4p5ZzVFyFAhhZgAPXMOq2Sp8-NquKaO1TjTpWARS0,19660
+polycrud/connectors/mysql/sync_mysql.py,sha256=kttwzYaK6V_VpXhQNzeA0xo9MZTNaBo1QlozNrWvHSc,17702
+polycrud/connectors/psql.py,sha256=74i6JjrZvKKvWvNTYoBknKWuvqFURE6jZFLkned37O4,23
+polycrud/entity/__init__.py,sha256=pBmuEgPa8nqkosWf-c0EBsZc3vScVPCqcjBtuZgQBgQ,57
+polycrud/entity/base.py,sha256=R2xVCj98CVI8IfQ2jMkw6F38cQBUWBP0SEYvcn7rmh8,245
+polycrud/exceptions.py,sha256=4HSxwsw5HfawWGtbf591iUzZinzuZ_U0KjAXUDwV1yE,697
+polycrud-0.1.0rc1.dist-info/METADATA,sha256=oztGAYfRnC9dY7zOPIJN2wQLWPc8uesGsl_4dMa_tPQ,910
+polycrud-0.1.0rc1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+polycrud-0.1.0rc1.dist-info/RECORD,,
