@@ -1,0 +1,13 @@
+robotframework_scaffold/cli.py,sha256=v_vpheQt8O27zsv7NzYQKX5oi38dSslkcV5Am5E3bIE,764
+robotframework_scaffold/scaffolder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robotframework_scaffold/scaffolder/base_resource.py,sha256=lPRFgBcALt1oa1etu9M9_6ZnI_gWsdM-ifBbj9cEeVQ,1104
+robotframework_scaffold/scaffolder/constants.py,sha256=tKslfOzdxQ7NSNA_J4IPZBwa9aKisB8r4tkBLXw3tzI,194
+robotframework_scaffold/scaffolder/creator.py,sha256=0L-vek478snilWbdaKV4gkoXBDIvGQ1EdLL7kejE8FA,1000
+robotframework_scaffold/scaffolder/poetry_setup.py,sha256=LKGMZOE2HjulpYDl9fYCjf7Wz2tLYLkRwzZDURBbPwU,1462
+robotframework_scaffold/scaffolder/preview.py,sha256=KqvO62zpViZL9Fzt6CBfEVcoA_eWu2_u26x7kzAP-mQ,507
+robotframework_scaffold/scaffolder/prompts.py,sha256=J0AwNQYShmOToFA-6cy9jJ6Wtb-jb1P6-XaXqPRUb04,1965
+robotframework_scaffold/scaffolder/structure.py,sha256=11NEtnVgWX2sT0U4R-e9_P-jXSlOE1CulP1wWfBgb6E,219
+robotframework_scaffold-0.1.0.dist-info/LICENSE,sha256=QgjY6AJVmjz2rW-4Kqzc5etPx05J4RJjO71zZHgF2VQ,1070
+robotframework_scaffold-0.1.0.dist-info/METADATA,sha256=jR7ZprAbkRwK_6l7yrdq7tOfbajCu4e002EPuDaHBVw,1762
+robotframework_scaffold-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+robotframework_scaffold-0.1.0.dist-info/RECORD,,
