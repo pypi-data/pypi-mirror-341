@@ -1,0 +1,2 @@
+graft src
+recursive-exclusive __pycache__*.py[cod]
