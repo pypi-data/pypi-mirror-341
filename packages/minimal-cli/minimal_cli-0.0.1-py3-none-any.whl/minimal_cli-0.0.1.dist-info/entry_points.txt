@@ -1,0 +1,2 @@
+[console_scripts]
+minimal-cli = main_cli:cli
