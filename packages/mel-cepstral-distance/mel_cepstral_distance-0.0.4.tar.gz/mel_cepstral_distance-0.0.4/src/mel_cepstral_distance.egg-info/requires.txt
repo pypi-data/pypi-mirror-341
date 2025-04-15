@@ -1,0 +1,14 @@
+numpy>=1.22.4
+scipy>=1.8.0
+fastdtw>=0.3.4
+
+[dev]
+pytest
+pytest-cov
+pytest-xdist
+tox
+ruff
+mypy
+rope
+build
+twine
