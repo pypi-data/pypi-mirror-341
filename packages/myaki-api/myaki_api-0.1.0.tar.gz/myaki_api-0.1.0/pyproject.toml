@@ -1,0 +1,29 @@
+[project]
+name = "myaki-api"
+version = "0.1.0"
+description = "A Python API for interacting with Akinator's guessing game"
+readme = "README.md"
+authors = [{name = "Fethi Amari", email = "yasashi91@gmail.com"}]
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+dependencies = [
+    "cloudscraper>=1.2.71",
+    "beautifulsoup4>=4.12.3"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/yasashi91/myaki-api"
+Repository = "https://github.com/yasashi91/myaki-api"
