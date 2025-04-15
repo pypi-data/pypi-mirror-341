@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: mtge
+Version: 0.1.2
+Summary: Python mortgage calculation library
+Author: Beyondbond
+Author-email: info@beyondbond.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+# mtge
+
+This is a Python wrapper for the `libxux64.so` shared library using ctypes.
