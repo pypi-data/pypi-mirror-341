@@ -1,0 +1,37 @@
+---
+includes:
+  - has_description.yaml
+  - has_namespace.yaml
+  - has_json_indent.yaml
+  - has_expected_size.yaml
+
+required: [fields]
+
+properties:
+  # Provide defaults from a higher-level configuration.
+  codec:
+    type: boolean
+  stream:
+    type: boolean
+  methods:
+    type: boolean
+  identifier:
+    type: boolean
+  unit_test:
+    type: boolean
+
+  # https://en.cppreference.com/w/cpp/types/endian
+  default_endianness:
+    type: string
+    default: native
+    enum: [little, big, native]
+
+  instances:
+    type: array
+    items:
+      $ref: package://ifgen/schemas/StructInstance.yaml
+
+  fields:
+    type: array
+    items:
+      $ref: package://ifgen/schemas/StructField.yaml
