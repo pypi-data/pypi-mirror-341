@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+node_modules/
+
+# macOS system files
+.DS_Store
+
+mcp_server/demo/
+mcp_server/docs/
+homepage/backend/uploads
+.version
+lightpdf-mcp.zip
+build.zip
