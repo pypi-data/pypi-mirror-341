@@ -1,0 +1,1 @@
+nm_mcp_server_browser_use
