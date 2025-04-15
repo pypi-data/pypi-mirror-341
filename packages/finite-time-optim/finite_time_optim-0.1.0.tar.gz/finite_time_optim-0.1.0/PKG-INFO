@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: finite_time_optim
+Version: 0.1.0
+Summary: A collection of finite-time optimization algorithms.
+Home-page: https://github.com/your_username/finite_time_optim
+Author: Yu Zhou
+Author-email: yu_zhou@yeah.net
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

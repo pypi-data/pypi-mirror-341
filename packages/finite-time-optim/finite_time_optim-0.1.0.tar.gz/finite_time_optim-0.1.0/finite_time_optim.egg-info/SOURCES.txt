@@ -1,0 +1,11 @@
+setup.py
+finite_time_optim/__init__.py
+finite_time_optim/finite_time_momentum.py
+finite_time_optim/finite_time_normalized_gradient.py
+finite_time_optim/finite_time_sign_gradient.py
+finite_time_optim/test_optimizer.py
+finite_time_optim.egg-info/PKG-INFO
+finite_time_optim.egg-info/SOURCES.txt
+finite_time_optim.egg-info/dependency_links.txt
+finite_time_optim.egg-info/requires.txt
+finite_time_optim.egg-info/top_level.txt
