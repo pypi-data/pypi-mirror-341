@@ -1,0 +1,7 @@
+cartopy
+joblib
+matplotlib
+numpy>=2.1.3
+pandas>=2.2.3
+requests
+scikit-learn>=1.5.2
