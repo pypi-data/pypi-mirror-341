@@ -1,0 +1,8 @@
+global_logger/__init__.py,sha256=KxQ6HYPSOeRWqfAJvFMM8JqVwECzbjyHbQ01kKyxc4Y,72
+global_logger/global_logger.py,sha256=NpDgfUiF6K0dx9PVz2S4YD6ULwU3QHivsi4jrt3Wyiw,16946
+global_logger/requirements.txt,sha256=rgPm1whsMZuOGU748zAjvpelIa95bz2nphQ6tYRtAag,338
+global_logger-0.4.4.dist-info/AUTHORS.rst,sha256=8penrTYzgj_mSliz5Wm0O0qWqwTCn08NwqVMXactBcU,167
+global_logger-0.4.4.dist-info/LICENSE,sha256=OJnNaAmUMnOQ207bGuhY3WB2vK_igOTncWq7qhBmGyI,1095
+global_logger-0.4.4.dist-info/METADATA,sha256=sRhQUXIENdciHel7mjllw4TBrVyk_kX9FDjIu0iPRNo,2540
+global_logger-0.4.4.dist-info/WHEEL,sha256=9jVypgI8LevED4l0j3YDHs5IZdbkcE7aWw9FT9n2UzI,92
+global_logger-0.4.4.dist-info/RECORD,,
