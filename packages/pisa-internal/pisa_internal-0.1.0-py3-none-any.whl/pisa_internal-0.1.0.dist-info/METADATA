@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: pisa-internal
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: gradio>=5.25.0
+Requires-Dist: mcp>=1.6.0
