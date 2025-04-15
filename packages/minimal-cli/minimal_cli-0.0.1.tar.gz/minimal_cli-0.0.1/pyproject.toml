@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minimal-cli"
+version = "0.0.1"
+dependencies = ["click"]
+
+[project.scripts]
+minimal-cli = "main_cli:cli"
+
+[tool.setuptools.package-data]
+"minimal_cli" = ["main_cli.py"]
