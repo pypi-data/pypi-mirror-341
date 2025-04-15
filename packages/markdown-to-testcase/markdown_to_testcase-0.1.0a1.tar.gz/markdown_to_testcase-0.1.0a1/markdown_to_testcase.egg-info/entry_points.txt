@@ -1,0 +1,2 @@
+[console_scripts]
+markdown_to_testcase = markdown_to_testcase.cli:app
