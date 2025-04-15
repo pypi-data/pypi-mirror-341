@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: pyemb
+Version: 1.0.0a13
+Summary: EDA for complex data
+Project-URL: Documentation, https://pyemb.github.io/pyemb
+Project-URL: Repository, https://github.com/pyemb/pyemb
+Author-email: Annie Gray <annie.gray@bristol.ac.uk>, Ed Davis <edward.davis@bristol.ac.uk>
+License: MIT
+License-File: LICENSE
+Keywords: EDA,embedding
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: matplotlib>=3.9.1.post1
+Requires-Dist: networkx>=3.3
+Requires-Dist: numpy>=2.0.1
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: requests>=2.32.3
+Requires-Dist: scikit-learn>=1.5.1
+Requires-Dist: scipy==1.14.1
+Requires-Dist: tqdm>=4.66.4
+Provides-Extra: doc
+Requires-Dist: setuptools>=59.6.0; extra == 'doc'
+Requires-Dist: sphinx; extra == 'doc'
+Provides-Extra: embed
+Requires-Dist: numba>=0.60.0; extra == 'embed'
+Provides-Extra: hc
+Requires-Dist: fa2-modified>=0.3.10; extra == 'hc'
+Requires-Dist: pygraphviz>=1.13; extra == 'hc'
+Provides-Extra: nlp
+Requires-Dist: nltk>=3.8.1; extra == 'nlp'
+Requires-Dist: textblob>=0.18.0.post0; extra == 'nlp'
+Provides-Extra: plotting
+Requires-Dist: plotly>=5.22.0; extra == 'plotting'
+Provides-Extra: wasserstein
+Requires-Dist: pot>=0.9.4; extra == 'wasserstein'
+Description-Content-Type: text/markdown
+
+# pyemb - EDA of embeddings in Python
+
+pyemb is a toolkit for analysing complex datasets through the lens of embedding high-dimensional data, relational databases and networks. It includes functionality for preprocessing, various embedding techniques, hierarchical clustering and visualisation. The aim of this package is have implementations of an variety of exploratory data anaylsis tools that can be used across a large array of datasets. 
+
+To install the package, you can use pip: `pip install pyemb`
+
+Code has been tested for python versions 3.10 to 3.13 on Ubuntu and Mac. 
+
