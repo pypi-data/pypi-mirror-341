@@ -1,0 +1,5 @@
+quine/target/riscv64/__init__.py,sha256=UfYu-6Ozpk0JU4UafYd7Z2PRcORXojxPAbjP0Ac2Pow,144
+quine_target_riscv64-0.0.0.dist-info/COPYING.md,sha256=ADUqsZhl4juwq34PRTMiBqumpm11s_PMli_dZQjWPqQ,34260
+quine_target_riscv64-0.0.0.dist-info/METADATA,sha256=YhzdKV2n-9DAbdDtMKTJHWrIvhInSD2-t7VtpzECxLY,1419
+quine_target_riscv64-0.0.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+quine_target_riscv64-0.0.0.dist-info/RECORD,,
