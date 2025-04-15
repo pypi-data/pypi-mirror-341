@@ -1,0 +1,9 @@
+LICENSE
+README.md
+airkoreapy.py
+setup.py
+airkoreapy.egg-info/PKG-INFO
+airkoreapy.egg-info/SOURCES.txt
+airkoreapy.egg-info/dependency_links.txt
+airkoreapy.egg-info/requires.txt
+airkoreapy.egg-info/top_level.txt
