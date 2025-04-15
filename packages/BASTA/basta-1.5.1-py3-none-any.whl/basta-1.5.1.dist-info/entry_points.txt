@@ -1,0 +1,5 @@
+[console_scripts]
+BASTAdownload = basta.downloader:main
+BASTAexamples = basta.downloader_examples:main
+BASTAmultirun = basta.run:multi
+BASTArun = basta.run:main
