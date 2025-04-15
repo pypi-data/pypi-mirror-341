@@ -1,0 +1,17 @@
+LICENCE
+README.md
+setup.py
+app/__init__.py
+app/dosya/__init__.py
+app/dosya/depremler.py
+app/dosya/tarih.py
+app/internet/__init__.py
+app/internet/baglanti.py
+son_depremler_afad_api.egg-info/PKG-INFO
+son_depremler_afad_api.egg-info/SOURCES.txt
+son_depremler_afad_api.egg-info/dependency_links.txt
+son_depremler_afad_api.egg-info/requires.txt
+son_depremler_afad_api.egg-info/top_level.txt
+tests/test_baglanti.py
+tests/test_depremler.py
+tests/test_tarih.py
