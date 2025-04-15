@@ -1,0 +1,10 @@
+dqrobotics_extensions/pyplot/__init__.py,sha256=0IS_6R6eKIF83On1rH6BdVXQ0i5EI_8jD07ilIN89jY,318
+dqrobotics_extensions/pyplot/_pyplot.py,sha256=wnExx69utf1T-nE6jVa5ECNKMduU0G4Mg668r06EGrk,14072
+dqrobotics_extensions/pyplot/example.py,sha256=mvyJmWIq13xVRGlC_h-649B36Di_h8NxukA7lM3jXH0,1963
+dqrobotics_extensions/pyplot/example_animation.py,sha256=glHrvYHQnjOG13CIVLHZ_pukWgm4vWXYKsvo8SFt8rw,3614
+dqrobotics_pyplot-25.4.0.20.dist-info/licenses/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+dqrobotics_pyplot-25.4.0.20.dist-info/METADATA,sha256=Zb_HVK5MWzkO3uQNuzGgT_9IaecZ3OavQn0eKN-rRm8,1310
+dqrobotics_pyplot-25.4.0.20.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dqrobotics_pyplot-25.4.0.20.dist-info/entry_points.txt,sha256=Y16yzDbhUtFgollL8zG6IFnK-PvogaWIbCMMGrGkdxs,88
+dqrobotics_pyplot-25.4.0.20.dist-info/top_level.txt,sha256=k7XI2xdFCZSCVXvE2ToDhyWqB_xnNaIr2f8XG1xxQ3Y,22
+dqrobotics_pyplot-25.4.0.20.dist-info/RECORD,,
