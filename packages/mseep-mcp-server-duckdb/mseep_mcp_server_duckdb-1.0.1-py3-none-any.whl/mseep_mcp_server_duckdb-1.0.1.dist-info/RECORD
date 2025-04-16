@@ -1,0 +1,10 @@
+src/mcp_server_duckdb/__init__.py,sha256=bT1SG2-5zkA6h1I_5SzSbu5qPRG5HaxlfoFBC4xJ1Ac,305
+src/mcp_server_duckdb/config.py,sha256=5z0Bas-3NXJZnHthP-Wmgs9JX2ed5FXYe74AQzLg-Vs,1146
+src/mcp_server_duckdb/server.py,sha256=DcKkdNuXftAnDhIh4ULeZBJvax69b4ZUybs6WOGeyVU,4276
+tests/test_config.py,sha256=-w2i0OBdokuVeBs7C2rYTNSmuCE44dtPZkq9uJ0LWkc,957
+tests/test_server.py,sha256=__AH7_lvIjoImaUn9T9uzUCujZxAc19D6FTPJVlVk3A,5501
+mseep_mcp_server_duckdb-1.0.1.dist-info/METADATA,sha256=4IwVdXOYTFQ10FsBpBWI5UqqkTTRMA8hFwgQ-LzxF1k,6533
+mseep_mcp_server_duckdb-1.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp_server_duckdb-1.0.1.dist-info/entry_points.txt,sha256=pJk-cb4eA8JV1V6jd8A8pOnRnWaPSIfLPhPO2meMYBc,61
+mseep_mcp_server_duckdb-1.0.1.dist-info/licenses/LICENSE,sha256=pSzMmMlw2JOTZReIUjmBvEa3-o8wfA1d8XmBsbRwceU,1077
+mseep_mcp_server_duckdb-1.0.1.dist-info/RECORD,,
