@@ -1,0 +1,35 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "setuptools_scm[toml]>=7.0"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dahua-rpc-api"
+description = "A Python package for interacting with the Dahua RPC API."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [
+  { name = "Sam Redmond", email = "samredmondtech@gmail.com" }
+]
+dependencies = [
+  "requests>=2.32.3",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dahua*"]
+
+[tool.setuptools_scm]
+version_scheme = "no-guess-dev"
+local_scheme = "no-local-version"
+fallback_version = "0.0.0"
