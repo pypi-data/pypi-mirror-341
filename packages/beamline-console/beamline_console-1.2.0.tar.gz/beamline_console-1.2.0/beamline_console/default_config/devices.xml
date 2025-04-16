@@ -1,0 +1,5 @@
+<beamline_settings version="1.0">
+<!--    <device name="Diode" access="all">-->
+<!--        <motor name="mot_01" type="tango" tango_server="p09/motor/eh.01"/>-->
+<!--    </device>-->
+</beamline_settings>
