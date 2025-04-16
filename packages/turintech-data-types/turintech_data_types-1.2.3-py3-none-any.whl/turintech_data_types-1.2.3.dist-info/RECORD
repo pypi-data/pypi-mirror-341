@@ -1,0 +1,11 @@
+core_common_data_types/__init__.py,sha256=mma_a6lCyH4PFkqeUE2YgAwYAsxIdKWjcm4wKefEQqg,559
+core_common_data_types/base_data_types.py,sha256=B8sXYshgtzPQV22E0uiWW4csyZ0V5CnKxwka6MLmkAY,1582
+core_common_data_types/base_data_types_dtos.py,sha256=RRz3ocE6v2tXuiCMPu47PN7XFJWW2_sZOVO-BJS-LxQ,7610
+core_common_data_types/base_data_types_tos.py,sha256=0OpOgSKbJ2quJ5P11yRMQt11a2_uYwNGBB6NyZs5wak,6716
+core_common_data_types/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_common_data_types/type_definitions.py,sha256=TeYKERcjf21XTTo6Ldl0p1-jKlsxMrycAKGas2Xg7U4,5050
+core_common_data_types/utils_data_types_tos.py,sha256=yMaNQIyWcC5xsiJbBZLp58mkcsppbwIXxWn_wRg3tRw,1719
+turintech_data_types-1.2.3.dist-info/METADATA,sha256=N1V4boEFV8mu5IDhl6htjomgF7HiR-tcz5Ix4gXFGvY,533
+turintech_data_types-1.2.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+turintech_data_types-1.2.3.dist-info/licenses/LICENSE,sha256=1oiCRxRmKyfqDkVZDDGPl8W09ACBwaCJNUDYsW1aJB0,14103
+turintech_data_types-1.2.3.dist-info/RECORD,,
