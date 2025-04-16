@@ -1,0 +1,9 @@
+iamauth/__init__.py,sha256=lS54vu5oiN4yQ9qH1lRqieMbn2Q9up5pP0XtLm9ZeHg,147
+iamauth/__main__.py,sha256=9inCaWe18URX560To1Z-bGj0VQ5P4IewKUlYmDot1JI,1284
+iamauth/sigv4.py,sha256=gEWw82iXdWH8KERBLSqN7-Z2LOeMN6pnAmHRieN4pZA,1469
+iamauth/sigv4a.py,sha256=HLNPlG29FL22IVKfmv24z9RRQLVmEUKSTkeyhdYUXi4,2650
+requests_iamauth-1.0.0.dist-info/entry_points.txt,sha256=JovsgQZTlYUV61CONWpbJNWcaN71n0c0BOJBxu-1nys,44
+requests_iamauth-1.0.0.dist-info/licenses/LICENSE,sha256=mDjORMZktnC9ESmd5GN1oQhWY9heufk9MYJHjwY1LAM,1076
+requests_iamauth-1.0.0.dist-info/WHEEL,sha256=G2gURzTEtmeR8nrdXUJfNiB3VYVxigPQ-bEQujpNiNs,82
+requests_iamauth-1.0.0.dist-info/METADATA,sha256=Cz53g6Et7gZIzBaKt6VzPkd4jYmI2_EDXof5VtbkAd4,3914
+requests_iamauth-1.0.0.dist-info/RECORD,,
