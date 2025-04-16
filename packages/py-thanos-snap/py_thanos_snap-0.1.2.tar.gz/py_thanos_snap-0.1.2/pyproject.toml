@@ -1,0 +1,62 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-thanos-snap"
+version = "0.1.2"
+authors = [{ name = "Richard Chan", email = "richard.mychan@gmail.com" }]
+description = "Randomly remove half the content of Python data structures, like a Thanos snap."
+readme = { file = "README.md", content-type = "text/markdown" }
+# Use SPDX identifier for license
+license = { text = "MIT" }
+# Optionally list license file if needed by tooling, but text is preferred
+# license-files = ["LICENSE"]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",                       # Keep for now, though redundant with license field
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",                               # Or 3 - Alpha
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",                        # Maybe?
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Topic :: Scientific/Engineering :: Information Analysis",      # If used for data reduction/sampling simulation
+    "Typing :: Typed",
+]
+keywords = [
+    "thanos",
+    "snap",
+    "random",
+    "sample",
+    "reduce",
+    "list",
+    "dict",
+    "set",
+    "data structure",
+    "half",
+]
+
+[project.urls]
+Homepage = "https://github.com/manyan-chan/thanosPy"
+Repository = "https://github.com/manyan-chan/thanosPy"
+
+# Optional dependencies for testing
+[project.optional-dependencies]
+test = ["pytest>=7.0", "pytest-cov"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["thanospy*"]
+
+# Optional: Configure pytest runner
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
