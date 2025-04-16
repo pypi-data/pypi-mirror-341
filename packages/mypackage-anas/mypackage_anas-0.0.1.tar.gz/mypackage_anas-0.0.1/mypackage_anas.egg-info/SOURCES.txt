@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+mypackage_anas/__init__.py
+mypackage_anas/operations.py
+mypackage_anas.egg-info/PKG-INFO
+mypackage_anas.egg-info/SOURCES.txt
+mypackage_anas.egg-info/dependency_links.txt
+mypackage_anas.egg-info/top_level.txt
