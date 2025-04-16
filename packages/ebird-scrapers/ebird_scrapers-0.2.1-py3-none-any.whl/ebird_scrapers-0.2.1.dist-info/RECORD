@@ -1,0 +1,7 @@
+ebird/scrapers/__init__.py,sha256=QtvBKGjQUNJF7lT1qRo6Mqd9HXMb8HKf30JqgQ7MuCE,381
+ebird/scrapers/checklists.py,sha256=SkQLKSgGz9mVywxeR7w1a1dkx56CutE7bWESJLSjteg,16522
+ebird/scrapers/recent.py,sha256=UiVLeOj3cYbHhANM7wjeKkOfD5EYCdNKgUeVLMBeIWY,2349
+ebird_scrapers-0.2.1.dist-info/METADATA,sha256=Ls4llzPg4JSZzhxcf0AofH0hgeGJHC2V5XHEGwlGwC8,5868
+ebird_scrapers-0.2.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ebird_scrapers-0.2.1.dist-info/top_level.txt,sha256=lBp3I23K75tsPJn7Jdz7d4Tk7JeRhbVkcuGthNk7LaM,6
+ebird_scrapers-0.2.1.dist-info/RECORD,,
