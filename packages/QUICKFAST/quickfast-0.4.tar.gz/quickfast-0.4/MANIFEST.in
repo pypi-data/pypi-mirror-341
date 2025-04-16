@@ -1,0 +1,8 @@
+include QUICKFAST/CSV/*.csv
+include QUICKFAST/DBCOMMANDS/*.txt
+include QUICKFAST/DOC/*.docx
+include QUICKFAST/EXCEL/*.xlsx
+include QUICKFAST/MANUAL/*.pdf
+include QUICKFAST/PYTHON/*.py
+include QUICKFAST/R/*.R
+include QUICKFAST/TEXT/*.txts

@@ -1,0 +1,66 @@
+CREATE DATABASE CustomerOLTP;
+CREATE DATABASE CustomerStaging;
+CREATE DATABASE CustomerDW;
+
+USE CustomerOLTP;
+
+CREATE TABLE CustOLTP (
+    custid INT,
+    custname VARCHAR(100),
+    address VARCHAR(200),
+    sal DECIMAL(10,2)
+);
+
+INSERT INTO CustOLTP (custid, custname, address, sal)
+VALUES
+(1, 'John Doe', 'New York', 50000),
+(2, 'Jane Smith', 'California', 60000),
+(3, 'Bob Lee', 'Texas', 55000),
+(4, 'Alice Green', 'Florida', 70000),
+(5, 'Chris Evans', 'Nevada', 62000),
+(6, 'Maria Hill', 'Chicago', 58000),
+(7, 'Tony Stark', 'Los Angeles', 90000),
+(8, 'Bruce Wayne', 'Gotham', 100000),
+(9, 'Clark Kent', 'Metropolis', 75000),
+(10, 'Peter Parker', 'Queens', 67000),
+(11, 'Natasha Romanoff', 'Russia', 72000),
+(12, 'Steve Rogers', 'Brooklyn', 80000),
+(13, 'Wanda Maximoff', 'Sokovia', 71000),
+(14, 'Stephen Strange', 'NYC', 88000),
+(15, 'Nick Fury', 'Unknown', 85000),
+(16, 'Scott Lang', 'San Francisco', 62000),
+(17, 'Hope Pym', 'San Francisco', 61000),
+(18, 'Sam Wilson', 'Louisiana', 60000),
+(19, 'Bucky Barnes', 'DC', 70000),
+(20, 'Carol Danvers', 'Space', 99000);
+
+USE CustomerStaging;
+
+CREATE TABLE Custstaging (
+    custid INT,
+    custname VARCHAR(100),
+    address VARCHAR(200),
+    sal DECIMAL(10,2)
+);
+
+INSERT INTO CustomerStaging.Custstaging
+ SELECT * FROM CustomerOLTP.CustOLTP;
+
+USE CustomerDW;
+
+CREATE TABLE CustDW (
+    cid INT,
+    cname VARCHAR(100),
+    `add` VARCHAR(200),          
+    salINR DECIMAL(10,2),
+    salDollar DECIMAL(10,2)
+);
+
+INSERT INTO CustomerDW.CustDW (cid, cname, `add`, salINR, salDollar)
+SELECT 
+    custid,                         
+    UPPER(custname),                
+    address,
+    sal,
+    sal / 70
+FROM CustomerStaging.Custstaging;
