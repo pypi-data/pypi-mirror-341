@@ -1,0 +1,6 @@
+[console_scripts]
+cross_location=experiments.experiments:ood_experiment
+download_datasets=experiments.experiments:download_datasets
+mulc_vbwva=experiments.experiments:mulc_vbwva_experiment
+replication=experiments.experiments:cv_experiment
+
