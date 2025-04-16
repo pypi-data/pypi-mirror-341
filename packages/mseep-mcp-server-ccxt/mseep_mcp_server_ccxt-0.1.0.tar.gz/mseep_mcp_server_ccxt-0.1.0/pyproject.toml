@@ -1,0 +1,27 @@
+[project]
+name = "mseep-mcp-server-ccxt"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp",
+    "ccxt",
+]
+
+[project.scripts]
+ccxt-server = "src.server:run_server"
+
+[tool.uv]
+package = true
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src",
+]
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
