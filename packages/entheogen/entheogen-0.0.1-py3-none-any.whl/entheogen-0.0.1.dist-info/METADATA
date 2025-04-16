@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: entheogen
+Version: 0.0.1
+Summary: A library to generate hallucinations
+Author-email: Freddie Vargus <freddie@quotientai.co>, Deanna Emery <deanna@quotientai.co>
+License: Apache License (2.0)
+Keywords: genai,large language models,hallucinations,evaluation,evals
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai>=1.57.4
+Dynamic: license-file
+
+# entheogen 🍄
