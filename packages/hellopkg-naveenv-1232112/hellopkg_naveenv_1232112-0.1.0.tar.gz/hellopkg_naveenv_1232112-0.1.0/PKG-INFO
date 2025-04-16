@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: hellopkg_naveenv_1232112
+Version: 0.1.0
+Summary: A simple Hello World package
+Home-page: https://github.com/yourusername/hellopkg
+Author: Naveenv
+Author-email: you@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary

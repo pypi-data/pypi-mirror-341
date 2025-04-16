@@ -1,0 +1,8 @@
+README.md
+setup.py
+hellopkg_naveenv_1232112/__init__.py
+hellopkg_naveenv_1232112/hello.py
+hellopkg_naveenv_1232112.egg-info/PKG-INFO
+hellopkg_naveenv_1232112.egg-info/SOURCES.txt
+hellopkg_naveenv_1232112.egg-info/dependency_links.txt
+hellopkg_naveenv_1232112.egg-info/top_level.txt
