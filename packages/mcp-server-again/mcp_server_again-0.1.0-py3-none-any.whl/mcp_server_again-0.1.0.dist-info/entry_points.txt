@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-server-again = mcp_server_again:main
