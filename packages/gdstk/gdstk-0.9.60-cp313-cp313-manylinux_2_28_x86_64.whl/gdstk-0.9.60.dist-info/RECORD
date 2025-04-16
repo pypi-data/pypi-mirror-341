@@ -1,0 +1,9 @@
+gdstk-0.9.60.dist-info/WHEEL,sha256=gZXgBqR5TC11eLLlXqeJyzQ4leSocxXkjkcLpfyD-Iw,118
+gdstk-0.9.60.dist-info/RECORD,,
+gdstk-0.9.60.dist-info/METADATA,sha256=_qnCwmpzyCau-a9ZqA1PFojcUwSPoczyRma9xfqnRJo,8750
+gdstk-0.9.60.dist-info/licenses/LICENSE,sha256=vrjkLp1rQoTgMwTQWoGgdVIAqWX8jQpeCuoehM-AXW4,1361
+gdstk/_gdstk.pyi,sha256=2-WzOpzvZunDx7OsmrHgPs11JwgJuooL2_2syzxWnyY,37029
+gdstk/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gdstk/__init__.py,sha256=RR5L88NqHyLuWtR0tyfgccVV6Pnz07KgRZKJCzYX59w,54
+gdstk/_gdstk.cpython-313-x86_64-linux-gnu.so,sha256=LyyVlQ4SLPUhr8mq1MSOsBAmQJP-QiLuIG8U_qHOflA,965145
+gdstk.libs/libqhull_r-5eeffc4b.so.8.0.2,sha256=G8LOgof9ZbiDF1Kp4hW3ZXRBjufu6mk-YJ_y9qD2VGQ,610361
