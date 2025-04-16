@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: faclitool
+Version: 0.1.0
+Summary: A Simple CLI tool framework
+Author-email: HoMa <mhocine1994@gmail.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# mycli
+
+🛠️ A simple modular CLI framework in Python.
+
+Usage:
+mycli greet --name Amine
+
+
+## Install
+
+```bash
+pip install mycli

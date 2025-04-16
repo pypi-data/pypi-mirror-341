@@ -1,0 +1,7 @@
+commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commands/greet.py,sha256=EEHeoU5opv0jZUOhvtqTXCysNo0wYKvZrh3taAt0wYo,306
+faclitool-0.1.0.dist-info/METADATA,sha256=m0PQNLy80UmnFPHyzV3kHtd5SXaWH3zkuWTF30s5kHw,342
+faclitool-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+faclitool-0.1.0.dist-info/entry_points.txt,sha256=1qe1JEpvKC-vRNGol5dPBRZgHeY_xEBLv3sp8K0UJJg,50
+faclitool-0.1.0.dist-info/top_level.txt,sha256=6dNUbRvZAy7fLWNbD4YeUosLYwGk-SVew-Swd5CfFkg,9
+faclitool-0.1.0.dist-info/RECORD,,
