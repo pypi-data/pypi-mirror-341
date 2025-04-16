@@ -1,0 +1,12 @@
+fastmcp
+openai>=1.0.0
+PyPDF2
+python-docx
+pandas
+pdfplumber
+python-dotenv
+
+[dev]
+pytest
+black
+isort
