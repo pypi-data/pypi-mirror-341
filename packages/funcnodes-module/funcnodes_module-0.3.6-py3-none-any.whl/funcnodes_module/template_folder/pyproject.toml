@@ -1,0 +1,44 @@
+[project]
+name = "{{ package-name }}"
+version = "0.1.0"
+description = "{{ package-name }} is a funcnodes module"
+authors = []
+readme = "README.md"
+license = "AGPL-3.0"
+
+requires-python = ">=3.11"
+dependencies = [
+     "funcnodes>=0.5.35",
+    ]
+
+[project.urls]
+homepage  = "https://pypi.org/project/funcnodes"
+source  = "https://github.com/Linkdlab/funcnodes"
+tracker  = "https://github.com/Linkdlab/funcnodes/issues"
+download = "https://pypi.org/project/{{ package-name }}/#files"
+
+
+[dependency-groups]
+dev = [
+    "pre-commit",
+    "pytest",
+    "pytest-funcnodes",
+]
+
+
+
+[project.entry-points."funcnodes.module"]
+module = "{{ module_name }}"
+shelf = "{{ module_name }}:NODE_SHELF"
+
+[build-system]
+requires = [ "setuptools>70",]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = { find = { where = ["src"] } }
+package-dir = { ""= "src" }
+
+
+[tool.pytest.ini_options]
+pythonpath = [ "src",]
