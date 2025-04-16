@@ -1,0 +1,9 @@
+planqk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+planqk/mcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+planqk/mcp/kipu_services.txt,sha256=TiLiylVuM6xiyZRMAs-rbbjtYODAXvIjbSK_cTy1qLE,9701
+planqk/mcp/main.py,sha256=M7eEapgIIREMrvfjaAJiqfUQpzfwNWqp-zpqaRZ-3DU,2180
+platform_mcp_server-0.0.5.dist-info/METADATA,sha256=ibHvVoakOzwVmwJUemPUrgdQNu5ZeSRsKbxJhV_6VEE,415
+platform_mcp_server-0.0.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+platform_mcp_server-0.0.5.dist-info/entry_points.txt,sha256=6AZrWGwDk1FIoeKBebbOETazcZlm9iJDj9E3ylMxFkM,61
+platform_mcp_server-0.0.5.dist-info/top_level.txt,sha256=RWcdejuNsZTljlBjMdyO3R5Guvl1OM-CAEHq6LUhegQ,7
+platform_mcp_server-0.0.5.dist-info/RECORD,,
