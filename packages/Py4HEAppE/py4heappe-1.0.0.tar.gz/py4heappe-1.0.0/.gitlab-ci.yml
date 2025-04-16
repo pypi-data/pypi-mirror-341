@@ -1,0 +1,14 @@
+services:
+  - docker:dind
+
+include:
+  - local: '.gitlab/stages/.check.yml'
+  - local: '.gitlab/stages/.release.yml'
+  - local: '.gitlab/stages/.publish.yml'
+
+
+
+stages:
+  - check
+  - release
+  - publish
