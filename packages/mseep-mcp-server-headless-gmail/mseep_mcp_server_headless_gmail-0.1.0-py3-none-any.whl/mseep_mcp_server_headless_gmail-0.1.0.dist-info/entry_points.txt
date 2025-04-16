@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-server-headless-gmail = mcp_server_headless_gmail:main
