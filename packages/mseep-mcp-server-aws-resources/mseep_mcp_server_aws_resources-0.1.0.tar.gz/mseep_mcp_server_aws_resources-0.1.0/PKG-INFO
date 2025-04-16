@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: mseep-mcp-server-aws-resources
+Version: 0.1.0
+Summary: MCP server for AWS resources using boto3
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: boto3
+Requires-Dist: mcp
+Requires-Dist: pydantic
+Requires-Dist: pytz
