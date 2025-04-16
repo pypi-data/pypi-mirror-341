@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: think_mcp
+Version: 0.1.11
+Summary: Add your description here
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mcp[cli]>=1.6.0
+Dynamic: license-file
+
+# Think MCP tool
