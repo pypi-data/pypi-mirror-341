@@ -1,0 +1,247 @@
+Metadata-Version: 2.4
+Name: llamasearch-experimentalagents-product-growth
+Version: 0.1.0
+Summary: AI-powered product growth platform with multi-LLM support
+Project-URL: Homepage, https://github.com/llamasearch/experimentalagents-product-growth
+Project-URL: Documentation, https://llamasearch.github.io/experimentalagents-product-growth
+Project-URL: Source, https://github.com/llamasearch/experimentalagents-product-growth
+Project-URL: Bug Tracker, https://github.com/llamasearch/experimentalagents-product-growth/issues
+Author-email: Nik Jois <nikjois@llamasearch.ai>
+License: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Requires-Dist: datasets>=2.12.0
+Requires-Dist: datasette>=0.64.5
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: openai>=1.0.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: rich>=13.3.5
+Requires-Dist: scikit-learn>=1.2.0
+Requires-Dist: sqlite-utils>=3.35
+Requires-Dist: tqdm>=4.65.0
+Requires-Dist: typer>=0.9.0
+Provides-Extra: all
+Requires-Dist: anthropic>=0.5.0; extra == 'all'
+Requires-Dist: black>=23.3.0; extra == 'all'
+Requires-Dist: isort>=5.12.0; extra == 'all'
+Requires-Dist: jax>=0.4.8; extra == 'all'
+Requires-Dist: jaxlib>=0.4.7; extra == 'all'
+Requires-Dist: llama-cpp-python>=0.1.77; extra == 'all'
+Requires-Dist: mkdocs-material>=9.1.8; extra == 'all'
+Requires-Dist: mkdocs>=1.4.3; extra == 'all'
+Requires-Dist: mkdocstrings-python>=1.1.2; extra == 'all'
+Requires-Dist: mkdocstrings>=0.21.2; extra == 'all'
+Requires-Dist: mlx>=0.0.1; (sys_platform == 'darwin') and extra == 'all'
+Requires-Dist: mypy>=1.2.0; extra == 'all'
+Requires-Dist: pre-commit>=3.3.1; extra == 'all'
+Requires-Dist: pytest-cov>=4.1.0; extra == 'all'
+Requires-Dist: pytest-mock>=3.10.0; extra == 'all'
+Requires-Dist: pytest>=7.3.1; extra == 'all'
+Requires-Dist: ruff>=0.0.262; extra == 'all'
+Provides-Extra: anthropic
+Requires-Dist: anthropic>=0.5.0; extra == 'anthropic'
+Provides-Extra: dev
+Requires-Dist: black>=23.3.0; extra == 'dev'
+Requires-Dist: isort>=5.12.0; extra == 'dev'
+Requires-Dist: mypy>=1.2.0; extra == 'dev'
+Requires-Dist: pre-commit>=3.3.1; extra == 'dev'
+Requires-Dist: pytest-cov>=4.1.0; extra == 'dev'
+Requires-Dist: pytest-mock>=3.10.0; extra == 'dev'
+Requires-Dist: pytest>=7.3.1; extra == 'dev'
+Requires-Dist: ruff>=0.0.262; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs-material>=9.1.8; extra == 'docs'
+Requires-Dist: mkdocs>=1.4.3; extra == 'docs'
+Requires-Dist: mkdocstrings-python>=1.1.2; extra == 'docs'
+Requires-Dist: mkdocstrings>=0.21.2; extra == 'docs'
+Provides-Extra: jax
+Requires-Dist: jax>=0.4.8; extra == 'jax'
+Requires-Dist: jaxlib>=0.4.7; extra == 'jax'
+Provides-Extra: local
+Requires-Dist: llama-cpp-python>=0.1.77; extra == 'local'
+Provides-Extra: mlx
+Requires-Dist: mlx>=0.0.1; (sys_platform == 'darwin') and extra == 'mlx'
+Description-Content-Type: text/markdown
+
+# LlamaSearch ExperimentalAgents: Product Growth
+
+![Build Status](https://img.shields.io/github/workflow/status/llamasearch/experimentalagents-product-growth/CI)
+![Coverage](https://img.shields.io/codecov/c/github/llamasearch/experimentalagents-product-growth)
+![Version](https://img.shields.io/pypi/v/llamasearch-experimentalagents-product-growth)
+![License](https://img.shields.io/github/license/llamasearch/experimentalagents-product-growth)
+
+A cutting-edge AI platform for analyzing customer feedback and generating data-driven growth strategies with multi-LLM support, MLX acceleration, and compelling visualizations.
+
+## ✨ Features
+
+- **Multi-LLM Router**: Seamlessly switch between OpenAI, Anthropic, and local models with automatic fallbacks
+- **Hardware-Accelerated NLP**: Fast feedback analysis with MLX/JAX optimizations for Apple Silicon and other platforms
+- **Strategy Generation**: AI-powered growth strategy recommendations with priority levels and GTM approaches
+- **Engaging Visualizations**: Growth Garden and Insight Tree animations to present findings
+- **Production Ready**: Comprehensive testing, CI/CD pipelines, and documentation
+
+## 📦 Installation
+
+```bash
+# Install with pip
+pip install llamasearch-experimentalagents-product-growth
+
+# For development version
+pip install git+https://github.com/llamasearch/experimentalagents-product-growth.git
+```
+
+For Apple Silicon users, MLX acceleration is available:
+
+```bash
+pip install 'llamasearch-experimentalagents-product-growth[mlx]'
+```
+
+## 🔧 Configuration
+
+Create a `.env` file based on the example:
+
+```bash
+cp .env.example .env
+```
+
+Configure your LLM providers:
+
+```
+# API Keys
+OPENAI_API_KEY=your-openai-key
+ANTHROPIC_API_KEY=your-anthropic-key
+
+# Provider selection and fallback order
+LLM_PROVIDERS=openai,anthropic,local
+LLM_LOCAL_MODEL_PATH=/path/to/local/models
+```
+
+## 🚀 Quick Start
+
+Analyze customer feedback and generate growth strategies:
+
+```bash
+# Analyze customer feedback
+llamasearch analyze --feedback data.csv --output-dir ./insights
+
+# Generate strategies using the multi-LLM router
+llamasearch strategize --insights ./insights/analysis_results.json
+
+# Visualize results
+llamasearch visualize --data ./insights/strategies.json --type garden
+```
+
+## 🧠 LLM Router
+
+The multi-LLM router enables seamless switching between different providers:
+
+```python
+from llamasearch_experimentalagents_product_growth.core import (
+    complete_prompt, analyze_text, chat_completion
+)
+
+# Simple completion (auto-selects the best available model)
+response = complete_prompt(
+    prompt="Analyze the strengths of this feature: widgets with AI enhancement",
+    system_prompt="You are a product strategist."
+)
+
+# Specify a provider
+response = complete_prompt(
+    prompt="Summarize this feedback",
+    provider="anthropic",
+    model="claude-3-haiku"
+)
+
+# Advanced chat completion
+messages = [
+    {"role": "system", "content": "You are a product strategist."},
+    {"role": "user", "content": "How can we improve user onboarding?"}
+]
+response = chat_completion(
+    messages=messages,
+    temperature=0.7
+)
+```
+
+## 📊 Example
+
+Analyze customer feedback:
+
+```python
+from llamasearch_experimentalagents_product_growth.agents import analyze_feedback
+import pandas as pd
+
+# Load feedback data
+feedback_df = pd.read_csv("customer_feedback.csv")
+
+# Analyze feedback
+results = analyze_feedback(
+    feedback_df=feedback_df,
+    text_column="comments",
+    n_clusters=5,
+    backend="auto"  # Automatically selects MLX on Apple Silicon
+)
+
+print(f"Identified {results['num_clusters']} feedback clusters")
+print(f"Most positive cluster themes: {results['cluster_themes']['0']}")
+```
+
+Generate growth strategies:
+
+```python
+from llamasearch_experimentalagents_product_growth.agents import generate_growth_strategies
+
+# Generate strategies based on feedback analysis
+strategies = generate_growth_strategies(
+    analysis_results=results,
+    max_strategies=5,
+    provider="openai",  # Use OpenAI models
+    model="gpt-4o"  # Specify model (optional)
+)
+
+# Display strategies
+for strategy in strategies:
+    print(f"Strategy: {strategy.feature}")
+    print(f"Priority: {strategy.priority}")
+    print(f"GTM Approaches: {', '.join(strategy.gtm_strategies)}")
+    print(f"Expected Impact: {strategy.expected_impact}")
+    print("---")
+```
+
+## 📚 Documentation
+
+Full documentation is available at [https://llamasearch.github.io/experimentalagents-product-growth](https://llamasearch.github.io/experimentalagents-product-growth)
+
+## 🧪 Testing
+
+Run the test suite:
+
+```bash
+# Install dev dependencies
+pip install -e ".[dev]"
+
+# Run tests
+pytest
+
+# Run with coverage
+pytest --cov=llamasearch_experimentalagents_product_growth
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please check out our [contribution guidelines](CONTRIBUTING.md).
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 

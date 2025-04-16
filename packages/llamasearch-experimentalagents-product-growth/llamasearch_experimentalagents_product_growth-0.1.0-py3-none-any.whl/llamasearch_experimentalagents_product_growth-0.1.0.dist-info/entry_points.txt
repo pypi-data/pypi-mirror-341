@@ -1,0 +1,2 @@
+[console_scripts]
+llamasearch = llamasearch_experimentalagents_product_growth.cli:app
