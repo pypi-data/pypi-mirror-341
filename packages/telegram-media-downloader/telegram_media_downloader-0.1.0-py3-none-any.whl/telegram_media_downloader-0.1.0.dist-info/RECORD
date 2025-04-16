@@ -1,0 +1,9 @@
+telegram_media_downloader-0.1.0.dist-info/licenses/LICENSE,sha256=2533I6wq5_rQU17IeREHVLgHaDjcYkL2cEdCcE3zEg4,464
+telegram_media_downloader_bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telegram_media_downloader_bot/__main__.py,sha256=N8ZUimBu4Nj-7rUiwfQ12DnE2VpLJv1Qf9z6z0b2jzU,2913
+telegram_media_downloader_bot/bot.py,sha256=-jxe2zZ_fZibom6EO3xR-klcMgWsJp0Kk8U982-bgDE,17587
+telegram_media_downloader_bot/http_server.py,sha256=fed_60ECuNi6c5YT_YbXooWO1K1LkWPVub6_LJ-0PDo,568
+telegram_media_downloader-0.1.0.dist-info/METADATA,sha256=LT-jjBEmTTS7_MabJu3G9mBdA1F3QDlxBDgzycU8vYM,9152
+telegram_media_downloader-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+telegram_media_downloader-0.1.0.dist-info/top_level.txt,sha256=E7fwucFdo-2HmL10rlxQRxMr7ylZRtDdYwD2CC3iGfw,30
+telegram_media_downloader-0.1.0.dist-info/RECORD,,
