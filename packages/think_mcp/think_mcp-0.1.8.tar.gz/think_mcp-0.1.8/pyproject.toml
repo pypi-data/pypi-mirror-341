@@ -1,0 +1,15 @@
+[project]
+name = "think_mcp"
+version = "0.1.8"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["think_mcp"]
+
+[project.scripts]
+think_mcp = "think_mcp.__main__:main"
