@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: tensorlens
+Version: 0.0.1
+Summary: tensorlens
+Author-email: attentionmech <attentionmech@gmail.com>
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: gunicorn
+Requires-Dist: ipython
+Requires-Dist: numpy
+Dynamic: license-file
+
+# tensorlens
