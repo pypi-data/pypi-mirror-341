@@ -1,0 +1,12 @@
+tpu_info/__init__.py,sha256=Dd_uYuMP1GwruidtYjk1sSSM1d4oIZVqJIfOCNd7cms,598
+tpu_info/cli.py,sha256=JVQCq8KXOucr8inG94jT0nK959Di4TQYSD0uuVD_wSw,4318
+tpu_info/device.py,sha256=3_9Ek51Ss2azYF8Kb-rGnuvqmfAmeMVOO_V_SHwJH74,3704
+tpu_info/metrics.py,sha256=e7ThPO03PXgG8A3ZGGA_i-Cvoy2DvpFtqHvwVmG-h7o,5611
+tpu_info/proto/__init__.py,sha256=vgkM7VfbXA0J3wsbgyr75V-IVePMPeQq5o1EY0Edb7A,651
+tpu_info/proto/tpu_metric_service_pb2.py,sha256=Fow3R77Rnj4c-o_tpuCuaDnUOYw3RPVK-3bdCwQQuZw,9256
+tpu_info/proto/tpu_metric_service_pb2.pyi,sha256=03brVLT9B1UTBJ7KmPg3PZiCO_XY9bzEzT1t_3gOI7c,11543
+tpu_info/proto/tpu_metric_service_pb2_grpc.py,sha256=Y66iO0cDnzieNB-ogS_k5Vv6wIuLQ7lLM6FyvVVLnVg,6284
+tpu_info-0.2.2.dist-info/METADATA,sha256=g5iueAsmYhhrnn4u9IrB32NAphZlfQaiIk3lgmwOAg4,3742
+tpu_info-0.2.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+tpu_info-0.2.2.dist-info/entry_points.txt,sha256=wPhTW-DRM9pO8n6UDT9ZsNap129P49AhFy7kCbfXghU,58
+tpu_info-0.2.2.dist-info/RECORD,,
