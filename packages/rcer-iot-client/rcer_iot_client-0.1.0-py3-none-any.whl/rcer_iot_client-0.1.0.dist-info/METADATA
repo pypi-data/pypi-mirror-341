@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: rcer-iot-client
+Version: 0.1.0
+Summary: A client library for IoT projects in the RCER initiative
+Author-email: Pedro <pedropablozavalat@uc.cl>
+License: MIT
+Project-URL: Homepage, https://github.com/pedrozavalat/rcer-iot-client
+Project-URL: Issues, https://github.com/pedrozavalat/rcer-iot-client/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: aioftp==0.25.1
+Requires-Dist: aiohttp==3.11.16
+Requires-Dist: pydantic==2.11.3
+Requires-Dist: dotenv==0.9.9
+Provides-Extra: dev
+Requires-Dist: pytest==8.3.5; extra == "dev"
+Requires-Dist: pytest-asyncio==0.26.0; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: pyflakes; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: build; extra == "dev"
