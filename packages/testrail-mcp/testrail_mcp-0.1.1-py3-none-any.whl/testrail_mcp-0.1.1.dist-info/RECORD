@@ -1,0 +1,10 @@
+testrail_mcp/__init__.py,sha256=qD-ToZHGgYbGVwzdH4IK2-mrL9DOnGL4VhagARVnhYg,34
+testrail_mcp/config.py,sha256=iZ-pp7Ihy3-nIhawusVW675NtYtmpuMFwBGKV62-SV0,578
+testrail_mcp/main.py,sha256=S0hMCJh9acGBistwdV5et9PoM47f8bdsqFHUAWM896s,367
+testrail_mcp/mcp_server.py,sha256=8B_AcSM8r00cC3lcsul4J6-E_3NVyDWJD8EMQcvKrrA,18253
+testrail_mcp/testrail_client.py,sha256=elJS0LI3g1RMTKOmT6dSKAyNdotK2Kt27hP7F1XYwEM,7261
+testrail_mcp-0.1.1.dist-info/METADATA,sha256=Tt90ZpBGQhVeCfGJjO_K4bpYhjfNk44RGBo1ZJ9paz4,4091
+testrail_mcp-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+testrail_mcp-0.1.1.dist-info/entry_points.txt,sha256=rt56iiZwcyUfaohm20yowBOSTJW2CTyg-mHFSshg3Bc,56
+testrail_mcp-0.1.1.dist-info/licenses/LICENSE,sha256=RLjrd9J2YCGMaJtvLLWONAd_mVmcZscQKmIM2bQMBRw,1069
+testrail_mcp-0.1.1.dist-info/RECORD,,
