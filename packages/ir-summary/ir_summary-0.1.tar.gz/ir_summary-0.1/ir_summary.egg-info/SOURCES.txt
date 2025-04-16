@@ -1,0 +1,6 @@
+setup.py
+ir_summary/__init__.py
+ir_summary.egg-info/PKG-INFO
+ir_summary.egg-info/SOURCES.txt
+ir_summary.egg-info/dependency_links.txt
+ir_summary.egg-info/top_level.txt
