@@ -1,0 +1,11 @@
+team_formation/__init__.py,sha256=iknRhVlvPNmAbepZoprPlWG0HPlmzLiTybv9t2qxQhc,313
+team_formation/__main__.py,sha256=allnuZjofAqGYe46YUNbzDcbqi4-CLhh1w2N_o1N3Bo,406
+team_formation/_version.txt,sha256=lXM1w4KNaIXztpLxtVJIkZZd9zdPp8AryIMz-0MrT_c,8
+team_formation/team_assignment.py,sha256=xPZWL4R1sw7MtQf7MGzYntgkrky2HGbtStAe-UX_uSw,36124
+team_formation/team_assignment_ui.py,sha256=xnBIDRGfErSAz3bmD-ueH46DEKggDP63612GWUbG0FE,6091
+team_formation/working_time.py,sha256=dW4D55UydW7iubfwQRnnH1fl_sLxOrO2NeyKXCrx6QY,1354
+team_formation-1.3.0.dist-info/METADATA,sha256=oVSiMHQ39HjUdry33hX1YTAZbyaY4oC2OF6kmtmDAEM,8393
+team_formation-1.3.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+team_formation-1.3.0.dist-info/entry_points.txt,sha256=L58EhcBkIEyYqbFc2rLA0uVW0TUtTAizXzJRP59xoXo,64
+team_formation-1.3.0.dist-info/licenses/LICENSE,sha256=VA33vMQtc31lG07RWToQFuK1b0mFZtJBSGoATd3pD-0,1080
+team_formation-1.3.0.dist-info/RECORD,,
