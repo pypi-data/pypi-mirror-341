@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: langchain_sandbox
+Version: 0.0.1
+Summary: LangChain Sandbox
+Requires-Python: >=3.10
