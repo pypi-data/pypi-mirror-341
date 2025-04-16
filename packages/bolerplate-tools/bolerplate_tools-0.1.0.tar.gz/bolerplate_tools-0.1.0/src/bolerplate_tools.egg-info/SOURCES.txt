@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+src/boilerplate_tools/__init__.py
+src/boilerplate_tools/src/__init__.py
+src/boilerplate_tools/src/utils/__init__.py
+src/boilerplate_tools/src/utils/config.py
+src/boilerplate_tools/src/utils/json_io.py
+src/boilerplate_tools/src/utils/path_handler.py
+src/boilerplate_tools/src/utils/smart_format.py
+src/bolerplate_tools.egg-info/PKG-INFO
+src/bolerplate_tools.egg-info/SOURCES.txt
+src/bolerplate_tools.egg-info/dependency_links.txt
+src/bolerplate_tools.egg-info/requires.txt
+src/bolerplate_tools.egg-info/top_level.txt
+test/test_integration.py
