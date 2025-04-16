@@ -1,0 +1,6 @@
+app-page-core>=0.0.7
+nanoid
+PySide6
+numpy
+pillow
+xmltodict
