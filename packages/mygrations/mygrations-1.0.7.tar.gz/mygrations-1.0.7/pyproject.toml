@@ -1,0 +1,16 @@
+[project]
+name = "mygrations"
+version = "1.0.7"
+description = "Stateless database migrations"
+authors = [
+    {name = "Conor Mancone",email = "cmancone@gmail.com"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = []
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
