@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyhunt"
+authors = [{ name = "EasyDev", email = "easydevv@gmail.com" }]
+description = "Lightweight Python logging tool for visual call tracing, tree-structured colored logs, and easy debugging with a simple decorator. Optimized for both standard and AI-generated codebases. "
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["dotenv>=0.9.9", "rich>=14.0.0"]
+dynamic = ["version"]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[project.urls]
+source = "https://github.com/easydevv/pyhunt"
+
+[project.scripts]
+hunt = "pyhunt.cli:main"
+
+[tool.setuptools]
+packages = ["pyhunt"]
+
+[tool.setuptools_scm]
+version_scheme = "post-release"
+local_scheme = "no-local-version"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
