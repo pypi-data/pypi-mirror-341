@@ -1,0 +1,12 @@
+folium
+geopandas
+ipyleaflet
+localtileserver
+matplotlib
+numpy
+
+[all]
+geonexus[extra]
+
+[extra]
+pandas
