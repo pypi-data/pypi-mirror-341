@@ -1,0 +1,35 @@
+import re
+from os import path
+
+from setuptools import setup, find_packages
+
+here = path.abspath(path.dirname(__file__))
+
+# read the version from classla/_version.py
+version_file_contents = open(path.join(here, 'stark/_version.py'), encoding='utf-8').read()
+VERSION = re.compile('__stark_version__ = \'(.*)\'').search(version_file_contents).group(1)
+
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+  long_description = f.read()
+
+setup(name='stark-trees',
+  version=VERSION,
+  description=u"Parser for dependency trees",
+  long_description=long_description,
+  long_description_content_type="text/markdown",
+  author='CLARIN.SI',
+  author_email='info@clarin.si',
+  license='Apache 2.0',
+  packages=find_packages(),
+  include_package_data=True,
+  install_requires=[
+    'pyconll>=3.1.0',
+    'networkx>=3.3',
+    'tqdm>=4.66.4'
+  ],
+  entry_points={
+      "console_scripts": [
+      "stark=stark.cli:main",  # This maps `stark` to `stark.cli.main()`
+    ],
+  },
+)
