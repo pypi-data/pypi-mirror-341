@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+comicfuryscraper.egg-info/PKG-INFO
+comicfuryscraper.egg-info/SOURCES.txt
+comicfuryscraper.egg-info/dependency_links.txt
+comicfuryscraper.egg-info/entry_points.txt
+comicfuryscraper.egg-info/requires.txt
+comicfuryscraper.egg-info/top_level.txt
+src/cli.py
+src/index.py
