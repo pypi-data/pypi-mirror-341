@@ -1,0 +1,2 @@
+[console_scripts]
+makehuman = makehuman.makehuman:main
