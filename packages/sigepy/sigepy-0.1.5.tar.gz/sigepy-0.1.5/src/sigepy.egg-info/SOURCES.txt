@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/sigepy/__init__.py
+src/sigepy/fourier.py
+src/sigepy/ssi_cov.py
+src/sigepy/utils.py
+src/sigepy/wavelet.py
+src/sigepy.egg-info/PKG-INFO
+src/sigepy.egg-info/SOURCES.txt
+src/sigepy.egg-info/dependency_links.txt
+src/sigepy.egg-info/top_level.txt

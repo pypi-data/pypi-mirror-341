@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sigepy"
+version = "0.1.5"
+authors = [
+    { name = "Angel Navarro-Mora", email = "ahnavarro@anmingenieria.com" },
+]
+
+description = "estructuraPy Package for signal processing for structural vibrations analysis."
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: MIT License",
+]
+dependencies = []
+[project.urls]
+"Homepage" = "https://github.com/estructuraPy/sigepy"
+
+[tool.setuptools]
+packages = ["sigepy"]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+sigepy = ["tests/*.py"]
