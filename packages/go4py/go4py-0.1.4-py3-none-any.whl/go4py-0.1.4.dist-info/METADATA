@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: go4py
+Version: 0.1.4
+Summary: Add your description here
+Requires-Python: <3.13,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.1.8
+Requires-Dist: msgpack>=1.1.0
+Requires-Dist: pydantic>=2.10.6
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: rich>=13.9.4
+
+
+
+# go4py
+
+# TODO
+ - [] Warn the user if it uses string or other dynamicly allocated types as result
+ - [] unexported function warn + export with space (`// export`) 
+ - [] python type definition file
