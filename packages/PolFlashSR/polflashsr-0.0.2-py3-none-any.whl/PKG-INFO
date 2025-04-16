@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: PolFlashSR
+Version: 0.0.2
+Summary: FlashSR: One-step Versatile Audio Super-resolution via Diffusion Distillation / by jakeoneijk
+Author: Politrees
+Author-email: artyom.0.bebroy@gmail.com
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: einops
+Requires-Dist: librosa
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: psutil
+Requires-Dist: pyyaml
+Requires-Dist: tensorboardX
+Requires-Dist: tqdm
+Requires-Dist: wandb
+Project-URL: Documentation, https://github.com/Bebra777228/FlashSR/blob/main/README.md
+Project-URL: Homepage, https://github.com/jakeoneijk/FlashSR_Inference
+Project-URL: Repository, https://github.com/Bebra777228/FlashSR

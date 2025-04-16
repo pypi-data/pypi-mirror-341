@@ -1,0 +1,25 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "PolFlashSR"
+version = "0.0.2"
+description = "FlashSR: One-step Versatile Audio Super-resolution via Diffusion Distillation / by jakeoneijk"
+authors = ["Politrees <artyom.0.bebroy@gmail.com>"]
+packages = [{include = "*"}]
+homepage = "https://github.com/jakeoneijk/FlashSR_Inference"
+repository = "https://github.com/Bebra777228/FlashSR"
+documentation = "https://github.com/Bebra777228/FlashSR/blob/main/README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+numpy = "*"
+tqdm = "*"
+psutil = "*"
+pyyaml = "*"
+matplotlib = "*"
+librosa = "*"
+wandb = "*"
+tensorboardX = "*"
+einops = "*"
