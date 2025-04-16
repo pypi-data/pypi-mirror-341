@@ -1,0 +1,9 @@
+{
+    "name": "gitlab-mcp",
+    "version": "0.1.0",
+    "description": "GitLab MCP service for Cursor IDE",
+    "config": {
+        "gitlab_url": "http://your-gitlab-server.com",
+        "gitlab_token": "your-access-token"
+    }
+} 
