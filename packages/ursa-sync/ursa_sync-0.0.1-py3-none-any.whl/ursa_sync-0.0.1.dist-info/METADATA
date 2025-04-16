@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ursa-sync
+Version: 0.0.1
+Summary: Time series management with stateful synchronization
+Author: Griffin White
+Author-email: griffin@gwc-solutions.ch
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Ursa Sync
+
+A time series framework designed for stateful data management and automatic synchronization 
+
