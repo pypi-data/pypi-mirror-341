@@ -1,0 +1,3 @@
+[console_scripts]
+logging-examples=ai_logger.src.example:cli
+
