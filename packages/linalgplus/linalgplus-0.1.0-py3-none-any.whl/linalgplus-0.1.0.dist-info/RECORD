@@ -1,0 +1,11 @@
+lib/Core.py,sha256=zgWd1NuqJP9pRz7wW7hfVtDin4bsiIUfEY_DIyIyUKg,1667
+lib/Distance.py,sha256=zMcsVuJ1Kw3ZrXcNucEKl8akR94HYevoPOnnvKwjAJY,14021
+lib/Factorization.py,sha256=e86YSYvpZiKR-ocsRNEKdDQyWM4vWYB94alRQNqddAw,10213
+lib/Norms.py,sha256=tvBUNHRyfllrRhcjijILIeIxPd_pqsFAAc5hNc6ORPw,4202
+lib/Operations.py,sha256=hLneG_WJvw79JYjnGa69Pyx76ODf0QxAmt6OdJrMWjw,11074
+lib/Properties.py,sha256=koq1NCzCSTdPJN8Ag1AT9ValyqTC6IXp_IYM2ojuMcE,32214
+lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linalgplus-0.1.0.dist-info/METADATA,sha256=_mo6FpjjCkC-mx1xRyCZTr78ZnaaB0ZHrCEppJuvRA0,467
+linalgplus-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+linalgplus-0.1.0.dist-info/top_level.txt,sha256=oyXcrLgLICoBS0ILk_wZBhkAAY-M4hbQoMsA1hDsf5c,4
+linalgplus-0.1.0.dist-info/RECORD,,
