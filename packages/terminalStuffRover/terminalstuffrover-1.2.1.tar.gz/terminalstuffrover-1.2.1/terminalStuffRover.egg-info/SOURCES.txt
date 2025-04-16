@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+terminalStuff/__init__.py
+terminalStuff/asciiArt.py
+terminalStuff/constants.py
+terminalStuff/functions.py
+terminalStuff/terminalStuff.py
+terminalStuffRover.egg-info/PKG-INFO
+terminalStuffRover.egg-info/SOURCES.txt
+terminalStuffRover.egg-info/dependency_links.txt
+terminalStuffRover.egg-info/top_level.txt
