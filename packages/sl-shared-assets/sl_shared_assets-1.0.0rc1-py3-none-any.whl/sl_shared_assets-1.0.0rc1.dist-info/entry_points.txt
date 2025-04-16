@@ -1,0 +1,3 @@
+[console_scripts]
+sl-generate-credentials = sl_shared_assets.cli:generate_server_credentials_file
+sl-replace-root = sl_shared_assets.cli:replace_local_root_directory
