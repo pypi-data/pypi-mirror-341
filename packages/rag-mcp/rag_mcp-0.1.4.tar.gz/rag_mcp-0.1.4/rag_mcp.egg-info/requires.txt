@@ -1,0 +1,8 @@
+accelerate>=1.6.0
+langchain-chroma>=0.2.2
+langchain-community>=0.3.21
+langchain-docling>=0.2.0
+langchain-ollama>=0.3.0
+langchain-text-splitters>=0.3.8
+mcp[cli]>=1.6.0
+sentence-transformers>=4.0.2
