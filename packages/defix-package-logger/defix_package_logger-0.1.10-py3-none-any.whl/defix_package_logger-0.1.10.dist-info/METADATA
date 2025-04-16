@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: defix-package-logger
+Version: 0.1.10
+Summary: DeFiX internal package for service logging
+Author-email: Mykhailo Kuzmin <guywithnothing56@gmail.com>
+Requires-Python: >=3.9
+Requires-Dist: python-json-logger>=3.3.0
+Description-Content-Type: text/markdown
+
+# DeFiX Internal Logger Package
+
+## Package for service logging
