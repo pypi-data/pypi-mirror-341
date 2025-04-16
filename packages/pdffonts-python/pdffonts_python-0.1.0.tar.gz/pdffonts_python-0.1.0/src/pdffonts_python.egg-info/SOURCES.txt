@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/pdffonts_python/__init__.py
+src/pdffonts_python/pdffonts_python.py
+src/pdffonts_python.egg-info/PKG-INFO
+src/pdffonts_python.egg-info/SOURCES.txt
+src/pdffonts_python.egg-info/dependency_links.txt
+src/pdffonts_python.egg-info/top_level.txt

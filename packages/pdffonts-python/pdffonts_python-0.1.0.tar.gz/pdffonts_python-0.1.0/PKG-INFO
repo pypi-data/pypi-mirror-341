@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: pdffonts-python
+Version: 0.1.0
+Summary: A Python wrapper for the pdffonts command.
+Author-email: jackson <58273860+neverabsolute@users.noreply.github.com>
+License-Expression: MIT
+Project-URL: Source, https://github.com/neverabsolute/pdffonts-python
+Project-URL: Tracker, https://github.com/neverabsolute/pdffonts-python/issues
+Keywords: pdffonts,pdf,wrapper
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# PDFFont Python Wrapper
+
+This is a Python wrapper for the PDFFont command line tool, which provides functionality for working with PDF fonts. The wrapper allows you to quickly list out the fonts in a PDF file along with their properties, such as font name, type, and encoding.
