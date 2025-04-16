@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: setuptools-scm-patch
+Version: 1.0.1
+Summary: A tiny patch for setuptools_scm to customize version formatting.
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# setuptools-scm-patch
+
+A tiny patch for `setuptools_scm` to customize version formatting.
+
+Transforms versions like: ```foo-0.3.1.dev21+g6c51818``` into: ```foo-0.3.21+g6c51818```
+
+## Installation
+
+Add `setuptools-scm-patch` to your `pyproject.toml`:
+
+```toml
+[build-system]
+requires = [
+  "setuptools>=64",
+  "setuptools_scm>=8",
+  "setuptools-scm-patch", # <<< Add this
+]
+build-backend = "setuptools.build_meta"
+```
+
+## Configuration
+
+Enable the custom version scheme in `pyproject.toml`:
+
+```toml
+[project]
+# ...
+dynamic = ["version"]
+
+[tool.setuptools_scm]
+version_scheme = "setuptools_scm_patch:simple_version_scheme"
+```
+
+## License
+
+MIT
