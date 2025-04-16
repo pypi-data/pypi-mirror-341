@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: turintech-ioc
+Version: 1.1.2
+Summary: Inversion of control implementation
+Requires-Python: <=3.13,>=3.8
+Requires-Dist: typing-extensions<5.0.0,>=4.5.0
