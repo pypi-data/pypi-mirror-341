@@ -1,0 +1,2 @@
+[console_scripts]
+minimax-mcp = gj_meta_mcp.server:main
