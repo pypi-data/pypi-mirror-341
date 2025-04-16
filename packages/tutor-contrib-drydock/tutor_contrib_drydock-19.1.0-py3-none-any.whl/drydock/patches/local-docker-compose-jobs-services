@@ -1,0 +1,3 @@
+mongodb-job:
+  image: {{ DOCKER_IMAGE_MONGODB }}
+  depends_on: {{ [("mongodb", RUN_MONGODB)]|list_if }}
