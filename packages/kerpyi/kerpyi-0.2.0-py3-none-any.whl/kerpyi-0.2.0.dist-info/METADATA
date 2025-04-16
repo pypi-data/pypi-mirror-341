@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: kerpyi
+Version: 0.2.0
+Summary: A sample pip-installable module
+Author-email: Your Name <you@example.com>
+License: none
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
