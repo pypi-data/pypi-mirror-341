@@ -1,0 +1,172 @@
+# MODE: Mixture of Document Experts for RAG
+
+## Project Overview
+MODE (Mixture of Document Experts) is an advanced framework that improves Retrieval-Augmented Generation (RAG) by integrating external knowledge retrieval with a mixture of specialized expert models.
+
+Key features of MODE include:
+* Hierarchical Clustering: Organizes documents into semantically meaningful clusters.
+* Expert Models: Assigns specialized models to different document clusters for targeted expertise.
+* Centroid-Based Retrieval: Selects representative documents efficiently to enhance retrieval relevance.
+
+By combining these techniques, MODE delivers more accurate document retrieval and synthesis for query-based applications, improving answer quality while reducing retrieval noise. MODE is particularly well-suited for small to medium-sized document collections or datasets.
+
+📄 Docs:https://mode-rag.readthedocs.io/en/latest/
+
+
+
+
+## Quick start
+### Installation
+
+
+```bash
+pip install mode_rag
+```
+
+```python
+import os
+
+## set ENV variables
+os.environ["OPENAI_API_KEY"] = "your-api-key"
+```
+
+### 1. Ingestion Code
+
+This is a sample using `RecursiveCharacterTextSplitter` and `EmbeddingGenerator`.
+You can use your **own chunking/embedding** logic.
+Main inputs to `ModeIngestion` are `chunks` and `embeddings`:
+
+```python
+# ========================================
+# 📄 Sample Code: 
+# ========================================
+#
+# 1. Loading pdf using PyPDFLoader
+# 2. create chunking using `RecursiveCharacterTextSplitter`.
+# 3. for embedding we are using langchain_huggingface.
+# This is a sample using `RecursiveCharacterTextSplitter` and `EmbeddingGenerator`.
+# You can use your **own chunking/embedding** logic.
+# Main inputs to `ModeIngestion` are `chunks` and `embeddings`:
+
+
+## requirements
+# pip install langchain_huggingface==0.1.2
+# pip install langchain_community==0.3.4
+# pip install pypdf==5.1.0
+
+
+import os
+import json
+
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
+
+from mode_rag import ModeIngestion, EmbeddingGenerator
+import os
+import json
+
+## Pdf reader
+from langchain_community.document_loaders import PyPDFLoader
+
+loader = PyPDFLoader("https://arxiv.org/pdf/1706.03762")
+docs = loader.load()
+
+print("downloaded the files")
+
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+print("Chunking the pdf:doc")
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+documents = text_splitter.split_documents(docs)
+chunks = []
+for doc in documents:
+    chunks.append(doc.page_content)
+
+print("doing embedding")
+embed_gen = EmbeddingGenerator()
+embeddings = embed_gen.generate_embeddings(chunks)
+print("embedding done")
+main_processor = ModeIngestion(
+    chunks=chunks,
+    embedding=embeddings,
+    persist_directory="attention",
+)
+main_processor.process_data(parallel=False)
+
+```
+
+
+### 2. Inference Code
+
+
+This is a sample using `ModeInference` and `EmbeddingGenerator`.
+You can use your **own embedding** method.
+Main inputs to `ModeInference.invoke` are `query`, `query_embedding`, and `prompts`:
+
+```python
+# ========================================
+# 📄 Sample Code:
+# ========================================
+#
+# 1. Load clustered data (`ModeInference`).
+# 2. Generate query embedding (replaceable with your `embedding.py`).
+# 3. Retrieve context and synthesize response with `ModelPrompt`.
+
+import os
+import json
+import sys
+
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
+
+from mode_rag import (
+    EmbeddingGenerator,
+    ModeInference,
+    ModelPrompt,
+)
+
+
+main_processor = ModeInference(
+    persist_directory="attention",
+)
+
+print("====start======")
+# Create a PromptManager instance
+
+query = "What are the key mathematical operations involved in computing self-attention?"
+
+embed_gen = EmbeddingGenerator()
+embedding = embed_gen.generate_embedding(query)
+
+prompts = ModelPrompt(
+    ref_sys_prompt="Use the following pieces of context to answer the user's question. \nIf you don't know the answer, just return you don't know.",
+    ref_usr_prompt="context: ",
+    syn_sys_prompt="You have been provided with a set of responses from various models to the latest user query. Your task is to synthesize these responses into a single, high-quality response. It is crucial to critically evaluate the information provided in these responses, recognizing that some of it may be biased or incorrect. Your response should not simply replicate the given answers but should offer a refined, accurate, and comprehensive reply to the instruction. Ensure your response is well-structured, coherent, and adheres to the highest standards of accuracy and reliability.\nResponses from models:",
+    syn_usr_prompt="responses:",
+)
+
+response = main_processor.invoke(
+    query,
+    embedding,
+    prompts,
+    model_input={"temperature": 0.3, "model": "openai/gpt-4o-mini"},
+    top_n_model=2,
+)
+print(response)
+
+```
+
+
+## Contributing
+
+We welcome contributions! Here’s how you can help:
+
+- **Report Bugs:** Submit issues on GitHub.
+- **Suggest Features:**  Open an issue with your ideas.
+- **Code Contributions:** Fork, make changes, and submit a pull request.
+- **Documentation:** Update and enhance our docs.
+
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
