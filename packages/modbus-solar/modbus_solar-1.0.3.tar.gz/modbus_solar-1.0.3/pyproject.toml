@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "modbus_solar"
+version = "1.0.3"
+authors = [
+  { name="boopzz", email="boopzz@pm.me" },
+]
+description = "A small package to pull stats from a Renogy Solar Charge Controller"
+keywords = ["modbus", "solar", "renogy"]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+  "minimalmodbus>=2.0.0",
+  "typer"
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/boopzz/modbus-solar"
+Issues = "https://gitlab.com/boopzz/modbus-solar/issues"
+
+[project.scripts]
+modbus-solar = "modbus_solar.cli:app"

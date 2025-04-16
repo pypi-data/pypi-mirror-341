@@ -1,0 +1,81 @@
+variables:
+  CI_PIPELINE_SOURCE_REGEX: "/schedule|merge_request_event|trigger|web/i"
+  TEST_DEPLOY:
+    description: "Deploy the test build to the Test PyPi repo?"
+    value: "false"
+    options:
+      - "false"
+      - "true"
+
+stages:
+  - build
+  - deploy
+  - release
+
+default:
+  image: python:3.11 # This is the current version of python for Debian 12 Bookworm
+
+build-package:
+  stage: build
+  script:
+    - pip install build
+    - python -m build --sdist --wheel
+  artifacts:
+    name: pypackages
+    paths:
+      - "dist/*"
+  rules:
+    - if: $CI_PIPELINE_SOURCE =~ $CI_PIPELINE_SOURCE_REGEX
+    - if: $CI_COMMIT_TAG
+    - if: $TEST_DEPLOY == "true"
+
+test:
+  stage: deploy
+  dependencies:
+    - build-package
+  environment:
+    name: 'test'
+    url: 'https://test.pypi.org/project/modbus-solar/'
+  id_tokens:
+    TESTPYPI_ID_TOKEN:
+      aud: testpypi
+  script:
+    - pip install twine
+    - twine upload --repository testpypi dist/*
+  rules:
+    - if: '$TEST_DEPLOY == "true"'
+
+release:
+  stage: deploy
+  dependencies:
+    - build-package
+  environment:
+    name: 'release'
+    url: 'https://pypi.org/project/modbus-solar/'
+  id_tokens:
+    PYPI_ID_TOKEN:
+      aud: pypi
+  script:
+    - pip install twine
+    - twine upload dist/*
+  rules:
+    - if: $CI_COMMIT_TAG
+
+release_job:
+  image: gitlab/glab:latest
+  stage: release
+  dependencies:
+    - release
+  environment:
+    name: 'release'
+  script:
+    - >
+     glab release create $CI_COMMIT_TAG --assets-links='[
+        {
+          "name": "PyPi Release '$CI_COMMIT_TAG'",
+          "url": "https://pypi.org/project/modbus-solar/'$CI_COMMIT_TAG'/",
+          "link_type": "packages"
+        }
+      ]'
+  rules:
+    - if: $CI_COMMIT_TAG
