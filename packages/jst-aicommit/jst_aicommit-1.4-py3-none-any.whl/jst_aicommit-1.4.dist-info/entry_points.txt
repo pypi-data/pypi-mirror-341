@@ -1,0 +1,3 @@
+[console_scripts]
+aic=jst_aicommit.main:main
+
