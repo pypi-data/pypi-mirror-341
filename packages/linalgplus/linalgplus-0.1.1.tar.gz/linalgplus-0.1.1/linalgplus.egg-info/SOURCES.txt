@@ -1,0 +1,13 @@
+README.md
+setup.py
+linalgplus/Core.py
+linalgplus/Distance.py
+linalgplus/Factorization.py
+linalgplus/Norms.py
+linalgplus/Operations.py
+linalgplus/Properties.py
+linalgplus/__init__.py
+linalgplus.egg-info/PKG-INFO
+linalgplus.egg-info/SOURCES.txt
+linalgplus.egg-info/dependency_links.txt
+linalgplus.egg-info/top_level.txt
