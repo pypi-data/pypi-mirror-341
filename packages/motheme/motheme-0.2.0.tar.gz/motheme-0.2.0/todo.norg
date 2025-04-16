@@ -1,0 +1,96 @@
+*  Commands
+
+**  motheme remove
+
+    command for removing stored data
+
+    - (-) `--project` to remove data folder
+    - (x) `--all` to remove all downloaded themes
+    - (x) followed by theme names to remove specified themes
+
+**  motheme download
+
+    - (x) `--all` to download all available themes
+    - (x) followed by theme names to download specified themes
+
+**  motheme update
+
+    - (x) deprecate this command in `v0.4.0`, use `motheme download --all` instead
+
+**  motheme themes
+
+    - (!) deprecate this command in `v0.4.0`, use `motheme list --all` instead
+
+**  motheme list
+
+    - (x) `--all` to list all available themes
+    -- (x) also show *installed*, *not installed*, *custom*, or *font*
+    - (x) `--installed` to list installed themes
+    - (x) `--not-installed` to list not installed themes
+    - (x) `--custom` to list custom themes
+    - (x) `--font` to list font templates
+
+**  motheme apply
+
+    - (-) if no theme is provided, use *default* theme set by `motheme default`
+
+**  motheme default (todo, lowest priority)
+
+    - (-) if no arg is provided, display default theme and font
+    - (-) `--theme` set the default theme to be applied by `motheme apply`, write to configuration file
+
+**  motheme config
+
+    - (-) `path` to show the path of the configuration file
+    - (-) `show` to show the content of the current configuration file
+
+**  motheme font
+
+    fonts are stored inside `$MOTHEME_DATA/fonts`
+
+    - (!) add document of how to create, edit and apply font template to themes
+
+***  motheme font set
+
+     change the font of a theme
+
+     this should replace the font session of the css with the provided font template
+
+     - (x) `--all` applied to all downloaded themes
+     - (x) no flags, followed by theme names
+     - (x) better parsing and replacement
+
+***  motheme font create
+
+     to create a font template
+
+     - (x) ref-font-name  Name of the reference font to duplicate (type: str)
+     - (x) font-name      Name for the new font (type: str)
+
+***  motheme font edit
+
+     - (-) edit a font template with args
+     -- ( ) how to import fonts
+
+*  Themes 
+
+   ref
+
+   - {https://github.com/rafi/awesome-vim-colorschemes}
+
+   should be of highest priority
+
+*  Features
+
+*  Configuration (todo, low priority)
+
+   - (-) draft the structure of configuration and default values
+
+   - (-) configure the folder to store themes
+   - (-) default theme
+   - (-) default fonts
+
+*  Tests (todo, low priority)
+
+   - ( ) more tests 
+   -- ( ) on different operating systems
