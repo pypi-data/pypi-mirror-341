@@ -1,0 +1,9 @@
+sap_ecs_aws_log_forwarder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sap_ecs_aws_log_forwarder/config.py,sha256=Nq7iVdTyiqQjX2c5v-5Fpyh-NU7Sv9asmDqyiLU_9bI,1583
+sap_ecs_aws_log_forwarder/log_processor.py,sha256=hiWqihbBFUBPWfSJs6fYhpLzyP4jyGmES472U1LX5kA,2374
+sap_ecs_aws_log_forwarder/queue_consumer.py,sha256=0p5QUF5qEeLTVufKRjwrCryTFQdbdBT-aVQIuLBKASo,7112
+sap_ecs_aws_log_forwarder-1.0.6.dist-info/LICENSE,sha256=RTHTDJe35fXCEJkg3wT9DHAO8QQZWRNd9NELcyj4jN0,13528
+sap_ecs_aws_log_forwarder-1.0.6.dist-info/METADATA,sha256=_x49YUEpVm7S6YxtiO_ixO4svr1o0AORWZjJ67kYGS4,7713
+sap_ecs_aws_log_forwarder-1.0.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sap_ecs_aws_log_forwarder-1.0.6.dist-info/entry_points.txt,sha256=ZgTAtsRa2a78_yXQQhnn1WU5chtI5dW8Gf76OueEGA4,100
+sap_ecs_aws_log_forwarder-1.0.6.dist-info/RECORD,,
