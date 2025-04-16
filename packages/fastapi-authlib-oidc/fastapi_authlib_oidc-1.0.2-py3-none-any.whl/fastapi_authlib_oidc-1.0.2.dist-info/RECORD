@@ -1,0 +1,10 @@
+fastapi_authlib_oidc-1.0.2.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fastapi_oidc/__init__.py,sha256=2CxtQR_dKzm3W9qdu64UN6L9vYWxOoEfigGr6-e8pSU,156
+fastapi_oidc/app.py,sha256=OqfPOmLPMZvCviAgAtRINWFK66BwKCeg0yA1WyQnFoc,1813
+fastapi_oidc/authlib.py,sha256=WxY8cThm9qg1rxi1KYP1pbgteUxlEVRVJWNmNC4Rts4,2072
+fastapi_oidc/client.py,sha256=YWrjkgqYXrsrKE2NUd6RXb7QSfhUk361WtMi75ECDfY,13900
+fastapi_oidc/user.py,sha256=rqOwcs5v6xepowyi1Tj5X2sFRQ_FBW9KVHkwQI16JSc,3068
+fastapi_authlib_oidc-1.0.2.dist-info/METADATA,sha256=tgO5DwrZWN2B2XQ5O3yHt5qP2iti2-X2pXOJ5NcIJyA,46798
+fastapi_authlib_oidc-1.0.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+fastapi_authlib_oidc-1.0.2.dist-info/top_level.txt,sha256=kzBcrVTWg1FctbZvHIA8SRQK4rNCNRSECf8v5uDkmxs,13
+fastapi_authlib_oidc-1.0.2.dist-info/RECORD,,
