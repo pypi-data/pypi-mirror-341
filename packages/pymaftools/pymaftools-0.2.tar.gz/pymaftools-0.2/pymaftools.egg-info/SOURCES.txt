@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pymaftools/__init__.py
+pymaftools.egg-info/PKG-INFO
+pymaftools.egg-info/SOURCES.txt
+pymaftools.egg-info/dependency_links.txt
+pymaftools.egg-info/requires.txt
+pymaftools.egg-info/top_level.txt
