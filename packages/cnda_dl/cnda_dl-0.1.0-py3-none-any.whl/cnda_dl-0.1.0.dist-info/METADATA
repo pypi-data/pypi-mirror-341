@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: cnda_dl
+Version: 0.1.0
+Summary: A command line utility for downloading fMRI data from CNDA
+Author-Email: Ramone Agard <agardr@wustl.edu>, Joey Scanga <joeyscanga92@gmail.com>
+Requires-Python: <4.0,>=3.9
+Requires-Dist: matplotlib>=3.7.2
+Requires-Dist: matplotlib-inline>=0.1.6
+Requires-Dist: progressbar2>=4.4.2
+Requires-Dist: pyxnat>=1.6.2
+Description-Content-Type: text/markdown
+
+# Dev installation
+
+Ensure `uv` is installed:
+
+```
+which uv
+```
+
+If not, this can be installed following instructions [here](https://docs.astral.sh/uv/getting-started/installation/).
+
+Then run:
+
+```
+git clone https://github.com/washu-ocean/cnda-dl.git
+cd cnda-dl
+uv sync
+```
