@@ -1,0 +1,2 @@
+[console_scripts]
+modbus-solar = modbus_solar.cli:app

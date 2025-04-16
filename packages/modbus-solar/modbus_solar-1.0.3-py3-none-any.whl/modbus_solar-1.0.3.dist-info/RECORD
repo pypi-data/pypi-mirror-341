@@ -1,0 +1,9 @@
+modbus_solar/__init__.py,sha256=n-YahV-AD77ekbkUZkOeJt3iPc5qW9HVC0JFawFTEeM,40
+modbus_solar/__main__.py,sha256=omSEpTvTwJOqDDcOl-RjtwLNtKUNDJ518_TeRJtLoRI,89
+modbus_solar/cli.py,sha256=ad_aKUM7FPIQvNKA5JzZh1ovhmS9fb3fp_4Byw-yQmM,323
+modbus_solar/get.py,sha256=fhtTyej1MAd2Zl_kE3WqC46FFsFm-KK2DWRZ4fqhsPI,5732
+modbus_solar-1.0.3.dist-info/METADATA,sha256=5NfjNMz67kp8M3ey_YTUqukCPVf3B2cuNG-tVXZHegQ,2474
+modbus_solar-1.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+modbus_solar-1.0.3.dist-info/entry_points.txt,sha256=jy5hmyWBfvLJqbRtZXalct0bSqXiN7_1nCqM0vGaKpk,54
+modbus_solar-1.0.3.dist-info/licenses/LICENSE,sha256=tsx7NREuHEQoUK7lSwJsm2QTJ5NkfWH-NNq_AvjxjUE,1063
+modbus_solar-1.0.3.dist-info/RECORD,,
