@@ -1,0 +1,7 @@
+commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commands/greet.py,sha256=EEHeoU5opv0jZUOhvtqTXCysNo0wYKvZrh3taAt0wYo,306
+hmdicli-0.1.0.dist-info/METADATA,sha256=4XGpBCu2-lWqm9-9m663uNzFaRdU5IOK8hdzy1qWqiQ,340
+hmdicli-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+hmdicli-0.1.0.dist-info/entry_points.txt,sha256=0ZOGjjaoqr4nLhlj8EVkHeiNK7ja0yh513VSqj-Ahlo,44
+hmdicli-0.1.0.dist-info/top_level.txt,sha256=6dNUbRvZAy7fLWNbD4YeUosLYwGk-SVew-Swd5CfFkg,9
+hmdicli-0.1.0.dist-info/RECORD,,

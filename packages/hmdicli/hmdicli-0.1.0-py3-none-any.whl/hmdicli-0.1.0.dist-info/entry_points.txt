@@ -1,0 +1,2 @@
+[console_scripts]
+hmdicli = mycli.main:main
