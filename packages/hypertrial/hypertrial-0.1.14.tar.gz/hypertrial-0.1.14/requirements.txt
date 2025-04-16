@@ -1,0 +1,12 @@
+# To install the latest versions, run: pip install --upgrade -r requirements.txt
+pandas>=2.0.0
+numpy>=2.0.0
+matplotlib>=3.7.0
+coinmetrics-api-client>=2024.2.6.16
+pytest>=8.0.0
+scipy>=1.10.0
+psutil>=6.0.0
+bandit>=1.7.0
+safety>=3.0.0
+pylint>=3.0.0 
+pytest-cov>=4.1.0
