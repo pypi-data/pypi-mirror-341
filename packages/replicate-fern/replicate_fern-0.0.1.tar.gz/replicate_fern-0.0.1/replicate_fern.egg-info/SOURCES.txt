@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+replicate_fern/__init__.py
+replicate_fern.egg-info/PKG-INFO
+replicate_fern.egg-info/SOURCES.txt
+replicate_fern.egg-info/dependency_links.txt
+replicate_fern.egg-info/top_level.txt
