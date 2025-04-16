@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+voxfactory_mcp/__init__.py
+voxfactory_mcp/serve.py
+voxfactory_mcp.egg-info/PKG-INFO
+voxfactory_mcp.egg-info/SOURCES.txt
+voxfactory_mcp.egg-info/dependency_links.txt
+voxfactory_mcp.egg-info/entry_points.txt
+voxfactory_mcp.egg-info/requires.txt
+voxfactory_mcp.egg-info/top_level.txt
