@@ -1,0 +1,2 @@
+[console_scripts]
+gaspar = gaspar.cli.main:main
