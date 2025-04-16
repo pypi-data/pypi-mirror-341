@@ -1,0 +1,7 @@
+httpx
+pydantic
+pydantic-settings
+uvicorn
+fastapi
+cryptography>=3.0
+pyjwt
