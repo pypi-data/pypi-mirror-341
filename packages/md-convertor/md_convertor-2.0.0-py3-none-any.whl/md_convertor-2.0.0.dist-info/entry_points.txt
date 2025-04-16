@@ -1,0 +1,2 @@
+[console_scripts]
+md_convertor = md_convertor.__main__:main
