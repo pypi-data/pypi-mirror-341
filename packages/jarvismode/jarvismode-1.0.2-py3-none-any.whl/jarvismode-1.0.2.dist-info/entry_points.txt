@@ -1,0 +1,2 @@
+[console_scripts]
+jarvismode = jarvismode.__main__:main
