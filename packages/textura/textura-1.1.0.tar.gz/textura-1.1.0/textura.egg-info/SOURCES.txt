@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+textura/__init__.py
+textura/textura.py
+textura.egg-info/PKG-INFO
+textura.egg-info/SOURCES.txt
+textura.egg-info/dependency_links.txt
+textura.egg-info/top_level.txt
