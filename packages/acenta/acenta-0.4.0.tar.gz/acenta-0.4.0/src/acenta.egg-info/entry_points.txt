@@ -1,0 +1,2 @@
+[console_scripts]
+acenta = acenta.cli:main
