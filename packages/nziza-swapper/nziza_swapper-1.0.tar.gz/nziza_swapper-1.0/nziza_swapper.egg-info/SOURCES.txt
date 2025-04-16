@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+nzizaSwapper/__init__.py
+nzizaSwapper/swapp_variables.py
+nziza_swapper.egg-info/PKG-INFO
+nziza_swapper.egg-info/SOURCES.txt
+nziza_swapper.egg-info/dependency_links.txt
+nziza_swapper.egg-info/top_level.txt
