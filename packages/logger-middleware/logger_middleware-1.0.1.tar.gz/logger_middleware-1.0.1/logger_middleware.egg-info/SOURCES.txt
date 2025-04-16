@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+Makefile
+README.md
+pyproject.toml
+requirements.dev.txt
+setup.py
+.github/workflows/build_and_publish.yml
+.github/workflows/checks.yml
+logger_middleware/__init__.py
+logger_middleware/middleware.py
+logger_middleware.egg-info/PKG-INFO
+logger_middleware.egg-info/SOURCES.txt
+logger_middleware.egg-info/dependency_links.txt
+logger_middleware.egg-info/requires.txt
+logger_middleware.egg-info/top_level.txt
