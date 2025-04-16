@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: IsoGroup
+Version: 0.1
+Summary: IsoGroup: Identification of isotopic clusters in MS data
+Home-page: https://github.com/MetaSys-LISBP/IsoCor/
+Author: Noémie Butin, Loïc Le Grégam, Pierre Millard
+Author-email: millard@insa-toulouse.fr
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=0.17.1
+Requires-Dist: isocor>=2.0.0
+Dynamic: license-file
+
+# IsoGroup
+Data processing tool for automatic extraction and annotation of isotopic 
+information collected by mass spectrometry
