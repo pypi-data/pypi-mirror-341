@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ded_sdk/__init__.py
+ded_sdk/client.py
+ded_sdk.egg-info/PKG-INFO
+ded_sdk.egg-info/SOURCES.txt
+ded_sdk.egg-info/dependency_links.txt
+ded_sdk.egg-info/requires.txt
+ded_sdk.egg-info/top_level.txt
