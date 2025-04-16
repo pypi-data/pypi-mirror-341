@@ -1,0 +1,2 @@
+[console_scripts]
+platform-mcp-server = planqk.mcp.main:main

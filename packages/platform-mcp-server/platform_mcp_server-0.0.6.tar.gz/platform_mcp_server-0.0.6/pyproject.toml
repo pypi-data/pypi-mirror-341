@@ -1,0 +1,26 @@
+[project]
+name = "platform-mcp-server"
+version = "0.0.6"
+description = "Platform MCP Server"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.6.0",
+]
+
+[project.scripts]
+platform-mcp-server = "planqk.mcp.main:main"
+
+[build-system]
+requires = ["setuptools >= 61.0", "wheel", "twine"]
+build-backend = "setuptools.build_meta"
+
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+[tool.setuptools.packages.find]
+include = ["planqk*"]
+
+[tool.setuptools.package-data]
+"planqk" = [
+    "mcp/kipu_services.txt"
+]
