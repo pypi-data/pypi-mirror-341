@@ -1,0 +1,6 @@
+HTTP_HEADER_CONTENTTYPE = "Content-Type"
+HTTP_HEADER_BEARER = "Authorization"
+HTTP_HEADER_BEARER_KEY = "token"
+HTTP_HEADER_BEARER_VALUE = "Bearer {token}"
+HTTP_AUTH_USERNAME = "username"
+HTTP_AUTH_PASSWORD = "password"
