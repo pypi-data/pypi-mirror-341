@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: replicate-stainless
+Version: 0.0.1
+Summary: Stub package to reserve the 'replicate-stainless' name.
+Home-page: https://github.com/yourname/replicate-stainless
+Author: Your Name
+Author-email: you@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# replicate-stainless
+
+This is a placeholder (stub) package to reserve the `replicate-stainless` namespace on PyPI.

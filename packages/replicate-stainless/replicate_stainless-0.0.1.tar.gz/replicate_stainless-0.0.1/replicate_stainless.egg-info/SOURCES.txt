@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+replicate_stainless/__init__.py
+replicate_stainless.egg-info/PKG-INFO
+replicate_stainless.egg-info/SOURCES.txt
+replicate_stainless.egg-info/dependency_links.txt
+replicate_stainless.egg-info/top_level.txt
