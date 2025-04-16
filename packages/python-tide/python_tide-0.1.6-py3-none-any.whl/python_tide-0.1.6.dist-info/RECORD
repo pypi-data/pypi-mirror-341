@@ -1,0 +1,16 @@
+tide/__init__.py,sha256=7afp-2t5AEx8PEmIHHFpSuSAForsm5DfMJJnPlT5nKc,91
+tide/base.py,sha256=Q3Iyb66FNwIke86-PKtdBFaogyrM5Jd16Ubh6Wx8Wms,8873
+tide/classifiers.py,sha256=sYVXXCk2n_IHiCglNdT6VJqU2OCRGYcKBlwBLnT3VSE,3947
+tide/influx.py,sha256=6rzablIhvDM_xdKWJizz28wRK3sMRH9d52Jn6iqLq_E,10546
+tide/math.py,sha256=RaU4t6OMXHHNASbfcAm5Y-WIdImBRbFQr9gWcCaKrMM,5305
+tide/meteo.py,sha256=5C7Vw0lQjNSXwsoCx224qNlJ3xAqDrd5bJFcNqeMePM,11925
+tide/metrics.py,sha256=GUYAiHHlcrWZubaOizu81lN5i3Z3K8Jkan8FDBIZ4nc,1210
+tide/plot.py,sha256=x4MQMUn5OQ3sG4zaFk2JUId1g1pobSm4_ZBiWWc43xc,10119
+tide/plumbing.py,sha256=Rmsm5GmUTjff-sPMUfBBnDuBI8eIibg9LSW5vPDYBJk,35534
+tide/processing.py,sha256=welwCmkX1Xo_iPVEMMcxntTPERpzKr3D6OGzElCfY5M,117716
+tide/regressors.py,sha256=wl8uj2oIft56SxnNkif7zSgGtSnb5lca6Q3KWLbGfGw,13548
+tide/utils.py,sha256=D9bRBs6KcsLYdwc4E3-0KKfQ8e2_xRaQeBIEyaJPMw0,23408
+python_tide-0.1.6.dist-info/licenses/LICENSE.md,sha256=N0C3tLBqYLRCN-fMDo3ucl9dF97RqtYylWRu3Yw3e6o,1450
+python_tide-0.1.6.dist-info/WHEEL,sha256=G2gURzTEtmeR8nrdXUJfNiB3VYVxigPQ-bEQujpNiNs,82
+python_tide-0.1.6.dist-info/METADATA,sha256=AA2TuRJnTX2f30I-Xo4KYwgSmwlG9QA5ZibKzzd8-Bk,7788
+python_tide-0.1.6.dist-info/RECORD,,
