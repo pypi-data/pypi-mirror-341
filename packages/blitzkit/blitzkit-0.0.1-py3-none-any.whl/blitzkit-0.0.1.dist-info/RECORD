@@ -1,0 +1,11 @@
+bin/__init__.py,sha256=V4Q0v0r7QbfoIvVFVZGDX-O02Gi3nkoyg82ofvEozOw,86
+bin/blitz.py,sha256=nkmd_qS7w2qhS-EEwcYyIRLZAted0mPsCdbraq8rW0A,193
+blitzkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blitzkit/cli.py,sha256=x3CTpwa1QAn5AJ9mtzfC42r_ab8cuSu7Hmg3gNXliQo,5534
+blitzkit/frameworks.py,sha256=9RWcXQyEL7C9O40_N88me4ABYEhvq6Q4VcB1zoq1piE,796
+blitzkit/scripts/__init__.py,sha256=Yaay_JbaavIgCCx0oHSTtKGHlrBI-bTjL64pFagySWs,64
+blitzkit-0.0.1.dist-info/METADATA,sha256=BST3p8eM3AAMG9PcLv2cV15GoiA8NP0nvo55cUMI0dA,583
+blitzkit-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+blitzkit-0.0.1.dist-info/entry_points.txt,sha256=sN8htRMM9V5_75ShPj7qCqEt9nOmyq6IuPFKQgoQ4iE,46
+blitzkit-0.0.1.dist-info/top_level.txt,sha256=2mzFIzU1tkidt1fld33oaNGUxhM9eiCyrDAmrox2mKA,13
+blitzkit-0.0.1.dist-info/RECORD,,
