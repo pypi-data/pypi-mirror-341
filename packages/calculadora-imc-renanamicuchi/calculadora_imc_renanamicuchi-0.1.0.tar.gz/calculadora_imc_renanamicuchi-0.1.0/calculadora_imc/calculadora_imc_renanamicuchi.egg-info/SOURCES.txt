@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+calculadora_imc/calculadora_imc_renanamicuchi.egg-info/PKG-INFO
+calculadora_imc/calculadora_imc_renanamicuchi.egg-info/SOURCES.txt
+calculadora_imc/calculadora_imc_renanamicuchi.egg-info/dependency_links.txt
+calculadora_imc/calculadora_imc_renanamicuchi.egg-info/top_level.txt
+tests/test_imc.py
