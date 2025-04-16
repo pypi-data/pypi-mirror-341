@@ -1,0 +1,9 @@
+gpac/__init__.py,sha256=TYjJevzoDEM2TPVPi0mRng713MOn8tV-1HFK6LkXkjE,48
+gpac/__version__.py,sha256=97SdJl5Cj0DHFoDDuBUGbXKv_6H6LkEXZJFXtNwak68,90
+gpac/crn.py,sha256=JpU5lmyB6aZlA0JxapsorAcjCksiySuE6Q0C9yHXS0s,46899
+gpac/ode.py,sha256=icaGrdGkuM8mODjbG5U-GzNZ8nDdWkAvMaDT0OHFHTM,35451
+gpac-1.0.9.dist-info/licenses/LICENSE,sha256=mQIHGmjKEPm_M_tuz1BB_Rg0i5DegkE4hG1IJgam04c,1112
+gpac-1.0.9.dist-info/METADATA,sha256=ZiQb3ncC6Alcq_YjxLyudX7UxoO-rlYaBs6_WV9ARdo,10017
+gpac-1.0.9.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+gpac-1.0.9.dist-info/top_level.txt,sha256=vFsTjmqGqszqbvcCkLRS8_aizCRWr4YzT9O72fNpSvo,5
+gpac-1.0.9.dist-info/RECORD,,
