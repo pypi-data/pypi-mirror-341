@@ -1,0 +1,3 @@
+[console_scripts]
+gemini = claude_code_gemini.main:gemini_command
+gemini-server = claude_code_gemini.main:server_command
