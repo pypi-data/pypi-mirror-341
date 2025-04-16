@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wasla"
+version = "0.0.1"
+authors = [
+  { name="Mahmoud Metwalli", email="mammkbih@gmail.com" },
+]
+description = """Wasla was developed to facilitate the build of events based systems that uses RabbitMQ as the message broker,
+wasla is built on aio_pika to represent the core of RabbitMQ connection,
+while wasla provides a mini framework for routing and middlewares.
+With the right configuration and a well structured routing map, you can publish an event to many consumers
+with just one line of code."""
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "aio-pika>=9.3.1",
+    "pydantic>=2.0.0",
+    "colorlog>=6.8.0",
+    "typing-extensions>=4.8.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+license = "Apache-2.0"
+license-files = ["LICENSE*"]
+
+[project.urls]
+Homepage = "https://github.com/MahmoudMetwalli/wasla"
+Issues = "https://github.com/MahmoudMetwalli/wasla/issues"
