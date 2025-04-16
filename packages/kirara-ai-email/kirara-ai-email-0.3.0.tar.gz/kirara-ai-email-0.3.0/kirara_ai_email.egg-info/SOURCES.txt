@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+kirara_ai_email.egg-info/PKG-INFO
+kirara_ai_email.egg-info/SOURCES.txt
+kirara_ai_email.egg-info/dependency_links.txt
+kirara_ai_email.egg-info/entry_points.txt
+kirara_ai_email.egg-info/requires.txt
+kirara_ai_email.egg-info/top_level.txt
+kirara_email/__init__.py
+kirara_email/blocks.py
+kirara_email/example/sendEmail.yaml
