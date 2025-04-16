@@ -1,0 +1,13 @@
+2025-04-11 04:26:00,776 - cala.streaming.composer.runner - INFO - Footprint Count: Frozen({'component': 7, 'height': 256, 'width': 256})
+2025-04-11 04:26:00,797 - cala.streaming.composer.runner - INFO - Executing step: traces
+2025-04-11 04:26:01,255 - cala.streaming.composer.runner - INFO - Executing step: component_stats
+2025-04-11 04:26:01,293 - cala.streaming.composer.runner - INFO - Executing step: pixel_stats
+2025-04-11 04:26:01,323 - cala.streaming.composer.runner - INFO - Executing step: detect
+2025-04-11 04:26:01,348 - cala.streaming.nodes.iter.detect - INFO - Cell Radius: 7.549834
+2025-04-11 04:26:01,426 - cala.streaming.nodes.iter.detect - INFO - Noise Level: 0.010867
+2025-04-11 04:26:01,471 - cala.streaming.nodes.iter.detect - INFO - R Sizes: Frozen({'frame': 4, 'space': 289})
+2025-04-11 04:26:41,445 - cala.streaming.nodes.iter.detect - INFO - Cell Radius: 1.707825
+2025-04-11 04:26:41,457 - cala.streaming.nodes.iter.detect - INFO - Noise Level: 0.064781
+2025-04-11 04:26:41,467 - cala.streaming.nodes.iter.detect - INFO - R Sizes: Frozen({'frame': 5, 'space': 20})
+2025-04-11 04:26:41,473 - cala.streaming.nodes.iter.detect - INFO - New C: [0.5332911  0.43179164 0.52766904 0.17128245 0.17220603]
+2025-04-11 04:26:41,579 - cala.streaming.nodes.iter.detect - INFO - Cell Radius: 1.707825
