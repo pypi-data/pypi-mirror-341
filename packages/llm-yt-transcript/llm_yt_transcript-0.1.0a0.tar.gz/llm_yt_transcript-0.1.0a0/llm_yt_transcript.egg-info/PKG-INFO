@@ -1,0 +1,58 @@
+Metadata-Version: 2.4
+Name: llm-yt-transcript
+Version: 0.1.0a0
+Summary: A LLM plugin for YouTube transcripts as fragments
+Author: kj-9
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/kj-9/llm-yt-transcript
+Project-URL: Changelog, https://github.com/kj-9/llm-yt-transcript/releases
+Project-URL: Issues, https://github.com/kj-9/llm-yt-transcript/issues
+Project-URL: CI, https://github.com/kj-9/llm-yt-transcript/actions
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: build>=1.2.2.post1
+Requires-Dist: llm>=0.24.2
+Requires-Dist: setuptools>=78.1.0
+Requires-Dist: wheel>=0.45.1
+Requires-Dist: yt-dlp>=2025.3.31
+
+# llm-yt-transcript
+
+`llm-yt-transcript` is a LLM plugin for YouTube transcripts as fragments. It leverages `yt-dlp` for downloading subtitles.
+
+## Installation
+
+```
+llm install git+https://github.com/kj-9/llm-yt-transcript.git
+```
+
+
+## Usage
+
+### Download Subtitles
+
+Use the `download_subtitles` function to download subtitles for a YouTube video:
+```python
+llm -f ytt:{youtube_video_url} 'summarize the transcript'
+```
+
+by default, it will download the English subtitles. You can specify the language using the `lang` parameter before the `:`. 
+For example, to download Spanish subtitles, use:
+```python
+llm fragments show ytt:es:{youtube_video_url}
+```
+
+
+## Development
+
+To set up this plugin locally, first checkout the code. Then create a new virtual environment:
+
+```
+cd llm-yt-transcript
+uv sync --all-groups
+```
+
+Run the following command to run the tests:
+```
+uv run pytest
+```
