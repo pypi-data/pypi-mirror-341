@@ -1,0 +1,2 @@
+[console_scripts]
+heygen-mcp = heygen_mcp.server:main
