@@ -1,0 +1,9 @@
+.DS_Store,sha256=ZzX2tIcH2mtELUdXIpk_0on4FZQBhgfR_UHvBmQu3AI,6148
+packUpdate/__init__.py,sha256=trpXrNSKBg-sFv99_3lQvaXoC34OGwo1etBrmu8fMG0,104
+packUpdate/updatePackages.py,sha256=upgLFZTy18kGalhWFp8YuJ0_EKjbJdocwjy3vz6WUhs,8816
+packupdate-1.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+packupdate-1.0.4.dist-info/METADATA,sha256=OxSy7H1YN29Q7Sdm7uNknvElD055ybFp9tKKRg2hJ3k,6337
+packupdate-1.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+packupdate-1.0.4.dist-info/entry_points.txt,sha256=OBgUFrjULTdydBjYX0tBI3nxNjkjfax-I5fRRpmBJS8,69
+packupdate-1.0.4.dist-info/top_level.txt,sha256=RcjdjYJ-CydBwnKn8mbCXSlLYDCDsKANDSztprJei0U,11
+packupdate-1.0.4.dist-info/RECORD,,
