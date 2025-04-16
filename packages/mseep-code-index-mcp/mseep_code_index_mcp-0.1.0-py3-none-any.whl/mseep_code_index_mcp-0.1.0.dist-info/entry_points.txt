@@ -1,0 +1,2 @@
+[console_scripts]
+code-indexer = code_index_mcp.server:main
