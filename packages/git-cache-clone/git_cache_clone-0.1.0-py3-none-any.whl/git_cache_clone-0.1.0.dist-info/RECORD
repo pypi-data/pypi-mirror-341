@@ -1,0 +1,16 @@
+git_cache_clone/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_cache_clone/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_cache_clone/commands/add.py,sha256=6FpRUnbm1zNmkvO7t9DaLa18T3RqliUyd0W7c5ZcSxQ,3549
+git_cache_clone/commands/clean.py,sha256=viavq3b5pUXARzaRkccLvQmmLd3CBR9qhOG1OdbOxrA,3098
+git_cache_clone/commands/clone.py,sha256=KrTue0rpk0ldEIBHA7eFK54lfWmKfHA4YVX7HQIbeJI,4046
+git_cache_clone/commands/refresh.py,sha256=hd0oDABJSG7y_lUc3HOzjVHKhFQCPIAybLDW7ESpLH8,2619
+git_cache_clone/definitions.py,sha256=0A-AZEBuPf7fQ6xE4K-bSsE7KR8R20zJKNniEYIfi5k,349
+git_cache_clone/file_lock.py,sha256=UiIbHUZ4WRZTEmylKjN0o-jfdk8wzru9pp2fAOp4cEo,1852
+git_cache_clone/main.py,sha256=dqny8zsno0gy8z4vL3QbDqYZAB0in9jlJUk9h2wUydM,2573
+git_cache_clone/program_arguments.py,sha256=Hdb6pE1D_lqAjpkJ6qMzJ5y7EYcmSK5jNldje4GqeuM,1646
+git_cache_clone/utils.py,sha256=32LoooBm4PAjZh2h3ftQZSyU49i6CTo9bOonR3VcUAg,1120
+git_cache_clone-0.1.0.dist-info/LICENSE,sha256=LJPWA8ng6v1VJlDS5FFUqeigqqgwBIA_w4AcrSTEISI,1070
+git_cache_clone-0.1.0.dist-info/METADATA,sha256=q22SJ2c_cJ0bcpW0f6w0HdiLwimagLQ9_o9v3CU7xzk,538
+git_cache_clone-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+git_cache_clone-0.1.0.dist-info/entry_points.txt,sha256=v79PAQq7_wamyVX9mxeY7DasHK6BLgzX9UDJ1FFlP04,55
+git_cache_clone-0.1.0.dist-info/RECORD,,
