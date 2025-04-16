@@ -1,0 +1,2 @@
+[console_scripts]
+blame-g = src.cli:main
