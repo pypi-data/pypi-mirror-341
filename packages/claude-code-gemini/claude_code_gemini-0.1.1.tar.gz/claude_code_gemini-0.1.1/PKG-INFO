@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: claude-code-gemini
+Version: 0.1.1
+Summary: Proxy that translates between Claude Code and Gemini API
+Requires-Python: >=3.10
+Requires-Dist: fastapi[standard]>=0.115.11
+Requires-Dist: httpx>=0.25.0
+Requires-Dist: litellm>=1.40.14
+Requires-Dist: psutil>=5.9.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: uvicorn>=0.34.0
