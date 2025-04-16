@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+evaluatorspk/__init__.py
+evaluatorspk/evaluator.py
+evaluatorspk/test_evaluator.py
+evaluatorspk.egg-info/PKG-INFO
+evaluatorspk.egg-info/SOURCES.txt
+evaluatorspk.egg-info/dependency_links.txt
+evaluatorspk.egg-info/requires.txt
+evaluatorspk.egg-info/top_level.txt
