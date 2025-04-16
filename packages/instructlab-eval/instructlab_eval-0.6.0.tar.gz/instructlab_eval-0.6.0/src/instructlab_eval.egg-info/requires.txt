@@ -1,0 +1,21 @@
+GitPython<4.0.0,>=3.1.42
+shortuuid
+openai<2.0.0,>=1.13.3
+psutil
+torch
+transformers
+accelerate
+pandas
+pandas-stubs
+lm-eval>=0.4.4
+httpx
+ragas>=0.2.11
+
+[leaderboard]
+lm-eval[ifeval,math,sentencepiece,vllm]>=0.4.4
+vllm<=0.7.3
+torch<=2.5.1
+
+[leaderboard:python_version < "3.11"]
+strenum>=0.4.15
+typing-extensions>=4.0.0
