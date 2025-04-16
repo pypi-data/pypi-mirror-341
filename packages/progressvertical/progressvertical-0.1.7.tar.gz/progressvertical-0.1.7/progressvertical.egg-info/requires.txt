@@ -1,0 +1,6 @@
+colorama>=0.4.6
+
+[dev]
+pytest>=7.0
+twine>=4.0
+black>=22.0

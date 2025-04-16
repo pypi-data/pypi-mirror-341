@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "progressvertical"
+version = "0.1.7"
+description = "Rendering vertical progress bars with custom colors and styles"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+authors = [
+  { name = "Jeferson Cardoso", email = "jefersoncardoso.dev@gmail.com" }
+]
+
+maintainers = [
+  { name = "Jeferson Cardoso", email = "jefersoncardoso.dev@gmail.com" }
+]
+
+keywords = [
+  "progress", "progress-bar", "cli", "terminal", "vertical"
+]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Utilities"
+]
+
+dependencies = [
+  "colorama>=0.4.6"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "twine>=4.0",
+  "black>=22.0"
+]
+
+[project.urls]
+Documentation = "https://github.com/cardosource/progressvertical#readme"
+Issues = "https://github.com/cardosource/progressvertical/issues"
+Source = "https://github.com/cardosource/progressvertical"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["progressvertical*"]
+exclude = ["tests*"]
+
