@@ -1,0 +1,11 @@
+galamo/__init__.py,sha256=8E2HjV4H2dDZkpWEkv8SajzQn4V9ZEC3naf4U-nS2yE,948
+galamo/bpt.py,sha256=GBwxCpaVM2BlrNve1JUBIZiZRkXlyo369ihuSqCZTsA,13775
+galamo/encoder.pkl,sha256=T4XepODsdSHiWo2h-kDzWQgOjMkWCfagRTFnv1f3LV8,5
+galamo/model.keras,sha256=sIEHGyKORaE4AfMAPd35e-6LoSkxgWSo8nR8JI1ZLTk,10842631
+galamo/model.py,sha256=KzGPxsRUMwPJU1CaoyM8qAbK15FQi6QtSRaR3AJef5I,3949
+galamo/model2.keras,sha256=ScwRvMTyIPRxMNr5Vgb_wynnjPSZZ_E9XWiYYoXN3Z0,78270665
+galamo-0.0.7.dist-info/LICENSE,sha256=-iYQRfRwsw19P9mE7EiCOzrWWeDGnRIBQlQbNYG2ckU,1497
+galamo-0.0.7.dist-info/METADATA,sha256=cigadLyb1CRe-A-MAOKNHX6ERYHQPdCu0386ASVqbrE,2866
+galamo-0.0.7.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+galamo-0.0.7.dist-info/top_level.txt,sha256=3fYAm-EZ0Lk8-SoRNZClWeyDNLpT5LiXdJQ8weYQdUY,7
+galamo-0.0.7.dist-info/RECORD,,
