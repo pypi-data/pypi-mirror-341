@@ -1,0 +1,473 @@
+# Repository Analysis
+
+## Repository Statistics
+
+- **Extensions analyzed**: .json, .py
+- **Number of files analyzed**: 5
+- **Total lines of code (approx)**: 383
+
+## Project Files
+
+### 1. data.json
+
+- **File ID**: file_0
+- **Type**: File
+- **Line Count**: 98
+- **Description**: File at data.json
+
+**Content**:
+```
+{
+    "project_type": "web game development",
+    "root_element": {
+      "allowed_children": {
+        "GameProject": "single"
+      }
+    },
+    "implementation_plan": [
+      {
+        "node_type": "GameProject",
+        "display_name": "Game Project",
+        "icon": " GP ",
+        "allowed_children": {
+          "GameDesign": "single",
+          "DevelopmentPhase": "multiple",
+          "TestingPhase": "single",
+          "DeploymentPhase": "single"
+        }
+      },
+      {
+        "node_type": "GameDesign",
+        "display_name": "Game Design",
+        "icon": " D ",
+        "allowed_children": {
+          "GameMechanics": "single",
+          "ArtAssets": "single",
+          "AudioAssets": "single"
+        }
+      },
+      {
+        "node_type": "GameMechanics",
+        "display_name": "Game Mechanics",
+        "icon": " M ",
+        "allowed_children": {}
+      },
+      {
+        "node_type": "ArtAssets",
+        "display_name": "Art Assets",
+        "icon": " A ",
+        "allowed_children": {}
+      },
+      {
+        "node_type": "AudioAssets",
+        "display_name": "Audio Assets",
+        "icon": " AU ",
+        "allowed_children": {}
+      },
+      {
+        "node_type": "DevelopmentPhase",
+        "display_name": "Development Phase",
+        "icon": " DEV ",
+        "allowed_children": {
+          "FrontendTask": "multiple",
+          "BackendTask": "multiple"
+        }
+      },
+      {
+        "node_type": "FrontendTask",
+        "display_name": "Frontend Task",
+        "icon": " F ",
+        "allowed_children": {}
+      },
+      {
+        "node_type": "BackendTask",
+        "display_name": "Backend Task",
+        "icon": " B ",
+        "allowed_children": {}
+      },
+      {
+        "node_type": "TestingPhase",
+        "display_name": "Testing Phase",
+        "icon": " TST ",
+        "allowed_children": {
+          "TestCase": "multiple"
+        }
+      },
+      {
+        "node_type": "TestCase",
+        "display_name": "Test Case",
+        "icon": " TC ",
+        "allowed_children": {}
+      },
+      {
+        "node_type": "DeploymentPhase",
+        "display_name": "Deployment Phase",
+        "icon": " DEP ",
+        "allowed_children": {
+          "DeploymentTask": "multiple"
+        }
+      },
+      {
+        "node_type": "DeploymentTask",
+        "display_name": "Deployment Task",
+        "icon": " DT ",
+        "allowed_children": {}
+      }
+    ]
+  }
+```
+
+---
+
+### 2. src\flock_flightplan\__init__.py
+
+- **File ID**: file_1
+- **Type**: Code File
+- **Line Count**: 13
+- **Description**: File at src\flock_flightplan\__init__.py
+- **Dependencies**: None
+- **Used By**: None
+
+**Content**:
+```
+
+import debugpy
+
+from flock_flightplan.app import FlightPlanApp
+
+
+def main() -> None:
+    """Run the app."""
+    app = FlightPlanApp()
+    # debugpy.listen(("0.0.0.0", 5678))
+    # print("⏳ Waiting for debugger attach...")
+    # debugpy.wait_for_client()
+    app.run()
+
+```
+
+---
+
+### 3. src\flock_flightplan\app.py
+
+- **File ID**: file_2
+- **Type**: Code File
+- **Line Count**: 168
+- **Description**: File at src\flock_flightplan\app.py
+- **Dependencies**:
+  - file_3
+- **Used By**: None
+
+**Content**:
+```
+import json
+from pathlib import Path
+import httpx
+from textual.app import App, ComposeResult
+from textual.widgets import Header, Footer, Input, Button, Static, Markdown
+from textual.containers import Container, Horizontal
+
+from .project_tree import ProjectTree
+
+class ContentView(Container):
+    """Content view for displaying templates."""
+    
+    def __init__(self):
+        super().__init__(id="content-view")
+        self.template_map = {}
+        self._current_markdown = None
+        self._load_templates()
+    
+    def _load_templates(self):
+        """Load templates from templates.json."""
+        try:
+            templates_path = Path(__file__).parent.parent.parent / "templates.json"
+            with open(templates_path) as f:
+                templates = json.load(f)
+                self.template_map = {item[0]: item[1] for item in templates}
+        except Exception as e:
+            self.mount(Static(f"Error loading templates: {str(e)}"))
+    
+    def show_template(self, node_type):
+        """Show template for the given node type."""
+        # Remove previous markdown if it exists
+        if self._current_markdown:
+            self._current_markdown.remove()
+            
+        if node_type in self.template_map:
+            # Create and mount first, then update with content
+            markdown_content = self.template_map[node_type]
+            # The Markdown widget can be initialized directly with markdown text
+            self._current_markdown = Markdown(markdown_content)
+            self.mount(self._current_markdown)
+        else:
+            self._current_markdown = Static(f"No template available for {node_type}")
+            self.mount(self._current_markdown)
+
+
+class FlightPlanApp(App):
+    """A Textual app for visualizing project structure as a tree."""
+    
+    CSS = """
+    #app-grid {
+        layout: grid;
+        grid-size: 2;
+        grid-columns: 1fr 3fr;
+        height: 1fr;
+    }
+    
+    #tree-container {
+        border: solid green;
+        height: 100%;
+        overflow: auto;
+    }
+    
+    #content-container {
+        border: solid blue;
+        height: 100%;
+        overflow: auto;
+        padding: 1;
+    }
+    
+    #content-view {
+        height: auto;
+        width: 100%;
+    }
+    
+    #input-container {
+        dock: bottom;
+        height: auto;
+    }
+    
+    Input {
+        width: 1fr;
+    }
+    
+    Button {
+        width: auto;
+    }
+    """
+    
+    BINDINGS = [
+        ("q", "quit", "Quit"),
+        ("r", "refresh", "Refresh Tree"),
+    ]
+    
+    def __init__(self):
+        super().__init__()
+        self._tree_widget = None
+        self._data = None
+        self._content_view = None
+        
+    def compose(self) -> ComposeResult:
+        """Create child widgets."""
+        yield Header()
+        with Container(id="app-grid"):
+            with Container(id="tree-container"):
+                # Tree will be added after data is loaded
+                pass
+            with Container(id="content-container"):
+                self._content_view = ContentView()
+                yield self._content_view
+        with Horizontal(id="input-container"):
+            yield Input(placeholder="Enter API endpoint URL...", id="url-input")
+            yield Button("Fetch", id="fetch-button")
+        yield Footer()
+    
+    def on_mount(self) -> None:
+        """Load the initial data."""
+        # For initial demo, load from local file
+        self.load_local_data()
+    
+    def load_local_data(self):
+        """Load data from local file for initial demo."""
+        data_path = Path(__file__).parent.parent.parent / "data.json"
+        try:
+            with open(data_path) as f:
+                self._data = json.load(f)
+            self.update_tree()
+        except Exception as e:
+            self.notify(f"Error loading data: {str(e)}", severity="error")
+    
+    def update_tree(self):
+        """Update the tree with the current data."""
+        if self._tree_widget:
+            self._tree_widget.remove()
+        
+        container = self.query_one("#tree-container")
+        self._tree_widget = ProjectTree(self._data)
+        self._tree_widget.node_selected_handler = self.on_tree_node_selected
+        container.mount(self._tree_widget)
+    
+    def on_tree_node_selected(self, node_type):
+        """Handle tree node selection."""
+        self._content_view.show_template(node_type)
+    
+    async def fetch_data(self, url):
+        """Fetch data from the provided URL."""
+        try:
+            async with httpx.AsyncClient() as client:
+                response = await client.get(url)
+                response.raise_for_status()
+                self._data = response.json()
+                self.update_tree()
+        except Exception as e:
+            self.notify(f"Error fetching data: {str(e)}", severity="error")
+    
+    def on_button_pressed(self, event: Button.Pressed) -> None:
+        """Handle button press event."""
+        if event.button.id == "fetch-button":
+            url = self.query_one("#url-input").value
+            if url:
+                self.run_worker(self.fetch_data(url))
+            else:
+                self.notify("Please enter a valid URL", severity="warning")
+
+    def action_refresh(self) -> None:
+        """Refresh the tree."""
+        if self._data:
+            self.update_tree()
+            self.notify("Tree refreshed") 
+```
+
+---
+
+### 4. src\flock_flightplan\project_tree.py
+
+- **File ID**: file_3
+- **Type**: Code File
+- **Line Count**: 54
+- **Description**: File at src\flock_flightplan\project_tree.py
+- **Dependencies**: None
+- **Used By**:
+  - file_2
+
+**Content**:
+```
+from textual.widgets import Tree
+from textual.widgets.tree import TreeNode
+
+class ProjectTree(Tree):
+    """Tree widget for displaying the project structure."""
+
+    def __init__(self, data):
+        super().__init__("Project")
+        self.data = data
+        self.node_types = {}  # Maps tree nodes to their node_types
+        self.node_selected_handler = None  # Callback for node selection
+        self.build_tree()
+
+    def build_tree(self):
+        """Build the tree structure from the data."""
+        # Start with root element
+        self.root.expand()
+        root_node = self.root
+        
+        # Get allowed children of root
+        root_allowed = self.data["root_element"]["allowed_children"]
+        
+        # Create a mapping of node types to their definitions
+        node_types = {node["node_type"]: node for node in self.data["implementation_plan"]}
+        
+        # Recursively build the tree
+        for child_type, cardinality in root_allowed.items():
+            child_node = root_node.add(f"{node_types[child_type]['display_name']} [{node_types[child_type]['icon']}]")
+            # Store the node type for this tree node
+            self.node_types[child_node.id] = child_type
+            self._add_children(child_node, node_types[child_type], node_types)
+    
+    def _add_children(self, parent_node, node_data, node_types):
+        """Recursively add children to a node."""
+        allowed_children = node_data.get("allowed_children", {})
+        for child_type, cardinality in allowed_children.items():
+            if cardinality == "single":
+                child_node = parent_node.add(f"{node_types[child_type]['display_name']} [{node_types[child_type]['icon']}]")
+                # Store the node type for this tree node
+                self.node_types[child_node.id] = child_type
+                self._add_children(child_node, node_types[child_type], node_types)
+            elif cardinality == "multiple":
+                # For demonstration purposes, add one example of each multiple type
+                child_node = parent_node.add(f"{node_types[child_type]['display_name']} [{node_types[child_type]['icon']}]")
+                # Store the node type for this tree node
+                self.node_types[child_node.id] = child_type
+                self._add_children(child_node, node_types[child_type], node_types)
+    
+    def on_tree_node_selected(self, event) -> None:
+        """Handle tree node selection event."""
+        # The event is a NodeSelected event, we need to get the node from it
+        node = event.node
+        if self.node_selected_handler and node.id in self.node_types:
+            self.node_selected_handler(self.node_types[node.id]) 
+```
+
+---
+
+### 5. templates.json
+
+- **File ID**: file_4
+- **Type**: File
+- **Line Count**: 50
+- **Description**: File at templates.json
+
+**Content**:
+```
+[
+    [
+      "GameProject",
+      "## Game Project\n- **Project Title:**\n- **Overview:**\n- **Objectives:**\n- **Team Members:**\n- **Timeline:**\n- **Budget:**\n"
+    ],
+    [
+      "GameDesign",
+      "## Game Design\n- **Game Title:**\n- **Genre:**\n- **Target Audience:**\n- **Core Gameplay Loop:**\n- **Story/Theme:**\n- **Platform(s):**\n"
+    ],
+    [
+      "GameMechanics",
+      "## Game Mechanics\n- **Mechanic Name:**\n- **Description:**\n- **Rules:**\n- **Player Actions:**\n- **Win/Lose Conditions:**\n"
+    ],
+    [
+      "ArtAssets",
+      "## Art Assets\n- **Asset Type (e.g., character, environment):**\n- **Description:**\n- **Style Reference:**\n- **Resolution/Format:**\n- **Quantity:**\n"
+    ],
+    [
+      "AudioAssets",
+      "## Audio Assets\n- **Asset Type (e.g., music, SFX, voice):**\n- **Description:**\n- **Duration/Format:**\n- **Mood/Theme:**\n- **Quantity:**\n"
+    ],
+    [
+      "DevelopmentPhase",
+      "## Development Phase\n- **Phase Name:**\n- **Objectives:**\n- **Start Date:**\n- **End Date:**\n- **Milestones:**\n"
+    ],
+    [
+      "FrontendTask",
+      "## Frontend Task\n- **Task Title:**\n- **Description:**\n- **UI Components Affected:**\n- **Estimated Time:**\n- **Assignee:**\n- **Status:**\n"
+    ],
+    [
+      "BackendTask",
+      "## Backend Task\n- **Task Title:**\n- **Description:**\n- **Systems/Modules Affected:**\n- **Estimated Time:**\n- **Assignee:**\n- **Status:**\n"
+    ],
+    [
+      "TestingPhase",
+      "## Testing Phase\n- **Phase Name:**\n- **Objectives:**\n- **Start Date:**\n- **End Date:**\n- **Test Coverage Goals:**\n"
+    ],
+    [
+      "TestCase",
+      "## Test Case\n- **Test Case ID:**\n- **Description:**\n- **Preconditions:**\n- **Test Steps:**\n- **Expected Result:**\n- **Actual Result:**\n- **Status:**\n"
+    ],
+    [
+      "DeploymentPhase",
+      "## Deployment Phase\n- **Phase Name:**\n- **Objectives:**\n- **Start Date:**\n- **End Date:**\n- **Deployment Environment(s):**\n"
+    ],
+    [
+      "DeploymentTask",
+      "## Deployment Task\n- **Task Title:**\n- **Description:**\n- **Environment:**\n- **Steps:**\n- **Assignee:**\n- **Status:**\n"
+    ]
+]
+```
+
+---
+
+## Summary
+
+- **Total Files**: 5
+- **Code Files**: 3
+- **Regular Files**: 2
+- **Total Lines of Code**: 383

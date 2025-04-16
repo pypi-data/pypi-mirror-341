@@ -1,0 +1,50 @@
+[
+    [
+      "GameProject",
+      "## Game Project\n- **Project Title:**\n- **Overview:**\n- **Objectives:**\n- **Team Members:**\n- **Timeline:**\n- **Budget:**\n"
+    ],
+    [
+      "GameDesign",
+      "## Game Design\n- **Game Title:**\n- **Genre:**\n- **Target Audience:**\n- **Core Gameplay Loop:**\n- **Story/Theme:**\n- **Platform(s):**\n"
+    ],
+    [
+      "GameMechanics",
+      "## Game Mechanics\n- **Mechanic Name:**\n- **Description:**\n- **Rules:**\n- **Player Actions:**\n- **Win/Lose Conditions:**\n"
+    ],
+    [
+      "ArtAssets",
+      "## Art Assets\n- **Asset Type (e.g., character, environment):**\n- **Description:**\n- **Style Reference:**\n- **Resolution/Format:**\n- **Quantity:**\n"
+    ],
+    [
+      "AudioAssets",
+      "## Audio Assets\n- **Asset Type (e.g., music, SFX, voice):**\n- **Description:**\n- **Duration/Format:**\n- **Mood/Theme:**\n- **Quantity:**\n"
+    ],
+    [
+      "DevelopmentPhase",
+      "## Development Phase\n- **Phase Name:**\n- **Objectives:**\n- **Start Date:**\n- **End Date:**\n- **Milestones:**\n"
+    ],
+    [
+      "FrontendTask",
+      "## Frontend Task\n- **Task Title:**\n- **Description:**\n- **UI Components Affected:**\n- **Estimated Time:**\n- **Assignee:**\n- **Status:**\n"
+    ],
+    [
+      "BackendTask",
+      "## Backend Task\n- **Task Title:**\n- **Description:**\n- **Systems/Modules Affected:**\n- **Estimated Time:**\n- **Assignee:**\n- **Status:**\n"
+    ],
+    [
+      "TestingPhase",
+      "## Testing Phase\n- **Phase Name:**\n- **Objectives:**\n- **Start Date:**\n- **End Date:**\n- **Test Coverage Goals:**\n"
+    ],
+    [
+      "TestCase",
+      "## Test Case\n- **Test Case ID:**\n- **Description:**\n- **Preconditions:**\n- **Test Steps:**\n- **Expected Result:**\n- **Actual Result:**\n- **Status:**\n"
+    ],
+    [
+      "DeploymentPhase",
+      "## Deployment Phase\n- **Phase Name:**\n- **Objectives:**\n- **Start Date:**\n- **End Date:**\n- **Deployment Environment(s):**\n"
+    ],
+    [
+      "DeploymentTask",
+      "## Deployment Task\n- **Task Title:**\n- **Description:**\n- **Environment:**\n- **Steps:**\n- **Assignee:**\n- **Status:**\n"
+    ]
+]
