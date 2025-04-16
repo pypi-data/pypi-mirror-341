@@ -1,0 +1,3 @@
+[console_scripts]
+agentvault-sdk=agentvault_server_sdk.packager.cli:app
+
