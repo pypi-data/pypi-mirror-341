@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+instapy/__init__.py
+instapy/credentials.py
+instapy/dm.py
+instapy/login.py
+instapytool.egg-info/PKG-INFO
+instapytool.egg-info/SOURCES.txt
+instapytool.egg-info/dependency_links.txt
+instapytool.egg-info/requires.txt
+instapytool.egg-info/top_level.txt
