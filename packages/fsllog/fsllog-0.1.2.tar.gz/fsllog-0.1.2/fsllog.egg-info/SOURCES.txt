@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+fsllog/__init__.py
+fsllog/fslog.py
+fsllog.egg-info/PKG-INFO
+fsllog.egg-info/SOURCES.txt
+fsllog.egg-info/dependency_links.txt
+fsllog.egg-info/top_level.txt
