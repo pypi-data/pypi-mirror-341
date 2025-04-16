@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: cisco_outshift_agent_utils
+Version: 0.0.1
+Summary: Cisco Outshift Agent Utils
+Author: Sri Aradhyula
+Author-email: sraradhy@cisco.com
+Requires-Python: >=3.11.0,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: langchain (>=0.3.19,<0.4.0)
+Description-Content-Type: text/markdown
+
+# Cisco Outshift Agent Utils
+
