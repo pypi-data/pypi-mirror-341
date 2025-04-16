@@ -1,0 +1,17 @@
+COPYING
+COPYING.LESSER
+README.md
+pyproject.toml
+github_graphql_paginator.egg-info/PKG-INFO
+github_graphql_paginator.egg-info/SOURCES.txt
+github_graphql_paginator.egg-info/dependency_links.txt
+github_graphql_paginator.egg-info/requires.txt
+github_graphql_paginator.egg-info/top_level.txt
+githubgql/Client.py
+githubgql/Config.py
+githubgql/Iterator.py
+githubgql/Merger.py
+githubgql/Paginator.py
+githubgql/__init__.py
+githubgql/config.yml
+githubgql/schema.docs.graphql
