@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+bulkimgconvert/__init__.py
+bulkimgconvert/converter.py
+bulkimgconvert/main.py
+bulkimgconvert.egg-info/PKG-INFO
+bulkimgconvert.egg-info/SOURCES.txt
+bulkimgconvert.egg-info/dependency_links.txt
+bulkimgconvert.egg-info/entry_points.txt
+bulkimgconvert.egg-info/requires.txt
+bulkimgconvert.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+bulkimgconvert = bulkimgconvert.main:main

@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bulkimgconvert"
+version = "1.0.0"
+description = "A simple bulk image converter"
+authors = [{name = "Navneet Kaur", email = "navi24493@gmail.com"}]
+readme = "README.md"
+license = {text = "MIT"}
+dependencies = ["Pillow", "tqdm"]
+scripts = { bulkimgconvert = "bulkimgconvert.main:main" }
+requires-python = ">=3.6"
