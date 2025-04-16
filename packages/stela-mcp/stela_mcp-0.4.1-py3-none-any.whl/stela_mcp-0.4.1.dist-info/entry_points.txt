@@ -1,0 +1,2 @@
+[console_scripts]
+stela-mcp = stela_mcp.server:main
