@@ -1,0 +1,9 @@
+README.md
+setup.py
+minha_lib_aula02/__init__.py
+minha_lib_aula02/core.py
+minha_lib_aula02_package.egg-info/PKG-INFO
+minha_lib_aula02_package.egg-info/SOURCES.txt
+minha_lib_aula02_package.egg-info/dependency_links.txt
+minha_lib_aula02_package.egg-info/top_level.txt
+tests/test_core.py
