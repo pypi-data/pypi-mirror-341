@@ -1,0 +1,3 @@
+[console_scripts]
+payanystorage=palanystorage.cli.main:app
+
