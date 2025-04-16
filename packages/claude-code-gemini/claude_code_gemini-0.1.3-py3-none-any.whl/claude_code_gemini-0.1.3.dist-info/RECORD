@@ -1,0 +1,7 @@
+claude_code_gemini/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+claude_code_gemini/main.py,sha256=lGWwP8hbbbcCSDqmmGMeLtaapaMIiHY3TgZdbq2G2A0,2539
+claude_code_gemini/server.py,sha256=X83j6QAzxg6PIuPZ_qWSEfr9s0Y4dh9MgPlkD5Bwwm4,57592
+claude_code_gemini-0.1.3.dist-info/METADATA,sha256=O2utRvGbK6JAihweQlaBiOWx8FEFkou04UGKSF1Xcc0,347
+claude_code_gemini-0.1.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+claude_code_gemini-0.1.3.dist-info/entry_points.txt,sha256=LXNK0jgvpzDv7H4e8cBQoOukSKR3EWR7LxkoZCAYhtc,121
+claude_code_gemini-0.1.3.dist-info/RECORD,,
