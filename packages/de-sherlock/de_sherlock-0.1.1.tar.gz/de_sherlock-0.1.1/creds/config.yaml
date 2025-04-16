@@ -1,0 +1,14 @@
+
+allowed_steps:
+  - kafkastep
+  - elasticstep
+  - oraclestep
+  - descriptionstep
+  - apistep
+  - transformstep
+
+mode: Local
+target_path: Data/details
+time_stamp_file_name: timestamp
+step_file_name: allsteps
+

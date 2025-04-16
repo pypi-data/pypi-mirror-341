@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: de_sherlock
+Version: 0.1.1
+Summary: DE Sherlock - Data Engineering tracking and logging framework
+Author: Chetan Desale
+Author-email: desale31chetan@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: pyyaml
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
