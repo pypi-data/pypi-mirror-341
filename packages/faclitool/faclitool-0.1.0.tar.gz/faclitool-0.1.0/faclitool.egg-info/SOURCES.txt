@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+commands/__init__.py
+commands/greet.py
+faclitool.egg-info/PKG-INFO
+faclitool.egg-info/SOURCES.txt
+faclitool.egg-info/dependency_links.txt
+faclitool.egg-info/entry_points.txt
+faclitool.egg-info/top_level.txt
