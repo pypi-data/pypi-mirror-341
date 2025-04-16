@@ -1,0 +1,8 @@
+filestat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+filestat/cli.py,sha256=6xDQ3I-3w8IQueymSNK1iC0tahOWMFI7aUWb3MQeinc,2771
+filestat/scratchpad.py,sha256=gGGRaSQGbVZnOOT6L36scQIEpZtjwCKduWBPeNYNemU,233
+filestat/text.txt,sha256=dOlCqfSl5cwxiVuv587IvnjQFDZ5eW7ZZQ6NxAP2sIg,233
+filestatus-0.1.0.dist-info/METADATA,sha256=vfJvDvkY8e9WgMXDXNuvRCDxk9vNC0SiCjVXyizByGU,490
+filestatus-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+filestatus-0.1.0.dist-info/entry_points.txt,sha256=guFGzMqRKkjaigsSfN7jYJrtDNuzOLn8xYdhSRXd9KA,46
+filestatus-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+filestat=filestat.cli:main
+
