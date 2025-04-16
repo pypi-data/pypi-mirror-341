@@ -1,0 +1,8 @@
+setup.py
+metodos/__init__.py
+metodos/metodos.py
+metodos.egg-info/PKG-INFO
+metodos.egg-info/SOURCES.txt
+metodos.egg-info/dependency_links.txt
+metodos.egg-info/requires.txt
+metodos.egg-info/top_level.txt
