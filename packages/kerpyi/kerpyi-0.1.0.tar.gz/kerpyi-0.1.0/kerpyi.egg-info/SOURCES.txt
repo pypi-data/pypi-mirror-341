@@ -1,0 +1,7 @@
+pyproject.toml
+Kerpyi/__init__.py
+Kerpyi/core.py
+kerpyi.egg-info/PKG-INFO
+kerpyi.egg-info/SOURCES.txt
+kerpyi.egg-info/dependency_links.txt
+kerpyi.egg-info/top_level.txt
