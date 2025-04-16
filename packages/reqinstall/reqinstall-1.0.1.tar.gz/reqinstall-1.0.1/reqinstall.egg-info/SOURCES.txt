@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+reqinstall/__init__.py
+reqinstall.egg-info/PKG-INFO
+reqinstall.egg-info/SOURCES.txt
+reqinstall.egg-info/dependency_links.txt
+reqinstall.egg-info/requires.txt
+reqinstall.egg-info/top_level.txt
