@@ -1,0 +1,27 @@
+[project]
+name = "mseep-alpha-vantage-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp>=1.1.2",
+]
+authors = [
+    { name = "berlinbra", email = "BMBpsn@gmail.com" },
+]
+
+[project.scripts]
+alpha-vantage-mcp = "alpha_vantage_mcp:main"
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src",
+]
