@@ -1,0 +1,5 @@
+psutil==7.0.0
+python-libpcap==0.5.2
+requests==2.32.3
+urllib3==2.2.3
+dpkt==1.9.8
