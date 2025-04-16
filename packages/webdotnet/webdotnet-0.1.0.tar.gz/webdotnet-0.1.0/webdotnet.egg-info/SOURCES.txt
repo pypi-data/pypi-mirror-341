@@ -1,0 +1,6 @@
+setup.py
+webdotnet/__init__.py
+webdotnet.egg-info/PKG-INFO
+webdotnet.egg-info/SOURCES.txt
+webdotnet.egg-info/dependency_links.txt
+webdotnet.egg-info/top_level.txt
