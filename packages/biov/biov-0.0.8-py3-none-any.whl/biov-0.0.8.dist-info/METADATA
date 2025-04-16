@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: biov
+Version: 0.0.8
+Summary: Next-generation development experience for computational molecular biology.
+Author-email: Tang Ziya <tcztzy@gmail.Com>
+Requires-Python: >=3.11
+Requires-Dist: biopython>=1.85
+Requires-Dist: fsspec[full]>=2025.3.2
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pydantic-settings>=2.8.1
+Description-Content-Type: text/markdown
+
+BioV
+====
+Next-generation development experience for computational molecular biology.
