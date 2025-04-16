@@ -1,0 +1,6 @@
+setup.py
+ir_spell/__init__.py
+ir_spell.egg-info/PKG-INFO
+ir_spell.egg-info/SOURCES.txt
+ir_spell.egg-info/dependency_links.txt
+ir_spell.egg-info/top_level.txt
