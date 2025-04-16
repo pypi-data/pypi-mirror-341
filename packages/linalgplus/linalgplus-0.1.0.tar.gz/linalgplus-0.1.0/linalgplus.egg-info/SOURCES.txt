@@ -1,0 +1,13 @@
+README.md
+setup.py
+lib/Core.py
+lib/Distance.py
+lib/Factorization.py
+lib/Norms.py
+lib/Operations.py
+lib/Properties.py
+lib/__init__.py
+linalgplus.egg-info/PKG-INFO
+linalgplus.egg-info/SOURCES.txt
+linalgplus.egg-info/dependency_links.txt
+linalgplus.egg-info/top_level.txt
