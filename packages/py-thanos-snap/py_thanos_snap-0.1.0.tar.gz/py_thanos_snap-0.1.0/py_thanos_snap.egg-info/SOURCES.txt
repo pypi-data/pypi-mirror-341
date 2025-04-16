@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+py_thanos_snap.egg-info/PKG-INFO
+py_thanos_snap.egg-info/SOURCES.txt
+py_thanos_snap.egg-info/dependency_links.txt
+py_thanos_snap.egg-info/requires.txt
+py_thanos_snap.egg-info/top_level.txt
+tests/test_core.py
+thanospy/__init__.py
+thanospy/core.py
