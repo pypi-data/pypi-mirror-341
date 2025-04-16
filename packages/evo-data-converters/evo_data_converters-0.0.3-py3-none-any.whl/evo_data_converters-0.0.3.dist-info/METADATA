@@ -1,0 +1,390 @@
+Metadata-Version: 2.4
+Name: evo-data-converters
+Version: 0.0.3
+License:    Copyright © 2025 Bentley Systems, Incorporated.
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+                                         Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: aiohttp
+Requires-Dist: evo-sdk-common>=0.1.2
+Requires-Dist: evo-objects>=0.1.0
+Requires-Dist: nest-asyncio
+Requires-Dist: numpy<2.0.0
+Requires-Dist: omf>=1.0.1
+Requires-Dist: omf2>=0.2.0-beta.1
+Requires-Dist: pandas==2.2.3
+Requires-Dist: pyarrow
+Requires-Dist: pure-interface
+Requires-Dist: resqpy==5.1.10
+Requires-Dist: evo-schemas>=2024.4
+Requires-Dist: scipy
+Requires-Dist: vtk
+Provides-Extra: notebooks
+Requires-Dist: evo-sdk-common[notebooks]; extra == "notebooks"
+Requires-Dist: authlib; extra == "notebooks"
+Requires-Dist: ipykernel; extra == "notebooks"
+Requires-Dist: ipython; extra == "notebooks"
+Requires-Dist: PyJWT; extra == "notebooks"
+Requires-Dist: requests; extra == "notebooks"
+Requires-Dist: jupyter; extra == "notebooks"
+Dynamic: license-file
+
+<p align="center"><a href="https://seequent.com" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://developer.seequent.com/img/seequent-logo-dark.svg" alt="Seequent logo" width="400" /><img src="https://developer.seequent.com/img/seequent-logo.svg" alt="Seequent logo" width="400" /></picture></a></p>
+<p align="center">
+    <a href="https://pypi.org/project/evo-data-converters/"><img alt="PyPI - Version" src="https://img.shields.io/pypi/v/evo-data-converters" /></a>
+    <a href="https://github.com/SeequentEvo/evo-data-converters/actions/workflows/on-merge.yaml"><img src="https://github.com/SeequentEvo/evo-data-converters/actions/workflows/on-merge.yaml/badge.svg" alt="" /></a>
+</p>
+<p align="center">
+    <a href="https://developer.seequent.com/" target="_blank">Seequent Developer Portal</a>
+    &bull; <a href="https://community.seequent.com/" target="_blank">Seequent Community</a>
+    &bull; <a href="https://seequent.com" target="_blank">Seequent website</a>
+</p>
+
+## Evo
+
+Evo is a unified platform for geoscience teams. It enables access, connection, computation, and management of subsurface data. This empowers better decision-making, simplified collaboration, and accelerated innovation. Evo is built on open APIs, allowing developers to build custom integrations and applications. Our open schemas, code examples, and SDK are available for the community to use and extend. 
+
+Evo is powered by Seequent, a Bentley organisation.
+
+## Data converters
+
+This repository provides the source code for Evo-specific data converters.
+
+When running a converter, data is imported from a supported file format, converted into geoscience objects, and then published to the Seequent Evo API.
+
+The existing data converters can be used without modification or used as a template for your own integration.
+
+## Pre-requisites
+
+* Python >= 3.10, <= 3.12
+
+## Installation
+
+```
+pip install evo-data-converters
+```
+
+## Usage
+
+The top level sections for the repository are as follows.
+
+- [Samples](samples/README.md) - Jupyter notebook examples for importing data with the existing data converters
+- [Data Converters](src/evo/data_converters/README.md) - Source code for the data converters module (`evo.data_converters`)
+- Scripts - helper scripts for working with different types of data files
+- Tests - unit tests for the data converter module
+
+### Evo authorisation and discovery
+
+Whether using the converters or undertaking development work on the modules themselves, integration with Evo will require that you are granted access as an Evo Partner or Customer, along with access to a specific Evo Workspace. Access is granted via a token. For more information on getting started, see the [Seequent Evo Developer Portal.](https://developer.seequent.com/)
+
+### Using the data converters
+See the documentation for each converter for information on how to use the data converters to upload or download geoscience objects from Seequent Evo.
+
+Currently supported converters are:
+ * [OMF](/src/evo/data_converters/omf/README.md)
+ * [RESQML](/src/evo/data_converters/resqml/README.md)
+ * [VTK](/src/evo/data_converters/vtk/README.md)
+ * [UBC](/src/evo/data_converters/ubc/README.md)
+ * [GOCAD](/src/evo/data_converters/gocad/README.md)
+
+ To use any of the data converters, you will need a few things:
+  * An *access token* for your user
+  * The *organisation ID*, *hub URL* and *workspace ID* that you would like to import your data to, or export it from.
+
+To get an access token, see [Apps and Tokens](https://developer.seequent.com/docs/guides/getting-started/apps-and-tokens/) in the Seequent Evo Developer portal.
+
+To find the URL of your hub, and the ID of your organisation, see [Evo Discovery.](https://developer.seequent.com/docs/guides/getting-started/discovery/)
+
+For information on accessing and listing Workspaces, see [Workspaces.](https://developer.seequent.com/docs/guides/workspaces/)
+
+There is more information in the [Welcome to Seequent Evo](https://developer.seequent.com/docs/guides/getting-started/) area of the Developer portal, so take a look there or ask questions in the [Community forum.](https://community.seequent.com/categories/evo)
+
+## Contributing
+
+Thank you for your interest in contributing to Seequent software. Please have a look over our [contribution guide.](./CONTRIBUTING.md)
+
+### Using uv
+
+This project uses [uv](https://docs.astral.sh/uv/) to manage all the Python
+versions, packages etc.
+
+Run `uv sync --all-extras` to install everything you need.
+
+Then use `uv run <command>` to run commands.
+
+```shell
+uv sync --all-extras
+uv run pytest tests
+```
+
+### evo-sdk-common
+The `evo-sdk-common` Python library can be used to log in. An organisation, hub, and workspace can be then be used to publish objects.
+
+```python
+from evo.aio import AioTransport
+from evo.common import APIConnector, BaseAPIClient
+from evo.common.utils import BackoffIncremental
+from evo.discovery import DiscoveryAPIClient
+from evo.oauth import AuthorizationCodeAuthorizer, OIDCConnector
+from evo.workspaces import WorkspaceAPIClient
+
+# Configure the transport.
+transport = AioTransport(
+    user_agent="evo-client-common-poc",
+    max_attempts=3,
+    backoff_method=BackoffIncremental(2),
+    num_pools=4,
+    verify_ssl=True,
+)
+
+# Login to the Evo platform.
+# User Login
+authorizer = AuthorizationCodeAuthorizer(
+    redirect_url="<redirect_url>",
+    oidc_connector=OIDCConnector(
+        transport=transport,
+        oidc_issuer="<issuer_url>",
+        client_id="<client_id>",
+    ),
+)
+await authorizer.login()
+
+# Select an Organization.
+async with APIConnector("https://discover.api.seequent.com", transport, authorizer) as api_connector:
+    discovery_client = DiscoveryAPIClient(api_connector)
+    organizations = await discovery_client.list_organizations()
+
+selected_org = organizations[0]
+
+# Select a hub and create a connector.
+hub_connector = APIConnector(selected_org.hubs[0].url, transport, authorizer)
+
+# Select a Workspace.
+async with hub_connector:
+    workspace_client = WorkspaceAPIClient(hub_connector, selected_org.id)
+    workspaces = await workspace_client.list_workspaces()
+
+workspace = workspaces[0]
+workspace_env = workspace.get_environment()
+
+# Interact with a service.
+async with hub_connector:
+    service_client = BaseAPIClient(workspace_env, hub_connector)
+    ...
+```
+
+### Developing converters
+
+See [Data converters](/src/evo/data_converters/README.md) for information on how to work on the Evo Data Converters.
+This includes both importers and exporters.
+
+We encourage both extending the functionality of the existing converters, or adding new ones for the object formats you would like to see.
+
+## Code of conduct
+
+We rely on an open, friendly, inclusive environment. To help us ensure this remains possible, please familiarise yourself with our [code of conduct.](./CODE_OF_CONDUCT.md)
+
+## License
+Evo data converters are open source and licensed under the [Apache 2.0 license.](./LICENSE.md)
+
+Copyright © 2025 Bentley Systems, Incorporated.
+
+Licensed under the Apache License, Version 2.0 (the "License").
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
