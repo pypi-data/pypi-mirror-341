@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+colimage/__init__.py
+colimage/compare_img.py
+colimage/get_pixel_value.py
+colimage/read_exif.py
+colimage/read_rawpy.py
+colimage/srgb_to_lab.py
+colimage/verify_ccm.py
+colour_image_toolbox.egg-info/PKG-INFO
+colour_image_toolbox.egg-info/SOURCES.txt
+colour_image_toolbox.egg-info/dependency_links.txt
+colour_image_toolbox.egg-info/requires.txt
+colour_image_toolbox.egg-info/top_level.txt
