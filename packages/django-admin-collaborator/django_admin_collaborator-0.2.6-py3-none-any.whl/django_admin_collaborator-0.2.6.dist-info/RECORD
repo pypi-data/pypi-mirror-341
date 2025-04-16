@@ -1,0 +1,12 @@
+django_admin_collaborator/__init__.py,sha256=IxbNj-0Erome88TsEDjo4VD1S1lRjbNfW7fv75W8EB4,106
+django_admin_collaborator/apps.py,sha256=lhj4nr_beAq7PpSysqBl0z3FS5uVkTEaxph9mDX0XcY,169
+django_admin_collaborator/consumers.py,sha256=fdtdjpzLl3AMh-55o_aEdkEdHrBzlyK-Z73vxhdYlSo,17490
+django_admin_collaborator/defaults.py,sha256=vpWoBhMiFzNWSzW8c2EDk8fzGwABJO9ewNGi3Qw9AN4,371
+django_admin_collaborator/routing.py,sha256=WapCALMAWGlWOHUbT16DQXdFF3lFbKzwHDIN5cVVRG8,263
+django_admin_collaborator/utils.py,sha256=toH6QveSxGXKEUtwnwm2frk9AOMf8g-TL_UomE159wY,3762
+django_admin_collaborator/static/django_admin_collaborator/js/admin_edit.js,sha256=kfld--KtRFuoRVeMzaZ8WO9X3IX5HgLiHD46YzUorXc,26910
+django_admin_collaborator-0.2.6.dist-info/LICENSE,sha256=63PDelo1SG5Ei-06E0DHtR9yDZu-RuniwUsf-vz2ggY,1067
+django_admin_collaborator-0.2.6.dist-info/METADATA,sha256=TCGD03SnQ3GHGCBdfXw6crP5FQaqC2fFM0sJaosHGv4,8709
+django_admin_collaborator-0.2.6.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+django_admin_collaborator-0.2.6.dist-info/top_level.txt,sha256=z0EcsmR4wWH2hszBEV6ef6R8fs2AqGDO1n4R9U3HeGc,26
+django_admin_collaborator-0.2.6.dist-info/RECORD,,
