@@ -1,0 +1,13 @@
+equiforge/__init__.py,sha256=KruUdJlJBEMZprwHbFdxnBznnM9HJZ2oLpJmRuO9J5s,1443
+equiforge/_version.py,sha256=MUK03dOwJmjrxjd9uRnYxKTXpHSIAg0L6Bmc_LxQ_a8,524
+equiforge/converters/__init__.py,sha256=G_g5QZZy1fr2I2EC6vI0Kgv99Pb7fBBOVwSmX9jSp4E,53
+equiforge/converters/equi2pers.py,sha256=MxKbPx1mYi-LQGlDvCDkrV6QG_ckLSv7QZr2i0cAEa4,14299
+equiforge/converters/pers2equi.py,sha256=GxHCS--3mHJ2MHr49uhdgj40eNABjdlKvQh2VZqHCII,12984
+equiforge/utils/__init__.py,sha256=NLzWJKB_nh2ZO2mAV8WUEXHYGJz1wYPRt872nFFmfc8,39
+equiforge/utils/logging_utils.py,sha256=QK0LRktJBqYIdTtpAzYeKO8f8TL2N7z1nImV6bL3qeE,7872
+equiforge/utils/projection_utils.py,sha256=x-dZzjCyZsSKK1Q_diUs61D4nrAahC7Gjn8BNxSC6Qg,3038
+equiforge-0.1.3.dev0.dist-info/licenses/LICENSE,sha256=GEPNxWwb8selGKayP4GvUQ7CGAVCBEin-r8R_3G2YB8,11351
+equiforge-0.1.3.dev0.dist-info/METADATA,sha256=j5FXkPdXUKrqrlivXfy2NIZ3m2_ZiH5gEH8mm_gP4VE,3418
+equiforge-0.1.3.dev0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+equiforge-0.1.3.dev0.dist-info/top_level.txt,sha256=gpYmesqD0bev0L6RLrx0JcK0B3ojsIEZ84SOpgB2e0s,10
+equiforge-0.1.3.dev0.dist-info/RECORD,,
