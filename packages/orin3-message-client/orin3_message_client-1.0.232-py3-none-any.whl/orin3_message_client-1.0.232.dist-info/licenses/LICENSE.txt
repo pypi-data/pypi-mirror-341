@@ -1,0 +1,53 @@
+==========
+IMPORTANT
+==========
+
+Product Name: orin3-message-client
+
+NOTICE TO USERS:
+
+Please read the following License Agreement carefully. This License Agreement is legally binding between you and DENSO WAVE INCORPORATED. This software product including any document related thereto ("Software"), is protected by copyright laws and international treaties. You must agree to all of the terms and conditions of the License Agreement before installing or using any part or all of this software. By installing or using any part or all of this software, it is construed that you have agreed to be bound by all of the terms and conditions of the License Agreement.
+If you do not agree to any of the terms and conditions of the License Agreement, do not install or use any part or the entire of the Software. In this case, please erase, destroy or discard the Software in all the devices under your control without delay.
+
+[License Agreement]
+
+Software is the copyrighted work of DENSO WAVE INCORPORATED ("DENSO") and its licensor. Under this Agreement, the Software is licensed to you by DENSO subject to the terms and conditions below. For clarification purpose, it is not sold nor transferred.
+If you use the Software as a natural person, "you" herein means such natural person, and if you use the Software as an officer, employee, agent or other member (including a partner of a partnership) of any legal entity, "you" herein means such legal entity. This Agreement shall take effect as from the day when you install any part or all of the Software.
+
+1. License
+
+DENSO grants you a non-exclusive license to use the Software for the purpose to develop software ("Purpose"), provided, however, that you shall assume full responsibility for the use of this Software and developed software.
+IN NO EVENT SHALL DENSO BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, PUNITIVE OR OTHER DAMAGES ARISING OUT OF OR RESULTING FROM ANY PART OF, OR IN CONNECTION WITH, THE DEVELOPED SOFTWARE,
+
+2. Restrictions
+
+(i) You shall not install nor use the Software for any purpose other than the Purpose.
+(ii) You shall not rent, lease, sell, sublicense, assign, or otherwise transfer the Software or this Agreement to any third party; provided, however, that you may assign all of the Software and this Agreement, not part thereof, to your assignee perpetually subject to prior agreement by such assignee to comply with all of the terms and conditions of this Agreement.
+(iii) You shall not copy, reverse engineer, decompile, disassemble, merge, modify or translate the Software; provided, however, that you may make one copy of the Software for the sole purpose to make a backup of the Software ("Backup").
+(iv) You shall not remove nor obscure DENSO's copyrights, trademarks or other proprietary notices or legends from any of the materials of the Software.
+(v) You shall not use the Software for the design, development, manufacture, preservation or use of mass destructive weapons such as nuclear, chemical, biological weapons, or missiles, or any other weapons, nor for any military purpose or any other purposes that disturbs global peace and security. Furthermore, you shall not re-sell, re-transfer, re-export, rent sub-license or have use the Software to any third party which, intends to, or may use the Software for any of the purposes aforementioned.
+(vi) You shall not access, download, use, export, email, or transmit the Software in violation of export control laws, restrictions or regulations of Japan, U.S., or any other governments. You agree to comply with all export control laws, restrictions, or regulations and not to directly or indirectly export, make available or provide the Software and/or its copy without export licenses of Japan, U.S. or any other foreign governments, if necessary.
+
+3. Violation of this Agreement
+
+All your rights granted hereunder shall automatically terminate and you shall completely erase, destroy, or discard the Software and the Backup in all the devices under your control in the case you fail to comply with any terms and conditions of this Agreement. The termination of this Agreement shall not prejudice any rights and remedies that DENSO may have against you.
+
+4. Disclaimer of Warranty; Limitation of Liability
+
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT ANY KIND OF WARRANTY OF ANY PURPOSE. THE GRANT OF RIGHTS HEREUNDER BY DENSO SHALL NOT IMPLY ANY WARRANTY AGAINST INFRINGEMENT OF INTELLECTUAL PROPERTY RIGHTS HELD BY A THIRD PARTY. DENSO MAKES NO REPRESENTATIONS OR WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+DENSO ASSUMES NO RESPONSIBILITY FOR THE APPLICATION OF ERRORS OR OMISSION IN THE SOFTWARE. IN NO EVENT SHALL DENSO BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, PUNITIVE OR OTHER DAMAGES ARISING OUT OF OR RESULTING FROM ANY PART OF THE SOFTWARE, THE INSTALLATION OR COPY OF THE SOFTWARE, THE USE OF THE SOFTWARE, OR INABILITY TO USE THE SOFTWARE. FURTHERMORE, DENSO SHALL NOT BE LIABLE FOR ANY LOSS, DAMAGES OR COSTS ARISING OUT OF LOST PROFITS OR REVENUE, LOSS OF USE OF THE SOFTWARE, LOSS OF DATA OR EQUIPMENT, COST OF RECOVERING THE SOFTWARE, DATA OR EQUIPMENT, THE COSTS OF SUBSTITUTE OF THE SOFTWARE, MEDIA, DATA OR EQUIPMENT OR OTHER SIMILAR COSTS, AND SHALL BE FULLY INDEMNIFIED FROM ANY CLAIM ASSERTED BY YOU OR ANY THIRD PARTY.
+
+5. Governing Law
+
+This Agreement shall be governed as to all matters including validity, construction and performance, by and under the laws of Japan, without reference to its conflicts of law principles.
+
+6. Arbitration
+
+Any disputes arising out of this Agreement shall be finally settled by arbitration in accordance with the Commercial Arbitration Rules of The Japan Commercial Arbitration Association. The award of arbitration shall be final and binding upon the parties. Arbitration shall be held in Tokyo, Japan.
+
+-----
+DENSO WAVE INCORPORATED
+All rights reserved.
+Address: 1, Yoshiike, Kusagi, Agui-cho, Chita-gun,
+Aichi 470-2297 Japan
+URL: https://www.denso-wave.com/
