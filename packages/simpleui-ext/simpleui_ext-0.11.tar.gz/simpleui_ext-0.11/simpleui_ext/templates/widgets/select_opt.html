@@ -1,0 +1,6 @@
+<el-option
+  value="{{ widget.value|stringformat:'s' }}"
+  label="{{ widget.label|stringformat:'s' }}"
+  key="{{widget.value|stringformat:'s'}}"
+  {% include "django/forms/widgets/attrs.html" %}
+></el-option>

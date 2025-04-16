@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: simpleui-ext
+Version: 0.11
+Summary: django simpleui扩展包
+Home-page: https://github.com/yxh123739/simpleui-ext
+Author: yxh123739
+Author-email: 499884734@qq.com
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: django
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary

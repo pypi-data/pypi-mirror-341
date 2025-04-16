@@ -1,0 +1,459 @@
+{% load simpletags simple_ext_tags %}
+<fieldset id="fieldset-{{ fieldset.name|slugify|default:'default' }}-{{ forloop.counter }}"
+          class="module aligned {{ fieldset.classes }}">
+    {% if fieldset.name %}<h2>{{ fieldset.name }}</h2>{% endif %}
+    {% if fieldset.description %}
+        <div class="description">{{ fieldset.description|safe }}</div>
+    {% endif %}
+    {% for line in fieldset %}
+        <div class="form-row{% if line.fields|length == 1 and line.errors %} errors{% endif %}{% if not line.has_visible_field %} hidden{% endif %}{% for field in line %}{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% endfor %}">
+            {% if line.fields|length == 1 %}{{ line.errors }}{% endif %}
+            {% for field in line %}
+                <div{% if not line.fields|length == 1 %}
+                    class="fieldBox{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% if not field.is_readonly and field.errors %} errors{% endif %}{% if field.field.is_hidden %} hidden{% endif %}"{% elif field.is_checkbox %}
+                    class="checkbox-row"{% endif %}>
+                    {% if not line.fields|length == 1 and not field.is_readonly %}{{ field.errors }}{% endif %}
+                    {% if field.is_checkbox %}
+                        <!-- 使用 Element UI Switch 替换 checkbox -->
+                        <div class="switch-container" data-field-type="checkbox"
+                             data-field-name="{{ field.field.name }}">
+                            {{ field.label_tag }}
+                            <input type="checkbox" style="display: none;" name="{{ field.field.html_name }}"
+                                   id="id_{{ field.field.html_name }}"
+                                   {% if field.field.value %}checked{% endif %}
+                                   {% if field.field.field.required %}required{% endif %}>
+                            <el-switch
+                                    v-model="fields.{{ field.field.name }}.value"
+                                    @change="updateField('{{ field.field.name }}', $event)">
+                            </el-switch>
+                        </div>
+                    {% elif  field.field.field|field_type == 'DateField' %}
+                        <!-- 使用 Element UI DatePicker 替换日期输入框 -->
+                        <div class="date-picker-container" data-field-type="date"
+                             data-field-name="{{ field.field.name }}">
+                            {{ field.label_tag }}
+                            <input type="hidden" name="{{ field.field.html_name }}" id="id_{{ field.field.html_name }}"
+                                   value="{{ field.field.value|date:'Y-m-d' }}"
+                                   {% if field.field.field.required %}required{% endif %}>
+
+                            <el-date-picker
+                                    v-model="fields.{{ field.field.name }}.value"
+                                    type="date"
+                                    placeholder="选择日期"
+                                    format="yyyy-MM-dd"
+                                    value-format="yyyy-MM-dd"
+                                    @change="updateField('{{ field.field.name }}', $event)"
+                                    style="width: 220px;">
+                            </el-date-picker>
+                        </div>
+                    {% elif field.field.field|field_type == 'SplitDateTimeField' %}
+                        <!-- 使用 Element UI DateTimePicker 替换日期时间输入框 -->
+                        <div class="datetime-picker-container" data-field-type="datetime"
+                             data-field-name="{{ field.field.name }}">
+                            {{ field.label_tag }}
+                            <!-- 添加我们自己的隐藏输入框 -->
+                            <input type="hidden" name="{{ field.field.html_name }}_0"
+                                   id="id_{{ field.field.html_name }}_0"
+                                   value="{{ field.field.value|date:'Y-m-d' }}">
+                            <input type="hidden" name="{{ field.field.html_name }}_1"
+                                   id="id_{{ field.field.html_name }}_1"
+                                   value="{{ field.field.value|time:'H:i:s' }}">
+
+                            <el-date-picker
+                                    v-model="fields.{{ field.field.name }}.value"
+                                    type="datetime"
+                                    placeholder="选择日期时间"
+                                    format="yyyy-MM-dd HH:mm:ss"
+                                    value-format="yyyy-MM-dd HH:mm:ss"
+                                    @change="updateField('{{ field.field.name }}', $event)"
+                                    style="width: 220px;">
+                            </el-date-picker>
+                        </div>
+                    {% elif field.field.field|field_type == 'TimeField' %}
+                        <!-- 使用 Element UI TimePicker 替换时间输入框 -->
+                        <div class="time-picker-container" data-field-type="time"
+                             data-field-name="{{ field.field.name }}">
+                            {{ field.label_tag }}
+                            <input type="hidden" name="{{ field.field.html_name }}" id="id_{{ field.field.html_name }}"
+                                   value="{{ field.field.value|time:'H:i:s' }}"
+                                   {% if field.field.field.required %}required{% endif %}>
+                            <el-time-picker
+                                    v-model="fields.{{ field.field.name }}.value"
+                                    placeholder="选择时间"
+                                    format="HH:mm:ss"
+                                    value-format="HH:mm:ss"
+                                    @change="updateField('{{ field.field.name }}', $event)"
+                                    style="width: 220px;">
+                            </el-time-picker>
+                        </div>
+                    {% elif field.field.field|field_type == 'ModelChoiceField' %}
+                        <!-- 使用 Element UI Select 替换外键下拉框 -->
+                        <div class="select-container" data-field-type="select" data-field-name="{{ field.field.name }}">
+                            {{ field.label_tag }}
+                            <input type="hidden" name="{{ field.field.html_name }}" id="id_{{ field.field.html_name }}"
+                                   value="{% if field.field.value %}{{ field.field.value }}{% endif %}"
+                                   {% if field.field.field.required %}required{% endif %}>
+                            <el-select
+                                    v-model="fields.{{ field.field.name }}.value"
+                                    placeholder="请选择"
+                                    @change="updateField('{{ field.field.name }}', $event)"
+                                    style="width: 220px;">
+                                {% if not field.field.field.required %}
+                                    <el-option key="" label="---------" value=""></el-option>
+                                {% endif %}
+                                {% for option in field.field.field.queryset %}
+                                    <el-option key="{{ option.pk }}" label="{{ option }}"
+                                               value="{{ option.pk }}"></el-option>
+                                {% endfor %}
+                            </el-select>
+                        </div>
+                    {% elif field.field.field|field_type == 'TypedChoiceField' %}
+                        <!-- 使用 Element UI Select 替换选择字段 -->
+                        <div class="select-container" data-field-type="choice" data-field-name="{{ field.field.name }}">
+                            {{ field.label_tag }}
+                            <input type="hidden" name="{{ field.field.html_name }}" id="id_{{ field.field.html_name }}"
+                                   value="{{ field.field.value }}"
+                                   {% if field.field.field.required %}required{% endif %}>
+                            <el-select
+                                    v-model="fields.{{ field.field.name }}.value"
+                                    placeholder="请选择"
+                                    @change="updateField('{{ field.field.name }}', $event)"
+                                    style="width: 220px;">
+                                {% if not field.field.field.required %}
+                                    <el-option key="" label="---------" value=""></el-option>
+                                {% endif %}
+                                {% for value, label in field.field.field.choices %}
+                                    {% if value != '' or value == '' and not field.field.field.required %}
+                                        <el-option key="{{ value }}" label="{{ label }}"
+                                                   value="{{ value }}"></el-option>
+                                    {% endif %}
+                                {% endfor %}
+                            </el-select>
+                        </div>
+                    {% elif field.field.field|field_type == 'ModelMultipleChoiceField' or field.field.field|field_type == 'ManyToManyField' %}
+                        <!-- 使用 Element UI Transfer 替换多对多选择框 -->
+                        <div class="transfer-container" data-field-type="transfer"
+                             data-field-name="{{ field.field.name }}">
+                            {{ field.label_tag }}
+                            <div class="transfer-wrapper">
+                                <!-- 隐藏的原始多选框，用于提交表单 -->
+                                <select name="{{ field.field.html_name }}" id="id_{{ field.field.html_name }}"
+                                        multiple style="display: none;"
+                                        {% if field.field.field.required %}required{% endif %}>
+                                    {% for option in field.field.field.queryset %}
+                                        <option value="{{ option.pk }}"
+                                                {% if option.pk|stringformat:"s" in field.field.value|stringformat:"s"|split:"," %}selected{% endif %}>
+                                            {{ option }}
+                                        </option>
+                                    {% endfor %}
+                                </select>
+
+                                <!-- Element UI Transfer 组件 -->
+                                <el-transfer
+                                        v-model="fields.{{ field.field.name }}.value"
+                                        :data="fields.{{ field.field.name }}.options"
+                                        :titles="['可选项', '已选项']"
+                                        :button-texts="['移除', '添加']"
+                                        @change="updateField('{{ field.field.name }}', $event)"
+                                        filterable
+                                        filter-placeholder="请输入搜索内容">
+                                </el-transfer>
+                            </div>
+                        </div>
+                    {% else %}
+                        {{ field.label_tag }}
+                        {% if field.is_readonly %}
+                            <div class="readonly">{{ field.contents }}</div>
+                        {% else %}
+                            {% if field.field.field.widget.input_type == 'file' %}
+                                <!-- 自定义文件上传区域 -->
+                                <div class="file-upload-container" data-field-type="file"
+                                     data-field-name="{{ field.field.name }}">
+                                    <div class="file-upload-input-group">
+                                        <el-input
+                                                v-model="fields.{{ field.field.name }}.fileName"
+                                                placeholder="未选择文件"
+                                                readonly
+                                                size="small"
+                                                style="width: 250px; ">
+                                        </el-input>
+                                        <el-button
+                                                circle
+                                                size="small"
+                                                @click="triggerFileInput('{{ field.field.name }}')"
+                                                style="margin-left: 10px;">
+                                            <i class="fas fa-upload"></i>
+                                        </el-button>
+                                    </div>
+
+                                    <!-- 原始文件输入框，隐藏 -->
+                                    <input
+                                            type="file"
+                                            ref="fileInput_{{ field.field.name }}"
+                                            name="{{ field.field.name }}"
+                                            id="id_{{ field.field.name }}"
+                                            style="display: none;"
+                                            @change="handleFileChange('{{ field.field.name }}', $event)"
+                                            {% if field.field.field.required %}required{% endif %}>
+
+                                    <!-- 图片预览区域 -->
+                                    <div v-if="fields.{{ field.field.name }}.imageUrl" class="image-preview"
+                                         style="margin-top: 10px;">
+                                        <el-image
+                                                :src="fields.{{ field.field.name }}.imageUrl"
+                                                style="max-width: 300px; max-height: 200px; border-radius: 8px;"
+                                                :preview-src-list="[fields.{{ field.field.name }}.imageUrl]">
+                                        </el-image>
+                                    </div>
+                                </div>
+                            {% else %}
+                                {{ field.field|get_value }}
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                    {% if field.field.help_text %}
+                        <div class="help">{{ field.field.help_text|safe }}</div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</fieldset>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        new Vue({
+            el: '#fieldset-{{ fieldset.name|slugify|default:'default' }}-{{ forloop.counter }}',
+            data() {
+                return {
+                    fields: {
+                        {% for line in fieldset %}
+                            {% for field in line %}
+                                {% if field.is_checkbox %}
+                                    '{{ field.field.name }}': {
+                                        type: 'checkbox',
+                                        value: '{{ field.field.value }}' === 'True'
+                                    },
+                                {% elif field.field.field|field_type == 'DateField' %}
+                                    '{{ field.field.name }}': {
+                                        type: 'date',
+                                        value: '{{ field.field.value|date:"Y-m-d" }}'
+                                    },
+                                {% elif field.field.field|field_type == 'SplitDateTimeField' %}
+                                    '{{ field.field.name }}': {
+                                        type: 'datetime',
+                                        value: '{{ field.field.value|date:"Y-m-d H:i:s"|default:"" }}'
+                                    },
+                                {% elif field.field.field|field_type == 'TimeField' %}
+                                    '{{ field.field.name }}': {
+                                        type: 'time',
+                                        value: '{{ field.field.value|time:"H:i:s" }}'
+                                    },
+                                {% elif field.field.field|field_type == 'ModelChoiceField' %}
+                                    '{{ field.field.name }}': {
+                                        type: 'select',
+                                        value: '{{ field.field.value|default:"" }}'
+                                    },
+                                {% elif field.field.field|field_type == 'TypedChoiceField' %}
+                                    '{{ field.field.name }}': {
+                                        type: 'choice',
+                                        value: '{{ field.field.value }}'
+                                    },
+                                {% elif field.field.field|field_type == 'ModelMultipleChoiceField' or field.field.field|field_type == 'ManyToManyField' %}
+                                    '{{ field.field.name }}': {
+                                        type: 'transfer',
+                                        options: [
+                                            {% for option in field.field.field.queryset %}
+                                                {
+                                                    key: '{{ option.pk }}',
+                                                    label: '{{ option }}',
+                                                    disabled: false
+                                                },
+                                            {% endfor %}
+                                        ],
+                                        value: [
+                                            {% for value in field.field.value %}
+                                                '{{ value.pk }}',
+                                            {% endfor %}
+                                        ]
+                                    },
+                                {% elif field.field.field.widget.input_type == 'file' %}
+                                    '{{ field.field.name }}': {
+                                        type: 'file',
+                                        fileName: '{% if field.field.value %}{{ field.field.value.name }}{% endif %}',
+                                        imageUrl: '{% if field.field.value %}{{ field.field.value.url }}{% endif %}'
+                                    },
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    }
+                }
+            },
+            methods: {
+                updateField(fieldName, value) {
+                    const fieldType = this.fields[fieldName].type;
+
+                    switch (fieldType) {
+                        case 'checkbox':
+                            document.getElementById(`id_${fieldName}`).checked = value;
+                            break;
+
+                        case 'date':
+                        case 'time':
+                        case 'select':
+                        case 'choice':
+                            document.getElementById(`id_${fieldName}`).value = value || '';
+                            break;
+
+                        case 'datetime':
+                            if (value) {
+                                const [datePart, timePart] = value.split(' ');
+                                document.getElementById(`id_${fieldName}_0`).value = datePart;
+                                document.getElementById(`id_${fieldName}_1`).value = timePart;
+                            } else {
+                                document.getElementById(`id_${fieldName}_0`).value = '';
+                                document.getElementById(`id_${fieldName}_1`).value = '';
+                            }
+                            break;
+
+                        case 'transfer':
+                            const select = document.getElementById(`id_${fieldName}`);
+                            // 清除所有选中状态
+                            for (let i = 0; i < select.options.length; i++) {
+                                select.options[i].selected = false;
+                            }
+
+                            // 设置新的选中状态
+                            value.forEach(val => {
+                                for (let i = 0; i < select.options.length; i++) {
+                                    if (select.options[i].value === val) {
+                                        select.options[i].selected = true;
+                                        break;
+                                    }
+                                }
+                            });
+                            break;
+                    }
+                },
+
+                triggerFileInput(fieldName) {
+                    this.$refs[`fileInput_${fieldName}`].click();
+                },
+
+                handleFileChange(fieldName, event) {
+                    const file = event.target.files[0];
+                    if (!file) return;
+
+                    this.fields[fieldName].fileName = file.name;
+
+                    // 如果是图片，创建预览
+                    if (file.type.startsWith('image/')) {
+                        this.fields[fieldName].imageUrl = URL.createObjectURL(file);
+                    } else {
+                        this.fields[fieldName].imageUrl = ''; // 非图片文件不显示预览
+                    }
+                }
+            }
+        });
+    });
+</script>
+
+<style>
+    /* 通用样式 */
+    .switch-container,
+    .date-picker-container,
+    .datetime-picker-container,
+    .time-picker-container,
+    .select-container,
+    .transfer-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .transfer-container {
+        margin-bottom: 15px;
+    }
+
+    .transfer-wrapper {
+        margin-top: 10px;
+    }
+
+    .el-transfer {
+        text-align: left;
+    }
+
+    .file-upload-container {
+        margin-bottom: 15px;
+    }
+
+    .file-upload-input-group {
+        display: flex;
+        align-items: center;
+    }
+
+    .image-preview {
+        border: 1px solid #ebeef5;
+        border-radius: 4px;
+        display: inline-block;
+    }
+
+    /* 响应式样式 */
+    @media (max-width: 767px) {
+        .switch-container,
+        .date-picker-container,
+        .datetime-picker-container,
+        .time-picker-container,
+        .select-container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .switch-container label,
+        .date-picker-container label,
+        .datetime-picker-container label,
+        .time-picker-container label,
+        .select-container label {
+            margin-bottom: 8px;
+        }
+
+        .el-date-editor.el-input,
+        .el-time-picker,
+        .el-select {
+            width: 100% !important;
+        }
+
+        .el-transfer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .el-transfer__buttons {
+            margin: 10px 0;
+            align-self: center;
+        }
+
+        .el-transfer-panel {
+            width: 100% !important;
+            margin-bottom: 10px;
+        }
+
+        .file-upload-input-group {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .file-upload-input-group .el-input {
+            width: 100% !important;
+            margin-bottom: 8px;
+        }
+
+        .file-upload-input-group .el-button {
+            margin-left: 0;
+        }
+
+        .image-preview img {
+            max-width: 100% !important;
+        }
+    }
+</style>

@@ -1,0 +1,54 @@
+<div id="{{ widget.name }}_app" @click="println">
+  <el-select
+    v-model="{{ widget.name }}_value"
+    name="{{ widget.name }}"
+    {% include "django/forms/widgets/attrs.html" %}
+  >
+    {% for group_name, group_choices, group_index in widget.optgroups %}
+      {% if group_name %}
+      <el-option-group label="{{ group_name }}">
+      {% endif %}
+      
+      {% for option in group_choices %}
+        {% include option.template_name with widget=option %}
+      {% endfor %}
+      
+      {% if group_name %}
+      </el-option-group>
+      {% endif %}
+    {% endfor %}
+  </el-select>
+</div>
+
+<script type="text/javascript">
+  // 确保在DOM加载完成后执行
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    // 初始化默认值
+    var initialValue = '';
+    {% for group_name, group_choices, group_index in widget.optgroups %}
+      {% for option in group_choices %}
+        {% if option.selected %}
+          initialValue = "{{ option.value|stringformat:'s' }}";
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+
+    console.log(initialValue);
+    
+    
+    // 创建Vue实例
+    new Vue({
+      el: '#{{ widget.name }}_app',
+      data: {
+        {{ widget.name }}_value: initialValue
+      },
+      methods: {
+         println(){
+            console.log('xxxxxxxxxxxxxxxx');
+            
+        }
+      },
+    });
+  });
+</script>

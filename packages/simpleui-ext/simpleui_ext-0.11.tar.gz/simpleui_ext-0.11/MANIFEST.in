@@ -1,0 +1,6 @@
+include LICENSE
+include README.md
+recursive-include simpleui_ext/static *
+recursive-include simpleui_ext/templates *
+recursive-include simpleui_ext/templatetags *
+recursive-include docs *
