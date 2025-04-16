@@ -1,0 +1,8 @@
+syne_ga_mcp/__init__.py,sha256=YrQB88_TthQmRddkp6LJ65fTSKaM31v1CBNrLwCTa0U,299
+syne_ga_mcp/config.py,sha256=ZDhsRjhqP900UHdrjdoUzW0YGc0xt4tgwSPWUOQ2ZEc,1240
+syne_ga_mcp/ga_handler.py,sha256=2EyfVmhtkpt0ir51XfZ9gZqf6ZtRGjUEdENP8VJW7MI,13086
+syne_ga_mcp/server.py,sha256=WmXVcK08XjwKy5EvFwGvQEL2UpqFxZIRtnOGOTVJ8K0,9428
+syne_ga_mcp-0.0.1.dist-info/METADATA,sha256=NQWW5rf2Dmyi-tFAx0-YL_ez08O6eCUva86W_7lehkA,5313
+syne_ga_mcp-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+syne_ga_mcp-0.0.1.dist-info/entry_points.txt,sha256=JvKy5F8e2QuM9Buu89I0YRvvHaCwgxuXlNxrKRemPGM,80
+syne_ga_mcp-0.0.1.dist-info/RECORD,,

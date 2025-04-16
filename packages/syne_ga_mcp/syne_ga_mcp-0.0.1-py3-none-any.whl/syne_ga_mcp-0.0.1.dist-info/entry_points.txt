@@ -1,0 +1,3 @@
+[console_scripts]
+syne-ga-mcp = syne_ga_mcp:main
+syne_ga_mcp = syne_ga_mcp:main
