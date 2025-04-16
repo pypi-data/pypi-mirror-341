@@ -1,0 +1,17 @@
+polyid/__init__.py,sha256=HX_6rFQOf4syd-hlRs0lIcjbYwAFklzOWZip67rgLfo,220
+polyid/_version.py,sha256=p9ZMHQvitKX-vPzuIcwQeIUlBy2_x665IQlddumnrNM,499
+polyid/domain_of_validity.py,sha256=p7kGa_-t7U2_L0552E7OKdXQ3kRIrFQui3kSsfMycL4,3572
+polyid/parameters.py,sha256=-n5sXiYdHBwMyZ48u8CiZVqQQ3LFcbD9LcD1bAXDrfY,2555
+polyid/polyid.py,sha256=v-RCop-YI-DfzEbOzBdK_h5VOnerlT6lA11cDYzSo8w,38040
+polyid/models/__init__.py,sha256=5_i87LNHDeotRAfdAyMuOlbVZW1afi3S-UVWu-RMHnA,74
+polyid/models/base_models.py,sha256=PnR34ShPcONcbb1LNCSflosRvNSpAeJt2CUfFDpS7MI,3311
+polyid/models/callbacks.py,sha256=a2YMXCavbphN29r7RaKMfvRdHeLrUaN1TT2ZsqgqmHQ,1698
+polyid/models/tacticity_models.py,sha256=IHgD0oSCQ3DyVRac-uKCBpNqLQvm8KvVwA-9Xf2GU5s,3068
+polyid/preprocessors/__init__.py,sha256=cnrXW0cNLUUsu7gNHirXY6O1j0MbzPAw5EmdqfagY0w,53
+polyid/preprocessors/features.py,sha256=IVkRhT_BW6BN5jTxZo9QUOaEHyKVAZWaexaDcWBLMew,4616
+polyid/preprocessors/preprocessors.py,sha256=IejCInFDMEXqun8S2-jdX1tQw9-PCQqvj3voz4aI6fY,24757
+polyid-0.1.2.3.dist-info/LICENCE.md,sha256=tbUGiiZxTKnbHJbOZ9FtObNMnGTE3E-eNJDsotS80M4,1526
+polyid-0.1.2.3.dist-info/METADATA,sha256=tNa6ntXcdly0roPfjG2XnXB2ZxXH8Hlckk6BuUHVCv0,3761
+polyid-0.1.2.3.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+polyid-0.1.2.3.dist-info/top_level.txt,sha256=3QHjRs5GTOBsXGMxSr_Xj3Do2OzGGwZ7EJcCUovH-r4,7
+polyid-0.1.2.3.dist-info/RECORD,,
