@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: flexdown
+Version: 0.2.4
+Summary: Write interactive documentation with Markdown and Python.
+Author-email: Nikhil Rao <nikhil@reflex.dev>, Thomas Brandého <thomas@reflex.dev>
+Requires-Python: <4.0,>=3.10
+Requires-Dist: black>=25.0
+Requires-Dist: mistletoe>=1.4.0
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: reflex>=0.7.1
+Description-Content-Type: text/markdown
+
+This is a README for the Flexdown project, a tool for rendering Markdown documents with custom blocks and components into a Reflex App.
+
+# Installation
+
+To run a local demo of flexdown (assuming a folder called docs), you can use the following command:
+
+```bash
+uv pip install -e .
+```
+
+# Usage
+
+```bash
+flexdown docs
+```
+
+If you are using any `reflex-enterprise` component in your docs page, run with the following command:
+```bash
+flexdown docs -e
+```
