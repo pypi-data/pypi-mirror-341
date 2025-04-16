@@ -1,0 +1,38 @@
+[project]
+name = "wqu"
+dynamic = ["version", "description"]
+readme = "README.md"
+authors = [
+    { name = "Azat", email = "8280770+azataiot@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.10.0",
+    "pandas>=2.2.3",
+    "scipy>=1.15.2",
+]
+
+[project.scripts]
+wqu = "wqu:main"
+
+[project.urls]
+repository = "https://github.com/azataiot/wqu"
+documentation = "https://azgh.cc/wqu/"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[dependency-groups]
+dev = [
+    "jupyterlab>=4.3.5",
+    "ruff>=0.9.6",
+]
+docs = [
+    "mdx-truly-sane-lists>=1.3",
+    "mkdocs-material>=9.6.11",
+]
+
+[tool.ruff]
+# Exclude all notebook files
+exclude = ["*.ipynb"]
