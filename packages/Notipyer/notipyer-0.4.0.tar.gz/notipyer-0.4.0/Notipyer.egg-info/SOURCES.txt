@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+Notipyer.egg-info/PKG-INFO
+Notipyer.egg-info/SOURCES.txt
+Notipyer.egg-info/dependency_links.txt
+Notipyer.egg-info/top_level.txt
+notipyer/__init__.py
+notipyer/async_decorator.py
+notipyer/credential_handler.py
+notipyer/email_notify.py
+notipyer/errors.py
+notipyer/slack_notify.py
+tests/test_email_send.py
+tests/test_slack_send.py
