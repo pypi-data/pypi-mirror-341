@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastgb"
+version = "0.0.2"
+authors = [
+  { name="Stas Babak", email="stas@apc.in2p3.fr" },
+  { name="Jean-Baptiste Bayle", email="j2b.bayle@gmail.com" },
+  { name="Téo Bouvard", email="teo.bouvard@thalesgroup.com" },
+  { name="Christian Chapman-Bird", email="c.chapmanbird@gmail.com" },
+  { name="Maude Le Jeune", email="lejeune@apc.in2p3.fr" },
+]
+description = "This package provides a fast waveform generator for galactic binaries, as seen by the LISA instrument"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "lisaconstants",
+    "lisaorbits",
+    ]
+[project.optional-dependencies]
+jax = ["jax"]
+packages = ["fastgb"]
+
+[project.urls]
+"Homepage" = "https://gitlab.in2p3.fr/lisa/fastgb"
+"Bug Tracker" = "https://gitlab.in2p3.fr/lisa/fastgb/issues"

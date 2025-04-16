@@ -1,0 +1,9 @@
+numpy
+lisaconstants
+lisaorbits
+
+[jax]
+jax
+
+[packages]
+fastgb
