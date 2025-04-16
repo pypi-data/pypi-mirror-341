@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: Snakecode
+Version: 1.0.0
+Summary: SnakeCode Channel Library
+Author-email: abasjy <raiagpt3@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/abasjy/H_O
+Project-URL: Bug Tracker, https://github.com/abasjy/H_O/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+Python library called SnakeCode with advanced features and owned by the SnakeCode channel and its creator abasjy

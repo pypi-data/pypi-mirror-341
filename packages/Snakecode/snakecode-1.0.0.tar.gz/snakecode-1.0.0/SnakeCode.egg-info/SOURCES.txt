@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+SnakeCode/__init__.py
+SnakeCode/digikala.py
+SnakeCode/rubino.py
+SnakeCode.egg-info/PKG-INFO
+SnakeCode.egg-info/SOURCES.txt
+SnakeCode.egg-info/dependency_links.txt
+SnakeCode.egg-info/top_level.txt
+Snakecode.egg-info/PKG-INFO
+Snakecode.egg-info/SOURCES.txt
+Snakecode.egg-info/dependency_links.txt
+Snakecode.egg-info/top_level.txt
+snakecode.egg-info/PKG-INFO
+snakecode.egg-info/SOURCES.txt
+snakecode.egg-info/dependency_links.txt
+snakecode.egg-info/top_level.txt
