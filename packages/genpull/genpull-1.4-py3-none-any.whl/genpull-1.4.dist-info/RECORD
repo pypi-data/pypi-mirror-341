@@ -1,0 +1,12 @@
+genpull/__about__.py,sha256=iFqGAIoJfC7XNDhx8-wIIe3ZHP_HgPRr3vxHjEeqH1Y,85
+genpull/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genpull/__main__.py,sha256=FZuKJz3BgUkS_E18h6kbe6_Xr7wVhL-O7Djtyt0x4Ao,137
+genpull/cli.py,sha256=DTOw7_ydbfenie8Qe8oIrgsEy-71cOmmhhk2DjFZ8lU,185
+genpull/gpull.py,sha256=ftHQddPWHp80qXR67_c6UL5a3NGgF0XxZBOg9cmCMTo,5038
+genpull/tex_escape.py,sha256=ubDam5zwVDkJYP6xNALYW6IAhybxdBQNfn07FEnppKg,816
+genpull/templates/subscriptions.jinja,sha256=872FenfRZIb1BKRKUOlz87y36k5dk2TK6ZpFdL_f9Aw,1195
+genpull-1.4.dist-info/METADATA,sha256=98ZUknrUFNXK7XMozu7iLiygxJNiZCFZKWh64ZY_YZ8,3830
+genpull-1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+genpull-1.4.dist-info/entry_points.txt,sha256=G-7rBYMCSlHk1wKRqrQUlz_NAJMzo4Zvep8ocrpexwQ,44
+genpull-1.4.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+genpull-1.4.dist-info/RECORD,,
