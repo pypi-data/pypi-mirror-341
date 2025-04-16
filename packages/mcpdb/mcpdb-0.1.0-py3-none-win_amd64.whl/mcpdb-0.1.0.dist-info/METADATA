@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: mcpdb
+Version: 0.1.0
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+Summary: Add your description here
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# MCP Memory Server
+
+Runs as an HTTP/SSE server on http://127.0.0.1:3456
+
+Needs a postgres connection on localhost:5432 with credentials postgres:postgres
+
