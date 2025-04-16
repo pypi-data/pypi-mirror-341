@@ -1,0 +1,1 @@
+from .core import andgate, titanic, mahalanobis, shannon, unsupervised, bayesian, hopfield, fuzzy, male, handwritten, fuzz_real, kmeans, activation, error, hebbian, gates, xor, xor_rbf, hebbian_pca, som, backprop, neural, optimisation, cnn1, cnn2, rnn

@@ -1,0 +1,15 @@
+
+[project]
+name = "kerpyi"
+version = "0.2.0"
+description = "A sample pip-installable module"
+authors = [{ name="Your Name", email="you@example.com" }]
+license = {text = "none"}
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = []
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
