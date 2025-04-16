@@ -1,0 +1,120 @@
+Metadata-Version: 2.4
+Name: neoathena
+Version: 0.0.3
+Summary: A Python client for the NeoAthena API
+Home-page: https://github.com/raen-ai/neoathena
+Author: Raen AI
+Author-email: Raen AI <support@raen.ai>
+License: MIT
+Project-URL: Homepage, https://github.com/raen-ai/neoathena
+Project-URL: Repository, https://github.com/raen-ai/neoathena.git
+Project-URL: Issues, https://github.com/raen-ai/neoathena/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Requires-Dist: typing>=3.7.4; python_version < "3.8"
+Requires-Dist: pydantic==2.10.6
+Requires-Dist: requests==2.32.3
+Requires-Dist: black==25.1.0
+Requires-Dist: langchain-core==0.3.33
+Requires-Dist: bandit==1.8.2
+Requires-Dist: pytest-mock==3.14.0
+Requires-Dist: pytest==8.3.4
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# NeoAthena Python Client
+
+A Python client library for interacting with the NeoAthena API, providing functionality to create and manage collections, upload files, and perform document retrieval operations.
+
+## Installation
+
+```bash
+pip install neoathena
+```
+
+## Quick Start
+
+```python
+from neoathena import NeoAthenaClient
+
+# Initialize the client
+client = NeoAthenaClient(api_key="your-api-key")
+
+# Check if the collection exists, create it if it doesn't, and upload the file to the collection
+results = client.upload_to_collection(
+    collection_name="your-collection-name", 
+    filepath="path/to/your/file"
+)
+
+# Retrieve documents based on a query
+results = client.retrieve_from_collection(
+    query="your search query", 
+    collection_name="your-collection-name", 
+    file_names=["file1.txt", "file2.txt"],
+    top_k=4
+)
+
+# List your collections
+result = client.get_collections()
+
+```
+
+## Features
+
+- Create collection and upload files with automatic content type detection
+- Perform semantic search queries
+- Delete individual documents or entire collections
+- List all user collections
+- Built-in error handling and validation
+
+## API Reference
+
+Check out our docs [here](https://docs.neoathena.com).
+
+## Error Handling
+
+The client includes comprehensive error handling for common scenarios:
+
+- `ValueError`: Raised for invalid input parameters
+- `FileNotFoundError`: Raised when specified files don't exist
+- `requests.exceptions.RequestException`: Raised for network-related errors
+
+Example error handling:
+
+```python
+try:
+    response = client.upload_to_collection(api_key, "file.pdf")
+except FileNotFoundError:
+    print("File not found")
+except ValueError as e:
+    print(f"Invalid input: {e}")
+except requests.exceptions.RequestException as e:
+    print(f"API request failed: {e}")
+```
+
+## Requirements
+
+- Python 3.8+
+- requests library
+- Valid API credentials
+
+## License
+
+GNU General Public License v3.0
+
+## Support
+
+For support, please contact support@raen.ai

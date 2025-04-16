@@ -1,0 +1,37 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="neoathena",
+    version="0.0.3",
+    packages=find_packages(),
+    install_requires=[
+        "requests>=2.25.0",
+        "typing>=3.7.4;python_version<'3.8'",
+        "pydantic==2.10.6",
+        "requests==2.32.3",
+        "black==25.1.0",
+        "langchain-core==0.3.33",
+        "bandit==1.8.2",
+        "pytest-mock==3.14.0",
+        "pytest==8.3.4",
+        "aiohttp==3.11.12",
+    ],
+    author="Raen AI",
+    author_email="support@raen.ai",
+    description="A Python client for the NeoAthena API",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/raen-ai/neoathena",
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+    ],
+    python_requires=">=3.8",
+)

@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neoathena"
+version = "0.0.3"
+description = "A Python client for the NeoAthena API"
+readme = "README.md"
+authors = [
+    {name = "Raen AI", email = "support@raen.ai"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+dependencies = [
+    "requests>=2.25.0",
+    "typing>=3.7.4;python_version<'3.8'",
+    "pydantic==2.10.6",
+    "requests==2.32.3",
+    "black==25.1.0",
+    "langchain-core==0.3.33",
+    "bandit==1.8.2",
+    "pytest-mock==3.14.0",
+    "pytest==8.3.4"
+]
+
+[project.urls]
+Homepage = "https://github.com/raen-ai/neoathena"
+Repository = "https://github.com/raen-ai/neoathena.git"
+Issues = "https://github.com/raen-ai/neoathena/issues"
+
+[tool.setuptools]
+packages = ["neoathena"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
