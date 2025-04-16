@@ -1,0 +1,10 @@
+neurequa/__init__.py,sha256=f_kmgd0t-Wwzju3gUUOuTep7qUfoPW7NRcC4f7JO_ew,200
+neurequa/artefact_detections.py,sha256=ncTH40dMDhTpDCXXHWWh8d09XDsGu50IecmKD_SZNAE,32014
+neurequa/cognitive_module.py,sha256=2cBiTTeLvKb4pvvEPufEg5lAiA2_o1V1GwNikh-EB60,4436
+neurequa/neuralynx_io.py,sha256=1HDkuUvj7fYNGVWHnaGd9tCrRn7JnbeXfBX0h4Jh47w,10381
+neurequa/quality_module.py,sha256=5mfKWjxH6ZABcdY3MOBGNU357Xohv30xNgpLq0r9sQQ,49369
+neurequa-0.1.1.17.dist-info/LICENSE,sha256=_lKQxrZNENmDY1nUfKIFQ5s3yfUlJp38iSJdFyIHwas,1086
+neurequa-0.1.1.17.dist-info/METADATA,sha256=M7AaB69PGOU_9ZqyNT_Q5_-usHDUmYYDZdRvBQKwKy8,666
+neurequa-0.1.1.17.dist-info/WHEEL,sha256=Kh9pAotZVRFj97E15yTA4iADqXdQfIVTHcNaZTjxeGM,110
+neurequa-0.1.1.17.dist-info/top_level.txt,sha256=ZB4xlpnet-VXGYW9cV2nZenkyVCmjB3_ULGNwOdybKs,9
+neurequa-0.1.1.17.dist-info/RECORD,,
