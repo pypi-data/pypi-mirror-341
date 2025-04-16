@@ -1,0 +1,310 @@
+Metadata-Version: 2.4
+Name: gchatbot
+Version: 0.1.3
+Summary: Biblioteca Python para criar bots para o Google Chat
+Home-page: https://github.com/guilhermecf10/gchatbot
+Author: João Matheus & Guilherme Fialho
+Author-email: guilhermec.fialho@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask>=2.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Google Chat Bot Library
+
+Uma biblioteca Python para criar bots para o Google Chat facilmente, lidando com diferentes formatos de payload e simplificando o desenvolvimento.
+
+## Visão Geral
+
+Esta biblioteca fornece uma estrutura base para criar bots para o Google Chat, oferecendo:
+
+- Processamento de solicitações HTTP do Google Chat
+- Extração de dados de eventos em diferentes formatos de payload
+- Roteamento de eventos para os manipuladores apropriados
+- Formatação de respostas para o formato esperado pelo Google Chat API
+- Suporte para comandos de barra (slash commands) e mensagens diretas
+
+## Como Usar
+
+### Instalação
+
+```bash
+pip install gchatbot
+```
+
+### Exemplo 1: Implantação no Google Cloud Functions
+
+Este exemplo mostra como implementar o bot como uma Cloud Function:
+
+```python
+# main.py
+from gchatbot import GChatbot
+from flask import Request
+
+class MyCloudBot(GChatbot):
+    def __init__(self):
+        super().__init__(
+            bot_name="CloudBot",
+            bot_image="https://exemplo.com/cloud_bot.png"  # Opcional
+        )
+    
+    def _process_slash_command(self, command: str, arguments: str, extracted_data: dict, event_data: dict) -> str:
+        user_name = extracted_data.get('user_display_name', 'there')
+        
+        if command == 'hello':
+            return f"Olá {user_name}! Cloud Function respondendo ao seu comando."
+        elif command == 'status':
+            return "O serviço está operando normalmente."
+        else:
+            return f"Comando desconhecido: /{command}"
+    
+    def _process_message(self, text: str, extracted_data: dict, event_data: dict) -> str:
+        user_name = extracted_data.get('user_display_name', 'User')
+        
+        if 'ajuda' in text.lower():
+            return f"Olá {user_name}, você pode usar /hello ou /status."
+        else:
+            return f"Recebi sua mensagem: '{text}'"
+
+# Função que será chamada pelo Google Cloud Functions
+def chat_webhook(request: Request):
+    bot = MyCloudBot()
+    return bot.handle_request(request)
+```
+
+**Para implantar:**
+1. Crie um arquivo `requirements.txt`:
+   ```
+   gchatbot==0.1.2
+   flask==2.0.1
+   ```
+
+2. Implante usando o Google Cloud CLI:
+   ```bash
+   gcloud functions deploy chat_webhook --runtime python39 --trigger-http --allow-unauthenticated
+   ```
+
+3. Use o URL gerado na configuração do seu app do Google Chat.
+
+### Exemplo 2: Desenvolvimento Local com Flask
+
+Este exemplo mostra como desenvolver e testar o bot localmente com Flask:
+
+```python
+# app.py
+from flask import Flask, request, jsonify
+from gchatbot import GChatbot
+
+class MyLocalBot(GChatbot):
+    def __init__(self):
+        super().__init__(
+            bot_name="LocalBot",
+        )
+
+    def _process_slash_command(self, command: str, arguments: str, extracted_data: dict, event_data: dict) -> str:
+        user_name = extracted_data.get('user_display_name', 'there')
+
+        if command == 'hello':
+            self.logger.info(f"Executando comando /hello para {user_name}")
+            if arguments:
+                return f"Olá {user_name}! Você enviou: '{arguments}'"
+            else:
+                return f"Olá {user_name}!"
+        elif command == 'about':
+            self.logger.info("Executando comando /about")
+            return "Sou o LocalBot, um exemplo de bot construído com GChatbot."
+        elif command == 'echo':
+            self.logger.info(f"Executando comando /echo com argumentos: '{arguments}'")
+            return f"Você disse: {arguments}"
+        else:
+            self.logger.warning(f"Comando desconhecido recebido: /{command}")
+            return f"Desculpe {user_name}, não reconheço o comando '/{command}'. Tente /hello ou /about."
+
+    def _process_message(self, text: str, extracted_data: dict, event_data: dict) -> str:
+        user_name = extracted_data.get('user_display_name', 'User')
+        self.logger.info(f"Processando mensagem de {user_name}: '{text}'")
+
+        if 'ajuda' in text.lower():
+            return f"Olá {user_name}, você pode usar comandos como /hello [sua mensagem], /about, ou /echo [sua mensagem]."
+        elif text.lower() == 'ping':
+            return "pong"
+        else:
+            return f"Obrigado pela sua mensagem, {user_name}! Recebi: '{text[:50]}...'"
+
+# Configure a aplicação Flask
+app = Flask(__name__)
+
+# Instancie seu bot
+local_bot = MyLocalBot()
+
+# Crie a rota Flask para lidar com eventos do Google Chat
+@app.route('/', methods=['GET', 'POST'])
+def handle_chat_event():
+    return local_bot.handle_request(request)
+
+# Execute a aplicação Flask (para desenvolvimento)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080, debug=True)
+```
+
+**Para executar localmente:**
+
+1. Instale as dependências:
+   ```bash
+   pip install gchatbot flask
+   ```
+
+2. Execute a aplicação Flask:
+   ```bash
+   python app.py
+   ```
+
+3. Use uma ferramenta como NGROK para expor seu servidor local:
+   ```bash
+   ngrok http 8080
+   ```
+
+4. Configure seu app do Google Chat com o URL fornecido pelo NGROK.
+
+
+
+## Arquitetura
+
+A biblioteca é baseada em uma classe abstrata (`GChatbot`) que implementa toda a lógica de processamento comum, permitindo que você crie bots específicos implementando apenas os métodos de processamento de comandos e mensagens.
+
+### Fluxo de Processamento
+
+```mermaid
+graph TD
+    A[Solicitação HTTP] --> B[handle_request]
+    B --> C{Método HTTP?}
+    C -->|GET| D[Retorna página de status]
+    C -->|POST| E[Processa payload]
+    C -->|Outro| F[Erro 405]
+    E --> G[Extrai dados do evento]
+    G --> H{Comando ou mensagem?}
+    H -->|Comando| I[_process_slash_command]
+    H -->|Mensagem| J[_process_message]
+    I --> K[_format_response]
+    J --> K
+    K --> L[Retorna resposta JSON]
+```
+
+### Fluxo de Desenvolvimento vs. Produção
+
+**Em Desenvolvimento (com Flask + NGROK):**
+```
+┌─────────────┐     ┌───────────┐     ┌───────────────┐      ┌────────────────┐
+│ Google Chat │────▶│   NGROK   │────▶│ Flask Endpoint│─────▶│ handle_request │
+└─────────────┘     └───────────┘     └───────────────┘      └────────────────┘
+```
+
+**Em Produção (com Google Cloud Functions):**
+```
+┌─────────────┐     ┌────────────────┐     ┌────────────────┐
+│ Google Chat │────▶│ Cloud Function │────▶│ handle_request │
+└─────────────┘     └────────────────┘     └────────────────┘
+```
+
+## Detalhes Técnicos
+
+### Estrutura de Dados
+
+A biblioteca lida com dois formatos principais de payload:
+
+1. **Formato Chat App API** (contém a chave 'chat')
+2. **Formato Webhook/Direto** (contém a chave 'message' no nível superior)
+
+```mermaid
+classDiagram
+    class GChatbot {
+        +bot_name: str
+        +bot_image: str
+        +logger: Logger
+        +handle_request(request: Request)
+        -_extract_event_data(event_data: Dict)
+        -_process_event(extracted_data: Dict, event_data: Dict)
+        -_format_response(response_text: str, event_data: Dict)
+        #_process_slash_command(command: str, arguments: str, extracted_data: Dict, event_data: Dict)*
+        #_process_message(text: str, extracted_data: Dict, event_data: Dict)*
+    }
+    
+    class YourSpecificBot {
+        +_process_slash_command(command: str, arguments: str, extracted_data: Dict, event_data: Dict)
+        +_process_message(text: str, extracted_data: Dict, event_data: Dict)
+    }
+    
+    GChatbot <|-- YourSpecificBot
+```
+
+### Formato de Resposta
+
+A biblioteca lida com dois formatos diferentes de resposta:
+
+1. **Formato Chat App API** (quando o evento tem a chave 'chat'):
+```json
+{
+  "hostAppDataAction": {
+    "chatDataAction": {
+      "createMessageAction": {
+        "message": {
+          "cardsV2": [/* card structure */]
+        }
+      }
+    }
+  }
+}
+```
+
+2. **Formato Webhook/Direto** (quando o evento não tem a chave 'chat'):
+```json
+{
+  "cardsV2": [/* card structure */]
+}
+```
+
+### Extração de Dados do Evento
+
+A biblioteca extrai as seguintes informações do evento:
+- Texto da mensagem (com menções e prefixos de comando removidos)
+- Comando e argumentos (se aplicável)
+- E-mail do usuário
+- Nome de exibição do usuário
+- Nome do espaço
+- Indicador se é uma mensagem direta
+
+## Configuração do Google Chat
+
+Para configurar seu bot no Google Chat:
+
+1. Acesse o [Google Chat Developer Console](https://console.cloud.google.com/apis/api/chat.googleapis.com)
+2. Crie um novo app do Chat
+3. Configure a URL do webhook para apontar para seu servidor
+4. Configure as permissões e escopos necessários
+5. Publique seu app
+
+## Desenvolvedores
+
+Esta biblioteca foi desenvolvida por:
+
+- João Matheus (Github: [joaomatheusrg](https://github.com/joaomatheusrg))
+- Guilherme Fialho (Github: [guilhermecf10](https://github.com/guilhermecf10))
+
+## Licença
+
+[MIT](LICENSE) 
