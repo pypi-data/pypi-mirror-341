@@ -1,0 +1,17 @@
+tropir/__init__.py,sha256=xYxenCgESzp7Gp7WkzKFg8qwJm3J1ETE_2TlIVVZSrs,2343
+tropir/anthropic_patch.py,sha256=ZwPn3dcxBZ--HkHY6UbyJzWy-jhmIKbMl12X6HRkIrk,29293
+tropir/bedrock_patch.py,sha256=KZoqc4N8NZ7DCl5L1MdehviYXq4f4t1ySqdtyLss7pw,24232
+tropir/cli.py,sha256=Mz4GVDaYOuwF2BeFne74eH7jsw6SZ8BIbmMxcYTw16Q,2988
+tropir/config.py,sha256=OfM0RPVGHGnSrQ_yYzyTJ6go44ff4l0c83Gv2nFcUrY,646
+tropir/constants.py,sha256=owNex2Q4luwFrv6F3xMzo23ShmtZvzRexAJ3Tzpr6hc,1024
+tropir/encoder.py,sha256=yqOsfx16tJ0nkgV_LoGYATauAFsuuUUi_3CHRCgsiMQ,315
+tropir/openai_patch.py,sha256=J33nUQZoV132rn3O4EJIEUN0cGEN3kxEdUrsFe6XQ80,33325
+tropir/openrouter_patch.py,sha256=S3hzwrAuk5TIuUR3Y-2x2YIHvuIKrZcpc0Cf4iCMBls,39548
+tropir/stack_tracing.py,sha256=xKFQxdYTx9lbbJj4dKcvUI7hPwjVM1wFtMCIvTcS6Og,24181
+tropir/transport.py,sha256=HapEYQy4xX9ZlV2soHqlGsoupcbWzMyhPfG1ad9O834,533
+tropir/utils.py,sha256=P9zvQ3NKlk3YX6PCS6I5-hPoIkW2gKGdZoO040viyQI,12003
+tropir-0.7.9.dist-info/METADATA,sha256=7qRq0INtfgH6Zwj78ri6rDpRXkNzE5MuUFg-w3dddhM,4106
+tropir-0.7.9.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+tropir-0.7.9.dist-info/entry_points.txt,sha256=u2zaibEs8BHrXyQN-PhI1pfneqwKc9C5NqS-tBE-BpM,43
+tropir-0.7.9.dist-info/top_level.txt,sha256=-KM8qYNVLQwJyggnLxqVAFd74RLIllHJ0oLcsq0n6js,7
+tropir-0.7.9.dist-info/RECORD,,
