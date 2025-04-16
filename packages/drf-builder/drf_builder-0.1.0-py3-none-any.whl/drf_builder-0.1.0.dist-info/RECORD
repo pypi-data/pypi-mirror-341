@@ -1,0 +1,17 @@
+drf_builder/__init__.py,sha256=SQvCMozDqNgBIT4Uy1K4MC26t4zimV8DmvoYzYY1-xA,1010
+drf_builder/exceptions.py,sha256=gc5pqNYJ6TFhSGTH0qWL99BcXeCNL5KdGpb8XOVTuO4,6631
+drf_builder/middleware.py,sha256=dWSzJoJtclTtrgD_cS1l5mk642uNaBLWJC2Vvk-vm2g,14494
+drf_builder/routers.py,sha256=jdTDSWm6kmhdJsmKiNWfETw-dE0xOQm1bEjljLuhBfM,2851
+drf_builder/serializers.py,sha256=2OgSv2MhWbT1Bd263rRAipEoqrcrQJLtHZChsR1gzSk,11305
+drf_builder/utils.py,sha256=R1KHHYraR-o5eRrSu6bIfmL5ycfyMeO6VY0OOp1_Cfc,9495
+drf_builder/views.py,sha256=M8ISEMLebKbjuv4cq4fv8sk4SiicNhD69gNo4dZgF-I,2237
+drf_builder/viewsets.py,sha256=C_QDwzkDX4QXoPDNsAzn1-0GSfOfKNlwTx2vPBTRkv4,30158
+drf_builder-0.1.0.dist-info/licenses/LICENSE,sha256=QjqFZYtt508ZCJqXZKVkYQ8UzPWIYjLLBh44-VKIhc0,1103
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=QoBf7IAJ2kQ4LQ3DU1T7pfi46ToA8_FdnGL9OrS-NG8,1058
+tests/test_drf_builder.py,sha256=xzJWKFVlrYckz_PAmqYYQDT0DixUPKPU7E-4EBLu1lw,4833
+tests/urls.py,sha256=ann3A-2mEBEyXzJ0W71aJUlwK1Gg43kAV3AgO-0UUG0,261
+drf_builder-0.1.0.dist-info/METADATA,sha256=Ut0X4Qzhf97JPBQdSp05jT7sGvL88cU9KAsTcg2dXyo,24470
+drf_builder-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+drf_builder-0.1.0.dist-info/top_level.txt,sha256=L_lEN4MbmlKGOxBKUFJ27ivdO2Vp7yMvkTNz56ORn4A,18
+drf_builder-0.1.0.dist-info/RECORD,,
