@@ -1,0 +1,10 @@
+sigepy/__init__.py,sha256=1utpEro6Gc6InKWOmRWNSweJxvsiFsUud9oun55Uf3c,974
+sigepy/fourier.py,sha256=26k24mkTFURsl7cjEkyW85R4a4tSv5WRCjs4M04tGWE,13833
+sigepy/ssi_cov.py,sha256=kBGovFY_eMY5pFlzxkLX-dtOrbBN4JjFK5RUUbntgNo,30403
+sigepy/utils.py,sha256=kNty8ySI8x9rOqoFxsLOokMv5dxGLsMX8XExl314zQ0,18171
+sigepy/wavelet.py,sha256=2rmGGejn0HfkP2fDEQ6yw9Ei9F9UWAmqYd8pYswK5Qw,30127
+sigepy-0.1.5.dist-info/licenses/LICENSE,sha256=v9AN_zhXIfHrSbYJRG-KtzR3e7mIOUZ4UYqNdktsXt0,1096
+sigepy-0.1.5.dist-info/METADATA,sha256=yytg3y9hkIMcpdi9pz6bU_7M1XpkE1C8b0h9tOH0uso,5553
+sigepy-0.1.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sigepy-0.1.5.dist-info/top_level.txt,sha256=o6W93HMrjh3-qTsByoFLUf42nHPUJ3WQe160dXKGad0,7
+sigepy-0.1.5.dist-info/RECORD,,
