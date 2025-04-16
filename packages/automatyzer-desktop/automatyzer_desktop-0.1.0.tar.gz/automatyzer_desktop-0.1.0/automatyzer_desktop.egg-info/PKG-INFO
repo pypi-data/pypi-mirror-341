@@ -1,0 +1,244 @@
+Metadata-Version: 2.4
+Name: automatyzer_desktop
+Version: 0.1.0
+Summary: Bot do automatyzacji zadań poprzez Remote Desktop
+Home-page: https://github.com/username/automatyzer_desktop
+Author: Twórca Bota
+Author-email: autor@example.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv>=0.21.0
+Requires-Dist: psutil>=5.9.0
+Requires-Dist: pyautogui>=0.9.53
+Requires-Dist: pillow>=9.2.0
+Requires-Dist: numpy>=1.23.0
+Requires-Dist: opencv-python>=4.6.0
+Requires-Dist: pytesseract>=0.3.10
+Requires-Dist: pyperclip>=1.8.2
+Requires-Dist: paramiko>=2.11.0
+Requires-Dist: imaplib2>=3.6
+Requires-Dist: email-validator>=1.2.1
+Requires-Dist: pywinctl>=0.0.5
+Provides-Extra: nlp
+Requires-Dist: spacy>=3.4.0; extra == "nlp"
+Requires-Dist: transformers>=4.24.0; extra == "nlp"
+Requires-Dist: torch>=1.13.0; extra == "nlp"
+Requires-Dist: SpeechRecognition>=3.8.1; extra == "nlp"
+Requires-Dist: pyaudio>=0.2.12; extra == "nlp"
+Requires-Dist: python-Levenshtein>=0.12.2; extra == "nlp"
+Requires-Dist: tensorflow>=2.10.0; extra == "nlp"
+Provides-Extra: data
+Requires-Dist: pandas>=1.5.0; extra == "data"
+Requires-Dist: matplotlib>=3.6.0; extra == "data"
+Requires-Dist: seaborn>=0.12.0; extra == "data"
+Requires-Dist: scikit-learn>=1.1.0; extra == "data"
+Provides-Extra: test
+Requires-Dist: pytest>=7.2.0; extra == "test"
+Requires-Dist: pytest-cov>=4.0.0; extra == "test"
+Requires-Dist: pytest-mock>=3.10.0; extra == "test"
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Provides-Extra: all
+Requires-Dist: spacy>=3.4.0; extra == "all"
+Requires-Dist: transformers>=4.24.0; extra == "all"
+Requires-Dist: torch>=1.13.0; extra == "all"
+Requires-Dist: SpeechRecognition>=3.8.1; extra == "all"
+Requires-Dist: pyaudio>=0.2.12; extra == "all"
+Requires-Dist: python-Levenshtein>=0.12.2; extra == "all"
+Requires-Dist: tensorflow>=2.10.0; extra == "all"
+Requires-Dist: pandas>=1.5.0; extra == "all"
+Requires-Dist: matplotlib>=3.6.0; extra == "all"
+Requires-Dist: seaborn>=0.12.0; extra == "all"
+Requires-Dist: scikit-learn>=1.1.0; extra == "all"
+Requires-Dist: pytest>=7.2.0; extra == "all"
+Requires-Dist: pytest-cov>=4.0.0; extra == "all"
+Requires-Dist: pytest-mock>=3.10.0; extra == "all"
+Requires-Dist: black; extra == "all"
+Requires-Dist: isort; extra == "all"
+Requires-Dist: flake8; extra == "all"
+Requires-Dist: mypy; extra == "all"
+Requires-Dist: pre-commit; extra == "all"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+# desktop-bot
+
+# Desktop Automation Bot
+
+A powerful desktop automation tool that can connect via Remote Desktop Protocol (RDP) and perform actions based on text commands across different operating systems.
+
+## Features
+
+- Connect to remote computers via RDP
+- Automate mouse actions (clicking, scrolling)
+- Simulate keyboard inputs
+- Screen element detection through image recognition
+- Optical Character Recognition (OCR)
+- Email retrieval and code extraction
+- Cross-platform shell command execution
+
+## Prerequisites
+
+### System Dependencies
+- Python 3.8+
+- Tesseract OCR
+- Additional system libraries depending on your OS
+
+### Installation Steps
+
+1. Clone the repository
+```bash
+git clone https://github.com/automatyzer/desktop-bot.git
+cd desktop-bot
+```
+
+2. Create and activate a virtual environment
+```bash
+# On Windows
+python -m venv venv
+venv\Scripts\activate
+
+# On macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+3. Install system dependencies
+
+#### Windows
+```powershell
+# Install Tesseract OCR from official website
+# Download and add to PATH: https://github.com/UB-Mannheim/tesseract/wiki
+pip install -r requirements.txt
+```
+
+#### Ubuntu/Debian
+```bash
+# Install system dependencies
+sudo apt-get update
+sudo apt-get install -y \
+    python3-pip \
+    python3-venv \
+    tesseract-ocr \
+    libgl1-mesa-glx \
+    xvfb \
+    xserver-xorg-video-dummy
+
+# Install Python dependencies
+pip install -r requirements.txt
+```
+
+#### macOS
+```bash
+# Install Tesseract via Homebrew
+brew install tesseract
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+4. Verify Installation
+```bash
+# Check installed modules
+pip list
+
+# Run the application
+python app.py
+```
+
+### Troubleshooting Common Issues
+
+#### Missing Module Errors
+If you encounter `ModuleNotFoundError`, ensure:
+- Virtual environment is activated
+- All requirements are installed with `pip install -r requirements.txt`
+- You're using the correct Python interpreter from the virtual environment
+
+#### Tesseract OCR Configuration
+- Ensure Tesseract is installed and accessible
+- Update `tesseract_path` in `config.ini` if needed
+
+### Usage Examples
+
+```python
+# Create bot instance
+bot = AutomationBot()
+
+# Connect via RDP
+bot.connect_rdp(host="example.com", username="user", password="pass")
+
+# Execute tasks
+bot.execute_task("open application firefox")
+bot.execute_task("login to linkedin portal")
+```
+
+### Command Line Usage
+
+```bash
+# Execute single task
+python automatyzer_desktop.py --task "open application firefox"
+
+# Run script with multiple tasks
+python automatyzer_desktop.py --script tasks.txt
+```
+
+### Configuration
+
+Customize `config.ini` for:
+- RDP Connection settings
+- Email retrieval
+- Delay between actions
+- Tesseract OCR path
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+
+## Disclaimer
+
+This tool is for educational and authorized testing purposes only. Always obtain proper authorization before accessing remote systems.
+
+
+## Quick Start
+
+### Local Development
+1. Create virtual environment
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python app.py
+```
