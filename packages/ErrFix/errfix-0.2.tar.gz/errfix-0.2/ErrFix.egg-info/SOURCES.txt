@@ -1,0 +1,8 @@
+README.md
+setup.py
+ErrFix.egg-info/PKG-INFO
+ErrFix.egg-info/SOURCES.txt
+ErrFix.egg-info/dependency_links.txt
+ErrFix.egg-info/top_level.txt
+errfix/__init__.py
+errfix/errfix.py
