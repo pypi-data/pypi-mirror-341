@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: tree-rank
+Version: 0.1.0
+Summary: Prints a clean directory structure, ignoring unnecessary folders across tech stacks
+Author-email: Sushruth Samson <samsushruth@gmail.com>
+License-Expression: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# tree-rank
+
+`tree-rank` is a Python CLI tool that prints a clean, pretty directory tree while ignoring unnecessary clutter from Python, JavaScript, and other common tech stacks.
+
+## 🚀 Install
+
+```bash
+pip install tree-rank
+
+```
+## 🧪 Usage
+
+```bash
+tree-rank
+```
+
+## Expected Output
+```chatinput
+tree-rank/
+├── tree_rank/
+│   ├── __init__.py
+│   └── core.py          ← main logic
+├── pyproject.toml       ← modern build config
+├── README.md            ← optional
+└── LICENSE              ← MIT recommended
+
+```
