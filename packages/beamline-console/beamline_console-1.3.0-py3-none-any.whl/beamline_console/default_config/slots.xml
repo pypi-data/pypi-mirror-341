@@ -1,0 +1,6 @@
+<beamline_settings version="1.0">
+<!--    <slot name="Slot_1" access="all">-->
+<!--        <widget x="532" y="90" width="133" height="54"/>-->
+<!--        <snapshot motor1="Сarrousel/mot_01" motor2="Сarrousel/mot_02"/>-->
+<!--    </slot>-->
+</beamline_settings>
