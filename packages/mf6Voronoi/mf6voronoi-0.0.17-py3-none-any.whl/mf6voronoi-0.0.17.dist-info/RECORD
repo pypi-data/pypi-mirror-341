@@ -1,0 +1,14 @@
+mf6Voronoi/__init__.py,sha256=q5ZJU8yAvm0iakpVV1oARsDIKKZ629L7PDtY7xuUJjc,63
+mf6Voronoi/geoUtils.py,sha256=9eXJy3esepZ-eZXbuSxco-GWv7o9I1CFbdG-LhpNf_Q,24156
+mf6Voronoi/geoVoronoi.py,sha256=XueR77MJqiY3MnAmLT8IvCvdFq86aDMTLbIzg84ITH4,16525
+mf6Voronoi/meshProperties.py,sha256=39QMo9bGbpd_yXujljfLhPuYkXScmOQ8Jj5T_0mXz9E,4445
+mf6Voronoi/utils.py,sha256=iYZRqP8K7Seq_YzmxGsFR-Y0bdyw7xViV5eCR20LwBE,13115
+mf6Voronoi/examples/notebooks/p1_generateVoronoi.ipynb,sha256=vjpx-msUkD3rTHkCEcA8cnawToijdeR2Z-1ukqyQk5A,3414
+mf6Voronoi/examples/notebooks/p2_modelCreation.ipynb,sha256=qJoKINXSCIYCx5o_q_5DVcYHZhdv-uCHRGLqwX33eAQ,10772
+mf6Voronoi/examples/notebooks/p3_obsCalculated.ipynb,sha256=Awl7mqtoxuJIbI4xaXAoi6-p70Tyryc_VT7wadxgqrU,6338
+mf6Voronoi/examples/notebooks/p4_vtkGeneration.ipynb,sha256=bUNVqggixWw8xlCItAXzs0_2PHgyNzJe7ZwZzDU6QOA,6979
+mf6voronoi-0.0.17.dist-info/licenses/LICENSE,sha256=0iwn6i1faCJte8DfDphN5RsDwusCcJw_yZ-WcumB8bw,1096
+mf6voronoi-0.0.17.dist-info/METADATA,sha256=lGAPkx_l2Y3FU9r_NiCd015O5I-sBKIq4pYhS2NSJws,2977
+mf6voronoi-0.0.17.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mf6voronoi-0.0.17.dist-info/top_level.txt,sha256=UiwIOiETqxlEAgLPiQK-xDR0_t281Y5v9sb9vFro_Cs,11
+mf6voronoi-0.0.17.dist-info/RECORD,,
