@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+mopaint/__init__.py
+mopaint.egg-info/PKG-INFO
+mopaint.egg-info/SOURCES.txt
+mopaint.egg-info/dependency_links.txt
+mopaint.egg-info/requires.txt
+mopaint.egg-info/top_level.txt
+mopaint/static/draw.css
+mopaint/static/draw.js
+mopaint/static/styles.css
+tests/__init__.py
+tests/test_basics.py
