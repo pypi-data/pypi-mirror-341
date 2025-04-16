@@ -1,0 +1,12 @@
+src/mcp_server_tos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/mcp_server_tos/config.py,sha256=wfuEjdFjUmCEHl6CfmeuuGBOQyki6aEevOaLjJI0omM,1701
+src/mcp_server_tos/main.py,sha256=kPtWNtHpwdDarmNeIgj0oSDjC9DXVixZwPeBe6Y8608,1119
+src/mcp_server_tos/server.py,sha256=Frf7HsnI9q22uKk2lMkmDFnIEiwK8l0dX1RjXkzDoEc,2287
+src/mcp_server_tos/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/mcp_server_tos/resources/bucket.py,sha256=VvhTxVBWsFagqIzGujt5IF2Z27oApYcI6DFvWIyLReM,1782
+src/mcp_server_tos/resources/object.py,sha256=gfSc0Zmn4NUGm3A6sxdxgi35DePNHeCN1O7YNnUQRjU,1656
+src/mcp_server_tos/resources/service.py,sha256=w2R6rwDAxQ1ZWs2zsP4oe85N8kL57aB0Xw16qdecw8c,7652
+mseep_mcp_server_tos-0.1.0.dist-info/METADATA,sha256=7N2ZcoosCEnrwkvEPZGgPE-XZozxuRWvY0lAkObpeQM,2622
+mseep_mcp_server_tos-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp_server_tos-0.1.0.dist-info/entry_points.txt,sha256=KShFPpd0r7X91G2vOmFxSFXVptyx7fjOxVR4wg6bNFA,60
+mseep_mcp_server_tos-0.1.0.dist-info/RECORD,,
