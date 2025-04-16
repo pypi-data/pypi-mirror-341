@@ -1,0 +1,307 @@
+Metadata-Version: 2.4
+Name: jumpad-sdk-client
+Version: 0.1.0
+Summary: A powerful and user-friendly Python client for interacting with the Jumpad AI Agent SDK
+Home-page: https://github.com/jumpad-ai/jumpad-python-sdk
+Author: Jumpad AI
+Author-email: info@jumpad.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Jumpad SDK Client
+
+A powerful and user-friendly Python client for interacting with the Jumpad AI Agent SDK.
+
+## Features
+
+- Easy-to-use SDK for starting chats and sending messages
+- Automatic tracking of conversation history
+- Duplicate message prevention
+- Helper methods for extracting different types of messages
+- Pretty-formatted conversation output
+
+## Installation
+
+```bash
+pip install jumpad-sdk-client
+```
+
+Or install from source:
+
+```bash
+git clone https://github.com/jumpad-ai/jumpad-python-sdk.git
+cd jumpad-python-sdk
+pip install -e .
+```
+
+## Quick Start
+
+```python
+from jumpad_sdk_client import LLMAgentClient
+
+# Initialize the client
+BASE_URL = "https://fusion-workspace.jumpad.ai"
+API_KEY = "your_api_key_here"
+AGENT_ID = "your_agent_id_here"
+
+client = LLMAgentClient(endpoint=BASE_URL, api_key=API_KEY)
+
+# Start a chat session
+response = client.start_chat(
+    agent_id=AGENT_ID,
+    initial_message="Hi Agent, can you introduce yourself?"
+)
+
+# Extract the chat ID
+chat_id = client.get_chat_id_from_response(response)
+print(f"Chat started with ID: {chat_id}")
+
+# Get the agent's response
+agent_response = client.get_agent_response_from_chat(response)
+print(f"Agent says: {agent_response}")
+
+# Send a follow-up message
+send_response = client.send_message(
+    chat_id=chat_id,
+    message="Thanks! Now tell me a fun fact."
+)
+
+# Get the agent's reply to your message
+try:
+    agent_reply = client.get_agent_reply_to_message(send_response)
+    print(f"Agent's reply: {agent_reply}")
+except ValueError:
+    print("Agent didn't reply immediately")
+```
+
+## Working with Conversations
+
+### Viewing the Complete Conversation
+
+```python
+# Get nicely formatted conversation history
+formatted_history = client.get_tracked_messages(chat_id, format_output=True)
+print(formatted_history)
+
+# Output example:
+# ===== Conversation History =====
+#
+# 1. 👤 You: Hi Agent, can you introduce yourself?
+#
+# 2. 🤖 Agent: Hello! I'm the Jumpad AI assistant...
+#
+# 3. 👤 You: Thanks! Now tell me a fun fact.
+#
+# 4. 🤖 Agent: Here's a fun fact: Honey never spoils...
+```
+
+### Working with User Messages
+
+```python
+# Get all user messages in formatted output
+try:
+    user_messages = client.get_tracked_user_messages(chat_id, format_output=True)
+    print(user_messages)
+except ValueError as e:
+    print(f"Error: {e}")
+
+# Get raw user message data for processing
+try:
+    user_messages_data = client.get_tracked_user_messages(chat_id)
+    for msg in user_messages_data:
+        print(f"ID: {msg.get('id')}, Message: {msg.get('message')}")
+except ValueError as e:
+    print(f"Error: {e}")
+```
+
+### Working with Agent Messages
+
+```python
+# Get all agent responses in formatted output
+try:
+    agent_messages = client.get_tracked_agent_messages(chat_id, format_output=True)
+    print(agent_messages)
+except ValueError as e:
+    print(f"Error: {e}")
+
+# Get raw agent message data for processing
+try:
+    agent_messages_data = client.get_tracked_agent_messages(chat_id)
+    for msg in agent_messages_data:
+        print(f"ID: {msg.get('id')}, Message: {msg.get('message')}")
+except ValueError as e:
+    print(f"Error: {e}")
+```
+
+## Advanced Usage
+
+### Getting Chat Details
+
+```python
+# Get chat metadata without messages
+chat_details = client.get_chat_history(chat_id)
+print(f"Chat title: {chat_details.get('title')}")
+print(f"Chat created at: {chat_details.get('created_at')}")
+
+# Get chat with messages
+chat_with_messages = client.get_chat_with_messages(chat_id)
+```
+
+### Extracting Message Details
+
+```python
+# After sending a message
+send_response = client.send_message(chat_id, "Hello there!")
+
+# Extract the sent message content
+message_content = client.get_sent_message_content(send_response)
+
+# Extract the sent message ID
+message_id = client.get_sent_message_id(send_response)
+
+# Extract the agent's reply if available
+try:
+    agent_reply = client.get_agent_reply_to_message(send_response)
+except ValueError:
+    print("No immediate reply from agent")
+```
+
+### Getting Raw SDK Responses
+
+```python
+# Get the raw SDK response
+raw_response = client.get_raw_response(response)
+print(json.dumps(raw_response, indent=2))
+```
+
+## Error Handling
+
+The client includes comprehensive error handling:
+
+```python
+from jumpad_sdk_client import LLMAgentClient, LLMAgentError
+
+try:
+    # Your code here
+    response = client.send_message(chat_id, "Hello")
+except LLMAgentError as e:
+    print(f"SDK Error: {e.status_code} - {e.error_message}")
+    if e.response_body:
+        print(f"Response Body: {e.response_body}")
+except ValueError as e:
+    print(f"Value Error: {e}")
+except Exception as e:
+    print(f"Unexpected Error: {e}")
+```
+
+## Complete Example
+
+```python
+import os
+import json
+from jumpad_sdk_client import LLMAgentClient, LLMAgentError
+
+# Configuration
+BASE_URL = "https://fusion-workspace.jumpad.ai"
+API_KEY = "your_api_key_here"  # Replace with your actual API key
+AGENT_ID = "your_agent_id_here"  # Replace with your actual agent ID
+
+def main():
+    try:
+        # Initialize the client
+        client = LLMAgentClient(endpoint=BASE_URL, api_key=API_KEY)
+        print("Client initialized.")
+
+        # Start a new chat
+        initial_message = "Hi Agent, can you introduce yourself?"
+        start_response = client.start_chat(
+            agent_id=AGENT_ID,
+            initial_message=initial_message
+        )
+        
+        # Get the chat ID
+        chat_id = client.get_chat_id_from_response(start_response)
+        print(f"Chat started with ID: {chat_id}")
+        
+        # Get the agent's response
+        try:
+            agent_response = client.get_agent_response_from_chat(start_response)
+            print(f"Agent says: {agent_response}")
+        except ValueError as e:
+            print(f"No agent response found: {e}")
+        
+        # Send a follow-up message
+        follow_up = "Thanks! Tell me about your capabilities."
+        send_response = client.send_message(chat_id=chat_id, message=follow_up)
+        
+        # Try to get the agent's immediate reply
+        try:
+            reply = client.get_agent_reply_to_message(send_response)
+            print(f"Agent reply: {reply}")
+        except ValueError:
+            print("No immediate reply from agent")
+        
+        # Display the complete conversation
+        print("\nComplete conversation:")
+        conversation = client.get_tracked_messages(chat_id, format_output=True)
+        print(conversation)
+        
+    except LLMAgentError as e:
+        print(f"SDK Error: {e.status_code} - {e.error_message}")
+        if e.response_body:
+            print(f"Response: {json.dumps(e.response_body, indent=2)}")
+    except ValueError as e:
+        print(f"Value Error: {e}")
+    except Exception as e:
+        print(f"Unexpected Error: {e}")
+
+if __name__ == "__main__":
+    main()
+```
+
+## SDK Reference
+
+### LLMAgentClient
+
+- `__init__(endpoint: str, api_key: str)` - Initialize the client
+- `start_chat(agent_id: str, initial_message: str)` - Start a new chat
+- `send_message(chat_id: str, message: str)` - Send a message to an existing chat
+- `get_chat_history(chat_id: str)` - Get chat metadata
+- `get_chat_with_messages(chat_id: str)` - Get chat with tracked messages
+
+### Helper Methods
+
+- `get_chat_id_from_response(response)` - Extract chat ID from response
+- `get_agent_response_from_chat(response)` - Extract agent response
+- `get_sent_message_content(response)` - Get content of sent message
+- `get_sent_message_id(response)` - Get ID of sent message 
+- `get_agent_reply_to_message(response)` - Get agent's reply to a message
+
+### Message Tracking
+
+- `get_tracked_messages(chat_id, format_output=False)` - Get all messages
+- `get_tracked_user_messages(chat_id, format_output=False)` - Get user messages
+- `get_tracked_agent_messages(chat_id, format_output=False)` - Get agent messages
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
