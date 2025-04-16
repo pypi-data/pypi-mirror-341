@@ -1,0 +1,11 @@
+astropy
+astroquery
+Fraction
+ipython!=8.17.1,<9.0.0,>=8.13.0
+matplotlib
+numpy<2
+pandas
+periodictable
+roman
+sympy
+tqdm
