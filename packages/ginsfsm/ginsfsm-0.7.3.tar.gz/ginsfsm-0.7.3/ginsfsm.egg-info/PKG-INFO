@@ -1,0 +1,91 @@
+Metadata-Version: 2.4
+Name: ginsfsm
+Version: 0.7.3
+Summary: GinsFSM, a library to develop systems based on finite-state machines. Includes full async HTTP/WSGI/WinSocket/SockJS servers.
+Author-email: Ginés Martínez <ginsmar@artgins.com>
+License: MIT License
+Project-URL: Homepage, https://pythonhosted.org/ginsfsm/index.html
+Project-URL: Repository, https://github.com/niyamaka/ginsfsm
+Keywords: framework,communication,fsm,finite state machine,wsgi,http,socket,poll,epoll,kqueue,select,server,client,workflow,pyramid,websocket,sockjs
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Communications
+Classifier: Topic :: System :: Networking
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=2.6
+Description-Content-Type: text/markdown
+Requires-Dist: PasteDeploy>=1.5.0
+Requires-Dist: Pyramid>=1.4
+Provides-Extra: rst
+Requires-Dist: docutils; extra == "rst"
+Requires-Dist: svgwrite; extra == "rst"
+Requires-Dist: pillow; extra == "rst"
+
+# GinsFSM
+
+```{note}
+
+    This project is finalized.
+
+    I'm re-writing the idea of ginsfsm in C language.
+
+```
+
+## The name of the new project is [`Yuneta Simplified`](https://github.com/artgins/yunetas).
+
+## Key Concepts
+
+Can you **draw your development**?
+
+Can you **view the behavior of your application in real time**?
+
+With this framework, **you can**!
+
+GinsFSM is a Python library for developing systems based on [finite-state machines](http://en.wikipedia.org/wiki/Finite-state_machine).
+This model is especially useful for building networking and communication applications.
+
+- All objects, called **gobjs**, are instances of a class derived from `ginsfsm.gobj.GObj`.
+- Each `GObj` has an internal **simple-machine** that defines its behavior.
+- Communication between `gobjs` happens through **events**.
+
+As a result, the system is **fully asynchronous and event-driven**.
+
+All objects share a simple and consistent interface — just change the event name and the data payload.
+
+## Features
+
+- Fully asynchronous HTTP server  
+- WSGI server  
+- WinSocket server/client compatible with [`sockjs`](https://github.com/sockjs/sockjs-client)  
+
+You can run **multiple WSGI applications** simultaneously.
+
+## Project Scaffolding
+
+GinsFSM includes a variety of scaffolds to help you generate new projects.
+
+Similar to the [`Pyramid`](http://www.pylonsproject.org/) framework's `pcreate` / `pserve` commands,  
+GinsFSM provides `gcreate` / `gserve` commands for creating and running projects.
+
+Using the `gcreate` command with the `multi_pyramid_wsgi` scaffold, you can generate a project with multiple WSGI applications —  
+one of which can be a `Pyramid` WSGI application.
+
+`GObj` objects are Pyramid "location-aware" resources, and the object model is a **hierarchical tree** —  
+making **traversal dispatching** a natural fit.
+
+## Support and Documentation
+
+- Documentation: [ginsfsm](https://pythonhosted.org/ginsfsm/index.html)  
+- Source Code: [GitHub](https://github.com/niyamaka/ginsfsm)
+
+## License
+
+Copyright (c) 2012, Ginés Martínez Sánchez.  
+GinsFSM is released under the terms of the [MIT License](http://www.opensource.org/licenses/mit-license)
