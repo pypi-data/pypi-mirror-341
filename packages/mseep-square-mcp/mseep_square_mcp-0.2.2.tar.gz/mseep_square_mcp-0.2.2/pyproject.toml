@@ -1,0 +1,47 @@
+[project]
+name = "mseep-square-mcp"
+version = "0.2.2"
+description = "Square API Model Context Protocol Server"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Max Novich", email = "mnovich@block.xyz" },
+]
+keywords = [
+    "square",
+    "mcp",
+    "api",
+    "payments",
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "mcp[cli]>=1.2.0",
+    "squareup>=33.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Kvadratni/square-mcp"
+Repository = "https://github.com/Kvadratni/square-mcp"
+Documentation = "https://github.com/Kvadratni/square-mcp#readme"
+"Bug Tracker" = "https://github.com/Kvadratni/square-mcp/issues"
+
+[project.scripts]
+square-mcp = "square_mcp:main"
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src",
+]

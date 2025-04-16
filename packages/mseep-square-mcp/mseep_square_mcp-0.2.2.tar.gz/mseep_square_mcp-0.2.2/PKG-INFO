@@ -1,0 +1,60 @@
+Metadata-Version: 2.4
+Name: mseep-square-mcp
+Version: 0.2.2
+Summary: Square API Model Context Protocol Server
+Project-URL: Homepage, https://github.com/Kvadratni/square-mcp
+Project-URL: Repository, https://github.com/Kvadratni/square-mcp
+Project-URL: Documentation, https://github.com/Kvadratni/square-mcp#readme
+Project-URL: Bug Tracker, https://github.com/Kvadratni/square-mcp/issues
+Author-email: Max Novich <mnovich@block.xyz>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: api,mcp,payments,square
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Requires-Dist: mcp[cli]>=1.2.0
+Requires-Dist: squareup>=33.1.0
+Description-Content-Type: text/markdown
+
+# Square MCP Server
+
+A Model Context Protocol (MCP) server that provides access to Square API functionality.
+
+## Setup
+
+1. Install dependencies:
+```bash
+uv sync
+```
+
+2. Set environment variables:
+```bash
+# Required
+export SQUARE_ACCESS_TOKEN=your_access_token_here
+
+# Optional - defaults to 'sandbox' if not set
+export SQUARE_ENVIRONMENT=sandbox  # or 'production' for production environment
+```
+
+3. Run the server:
+```bash
+uv pip install .
+square-mcp
+```
+
+Or for development:
+```bash
+source .venv/bin/activate
+mcp dev src/square_mcp/server.py
+```
+
+## Environment Variables
+
+| Variable | Required | Default | Description |
+|----------|----------|---------|-------------|
+| `SQUARE_ACCESS_TOKEN` | Yes | - | Your Square API access token |
+| `SQUARE_ENVIRONMENT` | No | `sandbox` | Square API environment (`sandbox` or `production`) |
