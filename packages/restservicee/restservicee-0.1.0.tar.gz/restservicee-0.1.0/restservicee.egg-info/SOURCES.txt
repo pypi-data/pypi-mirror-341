@@ -1,0 +1,6 @@
+setup.py
+restservicee/__init__.py
+restservicee.egg-info/PKG-INFO
+restservicee.egg-info/SOURCES.txt
+restservicee.egg-info/dependency_links.txt
+restservicee.egg-info/top_level.txt
