@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: django-wallet-hacrjit
+Version: 0.1.2
+Summary: A plug-and-play Django wallet app
+Home-page: https://github.com/hacrjit/django-wallet
+Author: Abhishek Hacrjit Singh
+Author-email: techabhi.me@gmail.com
+License: MIT
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: django>=3.2
+Requires-Dist: djangorestframework
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# ewallet
