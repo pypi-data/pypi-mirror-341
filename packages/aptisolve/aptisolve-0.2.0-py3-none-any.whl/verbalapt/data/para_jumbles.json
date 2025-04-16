@@ -1,0 +1,212 @@
+[
+    {
+        "sentences": [
+            "The sun was setting behind the mountains.",
+            "It was a beautiful evening in the countryside.",
+            "Birds were returning to their nests.",
+            "The sky was painted with hues of orange and purple."
+        ],
+        "correct_order": [
+            1,
+            0,
+            3,
+            2
+        ],
+        "explanation": "The paragraph starts with setting the scene, then describes the sunset and sky, and ends with the birds."
+    },
+    {
+        "sentences": [
+            "First sentence.",
+            "Second sentence.",
+            "Third sentence.",
+            "Fourth sentence."
+        ],
+        "correct_order": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "explanation": ""
+    },
+    {
+        "sentences": [
+            "First sentence.",
+            "Second sentence.",
+            "Third sentence.",
+            "Fourth sentence."
+        ],
+        "correct_order": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "explanation": ""
+    },
+    {
+        "sentences": [
+            "The sun was setting behind the mountains.",
+            "It was a beautiful evening in the countryside.",
+            "Birds were returning to their nests.",
+            "The sky was painted with hues of orange and purple."
+        ],
+        "correct_order": [
+            1,
+            0,
+            3,
+            2
+        ],
+        "explanation": "The paragraph starts with setting the scene, then describes the sunset and sky, and ends with the birds."
+    },
+    {
+        "sentences": [
+            "First sentence.",
+            "Second sentence.",
+            "Third sentence.",
+            "Fourth sentence."
+        ],
+        "correct_order": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "explanation": ""
+    },
+    {
+        "sentences": [
+            "The sun was setting behind the mountains.",
+            "It was a beautiful evening in the countryside.",
+            "Birds were returning to their nests.",
+            "The sky was painted with hues of orange and purple."
+        ],
+        "correct_order": [
+            1,
+            0,
+            3,
+            2
+        ],
+        "explanation": "The paragraph starts with setting the scene, then describes the sunset and sky, and ends with the birds."
+    },
+    {
+        "sentences": [
+            "First sentence.",
+            "Second sentence.",
+            "Third sentence.",
+            "Fourth sentence."
+        ],
+        "correct_order": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "explanation": ""
+    },
+    {
+        "sentences": [
+            "The sun was setting behind the mountains.",
+            "It was a beautiful evening in the countryside.",
+            "Birds were returning to their nests.",
+            "The sky was painted with hues of orange and purple."
+        ],
+        "correct_order": [
+            1,
+            0,
+            3,
+            2
+        ],
+        "explanation": "The paragraph starts with setting the scene, then describes the sunset and sky, and ends with the birds."
+    },
+    {
+        "sentences": [
+            "First sentence.",
+            "Second sentence.",
+            "Third sentence.",
+            "Fourth sentence."
+        ],
+        "correct_order": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "explanation": ""
+    },
+    {
+        "sentences": [
+            "The sun was setting behind the mountains.",
+            "It was a beautiful evening in the countryside.",
+            "Birds were returning to their nests.",
+            "The sky was painted with hues of orange and purple."
+        ],
+        "correct_order": [
+            1,
+            0,
+            3,
+            2
+        ],
+        "explanation": "The paragraph starts with setting the scene, then describes the sunset and sky, and ends with the birds."
+    },
+    {
+        "sentences": [
+            "First sentence.",
+            "Second sentence.",
+            "Third sentence.",
+            "Fourth sentence."
+        ],
+        "correct_order": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "explanation": ""
+    },
+    {
+        "sentences": [
+            "The sun was setting behind the mountains.",
+            "It was a beautiful evening in the countryside.",
+            "Birds were returning to their nests.",
+            "The sky was painted with hues of orange and purple."
+        ],
+        "correct_order": [
+            1,
+            0,
+            3,
+            2
+        ],
+        "explanation": "The paragraph starts with setting the scene, then describes the sunset and sky, and ends with the birds."
+    },
+    {
+        "sentences": [
+            "First sentence.",
+            "Second sentence.",
+            "Third sentence.",
+            "Fourth sentence."
+        ],
+        "correct_order": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "explanation": ""
+    },
+    {
+        "sentences": [
+            "The sun was setting behind the mountains.",
+            "It was a beautiful evening in the countryside.",
+            "Birds were returning to their nests.",
+            "The sky was painted with hues of orange and purple."
+        ],
+        "correct_order": [
+            1,
+            0,
+            3,
+            2
+        ],
+        "explanation": "The paragraph starts with setting the scene, then describes the sunset and sky, and ends with the birds."
+    }
+]

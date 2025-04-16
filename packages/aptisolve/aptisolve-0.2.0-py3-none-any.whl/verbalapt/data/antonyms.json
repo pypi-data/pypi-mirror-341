@@ -1,0 +1,17 @@
+[
+    {
+        "word": "happy",
+        "antonyms": ["sad", "unhappy", "miserable", "depressed", "gloomy"],
+        "type": "antonym"
+    },
+    {
+        "word": "big",
+        "antonyms": ["small", "tiny", "little", "miniature", "minute"],
+        "type": "antonym"
+    },
+    {
+        "word": "fast",
+        "antonyms": ["slow", "sluggish", "unhurried", "leisurely", "gradual"],
+        "type": "antonym"
+    }
+]
