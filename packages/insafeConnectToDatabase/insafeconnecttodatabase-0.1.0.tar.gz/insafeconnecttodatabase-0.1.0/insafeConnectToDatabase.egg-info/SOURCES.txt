@@ -1,0 +1,12 @@
+README.md
+setup.py
+insafeConnectToDatabase.egg-info/PKG-INFO
+insafeConnectToDatabase.egg-info/SOURCES.txt
+insafeConnectToDatabase.egg-info/dependency_links.txt
+insafeConnectToDatabase.egg-info/requires.txt
+insafeConnectToDatabase.egg-info/top_level.txt
+src/__init__.py
+src/connection.py
+src/databaseConnection.py
+src/util/__init__.py
+src/util/wait_for_proxy.py
