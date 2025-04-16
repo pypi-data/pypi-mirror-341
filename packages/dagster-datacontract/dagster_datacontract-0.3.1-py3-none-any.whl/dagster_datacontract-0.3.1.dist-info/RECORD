@@ -1,0 +1,14 @@
+dagster_datacontract/__init__.py,sha256=Pzq4AblLnDhW0QBmV8ntV5KLD0a7D0-mA2Lw9hjS_V8,5685
+dagster_datacontract/description/__init__.py,sha256=ulWqPp5jIPvCzaDFZcjLjcDkljJ5j_FRsE0dXhK8Wlc,104
+dagster_datacontract/description/description.py,sha256=FmjgCYDpJ9UHrvAv0sAthfRohDjdG0lL1XcMKK8QMmI,1646
+dagster_datacontract/metadata/__init__.py,sha256=e-xmcWWoAhmKTwosshsxnyrjI1j-UyY6YpdpzA2ggF4,269
+dagster_datacontract/metadata/server_information.py,sha256=jk_H8aI5PdGzIeoYThlhhZMSOtBh-6xc8QAFz0BFesU,3512
+dagster_datacontract/metadata/table_colums.py,sha256=Q7ZCiMReWU4-T2YfBvtt5vvoVXEoUgzK5OPMxQEgzpQ,4013
+dagster_datacontract/tags/__init__.py,sha256=2Ph-M0WbBKUjJWIzM_cEBW3SQZh7Nq8oy5MbD5bt_lc,76
+dagster_datacontract/tags/tags.py,sha256=aZ_HTkc-vjJ_rofT32fT_zrLCt9x1ZGn8XoihhOMhfU,1414
+dagster_datacontract/utils/__init__.py,sha256=Zfbuf20Eorf7BD8gSDASiPqgPwWu8Mz03r3aa2zE4NA,1106
+dagster_datacontract-0.3.1.dist-info/licenses/LICENSE,sha256=9ULsEM1ICzCaGoso40plwO-d_SCQ7nsU6ZA4xgfaRq8,11338
+dagster_datacontract-0.3.1.dist-info/METADATA,sha256=P98oLsqB-GCJz4uanki-xtG3UnZCHD0biDMUYIZMEhc,3029
+dagster_datacontract-0.3.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dagster_datacontract-0.3.1.dist-info/top_level.txt,sha256=_HUQ6OJ50Q0VZxEkdocTtxk1QkJpztb1QY7A0rcvtCE,21
+dagster_datacontract-0.3.1.dist-info/RECORD,,
