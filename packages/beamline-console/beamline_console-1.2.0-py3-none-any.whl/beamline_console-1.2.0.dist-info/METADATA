@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: beamline-console
+Version: 1.2.0
+Summary: GUI for experimental control
+Home-page: UNKNOWN
+Author: Yury Matveev
+Author-email: yury.matveev@desy.de
+License: GPLv3
+Download-URL: https://gitlab.desy.de/yury.matveev/beamline_console.git
+Platform: Linux
+Platform: Windows
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: attrs
+Requires-Dist: numpy
+Requires-Dist: psutil
+Requires-Dist: pyqt5
+Requires-Dist: pyqtgraph (>=0.11)
+Requires-Dist: pyshortcuts
+Requires-Dist: python-dateutil
+
+GUI for experimental control
+
+
