@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: excelipy
+Version: 0.1.0
+Summary: Wrapper around xlsxwriter to improve usability
+Requires-Python: >=3.9.10
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pydantic>=2.11.3
+Requires-Dist: xlsxwriter>=3.2.2
+
+# Excelipy
+
+[![codecov](https://codecov.io/gh/choinhet/excelipy/graph/badge.svg?token=${CODECOV_TOKEN})](https://codecov.io/gh/choinhet/excelipy)
