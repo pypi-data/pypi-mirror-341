@@ -1,0 +1,2 @@
+[console_scripts]
+securepassgen-cli = securepassgen_advanced.cli:main
