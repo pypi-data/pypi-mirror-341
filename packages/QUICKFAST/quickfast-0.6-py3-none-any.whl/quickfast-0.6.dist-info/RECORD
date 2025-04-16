@@ -1,0 +1,17 @@
+QUICKFAST/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QUICKFAST/CSV/mat_data.csv,sha256=9vPNYl1p69xp80CCYEwV72IERcu27vB82sAsVsXhwjc,279
+QUICKFAST/CSV/sales_data.csv,sha256=ZIud8rFRb4gh59osSKQeZDP2o6VfTwSqjtj1toPYvpE,473
+QUICKFAST/DBCOMMANDS/Staging.txt,sha256=f0wFw1SL1T76iYRB7JIyBmaes84L8zDjWT-tXijuVno,1220
+QUICKFAST/DBCOMMANDS/database.txt,sha256=Vw9efx6npCRpUITuZGgbA1CgZdyOdd1m8lT09oVdzfU,1749
+QUICKFAST/EXCEL/pivat table.xlsx,sha256=MygQYDFzNYV_jlPWRYHfoRcUcWD0cHsDmoeTxos6fVI,19896
+QUICKFAST/EXCEL/what if 1.xlsx,sha256=8L2niDIyqhaZ-CPOdId_86Q-d0MyKCjY9F-LTU-oaIA,9795
+QUICKFAST/PYTHON/Data_Visualization.py,sha256=-P8k5IzWCf7RABwwd2wvuRgqhmZajuxIGPJkShPGQSg,1886
+QUICKFAST/PYTHON/Pandas_Searborn_Insight_Generate.py,sha256=0w4XqqHN1fHHOxpUoxwIT-_dTYsCCnReNt2wATzhqQE,1653
+QUICKFAST/R/Data_Classification.R,sha256=KL1OnmWzAyyWhz_-_tN_nxFyBZvjzRCIKVJqQdQZrIw,175
+QUICKFAST/R/Data_Clustering.R,sha256=N8OXru6oW06cINc2LhwT3sFNDbjL-S5_-p1lPSmUme8,260
+QUICKFAST/R/Linear_Regression.R,sha256=AmJcsN6CJkjoj9CUsO3x3C1H6oeWU3V6PQ-nd43bopE,746
+QUICKFAST/TEXT/BI PRACTICALS.txt,sha256=Bxnau_eKND_2mZgvZcB1VJxDmw8V3EUOZG5eAKxDSj8,6611
+quickfast-0.6.dist-info/METADATA,sha256=ttvO5zCuSoaF3w3_4ee6SksK5uTzFD-a15Gnv_0qnXE,289
+quickfast-0.6.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+quickfast-0.6.dist-info/top_level.txt,sha256=PfdogMyUERGNO6fUFOPeej2Qa3YFNnqRNp0k3sdBcqc,10
+quickfast-0.6.dist-info/RECORD,,

@@ -1,0 +1,31 @@
+httpsservices.odata.orgV3NorthwindNorthwind.svc
+
+Create a staging database and a staging table:
+
+
+create database staging;
+use staging
+
+create table stage_primary_data(id int(3) primary key auto_increment,name varchar(50),address varchar(40),pin varchar(5));
+describe stage_primary_data;
+insert into stage_primary_data(name,address,pin) values ("Kalpaj Phansalkar","Kankavli",'412');
+insert into stage_primary_data(name,address,pin) values ("Tejas Redkar","Kankavli",'35');
+insert into stage_primary_data(name,address,pin) values ("Sairaj Patkar","Kudal",'6969');
+insert into stage_primary_data(name,address,pin) values ("Ricky Fernandis","Kasal",'11111');
+select * from stage_primary_data;
+
+
+update stage_primary_data set pin=right(concat("00000",pin),5);
+select * from stage_primary_data;
+
+b] Create a database for data storage:
+
+create database data_storage;
+use data_storage;
+create table process_primary_data(id int(3) primary key auto_increment,name varchar(50),address varchar(40),pin varchar(5));
+
+c) insert the data into the other database from the staging database:
+INSERT INTO process_primary_data SELECT * FROM staging.stage_primary_data;
+select * from process_primary_data;
+
+
