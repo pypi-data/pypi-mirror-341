@@ -1,0 +1,10 @@
+icecube_simprod_histogram-0.2.1.dist-info/licenses/LICENSE,sha256=fYX7yQ-3oA12QUFGwQsj69_4X2NjnucjZ_uo5ADcIoM,1085
+simprod_histogram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simprod_histogram/calc_depth_to_dataset_dirs.py,sha256=9Va2ZUlNuYCqcBtRk25-sVb9sqp6D7yz6PSCHmw8kTE,1566
+simprod_histogram/display_histos.py,sha256=ws4trmjHn26w2c6Jo5maQxqwvLw4-Gt9Wee5dfBya_Q,3588
+simprod_histogram/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simprod_histogram/sample_dataset.py,sha256=jEuXuLQBTAdURm-5R52EVZzLmztIKjE-TtJbXewmWjg,6577
+icecube_simprod_histogram-0.2.1.dist-info/METADATA,sha256=97JAyPUfgNrjXXW28Puz89fJ2BKHFzvDCvDLMm-iLxo,3461
+icecube_simprod_histogram-0.2.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+icecube_simprod_histogram-0.2.1.dist-info/top_level.txt,sha256=ywd7z7QPuMxI2Cm4ZacCMLafMfGimZ2I-w6NzwFubMI,18
+icecube_simprod_histogram-0.2.1.dist-info/RECORD,,
