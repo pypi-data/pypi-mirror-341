@@ -1,0 +1,318 @@
+__all__ = ["ComparableWeakRef", "NumberGenerator", "subbytes", "typename"]
+
+from random import randint
+import weakref
+
+from snmp.typing import *
+
+T = TypeVar("T")
+V = TypeVar("V")    # V must support less-than comparison
+
+@final
+class ResultWhileAlive(Generic[T, V]):
+    """The result of key(obj), where obj is weakly held.
+
+    So long as obj remains alive, the value() method will call key(obj), and
+    return the result. If the object has been destructed, then value() will
+    return the result of the most recent call to key(obj) previous to the
+    destruction of obj. The key function is assumed to be non-throwing.
+    """
+
+    def __init__(self, key: Callable[[T], V], obj: T) -> None:
+        # obj could be garbage-collected as soon as this call returns, so it's
+        # important to retrieve the value now, rather than initialize to None
+        self._value = key(obj)
+
+        self.key = key
+        self.ref = weakref.ref(obj)
+
+    @property
+    def value(self) -> V:
+        obj = self.ref()
+
+        if obj is not None:
+            self._value = self.key(obj)
+
+        return self._value
+
+@final
+class ComparableWeakRef(Generic[T, V]):
+    """A weakref that can be used in sorted data structures.
+
+    This class extends the behavior of the standard library's weakref type by
+    adding support for the less-than operator. Upon construction, it will call
+    the provided key function, with obj as the only argument, and store the
+    result as the "comparison key". So long as the object remains alive, it
+    will continue to call key() with every comparison, and update the stored
+    value. If the reference becomes invalid (i.e. the object is garbage-
+    collected), then it will use the last stored value for all future
+    comparisons.
+    """
+
+    def __init__(self, obj: T, key: Callable[[T], V]) -> None:
+        self.result = ResultWhileAlive(key, obj)
+        self.ref = weakref.ref(obj)
+
+    def __call__(self) -> Optional[T]:
+        """Retrieve a reference to the wrapped object.
+
+        If the referenced object is still alive, then it will be returned.
+        Otherwise, this call will return None.
+        """
+        return self.ref()
+
+    def __lt__(self, other: "ComparableWeakRef[Any, V]") -> bool:
+        """Compare this object to another ComparableWeakRef."""
+        return self.result.value < other.result.value
+
+@final
+class NumberGenerator:
+    """Generate integers spanning a specific range.
+
+    Given an integer size of n bits, an instance of this class will generate
+    a sequence of length 2^n, where each n-bit integer appears exactly once.
+    The first 2^n-1 numbers in the sequence are guaranteed to be non-zero; or,
+    in other words, the last number in the sequence is always 0. After 2^n
+    iterations, the sequence repeats from the beginning.
+
+    The signed argument determines whether the generated numbers should use
+    two's-complement encoding (i.e. cover the range -(2^(n-1)) to 2^(n-1)-1,
+    inclusive), or unsigned encoding (0 to 2^n-1).
+    """
+
+    def __init__(self, n: int, signed: bool = True) -> None:
+        half = 1 << (n-1)
+
+        self.previous = 0
+        self.range = half << 1
+        self.step = 2 * randint(1, half) - 1
+        self.wrap = self.range - 1
+
+        if signed:
+            self.wrap -= half
+
+    def __iter__(self) -> Iterator[int]:
+        return self
+
+    def __next__(self) -> int:
+        """Return the next number in the sequence."""
+        self.previous += self.step
+
+        if self.previous > self.wrap:
+            self.previous -= self.range
+
+        return self.previous
+
+@final
+class subbytes:
+    """Operate on a slice of a bytes-like object without copying any data.
+
+    This class represents a sequence of bytes, similarly to how data is
+    represented in a bytes-like object. Unlike a bytes-like object, however,
+    a subbytes object does not store this data in a memory block of its own.
+    It holds a reference to a real bytes-like object, and acts on a
+    sub-sequence of that object's data, as if it had been copied into a
+    separate bytes-like object. The arguments to the constructor mirror the
+    arguments to the built-in slice() function, (without the step parameter)
+    so that subbytes(data, start, stop) represents the same sequence of bytes
+    as data[start:stop].
+
+    .. attribute:: data
+
+        The data attribute provides a reference to the underlying bytes-like
+        object. If the data argument to the constructor is an instance of
+        subbytes, it will be unwrapped so that this attribute always references
+        a bytes-like object directly.
+    """
+
+    def __init__(self,
+        data: Union[bytes, "subbytes"],
+        start: Optional[int] = None,
+        stop: Optional[int] = None,
+    ) -> None:
+        self._data: bytes
+        if isinstance(data, subbytes):
+            self._data = data.data
+            base = data
+        else:
+            self._data = data
+            self._start = 0
+            self._stop = len(data)
+            base = self
+
+        newstart = base.start if start is None else base.translate(start, True)
+        newstop  = base.stop  if stop  is None else base.translate(stop,  True)
+
+        self._start = newstart
+        self._stop  = newstop
+
+    @property
+    def data(self) -> bytes:
+        return self._data
+
+    @property
+    def start(self) -> int:
+        return self._start
+
+    @property
+    def stop(self) -> int:
+        return self._stop
+
+    def __bool__(self) -> bool:
+        """Indicate that the sequence is non-empty."""
+        return self.stop > self.start
+
+    def __eq__(self, other: Any) -> bool:
+        """Compare two sequences of bytes for equality."""
+        try:
+            # TypeError if other is not Sized
+            if len(self) != len(other):
+                return False
+
+            # TypeError if other is not Iterable
+            for left, right in zip(self, other):
+                if left != right:
+                    return False
+        except TypeError:
+            return NotImplemented
+
+        return True
+
+    @overload
+    def __getitem__(self, key: int) -> int:
+        ...
+
+    @overload
+    def __getitem__(self, key: slice) -> bytes:
+        ...
+
+    def __getitem__(self, key: Union[int, slice]) -> Union[int, bytes]:
+        """Retrieve an individual byte or copy a sub-sequence."""
+        if isinstance(key, int):
+            key = self.translate(key)
+        elif isinstance(key, slice):
+            start, stop = key.start, key.stop
+
+            key = slice(
+                self.start if start is None else self.translate(start, True),
+                self.stop  if stop  is None else self.translate(stop, True),
+                key.step
+            )
+
+        return self.data[key]
+
+    def __iter__(self) -> Iterator[int]:
+        """Produce an iterator for this sequence."""
+        for index in range(self.start, self.stop):
+            yield self.data[index]
+
+    def __len__(self) -> int:
+        """Query the length of the sequence."""
+        return self.stop - self.start
+
+    def __repr__(self) -> str:
+        """Provide an eval()-able representation of this object."""
+        args = [repr(self.data)]
+
+        if self.start:
+            args.append(f"start={self.start}")
+
+        if self.stop < len(self.data):
+            args.append(f"stop={self.stop}")
+
+        return f"{typename(self)}({', '.join(args)})"
+
+    def translate(self, index: int, clamp: bool = False) -> int:
+        """Convert an index of self into an index of self.data.
+
+        This method accepts an integral index of any value and translates it
+        into a meaningful index of self.data. If -len(self) <= index <
+        len(self), then the result is guaranteed to be a valid index (meaning
+        it will not cause an IndexError). If index < -len(self) and clamp is
+        True, then this method will return the index of the start of this
+        sequence, which is only guaranteed to be valid if the sequence is
+        non-empty, and may or may not be valid if the sequence is empty. If
+        len(self) <= index and clamp is True, then this method will return the
+        stop index, which is the index just beyond the end of the sequence. The
+        stop index may or may not be valid, regardless of the length of the
+        sequence, but it is guaranteed to match the start index if the sequence
+        is empty. Under any other scenario (i.e. index is out of range and
+        clamp is False), the result is guaranteed to be an invalid index.
+
+        :meta private:
+        """
+        if index < 0:
+            index += self.stop
+            if index < self.start:
+                if clamp:
+                    return self.start
+                else:
+                    return len(self.data)
+            else:
+                return index
+        else:
+            index += self.start
+            if index >= self.stop:
+                if clamp:
+                    return self.stop
+                else:
+                    return len(self.data)
+            else:
+                return index
+
+    def dereference(self) -> int:
+        """Retrieve the first byte of the sequence.
+
+        If the sequence is empty, an IndexError will be raised.
+        """
+        return self[0]
+
+    def pop_front(self) -> Tuple[int, "subbytes"]:
+        """Shortcut for split(1) followed by dereference().
+
+        This method returns a tuple containing, first, the int value of the
+        first byte, and second, a new subbytes object referencing the same
+        underlying sequence, starting from index 1.
+
+        If the sequence is empty, this method will raise an IndexError.
+        """
+        a, b = self.split(1)
+        return a.dereference(), b
+
+    def replace(self, replacement: bytes) -> bytes:
+        """Substitute the given string in place of the current sequence
+
+        This method produces a copy of the wrapped object, in which the
+        current sequence has been replaced with the contents of the
+        replacement argument.
+        """
+        return self.data[:self.start] + replacement + self.data[self.stop:]
+
+    def split(self, index: int) -> Tuple["subbytes", "subbytes"]:
+        """Split the sequence at the given index.
+
+        Return two new objects, the first referencing the portion of the
+        sequence  starting at the beginning of the current sequence and ending
+        just before index, and the second referencing the portion beginning
+        at index and ending at the end of the current sequence.
+        """
+        return subbytes(self, stop=index), subbytes(self, start=index)
+
+def typename(cls: Any, qualified: bool = False) -> str:
+    """Query an object to determine its type.
+
+    :param cls:
+        If cls is a class, this function will return its name. If cls is an
+        object, this function will return the name of the object's class.
+    :param bool qualified:
+        Indicate whether to return the fully-qualified name, which includes
+        the module path, as well as the names of any enclosing classes (for
+        inner classes).
+    """
+    if not isinstance(cls, type):
+        cls = type(cls)
+
+    if qualified:
+        return ".".join((cls.__module__, cls.__qualname__))
+    else:
+        return cast(type, cls).__name__
