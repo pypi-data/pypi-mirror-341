@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel", "setuptools-git-versioning"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alpenhorn"
+authors = [
+  {name = "Adam D. Hincks", email = "adam.hincks@utoronto.ca"},
+  {name = "J. Richard Shaw", email = "jrichardshaw@gmail.com"},
+  {name = "D. V. Wiebe", email = "dvw@phas.ubc.ca"}
+]
+description = "Data archive management software"
+requires-python = ">=3.11"
+dynamic = ["readme", "version"]
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = [
+  "Click >= 6.0",
+  "concurrent-log-handler",
+  "peewee >= 3.17.1",
+  "PyYAML",
+  "tabulate",
+  "watchdog"
+]
+
+[project.optional-dependencies]
+prometheus = [
+  "prometheus_client"
+]
+dist = [
+  "build",
+  "twine",
+  "packaging"
+]
+doc = [
+  "packaging",
+  "Sphinx >= 5.0",
+  "sphinx_rtd_theme"
+]
+test = [
+  "pyfakefs >= 5.4",
+  "pytest >= 7.0"
+]
+
+[project.scripts]
+alpenhorn = "alpenhorn.cli:entry"
+alpenhornd = "alpenhorn.daemon:entry"
+
+[tool.ruff]
+lint.select = ["E", "F", "I", "UP", "NPY", "RUF", "BLE", "C4", "RET"]
+
+[tool.ruff.lint.per-file-ignores]
+"alpenhorn/*/__init__.py" = ["I", "F401"]
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.rst"], content-type = "text/x-rst"}
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
+
+[tool.setuptools-git-versioning]
+enabled = true
