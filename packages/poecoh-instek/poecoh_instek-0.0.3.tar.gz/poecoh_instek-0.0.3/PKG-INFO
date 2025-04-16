@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: poecoh-instek
+Version: 0.0.3
+Project-URL: Documentation, https://github.com/Ben Jordan/poecoh-instek#readme
+Project-URL: Issues, https://github.com/Ben Jordan/poecoh-instek/issues
+Project-URL: Source, https://github.com/Ben Jordan/poecoh-instek
+Author-email: Ben Jordan <ben@poecoh.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: pyserial
+Description-Content-Type: text/markdown
+
+# poecoh.instek
+
+[![PyPI - Version](https://img.shields.io/pypi/v/poecoh-instek.svg)](https://pypi.org/project/poecoh-instek)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/poecoh-instek.svg)](https://pypi.org/project/poecoh-instek)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install poecoh-instek
+```
+
+## License
+
+`poecoh-instek` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
