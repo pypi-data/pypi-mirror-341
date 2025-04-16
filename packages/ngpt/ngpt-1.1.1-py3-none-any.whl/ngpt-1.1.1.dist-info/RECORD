@@ -1,0 +1,9 @@
+ngpt/__init__.py,sha256=ehInP9w0MZlS1vZ1g6Cm4YE1ftmgF72CnEddQ3Le9n4,368
+ngpt/cli.py,sha256=HA85u1-ajsOBO7Zp-Hngyr4NbYxdktn-uM1VuCvy4CU,9495
+ngpt/client.py,sha256=DfOjE2qQQZq3JF6wNa4YxEfUALq4B0ycP_3v9ZKw2ds,9940
+ngpt/config.py,sha256=qkOd4pNk8pW191u4EzHORecPpRDX2yVPrMQkJ35UsNw,5063
+ngpt-1.1.1.dist-info/METADATA,sha256=g7JncpCt4beu2lsc3-8x7LBnQxROCcD9hMvH5IYWk8w,6299
+ngpt-1.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ngpt-1.1.1.dist-info/entry_points.txt,sha256=1cnAMujyy34DlOahrJg19lePSnb08bLbkUs_kVerqdk,39
+ngpt-1.1.1.dist-info/licenses/LICENSE,sha256=mQkpWoADxbHqE0HRefYLJdm7OpdrXBr3vNv5bZ8w72M,1065
+ngpt-1.1.1.dist-info/RECORD,,
