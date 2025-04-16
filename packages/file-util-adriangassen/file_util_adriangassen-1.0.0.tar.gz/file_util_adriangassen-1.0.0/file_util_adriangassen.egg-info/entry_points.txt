@@ -1,0 +1,2 @@
+[console_scripts]
+file-util = file_util_adriangassen.cli:main_cli

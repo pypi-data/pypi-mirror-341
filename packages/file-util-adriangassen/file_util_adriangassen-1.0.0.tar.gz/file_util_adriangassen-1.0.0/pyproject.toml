@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file_util_adriangassen"
+version = "1.0.0"
+description = "A simple file utility"
+authors = [
+    {name = "Adrian Gassen", email = "a.m.gassen@icloud.com"}
+]
+readme = "README.md"
+license = "MIT"
+
+[project.urls]
+Repository = "https://gitlab.com/adriangassen/file-util"
+
+[project.optional-dependencies]
+dev = [
+    "pytest"
+]
+
+[project.scripts]
+file-util = "file_util_adriangassen.cli:main_cli"
