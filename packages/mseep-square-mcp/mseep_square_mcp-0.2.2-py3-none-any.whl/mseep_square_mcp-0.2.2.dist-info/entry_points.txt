@@ -1,0 +1,2 @@
+[console_scripts]
+square-mcp = square_mcp:main
