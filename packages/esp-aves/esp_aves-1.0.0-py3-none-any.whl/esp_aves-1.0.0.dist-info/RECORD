@@ -1,0 +1,14 @@
+aves/__init__.py,sha256=QTXtg0JloTEGa4FysxR2uwcO7ZMJFxcW3ci7VqBoV5A,301
+aves/__main__.py,sha256=bcaXzQwMwq6xiu9Co8EnV6M4K0I55DMxOPPF0zuj87Q,5597
+aves/aves.py,sha256=fsTnj7tzyHIbNpp40YghCxVr2PHc4elo_9oc-RCq1Cg,7695
+aves/aves_onnx.py,sha256=LozYNKZDFYqrsWJJoxTfWJWgUiHp4jTYiXOySqcKh7Q,651
+aves/aves_transformers.py,sha256=upcR12W0cc_OTxjQH-EyzKiG8lw2WrmTFNHJBJ30bpc,304
+aves/download_models.py,sha256=L39ea2fr3q4RkupifmNHZAcCX37OfVj1YJllLatqDFE,2826
+aves/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aves/utils.py,sha256=U0_MoiUwPULR0Vo3mmkL5eclq89vsmovj6y9zRqv964,7141
+esp_aves-1.0.0.dist-info/licenses/LICENSE,sha256=BHEjnipnPv3kXCmYlv0qZfhWp2qMfk0GdSugtGYI9D4,1078
+esp_aves-1.0.0.dist-info/METADATA,sha256=LubBy3GsaW-MMiON-02yELAXMxp6zBm7sZfLqUfkNt4,13969
+esp_aves-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+esp_aves-1.0.0.dist-info/entry_points.txt,sha256=XHJiQVJkL39YEDSbfK5InQJt716c1GIJvRmsKXMP2jc,44
+esp_aves-1.0.0.dist-info/top_level.txt,sha256=vGvGC95F4wtdOtfdp6Xpi-JghJB5vRyIme1spS4kDBQ,5
+esp_aves-1.0.0.dist-info/RECORD,,
