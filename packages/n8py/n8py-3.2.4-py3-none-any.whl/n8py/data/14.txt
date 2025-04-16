@@ -1,0 +1,101 @@
+import pandas as pd
+df=pd.read_csv(r"/content/glass.data")
+df.to_csv("processed_data.csv", index=False)
+
+
+import numpy as np
+import pandas as pd
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.regularizers import l2
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.callbacks import EarlyStopping
+from sklearn.metrics import classification_report, confusion_matrix
+import matplotlib.pyplot as plt
+
+# Load the Glass Identification dataset
+# Changed from pd.read_excel to pd.read_csv and updated the file name
+data = pd.read_csv("processed_data.csv", header=0)  
+
+# Assign column names based on attribute information
+columns = [
+    "Id", "RI", "Na", "Mg", "Al", "Si", "K", "Ca", "Ba", "Fe", "Type"
+]
+data.columns = columns
+
+# Drop irrelevant columns (e.g., 'Id')
+data = data.drop(columns=["Id"])
+
+# Define features and target variable
+X = data.drop(columns=["Type"])
+y = data["Type"]
+
+# Standardize numerical features using StandardScaler
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+# One-hot encode the target variable for multi-class classification
+y_encoded = pd.get_dummies(y).values
+
+# Split dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_encoded, test_size=0.2, random_state=42)
+
+# Define feedforward neural network model function
+def build_model(l2_lambda=0.0, dropout_rate=0.0):
+    model = Sequential([
+        Dense(128, input_dim=X_train.shape[1], activation='relu', kernel_regularizer=l2(l2_lambda)),
+        Dropout(dropout_rate),
+        Dense(64, activation='relu', kernel_regularizer=l2(l2_lambda)),
+        Dropout(dropout_rate),
+        Dense(y_train.shape[1], activation='softmax')  # Multi-class output layer with softmax activation
+    ])
+    model.compile(optimizer=Adam(learning_rate=0.001), loss='categorical_crossentropy', metrics=['accuracy'])
+    return model
+
+# Train and evaluate function for the feedforward neural network
+def train_and_evaluate(model_name, model):
+    early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
+    history = model.fit(
+        X_train, y_train, validation_split=0.2, epochs=100, batch_size=32, callbacks=[early_stopping], verbose=0
+    )
+    test_loss, test_accuracy = model.evaluate(X_test, y_test, verbose=0)
+    y_pred_probs = model.predict(X_test)
+    y_pred_classes = np.argmax(y_pred_probs, axis=1)
+    y_true_classes = np.argmax(y_test, axis=1)
+    
+    print(f"{model_name} Test Accuracy: {test_accuracy:.4f}")
+    print(classification_report(y_true_classes, y_pred_classes))
+    
+    # Confusion Matrix Visualization
+    cm = confusion_matrix(y_true_classes, y_pred_classes)
+    sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=np.unique(y), yticklabels=np.unique(y))
+    plt.title(f"Confusion Matrix - {model_name}")
+    plt.xlabel("Predicted")
+    plt.ylabel("Actual")
+    plt.show()
+    
+    return test_accuracy
+
+# Train models with different regularization techniques and compare results
+models = {
+    "Base Model": build_model(),
+    "L2 Regularization": build_model(l2_lambda=0.01),
+    "Dropout": build_model(dropout_rate=0.3),
+    "Combined Regularization": build_model(l2_lambda=0.01, dropout_rate=0.3)
+}
+
+results = {}
+for model_name, model in models.items():
+    print(f"Training {model_name}...")
+    results[model_name] = train_and_evaluate(model_name, model)
+
+# Compare results across different models
+plt.figure(figsize=(8, 5))
+plt.bar(results.keys(), results.values(), color=['blue', 'green', 'red', 'purple'])
+plt.xlabel("Model Type")
+plt.ylabel("Test Accuracy")
+plt.title("Model Comparison on Glass Identification Dataset")
+plt.show()

@@ -1,0 +1,259 @@
+#HMM 
+====================
+
+#!/usr/bin/env python
+# coding: utf-8
+
+import numpy as np
+import networkx as nx
+import matplotlib.pyplot as plt
+import warnings
+warnings.filterwarnings("ignore")
+from hmmlearn import hmm as hmm_model  # Renamed to avoid conflict
+from hmmlearn.hmm import CategoricalHMM  # use this instead of MultinomialHMM
+
+
+class HiddenMarkovModel:
+    def __init__(self, transition_prob, emission_prob, initial_prob):
+        self.transition_prob = transition_prob
+        self.emission_prob = emission_prob
+        self.initial_prob = initial_prob
+        self.num_states = transition_prob.shape[0]
+        self.num_obs = emission_prob.shape[1]
+
+    def forward(self, observations):
+        T = len(observations)
+        alpha = np.zeros((T, self.num_states))
+        alpha[0] = self.initial_prob * self.emission_prob[:, observations[0]]
+
+        for t in range(1, T):
+            for j in range(self.num_states):
+                alpha[t, j] = np.dot(alpha[t - 1], self.transition_prob[:, j]) * self.emission_prob[j, observations[t]]
+
+        return alpha
+
+    def backward(self, observations):
+        T = len(observations)
+        beta = np.zeros((T, self.num_states))
+        beta[-1] = 1
+
+        for t in range(T - 2, -1, -1):
+            for i in range(self.num_states):
+                beta[t, i] = np.sum(
+                    self.transition_prob[i, :] *
+                    self.emission_prob[:, observations[t + 1]] *
+                    beta[t + 1]
+                )
+
+        return beta
+
+
+    def viterbi(self, observations):
+        # Convert parameters to hmmlearn-compatible format
+        model = CategoricalHMM(n_components=self.num_states, init_params="")
+        model.startprob_ = self.initial_prob
+        model.transmat_ = self.transition_prob
+        model.emissionprob_ = self.emission_prob
+
+        # hmmlearn expects observations to be a 2D array
+        observations = np.array(observations).reshape(-1, 1)
+        logprob, states = model.decode(observations, algorithm="viterbi")
+
+        return states, np.exp(logprob)
+
+
+
+    def output_sequence_probability(self, observations):
+        alpha = self.forward(observations)
+        beta = self.backward(observations)
+
+        prob_forward = np.sum(alpha[-1])
+        prob_backward = np.sum(self.initial_prob * self.emission_prob[:, observations[0]] * beta[0])
+
+        return prob_forward, prob_backward
+
+    def visualize(self):
+        G = nx.MultiDiGraph()
+
+        # Add nodes for each state
+        for i in range(self.num_states):
+            label = f'State {i}\nInit: {self.initial_prob[i]:.2f}'
+            for k in range(self.num_obs):
+                label += f'\nObs {k}: {self.emission_prob[i][k]:.2f}'
+            G.add_node(i, label=label)
+
+        # Add edges for transitions between states, including self-loops
+        for i in range(self.num_states):
+            for j in range(self.num_states):
+                G.add_edge(i, j, label=f'{self.transition_prob[i][j]:.2f}')
+                if i == j:
+                    G.add_edge(i, i, label=f'{self.transition_prob[i][i]:.2f}')
+
+        pos = nx.spring_layout(G, scale=30)
+        node_labels = nx.get_node_attributes(G, 'label')
+        edge_labels = {(u, v): d['label'] for u, v, d in G.edges(data=True)}
+
+        nx.draw(G, pos, with_labels=True, labels=node_labels, node_size=2000,
+                node_color='green', font_size=8, font_weight='bold')
+        nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
+        plt.title("Hidden Markov Model")
+        plt.show()
+
+
+# Example usage
+if __name__ == "__main__":
+    transition_prob = np.array([[0.5, 0.5],  # From Rainy to Rainy/Sunny
+                                [0.4, 0.6]]) # From Sunny to Rainy/Sunny
+
+    emission_prob = np.array([[0.9, 0.1],  # Rainy -> Umbrella / No Umbrella
+                              [0.2, 0.8]]) # Sunny -> Umbrella / No Umbrella
+
+    initial_prob = np.array([0.3, 0.7])    # Start more likely with Rainy
+
+    # Observation sequence: Umbrella, Umbrella, No Umbrella
+    observations = [0, 0, 1]
+
+    hmm = HiddenMarkovModel(transition_prob, emission_prob, initial_prob)
+
+    print("Forward Procedure:")
+    print(hmm.forward(observations))
+
+    print("\nBackward Procedure:")
+    print(hmm.backward(observations))
+
+    prob_fwd, prob_bwd = hmm.output_sequence_probability(observations)
+    print("\nProbability of sequence (Forward):", prob_fwd)
+    print("Probability of sequence (Backward):", prob_bwd)
+
+    states, prob = hmm.viterbi(observations)
+    print("\nMost likely state sequence:", states)
+    print("Probability of the sequence:", prob)
+
+    states, prob = hmm.viterbi(observations)
+    print("\nMost likely state sequence (indices):", states)
+    print("Most likely state sequence (labels):", [f"State {s}" for s in states])
+    print("Probability of the sequence:", prob)
+
+    
+    hmm.visualize()
+
+
+====================================
+import numpy as np
+import matplotlib.pyplot as plt
+import networkx as nx
+from hmmlearn.hmm import CategoricalHMM
+
+class HiddenMarkovModel:
+    def __init__(self, transition_prob, emission_prob, initial_prob, state_labels=None, obs_labels=None):
+        self.transition_prob = transition_prob
+        self.emission_prob = emission_prob
+        self.initial_prob = initial_prob
+        self.num_states = transition_prob.shape[0]
+        self.num_obs = emission_prob.shape[1]
+        self.state_labels = state_labels or [f"State {i}" for i in range(self.num_states)]
+        self.obs_labels = obs_labels or [f"Obs {i}" for i in range(self.num_obs)]
+
+    def forward(self, observations):
+        T = len(observations)
+        alpha = np.zeros((T, self.num_states))
+        alpha[0] = self.initial_prob * self.emission_prob[:, observations[0]]
+
+        for t in range(1, T):
+            for j in range(self.num_states):
+                alpha[t, j] = np.dot(alpha[t - 1], self.transition_prob[:, j]) * self.emission_prob[j, observations[t]]
+        return alpha
+
+    def backward(self, observations):
+        T = len(observations)
+        beta = np.zeros((T, self.num_states))
+        beta[-1] = 1
+        for t in range(T - 2, -1, -1):
+            for i in range(self.num_states):
+                beta[t, i] = np.sum(
+                    self.transition_prob[i, :] *
+                    self.emission_prob[:, observations[t + 1]] *
+                    beta[t + 1]
+                )
+        return beta
+
+    def viterbi(self, observations):
+        model = CategoricalHMM(n_components=self.num_states, init_params="")
+        model.startprob_ = self.initial_prob
+        model.transmat_ = self.transition_prob
+        model.emissionprob_ = self.emission_prob
+        observations = np.array(observations).reshape(-1, 1)
+        logprob, states = model.decode(observations, algorithm="viterbi")
+        return states, np.exp(logprob)
+
+    def output_sequence_probability(self, observations):
+        alpha = self.forward(observations)
+        beta = self.backward(observations)
+        prob_forward = np.sum(alpha[-1])
+        prob_backward = np.sum(self.initial_prob * self.emission_prob[:, observations[0]] * beta[0])
+        return prob_forward, prob_backward
+
+    def visualize(self):
+        G = nx.MultiDiGraph()
+        for i in range(self.num_states):
+            label = f'{self.state_labels[i]}\nInit: {self.initial_prob[i]:.2f}'
+            for k in range(self.num_obs):
+                label += f'\n{self.obs_labels[k]}: {self.emission_prob[i][k]:.2f}'
+            G.add_node(i, label=label)
+
+        for i in range(self.num_states):
+            for j in range(self.num_states):
+                G.add_edge(i, j, label=f'{self.transition_prob[i][j]:.2f}')
+
+        pos = nx.spring_layout(G, seed=42)
+        node_labels = nx.get_node_attributes(G, 'label')
+        edge_labels = {(u, v): d['label'] for u, v, d in G.edges(data=True)}
+
+        nx.draw(G, pos, with_labels=True, labels=node_labels, node_size=2000,
+                node_color='lightblue', font_size=8, font_weight='bold')
+        nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
+        plt.title("Hidden Markov Model")
+        plt.show()
+
+
+# === Example usage ===
+if __name__ == "__main__":
+    state_labels = ['Cold', 'Warm', 'Hot']
+    obs_labels = ['Snow', 'Rain', 'Sunny']
+
+    # 3x3 transition matrix
+    transition_prob = np.array([
+        [0.7, 0.2, 0.1],
+        [0.2, 0.6, 0.2],
+        [0.1, 0.3, 0.6]
+    ])
+
+    # 3x3 emission matrix
+    emission_prob = np.array([
+        [0.6, 0.3, 0.1],  # Cold
+        [0.2, 0.5, 0.3],  # Warm
+        [0.1, 0.2, 0.7]   # Hot
+    ])
+
+    # Initial probabilities
+    initial_prob = np.array([0.5, 0.3, 0.2])
+
+    # Observation sequence: Snow (0), Sunny (2), Rain (1)
+    observations = [0, 2, 1]
+
+    hmm = HiddenMarkovModel(transition_prob, emission_prob, initial_prob,
+                            state_labels=state_labels, obs_labels=obs_labels)
+
+    print("Forward Procedure:\n", hmm.forward(observations))
+    print("\nBackward Procedure:\n", hmm.backward(observations))
+
+    prob_fwd, prob_bwd = hmm.output_sequence_probability(observations)
+    print("\nProbability of sequence (Forward):", prob_fwd)
+    print("Probability of sequence (Backward):", prob_bwd)
+
+    states, prob = hmm.viterbi(observations)
+    print("\nMost likely state sequence (indices):", states)
+    print("Most likely state sequence (labels):", [state_labels[s] for s in states])
+    print("Probability of the sequence:", prob)
+
+    hmm.visualize()

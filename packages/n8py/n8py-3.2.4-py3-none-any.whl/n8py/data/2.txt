@@ -1,0 +1,117 @@
+#LDA - Linear discriminant analysis
+----------------------------------------------
+In this Program has diabetes dataset , any other data change according to it
+
+
+import pandas as pd
+import numpy as py
+diabetes=pd.read_csv('diabetes.csv')
+diabetes.head()
+features = ['Pregnancies','Glucose','BloodPressure','SkinThickness','Insulin','BMI','DiabetesPedigreeFunction','Age']
+label = 'Outcome'
+X, y = diabetes[features].values, diabetes[label].values
+for n in range(0,4):
+    print("Patient", str(n+1), "\n  Features:",list(X[n]), "\n  Label:", y[n])
+
+from matplotlib import pyplot as plt
+%matplotlib inline
+    
+features = ['Pregnancies','Glucose','BloodPressure','SkinThickness','Insulin','BMI','DiabetesPedigreeFunction','Age']
+for col in features:
+    diabetes.boxplot(column=col, by='Outcome', figsize=(6,6))
+    plt.title(col)
+plt.show()
+
+
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=42)
+print ('Training cases: %d\nTest cases: %d' % (X_train.shape[0], X_test.shape[0]))
+
+
+from sklearn.linear_model import LogisticRegression
+
+# Set regularization rate
+reg = 0.01
+
+# train a logistic regression model on the training set
+model = LogisticRegression(C=1/reg, solver="liblinear").fit(X_train, y_train)
+print (model)
+
+predictions = model.predict(X_test)
+print('Predicted labels: ', predictions)
+print('Actual labels:    ' ,y_test)
+
+from sklearn.metrics import accuracy_score
+
+print('Accuracy: ', accuracy_score(y_test, predictions))
+
+
+from sklearn. metrics import classification_report
+
+print(classification_report(y_test, predictions))
+
+
+from sklearn.metrics import precision_score, recall_score
+
+print("Overall Precision:",precision_score(y_test, predictions))
+print("Overall Recall:",recall_score(y_test, predictions))
+
+y_scores = model.predict_proba(X_test)
+print(y_scores[:10,])
+
+#ROC Curve
+from sklearn.metrics import roc_curve
+from sklearn.metrics import confusion_matrix
+import matplotlib
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+fpr, tpr, thresholds = roc_curve(y_test, y_scores[:,1])
+
+fig = plt.figure(figsize=(6, 6))
+plt.plot([0, 1], [0, 1], 'k--')
+plt.plot(fpr, tpr)
+plt.xlabel('False Positive Rate')
+plt.ylabel('True Positive Rate')
+plt.title('ROC Curve')
+plt.show()
+
+from sklearn.metrics import roc_auc_score
+
+auc = roc_auc_score(y_test,y_scores[:,1])
+print('AUC: ' + str(auc))
+
+import matplotlib.pyplot as plt  
+import seaborn as sns  
+
+sns.set(style="whitegrid")  
+
+plt.figure(figsize=(10, 6))  
+sns.scatterplot(data=diabetes, x='Glucose', y='BMI', hue='Outcome', style='Outcome', palette='deep')  
+
+plt.title('Scatter Plot of Glucose vs BMI for Diabetes Classification')  
+plt.xlabel('Glucose Level')  
+plt.ylabel('BMI')  
+plt.legend(title='Diabetes Outcome', loc='upper right', labels=['No Diabetes', 'Diabetes'])  
+plt.show()
+
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+import matplotlib.pyplot as plt
+import numpy as np
+
+lda = LinearDiscriminantAnalysis(n_components=1)
+X_lda = lda.fit_transform(X, y)
+
+plt.figure(figsize=(8, 6))
+plt.scatter(X_lda, np.zeros_like(X_lda), c=y, cmap='rainbow', alpha=0.7, edgecolors='k')
+plt.title('1D Subspace Plot using LDA')
+plt.xlabel('LDA Component 1')
+plt.yticks([])  
+plt.colorbar(label='Outcome')
+plt.show()
+
+print("Class means in the LDA subspace:")
+print(lda.means_)
+
+print("Explained variance ratio (only for n_components > 1):", lda.explained_variance_ratio_)
+    

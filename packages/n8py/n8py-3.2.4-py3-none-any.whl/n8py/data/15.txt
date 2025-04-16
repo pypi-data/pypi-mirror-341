@@ -1,0 +1,197 @@
+#feedforward
+
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.regularizers import l2
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.callbacks import EarlyStopping
+from sklearn.metrics import mean_squared_error
+import matplotlib.pyplot as plt
+# Load the Airfoil dataset, specifying the delimiter as tab
+data = pd.read_csv("/content/airfoil_self_noise.dat", header=None, delimiter='\t')
+
+# Assign column names based on the problem description
+columns = [
+    "Frequency", "Angle of Attack", "Chord Length", "Free-Stream Velocity",
+    "Suction Side Displacement Thickness", "Scaled Sound Pressure Level"
+]
+data.columns = columns
+
+# Define features and target variable
+X = data.drop(columns=["Scaled Sound Pressure Level"])
+y = data["Scaled Sound Pressure Level"]
+
+# Standardize numerical features using StandardScaler
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+# Split dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
+
+# Define feedforward neural network model function for regression
+def build_regression_model(l2_lambda=0.0, dropout_rate=0.0):
+    model = Sequential([
+        Dense(128, input_dim=X_train.shape[1], activation='relu', kernel_regularizer=l2(l2_lambda)),
+        Dropout(dropout_rate),
+        Dense(64, activation='relu', kernel_regularizer=l2(l2_lambda)),
+        Dropout(dropout_rate),
+        Dense(1)  # Single output for regression
+    ])
+    model.compile(optimizer=Adam(learning_rate=0.001), loss='mse', metrics=['mae'])
+    return model
+
+# Train and evaluate function for regression model
+def train_and_evaluate_regression(model_name, model):
+    early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
+    history = model.fit(
+        X_train, y_train, validation_split=0.2, epochs=100, batch_size=32, callbacks=[early_stopping], verbose=0
+    )
+    y_pred = model.predict(X_test).flatten()
+    mse = mean_squared_error(y_test, y_pred)
+    print(f"{model_name} Mean Squared Error: {mse:.4f}")
+    return mse
+
+# Train models with different regularization techniques and compare results
+regression_models = {
+    "Base Model": build_regression_model(),
+    "L2 Regularization": build_regression_model(l2_lambda=0.01),
+    "Dropout": build_regression_model(dropout_rate=0.3),
+    "Combined Regularization": build_regression_model(l2_lambda=0.01, dropout_rate=0.3)
+}
+
+regression_results = {}
+for model_name, model in regression_models.items():
+    print(f"Training {model_name}...")
+    regression_results[model_name] = train_and_evaluate_regression(model_name, model)
+
+# Compare results across different models
+plt.figure(figsize=(8, 5))
+plt.bar(regression_results.keys(), regression_results.values(), color=['blue', 'green', 'red', 'purple'])
+plt.xlabel("Model Type")
+plt.ylabel("Mean Squared Error")
+plt.title("Model Comparison on Airfoil Dataset")
+plt.show()
+
+
+
+#naïve bayes
+
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+import seaborn as sns
+
+# Load the Nursery dataset
+data = pd.read_csv("/content/nursery.csv")
+
+# Replace categorical features with numerical equivalents (as per the question)
+# Convert all columns to string type to handle mixed data types
+for column in data.columns:
+    data[column] = data[column].astype(str)
+
+data = data.replace({
+    'parents': {'usual': 0, 'pretentious': 1, 'great_pret': 2},
+    'has_nurs': {'proper': 0, 'less_proper': 1, 'improper': 2, 'critical': 3, 'very_crit': 4},
+    'form': {'complete': 0, 'completed': 1, 'incomplete': 2, 'foster': 3},
+    'children': {'1': 1, '2': 2, '3': 3, 'more': 4},
+    'housing': {'convenient': 0, 'less_conv': 1, 'critical': 2},
+    'finance': {'convenient': 0, 'inconv': 1},
+    'social': {'nonprob': 0, 'slightly_prob': 1, 'problematic': 2},
+    'health': {'recommended': 0, 'priority': 1, 'not_recom': 2},
+    'Target': {'not_recom': 0, 'recommend': 1, 'very_recom': 2, 'priority':1,'spec_prior':0} # Added missing values in 'Target' column mapping
+})
+
+# Define features and target variable
+X = data.iloc[:, :-1]  # Features (all columns except Target)
+y = data.iloc[:, -1]   # Target variable (last column)
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Create and train a Gaussian Naive Bayes classifier
+model = GaussianNB()
+model.fit(X_train, y_train)
+
+# Make predictions on the test set and evaluate the model
+y_pred = model.predict(X_test)
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Accuracy: {accuracy:.4f}")
+print("\nClassification Report:\n", classification_report(y_test, y_pred))
+
+# Confusion Matrix Visualization
+cm = confusion_matrix(y_test, y_pred)
+sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=model.classes_, yticklabels=model.classes_)
+plt.title("Confusion Matrix - Naive Bayes")
+plt.xlabel("Predicted")
+plt.ylabel("Actual")
+plt.show()
+
+#--------
+#Naive bayes 
+#----------
+import pandas as pd
+import matplotlib.pyplot as plt  # Missing import
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+
+# Load the Nursery dataset
+data = pd.read_csv("nursery.csv")
+
+# Strip leading/trailing spaces from column names
+data.columns = data.columns.str.strip()
+
+# Define the mapping for categorical columns
+categorical_mapping = {
+    'parents': {'usual': 0, 'pretentious': 1, 'great_pret': 2},
+    'has_nurs': {'proper': 0, 'less_proper': 1, 'improper': 2, 'critical': 3, 'very_crit': 4},
+    'form': {'complete': 0, 'completed': 1, 'incomplete': 2, 'foster': 3},
+    'children': {'1': 1, '2': 2, '3': 3, 'more': 4},
+    'housing': {'convenient': 0, 'less_conv': 1, 'critical': 2},
+    'finance': {'convenient': 0, 'inconv': 1},
+    'social': {'nonprob': 0, 'slightly_prob': 1, 'problematic': 2},
+    'health': {'recommended': 0, 'priority': 1, 'not_recom': 2},
+    'Target': {'not_recom': 0, 'recommend': 1, 'very_recom': 2, 'priority': 1, 'spec_prior': 0}
+}
+
+# Encode categorical features
+for column, mapping in categorical_mapping.items():
+    if column in data.columns:
+        data[column] = data[column].map(mapping)
+    else:
+        print(f"Warning: Column '{column}' not found in DataFrame. Skipping.")
+
+# Drop any rows with missing values due to encoding issues
+data.dropna(inplace=True)
+
+# Define features and target variable
+X = data.iloc[:, :-1]  # Features (all columns except Target)
+y = data.iloc[:, -1]   # Target variable (last column)
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Create and train a Gaussian Naive Bayes classifier
+model = GaussianNB()
+model.fit(X_train, y_train)
+
+# Make predictions on the test set and evaluate the model
+y_pred = model.predict(X_test)
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Accuracy: {accuracy:.4f}")
+print("\nClassification Report:\n", classification_report(y_test, y_pred))
+
+# Confusion Matrix Visualization
+cm = confusion_matrix(y_test, y_pred)
+sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=model.classes_, yticklabels=model.classes_)
+plt.title("Confusion Matrix - Naive Bayes")
+plt.xlabel("Predicted")
+plt.ylabel("Actual")
+plt.show()
