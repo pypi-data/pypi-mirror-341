@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+qfunc/__init__.py
+qfunc/decoher.py
+qfunc.egg-info/PKG-INFO
+qfunc.egg-info/SOURCES.txt
+qfunc.egg-info/dependency_links.txt
+qfunc.egg-info/top_level.txt
