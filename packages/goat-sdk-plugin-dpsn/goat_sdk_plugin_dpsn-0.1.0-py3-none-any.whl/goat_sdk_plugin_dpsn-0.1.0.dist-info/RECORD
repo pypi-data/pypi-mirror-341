@@ -1,0 +1,7 @@
+goat_plugins/dpsn/__init__.py,sha256=hx2oibm6FN-xrXor7pOQ4xW67Lg6HOC6v8PqwdftOig,888
+goat_plugins/dpsn/dpsn_client.py,sha256=dnHaWwCfv_UdJtwrnRYAbx8Sp059y8E9JX_dHX9US_Y,7671
+goat_plugins/dpsn/parameters.py,sha256=JwvtzzzOPTJECTF-tHU1TxJsxbIOGkgGG62SY8yrD4M,532
+goat_plugins/dpsn/service.py,sha256=p5uHmSCDdot9J3KCTWFW-lQtXPbpIK84ZkzRd6n0Tuw,2355
+goat_sdk_plugin_dpsn-0.1.0.dist-info/METADATA,sha256=rU9X9P1TRGc59MyfrbAZ0ux5XD5u585z9ZuVdLOsGxM,2649
+goat_sdk_plugin_dpsn-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+goat_sdk_plugin_dpsn-0.1.0.dist-info/RECORD,,
