@@ -1,0 +1,6 @@
+setuptools>=76.1.0
+sqlalchemy[asyncio]>=2.0.0
+wheel>=0.45.1
+
+[async]
+sqlalchemy[asyncio]>=2.0.0
