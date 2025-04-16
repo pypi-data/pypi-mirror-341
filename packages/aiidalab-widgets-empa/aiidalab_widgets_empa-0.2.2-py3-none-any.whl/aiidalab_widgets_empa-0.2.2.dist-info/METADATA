@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: aiidalab-widgets-empa
+Version: 0.2.2
+Summary: Reusable AiiDAlab widgets developed at Empa.
+Requires-Python: >=3.9,<4
+Description-Content-Type: text/markdown
+Classifier: Framework :: AiiDA
+Classifier: Framework :: Jupyter
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE
+Requires-Dist: aiida-core>=2.6.0,<3
+Requires-Dist: ase>=3.24
+Requires-Dist: ipywidgets>=7.6.0
+Requires-Dist: timelength>=3.0.0,<4.0.0
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: bumpver ; extra == "dev"
+Requires-Dist: coverage ; extra == "dev"
+Project-URL: Homepage, https://github.com/nanotech-empa/aiidalab-widgets-empa
+Provides-Extra: dev
+
+# aiidalab-widgets-empa
+Reusable AiiDAlab widgets developed at Empa.
+
