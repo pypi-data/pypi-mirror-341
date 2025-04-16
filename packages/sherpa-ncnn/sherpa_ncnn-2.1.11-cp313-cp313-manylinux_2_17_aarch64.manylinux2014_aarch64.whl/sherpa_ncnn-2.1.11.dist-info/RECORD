@@ -1,0 +1,15 @@
+_sherpa_ncnn.cpython-313-aarch64-linux-gnu.so,sha256=RmmGeTF4odZLlNYVU_Ta_6BMGSQgIxLforflNwb0YMI,399897
+sherpa_ncnn/__init__.py,sha256=rJDbKLCstwh7IOiX2iJlV9kxizCUqcmI8zw6DVv-7MI,98
+sherpa_ncnn/recognizer.py,sha256=-Wfbdy9voenRTBlfT5c2GwEGyZYBRV2cH6MiLhR9W-w,9249
+sherpa_ncnn/sherpa-ncnn.pc,sha256=JsRb7FkkK9q23lpqm9sjZrbAuipd01StW752eKdyV2g,408
+sherpa_ncnn/lib/libkaldi-native-fbank-core.so,sha256=PlrpbnGt8rJ71udtolyFloBp1_t0UZ2XrboynJa0xtU,199984
+sherpa_ncnn/lib/libncnn.so,sha256=A0km--tFASzy7jfCB66wbLTNMXbP8zICrXCe1bCEf_0,3687361
+sherpa_ncnn/lib/libsherpa-ncnn-c-api.so,sha256=FVpeIC5DRbO-4dgCD1ugZlRNObenGMLxoF0O3YN8IA8,199561
+sherpa_ncnn/lib/libsherpa-ncnn-core.so,sha256=ONgBQylxsJCNAFWOsLcvb4_mZ6NJNy7azSmluPIDtgE,572177
+sherpa_ncnn.libs/libasound-a1a8720e.so.2.0.0,sha256=m3fTuKB0M90THzQKAgpjxukFZwf3tQPM1TloSBACB-I,5760681
+sherpa_ncnn.libs/libgomp-d22c30c5.so.1.0.0,sha256=BTGH6is2VDtn03gF_z6BiPXVdnSzH2mP6Hz-IiGkPtk,274665
+sherpa_ncnn-2.1.11.dist-info/METADATA,sha256=YOWVtrKuLmIXhLj1MAeSByPpNb4EgIkJGKjPEBykVWg,5059
+sherpa_ncnn-2.1.11.dist-info/WHEEL,sha256=78Ydk8uhU-xi59xREigtJhObz27LqK1yITicZuH3lLI,153
+sherpa_ncnn-2.1.11.dist-info/top_level.txt,sha256=xGw9g1ZO9t1l8G8iCSjTUtS032IrUa-CG6HG6D3vVWQ,25
+sherpa_ncnn-2.1.11.dist-info/RECORD,,
+sherpa_ncnn-2.1.11.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
