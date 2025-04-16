@@ -1,0 +1,3 @@
+[funcnodes.module]
+module = funcnodes_chemprop
+shelf = funcnodes_chemprop:NODE_SHELF
