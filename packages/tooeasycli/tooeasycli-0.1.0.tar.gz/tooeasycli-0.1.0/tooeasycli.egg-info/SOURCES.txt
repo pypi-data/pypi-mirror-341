@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+commands/__init__.py
+commands/greet.py
+tooeasycli.egg-info/PKG-INFO
+tooeasycli.egg-info/SOURCES.txt
+tooeasycli.egg-info/dependency_links.txt
+tooeasycli.egg-info/entry_points.txt
+tooeasycli.egg-info/top_level.txt
