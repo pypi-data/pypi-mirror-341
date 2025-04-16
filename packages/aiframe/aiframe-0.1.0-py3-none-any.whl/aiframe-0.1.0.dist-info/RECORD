@@ -1,0 +1,11 @@
+aiframe/__init__.py,sha256=ru3UnGJG3Mw0DGX0IxwzIZzDaQHo3muQP8M83eyo9OU,6678
+aiframe-0.1.0.dist-info/licenses/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/city_to_json.py,sha256=LU_BoeocW4WNrkH99SnN1yy_Nntc-ELfLa0sb8UVQuQ,2015
+tests/number_to_text.py,sha256=PSyoi_sVbrEmRG8RX1-VZuDfe0HMaZN9AJTaIX-4iYY,2002
+tests/number_to_text_advanced_config.py,sha256=KkP0rsOPAUlIqJKBDdx_XdXM2siE0U0KOcB69klw0a0,2744
+tests/test_df.py,sha256=M9WLhSJCjXD5fh_j3StlaBJ2HDOieCC0CkMlY_EsFtQ,2161
+aiframe-0.1.0.dist-info/METADATA,sha256=OGwp_G-nzXD6f-VabgCg7JvOvDkk9xP9Iy9NJQFVNS4,4906
+aiframe-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+aiframe-0.1.0.dist-info/top_level.txt,sha256=-duaVxoeaxRbCB11spyyuhMM_f3xDmV9pbqVbRbWHSg,14
+aiframe-0.1.0.dist-info/RECORD,,
