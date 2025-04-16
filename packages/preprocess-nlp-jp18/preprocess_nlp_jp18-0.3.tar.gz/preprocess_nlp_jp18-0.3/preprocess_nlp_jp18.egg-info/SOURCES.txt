@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+readme.md
+requirements.txt
+setup.py
+preprocess_nlp_jp18/__init__.py
+preprocess_nlp_jp18/text_preprocess.py
+preprocess_nlp_jp18.egg-info/PKG-INFO
+preprocess_nlp_jp18.egg-info/SOURCES.txt
+preprocess_nlp_jp18.egg-info/dependency_links.txt
+preprocess_nlp_jp18.egg-info/requires.txt
+preprocess_nlp_jp18.egg-info/top_level.txt
+preprocess_nlp_jp18/.ipynb_checkpoints/__init__-checkpoint.py
+preprocess_nlp_jp18/.ipynb_checkpoints/text_preprocess-checkpoint.py
+preprocess_nlp_jp18/__pycache__/__init__.cpython-312.pyc
+preprocess_nlp_jp18/__pycache__/text_preprocess.cpython-312.pyc
+preprocess_nlp_jp18/data/contractions.json
