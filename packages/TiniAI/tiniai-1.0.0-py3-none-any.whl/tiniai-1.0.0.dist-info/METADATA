@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: TiniAI
+Version: 1.0.0
+Author-email: IrbisX7 <irbisovich123@gmail.com>
+Project-URL: Homepage, https://github.com/Irbisovich/tinyai
+Project-URL: Issues, https://github.com/Irbisovich/tinyai/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+TiniAI is a tiny AI written by me, that give answer from .json train file.
+
+.json TRAIN FILE CONFIGURE
+Create .json file and write train info like this:
+
+{
+    "How much we need for platinum?": ["Platine? Thirty"]
+}
+
+Use it in your projects. You can write a library to write large .json train file with your questions and answers.
