@@ -1,0 +1,2 @@
+[console_scripts]
+jobtitle-transformer = JobTitle_Transformer.runner:run_pipeline
