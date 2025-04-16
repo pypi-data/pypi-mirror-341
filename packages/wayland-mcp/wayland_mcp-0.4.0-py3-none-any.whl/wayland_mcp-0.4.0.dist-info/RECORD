@@ -1,0 +1,14 @@
+wayland_mcp/__init__.py,sha256=w4a84jJGAq2Nghh9InS1Wf_q__Le8LEqakFSnf8VO_g,302
+wayland_mcp/add_rulers.py,sha256=LbzSzpo8bMy_u9aZu0cmggGOC8rWlMC6nRPRZ8NuvIg,6081
+wayland_mcp/app.py,sha256=pgXJ7tDZmMeZXimymKOz1lDM5nseVmiIDNMKbHfSagc,15773
+wayland_mcp/chain_processor.py,sha256=GQUvSeJWAHFfUvGSRUtjs2vX2ugJEAwD2u0DmmTAO6w,4805
+wayland_mcp/keyboard_utils.py,sha256=MKzOgknzqEwjbsRB3TFhfMYpU2Dpe26HWbP46G6Qe2U,4660
+wayland_mcp/keymap.py,sha256=C1l1tRsjKmqRaN-4otwVbeT6zz6yGXtfZtJ_Y3TRawI,2975
+wayland_mcp/mouse_utils.py,sha256=XEbK7mlVVFkDBvGmRUA9FzN8kqoE5FRd7n4D4LcGgIg,7683
+wayland_mcp/requirements.txt,sha256=l9f102HhIjAveAWWSrGI5Ywc89MHhCsGhV1mGxd1iyk,24
+wayland_mcp/screen_utils.py,sha256=DwFmW1RwmmM6R7ygoXA282NiM_xzJk6cYAvMxo_Vmpo,5193
+wayland_mcp/server_mcp.py,sha256=CTo2bFu8gUEh_cCIFtqMZkg2zzwOKI3791GCLWWfsM4,12991
+wayland_mcp-0.4.0.dist-info/METADATA,sha256=XtzBraV4EAnXBsEx0m5ImSa2YW2Eo--qB3bSwlKHOZw,2144
+wayland_mcp-0.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+wayland_mcp-0.4.0.dist-info/entry_points.txt,sha256=dAbKBqV-UtijSOlsyICkkpI8RLaCmpWgtG8dNu2satU,60
+wayland_mcp-0.4.0.dist-info/RECORD,,
