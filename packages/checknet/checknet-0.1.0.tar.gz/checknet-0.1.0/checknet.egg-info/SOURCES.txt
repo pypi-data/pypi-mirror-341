@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+checknet/__init__.py
+checknet.egg-info/PKG-INFO
+checknet.egg-info/SOURCES.txt
+checknet.egg-info/dependency_links.txt
+checknet.egg-info/top_level.txt
