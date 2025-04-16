@@ -1,0 +1,176 @@
+Metadata-Version: 2.4
+Name: open-agentinstruct
+Version: 0.1.0
+Summary: A library for generating instruction-following data using agent-based workflows.
+License: MIT License
+        
+        Copyright (c) 2024 Thomas Rochefort-Beaudoin
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/ThomasRochefortB/open-agentinstruct
+Project-URL: Repository, https://github.com/ThomasRochefortB/open-agentinstruct
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: nest_asyncio>=1.5.0
+Requires-Dist: aiohttp>=3.0.0
+Requires-Dist: backoff
+Requires-Dist: litellm>=1.35.0
+Requires-Dist: datasets>=2.0.0
+Requires-Dist: pdfminer.six>=20221105
+Requires-Dist: setuptools
+Provides-Extra: pdf
+Requires-Dist: pdfminer.six>=20221105; extra == "pdf"
+Provides-Extra: hf-datasets
+Requires-Dist: datasets>=2.0.0; extra == "hf-datasets"
+Provides-Extra: test
+Requires-Dist: pytest>=7.0.0; extra == "test"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Dynamic: license-file
+
+![1-8d2861cb](https://github.com/user-attachments/assets/2717bf2a-8f6a-4043-9538-8b832118798c)
+# open-agentinstruct
+
+An open-source recreation of the [AgentInstruct](https://arxiv.org/pdf/2407.03502v1) agentic workflow.
+
+`open-agentinstruct` is a project aimed at recreating the AgentInstruct agentic workflow. It supports any LiteLLM model to be used in the agentic synthetic data generation worflow. The AgentInstruct workflow involves three agentic step for synthetic data generation based on "seed" data:
+- **Content Transformation**: Transforms text content using various agent configurations.
+- **Instruction Generation**: Generates instructions based on transformed content.
+- **Instruction Refinement**: Refines generated instructions to enhance complexity and challenge.
+
+## Table of Contents
+- [Supported tasks](#supported-tasks)
+- [Supported seed datasets](#supported-seed-datasets)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example of generated data](#example-of-generated-data)
+- [Project Structure](#project-structure)
+
+## Supported tasks
+The AgentInstruct paper implements the following tasks which are all implemented in open-agentinstruct:
+
+- Reading Comprehension
+- Open Domain Question Answering
+- Text Modification
+- Web Agent
+- Brain Teaser
+- Analytical Reasoning
+- Multiple Choice Questions
+- Data To Text
+- Fermi
+- Coding
+- Text Extraction
+- Text Classification
+- Retrieval Augmented Generation
+- Tool Use
+- Creative Content Generation
+- Few Shot Reasoning
+- Conversation
+
+
+## Supported seed datasets
+- Any HF datasets:
+    - The AgentInstruct paper uses the following:
+        - [Knowledge Pile](https://huggingface.co/datasets/Query-of-CC/Knowledge_Pile)
+        - [AutoMathText](https://huggingface.co/datasets/math-ai/AutoMathText)
+        - subset of [openstax](https://huggingface.co/datasets/crumb/openstax-text)
+        - subset Apache 2.0 from [codeparrot/github-code-clean](https://huggingface.co/datasets/codeparrot/github-code-clean)
+- Any set of user-provided seed `.pdf`s
+
+## Features
+- LiteLLM compatible LLMs
+- Finetuning pipeline for llama3
+
+## Installation
+
+**Option 1: Install from PyPI (Recommended for users)**
+
+Once the package is published, you can install it directly using pip:
+
+```sh
+pip install open-agentinstruct
+```
+
+**Option 2: Install from source (For developers)**
+
+1.  Clone the repository:
+    ```sh
+    git clone https://github.com/ThomasRochefortB/open-agentinstruct.git
+    cd open-agentinstruct
+    ```
+
+2.  Create a virtual environment (recommended):
+    ```sh
+    python -m venv .venv
+    source .venv/bin/activate # On Windows use `.venv\Scripts\activate`
+    ```
+
+3.  Install the package in editable mode along with development dependencies:
+    ```sh
+    pip install -e ".[dev]"
+    ```
+
+4.  Set up your API keys necessary to use the desired LiteLLM model(s):
+    *   Create a `.env` file in the root directory (or wherever you run the command).
+    *   Add your API key(s) to the `.env` file (the library uses `python-dotenv` to load them):
+        ```dotenv
+        # Example for OpenAI
+        OPENAI_API_KEY=your_openai_api_key
+        # Add other keys as needed (e.g., COHERE_API_KEY, ANTHROPIC_API_KEY)
+        # ...
+        ```
+
+## Usage
+
+The primary way to use the data generation workflow is through the command-line interface:
+
+```sh
+# Basic usage with a Hugging Face dataset
+open-agentinstruct-generate --dataset-names <hf/datasetname> --task-name <your_task_name>
+
+# Example: Generate reading comprehension data from the first 100 chunks of openstax
+open-agentinstruct-generate --dataset-names "crumb/openstax-text" --task-name reading_comprehension --max-chunks 100
+
+# Generate data for all tasks from the specified dataset, processing max 100 chunks, skipping refinement, including content
+open-agentinstruct-generate --dataset-names "crumb/openstax-text:text:train:20000" --model gemini/gemini-2.0-flash --max-chunks 100 --output-dir ./output
+
+# Example: Generate data for all tasks from a PDF directory, including original content
+open-agentinstruct-generate --pdf-dir path/to/your/pdfs --all-tasks --include-content
+
+# See all available options
+open-agentinstruct-generate --help
+```
+
+Generated data will be saved to `./data/generated_data/<task_name>.jsonl` by default.

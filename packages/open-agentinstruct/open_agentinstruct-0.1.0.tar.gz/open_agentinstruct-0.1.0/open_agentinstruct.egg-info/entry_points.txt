@@ -1,0 +1,2 @@
+[console_scripts]
+open-agentinstruct-generate = open_agentinstruct.cli:main_wrapper
