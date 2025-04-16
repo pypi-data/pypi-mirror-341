@@ -1,0 +1,15 @@
+telecomfaker/__init__.py,sha256=hhH7emSGpY73VpgWOpUrqGjHGB2DlSlDjuszrVP3BYA,190
+telecomfaker/cli.py,sha256=XQf9-lip2FbtVkAkm33oj3xMmBNVIHzgbllhOhJwIRg,2562
+telecomfaker/faker.py,sha256=rsukPOVlRWNpvxWiMtVqI46i6C74DwXs7xdm4hVNb58,4072
+telecomfaker/models.py,sha256=jjkt_2zTHo67SeSqpZnBUxDoUBNbziY3vYb93AygTfA,1296
+telecomfaker/providers.py,sha256=AKtDU66CF7psBcRscZ-nsZDW_O8vVmfdukFAeKE44Mc,1514
+telecomfaker/data/__init__.py,sha256=Fr5ftTgdbO68O5mquZZhCaf9cTYbs7AvcfDZbvF-gSA,72
+telecomfaker/data/telecom_data.json,sha256=nLrQ55VqE0COLIeq1XV-neDUuHd5Z2GePjg8HVVJigY,1555
+telecomfaker/providers/__init__.py,sha256=qIADip7n9Y4PkSWruXYz10MoiCV81O-hm70JGpbj2lY,280
+telecomfaker/providers/base.py,sha256=6s_pqRkRvvXMJsyXL2NH31sIQBfpd_tOiXwNMOhrDSo,556
+telecomfaker/providers/local_json.py,sha256=Q1V3fT7VIiVbtLEjxvu1ZSGYAyTReE2WOACJm_TvxHA,1553
+telecomfaker-0.1.1.dist-info/METADATA,sha256=lTYAOS94QgTtxk0VGNiyT0JJuWLeCOTVxY0oT4YkYPA,4556
+telecomfaker-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+telecomfaker-0.1.1.dist-info/entry_points.txt,sha256=Qs1rYYjocC94AhAgt8UCk1rs644c6csO8U2UOHAsmkg,55
+telecomfaker-0.1.1.dist-info/top_level.txt,sha256=2kZL5aPUIwe-nbDVZTk-3lvNuH4MPekXBNkO1uvWwCk,13
+telecomfaker-0.1.1.dist-info/RECORD,,

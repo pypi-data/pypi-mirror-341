@@ -1,0 +1,84 @@
+{
+  "operators": [
+    {
+      "name": "Vodafone",
+      "country": "Germany",
+      "mcc": "262",
+      "mnc": "02",
+      "size": "large",
+      "is_mvno": false
+    },
+    {
+      "name": "Orange",
+      "country": "France",
+      "mcc": "208",
+      "mnc": "01",
+      "size": "large",
+      "is_mvno": false
+    },
+    {
+      "name": "Telefonica",
+      "country": "Spain",
+      "mcc": "214",
+      "mnc": "07",
+      "size": "large",
+      "is_mvno": false
+    },
+    {
+      "name": "Verizon",
+      "country": "United States",
+      "mcc": "310",
+      "mnc": "012",
+      "size": "large",
+      "is_mvno": false
+    },
+    {
+      "name": "NTT DoCoMo",
+      "country": "Japan",
+      "mcc": "440",
+      "mnc": "10",
+      "size": "large",
+      "is_mvno": false
+    },
+    {
+      "name": "Lycamobile",
+      "country": "United Kingdom",
+      "mcc": "234",
+      "mnc": "26",
+      "size": "small",
+      "is_mvno": true
+    },
+    {
+      "name": "Tele2",
+      "country": "Sweden",
+      "mcc": "240",
+      "mnc": "07",
+      "size": "medium",
+      "is_mvno": false
+    },
+    {
+      "name": "Airtel",
+      "country": "India",
+      "mcc": "404",
+      "mnc": "02",
+      "size": "large",
+      "is_mvno": false
+    },
+    {
+      "name": "Telstra",
+      "country": "Australia",
+      "mcc": "505",
+      "mnc": "01",
+      "size": "large",
+      "is_mvno": false
+    },
+    {
+      "name": "Giffgaff",
+      "country": "United Kingdom",
+      "mcc": "234",
+      "mnc": "10",
+      "size": "small",
+      "is_mvno": true
+    }
+  ]
+} 
