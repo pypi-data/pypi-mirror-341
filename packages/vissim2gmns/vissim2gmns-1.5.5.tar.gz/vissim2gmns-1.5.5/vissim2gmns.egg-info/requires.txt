@@ -1,0 +1,10 @@
+geopandas
+pandas
+Shapely
+pyufunc
+
+[base]
+pandas
+pyufunc
+geopandas
+Shapely
