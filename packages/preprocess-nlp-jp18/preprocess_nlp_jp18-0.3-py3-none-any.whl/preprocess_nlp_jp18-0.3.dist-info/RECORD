@@ -1,0 +1,12 @@
+preprocess_nlp_jp18/__init__.py,sha256=Z7h6VCvyn2UnvqrMsluCyJkqx7gd1-8WjK-6TD3mlh4,30
+preprocess_nlp_jp18/text_preprocess.py,sha256=piku-jIlvfVaOw3AapECQzpEMdhF2sCmoyeALiwr5cI,3774
+preprocess_nlp_jp18/.ipynb_checkpoints/__init__-checkpoint.py,sha256=Z7h6VCvyn2UnvqrMsluCyJkqx7gd1-8WjK-6TD3mlh4,30
+preprocess_nlp_jp18/.ipynb_checkpoints/text_preprocess-checkpoint.py,sha256=VQ8QSm4eDSig2Nc7fhqAGmXTwAU0lp_jcQrVpvD3HQU,3970
+preprocess_nlp_jp18/__pycache__/__init__.cpython-312.pyc,sha256=ESP2VPQBW3YjPDoLllpZbRFIOv0Opota6LvqSskzTEA,214
+preprocess_nlp_jp18/__pycache__/text_preprocess.cpython-312.pyc,sha256=iybBqgrmFtn6RYe84A9N5HFTA_SoKXSGiVKlMegaPGo,696
+preprocess_nlp_jp18/data/contractions.json,sha256=mzmUHIZCCMmc_2zgfQn5Y7nlGVN5RtDSOi-oMrb7jZw,8911
+preprocess_nlp_jp18-0.3.dist-info/LICENSE,sha256=FAnQ6qx9ASOjQBz95o4lSsIzVBZYlvOk7fEcp9ZvugM,69
+preprocess_nlp_jp18-0.3.dist-info/METADATA,sha256=5G8mJt5iorQ-8m4HR4DTG4a_opbvVi3iKjB3vYmXPvA,1938
+preprocess_nlp_jp18-0.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+preprocess_nlp_jp18-0.3.dist-info/top_level.txt,sha256=Y0hyhOXMY009WaWG7nayZc20q5sdCb_MRzeajdRj2Xo,20
+preprocess_nlp_jp18-0.3.dist-info/RECORD,,
