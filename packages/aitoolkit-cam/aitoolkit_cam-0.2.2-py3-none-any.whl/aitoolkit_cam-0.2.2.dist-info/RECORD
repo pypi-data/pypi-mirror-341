@@ -1,0 +1,9 @@
+aitoolkit_cam/__init__.py,sha256=uUhB-euvj6bccyfLQqE7PWuLYat52zngSjuBXZawPXQ,3050
+aitoolkit_cam/camera.py,sha256=ZlNHN1fnvbDUyXJht5T1lxE5aRMgqViJ2Vfa4gwohbY,9178
+aitoolkit_cam/image_processor.py,sha256=Nqnn8clbgv-5l0PgxcTOldg8mkMKrFn4TvPL-rYUUGg,1
+aitoolkit_cam/processor.py,sha256=9ie0RDVrjFYN3VftI4nsmGwKMB9GrDlBn62iYq8SI_M,11060
+aitoolkit_cam/web_stream.py,sha256=H489hRicq9wtwKD_SiPsQZIA1s6tsTy9FhZfHNvj32o,13881
+aitoolkit_cam-0.2.2.dist-info/METADATA,sha256=2G2seVLxPmykGSZR0OrJmX_5Qlbb2tsIZM4MKshPA6w,8228
+aitoolkit_cam-0.2.2.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+aitoolkit_cam-0.2.2.dist-info/top_level.txt,sha256=U1VLg-6XoW7Wuv3MJqlFfb3Pw_PZZcum0r_HtXpBgbc,14
+aitoolkit_cam-0.2.2.dist-info/RECORD,,
