@@ -1,0 +1,10 @@
+polars_avro-0.4.0.dist-info/METADATA,sha256=y67a_ylFtDcmw7A0RyvnGLpl6WxT_BXbPUBpLv1QSk0,4876
+polars_avro-0.4.0.dist-info/WHEEL,sha256=8o4OwL9DEHvYoHffy8Jg4kpRikqV8pJpkbxz_mtiXQk,102
+polars_avro-0.4.0.dist-info/licenses/LICENSE,sha256=Ea8s53I7I-569j5Qr1r1kuzGPnzXgF_pG5x9LTEso8A,1070
+polars_avro/_avro_rs.pyi,sha256=9M4GR6tQ8giYCjfFozNEUjaTbd-GIAbVltXZ_sKN7-4,1728
+polars_avro/_scan.py,sha256=4XuW8-vziMGkI6WwAMOAqcly24TVx6gONw5ncxtIoec,5562
+polars_avro/__init__.py,sha256=_5-0o3w6qBB9HuJbtGpxjbtRqBMVSzbvmHYqbba5XdE,775
+polars_avro/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polars_avro/_sink.py,sha256=Rj6kjvBLvSFVPepIBxqr3LQYuEARQKRSHGQn95NGG2s,2678
+polars_avro/_avro_rs.abi3.so,sha256=uwhMGgpxJH0kPg9kL3G67_NQjk0ULxXrCQYeLiXZAQk,126275568
+polars_avro-0.4.0.dist-info/RECORD,,
