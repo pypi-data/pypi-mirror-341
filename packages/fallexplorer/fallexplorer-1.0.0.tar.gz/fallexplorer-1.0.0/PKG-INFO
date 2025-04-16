@@ -1,0 +1,43 @@
+Metadata-Version: 2.2
+Name: fallexplorer
+Version: 1.0.0
+Summary: Outil de pentesting avec reconnaissance passive et tests actifs
+Author: Ton Nom
+Author-email: contact@openstudy.me
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: python-whois
+Requires-Dist: dnspython
+Requires-Dist: builtwith
+Requires-Dist: tabulate
+Requires-Dist: rich
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: summary
+
+# Fallexplorer
+
+Fallexplorer est un outil de pentesting avec reconnaissance passive et tests actifs. Il permet de scanner des domaines pour détecter diverses vulnérabilités et obtenir des informations sur les technologies utilisées.
+
+## Installation
+
+Vous pouvez installer Fallexplorer via `pip` :
+
+
+## Utilisation
+
+Exécutez la commande suivante pour commencer un scan :
+
+
+## Contribuer
+
+Les contributions sont les bienvenues ! Veuillez soumettre une demande de tirage avec vos modifications.
+

@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fallexplorer/__init__.py
+fallexplorer/main.py
+fallexplorer.egg-info/PKG-INFO
+fallexplorer.egg-info/SOURCES.txt
+fallexplorer.egg-info/dependency_links.txt
+fallexplorer.egg-info/requires.txt
+fallexplorer.egg-info/top_level.txt
+tests/test_fallexplorer.py
