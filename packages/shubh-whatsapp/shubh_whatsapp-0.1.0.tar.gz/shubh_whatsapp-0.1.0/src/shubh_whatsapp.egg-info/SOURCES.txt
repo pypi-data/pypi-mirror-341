@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/shubh_whatsapp/__init__.py
+src/shubh_whatsapp/api_client.py
+src/shubh_whatsapp/bridge.py
+src/shubh_whatsapp/client.py
+src/shubh_whatsapp/config.py
+src/shubh_whatsapp/db_reader.py
+src/shubh_whatsapp/exceptions.py
+src/shubh_whatsapp.egg-info/PKG-INFO
+src/shubh_whatsapp.egg-info/SOURCES.txt
+src/shubh_whatsapp.egg-info/dependency_links.txt
+src/shubh_whatsapp.egg-info/requires.txt
+src/shubh_whatsapp.egg-info/top_level.txt
