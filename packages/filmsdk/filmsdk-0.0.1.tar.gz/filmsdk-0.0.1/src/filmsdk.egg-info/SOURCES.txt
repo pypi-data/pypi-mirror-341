@@ -1,0 +1,11 @@
+pyproject.toml
+src/filmsdk/__init__.py
+src/filmsdk/film_client.py
+src/filmsdk/film_config.py
+src/filmsdk.egg-info/PKG-INFO
+src/filmsdk.egg-info/SOURCES.txt
+src/filmsdk.egg-info/dependency_links.txt
+src/filmsdk.egg-info/requires.txt
+src/filmsdk.egg-info/top_level.txt
+src/filmsdk/schemas/__init__.py
+src/filmsdk/schemas/schemas.py
