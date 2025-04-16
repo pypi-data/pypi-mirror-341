@@ -1,0 +1,14 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Originally created by Jérôme Dufour %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{physbase_dev}[2024/11/04, Provides custom commands and environments for dev]
+
+\NewDocumentCommand{\ep}{m}{\left( #1 \right)}
+\NewDocumentEnvironment{AN}{}{
+	\par%
+	\vspace{2mm}%
+	\noindent\nopagebreak%
+	\underline{Application~numérique~:}
+	\par\nopagebreak\vspace{2mm}$\aligned
+}{ \endaligned$\vspace{2mm} }

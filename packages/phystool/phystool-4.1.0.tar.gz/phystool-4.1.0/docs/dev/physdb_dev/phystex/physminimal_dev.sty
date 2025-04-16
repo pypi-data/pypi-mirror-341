@@ -1,0 +1,53 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Originally created by Jérôme Dufour %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProvidesExplPackage{physminimal_dev}{2024/06/09}{1.0}
+{ Physkit's minimal commands }
+
+\RequirePackage[french]{babel}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{amssymb,amsmath}
+\RequirePackage{graphicx}
+
+\NewDocumentCommand{\PdbSetDBPath}{m}{
+	\tl_gset:Nn \c_pdb_path_tl {#1}
+}
+
+%%%%%%%%%%%%%%%%%%%
+%%% Tikzpicture %%%
+%%%%%%%%%%%%%%%%%%%
+\graphicspath{{\c_pdb_path_tl figures/}} % redefines the graphicspath
+
+\msg_new:nnn
+{physminimal}
+{tikz_compile}
+{Compile ~Tikz ~figure ~#1}
+
+\msg_new:nnn
+{physminimal}
+{no_shell_no_tikz}
+{Shell~ escape~ is~ disabled,~ I~ can't~ compile~ Tikz~ figure~ #1.}
+
+\cs_new_protected:Nn \pdb_include_tikz_figure:nn {
+	\tl_set:Ne \l_tmpa_tl { \c_pdb_path_tl #2 }
+	\file_compare_timestamp:nNnT
+	{\l_tmpa_tl.tex} > {\l_tmpa_tl.pdf}
+	{
+		\sys_if_shell_unrestricted:TF
+		{
+			\msg_warning:nnn {physminimal} {tikz_compile} {#2}
+			\sys_shell_now:e {
+				pdflatex ~ -interaction ~ batchmode ~ -shell-escape ~
+				-output-dir ~ \c_pdb_path_tl
+				\c_space_tl \l_tmpa_tl.tex
+			 }
+		 }
+		 { \msg_warning:nnn {physminimal} {no_shell_no_tikz} {#2} }
+	}
+	\includegraphics[#1]{\l_tmpa_tl}
+}
+
+\NewDocumentCommand{\PdbTikz}{O{}m}{
+	\pdb_include_tikz_figure:nn {#1} {#2}
+}
