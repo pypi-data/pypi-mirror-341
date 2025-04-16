@@ -1,0 +1,4 @@
+funcnodes-pandas
+chemprop
+funcnodes
+funcnodes-plotly
