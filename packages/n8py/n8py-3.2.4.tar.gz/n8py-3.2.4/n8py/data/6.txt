@@ -1,0 +1,88 @@
+# NAIVE BAYES
+
+import pandas as pd
+df = pd.read_csv(r"C:\Users\Sastra\Downloads\weather_forecast.csv")  
+df
+
+
+import pandas as pd  
+from sklearn.model_selection import train_test_split  
+from sklearn.naive_bayes import GaussianNB  
+from sklearn.metrics import accuracy_score  
+import numpy as np  
+
+# Load the dataset  
+df = pd.read_csv(r"C:\Users\Sastra\YourDataset\weather_forecast.csv")  
+
+# Check unique values before replacement  
+print("Unique values before replacement:")  
+for column in ['Outlook', 'Temperature', 'Humidity', 'Windy', 'Play']:  
+    print(f"{column}: {df[column].unique()}")  
+
+# Replace categorical features with numerical equivalents  
+df = df.replace({  
+    'Outlook': {'Sunny': 0, 'Overcast': 1, 'Rain': 2},  # Updated to include 'Rain'  
+    'Temperature': {'Hot': 0, 'Mild': 1, 'Cool': 2},  
+    'Humidity': {'High': 0, 'Normal': 1},  
+    'Windy': {'Weak': 0, 'Strong': 1},  # Added mapping for 'Weak' and 'Strong'  
+    'Play': {'Yes': 1, 'No': 0}  
+})  
+
+# Check unique values after replacement  
+print("\nUnique values after replacement:")  
+for column in ['Outlook', 'Temperature', 'Humidity', 'Windy', 'Play']:  
+    print(f"{column}: {df[column].unique()}")  
+
+# Define features and target variable  
+X = df.iloc[:, :-1]  # Features  
+y = df.iloc[:, -1]   # Target variable  
+
+# Ensuring all features are of correct dtype  
+X = X.astype(float)  
+
+# Split the data into training and testing sets  
+X_train, X_test, y_train, y_test = train_test_split(  
+    X, y, test_size=0.2, random_state=42  
+)  
+
+# Create and train a Gaussian Naive Bayes classifier  
+model = GaussianNB()  
+model.fit(X_train, y_train)  
+
+# Make predictions on the test set and evaluate the model  
+y_pred = model.predict(X_test)  
+accuracy = accuracy_score(y_test, y_pred)  
+print(f"Accuracy: {accuracy:.2f}")  
+
+# Function to predict based on user input  
+def make_prediction(model, num_features):  
+    while True:  
+        try:  
+            test_input = []  
+            print("Enter the features for prediction (separated by space):")  
+            user_input = input().split()  
+
+            if len(user_input) != num_features:  
+                print(f"Please enter {num_features} values.")  
+                continue  
+
+            # Ensure input values are valid floats, if there's a conversion issue, catch it.  
+            test_input = [float(val) for val in user_input]  
+
+            # Predicting the class  
+            predicted_class = model.predict([test_input])  
+            print(f"Predicted class: {predicted_class[0]}")  
+
+            another_prediction = input("Do you want to make another prediction? (yes/no): ")  
+            if another_prediction.lower() != "yes":  
+                break  
+
+        except ValueError:  
+            print("Invalid input. Please enter numeric values.")  
+        except Exception as e:  
+            print(f"An error occurred: {e}")  
+
+# Call the prediction function  
+make_prediction(model, len(X.columns))  
+
+#END

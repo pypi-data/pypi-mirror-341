@@ -1,0 +1,486 @@
+#CNN
+-------------
+import os
+import shutil
+import numpy as np
+import matplotlib.pyplot as plt
+import tensorflow as tf
+from tensorflow.keras import layers, models
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.layers import Input
+
+from tqdm import tqdm
+
+# Set image size and other parameters
+img_size = 128
+dataset_path = r"C:\Users\Sastra\Downloads\LAB\LAB\GrapeVine\Grapevine_Leaves_Image_Dataset"  # Change this to your dataset path
+train_split = 0.8  # 80% for training, 20% for testing
+
+# Step 1: Organize data into train/test folders
+def split_dataset(source_dir, dest_dir, split_ratio=0.8):
+    # Iterate through each class subdirectory
+    for class_name in os.listdir(source_dir):
+        class_dir = os.path.join(source_dir, class_name)
+        if os.path.isdir(class_dir):
+            # Create train and test subdirectories for the class
+            os.makedirs(os.path.join(dest_dir, 'train', class_name), exist_ok=True)
+            os.makedirs(os.path.join(dest_dir, 'test', class_name), exist_ok=True)
+
+            # Get all image file paths in this class
+            image_paths = [os.path.join(class_dir, filename) for filename in os.listdir(class_dir) if filename.endswith(('.jpg', '.png'))]
+
+            # Split the images into train and test sets
+            train_paths, test_paths = train_test_split(image_paths, test_size=1 - split_ratio, random_state=42)
+
+            # Move the images to their respective folders
+            for train_path in tqdm(train_paths, desc=f"Processing {class_name} train set"):
+                shutil.copy(train_path, os.path.join(dest_dir, 'train', class_name))
+            for test_path in tqdm(test_paths, desc=f"Processing {class_name} test set"):
+                shutil.copy(test_path, os.path.join(dest_dir, 'test', class_name))
+
+# Step 2: Manually split the dataset (you only need to run this once)
+# Make sure the source dataset is under 'path_to_your_grapevine_leaf_dataset'
+split_dataset(os.path.join(dataset_path, 'images'), dataset_path)
+
+# Step 3: Create ImageDataGenerators for train and test
+train_datagen = ImageDataGenerator(rescale=1./255, shear_range=0.2, zoom_range=0.2, horizontal_flip=True)
+test_datagen = ImageDataGenerator(rescale=1./255)
+
+train_generator = train_datagen.flow_from_directory(
+    os.path.join(dataset_path, 'train'),
+    target_size=(img_size, img_size),
+    batch_size=32,
+    class_mode='categorical')
+
+test_generator = test_datagen.flow_from_directory(
+    os.path.join(dataset_path, 'test'),
+    target_size=(img_size, img_size),
+    batch_size=32,
+    class_mode='categorical')
+
+# Step 4: Create and compile the CNN model
+model = models.Sequential([
+    Input(shape=(img_size, img_size, 3)),
+    layers.Conv2D(32, (3, 3), activation='relu'),
+    layers.MaxPooling2D((2, 2)),
+
+    layers.Conv2D(64, (3, 3), activation='relu'),
+    layers.MaxPooling2D((2, 2)),
+
+    layers.Conv2D(128, (3, 3), activation='relu'),
+    layers.MaxPooling2D((2, 2)),
+
+    layers.Flatten(),
+    layers.Dense(128, activation='relu'),
+    layers.Dense(train_generator.num_classes, activation='softmax')
+])
+
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+# Step 5: Train the model
+history = model.fit(
+    train_generator,
+    epochs=10,
+    validation_data=test_generator
+)
+
+# Step 6: Evaluate the model and print classification report
+test_loss, test_acc = model.evaluate(test_generator)
+print(f"Test Accuracy: {test_acc}")
+print(f"Test Loss: {test_loss}")
+
+# Get predictions on the test set
+y_pred = model.predict(test_generator)
+y_true = test_generator.classes
+y_pred_classes = np.argmax(y_pred, axis=1)
+
+print("Classification Report:")
+print(classification_report(y_true, y_pred_classes, target_names=train_generator.class_indices.keys()))
+
+# Step 7: Visualize feature maps
+def visualize_feature_map(model, image):
+    # Get the first convolutional layer's output (feature map)
+    layer_outputs = [layer.output for layer in model.layers[:5]]  # Can visualize more layers
+    activation_model = models.Model(inputs=model.input, outputs=layer_outputs)
+
+    # Add an extra dimension for batch size since we are passing a single image
+    image = np.expand_dims(image, axis=0)
+
+    # Get activations (feature maps)
+    activations = activation_model.predict(image)
+
+    # Plot feature maps for the first convolutional layer
+    first_layer_activation = activations[0]
+    num_filters = first_layer_activation.shape[-1]
+
+    # Set up the grid for subplots
+    size = first_layer_activation.shape[1]
+    grid_size = int(np.sqrt(num_filters))
+
+    fig, axes = plt.subplots(grid_size, grid_size, figsize=(12, 12))
+
+    for i in range(grid_size * grid_size):
+        ax = axes[i // grid_size, i % grid_size]
+        ax.imshow(first_layer_activation[0, :, :, i], cmap='viridis')
+        ax.axis('off')
+
+    plt.show()
+
+# Example usage: Take the first image from test set
+image = test_generator[0][0][0]  # Get first image from test set
+# Force model to build by calling it on a dummy input
+_ = model.predict(np.expand_dims(image, axis=0))
+visualize_feature_map(model, image)
+
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
+
+# Compute confusion matrix
+cm = confusion_matrix(y_true, y_pred_classes)
+class_labels = list(train_generator.class_indices.keys())
+
+# Plot the confusion matrix
+plt.figure(figsize=(8, 6))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=class_labels, yticklabels=class_labels)
+plt.xlabel('Predicted Label')
+plt.ylabel('True Label')
+plt.title('Confusion Matrix')
+plt.show()
+-----------------------
+import os
+import shutil
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import tensorflow as tf
+from tensorflow.keras import layers, models
+from tensorflow.keras.layers import Input
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.model_selection import train_test_split
+from tqdm import tqdm
+
+# --- Parameters ---
+img_size = 128
+batch_size = 32
+dataset_path = r"C:\Users\Sastra\Downloads\LAB\LAB\GrapeVine\Grapevine_Leaves_Image_Dataset"
+split_ratio = 0.8
+
+# --- Step 1: Split the dataset into train/test folders ---
+def split_dataset(source_dir, dest_dir, split_ratio=0.8):
+    for class_name in os.listdir(source_dir):
+        class_dir = os.path.join(source_dir, class_name)
+        if os.path.isdir(class_dir):
+            os.makedirs(os.path.join(dest_dir, 'train', class_name), exist_ok=True)
+            os.makedirs(os.path.join(dest_dir, 'test', class_name), exist_ok=True)
+
+            image_paths = [os.path.join(class_dir, f) for f in os.listdir(class_dir) if f.endswith(('.jpg', '.png'))]
+            train_paths, test_paths = train_test_split(image_paths, test_size=1 - split_ratio, random_state=42)
+
+            for path in tqdm(train_paths, desc=f"Train - {class_name}"):
+                shutil.copy(path, os.path.join(dest_dir, 'train', class_name))
+            for path in tqdm(test_paths, desc=f"Test - {class_name}"):
+                shutil.copy(path, os.path.join(dest_dir, 'test', class_name))
+
+# Run only once
+# split_dataset(os.path.join(dataset_path, 'images'), dataset_path)
+
+# --- Step 2: Data Generators ---
+train_datagen = ImageDataGenerator(
+    rescale=1./255,
+    rotation_range=20,
+    zoom_range=0.2,
+    shear_range=0.2,
+    horizontal_flip=True
+)
+
+test_datagen = ImageDataGenerator(rescale=1./255)
+
+train_generator = train_datagen.flow_from_directory(
+    os.path.join(dataset_path, 'train'),
+    target_size=(img_size, img_size),
+    batch_size=batch_size,
+    class_mode='categorical',
+    shuffle=True
+)
+
+test_generator = test_datagen.flow_from_directory(
+    os.path.join(dataset_path, 'test'),
+    target_size=(img_size, img_size),
+    batch_size=batch_size,
+    class_mode='categorical',
+    shuffle=False
+)
+
+# --- Step 3: Model Definition ---
+model = models.Sequential([
+    Input(shape=(img_size, img_size, 3)),
+
+    layers.Conv2D(32, (3, 3), activation='relu'),
+    layers.MaxPooling2D(2, 2),
+
+    layers.Conv2D(64, (3, 3), activation='relu'),
+    layers.MaxPooling2D(2, 2),
+
+    layers.Conv2D(128, (3, 3), activation='relu'),
+    layers.MaxPooling2D(2, 2),
+
+    layers.Dropout(0.3),  # Reduce overfitting
+
+    layers.Flatten(),
+    layers.Dense(256, activation='relu'),
+    layers.Dropout(0.3),
+    layers.Dense(train_generator.num_classes, activation='softmax')
+])
+
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+# --- Step 4: Training ---
+history = model.fit(train_generator, epochs=15, validation_data=test_generator)
+
+# --- Step 5: Evaluation ---
+loss, acc = model.evaluate(test_generator)
+print(f"\nTest Accuracy: {acc*100:.2f}%\n")
+
+# --- Step 6: Confusion Matrix & Classification Report ---
+y_pred = model.predict(test_generator)
+y_pred_classes = np.argmax(y_pred, axis=1)
+y_true = test_generator.classes
+class_labels = list(test_generator.class_indices.keys())
+
+print("Classification Report:")
+print(classification_report(y_true, y_pred_classes, target_names=class_labels))
+
+cm = confusion_matrix(y_true, y_pred_classes)
+
+plt.figure(figsize=(8, 6))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=class_labels, yticklabels=class_labels)
+plt.xlabel('Predicted Label')
+plt.ylabel('True Label')
+plt.title('Confusion Matrix')
+plt.show()
+----------------------------------------------
+from PIL import Image
+import os
+import numpy as np
+from sklearn.preprocessing import LabelEncoder
+from tensorflow.keras.utils import to_categorical
+def preprocess(dir,width=150,length=150):
+    images=[]
+    labels=[]
+    label_encoder=LabelEncoder()
+    for label in os.listdir(dir):
+        label_dir=os.path.join(dir,label)
+        if os.path.isdir(label_dir):
+            for filename in os.listdir(label_dir):
+                if filename.endswith('.jpg') or filename.endswith('.png'):
+                    img_path = os.path.join(label_dir,filename)
+                    img=Image.open(img_path)
+                    img=img.resize((width,length))
+                    img=np.array(img) / 255.0
+                    labels.append(label)
+
+    labels=label_encoder.fit_transform(labels)
+    labels = to_categorical(labels,num_classes=len(label_encoder.classes_))
+    return np.array(images), np.array(labels)
+
+train_dir=r'C:\Users\Sastra\Downloads\LAB\LAB\GrapeVine\Grapevine_Leaves_Image_Dataset\train'
+test_dir=r'C:\Users\Sastra\Downloads\LAB\LAB\GrapeVine\Grapevine_Leaves_Image_Dataset\train'
+train_images, train_labels =preprocess(train_dir)
+test_images, test_labels =preprocess(test_dir)
+
+--------------------------
+model=Sequential([
+    Conv2D(32, (3,3), activation='relu', input_shape=(150,150, 3)),
+    Maxpooling2D(2,2),
+    Conv2D(64,(3,3),activation='relu'),
+    Maxpooling2D(2,2),
+    Conv2D(128,(3,3),activation='relu'),
+    Maxpooling2D(2,2),
+    Conv2D(64,(3,3),activation='relu'),
+    Maxpooling2D(2,2),
+    Flatten(),
+    Dense(512,activation='512'),
+    Dense(2,activation='softmax')
+])
+
+model.summary()
+
+-------------------------------------------
+
+from PIL import Image
+import os
+import numpy as np
+from sklearn.preprocessing import LabelEncoder
+from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+from sklearn.metrics import classification_report, confusion_matrix
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Preprocessing function
+def preprocess(dir, width=150, length=150):
+    images = []
+    labels = []
+    label_encoder = LabelEncoder()
+
+    for label in os.listdir(dir):
+        label_dir = os.path.join(dir, label)
+        if os.path.isdir(label_dir):
+            for filename in os.listdir(label_dir):
+                if filename.endswith('.jpg') or filename.endswith('.png'):
+                    img_path = os.path.join(label_dir, filename)
+                    img = Image.open(img_path).convert('RGB')  # Ensure 3 channels
+                    img = img.resize((width, length))
+                    img = np.array(img) / 255.0
+                    images.append(img)
+                    labels.append(label)
+
+    labels = label_encoder.fit_transform(labels)
+    labels = to_categorical(labels, num_classes=len(label_encoder.classes_))
+
+    return np.array(images), np.array(labels), label_encoder
+
+# Paths
+train_dir = r'C:\Users\Sastra\Downloads\LAB\LAB\GrapeVine\Grapevine_Leaves_Image_Dataset\train'
+test_dir = r'C:\Users\Sastra\Downloads\LAB\LAB\GrapeVine\Grapevine_Leaves_Image_Dataset\test'
+
+# Load data
+train_images, train_labels, label_encoder = preprocess(train_dir)
+test_images, test_labels, _ = preprocess(test_dir)
+
+# Model
+model = Sequential([
+    Conv2D(32, (3, 3), activation='relu', input_shape=(150, 150, 3)),
+    MaxPooling2D(2, 2),
+
+    Conv2D(64, (3, 3), activation='relu'),
+    MaxPooling2D(2, 2),
+
+    Conv2D(128, (3, 3), activation='relu'),
+    MaxPooling2D(2, 2),
+
+    Conv2D(64, (3, 3), activation='relu'),
+    MaxPooling2D(2, 2),
+
+    Flatten(),
+    Dense(512, activation='relu'),
+    Dense(train_labels.shape[1], activation='softmax')  # auto match class count
+])
+
+# Compile
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+# Train
+history = model.fit(train_images, train_labels, epochs=15, validation_data=(test_images, test_labels))
+
+# Evaluation
+loss, acc = model.evaluate(test_images, test_labels)
+print(f"Test Loss: {loss:.4f}")
+print(f"Test Accuracy: {acc:.4f}")
+
+# Predictions
+y_pred = model.predict(test_images)
+y_pred_classes = np.argmax(y_pred, axis=1)
+y_true_classes = np.argmax(test_labels, axis=1)
+class_names = label_encoder.classes_
+
+# Classification Report
+print("Classification Report:")
+print(classification_report(y_true_classes, y_pred_classes, target_names=class_names))
+
+# Confusion Matrix
+cm = confusion_matrix(y_true_classes, y_pred_classes)
+plt.figure(figsize=(8, 6))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
+            xticklabels=class_names, yticklabels=class_names)
+plt.xlabel('Predicted')
+plt.ylabel('True')
+plt.title('Confusion Matrix')
+plt.show()
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+from tensorflow.keras.models import Model
+import matplotlib.pyplot as plt
+import numpy as np
+from tensorflow.keras.layers import Conv2D
+from tensorflow.keras import Input
+
+# Step 1: Define the input explicitly so model.input is valid
+input_tensor = Input(shape=(150, 150, 3))
+x = Conv2D(32, (3, 3), activation='relu')(input_tensor)
+x = MaxPooling2D(2, 2)(x)
+x = Conv2D(64, (3, 3), activation='relu')(x)
+x = MaxPooling2D(2, 2)(x)
+x = Conv2D(128, (3, 3), activation='relu')(x)
+x = MaxPooling2D(2, 2)(x)
+x = Conv2D(64, (3, 3), activation='relu')(x)
+x = MaxPooling2D(2, 2)(x)
+x = Flatten()(x)
+x = Dense(512, activation='relu')(x)
+output_tensor = Dense(train_labels.shape[1], activation='softmax')(x)
+
+model = Model(inputs=input_tensor, outputs=output_tensor)
+
+# Step 2: Compile and train (you can skip if already done)
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+model.fit(train_images, train_labels, epochs=1, validation_data=(test_images, test_labels))
+
+# Step 3: Pick a sample image and expand dims
+sample_img = test_images[0]
+sample_img_batch = np.expand_dims(sample_img, axis=0)
+
+# Step 4: Get outputs from all Conv2D layers
+layer_outputs = [layer.output for layer in model.layers if isinstance(layer, Conv2D)]
+activation_model = Model(inputs=model.input, outputs=layer_outputs)
+
+# Step 5: Predict and visualize feature maps
+activations = activation_model.predict(sample_img_batch)
+
+for layer_idx, feature_map in enumerate(activations):
+    num_features = feature_map.shape[-1]
+    size = feature_map.shape[1]
+
+    cols = 8
+    rows = num_features // cols + 1
+
+    plt.figure(figsize=(8,6))
+    for i in range(num_features):
+        plt.subplot(rows, cols, i + 1)
+        plt.imshow(feature_map[0, :, :, i], cmap='viridis')
+        plt.axis('off')
+    plt.suptitle(f"Feature Maps - Conv Layer {layer_idx + 1}")
+    plt.tight_layout()
+    plt.show()
+
+# Plot training & validation accuracy and loss
+plt.figure(figsize=(14, 5))
+
+# Accuracy
+plt.subplot(1, 2, 1)
+plt.plot(history.history['accuracy'], label='Train Accuracy', marker='o')
+plt.plot(history.history['val_accuracy'], label='Validation Accuracy', marker='o')
+plt.title('Model Accuracy')
+plt.xlabel('Epoch')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.grid(True)
+
+# Loss
+plt.subplot(1, 2, 2)
+plt.plot(history.history['loss'], label='Train Loss', marker='o')
+plt.plot(history.history['val_loss'], label='Validation Loss', marker='o')
+plt.title('Model Loss')
+plt.xlabel('Epoch')
+plt.ylabel('Loss')
+plt.legend()
+plt.grid(True)
+
+plt.tight_layout()
+plt.show()
+
+
+

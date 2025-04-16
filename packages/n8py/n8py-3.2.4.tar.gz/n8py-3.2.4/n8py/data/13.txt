@@ -1,0 +1,152 @@
+# LOGISTIC REGRESSION 
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.impute import SimpleImputer # Import SimpleImputer
+
+# Load Raisin Dataset
+raisin_data = pd.read_excel("Raisin_Dataset.xlsx")
+
+# Identify categorical columns
+categorical_cols = raisin_data.select_dtypes(include=['object']).columns
+
+# Convert categorical features to numeric using Label Encoding
+# Ensure all values in categorical columns are strings before encoding
+for col in categorical_cols:
+    raisin_data[col] = raisin_data[col].astype(str)  # Convert to string type
+    raisin_data[col] = LabelEncoder().fit_transform(raisin_data[col])
+
+# Split features and target
+X_raisin = raisin_data.iloc[:, :-1]  # Features
+y_raisin = LabelEncoder().fit_transform(raisin_data.iloc[:, -1])  # Encode labels
+
+# Split into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X_raisin, y_raisin, test_size=0.3, random_state=42)
+
+# Impute missing values using SimpleImputer
+imputer = SimpleImputer(strategy='mean') # Create an imputer with 'mean' strategy
+X_train = imputer.fit_transform(X_train) # Fit and transform on training data
+X_test = imputer.transform(X_test) # Transform testing data
+
+# Standardize features
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+# Train Logistic Regression model
+logreg = LogisticRegression(max_iter=1000)
+logreg.fit(X_train, y_train)
+
+# Predictions
+y_pred = logreg.predict(X_test)
+
+# Display results
+print("Classification Report:\n", classification_report(y_test, y_pred))
+
+# Confusion Matrix
+conf_matrix = confusion_matrix(y_test, y_pred)
+sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues')
+plt.title('Confusion Matrix')
+plt.xlabel('Predicted Label')
+plt.ylabel('True Label')
+plt.show()
+
+# Plot Sigmoid Function
+z = np.linspace(-10, 10, 1000)
+sigmoid = 1 / (1 + np.exp(-z))
+
+plt.figure(figsize=(8, 5))
+plt.plot(z, sigmoid, label='Sigmoid Curve')
+plt.title('Sigmoid Function')
+plt.xlabel('z')
+plt.ylabel('Probability')
+plt.grid(True)
+plt.legend()
+plt.show()
+
+
+# Feed Forward
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.regularizers import l2
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.callbacks import EarlyStopping
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+
+# Load Accelerometer Dataset
+accel_data = pd.read_csv("/content/accelerometer.csv")  # Replace with actual file name
+X_accel = accel_data[['x', 'y', 'z']]  # Feature columns
+y_accel = accel_data['pctid']  # Target column
+
+# Split into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X_accel, y_accel, test_size=0.2, random_state=42)
+
+# Standardize features
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+# Function to build models
+def build_model(l2_lambda=0.0, dropout_rate=0.0):
+    model = Sequential([
+        Dense(64, activation='relu', kernel_regularizer=l2(l2_lambda)),
+        Dropout(dropout_rate),
+        Dense(32, activation='relu', kernel_regularizer=l2(l2_lambda)),
+        Dropout(dropout_rate),
+        Dense(1)  # Regression output
+    ])
+    model.compile(optimizer=Adam(learning_rate=0.001), loss='mse', metrics=['mae'])
+    return model
+
+# Train and evaluate models
+def train_and_evaluate(model_name, model):
+    early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
+    history = model.fit(
+        X_train, y_train, validation_split=0.2, epochs=100, batch_size=32, callbacks=[early_stopping], verbose=0
+    )
+    test_loss, test_mae = model.evaluate(X_test, y_test, verbose=0)
+    return history, test_loss, test_mae
+
+# Train models with different regularizers
+models = {
+    "L2 Regularization": build_model(l2_lambda=0.01),
+    "Dropout": build_model(dropout_rate=0.3)
+}
+
+results = {}
+histories = {}
+
+for model_name, model in models.items():
+    history, test_loss, test_mae = train_and_evaluate(model_name, model)
+    results[model_name] = test_mae
+    histories[model_name] = history
+
+# Plot Accuracy vs Regularizer
+plt.figure(figsize=(8, 5))
+plt.bar(results.keys(), results.values(), color=['blue', 'red'])
+plt.xlabel("Model Type")
+plt.ylabel("Mean Absolute Error (MAE)")
+plt.title("Model Comparison: L2 vs Dropout")
+plt.show()
+
+# Plot Train vs Test Loss for both models
+plt.figure(figsize=(10, 5))
+for model_name, history in histories.items():
+    plt.plot(history.history['loss'], label=f"{model_name} - Train Loss")
+    plt.plot(history.history['val_loss'], label=f"{model_name} - Test Loss", linestyle='dashed')
+
+plt.xlabel("Epochs")
+plt.ylabel("Loss (MSE)")
+plt.title("Training vs Testing Loss")
+plt.legend()
+plt.show()

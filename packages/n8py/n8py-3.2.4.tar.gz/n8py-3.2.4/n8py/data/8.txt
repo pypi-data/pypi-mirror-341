@@ -1,0 +1,203 @@
+---------------------------------------------------
+==FEEDFORWARD WITH REGULARISATION CLASSIFICATION==
+----------------------------------------------------
+
+import numpy as np
+import pandas as pd
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.regularizers import l2
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.callbacks import EarlyStopping
+from sklearn.metrics import classification_report, confusion_matrix
+import matplotlib.pyplot as plt
+
+# Load the Titanic dataset from seaborn
+data = sns.load_dataset("titanic")
+
+# Drop irrelevant columns
+data = data.drop(columns=["who", "deck", "embark_town", "alive", "adult_male", "class"], errors="ignore")
+
+# Handle missing values
+data["age"] = data["age"].fillna(data["age"].median())
+data["embarked"] = data["embarked"].fillna(data["embarked"].mode()[0])
+data["fare"] = data["fare"].fillna(data["fare"].median())
+
+# Convert categorical variables
+data = pd.get_dummies(data, columns=["sex", "embarked"], drop_first=True)
+
+# Drop rows with missing target values
+data = data.dropna(subset=["survived"])
+
+# Define features and target
+X = data.drop(columns=["survived"])
+y = data["survived"]
+
+# Standardize numerical features
+scaler = StandardScaler()
+numerical_cols = ["age", "fare"]
+X[numerical_cols] = scaler.fit_transform(X[numerical_cols])
+
+# Split dataset
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Model functions
+def build_model(l2_lambda=0.0, dropout_rate=0.0):
+    model = Sequential([
+        Dense(64, input_dim=X_train.shape[1], activation='relu', kernel_regularizer=l2(l2_lambda)),
+        Dropout(dropout_rate),
+        Dense(32, activation='relu', kernel_regularizer=l2(l2_lambda)),
+        Dropout(dropout_rate),
+        Dense(1, activation='sigmoid')
+    ])
+    model.compile(optimizer=Adam(learning_rate=0.001), loss='binary_crossentropy', metrics=['accuracy'])
+    return model
+
+# Train and evaluate function
+def train_and_evaluate(model_name, model):
+    early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
+    history = model.fit(
+        X_train, y_train, validation_split=0.2, epochs=100, batch_size=32, callbacks=[early_stopping], verbose=0
+    )
+    test_loss, test_accuracy = model.evaluate(X_test, y_test, verbose=0)
+    y_pred = (model.predict(X_test).flatten() >= 0.5).astype(int)
+    print(f"{model_name} Test Accuracy: {test_accuracy:.4f}")
+    print(classification_report(y_test, y_pred))
+    return test_accuracy
+
+# Train models and compare
+models = {
+    "Base Model": build_model(),
+    "L2 Regularization": build_model(l2_lambda=0.01),
+    "Dropout": build_model(dropout_rate=0.3),
+    "Combined Regularization": build_model(l2_lambda=0.01, dropout_rate=0.3)
+}
+
+results = {}
+for model_name, model in models.items():
+    results[model_name] = train_and_evaluate(model_name, model)
+
+# Compare results
+plt.figure(figsize=(8, 5))
+plt.bar(results.keys(), results.values(), color=['blue', 'green', 'red', 'purple'])
+plt.xlabel("Model Type")
+plt.ylabel("Test Accuracy")
+plt.title("Model Comparison on Titanic Dataset")
+plt.show()
+
+---------------------------------------------------
+== FEEDFORWARD WITH REGULARISATION REGRESSION==
+----------------------------------------------------
+
+# Import necessary libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+from sklearn.datasets import load_wine
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.regularizers import l1, l2
+from tensorflow.keras.callbacks import EarlyStopping
+
+# Load the inbuilt Wine dataset
+wine = load_wine()
+X = pd.DataFrame(wine.data, columns=wine.feature_names)
+y = X["alcohol"]  # Predict alcohol content
+X = X.drop(columns=["alcohol"])  # Remove alcohol from features
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Standardize the features
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+# Function to evaluate models
+def evaluate_model(model, X_test, y_test):
+    y_pred = model.predict(X_test).flatten()
+    mse = mean_squared_error(y_test, y_pred)
+    rmse = np.sqrt(mse)
+    mae = mean_absolute_error(y_test, y_pred)
+    r2 = r2_score(y_test, y_pred)
+    return {"MSE": mse, "RMSE": rmse, "MAE": mae, "R²": r2}
+
+# Baseline model
+baseline_model = Sequential([
+    Dense(64, activation='relu', input_shape=(X_train.shape[1],)),
+    Dense(32, activation='relu'),
+    Dense(1)  # Output layer
+])
+baseline_model.compile(optimizer='adam', loss='mse', metrics=['mae'])
+baseline_model.fit(X_train, y_train, epochs=100, batch_size=32, validation_data=(X_test, y_test), verbose=0)
+baseline_metrics = evaluate_model(baseline_model, X_test, y_test)
+
+# L1 Regularization model
+l1_model = Sequential([
+    Dense(64, activation='relu', kernel_regularizer=l1(0.01), input_shape=(X_train.shape[1],)),
+    Dense(32, activation='relu', kernel_regularizer=l1(0.01)),
+    Dense(1)
+])
+l1_model.compile(optimizer='adam', loss='mse', metrics=['mae'])
+l1_model.fit(X_train, y_train, epochs=100, batch_size=32, validation_data=(X_test, y_test), verbose=0)
+l1_metrics = evaluate_model(l1_model, X_test, y_test)
+
+# L2 Regularization model
+l2_model = Sequential([
+    Dense(64, activation='relu', kernel_regularizer=l2(0.01), input_shape=(X_train.shape[1],)),
+    Dense(32, activation='relu', kernel_regularizer=l2(0.01)),
+    Dense(1)
+])
+l2_model.compile(optimizer='adam', loss='mse', metrics=['mae'])
+l2_model.fit(X_train, y_train, epochs=100, batch_size=32, validation_data=(X_test, y_test), verbose=0)
+l2_metrics = evaluate_model(l2_model, X_test, y_test)
+
+# Dropout Regularization model
+dropout_model = Sequential([
+    Dense(64, activation='relu', input_shape=(X_train.shape[1],)),
+    Dropout(0.4),
+    Dense(32, activation='relu'),
+    Dropout(0.4),
+    Dense(1)
+])
+dropout_model.compile(optimizer='adam', loss='mse', metrics=['mae'])
+dropout_model.fit(X_train, y_train, epochs=100, batch_size=32, validation_data=(X_test, y_test), verbose=0)
+dropout_metrics = evaluate_model(dropout_model, X_test, y_test)
+
+# Early Stopping model
+early_stopping = EarlyStopping(monitor="val_loss", patience=10, restore_best_weights=True)
+early_stopping_model = Sequential([
+    Dense(64, activation='relu', input_shape=(X_train.shape[1],)),
+    Dense(32, activation='relu'),
+    Dense(1)
+])
+early_stopping_model.compile(optimizer='adam', loss='mse', metrics=['mae'])
+early_stopping_model.fit(X_train, y_train, epochs=100, batch_size=32, validation_data=(X_test, y_test), callbacks=[early_stopping], verbose=0)
+early_stopping_metrics = evaluate_model(early_stopping_model, X_test, y_test)
+
+# Combine results
+metrics_comparison = pd.DataFrame({
+    "Baseline": baseline_metrics,
+    "L1 Regularization": l1_metrics,
+    "L2 Regularization": l2_metrics,
+    "Dropout Regularization": dropout_metrics,
+    "Early Stopping": early_stopping_metrics
+})
+
+print(metrics_comparison)
+
+# Plot results
+metrics_comparison.T.plot(kind="bar", figsize=(10, 6))
+plt.title("Comparison of Evaluation Metrics for Different Regularization Methods")
+plt.ylabel("Metric Value")
+plt.xlabel("Regularization Technique")
+plt.xticks(rotation=45)
+plt.legend(loc="upper right")
+plt.tight_layout()
+plt.show()

@@ -1,0 +1,286 @@
+## EX -5 LogisiticRegression
+------------------------------------------------------------------
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.datasets import load_wine
+
+# Load wine dataset from sklearn
+data = load_wine()
+X = pd.DataFrame(data.data, columns=data.feature_names)
+y = pd.Series(data.target)
+
+# Binary classification: Class 0 vs Rest
+y_binary = (y == 0).astype(int)
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y_binary, test_size=0.3, random_state=42)
+
+# Train logistic regression model
+model = LogisticRegression(max_iter=1000)
+model.fit(X_train, y_train)
+
+# Predictions
+y_pred = model.predict(X_test)
+
+# Classification report
+print("Classification Report:\n", classification_report(y_test, y_pred))
+
+# Confusion Matrix
+conf_matrix = confusion_matrix(y_test, y_pred)
+sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues', xticklabels=['Rest', 'Class 0'], yticklabels=['Rest', 'Class 0'])
+plt.title('Confusion Matrix')
+plt.xlabel('Predicted Label')
+plt.ylabel('True Label')
+plt.show()
+
+# Sigmoid Curve Visualization
+z = np.linspace(-10, 10, 1000)
+sigmoid = 1 / (1 + np.exp(-z))
+
+plt.figure(figsize=(8, 5))
+plt.plot(z, sigmoid, label='Sigmoid Curve')
+plt.title('Sigmoid Function')
+plt.xlabel('z')
+plt.ylabel('Probability')
+plt.grid(True)
+plt.legend()
+plt.show()
+
+-------------------------------------------------------------------------
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report
+from sklearn.datasets import load_wine
+
+# Load wine dataset from sklearn
+data = load_wine()
+X = pd.DataFrame(data.data, columns=data.feature_names)
+y = pd.Series(data.target)
+
+# Binary classification: Class 0 vs Rest
+y_binary = (y == 0).astype(int)
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y_binary, test_size=0.2, random_state=42)
+
+# Train logistic regression model
+model = LogisticRegression(max_iter=1000)
+model.fit(X_train, y_train)
+
+# Predictions
+y_pred = model.predict(X_test)
+
+# Classification report
+print("Classification Report:\n", classification_report(y_test, y_pred))
+
+# Sigmoid Curve Visualization
+z = np.linspace(-10, 10, 1000)
+sigmoid = 1 / (1 + np.exp(-z))
+
+plt.figure(figsize=(8, 5))
+plt.plot(z, sigmoid, label='Sigmoid Curve')
+plt.title('Sigmoid Function')
+plt.xlabel('z')
+plt.ylabel('Probability')
+plt.grid(True)
+plt.legend()
+plt.show()
+
+-----------------------------------------------------------------------------
+
+from sklearn import linear_model, datasets
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix
+import numpy as np
+import matplotlib.pyplot as plt
+import itertools
+
+# Load wine dataset
+win = datasets.load_wine()
+
+# Data and target values
+X = win.data
+y = win.target
+
+# Split dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=7)
+
+# Train logistic regression model
+log_reg_model = linear_model.LogisticRegression(max_iter=1000)
+log_reg_model.fit(X_train, y_train)
+log_reg_base_score = log_reg_model.score(X_test, y_test)
+print("The score for the Logistic Regression Model is:", log_reg_base_score)
+
+# Confusion Matrix
+cm = confusion_matrix(y_test, log_reg_model.predict(X_test))
+print("Confusion Matrix:\n", cm)
+
+# Plot confusion matrix
+plt.figure(figsize=(6, 6))
+plt.imshow(cm, interpolation='nearest', cmap=plt.cm.Blues)
+plt.title('Confusion Matrix')
+plt.colorbar()
+tick_marks = np.arange(len(win.target_names))
+plt.xticks(tick_marks, win.target_names, rotation=45)
+plt.yticks(tick_marks, win.target_names)
+plt.xlabel('Predicted Label')
+plt.ylabel('True Label')
+plt.show()
+
+# Selecting two features for visualization
+X = win.data[:, :2]
+Y = win.target
+log_reg_model.fit(X, Y)
+
+# Create a mesh to plot decision boundaries
+x_min, x_max = X[:, 0].min() - 0.5, X[:, 0].max() + 0.5
+y_min, y_max = X[:, 1].min() - 0.5, X[:, 1].max() + 0.5
+xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.01), np.arange(y_min, y_max, 0.01))
+Z = log_reg_model.predict(np.c_[xx.ravel(), yy.ravel()])
+Z = Z.reshape(xx.shape)
+
+# Plot decision boundary
+plt.figure(1, figsize=(8, 6))
+plt.pcolormesh(xx, yy, Z, cmap=plt.cm.Paired, shading='auto')
+plt.scatter(X[:, 0], X[:, 1], c=Y, edgecolors='k', cmap=plt.cm.Paired)
+plt.xlabel(win.feature_names[0])
+plt.ylabel(win.feature_names[1])
+plt.title('Logistic Regression Decision Boundary')
+plt.xlim(xx.min(), xx.max())
+plt.ylim(yy.min(), yy.max())
+plt.xticks(())
+plt.yticks(())
+plt.show()
+------------------------------------------------------------------------
+#Sigmoid model of Logistic regression model
+------------------------------------------------------------------------
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+
+# Sample liver dataset
+# Assuming the dataset is loaded into a DataFrame
+data = pd.read_csv(r"Copy your dataset path example downloads\Liver.csv")
+
+#change accord to your Dataset Column name
+# Encode 'Gender' column
+le = LabelEncoder()
+data['Gender'] = le.fit_transform(data['Gender'])
+
+# Features and target
+X = data.drop('Dataset', axis=1)
+y = data['Dataset']
+
+# Ensure all data is numeric
+X = X.apply(pd.to_numeric, errors='coerce').fillna(0)
+
+# Split data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Feature Scaling
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+
+# Logistic Regression model
+logreg = LogisticRegression(max_iter=1000)
+logreg.fit(X_train_scaled, y_train)
+
+# Predictions
+y_pred = logreg.predict(X_test_scaled)
+
+# Classification report
+print("Classification Report:\n", classification_report(y_test, y_pred))
+
+# Sigmoid Curve Visualization using predicted probabilities
+y_pred_proba = logreg.predict_proba(X_test_scaled)[:, 1]
+
+plt.plot(np.sort(y_pred_proba), np.linspace(0, 1, len(y_pred_proba)), color='blue')
+plt.xlabel('Predicted Probability (Sigmoid Output)')
+plt.ylabel('Cumulative Probability')
+plt.title('Sigmoid Output of Logistic Regression Model')
+plt.grid(True)
+plt.show()
+------------------------------------------------------------
+#Logistic Regression Decision Boundary 
+-----------------------------------------------------------
+
+from sklearn import linear_model, datasets
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix
+import numpy as np
+import matplotlib.pyplot as plt
+import itertools
+
+# Load wine dataset
+win = datasets.load_wine()
+
+# Data and target values
+X = win.data
+y = win.target
+
+# Split dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=7)
+
+# Train logistic regression model
+log_reg_model = linear_model.LogisticRegression(max_iter=1000)
+log_reg_model.fit(X_train, y_train)
+log_reg_base_score = log_reg_model.score(X_test, y_test)
+print("The score for the Logistic Regression Model is:", log_reg_base_score)
+
+# Confusion Matrix
+cm = confusion_matrix(y_test, log_reg_model.predict(X_test))
+print("Confusion Matrix:\n", cm)
+
+# Plot confusion matrix
+plt.figure(figsize=(6, 6))
+plt.imshow(cm, interpolation='nearest', cmap=plt.cm.Blues)
+plt.title('Confusion Matrix')
+plt.colorbar()
+tick_marks = np.arange(len(win.target_names))
+plt.xticks(tick_marks, win.target_names, rotation=45)
+plt.yticks(tick_marks, win.target_names)
+plt.xlabel('Predicted Label')
+plt.ylabel('True Label')
+plt.show()
+
+# Selecting two features for visualization
+X = win.data[:, :2]
+Y = win.target
+log_reg_model.fit(X, Y)
+
+# Create a mesh to plot decision boundaries
+x_min, x_max = X[:, 0].min() - 0.5, X[:, 0].max() + 0.5
+y_min, y_max = X[:, 1].min() - 0.5, X[:, 1].max() + 0.5
+xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.01), np.arange(y_min, y_max, 0.01))
+Z = log_reg_model.predict(np.c_[xx.ravel(), yy.ravel()])
+Z = Z.reshape(xx.shape)
+
+# Plot decision boundary
+plt.figure(1, figsize=(8, 6))
+plt.pcolormesh(xx, yy, Z, cmap=plt.cm.Paired, shading='auto')
+plt.scatter(X[:, 0], X[:, 1], c=Y, edgecolors='k', cmap=plt.cm.Paired)
+plt.xlabel(win.feature_names[0])
+plt.ylabel(win.feature_names[1])
+plt.title('Logistic Regression Decision Boundary')
+plt.xlim(xx.min(), xx.max())
+plt.ylim(yy.min(), yy.max())
+plt.xticks(())
+plt.yticks(())
+plt.show()
+
+#END
