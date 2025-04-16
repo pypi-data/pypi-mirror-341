@@ -1,0 +1,2 @@
+[console_scripts]
+chemex = chemex.chemex:main
