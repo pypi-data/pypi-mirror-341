@@ -1,0 +1,7 @@
+blessed
+GeoAlchemy2
+PyYaml
+psycopg2
+requests
+SQLAlchemy
+urllib3
