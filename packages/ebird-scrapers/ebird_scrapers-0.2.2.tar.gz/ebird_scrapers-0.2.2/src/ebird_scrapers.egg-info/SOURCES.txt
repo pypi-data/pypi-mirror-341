@@ -1,0 +1,11 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+src/ebird/scrapers/__init__.py
+src/ebird/scrapers/checklists.py
+src/ebird/scrapers/recent.py
+src/ebird_scrapers.egg-info/PKG-INFO
+src/ebird_scrapers.egg-info/SOURCES.txt
+src/ebird_scrapers.egg-info/dependency_links.txt
+src/ebird_scrapers.egg-info/requires.txt
+src/ebird_scrapers.egg-info/top_level.txt
