@@ -1,0 +1,2 @@
+[console_scripts]
+devops-toolkit = devops_toolkit.cli:main

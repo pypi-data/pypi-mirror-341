@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: devops-file-toolkit
+Version: 0.1.0
+Summary: A toolkit for Dockerfile optimization and Kubernetes YAML linting
+Home-page: https://github.com/JaguarsCodehub/devops-toolkit
+Author: Jyotindra KT
+Author-email: jyotindrakt21@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML
+Requires-Dist: argparse
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# DevOps Toolkit 🛠️
+
+A Python-based command-line tool that helps optimize Dockerfiles and lint Kubernetes YAML files for best practices and security.
+
+## Features
+
+- 🐳 Dockerfile Analyzer:
+  - Detects common anti-patterns like using `latest`, missing `.dockerignore`, etc.
+- ☸️ Kubernetes YAML Linter:
+  - Validates schema and checks for best practices like probes, securityContext, etc.
+- ✅ JSON output for automation
+- 🎯 Easy to run from CLI
+
+## Installation
+
+```bash
+pip install .
