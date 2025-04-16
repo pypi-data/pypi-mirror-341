@@ -1,0 +1,13 @@
+whisper_realtime_transcriber/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whisper_realtime_transcriber/__main__.py,sha256=huh7tgWE__fzNTtsYRRcYwVfj7f2TF8pssoO1XSRmBo,974
+whisper_realtime_transcriber/api.py,sha256=Iw8VrmD9sH_5YgygjpyKdpipNsF2ajzh58nfkwHgJjw,2374
+whisper_realtime_transcriber/input_stream_generator.py,sha256=Akd9TFMcSRpS8mPxgGIsKZpYZFkKIMJRPGKmAXpPd4A,13065
+whisper_realtime_transcriber/realtime_transcriber.py,sha256=5oDxtLFLCtOQKu04IyRs1txSgHOdxfy2zt9qCt1JdOg,4738
+whisper_realtime_transcriber/whisper_model.py,sha256=uxf-crPcyV5YivYti8ytUFD0EGWqaLx8yRb6m8DhGDQ,9836
+whisper_realtime_transcriber/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whisper_realtime_transcriber/utils/utils.py,sha256=pC2hymWpeSj-3j1M6e44LZKG6Fyy16Bv9vIOk-Tj1zI,426
+whisper_realtime_transcriber-1.1.0.dist-info/licenses/LICENSE,sha256=SCIXTTDpo5n_ldNEvarulSkXPb1bbHR2jRQiAm9Nb7o,1067
+whisper_realtime_transcriber-1.1.0.dist-info/METADATA,sha256=W3Pc-Dv-nLho5uGwY-_2g31YB-LwMZgvhEigFUG0tDQ,3695
+whisper_realtime_transcriber-1.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+whisper_realtime_transcriber-1.1.0.dist-info/top_level.txt,sha256=cpBg1TUXkYD-NCwe-jMKdCR_T3VRVtz_-pyyU30vWfA,29
+whisper_realtime_transcriber-1.1.0.dist-info/RECORD,,
