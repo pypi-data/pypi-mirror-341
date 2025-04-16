@@ -1,0 +1,2 @@
+[console_scripts]
+automatyzer_desktop = automatyzer_desktop.cli.main:main
