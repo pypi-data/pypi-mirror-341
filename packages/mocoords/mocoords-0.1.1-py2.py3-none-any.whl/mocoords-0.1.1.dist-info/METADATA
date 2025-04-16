@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: mocoords
+Version: 0.1.1
+Summary: draw a dataset from inside Jupyter
+Author: Vincent D. Warmerdam
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anywidget>=0.9.2
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+<img src="imgs/logo.png" width=125 height=125 align="right" style="z-index: 9999;">
+
+### mocoords
+
+> "Parallel coordinate charts are just so dang useful"
+
+This project is incredibly early right now, but the goal is to allow for an interactive widget like below:
+
+The selections that you make can be sent back to Python, allowing you to make complex selections for bulk labelling on your embeddings. To give this a proper spin yourself you should be able to use the [WASM environment on Github Pages](https://koaning.github.io/mocoords/). 
