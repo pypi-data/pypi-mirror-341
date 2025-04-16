@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: password-fun
+Version: 0.0.0
+Summary: A simple Python module that generates, checks vulnerability, and other. Recommended for programmers who likes playing with passwords.
+Author: Adonis Miclea
+Author-email: tilik_87@yahoo.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
