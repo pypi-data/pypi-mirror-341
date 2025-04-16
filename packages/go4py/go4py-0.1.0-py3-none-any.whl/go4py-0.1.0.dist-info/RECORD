@@ -1,0 +1,13 @@
+go4py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+go4py/cli.py,sha256=H-HJHsQCK74_lR465nDRfoOscvVJWU43q9k500DfYpo,3671
+go4py/doc_annotation.py,sha256=01n04P61RkM7V-_9McegVDnQ1ueltYQGj--ijdjWEyU,1044
+go4py/get_go_functions.py,sha256=XZG6reEjVD0bX08rlXe_t_lhcxHLFKCXEAqyeagam1o,1465
+go4py/template_engine.py,sha256=wDwxY4q0fRPNwNjgwb9--bxnG-NemNoYV-_0oFX4710,838
+go4py/test_server.py,sha256=B3fp3j5iMZgUjVzz1a5yK-7frm-5YvAE1rszY8uk5wg,209
+go4py/types.py,sha256=tWCsHGNocEr0JZcWQevLQmbeJtcQCDB3xqAe7KjiSFQ,10077
+go4py/go_cmd/parse/main.go,sha256=TC6_dy_kWd7tGXAbI0k2vW-BEefMc-KZ2QrgsmyAuKA,5621
+go4py-0.1.0.dist-info/METADATA,sha256=tCjLTO_cLl7jqMIMqzqPX4ZQuLQhLe8XpCOg7hQxkZc,503
+go4py-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+go4py-0.1.0.dist-info/entry_points.txt,sha256=_Mb-BB4IALDoAni0M67zNlhdZqLB9irl9RzmswUA8uU,40
+go4py-0.1.0.dist-info/top_level.txt,sha256=wsgoqLSngfq3Mijcs7c75m0104aHIQxLsllgDp6RzYw,6
+go4py-0.1.0.dist-info/RECORD,,
