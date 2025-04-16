@@ -1,0 +1,26 @@
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "mx-logger"
+version = "1.0.0"
+description = "mx logger"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    {name = "oevergodofchaos", email = "vezonzzzzzz@gmail.com"}
+]
+
+keywords = [
+]
+
+dependencies = [
+]
+
+packages = [
+    { include = "mx_logger" }
+]
+
+[tool.poetry]
+package-mode = true
