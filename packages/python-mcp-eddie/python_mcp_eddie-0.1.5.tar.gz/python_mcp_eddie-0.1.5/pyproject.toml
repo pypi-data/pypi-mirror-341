@@ -1,0 +1,22 @@
+[project]
+name = "python-mcp-eddie"
+version = "0.1.5"
+description = "This is sample mcp for me to use"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.6.0",
+]
+keywords = ["mcp", "python-mcp", "sample", "fastapi"]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+python-mcp-eddie = "python_mcp_eddie:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
