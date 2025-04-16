@@ -1,0 +1,10 @@
+tests/__init__.py,sha256=o7wj_fiEgagLluLp8Ryv5xpf1csS4idLKHKqrQ8y1a8,32
+tests/conftest.py,sha256=Ps6guGbQCv5uE14bLEQIc9Hs7Q5PJdRZuFmd0V5b79s,1502
+tests/test_client.py,sha256=MpeHwG4cTrrhH_4gzdvhhyolqeXQa3M4Kp8hq_LezXY,2797
+tests/test_item_operations.py,sha256=JuvNIKEMIS7BS3teuqby1rza_lt0Cpb50wj9nJgS9zE,1909
+tests/test_search.py,sha256=dSvu9aFS2TuY_f8LGHzJMDVXTwNpRXcUphXkIT5Ux1g,1221
+mseep_zotero_mcp-0.1.5.dist-info/METADATA,sha256=sElsBFzaSiW74ig7N0Ft5xyi4ydqHPLV93MwLgbRwVc,8217
+mseep_zotero_mcp-0.1.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_zotero_mcp-0.1.5.dist-info/entry_points.txt,sha256=Ap51w7X8LihVnVg_gLgKOeA6r0-TqzF73wbc2pqnUGI,51
+mseep_zotero_mcp-0.1.5.dist-info/licenses/LICENSE,sha256=wVf3dBg1aTAo_WTChsvhdcqWsoCJ9FR7FgXPEFj5a2g,1069
+mseep_zotero_mcp-0.1.5.dist-info/RECORD,,
