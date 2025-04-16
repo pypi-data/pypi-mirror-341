@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: mseep-needle-mcp
+Version: 0.1.0
+Summary: Needle MCP integration
+Author-email: Jan Heimes <jan@needle-ai.com>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Dist: mcp>=1.1.0
+Requires-Dist: needle-python>=0.4.0
+Requires-Dist: python-dotenv>=1.0.1
