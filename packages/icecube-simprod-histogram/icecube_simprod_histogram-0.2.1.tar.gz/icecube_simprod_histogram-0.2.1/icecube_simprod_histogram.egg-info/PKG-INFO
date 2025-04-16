@@ -1,0 +1,55 @@
+Metadata-Version: 2.4
+Name: icecube-simprod-histogram
+Version: 0.2.1
+Summary: Utilities for working with histograms created for simprod
+Author-email: IceCube <developers@icecube.wisc.edu>
+License: MIT License
+        
+        Copyright (c) 2024 IceCube Neutrino Observatory
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://pypi.org/project/icecube-simprod-histogram/
+Project-URL: Tracker, https://github.com/icecube/simprod-histogram/issues
+Project-URL: Source, https://github.com/icecube/simprod-histogram
+Keywords: histogram sampling,simulation,statistics
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: <3.12,>=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: h5py
+Provides-Extra: tests
+Requires-Dist: h5py; extra == "tests"
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: matplotlib; extra == "tests"
+Provides-Extra: mypy
+Requires-Dist: h5py; extra == "mypy"
+Requires-Dist: pytest; extra == "mypy"
+Requires-Dist: matplotlib; extra == "mypy"
+Provides-Extra: display
+Requires-Dist: h5py; extra == "display"
+Requires-Dist: matplotlib; extra == "display"
+Dynamic: license-file
+
+<!--- Top of README Badges (automated) --->
+[![PyPI](https://img.shields.io/pypi/v/icecube-simprod-histogram)](https://pypi.org/project/icecube-simprod-histogram/) [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/icecube/simprod-histogram?include_prereleases)](https://github.com/icecube/simprod-histogram/) [![Versions](https://img.shields.io/pypi/pyversions/icecube-simprod-histogram.svg)](https://pypi.org/project/icecube-simprod-histogram) [![PyPI - License](https://img.shields.io/pypi/l/icecube-simprod-histogram)](https://github.com/icecube/simprod-histogram/blob/main/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/icecube/simprod-histogram)](https://github.com/icecube/simprod-histogram/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aopen) [![GitHub pull requests](https://img.shields.io/github/issues-pr/icecube/simprod-histogram)](https://github.com/icecube/simprod-histogram/pulls?q=is%3Apr+sort%3Aupdated-desc+is%3Aopen)
+<!--- End of README Badges (automated) --->
+# simprod-histogram
+Utilities for working with histograms created for simprod

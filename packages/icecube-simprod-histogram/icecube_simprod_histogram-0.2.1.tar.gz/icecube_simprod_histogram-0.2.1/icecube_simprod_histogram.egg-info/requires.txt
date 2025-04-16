@@ -1,0 +1,15 @@
+h5py
+
+[display]
+h5py
+matplotlib
+
+[mypy]
+h5py
+pytest
+matplotlib
+
+[tests]
+h5py
+pytest
+matplotlib
