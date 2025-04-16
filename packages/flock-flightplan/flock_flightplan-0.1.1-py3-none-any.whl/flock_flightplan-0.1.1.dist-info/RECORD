@@ -1,0 +1,10 @@
+flock_flightplan/__init__.py,sha256=k53UQ5lT6IWce-D8Ba45ku0RZBpOjnxWJeF1PBTmHHw,285
+flock_flightplan/app.py,sha256=4jKQjSjY8S_Za98MVqVtlXyY0ZxUM5VBxnGQlRgqBFg,18315
+flock_flightplan/project_tree.py,sha256=5YaCZw1Ky6fCHPJICFt225zkU8Hj38KpLbopqZqDFvw,5233
+flock_flightplan/utils.py,sha256=U-tIGeDLjIA3bzZesCofQFFNqzFg2heA-OFajfMSOPE,1481
+flock_flightplan/agents/flocky.py,sha256=E7dHRlbfeLE51kc9hrBcSMb0YY7iY4otRTgC0xfh1Fo,1924
+flock_flightplan/agents/planning.py,sha256=hQZ2bO7wUByLPA1EP7g2qfxWsmYzMXVpuwn7_H6ZCFM,5050
+flock_flightplan-0.1.1.dist-info/METADATA,sha256=iZxxOvOaclFJD9RfcNLJkm3IQqqXUuiElYSFnCNGcKM,1254
+flock_flightplan-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+flock_flightplan-0.1.1.dist-info/entry_points.txt,sha256=eZZBO2LD0JcW6zIlOEqWHmJzxYZnBuhbd6c7qBD0oiQ,59
+flock_flightplan-0.1.1.dist-info/RECORD,,
