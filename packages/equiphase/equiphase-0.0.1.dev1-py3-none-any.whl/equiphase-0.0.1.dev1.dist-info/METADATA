@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: equiphase
+Version: 0.0.1.dev1
+Summary: equiphase: COSMO-SAC-based phase equilibrium screening toolkit
+Author-email: Your Name <you@example.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# COSMOScreen
+
+COSMOScreen is a Python toolkit for phase equilibrium modeling using the COSMO-SAC approach. This is a placeholder release. Development is in progress.
