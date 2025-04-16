@@ -1,0 +1,9 @@
+ndtools/__init__.py,sha256=aKuOnJA4xosrjKObEt9pkPZ_dX2rVsk3_peya90VGeM,249
+ndtools/comparison.py,sha256=znzvvLqvD2gF_pxuPzG2rYEuU3HhHT6roHw7XLPbi4I,6936
+ndtools/conditions.py,sha256=R66sMRL4su9IZnpUW6fjgj6WyrFgHH6Nt_ZyMqE4vAM,1076
+ndtools/operators.py,sha256=AHqVxXAr_UUEQy9zgoKAyiDhd8LWOfiNh-bqA_Ojw7s,1778
+ndtools/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ndtools-0.2.0.dist-info/METADATA,sha256=pI54GCsUOelJvUzBeH2xdVIameEO3C8JHuG9rWdZ1Ds,5088
+ndtools-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ndtools-0.2.0.dist-info/licenses/LICENSE,sha256=DNtAuT5Un8wiE__wjDMfJWemX4iPQe2U8Ocavu5B-SY,1071
+ndtools-0.2.0.dist-info/RECORD,,
