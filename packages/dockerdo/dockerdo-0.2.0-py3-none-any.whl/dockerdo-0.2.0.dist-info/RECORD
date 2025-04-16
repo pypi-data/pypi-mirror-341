@@ -1,0 +1,15 @@
+dockerdo/__init__.py,sha256=7UpLG8Bl4vUELjubNYTn90LgzcC1Rc2O9u6lKIfkQIU,184
+dockerdo/config.py,sha256=Q0TWBNJyhtmpxPkKKozk_AzvyCdYw4sZCKLQ_psJMIQ,11188
+dockerdo/docker.py,sha256=73Q1FXY9sWoOpKD2pRtMa0xieapFTCgx4u7JOiauuCY,1268
+dockerdo/dockerdo.bash-completion,sha256=3wYm8WILzuztVVzoQVvILqHNAD_N8GPFtWkEo1IFClE,684
+dockerdo/dockerdo.py,sha256=rFJ0UHbc3B_-4DL7f7K8m_SDnEhEsvCldE-Y3FrnklY,34048
+dockerdo/inotify.py,sha256=QZGQBC48nlnzvAU3z695ylVFrFLAHMsGyFD9zMeZaS8,2167
+dockerdo/prettyprint.py,sha256=kuD42s_pgr8PlVHE0uPmjobo6gvuTlyiyL8Yh35THYo,4770
+dockerdo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dockerdo/shell.py,sha256=37WuP8nekHQ3Ofq2nfv4yLsMa3jk3cREFh5Rg-0FCHM,9576
+dockerdo/utils.py,sha256=WGjbGZHyr3hmRRV-4biStn-xyY6yYN6sj04W12jHSjc,1172
+dockerdo-0.2.0.dist-info/entry_points.txt,sha256=YZyK3tevXPB7i7Q8-3OGHuGIjrah79Io8RDVO6rfjLk,41
+dockerdo-0.2.0.dist-info/licenses/LICENSE,sha256=tN67NvyKrGlvDsSfnj1-ixKFucrYjat_k3CxsJUfm-Q,1086
+dockerdo-0.2.0.dist-info/WHEEL,sha256=_2ozNFCLWc93bK4WKHCO-eDUENDlo-dgc9cU3qokYO4,82
+dockerdo-0.2.0.dist-info/METADATA,sha256=wbHYpk8s-PJ2Zqdw8zJfqyU7p1i-mOzalRYlQ6to7zM,14861
+dockerdo-0.2.0.dist-info/RECORD,,
