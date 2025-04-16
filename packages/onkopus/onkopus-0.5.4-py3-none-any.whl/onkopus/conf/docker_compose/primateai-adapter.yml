@@ -1,0 +1,16 @@
+## YAML Template.
+---
+version: "2.1"
+
+services:
+
+  primateai-adapter:
+    container_name: primateai-adapter
+    image: docker.gitlab.gwdg.de/ukeb/mtb/onkopus-modules/variant-scores/primateai-adapter:develop
+    expose:
+      - "10120"
+    ports:
+      - "10120:10120"
+    volumes:
+      - /data/primateai:/mnt
+    restart: "always"
