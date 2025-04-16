@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "devor"
+version = "0.0.1"
+description = "Container-based development environment manager, inspired by conda."
+authors = ["Hugh Jiang <jjqzy@foxmail.com>"]
+license = "Apache2"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.23.0"
+
+[tool.poetry.group.dev.dependencies]
+requests = "^2.23.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
