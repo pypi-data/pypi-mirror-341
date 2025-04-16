@@ -1,0 +1,15 @@
+todoist_api_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+todoist_api_python/api.py,sha256=aQpjbFlYYApCf3ijqOt5ZrCNMdjsPV34dyKHKkELCwE,49479
+todoist_api_python/api_async.py,sha256=CX8DCdFQJrTBfErm8ln22-oFsFXyWN1EeRtxd9uOrk0,35966
+todoist_api_python/authentication.py,sha256=xs1Y37DluQXpeFckpSl_QOSIjPGXXG-vSkepoZnpYPs,2856
+todoist_api_python/models.py,sha256=LmzT--c8i5BYJpscHkhfEfHtKt33EbuKauKmtxgqHDA,5664
+todoist_api_python/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+todoist_api_python/_core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+todoist_api_python/_core/endpoints.py,sha256=BP-OgQfk1NaIYZfaWAvIlTuSGBkZAtzID0xFrHg2sbs,2991
+todoist_api_python/_core/http_headers.py,sha256=SPcwlgEaYm0FcCn2BxKNwgFN8R3c_ZZuBIjPUpUH2LU,454
+todoist_api_python/_core/http_requests.py,sha256=zZTAlsKAvGH1O4grf60etd0X6BXgzS-kwxxIiyJItpU,1979
+todoist_api_python/_core/utils.py,sha256=O_9I-mBa5jrkmmHFNi19y2buj6_ecy55u_DQSAq4m3Y,1675
+todoist_api_python-3.0.1.dist-info/METADATA,sha256=fVCbiz5GjbiIFF8j6MEw-NJjKsEj7Oy36VpnoEIqnOE,2769
+todoist_api_python-3.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+todoist_api_python-3.0.1.dist-info/licenses/LICENSE,sha256=GF-26jyiU7ZUup8tJ_vzxy3cYWpqhL6goWLFPVBWrWw,1072
+todoist_api_python-3.0.1.dist-info/RECORD,,
