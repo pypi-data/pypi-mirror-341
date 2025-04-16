@@ -1,0 +1,8 @@
+ytdl_taquitos/__init__.py,sha256=7mdvPKFeoSr5rIpTiLNYnDbrg7v0HSLExjaFcejbxFw,222
+ytdl_taquitos/downloader.py,sha256=6aDgaByO8klwHx-trewYfCPcuWX3blvG-4hJfajSlpU,3493
+ytdl_taquitos/extractor/base_extractor.py,sha256=bjCnO-2wBWqPtcCi_3PDHC6BT9KEy819bgxjzquJRl8,2152
+ytdl_taquitos/extractor/youtube.py,sha256=BqCBKdOctkuEw-Y39VLpf9IUb_4oHP99EtiGBnsYJN8,3321
+ytdl_taquitos-0.1.1.dist-info/METADATA,sha256=VNak59VLlB1m1IOCVeHjlTybGp4CyJicBkMQvkQb2H4,4830
+ytdl_taquitos-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ytdl_taquitos-0.1.1.dist-info/top_level.txt,sha256=JnbrWpCxy3_Gyhx-9VOc9P6x_815uSd1eTIA9LFmK_I,14
+ytdl_taquitos-0.1.1.dist-info/RECORD,,
