@@ -1,0 +1,3 @@
+moviepy<2
+typed-argument-parser
+pillow<10
