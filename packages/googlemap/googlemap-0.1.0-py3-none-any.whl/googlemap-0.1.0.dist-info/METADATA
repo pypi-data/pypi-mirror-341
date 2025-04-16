@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: googlemap
+Version: 0.1.0
+Summary: Develop application to consume Google’s search / Google’s Map RESTful Web service.
+Author: Aryan Bhagwat
+Author-email: legendasur531@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-python
+Dynamic: summary
