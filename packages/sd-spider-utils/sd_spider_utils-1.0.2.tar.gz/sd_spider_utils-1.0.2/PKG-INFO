@@ -1,0 +1,89 @@
+Metadata-Version: 2.4
+Name: sd_spider_utils
+Version: 1.0.2
+Summary: 爬虫工具包，写爬虫更快！！！
+Author-email: 星梦 <cpython666@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 星梦
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://space.bilibili.com/1909782963
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Dynamic: license-file
+
+sd_spider_utils
+================
+
+一个高效的 Python 爬虫工具库，提供解析、文本标准化等常用功能，助力快速开发爬虫项目。
+
+安装
+----
+
+使用 pip 安装：
+
+::
+
+    pip install sd_spider_utils
+
+使用示例
+--------
+
+::
+
+    from sd_spider_utils.text_utils import normalize_text
+
+    text = "Ｃａｆé['S.\u2009M. Koksbang\xa0', 'S.\u2009M. Koksbang']"  # 包含全角字符和组合字符
+    clean_text = normalize_text(text)
+    print(clean_text)
+
+功能特性
+--------
+
+- **HTML 解析**：快速提取网页中的文本内容。
+- **文本标准化**：清洗和规范化抓取到的文本数据。
+- **常用工具函数**：如 User-Agent 随机生成、请求重试机制等。
+
+项目链接
+--------
+
+- PyPI: https://pypi.org/project/sd_spider_utils/
+- 源码仓库: https://github.com/StarDreamTech/sd_spider_utils
+- 视频教程:  https://space.bilibili.com/1909782963
+- 作者: 星梦 (cpython666@gmail.com)
+
+许可证
+------
+
+MIT License，详见 LICENSE 文件。
