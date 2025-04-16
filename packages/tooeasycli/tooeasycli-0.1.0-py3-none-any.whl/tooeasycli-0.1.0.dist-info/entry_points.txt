@@ -1,0 +1,2 @@
+[console_scripts]
+tooeasycli = cli_tool.main:main
