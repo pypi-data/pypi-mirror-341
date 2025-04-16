@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/socketnest/__init__.py
+src/socketnest/example.py
+src/socketnest/socketnest.py
+src/socketnest.egg-info/PKG-INFO
+src/socketnest.egg-info/SOURCES.txt
+src/socketnest.egg-info/dependency_links.txt
+src/socketnest.egg-info/requires.txt
+src/socketnest.egg-info/top_level.txt
+tests/test_socketnest.py
