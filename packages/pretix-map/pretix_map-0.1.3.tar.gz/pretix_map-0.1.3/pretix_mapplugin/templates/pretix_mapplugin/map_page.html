@@ -1,0 +1,68 @@
+{% extends "pretixcontrol/event/settings_base.html" %}
+{% load i18n %}
+{% load static %}
+{% load eventurl %}
+
+{% block title %}{% trans "Ticket Sales Map" %}{% endblock %}
+
+{% block inside %}
+    <h1>{% trans "Ticket Sales Map" %}</h1>
+
+    {# -- Controls Row -- #}
+    <div class="form-inline" style="margin-bottom: 1em;">
+        <div class="form-group" style="margin-right: 10px;">
+            <button id="view-toggle-btn" class="btn btn-default">Switch to Heatmap View</button>
+        </div>
+        {# -- NEW Cluster Toggle Button -- #}
+        <div class="form-group" style="margin-right: 10px;">
+            <button id="cluster-toggle-btn" class="btn btn-default" disabled>Disable Clustering</button>
+        </div>
+        {# -- End Cluster Toggle Button -- #}
+    </div>
+    {# -- End Controls Row -- #}
+
+    {# -- NEW Heatmap Options Panel (Initially hidden for pins view) -- #}
+    <div id="heatmap-options-panel" class="panel panel-default"
+         style="display: none; padding: 15px; margin-bottom: 1em; max-width: 400px;">
+        <h4>{% trans "Heatmap Options" %}</h4>
+        <div class="form-group">
+            <label for="heatmap-radius">Radius: <span id="radius-value">25</span></label>
+            <input type="range" id="heatmap-radius" class="form-control" min="1" max="100" value="25" step="1" disabled>
+        </div>
+        <div class="form-group">
+            <label for="heatmap-blur">Blur: <span id="blur-value">15</span></label>
+            <input type="range" id="heatmap-blur" class="form-control" min="1" max="50" value="15" step="1" disabled>
+        </div>
+        <div class="form-group">
+            <label for="heatmap-maxZoom">Max Zoom: <span id="maxzoom-value">18</span></label>
+            <input type="range" id="heatmap-maxZoom" class="form-control" min="1" max="18" value="18" step="1" disabled>
+        </div>
+        {# Add more options like gradient if desired later #}
+    </div>
+    {# -- End Heatmap Options Panel -- #}
+
+
+    {# -- Map Area -- #}
+    <div style="position: relative; border: 1px solid #ccc;">
+        <div id="sales-map-container"
+             data-data-url="{% url 'plugins:pretix_mapplugin:event.settings.salesmap.data' organizer=request.organizer.slug event=request.event.slug %}">
+        </div>
+        <div id="map-status-overlay"
+             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.8); z-index: 1000; display: flex; justify-content: center; align-items: center; text-align: center;">
+            <p>Loading map data...</p>
+        </div>
+    </div>
+    {# -- End Map Area -- #}
+
+
+    {# === Leaflet & Plugins (Keep as is) === #}
+    <script src="{% static 'pretix_mapplugin/libs/leaflet-sales-map/leaflet-heat.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'pretix_mapplugin/libs/leaflet-sales-map/MarkerCluster.css' %}"/>
+    <link rel="stylesheet" href="{% static 'pretix_mapplugin/libs/leaflet-sales-map/MarkerCluster.Default.css' %}"/>
+    <script src="{% static 'pretix_mapplugin/libs/leaflet-sales-map/leaflet.markercluster.js' %}"></script>
+
+    {# === Your JS/CSS (Keep as is) === #}
+    <script src="{% static 'pretix_mapplugin/js/salesmap.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'pretix_mapplugin/css/salesmap.css' %}"/>
+
+{% endblock %}
