@@ -1,0 +1,10 @@
+challenge_welding/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+challenge_welding/_version_.py,sha256=ctuj3jjBGFJ45_qfblXgtZZthejCRhGtV2w4SJZU4W8,506
+challenge_welding/ai_component_interface.py,sha256=lYyquGo3Kdlekjq9wg-atYcMt8Qik2sk5lJ7p_KBJeY,2024
+challenge_welding/dataloaders.py,sha256=Hmxwf_SE0HLH5FE9nWETJOCUWQaw8RBml2EwKM6GzCQ,3536
+challenge_welding/inference_tools.py,sha256=GCkcM_GX6X-rdZpmn2gC1PK0hKDBVXM_u-92A7AOjo0,8132
+challenge_welding/user_interface.py,sha256=UUhJ8B9YN1XsF21yBCFzCWbFqI-4JYwk8lT1aQ4w8yY,8919
+challenge_welding-1.0.dist-info/METADATA,sha256=ZlgAGPoldRlVeD7YH2GTFoOT8tvpn1dzLhRfhdlWPXM,4299
+challenge_welding-1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+challenge_welding-1.0.dist-info/licenses/LICENSE,sha256=OT6vK5Kz1JvqE545tv0gW26ZxJmZmYauxVVFhqgw390,16726
+challenge_welding-1.0.dist-info/RECORD,,
