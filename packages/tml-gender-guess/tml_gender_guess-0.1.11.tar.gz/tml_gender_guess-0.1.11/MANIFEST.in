@@ -1,0 +1,2 @@
+recursive-include gender_guess/genderComputer *.py
+recursive-include gender_guess/nameLists *.csv *.dict
