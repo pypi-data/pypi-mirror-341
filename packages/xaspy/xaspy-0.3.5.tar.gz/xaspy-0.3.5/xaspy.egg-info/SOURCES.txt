@@ -1,0 +1,11 @@
+LICENSE
+README.txt
+setup.cfg
+setup.py
+xaspy/__init__.py
+xaspy/_version.py
+xaspy.egg-info/PKG-INFO
+xaspy.egg-info/SOURCES.txt
+xaspy.egg-info/dependency_links.txt
+xaspy.egg-info/requires.txt
+xaspy.egg-info/top_level.txt
