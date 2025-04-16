@@ -1,0 +1,38 @@
+# Auto-generated __init__.py
+
+# Import necessary modules and functions here
+from .connect import connect
+from .connect import downloaAttachmentsInEmail
+from .connect import downloadAllAttachmentsInInbox
+from .delete_emails import delete_emails
+from .download_all_attachments_in_inbox import download_all_attachments_in_inbox
+from .download_all_attachments_in_inbox import get_newest_messages
+from .download_all_attachments_in_inbox import get_all_messages
+from .download_attachments_in_email import download_attachments_in_email
+from .download_emails import download_emails
+from .download_attachments import test_download_emails_with_valid_credentials_and_folder
+from .download_attachments import test_download_emails_with_invalid_credentials
+from .download_attachments import test_download_emails_with_invalid_folder
+from .download_attachments import test_download_emails_with_no_folder
+from .download_attachments import test_download_emails_with_no_limit
+from .download_attachments import test_download_emails_with_no_month
+from .download_attachments import test_download_emails_with_no_year
+from .download_attachments import test_download_emails_with_no_credentials
+from .download_attachments import test_download_emails_with_no_local_folder
+from .download_attachments import test_download_emails_with_no_server
+from .download_attachments import test_download_emails_with_no_user
+from .download_attachments import test_download_emails_with_no_password
+from .download_attachments import test_download_emails_with_no_args
+from .download_attachments import test_download_emails_with_invalid_args_type
+from .download_attachments import test_download_emails_with_invalid_args_value
+
+# Public API of the package
+__all__ = [connect, downloaAttachmentsInEmail, downloadAllAttachmentsInInbox, delete_emails, download_all_attachments_in_inbox, get_newest_messages, get_all_messages, download_attachments_in_email, download_emails, test_download_emails_with_valid_credentials_and_folder, test_download_emails_with_invalid_credentials, test_download_emails_with_invalid_folder, test_download_emails_with_no_folder, test_download_emails_with_no_limit, test_download_emails_with_no_month, test_download_emails_with_no_year, test_download_emails_with_no_credentials, test_download_emails_with_no_local_folder, test_download_emails_with_no_server, test_download_emails_with_no_user, test_download_emails_with_no_password, test_download_emails_with_no_args, test_download_emails_with_invalid_args_type, test_download_emails_with_invalid_args_value]
+
+# Version of the pyfunc2 package
+import sys
+sys.path.append('../')
+from _version import __version__
+
+from .file.check_and_create_path import check_and_create_path
+from .file.check_and_create_path import check_and_create_path
