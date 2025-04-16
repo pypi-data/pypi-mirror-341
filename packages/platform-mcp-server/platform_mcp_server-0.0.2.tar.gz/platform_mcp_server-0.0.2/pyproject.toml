@@ -1,0 +1,17 @@
+[project]
+name = "platform-mcp-server"
+version = "0.0.2"
+description = "Platform MCP Server"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.6.0",
+]
+
+[project.scripts]
+platform-mcp-server = "main:main"
+
+[build-system]
+requires = ["setuptools >= 61.0", "wheel", "twine"]
+build-backend = "setuptools.build_meta"
