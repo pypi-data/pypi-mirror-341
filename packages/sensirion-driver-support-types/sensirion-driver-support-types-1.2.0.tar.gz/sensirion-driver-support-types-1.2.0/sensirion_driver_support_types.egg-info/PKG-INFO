@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: sensirion-driver-support-types
+Version: 1.2.0
+Summary: Supporting classes for Sensirion drivers
+Home-page: http://developers.sensirion.com
+Author: Rolf Laich
+Author-email: rolf.laich@sensirion.com
+License: BSD 3-Clause License
+Keywords: driver
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8, <4
+Provides-Extra: test
+Provides-Extra: docs
+License-File: LICENSE
+
+sensirion-driver-support-types
+==============================
+
+Install
+-------
+.. sourcecode:: bash
+
+    pip install sensirion-driver-support-types
+
+Recommended usage is within a virtualenv.
+
+Usage
+-----
+.. sourcecode:: python
+
+    import sensirion_driver_support_types
+
+CHANGELOG
+---------
+
+1.2.0
+:::::
+- support bitfield initialization
+
+1.1.1
+:::::
+- support c-structs for python 3.8
+
+1.0.1
+:::::
+- support mixin access even if driver class is derived
+
+1.0.0
+:::::
+- tag 1.0.0
+- Provide c-struct template
+
+0.3.0
+:::::
+- Update dependencies and CI
+
+
+0.2.0
+:::::
+- Provide string representation and int conversion for Bitfields
+
+0.1.0
+:::::
+- Initial release
