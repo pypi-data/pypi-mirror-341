@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: pytempl-icons
+Version: 0.2.1
+Summary: Beautiful & consistent icon toolkit made for Aether apps.
+Project-URL: homepage, https://github.com/aether-py/pytempl-icons
+Project-URL: repository, https://github.com/aether-py/pytempl-icons
+Project-URL: documentation, https://github.com/aether-py/pytempl-icons
+Author-email: Saurabh Ghanekar <ghanekarsaurabh8@gmail.com>
+License-Expression: BSD-2-Clause
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: pytempl>=0.2
+Description-Content-Type: text/markdown
+
+# PyTempl Icons
+
+Beautiful & consistent icon toolkit made for PyTempl apps.
