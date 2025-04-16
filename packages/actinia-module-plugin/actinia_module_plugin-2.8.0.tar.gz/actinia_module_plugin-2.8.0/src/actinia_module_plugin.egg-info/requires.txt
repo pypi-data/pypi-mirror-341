@@ -1,0 +1,6 @@
+colorlog>=4.2.1
+xmltodict
+
+[test]
+pytest
+pytest-cov
