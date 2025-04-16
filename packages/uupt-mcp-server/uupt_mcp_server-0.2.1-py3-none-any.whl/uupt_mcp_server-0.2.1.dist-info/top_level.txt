@@ -1,0 +1,2 @@
+uupt-mcp-server
+uupt_mcp_server
