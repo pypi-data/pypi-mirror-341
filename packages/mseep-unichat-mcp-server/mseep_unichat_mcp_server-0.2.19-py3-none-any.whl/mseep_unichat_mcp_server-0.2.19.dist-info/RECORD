@@ -1,0 +1,7 @@
+src/unichat_mcp_server/__init__.py,sha256=KNZ1bD9ZGfyZwlv91Ueeega_1lsRDLs2fYQDgNbBdtc,212
+src/unichat_mcp_server/server.py,sha256=M24WCYaWL6yT3K51vjuglaHxo5n1f-VIyfTez-GpMA8,10127
+mseep_unichat_mcp_server-0.2.19.dist-info/METADATA,sha256=iFTHhLhEMMfND19S2IdF96cZ4Mxhz3YycFzBfsPDRkQ,4253
+mseep_unichat_mcp_server-0.2.19.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_unichat_mcp_server-0.2.19.dist-info/entry_points.txt,sha256=3IZtVW9f02i-7OrCLiV2-LdtVoXSQ7ooBdxFv1y7JGs,63
+mseep_unichat_mcp_server-0.2.19.dist-info/licenses/LICENSE,sha256=LXnbGHmuQXisK0D9gCGvvzZei0m-pt50Rcj2L9cBZQk,1063
+mseep_unichat_mcp_server-0.2.19.dist-info/RECORD,,
