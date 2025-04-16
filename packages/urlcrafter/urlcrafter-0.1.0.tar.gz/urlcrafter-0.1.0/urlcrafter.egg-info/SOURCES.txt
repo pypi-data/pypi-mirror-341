@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+./urlcrafter/__init__.py
+./urlcrafter/url.py
+urlcrafter/__init__.py
+urlcrafter/url.py
+urlcrafter.egg-info/PKG-INFO
+urlcrafter.egg-info/SOURCES.txt
+urlcrafter.egg-info/dependency_links.txt
+urlcrafter.egg-info/top_level.txt
