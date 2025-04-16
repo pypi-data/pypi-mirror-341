@@ -1,0 +1,31 @@
+[package]
+name = "llamasearch_experimentalagents_product_growth_rust"
+version = "0.1.0"
+edition = "2021"
+authors = ["Nik Jois <nikjois@llamasearch.ai>"]
+license = "MIT"
+description = "Rust extensions for LlamaSearch ExperimentalAgents Product Growth"
+
+[lib]
+name = "llamasearch_experimentalagents_product_growth_rust"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.19.0", features = ["extension-module"] }
+ndarray = "0.15.6"
+rayon = "1.7.0"
+serde = { version = "1.0.189", features = ["derive"] }
+serde_json = "1.0.107"
+anyhow = "1.0.75"
+thiserror = "1.0.50"
+parking_lot = "0.12.1"
+log = "0.4.20"
+
+[features]
+extension-module = ["pyo3/extension-module"]
+default = ["extension-module"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3 

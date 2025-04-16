@@ -1,0 +1,124 @@
+site_name: LlamaSearch ExperimentalAgents - Product Growth
+site_description: AI-driven product growth recommendation engine with RAG and multi-agent orchestration
+site_author: Nik Jois
+site_url: https://llamasearch.github.io/llamasearch-experimentalagents-product-growth/
+
+repo_name: llamasearch/llamasearch-experimentalagents-product-growth
+repo_url: https://github.com/llamasearch/llamasearch-experimentalagents-product-growth
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - codehilite:
+      guess_lang: false
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          selection:
+            docstring_style: google
+          rendering:
+            show_root_heading: true
+            show_source: true
+            heading_level: 3
+  - autorefs
+  - git-revision-date-localized:
+      type: date
+  - minify:
+      minify_html: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/llamasearch/llamasearch-experimentalagents-product-growth
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/llamasearch-experimentalagents-product-growth/
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: installation.md
+    - Quick Start Guide: quickstart.md
+    - Configuration: configuration.md
+  - User Guide:
+    - Using the CLI: user-guide/cli.md
+    - Using the Python API: user-guide/api.md
+    - Using the GUI: user-guide/gui.md
+    - Feedback Analysis: user-guide/feedback-analysis.md
+    - Growth Strategies: user-guide/growth-strategies.md
+    - Visualizations: user-guide/visualizations.md
+  - Advanced Topics:
+    - OpenAI Agents Integration: advanced/openai-agents.md
+    - RAG Implementation: advanced/rag.md
+    - Multi-LLM Strategy: advanced/multi-llm.md
+    - SQLite Memory & Logging: advanced/sqlite-memory.md
+    - MLX Acceleration: advanced/mlx-acceleration.md
+    - Rust Extensions: advanced/rust-extensions.md
+  - API Reference:
+    - Agents: api/agents.md
+    - Models: api/models.md
+    - Integrations: api/integrations.md
+    - Utils: api/utils.md
+  - Development:
+    - Contributing: development/contributing.md
+    - Testing: development/testing.md
+    - Building the Docs: development/building-docs.md
+    - Building Wheels: development/building-wheels.md
+  - Examples: examples.md
+  - Changelog: changelog.md 

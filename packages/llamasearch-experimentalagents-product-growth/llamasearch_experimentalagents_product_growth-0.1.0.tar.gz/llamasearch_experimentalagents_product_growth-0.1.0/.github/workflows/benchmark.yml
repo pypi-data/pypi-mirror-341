@@ -1,0 +1,82 @@
+name: Benchmark
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - name: Install Rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          profile: minimal
+          override: true
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+          pip install pytest-benchmark
+      - name: Build Rust extension
+        run: |
+          pip install maturin
+          maturin develop
+      - name: Run benchmarks
+        run: pytest tests/benchmark/ --benchmark-json benchmark.json
+      - name: Store benchmark result
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: Python Benchmark
+          tool: 'pytest'
+          output-file-path: benchmark.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: true
+          # Show alert with commit comment on detecting possible performance regression
+          alert-threshold: '200%'
+          comment-on-alert: true
+          fail-on-alert: true
+          
+  backend-benchmark:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        backend: [numpy, jax, mlx]
+        exclude:
+          - os: ubuntu-latest
+            backend: mlx  # MLX is macOS only
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+          if [ "${{ matrix.backend }}" = "jax" ]; then
+            pip install jax jaxlib
+          fi
+          if [ "${{ matrix.backend }}" = "mlx" ]; then
+            pip install mlx
+          fi
+      - name: Run NLP backend benchmark
+        run: python -m llamasearch_experimentalagents_product_growth.benchmark.nlp_backend_benchmark --backend ${{ matrix.backend }} --iterations 5
+      - name: Upload benchmark results
+        uses: actions/upload-artifact@v3
+        with:
+          name: benchmark-results-${{ matrix.os }}-${{ matrix.backend }}
+          path: benchmark_results.json 
