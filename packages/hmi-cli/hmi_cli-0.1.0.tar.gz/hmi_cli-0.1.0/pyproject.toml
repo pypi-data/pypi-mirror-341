@@ -1,0 +1,18 @@
+[project]
+name = "hmi-cli"
+version = "0.1.0"
+description = "A Simple CLI tool framework"
+authors = [
+    { name="HoMa", email="mhocine1994@gmail.com" }
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = []
+
+[project.scripts]
+hmi-mycli = "mycli.main:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
