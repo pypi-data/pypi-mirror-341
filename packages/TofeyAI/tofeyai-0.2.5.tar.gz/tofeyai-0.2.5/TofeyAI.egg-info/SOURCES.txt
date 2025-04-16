@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+TofeyAI/__init__.py
+TofeyAI/cli.py
+TofeyAI/main.py
+TofeyAI.egg-info/PKG-INFO
+TofeyAI.egg-info/SOURCES.txt
+TofeyAI.egg-info/dependency_links.txt
+TofeyAI.egg-info/requires.txt
+TofeyAI.egg-info/top_level.txt
