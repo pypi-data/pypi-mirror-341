@@ -1,0 +1,113 @@
+{% load static super_svgs i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+        const setTheme = (theme) => {
+          theme ??= localStorage.django_super_svgs_theme || "light";
+          document.documentElement.dataset.theme = theme;
+          localStorage.django_super_svgs_theme = theme;
+        };
+        setTheme();
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible"
+              content="ie=edge" />
+        <meta name="Copyright"
+              content="Django Super Svgs">
+        <meta name="keywords"
+              content="Python, Django, framework, open-source, svg">
+        <link href="{% static 'django_super_svgs/css/style.css' %}"
+              rel="stylesheet" />
+        <link rel="icon"
+              href="{% static 'django_super_svgs/img/favicon.ico' %}"
+              type="image/x-icon">
+        <title>Django Super Svgs</title>
+    </head>
+    <body id="MainPage"
+          class="{{ theme }}">
+        <form method="get"
+              autocomplete="off"
+              action="{% querystring svg=active %}">
+            <div class="grid">
+                <header>
+                    <div class="header">
+                        <button class="header-menu"
+                                onclick="app.activeaside()"
+                                type="button">
+                            <div class="svg-container ">
+                                <svg width="24"
+                                     height="24"
+                                     fill="currentColor">
+                                    <path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="input-search">
+                            <form id="form_search"
+                                  class="w-full"
+                                  method="get"
+                                  autocomplete="off">
+                                {% svg material magnify class="search-icon" %}
+                                <input type="search"
+                                       name="q"
+                                       tooltip="Search"
+                                       placeholder="Search"
+                                       value="{{ request.GET.q|default:'' }}" />
+                                <button class="btn"
+                                        type="submit">{% translate "search" %}</button>
+                                <input type="hidden"
+                                       name="svg"
+                                       value="{{ active }}">
+                            </form>
+                        </div>
+                    </div>
+                </header>
+                <aside class="aside">
+                    {% svg hero_solid x_mark onclick="app.deactivateaside()" class="aside-close" %}
+                    <div class="aside-items">
+                        {% for name in svg_names %}
+                            <a class="aside-item {% if active == name %}active{% endif %}"
+                               href="{% querystring svg=name q=request.GET.q|default:'' %}">
+                                <span>{{ name|title|split:'_'|join:" " }}</span>
+                            </a>
+                        {% endfor %}
+                    </div>
+                    <div class="version">
+                        {% svg material theme_light_dark onclick="app.toggletheme(this)" class="theme-swticher" %}
+                        <span>Version: {{ version }}</span>
+                    </div>
+                </aside>
+                <main>
+                    <div class="container o-scroll">
+                        <div class="svg-deck">
+                            {% for name, icon in svgs.items %}
+                                <div class="svg-card"
+                                     onclick="app.copysvg(this)"
+                                     data-type="{{ active }}">
+                                    {{ icon }}
+                                    <span class="svg-name">{{ name }}</span>
+                                </div>
+                            {% endfor %}
+                            {% if not svgs %}
+                                <h2 class="svg-not-found">{% translate "No results found" %}</h2>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <span class="scroll-to-top"
+                          onclick="app.scrolltotop()">{% svg material arrow_up %}</span>
+                </main>
+                <footer>
+                    <div class="footer">
+                        {% now "Y" as current_year %}
+                        <span>Copyright © Django Super Svgs - {{ current_year }}</span>
+                    </div>
+                </footer>
+            </div>
+        </form>
+        <script src="{% static 'django_super_svgs/js/app.js' %}"></script>
+    </body>
+</html>

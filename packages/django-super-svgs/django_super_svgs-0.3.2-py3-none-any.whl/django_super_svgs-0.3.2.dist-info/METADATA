@@ -1,0 +1,84 @@
+Metadata-Version: 2.3
+Name: django-super-svgs
+Version: 0.3.2
+Summary: A tool for render svg templates using Django templatetags.
+License: BSD-3-Clause
+Author: Lucas F.
+Author-email: lucas@lucasf.dev
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: django (==5.*)
+Project-URL: Documentation, https://lucasf_dev.gitlab.io/django-super-svgs/
+Project-URL: Homepage, https://gitlab.com/lucasf_dev/django-super-svgs
+Description-Content-Type: text/markdown
+
+# Django Super SVGs
+
+Django super svgs is a tool for render svg templates using Django templatetags.
+
+## Installation
+
+via pip:
+
+```shell
+pip install django-super-svgs
+```
+
+or poetry:
+
+```shell
+poetry add django-super-svgs
+```
+
+## Configuration
+
+Add `django_super_svgs` after django apps in `INSTALLED_APPS` on `settings.py`:
+
+```
+INSTALLED_APPS = (
+    ...
+    'django_super_svgs',
+)
+```
+
+## Usage
+
+By default `django-super-svgs` provides these svgs:
+
+- [bootstrap](https://icons.getbootstrap.com/)
+- [dripicons](http://demo.amitjakhu.com/dripicons/)
+- [heroicons](https://heroicons.com/)
+- [material icons](https://github.com/material-icons/material-icons/)
+
+
+Load the tag `super_svgs` in your html file, then use `svg` followed by `svg type` [ bootstrap, dripicons, hero_outline, hero_solid ] and `svg name`:
+
+```htmldjango
+{% load super_svgs %}
+
+{% svg hero_outline check_circle %}
+```
+
+## Documentation
+
+You can find the documentation [here](https://lucasf_dev.gitlab.io/django-super-svgs/)
+
