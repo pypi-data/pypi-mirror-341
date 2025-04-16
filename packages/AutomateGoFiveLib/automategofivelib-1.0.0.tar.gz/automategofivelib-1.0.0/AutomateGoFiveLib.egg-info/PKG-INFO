@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: AutomateGoFiveLib
+Version: 1.0.0
+Summary: Test Library for AutomateGoFiveLib
+Home-page: https://github.com/pornpawitsuttha/AutomateGoFiveLib.git
+Author: Pornpawit Suttha
+Author-email: pornpawit14suttha@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: robotframework>=3.0
+Requires-Dist: pytz
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: opencv-python
+Requires-Dist: matplotlib
+Requires-Dist: pymongo
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# AutomateGoFiveLib
+Library support automate flutter app
