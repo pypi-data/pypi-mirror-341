@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: mathsimplecalculation
+Version: 0.1.1
+Author: Bharathi
+Author-email: bharathig@pmu.edu
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: license-file
+Dynamic: requires-python

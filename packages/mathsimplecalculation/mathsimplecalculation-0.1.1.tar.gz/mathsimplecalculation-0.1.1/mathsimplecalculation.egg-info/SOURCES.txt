@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+mathsimplecalculation/__init__.py
+mathsimplecalculation/arithmetic.py
+mathsimplecalculation.egg-info/PKG-INFO
+mathsimplecalculation.egg-info/SOURCES.txt
+mathsimplecalculation.egg-info/dependency_links.txt
+mathsimplecalculation.egg-info/top_level.txt
