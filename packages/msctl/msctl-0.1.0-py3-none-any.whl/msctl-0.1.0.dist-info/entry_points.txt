@@ -1,0 +1,2 @@
+[console_scripts]
+msctl = msctl.cli:cli
