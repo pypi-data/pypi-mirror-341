@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+files/kipu_services.txt
+platform_mcp_server.egg-info/PKG-INFO
+platform_mcp_server.egg-info/SOURCES.txt
+platform_mcp_server.egg-info/dependency_links.txt
+platform_mcp_server.egg-info/entry_points.txt
+platform_mcp_server.egg-info/requires.txt
+platform_mcp_server.egg-info/top_level.txt

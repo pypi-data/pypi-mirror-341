@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: platform-mcp-server
+Version: 0.0.3
+Summary: Platform MCP Server
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcp[cli]>=1.6.0
+
+# platform-mcp-server
+
+## Development
+
+Create a virtual environment:
+
+```bash
+uv venv
+uv sync -U
+```
+
+Build the distribution:
+
+```bash
+uv build
+```
+
+Upload to PyPI:
+
+```bash
+twine upload dist/*
+```
