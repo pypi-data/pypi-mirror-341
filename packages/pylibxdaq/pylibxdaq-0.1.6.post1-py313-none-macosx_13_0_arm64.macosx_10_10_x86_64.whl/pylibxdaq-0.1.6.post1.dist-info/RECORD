@@ -1,0 +1,14 @@
+pylibxdaq/pyxdaq_device.pyi,sha256=MUa7jdcf-OQmKLjfYuGsr4QxkJ2u5jx3ROd6dozHb3I,3616
+pylibxdaq/pyxdaq_device.cpython-313-darwin.so,sha256=GvykTvdLV3B7vMkk6-AncOSNHWsfJZbYbIq07aieSPw,593712
+pylibxdaq/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylibxdaq/resources/rhd.bit,sha256=4KdXkPY0zWXAXoepJrSSKKyctG18zA_x4VBYgZPV97w,2482978
+pylibxdaq/resources/rhs.bit,sha256=xTA4zgum2pOS337TWiDWH_rtDS2s84H0miHUFNOCapc,2708046
+pylibxdaq/managers/__init__.py,sha256=21j4wx3QD363OvC821Gxx5660ibTveuYLqLsboVsfzU,186
+pylibxdaq/managers/libthor_device_manager.dylib,sha256=PCYdF27u9KeKo2u8inhCoqOVDcjC_kI-Lu6HfBDv3PM,1096352
+pylibxdaq/managers/libok_device_manager.dylib,sha256=2CjrhN1r7auP3ZnLy8AlIy4kBCxmHNF35nMThdyMN08,1071824
+pylibxdaq/managers/libokFrontPanel.dylib,sha256=QOrW2gnZoRlbyEdHjX8IqDKfdWZPuuuKucvcyk-789A,3907432
+pylibxdaq-0.1.6.post1.dist-info/RECORD,,
+pylibxdaq-0.1.6.post1.dist-info/WHEEL,sha256=ucKMB9u7NwvB3kJ0n3b0HMSxrzW0pLzyPAhJhfMbDq8,170
+pylibxdaq-0.1.6.post1.dist-info/top_level.txt,sha256=D9ZLsOOlNoq_TrXbYa4Xh1dzXcKsWO5kcdpKmkxzPkE,10
+pylibxdaq-0.1.6.post1.dist-info/METADATA,sha256=E9hHGmz2yqFrjZsVHpSkEAEtBi5-WXtHwdG4e8KIm30,378
+pylibxdaq-0.1.6.post1.dist-info/licenses/LICENSE,sha256=q1CZihyHngozuUXcQO-bee2sALBv6TkqkylPzI8nlLM,1066
