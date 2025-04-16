@@ -1,0 +1,11 @@
+bayes_cn_hfs/__init__.py,sha256=JTkseYAYcPSasMcx2o-qAuxkWSSOFcOl2To3Gc-oC74,341
+bayes_cn_hfs/_version.py,sha256=cZdUM19Bt5LXLRARL7iQ4fmkWt9z7eaOles47CHeODI,497
+bayes_cn_hfs/cn_model.py,sha256=AyXjQNUm2dB3EmfdAVB6PRhVI1csi5V-GT2C81c8EkE,16510
+bayes_cn_hfs/cn_ratio_model.py,sha256=UyKeiEUKt6AZ5JFtVPjbXFx1bla22kNq0Mq3Pu_BTAY,20291
+bayes_cn_hfs/physics.py,sha256=a07Rj3w-3icna3gy2TJBuAU392HyCYuY6wo02beN7h8,11294
+bayes_cn_hfs/utils.py,sha256=31gOYftamcuqq1C_eEyrvE-mXSOQ2HMK70PSBHMDLcg,8513
+bayes_cn_hfs-1.1.3.dist-info/licenses/LICENSE,sha256=0SAofrIY6Fsv5a4NbWDnDCzGeyokd4AX60HZVNR5JH8,1080
+bayes_cn_hfs-1.1.3.dist-info/METADATA,sha256=dhB6MVdwqsTVwLY9eLLIVzBuix3NL4SuWPjfVJrQRcY,17113
+bayes_cn_hfs-1.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+bayes_cn_hfs-1.1.3.dist-info/top_level.txt,sha256=j89BmyE0SdccBgvoDeN5Ea5wmom_qivAVlK0y4jmAno,13
+bayes_cn_hfs-1.1.3.dist-info/RECORD,,
