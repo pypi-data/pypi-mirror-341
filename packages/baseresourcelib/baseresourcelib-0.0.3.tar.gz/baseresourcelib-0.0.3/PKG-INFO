@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: baseresourcelib
+Version: 0.0.3
+Summary: Model based resources that are used to talk to APIs and Databases Directly
+Project-URL: Homepage, https://github.com/thedreadpirateeric/base-resource
+Project-URL: Issues, https://github.com/thedreadpirateeric/base-resource/issues
+Author-email: Eric Lewis <thedreadpirateeric@gmail.com>
+Maintainer-email: Eric Lewis <thedreadpirateeric@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: marshmallow==3.26.1
+Requires-Dist: mongoengine==0.29.1
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: requests==2.32.3
+Description-Content-Type: text/markdown
+
+# Base Resource Lib
