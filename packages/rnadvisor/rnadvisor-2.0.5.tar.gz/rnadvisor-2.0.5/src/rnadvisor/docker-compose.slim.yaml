@@ -1,0 +1,81 @@
+services:
+  lociparse:
+    image: sayby77/rnadvisor-lociparse-slim
+    container_name: lociparse_slim_container
+  3drnascore:
+    image: sayby77/rnadvisor-3drnascore-slim
+    container_name: 3drnascore_slim_container
+  clash:
+    image: sayby77/rnadvisor-clash-slim
+    container_name: clash_slim_container
+  pamnet:
+    image: sayby77/rnadvisor-pamnet-slim
+    container_name: pamnet_container
+  barnaba:
+    image: sayby77/rnadvisor-barnaba-slim
+    container_name: barnaba_container
+  cgrnasp:
+    image: sayby77/rnadvisor-cgrnasp-slim
+    container_name: cgrnasp_container
+  dfire:
+    image: sayby77/rnadvisor-dfire-slim
+    container_name: dfire_container
+  mcq:
+    image: sayby77/rnadvisor-mcq-slim
+    container_name: mcq_container
+  lcs:
+    image: sayby77/rnadvisor-lcs-slim
+    container_name: lcs_container
+  lddt:
+    image: sayby77/rnadvisor-lddt-slim
+    container_name: lddt_container
+  rasp:
+    image: sayby77/rnadvisor-rasp-slim
+    container_name: rasp_container
+  rs_rnasp:
+    image: sayby77/rnadvisor-rs-rnasp-slim
+    container_name: rs_rnasp_container
+  rmsd:
+    image: sayby77/rnadvisor-rmsd-slim
+    container_name: rmsd_container
+  inf:
+    image: sayby77/rnadvisor-inf-slim
+    container_name: inf_container
+  di:
+    image: sayby77/rnadvisor-di-slim
+    container_name: di_container
+  p_value:
+    image: sayby77/rnadvisor-p_value-slim
+    container_name: p_value_container
+  tm_score:
+    image: sayby77/rnadvisor-tm-score-slim
+    container_name: tm_score_container
+  gdt_ts:
+    image: sayby77/rnadvisor-gdt-ts-slim
+    container_name: gdt_ts_container
+  ares:
+    image: sayby77/rnadvisor-ares-slim
+    container_name: ares_container
+  rna3dcnn:
+    image: rna3dcnn_slim
+    container_name: rna3dcnn_container
+    volumes:
+      - ./data:/app/data
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+  rna_briq:
+    image: rna_briq_image
+    container_name: rna_briq_container
+    volumes:
+      - ./data:/app/data
+  tb_mcq:
+    image: tb_mcq_slim
+    container_name: tb_mcq_slim_container
+    volumes:
+      - ./data:/app/data
+  cad_score:
+    image: cad_score_slim
+    container_name: cad_score_container
+    volumes:
+      - ./data:/app/data
