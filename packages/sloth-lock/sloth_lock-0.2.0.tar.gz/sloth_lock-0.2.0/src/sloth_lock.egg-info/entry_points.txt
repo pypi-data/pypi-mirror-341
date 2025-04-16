@@ -1,0 +1,5 @@
+[console_scripts]
+slock-dec = slock.cli.cli:decrypt
+slock-enc = slock.cli.cli:encrypt
+slock-enc-dir = slock.cli.cli:encrypt_dir
+slock-run-dir = slock.cli.cli:run_dir

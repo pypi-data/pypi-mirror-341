@@ -1,0 +1,147 @@
+# Slock (Sloth Lock)
+
+Python 파일 암호화 및 메모리 기반 복호화 실행 도구 (Python File Encryption and Memory-based Decryption Execution Tool)
+
+> **참고 / Note**: 
+> - 프로젝트 이름은 Slock (Sloth Lock)입니다.
+> - PyPI 패키지 이름은 `sloth-lock`입니다.
+> - 설치 시에는 `sloth-lock`을 사용하세요.
+>
+> - The project name is Slock (Sloth Lock).
+> - The PyPI package name is `sloth-lock`.
+> - Use `sloth-lock` when installing the package.
+
+## 개요 / Overview
+
+Slock은 Python 파일을 암호화하고, 암호화된 파일을 메모리에서 직접 복호화하여 실행할 수 있는 도구입니다.
+소스 코드를 보호하면서도 원본과 동일한 기능을 유지할 수 있습니다.
+
+Slock is a tool that encrypts Python files and executes them by decrypting directly in memory.
+It allows you to protect your source code while maintaining the same functionality as the original.
+
+## 주요 기능 / Key Features
+
+### 1. Python 파일 암호화 / Python File Encryption
+- Python 파일 암호화 지원 / Support for Python file encryption
+- 안전한 암호화 알고리즘 사용 / Uses secure encryption algorithms
+- 사용자 친화적인 명령줄 인터페이스 / User-friendly command-line interface
+
+### 2. 메모리 기반 복호화 실행 / Memory-based Decryption Execution
+- 암호화된 파일을 메모리에서 직접 복호화하여 실행 / Direct execution of encrypted files by decrypting in memory
+- 디스크에 복호화된 파일을 저장하지 않음 / No decrypted files are stored on disk
+- 원본 코드 보호 / Protects original source code
+
+### 3. 패키지 구조 지원 / Package Structure Support
+- Python 패키지 구조 자동 감지 및 유지 / Automatic package structure detection and maintenance
+- 모듈 간 의존성 자동 처리 / Automatic handling of module dependencies
+- 하위 패키지 지원 / Supports subpackages
+
+### 4. 패키지 구조 자동화 / Package Structure Automation
+- 암호화 시 자동으로 `__init__.py` 파일 생성 / Automatically creates `__init__.py` files during encryption
+- Python 패키지 구조 유지 / Maintains Python package structure
+- 하위 패키지 지원 / Supports subpackages
+
+## 설치 방법 / Installation
+
+```bash
+pip install sloth-lock
+```
+
+## 사용 방법 / Usage
+
+### 1. 파일 암호화 / File Encryption
+```bash
+slock-enc {input_file.py} {output_file.py.enc} {password_text}
+```
+
+### 2. 파일 복호화 / File Decryption
+```bash
+slock-dec {input_file.py.enc} {output_file.py} {password_text}
+```
+
+### 3. 디렉토리 암호화 / Directory Encryption
+```bash
+slock-enc-dir {input_directory} {encrypted_directory} {password_text}
+```
+
+### 4. 암호화된 모듈 실행 / Running Encrypted Modules
+```bash
+slock-run-dir {encrypted_directory} {password_text} {module_name}
+```
+
+## 예시 / Example
+
+### 프로젝트 암호화 및 실행 / Project Encryption and Execution
+
+1. 테스트 프로젝트 구조 / Test Project Structure:
+```
+my_project/
+├── main.py
+└── utils/
+    ├── __init__.py
+    └── util.py
+```
+
+2. 파일 내용 / File Contents:
+
+`main.py`:
+```python
+from utils.util import get_greeting
+
+def main():
+    name = "나무늘보"
+    message = get_greeting(name)
+    print(message)
+
+if __name__ == "__main__":
+    main()
+```
+
+`utils/util.py`:
+```python
+def get_greeting(name):
+    return f"안녕하세요, {name}님!"
+```
+
+3. 프로젝트 암호화 / Project Encryption:
+```bash
+python -m slock.cli.cli encrypt-dir {my_project} {encrypted_project} {my_password_text}
+```
+
+4. 암호화된 모듈 실행 / Running Encrypted Module:
+```bash
+python -m slock.cli.cli run-dir {encrypted_project} {my_password_text} {my_project.main}
+```
+
+실행 결과 / Execution Result:
+```
+안녕하세요, 나무늘보님!
+```
+
+이 예시는 메인 모듈(`main.py`)이 다른 폴더의 유틸리티 모듈(`utils/util.py`)을 참조하는 일반적인 Python 프로젝트 구조를 보여줍니다. 
+암호화된 파일은 메모리에서 복호화되어 실행되며, 원본 코드는 보호됩니다.
+
+This example demonstrates a typical Python project structure where the main module (`main.py`) references a utility module (`utils/util.py`).
+The encrypted files are decrypted in memory and executed, while the original code remains protected.
+
+## 주의사항 / Notes
+
+1. 암호화된 파일은 메모리에서 복호화되어 실행되며, 디스크에 복호화된 파일이 저장되지 않습니다.
+   Encrypted files are decrypted in memory and executed, with no decrypted files stored on disk.
+
+2. 암호화된 파일을 실행할 때는 반드시 올바른 비밀번호를 입력해야 합니다.
+   You must enter the correct password when running encrypted files.
+
+3. 패키지 구조는 자동으로 유지되므로 별도의 설정이 필요하지 않습니다.
+   Package structure is maintained automatically, so no additional configuration is needed.
+
+4. 암호화된 파일은 `.py.enc` 확장자를 가집니다.
+   Encrypted files have the `.py.enc` extension.
+
+## 라이선스 / License
+
+MIT License
+
+## 저자 / Author
+
+cryingmiso (if.sloth@gmail.com) 
