@@ -1,0 +1,12 @@
+transactional_sqlalchemy/__init__.py,sha256=1HdJhpA84TdDGqNl5CbCYP_L4J2BSOZj-PUWlVlIlds,489
+transactional_sqlalchemy/config.py,sha256=cAF5u1fA13IbUYt4AUc2RqywpD0ZSY74dxZPG2w5YCk,2228
+transactional_sqlalchemy/enums.py,sha256=GNVu2NFiJjFqbyAoaUuCMQ89b401BJxNZDm1TuJegAg,131
+transactional_sqlalchemy/interface.py,sha256=xlPO6XqSinkRdiCZYjveq5u3o_X1gGORhRABs3tPlZE,2525
+transactional_sqlalchemy/transactional.py,sha256=RTjx3661Gvf3K906U8gfL4BoXDSkqb_TpnnCtLdQqEk,1425
+transactional_sqlalchemy/utils.py,sha256=ppiF8QukHE4K2apz-mB645BCgErXo5Hv0GvAS2n5QAM,1551
+transactional_sqlalchemy/wrapper.py,sha256=nYDRkI0cIONEEJEHkRoLI6wz-DIZzBfEfWI8m4A2aS4,7286
+transactional_sqlalchemy-0.1.2.dist-info/licenses/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+transactional_sqlalchemy-0.1.2.dist-info/METADATA,sha256=tPnTl_BWG-eMH-yA8USdWk-D9TrIyK2hostJuDl5vOw,3094
+transactional_sqlalchemy-0.1.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+transactional_sqlalchemy-0.1.2.dist-info/top_level.txt,sha256=CCdqo77yS3KWjVBo5UHpUYx9S4fq_rcztq3a7ZiFUVc,25
+transactional_sqlalchemy-0.1.2.dist-info/RECORD,,
