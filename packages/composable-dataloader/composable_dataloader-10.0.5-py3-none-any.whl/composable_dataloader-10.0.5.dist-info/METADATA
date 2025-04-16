@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: composable-dataloader
+Version: 10.0.5
+Summary: Add your description here
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Requires-Dist: adlfs>=2024.12.0
+Requires-Dist: azure-identity>=1.21.0
+Requires-Dist: databricks-sdk>=0.49.0
+Requires-Dist: fsspec>=2025.3.2
+Requires-Dist: ibis-framework[deltalake,duckdb,polars]>=10.4.0
+Requires-Dist: polars>=1.27.1
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: typer-config>=1.4.2
+Requires-Dist: typer>=0.15.2
