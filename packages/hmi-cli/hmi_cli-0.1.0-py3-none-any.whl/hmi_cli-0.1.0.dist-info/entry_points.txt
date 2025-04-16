@@ -1,0 +1,2 @@
+[console_scripts]
+hmi-mycli = mycli.main:main

@@ -1,0 +1,7 @@
+commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commands/greet.py,sha256=EEHeoU5opv0jZUOhvtqTXCysNo0wYKvZrh3taAt0wYo,306
+hmi_cli-0.1.0.dist-info/METADATA,sha256=8R-uQL5I4leUskxjOcDoJgq_TGqp5KIUT2lNFLoPZlw,340
+hmi_cli-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+hmi_cli-0.1.0.dist-info/entry_points.txt,sha256=c4q-v5hgt9hbVsmqpCh1t4NXzW-AIEgzSD0OK3Kq-Iw,46
+hmi_cli-0.1.0.dist-info/top_level.txt,sha256=6dNUbRvZAy7fLWNbD4YeUosLYwGk-SVew-Swd5CfFkg,9
+hmi_cli-0.1.0.dist-info/RECORD,,
