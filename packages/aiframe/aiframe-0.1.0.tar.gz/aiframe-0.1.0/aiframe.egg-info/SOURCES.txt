@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+aiframe/__init__.py
+aiframe.egg-info/PKG-INFO
+aiframe.egg-info/SOURCES.txt
+aiframe.egg-info/dependency_links.txt
+aiframe.egg-info/requires.txt
+aiframe.egg-info/top_level.txt
+tests/__init__.py
+tests/city_to_json.py
+tests/number_to_text.py
+tests/number_to_text_advanced_config.py
+tests/test_df.py
