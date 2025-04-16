@@ -1,0 +1,9 @@
+sgd/__init__.py,sha256=XlVEJfCyRC5xNXhzw-XL0oOL1q8jlY-j5cRBnGSuC2g,114
+sgd/api.py,sha256=S3V0ZdBy9UAuzsKojEF6gXSYtmO4fsKD1V3jmeOsPJ0,8543
+sgd/constants.py,sha256=hsOYiPFV3VBu52dggRyoKX234XZNvirKYf6cYaYlINc,225
+sgd/exceptions.py,sha256=A1hUw7eGtcy4CzRZdKG5eaVmqOuR28AtignmLEvCrrU,109
+sgd_rest-0.1.3.dist-info/licenses/LICENSE,sha256=bI2zS-waCN5QfzBjYkfWjbM-yMNoZ7jhEA9e7mxFIFo,1068
+sgd_rest-0.1.3.dist-info/METADATA,sha256=NzeFHy9TFlgKD5d_xmCLxRd5Ae5k3TOHbx8yv1dP64o,6414
+sgd_rest-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sgd_rest-0.1.3.dist-info/top_level.txt,sha256=w_2I0zK35EqS23eDQ83aPTvKjU9H1ZmVA9u44vWUHyI,4
+sgd_rest-0.1.3.dist-info/RECORD,,
