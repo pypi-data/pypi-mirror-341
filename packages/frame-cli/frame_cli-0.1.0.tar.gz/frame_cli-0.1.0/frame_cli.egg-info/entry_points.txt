@@ -1,0 +1,2 @@
+[console_scripts]
+frame-cli = frame_cli.main:app
