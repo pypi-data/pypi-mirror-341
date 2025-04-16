@@ -1,0 +1,2 @@
+[console_scripts]
+wassgridsurface = wasspost:wasspost_main
