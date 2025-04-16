@@ -1,0 +1,14 @@
+tensorlens/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+tensorlens/tensorlens.py,sha256=zfDLKYcD9ZT2Sy6g57uZDo7zJIFEpAsJgxevqOC8bks,6913
+tensorlens/core/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tensorlens/core/global_store.py,sha256=-E1IDQKB5QdwwQcEsiwY0a1R64un48oE8_SKu5UmJz8,75
+tensorlens/web/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tensorlens/web/server.py,sha256=z6zDOYBOKLMjQm-Pbp0ZKbCK7qGKWy4y0tazszbwi-E,4003
+tensorlens/web/static/index.html,sha256=bn2PlCKmKmX9jAJYs6OEtoZv3VDojtaINY4BFunADCw,5175
+tensorlens/web/static/assets/index-d9094df6.js,sha256=MS6MIV_JIeyPjLUzRKaeHy6MHYx2Q-XBRjNIWUSiJ7Q,4118139
+tensorlens-0.0.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tensorlens-0.0.1.dist-info/METADATA,sha256=lO453q8iOeej5Ms3RgM_ak74PLMr6X0wxn4pxKQzY80,328
+tensorlens-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+tensorlens-0.0.1.dist-info/entry_points.txt,sha256=jIzvrqXDKhQEJvvlQNg30NhAiaebIQYWic3Ykj7FwCw,58
+tensorlens-0.0.1.dist-info/top_level.txt,sha256=PPncx51AMfQ2EH3Z_se7M3F2ImNIPDTmnO5MPcMlhWU,11
+tensorlens-0.0.1.dist-info/RECORD,,
