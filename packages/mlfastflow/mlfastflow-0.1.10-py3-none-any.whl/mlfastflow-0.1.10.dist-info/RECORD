@@ -1,0 +1,17 @@
+examples/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+examples/simple_flow.py,sha256=hGiHZMQIFXoQpowFYRhlBWyFY8_q_snjwT69X1k5SDY,470
+examples/simple_sourcing.py,sha256=KsfI_9K0CdQQTWiV6AhyJPewJ8acQylm0HEd7ddMQQM,1048
+mlfastflow/__init__.py,sha256=L7PVlLjscpceezKXkHQsN63ydctaSTmM5ZYw4XnhL_4,408
+mlfastflow/bigqueryclient.py,sha256=rEboRarQoI015BvEOSdyiFLegnsxgzrnZy1PJC5gPss,25925
+mlfastflow/core.py,sha256=hz6NBTe1X5taoV0lg_OjZeUgn0vp5EBbWhgusMGJZCM,542
+mlfastflow/sourcing.py,sha256=KjiA9uc9VhLCz4MhW60EUtseQRzhUCU-ND-evzhA8xg,8274
+mlfastflow/utils.py,sha256=7ihEH65KkjH-fFcPNHGqpwOonBgx5hbW3kO2pGaC6eA,547
+mlfastflow-0.1.10.dist-info/licenses/LICENSE,sha256=b5jT2pN7BqzsuRlc07bdP-_1rfJ7jyqq3NZ_0sHlkGg,1064
+tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/local_test_bigqueryclient.py,sha256=WW5VmbTQjvgURcnwkIYyFt-El5QtTEHeC_PGZPS1X8M,1661
+tests/pypi_test_bigqueryclient.py,sha256=LJM6RsbAVZbmfyBYaxOENDV7TWnRykiYXf7dplZruQU,473
+tests/test_core.py,sha256=hLfh8bLPz-20TVr44z-OBhjHaJ3yzQt6XzaYXlPty7k,880
+mlfastflow-0.1.10.dist-info/METADATA,sha256=UL4ZBbbzWs4hfEW_-r8mS2XJc6zVPBFagDwLSn1fWG8,4454
+mlfastflow-0.1.10.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mlfastflow-0.1.10.dist-info/top_level.txt,sha256=lbyAsYf5P49eam-1e-9uZ7Es0n8PRPRq8TjJJOWqi98,26
+mlfastflow-0.1.10.dist-info/RECORD,,
