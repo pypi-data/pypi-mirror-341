@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: installer_creator
+Version: 0.1.1
+Summary: Python package for compiling projects with Nuitka and creating Windows installers with Wix Toolset
+Requires-Python: >=3.7
+Requires-Dist: nuitka
+Requires-Dist: pyyaml
