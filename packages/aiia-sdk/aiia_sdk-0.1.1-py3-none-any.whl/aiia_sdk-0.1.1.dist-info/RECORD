@@ -1,0 +1,10 @@
+aiia_sdk/__init__.py,sha256=o2oxhSENqix6P6pdj5kA0KnfA6YpUYzb4DTvAQF6560,108
+aiia_sdk/aiia_sdk.py,sha256=uWJnyXa4ENXKI1oOLO1dx2OC1yvMFSoZO_UWKVBsmnA,5518
+aiia_sdk/utils.py,sha256=vylRr4fSFWwb7Zlt2QOcuuOeTr6JDpDmLchOMNqJY-8,181
+aiia_sdk/cache/actions_cache.json,sha256=28eAJslDnYtBnIH2IAcxfTb4z81YUBtc2AFR0crU2jo,17151
+aiia_sdk/data/aiia_actions_v1.0.json,sha256=BnCz5hwH6ft5AzRb_yT013r1IDJTFxFXCeQmr_gYBZ8,18834
+aiia_sdk-0.1.1.dist-info/licenses/LICENSE,sha256=tutCW9EosCskzc2ynRCFpI_7kyogjUSfQpbxNUFrzIw,1107
+aiia_sdk-0.1.1.dist-info/METADATA,sha256=dNMleEAFn33HB6aIc6sKkwBc8fYmICNMo1raNDVYVbs,3491
+aiia_sdk-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+aiia_sdk-0.1.1.dist-info/top_level.txt,sha256=Ex5wLDNAbfZJkrXWuUE990kI3pGH5lGlXkeHBof441o,9
+aiia_sdk-0.1.1.dist-info/RECORD,,
