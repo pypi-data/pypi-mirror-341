@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: TikVals
+Version: 0.1
+Summary: Simple
+Author: Ibn-Suleiman
+Author-email: tvvvyvv@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: MedoSigner
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
