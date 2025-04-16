@@ -1,0 +1,6 @@
+FFMPEG_Filters/Image.py,sha256=vUPvvhqvim91MYpAwc7aItgPIb_9FubGS5sp12kgrng,7070
+FFMPEG_Filters/__init__.py,sha256=1iKACZlWnwFqYkcsuVTkEuG8VGxL_I0W9IPs5LMVV8g,40
+ffmpeg_filters-10.0.dist-info/METADATA,sha256=JRinFTC1IXKnLO1mkXFW-MkyZ9BpajSamwKQYJLGvYg,868
+ffmpeg_filters-10.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ffmpeg_filters-10.0.dist-info/top_level.txt,sha256=7QFxFi0GvdHSto7j1hA3byAQ9A2_Z1n1AREQrk8IwXs,15
+ffmpeg_filters-10.0.dist-info/RECORD,,
