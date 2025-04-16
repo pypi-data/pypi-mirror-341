@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+textcolor/__init__.py
+textcolor/all.py
+textcolor/text.py
+textcolor/version.py
+textcolor_v2.egg-info/PKG-INFO
+textcolor_v2.egg-info/SOURCES.txt
+textcolor_v2.egg-info/dependency_links.txt
+textcolor_v2.egg-info/top_level.txt
