@@ -1,0 +1,9 @@
+src/mcp_trader/__init__.py,sha256=KNZ1bD9ZGfyZwlv91Ueeega_1lsRDLs2fYQDgNbBdtc,212
+src/mcp_trader/data.py,sha256=rrUvKgGWMTc4MLYaRepKLxC5trzNv1Xx50yr5nUSWlM,2600
+src/mcp_trader/indicators.py,sha256=7PXMmEZ7NtFGAVk6G8nV63Qm8RDEZ-25OSwKvY4img4,18922
+src/mcp_trader/server.py,sha256=yHBaJMwSqdic7YRSmmM-lY4AsU_ANup8zRCjd877BQs,18477
+src/mcp_trader/tests/test_relative_strength.py,sha256=bWzrWYNK4mP-TjjXvpQDsY-t1U_JeYRK7vD4t5WwDu4,792
+mseep_mcp_trader-0.1.0.dist-info/METADATA,sha256=1MCuz9QOl6FC9QnrqRodjW9LF1WbZn0ILmXyz7iNaZE,9074
+mseep_mcp_trader-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp_trader-0.1.0.dist-info/entry_points.txt,sha256=ZzinI1fuvJ7HsqGKMrZBE9-UWlPDQML8xGF-r6EJUVc,47
+mseep_mcp_trader-0.1.0.dist-info/RECORD,,
