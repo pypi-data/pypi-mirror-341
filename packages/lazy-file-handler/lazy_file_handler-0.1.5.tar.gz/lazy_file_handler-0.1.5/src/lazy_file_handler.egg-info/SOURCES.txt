@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/lazy_file_handler/__init__.py
+src/lazy_file_handler/lazy_handler.py
+src/lazy_file_handler.egg-info/PKG-INFO
+src/lazy_file_handler.egg-info/SOURCES.txt
+src/lazy_file_handler.egg-info/dependency_links.txt
+src/lazy_file_handler.egg-info/top_level.txt
+tests/test_methods.py
