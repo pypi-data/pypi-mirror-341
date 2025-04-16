@@ -1,0 +1,2 @@
+[console_scripts]
+agn = agn.cli:main
