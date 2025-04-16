@@ -1,0 +1,4 @@
+[console_scripts]
+m3gp = m3u8_getpack.__main__:main
+m3u8-getpack = m3u8_getpack.__main__:main
+mgp = m3u8_getpack.__main__:main
