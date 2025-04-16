@@ -1,0 +1,13 @@
+<!-- netbox_cable_extension/cable_extension_edit.html -->
+{% extends 'base/layout.html' %}
+{% load static %}
+
+{% block content %}
+<h3>Edit Cable Extension</h3>
+<hr>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+{% endblock %}

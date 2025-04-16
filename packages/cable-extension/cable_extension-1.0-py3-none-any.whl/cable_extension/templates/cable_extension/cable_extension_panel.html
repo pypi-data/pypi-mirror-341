@@ -1,0 +1,11 @@
+{% if extension %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Cable Extension</h3>
+    </div>
+    <div class="panel-body">
+        <strong>Length:</strong> {{ extension.cable_length }}<br />
+        <strong>Manufacturer:</strong> {{ extension.manufacturer }}
+    </div>
+</div>
+{% endif %}

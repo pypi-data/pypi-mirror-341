@@ -1,0 +1,17 @@
+cable_extension/__init__.py,sha256=ERyl4ElEifEVqV_44tiI1NaBcsRALTbLf1-7JiigfZ0,860
+cable_extension/forms.py,sha256=X6Qwv30KimNTDcTzqUhsYy4_7mZxiRRtC4iaC7p3dKw,7213
+cable_extension/models.py,sha256=FR4Iw28geQcabUaX76EY01fJ3LNqo41A20dwZ1nEwmM,576
+cable_extension/navigation.py,sha256=Z1mpYuByK-kVD_HxSVYVb4SuTbH8CCEJlJIdSHnF8-4,269
+cable_extension/template_extensions.py,sha256=go732o-vWDLmrGxRnSgs5e6uEa_K7xCDHn1m5MItCVQ,491
+cable_extension/urls.py,sha256=GrvO00DLdOVJvyNnuoKjmZHeH5hPDTs740NxoTYbuTM,313
+cable_extension/views.py,sha256=f3MZ9XAEAsNBw2t_hqy-UHBaxuJBz5BzwzLu-xhIjpM,3335
+cable_extension/migrations/0001_initial.py,sha256=Dgp5Mk7rbeFySEC66ALUQt_Q779EkwD4BRNNXCYiiJI,881
+cable_extension/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cable_extension/templates/cable_extension/cable_create.html,sha256=-Pzx260waqTemsczSnQ_ci2lgYK8dKEkspDXnX0IRco,311
+cable_extension/templates/cable_extension/cable_extension_edit.html,sha256=vCausm26w0But08079DIzzV0oCUksKPS3BjGBwlxEgY,313
+cable_extension/templates/cable_extension/cable_extension_panel.html,sha256=6oyTz7VUdlaQR-D0Out4dk3PnieCCdzsp0XEDOwiD2o,343
+cable_extension-1.0.dist-info/licenses/LICENSE,sha256=3nLA3ZRaLz6WVEFN7mLm1GXDMuX2gWddgu8Alcqv3MM,1079
+cable_extension-1.0.dist-info/METADATA,sha256=ZH-A80_M0bkWTn4HTum32tNQyugrtPQkQGj2npi6Pjc,3927
+cable_extension-1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+cable_extension-1.0.dist-info/top_level.txt,sha256=sxooJKjfFRXI9L6KSH1k1dkGKtTGiyKzugatXYyO-Ns,16
+cable_extension-1.0.dist-info/RECORD,,
