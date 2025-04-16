@@ -1,0 +1,16 @@
+posthog_mcp/__init__.py,sha256=W9XB3LnMcUXr3ve7cCLOvZgA82KY8ppYABb7ed6fAhI,233
+posthog_mcp/__main__.py,sha256=ZcFAGrvS-YXXwOmWOAS30_ZtyoP0S0FzQb9LarcoX-o,125
+posthog_mcp/server.py,sha256=KazSoTefZB0tU7Oh8pLozksjV8B5OVts9cMO3bsvXGM,4379
+posthog_mcp/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+posthog_mcp/core/client.py,sha256=8-JDyEjlT06x6S_pCIVrGc-_XmsrsweJB8f-ls0lc2o,2567
+posthog_mcp/core/settings.py,sha256=2JebTsOdrTSH9bf2vCUDZfFYhZjF9dcMcaYTkJjEQC8,887
+posthog_mcp/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+posthog_mcp/tools/annotations/annotations.py,sha256=9sLVJJ_HvypIYrjnweBgDP5S4X3ZPSOFSXX9arX8Q7w,622
+posthog_mcp/tools/docs/docs.py,sha256=3Y738Tz4l_M_T6HC6OC67nnBtEbbmcLi_lCyN7q1UJs,1012
+posthog_mcp/tools/insights/insights.py,sha256=tYpBJs62RvFgwbrNcgjIMIefQ8PTh8jEIngur_zze3g,1222
+posthog_mcp/tools/projects/projects.py,sha256=ztpqOfewMNTuG43u699pa7nXMaMxobgniow8um3Didc,558
+mseep_posthog_mcp-0.1.0.dist-info/METADATA,sha256=5MKWWRV747AMzuRMntO60ECC3jHFFQ4v9sF-ZmvW5h8,269
+mseep_posthog_mcp-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_posthog_mcp-0.1.0.dist-info/entry_points.txt,sha256=pdmqKjbIErFUJt44VGpFI-Hwgc58bdpXr37UNcBcPho,49
+mseep_posthog_mcp-0.1.0.dist-info/licenses/LICENSE,sha256=q6UqlrLIp1SsHxQsnUCAFVkilP5aO5ljqh90YrJ8zHU,1064
+mseep_posthog_mcp-0.1.0.dist-info/RECORD,,

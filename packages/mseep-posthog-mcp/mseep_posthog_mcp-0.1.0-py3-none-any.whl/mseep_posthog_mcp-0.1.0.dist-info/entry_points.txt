@@ -1,0 +1,2 @@
+[console_scripts]
+posthog-mcp = posthog_mcp:main
