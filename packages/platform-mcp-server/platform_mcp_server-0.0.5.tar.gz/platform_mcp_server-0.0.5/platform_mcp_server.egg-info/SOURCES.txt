@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+planqk/__init__.py
+planqk/mcp/__init__.py
+planqk/mcp/kipu_services.txt
+planqk/mcp/main.py
+platform_mcp_server.egg-info/PKG-INFO
+platform_mcp_server.egg-info/SOURCES.txt
+platform_mcp_server.egg-info/dependency_links.txt
+platform_mcp_server.egg-info/entry_points.txt
+platform_mcp_server.egg-info/requires.txt
+platform_mcp_server.egg-info/top_level.txt
