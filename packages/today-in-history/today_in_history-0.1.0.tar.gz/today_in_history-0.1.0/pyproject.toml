@@ -1,0 +1,24 @@
+[project]
+name = "today-in-history"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "iraana",email = "24048851@saultcollege.ca"},
+    {name = "kaos620",email = "rafaelcardoso6200@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "today_in_history", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+todayhistory = "today_in_history.cli:main"
