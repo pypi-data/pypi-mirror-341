@@ -1,0 +1,17 @@
+open-clip-torch
+openai-clip
+zipp
+timm
+fire
+opencv-python
+datasets
+ftfy
+torch
+scipy
+fairscale
+GitPython
+torchvision
+rich
+oslo.concurrency
+transformers
+gdown
