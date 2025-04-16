@@ -1,0 +1,2 @@
+[console_scripts]
+anima = animax.__main__:main
