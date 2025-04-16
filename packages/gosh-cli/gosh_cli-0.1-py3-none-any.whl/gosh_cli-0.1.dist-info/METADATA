@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: gosh-cli
+Version: 0.1
+Summary: gOSh - gOS sHell: A CLI tool for the nf-gOS pipeline
+Author: Shihab Dider
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Click
+Requires-Dist: openai
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# gOSh
+
+A CLI for the nf-gOS pipeline
+ 
