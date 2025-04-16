@@ -1,0 +1,12 @@
+shaclgen/__init__.py,sha256=xjBhrNO6P9cVNPvgY_Yl1JsdFgzzScObs6mSL8-XmtQ,84
+shaclgen/__main__.py,sha256=tykVk88lweg_z7Zfvkio1PwXfXGZHyVk-wGS6Tmq5ok,4043
+shaclgen/generator.py,sha256=6VZFtDqRWer1HFQisx_tEoBePOIujz_TXE0toaMH9Ec,553
+shaclgen/prefixes/__init__.py,sha256=xjBhrNO6P9cVNPvgY_Yl1JsdFgzzScObs6mSL8-XmtQ,84
+shaclgen/prefixes/namespaces.json,sha256=Zu3y30XqG1-iFAMH27UitIxb8cvRb4kUDTWJvbecsPs,137345
+shaclgen/schema.py,sha256=5b91lOml_dwl8XkO_6eRGiyjS69vDmzM3PzQ-3X9yoY,20662
+shaclgen/shaclgen.py,sha256=MUBVa2Sm3BqEFXakBmvTR16N58ARr4dEcSvBbfZJgrE,8572
+shaclgen-3.0.0b1.dist-info/LICENSE,sha256=ok_VXnFEZCGMoTKY9QiP4pobPbMpMeYe8Kw4Ay4knrA,1213
+shaclgen-3.0.0b1.dist-info/METADATA,sha256=4nVjt9bz_itsGyE6wqwmxdZjhqVhNfG3mK7YP9CjeqI,3883
+shaclgen-3.0.0b1.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+shaclgen-3.0.0b1.dist-info/entry_points.txt,sha256=3kaSmDEDWzLsJzbwm6BGPHrSuWBHJEQeCu2uRUq6rZk,51
+shaclgen-3.0.0b1.dist-info/RECORD,,
