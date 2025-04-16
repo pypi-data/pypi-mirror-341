@@ -1,0 +1,6 @@
+setup.py
+ir_sums/__init__.py
+ir_sums.egg-info/PKG-INFO
+ir_sums.egg-info/SOURCES.txt
+ir_sums.egg-info/dependency_links.txt
+ir_sums.egg-info/top_level.txt
