@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: sd_spider_utils
+Version: 1.0.0
+Summary: 爬虫工具包，写爬虫更快！！！
+Author-email: 星梦 <cpython666@gmail.com>
+License: MIT
+Project-URL: Homepage, https://space.bilibili.com/1909782963
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Dynamic: license-file
