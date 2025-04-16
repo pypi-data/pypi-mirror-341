@@ -1,0 +1,9 @@
+media/take5.mp4,sha256=dkD6EPMTZgsge5RiHdp5rBZ7n-R8H55oNQCJ6Uc7YjM,5036475
+src/spotify_mcp/__init__.py,sha256=ez6JyBnWvdcUiGgAcMXJ7IegaISL28hI0OY_iaHF7_o,214
+src/spotify_mcp/server.py,sha256=Dhcg05xVHdOoFQcsJ7nUeLpXMOFAf7BvAUPQX5t-Iq8,9657
+src/spotify_mcp/spotify_api.py,sha256=IHCQaeV86RTnWRITcKtVNvOP0e8pVdRJ8mBXYFFHo3Q,10072
+src/spotify_mcp/utils.py,sha256=elahXcWMAZt8zFJuvH54RJDzEroS-8Ecr7aKA0QXrUE,6418
+mseep_spotify_mcp-0.2.0.dist-info/METADATA,sha256=RT72OvApXptGt3oov8oZ7jLT8emOThrjcsD_8e-YSL0,3852
+mseep_spotify_mcp-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_spotify_mcp-0.2.0.dist-info/entry_points.txt,sha256=3zhK_-NjCgc0Gyt85Nz0h-TeX0CFvjye_RBS93o3m1Q,49
+mseep_spotify_mcp-0.2.0.dist-info/RECORD,,
