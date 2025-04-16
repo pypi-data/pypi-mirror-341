@@ -1,0 +1,13 @@
+crunchyroll/__init__.py,sha256=PYTr4MQir3Lz6uegQ15dB-Oum-Egmly4Ffpy2CeWBPI,36
+crunchyroll/api.py,sha256=Exp0wI1m_xWqFPv3BwVmyIN0i5pABZUfIX0J1PMPZRo,28268
+crunchyroll/cli.py,sha256=zgrxLML_brnbgpOi4M_VyGqOEuLyvwvqcix7POgaX3I,25103
+crunchyroll/config.py,sha256=2-4vA_3hiLTiuYiwqAs0RFhq9fZFfmeVNfZVYXql4e8,4732
+crunchyroll/downloader.py,sha256=9zPzkm8ZqvQyy0k-9XnXD-1Sr_TK4oTijczCZIH0M8s,50956
+crunchyroll/drm_utils.py,sha256=e40YrcfoEPY3zPjGpZVPS3lJAwuNDw53BNs8Kib6IC4,15956
+crunchyroll/media_utils.py,sha256=DOST7WXbv6NjOd2anG32uLhQ_Rlr08LUghGwhxr7gxs,27888
+crunchyroll/version.py,sha256=k5tJXhBQJ4l9fKHJ76K5w98zBHoYvNk9r-UNH6eQ2-k,21
+crdl-0.0.3.dist-info/METADATA,sha256=jb403PtCXAVUS1TNnRYIDF1OpvIWT2S6zDehUfHqXoo,6821
+crdl-0.0.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+crdl-0.0.3.dist-info/entry_points.txt,sha256=PRWAOj7jjpnCOt9R0N9hzvBe7bzOIaOYLP6WuVgVIyk,46
+crdl-0.0.3.dist-info/top_level.txt,sha256=GdjZDsdVvEY53ScxXXeUT7Nd_uokgfKprRlj27XHtKs,12
+crdl-0.0.3.dist-info/RECORD,,
