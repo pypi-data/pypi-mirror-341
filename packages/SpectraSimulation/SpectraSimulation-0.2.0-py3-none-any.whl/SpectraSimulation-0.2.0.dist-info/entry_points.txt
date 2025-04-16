@@ -1,0 +1,3 @@
+[console_scripts]
+SpectraSimulations = SpectraSimulations.__main__:launchGUI
+SpectraSimulations_headless = SpectraSimulations.__main__:launchHeadless
