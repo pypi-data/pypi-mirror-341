@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+axonius/__init__.py
+axonius/core.py
+axonius.egg-info/PKG-INFO
+axonius.egg-info/SOURCES.txt
+axonius.egg-info/dependency_links.txt
+axonius.egg-info/top_level.txt
