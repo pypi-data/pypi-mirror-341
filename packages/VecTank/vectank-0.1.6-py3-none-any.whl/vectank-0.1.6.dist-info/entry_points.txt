@@ -1,0 +1,2 @@
+[console_scripts]
+vectank-run = vectank.cli:main
