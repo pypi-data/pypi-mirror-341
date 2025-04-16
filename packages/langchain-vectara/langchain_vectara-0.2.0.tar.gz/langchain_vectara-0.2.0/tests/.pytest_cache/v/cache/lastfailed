@@ -1,0 +1,4 @@
+{
+  "integration_tests/test_tools.py::test_vectara_search_tool_error_handling": true,
+  "integration_tests/test_tools.py::test_vectara_tools_chain_integration_real": true
+}
