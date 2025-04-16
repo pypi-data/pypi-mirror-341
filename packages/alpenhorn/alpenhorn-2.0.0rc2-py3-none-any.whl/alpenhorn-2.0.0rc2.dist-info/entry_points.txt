@@ -1,0 +1,3 @@
+[console_scripts]
+alpenhorn = alpenhorn.cli:entry
+alpenhornd = alpenhorn.daemon:entry

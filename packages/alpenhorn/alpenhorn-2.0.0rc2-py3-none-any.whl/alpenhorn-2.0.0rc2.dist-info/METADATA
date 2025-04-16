@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: alpenhorn
+Version: 2.0.0rc2
+Summary: Data archive management software
+Author-email: "Adam D. Hincks" <adam.hincks@utoronto.ca>, "J. Richard Shaw" <jrichardshaw@gmail.com>, "D. V. Wiebe" <dvw@phas.ubc.ca>
+License-Expression: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: Click>=6.0
+Requires-Dist: concurrent-log-handler
+Requires-Dist: peewee>=3.17.1
+Requires-Dist: PyYAML
+Requires-Dist: tabulate
+Requires-Dist: watchdog
+Provides-Extra: prometheus
+Requires-Dist: prometheus_client; extra == "prometheus"
+Provides-Extra: dist
+Requires-Dist: build; extra == "dist"
+Requires-Dist: twine; extra == "dist"
+Requires-Dist: packaging; extra == "dist"
+Provides-Extra: doc
+Requires-Dist: packaging; extra == "doc"
+Requires-Dist: Sphinx>=5.0; extra == "doc"
+Requires-Dist: sphinx_rtd_theme; extra == "doc"
+Provides-Extra: test
+Requires-Dist: pyfakefs>=5.4; extra == "test"
+Requires-Dist: pytest>=7.0; extra == "test"
+Dynamic: license-file
+
+.. image:: https://github.com/radiocosmology/alpenhorn/workflows/Linting/badge.svg
+    :target: https://github.com/radiocosmology/alpenhorn/actions/workflows/linting.yaml
+
+.. image:: https://github.com/radiocosmology/alpenhorn/workflows/Test%20Suite/badge.svg
+    :target: https://github.com/radiocosmology/alpenhorn/actions/workflows/tests.yaml
+
+Alpenhorn
+=========
+
+Alpenhorn is a service for managing an archive of scientific data.
