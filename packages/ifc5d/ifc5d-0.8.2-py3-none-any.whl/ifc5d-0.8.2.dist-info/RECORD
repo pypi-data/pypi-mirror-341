@@ -1,0 +1,13 @@
+ifc5d/IFC4QtoBaseQuantities.json,sha256=xovmZyPlCeqs42C_3ijsM8gyzD0Ekque0ryg74uAmSs,22676
+ifc5d/IFC4QtoBaseQuantitiesBlender.json,sha256=1-wotWuDjLpKiNpR-nN0oeK8zMZx4AdDJ4svnbmR5xM,23569
+ifc5d/IFC4X3QtoBaseQuantities.json,sha256=P0G_dWmPNrY9Hxb3OU72Qv8REajz1WLNtxHaqPlGCvM,30799
+ifc5d/IFC4X3QtoBaseQuantitiesBlender.json,sha256=7N6skVqbiO6nVLzkwfMoXK-F1fVd8ObOZqdUM0g4ajI,31644
+ifc5d/__init__.py,sha256=7q0bYIBc7D9XXElRVDA4T-T97kmAfo8pOejEMQ3IXwA,790
+ifc5d/csv2ifc.py,sha256=rwg41slW97nGnQSxeCDf5932efoS6soUtbT5SgWLGa8,10761
+ifc5d/ifc2json.py,sha256=uJVT9aJoB_FfiAO5MA5xKaZvh7_OUgSoZt6C4DH2WkY,8001
+ifc5d/ifc5Dspreadsheet.py,sha256=gjSycHLXL3TfMcMp42YJzizD398FBbMpMEJd7v03wlc,20324
+ifc5d/qto.py,sha256=bg0ybzjo-YrFS7g6ykHEFACeX0ocKB7sVgH0mDadscI,23916
+ifc5d-0.8.2.dist-info/METADATA,sha256=4OOSyXZuBJqYVQuIVuEaINCLXi52PGiC9brDuV9f8Es,584
+ifc5d-0.8.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ifc5d-0.8.2.dist-info/top_level.txt,sha256=LJZ0wWkmVig4U8OujesWCOfAhc4fwAJ1EjcfGfbHN_c,6
+ifc5d-0.8.2.dist-info/RECORD,,
