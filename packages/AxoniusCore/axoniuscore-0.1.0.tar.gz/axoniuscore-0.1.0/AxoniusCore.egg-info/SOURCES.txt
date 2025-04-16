@@ -1,0 +1,8 @@
+README.md
+setup.py
+AxoniusCore/__init__.py
+AxoniusCore/core.py
+AxoniusCore.egg-info/PKG-INFO
+AxoniusCore.egg-info/SOURCES.txt
+AxoniusCore.egg-info/dependency_links.txt
+AxoniusCore.egg-info/top_level.txt
