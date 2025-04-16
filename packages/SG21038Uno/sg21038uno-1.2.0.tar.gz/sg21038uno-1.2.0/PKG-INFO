@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: SG21038Uno
+Version: 1.2.0
+Summary: Libreria  para resolver ecuaciones lineales y no lineales
+Author: Katherine Gámez
+Author-email: sg21038@ues.edu.sv
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: scipy
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
