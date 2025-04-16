@@ -1,0 +1,250 @@
+Metadata-Version: 2.4
+Name: autopd
+Version: 0.1.1
+Summary: AutoPipelineDoctor: AI-powered monitoring, diagnosis, and optimization for ML/AI pipelines
+Home-page: https://github.com/autopipelinedoctor/autopd
+Author: AutoPipelineDoctor Team
+Author-email: info@autopipelinedoctor.ai
+Project-URL: Bug Tracker, https://github.com/autopipelinedoctor/autopd/issues
+Project-URL: Documentation, https://autopipelinedoctor.ai/docs
+Project-URL: Source Code, https://github.com/autopipelinedoctor/autopd
+Keywords: machine learning,deep learning,monitoring,optimization,diagnosis,pytorch,tensorflow,jax,pipeline,AI,ML
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Monitoring
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: matplotlib>=3.4.0
+Requires-Dist: plotly>=5.0.0
+Requires-Dist: torch>=1.9.0
+Requires-Dist: psutil>=5.8.0
+Requires-Dist: gputil>=1.4.0
+Requires-Dist: py-cpuinfo>=8.0.0
+Requires-Dist: pynvml>=11.0.0
+Requires-Dist: tqdm>=4.60.0
+Requires-Dist: dash>=2.0.0
+Requires-Dist: seaborn>=0.11.0
+Requires-Dist: scikit-learn>=1.0.0
+Requires-Dist: scipy>=1.7.0
+Provides-Extra: lightning
+Requires-Dist: pytorch-lightning>=1.5.0; extra == "lightning"
+Provides-Extra: huggingface
+Requires-Dist: transformers>=4.5.0; extra == "huggingface"
+Provides-Extra: deepspeed
+Requires-Dist: deepspeed>=0.5.0; extra == "deepspeed"
+Provides-Extra: llm
+Requires-Dist: transformers>=4.5.0; extra == "llm"
+Requires-Dist: openai>=0.27.0; extra == "llm"
+Requires-Dist: anthropic>=0.3.0; extra == "llm"
+Provides-Extra: viz
+Requires-Dist: dash>=2.0.0; extra == "viz"
+Requires-Dist: seaborn>=0.11.0; extra == "viz"
+Requires-Dist: bokeh>=2.4.0; extra == "viz"
+Provides-Extra: advanced
+Requires-Dist: scikit-learn>=1.0.0; extra == "advanced"
+Requires-Dist: scipy>=1.7.0; extra == "advanced"
+Requires-Dist: networkx>=2.6.0; extra == "advanced"
+Requires-Dist: statsmodels>=0.13.0; extra == "advanced"
+Requires-Dist: umap-learn>=0.5.0; extra == "advanced"
+Requires-Dist: hdbscan>=0.8.0; extra == "advanced"
+Requires-Dist: pyro-ppl>=1.7.0; extra == "advanced"
+Requires-Dist: pygraphviz>=1.7; extra == "advanced"
+Requires-Dist: qiskit>=0.30.0; extra == "advanced"
+Requires-Dist: pennylane>=0.20.0; extra == "advanced"
+Requires-Dist: torchviz>=0.0.2; extra == "advanced"
+Requires-Dist: optuna>=2.10.0; extra == "advanced"
+Requires-Dist: ray[tune]>=1.13.0; extra == "advanced"
+Requires-Dist: tensorboardX>=2.5.0; extra == "advanced"
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.12.0; extra == "dev"
+Requires-Dist: black>=21.5b2; extra == "dev"
+Requires-Dist: isort>=5.9.0; extra == "dev"
+Requires-Dist: mypy>=0.812; extra == "dev"
+Requires-Dist: flake8>=3.9.0; extra == "dev"
+Requires-Dist: sphinx>=4.0.0; extra == "dev"
+Requires-Dist: sphinx-rtd-theme>=0.5.0; extra == "dev"
+Requires-Dist: twine>=3.4.0; extra == "dev"
+Requires-Dist: build>=0.7.0; extra == "dev"
+Provides-Extra: all
+Requires-Dist: pytorch-lightning>=1.5.0; extra == "all"
+Requires-Dist: transformers>=4.5.0; extra == "all"
+Requires-Dist: deepspeed>=0.5.0; extra == "all"
+Requires-Dist: openai>=0.27.0; extra == "all"
+Requires-Dist: anthropic>=0.3.0; extra == "all"
+Requires-Dist: bokeh>=2.4.0; extra == "all"
+Requires-Dist: networkx>=2.6.0; extra == "all"
+Requires-Dist: statsmodels>=0.13.0; extra == "all"
+Requires-Dist: umap-learn>=0.5.0; extra == "all"
+Requires-Dist: hdbscan>=0.8.0; extra == "all"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# AutoPipelineDoctor (autopd)
+
+A mission-critical Python package for automatically watching, diagnosing, predicting, optimizing, and explaining model training behavior across all major deep learning stacks.
+
+## Overview
+
+AutoPipelineDoctor is designed to be as vital and ever-present in an AI developer's workflow as oxygen is to life. It serves as a default companion to every model training session, used by teams at OpenAI, DeepMind, Google Brain, Anthropic, Meta FAIR, and top research labs.
+
+## Core Capabilities
+
+### 1. Always-Watching Pipeline AI
+
+Automatically monitors training in real-time:
+- Batch latency
+- GPU/CPU load
+- Forward/backward/optimizer timings
+- Memory usage and fragmentation
+- Dataloader bottlenecks
+
+No code changes needed—just one import and attach.
+
+### 2. Predictive Failure Forecasting
+
+Learns pipeline patterns to predict:
+- OOM errors before they happen
+- Overfitting/underfitting trajectories
+- Dead gradient zones
+- Imbalanced compute/data scaling
+
+Warns developer in advance via logs or alerts.
+
+### 3. Intelligent Optimization Advisor
+
+Suggests or auto-applies:
+- AMP / bfloat16
+- Dataloader worker tuning
+- Batch size balancing
+- Gradient checkpointing
+- RAM/GPU swapoff
+- Scheduler reconfiguration
+
+Interface: `doctor.get_suggestions()`
+
+### 4. Human-Friendly Visual + Natural Language Feedback
+
+Generates real-time:
+- Visual dashboards
+- Markdown reports
+- Graphs of memory, ops, time breakdowns
+
+Explains in plain language:
+> "Your GPU is idle 38% due to slow CPU preprocessing. Consider 8 num_workers."
+
+### 5. Code-Native LLM Interface
+
+Embedded LLM allows developers to ask:
+- "Why is training slow?"
+- "What should I optimize first?"
+- "Which layer is most memory-heavy?"
+
+Responds with context-aware, codified answers and optimization plans.
+
+### 6. Memory of Past Runs (Experience Brain)
+
+Retains historical run logs, graphs, and bottleneck maps.
+Learns over time which models fail where.
+
+Can say:
+> "This ResNet50 on CIFAR10 with 32 batch size previously hit OOM at 7th epoch—suggest downscaling."
+
+### 7. Zero-Code, Always-On Integration
+
+Works by:
+```python
+from autopd import Doctor
+doctor = Doctor(model, optimizer, dataloader)
+doctor.watch(train_loop)
+```
+
+Or:
+```python
+doctor.auto_patch()
+```
+
+### 8. Designed for Every Framework
+
+Plug-in support for:
+- PyTorch / Lightning / HuggingFace
+- Deepspeed
+- Torch.compile / TorchDynamo
+
+Roadmap for: TensorFlow, JAX, TPU support.
+
+### 9. Built for Speed + Privacy
+
+- All monitoring happens locally
+- Lightweight footprint (doesn't slow down training)
+- No telemetry unless enabled
+
+### 10. Built for the Elite
+
+- Used by researchers, infra engineers, and ML pioneers
+- Can run locally, in cloud, or in enterprise training clusters
+- Integrates with: WandB, MLflow, Comet, Ray Tune, Optuna
+
+## Installation
+
+```bash
+pip install autopd
+```
+
+## Quick Start
+
+```python
+from autopd import Doctor
+import torch
+
+# Create a model, optimizer, and dataloader
+model = YourModel()
+optimizer = torch.optim.Adam(model.parameters())
+dataloader = YourDataLoader()
+
+# Initialize the Doctor
+doctor = Doctor(model, optimizer, dataloader)
+
+# Start monitoring
+doctor.watch()
+
+# Train as usual
+for epoch in range(num_epochs):
+    for batch in dataloader:
+        # Your training code here
+        pass
+
+# Get optimization suggestions
+suggestions = doctor.get_suggestions()
+print(suggestions)
+
+# Apply optimizations automatically
+doctor.auto_optimize()
+```
+
+## License
+
+MIT
