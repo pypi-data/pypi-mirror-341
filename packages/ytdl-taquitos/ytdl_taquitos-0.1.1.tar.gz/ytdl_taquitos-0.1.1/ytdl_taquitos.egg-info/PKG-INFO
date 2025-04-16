@@ -1,0 +1,171 @@
+Metadata-Version: 2.4
+Name: ytdl-taquitos
+Version: 0.1.1
+Summary: A modern YouTube and video platform downloader library
+Home-page: https://github.com/JuandeMx/ytdl-taquitos
+Author: JuandeMx
+Author-email: jgjuande.mx@gmail.com
+Project-URL: Bug Reports, https://github.com/JuandeMx/ytdl-taquitos/issues
+Project-URL: Source, https://github.com/JuandeMx/ytdl-taquitos
+Project-URL: Documentation, https://github.com/JuandeMx/ytdl-taquitos#readme
+Keywords: youtube downloader video audio async
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp>=3.8.0
+Requires-Dist: tqdm>=4.65.0
+Requires-Dist: ffmpeg-python>=0.2.0
+Requires-Dist: beautifulsoup4>=4.12.0
+Requires-Dist: mutagen>=1.46.0
+Requires-Dist: yt-dlp>=2024.3.10
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "dev"
+Requires-Dist: black>=22.3.0; extra == "dev"
+Requires-Dist: isort>=5.10.1; extra == "dev"
+Requires-Dist: flake8>=4.0.1; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ytdl-taquitos
+
+A modern YouTube and video platform downloader library written in Python.
+
+## Features
+
+- Download videos and audio from YouTube
+- Support for multiple video qualities
+- Download subtitles in various languages
+- Progress tracking with speed limiting
+- Modern async/await API
+- Type hints for better IDE support
+
+## Installation
+
+```bash
+pip install ytdl-taquitos
+```
+
+## Usage
+
+### Basic Usage
+
+```python
+import asyncio
+from ytdl_taquitos import YouTubeExtractor, Downloader
+
+async def main():
+    # Initialize extractor and downloader
+    extractor = YouTubeExtractor()
+    downloader = Downloader(output_dir="./downloads")
+    
+    try:
+        # Get video info
+        video_url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        video_info = await extractor.extract_info(video_url)
+        
+        # Download video
+        format = next(f for f in video_info.formats if f.quality == "720p")
+        await downloader.download_file(format.url, f"{video_info.id}.{format.ext}")
+        
+        # Download subtitles
+        for lang, url in video_info.subtitles.items():
+            await downloader.download_subtitle(url, lang, video_info.id)
+            
+    finally:
+        await downloader.close()
+
+asyncio.run(main())
+```
+
+### Advanced Usage
+
+```python
+import asyncio
+from ytdl_taquitos import YouTubeExtractor, Downloader
+
+async def main():
+    extractor = YouTubeExtractor()
+    downloader = Downloader(
+        output_dir="./downloads",
+        speed_limit=1024 * 1024,  # 1MB/s
+        chunk_size=512 * 1024,    # 512KB chunks
+    )
+    
+    try:
+        # Get video info
+        video_url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        video_info = await extractor.extract_info(video_url)
+        
+        # Print available formats
+        for fmt in video_info.formats:
+            print(f"Format: {fmt.quality} ({fmt.ext})")
+            if fmt.is_audio_only:
+                print("  Audio only")
+            elif fmt.is_video_only:
+                print("  Video only")
+            else:
+                print("  Combined")
+        
+        # Download highest quality video
+        best_format = max(
+            (f for f in video_info.formats if not f.is_audio_only),
+            key=lambda f: f.height or 0
+        )
+        await downloader.download_file(
+            best_format.url,
+            f"{video_info.id}.{best_format.ext}"
+        )
+        
+    finally:
+        await downloader.close()
+
+asyncio.run(main())
+```
+
+## Development
+
+### Setup
+
+1. Clone the repository
+2. Create a virtual environment
+3. Install development dependencies:
+
+```bash
+pip install -e ".[dev]"
+```
+
+### Running Tests
+
+```bash
+pytest
+```
+
+## License
+
+MIT License
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. 

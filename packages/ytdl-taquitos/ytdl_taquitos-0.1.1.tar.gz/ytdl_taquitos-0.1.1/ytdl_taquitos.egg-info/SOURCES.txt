@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+tests/test_downloader.py
+tests/test_youtube.py
+ytdl_taquitos/__init__.py
+ytdl_taquitos/downloader.py
+ytdl_taquitos.egg-info/PKG-INFO
+ytdl_taquitos.egg-info/SOURCES.txt
+ytdl_taquitos.egg-info/dependency_links.txt
+ytdl_taquitos.egg-info/requires.txt
+ytdl_taquitos.egg-info/top_level.txt
+ytdl_taquitos/extractor/base_extractor.py
+ytdl_taquitos/extractor/youtube.py
