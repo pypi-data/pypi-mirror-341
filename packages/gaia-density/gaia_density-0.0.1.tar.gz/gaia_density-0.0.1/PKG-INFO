@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: gaia_density
+Version: 0.0.1
+Summary: Calculates distance to the closest Gaia star for user-specified coordinates.
+Author-email: "Malik E." <malik@inasan.ru>, "Kaygorodov P." <pasha@inasan.ru>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/noncath/gaia_density
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# gaia_density python module

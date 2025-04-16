@@ -1,0 +1,19 @@
+[project]
+name = "gaia_density"
+version = "0.0.1"
+authors = [
+  { name="Malik E.", email="malik@inasan.ru" },
+  { name="Kaygorodov P.", email="pasha@inasan.ru" }
+]
+description = "Calculates distance to the closest Gaia star for user-specified coordinates."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/noncath/gaia_density"

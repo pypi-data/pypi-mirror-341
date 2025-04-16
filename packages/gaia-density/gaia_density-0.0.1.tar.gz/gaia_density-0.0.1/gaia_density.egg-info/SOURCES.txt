@@ -1,0 +1,8 @@
+LICENSE
+README.md
+gaia_density.py
+pyproject.toml
+gaia_density.egg-info/PKG-INFO
+gaia_density.egg-info/SOURCES.txt
+gaia_density.egg-info/dependency_links.txt
+gaia_density.egg-info/top_level.txt
