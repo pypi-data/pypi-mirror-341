@@ -1,0 +1,10 @@
+preprocess_nlp_jp18/__init__.py,sha256=Z7h6VCvyn2UnvqrMsluCyJkqx7gd1-8WjK-6TD3mlh4,30
+preprocess_nlp_jp18/text_preprocess.py,sha256=lOUAUv-8ODb40m4wgEENrzejPElLpibYE0XrBkmWcgQ,3809
+preprocess_nlp_jp18/__pycache__/__init__.cpython-311.pyc,sha256=YNyFwDBPisr9iDGnYDbYO7Y2CYk0GdtRB15aP9cRawY,211
+preprocess_nlp_jp18/__pycache__/text_preprocess.cpython-311.pyc,sha256=HKLzV8TlrYINwLcdff8rVLfMWjk6p8HWPR7sldl66Cw,11599
+preprocess_nlp_jp18/data/contractions.json,sha256=mzmUHIZCCMmc_2zgfQn5Y7nlGVN5RtDSOi-oMrb7jZw,8911
+preprocess_nlp_jp18-0.6.dist-info/LICENSE,sha256=FAnQ6qx9ASOjQBz95o4lSsIzVBZYlvOk7fEcp9ZvugM,69
+preprocess_nlp_jp18-0.6.dist-info/METADATA,sha256=HxLwuvcLxZS2UwFLlbmefymD6Xu3eqPKKinw3VpmYno,1846
+preprocess_nlp_jp18-0.6.dist-info/WHEEL,sha256=OVMc5UfuAQiSplgO0_WdW7vXVGAt9Hdd6qtN4HotdyA,91
+preprocess_nlp_jp18-0.6.dist-info/top_level.txt,sha256=Y0hyhOXMY009WaWG7nayZc20q5sdCb_MRzeajdRj2Xo,20
+preprocess_nlp_jp18-0.6.dist-info/RECORD,,
