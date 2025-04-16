@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/keyring_gitlab_pypi.egg-info/PKG-INFO
+src/keyring_gitlab_pypi.egg-info/SOURCES.txt
+src/keyring_gitlab_pypi.egg-info/dependency_links.txt
+src/keyring_gitlab_pypi.egg-info/entry_points.txt
+src/keyring_gitlab_pypi.egg-info/requires.txt
+src/keyring_gitlab_pypi.egg-info/top_level.txt
+src/keyrings/gitlab_pypi.py
+tests/test_backend.py
