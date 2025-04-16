@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/QuantumRandomWalks/__init__.py
+src/QuantumRandomWalks/modules_QW.py
+src/QuantumRandomWalks.egg-info/PKG-INFO
+src/QuantumRandomWalks.egg-info/SOURCES.txt
+src/QuantumRandomWalks.egg-info/dependency_links.txt
+src/QuantumRandomWalks.egg-info/top_level.txt
