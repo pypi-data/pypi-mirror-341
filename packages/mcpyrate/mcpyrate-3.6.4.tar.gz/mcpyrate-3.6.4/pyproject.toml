@@ -1,0 +1,73 @@
+[project]
+name = "mcpyrate"
+description = "Advanced macro expander and language lab for Python"
+authors = [
+    { name = "Juha Jeronen", email = "juha.m.jeronen@gmail.com" },
+    { name = "Salvador de la Puente González" },
+]
+requires-python = ">=3.8"
+readme = "README.md"
+dynamic = []
+dependencies = [
+    "colorama>=0.4.4",
+]
+keywords = [
+    "macros",
+    "syntactic-macros",
+    "macro-expander",
+    "metaprogramming",
+    "import",
+    "importer",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Other Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Utilities",
+]
+version = "3.6.4"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Repository = "https://github.com/Technologicat/mcpyrate"
+
+[project.scripts]
+macropython = "mcpyrate.repl.macropython:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.version]
+source = "file"
+path = "mcpyrate/__init__.py"
+
+[tool.pdm.build]
+includes = [
+    "mcpyrate",
+]
+excludes = [
+    "**/test",
+    "**/__pycache__",
+]
+
+[tool.mypy]
+show_error_codes = true
