@@ -1,0 +1,11 @@
+[project]
+name = "aemet-mcp"
+version = "0.1.0"
+description = "AEMET API integration with MPC (Model Context Protocol)"
+readme = "README.md"
+requires-python = ">=3.13"
+license = {text = "MIT"}
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.6.0",
+]
