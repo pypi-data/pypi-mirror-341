@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: mscnltk
+Version: 0.1
+Summary: A package to display and retrieve NLTK question codes
+Author: FitByIT
+Author-email: fitbyit@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+This package includes a list of questions and their corresponding codes in NLTK for NLP tasks.
