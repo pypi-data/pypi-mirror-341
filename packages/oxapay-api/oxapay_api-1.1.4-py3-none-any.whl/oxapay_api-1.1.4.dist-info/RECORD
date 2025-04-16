@@ -1,0 +1,14 @@
+oxapay_api/AsyncOxaPay.py,sha256=y5wU0FwDLblFqNAdMxRbrETilk4_d3lMUkm45hMJjAI,12372
+oxapay_api/SyncOxaPay.py,sha256=0TkAP0Rzr9ONEnGfOU6v4Gg4bt3eB2mfoeVUKSag6E8,12229
+oxapay_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oxapay_api/clients/AsyncClient.py,sha256=miAFgLhaHHADK5GnXbtvf24dD_FRaIKHHN12icIK5fM,1877
+oxapay_api/clients/SyncClient.py,sha256=NcpqJZPTs8FiH8TOOjLIMpIex33sg5Lhc7QxQcMkyIQ,1194
+oxapay_api/clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oxapay_api/clients/constants/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oxapay_api/clients/constants/api_constants.py,sha256=kHy5pOHS1MlwZ_dzVBSEZIEUWVbp4ctQbsqgz65Hgh8,73
+oxapay_api/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oxapay_api/utils/response_models.py,sha256=w_k-pO4PjHjv62oWQ8rmpwlZe4SA1cpo-UKRCr0i5tM,520
+oxapay_api-1.1.4.dist-info/METADATA,sha256=bv1luoiH0pwePCXqTlHIgFuDfAqINIY9pCvgXfdPv1Y,4357
+oxapay_api-1.1.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+oxapay_api-1.1.4.dist-info/top_level.txt,sha256=0F-yByRWvf7rbttGE0mOkeMSYz6ngHPPotTGvB07ydo,11
+oxapay_api-1.1.4.dist-info/RECORD,,
