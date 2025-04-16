@@ -1,0 +1,4 @@
+requests
+pywidevine
+pathlib
+setuptools
