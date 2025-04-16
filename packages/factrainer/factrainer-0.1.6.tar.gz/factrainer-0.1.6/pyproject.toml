@@ -1,0 +1,80 @@
+[project]
+name = "factrainer"
+version = "0.1.6"
+description = "Framework Agnostic Cross-validation Trainer"
+readme = "README.md"
+authors = [{ name = "ritsuki1227", email = "ritsuki1227@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = ["factrainer-core"]
+
+[project.optional-dependencies]
+sklearn = ["factrainer-sklearn"]
+lightgbm = ["factrainer-lightgbm"]
+xgboost = ["factrainer-xgboost"]
+catboost = ["factrainer-catboost"]
+all = [
+    "factrainer-sklearn",
+    "factrainer-lightgbm",
+    "factrainer-xgboost",
+    "factrainer-catboost",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "joblib-stubs>=1.4.2.5.20240918",
+    "jupyterlab>=4.4.0",
+    "mypy>=1.15.0",
+    "pytest-profiling>=1.8.1",
+    "pytest>=8.3.5",
+    "ruff>=0.11.4",
+    "graphviz>=0.20.3",
+    "line-profiler>=4.2.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "factrainer-base",
+    "factrainer-core",
+    "factrainer-sklearn",
+    "factrainer-lightgbm",
+    "factrainer-xgboost",
+    "factrainer-catboost",
+]
+
+[tool.uv.sources]
+factrainer-base = { workspace = true }
+factrainer-core = { workspace = true }
+factrainer-sklearn = { workspace = true }
+factrainer-lightgbm = { workspace = true }
+factrainer-xgboost = { workspace = true }
+factrainer-catboost = { workspace = true }
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "factrainer-core/src/factrainer",
+    "factrainer-sklearn/src/factrainer",
+    "factrainer-lightgbm/src/factrainer",
+    "factrainer-xgboost/src/factrainer",
+    "factrainer-catboost/src/factrainer",
+]
+
+[tool.mypy]
+files = "."
+mypy_path = [
+    "$MYPY_CONFIG_FILE_DIR/factrainer-base/src",
+    "$MYPY_CONFIG_FILE_DIR/factrainer-core/src",
+    "$MYPY_CONFIG_FILE_DIR/factrainer-sklearn/src",
+    "$MYPY_CONFIG_FILE_DIR/factrainer-lightgbm/src",
+    "$MYPY_CONFIG_FILE_DIR/factrainer-xgboost/src",
+    "$MYPY_CONFIG_FILE_DIR/factrainer-catboost/src",
+    "tests",
+    "stubs",
+]
+strict = true
+plugins = "numpy.typing.mypy_plugin"
+namespace_packages = true
+explicit_package_bases = true
