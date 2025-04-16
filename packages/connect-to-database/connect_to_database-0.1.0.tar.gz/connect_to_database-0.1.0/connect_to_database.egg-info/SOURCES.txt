@@ -1,0 +1,12 @@
+README.md
+setup.py
+connect_to_database.egg-info/PKG-INFO
+connect_to_database.egg-info/SOURCES.txt
+connect_to_database.egg-info/dependency_links.txt
+connect_to_database.egg-info/requires.txt
+connect_to_database.egg-info/top_level.txt
+src/__init__.py
+src/connection.py
+src/databaseConnection.py
+src/util/__init__.py
+src/util/wait_for_proxy.py
