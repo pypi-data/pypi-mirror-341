@@ -1,0 +1,3 @@
+[console_scripts]
+runnelpy=runnelpy.cli:cli
+
