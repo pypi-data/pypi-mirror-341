@@ -1,0 +1,9 @@
+romi/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+romi/camera.py,sha256=4hSnFd3RBDE8rEfMML1rkKnajOoqKyqsDCk_VXwh1rU,2642
+romi/cnc.py,sha256=lZhYweEGMluLrWVwc6LVrWP6EC6t2DdFOkqvP2IdiRg,2147
+romi/config.py,sha256=Y19V06e0jguTGsgjBYc8eP3jEfRwQOihEMelN43mPQA,1588
+romi_apps-0.1.0.dist-info/licenses/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+romi_apps-0.1.0.dist-info/METADATA,sha256=qE-9776ghegWqaoNns6Lc3VHKxbz4A85m3EcPLwz3vk,639
+romi_apps-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+romi_apps-0.1.0.dist-info/top_level.txt,sha256=5YhIasynd1Mzdn3km_fU6D27u8hud8AY2jRHdOUM4BE,5
+romi_apps-0.1.0.dist-info/RECORD,,
