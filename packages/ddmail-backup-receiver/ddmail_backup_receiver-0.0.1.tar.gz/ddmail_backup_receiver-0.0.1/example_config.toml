@@ -1,0 +1,18 @@
+[PRODUCTION]
+    SECRET_KEY = 'change_me'
+    PASSWORD_HASH = 'change_me'
+    UPLOAD_FOLDER = 'backups'
+    LOGFILE = '/var/log/ddmail_backup_receiver.log'
+    LOGLEVEL = 'INFO'
+[TESTING]
+    SECRET_KEY = 'change_me'
+    PASSWORD_HASH = 'change_me'
+    UPLOAD_FOLDER = 'backups'
+    LOGFILE = '/var/log/ddmail_backup_receiver.log'
+    LOGLEVEL = 'INFO'
+[DEVELOPMENT]
+    SECRET_KEY = 'change_me'
+    PASSWORD_HASH = 'change_me'
+    UPLOAD_FOLDER = 'backups'
+    LOGFILE = '/var/log/ddmail_backup_receiver.log'
+    LOGLEVEL = 'DEBUG'
