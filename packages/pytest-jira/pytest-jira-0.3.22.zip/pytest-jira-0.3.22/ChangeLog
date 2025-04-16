@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.3.22
+------
+
+* Install automatic retries #145 (#146)
