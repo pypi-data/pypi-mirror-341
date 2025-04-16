@@ -1,0 +1,2 @@
+[console_scripts]
+python_virtual_env_load = pload.cli:main
