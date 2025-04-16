@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/Auria/Signature.py
+src/Auria/SignedTransaction.py
+src/Auria/Transaction.py
+src/Auria/Wallet.py
+src/Auria/__init__.py
+src/Auria.egg-info/PKG-INFO
+src/Auria.egg-info/SOURCES.txt
+src/Auria.egg-info/dependency_links.txt
+src/Auria.egg-info/top_level.txt
