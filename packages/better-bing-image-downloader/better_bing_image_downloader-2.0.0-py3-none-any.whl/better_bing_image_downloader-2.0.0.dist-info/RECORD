@@ -1,0 +1,12 @@
+better_bing_image_downloader/__init__.py,sha256=sAtpAAmPc8KqoIWumX3Mo92zsD0L3JOZDpMRxz1A0Cg,55
+better_bing_image_downloader/bing.py,sha256=a0VI-9A4DxcdGG2IvqiDGc5L9zljBhAGaPqJA9rcYuM,12187
+better_bing_image_downloader/crawler.py,sha256=Q6wWlFRUvtd6mrv1j9sJ3cUOPnXS1dOlveV5sUZV4dg,13540
+better_bing_image_downloader/download.py,sha256=uekgp72ImyV9Nm7PD1lwbqk79McRN4Mf4IonA5q8Vr8,5142
+better_bing_image_downloader/helperdownload.py,sha256=dwwRY26pi2VOemd8rLfFXClFkOkm27mNRdI9jbTxXbI,3171
+better_bing_image_downloader/multidownloader.py,sha256=FDDhSkha4ilnikPEV25Y4aNEonJhhCCljqrERXMHv9c,3748
+better_bing_image_downloader/utils.py,sha256=Y0fE9LRJw2fcLyVQXaQKVHb3cT_cYPCER5NYobXCql0,1943
+better_bing_image_downloader-2.0.0.dist-info/licenses/LICENSE,sha256=xsH5ZOjJvXPHSSRx61_Ca7wAhnJb-jo2AyLKcsCPXA0,1073
+better_bing_image_downloader-2.0.0.dist-info/METADATA,sha256=XYE_IFtE-COEtd7R274XiLQimT9m3zN8t-_ZqU0vRRM,8230
+better_bing_image_downloader-2.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+better_bing_image_downloader-2.0.0.dist-info/top_level.txt,sha256=vUuyCZz9yUaTvFB0RXBhR4JGBnpMf-BfujZhQQ2zCls,29
+better_bing_image_downloader-2.0.0.dist-info/RECORD,,
