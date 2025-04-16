@@ -1,0 +1,9 @@
+logisticpca/__init__.py,sha256=kS5NRoQS-iYkzHF1E-fopTx18HLUqbx7ApJGknHTQsM,232
+logisticpca/logistic_pca.py,sha256=dyql6i3jCbxFCyWvmgF_L0pdOmSFtStHpCuSuewrt0A,8401
+logisticpca/ppca.py,sha256=YAUmCDL-AfkyLxdWhnFkWL6AoRRP_pZjSb8yOWZkWZ8,2661
+logisticpca/setup.py,sha256=6OiPhB3TExI4VKagK4kr9HeFqtbxRM_n9IJjFY6cXBE,682
+logisticpca-0.2.4.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logisticpca-0.2.4.dist-info/METADATA,sha256=DWLhW9_3HyOt3qqj65GVbx8FVp7C_rp9tusUMwBhQuk,700
+logisticpca-0.2.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+logisticpca-0.2.4.dist-info/top_level.txt,sha256=7Hw5ekP3b1u2IuWi5deDumDxCBHfCHDGtabWy_le6NA,12
+logisticpca-0.2.4.dist-info/RECORD,,
