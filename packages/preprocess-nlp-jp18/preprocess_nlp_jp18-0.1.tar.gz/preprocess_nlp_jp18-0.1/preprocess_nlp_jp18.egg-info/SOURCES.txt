@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+readme.md
+requirements.txt
+setup.py
+preprocess_nlp_jp18/__init__.py
+preprocess_nlp_jp18/text_preprocess.py
+preprocess_nlp_jp18.egg-info/PKG-INFO
+preprocess_nlp_jp18.egg-info/SOURCES.txt
+preprocess_nlp_jp18.egg-info/dependency_links.txt
+preprocess_nlp_jp18.egg-info/requires.txt
+preprocess_nlp_jp18.egg-info/top_level.txt
