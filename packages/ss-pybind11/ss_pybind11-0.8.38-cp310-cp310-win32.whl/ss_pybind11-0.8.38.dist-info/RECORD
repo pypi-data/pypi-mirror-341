@@ -1,0 +1,10 @@
+ss_pybind11/__init__.py,sha256=aFXZrgrj4shO7-Clv5dhXTGSeplG9ejpF7AORjtEyBw,246
+ss_pybind11/_core.cp310-win32.pyd,sha256=JF-2YnLSx9JDVwJbuCKY4AWmtCfS_5KkW_dMCV6AP5k,87040
+ss_pybind11/_core.pyi,sha256=fN7TN1hPvo3WiK-x-a9YsV820gWP9Qn8hPYy79CtPwM,209
+ss_pybind11/_version.py,sha256=ril_EvshW53nucwBiBvV2_wbUzUgcGG4uIRyEz1KXxU,534
+ss_pybind11/_version.pyi,sha256=j5kbzfm6lOn8BzASXWjGIA1yT0OlHTWqlbyZ8Si_o0E,118
+ss_pybind11/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ss_pybind11-0.8.38.dist-info/METADATA,sha256=mFNH6qFh4Mm4AYtAh3BhgSk8I-dNjbPoRT8FYhL6y2M,5754
+ss_pybind11-0.8.38.dist-info/WHEEL,sha256=HkqquqG9ihZQTXYn9xl3g7QmXykZvbdm6_AW2wDfYr4,102
+ss_pybind11-0.8.38.dist-info/licenses/LICENSE,sha256=j1mtQRkENK_gPALT45ha0fXKVgoEcAHJHSUa8g7cZoY,1073
+ss_pybind11-0.8.38.dist-info/RECORD,,
