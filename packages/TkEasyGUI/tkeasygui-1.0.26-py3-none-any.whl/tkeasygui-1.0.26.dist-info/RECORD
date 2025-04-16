@@ -1,0 +1,11 @@
+TkEasyGUI/__init__.py,sha256=rTChs8tj7QZBCpdhSH-lSLIi-3mYGnxA3epmyAitURM,376
+TkEasyGUI/dialogs.py,sha256=Os1pSgfBjnRySarcSl81lyIEZ7DJSNXeNXFiRMDkU_8,46470
+TkEasyGUI/locale_easy.py,sha256=HusMIKifjnCQXHXi2ZQEykXbbU4tByKYyWN7XV96Nfw,2761
+TkEasyGUI/utils.py,sha256=ZmXwVmNcJdpV-59usgok2ZclCwhVA5VglnVLxbuxjdw,8954
+TkEasyGUI/version.py,sha256=pJxJjku_IhexMuM66eOCwQu_nwGY3ZKdi9yx071Zrs8,168
+TkEasyGUI/widgets.py,sha256=vhDqCvKq0sxOe3qLcn685HeszgE8J6FMyK0_U8SiA9c,173244
+tkeasygui-1.0.26.dist-info/licenses/LICENSE,sha256=2tulek3xzq88WpU_FVgZIrqYDD66eHSCoC4W6FdJG8s,1067
+tkeasygui-1.0.26.dist-info/METADATA,sha256=ZRYE3xmLAWTb_KFQmfCO9TcMOJDbBiV48wqtG_-_wYM,9863
+tkeasygui-1.0.26.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+tkeasygui-1.0.26.dist-info/top_level.txt,sha256=yTJqE6GvA-JmswBRm2etSTkrU17QTdV1MzeNMdWerbU,10
+tkeasygui-1.0.26.dist-info/RECORD,,
