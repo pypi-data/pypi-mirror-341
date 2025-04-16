@@ -1,0 +1,6 @@
+aiofiles
+aiohttp
+colorama
+logging
+pyjwt
+requests
