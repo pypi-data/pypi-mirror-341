@@ -1,0 +1,3 @@
+[console_scripts]
+jackpotsu=jackpotsu.cli:main
+
