@@ -1,0 +1,9 @@
+dynaccount/__init__.py,sha256=sC7fmUEuI79tXUI5VLytKDxPBqBF0zlzxfGLr2SlJFQ,282
+dynaccount/client.py,sha256=iu1VTpJdiZx0fxgjNBQMyyeyTjR0WEdvEv9J-_-WjKI,5356
+dynaccount/export.py,sha256=FxNogB2vGZkfuuUni5iMK4pJfluma3N8eXE-Bpcxb0E,1903
+dynaccount/logging_config.py,sha256=xhVaM21Rwh9xNkNAe0DZwdiM4yA4S8bGSPcs8vv4wT8,627
+dynaccount/util.py,sha256=4zp8C540-rP-VYWZu7qGSNfR32RfTULPPSFZC0lP4SE,2279
+dynaccount-0.1.0.dist-info/METADATA,sha256=JZsl0l5T0t8WuaVenPAiBcgxauw8mk6DPP1XkVG98CA,1846
+dynaccount-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dynaccount-0.1.0.dist-info/licenses/LICENSE,sha256=SL9mAU1WYWm7P3D3NPcCbd1_ntzr-fbuwrMEbU-FJCI,1073
+dynaccount-0.1.0.dist-info/RECORD,,
