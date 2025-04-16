@@ -1,0 +1,3 @@
+[console_scripts]
+beamline_console = beamline_console:main
+
