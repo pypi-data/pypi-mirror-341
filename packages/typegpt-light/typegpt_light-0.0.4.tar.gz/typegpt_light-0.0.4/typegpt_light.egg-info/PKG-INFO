@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: typegpt_light
+Version: 0.0.4
+Summary: TypeGPT Light is a reduced version of TypeGPT that uses OpenAI's built-in strucutred output, but keeps some nice architecture features of TypeGPT.
+Home-page: https://github.com/alexeichhorn/typegpt
+Author: Alexander Eichhorn
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typing_extensions>=4.1.0
+Requires-Dist: openai>=1.40.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# TypeGPT-Light
+
+Reduced version of [TypeGPT](https://github.com/alexeichhorn/typegpt) that uses OpenAI's built-in strucutred output, but keeps some nice architecture features of TypeGPT.
