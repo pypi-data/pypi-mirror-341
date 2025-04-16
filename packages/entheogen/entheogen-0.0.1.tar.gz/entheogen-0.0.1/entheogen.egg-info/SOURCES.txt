@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/publish-package.yaml
+entheogen/__init__.py
+entheogen/_generate.py
+entheogen/methods.py
+entheogen.egg-info/PKG-INFO
+entheogen.egg-info/SOURCES.txt
+entheogen.egg-info/dependency_links.txt
+entheogen.egg-info/requires.txt
+entheogen.egg-info/top_level.txt
