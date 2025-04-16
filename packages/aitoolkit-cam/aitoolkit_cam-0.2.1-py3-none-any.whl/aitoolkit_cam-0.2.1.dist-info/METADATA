@@ -1,0 +1,337 @@
+Metadata-Version: 2.1
+Name: aitoolkit-cam
+Version: 0.2.1
+Summary: 简单易用的Python摄像头工具包，支持本地显示和网页显示，提供丰富的图像处理效果
+Home-page: https://github.com/yourusername/aitoolkit-cam
+Author: AIToolkit Team
+Author-email: your.email@example.com
+Project-URL: Bug Tracker, https://github.com/yourusername/aitoolkit-cam/issues
+Project-URL: Documentation, https://github.com/yourusername/aitoolkit-cam
+Project-URL: Source Code, https://github.com/yourusername/aitoolkit-cam
+Keywords: camera,video,webcam,computer vision,opencv,image processing,streaming,web streaming
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Multimedia :: Video :: Capture
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python >=4.5.0
+Requires-Dist: vidgear >=0.2.5
+Requires-Dist: uvicorn >=0.17.0
+Requires-Dist: starlette >=0.17.1
+Requires-Dist: numpy >=1.19.0
+
+# AIToolkit Camera
+
+一个功能强大且简单易用的Python摄像头工具包，提供丰富的图像处理效果，支持本地窗口显示和网页浏览器显示。
+
+<p align="center">
+  <img src="https://your-image-url-here.com/aitoolkit-cam-logo.png" alt="AIToolkit Camera" width="300">
+</p>
+
+## 🚀 功能特性
+
+- **多模式显示**：支持本地OpenCV窗口和网页浏览器两种显示模式
+- **丰富的图像处理效果**：
+  - 灰度 (Gray)
+  - 边缘检测 (Edge)
+  - 高斯模糊 (Blur)
+  - 素描效果 (Sketch)
+  - 卡通效果 (Cartoon)
+- **简洁易用的API**：
+  - 使用Python的迭代器协议，可通过`for`循环轻松获取摄像头帧
+  - 流畅的接口设计，易于上手和集成到现有项目
+- **网页显示功能**：无需安装额外软件，直接在浏览器中查看摄像头画面
+- **跨平台支持**：支持Windows、Linux和MacOS系统
+- **健壮性设计**：自动处理连接断开、重连等异常情况
+
+## 📦 安装方法
+
+### 使用pip安装（推荐）
+
+```bash
+pip install aitoolkit-cam
+```
+
+### 从源码安装
+
+```bash
+git clone https://github.com/yourusername/aitoolkit-cam.git
+cd aitoolkit-cam
+pip install -e .
+```
+
+### 依赖库
+
+- opencv-python >= 4.5.0
+- vidgear >= 0.2.5
+- uvicorn >= 0.17.0
+- starlette >= 0.17.1
+- numpy >= 1.19.0
+
+## 📖 基础使用指南
+
+### 1. 基本用法
+
+最简单的方式是使用Camera类和迭代器语法：
+
+```python
+from aitoolkit_cam import Camera
+
+# 创建摄像头对象(参数0表示默认摄像头)
+cam = Camera(0)
+
+# 启动网页服务器
+url = cam.start()
+print(f"请在浏览器中访问: {url}")
+
+# 迭代获取视频帧
+for frame in cam:
+    # 进行处理...
+    pass
+
+# 等待用户按Ctrl+C退出
+try:
+    cam.wait_for_exit()
+except KeyboardInterrupt:
+    pass
+
+# 释放资源
+cam.stop()
+```
+
+### 2. 使用网页显示模式
+
+```python
+from aitoolkit_cam import Camera
+
+# 创建摄像头对象并指定主机和端口
+# host="0.0.0.0" 允许从同一网络的其他设备访问
+cam = Camera(source=0, host="0.0.0.0", port=8000)
+
+# 启动网页服务器
+url = cam.start()
+print(f"请访问: {url}")
+
+# 在网页模式下显示
+for frame in cam:
+    # 这里可以进行额外的处理
+    cam.cv_show(frame, "web")  # 在网页上显示
+
+# 等待用户按Ctrl+C终止程序
+try:
+    cam.wait_for_exit()
+except KeyboardInterrupt:
+    pass
+
+# 释放资源
+cam.stop()
+```
+
+### 3. 使用本地窗口显示
+
+```python
+from aitoolkit_cam import Camera, cv_show
+
+# 创建摄像头对象
+cam = Camera(0)
+
+# 迭代获取视频帧
+for frame in cam:
+    # 在本地窗口显示
+    if cv_show(frame, "cv2", wait_key=1):  # 如果按下'q'键则退出循环
+        break
+
+# 释放资源
+cam.stop()
+```
+
+### 4. 应用图像处理效果
+
+```python
+from aitoolkit_cam import ProcessedCamera
+
+# 创建带有图像处理效果的摄像头对象
+# 可选效果: "original", "gray", "edge", "blur", "sketch", "cartoon"
+proc_cam = ProcessedCamera(source=0, effect_type="sketch")
+
+# 启动网页服务器
+url = proc_cam.start()
+print(f"请访问: {url}")
+
+# 迭代获取处理后的帧
+for frame in proc_cam:
+    # 处理后的帧已经应用了指定效果
+    pass
+    
+# 可以随时切换效果
+proc_cam.set_effect("cartoon")
+
+# 等待用户按Ctrl+C终止程序
+try:
+    proc_cam.wait_for_exit()
+except KeyboardInterrupt:
+    pass
+
+# 释放资源
+proc_cam.stop()
+```
+
+## 🔧 高级功能
+
+### 自定义图像处理
+
+您可以使用`apply_effect`函数单独应用图像效果：
+
+```python
+import cv2
+from aitoolkit_cam import apply_effect
+
+# 读取图像
+image = cv2.imread('image.jpg')
+
+# 应用不同效果
+gray = apply_effect(image, 'gray')
+edge = apply_effect(image, 'edge')
+blur = apply_effect(image, 'blur')
+sketch = apply_effect(image, 'sketch')
+cartoon = apply_effect(image, 'cartoon')
+
+# 显示结果
+cv2.imshow('原图', image)
+cv2.imshow('灰度', gray)
+cv2.imshow('边缘', edge)
+cv2.imshow('模糊', blur)
+cv2.imshow('素描', sketch)
+cv2.imshow('卡通', cartoon)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+
+### 同时使用本地和网页显示
+
+```python
+from aitoolkit_cam import Camera
+
+# 创建摄像头对象
+cam = Camera(0)
+
+# 启动网页服务器
+url = cam.start()
+print(f"请访问: {url}")
+
+# 遍历摄像头帧并同时在本地和网页上显示
+for frame in cam:
+    # 在网页上显示
+    cam.cv_show(frame, "web")
+    
+    # 在本地显示 (按q键退出)
+    if cam.cv_show(frame, "cv2"):
+        break
+
+# 释放资源
+cam.stop()
+```
+
+### 自定义网络设置
+
+```python
+from aitoolkit_cam import Camera
+import socket
+
+# 获取本机IP地址
+def get_local_ip():
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    try:
+        s.connect(('8.8.8.8', 1))
+        ip = s.getsockname()[0]
+    except Exception:
+        ip = '127.0.0.1'
+    finally:
+        s.close()
+    return ip
+
+# 使用自动检测IP地址，允许从同一网络的其他设备访问
+local_ip = get_local_ip()
+cam = Camera(source=0, host="0.0.0.0", port=8080)
+
+# 启动网页服务器
+url = cam.start()
+print(f"请在本机访问: http://localhost:8080")
+print(f"或在同一网络的其他设备访问: http://{local_ip}:8080")
+
+# 等待用户终止程序
+try:
+    cam.wait_for_exit()
+except KeyboardInterrupt:
+    pass
+
+cam.stop()
+```
+
+## 🌐 网页服务器相关
+
+### 网页访问地址
+
+- 本地访问: `http://localhost:<端口>` (默认为8000)
+- 网络访问: `http://<您的IP地址>:<端口>` (当host设置为"0.0.0.0"时)
+
+### 自动获取网络地址
+
+当使用`host="0.0.0.0"`时，Camera类会自动检测您的网络IP地址并提供正确的访问URL。
+
+## ⚙️ 配置选项
+
+### Camera类参数
+
+| 参数       | 类型           | 默认值      | 说明                                               |
+|-----------|--------------|-----------|--------------------------------------------------|
+| source    | int 或 str    | 0         | 视频源，可以是摄像头索引或视频文件路径                 |
+| host      | str          | "localhost" | 服务器主机地址，"0.0.0.0"允许网络访问，"localhost"仅本机访问 |
+| port      | int          | 8000      | 服务器端口号                                       |
+| reduction | int          | 30        | 图像尺寸减少百分比(0-100)，用于提高性能                |
+| max_failures | int       | 10        | 最大连续失败次数，超过此值会尝试重新打开摄像头           |
+| display_gray | bool      | False     | 是否在网页端显示灰度图像                              |
+
+### ProcessedCamera额外参数
+
+| 参数         | 类型  | 默认值       | 说明                                        |
+|-------------|------|------------|-------------------------------------------|
+| effect_type | str  | "original" | 效果类型("original", "gray", "edge", "blur", "sketch", "cartoon") |
+| effect_params | dict | {}       | 效果参数，根据effect_type不同而变化             |
+
+## 💡 更多示例
+
+更多示例代码可在GitHub仓库的`examples`目录中找到：
+
+- [基础摄像头使用](https://github.com/yourusername/aitoolkit-cam/blob/main/examples/basic_camera.py)
+- [图像处理效果](https://github.com/yourusername/aitoolkit-cam/blob/main/examples/processed_camera.py)
+- [自定义图像处理](https://github.com/yourusername/aitoolkit-cam/blob/main/examples/custom_processing.py)
+
+## 🤝 贡献指南
+
+欢迎贡献代码或提出建议！请通过issue或pull request参与项目改进。
+
+1. Fork该仓库
+2. 创建您的特性分支 (`git checkout -b feature/amazing-feature`)
+3. 提交您的更改 (`git commit -m 'Add some amazing feature'`)
+4. 推送到分支 (`git push origin feature/amazing-feature`)
+5. 开启一个Pull Request
+
+## 📜 许可证
+
+MIT © AIToolkit Team
+
+## ��‍💻 作者
+
+AIToolkit团队 
