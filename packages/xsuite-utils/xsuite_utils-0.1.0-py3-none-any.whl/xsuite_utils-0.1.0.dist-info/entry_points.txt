@@ -1,0 +1,7 @@
+[console_scripts]
+fcc-make-lattice = xutil.examples.make_lattice_fcc_ee_z:main
+fcc-run-tracking = xutil.examples.run_tracking:main
+
+[xutil.examples]
+make_lattice = xutil.examples.make_lattice_fcc_ee_z:main
+run_tracking = xutil.examples.run_tracking:main
