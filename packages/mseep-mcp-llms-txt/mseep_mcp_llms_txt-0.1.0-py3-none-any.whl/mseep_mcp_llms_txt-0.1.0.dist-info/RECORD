@@ -1,0 +1,6 @@
+mcp_llms/__init__.py,sha256=B5v2B0lufFyc4OP1SDx2zfHZD1AZn5Zlm5tgdBEF2wk,52
+mcp_llms/llms_txt.py,sha256=iD5UK5yUcBoucSSd-ActIHxzZbvGt_-vDCcgRdnmwW4,2191
+mseep_mcp_llms_txt-0.1.0.dist-info/METADATA,sha256=k-3JswJSr6tT0M-39u3ts9ynrRMXYEkU70Ef-B3o0iI,1243
+mseep_mcp_llms_txt-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mseep_mcp_llms_txt-0.1.0.dist-info/top_level.txt,sha256=Ycx9WSdLbfj2r2BL81jha1wbJXuhWfQgGM5tBJ6ryAU,9
+mseep_mcp_llms_txt-0.1.0.dist-info/RECORD,,
