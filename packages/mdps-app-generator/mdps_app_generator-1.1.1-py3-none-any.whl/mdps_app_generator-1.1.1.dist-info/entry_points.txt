@@ -1,0 +1,2 @@
+[console_scripts]
+build_ogc_app = unity_app_generator.__main__:main
