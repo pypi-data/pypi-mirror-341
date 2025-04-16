@@ -1,0 +1,23 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+jaffatools/__init__.py
+jaffatools/bam_annotator.py
+jaffatools/fastq_filter.py
+jaffatools/jaffa_runner.py
+jaffatools.egg-info/PKG-INFO
+jaffatools.egg-info/SOURCES.txt
+jaffatools.egg-info/dependency_links.txt
+jaffatools.egg-info/entry_points.txt
+jaffatools.egg-info/requires.txt
+jaffatools.egg-info/top_level.txt
+jaffatools/cli/ __init__.py
+jaffatools/cli/bam_annotator_cli.py
+jaffatools/cli/fastq_filter_cli.py
+jaffatools/cli/jaffa_runner_cli.py
+jaffatools/cli/jaffa_viz_cli.py
+jaffatools/data/UCSC.HG19.Human.CytoBandIdeogram.txt
+jaffatools/data/UCSC.HG38.Human.CytoBandIdeogram.txt
+jaffatools/data/UCSC.MM10.Mus.musculus.CytoBandIdeogram.txt
+jaffatools/data/jaffa_plots.R
