@@ -1,0 +1,21 @@
+[tool.poetry]
+authors = ["Allen Chou <f1470891079@gmail.com>"]
+description = "Check a python value str or None simply."
+license = "MIT"
+name = "str-or-none"
+packages = [{ include = "str_or_none", from = "." }]
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+isort = "*"
+poetry-plugin-export = "*"
+pytest = "*"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
