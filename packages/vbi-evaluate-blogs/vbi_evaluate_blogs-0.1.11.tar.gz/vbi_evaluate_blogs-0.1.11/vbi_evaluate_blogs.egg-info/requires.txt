@@ -1,0 +1,6 @@
+langchain
+langchain-openai
+langchain-community
+playwright
+requests
+python-dotenv
