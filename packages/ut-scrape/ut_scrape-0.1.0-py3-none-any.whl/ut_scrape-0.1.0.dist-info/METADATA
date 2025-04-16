@@ -1,0 +1,74 @@
+Metadata-Version: 2.4
+Name: ut-scrape
+Version: 0.1.0
+Summary: Untappd Scraper exposed as Reflex REST API
+Author-email: Wardy <wardy3+gitlab@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2021-2025 Wardy
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: beer,scraper,untappd
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.13
+Requires-Dist: reflex>=0.7.6
+Requires-Dist: untappd-scraper>=0.6.2
+Description-Content-Type: text/markdown
+
+# ut-scrape
+
+`ut-scrape` is a lightweight REST API built using [Reflex](https://reflex.dev/) that leverages the functionality of the [`untappd-scraper`](https://gitlab.com/wardy-mini-projects/portfolio/untappd-scraper) library. It enables users to scrape data from Untappd and access it via a simple API interface.
+
+## Features
+
+- **Data Scraping**: Utilizes `untappd-scraper` to fetch and parse data from Untappd.
+- **REST API**: Exposes the scraped data through a Reflex-powered REST API.
+
+## Requirements
+
+- Python >= 3.13
+- `untappd-scraper` >= 0.6.2
+- `reflex` >= 0.7.6
+
+## Installation
+
+```bash
+pip install ut-scrape
+```
+
+## Usage
+
+Run the API server:
+
+```bash
+python -m ut_scrape
+```
+
+Access the API endpoints to retrieve data scraped from Untappd.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
