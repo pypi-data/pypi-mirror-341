@@ -1,0 +1,10 @@
+torchinsight/__init__.py,sha256=5y9dqX-CnCzy1_tmfbrgOO59pffeWKOKdJG9y7W2FkA,337
+torchinsight/formatter.py,sha256=H3gV5DWQjINH1bNjPcyw3xWpIvi152yG-_lmSqCfA7s,5923
+torchinsight/model_info.py,sha256=mG0cgMni_BejMVNPZtRaYED7ILHzFbp8jNWHv4s6CMs,26069
+torchinsight/utils.py,sha256=JO-a6S2Np1ZR4Cdh3NQqqW9abFfWAkP6RwGmjTejw5I,6437
+torchinsight/version.py,sha256=qXtXHSFZfshNsUEXLCvThAgE7CMp0H0rpczTceFPbVw,52
+torchinsight-0.1.1.dist-info/licenses/LICENSE,sha256=U0PZLfFDGbuAh-gLT6nB5hx5PhFdPhliciRHxAJAgiE,1068
+torchinsight-0.1.1.dist-info/METADATA,sha256=N5xFLhD3KNvpZbakpBHsFl4J7PbJ2pwW7lgjylPOCJA,3434
+torchinsight-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+torchinsight-0.1.1.dist-info/top_level.txt,sha256=IHsY7ETVrx4JYkoiAWBT1oAUqto_FsAFH8oUid_DhvA,13
+torchinsight-0.1.1.dist-info/RECORD,,
