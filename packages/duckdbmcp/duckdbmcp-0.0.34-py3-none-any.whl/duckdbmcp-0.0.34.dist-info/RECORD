@@ -1,0 +1,9 @@
+duckdbmcp/__init__.py,sha256=aO9LO71Xt64kek-gmoKA9MIWTAmrLYKV8nCTVqFFEmQ,297
+duckdbmcp/config.py,sha256=_b9Z2yPw1gkUgQLMf-93QVEUuFt4ro3j4NOxooqEpw0,1528
+duckdbmcp/server.py,sha256=BFwz_Z_xAwwGupNzZccAh7Ny9m61RZbX4-uc6CllToY,15191
+duckdbmcp/lib/handler.py,sha256=FZQHBRFsBTdcujLaBnGqNPhB-qE5bc3wcDX5pwJCqkA,15708
+duckdbmcp-0.0.34.dist-info/METADATA,sha256=KTmgqNCGAlHinC8wHAzJdMfwg-M5E-4XB3gDgRBUHlY,8866
+duckdbmcp-0.0.34.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+duckdbmcp-0.0.34.dist-info/entry_points.txt,sha256=rJ8lj1Ao9JDyFer9JneSCfEFEdfBez7x6pADCO56Ebo,45
+duckdbmcp-0.0.34.dist-info/licenses/LICENSE,sha256=pSzMmMlw2JOTZReIUjmBvEa3-o8wfA1d8XmBsbRwceU,1077
+duckdbmcp-0.0.34.dist-info/RECORD,,
