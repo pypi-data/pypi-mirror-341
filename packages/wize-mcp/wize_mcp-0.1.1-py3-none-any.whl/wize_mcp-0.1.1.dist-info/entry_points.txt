@@ -1,0 +1,2 @@
+[console_scripts]
+wize_mcp = wize_mcp.main:main
