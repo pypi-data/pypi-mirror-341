@@ -1,0 +1,8 @@
+include LICENSE
+include README.md
+include requirements.txt
+recursive-include numerical_aptitude/data *
+recursive-include verbalapt/data *
+recursive-include logical_reasoning/data *
+recursive-include data_interpretation/data *
+recursive-include aptisolve *.py

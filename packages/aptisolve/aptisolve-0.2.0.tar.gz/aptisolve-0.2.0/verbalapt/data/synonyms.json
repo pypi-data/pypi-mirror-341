@@ -1,0 +1,17 @@
+[
+    {
+        "word": "happy",
+        "synonyms": ["joyful", "glad", "pleased", "delighted", "content"],
+        "type": "synonym"
+    },
+    {
+        "word": "sad",
+        "synonyms": ["unhappy", "sorrowful", "dejected", "downcast", "gloomy"],
+        "type": "synonym"
+    },
+    {
+        "word": "big",
+        "synonyms": ["large", "huge", "enormous", "gigantic", "massive"],
+        "type": "synonym"
+    }
+]

@@ -1,0 +1,3 @@
+# Core dependencies for AptiSolve
+click==8.1.8
+python-dotenv==1.1.0
