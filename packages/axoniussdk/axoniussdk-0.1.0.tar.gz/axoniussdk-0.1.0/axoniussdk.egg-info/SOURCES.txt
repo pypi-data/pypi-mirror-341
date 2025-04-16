@@ -1,0 +1,8 @@
+README.md
+setup.py
+axoniussdk/__init__.py
+axoniussdk/core.py
+axoniussdk.egg-info/PKG-INFO
+axoniussdk.egg-info/SOURCES.txt
+axoniussdk.egg-info/dependency_links.txt
+axoniussdk.egg-info/top_level.txt
