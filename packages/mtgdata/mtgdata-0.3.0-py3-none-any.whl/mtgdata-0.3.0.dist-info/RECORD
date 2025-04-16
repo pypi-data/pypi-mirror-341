@@ -1,0 +1,10 @@
+mtgdata/__init__.py,sha256=-q-XnAjSefd-2lbLW3AtshiFz_5AwEyNrtJvxLWGAUM,1858
+mtgdata/__main__.py,sha256=ql8UpTgZrbdnLirpxfjOdemQYgCRnKUM1TxBdxvtfOY,2467
+mtgdata/scryfall.py,sha256=WU5LrWmyoKHAfMGzPMnJsJWd_sBGC4ZsVMoJ02hA6Xo,24416
+mtgdata/scryfall_convert.py,sha256=bJbrd9fOMeaHKdrumi2YXt8Lfxq0L8rvTwprWLrur84,18840
+mtgdata/util/__init__.py,sha256=_rLFO9DK9ITc8XsJ3pETpwtz0y9ssaoX0hjwOqnJPcQ,1404
+mtgdata/util/hdf5.py,sha256=K0sPMF7yntyefYVwIgHbRtEK-Cwdajk3K5d9qBPvrSQ,5038
+mtgdata-0.3.0.dist-info/METADATA,sha256=B0KqDsfadrjIkH2f7uIi1Q732_9DY7x8c47risLeaww,5992
+mtgdata-0.3.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mtgdata-0.3.0.dist-info/top_level.txt,sha256=uSg2s2b4kv0IUT00iHjZNUQadVxRas7Vclr6Fdgmy0E,8
+mtgdata-0.3.0.dist-info/RECORD,,
