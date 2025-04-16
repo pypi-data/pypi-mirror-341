@@ -1,0 +1,24 @@
+[project]
+name = "asteca"
+version = "0.6.0"
+description = "Stellar cluster analysis package"
+authors = [
+    {name = "Gabriel I Perren", email = "gabrielperren@gmail.com"}
+]
+readme = "README.md"
+license = "MIT"
+keywords = ["cluster", "astrophysics"]
+homepage = "https://asteca.github.io/"
+repository = "https://github.com/asteca/ASteCA"
+documentation = "https://asteca.readthedocs.io/"
+requires-python = ">=3.11.11"
+dependencies = [
+    "astropy>=7.0.1",
+    "fast-histogram>=0.14",
+    "numpy>=2.0.2",
+    "scipy>=1.15.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

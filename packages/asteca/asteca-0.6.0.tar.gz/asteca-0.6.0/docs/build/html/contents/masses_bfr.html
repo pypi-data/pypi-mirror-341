@@ -1,0 +1,770 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Masses and binary fraction &#8212; [ ASteCA ]</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=2dd1c7b5" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=3af6fc4c"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contents/masses_bfr';</script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="API" href="api.html" />
+    <link rel="prev" title="Parameters fitting" href="paramfit.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">[ ASteCA ]</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="user_guide.html">User Guide</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="cluster_mod.html">Cluster module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="membership_mod.html">Membership module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="isochrones_mod.html">Isochrones module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synthetic_mod.html">Synthetic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="likelihood_mod.html">Likelihood module</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="tutorials.html">Tutorials</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="structure.html">Structure analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="membership.html">Membership probabilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synthetic.html">Generate synthetic clusters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paramfit.html">Parameters fitting</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Masses and binary fraction</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Cluster.html">Cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Membership.html">Membership</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Isochrones.html">Isochrones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Synthetic.html">Synthetic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Likelihood.html">Likelihood</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/asteca/ASteCA/main?urlpath=tree/docs/contents/masses_bfr.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/asteca/ASteCA/blob/main/docs/contents/masses_bfr.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/asteca/ASteCA" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/asteca/ASteCA/edit/main/docs/contents/masses_bfr.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/asteca/ASteCA/issues/new?title=Issue%20on%20page%20%2Fcontents/masses_bfr.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/contents/masses_bfr.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Masses and binary fraction</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stellar-masses-and-binarity">Stellar masses and binarity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#total-binary-fraction">Total binary fraction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cluster-masses">Cluster masses</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="masses-and-binary-fraction">
+<span id="masses-bfr-ntbk"></span><h1>Masses and binary fraction<a class="headerlink" href="#masses-and-binary-fraction" title="Link to this heading">#</a></h1>
+<p>This tutorial shows how we can use methods available in the <a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic" title="asteca.Synthetic"><span class="xref myst py py-class">Synthetic</span></a> class to estimate for a given observed cluster:</p>
+<ul class="simple">
+<li><p>The individual stellar masses and their probability of being binary systems,</p></li>
+<li><p>the total binary fraction of the cluster, and</p></li>
+<li><p>the different masses associated to the cluster</p></li>
+</ul>
+<p>We start by loading the cluster file and a set of isochrones, and instantiating a synthetic object which we calibrate with the cluster’s data:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">asteca</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="n">obs_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../_static/cluster.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># Load cluster file</span>
+<span class="n">my_cluster</span> <span class="o">=</span> <span class="n">asteca</span><span class="o">.</span><span class="n">Cluster</span><span class="p">(</span>
+    <span class="n">ra</span><span class="o">=</span><span class="n">obs_df</span><span class="p">[</span><span class="s2">&quot;RA_ICRS&quot;</span><span class="p">],</span>
+    <span class="n">dec</span><span class="o">=</span><span class="n">obs_df</span><span class="p">[</span><span class="s2">&quot;DE_ICRS&quot;</span><span class="p">],</span> 
+    <span class="n">magnitude</span><span class="o">=</span><span class="n">obs_df</span><span class="p">[</span><span class="s2">&quot;Gmag&quot;</span><span class="p">],</span>
+    <span class="n">e_mag</span><span class="o">=</span><span class="n">obs_df</span><span class="p">[</span><span class="s2">&quot;e_Gmag&quot;</span><span class="p">],</span>
+    <span class="n">color</span><span class="o">=</span><span class="n">obs_df</span><span class="p">[</span><span class="s2">&quot;BP-RP&quot;</span><span class="p">],</span>
+    <span class="n">e_color</span><span class="o">=</span><span class="n">obs_df</span><span class="p">[</span><span class="s2">&quot;e_BP-RP&quot;</span><span class="p">],</span>
+    <span class="n">verbose</span><span class="o">=</span><span class="mi">2</span>
+<span class="p">)</span>
+
+<span class="c1"># Load isochrones</span>
+<span class="n">isochs</span> <span class="o">=</span> <span class="n">asteca</span><span class="o">.</span><span class="n">Isochrones</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="s1">&#39;parsec&#39;</span><span class="p">,</span>
+    <span class="n">isochs_path</span><span class="o">=</span><span class="s2">&quot;../_static/parsec/&quot;</span><span class="p">,</span>
+    <span class="n">magnitude</span><span class="o">=</span><span class="s2">&quot;Gmag&quot;</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;G_BPmag&quot;</span><span class="p">,</span> <span class="s2">&quot;G_RPmag&quot;</span><span class="p">),</span>
+    <span class="n">magnitude_effl</span><span class="o">=</span><span class="mf">6390.7</span><span class="p">,</span>
+    <span class="n">color_effl</span><span class="o">=</span><span class="p">(</span><span class="mf">5182.58</span><span class="p">,</span> <span class="mf">7825.08</span><span class="p">),</span>
+    <span class="n">verbose</span><span class="o">=</span><span class="mi">2</span>
+<span class="p">)</span>
+
+<span class="c1"># Create Synthetic cluster object</span>
+<span class="n">synthcl</span> <span class="o">=</span> <span class="n">asteca</span><span class="o">.</span><span class="n">Synthetic</span><span class="p">(</span><span class="n">isochs</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">457304</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Calibrate the `synthcl` object</span>
+<span class="n">synthcl</span><span class="o">.</span><span class="n">calibrate</span><span class="p">(</span><span class="n">my_cluster</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Instantiating cluster...
+Columns read   : RA, DEC, Magnitude, e_mag, Color, e_color
+N_stars        : 2759
+N_clust_min    : 25
+N_clust_max    : 5000
+Cluster object generated
+
+Instantiating isochrones...
+Model          : PARSEC
+N_files        : 1
+N_mets         : 3
+N_ages         : 11
+N_isochs       : 2000
+z    range     : [0.01, 0.02]
+loga range     : [7.0, 9.5]
+Magnitude      : Gmag
+Color          : G_BPmag-G_RPmag
+Isochrone object generated
+
+Instantiating synthetic...
+Default params : {&#39;met&#39;: 0.0152, &#39;loga&#39;: 8.0, &#39;alpha&#39;: 0.09, &#39;beta&#39;: 0.94, &#39;Rv&#39;: 3.1, &#39;DR&#39;: 0.0, &#39;Av&#39;: 0.2, &#39;dm&#39;: 9.0}
+Extinction law : CCMO
+Diff reddening : uniform
+IMF            : chabrier_2014
+Max init mass  : 10000
+Gamma dist     : D&amp;K
+Random seed    : 457304
+Synthetic clusters object generated
+N_stars_obs    : 2759
+Max magnitude  : 19.00
+Error distribution loaded
+</pre></div>
+</div>
+</div>
+</div>
+<p>For all three analyses mentioned above, the first step is to call the <a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic.get_models" title="asteca.Synthetic.get_models"><span class="xref myst py py-meth">get_models()</span></a> method. This method requires two arguments: <code class="docutils literal notranslate"><span class="pre">model</span></code> which is a dictionary of parameters to be fitted and a <code class="docutils literal notranslate"><span class="pre">model_std</span></code> dictionary which contains the uncertainties (standard deviations) associated to each parameter in the <code class="docutils literal notranslate"><span class="pre">model</span></code> dictionary. For example:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Values for the fundamental parameters associated to the observed cluster</span>
+<span class="n">model</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;met&quot;</span><span class="p">:</span> <span class="mf">0.015</span><span class="p">,</span> <span class="s2">&quot;loga&quot;</span><span class="p">:</span> <span class="mf">8.</span><span class="p">,</span> <span class="s2">&quot;dm&quot;</span><span class="p">:</span> <span class="mf">8.</span><span class="p">,</span> <span class="s2">&quot;Av&quot;</span><span class="p">:</span> <span class="mf">0.05</span><span class="p">}</span>
+
+<span class="c1"># Uncertainties for each fundamental parameter</span>
+<span class="n">model_std</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;met&quot;</span><span class="p">:</span> <span class="mf">0.001</span><span class="p">,</span> <span class="s2">&quot;loga&quot;</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span> <span class="s2">&quot;dm&quot;</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span> <span class="s2">&quot;Av&quot;</span><span class="p">:</span> <span class="mf">0.03</span><span class="p">}</span>
+
+<span class="c1"># Call the method</span>
+<span class="n">synthcl</span><span class="o">.</span><span class="n">get_models</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">model_std</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Generate synthetic models...
+N_models       : 200
+Attributes stored in Synthetic object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Notice that some of the parameters in <code class="docutils literal notranslate"><span class="pre">model_std</span></code> have STDDEV values of <code class="docutils literal notranslate"><span class="pre">0.0</span></code>. This means that these parameters are fixed to the values given in the <code class="docutils literal notranslate"><span class="pre">model</span></code> dictionary.</p>
+</div>
+<p>This method will store in the <code class="docutils literal notranslate"><span class="pre">synthcl</span></code> object a number of synthetic clusters, sampled from a normal distribution centered on <code class="docutils literal notranslate"><span class="pre">model</span></code> values with STDDEVs taken from the <code class="docutils literal notranslate"><span class="pre">model_std</span></code> values. By default <code class="docutils literal notranslate"><span class="pre">200</span></code> models are generated, which can be changed via the <code class="docutils literal notranslate"><span class="pre">N_models</span></code> argument of the method.</p>
+<p>After calling this method, the individual stellar masses and binarity, cluster total mass and cluster total binarity fraction can be estimated as shown in the following sub-sections.</p>
+<section id="stellar-masses-and-binarity">
+<h2>Stellar masses and binarity<a class="headerlink" href="#stellar-masses-and-binarity" title="Link to this heading">#</a></h2>
+<p>An estimation of the observed stars individual masses and their probability of belonging to a binary system can be achieved via the <a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic.stellar_masses" title="asteca.Synthetic.stellar_masses"><span class="xref myst py py-meth">stellar_masses()</span></a> method:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_masses_bprob</span> <span class="o">=</span> <span class="n">synthcl</span><span class="o">.</span><span class="n">stellar_masses</span><span class="p">()</span>
+
+<span class="c1"># Convert to pandas DataFrame for prettier printing</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_masses_bprob</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Stellar masses and binary probabilities estimated
+            m1    m1_std        m2    m2_std  binar_prob
+0     0.445917  0.051379  0.250017  0.107283       0.370
+1     1.231061  0.167481  0.736810  0.288590       0.860
+2     0.533227  0.050551  0.310715  0.093626       0.280
+3     0.933417  0.116045  0.425366  0.148135       0.465
+4     0.700783  0.061533  0.342416  0.127329       0.130
+...        ...       ...       ...       ...         ...
+2754  0.267549  0.034917  0.187424  0.062576       0.740
+2755       NaN       NaN       NaN       NaN         NaN
+2756  0.583159  0.053920  0.248445  0.064690       0.045
+2757  0.516960  0.053511  0.212998  0.000000       0.005
+2758  0.293646  0.050600       NaN       NaN       0.000
+
+[2759 rows x 5 columns]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/gabriel/Github/ASteCA/ASteCA/asteca/asteca/synthetic.py:559: UserWarning: 
+N=36 stars found with no valid photometric data. These will be assigned &#39;nan&#39; values
+for masses and binarity probability
+  warnings.warn(
+</pre></div>
+</div>
+</div>
+</div>
+<p>The returned variable <code class="docutils literal notranslate"><span class="pre">df_masses_bprob</span></code> is a dictionary containing the columns <code class="docutils literal notranslate"><span class="pre">m1,</span> <span class="pre">m1_std,</span> <span class="pre">m2,</span> <span class="pre">m2_std,</span> <span class="pre">binar_prob</span></code>. These columns represent, for each observed star in the cluster under analysis, estimates for:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">m1</span></code>: primary mass</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">m1_std</span></code>: uncertainty of the primary mass</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">m2</span></code>: secondary mass (under the assumption that this star belongs to a binary
+system)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">m2_std</span></code>: uncertainty of the secondary mass</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">binar_prob</span></code>: probability of being a binary system</p></li>
+</ul>
+<p>If an observed star has <code class="docutils literal notranslate"><span class="pre">binar_prob=0</span></code>, i.e. a zero probability of being a binary system, then the mass value for its secondary star <code class="docutils literal notranslate"><span class="pre">m2</span></code> is a <code class="docutils literal notranslate"><span class="pre">NaN</span></code> value as no secondary star could be assigned to it. If any observed star contains invalid photometric data,  they will be assigned <code class="docutils literal notranslate"><span class="pre">NaN</span></code> values for masses and binarity probability.</p>
+</section>
+<section id="total-binary-fraction">
+<h2>Total binary fraction<a class="headerlink" href="#total-binary-fraction" title="Link to this heading">#</a></h2>
+<p>Since the fraction of synthetic binary systems is handled through the <code class="docutils literal notranslate"><span class="pre">alpha,</span> <span class="pre">beta</span></code> parameters, there is no <em>binary fraction</em> parameter than can be fitted using the synthetic clusters. This parameter needs to be estimated separately via the <a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic.binary_fraction" title="asteca.Synthetic.binary_fraction"><span class="xref myst py py-meth">binary_fraction()</span></a> method as follows:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Obtain distribution of the total binary fraction</span>
+<span class="n">bfr_med</span><span class="p">,</span> <span class="n">bfr_std</span> <span class="o">=</span> <span class="n">synthcl</span><span class="o">.</span><span class="n">binary_fraction</span><span class="p">(</span><span class="n">df_masses_bprob</span><span class="p">[</span><span class="s1">&#39;binar_prob&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Binary fraction: 0.446 +/- 0.007
+</pre></div>
+</div>
+</div>
+</div>
+<p>The only argument required for this method is the distribution of binary probabilities <code class="docutils literal notranslate"><span class="pre">df_masses_bprob['binar_prob']</span></code> obtained in the previous section via the <a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic.stellar_masses" title="asteca.Synthetic.stellar_masses"><span class="xref myst py py-meth">stellar_masses()</span></a> method.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">bfr_med,</span> <span class="pre">bfr_std</span></code>  variables will store the median and STDDEV values for the total binary fraction estimate for the cluster.</p>
+</section>
+<section id="cluster-masses">
+<h2>Cluster masses<a class="headerlink" href="#cluster-masses" title="Link to this heading">#</a></h2>
+<p>As explained in the <a class="reference internal" href="synthetic_mod.html"><span class="doc std std-doc">Mass and binarity</span></a> section, <strong>ASteCA</strong> estimates several different masses associated to an observed cluster. These are:</p>
+<ul class="simple">
+<li><p>$M_{init}$: total initial mass (at the moment of cluster’s birth)</p></li>
+<li><p>$M_{actual}$: actual mass of the cluster (even the low mass portion we do not observe)</p></li>
+<li><p>$M_{obs}$: observed mass (sum of individual stellar masses)</p></li>
+<li><p>$M_{phot}$: mass <strong>unobserved</strong> due to photometric effects (i.e: the low mass stars beyond the maximum magnitude cut)</p></li>
+<li><p>$M_{evol}$: mass <strong>lost</strong> via stellar evolution</p></li>
+<li><p>$M_{dyn}$: mass <strong>lost</strong> through dynamical effects (or <em>dissolution</em>)</p></li>
+</ul>
+<p>This process is performed via the <a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic.cluster_masses" title="asteca.Synthetic.cluster_masses"><span class="xref myst py py-meth">cluster_masses()</span></a> method:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">masses_dict</span> <span class="o">=</span> <span class="n">synthcl</span><span class="o">.</span><span class="n">cluster_masses</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mass values estimated
+</pre></div>
+</div>
+</div>
+</div>
+<p>The returned dictionary contains arrays with the distributions of masses for each mass described above. Their median and STDDEV values can be extracted for example with:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print the median mass values and their STDDEVs</span>
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">arr</span> <span class="ow">in</span> <span class="n">masses_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:&lt;8}</span><span class="s2">: </span><span class="si">{:.0f}</span><span class="s2">+/-</span><span class="si">{:.0f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">arr</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">arr</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>M_init  : 4312+/-696
+M_actual: 3167+/-327
+M_obs   : 2795+/-180
+M_phot  : 380+/-160
+M_evol  : 867+/-240
+M_dyn   : 307+/-188
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="paramfit.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Parameters fitting</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="api.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">API</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stellar-masses-and-binarity">Stellar masses and binarity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#total-binary-fraction">Total binary fraction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cluster-masses">Cluster masses</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Gabriel I Perren
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Gabriel I Perren.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

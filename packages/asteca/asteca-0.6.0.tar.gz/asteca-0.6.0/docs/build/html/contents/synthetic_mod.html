@@ -1,0 +1,828 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Synthetic module &#8212; [ ASteCA ]</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=2dd1c7b5" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=3af6fc4c"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contents/synthetic_mod';</script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Likelihood module" href="likelihood_mod.html" />
+    <link rel="prev" title="Isochrones module" href="isochrones_mod.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">[ ASteCA ]</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="user_guide.html">User Guide</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="cluster_mod.html">Cluster module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="membership_mod.html">Membership module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="isochrones_mod.html">Isochrones module</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Synthetic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="likelihood_mod.html">Likelihood module</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="tutorials.html">Tutorials</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="structure.html">Structure analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="membership.html">Membership probabilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synthetic.html">Generate synthetic clusters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paramfit.html">Parameters fitting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="masses_bfr.html">Masses and binary fraction</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Cluster.html">Cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Membership.html">Membership</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Isochrones.html">Isochrones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Synthetic.html">Synthetic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Likelihood.html">Likelihood</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/asteca/ASteCA" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/asteca/ASteCA/edit/main/docs/contents/synthetic_mod.rst" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/asteca/ASteCA/issues/new?title=Issue%20on%20page%20%2Fcontents/synthetic_mod.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/contents/synthetic_mod.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Synthetic module</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-the-object">Defining the object</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calibrating">Calibrating</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generating">Generating</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intrinsic-parameters">Intrinsic parameters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extrinsic-parameters">Extrinsic parameters</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-and-binarity">Mass and binarity</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="synthetic-module">
+<span id="id1"></span><h1>Synthetic module<a class="headerlink" href="#synthetic-module" title="Link to this heading">#</a></h1>
+<p>The <a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic" title="asteca.Synthetic"><code class="xref py py-class docutils literal notranslate"><span class="pre">asteca.Synthetic</span></code></a> class allows generating synthetic clusters from:</p>
+<ol class="arabic simple">
+<li><p>A <a class="reference internal" href="../build/api/asteca.Isochrones.html#asteca.Isochrones" title="asteca.Isochrones"><code class="xref py py-class docutils literal notranslate"><span class="pre">asteca.Isochrones</span></code></a> object</p></li>
+<li><p>A dictionary of fundamental parameters</p></li>
+<li><p>A <a class="reference internal" href="../build/api/asteca.Cluster.html#asteca.Cluster" title="asteca.Cluster"><code class="xref py py-class docutils literal notranslate"><span class="pre">asteca.Cluster</span></code></a> object (optional, used for calibration)</p></li>
+</ol>
+<p>The handling of a <code class="xref py py-class docutils literal notranslate"><span class="pre">synthetic</span></code> object is explained in detail in the sub-sections
+that follow.</p>
+<section id="defining-the-object">
+<span id="ref-defining"></span><h2>Defining the object<a class="headerlink" href="#defining-the-object" title="Link to this heading">#</a></h2>
+<p>To instantiate a <code class="xref py py-class docutils literal notranslate"><span class="pre">synthetic</span></code> object you need to pass the <code class="xref py py-class docutils literal notranslate"><span class="pre">isochs</span></code>
+object previously generated, as explained in the section <a class="reference internal" href="isochrones_mod.html#isochrones-module"><span class="std std-ref">Isochrones module</span></a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Synthetic clusters object</span>
+<span class="n">synthcl</span> <span class="o">=</span> <span class="n">asteca</span><span class="o">.</span><span class="n">Synthetic</span><span class="p">(</span><span class="n">isochs</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will perform the required initial processing and load the theoretical isochrones
+into the <code class="xref py py-class docutils literal notranslate"><span class="pre">synthcl</span></code> object. The processing involves sampling an <a class="reference external" href="https://en.wikipedia.org/wiki/Initial_mass_function">initial
+mass function</a> (IMF), setting the distributions for the binary systems’ mass ratio,
+and the differential reddening (these two last processes are optional).</p>
+<p>The basic example above uses the default values for these three processes, but
+they can be modified by the user at this stage via their arguments. These arguments
+are (also see <a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic" title="asteca.Synthetic"><code class="xref py py-class docutils literal notranslate"><span class="pre">asteca.Synthetic</span></code></a>):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ext_law          : Extinction law</span>
+<span class="go">DR_distribution  : Distribution for the differential reddening</span>
+<span class="go">IMF_name         : Initial mass function</span>
+<span class="go">max_mass         : Maximum total initial mass</span>
+<span class="go">gamma            : Distribution for the mass ratio of the binary systems</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">ext_law</span></code> argument defines the extinction law as one of either <code class="docutils literal notranslate"><span class="pre">CCMO</span></code> or
+<code class="docutils literal notranslate"><span class="pre">GAIADR3</span></code>. The first one corresponds to the model by
+<a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1989ApJ...345..245C">Cardelli, Clayton &amp; Mathis (1989)</a>, with updated coefficients for near-UV from
+<a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1994ApJ...422..158O">O’Donnell (1994)</a>. The second one is <a class="reference external" href="https://www.cosmos.esa.int/web/gaia/edr3-extinction-law">Gaia’s (E)DR3</a>, color-dependent law (main
+sequence), only applicable to Gaia’s photometry. If this law is selected, <strong>ASteCA</strong>
+assumes that the magnitude and first color used are Gaia’s <code class="docutils literal notranslate"><span class="pre">G</span></code> and <code class="docutils literal notranslate"><span class="pre">BP-RP</span></code>
+respectively.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>While <code class="docutils literal notranslate"><span class="pre">CCMO</span></code> allows different <code class="docutils literal notranslate"><span class="pre">Rv</span></code> values (which means this parameter can even
+be fitted), <code class="docutils literal notranslate"><span class="pre">GAIADR3</span></code> is to be used with <code class="docutils literal notranslate"><span class="pre">Rv=3.1</span></code>. Please read the online
+documentation and its accompanying articles  to learn more about this law’s
+limitations.</p>
+</div>
+<p>There are dedicated packages like <a class="reference external" href="https://mfouesneau.github.io/dustapprox/">dustapprox</a>, <a class="reference external" href="https://dust-extinction.readthedocs.io/">dust_extinction</a> or <a class="reference external" href="https://extinction.readthedocs.io/en/latest/">extinction</a>
+that can handle this process. We chose to employ our own implementation to increase the
+performance. If you want to use a different extinction model, please drop me an
+<a class="reference external" href="mailto:gabrielperren&#37;&#52;&#48;gmail&#46;com">email</a>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">DR_distribution</span></code> argument fixes the distribution used for the differential
+reddening (assuming that the <code class="docutils literal notranslate"><span class="pre">DR</span></code> parameter is different than 0, see Section
+<a class="reference internal" href="#ref-generating"><span class="std std-ref">Generating</span></a>). The differential reddening effect adds a random amount to the
+total extinction parameter <code class="docutils literal notranslate"><span class="pre">Av</span></code>, sampled from either a <a class="reference external" href="https://numpy.org/doc/stable/reference/random/generated/numpy.random.uniform.html">uniform</a> or a <a class="reference external" href="https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html">normal</a>
+distribution. The <code class="docutils literal notranslate"><span class="pre">DR_distribution</span></code> argument hence accepts one of two string values:
+<code class="docutils literal notranslate"><span class="pre">uniform</span></code> (the default) or <code class="docutils literal notranslate"><span class="pre">normal</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">IMF_name</span></code> and <code class="docutils literal notranslate"><span class="pre">max_mass</span></code> arguments are used to generate random mass samples from
+an IMF. To improve the performance of the code, this step is performed when the
+<a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic" title="asteca.Synthetic"><code class="xref py py-class docutils literal notranslate"><span class="pre">asteca.Synthetic</span></code></a> object is created instead of every time a new synthetic
+cluster is generated. The <code class="docutils literal notranslate"><span class="pre">IMF_name</span></code> argument must be one of those available in
+<a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic" title="asteca.Synthetic"><code class="xref py py-class docutils literal notranslate"><span class="pre">asteca.Synthetic</span></code></a>: <code class="docutils literal notranslate"><span class="pre">salpeter_1955,</span> <span class="pre">kroupa_2001,</span> <span class="pre">chabrier_2014</span></code>.
+Currently these are associated to the following IMFs:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/IMFs.webp"><img alt="../_images/IMFs.webp" src="../_images/IMFs.webp" style="width: 737.4499999999999px; height: 390.25px;" />
+</a>
+</figure>
+<p>as defined in <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1955ApJ...121..161S">Salpeter (1995)</a>, <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2001MNRAS.322..231K/">Kroupa (2001)</a>, and <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2014ApJ...796...75C">Chabrier et al. (2014)</a>
+(the default value). The <code class="docutils literal notranslate"><span class="pre">max_mass</span></code> argument simply fixes the total mass
+value to be sampled. This value should be large enough to allow generating as many
+synthetic stars as those present in the observed cluster. The default value is
+<span class="math notranslate nohighlight">\(10000\;M_{\odot}\)</span> which should be more than enough for the vast majority of
+clusters.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">gamma</span></code> argument (<span class="math notranslate nohighlight">\(\gamma\)</span>) defines the distribution of the mass ratio for
+the binary systems. The mass ratio is the ratio of secondary masses (<span class="math notranslate nohighlight">\(m_2\)</span>)
+to primary masses (<span class="math notranslate nohighlight">\(m_1\)</span>) in binary systems, written as
+<span class="math notranslate nohighlight">\(q=m_2/m_1\,(&lt;=1)\)</span>. As with the IMF, the <span class="math notranslate nohighlight">\(q\)</span> distribution is fixed, not
+fitted, to improve the performance.</p>
+<p>We use <code class="docutils literal notranslate"><span class="pre">gamma</span></code> as an argument because the <span class="math notranslate nohighlight">\(q\)</span> distribution is usually defined
+as a power-law, where <code class="docutils literal notranslate"><span class="pre">gamma</span></code> or <span class="math notranslate nohighlight">\(\gamma\)</span> is the exponent or power:</p>
+<div class="math notranslate nohighlight">
+\[f(q) \approx q^{\gamma(m_1)}\]</div>
+<p>Here, <span class="math notranslate nohighlight">\(f(q)\)</span> is the distribution of <span class="math notranslate nohighlight">\(q\)</span> (the mass-ratio) where
+<span class="math notranslate nohighlight">\(\gamma(m_1)\)</span> means that the value of <span class="math notranslate nohighlight">\(\gamma\)</span> depends on the primary mass
+of the system (this dependence is only true for the <a class="reference external" href="https://doi.org/10.1146/annurev-astro-081710-102602">Duchene &amp; Kraus (2013)</a>
+distribution, see below).</p>
+<p>The default selection is <code class="docutils literal notranslate"><span class="pre">gamma=D&amp;K</span></code>, with <code class="docutils literal notranslate"><span class="pre">D&amp;K</span></code> meaning the primary mass-dependent
+distribution by <a class="reference external" href="https://doi.org/10.1146/annurev-astro-081710-102602">Duchene &amp; Kraus (2013)</a> (see their Table 1 and Figure 3). The user
+can also select between the two distributions by <a class="reference external" href="https://doi.org/10.1111/j.1365-2966.2005.09193.x">Fisher et al. (2005)</a> (stepped
+and peaked, see their Table 3) and <a class="reference external" href="https://doi.org/10.1088/0067-0049/190/1/1">Raghavan et al. (2010)</a> (see their Fig 16,
+left). In practice they all look somewhat similar, as shown in the figure below for a
+random IMF mass sampling.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/qdist_mass.webp"><img alt="../_images/qdist_mass.webp" src="../_images/qdist_mass.webp" style="width: 736.4px; height: 551.9499999999999px;" />
+</a>
+</figure>
+<p>The Fisher distributions (top row) favor <span class="math notranslate nohighlight">\(q\)</span> values closer to unity (i.e.:
+secondary masses that are similar to the primary masses), while the Raghavan and
+Duchene &amp; Kraus distributions (bottom row) look a bit more uniform.</p>
+<p>The user can also select a float value for <code class="docutils literal notranslate"><span class="pre">gamma</span></code>, which will be used as an
+exponent in the power-law function <span class="math notranslate nohighlight">\(f(q) \approx q^{\gamma}\)</span>. The figure below
+shows this distribution for three <code class="docutils literal notranslate"><span class="pre">gamma</span></code> (<span class="math notranslate nohighlight">\(\gamma\)</span>) values, where <code class="docutils literal notranslate"><span class="pre">gamma=0</span></code>
+means a uniform distribution.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/qdist_unif.webp"><img alt="../_images/qdist_unif.webp" src="../_images/qdist_unif.webp" style="width: 736.4px; height: 309.4px;" />
+</a>
+</figure>
+<p>Only the Duchene &amp; Kraus distribution is primary-mass dependent. The Fisher and Raghavan
+distributions, as well as the distributions set by the user via a float value for
+<code class="docutils literal notranslate"><span class="pre">gamma</span></code>, are independent of mass values.</p>
+</section>
+<section id="calibrating">
+<span id="ref-calibrating"></span><h2>Calibrating<a class="headerlink" href="#calibrating" title="Link to this heading">#</a></h2>
+<p>The calibration process is applied after instantiating a <a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic" title="asteca.Synthetic"><code class="xref py py-class docutils literal notranslate"><span class="pre">asteca.Synthetic</span></code></a>
+object, named here <code class="xref py py-obj docutils literal notranslate"><span class="pre">synthcl</span></code> as described in the previous section. This process
+is optional and it is aimed at collecting data from an observed cluster loaded in
+a <a class="reference internal" href="../build/api/asteca.Cluster.html#asteca.Cluster" title="asteca.Cluster"><code class="xref py py-class docutils literal notranslate"><span class="pre">asteca.Cluster</span></code></a> object (which we name here <code class="xref py py-obj docutils literal notranslate"><span class="pre">my_cluster</span></code>, see
+<a class="reference internal" href="cluster_mod.html#cluster-module"><span class="std std-ref">Cluster module</span></a>).</p>
+<p>The calibration is performed via the <a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic.calibrate" title="asteca.Synthetic.calibrate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">asteca.Synthetic.calibrate()</span></code></a> method:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Synthetic cluster calibration</span>
+<span class="n">synthcl</span><span class="o">.</span><span class="n">calibrate</span><span class="p">(</span><span class="n">my_cluster</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will extract the following information from the observed cluster:</p>
+<ul class="simple">
+<li><p>maximum observed photometric magnitude</p></li>
+<li><p>number of observed stars</p></li>
+<li><p>distribution of photometric uncertainties</p></li>
+</ul>
+<p>The algorithm employed by <strong>ASteCA</strong> is to simply transport the observed uncertainty
+values in magnitude and color(s) to the generated synthetic stars. This way no
+approximation to the distribution of photometric uncertainties is required.</p>
+<p>As stated, this process is optional. The user can generate synthetic clusters without
+calibrating the <code class="xref py py-obj docutils literal notranslate"><span class="pre">synthcl</span></code> object. In this case, the synthetic clusters will be
+generated with a given number of observed stars (default value is 100 but the user can
+select any other value), the maximum photometric magnitude allowed by the loaded
+isochrones, and no photometric uncertainties added. The following section explains this
+process in more detail.</p>
+</section>
+<section id="generating">
+<span id="ref-generating"></span><h2>Generating<a class="headerlink" href="#generating" title="Link to this heading">#</a></h2>
+<p>To generate synthetic clusters the user is required to pass a dictionary with
+fundamental parameters to the <a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic.generate" title="asteca.Synthetic.generate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">asteca.Synthetic.generate()</span></code></a> method.
+<strong>ASteCA</strong> currently requires eight parameters, related to the following intrinsic and
+extrinsic cluster characteristics:</p>
+<ul class="simple">
+<li><p><em>Intrinsic</em>: metallicity (<code class="docutils literal notranslate"><span class="pre">met</span></code>), age (<code class="docutils literal notranslate"><span class="pre">loga</span></code>), and binarity (<code class="docutils literal notranslate"><span class="pre">alpha,</span> <span class="pre">beta</span></code>)</p></li>
+<li><p><em>Extrinsic</em>: distance modulus (<code class="docutils literal notranslate"><span class="pre">dm</span></code>) and extinction related parameters (total
+extinction <code class="docutils literal notranslate"><span class="pre">Av</span></code>, differential reddening <code class="docutils literal notranslate"><span class="pre">DR</span></code>, ratio of total to selective
+extinction <code class="docutils literal notranslate"><span class="pre">Rv</span></code>)</p></li>
+</ul>
+<p>These eight parameters are described in more depth in the following sub-sections.
+<strong>ASteCA</strong> also allows estimating the cluster’s mass and binary fraction for an
+observed cluster. This process is optional and requires dictionaries with fitted
+fundamental parameters and their STDDEVS (see <a class="reference internal" href="#masses-and-binarity"><span class="std std-ref">Mass and binarity</span></a> for more
+details).</p>
+<p>An example of the dictionary of parameters used for the generation of a synthetic
+cluster is shown below, applied to a previously defined <code class="xref py py-obj docutils literal notranslate"><span class="pre">synthcl</span></code> object:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define model parameters</span>
+<span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;met&quot;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">,</span>
+    <span class="s2">&quot;loga&quot;</span><span class="p">:</span> <span class="mf">9.87</span><span class="p">,</span>
+    <span class="s2">&quot;alpha&quot;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">,</span>
+    <span class="s2">&quot;beta&quot;</span><span class="p">:</span> <span class="mf">1.</span><span class="p">,</span>
+    <span class="s2">&quot;Rv&quot;</span><span class="p">:</span> <span class="mf">3.1</span><span class="p">,</span>
+    <span class="s2">&quot;dm&quot;</span><span class="p">:</span> <span class="mf">11.3</span><span class="p">,</span>
+    <span class="s2">&quot;Av&quot;</span><span class="p">:</span> <span class="mf">0.15</span><span class="p">,</span>
+    <span class="s2">&quot;DR&quot;</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="c1"># Generate the synthetic cluster</span>
+<span class="n">synth_clust</span> <span class="o">=</span> <span class="n">synthcl</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The returned <code class="docutils literal notranslate"><span class="pre">synth_clust</span></code> variable will hold a <code class="docutils literal notranslate"><span class="pre">numpy</span></code> array with the synthetic
+cluster data. The notebook <a class="reference internal" href="synthetic.html#synth-ntbk"><span class="std std-ref">Generate synthetic clusters</span></a> contains more information and examples
+on how to generate and process synthetic clusters with <strong>ASteCA</strong>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic" title="asteca.Synthetic"><code class="xref py py-class docutils literal notranslate"><span class="pre">asteca.Synthetic</span></code></a> class includes a <code class="docutils literal notranslate"><span class="pre">def_params</span></code> argument with
+a dictionary of default values for all the fundamental parameters. This means
+that the user could call <code class="docutils literal notranslate"><span class="pre">synthcl.generate()</span></code> with no <code class="docutils literal notranslate"><span class="pre">params</span></code> dictionary,
+and the method will still generate a synthetic cluster. This also allows the
+user to pass a <code class="docutils literal notranslate"><span class="pre">params</span></code> dictionary with only a few parameters
+(e.g.: <code class="docutils literal notranslate"><span class="pre">params={&quot;met&quot;:</span> <span class="pre">0.02,</span> <span class="pre">&quot;dm&quot;:</span> <span class="pre">12.7}</span></code>), and the remaining parameters will
+inherit the default values. More details in <a class="reference internal" href="synthetic.html#synth-ntbk"><span class="std std-ref">Generate synthetic clusters</span></a>.</p>
+</div>
+<section id="intrinsic-parameters">
+<h3>Intrinsic parameters<a class="headerlink" href="#intrinsic-parameters" title="Link to this heading">#</a></h3>
+<p>The valid ranges for the metallicity and logarithmic age are inherited from the
+theoretical isochrone(s) loaded in the <a class="reference internal" href="../build/api/asteca.Isochrones.html#asteca.Isochrones" title="asteca.Isochrones"><code class="xref py py-class docutils literal notranslate"><span class="pre">asteca.Isochrones</span></code></a> object.</p>
+<p>The metallicity, <code class="docutils literal notranslate"><span class="pre">met</span></code>, can be modeled either as <code class="docutils literal notranslate"><span class="pre">z</span></code> or (logarithmic) <code class="docutils literal notranslate"><span class="pre">FeH</span></code> as
+explained in section <a class="reference internal" href="isochrones_mod.html#isochrones-module"><span class="std std-ref">Isochrones module</span></a>. The age parameter, <code class="docutils literal notranslate"><span class="pre">loga</span></code>, is modeled
+as the logarithmic age.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">alpha,</span> <span class="pre">beta</span></code> parameters determine the fraction of binary systems
+in a synthetic cluster through the equation:</p>
+<div class="math notranslate nohighlight">
+\[P_b(m_1) = \alpha + \beta \times \frac{m_1}{(1.4+m_1)}\]</div>
+<p>where <span class="math notranslate nohighlight">\(P_b(m_1)\)</span> is the probability that a star of (primary) mass <span class="math notranslate nohighlight">\(m_1\)</span> is
+part of a binary system. This equation comes from a fit to the multiplicity fraction
+presented in <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O">Offner et al. (2023)</a> (see their Fig. 1 and Table 1). The multiplicity
+fraction values in this work are primary mass dependent, meaning that larger masses
+have much larger probabilities of being part of a binary (or higher order) system than
+low mass stars.</p>
+<p>The values <code class="docutils literal notranslate"><span class="pre">alpha=0.09,</span> <span class="pre">beta=0.94</span></code> produce a very reasonable fit to this multiplicity
+fraction distribution:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/binar_distr.webp"><img alt="../_images/binar_distr.webp" src="../_images/binar_distr.webp" style="width: 726.25px; height: 396.2px;" />
+</a>
+</figure>
+<p>These are thus suggested as fixed values for the <code class="docutils literal notranslate"><span class="pre">alpha,</span> <span class="pre">beta</span></code> parameters. The user
+can of course choose to fit either or both of them, or fix them to different values. For
+example, fixing <code class="docutils literal notranslate"><span class="pre">alpha=0.5,</span> <span class="pre">beta=0.0</span></code> would produce a synthetic cluster with
+approximately 50% of binary systems, distributed uniformly across masses
+(i.e.: not primary mass dependent).</p>
+</section>
+<section id="extrinsic-parameters">
+<h3>Extrinsic parameters<a class="headerlink" href="#extrinsic-parameters" title="Link to this heading">#</a></h3>
+<p>The extrinsic parameters are related to two external processes affecting stellar
+clusters: their distance and the extinction associated to their line of sight. The
+distance is measured by the distance modulus <code class="docutils literal notranslate"><span class="pre">dm</span></code>, which is the amount added to the
+photometric magnitude to position the cluster at the proper distance from us.</p>
+<p>The three remaining parameters are linked to the extinction process: the total
+extinction <code class="docutils literal notranslate"><span class="pre">Av</span></code>, the ratio of total to selective extinction <code class="docutils literal notranslate"><span class="pre">Rv</span></code>, and the
+differential reddening <code class="docutils literal notranslate"><span class="pre">DR</span></code>.</p>
+<p>The first two are related through the equation:</p>
+<div class="math notranslate nohighlight">
+\[A_V = R_V \times E_{B-V}\]</div>
+<p>Finally, the differential reddening parameter <code class="docutils literal notranslate"><span class="pre">DR</span></code> adds random scatter to the cluster
+stars affected by <code class="docutils literal notranslate"><span class="pre">Av</span></code>. The distribution for this scatter is controlled setting the
+argument <code class="docutils literal notranslate"><span class="pre">DR_distribution</span></code> when the <code class="xref py py-obj docutils literal notranslate"><span class="pre">synthetic</span></code> object is instantiated (as
+explained in <a class="reference internal" href="#ref-defining"><span class="std std-ref">Defining the object</span></a>), which can currently be either a uniform or a
+normal distribution.</p>
+</section>
+</section>
+<section id="mass-and-binarity">
+<span id="masses-and-binarity"></span><h2>Mass and binarity<a class="headerlink" href="#mass-and-binarity" title="Link to this heading">#</a></h2>
+<p>Using methods available in the <a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic" title="asteca.Synthetic"><code class="xref py py-class docutils literal notranslate"><span class="pre">asteca.Synthetic</span></code></a> class, we can estimate
+for an observed cluster:</p>
+<ul class="simple">
+<li><p>The individual stellar masses and their probability of being binary systems,</p></li>
+<li><p>the total binary fraction of the cluster, and</p></li>
+<li><p>the different masses associated to the cluster</p></li>
+</ul>
+<p>The <a class="reference internal" href="masses_bfr.html#masses-bfr-ntbk"><span class="std std-ref">Masses and binary fraction</span></a> tutorial contains more details and examples on how to
+perform these analyses.</p>
+<p>Regarding the cluster masses, <strong>ASteCA</strong> estimates several different masses for the
+cluster, as explained below.</p>
+<p>The total initial mass of a cluster can be split in several parts, as follows:</p>
+<div class="math notranslate nohighlight" id="equation-eq-mi1">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq-mi1" title="Link to this equation">#</a></span>\[M_{i} = M_{a} + M_{evol} + M_{dyn}\]</div>
+<p>where <span class="math notranslate nohighlight">\(M_{i}\)</span> is the initial mass, <span class="math notranslate nohighlight">\(M_{a}\)</span> is the actual mass,
+<span class="math notranslate nohighlight">\(M_{evol}\)</span> is the mass <strong>lost</strong> via stellar evolution, and <span class="math notranslate nohighlight">\(M_{dyn}\)</span> is
+the mass <strong>lost</strong> through dynamical effects (or <em>dissolution</em>). The actual mass
+<span class="math notranslate nohighlight">\(M_{a}\)</span> can be further split as:</p>
+<div class="math notranslate nohighlight">
+\[M_{a} = M_{obs} + M_{phot}\]</div>
+<p>where <span class="math notranslate nohighlight">\(M_{obs}\)</span> is the observed mass (e.g.: the sum of individual stellar masses
+in the observed CMD) and <span class="math notranslate nohighlight">\(M_{phot}\)</span> is the mass <strong>unobserved</strong> due to photometric
+effects (i.e: the low mass stars beyond the maximum magnitude cut). The total initial
+mass can thus be written as the sum of all of its components as:</p>
+<div class="math notranslate nohighlight">
+\[M_{i} = M_{obs} + M_{phot} + M_{evol} + M_{dyn}\]</div>
+<p>The actual mass <span class="math notranslate nohighlight">\(M_{a}\)</span> is estimated by <strong>ASteCA</strong> combining the observed and
+photometric masses. The observed mass <span class="math notranslate nohighlight">\(M_{obs}\)</span> is approximated as the sum of the
+individual stellar masses of many synthetic clusters, sampled with parameters
+matching those of the observed cluster. The photometric mass <span class="math notranslate nohighlight">\(M_{phot}\)</span> is inferred
+by summing the mass that exists below the mass value associated to the maximum observed
+magnitude in the cluster. This requires sampling an IMF with a very large mass, and
+obtaining the ratio of <span class="math notranslate nohighlight">\(M_{obs}\)</span> to total mass; this ratio is the applied to the
+sum of masses below the mass cut in the IMF to estimate <span class="math notranslate nohighlight">\(M_{phot}\)</span>.
+As stated above, the sum of these two masses is equivalent to <span class="math notranslate nohighlight">\(M_{a}\)</span>.</p>
+<p>Following <a class="reference external" href="https://www.aanda.org/articles/aa/abs/2005/37/aa2241-04/aa2241-04.html">Lamers et al. (2005)</a> Eq. 7,
+the initial mass can be estimated via:</p>
+<div class="math notranslate nohighlight" id="equation-eq-mi2">
+<span class="eqno">(2)<a class="headerlink" href="#equation-eq-mi2" title="Link to this equation">#</a></span>\[M_i \simeq \left\{ M_a^{\gamma} + \frac{\gamma t}{t_0} \right\}^{1/\gamma} \mu_{\text
+{evol}}(Z, t)^{-1}\]</div>
+<p>where <span class="math notranslate nohighlight">\(M_{a}\)</span> is the actual mass, <span class="math notranslate nohighlight">\(t\)</span> is the cluster’s age,
+<span class="math notranslate nohighlight">\(\mu_{\text{evol}}(Z, t)\)</span> is the “<em>fraction of the initial mass of the cluster that
+would have remained at age t, if stellar evolution would have been the only mass
+loss mechanism</em>”, <span class="math notranslate nohighlight">\({\gamma}\)</span> is a constant, and <span class="math notranslate nohighlight">\(t_{0}\)</span> is “<em>a constant that
+depends on the tidal field of the particular galaxy in which the cluster moves and on
+the ellipticity of its orbit</em>”.</p>
+<p>The <span class="math notranslate nohighlight">\(\gamma\)</span> constant is usually set to 0.62 and the
+<span class="math notranslate nohighlight">\(\mu_{\text{evol}}(Z, t)\)</span> parameter can be estimated using a 3rd degree polynomial
+as shown in
+<a class="reference external" href="http://adsabs.harvard.edu/abs/2010MNRAS.409..305L">Lamers, Baumgardt &amp; Gieles (2010)</a>,
+Table B2.</p>
+<p>The dissolution parameter <span class="math notranslate nohighlight">\(t_0\)</span> of a cluster is the hypothetical dissolution
+time-scale of a cluster of 1 <span class="math notranslate nohighlight">\(M_{\odot}\)</span> and is related to the disruption time
+<span class="math notranslate nohighlight">\(t_{dis}\)</span> (defined as the time when 5% of the initial number of stars remain in
+the cluster) via:</p>
+<div class="math notranslate nohighlight">
+\[t_{dis} = t_{0} M_i^{\gamma}\]</div>
+<p>Furthermore, <span class="math notranslate nohighlight">\(t_0\)</span> is expected to depend on the ambient density
+<span class="math notranslate nohighlight">\(\rho_{amb}\)</span> at the location of the clusters in the Galaxy as:</p>
+<div class="math notranslate nohighlight">
+\[t_{0} = C_{env} (1-\epsilon) 10^{-4\gamma} \rho_{amb}^{-1/2}\]</div>
+<p>where <span class="math notranslate nohighlight">\(C_{env}\)</span> is a constant set to 810 Myr (<a class="reference external" href="https://www.aanda.org/articles/aa/abs/2005/01/aa1476/aa1476.html">Lamers, Gieles &amp; Zwart 2005</a>),
+<span class="math notranslate nohighlight">\(\epsilon\)</span> is the eccentricity of the orbit, and <span class="math notranslate nohighlight">\(\rho_{amb}\)</span> is the ambient
+density which depends on the adopted gravitational potential field.</p>
+<p>Following <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.522..956A/abstract">Angelo et al. (2023)</a>, <strong>ASteCA</strong> uses by
+default <span class="math notranslate nohighlight">\(\epsilon=0.08\)</span> and estimates <span class="math notranslate nohighlight">\(\rho_{amb}\)</span> as:</p>
+<div class="math notranslate nohighlight">
+\[\rho_{\text{amb}} = \frac{1}{4\pi G} \nabla^2 \left[ \phi_B(r) + \phi_D(\rho, z) + \phi_H(r) \right]\]</div>
+<p>where <span class="math notranslate nohighlight">\(\phi_B(r),\, \phi_D(\rho, z),\, \phi_H(r)\)</span> are the bulge, disc and halo
+potentials, respectively (see Eqs 8, 9 and 10 of the Angelo et al. article to see how
+these are modeled). The user can also use a custom <span class="math notranslate nohighlight">\(\rho_{\text{amb}}\)</span> value,
+bypassing this estimation.</p>
+<p>Plugging these values into Eq <a class="reference internal" href="#equation-eq-mi2">(2)</a>, we can obtain an estimate of <span class="math notranslate nohighlight">\(M_{i}\)</span>.
+With this value we can then obtain <span class="math notranslate nohighlight">\(M_{evol}\)</span> through the
+<span class="math notranslate nohighlight">\(\mu_{\text{evol}}(Z, t)\)</span> parameter as:</p>
+<div class="math notranslate nohighlight">
+\[M_{evol} = M_{i}  \times [1 - \mu_{\text{evol}}(Z, t)]\]</div>
+<p>Finally, the last remaining mass is the dynamical mass which we estimate simply
+using Eq <a class="reference internal" href="#equation-eq-mi1">(1)</a> as:</p>
+<div class="math notranslate nohighlight">
+\[M_{dyn} = M_{i} - M_{a} - M_{evol}\]</div>
+<p>The distributions for these masses are obtained through a bootstrap process that
+takes the uncertainties in the fundamental parameters into account.</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="isochrones_mod.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Isochrones module</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="likelihood_mod.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Likelihood module</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-the-object">Defining the object</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calibrating">Calibrating</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generating">Generating</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intrinsic-parameters">Intrinsic parameters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extrinsic-parameters">Extrinsic parameters</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-and-binarity">Mass and binarity</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Gabriel I Perren
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Gabriel I Perren.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

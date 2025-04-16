@@ -1,0 +1,1005 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Structure analysis &#8212; [ ASteCA ]</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=2dd1c7b5" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=3af6fc4c"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contents/structure';</script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Membership probabilities" href="membership.html" />
+    <link rel="prev" title="Tutorials" href="tutorials.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">[ ASteCA ]</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="user_guide.html">User Guide</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="cluster_mod.html">Cluster module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="membership_mod.html">Membership module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="isochrones_mod.html">Isochrones module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synthetic_mod.html">Synthetic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="likelihood_mod.html">Likelihood module</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="tutorials.html">Tutorials</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Structure analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="membership.html">Membership probabilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synthetic.html">Generate synthetic clusters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paramfit.html">Parameters fitting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="masses_bfr.html">Masses and binary fraction</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Cluster.html">Cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Membership.html">Membership</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Isochrones.html">Isochrones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Synthetic.html">Synthetic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Likelihood.html">Likelihood</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/asteca/ASteCA/main?urlpath=tree/docs/contents/structure.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/asteca/ASteCA/blob/main/docs/contents/structure.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/asteca/ASteCA" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/asteca/ASteCA/edit/main/docs/contents/structure.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/asteca/ASteCA/issues/new?title=Issue%20on%20page%20%2Fcontents/structure.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/contents/structure.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Structure analysis</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#center-estimation">Center estimation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radius-estimation">Radius estimation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#number-of-members">Number of members</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="structure-analysis">
+<span id="structure-ntbk"></span><h1>Structure analysis<a class="headerlink" href="#structure-analysis" title="Link to this heading">#</a></h1>
+<p>The first step in the analysis of a stellar cluster is to load the data file as a <a class="reference internal" href="../build/api/asteca.Cluster.html#asteca.Cluster" title="asteca.Cluster"><span class="xref myst py py-class">Cluster</span></a> object, the user can employ the library of their choice. For example, the <a class="reference external" href="https://pandas.pydata.org/">pandas</a> library allows you to easily read a <a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> file as a <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html">pandas DataFrame</a>:</p>
+<div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">config</span> InlineBackend.figure_format = &quot;retina&quot;
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># Load the observed cluster with pandas. This is an example cluster</span>
+<span class="c1"># used for this notebook, containing Gaia DR3 data</span>
+<span class="n">clust_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../_static/field.csv&quot;</span><span class="p">)</span>
+<span class="n">clust_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DR3Name</th>
+      <th>RA_ICRS</th>
+      <th>DE_ICRS</th>
+      <th>Plx</th>
+      <th>e_Plx</th>
+      <th>PM</th>
+      <th>pmRA</th>
+      <th>e_pmRA</th>
+      <th>pmDE</th>
+      <th>e_pmDE</th>
+      <th>Gmag</th>
+      <th>e_Gmag</th>
+      <th>BP-RP</th>
+      <th>e_BP-RP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>6.9702</td>
+      <td>61.0644</td>
+      <td>0.4155</td>
+      <td>0.1298</td>
+      <td>4.723</td>
+      <td>-4.596</td>
+      <td>0.113</td>
+      <td>-1.088</td>
+      <td>0.126</td>
+      <td>18.236310</td>
+      <td>0.003055</td>
+      <td>1.417509</td>
+      <td>0.0181</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>6.9730</td>
+      <td>61.0663</td>
+      <td>0.1394</td>
+      <td>0.1147</td>
+      <td>0.728</td>
+      <td>-0.709</td>
+      <td>0.101</td>
+      <td>0.164</td>
+      <td>0.115</td>
+      <td>18.068916</td>
+      <td>0.002972</td>
+      <td>1.489637</td>
+      <td>0.0251</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>6.9929</td>
+      <td>61.0615</td>
+      <td>0.1798</td>
+      <td>0.0815</td>
+      <td>1.397</td>
+      <td>-1.345</td>
+      <td>0.075</td>
+      <td>0.374</td>
+      <td>0.071</td>
+      <td>17.406872</td>
+      <td>0.002857</td>
+      <td>1.895990</td>
+      <td>0.0133</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>6.8977</td>
+      <td>61.0641</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>18.103613</td>
+      <td>0.007146</td>
+      <td>1.127492</td>
+      <td>0.0262</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>6.9032</td>
+      <td>61.0656</td>
+      <td>0.2339</td>
+      <td>0.0175</td>
+      <td>2.666</td>
+      <td>-2.651</td>
+      <td>0.017</td>
+      <td>0.277</td>
+      <td>0.018</td>
+      <td>14.180438</td>
+      <td>0.002762</td>
+      <td>1.828795</td>
+      <td>0.0049</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>8678</th>
+      <td>8679</td>
+      <td>5.8419</td>
+      <td>61.5723</td>
+      <td>0.3010</td>
+      <td>0.0532</td>
+      <td>2.920</td>
+      <td>-2.422</td>
+      <td>0.048</td>
+      <td>-1.631</td>
+      <td>0.049</td>
+      <td>16.835844</td>
+      <td>0.002816</td>
+      <td>1.374006</td>
+      <td>0.0101</td>
+    </tr>
+    <tr>
+      <th>8679</th>
+      <td>8680</td>
+      <td>5.8271</td>
+      <td>61.5857</td>
+      <td>0.3655</td>
+      <td>0.0938</td>
+      <td>1.047</td>
+      <td>0.623</td>
+      <td>0.083</td>
+      <td>-0.842</td>
+      <td>0.082</td>
+      <td>17.654474</td>
+      <td>0.002899</td>
+      <td>1.352100</td>
+      <td>0.0132</td>
+    </tr>
+    <tr>
+      <th>8680</th>
+      <td>8681</td>
+      <td>5.8430</td>
+      <td>61.5898</td>
+      <td>0.6432</td>
+      <td>0.1565</td>
+      <td>3.109</td>
+      <td>-3.059</td>
+      <td>0.144</td>
+      <td>-0.553</td>
+      <td>0.148</td>
+      <td>17.699040</td>
+      <td>0.003224</td>
+      <td>1.523220</td>
+      <td>0.0131</td>
+    </tr>
+    <tr>
+      <th>8681</th>
+      <td>8682</td>
+      <td>5.8384</td>
+      <td>61.5882</td>
+      <td>0.3607</td>
+      <td>0.1222</td>
+      <td>2.758</td>
+      <td>-2.755</td>
+      <td>0.109</td>
+      <td>0.130</td>
+      <td>0.116</td>
+      <td>18.355470</td>
+      <td>0.003012</td>
+      <td>1.699585</td>
+      <td>0.0230</td>
+    </tr>
+    <tr>
+      <th>8682</th>
+      <td>8683</td>
+      <td>5.8014</td>
+      <td>61.5829</td>
+      <td>0.2103</td>
+      <td>0.1195</td>
+      <td>1.186</td>
+      <td>-0.303</td>
+      <td>0.104</td>
+      <td>-1.146</td>
+      <td>0.104</td>
+      <td>18.257357</td>
+      <td>0.003048</td>
+      <td>1.616970</td>
+      <td>0.0298</td>
+    </tr>
+  </tbody>
+</table>
+<p>8683 rows × 14 columns</p>
+</div></div></div>
+</div>
+<p>Passing this data to the <a class="reference internal" href="../build/api/asteca.Cluster.html#asteca.Cluster" title="asteca.Cluster"><span class="xref myst py py-class">Cluster</span></a> class creates an object which we call here <code class="docutils literal notranslate"><span class="pre">my_field</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">asteca</span>
+
+<span class="n">my_field</span> <span class="o">=</span> <span class="n">asteca</span><span class="o">.</span><span class="n">Cluster</span><span class="p">(</span>
+    <span class="n">ra</span><span class="o">=</span><span class="n">clust_df</span><span class="p">[</span><span class="s2">&quot;RA_ICRS&quot;</span><span class="p">],</span>
+    <span class="n">dec</span><span class="o">=</span><span class="n">clust_df</span><span class="p">[</span><span class="s2">&quot;DE_ICRS&quot;</span><span class="p">],</span>
+    <span class="n">magnitude</span><span class="o">=</span><span class="n">clust_df</span><span class="p">[</span><span class="s2">&quot;Gmag&quot;</span><span class="p">],</span>
+    <span class="n">e_mag</span><span class="o">=</span><span class="n">clust_df</span><span class="p">[</span><span class="s2">&quot;e_Gmag&quot;</span><span class="p">],</span>
+    <span class="n">color</span><span class="o">=</span><span class="n">clust_df</span><span class="p">[</span><span class="s2">&quot;BP-RP&quot;</span><span class="p">],</span>
+    <span class="n">e_color</span><span class="o">=</span><span class="n">clust_df</span><span class="p">[</span><span class="s2">&quot;e_BP-RP&quot;</span><span class="p">],</span>
+    <span class="n">pmra</span><span class="o">=</span><span class="n">clust_df</span><span class="p">[</span><span class="s2">&quot;pmRA&quot;</span><span class="p">],</span>
+    <span class="n">pmde</span><span class="o">=</span><span class="n">clust_df</span><span class="p">[</span><span class="s2">&quot;pmDE&quot;</span><span class="p">],</span>
+    <span class="n">plx</span><span class="o">=</span><span class="n">clust_df</span><span class="p">[</span><span class="s2">&quot;Plx&quot;</span><span class="p">],</span>
+    <span class="n">e_pmra</span><span class="o">=</span><span class="n">clust_df</span><span class="p">[</span><span class="s2">&quot;e_pmRA&quot;</span><span class="p">],</span>
+    <span class="n">e_pmde</span><span class="o">=</span><span class="n">clust_df</span><span class="p">[</span><span class="s2">&quot;e_pmDE&quot;</span><span class="p">],</span>
+    <span class="n">e_plx</span><span class="o">=</span><span class="n">clust_df</span><span class="p">[</span><span class="s2">&quot;e_Plx&quot;</span><span class="p">],</span>
+    <span class="n">verbose</span><span class="o">=</span><span class="mi">2</span>                   <span class="c1"># Print info to screen</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Instantiating cluster...
+Columns read   : RA, DEC, Magnitude, e_mag, Color, e_color, Plx, pmRA, pmDE
+N_stars        : 8683
+N_clust_min    : 25
+N_clust_max    : 5000
+Cluster object generated
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can generate a simple plot to see how our loaded data looks like:</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="p">((</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">),</span> <span class="p">(</span><span class="n">ax3</span><span class="p">,</span> <span class="n">ax4</span><span class="p">))</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+
+<span class="n">ax1</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">my_field</span><span class="o">.</span><span class="n">ra</span><span class="p">,</span> <span class="n">my_field</span><span class="o">.</span><span class="n">dec</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.2</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;ra&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;dec&quot;</span><span class="p">)</span>
+
+<span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">my_field</span><span class="o">.</span><span class="n">pmra</span><span class="p">,</span> <span class="n">my_field</span><span class="o">.</span><span class="n">pmde</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.2</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Zoom in to better see the density</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;pmra&quot;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;pmde&quot;</span><span class="p">)</span>
+
+<span class="n">ax3</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">my_field</span><span class="o">.</span><span class="n">plx</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;plx&quot;</span><span class="p">)</span>
+
+<span class="n">ax4</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">my_field</span><span class="o">.</span><span class="n">color</span><span class="p">,</span> <span class="n">my_field</span><span class="o">.</span><span class="n">mag</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.2</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">ax4</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+<span class="n">ax4</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;BP-RP&quot;</span><span class="p">)</span>
+<span class="n">ax4</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Gmag&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../_images/3b00f241551f7d5546a72783f886f22545681724111c409763b9d96b2b0a38b2.png" src="../_images/3b00f241551f7d5546a72783f886f22545681724111c409763b9d96b2b0a38b2.png" />
+</div>
+</div>
+<p>We can see that this is an <em>observed field</em>, and not a data file with the cluster member’s already identified.</p>
+<section id="center-estimation">
+<h2>Center estimation<a class="headerlink" href="#center-estimation" title="Link to this heading">#</a></h2>
+<p>To estimate the center we call the <a class="reference internal" href="../build/api/asteca.Cluster.html#asteca.Cluster.get_center" title="asteca.Cluster.get_center"><span class="xref myst py py-meth">get_center()</span></a> method on the <code class="docutils literal notranslate"><span class="pre">my_field</span></code> object defined above:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Estimate the cluster&#39;s center coordinates, use the default `knn_5d` algorithm</span>
+<span class="n">my_field</span><span class="o">.</span><span class="n">get_center</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Center coordinates found
+radec_c        : (6.3049, 61.3218)
+pms_c          : (-2.811, -1.070)
+plx_c          : 0.288
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can extract the center values found by accessing the attributes with:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Access estimated center values</span>
+<span class="n">ra_c</span><span class="p">,</span> <span class="n">dec_c</span> <span class="o">=</span> <span class="n">my_field</span><span class="o">.</span><span class="n">radec_c</span>
+<span class="n">pmra_c</span><span class="p">,</span> <span class="n">pmde_c</span> <span class="o">=</span> <span class="n">my_field</span><span class="o">.</span><span class="n">pms_c</span>
+<span class="n">plx_c</span> <span class="o">=</span> <span class="n">my_field</span><span class="o">.</span><span class="n">plx_c</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>and plot them over our field data:</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+
+<span class="n">ax1</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">my_field</span><span class="o">.</span><span class="n">ra</span><span class="p">,</span> <span class="n">my_field</span><span class="o">.</span><span class="n">dec</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.2</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ra_c</span><span class="p">,</span> <span class="n">dec_c</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;ra&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;dec&quot;</span><span class="p">)</span>
+
+<span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">my_field</span><span class="o">.</span><span class="n">pmra</span><span class="p">,</span> <span class="n">my_field</span><span class="o">.</span><span class="n">pmde</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.2</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pmra_c</span><span class="p">,</span> <span class="n">pmde_c</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Zoom in to better see the density</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;pmra&quot;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;pmde&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../_images/bc5f11bed88112b961e7c56eb991984324370709e7a3eaf8cdc01db8b8424705.png" src="../_images/bc5f11bed88112b961e7c56eb991984324370709e7a3eaf8cdc01db8b8424705.png" />
+</div>
+</div>
+<p>We can also try the other method to estimate center values</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Apply the `kde_2d` algorithm on `(ra, dec)` data</span>
+<span class="n">my_field</span><span class="o">.</span><span class="n">get_center</span><span class="p">(</span><span class="s1">&#39;kde_2d&#39;</span><span class="p">)</span>
+
+<span class="c1"># Apply the `kde_2d` algorithm on `(pmra, pmde)` data</span>
+<span class="n">my_field</span><span class="o">.</span><span class="n">get_center</span><span class="p">(</span><span class="s1">&#39;kde_2d&#39;</span><span class="p">,</span> <span class="n">data_2d</span><span class="o">=</span><span class="s1">&#39;pms&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Center coordinates found
+radec_c        : (6.3142, 61.3262)
+
+Center coordinates found
+pms_c        : (-2.8078, -1.0741)
+</pre></div>
+</div>
+</div>
+</div>
+<p>where we see that the resulting values are very similar to the ones obtained previously.</p>
+</section>
+<section id="radius-estimation">
+<h2>Radius estimation<a class="headerlink" href="#radius-estimation" title="Link to this heading">#</a></h2>
+<p>There is yet no method included in <strong>ASteCA</strong> to estimate the radius parameter. The user can manually set this attribute with:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_field</span><span class="o">.</span><span class="n">radius</span> <span class="o">=</span> <span class="mf">0.09</span>  <span class="c1"># Value in degrees</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="number-of-members">
+<h2>Number of members<a class="headerlink" href="#number-of-members" title="Link to this heading">#</a></h2>
+<p>We can estimate the number of members for the cluster embedded in this field using the default <code class="docutils literal notranslate"><span class="pre">ripley</span></code> algorithm which works on <code class="docutils literal notranslate"><span class="pre">(ra,</span> <span class="pre">dec,</span> <span class="pre">pmra,</span> <span class="pre">pmde,</span> <span class="pre">plx)</span></code> data, by applying the <a class="reference internal" href="../build/api/asteca.Cluster.html#asteca.Cluster.get_nmembers" title="asteca.Cluster.get_nmembers"><span class="xref myst py py-meth">get_nmembers()</span></a> method:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_field</span><span class="o">.</span><span class="n">get_nmembers</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of members estimated
+N_cluster      : 600
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can also use the <code class="docutils literal notranslate"><span class="pre">density</span></code> algorithm which is applied on <code class="docutils literal notranslate"><span class="pre">(ra,</span> <span class="pre">dec)</span></code> data and assumes that
+the <code class="docutils literal notranslate"><span class="pre">radius</span></code> argument in <code class="docutils literal notranslate"><span class="pre">my_field</span></code> is also defined:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Estimate the number of cluster members, using the `density` algorithm. The radius</span>
+<span class="c1"># argument was included above</span>
+<span class="n">my_field</span><span class="o">.</span><span class="n">get_nmembers</span><span class="p">(</span><span class="s2">&quot;density&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of members estimated
+N_cluster      : 247
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Notice that the resulting values for the estimated number of members are quite different between both methods. Since the <code class="docutils literal notranslate"><span class="pre">N_cluster</span></code> parameter is very important for the estimation of the <a class="reference internal" href="membership.html"><span class="doc std std-doc">membership probabilities</span></a> later on, be sure to choose its value carefully.</p>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="tutorials.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Tutorials</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="membership.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Membership probabilities</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#center-estimation">Center estimation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radius-estimation">Radius estimation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#number-of-members">Number of members</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Gabriel I Perren
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Gabriel I Perren.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

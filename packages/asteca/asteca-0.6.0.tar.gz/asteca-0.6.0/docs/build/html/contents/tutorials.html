@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Tutorials &#8212; [ ASteCA ]</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=2dd1c7b5" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=3af6fc4c"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contents/tutorials';</script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Structure analysis" href="structure.html" />
+    <link rel="prev" title="Likelihood module" href="likelihood_mod.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">[ ASteCA ]</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="user_guide.html">User Guide</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="cluster_mod.html">Cluster module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="membership_mod.html">Membership module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="isochrones_mod.html">Isochrones module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synthetic_mod.html">Synthetic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="likelihood_mod.html">Likelihood module</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Tutorials</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="structure.html">Structure analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="membership.html">Membership probabilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synthetic.html">Generate synthetic clusters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paramfit.html">Parameters fitting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="masses_bfr.html">Masses and binary fraction</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Cluster.html">Cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Membership.html">Membership</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Isochrones.html">Isochrones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Synthetic.html">Synthetic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build/api/asteca.Likelihood.html">Likelihood</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/asteca/ASteCA" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/asteca/ASteCA/edit/main/docs/contents/tutorials.rst" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/asteca/ASteCA/issues/new?title=Issue%20on%20page%20%2Fcontents/tutorials.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/contents/tutorials.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Tutorials</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="tutorials">
+<span id="id1"></span><h1>Tutorials<a class="headerlink" href="#tutorials" title="Link to this heading">#</a></h1>
+<p>This section contains a set of tutorials designed to guide the user through different
+types of analyses, e.g.: analyzing the structure of the cluster, estimating the
+cluster’s membership probabilities, generating synthetic clusters,
+and estimating a cluster’s fundamental parameters.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structure.html">Structure analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="membership.html">Membership probabilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synthetic.html">Generate synthetic clusters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paramfit.html">Parameters fitting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="masses_bfr.html">Masses and binary fraction</a></li>
+</ul>
+</div>
+<p>The <a class="reference internal" href="structure.html#structure-ntbk"><span class="std std-ref">Structure analysis</span></a> notebook serves as a guide to the initial structural
+characterization of a stellar cluster field. It covers loading data,
+visualizing distributions, and applying built-in methods to estimate the cluster center
+and the number of likely members, while also pointing out parameters like the radius that
+currently require manual input or external estimation.</p>
+<p>The <a class="reference internal" href="membership.html#membership-ntbk"><span class="std std-ref">Membership probabilities</span></a> notebook serves as a practical guide to applying the
+<a class="reference internal" href="../build/api/asteca.Membership.html#asteca.Membership.fastmp" title="asteca.Membership.fastmp"><code class="xref py py-meth docutils literal notranslate"><span class="pre">asteca.Membership.fastmp()</span></code></a> and <a class="reference internal" href="../build/api/asteca.Membership.html#asteca.Membership.bayesian" title="asteca.Membership.bayesian"><code class="xref py py-meth docutils literal notranslate"><span class="pre">asteca.Membership.bayesian()</span></code></a> membership
+probability estimation methods. It highlights the different data requirements (5D for
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">fastmp</span></code>, photometric for <code class="xref py py-obj docutils literal notranslate"><span class="pre">bayesian</span></code>) and necessary preliminary parameter
+estimations (center, <code class="docutils literal notranslate"><span class="pre">N_cluster</span></code>, radius for <code class="xref py py-obj docutils literal notranslate"><span class="pre">bayesian</span></code>) for each method,
+concluding with a visual comparison of their results.</p>
+<p>The <a class="reference internal" href="synthetic.html#synth-ntbk"><span class="std std-ref">Generate synthetic clusters</span></a> notebook demonstrates the process of generating synthetic star
+clusters via the <a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic.generate" title="asteca.Synthetic.generate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">asteca.Synthetic.generate()</span></code></a> method using specified fundamental
+parameters. Optionally, the generator can be calibrated with observed cluster data using
+the <a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic.calibrate" title="asteca.Synthetic.calibrate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">asteca.Synthetic.calibrate()</span></code></a> method to enhance realism in terms of star count, magnitude limits, and errors. The process culminates in visualizing the resulting synthetic Color-Magnitude Diagrams (CMDs), often distinguishing stellar systems and potentially overlaying the underlying isochrone.</p>
+<p>The <a class="reference internal" href="paramfit.html#paramfit-ntbk"><span class="std std-ref">Parameters fitting</span></a> notebook provides a step-by-step guide to estimating the
+fundamental parameters of a stellar cluster using <strong>ASteCA</strong> and the <a class="reference external" href="https://pyabc.readthedocs.io/">pyABC</a>
+library. The tutorial shows how to set up the fitting process, run it, and interpret
+the results, including the final parameter estimates (medians and standard deviations)
+along with <code class="docutils literal notranslate"><span class="pre">pyABC</span></code>  visualizations and a comparison Color-Magnitude Diagram (CMD).</p>
+<p>Given an observed cluster the <a class="reference internal" href="masses_bfr.html#masses-bfr-ntbk"><span class="std std-ref">Masses and binary fraction</span></a> notebook shows how to apply
+the following methods:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic.get_models" title="asteca.Synthetic.get_models"><code class="xref py py-meth docutils literal notranslate"><span class="pre">asteca.Synthetic.get_models()</span></code></a>: sample a set of synthetic clusters
+with the same parameters as the observed cluster (previously calibrated and fitted)</p></li>
+<li><p><a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic.stellar_masses" title="asteca.Synthetic.stellar_masses"><code class="xref py py-meth docutils literal notranslate"><span class="pre">asteca.Synthetic.stellar_masses()</span></code></a>: estimate its individual stellar masses and
+their probabilities of being binary systems</p></li>
+<li><p><a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic.binary_fraction" title="asteca.Synthetic.binary_fraction"><code class="xref py py-meth docutils literal notranslate"><span class="pre">asteca.Synthetic.binary_fraction()</span></code></a>: calculate the overall binary fraction of
+the cluster</p></li>
+<li><p><a class="reference internal" href="../build/api/asteca.Synthetic.html#asteca.Synthetic.cluster_masses" title="asteca.Synthetic.cluster_masses"><code class="xref py py-meth docutils literal notranslate"><span class="pre">asteca.Synthetic.cluster_masses()</span></code></a>: determine various associated cluster masses
+(initial, actual, observed, etc.)</p></li>
+</ul>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="likelihood_mod.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Likelihood module</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="structure.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Structure analysis</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Gabriel I Perren
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Gabriel I Perren.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
