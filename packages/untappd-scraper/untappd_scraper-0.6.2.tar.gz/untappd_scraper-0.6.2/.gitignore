@@ -1,0 +1,8 @@
+__pycache__/
+.vscode/settings.json
+*.log
+*/package.zip
+*/packages/
+*/requirements.txt
+html.sqlite
+output.html
