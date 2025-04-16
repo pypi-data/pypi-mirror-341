@@ -1,0 +1,104 @@
+Metadata-Version: 2.3
+Name: textual-mandelbrot
+Version: 0.8.2
+Summary: A simple Mandelbrot explorer for the terminal
+Project-URL: Homepage, https://github.com/davep/textual-mandelbrot
+Project-URL: Repository, https://github.com/davep/textual-mandelbrot
+Project-URL: Documentation, https://github.com/davep/textual-mandelbrot
+Project-URL: Source, https://github.com/davep/textual-mandelbrot
+Project-URL: Issues, https://github.com/davep/textual-mandelbrot/issues
+Project-URL: Discussions, https://github.com/davep/textual-mandelbrot/discussions
+Author-email: Dave Pearson <davep@davep.org>
+License: MIT License
+Keywords: library,mandelbrot,maths,terminal
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Terminals
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Requires-Dist: textual-canvas>=0.2.1
+Requires-Dist: textual>=3.1.0
+Description-Content-Type: text/markdown
+
+# textual-mandelbrot
+
+![mandelexp in action](https://raw.githubusercontent.com/davep/textual-mandelbrot/main/img/mandelexp01.png)
+![mandelexp in action](https://raw.githubusercontent.com/davep/textual-mandelbrot/main/img/mandelexp02.png)
+
+## Introduction
+
+This package provides a simple Mandelbrot set widget that can be used in
+[Textual](https://textual.textualize.io/) applications, and also provides an
+application that can be used to explore the classic Mandelbrot set in the
+terminal.
+
+## Installing
+
+### pipx
+
+The package can be installed using [`pipx`](https://pypa.github.io/pipx/):
+
+```sh
+$ pipx install textual-mandelbrot
+```
+
+### Homebrew
+
+The package is available via Homebrew. Use the following commands to install:
+
+```sh
+$ brew tap davep/homebrew
+$ brew install textual-mandelbrot
+```
+
+## Running
+
+Once installed you should be able to run the command `mandelexp` and the
+application will run.
+
+![mandelexp in action](https://raw.githubusercontent.com/davep/textual-mandelbrot/main/img/mandelexp03.png)
+![mandelexp in action](https://raw.githubusercontent.com/davep/textual-mandelbrot/main/img/mandelexp04.png)
+
+## Exploring
+
+If you use `mandelexp` to run up the display, the following keys are
+available:
+
+| Keys              | Action                                |
+|-------------------|---------------------------------------|
+| Up, w, k          | Move up                               |
+| Shift+Up, W, K    | Move up slowly                        |
+| Down, s, j        | Move down                             |
+| Shift+Down, S, J  | Move down slowly                      |
+| Left, a, h        | Move left                             |
+| Shift+Left, A, H  | Move left slowly                      |
+| Right, d, l       | Move right                            |
+| Shift+Right, D, L | Move right slowly                     |
+| PageUp, ]         | Zoom in                               |
+| PageDown, [       | Zoom out                              |
+| Ctrl+PageUp, }    | Zoom in deeper                        |
+| Ctrl+PageDown, {  | Zoom out wider                        |
+| *, Ctrl+Up        | Increase "multobrot"                  |
+| /, Ctrl+Down      | Decrease "multibrot"                  |
+| Ctrl+Shift+Up     | Increase "multibrot" in smaller steps |
+| Ctrl+Shift+Down   | Decrease "multibrot" in smaller steps |
+| Home              | Center 0,0 in the display             |
+| ,                 | Decrease iterations by 10             |
+| <                 | Decrease iterations by 100            |
+| .                 | Increase iterations by 10             |
+| >                 | Increase iterations by 100            |
+| Ctrl+r            | Reset to initial state                |
+| Escape            | Quit the application                  |
+| 1                 | Colour set 1                          |
+| 2                 | Colour set 2                          |
+| 3                 | Colour set 3                          |
+
+[//]: # (README.md ends here)
