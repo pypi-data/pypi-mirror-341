@@ -1,0 +1,2 @@
+[console_scripts]
+pysci-gpu-test = pySciTools.cli_gpu_test:main
