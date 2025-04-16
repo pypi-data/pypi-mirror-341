@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+cratedb_mcp/__init__.py
+cratedb_mcp/__main__.py
+cratedb_mcp/constants.py
+mseep_cratedb_mcp.egg-info/PKG-INFO
+mseep_cratedb_mcp.egg-info/SOURCES.txt
+mseep_cratedb_mcp.egg-info/dependency_links.txt
+mseep_cratedb_mcp.egg-info/requires.txt
+mseep_cratedb_mcp.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: mseep-cratedb-mcp
+Version: 0.0.1
+Summary: MCP server for CrateDB
+Home-page: 
+Author: mseep
+Author-email: support@skydeck.ai
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: mcp[cli]>=1.6.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: license-file
+Dynamic: requires-python
