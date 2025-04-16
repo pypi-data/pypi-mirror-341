@@ -1,0 +1,59 @@
+[project]
+name = "rcer-iot-client"
+version = "0.1.4"  
+authors = [
+        { name="Pedro", email="pedropablozavalat@uc.cl" },
+]
+description = "A client library for IoT projects in the RCER initiative"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Development Status :: 3 - Alpha",
+]
+dependencies = [
+        "aioftp==0.25.1",
+        "aiohttp==3.11.16",
+        "pydantic==2.11.3",
+        "dotenv==0.9.9",
+        
+]
+license = {text = "MIT"}
+
+
+[project.optional-dependencies]
+dev = [
+        "pytest==8.3.5",
+        "pytest-asyncio==0.26.0",
+        "black",
+        "coverage",
+        "flake8",
+        "pyflakes",
+        "pylint",
+        "build"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rcer_iot_client*"]
+
+
+[project.urls]
+Homepage = "https://github.com/pedrozavalat/rcer-iot-client"
+Issues = "https://github.com/pedrozavalat/rcer-iot-client/issues"
+
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+exclude = ["venv", ".venv", "build", "dist", "__pycache__"]
+fix = true
+lint.ignore = ["E501"]  
+
