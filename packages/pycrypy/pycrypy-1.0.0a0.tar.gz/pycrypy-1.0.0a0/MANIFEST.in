@@ -1,0 +1,27 @@
+# Author: Daniel Benjamin Perez Morales
+# GitHub: https://github.com/D4nitrix13
+# Gitlab: https://gitlab.com/D4nitrix13
+# Email: danielperezdev@proton.me
+
+# Include the main documentation files.
+include README.*
+
+# Include the project's license file.
+include LICENSE*
+
+# Include the following documents related to conduct and security.
+include CODE_OF_CONDUCT.md
+include CODIGO_CONDUCTA.md
+include SECURITY.*
+include pycrypy.spec
+
+# Include the project's requirements file for dependency installation.
+include requirements.txt
+
+# Include the contribution file to guide collaborators.
+include CONTRIBUCION.md
+
+# Include all data files in the 'src' and 'dist' directories.
+recursive-include src *
+recursive-include dist *
+
