@@ -1,0 +1,5 @@
+[console_scripts]
+macropython = mcpyrate.repl.macropython:main
+
+[gui_scripts]
+
