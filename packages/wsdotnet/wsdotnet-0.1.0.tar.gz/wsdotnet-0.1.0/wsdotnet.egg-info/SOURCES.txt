@@ -1,0 +1,6 @@
+setup.py
+googlemap/__init__.py
+wsdotnet.egg-info/PKG-INFO
+wsdotnet.egg-info/SOURCES.txt
+wsdotnet.egg-info/dependency_links.txt
+wsdotnet.egg-info/top_level.txt
