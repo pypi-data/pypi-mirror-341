@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: colour-image-toolbox
+Version: 0.0.1
+Summary: A toolbox for image processing and analysis, specifically in colour science.
+Author: Miaosen Zhou
+Author-email: jackchou00@zju.edu.cn
+Requires-Python: >=3.12
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: colour-science
+Dynamic: author
+Dynamic: author-email
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
