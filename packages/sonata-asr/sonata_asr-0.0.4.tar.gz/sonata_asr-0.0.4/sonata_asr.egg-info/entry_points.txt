@@ -1,0 +1,2 @@
+[console_scripts]
+sonata-asr = sonata.main:main
