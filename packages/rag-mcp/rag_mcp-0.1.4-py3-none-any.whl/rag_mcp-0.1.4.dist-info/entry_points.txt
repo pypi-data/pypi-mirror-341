@@ -1,0 +1,2 @@
+[console_scripts]
+rag-mcp = rag_mcp.document_server:main
