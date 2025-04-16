@@ -1,0 +1,3 @@
+[console_scripts]
+kumir-compose=kumir_compose.main:main
+
