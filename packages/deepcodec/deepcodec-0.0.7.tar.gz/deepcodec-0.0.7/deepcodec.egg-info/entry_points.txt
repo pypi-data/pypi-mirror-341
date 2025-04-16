@@ -1,0 +1,2 @@
+[console_scripts]
+deepcodec = deepcodec.__main__:mp_entrypoint
