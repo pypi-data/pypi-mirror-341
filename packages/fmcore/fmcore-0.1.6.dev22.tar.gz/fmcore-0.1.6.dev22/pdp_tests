@@ -1,0 +1,396 @@
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/langchain/__init__.py:30: UserWarning: Importing Anthropic from langchain root module is no longer supported. Please use langchain_community.llms.Anthropic instead.
+  warnings.warn(
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/langchain/__init__.py:30: UserWarning: Importing HuggingFaceHub from langchain root module is no longer supported. Please use langchain_community.llms.HuggingFaceHub instead.
+  warnings.warn(
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/langchain/__init__.py:30: UserWarning: Importing LLMChain from langchain root module is no longer supported. Please use langchain.chains.LLMChain instead.
+  warnings.warn(
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/langchain/__init__.py:30: UserWarning: Importing OpenAI from langchain root module is no longer supported. Please use langchain_community.llms.OpenAI instead.
+  warnings.warn(
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/langchain/__init__.py:30: UserWarning: Importing PromptTemplate from langchain root module is no longer supported. Please use langchain_core.prompts.PromptTemplate instead.
+  warnings.warn(
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/langchain/__init__.py:30: UserWarning: Importing Anthropic from langchain root module is no longer supported. Please use langchain_community.llms.Anthropic instead.
+  warnings.warn(
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/langchain/__init__.py:30: UserWarning: Importing HuggingFaceHub from langchain root module is no longer supported. Please use langchain_community.llms.HuggingFaceHub instead.
+  warnings.warn(
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/langchain/__init__.py:30: UserWarning: Importing LLMChain from langchain root module is no longer supported. Please use langchain.chains.LLMChain instead.
+  warnings.warn(
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/langchain/chat_models/__init__.py:33: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/langchain/chat_models/__init__.py:33: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/Volumes/workplace/fmcore/fmcore/src/fmcore/prompt_tuner/evaluator/base_evaluator.py:13: GenericBeforeBaseModelWarning: Classes should inherit from `BaseModel` before generic classes (e.g. `typing.Generic[T]`) for pydantic generics to work properly.
+  class BaseEvaluator(Generic[I, O], MutableTyped, Registry, ABC):
+/Volumes/workplace/fmcore/fmcore/src/fmcore/prompt_tuner/evaluator/llm_as_a_judge_boolean/llm_as_a_judge_boolean_evaluator.py:17: GenericBeforeBaseModelWarning: Classes should inherit from `BaseModel` before generic classes (e.g. `typing.Generic[T]`) for pydantic generics to work properly.
+  class LLMAsJudgeBooleanEvaluator(BaseEvaluator[Dict, bool]):
+/Volumes/workplace/fmcore/fmcore/src/fmcore/prompt_tuner/evaluator/classification/classification_evaluator.py:9: GenericBeforeBaseModelWarning: Classes should inherit from `BaseModel` before generic classes (e.g. `typing.Generic[T]`) for pydantic generics to work properly.
+  class ClassificationEvaluator(BaseEvaluator[Dict, bool]):
+Running Prompt Tuner with Classification
+Running Prompt Tuner with Boolean as judge
+{'task_type': 'TEXT_GENERATION', 'dataset_config': {'inputs': {'TRAIN': {'name': None, 'path': 's3://iml-development-us-east-1/starfish/data/train/HEADPHONES_earpiece_shape.parquet', 'storage': S3, 'format': PARQUET, 'contents': None, 'file_glob': None, 'data_schema': None}, 'TEST': {'name': None, 'path': 's3://iml-development-us-east-1/starfish/data/test/HEADPHONES_earpiece_shape.parquet', 'storage': S3, 'format': PARQUET, 'contents': None, 'file_glob': None, 'data_schema': None}}, 'output': {'name': 'results', 'path': 's3://iml-development-us-east-1/starfish/output/HEADPHONES_earpiece_shape.parquet', 'storage': S3, 'format': PARQUET, 'contents': None, 'file_glob': None, 'data_schema': None}}, 'prompt_config': {'prompt': "ROLE: You are a Catalog Expert. You analyze product information and you are trying your best to infer missing attribute values.\n\nAnalyze the provided Amazon product information in JSON format, detailed above, to determine the value in English of a specific attribute.\n\nYour task is to thoroughly examine the product details. If the attribute's value is clearly inferable from the provided information, make an accurate prediction. \nIn scenarios where the value cannot be deduced, indicate this with '[NO]' for Not Obtainable. \nIf the attribute does not pertain to the product, use '[NA]' for Not Applicable. \nEnsure your prediction is compatible with the attribute's data type, such as predicting 'True' or 'False' for Boolean attributes, or an integer for Integer attributes. Avoid using scientific notation for any prediction.\n        \nFocus your analysis on this specific attribute: \nattribute name: headphones.earpiece_shape", 'input_fields': [{'name': 'asin', 'description': 'This field represent the unique identifier for a product', 'field_type': 'string'}, {'name': 'product_type', 'description': 'This fields represent the type of product', 'field_type': 'string'}, {'name': 'attribute', 'description': 'This field represents the attribute to be extracted', 'field_type': 'string'}, {'name': 'asin_info', 'description': 'This field represent the information related to product', 'field_type': 'string'}, {'name': 'attribute_instructions', 'description': 'This field represent the additional information related to product like possible values for attribute_value', 'field_type': 'string'}], 'output_fields': [{'name': 'attribute_value', 'description': 'This field represent the value extracted for the given attribute_name from the product', 'field_type': 'string'}]}, 'framework': 'DSPY', 'optimizer_config': {'evaluator_config': {'evaluator_type': 'LLM_AS_A_JUDGE_BOOLEAN', 'evaluator_params': {'llm_config': {'provider_type': 'BEDROCK', 'model_id': 'anthropic.claude-3-5-sonnet-20240620-v1:0', 'model_params': {'temperature': 0.5, 'max_tokens': 1024, 'top_p': 0.5}, 'provider_params_list': [{'retries': {'max_retries': 50, 'backoff_factor': 1.0, 'jitter': 1.0, 'retryable_exceptions': ['InvalidSignatureException', 'ThrottlingException', 'ModelTimeoutException', 'ServiceUnavailableException', 'ModelNotReadyException', 'ServiceQuotaExceededException', 'ModelErrorException', 'EndpointConnectionError']}, 'rate_limit': {'max_rate': 50, 'time_period': 60}, 'role_arn': 'arn:aws:iam::863518436859:role/ModelFactoryBedrockAccessRole', 'region': 'us-east-1'}, {'retries': {'max_retries': 50, 'backoff_factor': 1.0, 'jitter': 1.0, 'retryable_exceptions': ['InvalidSignatureException', 'ThrottlingException', 'ModelTimeoutException', 'ServiceUnavailableException', 'ModelNotReadyException', 'ServiceQuotaExceededException', 'ModelErrorException', 'EndpointConnectionError']}, 'rate_limit': {'max_rate': 50, 'time_period': 60}, 'role_arn': 'arn:aws:iam::615299746603:role/ModelFactoryBedrockAccessRole', 'region': 'us-east-1'}, {'retries': {'max_retries': 50, 'backoff_factor': 1.0, 'jitter': 1.0, 'retryable_exceptions': ['InvalidSignatureException', 'ThrottlingException', 'ModelTimeoutException', 'ServiceUnavailableException', 'ModelNotReadyException', 'ServiceQuotaExceededException', 'ModelErrorException', 'EndpointConnectionError']}, 'rate_limit': {'max_rate': 50, 'time_period': 60}, 'role_arn': 'arn:aws:iam::615299746603:role/ModelFactoryBedrockAccessRole', 'region': 'us-west-2'}, {'retries': {'max_retries': 50, 'backoff_factor': 1.0, 'jitter': 1.0, 'retryable_exceptions': ['InvalidSignatureException', 'ThrottlingException', 'ModelTimeoutException', 'ServiceUnavailableException', 'ModelNotReadyException', 'ServiceQuotaExceededException', 'ModelErrorException', 'EndpointConnectionError']}, 'rate_limit': {'max_rate': 50, 'time_period': 60}, 'role_arn': 'arn:aws:iam::710271919393:role/ModelFactoryBedrockAccessRole', 'region': 'us-east-1'}, {'retries': {'max_retries': 50, 'backoff_factor': 1.0, 'jitter': 1.0, 'retryable_exceptions': ['InvalidSignatureException', 'ThrottlingException', 'ModelTimeoutException', 'ServiceUnavailableException', 'ModelNotReadyException', 'ServiceQuotaExceededException', 'ModelErrorException', 'EndpointConnectionError']}, 'rate_limit': {'max_rate': 50, 'time_period': 60}, 'role_arn': 'arn:aws:iam::710271919393:role/ModelFactoryBedrockAccessRole', 'region': 'us-west-2'}, {'retries': {'max_retries': 50, 'backoff_factor': 1.0, 'jitter': 1.0, 'retryable_exceptions': ['InvalidSignatureException', 'ThrottlingException', 'ModelTimeoutException', 'ServiceUnavailableException', 'ModelNotReadyException', 'ServiceQuotaExceededException', 'ModelErrorException', 'EndpointConnectionError']}, 'rate_limit': {'max_rate': 50, 'time_period': 60}, 'role_arn': 'arn:aws:iam::872515274170:role/ModelFactoryBedrockAccessRole', 'region': 'us-east-1'}, {'retries': {'max_retries': 50, 'backoff_factor': 1.0, 'jitter': 1.0, 'retryable_exceptions': ['InvalidSignatureException', 'ThrottlingException', 'ModelTimeoutException', 'ServiceUnavailableException', 'ModelNotReadyException', 'ServiceQuotaExceededException', 'ModelErrorException', 'EndpointConnectionError']}, 'rate_limit': {'max_rate': 50, 'time_period': 60}, 'role_arn': 'arn:aws:iam::872515274170:role/ModelFactoryBedrockAccessRole', 'region': 'us-west-2'}]}, 'prompt': 'Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.\n\n### Instruction:\nYou are an auditor for Amazon. Your task is to verify the \'earpiece_shape\' of a product in the Amazon catalog. \nYou will be given the Amazon product data and a test value of \'earpiece_shape\'.\nFirst, you need to deduce the earpiece_shape of the product from the Amazon product data.\nThen, you need to compare the earpiece_shape you deduced from the Amazon product data to the test value of earpiece_shape. \nYou need to predict if the test value of \'earpiece_shape\' is \'Correct\', \'Incorrect\', or \'Unknown\' based on the Amazon product data.\nYou also need to give the reason for your prediction.\n\n\n\n\n\n\n### Rules:\nTo ensure accurate predictions, follow these rules in sequence and think step by step before responding.\n\n1. If you cannot deduce the value of the \'earpiece_shape\' from the given product data, predict \'Unknown\'.\n2. If the test value is aligns with the deduced value, predict \'Correct\'.\n3. If the test value is less informative than the deduced value, predict \'Correct\'.\n4. If the test value is more informative than the deduced value, predict \'Correct\'.\n5. Predict \'Incorrect\' if the test value contradicts the deduced value.\n\n\n### Additional information:\nHere is some additional information about \'earpiece_shape\' to help you make highly accurate classifications.\nEarpiece shape refers to the design and form factor of the part of headphones that fits into or around the outer ear, affecting comfort, fit, and aesthetics.\n\n\n### Amazon product data:\nGiven below is the Amazon product data.\n \n{{input}}\n\n### Test value:\nNow verify the test value of the attribute \'earpiece_shape\': \'{{output.attribute_value}}\'.\n\n\n### Output format:\nRemember to make only one overall prediction. Feel free to ignore irrelevant information and only pay close attention to relevant information in product data.\nPlease output the results in the following JSON format. The JSON should not have anything else except the reason and the prediction.\n{\n    "reason": "evidence for the prediction", \n    "prediction": "Correct/Incorrect/Unknown"\n} \nDo not output anything except the JSON. Always begin your output with {.\n\n\n### Response:', 'criteria': "prediction == 'Correct'"}}, 'teacher_config': {'provider_type': 'BEDROCK', 'model_id': 'anthropic.claude-3-5-sonnet-20240620-v1:0', 'model_params': {'temperature': 0.5, 'max_tokens': 1024, 'top_p': 0.5}, 'provider_params_list': [{'retries': {'max_retries': 50, 'backoff_factor': 1.0, 'jitter': 1.0, 'retryable_exceptions': ['InvalidSignatureException', 'ThrottlingException', 'ModelTimeoutException', 'ServiceUnavailableException', 'ModelNotReadyException', 'ServiceQuotaExceededException', 'ModelErrorException', 'EndpointConnectionError']}, 'rate_limit': {'max_rate': 50, 'time_period': 60}, 'role_arn': 'arn:aws:iam::863518436859:role/ModelFactoryBedrockAccessRole', 'region': 'us-east-1'}, {'retries': {'max_retries': 50, 'backoff_factor': 1.0, 'jitter': 1.0, 'retryable_exceptions': ['InvalidSignatureException', 'ThrottlingException', 'ModelTimeoutException', 'ServiceUnavailableException', 'ModelNotReadyException', 'ServiceQuotaExceededException', 'ModelErrorException', 'EndpointConnectionError']}, 'rate_limit': {'max_rate': 50, 'time_period': 60}, 'role_arn': 'arn:aws:iam::615299746603:role/ModelFactoryBedrockAccessRole', 'region': 'us-east-1'}, {'retries': {'max_retries': 50, 'backoff_factor': 1.0, 'jitter': 1.0, 'retryable_exceptions': ['InvalidSignatureException', 'ThrottlingException', 'ModelTimeoutException', 'ServiceUnavailableException', 'ModelNotReadyException', 'ServiceQuotaExceededException', 'ModelErrorException', 'EndpointConnectionError']}, 'rate_limit': {'max_rate': 50, 'time_period': 60}, 'role_arn': 'arn:aws:iam::615299746603:role/ModelFactoryBedrockAccessRole', 'region': 'us-west-2'}, {'retries': {'max_retries': 50, 'backoff_factor': 1.0, 'jitter': 1.0, 'retryable_exceptions': ['InvalidSignatureException', 'ThrottlingException', 'ModelTimeoutException', 'ServiceUnavailableException', 'ModelNotReadyException', 'ServiceQuotaExceededException', 'ModelErrorException', 'EndpointConnectionError']}, 'rate_limit': {'max_rate': 50, 'time_period': 60}, 'role_arn': 'arn:aws:iam::710271919393:role/ModelFactoryBedrockAccessRole', 'region': 'us-east-1'}, {'retries': {'max_retries': 50, 'backoff_factor': 1.0, 'jitter': 1.0, 'retryable_exceptions': ['InvalidSignatureException', 'ThrottlingException', 'ModelTimeoutException', 'ServiceUnavailableException', 'ModelNotReadyException', 'ServiceQuotaExceededException', 'ModelErrorException', 'EndpointConnectionError']}, 'rate_limit': {'max_rate': 50, 'time_period': 60}, 'role_arn': 'arn:aws:iam::710271919393:role/ModelFactoryBedrockAccessRole', 'region': 'us-west-2'}, {'retries': {'max_retries': 50, 'backoff_factor': 1.0, 'jitter': 1.0, 'retryable_exceptions': ['InvalidSignatureException', 'ThrottlingException', 'ModelTimeoutException', 'ServiceUnavailableException', 'ModelNotReadyException', 'ServiceQuotaExceededException', 'ModelErrorException', 'EndpointConnectionError']}, 'rate_limit': {'max_rate': 50, 'time_period': 60}, 'role_arn': 'arn:aws:iam::872515274170:role/ModelFactoryBedrockAccessRole', 'region': 'us-east-1'}, {'retries': {'max_retries': 50, 'backoff_factor': 1.0, 'jitter': 1.0, 'retryable_exceptions': ['InvalidSignatureException', 'ThrottlingException', 'ModelTimeoutException', 'ServiceUnavailableException', 'ModelNotReadyException', 'ServiceQuotaExceededException', 'ModelErrorException', 'EndpointConnectionError']}, 'rate_limit': {'max_rate': 50, 'time_period': 60}, 'role_arn': 'arn:aws:iam::872515274170:role/ModelFactoryBedrockAccessRole', 'region': 'us-west-2'}]}, 'student_config': {'provider_type': 'LAMBDA', 'model_id': 'mistralai/Mistral-Nemo-Instruct-2407', 'model_params': {'temperature': 1.0, 'max_tokens': 1024, 'top_p': 0.9}, 'provider_params': {'retries': {'max_retries': 3, 'backoff_factor': 1.0, 'jitter': 1.0, 'retryable_exceptions': ['InvalidSignatureException', 'ThrottlingException', 'ModelTimeoutException', 'ServiceUnavailableException', 'ModelNotReadyException', 'ServiceQuotaExceededException', 'ModelErrorException', 'EndpointConnectionError']}, 'rate_limit': {'max_rate': 10000, 'time_period': 60}, 'role_arn': 'arn:aws:iam::136238946932:role/ModelFactoryBedrockAccessRole', 'region': 'us-west-2', 'function_arn': 'arn:aws:lambda:us-west-2:136238946932:function:MistralNemo'}}, 'optimizer_type': 'MIPRO_V2', 'optimizer_params': {'optimizer_metric': 'ACCURACY', 'auto': 'light', 'num_candidates': 7, 'max_errors': 10, 'minibatch': False}}}
+2025/04/16 13:29:55 INFO dspy.teleprompt.mipro_optimizer_v2: 
+RUNNING WITH THE FOLLOWING LIGHT AUTO RUN SETTINGS:
+num_trials: 7
+minibatch: True
+num_candidates: 5
+valset size: 100
+Bootstrapping set 1/5
+Bootstrapping set 2/5
+Bootstrapping set 3/5
+
+2025/04/16 13:29:55 INFO dspy.teleprompt.mipro_optimizer_v2: 
+==> STEP 1: BOOTSTRAP FEWSHOT EXAMPLES <==
+2025/04/16 13:29:55 INFO dspy.teleprompt.mipro_optimizer_v2: These will be used as few-shot example candidates for our program and for creating instructions.
+
+2025/04/16 13:29:55 INFO dspy.teleprompt.mipro_optimizer_v2: Bootstrapping N=5 sets of demonstrations...
+  0%|          | 0/349 [00:00<?, ?it/s]  0%|          | 1/349 [00:07<41:22,  7.13s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+  1%|          | 2/349 [00:12<33:58,  5.88s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+  1%|          | 3/349 [00:22<45:25,  7.88s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+  1%|          | 4/349 [00:29<43:13,  7.52s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+  1%|▏         | 5/349 [00:37<44:27,  7.76s/it]  1%|▏         | 5/349 [00:37<43:02,  7.51s/it]
+  0%|          | 0/349 [00:00<?, ?it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+Bootstrapped 4 full traces after 5 examples for up to 1 rounds, amounting to 5 attempts.
+Bootstrapping set 4/5
+  _warn_reuse()
+  0%|          | 1/349 [00:07<40:36,  7.00s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+  1%|          | 2/349 [00:13<38:34,  6.67s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+  1%|          | 3/349 [00:20<39:20,  6.82s/it]  1%|          | 3/349 [00:20<39:17,  6.81s/it]
+  0%|          | 0/349 [00:00<?, ?it/s]Bootstrapped 3 full traces after 3 examples for up to 1 rounds, amounting to 3 attempts.
+Bootstrapping set 5/5
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+  0%|          | 1/349 [00:06<34:59,  6.03s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+  1%|          | 2/349 [00:13<39:35,  6.85s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Bootstrapped 3 full traces after 3 examples for up to 1 rounds, amounting to 3 attempts.
+  1%|          | 3/349 [00:19<36:33,  6.34s/it]  1%|          | 3/349 [00:19<36:52,  6.39s/it]
+2025/04/16 13:31:12 INFO dspy.teleprompt.mipro_optimizer_v2: 
+==> STEP 2: PROPOSE INSTRUCTION CANDIDATES <==
+2025/04/16 13:31:12 INFO dspy.teleprompt.mipro_optimizer_v2: We will use the few-shot examples from the previous step, a generated dataset summary, a summary of the program code, and a randomly selected prompting tip to propose instructions.
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+2025/04/16 13:32:20 INFO dspy.teleprompt.mipro_optimizer_v2: 
+Proposing instructions...
+
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+2025/04/16 13:35:20 INFO dspy.teleprompt.mipro_optimizer_v2: Proposed Instructions for Predictor 0:
+
+2025/04/16 13:35:20 INFO dspy.teleprompt.mipro_optimizer_v2: 0: ROLE: You are a Catalog Expert. You analyze product information and you are trying your best to infer missing attribute values.
+
+Analyze the provided Amazon product information in JSON format, detailed above, to determine the value in English of a specific attribute.
+
+Your task is to thoroughly examine the product details. If the attribute's value is clearly inferable from the provided information, make an accurate prediction. 
+In scenarios where the value cannot be deduced, indicate this with '[NO]' for Not Obtainable. 
+If the attribute does not pertain to the product, use '[NA]' for Not Applicable. 
+Ensure your prediction is compatible with the attribute's data type, such as predicting 'True' or 'False' for Boolean attributes, or an integer for Integer attributes. Avoid using scientific notation for any prediction.
+        
+Focus your analysis on this specific attribute: 
+attribute name: headphones.earpiece_shape
+
+2025/04/16 13:35:20 INFO dspy.teleprompt.mipro_optimizer_v2: 1: You are a Catalog Expert specializing in audio products. Your task is to determine the earpiece shape of headphones or earphones based on the provided product information.
+
+Analyze the given Amazon product details, focusing on the 'headphones.earpiece_shape' attribute. Look for explicit mentions in the product title, bullet points, or attributes. Pay special attention to terms like "over-ear," "on-ear," or "in-ear."
+
+If the earpiece shape is clearly stated or can be confidently inferred, provide the appropriate value: "Over Ear," "On Ear," or "In Ear."
+
+If the information is insufficient to determine the earpiece shape, respond with '[NO]' for Not Obtainable.
+
+If the product is not a type of headphone or earphone, respond with '[NA]' for Not Applicable.
+
+Provide your reasoning, then state the final attribute value. Be precise and avoid using scientific notation or additional qualifiers in your final answer.
+
+2025/04/16 13:35:20 INFO dspy.teleprompt.mipro_optimizer_v2: 2: You are an expert Catalog Analyst specializing in audio equipment, particularly headphones and earphones. Your task is to accurately determine the earpiece shape of the product based on the provided information.
+
+INSTRUCTIONS:
+1. Carefully analyze the given Amazon product information, paying special attention to the title, bullet points, and attributes.
+
+2. Focus on identifying the earpiece shape, which typically falls into one of these categories:
+   - Over-Ear: Cups that fully enclose the ears
+   - On-Ear: Pads that sit on top of the ears
+   - In-Ear: Buds that fit inside the ear canal
+   - Ear-Hook: Designs that wrap around the outer ear
+
+3. Look for specific keywords or phrases that indicate the earpiece shape, such as:
+   - "Over-ear" or "Around-ear"
+   - "On-ear" or "Supra-aural"
+   - "In-ear", "Earbuds", or "Canal phones"
+   - "Ear-hook" or "Behind-the-ear"
+
+4. Pay attention to the 'headphones_form_factor' attribute if present, as it often directly states the earpiece shape.
+
+5. If the shape is not explicitly stated, infer it from other details such as product type, design descriptions, or comfort-related features.
+
+6. Your response should be a single, clear value that best describes the earpiece shape. Use only one of the following terms: "Over-Ear", "On-Ear", "In-Ear", or "Ear-Hook".
+
+7. If you cannot confidently determine the earpiece shape from the given information, respond with '[NO]' for Not Obtainable.
+
+8. If the product is not a type of headphone or earphone, respond with '[NA]' for Not Applicable.
+
+9. Provide a brief explanation of your reasoning, citing the specific information that led to your conclusion.
+
+Remember, accuracy is crucial. Your determination will be used for product categorization and customer search functionality, so ensure your analysis is thorough and your conclusion is well-supported by the available data.
+
+2025/04/16 13:35:20 INFO dspy.teleprompt.mipro_optimizer_v2: 3: You are an Audio Equipment Specialist with expertise in headphone design and ergonomics. Your task is to analyze product information and determine the earpiece shape of headphones or earphones.
+
+INSTRUCTIONS:
+1. Carefully examine the provided Amazon product information, paying special attention to the title, bullet points, product description, and attributes.
+
+2. Look for key indicators of earpiece shape, such as:
+   - Explicit mentions of "over-ear", "on-ear", or "in-ear" in the product details
+   - References to ear cups, ear pads, or ear tips
+   - Descriptions of how the headphones fit or rest on the ears
+   - Technical specifications related to driver size or ear cup dimensions
+
+3. Consider the product type and intended use, as these can often hint at the earpiece shape.
+
+4. Based on your analysis, determine the earpiece shape using one of the following categories:
+   - "Over-ear": Large ear cups that fully enclose the ears
+   - "On-ear": Smaller ear pads that rest on the ears without enclosing them
+   - "In-ear": Earbuds or IEMs (In-Ear Monitors) that fit inside the ear canal
+   - "Earbud": Sit in the outer ear without entering the ear canal
+   - "Bone conduction": Rest on the cheekbones and conduct sound through bone vibration
+
+5. If the earpiece shape cannot be confidently determined from the available information, use "[NO]" (Not Obtainable).
+
+6. If the attribute is not applicable to the product (e.g., for a headphone stand), use "[NA]" (Not Applicable).
+
+7. Provide a brief reasoning for your decision, citing specific evidence from the product information.
+
+Remember, accuracy is crucial. If you're unsure, it's better to use "[NO]" than to make an incorrect assumption. Your expertise in audio equipment should guide you in making informed decisions based on the available data.
+
+2025/04/16 13:35:20 INFO dspy.teleprompt.mipro_optimizer_v2: 4: You are an expert Audio Equipment Analyst specializing in headphone and earphone design. Your task is to determine the earpiece shape of headphones or earphones based on the provided product information.
+
+Carefully examine the given product details, including the title, bullet points, product description, and attributes. Pay special attention to any mentions of the headphone's design, fit, or how it interacts with the ear.
+
+The earpiece shape typically falls into one of these categories:
+1. In-ear: Earbuds that fit inside the ear canal
+2. On-ear: Headphones that rest on the outer ear
+3. Over-ear: Headphones that completely enclose the ear
+4. Open-ear: Devices that don't block the ear canal, often using bone conduction technology
+
+If the earpiece shape is clearly stated or can be confidently inferred from the information provided, specify the shape using one of the above categories or a similar descriptive term.
+
+If the earpiece shape cannot be determined from the available information, respond with '[NO]' for Not Obtainable.
+
+If the product is not a type of headphone or earphone and therefore doesn't have an earpiece shape, respond with '[NA]' for Not Applicable.
+
+Provide a brief explanation for your determination, citing specific details from the product information that support your conclusion.
+
+Remember, accuracy is crucial. Only provide a specific earpiece shape if you are confident based on the information given.
+
+2025/04/16 13:35:20 INFO dspy.teleprompt.mipro_optimizer_v2: 
+
+2025/04/16 13:35:20 INFO dspy.teleprompt.mipro_optimizer_v2: ==> STEP 3: FINDING OPTIMAL PROMPT PARAMETERS <==
+2025/04/16 13:35:20 INFO dspy.teleprompt.mipro_optimizer_v2: We will evaluate the program over a series of trials with different combinations of instructions and few-shot examples to find the optimal combination using Bayesian Optimization.
+
+2025/04/16 13:35:20 INFO dspy.teleprompt.mipro_optimizer_v2: == Trial 1 / 8 - Full Evaluation of Default Program ==
+  0%|          | 0/100 [00:00<?, ?it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 1.00 / 1 (100.0%):   0%|          | 0/100 [00:06<?, ?it/s]Average Metric: 1.00 / 1 (100.0%):   1%|          | 1/100 [00:06<10:25,  6.32s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 1.00 / 2 (50.0%):   1%|          | 1/100 [00:06<10:25,  6.32s/it] Average Metric: 1.00 / 2 (50.0%):   2%|▏         | 2/100 [00:06<04:51,  2.97s/it]Average Metric: 2.00 / 3 (66.7%):   2%|▏         | 2/100 [00:07<04:51,  2.97s/it]Average Metric: 2.00 / 3 (66.7%):   3%|▎         | 3/100 [00:07<02:59,  1.85s/it]Average Metric: 3.00 / 4 (75.0%):   3%|▎         | 3/100 [00:07<02:59,  1.85s/it]Average Metric: 4.00 / 5 (80.0%):   4%|▍         | 4/100 [00:08<02:57,  1.85s/it]Average Metric: 4.00 / 5 (80.0%):   5%|▌         | 5/100 [00:08<01:31,  1.04it/s]Average Metric: 5.00 / 6 (83.3%):   5%|▌         | 5/100 [00:08<01:31,  1.04it/s]Average Metric: 5.00 / 6 (83.3%):   6%|▌         | 6/100 [00:08<01:10,  1.34it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 6.00 / 7 (85.7%):   6%|▌         | 6/100 [00:13<01:10,  1.34it/s]Average Metric: 6.00 / 7 (85.7%):   7%|▋         | 7/100 [00:13<03:21,  2.17s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 7.00 / 8 (87.5%):   7%|▋         | 7/100 [00:14<03:21,  2.17s/it]Average Metric: 7.00 / 8 (87.5%):   8%|▊         | 8/100 [00:14<02:26,  1.59s/it]Average Metric: 8.00 / 9 (88.9%):   8%|▊         | 8/100 [00:14<02:26,  1.59s/it]Average Metric: 8.00 / 9 (88.9%):   9%|▉         | 9/100 [00:14<01:52,  1.24s/it]Average Metric: 8.00 / 10 (80.0%):   9%|▉         | 9/100 [00:14<01:52,  1.24s/it]Average Metric: 8.00 / 11 (72.7%):  10%|█         | 10/100 [00:14<01:51,  1.24s/it]Average Metric: 8.00 / 11 (72.7%):  11%|█         | 11/100 [00:14<01:06,  1.34it/s]Average Metric: 9.00 / 12 (75.0%):  11%|█         | 11/100 [00:15<01:06,  1.34it/s]Average Metric: 9.00 / 12 (75.0%):  12%|█▏        | 12/100 [00:15<01:10,  1.24it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 10.00 / 13 (76.9%):  12%|█▏        | 12/100 [00:19<01:10,  1.24it/s]Average Metric: 10.00 / 13 (76.9%):  13%|█▎        | 13/100 [00:19<02:13,  1.53s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 11.00 / 14 (78.6%):  13%|█▎        | 13/100 [00:19<02:13,  1.53s/it]Average Metric: 11.00 / 14 (78.6%):  14%|█▍        | 14/100 [00:19<01:39,  1.15s/it]Average Metric: 12.00 / 15 (80.0%):  14%|█▍        | 14/100 [00:20<01:39,  1.15s/it]Average Metric: 12.00 / 15 (80.0%):  15%|█▌        | 15/100 [00:20<01:34,  1.11s/it]Average Metric: 13.00 / 16 (81.2%):  15%|█▌        | 15/100 [00:21<01:34,  1.11s/it]Average Metric: 13.00 / 16 (81.2%):  16%|█▌        | 16/100 [00:21<01:26,  1.03s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 13.00 / 17 (76.5%):  16%|█▌        | 16/100 [00:22<01:26,  1.03s/it]Average Metric: 13.00 / 17 (76.5%):  17%|█▋        | 17/100 [00:22<01:35,  1.15s/it]Average Metric: 14.00 / 18 (77.8%):  17%|█▋        | 17/100 [00:24<01:35,  1.15s/it]Average Metric: 14.00 / 18 (77.8%):  18%|█▊        | 18/100 [00:24<01:45,  1.29s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 15.00 / 19 (78.9%):  18%|█▊        | 18/100 [00:26<01:45,  1.29s/it]Average Metric: 15.00 / 19 (78.9%):  19%|█▉        | 19/100 [00:26<02:06,  1.56s/it]Average Metric: 15.00 / 20 (75.0%):  19%|█▉        | 19/100 [00:27<02:06,  1.56s/it]Average Metric: 15.00 / 20 (75.0%):  20%|██        | 20/100 [00:27<01:48,  1.36s/it]Average Metric: 16.00 / 21 (76.2%):  20%|██        | 20/100 [00:27<01:48,  1.36s/it]Average Metric: 16.00 / 22 (72.7%):  21%|██        | 21/100 [00:28<01:47,  1.36s/it]Average Metric: 16.00 / 22 (72.7%):  22%|██▏       | 22/100 [00:28<01:15,  1.03it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 17.00 / 23 (73.9%):  22%|██▏       | 22/100 [00:30<01:15,  1.03it/s]Average Metric: 17.00 / 23 (73.9%):  23%|██▎       | 23/100 [00:30<01:38,  1.28s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 18.00 / 24 (75.0%):  23%|██▎       | 23/100 [00:31<01:38,  1.28s/it]Average Metric: 18.00 / 24 (75.0%):  24%|██▍       | 24/100 [00:31<01:23,  1.10s/it]Average Metric: 19.00 / 25 (76.0%):  24%|██▍       | 24/100 [00:33<01:23,  1.10s/it]Average Metric: 19.00 / 25 (76.0%):  25%|██▌       | 25/100 [00:33<01:38,  1.32s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 20.00 / 26 (76.9%):  25%|██▌       | 25/100 [00:33<01:38,  1.32s/it]Average Metric: 20.00 / 26 (76.9%):  26%|██▌       | 26/100 [00:33<01:23,  1.12s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 21.00 / 27 (77.8%):  26%|██▌       | 26/100 [00:35<01:23,  1.12s/it]Average Metric: 21.00 / 27 (77.8%):  27%|██▋       | 27/100 [00:35<01:27,  1.20s/it]Average Metric: 22.00 / 28 (78.6%):  27%|██▋       | 27/100 [00:36<01:27,  1.20s/it]Average Metric: 22.00 / 28 (78.6%):  28%|██▊       | 28/100 [00:36<01:29,  1.25s/it]Average Metric: 23.00 / 29 (79.3%):  28%|██▊       | 28/100 [00:37<01:29,  1.25s/it]Average Metric: 23.00 / 29 (79.3%):  29%|██▉       | 29/100 [00:37<01:15,  1.07s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 23.00 / 30 (76.7%):  29%|██▉       | 29/100 [00:39<01:15,  1.07s/it]Average Metric: 23.00 / 30 (76.7%):  30%|███       | 30/100 [00:39<01:29,  1.28s/it]Average Metric: 24.00 / 31 (77.4%):  30%|███       | 30/100 [00:40<01:29,  1.28s/it]Average Metric: 24.00 / 31 (77.4%):  31%|███       | 31/100 [00:40<01:26,  1.25s/it]Average Metric: 25.00 / 32 (78.1%):  31%|███       | 31/100 [00:40<01:26,  1.25s/it]Average Metric: 26.00 / 33 (78.8%):  32%|███▏      | 32/100 [00:40<01:25,  1.25s/it]Average Metric: 26.00 / 33 (78.8%):  33%|███▎      | 33/100 [00:40<00:56,  1.19it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 27.00 / 34 (79.4%):  33%|███▎      | 33/100 [00:42<00:56,  1.19it/s]Average Metric: 27.00 / 34 (79.4%):  34%|███▍      | 34/100 [00:42<01:12,  1.10s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 28.00 / 35 (80.0%):  34%|███▍      | 34/100 [00:43<01:12,  1.10s/it]Average Metric: 28.00 / 35 (80.0%):  35%|███▌      | 35/100 [00:43<01:12,  1.12s/it]Average Metric: 28.00 / 36 (77.8%):  35%|███▌      | 35/100 [00:46<01:12,  1.12s/it]Average Metric: 28.00 / 36 (77.8%):  36%|███▌      | 36/100 [00:46<01:32,  1.44s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 28.00 / 37 (75.7%):  36%|███▌      | 36/100 [00:47<01:32,  1.44s/it]Average Metric: 28.00 / 37 (75.7%):  37%|███▋      | 37/100 [00:47<01:19,  1.25s/it]Average Metric: 29.00 / 38 (76.3%):  37%|███▋      | 37/100 [00:47<01:19,  1.25s/it]Average Metric: 29.00 / 38 (76.3%):  38%|███▊      | 38/100 [00:47<00:58,  1.07it/s]Average Metric: 29.00 / 39 (74.4%):  38%|███▊      | 38/100 [00:48<00:58,  1.07it/s]Average Metric: 29.00 / 39 (74.4%):  39%|███▉      | 39/100 [00:48<00:58,  1.04it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 30.00 / 40 (75.0%):  39%|███▉      | 39/100 [00:49<00:58,  1.04it/s]Average Metric: 30.00 / 40 (75.0%):  40%|████      | 40/100 [00:49<01:06,  1.11s/it]Average Metric: 30.00 / 41 (73.2%):  40%|████      | 40/100 [00:50<01:06,  1.11s/it]Average Metric: 30.00 / 41 (73.2%):  41%|████      | 41/100 [00:50<00:52,  1.12it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 31.00 / 42 (73.8%):  41%|████      | 41/100 [00:52<00:52,  1.12it/s]Average Metric: 31.00 / 42 (73.8%):  42%|████▏     | 42/100 [00:52<01:14,  1.29s/it]Average Metric: 32.00 / 43 (74.4%):  42%|████▏     | 42/100 [00:52<01:14,  1.29s/it]Average Metric: 32.00 / 43 (74.4%):  43%|████▎     | 43/100 [00:52<00:56,  1.01it/s]Average Metric: 33.00 / 44 (75.0%):  43%|████▎     | 43/100 [00:52<00:56,  1.01it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 33.00 / 45 (73.3%):  44%|████▍     | 44/100 [00:55<00:55,  1.01it/s]Average Metric: 33.00 / 45 (73.3%):  45%|████▌     | 45/100 [00:55<01:09,  1.27s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 33.00 / 46 (71.7%):  45%|████▌     | 45/100 [00:55<01:09,  1.27s/it]Average Metric: 34.00 / 47 (72.3%):  46%|████▌     | 46/100 [00:55<01:08,  1.27s/it]Average Metric: 34.00 / 47 (72.3%):  47%|████▋     | 47/100 [00:55<00:42,  1.24it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 35.00 / 48 (72.9%):  47%|████▋     | 47/100 [00:58<00:42,  1.24it/s]Average Metric: 35.00 / 48 (72.9%):  48%|████▊     | 48/100 [00:58<01:05,  1.26s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 36.00 / 49 (73.5%):  48%|████▊     | 48/100 [00:59<01:05,  1.26s/it]Average Metric: 36.00 / 49 (73.5%):  49%|████▉     | 49/100 [00:59<00:56,  1.12s/it]Average Metric: 36.00 / 50 (72.0%):  49%|████▉     | 49/100 [01:00<00:56,  1.12s/it]Average Metric: 36.00 / 50 (72.0%):  50%|█████     | 50/100 [01:00<00:50,  1.01s/it]Average Metric: 37.00 / 51 (72.5%):  50%|█████     | 50/100 [01:02<00:50,  1.01s/it]Average Metric: 37.00 / 51 (72.5%):  51%|█████     | 51/100 [01:02<01:03,  1.30s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 38.00 / 52 (73.1%):  51%|█████     | 51/100 [01:02<01:03,  1.30s/it]Average Metric: 38.00 / 52 (73.1%):  52%|█████▏    | 52/100 [01:02<00:47,  1.01it/s]Average Metric: 39.00 / 53 (73.6%):  52%|█████▏    | 52/100 [01:03<00:47,  1.01it/s]Average Metric: 39.00 / 53 (73.6%):  53%|█████▎    | 53/100 [01:03<00:46,  1.01it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 39.00 / 54 (72.2%):  53%|█████▎    | 53/100 [01:06<00:46,  1.01it/s]Average Metric: 39.00 / 54 (72.2%):  54%|█████▍    | 54/100 [01:06<01:11,  1.55s/it]Average Metric: 40.00 / 55 (72.7%):  54%|█████▍    | 54/100 [01:06<01:11,  1.55s/it]Average Metric: 40.00 / 55 (72.7%):  55%|█████▌    | 55/100 [01:06<00:53,  1.19s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 40.00 / 56 (71.4%):  55%|█████▌    | 55/100 [01:08<00:53,  1.19s/it]Average Metric: 40.00 / 56 (71.4%):  56%|█████▌    | 56/100 [01:08<01:00,  1.37s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 41.00 / 57 (71.9%):  56%|█████▌    | 56/100 [01:09<01:00,  1.37s/it]Average Metric: 41.00 / 57 (71.9%):  57%|█████▋    | 57/100 [01:09<00:58,  1.35s/it]Average Metric: 42.00 / 58 (72.4%):  57%|█████▋    | 57/100 [01:09<00:58,  1.35s/it]Average Metric: 42.00 / 58 (72.4%):  58%|█████▊    | 58/100 [01:09<00:41,  1.01it/s]Average Metric: 43.00 / 59 (72.9%):  58%|█████▊    | 58/100 [01:10<00:41,  1.01it/s]Average Metric: 43.00 / 59 (72.9%):  59%|█████▉    | 59/100 [01:10<00:31,  1.30it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 44.00 / 60 (73.3%):  59%|█████▉    | 59/100 [01:12<00:31,  1.30it/s]Average Metric: 44.00 / 60 (73.3%):  60%|██████    | 60/100 [01:12<00:53,  1.34s/it]Average Metric: 44.00 / 61 (72.1%):  60%|██████    | 60/100 [01:13<00:53,  1.34s/it]Average Metric: 44.00 / 61 (72.1%):  61%|██████    | 61/100 [01:13<00:44,  1.15s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+Average Metric: 44.00 / 62 (71.0%):  61%|██████    | 61/100 [01:15<00:44,  1.15s/it]Average Metric: 44.00 / 62 (71.0%):  62%|██████▏   | 62/100 [01:15<00:47,  1.24s/it]  _warn_reuse()
+Average Metric: 45.00 / 63 (71.4%):  62%|██████▏   | 62/100 [01:15<00:47,  1.24s/it]Average Metric: 45.00 / 63 (71.4%):  63%|██████▎   | 63/100 [01:15<00:36,  1.02it/s]Average Metric: 46.00 / 64 (71.9%):  63%|██████▎   | 63/100 [01:16<00:36,  1.02it/s]Average Metric: 46.00 / 64 (71.9%):  64%|██████▍   | 64/100 [01:16<00:36,  1.01s/it]Average Metric: 47.00 / 65 (72.3%):  64%|██████▍   | 64/100 [01:16<00:36,  1.01s/it]Average Metric: 47.00 / 65 (72.3%):  65%|██████▌   | 65/100 [01:16<00:28,  1.23it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 48.00 / 66 (72.7%):  65%|██████▌   | 65/100 [01:18<00:28,  1.23it/s]Average Metric: 48.00 / 66 (72.7%):  66%|██████▌   | 66/100 [01:18<00:39,  1.17s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 49.00 / 67 (73.1%):  66%|██████▌   | 66/100 [01:21<00:39,  1.17s/it]Average Metric: 49.00 / 67 (73.1%):  67%|██████▋   | 67/100 [01:21<00:49,  1.50s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 50.00 / 68 (73.5%):  67%|██████▋   | 67/100 [01:21<00:49,  1.50s/it]Average Metric: 50.00 / 68 (73.5%):  68%|██████▊   | 68/100 [01:21<00:40,  1.27s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 51.00 / 69 (73.9%):  68%|██████▊   | 68/100 [01:23<00:40,  1.27s/it]Average Metric: 51.00 / 69 (73.9%):  69%|██████▉   | 69/100 [01:23<00:42,  1.36s/it]Average Metric: 51.00 / 70 (72.9%):  69%|██████▉   | 69/100 [01:23<00:42,  1.36s/it]Average Metric: 51.00 / 70 (72.9%):  70%|███████   | 70/100 [01:23<00:30,  1.01s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 52.00 / 71 (73.2%):  70%|███████   | 70/100 [01:26<00:30,  1.01s/it]Average Metric: 52.00 / 71 (73.2%):  71%|███████   | 71/100 [01:26<00:42,  1.46s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 53.00 / 72 (73.6%):  71%|███████   | 71/100 [01:27<00:42,  1.46s/it]Average Metric: 53.00 / 72 (73.6%):  72%|███████▏  | 72/100 [01:27<00:40,  1.46s/it]Average Metric: 54.00 / 73 (74.0%):  72%|███████▏  | 72/100 [01:27<00:40,  1.46s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 55.00 / 74 (74.3%):  73%|███████▎  | 73/100 [01:28<00:39,  1.46s/it]Average Metric: 55.00 / 74 (74.3%):  74%|███████▍  | 74/100 [01:28<00:27,  1.05s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 56.00 / 75 (74.7%):  74%|███████▍  | 74/100 [01:29<00:27,  1.05s/it]Average Metric: 56.00 / 75 (74.7%):  75%|███████▌  | 75/100 [01:29<00:26,  1.07s/it]Average Metric: 57.00 / 76 (75.0%):  75%|███████▌  | 75/100 [01:30<00:26,  1.07s/it]Average Metric: 57.00 / 76 (75.0%):  76%|███████▌  | 76/100 [01:30<00:21,  1.13it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 58.00 / 77 (75.3%):  76%|███████▌  | 76/100 [01:32<00:21,  1.13it/s]Average Metric: 58.00 / 77 (75.3%):  77%|███████▋  | 77/100 [01:32<00:31,  1.37s/it]Average Metric: 59.00 / 78 (75.6%):  77%|███████▋  | 77/100 [01:32<00:31,  1.37s/it]Average Metric: 60.00 / 79 (75.9%):  78%|███████▊  | 78/100 [01:34<00:30,  1.37s/it]Average Metric: 60.00 / 79 (75.9%):  79%|███████▉  | 79/100 [01:34<00:21,  1.04s/it]Average Metric: 61.00 / 80 (76.2%):  79%|███████▉  | 79/100 [01:35<00:21,  1.04s/it]Average Metric: 61.00 / 80 (76.2%):  80%|████████  | 80/100 [01:35<00:21,  1.09s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 62.00 / 81 (76.5%):  80%|████████  | 80/100 [01:36<00:21,  1.09s/it]Average Metric: 62.00 / 81 (76.5%):  81%|████████  | 81/100 [01:36<00:18,  1.02it/s]Average Metric: 63.00 / 82 (76.8%):  81%|████████  | 81/100 [01:36<00:18,  1.02it/s]Average Metric: 63.00 / 82 (76.8%):  82%|████████▏ | 82/100 [01:36<00:15,  1.18it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 63.00 / 83 (75.9%):  82%|████████▏ | 82/100 [01:40<00:15,  1.18it/s]Average Metric: 63.00 / 83 (75.9%):  83%|████████▎ | 83/100 [01:40<00:31,  1.83s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 64.00 / 84 (76.2%):  83%|████████▎ | 83/100 [01:41<00:31,  1.83s/it]Average Metric: 64.00 / 84 (76.2%):  84%|████████▍ | 84/100 [01:41<00:23,  1.46s/it]Average Metric: 65.00 / 85 (76.5%):  84%|████████▍ | 84/100 [01:41<00:23,  1.46s/it]Average Metric: 65.00 / 85 (76.5%):  85%|████████▌ | 85/100 [01:41<00:17,  1.18s/it]Average Metric: 66.00 / 86 (76.7%):  85%|████████▌ | 85/100 [01:42<00:17,  1.18s/it]Average Metric: 66.00 / 86 (76.7%):  86%|████████▌ | 86/100 [01:42<00:12,  1.15it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 67.00 / 87 (77.0%):  86%|████████▌ | 86/100 [01:43<00:12,  1.15it/s]Average Metric: 67.00 / 87 (77.0%):  87%|████████▋ | 87/100 [01:43<00:14,  1.15s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 68.00 / 88 (77.3%):  87%|████████▋ | 87/100 [01:44<00:14,  1.15s/it]Average Metric: 68.00 / 88 (77.3%):  88%|████████▊ | 88/100 [01:44<00:11,  1.01it/s]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 69.00 / 89 (77.5%):  88%|████████▊ | 88/100 [01:45<00:11,  1.01it/s]Average Metric: 69.00 / 89 (77.5%):  89%|████████▉ | 89/100 [01:45<00:12,  1.13s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 70.00 / 90 (77.8%):  89%|████████▉ | 89/100 [01:48<00:12,  1.13s/it]Average Metric: 70.00 / 90 (77.8%):  90%|█████████ | 90/100 [01:48<00:15,  1.58s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 70.00 / 91 (76.9%):  90%|█████████ | 90/100 [01:49<00:15,  1.58s/it]Average Metric: 70.00 / 91 (76.9%):  91%|█████████ | 91/100 [01:49<00:11,  1.30s/it]Average Metric: 70.00 / 92 (76.1%):  91%|█████████ | 91/100 [01:49<00:11,  1.30s/it]Average Metric: 70.00 / 92 (76.1%):  92%|█████████▏| 92/100 [01:49<00:08,  1.02s/it]Average Metric: 71.00 / 93 (76.3%):  92%|█████████▏| 92/100 [01:50<00:08,  1.02s/it]Average Metric: 71.00 / 93 (76.3%):  93%|█████████▎| 93/100 [01:50<00:07,  1.10s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 72.00 / 94 (76.6%):  93%|█████████▎| 93/100 [01:52<00:07,  1.10s/it]Average Metric: 72.00 / 94 (76.6%):  94%|█████████▍| 94/100 [01:52<00:08,  1.34s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 72.00 / 95 (75.8%):  94%|█████████▍| 94/100 [01:53<00:08,  1.34s/it]Average Metric: 72.00 / 95 (75.8%):  95%|█████████▌| 95/100 [01:53<00:06,  1.27s/it]/Users/rajsiba/miniconda3/envs/fmcore/lib/python3.11/site-packages/aiolimiter/leakybucket.py:102: RuntimeWarning: This AsyncLimiter instance is being re-used across loops. Please create a new limiter per event loop as re-use can lead to undefined behaviour.
+  _warn_reuse()
+Average Metric: 73.00 / 96 (76.0%):  95%|█████████▌| 95/100 [01:54<00:06,  1.27s/it]Average Metric: 73.00 / 96 (76.0%):  96%|█████████▌| 96/100 [01:54<00:04,  1.21s/it]
