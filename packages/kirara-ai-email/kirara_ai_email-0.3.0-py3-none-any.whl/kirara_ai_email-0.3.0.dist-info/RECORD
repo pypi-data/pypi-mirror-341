@@ -1,0 +1,9 @@
+kirara_email/__init__.py,sha256=45_9AYJFECuyAJl7kiBpVvN6WdBLwUZLXFNYjQr5wXw,2960
+kirara_email/blocks.py,sha256=oaFFpBvtjDq1UPNCFlnfiMjhO82_2-uMt7_Mqtec5ac,20543
+kirara_email/example/sendEmail.yaml,sha256=Dhp9neWIiEzxdoX2u8oQJD23c_GkzqrQWijXVWZhR7o,2726
+kirara_ai_email-0.3.0.dist-info/LICENSE,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+kirara_ai_email-0.3.0.dist-info/METADATA,sha256=uFWQrePlMTEk9FwvrqI6E8aLVoKpU-i-BgdqH8XXrto,1898
+kirara_ai_email-0.3.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+kirara_ai_email-0.3.0.dist-info/entry_points.txt,sha256=e4BL9uv3bDn4BCI4mhJ_Sa-QaMt8VJ_W4bYFM9aI1-c,64
+kirara_ai_email-0.3.0.dist-info/top_level.txt,sha256=nKLEdrVBZn-POSTnSoLNoetsYko8J13Bd4SxIss9jDA,13
+kirara_ai_email-0.3.0.dist-info/RECORD,,

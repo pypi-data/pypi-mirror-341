@@ -1,0 +1,2 @@
+[chatgpt_mirai.plugins]
+kirara_email = kirara_email:EmailPlugin
