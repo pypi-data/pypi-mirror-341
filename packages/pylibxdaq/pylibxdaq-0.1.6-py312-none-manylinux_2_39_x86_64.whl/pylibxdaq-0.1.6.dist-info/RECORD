@@ -1,0 +1,16 @@
+pylibxdaq/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylibxdaq/pyxdaq_device.cpython-312-x86_64-linux-gnu.so,sha256=Y0e0_p55zGja7fgLQrpxnYajvBJ6BBB5rx-n2fvNxic,964608
+pylibxdaq/pyxdaq_device.pyi,sha256=MUa7jdcf-OQmKLjfYuGsr4QxkJ2u5jx3ROd6dozHb3I,3616
+pylibxdaq/managers/__init__.py,sha256=21j4wx3QD363OvC821Gxx5660ibTveuYLqLsboVsfzU,186
+pylibxdaq/managers/libokFrontPanel.so,sha256=OTXjoWvIDy8WdhtbttTkVAPdMn2gP-o-0H4HqqcOgjE,1880089
+pylibxdaq/managers/libok_device_manager.so,sha256=c-ypGctnacWDGOfx68kpqBcIAr7Sd-i5jMhFrtQG3hQ,1581641
+pylibxdaq/managers/libthor_device_manager.so,sha256=5NXLAj6LPe1CiG-u6h3yQgqJLt2aM0IFMjcz43OQLXI,1491920
+pylibxdaq/resources/rhd.bit,sha256=4KdXkPY0zWXAXoepJrSSKKyctG18zA_x4VBYgZPV97w,2482978
+pylibxdaq/resources/rhs.bit,sha256=xTA4zgum2pOS337TWiDWH_rtDS2s84H0miHUFNOCapc,2708046
+pylibxdaq.libs/libcap-a3db2a14.so.2.66,sha256=aN10Fv0vAXv2bp-Yo7QxHcW_vVsIz3WRsa6TG1SlWQA,55585
+pylibxdaq.libs/libudev-361d3152.so.1.7.8,sha256=XgEKMLukJAloJ4U7u2CF0I7M8B-pNgqjDVNhVRq3JJ4,222305
+pylibxdaq-0.1.6.dist-info/METADATA,sha256=cXegndLVcbebuMofd7x1I-2XVPo5c9sANVYfAQatlSk,372
+pylibxdaq-0.1.6.dist-info/WHEEL,sha256=0_dhGVfa0uZXJfMEYmNr53wQvZEyxQ69HZ8gx0Y6ja4,111
+pylibxdaq-0.1.6.dist-info/top_level.txt,sha256=D9ZLsOOlNoq_TrXbYa4Xh1dzXcKsWO5kcdpKmkxzPkE,10
+pylibxdaq-0.1.6.dist-info/RECORD,,
+pylibxdaq-0.1.6.dist-info/licenses/LICENSE,sha256=q1CZihyHngozuUXcQO-bee2sALBv6TkqkylPzI8nlLM,1066
