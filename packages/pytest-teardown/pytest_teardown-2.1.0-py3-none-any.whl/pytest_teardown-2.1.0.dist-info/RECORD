@@ -1,0 +1,7 @@
+teardown/__init__.py,sha256=JmFRSNZEdBzp4b8gZwYoT6ujtHlemXXxIr7zf8aXcO0,56
+teardown/_teardown.py,sha256=RGfcxhWpwG4UrR4toZmmFHYac1z6x0lH7rd7NNpVwgM,5159
+teardown/plugin.py,sha256=xjtfpqdgxoCYdheE-iJwR-KOpvel1bsMVCa0pzsGa7s,833
+pytest_teardown-2.1.0.dist-info/METADATA,sha256=kFpBlVSVnlfovtH-gM4Nl7Z51oxUHfyW7ynV1eUQ4ow,617
+pytest_teardown-2.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+pytest_teardown-2.1.0.dist-info/entry_points.txt,sha256=AVKGS6ywGsdCB3GT2_Rj0SfGgV4K9zB_ZB6Mg8KeJnQ,44
+pytest_teardown-2.1.0.dist-info/RECORD,,
