@@ -1,0 +1,56 @@
+[project]
+name = "leab"
+version = "0.1.10"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.2.4",
+    "pandas>=2.2.3",
+    "scipy>=1.15.2",
+    "statsmodels>=0.14.4",
+]
+
+[project.urls]
+Repository = "https://github.com/tlentali/leab"
+Documentation = "https://tlentali.github.io/leab/"
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "jupyter>=1.1.1",
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.6.9",
+    "mkdocstrings[python]>=0.29.0",
+    "pylint>=3.3.6",
+    "pytest>=8.3.5",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["leab"]
+exclude = ["tests*", "notebook*", "misc*"]
+
+[tool.bumpver]
+current_version = "0.1.10"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump: {old_version} → {new_version}"
+tag_message = "v{new_version}"
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"'
+]
+
+[tool.uv]
+required-version = ">=0.6.11,<0.7"
