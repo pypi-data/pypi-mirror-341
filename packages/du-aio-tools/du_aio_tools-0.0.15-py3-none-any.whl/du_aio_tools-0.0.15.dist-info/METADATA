@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: du-aio-tools
+Version: 0.0.15
+Summary: async tools
+Author: DYZ
+Author-email: duyuchau@gmail.com
+Maintainer: DYZ
+Maintainer-email: duyuchau@gmail.com
+Platform: all
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: fake-useragent>=2.2.0
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: pycryptodome>=3.22.0
+Requires-Dist: pydantic>=2.11.3
+Requires-Dist: python-dotenv>=1.1.0
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: requests>=2.32.3
+Requires-Dist: setuptools
+Requires-Dist: tenacity>=9.1.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: platform
+
+# du_tools
+
+### 自用轮子
+
+> 项目更新 pydantic~=2.10
+
+# 安装包
+
+```bash
+pip install du_aio_tools
+# 推荐使用 uv
+uv add du_aio_tools
+```
+
+### 使用 uv 构建包
+
+```bash
+uv build  # 在当前项目中运行构建命令
+uv publish # 发布构建的包
+```
+
+
