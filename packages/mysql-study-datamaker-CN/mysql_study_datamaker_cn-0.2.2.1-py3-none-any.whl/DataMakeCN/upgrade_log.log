@@ -1,0 +1,108 @@
+如果您使用了这个包和模块，希望您在B站上 搜索 lovemr47私信我，我会感觉很荣幸！
+个人主页：https://space.bilibili.com/12777362?spm_id_from=333.1296.0.0
+
+--- ver 0.2.2.1 ---
+Nothing --
+
+--- ver 0.2.2 ---
+本次更新针对 pd_datamaker.to_DataFrame_maker 类别进行修订
+bug修复：
+    | -- 修复write所生成的csv功能，csv依赖于pandas的to_csv函数
+         如果使用excel访问带有中文的csv，使用excel数据中的“数据”--“从文本/csv”中加载，编码为“Unicode UTF-8”
+
+--- ver 0.2.1 ---
+本次更新针对 pd_datamaker.to_DataFrame_maker 类别进行修订
+bug修复：
+    | -- 修复上一个版本的名字获取路径问题
+
+
+--- ver 0.2.0 ---
+本次更新针对 pd_datamaker.to_DataFrame_maker 类别进行修订
+更改内容：
+    | -- 新增 get_name 函数，获取中文姓名库，随机生成姓名，便于index的获取
+    | -- 参数 low 与 high 支持float类型，且支持小于 0
+    | -- 删除参数 people
+    | -- 参数 names 更新为 index，仅支持元组、列表、整数类型，默认为10
+    | -- 参数 write 支持bool与str类型，可以是'w','a','x'类型，True为'w'，默认为False，表示不创建文件写入
+    | -- 新增参数 display，便于输出时展开所有列，其值为：
+         'short'（默认）：不展开，如果之前展开则此次关闭展开；
+         'all'：展开所有，但是长度过长会自动换行；
+         'flatten'：全部展开，注意数据如果过大或许出现问题，性能来与Pandas
+
+
+--- ver 0.1.9.1 ---
+更改内容：
+    | -- 导入模块更名为 DataMakerCN，例如：import DataMakerCN.datamaker
+    | -- datamaker增加了API函数，返回一个字典，value是迭代器，可以生成自己想要的数据
+    | -- API生成的数据与get_data()的数据不同，是二次生成
+bug修复：
+    | -- 修复了 城市 作为文本介入时的引号问题
+
+
+--- ver 0.1.8 ---
+更改内容：
+    | -- pd_datamaker.to_DataFrame_maker 增加了 filename 参数，可自定义写入的参数名
+    | -- pd_datamaker.to_DataFrame_maker 修复了参数 n，支持列数更多的情况，不需要items的支持
+
+
+
+--- ver 0.1.7 ---
+更改内容：
+    | -- 修改了获取更新日志的方式
+    | -- pd_datamaker.to_DataFrame_maker 增加了 seed 参数（固定随机），测试数据更方便
+
+
+
+--- ver 0.1.6 ---
+更改内容：
+    | -- 修改了 create_mysql()的获取方式，只可以通过get_data函数获取
+    | -- 目前支持两个结果，一个是 插入表格： insert_into 另一个是 单纯的数据显示 self
+    | -- 详细了 README.md 信息，之前懒的原因不知道会不会有其他人用
+
+
+--- ver 0.1.5 ---
+更改内容：
+    | -- 增加了 pd_datamaker 模块，需要panda模块
+    | -- 该方法只有 to_DataFrame_maker 函数与 get_demo 函数；
+    | -- 可以导入 pd_datamaker 模块，并调用该模块的 get_demo()来查看使用案例
+    | -- 也可以通过 help 函数来查看 to_DataFrame_maker 的方法
+
+--- ver 0.1.4 ---
+更改内容：
+    | -- 增加 sep 属性，默认为","，可以对生成的连续属性间隔符进行自定义
+    | -- 增加“城市”属性，城市与身份证并无对应关系！不符合逻辑！工作地址和出生地址不是捆绑关系！
+    | -- create() 方法 更名为 create_mysql()方法，code增加"self"模式
+    | -- 增加 get_data()方法，可以生成自己想要的数据，与create_mysql(code="self")相同！
+    | -- 但是数据只能是下面所列
+        | -- 姓名,年龄,部门,生日,性别,分数,手机,身份证,工号,日期,城市
+bug修复：
+    | -- 修复了版本描述问题
+
+--- ver 0.1.3 ---
+更改内容：
+    | -- create_insertinto() 方法 更名为 create方法，需要传递 code 参数来生成指定的 Mysql语法信息，默认”insert_into“；
+bug修复：
+    | -- 修复了 年龄、身份证、生日与其他字段顺序不统一的录入问题
+
+
+--- ver 0.1.2 ---
+增加内容：
+    | -- 增加了 get_demo() 函数，查看详细的案例演示；
+
+bug修复：
+    | -- 修复了 电话/手机 的不统一问题，只能用 手机；
+
+
+--- ver 0.1.1 ---
+增加内容：
+    | -- 增加了 随机日期 的方法；
+
+bug修复：
+    | -- 修复了 工号 的字符串格式；
+
+
+--- ver 0.1.0 ---
+该版本支持‘身份证’，‘手机’，‘工号’，及修复了年龄显示 不正确的 bug，
+如果要使用身份证，需要输入大写 ‘ID’，构造函数IDCITY参数要传递城市开头代码，这里默认给了北京和上海的，
+如果需要更多的城市可以自己对该参数进行修改，后四位为随机生成，不符合性别及正规规律，单纯模拟，
+如果有需要末尾是按照需求的可自行修改代码。
