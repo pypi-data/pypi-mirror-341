@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "cisco_outshift_agent_utils"
+version = "0.0.2"
+description = "Cisco Outshift Agent Utils"
+authors = ["Sri Aradhyula <sraradhy@cisco.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11.0,<4.0"
+langchain = "^0.3.23"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
