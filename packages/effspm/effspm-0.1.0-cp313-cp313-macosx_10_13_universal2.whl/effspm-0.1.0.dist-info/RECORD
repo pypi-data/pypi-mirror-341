@@ -1,0 +1,11 @@
+effspm/__init__.py,sha256=42d7tN5Mq0H7ezvMGQWnA83G-5t5Y-QRU5tQjOn4x5s,45
+effspm/_core.cpp,sha256=kEU8obDuzi13zoSNsfMQrAEiIaVzalr7Pl3RZPBZz4o,735
+effspm/_core.cpython-313-darwin.so,sha256=N6tiKvn_XHfPu7VzWzI4H92YKYwVAiZTdLXZfbzFRFg,441744
+effspm/freq_miner.cpp,sha256=9K-nO_c-vVzbFlmh511vmvypA2fu1TXpiJhyx03owDU,4642
+effspm/load_inst.cpp,sha256=804fvkfdtYqFMP9Jla6dM2romWWPJmSeCwLm0wEZE5M,4517
+effspm/utility.cpp,sha256=luWwBNy7OVWRmam9gz2RjhtrRmx6c37oOobFJaDWqcA,1403
+effspm-0.1.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+effspm-0.1.0.dist-info/METADATA,sha256=uZHorxXHYgNKygvZFSHStVUbj-Nd6pZ53-enfE0t8Hs,822
+effspm-0.1.0.dist-info/WHEEL,sha256=A6iggJuFsuu67bHdjxJADhwSEJmqwgO3xFoNCIwjOxc,115
+effspm-0.1.0.dist-info/top_level.txt,sha256=2O-AuI0nw0pDmJMo2jzM1wvV2rj48AmkjskkAnsuuQk,7
+effspm-0.1.0.dist-info/RECORD,,
