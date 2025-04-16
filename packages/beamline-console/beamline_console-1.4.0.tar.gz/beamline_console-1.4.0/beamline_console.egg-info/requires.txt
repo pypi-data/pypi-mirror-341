@@ -1,0 +1,7 @@
+attrs
+numpy
+psutil
+pyqt5
+pyqtgraph>=0.11
+pyshortcuts
+python-dateutil
