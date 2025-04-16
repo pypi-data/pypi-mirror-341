@@ -1,0 +1,6 @@
+invoicing/__init__.py,sha256=Nh_YTeCDVB7sHLvAAlyJmhHB9yQM_5j_OvmFIRRJ_8k,28
+invoicing/invoice.py,sha256=eNa6lp3fpR4Xw9YBzjkpiKecFJ0Hy4GgVuEqrgHNCs0,2994
+invoicing_101-1.0.0.dist-info/METADATA,sha256=60HenvAbPZbntLOEC51SAlEuTtX72aQ1naQJHt2T7sA,886
+invoicing_101-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+invoicing_101-1.0.0.dist-info/top_level.txt,sha256=8Icuv2_MnzrS0-IY3gUEzhElW9017PUWoP_yRUPIWC8,10
+invoicing_101-1.0.0.dist-info/RECORD,,
