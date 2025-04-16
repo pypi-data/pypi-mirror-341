@@ -1,0 +1,2 @@
+[console_scripts]
+diffnovo-dia = diffnovo_dia.diffnovo_dia:main
