@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+tests/test_inputs.py
+vissim2gmns.egg-info/PKG-INFO
+vissim2gmns.egg-info/SOURCES.txt
+vissim2gmns.egg-info/dependency_links.txt
+vissim2gmns.egg-info/requires.txt
+vissim2gmns.egg-info/top_level.txt
