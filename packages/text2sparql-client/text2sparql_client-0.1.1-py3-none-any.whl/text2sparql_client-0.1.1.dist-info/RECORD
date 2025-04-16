@@ -1,0 +1,13 @@
+text2sparql_client/__init__.py,sha256=k46yUHBT1tpQqHNJGsQ1m9qAIgOf2RppjwFg7YtC5Ec,25
+text2sparql_client/cli.py,sha256=y29O9KtKn97zMBQWyAwEYD0pG1C3_R5u3FVt-Fdmbxg,926
+text2sparql_client/commands/__init__.py,sha256=DamDTrOQBRd3uo7sV1TzDMGtQ1DZYDTQ4gPA7epjBwI,23
+text2sparql_client/commands/ask.py,sha256=hhTj5i69O9SclIAVy2buMobHqixGZNaHczrLUuqAfzA,2459
+text2sparql_client/commands/serve.py,sha256=vWyMNKlsebd_K_X3L6cWj5b5FTX8bhsjLHkcpm2CmmI,1723
+text2sparql_client/context.py,sha256=LH5p-4olEVDrF2Z0mFkkRfkdt7wSwJScrdvZjGH96o8,633
+text2sparql_client/request.py,sha256=U8mypS7xZJFA1342qhLRzXglZ44pyjP_sJ1GuXo-sM8,960
+text2sparql_client/sqlite.py,sha256=WvrKDhOjreU03xyzWPyNWDZjgmPg-2YH_wgzKfg6xfQ,1427
+text2sparql_client-0.1.1.dist-info/LICENSE,sha256=5t6lcWcFU3TBO5wwq9PYNbgzfVfFUuL-80v5BTGuuMQ,11334
+text2sparql_client-0.1.1.dist-info/METADATA,sha256=KvvIQG6vJUMg0ri0Ti_x-iIj1JQapsUaLF8GzzNw3XY,2461
+text2sparql_client-0.1.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+text2sparql_client-0.1.1.dist-info/entry_points.txt,sha256=EVPD9UNfYgt4P-Gxg47lJ0IPuvDPUg4Rzm04702kTyw,58
+text2sparql_client-0.1.1.dist-info/RECORD,,
