@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: lazy-file-handler
+Version: 0.1.1
+Summary: Simple file reader
+Author-email: ariel-zilber <workarikzil@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/ariel-zilber/lazy-file-reader
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# Python Project Template
+
+
+## Project Organization
+
+
+### `pyproject.toml`
+
+
+#### Tool Sections
