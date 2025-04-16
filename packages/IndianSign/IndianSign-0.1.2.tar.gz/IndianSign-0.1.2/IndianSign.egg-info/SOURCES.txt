@@ -1,0 +1,7 @@
+README.md
+setup.py
+IndianSign.egg-info/PKG-INFO
+IndianSign.egg-info/SOURCES.txt
+IndianSign.egg-info/dependency_links.txt
+IndianSign.egg-info/requires.txt
+IndianSign.egg-info/top_level.txt

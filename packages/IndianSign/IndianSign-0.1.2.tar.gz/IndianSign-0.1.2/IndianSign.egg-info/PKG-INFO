@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: IndianSign
+Version: 0.1.2
+Summary: Sign Language Detection using Mediapipe and LSTM
+Author: Atharva
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# IndianSign 🖐️🇮🇳
+
+IndianSign is a Python library that recognizes Indian Sign Language (ISL) signs using MediaPipe and a deep learning model (LSTM).
+
+## Install
+
+```bash
+pip install IndianSign
+```
