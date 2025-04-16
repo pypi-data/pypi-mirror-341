@@ -1,0 +1,10 @@
+core_common_configuration/__init__.py,sha256=R3kHX1DR7JBGF8pK18ovJEDXL4jYxj86n4OOxHdU9fA,705
+core_common_configuration/app_conf.py,sha256=pDqLQ961dSAtvYMR1rpeovSKSIodzacd4nbur4DumMM,5299
+core_common_configuration/base_conf_env.py,sha256=rbcx7vcQ0XNOYq_Nt6p2a2wlEmXM_bcagMWCPhy0voo,7556
+core_common_configuration/base_conf_manager.py,sha256=ALogzvSYqLdpf6_yS79-zdVrfZL887-U9f-jD0FH-AY,4786
+core_common_configuration/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_common_configuration/service_conf_manager.py,sha256=WJWMmlqvnv4N8LQsBDVVwPvHUBJK4oQc8-dpK74mCwU,4855
+turintech_configuration-1.2.3.dist-info/METADATA,sha256=DPF4eAg7VCQasuFbrtLmIpq2Nel2tffDqDxUc0YKMro,479
+turintech_configuration-1.2.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+turintech_configuration-1.2.3.dist-info/licenses/LICENSE,sha256=1oiCRxRmKyfqDkVZDDGPl8W09ACBwaCJNUDYsW1aJB0,14103
+turintech_configuration-1.2.3.dist-info/RECORD,,
