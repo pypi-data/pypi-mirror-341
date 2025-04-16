@@ -1,0 +1,11 @@
+cua_som-0.1.3.dist-info/METADATA,sha256=OIG17X5GrjwnvZZqif9Mqx8MAxfcPdwfhAKfrljkkNw,6979
+cua_som-0.1.3.dist-info/WHEEL,sha256=tSfRZzRHthuv7vxpI4aehrdN9scLjk-dCJkPLzkHxGg,90
+cua_som-0.1.3.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+som/__init__.py,sha256=DS5xIWK_CFVORskO5wnMXizekBlcYk9-KSrzujzkWa4,413
+som/detect.py,sha256=dqt4EDeyKKW3RFI8sz3cLWoH0UPDbN0mCn54XpAODGg,17411
+som/detection.py,sha256=xzuRl6DIaxK-KcRhOwUIOgZbNx_PRoaa9yFkXtdA9zo,8933
+som/models.py,sha256=5iFp1iIFc0FGF-sZY3VTmJ38MxULJpPZQ_9ITIf7Yqg,4109
+som/ocr.py,sha256=Xfu8PFzKuK0QbODV4tJb5R7i4NBANat-m735yHhBld8,5735
+som/util/utils.py,sha256=zxcTLxA4JmHR_kh-FFnRdcqi5_Thtfi4nLAveK7DEz4,7196
+som/visualization.py,sha256=KuI0m_HjUyJ_jJ_OAgGNEVgkd6IHfHN-tRWzPl7yQlw,11728
+cua_som-0.1.3.dist-info/RECORD,,
