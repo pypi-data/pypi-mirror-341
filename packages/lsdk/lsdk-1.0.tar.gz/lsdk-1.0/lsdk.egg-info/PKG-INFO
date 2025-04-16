@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: lsdk
+Version: 1.0
+Summary: Lightweight SDK builder for Python apps
+Author: panoscodergr
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pyinstaller
+Dynamic: author
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

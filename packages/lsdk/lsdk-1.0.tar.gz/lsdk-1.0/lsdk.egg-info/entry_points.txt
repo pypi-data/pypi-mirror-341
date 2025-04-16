@@ -1,0 +1,2 @@
+[console_scripts]
+lsdk = lsdk.cli:main

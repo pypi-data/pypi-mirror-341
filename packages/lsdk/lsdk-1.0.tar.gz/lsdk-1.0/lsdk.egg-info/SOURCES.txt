@@ -1,0 +1,7 @@
+setup.py
+lsdk.egg-info/PKG-INFO
+lsdk.egg-info/SOURCES.txt
+lsdk.egg-info/dependency_links.txt
+lsdk.egg-info/entry_points.txt
+lsdk.egg-info/requires.txt
+lsdk.egg-info/top_level.txt
