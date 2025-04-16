@@ -1,0 +1,6 @@
+ioh
+numpy
+scipy
+
+[test]
+coverage
