@@ -1,0 +1,83 @@
+[project]
+name = "phi_cloud_server"
+version = "0.1.2b0"
+description = "Phigros云存档服务器。"
+authors = [
+    {name = "Shua-github", email = "CHA_shua@outlook.com"},
+]
+dependencies = [
+    "fastapi>=0.115.12", 
+    "uvicorn>=0.34.0", 
+    "pydantic>=2.11.2", 
+    "PyYAML>=6.0.2", 
+    "tortoise-orm>=0.24.2", 
+    "ruamel-yaml>=0.18.10", 
+    "rich>=14.0.0", 
+    "typing-extensions>=4.13.2; python_version <= '3.9'"
+    ]
+requires-python = ">3.9.1,!=3.9"
+readme = "README.md"
+license = {file = "LICENSE"}
+
+[project.scripts]
+phi_cloud_server = "phi_cloud_server:main"
+
+# 使用 setuptools 作为构建系统
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# 包信息，动态发现包
+[tool.setuptools.packages]
+find = {where = ["."], exclude = ["tests*"]}  # 动态发现包，排除测试文件
+
+[tool.ruff]
+exclude = ["tests/"]
+target-version = "py39"
+lint.select = ["ALL"]
+lint.extend-ignore = ["E501","D211","D213","D203","COM812"]
+
+[tool.pdm]
+distribution = true
+
+
+[tool.pdm.scripts]
+# ----------------------------------------------
+start = {call = "phi_cloud_server:main"} # 正常启动
+dev = {call = "phi_cloud_server:main", env = {DEV = "true"} } # dev启动
+# ----------------------------------------------
+dns = {call = "phi_cloud_server.dns:main"} # 启动dns服务器
+cert = {call = "phi_cloud_server.dns.generate_certs:main"} # 启动证书生成
+dev-dns = {call = "phi_cloud_server.dns:main", env = {DEV = "true"} } # dev启动dns服务器
+dev-cert = {call = "phi_cloud_server.dns.generate_certs:main", env = {DEV = "true"} } # dev启动证书生成
+# ----------------------------------------------
+uninstall = "pdm remove" # 卸载
+install = "pdm add" # 安装
+raw_build = "pdm build" # 打包
+publish = 'twine upload dist/*' # 上传pypi
+# ----------------------------------------------
+format = 'ruff format .' # 格式化
+check-ruff = 'ruff check --fix .' # 检查
+check-vermin = 'vermin --eval-annotations --backport asyncio --backport typing --backport argparse --no-parse-comments --backport typing_extensions .' # 检查
+check = {composite = ["check-ruff", "check-vermin"]} # 检查全部
+build = {composite = ["check", "format", "raw_build"]}
+# ----------------------------------------------
+
+[project.optional-dependencies]
+# 可选依赖
+dns = [
+    "psutil>=7.0.0",
+    "cryptography>=44.0.2",
+    "dnspython>=2.7.0",
+]
+
+[dependency-groups]
+dev = [
+    "jurigged>=0.6.0",
+    "ruff>=0.11.2",
+    "twine>=6.1.0",
+    "uvicorn[standard]>=0.34.0",
+    "types-psutil>=7.0.0.20250401",
+    "types-PyYAML>=6.0.12.20250402",
+    "websockets>=15.0.1",
+]

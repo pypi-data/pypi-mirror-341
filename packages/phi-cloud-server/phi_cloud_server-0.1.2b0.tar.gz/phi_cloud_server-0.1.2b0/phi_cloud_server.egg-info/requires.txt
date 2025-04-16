@@ -1,0 +1,15 @@
+fastapi>=0.115.12
+uvicorn>=0.34.0
+pydantic>=2.11.2
+PyYAML>=6.0.2
+tortoise-orm>=0.24.2
+ruamel-yaml>=0.18.10
+rich>=14.0.0
+
+[:python_version <= "3.9"]
+typing-extensions>=4.13.2
+
+[dns]
+psutil>=7.0.0
+cryptography>=44.0.2
+dnspython>=2.7.0
