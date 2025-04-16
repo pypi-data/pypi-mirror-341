@@ -1,0 +1,6 @@
+include LICENSE
+include readme.md
+include requirements.txt
+recursive-include preprocess_nlp_jp18 *
+
+include preprocess_nlp_jp18/data/contractions.json
