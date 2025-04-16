@@ -1,0 +1,204 @@
+Perform the data classification using classification algorithm using R/Python.
+Code:
+Hairfall<-c(12,13,14,17,15,18,12,13,14,17,19,18)
+Hairfall
+
+Hairfall.timeseries<-ts(Hairfall,start=c(2024,4),frequency=12)
+Hairfall.timeseries
+plot(Hairfall.timeseries)     
+
+-----------------------------------------------------------
+
+Perform the data clustering using clustering algorithm using R/Python
+a]Data clustering using the R:
+newiris <- iris
+newiris$Species <- NULL
+(kc <- kmeans(newiris, 3))
+	
+table(iris$Species, kc$cluster)
+
+plot(newiris[c("Sepal.Length", "Sepal.Width")], col = kc$cluster)
+points(kc$centers[, c("Sepal.Length", "Sepal.Width")], col = 1:3, pch = 8, cex = 2)
+
+------------------------------------------------------------------------
+ Linear regression 
+X<-c(152,156,159,163,165)
+Y<-c(63,68,59,71,64)
+X
+Y
+relationYX<-lm(Y~X)
+print(relationYX)
+
+relationXY<-lm(X~Y)
+print(relationXY)
+
+summaryXY=summary(relationXY)
+print(summaryXY)
+
+summaryYX=summary(relationYX)
+print(summaryYX)
+
+ print(summaryYX)
+
+a=data.frame(X=173)
+result=predict(relationYX,a)
+print(paste("Weight of the student when Height=173 is ",result," kg"))
+b=data.frame(Y=70)
+result1=predict(relationXY,b)
+
+print(paste("Height of the student when weight=70 is ",result1," cm"))
+plot(Y,X,col="blue",main="Height and Weight of Students",xlab="Weight",ylab="Height",pch=15,abline(lm(X~Y)))
+
+--------------------------------------------------------------------
+ Linear regression 
+a=mtcars[c("cyl","wt","am","gear")]
+d=head(a)
+d
+b<-glm(formula=am~cyl+wt,data=a,family=binomial)
+c<- summary(b)
+c
+-----------------------------------------------------------------------
+
+Write a Python program to read data from a CSV file, perform simple data analysis, and 
+generate basic insights. (Use Pandas is a Python library).
+(***pip install pandas****)
+(***pip install seaborn***)
+
+import pandas as pd
+
+file_path = "sales_data.csv"  
+data = pd.read_csv(file_path)
+
+print("First 5 rows of the data:")
+print(data.head())
+
+# Summary statistics of numeric columns
+print("\nSummary Statistics:")
+print(data.describe())
+
+# Check for missing values
+print("\nMissing values in each column:")
+print(data.isnull().sum())
+
+# Data Types of columns
+print("\nData Types of Columns:")
+print(data.dtypes)
+
+# Correlation between numeric columns
+#print("\nCorrelation between numeric columns:")
+#print(data.corr())
+# Correlation between numeric columns
+numeric_data = data.select_dtypes(include=['number'])  # Select only numeric columns
+print("\nCorrelation between numeric columns:")
+print(numeric_data.corr())
+
+
+print("\n fill empty quantity")
+x = data["Quantity"].mean()
+#data["Quantity"].fillna(x, inplace = True)
+data.fillna({"Quantity": x}, inplace=True)
+print(data.head(15))
+
+if 'Sales' in data.columns:
+    max_sales = data['Sales'].max()
+    print(f"\nMaximum Sales value: {max_sales}")
+
+#the most frequent category in a categorical column (e.g., 'Product' column)
+if 'Product' in data.columns:
+    most_frequent_product = data['Product'].mode()[0]
+    print(f"Most frequent product: {most_frequent_product}")
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Plotting a histogram of a numeric column like 'Sales'
+if 'Sales' in data.columns:
+    plt.figure(figsize=(8, 6))
+    sns.histplot(data['Sales'], kde=True)
+    plt.title('Sales Distribution')
+    plt.xlabel('Sales')
+    plt.ylabel('Frequency')
+    plt.show()
+-------------------------------------------------------
+Perform data visualization
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the CSV file using pandas
+data = pd.read_csv('mat_data.csv', parse_dates=['Date'])
+
+# Display the first few rows of the data
+print(data.head())
+
+# to display multiple plots at once.figsize=(14, 10): This specifies the size of the overall figure in inches
+fig, ax = plt.subplots(2, 2, figsize=(14, 10))
+
+# Line Plot: Sales and Profit over Time
+#marker='o'=to specify the shape of the markers that represent data points on a plot 'o':circle as the marker
+ax[0, 0].plot(data['Date'], data['Sales'], label='Sales', color='b', marker='o')
+ax[0, 0].plot(data['Date'], data['Profit'], label='Profit', color='g', marker='x')
+ax[0, 0].set_title('Sales and Profit Over Time')
+ax[0, 0].set_xlabel('Date')
+ax[0, 0].set_ylabel('Amount')
+ax[0, 0].legend()#A legend is used to label different plot elements (such as lines, markers, or bars)
+
+# Bar Plot: Sales vs. Advertising
+ax[0, 1].bar(data['Date'], data['Sales'], width=0.4, label='Sales', color='b', align='center')
+ax[0, 1].bar(data['Date'], data['Advertising'], width=0.4, label='Advertising', color='orange', align='edge')
+ax[0, 1].set_title('Sales vs Advertising')
+ax[0, 1].set_xlabel('Date')
+ax[0, 1].set_ylabel('Amount')
+ax[0, 1].legend()
+
+# Scatter Plot: Profit vs. Advertising
+ax[1, 0].scatter(data['Advertising'], data['Profit'], color='r')
+ax[1, 0].set_title('Profit vs Advertising')
+ax[1, 0].set_xlabel('Advertising Spend')
+ax[1, 0].set_ylabel('Profit')
+
+# Histogram: Distribution of Sales
+ax[1, 1].hist(data['Sales'], bins=5, edgecolor='black', color='skyblue')
+ax[1, 1].set_title('Sales Distribution')
+ax[1, 1].set_xlabel('Sales')
+ax[1, 1].set_ylabel('Frequency')
+
+# Adjust layout to prevent overlap
+plt.tight_layout()
+
+# Show the plots
+plt.show()
+------------------------------------
+Create a staging database and a staging table:
+
+
+create database staging;
+use staging
+
+create table stage_primary_data(id int(3) primary key auto_increment,name varchar(50),address varchar(40),pin varchar(5));
+describe stage_primary_data;
+insert into stage_primary_data(name,address,pin) values ("Kalpaj Phansalkar","Kankavli",'412');
+insert into stage_primary_data(name,address,pin) values ("Tejas Redkar","Kankavli",'35');
+insert into stage_primary_data(name,address,pin) values ("Sairaj Patkar","Kudal",'6969');
+insert into stage_primary_data(name,address,pin) values ("Ricky Fernandis","Kasal",'11111');
+select * from stage_primary_data;
+
+
+update stage_primary_data set pin=right(concat("00000",pin),5);
+select * from stage_primary_data;
+
+b] Create a database for data storage:
+
+create database data_storage;
+use data_storage;
+create table process_primary_data(id int(3) primary key auto_increment,name varchar(50),address varchar(40),pin varchar(5));
+
+c) insert the data into the other database from the staging database:
+INSERT INTO process_primary_data SELECT * FROM staging.stage_primary_data;
+select * from process_primary_data;
+
+
+
+
+
+     

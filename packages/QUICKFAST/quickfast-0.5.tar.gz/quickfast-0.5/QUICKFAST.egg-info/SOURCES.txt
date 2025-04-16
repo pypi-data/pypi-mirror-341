@@ -1,0 +1,19 @@
+MANIFEST.in
+setup.py
+QUICKFAST/__init__.py
+QUICKFAST.egg-info/PKG-INFO
+QUICKFAST.egg-info/SOURCES.txt
+QUICKFAST.egg-info/dependency_links.txt
+QUICKFAST.egg-info/top_level.txt
+QUICKFAST/CSV/mat_data.csv
+QUICKFAST/CSV/sales_data.csv
+QUICKFAST/DBCOMMANDS/Staging.txt
+QUICKFAST/DBCOMMANDS/database.txt
+QUICKFAST/EXCEL/pivat table.xlsx
+QUICKFAST/EXCEL/what if 1.xlsx
+QUICKFAST/PYTHON/Data_Visualization.py
+QUICKFAST/PYTHON/Pandas_Searborn_Insight_Generate.py
+QUICKFAST/R/Data_Classification.R
+QUICKFAST/R/Data_Clustering.R
+QUICKFAST/R/Linear_Regression.R
+QUICKFAST/TEXT/BI PRACTICALS.txt
