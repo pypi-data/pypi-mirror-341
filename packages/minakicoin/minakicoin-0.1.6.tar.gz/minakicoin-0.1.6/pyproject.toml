@@ -1,0 +1,35 @@
+[project]
+name = "minakicoin"
+version = "0.1.6"
+description = "A modular blockchain engine"
+authors = [
+  { name = "Andrew Polykandriotis", email = "andrwe@minakilabs.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "cryptography",
+    "click",
+    "pydantic",
+    "mysql-connector-python",
+    "colorama",
+    "python-dotenv",
+    "rich",
+    "typer",
+    "ecdsa",
+    "httpx",
+    "uvicorn",
+    "fastapi",
+    "numpy"
+]
+
+[project.scripts]
+minakicoin = "minakicoin.main:cli"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["minakicoin*"]
+
+[tool.setuptools.package-data]
+"minakicoin.config" = ["wallet_schema.sql"]

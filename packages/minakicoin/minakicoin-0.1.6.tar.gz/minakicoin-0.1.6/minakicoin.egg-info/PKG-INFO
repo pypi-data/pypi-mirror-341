@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: minakicoin
+Version: 0.1.6
+Summary: A modular blockchain engine
+Author-email: Andrew Polykandriotis <andrwe@minakilabs.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography
+Requires-Dist: click
+Requires-Dist: pydantic
+Requires-Dist: mysql-connector-python
+Requires-Dist: colorama
+Requires-Dist: python-dotenv
+Requires-Dist: rich
+Requires-Dist: typer
+Requires-Dist: ecdsa
+Requires-Dist: httpx
+Requires-Dist: uvicorn
+Requires-Dist: fastapi
+Requires-Dist: numpy
+
+# -1-passed-in-0.04s-venv-c80129b-apiusage-minakicoin-core-private-2.0

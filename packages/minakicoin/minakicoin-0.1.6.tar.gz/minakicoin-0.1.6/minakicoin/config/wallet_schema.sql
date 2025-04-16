@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS wallets (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    label TEXT UNIQUE,
+    public_key TEXT NOT NULL,
+    private_key TEXT NOT NULL,
+    address TEXT NOT NULL,
+    created_at TEXT DEFAULT CURRENT_TIMESTAMP
+);

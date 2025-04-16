@@ -1,0 +1,13 @@
+cryptography
+click
+pydantic
+mysql-connector-python
+colorama
+python-dotenv
+rich
+typer
+ecdsa
+httpx
+uvicorn
+fastapi
+numpy
