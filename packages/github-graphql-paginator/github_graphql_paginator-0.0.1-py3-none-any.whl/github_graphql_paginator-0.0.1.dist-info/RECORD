@@ -1,0 +1,14 @@
+github_graphql_paginator-0.0.1.dist-info/licenses/COPYING,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+github_graphql_paginator-0.0.1.dist-info/licenses/COPYING.LESSER,sha256=8eUm-R7Bb2n-K4XRInp28RYvXGR3TfvntDfbJN6wRNA,7634
+githubgql/Client.py,sha256=nB2jwWZQjY4TxqMilfWmJo0IOiaBI4mhcHTs8fRFDbY,12630
+githubgql/Config.py,sha256=wnxGXMQ0W5fytZtXqzoIb-6k0aEqde4UaQzWr8L65lg,2312
+githubgql/Iterator.py,sha256=kmYkNfVouThhGgY5YzXuaBGjJb70fIBWvRNyqSE4cdQ,8217
+githubgql/Merger.py,sha256=eQFsVI3eu0i9K-eoC58HzCHTgV7bMVpPTV12ROm0xNA,3988
+githubgql/Paginator.py,sha256=EWfQjaMYxtcIR5qoa70MYV2G3T3Qq05-FQ5A8NQx-PU,8065
+githubgql/__init__.py,sha256=ZL4CgyPXy1Gr0BlV4VJ-avuTN5zbuGgTcou5FFR5-PQ,1737
+githubgql/config.yml,sha256=17oOXO-Mj-nz4ehktXXsS6Vu_fjuCS1Z5adQncmQSy8,10641
+githubgql/schema.docs.graphql,sha256=RuNKmGsLBPvmdIq5SMYpqUpEjpCUtQCLqelEXiDB6Qs,1262568
+github_graphql_paginator-0.0.1.dist-info/METADATA,sha256=NWEqIYFlZpuxEo8zNqT862eLITQ9nvhkop2ljGCkQcA,7935
+github_graphql_paginator-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+github_graphql_paginator-0.0.1.dist-info/top_level.txt,sha256=0aoMvGiSjQysB7npmNelI00JI5jPYCFFtvmHccNKJhQ,10
+github_graphql_paginator-0.0.1.dist-info/RECORD,,
