@@ -1,0 +1,14 @@
+triku/__init__.py,sha256=m-iTRgC-Mrvz5EG_x337n9mD3F0MPpYyrlwMobZUYWE,61
+triku/genutils.py,sha256=w90w5NN4A85gpAotXMp8LVlFkM9ppF2T9Blwi33vaHI,670
+triku/logg.py,sha256=ph4Kwmckj04aGCrBT2dEb2n4bZWNiCEONCnznzU1u6w,712
+triku/tl/__init__.py,sha256=T23Af6nXP27gZY3rCAHeCQ1MacvIRCgzbVWOiAtlB2A,42
+triku/tl/_triku.py,sha256=fdlOC1sx_Iaz5mnOEfThJ2C9Kv8yer5luqFRrkQtXd8,7847
+triku/tl/_triku_functions.py,sha256=a3R2b46i6sKr6g0RZvwAfOlks-Dwsxi5gj7bgaAtNuo,18599
+triku/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+triku/utils/_general_utils.py,sha256=MUkhAGqyl-KuVvJ5Nz7jV5Uvj3Hzpc1kqn_pfZefLgE,367
+triku/utils/_triku_tl_utils.py,sha256=E_SHHkTleq4tPLKV-tkbNoY0hF10sY-vi8SINvGRrUQ,3098
+triku-2.2.0.dist-info/licenses/LICENSE,sha256=y5iQqS8Hu9HpxomK94H1R6XN4ZyCRpBvDcCGcMDfFmo,1520
+triku-2.2.0.dist-info/METADATA,sha256=DcuxLE8DC-0ZhwQkxHp5N1a3jD8SsKy4pZ1YSUjSdtA,2730
+triku-2.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+triku-2.2.0.dist-info/top_level.txt,sha256=QjllJk-jQbxxTCUjWQr9_hH3RAQOHm1ZBoogW8TWldI,6
+triku-2.2.0.dist-info/RECORD,,
