@@ -1,0 +1,21 @@
+[project]
+name = "mcp-server-again"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Seemant Tripathi", email = "tripathiseemant766@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "build>=1.2.2.post1",
+    "mcp[cli]>=1.6.0",
+    "twine>=6.1.0",
+]
+
+[project.scripts]
+mcp-server-again = "mcp_server_again:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: mcp-server-again
+Version: 0.1.0
+Summary: Add your description here
+Author-email: Seemant Tripathi <tripathiseemant766@gmail.com>
+Requires-Python: >=3.11
+Requires-Dist: build>=1.2.2.post1
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: twine>=6.1.0
+Description-Content-Type: text/markdown
+
+
+
+'''
+uv run mcp dev D:/Work/XO/MCP-Servers/mcp-server-again/src/mcp_server_again/mcp_server_again.py
+
+uv run mcp install D:/Work/XO/MCP-Servers/mcp-server-again/src/mcp_server_again/mcp_server_again.py
+
+uv run -m mcp_server_again
+
+
+
+"Demo2": {
+            "command": "uvx",
+            "args": [
+                "git+https://github.com/seemanttripathi/mcp-server-again.git"
+            ]
+        }
