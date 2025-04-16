@@ -1,0 +1,3 @@
+[console_scripts]
+speedyfit = speedyfit.main:main
+speedyfit-batch = speedyfit.speedyfit_batch:main
