@@ -1,0 +1,58 @@
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+  actions: read
+  checks: write
+
+jobs:
+  main_build:
+    runs-on: ubuntu-24.04
+    name: Sequential build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Main build
+        id: build
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+        uses: ./.github/actions
+      
+      - name: Publish Python Test Results
+        uses: dorny/test-reporter@v2
+        if: always()  # ensures it runs even if tests fail
+        with:
+          name: JUnit Tests
+          path: python-report.xml
+          reporter: java-junit
+      
+      - uses: actions/upload-artifact@v4
+        if: always()  # ensures it runs even if tests fail
+        with:
+          name: py package
+          path: dist/motoko_cli-*.tar.gz
+          
+      - name: Publish to PyPI
+        # This is the version of the action for setting up Python, not the Python version.
+        uses: actions/setup-python@v5
+        with:
+          # Semantic version range syntax or exact version of a Python version
+          python-version: '3.10'
+          # Optional - x64 or x86 architecture, defaults to x64
+          architecture: 'x64'
+      # You can test your matrix by printing the current Python version
+      - name: Display Python version
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+        run: |
+          python -c "import sys; print(sys.version)"
+          python -m pip install --upgrade pip
+          pip install twine
+          echo "USERNAME: $TWINE_USERNAME"
+          echo "PASSWORD: $TWINE_PASSWORD"
+          twine upload -u "$TWINE_USERNAME" -p "$TWINE_PASSWORD" ./dist/*
