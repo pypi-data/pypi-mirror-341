@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podflow</title>
+  <style>
+    /* 定义颜色变量 - 浅色模式 */
+    :root {
+      --bg-color: #f8f9fa;
+      --text-color: #333333;
+      --secondary-text: #666666;
+      --input-bg: #ffffff;
+      --input-border: #cccccc;
+      --button-bg: #007bff;
+      --button-hover: #0056b3;
+      --button-text: #ffffff;
+      --button-shadow: hsla(0, 0%, 0%, 0.20);
+      --menu-bg: #f0f0f0;
+      --menu-text: #333333;
+      --menu-width: 170px;
+      --menu-selected-bg: #cccccc;
+      /* 将进度条颜色变量修改为蓝色 */
+      --progress-bar-color: #0d6efd; /* 标准蓝色 */
+      --background-bar-color: #e0e0e0; /* 浅色背景下的进度条颜色 */
+    }
+
+    /* 深色模式变量 */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #222222;
+        --text-color: #e0e0e0;
+        --secondary-text: #aaaaaa;
+        --input-bg: #333333;
+        --input-border: #555555;
+        --button-bg: #0062cc;
+        --button-hover: #0069d9;
+        --button-text: #f0f0f0;
+        --button-shadow: hsla(0, 0%, 0%, 0.40);
+        --menu-bg: #333333;
+        --menu-text: #e0e0e0;
+        --menu-selected-bg: #555555;
+        /* 将深色模式下的进度条颜色修改为较亮的蓝色 */
+        --progress-bar-color: #315188; /* 较亮的蓝色，适合深色背景 */
+        --background-bar-color: #333333; /* 深色背景下的进度条颜色 */
+      }
+    }
+
+    .ansi-url{
+      color: #4064a0;
+      text-decoration: underline;
+    }
+
+    /* ... (其余的 ANSI 颜色、基本样式、表单样式、按钮样式、提示样式、菜单切换按钮、手机端优化、消息和二维码样式保持不变) ... */
+    .ansi-30m { color: #000000; }
+    .ansi-31m { color: #bb271b; }
+    .ansi-32m { color: #61992e; }
+    .ansi-33m { color: #bea235; }
+    .ansi-34m { color: #4064a0; }
+    .ansi-35m { color: #705278; }
+    .ansi-36m { color: #449598; }
+    .ansi-37m { color: #d4d7d0; }
+    .ansi-90m { color: #565752; }
+    .ansi-91m { color: #dc3f36; }
+    .ansi-92m { color: #53b739; }
+    .ansi-93m { color: #f9ea6b; }
+    .ansi-94m { color: #7c9ecb; }
+    .ansi-95m { color: #de30c5; }
+    .ansi-96m { color: #51b2bb; }
+    .ansi-97m { color: #eeeeec; }
+
+    @media (prefers-color-scheme: dark) {
+      .ansi-30m { color: #ffffff; }
+      .ansi-31m { color: #bb271b; }
+      .ansi-32m { color: #61992e; }
+      .ansi-33m { color: #bea235; }
+      .ansi-34m { color: #4064a0; }
+      .ansi-35m { color: #705278; }
+      .ansi-36m { color: #449598; }
+      .ansi-37m { color: #d4d7d0; }
+      .ansi-90m { color: #565752; }
+      .ansi-91m { color: #dc3f36; }
+      .ansi-92m { color: #53b739; }
+      .ansi-93m { color: #f9ea6b; }
+      .ansi-94m { color: #7c9ecb; }
+      .ansi-95m { color: #de30c5; }
+      .ansi-96m { color: #51b2bb; }
+      .ansi-97m { color: #eeeeec; }
+    }
+
+    /* 基本样式 */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+      margin: 0;
+      display: flex;
+    }
+    nav {
+      width: var(--menu-width);
+      background-color: var(--menu-bg);
+      color: var(--menu-text);
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: width 0.3s, padding 0.3s, color 0.3s;
+    }
+    nav.hidden {
+      width: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav h3 {
+      text-align: center;
+      margin: 20px 0 0;
+      font-size: 20px;
+    }
+    nav li {
+      margin: 5px 0;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      padding: 0 20px;
+      height: 40px;
+      line-height: 40px;
+    }
+    nav li:hover {
+      background-color: var(--menu-selected-bg);
+      color: var(--button-hover);
+    }
+    main {
+      flex: 1;
+      padding: 40px;
+      max-width: 520px;
+      transition: margin-left 0.3s;
+    }
+    main.full {
+      margin-left: 0;
+    }
+
+    /* 表单与消息区域共用样式 */
+    .common-area {
+      width: 100%;
+      max-width: 520px;
+      padding: 2px;
+      border: 1px solid var(--input-border);
+      border-radius: 4px;
+      background-color: var(--input-bg);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+      box-sizing: border-box;
+      line-height: 1.1;
+      overflow-x: auto; /* 当内容超出宽度时显示水平滚动条（可选） */
+      overflow-y: auto;
+      font-family: 'Courier New', Courier, monospace; /* 添加字体 */
+      word-break: break-word;
+      overflow-wrap: break-word;
+      white-space: pre-wrap; /* 保留换行并允许自动换行 */
+    }
+    textarea {
+      height: 350px;
+      font-size: 16px;
+    }
+    #messageArea {
+      height: 350px;
+      font-size: 12px;
+    }
+    #messageHttp {
+      height: 150px;
+      font-size: 12px;
+    }
+    .button-container {
+      margin-top: 10px;
+    }
+    button {
+      background-color: var(--button-bg);
+      color: var(--button-text);
+      border: none;
+      padding: 12px 18px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      box-shadow: 2px 2px 8px var(--button-shadow);
+      margin: 5px;
+    }
+    button:hover {
+      background-color: var(--button-hover);
+    }
+    .hint {
+      font-size: 14px;
+      color: var(--secondary-text);
+      margin-top: 10px;
+    }
+    /* 菜单切换按钮 */
+    #toggleMenu {
+      width: 35px;
+      height: 40px;
+      position: fixed;
+      left: var(--menu-width);
+      top: 5px;
+      background: var(--menu-bg);
+      border: none;
+      font-size: 20px;
+      color: var(--text-color);
+      cursor: pointer;
+      transition: left 0.3s, color 0.3s;
+      border-radius: 0 10px 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 8px var(--button-shadow);
+      margin: 0;
+    }
+    #toggleMenu:hover {
+      color: var(--button-hover);
+    }
+
+    /* 手机端优化 */
+    @media (max-width: 600px) {
+      #messageArea, textarea {
+        max-width: none;
+      }
+      button {
+        width: 90%;
+      }
+      nav {
+        position: fixed;
+      }
+      /* 确保页面宽度不会超出视口 */
+      body, html {
+        width: 100%;
+        overflow-x: hidden;
+      }
+    }
+    .message {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    /* 二维码容器样式 */
+    .qrcode-container {
+      display: inline-block; /* 让容器并排显示 */
+      margin: 0px;
+    }
+
+    /* 主进度条样式 */
+    .progress-bar {
+      width: 100%;
+      height: 22px;
+      background-color: var(--background-bar-color); /* 考虑使用变量 */
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid var(--input-border);
+    }
+    .progress-bar .progress {
+      height: 100%;
+      background-color: var(--progress-bar-color);
+      width: 0%; /* 根据实际进度更新 */
+      transition: width 0.3s ease-in-out;
+      border-radius: 12px;
+      /* 多背景 */
+      background-image:
+        linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.5) 50%, transparent 100%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+      background-size: 200% 100%, 100% 100%;
+      background-repeat: no-repeat, no-repeat;
+      /* 初始背景位置 */
+      background-position: 100% 0, 0 0; /* 脉冲初始在左侧 */
+    }
+    /* 脉冲动画效果 */
+    .progress-bar .progress.animated {
+      /* 动画：名称 时长 缓动函数 延迟 次数 方向 填充模式 播放状态 */
+      animation: pulse-lr 4s linear infinite alternate; /* 添加 alternate */
+      /* 注意：你也可以调整时长，例如 2s 让单程更快 */
+    }
+    /* 关键帧动画 (保持 L-to-R 定义) */
+    @keyframes pulse-lr {
+      0% {
+        /* 脉冲背景的右边缘对齐容器右边缘 (高亮在左边缘) */
+        background-position: 100% 0, 0 0;
+      }
+      100% {
+        /* 脉冲背景的左边缘对齐容器左边缘 (高亮在右边缘) */
+        background-position: 0% 0, 0 0;
+      }
+    }
+    .progress-bar .status-text {
+      position: absolute;
+      top: 50%;
+      left: 15px; /* 稍微调整左边距 */
+      transform: translateY(-50%);
+      color: var(--text-color); /* 使用文本颜色变量 */
+      font-weight: bold;
+      font-size: 14px;
+      z-index: 2; /* 确保状态文本覆盖在进度条上 */
+    }
+    .progress-bar .percentage-text {
+      position: absolute;
+      top: 50%;
+      right: 15px; /* 稍微调整右边距 */
+      transform: translateY(-50%);
+      color: var(--text-color); /* 使用文本颜色变量 */
+      font-weight: bold;
+      font-size: 14px;
+      z-index: 2; /* 确保百分比文本覆盖在进度条上 */
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+  <!-- 菜单栏 -->
+  <nav id="menu">
+    <h3>菜单栏</h3>
+    <ul>
+      <li data-page="pageMessage">Podflow 运行情况</li>
+      <li data-page="pageChannel">获取媒体频道 ID</li>
+    </ul>
+  </nav>
+  <!-- 菜单切换按钮 -->
+  <button id="toggleMenu">❮</button>
+  <!-- 主体区域 -->
+  <main id="main">
+    <!-- 获取 Channel-ID 页面 -->
+    <section id="pageChannel" style="display: none;">
+      <h2>获取媒体频道 ID</h2>
+      <form id="inputForm" method="post" action="getid">
+        <label for="inputOutput">请输入：</label><br>
+        <textarea class="common-area" name="inputOutput" id="inputOutput"></textarea><br>
+        <div class="button-container">
+          <button type="button" id="pasteBtn">📋 粘贴</button>
+          <button type="submit">✅ 提交</button>
+          <button type="button" id="copyBtn">📄 拷贝</button>
+          <button type="button" id="clearBtn">🗑️ 清空</button>
+        </div>
+        <p class="hint">📌 如果粘贴按钮无效，请长按输入框手动粘贴。</p>
+      </form>
+    </section>
+    <!-- 消息滚动显示页面 -->
+    <section id="pageMessage">
+      <h2>Podflow 运行情况</h2>
+      </div>
+      <form>
+        <label>主进度条：</label>
+        <div class="progress-bar">
+          <div class="progress animated" id="mainProgress"></div>
+          <div class="status-text" id="progressStatus">准备中</div>
+          <div class="percentage-text" id="progressPercentage">0.00%</div>
+        </div>
+        <label>构建服务：</label><br>
+        <div class="common-area" id="messageArea"></div>
+        <label>收发服务：</label><br>
+        <div class="common-area" id="messageHttp"></div>
+      </form>
+    </section>
+  </main>
+  <script>
+    (function() {    
+      // 生成单个二维码的函数
+      function generateQRCodeForNode(container) {
+        const rootStyles = getComputedStyle(document.documentElement);
+        const textColor = rootStyles.getPropertyValue('--text-color');
+        const inputBg = rootStyles.getPropertyValue('--input-bg');
+        const url = container.dataset.url;
+        container.innerHTML = '';
+        if (url) {
+          new QRCode(container, {
+            text: url,
+            width: 220,
+            height: 220,
+            colorDark: textColor,
+            colorLight: inputBg,
+            correctLevel: QRCode.CorrectLevel.L
+          });
+        } else {
+          container.textContent = 'URL 未提供';
+        }
+      }
+    
+      // 缓存常用节点
+      const menu = document.getElementById('menu');
+      const toggleMenuBtn = document.getElementById('toggleMenu');
+      const pages = {
+        pageChannel: document.getElementById('pageChannel'),
+        pageMessage: document.getElementById('pageMessage')
+      };
+      const inputForm = document.getElementById('inputForm');
+      const inputOutput = document.getElementById('inputOutput');
+      const pasteBtn = document.getElementById('pasteBtn');
+      const copyBtn = document.getElementById('copyBtn');
+      const clearBtn = document.getElementById('clearBtn');
+      // 缓存进度条和文本元素
+      const mainProgress = document.getElementById('mainProgress');
+      const progressStatus = document.getElementById('progressStatus');
+      const progressPercentage = document.getElementById('progressPercentage');
+      const messageArea = document.getElementById('messageArea');
+      const messageHttp = document.getElementById('messageHttp');
+    
+      let lastMessage = { podflow: [], http: [], schedule: [] };
+      let pollingTimer = null;
+    
+      // 菜单切换函数
+      function toggleMenu() {
+        menu.classList.toggle('hidden');
+        if (menu.classList.contains('hidden')) {
+          toggleMenuBtn.style.left = '0px';
+          toggleMenuBtn.textContent = '❯';
+        } else {
+          toggleMenuBtn.style.left = 'var(--menu-width)';
+          toggleMenuBtn.textContent = '❮';
+        }
+      }
+    
+      // 根据页面标识显示对应面板
+      function showPage(pageId) {
+        Object.values(pages).forEach(page => page.style.display = 'none');
+        if (pages[pageId]) {
+          pages[pageId].style.display = 'block';
+          // 手机模式下自动隐藏菜单
+          if (window.innerWidth <= 600 && !menu.classList.contains('hidden')) {
+            toggleMenu();
+          }
+          pageId === 'pageMessage' ? startMessagePolling() : stopMessagePolling();
+        }
+      }
+    
+      // 初始化默认页面
+      showPage('pageMessage');
+    
+      let userScrolled = false;
+    
+      // 监听滚动事件，检测用户是否手动滚动
+      function onUserScroll(event) {
+        const element = event.target;
+        // 判断是否接近底部，增加一定的容差值
+        const nearBottom = element.scrollHeight - element.scrollTop <= element.clientHeight + 10;
+        userScrolled = !nearBottom;
+      }
+    
+      messageArea.addEventListener('scroll', onUserScroll);
+      messageHttp.addEventListener('scroll', onUserScroll);
+    
+      // 轮询消息更新，更新 messageArea 与 messageHttp
+      function getMessages() {
+        fetch('message')
+          .then(response => response.json()) // 解析 JSON 数据
+          .then(data => {
+            if (JSON.stringify(data) !== JSON.stringify(lastMessage)) {
+              // 更新进度条
+              updateProgress(data.schedule);
+              // 追加新消息
+              appendMessages(messageArea, data.podflow, lastMessage.podflow);
+              appendMessages(messageHttp, data.http, lastMessage.http);
+              lastMessage = data;
+            }
+          })
+          .catch(error => console.error('获取消息失败:', error));
+      }
+
+      // 更新进度条并显示状态和百分比
+      function updateProgress(scheduleData) {
+        // 检查 schedule 数据是否存在且长度为 2
+        if (scheduleData && scheduleData.length === 2) {
+          const [status, progress] = scheduleData; // 直接解构数组
+          if (status === "准备中" || status === "构建中") {
+            mainProgress.style.width = `${progress * 100}%`;
+            progressStatus.textContent = status;   // 显示状态
+            progressPercentage.textContent = `${(progress * 100).toFixed(2)}%`;   // 显示百分比，保留两位小数
+          } else if (status === "已完成") {
+            mainProgress.style.width = '100%';
+            progressStatus.textContent = '已完成';   // 显示完成状态
+            progressPercentage.textContent = '100.0%';   // 显示百分比
+          }
+        }
+      }
+
+      function createMessageElement(message) {
+        const p = document.createElement('p');
+        p.innerHTML = message;
+        p.className = 'message';
+        return p;
+      }
+
+      function processQRCodeContainers(p) {
+        const qrContainers = p.querySelectorAll('.qrcode-container');
+        qrContainers.forEach(container => {
+          // 判断当前容器是否有 data-url 属性，并且值不为空
+          if (container.dataset.url) {
+            generateQRCodeForNode(container);
+          } else {
+            // 如果没有 data-url 或值为空，可以执行其他操作，例如输出提示信息
+            console.log('容器中未提供 URL，跳过二维码生成:', container);
+            container.textContent = '未提供二维码 URL'; // 可选：在容器中显示提示
+          }
+        });
+      }
+    
+      // 修改后的 appendMessages 函数：先生成消息节点内的二维码，再将节点追加或替换到消息容器中
+      function appendMessages(container, newMessages, oldMessages) {
+        // 判断当前是否在底部
+        const wasAtBottom = container.scrollHeight - container.scrollTop <= container.clientHeight + 10;
+        // 较为简单的情况：两数组长度相同且有内容，只比较最后四项
+        if (newMessages.length === oldMessages.length && newMessages.length > 0) {
+          let replaceCount;
+          if (newMessages[newMessages.length - 1].includes("未扫描") || 
+              newMessages[newMessages.length - 1].includes("二维码超时, 请重试")) {
+            replaceCount = Math.min(4, newMessages.length);
+          } else {
+            replaceCount = 1;
+          }
+          for (let i = 0; i < replaceCount; i++) {
+            // 计算从后向前的索引位置
+            const index = newMessages.length - 1 - i;
+            const newMessage = newMessages[index];
+            const oldMessage = oldMessages[index];
+            if (newMessage !== oldMessage) {
+              // 先创建消息节点
+              const p = createMessageElement(newMessage);
+              // 在插入前先处理二维码生成
+              processQRCodeContainers(p);
+              // 替换到容器中 - 注意这里要找到对应位置的子元素
+              const childToReplace = container.children[index];
+              if (childToReplace) {
+                container.replaceChild(p, childToReplace);
+              }
+            }
+          }
+        } else {
+          // 当 newMessages 与 oldMessages 数量不一致时
+          // 如果 oldMessages 存在数据，先替换容器中最后一项对应的消息
+          if (oldMessages.length > 0) {
+            const replaceIndex = oldMessages.length - 1;
+            const p = createMessageElement(newMessages[replaceIndex]);
+            // 先生成二维码
+            processQRCodeContainers(p);
+            const lastChild = container.lastElementChild;
+            if (lastChild) {
+              container.replaceChild(p, lastChild);
+            } else {
+              container.appendChild(p);
+            }
+          }
+          // 再追加从 oldMessages.length 开始的后续消息
+          newMessages.slice(oldMessages.length).forEach(msg => {
+            const p = createMessageElement(msg);
+            // 先生成二维码
+            processQRCodeContainers(p);
+            // 插入容器中
+            container.appendChild(p);
+          });
+        }
+        // 如果之前在底部且用户没有主动滚动，则自动滚动到底部
+        if (wasAtBottom && !userScrolled) {
+          container.scrollTop = container.scrollHeight;
+        }
+      }
+    
+      // 启动消息轮询
+      function startMessagePolling() {
+        getMessages();
+        pollingTimer = setInterval(getMessages, 500);
+      }
+    
+      // 停止消息轮询
+      function stopMessagePolling() {
+        if (pollingTimer !== null) {
+          clearInterval(pollingTimer);
+          pollingTimer = null;
+        }
+      }
+    
+  //  startMessagePolling();
+    
+      // 表单异步提交（获取 Channel-ID）
+      inputForm && inputForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const content = inputOutput.value;
+        fetch('getid', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ content })
+        })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('网络响应异常');
+            }
+            return response.json();
+          })
+          .then(data => inputOutput.value = data.response)
+          .catch(error => {
+            console.error('请求失败:', error);
+            alert('请求失败，请稍后重试！');
+          });
+      });
+    
+      // 粘贴功能
+      pasteBtn.addEventListener('click', function() {
+        if (navigator.clipboard && navigator.clipboard.readText) {
+          navigator.clipboard.readText().then(text => {
+            inputOutput.value = text;
+            inputOutput.focus();
+          }).catch(err => {
+            console.warn("剪贴板读取失败:", err);
+            alert("无法读取剪贴板，请手动粘贴！");
+          });
+        } else {
+          try {
+            inputOutput.focus();
+            document.execCommand('paste');
+          } catch (err) {
+            console.warn("execCommand 粘贴失败:", err);
+            alert("您的浏览器不支持自动粘贴，请手动操作！");
+          }
+        }
+      });
+    
+      // 复制功能
+      copyBtn.addEventListener('click', function() {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(inputOutput.value).catch(err => {
+            console.warn("复制失败:", err);
+            alert("无法复制，请手动选择文本后按 Ctrl+C 复制！");
+          });
+        } else {
+          try {
+            inputOutput.select();
+            document.execCommand('copy');
+          } catch (err) {
+            console.warn("execCommand 复制失败:", err);
+            alert("您的浏览器不支持复制，请手动操作！");
+          }
+        }
+      });
+    
+      // 清空输入框
+      clearBtn.addEventListener('click', function() {
+        inputOutput.value = '';
+      });
+    
+      // 菜单项点击事件委托
+      menu.addEventListener('click', function(event) {
+        const target = event.target;
+        if (target.tagName.toLowerCase() === 'li' && target.dataset.page) {
+          showPage(target.dataset.page);
+        }
+      });
+    
+      // 菜单切换按钮事件绑定
+      toggleMenuBtn.addEventListener('click', toggleMenu);
+    
+      // 针对手机端，初始化时隐藏菜单
+      if (window.innerWidth <= 600) {
+        menu.classList.add('hidden');
+        toggleMenuBtn.style.left = '0px';
+        toggleMenuBtn.textContent = '❯';
+      }
+    })();
+    </script>    
+</body>
+</html>
