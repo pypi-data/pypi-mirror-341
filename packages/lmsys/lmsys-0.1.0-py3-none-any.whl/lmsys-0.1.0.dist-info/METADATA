@@ -1,0 +1,223 @@
+Metadata-Version: 2.4
+Name: lmsys
+Version: 0.1.0
+Summary: A simple Python SDK for using Aider programmatically
+Author: Sean Sullivan
+Author-email: Sean Sullivan <sean@lmsystems.ai>
+License: MIT
+Project-URL: Homepage, https://github.com/rvca212/aider-sdk
+Project-URL: Bug Tracker, https://github.com/rvca212/aider-sdk/issues
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: aider-chat>=0.82.0
+Dynamic: author
+Dynamic: requires-python
+
+# Aider SDK
+
+A simple Python SDK for using Aider programmatically in your scripts and applications.
+
+## Overview
+
+Aider SDK provides an easy-to-use interface for leveraging Aider's AI-powered coding capabilities. With this SDK, you can:
+
+- Perform AI coding tasks with natural language prompts
+- Have AI modify multiple files in a single operation
+- List available AI models
+- Read, write, and search files
+- Work with your git repository
+
+## Installation
+
+There are multiple ways to install the AiderSDK:
+
+### Method 1: Install from PyPI (future)
+
+```bash
+# Install from PyPI (future)
+# pip install aider-sdk
+```
+
+### Method 2: Clone the repository and install
+
+```bash
+git clone https://github.com/yourusername/aider-sdk.git
+cd aider-sdk
+pip install -e .
+```
+
+### Method 3: Manual setup
+
+1. Download the `aider_sdk.py` file to your project
+2. Install the required dependency:
+
+```bash
+pip install aider-chat>=0.81.0
+```
+
+## Dependencies
+
+The SDK has minimal dependencies:
+
+- `aider-chat>=0.81.0`: The core Aider library that powers the AI coding capabilities
+
+## Requirements
+
+- Python 3.8+
+- A git repository (unless `use_git=False` is specified)
+- Access to AI models (OpenAI, Anthropic, Google, etc.)
+
+## Quick Start
+
+```python
+from aider_sdk import AiderSDK
+
+# Initialize the SDK with your project directory
+sdk = AiderSDK(
+    working_dir="/path/to/your/project",
+    model="gemini/gemini-2.5-pro-exp-03-25",
+    api_keys={
+        "GEMINI_API_KEY": "your-gemini-api-key-here"
+    }
+)
+
+# Run an AI coding task
+result = sdk.code(
+    prompt="Create a function to calculate the factorial of a number",
+    editable_files=["math_utils.py"]
+)
+
+print(f"Success: {result['success']}")
+print(result['diff'])
+```
+
+## Features
+
+### Initialize the SDK
+
+```python
+sdk = AiderSDK(
+    working_dir="/path/to/your/project",
+    model="gemini/gemini-2.5-pro-exp-03-25",  # Optional: specify model
+    editor_model=None,  # Optional: specify editor model
+    use_git=True,  # Optional: set to False to disable git requirements
+    api_keys={  # Optional: provide API keys for different models
+        "OPENAI_API_KEY": "sk-your-openai-key",
+        "ANTHROPIC_API_KEY": "sk-ant-your-key",
+        "GEMINI_API_KEY": "your-gemini-key",
+    }
+)
+```
+
+#### API Key Management
+
+You can provide API keys in two ways:
+
+1. **Environment Variables**: Set the API keys as environment variables before running your script:
+   ```bash
+   export OPENAI_API_KEY="sk-your-openai-key"
+   export GEMINI_API_KEY="your-gemini-key"
+   ```
+
+2. **Pass directly in code**: Provide API keys in the `api_keys` dictionary when initializing the SDK (as shown above)
+
+Supported API keys include:
+- `OPENAI_API_KEY` - For OpenAI models (GPT-4, etc.)
+- `ANTHROPIC_API_KEY` - For Claude models
+- `GEMINI_API_KEY` - For Google Gemini models
+- `FIREWORKS_API_KEY` - For Fireworks models (llama, etc.)
+- `MISTRAL_API_KEY` - For Mistral models
+- `OPENROUTER_API_KEY` - For OpenRouter models
+- `GROQ_API_KEY` - For Groq models
+- And others...
+
+### List Available Models
+
+```python
+# List all models
+all_models = sdk.list_models()
+print(all_models)
+
+# List models matching a substring
+gpt_models = sdk.list_models("gpt")
+print(gpt_models)
+```
+
+### AI Coding
+
+```python
+# Run an AI coding task
+result = sdk.code(
+    prompt="Add error handling to the database connection function",
+    editable_files=["database.py"],
+    readonly_files=["config.py", "utils.py"]  # Files to provide as context
+)
+
+# Check the result
+if result["success"]:
+    print("Changes made successfully!")
+    print(result["diff"])
+else:
+    print("No meaningful changes were made.")
+```
+
+### File Operations
+
+```python
+# Create a new file
+sdk.create_file("src/new_module.py", "def hello_world():\n    print('Hello, world!')")
+
+# Read file content
+content = sdk.read_file("src/new_module.py")
+print(content)
+
+# Search for text in files
+results = sdk.search_files("hello_world", ["src/*.py"])
+print(results)
+```
+
+## Example Workflow
+
+```python
+from aider_sdk import AiderSDK
+
+# Initialize the SDK
+sdk = AiderSDK(
+    working_dir="./my_project",
+    api_keys={"OPENAI_API_KEY": "sk-your-openai-key"}
+)
+
+# Create a simple Python application
+sdk.create_file(
+    "app.py",
+    """
+def main():
+    print("Hello, world!")
+
+if __name__ == "__main__":
+    main()
+"""
+)
+
+# Use AI to enhance the application
+sdk.code(
+    prompt="Modify app.py to ask for the user's name and greet them personally",
+    editable_files=["app.py"]
+)
+
+# Add a new feature with AI
+sdk.code(
+    prompt="Create a new file called math_utils.py with functions for basic math operations (add, subtract, multiply, divide). Then update app.py to import and use these functions.",
+    editable_files=["app.py", "math_utils.py"]
+)
+
+# Print the final state of the files
+print("app.py:")
+print(sdk.read_file("app.py"))
+print("\nmath_utils.py:")
+print(sdk.read_file("math_utils.py"))
+```
+
+## License
+
+MIT
