@@ -1,0 +1,61 @@
+Metadata-Version: 2.4
+Name: hack4u-Kmilo180xd
+Version: 0.1.0
+Summary: Una biblioteca para consultar cursos de hack4u
+Home-page: https://hack4u.io
+Author: Camilo Rodriguez
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
+
+# Hack4U Academy courses library
+
+Una biblioteca para consultar cursos de hack4u.
+
+
+## Cursos disponibles:
+
+- Introduccion a Linux[15 horas]
+- Personalizacion de Linux[3 horas]
+- Introduccion al hacking [53 horas]
+
+## Instalacion
+
+Instala el paquete usando `pip3`:
+
+```python3
+pip3 install hack4u
+```
+## Uso basico
+
+### Listar todos los cursos
+
+```python3
+from hack4u import list_courses
+
+for course in courses():
+    print(course)
+```
+
+### Obtener un curso por nombre
+
+```python3
+from hack4u import get_course_by_name
+
+course = get_course_by_name("Introduccion a LInux")
+print(course)
+
+```
+
+### Calcular duracion total de los cursos
+
+```python3
+from hack4u.utils import total_duration
+
+print(f"Duracion total: {total_duration()} horas")
+
+```
+
