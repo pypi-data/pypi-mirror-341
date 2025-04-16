@@ -1,0 +1,17 @@
+setup.py
+xmlbind/__init__.py
+xmlbind/compiler.py
+xmlbind/exceptions.py
+xmlbind/root.py
+xmlbind/settings.py
+xmlbind.egg-info/PKG-INFO
+xmlbind.egg-info/SOURCES.txt
+xmlbind.egg-info/dependency_links.txt
+xmlbind.egg-info/requires.txt
+xmlbind.egg-info/top_level.txt
+xmlbind/models/__init__.py
+xmlbind/models/adapter.py
+xmlbind/models/attribute.py
+xmlbind/models/data.py
+xmlbind/models/element.py
+xmlbind/models/wrapper.py
