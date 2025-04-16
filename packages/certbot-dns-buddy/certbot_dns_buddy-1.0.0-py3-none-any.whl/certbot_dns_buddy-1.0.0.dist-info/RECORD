@@ -1,0 +1,8 @@
+certbot_dns_buddy/__init__.py,sha256=KXhc-3H0NiBkTS7bXCDwh-8pnnrenK1_WGqwo3m5t6Q,87
+certbot_dns_buddy/dns_buddy.py,sha256=Tijz3b_rECD0cTGj7FQ38MqvQOg4XCTi0NoSUMBlHaI,5296
+certbot_dns_buddy/dns_buddy_test.py,sha256=JwogwPu8NRyhNv_LNN6AAJh5_HsA-n5wUe-Yx29CIyM,2333
+certbot_dns_buddy-1.0.0.dist-info/licenses/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+certbot_dns_buddy-1.0.0.dist-info/METADATA,sha256=sFM6j9QWLbQ1udu8pi-KqvpEcyyYTH7y3VP6Dro4zXE,3172
+certbot_dns_buddy-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+certbot_dns_buddy-1.0.0.dist-info/top_level.txt,sha256=7oOvdytDL31niRC71HcKEbDYeLshx_-egxQTmNOcEVU,18
+certbot_dns_buddy-1.0.0.dist-info/RECORD,,
