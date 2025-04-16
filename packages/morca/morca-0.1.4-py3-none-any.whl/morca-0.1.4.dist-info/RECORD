@@ -1,0 +1,11 @@
+morca/__init__.py,sha256=1fYybShFvc8x59Akc_of9EH1iRAW9i1KRyeDXwiitpA,325
+morca/active_space_orbitals.py,sha256=y6URVikNb-BABnFIrFkY_jhShcCmnnD57IgA6tg2U34,658
+morca/loewdin_orbital_composition.py,sha256=MDoGKJwK4eMn_nRsvFaALbkdKAGgUC0zFhEpbW4m610,4578
+morca/orbital_energies.py,sha256=Hmtm73FaPnyTWh3Nbpym5LCeDGRUvsRN-fYHj8pGGUo,1949
+morca/tools/__init__.py,sha256=nh0wH1se8z32n9Jnq6WxY2hZXgzTX_NN0o4VAsKTK_w,1343
+morca/tools/orbitals.py,sha256=2wnX5B4KtPcWQH-dgDXRPqszReix-RsW7JtXo58RkJU,7041
+morca/tools/tddft.py,sha256=Hd62ITC805k2ayaH0s6b6BHYm9BYfENXLvfHMrEy34M,15258
+morca-0.1.4.dist-info/METADATA,sha256=bjC-Si_AcYv9W7wbN-po8R5RAWaaHdRqFRre7LOXkyw,559
+morca-0.1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+morca-0.1.4.dist-info/entry_points.txt,sha256=IIP23_fszgeF0uklDzsfzzyxtIJdfB1wu3usA_vYg80,84
+morca-0.1.4.dist-info/RECORD,,
