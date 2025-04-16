@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICD-10 Hierarchical Explorer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #loading {
+            text-align: center;
+            font-size: 18px;
+            padding: 20px;
+            color: #666;
+        }
+
+        #graph {
+            overflow: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            min-height: 600px;
+        }
+
+        .node {
+            cursor: pointer;
+        }
+
+        .node circle {
+            fill: #fff;
+            stroke: steelblue;
+            stroke-width: 1.5px;
+        }
+
+        .node text {
+            font: 12px sans-serif;
+        }
+
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 1.5px;
+        }
+
+        .node--leaf circle {
+            fill: #66c2a5;
+        }
+
+        .node--internal circle {
+            fill: #fff;
+        }
+
+        .node--internal.collapsed circle {
+            fill: lightsteelblue;
+        }
+
+        .tooltip {
+            position: absolute;
+            padding: 8px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border-radius: 4px;
+            pointer-events: none;
+            font-size: 12px;
+            max-width: 300px;
+        }
+
+        .search-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .search-input {
+            padding: 8px 12px;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .search-button {
+            padding: 8px 16px;
+            background-color: #4682b4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .legend {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 12px;
+        }
+
+        .legend-color {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ICD-10 Hierarchical Explorer</h1>
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search ICD-10 codes or descriptions..." class="search-input">
+            <button id="searchBtn" class="search-button">Search</button>
+        </div>
+
+        <div id="loading">Loading ICD-10 data...</div>
+        <div id="graph" style="display: none;"></div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: lightsteelblue;"></span>
+                <span>Collapsed Node</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: white; border: 1.5px solid steelblue;"></span>
+                <span>Expanded Node</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #66c2a5;"></span>
+                <span>Leaf Node</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dimensions and margins for the visualization
+            const margin = {top: 20, right: 120, bottom: 20, left: 120};
+            const width = 960 - margin.left - margin.right;
+            const height = 800 - margin.top - margin.bottom;
+
+            // Create a tooltip div that is hidden by default
+            const tooltip = d3.select("body").append("div")
+                .attr("class", "tooltip")
+                .style("opacity", 0);
+
+            // Create SVG element
+            const svg = d3.select("#graph").append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", `translate(${margin.left},${margin.top})`);
+
+            // Create a tree layout
+            const tree = d3.tree().size([height, width]);
+
+            // Load the ICD-10 data from /graph
+            d3.json('/graph').then(data => {
+                // Hide loading message and show graph container
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('graph').style.display = 'block';
+
+                // Convert the graph structure to a hierarchical structure
+                // The data comes as a graph with nodes and links
+                const nodes = data.nodes || [];
+
+                // Find the root node
+                const rootNode = nodes.find(node => node.id === "root") || nodes[0];
+
+                // Create hierarchical structure
+                const hierarchyData = {
+                    id: rootNode.id,
+                    name: rootNode.name || "ICD-10 Root",
+                    children: []
+                };
+
+                // Create a map of all nodes by ID for quick lookup
+                const nodesById = {};
+                nodes.forEach(node => {
+                    nodesById[node.id] = {
+                        ...node,
+                        children: []
+                    };
+                });
+
+                // Process links to build parent-child relationships
+                if (data.links) {
+                    data.links.forEach(link => {
+                        const sourceNode = nodesById[link.source];
+                        const targetNode = nodesById[link.target];
+
+                        if (sourceNode && targetNode) {
+                            // Add the target node as a child of the source node
+                            sourceNode.children.push(targetNode);
+                        }
+                    });
+                }
+
+                // If no links are provided, attempt to build hierarchy based on node types
+                // This assumes chapters contain blocks, blocks contain categories, etc.
+                if (!data.links) {
+                    const chapters = nodes.filter(node => node.type === "chapter");
+                    const blocks = nodes.filter(node => node.type === "block");
+                    const categories = nodes.filter(node => node.type === "category");
+                    const subcategories = nodes.filter(node => node.type === "subcategory");
+
+                    // Add chapters to root
+                    hierarchyData.children = chapters;
+
+                    // Process blocks
+                    chapters.forEach(chapter => {
+                        chapter.children = blocks.filter(block => {
+                            // Match blocks that fall within this chapter's range
+                            if (chapter.start && chapter.end && block.start && block.end) {
+                                return block.start >= chapter.start && block.end <= chapter.end;
+                            }
+                            return false;
+                        });
+                    });
+
+                    // Process categories
+                    blocks.forEach(block => {
+                        block.children = categories.filter(category => {
+                            // Match categories that fall within this block's range
+                            if (block.start && block.end && category.id) {
+                                return category.id >= block.start && category.id <= block.end;
+                            }
+                            return false;
+                        });
+                    });
+
+                    // Process subcategories
+                    categories.forEach(category => {
+                        category.children = subcategories.filter(subcategory => {
+                            // Match subcategories that belong to this category
+                            if (category.id && subcategory.id) {
+                                return subcategory.id.startsWith(category.id);
+                            }
+                            return false;
+                        });
+                    });
+                }
+
+                // Use the rootNode as the starting point for our hierarchy
+                const rootData = nodesById[rootNode.id] || hierarchyData;
+
+                const root = d3.hierarchy(rootData);
+
+                // Initial collapse of nodes beyond the first level
+                root.descendants().forEach(d => {
+                    if (d.depth > 0) {
+                        d._children = d.children;
+                        d.children = null;
+                    }
+                });
+
+                // Function to update the tree visualization
+                function update(source) {
+                    // Compute the new tree layout
+                    const treeData = tree(root);
+
+                    // Get all nodes and links
+                    const nodes = treeData.descendants();
+                    const links = treeData.links();
+
+                    // Set fixed distance for each level
+                    nodes.forEach(d => {
+                        d.y = d.depth * 180;
+                    });
+
+                    // ****************** Nodes section ****************
+
+                    // Update the nodes
+                    const node = svg.selectAll('.node')
+                        .data(nodes, d => d.id || (d.id = ++nodeId));
+
+                    // Enter new nodes at the parent's previous position
+                    const nodeEnter = node.enter().append('g')
+                        .attr('class', 'node')
+                        .attr('transform', d => `translate(${source.y0},${source.x0})`)
+                        .on('click', d => {
+                            // Toggle children on click
+                            if (d.children) {
+                                d._children = d.children;
+                                d.children = null;
+                            } else {
+                                d.children = d._children;
+                                d._children = null;
+                            }
+                            update(d);
+                        })
+                        .on('mouseover', (event, d) => {
+                            // Show tooltip on hover
+                            tooltip.transition()
+                                .duration(200)
+                                .style("opacity", .9);
+
+                            let content = '';
+
+                            // Display different formats based on node type
+                            if (d.data.type === 'chapter' || d.data.type === 'block') {
+                                content = `<strong>${d.data.start}-${d.data.end}</strong>`;
+                                if (d.data.type) {
+                                    content += ` (${d.data.type})`;
+                                }
+                            } else if (d.data.id && d.data.id !== 'root') {
+                                content = `<strong>${d.data.id}</strong>`;
+                                if (d.data.type) {
+                                    content += ` (${d.data.type})`;
+                                }
+                            }
+
+                            // Add name and description
+                            if (d.data.name) {
+                                content += `<br/>${d.data.name}`;
+                            }
+
+                            if (d.data.description && d.data.description !== d.data.name) {
+                                content += `<br/>${d.data.description}`;
+                            }
+
+                            tooltip.html(content)
+                                .style("left", (event.pageX + 10) + "px")
+                                .style("top", (event.pageY - 28) + "px");
+                        })
+                        .on('mouseout', () => {
+                            // Hide tooltip
+                            tooltip.transition()
+                                .duration(500)
+                                .style("opacity", 0);
+                        });
+
+                    // Add circles to nodes
+                    nodeEnter.append('circle')
+                        .attr('r', 10)
+                        .attr('fill', d => {
+                            if (!d.children && !d._children) return '#66c2a5'; // Leaf node
+                            return d._children ? 'lightsteelblue' : '#fff'; // Internal node
+                        })
+                        .attr('stroke', 'steelblue')
+                        .attr('stroke-width', '1.5px');
+
+                    // Add labels to nodes
+                    nodeEnter.append('text')
+                        .attr('dy', '.35em')
+                        .attr('x', d => d.children || d._children ? -13 : 13)
+                        .attr('text-anchor', d => d.children || d._children ? 'end' : 'start')
+                        .text(d => {
+                            // Show start-end range for chapters and blocks
+                            if (d.data.type === 'chapter' || d.data.type === 'block') {
+                                return `${d.data.start}-${d.data.end}`;
+                            } else if (d.data.id && d.data.id !== 'root') {
+                                // For categories and subcategories, show the ID
+                                return d.data.id;
+                            } else {
+                                // Truncate long names
+                                const name = d.data.name || d.data.description || 'Unknown';
+                                return name.length > 30 ? name.substring(0, 27) + '...' : name;
+                            }
+                        });
+
+                    // Update the node attributes and style
+                    const nodeUpdate = nodeEnter.merge(node);
+
+                    // Transition nodes to their new position
+                    nodeUpdate.transition()
+                        .duration(750)
+                        .attr('transform', d => `translate(${d.y},${d.x})`);
+
+                    // Update the node style based on state
+                    nodeUpdate.select('circle')
+                        .attr('r', 10)
+                        .attr('fill', d => {
+                            if (!d.children && !d._children) return '#66c2a5'; // Leaf node
+                            return d._children ? 'lightsteelblue' : '#fff'; // Internal node
+                        })
+                        .attr('class', d => {
+                            if (!d.children && !d._children) return 'node--leaf';
+                            return d._children ? 'node--internal collapsed' : 'node--internal';
+                        });
+
+                    // Remove any exiting nodes
+                    const nodeExit = node.exit().transition()
+                        .duration(750)
+                        .attr('transform', d => `translate(${source.y},${source.x})`)
+                        .remove();
+
+                    nodeExit.select('circle')
+                        .attr('r', 0);
+
+                    nodeExit.select('text')
+                        .style('fill-opacity', 0);
+
+                    // ****************** Links section ****************
+
+                    // Update the links
+                    const link = svg.selectAll('.link')
+                        .data(links, d => d.target.id);
+
+                    // Enter any new links at the parent's previous position
+                    const linkEnter = link.enter().insert('path', 'g')
+                        .attr('class', 'link')
+                        .attr('d', d => {
+                            const o = {x: source.x0, y: source.y0};
+                            return diagonal(o, o);
+                        });
+
+                    // Update existing links
+                    link.merge(linkEnter).transition()
+                        .duration(750)
+                        .attr('d', d => diagonal(d.source, d.target));
+
+                    // Remove any exiting links
+                    link.exit().transition()
+                        .duration(750)
+                        .attr('d', d => {
+                            const o = {x: source.x, y: source.y};
+                            return diagonal(o, o);
+                        })
+                        .remove();
+
+                    // Store the old positions for transition
+                    nodes.forEach(d => {
+                        d.x0 = d.x;
+                        d.y0 = d.y;
+                    });
+                }
+
+                // Create a curved path between two points
+                function diagonal(s, d) {
+                    return `M ${s.y} ${s.x}
+                            C ${(s.y + d.y) / 2} ${s.x},
+                              ${(s.y + d.y) / 2} ${d.x},
+                              ${d.y} ${d.x}`;
+                }
+
+                // Initialize the display
+                let nodeId = 0;
+
+                // Set initial positions
+                root.x0 = height / 2;
+                root.y0 = 0;
+
+                // Implement search functionality
+                document.getElementById('searchBtn').addEventListener('click', searchNode);
+                document.getElementById('search').addEventListener('keypress', e => {
+                    if (e.key === 'Enter') {
+                        searchNode();
+                    }
+                });
+
+                function searchNode() {
+                                            const searchTerm = document.getElementById('search').value.toLowerCase();
+                    if (!searchTerm) return;
+
+                    // Find all nodes that match the search term
+                    let foundNodes = [];
+
+                    function findNodes(node) {
+                        // Check if current node matches
+                        const nodeId = (node.data.id || '').toLowerCase();
+                        const nodeStart = (node.data.start || '').toLowerCase();
+                        const nodeEnd = (node.data.end || '').toLowerCase();
+                        const nodeName = (node.data.name || '').toLowerCase();
+                        const nodeDesc = (node.data.description || '').toLowerCase();
+                        const nodeType = (node.data.type || '').toLowerCase();
+
+                        if (nodeId.includes(searchTerm) ||
+                            nodeStart.includes(searchTerm) ||
+                            nodeEnd.includes(searchTerm) ||
+                            nodeName.includes(searchTerm) ||
+                            nodeDesc.includes(searchTerm) ||
+                            nodeType.includes(searchTerm)) {
+                            foundNodes.push(node);
+                        }
+
+                        // Check children if they exist
+                        if (node.children) {
+                            node.children.forEach(findNodes);
+                        }
+
+                        // Check collapsed children if they exist
+                        if (node._children) {
+                            // Expand the node to search its children
+                            const temp = node.children;
+                            node.children = node._children;
+                            node._children = null;
+
+                            node.children.forEach(findNodes);
+
+                            // Restore original state if no matches found in this branch
+                            const hasMatch = foundNodes.some(n => isDescendant(node, n));
+                            if (!hasMatch) {
+                                node._children = node.children;
+                                node.children = temp;
+                            }
+                        }
+                    }
+
+                    // Check if node is a descendant of another node
+                    function isDescendant(parent, child) {
+                        if (parent === child) return true;
+                        if (!parent.children) return false;
+
+                        return parent.children.some(node => isDescendant(node, child));
+                    }
+
+                    // Reset search
+                    foundNodes = [];
+
+                    // Expand root to perform search
+                    findNodes(root);
+
+                    if (foundNodes.length > 0) {
+                        // Highlight the first found node
+                        const foundNode = foundNodes[0];
+
+                        // Ensure all parent nodes are expanded
+                        expandToNode(root, foundNode);
+
+                        // Update the visualization
+                        update(root);
+
+                        // Scroll to the found node
+                        const containerRect = document.getElementById('graph').getBoundingClientRect();
+                        const nodeY = foundNode.x + margin.top;
+                        const nodeX = foundNode.y + margin.left;
+
+                        document.getElementById('graph').scrollTo({
+                            top: nodeY - containerRect.height / 2,
+                            left: nodeX - containerRect.width / 2,
+                            behavior: 'smooth'
+                        });
+
+                        // Briefly highlight the found node
+                        d3.select(`g.node[transform="translate(${foundNode.y},${foundNode.x})"] circle`)
+                            .transition()
+                            .duration(500)
+                            .attr('r', 15)
+                            .attr('fill', 'orange')
+                            .transition()
+                            .delay(1000)
+                            .duration(500)
+                            .attr('r', 10)
+                            .attr('fill', d => {
+                                if (!d.children && !d._children) return '#66c2a5';
+                                return d._children ? 'lightsteelblue' : '#fff';
+                            });
+                    } else {
+                        alert('No matches found');
+                    }
+                }
+
+                // Function to expand all nodes from root to a specific node
+                function expandToNode(current, target) {
+                    if (current === target) return true;
+
+                    // If this node has collapsed children, expand them
+                    if (current._children) {
+                        current.children = current._children;
+                        current._children = null;
+                    }
+
+                    // If this node has children, search in them
+                    if (current.children) {
+                        for (let i = 0; i < current.children.length; i++) {
+                            if (expandToNode(current.children[i], target)) {
+                                return true;
+                            }
+                        }
+                    }
+
+                    return false;
+                }
+
+                // Initial display
+                update(root);
+
+                // Add zoom behavior
+                const zoom = d3.zoom()
+                    .scaleExtent([0.1, 3])
+                    .on('zoom', (event) => {
+                        svg.attr('transform', event.transform);
+                    });
+
+                d3.select('svg').call(zoom);
+
+                // Make the SVG responsive
+                function resizeSVG() {
+                    const containerWidth = document.getElementById('graph').clientWidth;
+                    d3.select('svg')
+                        .attr('width', containerWidth)
+                        .attr('height', height + margin.top + margin.bottom);
+                }
+
+                // Initial resize and add event listener
+                resizeSVG();
+                window.addEventListener('resize', resizeSVG);
+
+            }).catch(error => {
+                console.error('Error loading data:', error);
+                document.getElementById('loading').innerHTML = 'Error loading ICD-10 data. Please check your connection and try again.';
+            });
+        });
+    </script>
+</body>
+</html>
