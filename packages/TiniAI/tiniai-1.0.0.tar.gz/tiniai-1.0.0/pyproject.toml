@@ -1,0 +1,21 @@
+[build-system]
+requires = ["sentence-transformers", "scipy", "nltk"]
+
+[project]
+name = "TiniAI"
+version = "1.0.0"
+authors = [
+ { name="IrbisX7", email="irbisovich123@gmail.com" },
+]
+description = ""
+readme = "README.md"
+requires-python = ">=3.10.0"
+classifiers = [
+   "Programming Language :: Python :: 3",
+   "License :: OSI Approved :: MIT License",
+   "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Irbisovich/tinyai"
+Issues = "https://github.com/Irbisovich/tinyai/issues"
