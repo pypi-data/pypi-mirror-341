@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+jumpad_sdk_client/__init__.py
+jumpad_sdk_client/client.py
+jumpad_sdk_client.egg-info/PKG-INFO
+jumpad_sdk_client.egg-info/SOURCES.txt
+jumpad_sdk_client.egg-info/dependency_links.txt
+jumpad_sdk_client.egg-info/requires.txt
+jumpad_sdk_client.egg-info/top_level.txt
