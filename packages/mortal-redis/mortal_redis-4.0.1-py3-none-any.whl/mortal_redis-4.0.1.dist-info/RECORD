@@ -1,0 +1,7 @@
+mortal_redis/__init__.py,sha256=gY_gwck_4JIFQEey54uj3MBL2Y7V6cTZavBy8iA01b8,3571
+mortal_redis/redis_main.pyd,sha256=CfKkQqzn8Z7zvrPXY_16XGuds3iUeHhPIjChWIRP2zI,138752
+mortal_redis/redis_main.so,sha256=SD-S_JqD12CCBim6aI6vcxxHQORFUffrAE9O4Z3NyOw,863312
+mortal_redis-4.0.1.dist-info/METADATA,sha256=HK5-1JE4hE7yXuZedQbD5Qu0AhOSrgY9PYoq5v6zatw,519
+mortal_redis-4.0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+mortal_redis-4.0.1.dist-info/top_level.txt,sha256=Fb0MQZe03jeFgp8Gqe4WF4H8hZenDKEXx5lt_cT_zKw,13
+mortal_redis-4.0.1.dist-info/RECORD,,
