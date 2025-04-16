@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+FontsHome/__init__.py
+FontsHome.egg-info/PKG-INFO
+FontsHome.egg-info/SOURCES.txt
+FontsHome.egg-info/dependency_links.txt
+FontsHome.egg-info/top_level.txt

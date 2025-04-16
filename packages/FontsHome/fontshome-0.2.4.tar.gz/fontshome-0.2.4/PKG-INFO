@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: FontsHome
+Version: 0.2.4
+Home-page: https://gitee.com/yanxinle1123/FontsHome
+Author: YanXinle
+Author-email: 1020121123@qq.com
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license-file
