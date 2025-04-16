@@ -1,0 +1,2 @@
+[console_scripts]
+stock_catcher = md_convertor.__main__:main
