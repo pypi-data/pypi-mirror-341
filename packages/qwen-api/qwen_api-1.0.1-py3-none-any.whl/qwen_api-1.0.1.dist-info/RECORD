@@ -1,0 +1,15 @@
+qwen_api/__init__.py,sha256=ZoeTyuw9Vl4tGi_yt3htiT0eKKrt9t3SGsGg5hlXHAE,47
+qwen_api/client.py,sha256=LIIxT1OjIXNyXOg0IMwy0z9r_kIIoxbUR76vbgV-mB8,4957
+qwen_api/logger.py,sha256=55FiwtT3AmSgWrGYBy4YWsE1ikG08M6t5gCUUoT7Nxk,2025
+qwen_api/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qwen_api/core/auth_manager.py,sha256=FNvkXvVcPsp0rKzumZ3u2VAizZAPSd0C0tN_OKBEVBU,989
+qwen_api/core/config.py,sha256=jfTPcKG0TCM7xOoMAANMPRnVf40Mjt8BpBgCwwu6m7U,212
+qwen_api/core/exceptions.py,sha256=u1kMve4SoiXyJtsl-hyQDEahYU-qNL2OwDOtnLm3QTU,489
+qwen_api/resources/completions.py,sha256=_Qk_Q1boVgJQe0H_xwgdrlGdilLSC8RErxl3iWnlaCk,3469
+qwen_api/types/chat.py,sha256=fGMPbKINtZ_Aysi5RdStlIXs95KdxSUy-SvPSL7RIbw,1245
+qwen_api/types/chat_model.py,sha256=h6xxLiNraWQTvAjeYQhgSlarR5RfC4bWn7P11HtunJU,345
+qwen_api/types/endpoint_api.py,sha256=g7VhLDenJlyiIevyavET8qO7FqrUELAe39-pll-VNYc,346
+qwen_api-1.0.1.dist-info/METADATA,sha256=hEQk8-AAI_fJ3Hy1S21X1--roMcv-nMyUveNx_JpyII,19439
+qwen_api-1.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+qwen_api-1.0.1.dist-info/top_level.txt,sha256=GPvnTyKphSaoKbVErA-UBHqnrF1FOuTsYmDAg6C7rdk,9
+qwen_api-1.0.1.dist-info/RECORD,,
