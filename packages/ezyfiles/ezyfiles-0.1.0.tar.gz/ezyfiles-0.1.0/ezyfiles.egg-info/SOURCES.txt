@@ -1,0 +1,15 @@
+README.md
+setup.py
+ezyfiles/__init__.py
+ezyfiles/core.py
+ezyfiles/metadata.py
+ezyfiles/search.py
+ezyfiles/utils.py
+ezyfiles.egg-info/PKG-INFO
+ezyfiles.egg-info/SOURCES.txt
+ezyfiles.egg-info/dependency_links.txt
+ezyfiles.egg-info/requires.txt
+ezyfiles.egg-info/top_level.txt
+tests/__init__.py
+tests/test_ezyfiles.py
+tests/test_simple.py
