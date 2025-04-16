@@ -1,0 +1,17 @@
+[project]
+name = "cbbapi-client"
+version = "0.0.1"
+authors = [
+  { name="CBB Developers", email="info@core-backbone.com" },
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+src/ cbbapi-client/__init__.py
+src/ cbbapi-client/cbbapi.py
+src/cbbapi_client.egg-info/PKG-INFO
+src/cbbapi_client.egg-info/SOURCES.txt
+src/cbbapi_client.egg-info/dependency_links.txt
+src/cbbapi_client.egg-info/top_level.txt
