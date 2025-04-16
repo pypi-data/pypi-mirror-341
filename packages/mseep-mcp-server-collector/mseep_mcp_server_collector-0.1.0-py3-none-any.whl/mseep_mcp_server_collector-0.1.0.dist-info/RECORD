@@ -1,0 +1,10 @@
+src/mcp_server_collector/__init__.py,sha256=KNZ1bD9ZGfyZwlv91Ueeega_1lsRDLs2fYQDgNbBdtc,212
+src/mcp_server_collector/extract.py,sha256=m-7S-LLvvETUpzk_LOnRNj22Lf3EoA9UYGvT3B9zjh8,823
+src/mcp_server_collector/fetch.py,sha256=LfWBdHwcSUmK_uaUPveYsfCsq3Xy0bQbIpBLfNeAesg,677
+src/mcp_server_collector/prompts.py,sha256=zJJIUtVDQWx_jhWjVShC1ayMjT_jjYgzWlrMNRw0D7Y,690
+src/mcp_server_collector/server.py,sha256=v5bndKTxKr6uzfD2F-bESo9QmgKyXwIzGx8Onzo-KTs,4153
+src/mcp_server_collector/submit.py,sha256=ViO_88yFz5JZ8eL7DEUb8BUqPhw6wjJVLmGV3ZKAr5U,760
+mseep_mcp_server_collector-0.1.0.dist-info/METADATA,sha256=Md06axuG08nYQko6Px10lvTsu5ciaGuAoK-Jl9y2u-g,3913
+mseep_mcp_server_collector-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp_server_collector-0.1.0.dist-info/entry_points.txt,sha256=mmkuWwdUiP2Kxu1xwNtWs-xHlSxGhK3oavrHoiRjfGs,67
+mseep_mcp_server_collector-0.1.0.dist-info/RECORD,,
