@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Benzene example",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "benzene.py",
+            "console": "integratedTerminal",
+            "cwd": "~/Project/stalk_examples/benzene"
+        },
+        {
+            "name": "Carbon dimer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "carbon_dimer.py",
+            "console": "integratedTerminal",
+            "cwd": "~/Project/stalk_examples/C2"
+        },
+        {
+            "name": "Diamond example",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "diamond.py",
+            "console": "integratedTerminal",
+            "cwd": "~/Project/stalk_examples/diamond"
+        }
+    ]
+}
