@@ -1,0 +1,105 @@
+Metadata-Version: 2.4
+Name: xparameter
+Version: 0.0.1
+Summary: A portable configuration tool to manage hyperparameters and settings of your experiments.
+Home-page: https://github.com/ThomasAtlantis/xparameter
+Author: Shangyu Liu
+Author-email: liushangyu@sjtu.edu.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich-argparse>=1.7.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# xparameter
+A portable configuration tool to manage hyperparameters and settings of your experiments.
+
+## Features
+:white_check_mark: Support syntax highlighting and autocompletion for attributes  
+:white_check_mark: Support arguments control through command line  
+:white_check_mark: Support nested definition (namespaces) to isolate parameters of the same name  
+:white_check_mark: Inherent Singleton ensuring consistent revision across files  
+:white_check_mark: Support basic type checking  
+
+## Quickstart
+You can install the latest official version of xparameter from PyPI:
+
+```haskell
+pip install xparameter
+```
+
+### Define Custom Configuration
+```python
+# config.py
+from xparameter import Configure as C
+from xparameter import Field as F
+
+class Config(C):
+    """Define your overall description here"""
+
+    class checkpoint(C):
+        """Define group description here"""
+        directory       = F(str,   default="./checkpoints", help="Directory to save model checkpoints")
+
+```
+
+### Parse Command-line Arguments
+```haskell
+Config.parse_sys_args()
+```
+
+Parameters in `Config` class will be automatically registered onto a `argparse.ArgumentParser()`, which acts as a parser to extract parameter values from command line. In this example case, we use
+
+```haskell
+python test.py --checkpoint.directory "/path/to/checkpoints"
+```
+
+The argument `Config.checkpoint.directory` will be set to `"/path/to/checkpoints"`. This parsing process and the following manual revision will trigger an inherent type check.
+
+Use the `help` command to print automatically generated help menu:
+```haskell
+python test.py --help
+```
+```yaml
+Usage: config_01.py [-h] [--checkpoint.directory str]
+
+Define your overall description here
+
+Options:
+  -h, --help                  show this help message and exit
+
+Checkpoint:
+  Define group description here
+
+  --checkpoint.directory str  Directory to save model checkpoints
+```
+
+### Revise Arguments Manually
+Manual revision of the argument values can be performed either independently or as a post-processing step following the aforementioned command-line parsing, e.g.,
+
+```haskell
+# Config.parse_sys_args()
+Config.checkpoint.directory = "/path/to/checkpoints"
+```
+
+### Export as Different Formats
+Export as python dict:
+```haskell
+Config.as_dict()
+```
+Export as json string:
+```haskell
+Config.as_json()
+```
