@@ -1,0 +1,6 @@
+*/package.zip
+*/packages/
+*/requirements.txt
+__pycache__/
+output.html
+.vscode/settings.json
