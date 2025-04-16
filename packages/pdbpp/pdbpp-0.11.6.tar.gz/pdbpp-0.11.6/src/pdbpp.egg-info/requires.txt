@@ -1,0 +1,8 @@
+fancycompleter>=0.11.0
+pygments
+
+[testing]
+pytest
+pytest-cov
+ipython
+pexpect
