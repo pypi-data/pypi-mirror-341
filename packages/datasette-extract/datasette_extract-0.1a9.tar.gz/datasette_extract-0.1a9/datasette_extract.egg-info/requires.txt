@@ -1,0 +1,14 @@
+datasette>=1.0a12
+datasette-secrets>=0.1a2
+llm>=0.24
+llm-openai-plugin
+sqlite-utils
+openai>=1.0
+ijson
+python-ulid
+starlette
+
+[test]
+pytest
+pytest-asyncio
+pytest-recording
