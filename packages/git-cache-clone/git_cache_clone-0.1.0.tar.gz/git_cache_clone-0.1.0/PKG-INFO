@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: git-cache-clone
+Version: 0.1.0
+Summary: Git clone wrapper with caching and fast reference clones
+License: MIT
+Keywords: git
+Author: jallard
+Author-email: justinallard20@gmail.com
+Requires-Python: >=3.6
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Version Control :: Git
+Project-URL: Homepage, https://github.com/jallard-007/git-cache-clone
+Description-Content-Type: text/markdown
+
+# git-cache-clone
+
+A wrapper around git clone to improve successive clone speed
+
