@@ -1,0 +1,12 @@
+si_clad/DBSCAN.py,sha256=wWBM7EvS71bVB9Q_luJlx4IRppwAW-F4w7FFVryotx8,2640
+si_clad/__init__.py,sha256=b7DVTILpNn9L1GNf-kI9waSAnnW2STqZDlQYzB4J-X4,87
+si_clad/gendata.py,sha256=_LeF0lQrfMnv8iLliJHwAHN9TkhcD4bCMMHo6Gtfa58,543
+si_clad/main.py,sha256=lD4EMt9AItF3VuemnpA9NNAeYck2YQv9x15ADEkhPj4,2345
+si_clad/overconditioning.py,sha256=LTkmyXL_5ugFae6acDIfVYCKUoKdug3sJlqRhvst0jY,1916
+si_clad/parametric.py,sha256=0gordGa-y7DdNowlCYbZa49WckUTUiSMcHxHPDxpyCI,1905
+si_clad/util.py,sha256=FYb7uAVYVEEAUSuwc1eLCLhprzx6LepvgMxU7X7OSKc,3788
+si_clad-0.0.1.dist-info/LICENSE,sha256=mkvMv9aYpbo8weWJ62wGaGVMTm9_qbiE__-Q3gyBu8o,1097
+si_clad-0.0.1.dist-info/METADATA,sha256=OKPhWoJl6jJTioYvus0XE3E7L6MRNd574kSjSvaWMw8,1611
+si_clad-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+si_clad-0.0.1.dist-info/top_level.txt,sha256=PpoaQuq0c48OHa3PI7UQlX2VxewZGVQmLgeKR_HEXcs,8
+si_clad-0.0.1.dist-info/RECORD,,
