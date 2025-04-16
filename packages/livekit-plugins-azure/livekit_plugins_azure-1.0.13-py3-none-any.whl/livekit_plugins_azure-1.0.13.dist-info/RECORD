@@ -1,0 +1,9 @@
+livekit/plugins/azure/__init__.py,sha256=8YPW1EAltd4oip3WItsMy17EMekroUzTPLFRIwLP2Wc,1082
+livekit/plugins/azure/log.py,sha256=MeD0unQJ72aDc9K8zUi9LgUBls6h2WUALryOjAumrKs,68
+livekit/plugins/azure/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+livekit/plugins/azure/stt.py,sha256=vEB5w03F4dyu_BxQ849JMRgGuzTMNmtLDlUvWi44fvQ,14150
+livekit/plugins/azure/tts.py,sha256=e4BccMEnx7Qukij5t1H47w6XzFLeZIPlUVhjZ5yJAFg,19280
+livekit/plugins/azure/version.py,sha256=JVkcFG_R5di_rgaHhJCoRjR0VoKb_WAoym39rsaV9H8,601
+livekit_plugins_azure-1.0.13.dist-info/METADATA,sha256=GluWsuPNOSgErhX6Yra5vPNXt44PWfkD4kYtzLijw4o,1396
+livekit_plugins_azure-1.0.13.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+livekit_plugins_azure-1.0.13.dist-info/RECORD,,
