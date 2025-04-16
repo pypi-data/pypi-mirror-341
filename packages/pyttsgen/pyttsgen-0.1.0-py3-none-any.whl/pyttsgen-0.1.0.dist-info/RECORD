@@ -1,0 +1,12 @@
+pyttsgen/__init__.py,sha256=RnzEzjojaofy0ZAqFGdNhMIsxFuU6PEccw_GTPNXiak,2104
+pyttsgen/cli.py,sha256=QGliENhycyszNDRlChxdJTQkM33ExN6240QTwvaz2Mo,1290
+pyttsgen/config.py,sha256=l4JG0Qk6eXyftzlqYL5yi3RYEx_elHzj_2pSIuttCI4,360
+pyttsgen/engine.py,sha256=lUmJzhWlM4zzK52bUw44FApijUTnCAbtUorTb3jWbB8,2055
+pyttsgen/utils.py,sha256=2Qs1yc7I2vb2gf-FfhsfPY7i1wl0TmzJSBeV9Z4f9fY,830
+pyttsgen/web.py,sha256=nR3RykK7qCCwur4ZGKSV3LSZscp4BnhigzZSIrKl4DY,1118
+pyttsgen-0.1.0.dist-info/LICENSE,sha256=bh02NOJAwiSWYd9XdfX7QcdDzC6XMKyfKF_8NctH-kc,961
+pyttsgen-0.1.0.dist-info/METADATA,sha256=s-aWdOsycRU8zdh_yko0k6LUh8RWgxwktLfsHqFuOm4,436
+pyttsgen-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+pyttsgen-0.1.0.dist-info/entry_points.txt,sha256=1xfEbh1k1ZVZ9qLHASg1Cp0vnH7y7jwfiNkZrk2OjHw,47
+pyttsgen-0.1.0.dist-info/top_level.txt,sha256=RFEkAkkrOihtjblVKcg_Mwcjd6jrf__SU9ru63mOFn0,9
+pyttsgen-0.1.0.dist-info/RECORD,,
