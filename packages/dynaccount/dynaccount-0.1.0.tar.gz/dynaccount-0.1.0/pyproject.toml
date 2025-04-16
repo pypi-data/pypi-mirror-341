@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dynaccount"
+version = "0.1.0"
+authors = [
+  { name="Gavin Wallis", email="gwallis.msu@gmail.com" },
+]
+description = "An easier way to programmatically leverage Account Management in Dynatrace. Please review the README. Project URLs are currently broken but will work once project is uploaded to public GitHub repo."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+dependencies = [
+  "requests"
+]
+
+[project.urls]
+Homepage = "https://github.com/wallisga/dynaccount"
+Issues = "https://github.com/wallisga/dynaccount/issues"
