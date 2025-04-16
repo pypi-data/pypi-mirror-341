@@ -1,0 +1,7 @@
+django<5.2,>=3.0
+firebase-admin>=5.0.0
+requests>=2.0.0
+
+[dev]
+pytest
+tox
