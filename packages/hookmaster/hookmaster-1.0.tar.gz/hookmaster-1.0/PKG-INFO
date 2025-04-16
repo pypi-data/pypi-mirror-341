@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: hookmaster
+Version: 1.0
+Summary: hookmaster
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# Hookmaster
+
+Some nice git hooks for your pleasure.
+
+Can update all git hooks "centrally".
