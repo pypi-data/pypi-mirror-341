@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+chatgpt_mirai_qq_bot_email.egg-info/PKG-INFO
+chatgpt_mirai_qq_bot_email.egg-info/SOURCES.txt
+chatgpt_mirai_qq_bot_email.egg-info/dependency_links.txt
+chatgpt_mirai_qq_bot_email.egg-info/entry_points.txt
+chatgpt_mirai_qq_bot_email.egg-info/requires.txt
+chatgpt_mirai_qq_bot_email.egg-info/top_level.txt
+kirara_email/__init__.py
+kirara_email/blocks.py
+kirara_email/example/sendEmail.yaml

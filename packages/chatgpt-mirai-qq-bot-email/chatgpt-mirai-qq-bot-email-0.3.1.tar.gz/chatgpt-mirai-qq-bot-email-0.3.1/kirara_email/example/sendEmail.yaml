@@ -1,0 +1,107 @@
+name: 发邮件
+description: ''
+blocks:
+  - type: internal:get_message
+    name: 34564694-d341-4b5e-bd85-c4dc8faee17a
+    params: {}
+    position:
+      x: 76
+      y: 249
+    connected_to:
+      - target: 47db2a41-3884-49d5-a59f-e2da70264ae0
+        mapping:
+          from: msg
+          to: msg
+      - target: 2a933b6e-a264-41ef-a2a2-558e13ef3ce0
+        mapping:
+          from: sender
+          to: target
+  - type: internal:im_message_to_text
+    name: 47db2a41-3884-49d5-a59f-e2da70264ae0
+    params: {}
+    position:
+      x: 322
+      y: 235
+    connected_to:
+      - target: a4e30170-7e73-44be-9d8e-4ddb67503234
+        mapping:
+          from: text
+          to: body
+  - type: email:send_qq_email
+    name: a4e30170-7e73-44be-9d8e-4ddb67503234
+    params: {}
+    position:
+      x: 1091
+      y: 258
+    connected_to:
+      - target: ceea10b5-3c73-402a-b277-158595c2f0eb
+        mapping:
+          from: result
+          to: text
+  - type: internal:text_block
+    name: 5c664971-8540-47fb-a29a-d7f7267c6a45
+    params:
+      text: 416448943@qq.com
+    position:
+      x: 613
+      y: 124
+    connected_to:
+      - target: a4e30170-7e73-44be-9d8e-4ddb67503234
+        mapping:
+          from: text
+          to: from_email
+  - type: internal:send_message
+    name: 2a933b6e-a264-41ef-a2a2-558e13ef3ce0
+    params:
+      im_name: ''
+    position:
+      x: 1656
+      y: 267
+  - type: internal:text_to_im_message
+    name: ceea10b5-3c73-402a-b277-158595c2f0eb
+    params:
+      split_by: ''
+    position:
+      x: 1331
+      y: 263
+    connected_to:
+      - target: 2a933b6e-a264-41ef-a2a2-558e13ef3ce0
+        mapping:
+          from: msg
+          to: msg
+  - type: internal:text_block
+    name: 3aaade4c-3b88-4515-aa17-99c2b8b9b679
+    params:
+      text: 178108758@qq.com
+    position:
+      x: 633
+      y: 380
+    connected_to:
+      - target: a4e30170-7e73-44be-9d8e-4ddb67503234
+        mapping:
+          from: text
+          to: to_email
+  - type: internal:text_block
+    name: 920ada8b-426d-4a06-86b8-005d60a0de71
+    params:
+      text: 请填写qq邮箱授权码（qq邮箱-设置-账号与安全-安全设置-开启服务-获取授权码）
+    position:
+      x: 626
+      y: 255
+    connected_to:
+      - target: a4e30170-7e73-44be-9d8e-4ddb67503234
+        mapping:
+          from: text
+          to: password
+  - type: internal:text_block
+    name: 27ed115e-38db-49b9-a07f-b5b2f73c05bd
+    params:
+      text: kirara ai
+    position:
+      x: 635
+      y: 515
+    connected_to:
+      - target: a4e30170-7e73-44be-9d8e-4ddb67503234
+        mapping:
+          from: text
+          to: subject
