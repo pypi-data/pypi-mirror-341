@@ -1,0 +1,11 @@
+inventory_viewer/__init__.py,sha256=GxhtQfx2EF0LVTkzeLltiqhaML3O-0wks3XvI0Yeg_0,930
+inventory_viewer/navigation.py,sha256=YkHPb8Qq0Jw-TcA1mjP98C5kxVNV0JHydYuAh6vSqjI,271
+inventory_viewer/tables.py,sha256=ee94Mo_XAYBXbsqRGurpcJsf7jvDR6ReWQy2UiATYsE,6412
+inventory_viewer/urls.py,sha256=pN00mC8syIYB8k3eekmHjdFua2f0OlPomVsaRyBMxZg,142
+inventory_viewer/views.py,sha256=jUXQAbw1KXWYS853mRnjOu8puSMQaRqDF7ldKjquWto,1896
+inventory_viewer/templates/inventory_viewer/inventory_view.html,sha256=lAj9CkNZK64aFZb-9fAmJ1f_WjufyP2_plm-PKcxItE,314
+inventory_viewer-1.0.dist-info/licenses/LICENSE,sha256=3nLA3ZRaLz6WVEFN7mLm1GXDMuX2gWddgu8Alcqv3MM,1079
+inventory_viewer-1.0.dist-info/METADATA,sha256=D6IFuXBfimfO8Tt0NxflLoUAlUuWIBIS-TxZq7q-6GQ,4267
+inventory_viewer-1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+inventory_viewer-1.0.dist-info/top_level.txt,sha256=mIeaiNknyG-GMyt6d9MeUsVj_Mp4iRMhFS0bZBOUET8,17
+inventory_viewer-1.0.dist-info/RECORD,,
