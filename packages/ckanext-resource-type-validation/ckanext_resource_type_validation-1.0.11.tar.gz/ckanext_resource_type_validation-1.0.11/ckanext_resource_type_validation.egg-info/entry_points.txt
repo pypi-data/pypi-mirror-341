@@ -1,0 +1,5 @@
+[babel.extractors]
+ckan = ckan.lib.extract:extract_ckan
+
+[ckan.plugins]
+resource_type_validation = ckanext.resource_type_validation.plugin:ResourceTypeValidationPlugin
