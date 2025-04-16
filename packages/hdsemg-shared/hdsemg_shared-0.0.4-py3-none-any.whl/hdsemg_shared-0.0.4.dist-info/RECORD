@@ -1,0 +1,11 @@
+hdsemg_shared/__init__.py,sha256=SkQNwCMgh-ZyXQq_z05xdr3D7Bcb8aOMaBqRVfH0RYE,300
+hdsemg_shared/grid.py,sha256=1bVVeN9axjiHrGYxANmEL87UH72IEX75KGYVoOt5_uQ,5113
+hdsemg_shared/fileio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hdsemg_shared/fileio/file_io.py,sha256=HfMX4bSx1qQs76PV3wKy7Nx8FEK6W02yF6U4BwZtlTU,1785
+hdsemg_shared/fileio/matlab_file_io.py,sha256=ARALl4Y2mnDgyrXexlsTQndMk-RfQ6n2nxLCgSw7lt8,3250
+hdsemg_shared/fileio/otb_4_file_io.py,sha256=LWBopQ8iHlbvoUWqsYyqsp016q1bFQyyOTYwFSXuWkw,12693
+hdsemg_shared/fileio/otb_plus_file_io.py,sha256=rDX_X5B_c30AenCLOA6kz8gMThR9aztvo1QduOpoixA,8653
+hdsemg_shared-0.0.4.dist-info/METADATA,sha256=5ctQ3M_1Vb6IJPPXYt1h8GpqjvCWrqmyGy6oScXacHw,1894
+hdsemg_shared-0.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+hdsemg_shared-0.0.4.dist-info/top_level.txt,sha256=WjwqHEakA2iqHbozGVBbCW0iLIAfQcOAh7lbxXZkwIQ,14
+hdsemg_shared-0.0.4.dist-info/RECORD,,
