@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: fytly
+Version: 1.0
+Summary: A grading component for keyword-based scoring for resume
+Author: chowdeswari seelam
+Author-email: chowdeswari_seelam@aegletek.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+License-File: LICENCE.txt
+

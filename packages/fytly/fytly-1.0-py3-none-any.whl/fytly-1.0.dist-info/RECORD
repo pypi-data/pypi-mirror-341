@@ -1,0 +1,13 @@
+py/GraderComparator.py,sha256=SP5jbzi0hujjcmGolC1TArdUAMpu3g2TkN-MajsA-hE,2123
+py/GraderComponent.py,sha256=0n1a-4hguRm7MDC_5t11_uFYvMoOsqOAhGCSuNk7pyw,3971
+py/GraderFinalScore.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py/GraderPayloadReader.py,sha256=6VStQOwgrouVkI5VyEbvC89cfLRxbzbzTrhJFgeuzJA,450
+py/GraderPreprocesser.py,sha256=q9iMFYsm2uzY72BkIBUb6O9bsOvrb1FRwD0DDrIKVnA,1662
+py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py/graderconfigs.py,sha256=8JHKfo0AJKXdXf7LHJdUXRyiGmT96TzeJ_RbuGYxa88,512
+py/gradersqlconnection.py,sha256=ZDb7BdHnTQ2-jpyXIJma5-JKRuk542XLuEZWcbF1dN4,978
+fytly-1.0.dist-info/LICENCE.txt,sha256=Tbfy0KxEmChNdloNi6V-gXuVoqPJFgVq0MXQRv-h6cg,1071
+fytly-1.0.dist-info/METADATA,sha256=F0v4-owAvyOjyoy0flDzhTJYyODRoOLpD0tOqRpA0TQ,354
+fytly-1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+fytly-1.0.dist-info/top_level.txt,sha256=rwh8_ukTaGscjyhGkBVcsGOMdc-Cfdz2QH7BKGENv-4,3
+fytly-1.0.dist-info/RECORD,,
