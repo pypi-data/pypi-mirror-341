@@ -1,0 +1,19 @@
+# pyttsgen
+
+**pyttsgen** is a developer-first, plug-and-play Text-to-Speech (TTS) library for Python. It supports multiple output formats (MP3, bytes, Base64), works with asynchronous and synchronous calls, and is framework-agnostic. Use it in your FastAPI, Flask, Streamlit or any Python application with minimal code.
+
+## Features
+
+- **Easy API:** One-line commands such as `tts.speak_to_file(text, output_path)`
+- **Multiple Outputs:** Get audio as files, bytes, or Base64 strings.
+- **Batch Processing:** Generate TTS audio for multiple text inputs.
+- **CLI Support:** Generate audio via the terminal with options to list voices.
+- **Framework Integration:** Examples available for FastAPI, Flask, Streamlit, and more.
+- **Voice Catalog:** Use built-in voice definitions with filtering capabilities.
+
+## Installation
+
+Install via pip:
+
+```bash
+pip install pyttsgen

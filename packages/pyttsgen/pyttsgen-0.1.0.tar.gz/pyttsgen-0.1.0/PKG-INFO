@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pyttsgen
+Version: 0.1.0
+Summary: A developer-friendly, plug-and-play TTS library for Python supporting multiple outputs and integrations.
+Author: RePromptsQuest
+Author-email: repromptsquest@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
