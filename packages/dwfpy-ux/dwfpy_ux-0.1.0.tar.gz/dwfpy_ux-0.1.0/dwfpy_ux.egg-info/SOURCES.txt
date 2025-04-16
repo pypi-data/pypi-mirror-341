@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+DwfInterface/DigiScope.py
+DwfInterface/DigiScopeGraph.py
+DwfInterface/Enumerate.py
+DwfInterface/__init__.py
+DwfInterface/dwfconstants.py
+dwfpy_ux.egg-info/PKG-INFO
+dwfpy_ux.egg-info/SOURCES.txt
+dwfpy_ux.egg-info/dependency_links.txt
+dwfpy_ux.egg-info/requires.txt
+dwfpy_ux.egg-info/top_level.txt
