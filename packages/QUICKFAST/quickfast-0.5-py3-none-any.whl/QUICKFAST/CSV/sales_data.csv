@@ -1,0 +1,12 @@
+OrderID,Product,Category,Sales,Quantity,Date
+1001,Apple,Fruit,50.5,10,01-01-2025
+1002,Banana,Fruit,30,15,02-01-2025
+1003,Carrot,Vegetable,25,20,03-01-2025
+1004,Orange,Fruit,40,12,04-01-2025
+1005,Cucumber,Vegetable,15,10,05-01-2025
+1006,Tomato,Vegetable,35,8,06-01-2025
+1007,Apple,Fruit,55,9,07-01-2025
+1008,Orange,Fruit,45,14,08-01-2025
+1009,Carrot,Vegetable,22.5,18,09-01-2025
+1010,Tomato,Vegetable,37,7,10-01-2025
+1011,sweet Potatoes,Vegetable,56,,10-01-2025
