@@ -1,0 +1,134 @@
+Metadata-Version: 2.3
+Name: zmp-openapi-helper
+Version: 0.2.0
+Summary: This is a openapi helper library for the ZMP AI Platform
+Author: Kilsoo Kang
+Author-email: kilsoo75@gmail.com
+Requires-Python: >=3.11, <4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: colorlog (>=6.9.0,<7.0.0)
+Requires-Dist: httpx (>=0.28.1,<0.29.0)
+Requires-Dist: pydantic (>=2.10.6)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/cloudz-mp/zmp-openapi-helper/issues
+Project-URL: Documentation, https://github.com/cloudz-mp/zmp-openapi-helper
+Project-URL: Homepage, https://github.com/cloudz-mp
+Project-URL: Repository, https://github.com/cloudz-mp/zmp-openapi-helper
+Description-Content-Type: text/markdown
+
+# zmp-openapi-helper
+
+![Platform Badge](https://img.shields.io/badge/platform-zmp-red)
+![Component Badge](https://img.shields.io/badge/component-openapi-helper-red)
+![CI Badge](https://img.shields.io/badge/ci-github_action-green)
+![License Badge](https://img.shields.io/badge/license-MIT-green)
+![PyPI - Version](https://img.shields.io/pypi/v/zmp-openapi-helper)
+![PyPI - Implementation](https://img.shields.io/pypi/implementation/zmp-openapi-helper)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/zmp-openapi-helper)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/zmp-openapi-helper)
+![PyPI - Download](https://img.shields.io/pypi/dm/zmp-openapi-helper)
+
+## Introduction
+
+This is a openapi helper library for the ZMP AI Platform
+
+## Key Features
+
+- Support the OpenAPI Specification(>3.0.0)
+- Generate the Arguments Schema for the LLM
+
+## Installation
+
+Install using pip:
+
+```bash
+pip install zmp-openapi-helper
+```
+
+Install using poetry:
+```bash
+poetry add zmp-openapi-helper
+```
+
+## Usage
+
+Basic example:
+
+```python
+import logging
+import logging.config
+from typing import List
+
+from zmp_openapi_toolkit import (
+    MixedAPISpecConfig,
+    ZmpAPIWrapper,
+    ZmpTool,
+    ZmpToolkit,
+)
+
+logging.getLogger("zmp_openapi_toolkit.openapi.zmpapi_models").setLevel(logging.INFO)
+logging.getLogger("zmp_openapi_toolkit.toolkits.toolkit").setLevel(logging.INFO)
+
+if __name__ == "__main__":
+    mixed_api_spec_config = MixedAPISpecConfig.from_mixed_spec_file(
+        file_path="runner/openapi/zmp_mixed_api_spec.json"
+    )
+
+    zmp_api_wrapper = ZmpAPIWrapper(
+        "https://api.zmp.vn", mixed_api_spec_config=mixed_api_spec_config
+    )
+
+    operations = zmp_api_wrapper.get_operations()
+    for operation in operations:
+        print("-" * 100)
+        print(operation.args_schema)
+        for field_name, field_info in operation.args_schema.model_fields.items():
+            print(
+                f"\t{field_name}: {field_info.annotation}, {field_info.default}, {field_info.description}"
+            )
+
+```
+
+For more detailed usage instructions, please refer to our [documentation](link).
+
+## Development Setup
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/zmp-openapi-helper.git
+cd zmp-openapi-helper
+```
+
+2. Create and activate virtual environment
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Windows: venv\Scripts\activate
+```
+
+3. Install development dependencies
+```bash
+poetry install
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+- Issue Tracker: https://github.com/cloudz-mp/zmp-openapi-helper/issues
+- Email: kilsoo75@gmail.com
+
+
+
