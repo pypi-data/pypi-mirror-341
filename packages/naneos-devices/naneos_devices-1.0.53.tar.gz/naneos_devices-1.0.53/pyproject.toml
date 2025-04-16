@@ -1,0 +1,52 @@
+[project]
+name = "naneos-devices"
+version = "1.0.53"
+description = "naneos particle solutions gmbh python backend"
+readme = { file = "README.md", content-type = "text/markdown" }
+authors = [{ name = "Mario Huegi", email = "mario.huegi@naneos.com" }]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Healthcare Industry",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+requires-python = ">=3.12"
+dependencies = [
+    "bleak>=0.22.3",
+    "influxdb-client[ciso]>=1.48.0",
+    "pandas>=2.2.3",
+    "protobuf>=6.30.2",
+    "pyserial>=3.5",
+    "requests>=2.32.3",
+    "rich>=14.0.0",
+    "simplepyble>=0.9.0",
+    "typer>=0.15.2",
+]
+
+[project.urls]
+Repository = "https://github.com/naneos-org/python-naneos-devices"
+Documentation = "https://naneos-org.github.io/python-naneos-devices/"
+
+[tool.uv]
+environments = [
+    "sys_platform == 'darwin'",
+    "sys_platform == 'linux'",
+    "sys_platform == 'win32'",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/naneos"]
+
+[[tool.uv.index]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+publish-url = "https://test.pypi.org/legacy/"
+explicit = true
