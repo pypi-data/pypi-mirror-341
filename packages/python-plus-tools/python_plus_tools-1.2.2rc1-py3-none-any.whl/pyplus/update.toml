@@ -1,0 +1,51 @@
+# Each project update log and time max reload 5 offical
+
+[release]
+main.version = "1.2.1.post0"
+main.update_info = { "1.0.6" = "Fix some bug.\nAdd the Chinese documents.Update the update -- 1.1.0", "1.0.7" = "Modify some code.\nUpdate some packages:\n\tupdate -- 1.1.1\n\tdatalist_conversion -- 1.1.0", "1.1.0" = "Modify some code.", "1.2.0" = "Fix some bug.\nAdd some moudles:\n\tpassword:Encrypt your texts.This moudle is not completed.\n\ttypes:Some types.\n\tmoudle:Getsome operations of import\n\tlatex:Latex to text or image.\n\tadvancedlib:Some expansions of bulit-in functions.\nNow dec can used.\n\tUpdate some moudles:\n\tupdate -- 1.1.2.\nscinece -- 1.2.2.\nModify some code.Add more update log.", "1.2.1" = "Add config." }
+main.update_time = { "1.0.6" = 2025-03-22, "1.0.7" = 2025-03-23, "1.1.0" = 2025-04-05, "1.2.0" = 2025-04-12, "1.2.1" = 2025-04-13 }
+
+scinece.version = "1.2.1"
+scinece.update_info = { "1.0.1" = "Add the ABCUnit,recommed all the class unit(new unit type) use this type.", "1.1.0" = "Delete the ABCUnit.", "1.2.0" = "Add 'Points',Simply get the point.", "1.2.1" = "Add the ABCUnit again.", "1.2.2" = "Add class NoInputTypeUnit.It can simplely to create a UnitClass.", will = "Add Weight and time UnitClass." }
+scinece.update_time = { "1.0.1" = 2025-03-22, "1.1.0" = 2025-03-23, "1.2.0" = 2025-04-08, "1.2.1" = 2025-04-09, "1.2.2" = 2025-04-12 }
+
+datalist_conversion.version = "1.1.1"
+datalist_conversion.update_info = { "1.0.0" = "", "1.1.0" = "Add pickle,yaml,toml convert.", "1.1.1" = "Fix some bug." }
+datalist_conversion.update_time = { "1.0.0" = 2025-03-20, "1.1.0" = 2025-03-23, "1.1.1" = 2025-04-12 }
+
+dec.version = "1.0.0"
+dec.update_info = { "1.0.0" = "", "1.1.0" = "Add calc." }
+dec.update_time = { "1.0.0" = 2025-04-05, "1.1.0" = 0 }
+
+jurisdiction.version = "1.0.1"
+jurisdiction.update_info = { "1.0.0" = "", "1.0.1" = "Add class `User.`" }
+jurisdiction.update_time = { "1.0.0" = 2025-03-20, "1.0.1" = 2025-03-23 }
+
+latex.version = "1.0.0"
+latex.update_info = { "1.0.0" = "" }
+latex.update_time = { "1.0.0" = 2025-04-10 }
+
+moudle.version = "1.0.0"
+moudle.update_info = { "1.0.0" = "" }
+moudle.update_time = { "1.0.0" = 2025-04-09 }
+
+password.version = "1.0.0"
+password.update_info = { "1.0.0" = "" }
+password.update_time = { "1.0.0" = 2025-04-09 }
+
+pydebugger.version = "1.0.0"
+pydebugger.update_info = { "1.0.0" = "", "1.0.1" = "Modify some code." }
+pydebugger.update_time = { "1.0.0" = 2025-03-20, "1.0.1" = 2025-04-12 }
+
+tags.version = "1.0.0"
+tags.update = { "1.0.0" = "" }
+tags.update_time = { "1.0.0" = 2025-03-20 }
+
+type.version = "1.0.0"
+type.update_info = { "1.0.0" = "" }
+type.update_time = { "1.0.0" = 2025-04-08 }
+
+[pre-release]
+version = "1.2.2b1"
+mupdate_info = { "1.2.2b1" = "Fix some bug." }
+update_time = { "1.2.2b1" = 2025-04-23 }
