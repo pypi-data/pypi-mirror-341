@@ -1,0 +1,14 @@
+cryptography>=42.0.2
+django-appconf<1.2,>=1.0.0
+Django<5.3,>=5.0
+fedora-messaging==3.7.0
+twisted>=23.8.0
+Weblate>=5.11
+
+[lint]
+pre-commit==4.2.0
+
+[test]
+build==1.2.2.post1
+coverage==7.8.0
+twine==6.1.0
