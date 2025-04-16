@@ -1,0 +1,36 @@
+[project]
+name = "syne_ga_mcp"
+version = "0.0.01"
+description = "MCP Server for Google Analytics Data API"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp-server>=0.1.4,<0.2.0",
+    "google-analytics-data>=0.18.18,<0.19.0",
+    "google-analytics-admin>=0.5.0,<0.6.0",
+    "google-auth>=2.38.0,<3.0.0",
+    "pydantic>=2.11.3,<3.0.0",
+    "typer[all]>=0.15.2,<0.16.0",
+    "uvicorn>=0.23.0,<0.24.0",
+    "pydantic[email]",
+    "setuptools",
+    "asyncio"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[[project.authors]]
+name = "synehq"
+email = "team@synehq.com"
+
+[project.scripts]
+syne_ga_mcp = "syne_ga_mcp:main"
+"syne-ga-mcp" = "syne_ga_mcp:main"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
