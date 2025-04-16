@@ -1,0 +1,9 @@
+README.md
+setup.py
+FFMPEG_Filters.egg-info/PKG-INFO
+FFMPEG_Filters.egg-info/SOURCES.txt
+FFMPEG_Filters.egg-info/dependency_links.txt
+FFMPEG_Filters.egg-info/requires.txt
+FFMPEG_Filters.egg-info/top_level.txt
+FFMPEG_Filters_Lib/FFMPEG_Filters.py
+FFMPEG_Filters_Lib/__init__.py
