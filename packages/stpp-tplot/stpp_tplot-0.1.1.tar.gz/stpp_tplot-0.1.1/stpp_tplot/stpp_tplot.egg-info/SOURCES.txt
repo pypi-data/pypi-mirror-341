@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+stpp_tplot/stpp_tplot.egg-info/PKG-INFO
+stpp_tplot/stpp_tplot.egg-info/SOURCES.txt
+stpp_tplot/stpp_tplot.egg-info/dependency_links.txt
+stpp_tplot/stpp_tplot.egg-info/requires.txt
+stpp_tplot/stpp_tplot.egg-info/top_level.txt

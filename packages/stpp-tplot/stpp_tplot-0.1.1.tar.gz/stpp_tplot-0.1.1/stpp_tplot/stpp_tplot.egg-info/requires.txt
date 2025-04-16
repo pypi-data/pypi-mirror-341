@@ -1,0 +1,4 @@
+matplotlib==3.10.1
+pyspedas==1.7.19
+pytz==2025.2
+numpy==2.2.4
