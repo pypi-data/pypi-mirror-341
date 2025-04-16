@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/sync_dataclasses/SyncDataClass.py
+src/sync_dataclasses/__init__.py
+src/sync_dataclasses.egg-info/PKG-INFO
+src/sync_dataclasses.egg-info/SOURCES.txt
+src/sync_dataclasses.egg-info/dependency_links.txt
+src/sync_dataclasses.egg-info/top_level.txt
+tests/test_main.py
