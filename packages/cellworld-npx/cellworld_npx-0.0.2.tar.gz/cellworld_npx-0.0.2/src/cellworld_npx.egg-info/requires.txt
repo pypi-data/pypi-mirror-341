@@ -1,0 +1,14 @@
+numpy
+scipy
+matplotlib
+json-cpp
+cellworld
+npyx
+pandas
+astropy
+rtree
+kilosort
+torch
+
+[kilosort]
+kilosort
