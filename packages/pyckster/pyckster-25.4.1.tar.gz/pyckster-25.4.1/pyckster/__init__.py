@@ -1,0 +1,21 @@
+"""
+Pyckster - A PyQt5-based GUI for picking seismic traveltimes and analyzing inversions
+"""
+
+# Define version and metadata in one place
+__version__ = "25.4.1"
+__author__ = "Sylvain Pasquet"
+__email__ = "sylvain.pasquet@sorbonne-universite.fr"
+__license__ = "GPLv3"
+
+# Import and expose main functionality
+from .core import main, MainWindow
+from .inversion_visualizer import InversionVisualizer, display_inversion_results
+
+# Define what's available when doing 'from pyckster import *'
+__all__ = [
+    'main',
+    'MainWindow',
+    'InversionVisualizer',
+    'display_inversion_results',
+]
