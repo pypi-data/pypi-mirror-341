@@ -1,0 +1,5 @@
+*__pycache__
+examples/anomalous_samples_list.yml
+datasets_list.yml
+*.ipynb_checkpoints*
+*/_version_.py
