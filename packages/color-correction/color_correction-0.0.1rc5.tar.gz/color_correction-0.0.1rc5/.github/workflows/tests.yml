@@ -1,0 +1,51 @@
+name: 🧪 Test
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths-ignore:
+      - '**.md'
+      - '*.md'
+      - '**.js'
+      - '**.html'
+      - '**.css'
+      - 'docs/**'
+      - 'LICENSE'
+      - '.gitignore'
+      - '.pre-commit-config.yaml'
+      - 'mkdocs.yml'
+      - 'CHANGELOG.md'
+
+jobs:
+  test:
+    name: 🧪 Test
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version:
+          - "3.10"
+          - "3.11"
+          - "3.12"
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Install uv and set the python version
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+          python-version: ${{ matrix.python-version }}
+
+      - name: 📦 Install the project
+        run: uv sync --all-groups --no-group dev-model
+
+      - name: 🔍 Checking linter and formatting
+        run: uvx ruff check
+
+      - name: 📊 Run tests with Coverage
+        run: |
+          uv run pytest --cov-report=term-missing --cov=color_correction tests/
+          uv run coverage report --fail-under=35
