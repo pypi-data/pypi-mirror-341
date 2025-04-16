@@ -1,0 +1,10 @@
+sceneprogdatasets/__init__.py,sha256=3h2hnqfW1B4zavgMHHLTzOhwq0HyPocWs9vbKBpK0eo,277
+sceneprogdatasets/retriever.py,sha256=sORhU5Jg9KIT_D0qGYM_4-ffj9URXkghLV4ozw4oBUA,3111
+sceneprogdatasets/futurehssd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sceneprogdatasets/futurehssd/futurehssd.py,sha256=nXbS-mBXrSgLLhWMXjB5atq5i3sb4isN8U8oHzymygw,3671
+sceneprogdatasets/objaverse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sceneprogdatasets/objaverse/objaverse.py,sha256=0__tBbfCpwfzOZGxocO5UGfiguOQKIZ8_ZfT_rR6wJ4,2480
+sceneprogdatasets-0.1.8.dist-info/METADATA,sha256=G_0GUOS07_c2P6ajjdQ23_Ukw7zOLXIzg633iYetq1c,1411
+sceneprogdatasets-0.1.8.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sceneprogdatasets-0.1.8.dist-info/top_level.txt,sha256=CZ6wb8YRiaRn5IYn5Yqs43InVGUUbn5ab0mdzOM0AjU,18
+sceneprogdatasets-0.1.8.dist-info/RECORD,,
