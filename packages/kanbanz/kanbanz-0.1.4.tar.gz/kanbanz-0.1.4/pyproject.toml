@@ -1,0 +1,14 @@
+[project]
+name = "kanbanz"
+version = "0.1.4"
+description = "一个看板调度能力的SDK包"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mkdocs-material>=9.6.11",
+    "mkdocstrings>=0.29.1",
+    "mkdocstrings-python>=1.16.10",
+    "pytest>=8.3.5",
+    "pytest-html>=4.1.1",
+    "setuptools>=78.1.0",
+]
