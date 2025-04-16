@@ -1,0 +1,7 @@
+werkzeug
+authlib
+requests
+FastAPI
+
+[:python_version > "3.7"]
+importlib-metadata
