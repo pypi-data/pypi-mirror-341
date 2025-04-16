@@ -1,0 +1,10 @@
+yamlfmt/__init__.py,sha256=y79rc4htRU1JpPvB3ZHi1px8EDs83Ml5Rbq9D3puTy0,135
+yamlfmt/__main__.py,sha256=yf7tw4qC0bpp-Fm7QGktaEE7iXjnlwyMUggPzjiQMo8,787
+yamlfmt/_version.py,sha256=Yx9ow2UvncRIWU7Zl_z7rHv-fuy6JaReylYEqyZkNxU,536
+yamlfmt/_version.pyi,sha256=BfNLaahWYBWM8Lw4OKvb1nwkeQt3vh399ePfzw5kowM,84
+yamlfmt/yamlfmt,sha256=BQSWSgtqoTpX8ALW_wmUbbAMUxKk_2pxjPR-_g_XRv4,4218368
+google_yamlfmt-0.16.0a2.dist-info/METADATA,sha256=9vy41DkOf1gL3aIsCZmu1J6uQXgseDKD1ur_XqvmQtA,1081
+google_yamlfmt-0.16.0a2.dist-info/WHEEL,sha256=k6hccRrl6UmjGsv-l-15TwZnTH21KqjgBTXuBtbSCtM,93
+google_yamlfmt-0.16.0a2.dist-info/entry_points.txt,sha256=o0NBTcauqLWjaAoIzzyD63GPiUpYaKnPGAPCVERQ7zA,50
+google_yamlfmt-0.16.0a2.dist-info/licenses/LICENSE,sha256=oA2jNW4CFQKrHBi930iK3i9H6JO_iG1mzrkynGMXfWo,1092
+google_yamlfmt-0.16.0a2.dist-info/RECORD,,
