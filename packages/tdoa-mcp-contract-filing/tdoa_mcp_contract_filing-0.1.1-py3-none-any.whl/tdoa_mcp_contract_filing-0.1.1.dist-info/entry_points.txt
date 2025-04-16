@@ -1,0 +1,2 @@
+[console_scripts]
+tdoa-mcp-contract-filing = src.server:main
