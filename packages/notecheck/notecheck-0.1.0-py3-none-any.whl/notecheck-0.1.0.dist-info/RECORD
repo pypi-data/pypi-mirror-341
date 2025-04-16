@@ -1,0 +1,13 @@
+notecheck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notecheck/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notecheck/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notecheck/cli/__main__.py,sha256=NiHGRkWh6fB5zf1xa-qHlNWT4XJaMbS9heStgv0SDno,60
+notecheck/cli/entry.py,sha256=pQk5KGhVjpGGQ3LdT03aaFZYKomJuqZVDXtVuPpj2Ik,422
+notecheck/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notecheck/lib/checker.py,sha256=w7pVp0DBTh8VqvDd3IsKccASYCNKy6UrAZPWQRBessg,2957
+notecheck/lib/prompts.py,sha256=RsfvTqH99Mu_T215O4EM-jSj6Lhzuo7ANApSP9c6OIU,2176
+notecheck/lib/util.py,sha256=lTv3zcFtpAI3sVgXdcd--AOZNbL_a3Li3to9IxUWDc8,1360
+notecheck-0.1.0.dist-info/METADATA,sha256=buPzfVbikLGzuQE6GkeDONLC3Ylm0UwgYXonRTuMmmk,1621
+notecheck-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+notecheck-0.1.0.dist-info/entry_points.txt,sha256=y7nRFOdcfvvRrx2NE7fq94RbsuFSeJ3o1JPY-mmYC1g,58
+notecheck-0.1.0.dist-info/RECORD,,

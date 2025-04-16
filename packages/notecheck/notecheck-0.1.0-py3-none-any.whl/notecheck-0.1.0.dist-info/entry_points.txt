@@ -1,0 +1,2 @@
+[console_scripts]
+notecheck = notecheck.cli.__main__:main
