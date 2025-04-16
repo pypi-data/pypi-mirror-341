@@ -1,0 +1,158 @@
+Metadata-Version: 2.4
+Name: lmsys
+Version: 0.1.1
+Summary: A simple Python SDK for using Aider programmatically
+Author: Sean Sullivan
+Author-email: Sean Sullivan <sean@lmsystems.ai>
+License: MIT
+Project-URL: Homepage, https://lmsystems.ai
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: aider-chat>=0.82.0
+Dynamic: author
+Dynamic: requires-python
+
+# LMSYS Python SDK
+
+A simple Python SDK for AI-powered coding assistance in your scripts and applications.
+
+## Installation
+
+```bash
+pip install lmsys
+```
+
+## Quick Start
+
+```python
+from lmsys import AiderSDK
+
+# Initialize the SDK
+sdk = AiderSDK(
+    working_dir="/path/to/your/project",
+    model="gpt-4.1",
+    use_git=False,
+    api_keys={
+        "OPENAI_API_KEY": "your-openai-api-key"
+    }
+)
+
+# Have AI modify your code
+result = sdk.code(
+    prompt="Add error handling to the database connection function",
+    editable_files=["database.py"]
+)
+
+print(f"Success: {result['success']}")
+print(result['diff'])
+```
+
+## Key Features
+
+- AI-powered code generation and modification
+- Support for multiple AI models (OpenAI, Anthropic, Google, etc.)
+- File operations (create, read, search)
+- Works with or without git repositories
+
+## Example Usage
+
+Here's a simple example showing the main capabilities:
+
+```python
+from lmsys import AiderSDK
+
+# Initialize the SDK
+sdk = AiderSDK(
+    working_dir="./my_project",
+    model="gpt-4.1",
+    use_git=False,
+    api_keys={"OPENAI_API_KEY": "your-openai-key"}
+)
+
+# Create a file
+sdk.create_file(
+    "calculator.py",
+    """def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+"""
+)
+
+# Have AI improve the code
+result = sdk.code(
+    prompt="Add multiply and divide functions to calculator.py. Handle division by zero.",
+    editable_files=["calculator.py"]
+)
+
+if result["success"]:
+    print("AI successfully modified the code!")
+    print(result["diff"])
+
+# Read the updated file
+updated_content = sdk.read_file("calculator.py")
+print(updated_content)
+```
+
+See `example_usage.py` for a complete working example.
+
+## API Reference
+
+### Initialization
+
+```python
+sdk = AiderSDK(
+    working_dir="/path/to/your/project",  # Required
+    model="gpt-4.1",                      # Optional: specify model
+    editor_model=None,                    # Optional: specify editor model
+    use_git=True,                         # Optional: set to False to disable git
+    api_keys={                            # Optional: provide API keys
+        "OPENAI_API_KEY": "your-key",
+        "ANTHROPIC_API_KEY": "your-key",
+        "GEMINI_API_KEY": "your-key",
+    }
+)
+```
+
+### Core Functions
+
+```python
+# AI code generation/modification
+result = sdk.code(prompt, editable_files, readonly_files=[])
+
+# List available models
+models = sdk.list_models(filter_string="")
+
+# File operations
+sdk.create_file(filename, content)
+content = sdk.read_file(filename)
+results = sdk.search_files(search_string, file_patterns)
+```
+
+## API Key Management
+
+You can provide API keys in two ways:
+
+1. Environment variables:
+   ```bash
+   export OPENAI_API_KEY="your-openai-key"
+   ```
+
+2. In code:
+   ```python
+   sdk = AiderSDK(
+       working_dir="./my_project",
+       api_keys={"OPENAI_API_KEY": "your-openai-key"}
+   )
+   ```
+
+Supported API keys include:
+- `OPENAI_API_KEY` - For OpenAI models
+- `ANTHROPIC_API_KEY` - For Claude models
+- `GEMINI_API_KEY` - For Google Gemini models
+- And others (Fireworks, Mistral, OpenRouter, Groq, etc.)
+
+## License
+
+Proprietary. This is closed-source software.

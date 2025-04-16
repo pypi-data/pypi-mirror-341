@@ -1,0 +1,9 @@
+README.md
+aider_sdk.py
+pyproject.toml
+setup.py
+lmsys.egg-info/PKG-INFO
+lmsys.egg-info/SOURCES.txt
+lmsys.egg-info/dependency_links.txt
+lmsys.egg-info/requires.txt
+lmsys.egg-info/top_level.txt
