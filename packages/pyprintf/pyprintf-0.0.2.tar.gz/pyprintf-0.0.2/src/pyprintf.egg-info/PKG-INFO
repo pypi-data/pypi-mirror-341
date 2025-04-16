@@ -1,0 +1,57 @@
+Metadata-Version: 2.4
+Name: pyprintf
+Version: 0.0.2
+Summary: A lightweight, Open Source pyprintf sprintf() implementation written in Python
+Author-email: Zsolt Oroszlány <hello@playfulsparkle.com>
+Maintainer-email: Zsolt Oroszlány <hello@playfulsparkle.com>
+License: BSD-3-Clause
+Project-URL: Bug Tracker, https://github.com/playfulsparkle/pyprintf/issues
+Project-URL: Change Log, https://github.com/playfulsparkle/pyprintf/blob/main/CHANGELOG.md
+Project-URL: Github, https://github.com/playfulsparkle/pyprintf
+Project-URL: Homepage, https://github.com/playfulsparkle/pyprintf
+Keywords: pyprintf,sprintf,parser,python,formatting
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typing-extensions>=4.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.1; extra == "dev"
+Requires-Dist: flake8>=4.0; extra == "dev"
+Dynamic: license-file
+
+# pyprintf
+
+A Python implementation of the C-style sprintf() function.
+
+## Installation
+
+```bash
+pip install pyprintf
+```
+
+## Usage
+
+```python
+from pyprintf import sprintf
+
+# Basic formatting
+output = sprintf("Hello, %s!", "world")
+print(output)  # Output: Hello, world!
+
+# Multiple arguments
+output = sprintf("%s has %d apples", "John", 5)
+print(output)  # Output: John has 5 apples
+
+# Float formatting
+output = sprintf("Pi is approximately %.2f", 3.14159)
+print(output)  # Output: Pi is approximately 3.14
+```
