@@ -1,0 +1,477 @@
+2025-04-16T11:18:38.731940+1000                   user.py:28   INFO     Loading user...
+2025-04-16T11:18:38.828968+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:38.829081+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:38.829313+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+2025-04-16T11:18:38.829482+1000         connectionpool.py:1022 DEBUG    Starting new HTTPS connection (1): httpbin.org:443
+2025-04-16T11:18:39.775332+1000         connectionpool.py:475  DEBUG    https://httpbin.org:443 "GET /status/404 HTTP/1.1" 404 0
+2025-04-16T11:18:39.775792+1000                actions.py:368  DEBUG    Pre-write cache checks: disabled status
+2025-04-16T11:18:39.775854+1000                session.py:265  DEBUG    Skipping cache write for URL: https://httpbin.org/status/404
+2025-04-16T11:18:39.775952+1000           html_session.py:63   DEBUG    GET https://httpbin.org/status/404 ({}) received <Response [404]>	Expires: None, Headers: {'Date': 'Wed, 16 Apr 2025 01:18:39 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '0', 'Connection': 'keep-alive', 'Server': 'gunicorn/19.9.0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Credentials': 'true'}
+2025-04-16T11:18:40.192920+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:40.193082+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:40.193235+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+2025-04-16T11:18:40.193528+1000         connectionpool.py:1022 DEBUG    Starting new HTTPS connection (1): untappd.com:443
+2025-04-16T11:18:40.965936+1000         connectionpool.py:475  DEBUG    https://untappd.com:443 "GET /venue/5840988?menu_id=195788 HTTP/1.1" 307 None
+2025-04-16T11:18:40.966821+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:40.966882+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:40.966998+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+2025-04-16T11:18:42.044301+1000         connectionpool.py:475  DEBUG    https://untappd.com:443 "GET /v/dad-and-daves-brewing/5840988 HTTP/1.1" 200 None
+2025-04-16T11:18:42.046066+1000                actions.py:368  DEBUG    Pre-write cache checks: Passed
+2025-04-16T11:18:42.048282+1000                actions.py:368  DEBUG    Pre-write cache checks: Passed
+2025-04-16T11:18:42.049972+1000           html_session.py:63   DEBUG    GET https://untappd.com/venue/5840988 ({'params': {'menu_id': '195788'}}) received <Response [200]>	Expires: 2025-04-16 02:18:42.049911+00:00, Headers: {'Date': 'Wed, 16 Apr 2025 01:18:42 GMT', 'Content-Type': 'text/html; charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'x-frame-options': 'SAMEORIGIN', 'cf-cache-status': 'DYNAMIC', 'vary': 'accept-encoding', 'Server': 'cloudflare', 'CF-RAY': '930fd9a22968a97d-SYD', 'Content-Encoding': 'br'}
+2025-04-16T11:18:42.111044+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:42.111142+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:42.111260+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+2025-04-16T11:18:42.763345+1000         connectionpool.py:475  DEBUG    https://untappd.com:443 "GET /venue/5840988?menu_id=195412 HTTP/1.1" 307 None
+2025-04-16T11:18:42.764419+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:42.764484+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:42.765823+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600))
+2025-04-16T11:18:42.765902+1000                actions.py:368  DEBUG    Pre-write cache checks: Passed
+2025-04-16T11:18:42.765969+1000           raw_response.py:90   WARNING  read(decode_content=False) is not supported for cached responses
+2025-04-16T11:18:42.767815+1000           html_session.py:63   DEBUG    GET https://untappd.com/venue/5840988 ({'params': {'menu_id': '195412'}}) received <Response [200]>	Expires: 2025-04-16 02:18:42.767763+00:00, Headers: {'CF-RAY': '930fd9a22968a97d-SYD', 'Connection': 'keep-alive', 'Content-Encoding': 'br', 'Content-Type': 'text/html; charset=UTF-8', 'Date': 'Wed, 16 Apr 2025 01:18:42 GMT', 'Server': 'cloudflare', 'Transfer-Encoding': 'chunked', 'cf-cache-status': 'DYNAMIC', 'vary': 'accept-encoding', 'x-frame-options': 'SAMEORIGIN'}
+2025-04-16T11:18:42.832592+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:42.832697+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:42.832831+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+2025-04-16T11:18:43.396193+1000         connectionpool.py:475  DEBUG    https://untappd.com:443 "GET /venue/5840988?menu_id=195567 HTTP/1.1" 307 None
+2025-04-16T11:18:43.396939+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:43.396997+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:43.397334+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600))
+2025-04-16T11:18:43.397406+1000                actions.py:368  DEBUG    Pre-write cache checks: Passed
+2025-04-16T11:18:43.397470+1000           raw_response.py:90   WARNING  read(decode_content=False) is not supported for cached responses
+2025-04-16T11:18:43.398831+1000           html_session.py:63   DEBUG    GET https://untappd.com/venue/5840988 ({'params': {'menu_id': '195567'}}) received <Response [200]>	Expires: 2025-04-16 02:18:43.398779+00:00, Headers: {'CF-RAY': '930fd9a22968a97d-SYD', 'Connection': 'keep-alive', 'Content-Encoding': 'br', 'Content-Type': 'text/html; charset=UTF-8', 'Date': 'Wed, 16 Apr 2025 01:18:42 GMT', 'Server': 'cloudflare', 'Transfer-Encoding': 'chunked', 'cf-cache-status': 'DYNAMIC', 'vary': 'accept-encoding', 'x-frame-options': 'SAMEORIGIN'}
+2025-04-16T11:18:43.461462+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:43.461556+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:43.461680+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+2025-04-16T11:18:44.025839+1000         connectionpool.py:475  DEBUG    https://untappd.com:443 "GET /venue/5840988?menu_id=195568 HTTP/1.1" 307 None
+2025-04-16T11:18:44.027609+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:44.027782+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:44.028639+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600))
+2025-04-16T11:18:44.028828+1000                actions.py:368  DEBUG    Pre-write cache checks: Passed
+2025-04-16T11:18:44.029056+1000           raw_response.py:90   WARNING  read(decode_content=False) is not supported for cached responses
+2025-04-16T11:18:44.034662+1000           html_session.py:63   DEBUG    GET https://untappd.com/venue/5840988 ({'params': {'menu_id': '195568'}}) received <Response [200]>	Expires: 2025-04-16 02:18:44.034511+00:00, Headers: {'CF-RAY': '930fd9a22968a97d-SYD', 'Connection': 'keep-alive', 'Content-Encoding': 'br', 'Content-Type': 'text/html; charset=UTF-8', 'Date': 'Wed, 16 Apr 2025 01:18:42 GMT', 'Server': 'cloudflare', 'Transfer-Encoding': 'chunked', 'cf-cache-status': 'DYNAMIC', 'vary': 'accept-encoding', 'x-frame-options': 'SAMEORIGIN'}
+2025-04-16T11:18:44.127724+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:44.127849+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:44.127984+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+2025-04-16T11:18:44.583705+1000         connectionpool.py:475  DEBUG    https://untappd.com:443 "GET /venue/5840988?menu_id=195509 HTTP/1.1" 307 None
+2025-04-16T11:18:44.586860+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:44.587226+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:44.589003+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600))
+2025-04-16T11:18:44.589485+1000                actions.py:368  DEBUG    Pre-write cache checks: Passed
+2025-04-16T11:18:44.589816+1000           raw_response.py:90   WARNING  read(decode_content=False) is not supported for cached responses
+2025-04-16T11:18:44.594666+1000           html_session.py:63   DEBUG    GET https://untappd.com/venue/5840988 ({'params': {'menu_id': '195509'}}) received <Response [200]>	Expires: 2025-04-16 02:18:44.594396+00:00, Headers: {'CF-RAY': '930fd9a22968a97d-SYD', 'Connection': 'keep-alive', 'Content-Encoding': 'br', 'Content-Type': 'text/html; charset=UTF-8', 'Date': 'Wed, 16 Apr 2025 01:18:42 GMT', 'Server': 'cloudflare', 'Transfer-Encoding': 'chunked', 'cf-cache-status': 'DYNAMIC', 'vary': 'accept-encoding', 'x-frame-options': 'SAMEORIGIN'}
+2025-04-16T11:18:44.681030+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:44.681155+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:44.681301+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+2025-04-16T11:18:45.221615+1000         connectionpool.py:475  DEBUG    https://untappd.com:443 "GET /venue/5840988?menu_id=195778 HTTP/1.1" 307 None
+2025-04-16T11:18:45.222843+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:45.222951+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:45.223505+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600))
+2025-04-16T11:18:45.223627+1000                actions.py:368  DEBUG    Pre-write cache checks: Passed
+2025-04-16T11:18:45.223733+1000           raw_response.py:90   WARNING  read(decode_content=False) is not supported for cached responses
+2025-04-16T11:18:45.225770+1000           html_session.py:63   DEBUG    GET https://untappd.com/venue/5840988 ({'params': {'menu_id': '195778'}}) received <Response [200]>	Expires: 2025-04-16 02:18:45.225671+00:00, Headers: {'CF-RAY': '930fd9a22968a97d-SYD', 'Connection': 'keep-alive', 'Content-Encoding': 'br', 'Content-Type': 'text/html; charset=UTF-8', 'Date': 'Wed, 16 Apr 2025 01:18:42 GMT', 'Server': 'cloudflare', 'Transfer-Encoding': 'chunked', 'cf-cache-status': 'DYNAMIC', 'vary': 'accept-encoding', 'x-frame-options': 'SAMEORIGIN'}
+2025-04-16T11:18:45.409417+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:45.409519+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:45.409647+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+2025-04-16T11:18:45.629018+1000         connectionpool.py:475  DEBUG    https://httpbin.org:443 "GET /status/404 HTTP/1.1" 404 0
+2025-04-16T11:18:45.629551+1000                actions.py:368  DEBUG    Pre-write cache checks: disabled status
+2025-04-16T11:18:45.629660+1000                session.py:265  DEBUG    Skipping cache write for URL: https://httpbin.org/status/404
+2025-04-16T11:18:45.629786+1000           html_session.py:63   DEBUG    GET https://httpbin.org/status/404 ({}) received <Response [404]>	Expires: None, Headers: {'Date': 'Wed, 16 Apr 2025 01:18:45 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '0', 'Connection': 'keep-alive', 'Server': 'gunicorn/19.9.0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Credentials': 'true'}
+2025-04-16T11:18:46.022593+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:46.022684+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:46.022777+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+2025-04-16T11:18:46.400247+1000         connectionpool.py:475  DEBUG    https://httpbin.org:443 "GET /status/404 HTTP/1.1" 404 0
+2025-04-16T11:18:46.400756+1000                actions.py:368  DEBUG    Pre-write cache checks: disabled status
+2025-04-16T11:18:46.400839+1000                session.py:265  DEBUG    Skipping cache write for URL: https://httpbin.org/status/404
+2025-04-16T11:18:46.400960+1000           html_session.py:63   DEBUG    GET https://httpbin.org/status/404 ({}) received <Response [404]>	Expires: None, Headers: {'Date': 'Wed, 16 Apr 2025 01:18:46 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '0', 'Connection': 'keep-alive', 'Server': 'gunicorn/19.9.0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Credentials': 'true'}
+2025-04-16T11:18:46.447579+1000                actions.py:103  DEBUG    Cache directives from request headers: CacheDirectives()
+2025-04-16T11:18:46.447703+1000                actions.py:368  DEBUG    Pre-read cache checks: Passed
+2025-04-16T11:18:46.447826+1000                actions.py:217  DEBUG    Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+2025-04-16T11:18:47.741845+1000         connectionpool.py:475  DEBUG    https://untappd.com:443 "GET /user/mw1414 HTTP/1.1" 200 None
+2025-04-16T11:18:47.753468+1000                actions.py:368  DEBUG    Pre-write cache checks: Passed
+2025-04-16T11:18:47.760040+1000           html_session.py:63   DEBUG    GET https://untappd.com/user/mw1414 ({}) received <Response [200]>	Expires: 2025-04-16 02:18:47.759446+00:00, Headers: {'Date': 'Wed, 16 Apr 2025 01:18:47 GMT', 'Content-Type': 'text/html; charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'x-frame-options': 'SAMEORIGIN', 'cf-cache-status': 'DYNAMIC', 'vary': 'accept-encoding', 'Server': 'cloudflare', 'CF-RAY': '930fd9c46b48a97d-SYD', 'Content-Encoding': 'br'}
+2025-04-16T11:18:47.791971+1000                 _trace.py:47   DEBUG    connect_tcp.started host='untappd.com' port=443 local_address=None timeout=10 socket_options=None
+2025-04-16T11:18:47.811153+1000                 _trace.py:47   DEBUG    connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x109171400>
+2025-04-16T11:18:47.811311+1000                 _trace.py:47   DEBUG    start_tls.started ssl_context=<ssl.SSLContext object at 0x1043a3380> server_hostname='untappd.com' timeout=10
+2025-04-16T11:18:47.852029+1000                 _trace.py:47   DEBUG    start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10a20f9d0>
+2025-04-16T11:18:47.852377+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:18:47.852692+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:18:47.852815+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:18:47.852935+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:18:47.852997+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:18:54.593114+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:18:54 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Set-Cookie', b'ut_anon=e8aa6350-5cb4-40a8-a767-2ff3e93acf28; expires=Tue, 17-Aug-3024 01:18:48 GMT; Max-Age=31536000000; path=/'), (b'Set-Cookie', b'ut_anon=ee9faf7c-f562-4b6a-8295-070fc27a965b; expires=Tue, 17-Aug-3024 01:18:54 GMT; Max-Age=31536000000; path=/'), (b'Set-Cookie', b'ut_anon=b4e8c3ed-2156-436d-ab07-2c4a2c699ac0; expires=Tue, 17-Aug-3024 01:18:54 GMT; Max-Age=31536000000; path=/'), (b'Set-Cookie', b'ut_anon=03cdc253-e019-46c4-97b5-c54e69dd1272; expires=Tue, 17-Aug-3024 01:18:54 GMT; Max-Age=31536000000; path=/'), (b'Set-Cookie', b'ut_anon=ab26b244-f137-4831-b0bc-25529af81e0b; expires=Tue, 17-Aug-3024 01:18:54 GMT; Max-Age=31536000000; path=/'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fd9cd296e182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:18:54.593755+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:18:54.595875+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:18:54.596131+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:18:54.596287+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:18:54.596615+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:18:54.598707+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers "HTTP/1.1 200 OK"
+2025-04-16T11:18:54.599764+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers
+2025-04-16T11:18:54.788440+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:18:54.788801+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:18:54.788850+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:18:54.788895+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:18:54.788922+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:18:55.658183+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:18:55 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fd9f88844182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:18:55.658856+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:18:55.659949+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:18:55.660208+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:18:55.660338+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:18:55.660661+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:18:55.662314+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=2471 "HTTP/1.1 200 OK"
+2025-04-16T11:18:55.663229+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=2471
+2025-04-16T11:18:55.740043+1000      user_beer_history.py:186  DEBUG    Beers per brewery 2471: 31
+2025-04-16T11:18:55.758299+1000      user_beer_history.py:236  DEBUG    Trying sort key date_asc
+2025-04-16T11:18:55.758782+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:18:55.758985+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:18:55.759021+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:18:55.759061+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:18:55.759088+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:18:56.641401+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:18:56 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fd9fe9df3182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:18:56.642189+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:18:56.653619+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:18:56.654115+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:18:56.654886+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:18:56.657820+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:18:56.661753+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=2471&sort=date_asc "HTTP/1.1 200 OK"
+2025-04-16T11:18:56.663564+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=2471&sort=date_asc
+2025-04-16T11:18:56.726060+1000      user_beer_history.py:247  DEBUG    Now got 31 beers
+2025-04-16T11:18:56.726172+1000      user_beer_history.py:250  DEBUG    Got all beers for brewery 2471
+2025-04-16T11:18:56.727384+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:18:56.727582+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:18:56.727619+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:18:56.727664+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:18:56.727692+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:18:57.344781+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:18:57 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fda04ae5d182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:18:57.345535+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:18:57.352236+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:18:57.353131+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:18:57.353581+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:18:57.354056+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:18:57.356258+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=484738 "HTTP/1.1 200 OK"
+2025-04-16T11:18:57.357227+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=484738
+2025-04-16T11:18:57.429792+1000      user_beer_history.py:186  DEBUG    Beers per brewery 484738: 84
+2025-04-16T11:18:57.445882+1000      user_beer_history.py:236  DEBUG    Trying sort key date_asc
+2025-04-16T11:18:57.446270+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:18:57.446444+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:18:57.446478+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:18:57.446517+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:18:57.446543+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:18:58.105815+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:18:58 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fda092998182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:18:58.106473+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:18:58.107635+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:18:58.107902+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:18:58.108083+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:18:58.108524+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:18:58.110883+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=date_asc "HTTP/1.1 200 OK"
+2025-04-16T11:18:58.111836+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=date_asc
+2025-04-16T11:18:58.178122+1000      user_beer_history.py:247  DEBUG    Now got 50 beers
+2025-04-16T11:18:58.178287+1000      user_beer_history.py:261  DEBUG    sleeping...
+2025-04-16T11:19:01.033465+1000      user_beer_history.py:263  DEBUG    awake
+2025-04-16T11:19:01.033669+1000      user_beer_history.py:236  DEBUG    Trying sort key beer_name_asc
+2025-04-16T11:19:01.034274+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:01.034528+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:01.034590+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:01.034661+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:01.034707+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:01.607452+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:01 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fda1f992d182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:01.608332+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:01.608802+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:01.608922+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:01.609005+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:01.609220+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:01.610433+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=beer_name_asc "HTTP/1.1 200 OK"
+2025-04-16T11:19:01.611244+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=beer_name_asc
+2025-04-16T11:19:01.667355+1000      user_beer_history.py:247  DEBUG    Now got 58 beers
+2025-04-16T11:19:01.667553+1000      user_beer_history.py:261  DEBUG    sleeping...
+2025-04-16T11:19:03.752109+1000      user_beer_history.py:263  DEBUG    awake
+2025-04-16T11:19:03.752642+1000      user_beer_history.py:236  DEBUG    Trying sort key beer_name_desc
+2025-04-16T11:19:03.754635+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:03.756164+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:03.756518+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:03.756785+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:03.757099+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:04.687513+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:04 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fda308d01182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:04.688140+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:04.689030+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:04.689259+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:04.689389+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:04.689668+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:04.692843+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=beer_name_desc "HTTP/1.1 200 OK"
+2025-04-16T11:19:04.693769+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=beer_name_desc
+2025-04-16T11:19:04.761568+1000      user_beer_history.py:247  DEBUG    Now got 68 beers
+2025-04-16T11:19:04.761768+1000      user_beer_history.py:261  DEBUG    sleeping...
+2025-04-16T11:19:07.298223+1000      user_beer_history.py:263  DEBUG    awake
+2025-04-16T11:19:07.298686+1000      user_beer_history.py:236  DEBUG    Trying sort key highest_rated_their
+2025-04-16T11:19:07.300389+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:07.301034+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:07.301193+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:07.301448+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:07.301639+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:07.846256+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:07 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fda46bdad182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:07.846939+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:07.855686+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:07.856243+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:07.856553+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:07.858806+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:07.861397+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=highest_rated_their "HTTP/1.1 200 OK"
+2025-04-16T11:19:07.862550+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=highest_rated_their
+2025-04-16T11:19:07.930654+1000      user_beer_history.py:247  DEBUG    Now got 72 beers
+2025-04-16T11:19:07.930966+1000      user_beer_history.py:261  DEBUG    sleeping...
+2025-04-16T11:19:09.973959+1000      user_beer_history.py:263  DEBUG    awake
+2025-04-16T11:19:09.974255+1000      user_beer_history.py:236  DEBUG    Trying sort key lowest_rated_their
+2025-04-16T11:19:09.975324+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:09.975878+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:09.975987+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:09.976114+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:09.976208+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:10.457127+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:10 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fda577ea6182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:10.458082+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:10.460058+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:10.460563+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:10.460653+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:10.460895+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:10.462198+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=lowest_rated_their "HTTP/1.1 200 OK"
+2025-04-16T11:19:10.463032+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=lowest_rated_their
+2025-04-16T11:19:10.527597+1000      user_beer_history.py:247  DEBUG    Now got 75 beers
+2025-04-16T11:19:10.527807+1000      user_beer_history.py:261  DEBUG    sleeping...
+2025-04-16T11:19:12.966899+1000      user_beer_history.py:263  DEBUG    awake
+2025-04-16T11:19:12.967426+1000      user_beer_history.py:236  DEBUG    Trying sort key highest_abv
+2025-04-16T11:19:12.969111+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:12.969842+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:12.970039+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:12.970168+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:12.970253+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:13.511249+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:13 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fda6a3e3e182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:13.511692+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:13.512050+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:13.512158+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:13.512230+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:13.512448+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:13.513740+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=highest_abv "HTTP/1.1 200 OK"
+2025-04-16T11:19:13.514810+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=highest_abv
+2025-04-16T11:19:13.582580+1000      user_beer_history.py:247  DEBUG    Now got 76 beers
+2025-04-16T11:19:13.582794+1000      user_beer_history.py:261  DEBUG    sleeping...
+2025-04-16T11:19:15.232584+1000      user_beer_history.py:263  DEBUG    awake
+2025-04-16T11:19:15.233143+1000      user_beer_history.py:236  DEBUG    Trying sort key lowest_abv
+2025-04-16T11:19:15.234940+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:15.235697+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:15.235908+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:15.236378+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:15.236569+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:16.386997+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:16 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fda785867182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:16.387857+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:16.392760+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:16.393096+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:16.393290+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:16.393746+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:16.395642+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=lowest_abv "HTTP/1.1 200 OK"
+2025-04-16T11:19:16.396489+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=lowest_abv
+2025-04-16T11:19:16.462395+1000      user_beer_history.py:247  DEBUG    Now got 80 beers
+2025-04-16T11:19:16.462624+1000      user_beer_history.py:255  DEBUG    Switching to style scraping. Missing styles: {'IPA - American': 12, 'IPA - English': 1}
+2025-04-16T11:19:16.462661+1000      user_beer_history.py:203  DEBUG    Switching to style scraping. Missing styles: {'IPA - American': 12, 'IPA - English': 1}
+2025-04-16T11:19:16.462707+1000      user_beer_history.py:275  DEBUG    Trying styles: [('IPA - American', 12), ('IPA - English', 1)]
+2025-04-16T11:19:16.462729+1000      user_beer_history.py:278  DEBUG    Trying style IPA - American with 12 beers
+2025-04-16T11:19:16.462746+1000      user_beer_history.py:280  DEBUG    Trying sort key date for style IPA - American
+2025-04-16T11:19:16.463186+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:16.463384+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:16.463432+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:16.463476+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:16.463508+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:17.013671+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:17 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fda7ffd01182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:17.014394+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:17.015218+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:17.016289+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:17.016600+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:17.017260+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:17.019474+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=date&type_id=128 "HTTP/1.1 200 OK"
+2025-04-16T11:19:17.020870+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=date&type_id=128
+2025-04-16T11:19:17.067811+1000      user_beer_history.py:294  DEBUG    Now got 83 beers
+2025-04-16T11:19:17.067982+1000      user_beer_history.py:298  DEBUG    Got all beers of style IPA - American
+2025-04-16T11:19:17.068015+1000      user_beer_history.py:278  DEBUG    Trying style IPA - English with 1 beers
+2025-04-16T11:19:17.068047+1000      user_beer_history.py:280  DEBUG    Trying sort key date for style IPA - English
+2025-04-16T11:19:17.068624+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:17.068891+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:17.068936+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:17.068986+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:17.069017+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:17.684853+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:17 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fda83ce26182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:17.685608+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:17.687508+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:17.688212+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:17.688885+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:17.689499+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:17.691163+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=date&type_id=158 "HTTP/1.1 200 OK"
+2025-04-16T11:19:17.691761+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=484738&sort=date&type_id=158
+2025-04-16T11:19:17.711452+1000      user_beer_history.py:294  DEBUG    Now got 84 beers
+2025-04-16T11:19:17.711690+1000      user_beer_history.py:298  DEBUG    Got all beers of style IPA - English
+2025-04-16T11:19:17.711753+1000      user_beer_history.py:308  DEBUG    Done with style scraping
+2025-04-16T11:19:17.721562+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:17.721972+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:17.722034+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:17.722104+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:17.722153+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:19.268800+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:19 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fda87e923182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:19.269190+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:19.269581+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:19.269678+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:19.269724+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:19.269883+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:19.271620+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=4254 "HTTP/1.1 200 OK"
+2025-04-16T11:19:19.272358+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=4254
+2025-04-16T11:19:19.341209+1000      user_beer_history.py:186  DEBUG    Beers per brewery 4254: 569
+2025-04-16T11:19:19.357470+1000      user_beer_history.py:236  DEBUG    Trying sort key date_asc
+2025-04-16T11:19:19.357916+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:19.358102+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:19.358137+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:19.358176+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:19.358203+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:20.082664+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:20 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fda921a14182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:20.083844+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:20.084869+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:20.085153+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:20.085372+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:20.085764+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:20.088749+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=date_asc "HTTP/1.1 200 OK"
+2025-04-16T11:19:20.089710+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=date_asc
+2025-04-16T11:19:20.152866+1000      user_beer_history.py:247  DEBUG    Now got 50 beers
+2025-04-16T11:19:20.153108+1000      user_beer_history.py:261  DEBUG    sleeping...
+2025-04-16T11:19:23.008478+1000      user_beer_history.py:263  DEBUG    awake
+2025-04-16T11:19:23.009032+1000      user_beer_history.py:236  DEBUG    Trying sort key beer_name_asc
+2025-04-16T11:19:23.011082+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:23.011826+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:23.011991+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:23.012117+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:23.012183+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:23.750179+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:23 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fdaa8fe42182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:23.750576+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:23.755289+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:23.755453+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:23.755536+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:23.755720+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:23.756723+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=beer_name_asc "HTTP/1.1 200 OK"
+2025-04-16T11:19:23.757487+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=beer_name_asc
+2025-04-16T11:19:23.875519+1000      user_beer_history.py:247  DEBUG    Now got 70 beers
+2025-04-16T11:19:23.875790+1000      user_beer_history.py:261  DEBUG    sleeping...
+2025-04-16T11:19:25.960287+1000      user_beer_history.py:263  DEBUG    awake
+2025-04-16T11:19:25.960745+1000      user_beer_history.py:236  DEBUG    Trying sort key beer_name_desc
+2025-04-16T11:19:25.963796+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:25.964633+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:25.964866+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:25.965045+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:25.965183+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:26.655780+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:26 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fdabb6b25182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:26.656418+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:26.657224+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:26.657456+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:26.657624+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:26.657976+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:26.659867+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=beer_name_desc "HTTP/1.1 200 OK"
+2025-04-16T11:19:26.663001+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=beer_name_desc
+2025-04-16T11:19:26.728733+1000      user_beer_history.py:247  DEBUG    Now got 87 beers
+2025-04-16T11:19:26.729065+1000      user_beer_history.py:261  DEBUG    sleeping...
+2025-04-16T11:19:29.265487+1000      user_beer_history.py:263  DEBUG    awake
+2025-04-16T11:19:29.266504+1000      user_beer_history.py:203  DEBUG    Switching to style scraping. Missing styles: {'Altbier - Traditional': 1, 'Barleywine - English': 1, 'Barleywine - Other': 1, 'Belgian Blonde': 3, 'Belgian Dubbel': 2, 'Belgian Tripel': 1, 'Bitter - Best': 1, 'Bitter - Extra Special / Strong (ESB)': 5, 'Bitter - Session / Ordinary': 8, 'Blonde / Golden Ale - Other': 23, 'Bock - Doppelbock': 7, 'Bock - Single / Traditional': 1, 'Brown Ale - American': 5, 'Brown Ale - English': 5, 'Brown Ale - Imperial / Double': 1, 'Brown Ale - Other': 8, 'California Common': 5, 'Cream Ale': 7, 'Dark Ale': 2, 'Farmhouse Ale - Bière de Garde': 1, 'Farmhouse Ale - Other': 2, 'Farmhouse Ale - Saison': 13, 'Fruit Beer': 8, 'Historical Beer - Gruit / Ancient Herbed Ale': 1, 'IPA - American': 47, 'IPA - Black / Cascadian Dark Ale': 6, 'IPA - Brut': 3, 'IPA - Cold': 2, 'IPA - English': 3, 'IPA - Farmhouse': 1, 'IPA - Fruited': 2, 'IPA - Imperial / Double': 15, 'IPA - Imperial / Double Black': 1, 'IPA - Milkshake': 1, 'IPA - New England / Hazy': 14, 'IPA - New Zealand': 3, 'IPA - Other': 15, 'IPA - Red': 4, 'IPA - Rye': 2, 'IPA - Session': 4, 'IPA - Triple': 1, 'IPA - White / Wheat': 1, 'Kellerbier / Zwickelbier': 1, 'Kölsch': 4, 'Lager - American': 2, 'Lager - Dark': 1, 'Lager - IPL (India Pale Lager)': 1, 'Lager - Japanese Rice': 3, 'Lager - Pale': 12, 'Lager - Vienna': 1, 'Mead - Braggot': 1, 'Mead - Other': 1, 'Mild - Other': 1, 'Märzen': 3, 'Pale Ale - American': 34, 'Pale Ale - Australian': 41, 'Pale Ale - English': 6, 'Pale Ale - New England / Hazy': 10, 'Pale Ale - New Zealand': 9, 'Pale Ale - Other': 7, 'Pale Ale - XPA (Extra Pale)': 9, 'Pilsner - German': 3, 'Pilsner - Imperial / Double': 2, 'Pilsner - Other': 6, 'Porter - American': 1, 'Porter - Baltic': 5, 'Porter - English': 1, 'Porter - Imperial / Double': 1, 'Porter - Other': 13, 'Pumpkin / Yam Beer': 2, 'Rauchbier': 2, 'Red Ale - American Amber / Red': 14, 'Red Ale - Imperial / Double': 2, 'Red Ale - Irish': 4, 'Red Ale - Other': 1, 'Roggenbier': 2, 'Rye Beer': 3, 'Schwarzbier': 5, 'Scotch Ale / Wee Heavy': 4, 'Scottish Ale': 1, 'Sour - Berliner Weisse': 3, 'Sour - Flanders Red Ale': 2, 'Sour - Fruited': 8, 'Sour - Fruited Gose': 8, 'Sour - Other': 13, 'Sour - Traditional Gose': 1, 'Specialty Grain': 1, 'Spiced / Herbed Beer': 12, 'Stout - Imperial / Double': 2, 'Stout - Imperial / Double Coffee': 1, 'Stout - Milk / Sweet': 5, 'Stout - Oatmeal': 1, 'Stout - Other': 7, 'Stout - Russian Imperial': 2, 'Strong Ale - English': 1, 'Strong Ale - Other': 1, 'Table Beer': 1, 'Traditional Ale': 1, 'Wheat Beer - American Pale Wheat': 4, 'Wheat Beer - Dunkelweizen': 2, 'Wheat Beer - Hefeweizen': 3, 'Wheat Beer - Other': 2, 'Wheat Beer - Witbier / Blanche': 11}
+2025-04-16T11:19:29.266924+1000      user_beer_history.py:275  DEBUG    Trying styles: [('IPA - American', 47), ('Pale Ale - Australian', 41), ('Pale Ale - American', 34)]
+2025-04-16T11:19:29.266990+1000      user_beer_history.py:278  DEBUG    Trying style IPA - American with 47 beers
+2025-04-16T11:19:29.267030+1000      user_beer_history.py:280  DEBUG    Trying sort key date for style IPA - American
+2025-04-16T11:19:29.268282+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:29.268977+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:29.269122+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:29.269259+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:29.269345+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:29.998945+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:29 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fdad00e85182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:29.999608+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:30.003290+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:30.003609+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:30.003711+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:30.003940+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:30.005787+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=date&type_id=128 "HTTP/1.1 200 OK"
+2025-04-16T11:19:30.006696+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=date&type_id=128
+2025-04-16T11:19:30.064977+1000      user_beer_history.py:294  DEBUG    Now got 108 beers
+2025-04-16T11:19:30.065097+1000      user_beer_history.py:304  DEBUG    sleeping...
+2025-04-16T11:19:32.108127+1000      user_beer_history.py:306  DEBUG    awake
+2025-04-16T11:19:32.108907+1000      user_beer_history.py:280  DEBUG    Trying sort key date_asc for style IPA - American
+2025-04-16T11:19:32.114660+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:32.117490+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:32.121317+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:32.121735+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:32.122227+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:32.840355+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:32 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fdae1dac9182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:32.841173+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:32.842178+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:32.842580+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:32.842903+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:32.844773+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:32.847227+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=date_asc&type_id=128 "HTTP/1.1 200 OK"
+2025-04-16T11:19:32.848125+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=date_asc&type_id=128
+2025-04-16T11:19:32.905920+1000      user_beer_history.py:294  DEBUG    Now got 129 beers
+2025-04-16T11:19:32.906022+1000      user_beer_history.py:298  DEBUG    Got all beers of style IPA - American
+2025-04-16T11:19:32.906049+1000      user_beer_history.py:278  DEBUG    Trying style Pale Ale - Australian with 41 beers
+2025-04-16T11:19:32.906069+1000      user_beer_history.py:280  DEBUG    Trying sort key date for style Pale Ale - Australian
+2025-04-16T11:19:32.906468+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:32.906650+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:32.906703+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:32.906748+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:32.906778+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:34.700288+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:34 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fdae6cf4e182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:34.701011+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:34.702639+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:34.702942+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:34.703230+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:34.703586+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:34.705759+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=date&type_id=244 "HTTP/1.1 200 OK"
+2025-04-16T11:19:34.706491+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=date&type_id=244
+2025-04-16T11:19:34.760504+1000      user_beer_history.py:294  DEBUG    Now got 147 beers
+2025-04-16T11:19:34.760622+1000      user_beer_history.py:304  DEBUG    sleeping...
+2025-04-16T11:19:37.199915+1000      user_beer_history.py:306  DEBUG    awake
+2025-04-16T11:19:37.200218+1000      user_beer_history.py:280  DEBUG    Trying sort key date_asc for style Pale Ale - Australian
+2025-04-16T11:19:37.201010+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:37.201288+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:37.201353+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:37.201429+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:37.201478+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:37.982983+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:37 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fdb0199e3182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:37.983466+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:37.984263+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:37.984502+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:37.984607+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:37.984927+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:37.986624+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=date_asc&type_id=244 "HTTP/1.1 200 OK"
+2025-04-16T11:19:37.987436+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=date_asc&type_id=244
+2025-04-16T11:19:38.044414+1000      user_beer_history.py:294  DEBUG    Now got 161 beers
+2025-04-16T11:19:38.044538+1000      user_beer_history.py:298  DEBUG    Got all beers of style Pale Ale - Australian
+2025-04-16T11:19:38.044566+1000      user_beer_history.py:278  DEBUG    Trying style Pale Ale - American with 34 beers
+2025-04-16T11:19:38.044587+1000      user_beer_history.py:280  DEBUG    Trying sort key date for style Pale Ale - American
+2025-04-16T11:19:38.045018+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:38.045207+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:38.045245+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:38.045291+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:38.045321+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:38.782544+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:38 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fdb06df3d182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:38.783337+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:38.784795+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:38.785171+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:38.785404+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:38.785778+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:38.788044+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=date&type_id=99 "HTTP/1.1 200 OK"
+2025-04-16T11:19:38.788964+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=date&type_id=99
+2025-04-16T11:19:38.842147+1000      user_beer_history.py:294  DEBUG    Now got 186 beers
+2025-04-16T11:19:38.842278+1000      user_beer_history.py:304  DEBUG    sleeping...
+2025-04-16T11:19:40.492061+1000      user_beer_history.py:306  DEBUG    awake
+2025-04-16T11:19:40.492373+1000      user_beer_history.py:280  DEBUG    Trying sort key date_asc for style Pale Ale - American
+2025-04-16T11:19:40.493878+1000                 _trace.py:47   DEBUG    send_request_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:40.494721+1000                 _trace.py:47   DEBUG    send_request_headers.complete
+2025-04-16T11:19:40.494985+1000                 _trace.py:47   DEBUG    send_request_body.started request=<Request [b'GET']>
+2025-04-16T11:19:40.495222+1000                 _trace.py:47   DEBUG    send_request_body.complete
+2025-04-16T11:19:40.495350+1000                 _trace.py:47   DEBUG    receive_response_headers.started request=<Request [b'GET']>
+2025-04-16T11:19:41.338928+1000                 _trace.py:47   DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 16 Apr 2025 01:19:41 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-frame-options', b'SAMEORIGIN'), (b'cf-cache-status', b'DYNAMIC'), (b'vary', b'accept-encoding'), (b'Server', b'cloudflare'), (b'CF-RAY', b'930fdb163dc1182f-SYD'), (b'Content-Encoding', b'br')])
+2025-04-16T11:19:41.339460+1000                 _trace.py:47   DEBUG    receive_response_body.started request=<Request [b'GET']>
+2025-04-16T11:19:41.340235+1000                 _trace.py:47   DEBUG    receive_response_body.complete
+2025-04-16T11:19:41.340350+1000                 _trace.py:47   DEBUG    response_closed.started
+2025-04-16T11:19:41.340420+1000                 _trace.py:47   DEBUG    response_closed.complete
+2025-04-16T11:19:41.340604+1000            _controller.py:195  DEBUG    Considering the resource located at https://untappd.com/user/mw1414/beers as cachable since the request is forced to use the cache.
+2025-04-16T11:19:41.341924+1000                _client.py:1025 INFO     HTTP Request: GET https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=date_asc&type_id=99 "HTTP/1.1 200 OK"
+2025-04-16T11:19:41.342536+1000                    web.py:57   DEBUG    Making soup from https://untappd.com/user/mw1414/beers?brewery_id=4254&sort=date_asc&type_id=99
+2025-04-16T11:19:41.399332+1000      user_beer_history.py:294  DEBUG    Now got 193 beers
+2025-04-16T11:19:41.399466+1000      user_beer_history.py:298  DEBUG    Got all beers of style Pale Ale - American
+2025-04-16T11:19:41.399494+1000      user_beer_history.py:308  DEBUG    Done with style scraping
