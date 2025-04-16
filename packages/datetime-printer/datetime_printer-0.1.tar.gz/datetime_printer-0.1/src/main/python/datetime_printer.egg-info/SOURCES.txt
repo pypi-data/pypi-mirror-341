@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/main/python/datetime_printer.egg-info/PKG-INFO
+src/main/python/datetime_printer.egg-info/SOURCES.txt
+src/main/python/datetime_printer.egg-info/dependency_links.txt
+src/main/python/datetime_printer.egg-info/entry_points.txt
+src/main/python/datetime_printer.egg-info/top_level.txt
+src/main/python/datetime_printer.egg-info/PKG-INFO
+src/main/python/datetime_printer.egg-info/SOURCES.txt
+src/main/python/datetime_printer.egg-info/dependency_links.txt
+src/main/python/datetime_printer.egg-info/entry_points.txt
+src/main/python/datetime_printer.egg-info/top_level.txt
