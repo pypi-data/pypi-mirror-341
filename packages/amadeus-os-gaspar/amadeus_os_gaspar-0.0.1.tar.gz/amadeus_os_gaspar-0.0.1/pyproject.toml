@@ -1,0 +1,121 @@
+[build-system]
+requires = ["hatchling>=1.24.2", "hatch-vcs>=0.3.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.version.raw-options]
+version_scheme = "python-simplified-semver"
+local_scheme = "no-local-version"
+parentdir_prefix_version = "v"
+git_describe_command = ["git", "describe", "--dirty", "--tags", "--long", "--match", "v*"]
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/gaspar/_version.py"
+write_to = "src/gaspar/_version.py"
+write_to_template = "__version__ = \"{version}\"\n"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gaspar"]
+
+# GASPAR package dependencies
+[project]
+name = "amadeus-os-gaspar"
+description = "GenAI-powered System for Privacy incident Analysis and Recovery"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dynamic = ["version"]
+
+# GASPAR dependencies
+dependencies = [
+    "pydantic>=2.0",
+    "aiofiles>=23.2.1",
+    "aiohttp>=3.8.1",
+    "openai>=1.0.0",
+    "anthropic>=0.3.0",
+    "tenacity>=8.2.0",
+    "PyYAML>=6.0",
+    "azure-storage-blob>=12.19.0",
+    "azure-identity>=1.15.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "scikit-learn>=1.2.0",
+]
+
+[project.scripts]
+gaspar = "gaspar.cli.main:main"
+
+[tool.setuptools.package-dir]
+gaspar = "src/gaspar"
+tests = "tests"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--strict-markers --doctest-modules --doctest-glob='*.rst' --ignore=setup.py"
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+doctest_optionflags = [
+    "NORMALIZE_WHITESPACE",
+    "IGNORE_EXCEPTION_DETAIL",
+    "ELLIPSIS",
+]
+norecursedirs = [
+    ".*",
+    "__pycache__",
+    "build",
+    "dist",
+    "*.egg-info",
+    "htmlcov",
+    "doc",
+]
+filterwarnings = []
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+extend-exclude = ["doc"]
+
+[tool.ruff.lint]
+select = [
+    "F",  # pyflakes
+    "E",  # pycodestyle
+    "W",  # pycodestyle
+    "UP",  # pyupgrade
+    "YTT",  # flake8-2020
+    "B",  # flake8-bugbear
+    "T10",  # flake8-debugger
+    "C4",  # flake8-comprehensions
+    "G",  # flake8-logging-format
+    "ISC",  # flake8-implicit-str-concat
+    "ICN",  # flake8-import-conventions
+]
+ignore = []
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+extend-exclude = "doc"
+
+[tool.mypy]
+warn_return_any = "True"
+warn_unused_configs = "True"
+strict_optional = "True"
+ignore_missing_imports = "True"
+disallow_any_unimported = "True"
+check_untyped_defs = "True"
+disallow_untyped_defs = "True"
+no_implicit_optional = "True"
+show_error_codes = "True"
+warn_unused_ignores = "True"
