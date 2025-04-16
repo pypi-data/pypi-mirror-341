@@ -1,0 +1,22 @@
+[project]
+name = "filestatus"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "NK342-sault",email = "24017600@saultcollege.ca"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "filestat", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+filestat = "filestat.cli:main"
