@@ -1,0 +1,10 @@
+PyIndi/_PyIndi.cpython-39-aarch64-linux-gnu.so,sha256=P2ewv0GdKGG27lL5d5-Fw2UFz8pHXKkWUosk08vl9_8,11657169
+PyIndi/__init__.py,sha256=gh5UhB-6ETGMLXD6DemZTODBab8LeTipgixt88hdLLc,202
+pyindi_client.libs/libcfitsio-b4d95be1.so.2.3.37,sha256=3G7CZEscgIwqxW1_sxuu0EgYQQsl3sQFbtbfLYWV5wE,1406809
+pyindi_client.libs/libindiclient-3b9d7405.so.2.1.1,sha256=8qxq26UBZJKZKxt5sceReqQuLb-mliUUc7HQ7aPSeTo,8610801
+pyindi_client.libs/libnova-0-a94e5120.15.so.0.0.0,sha256=BT-RCQ1NT6zJDQyB643bWmePCYKi1OS1BlvFk1KrP6w,3744217
+pyindi_client-2.1.5.dist-info/METADATA,sha256=36rS6kk5fZrBhGb3L6lTxm7GRh7gPMePIjCTsF2E4Tc,18095
+pyindi_client-2.1.5.dist-info/WHEEL,sha256=FeWlfd2WjVvnvfbcIs4GElxqZOaITLD9-A55eZbosCE,149
+pyindi_client-2.1.5.dist-info/top_level.txt,sha256=7tgrLfIhjprutbhEai77bF-VvHBiA8T9_jF7mYtp2Hc,7
+pyindi_client-2.1.5.dist-info/RECORD,,
+pyindi_client-2.1.5.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
