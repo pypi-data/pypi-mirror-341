@@ -1,0 +1,5 @@
+aptisolve
+data_interpretation
+logical_reasoning
+numerical_aptitude
+verbalapt

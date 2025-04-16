@@ -1,0 +1,86 @@
+Metadata-Version: 2.4
+Name: aptisolve
+Version: 0.1.0
+Summary: A package for solving numerical and verbal aptitude problems
+Home-page: https://github.com/yourusername/aptisolve
+Author: Abishek, Nithish, Vishal, Praveen
+Author-email: p26055114@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education :: Computer Aided Instruction (CAI)
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click==8.1.8
+Requires-Dist: python-dotenv==1.1.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# AptiSolve
+
+A comprehensive Python package for solving aptitude problems with detailed step-by-step explanations. Perfect for students preparing for competitive exams, interviews, and aptitude tests.
+
+## Features
+
+### Numerical Aptitude
+Solve common mathematical problems with detailed step-by-step solutions:
+- Percentages
+- Simple & Compound Interest
+- Time and Work
+- Time, Speed and Distance
+- Ratios and Proportions
+- Averages
+- Mixtures and Alligations
+- Number Systems
+- Permutations and Combinations
+- Probability
+
+### Logical Reasoning
+Master logical reasoning problems with clear explanations:
+- Blood Relations
+- Number Series
+- Direction Sense
+- Coding-Decoding
+- Seating Arrangements
+- Syllogisms
+- Statement-Conclusion Analysis
+- Analogies
+
+### Data Interpretation
+Analyze and interpret data from various formats:
+- Tables (analyze tabular data, compare data points)
+- Graphs (line graph analysis, growth rate calculations)
+- Charts (pie chart analysis, segment comparison)
+
+### Verbal Aptitude
+Practice and improve verbal reasoning skills:
+- Synonyms and Antonyms
+- Reading Comprehension
+- Sentence Completion
+- Grammar and Vocabulary
+- One Word Substitution
+- Paragraph Jumbles
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/AptiSolve-packagepy.git
+cd AptiSolve-packagepy
+
+# Create and activate virtual environment (recommended)
+python -m venv apti
+apti\Scripts\activate
+
+# Install the package
+pip install -e .
+```
