@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: desktop-use
+Version: 0.1.2
+Summary: Python SDK for the Terminator desktop automation server
+Author-email: mediar-ai <louis@mediar.ai>
+Project-URL: Homepage, https://github.com/mediar-ai/terminator
+Project-URL: Bug Tracker, https://github.com/mediar-ai/terminator/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.20
