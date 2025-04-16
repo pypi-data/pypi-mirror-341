@@ -1,0 +1,2 @@
+[console_scripts]
+local-reranker-server = local_reranker.api:run_server
