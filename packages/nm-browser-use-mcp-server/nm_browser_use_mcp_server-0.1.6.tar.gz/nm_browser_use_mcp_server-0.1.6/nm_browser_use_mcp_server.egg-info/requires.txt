@@ -1,0 +1,17 @@
+langchain>=0.3.14
+langchain-openai>=0.2.14
+pydantic>=2.10.5
+openai>=1.59.5
+pyperclip>=1.9.0
+langchain-ollama>=0.2.2
+instructor>=1.7.2
+json-repair>=0.35.0
+langchain-mistralai>=0.2.6
+mcp>=1.6.0
+browser-use==0.1.40
+MainContentExtractor==0.0.4
+langchain-google-genai>=2.0.8
+langchain-anthropic>=0.2.1
+langchain-mistralai>=0.2.4
+pillow>=11.1.0
+lxml-html-clean>=0.4.2

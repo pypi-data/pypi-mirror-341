@@ -1,0 +1,2 @@
+[console_scripts]
+nm-browser-use-mcp-server = mcp_server_browser_use.server:main
