@@ -1,0 +1,6 @@
+Django
+django-model-utils
+lazy
+openedx-django-pyfs
+openedx-filters
+openedx_events
