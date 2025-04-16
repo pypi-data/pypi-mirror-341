@@ -1,0 +1,47 @@
+[build-system]
+requires = ["flit_core", "flit_scm"]
+build-backend = "flit_scm:buildapi"
+
+[project]
+name = "dyson-equalizer"
+dynamic = ['version']
+description = "Computes the Dyson Equalizer and related low rank approximation of the input data"
+license = {file = "LICENSE"}
+readme = "README.md"
+
+authors = [
+    {name = "Boris Landa", email = "boris.landa@yale.edu"},
+    {name = "Francesco Strino", email = "francesco.strino@pcmgf.com"},
+    {name = "Yuval Kluger", email = "yuval.kluger@yale.edu"},
+]
+maintainers = [
+    {name = "Francesco Strino", email = "francesco.strino@pcmgf.com"},
+]
+
+keywords = ["Dyson Equalizer", "low rank approximation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "License :: OSI Approved :: BSD License",
+    "Intended Audience :: Science/Research",
+]
+
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.6",
+    "numpy>=1.25",
+]
+
+[tool.flit.sdist]
+exclude = [".gitignore"]
+
+[tool.setuptools_scm]
+write_to = "dyson_equalizer/_version.py"
+
+[project.optional-dependencies]
+dev = ["pytest", "flit_core", "flit_scm"]
+
+[project.urls]
+Documentation = "https://github.com/KlugerLab/DysonEqualizer.git"
+Repository = "https://github.com/KlugerLab/DysonEqualizer.git"
+"Bug Tracker" = "https://github.com/KlugerLab/DysonEqualizer/issues"
