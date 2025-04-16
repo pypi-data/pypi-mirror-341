@@ -1,0 +1,7 @@
+[console_scripts]
+pipc = mortal_pip.pip_main:cache
+pipd = mortal_pip.pip_main:uninstall
+pipf = mortal_pip.pip_main:force
+pipi = mortal_pip.pip_main:install
+pips = mortal_pip.pip_main:config
+pipu = mortal_pip.pip_main:upgrade
