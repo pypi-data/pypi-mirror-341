@@ -1,0 +1,6 @@
+setup.py
+ir_inverted/__init__.py
+ir_inverted.egg-info/PKG-INFO
+ir_inverted.egg-info/SOURCES.txt
+ir_inverted.egg-info/dependency_links.txt
+ir_inverted.egg-info/top_level.txt
