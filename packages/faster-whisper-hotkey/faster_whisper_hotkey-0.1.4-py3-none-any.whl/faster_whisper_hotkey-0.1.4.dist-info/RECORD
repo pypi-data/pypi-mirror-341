@@ -1,0 +1,10 @@
+faster_whisper_hotkey/__init__.py,sha256=Inmw096eBLRD-qT2dBJzoNwAR6mWZeHi05v0LZjyMm4,186
+faster_whisper_hotkey/__main__.py,sha256=83oUvAyHk5U3vFFU-6olQ-PwNPOx77gTE3LJM2rfWZk,123
+faster_whisper_hotkey/available_models_languages.json,sha256=AS10phBZrg9N1LNOM_TcLv_Rg4U_5roVrQcAQZFevwU,1801
+faster_whisper_hotkey/transcribe.py,sha256=z5U06w_tpDh92wWst4ibO6rJTkNkiRf68nbWGcRGr1g,13370
+faster_whisper_hotkey-0.1.4.dist-info/licenses/LICENSE.txt,sha256=lvF4V_PrKKfZPa2TC8CZo8tlqaKvs3Bpv9G6XsWWQ4k,483
+faster_whisper_hotkey-0.1.4.dist-info/METADATA,sha256=pyVJvOMXbUOh6tBrh-1t6BtlyUhtavknEVDD4BwY1TQ,5293
+faster_whisper_hotkey-0.1.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+faster_whisper_hotkey-0.1.4.dist-info/entry_points.txt,sha256=Drg6LUf_yoNOEJ9_f3-97fRnGZzA5lXIjlrnMXc5umc,78
+faster_whisper_hotkey-0.1.4.dist-info/top_level.txt,sha256=kVonpCx0dFjIof2j_Xc-yXE4vTmc-_c1FhrGHoVo6lA,22
+faster_whisper_hotkey-0.1.4.dist-info/RECORD,,
