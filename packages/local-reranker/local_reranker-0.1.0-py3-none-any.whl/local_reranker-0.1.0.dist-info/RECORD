@@ -1,0 +1,11 @@
+local_reranker/__init__.py,sha256=wAz_dVehpfTOVrb1HSINjgD4VwCQjmSh_dogKwVGj68,151
+local_reranker/api.py,sha256=5_U9qxwo-lJVmGPUfIrcA8NlUgIYmz4kLBeGr-PLVuU,6129
+local_reranker/models.py,sha256=yqPQEtF2b7I8LyiQ5eBExaesV4kcV8cHLOXk5SEBJNY,1980
+local_reranker/reranker.py,sha256=MutG5vtK2ey_3Sd0jfFORQvC34AC9z40cGD3oaqe1BY,5063
+local_reranker/utils.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+local_reranker-0.1.0.dist-info/licenses/LICENSE,sha256=3_s_f5J-4KazrtwSp9dBzqj85Sad1IwJetf4pQfU0bc,1068
+local_reranker-0.1.0.dist-info/METADATA,sha256=IaPVYRC3t_-Jj1_aCdRepaRAhzGAEX3rvHqHLksY6ik,5612
+local_reranker-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+local_reranker-0.1.0.dist-info/entry_points.txt,sha256=Bosg40irafJZpcueSGu2BtAtU2tQojSoeAaq0I7WnDc,72
+local_reranker-0.1.0.dist-info/top_level.txt,sha256=-GtqBrJyXxUwjqRFWbzQ_rZzOjqiwqZozzjNBWbyMXg,15
+local_reranker-0.1.0.dist-info/RECORD,,
