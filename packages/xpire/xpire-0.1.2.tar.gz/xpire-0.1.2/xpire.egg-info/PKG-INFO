@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: xpire
+Version: 0.1.2
+Summary: XPIRE - eXtended PYthon Interpreter for Retro Emulation
+Author: Jorge Luis Juarez
+Author-email: contacto@jorgejuarez.net
+License-File: LICENCE
+Requires-Dist: click
+Requires-Dist: pygame
+Dynamic: author
+Dynamic: author-email
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
