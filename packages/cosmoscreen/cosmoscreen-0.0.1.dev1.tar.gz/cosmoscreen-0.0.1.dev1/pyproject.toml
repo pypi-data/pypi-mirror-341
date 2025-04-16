@@ -1,0 +1,14 @@
+[project]
+name = "cosmoscreen"
+version = "0.0.1.dev1"
+description = "COSMOScreen: COSMO-SAC-based phase equilibrium screening toolkit"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
