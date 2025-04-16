@@ -1,0 +1,3 @@
+[console_scripts]
+validate-sops=validate_sops.main:main
+
