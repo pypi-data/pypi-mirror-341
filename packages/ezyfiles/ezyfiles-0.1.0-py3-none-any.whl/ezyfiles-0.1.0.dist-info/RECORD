@@ -1,0 +1,12 @@
+ezyfiles/__init__.py,sha256=skIOsdx8zPUhOUvrtK_wykN3P2Hxft-ZXj68qV1Anng,299
+ezyfiles/core.py,sha256=_RvFb_RnijQs6_Dhk2Vxq8DUB0yeXWt4jE499NHs9fA,4524
+ezyfiles/metadata.py,sha256=HwJ7WF5DiqN58aoMZUfGP2v1wqcJ4BW_4Z3hHwrGvhM,1553
+ezyfiles/search.py,sha256=zMAgaau97McpwuhpRi1HH33PJ5rcjkWYkdG4QDChnWY,1472
+ezyfiles/utils.py,sha256=Dz7vI4QcJy2uokB-sivZNqFNhU2GaG3rgDcttzp1Hzs,752
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ezyfiles.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_simple.py,sha256=sX6c5TZHa0muXNPxMown0uBbTY6xa-hKnv-GE2h9htQ,258
+ezyfiles-0.1.0.dist-info/METADATA,sha256=weWzp0b4HqvTns-P4boeGJwJhTghFbDFDMt-rcIJHL4,2143
+ezyfiles-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ezyfiles-0.1.0.dist-info/top_level.txt,sha256=OHhnHga3juQxMHDJEWip5hhI2PXNjFd2dbnT4KHcu0M,15
+ezyfiles-0.1.0.dist-info/RECORD,,
