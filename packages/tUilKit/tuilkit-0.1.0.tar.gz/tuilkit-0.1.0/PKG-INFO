@@ -1,0 +1,136 @@
+Metadata-Version: 2.4
+Name: tUilKit
+Version: 0.1.0
+Summary: A toolkit with utility functions for various tasks.
+Home-page: https://github.com/yourusername/yourrepo
+Author: Daniel Austin
+Author-email: the.potato.gnome@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Project Name
+tUilKit
+
+## Description
+tUilKit (formerly utilsbase) is a set of utility functions and dictionaries to aid in development projects.  
+The tUilKit package is composed of 3 primary components:
+    - JSON    /config folder for customization options
+    - PYTHON  /dict   folder for dictionaries & constants
+    - PYTHON  /utils  folder for the toolkit
+
+
+## Folder Structure
+ - /src
+    - /tests
+        - /testLogs
+        - test_output.py            (Test functions from output.py)
+    - /utilsbase
+        - /config
+            - BORDER_PATTERNS.json  (Used in terminal/log output)
+            - COLUMN_MAPPING.json   (Used in smart_merging dataframes)
+            - COLOURS.json          (Foreground text COLOUR_KEY and RGB Reference)
+            - GLOBAL_CONFIG.json    (Folder Paths and Logging/Display Options)
+            - config.py             (Load configurations)
+        - /dict
+            - DICT_CODES.py         (ANSI Escape Codes Parts for Sequencing)
+            - DICT_COLOURS.py       (RGB ANSI Escape Codes for Sequencing)
+        - /utils
+            - fs.py                 (Functions for File System Operations)
+            - output.py             (Printing/Debugging/Logging functions)
+            - pdf.py                (Functions to work with PDF files)
+            - sheets.py             (Functions to work with CSV, XLSX files)
+            - formats.py            (Not Developed - Functions to Format Cells, etc)
+            - sql.py                (Functions to work with SQL queries)
+            - calc.py               (Specialized use)
+            - wallet.py             (Specialized use)
+            - data.py               (Specialized use)
+
+
+
+## Installation
+Follow these instructions to install and set up the project:
+
+```bash
+
+# Navigate to the project directory
+cd utilsbase
+
+# (Optional) Create and activate a virtual environment
+# python -m venv venv
+# source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+## Usage
+Provide examples of how to use your project.
+
+```python
+# Example usage of py-tuilkit
+
+Sample code in tests folder
+
+def test_colour_log(log_file=None):
+    test_message = ["RED","This is red,","GREEN","and this is green,","YELLOW","and this is yellow,","DATA","and this is data"]
+    message = colour_fstr(*test_message)
+    message_text = strip_ansi(message)
+    colour_log(message, log_file=log_file)
+    if log_file:
+        with open(log_file, 'r') as log:
+            logged_message = log.read().strip()
+        assert message_text in logged_message, f"Expected %[{test_message}]% in logged message, but got %[{logged_message}]%"
+    colour_log("PROC","test_colour_log", "DONE", "passed!", log_file=log_file)
+
+
+```
+
+## Contributing
+If you would like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
+Contributing
+Weâ€™re actively seeking contributors to help enhance [Project Name]! Whether youâ€™re passionate about terminal functionality, advanced data operations, or document creation, thereâ€™s plenty of room to leave your mark.
+
+Areas for Contribution
+Here are some specific features we'd love to expand with your expertise:
+
+Enhanced ANSI Sequences:
+- Add functionality for:
+    - Fetching user keystrokes effectively.
+    - Moving cursor dynamically within the terminal.
+    - Applying background colours to text
+    and extending feature to manipulate cursor
+    positioning for advanced colouring tasks.
+
+DataFrame / Spreadsheet Functionality:
+- Build out smarter tools, including:
+    - Smart diff functionality to compare and highlight changes intelligently.
+    - Smart merging for conflict resolution and seamless integration
+    - Custom autoformatting that adapts to user-defined styles and standards.
+
+LaTeX and PDF Functionality:
+- Incorporate capabilities for:
+    - Reading and writing LaTeX to create professional-quality documents.
+    - PDF manipulation, including generation, formatting, searching
+    and editing.
+    
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+- Thanks to everyone who contributed to this project.
