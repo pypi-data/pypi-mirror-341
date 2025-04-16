@@ -1,0 +1,23 @@
+[project]
+name = "movieapp"
+version = "0.1.2"
+description = ""
+authors = [
+    {name = "James-Konieczny",email = "22037813@saultcollege.ca"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "movieapp", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+movinf = 'movieapp.cli:main'

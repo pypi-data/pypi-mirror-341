@@ -1,0 +1,48 @@
+Metadata-Version: 2.3
+Name: movieapp
+Version: 0.1.2
+Summary: 
+Author: James-Konieczny
+Author-email: 22037813@saultcollege.ca
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# MovieApp Command-Line Tool
+
+This is a command-line tool for searching movies, TV series, and episodes using the OMDB API. The program allows you to search for movies or series, retrieve detailed information, and save the results to a file. It is designed to be run from the terminal and accepts several arguments to customize the search.
+
+## Setup
+
+1. Make sure you have Python installed.
+2. Install the `requests` library if not already installed:
+   ```bash
+   pip install requests
+   ```
+3. Navigate to the project folder and install dependencies using Poetry:
+
+   ```bash
+   cd /path/to/your/project
+   poetry install
+    ```
+4. Clone or download this repository.
+
+## How to Use
+
+To use the command-line tool, you can run the program with different arguments depending on what you want to do.
+
+The program expects at least one argument: a **search query**. The search query is the name of the movie, TV series, or episode you are looking for.
+
+### Search for Movies or Series
+
+To search for movies, TV series, or episodes, run the following command:
+
+```bash
+poetry run movinf "Movie Name"
+```
