@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_base_tools.py,sha256=EVj50r9M9uk7XC7eyHOFlpgdbpIlOUwnmv0n5ZkDNq0,1212
+tests/test_dir_tools.py,sha256=_nxlsDVsyfvyto2xPj-OzsQneRbezfkLdhM2XOWg74s,1824
+tests/test_file_operations.py,sha256=x7mLF0kWJiYei9gYGTIQPumq2znN-N-yndz1djhzuaI,3522
+tests/test_git_tools.py,sha256=vgYy1LTG9vP3ChTg9swP-KdDL5nxb7LuPts7Ydgtkt4,2755
+tests/test_server.py,sha256=Ok6lFbP6uTcz52nZFn6qUaMFYUwUuNkyPH3vDfKKU1k,505
+tests/test_xml_parser.py,sha256=Z2sfSXbw_8FvLMI8zuaKZrlUY5FYzJiAiyn0evJC06E,1107
+mseep_mcp_server_code_assist-0.2.0.dist-info/METADATA,sha256=rTaRkHUWOP5Qq5k-1gYkupGO8w0oFuloI28XYk_wuCo,521
+mseep_mcp_server_code_assist-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp_server_code_assist-0.2.0.dist-info/entry_points.txt,sha256=n1CONsVBue7ckhZetmRyyoIIUpyD_gmHHNf7SlWQUCM,80
+mseep_mcp_server_code_assist-0.2.0.dist-info/RECORD,,
