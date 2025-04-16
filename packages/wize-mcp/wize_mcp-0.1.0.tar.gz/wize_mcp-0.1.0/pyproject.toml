@@ -1,0 +1,20 @@
+[project]
+name = "wize_mcp"
+version = "0.1.0"
+description = "MCP integration for Workwize"
+authors = [{ name="Raúl López", email="hi@raullg.com" }]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.6.0",
+    "httpx>=0.28.1",
+    "python-dotenv",
+    "pydantic>=2.11.3",
+]
+
+[project.scripts]
+workwize-mcp = "wize_mcp.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
