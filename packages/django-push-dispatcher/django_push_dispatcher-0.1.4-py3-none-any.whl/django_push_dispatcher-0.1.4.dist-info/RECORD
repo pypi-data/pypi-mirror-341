@@ -1,0 +1,9 @@
+django_push_dispatcher-0.1.4.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+push_dispatcher/__init__.py,sha256=mQJaRqBu54SEAxxmIFxvHu4InEXTGBhOvX1rbmFVwaY,69
+push_dispatcher/firebase_utils.py,sha256=nTogZG4ZXeMYdfstz9HeteFa0GV4EHtWZQtqivsiIgU,931
+push_dispatcher/notifications.py,sha256=NdmHvbfhVQhy5uRj_9Xj8URNE0WgkQHY-XPzWfUWLGE,4459
+push_dispatcher/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_push_dispatcher-0.1.4.dist-info/METADATA,sha256=UAMmWA3x9zeJ9TuE9-Iu84Y4zbMscAKFZCae1azUaIc,891
+django_push_dispatcher-0.1.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_push_dispatcher-0.1.4.dist-info/top_level.txt,sha256=4zQgZbgDhoCy_-4uFzNk0H29-jirpvKQ-l2e0y8IFWg,16
+django_push_dispatcher-0.1.4.dist-info/RECORD,,
