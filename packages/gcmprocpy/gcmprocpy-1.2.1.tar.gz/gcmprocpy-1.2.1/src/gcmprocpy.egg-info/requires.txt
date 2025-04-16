@@ -1,0 +1,10 @@
+cartopy
+matplotlib
+numpy
+xarray
+ipython
+geomag
+netcdf4
+ipympl
+mplcursors
+PyQt5
