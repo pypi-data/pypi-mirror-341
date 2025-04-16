@@ -1,0 +1,57 @@
+[build-system]
+requires = ["flit-core>=3.6,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "aiidalab-widgets-empa"
+dynamic = ["version"]
+description = "Reusable AiiDAlab widgets developed at Empa."
+classifiers = [
+    "Framework :: AiiDA",
+    "Framework :: Jupyter",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.9,<4"
+readme = "README.md"
+dependencies = [
+    "aiida-core>=2.6.0,<3",
+    "ase>=3.24",
+    "ipywidgets>=7.6.0",
+    "timelength>=3.0.0,<4.0.0",  # not a super-established package, but seems to be the best option for parsing the human-readable time strings
+]
+
+[project.urls]
+Homepage = "https://github.com/nanotech-empa/aiidalab-widgets-empa"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "pre-commit",
+    "bumpver",
+    "coverage",
+]
+
+
+[tool.bumpver]
+current_version = "v0.2.2"
+version_pattern = "vMAJOR.MINOR.PATCH[PYTAGNUM]"
+commit_message = "Bump version {old_version} -> {new_version}."
+tag_message = "Release {new_version}."
+tag_scope = "default"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"aiidalab_widgets_empa/version.py" = [
+    '__version__ = "{pep440_version}"',
+]
