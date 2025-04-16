@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+mcp_yfinance_server.egg-info/PKG-INFO
+mcp_yfinance_server.egg-info/SOURCES.txt
+mcp_yfinance_server.egg-info/dependency_links.txt
+mcp_yfinance_server.egg-info/requires.txt
+mcp_yfinance_server.egg-info/top_level.txt
+source/technical_indicators.py
+source/yf_server.py
