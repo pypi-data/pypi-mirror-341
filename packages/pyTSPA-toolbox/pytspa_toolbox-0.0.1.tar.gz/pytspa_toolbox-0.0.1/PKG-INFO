@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: pyTSPA_toolbox
+Version: 0.0.1
+Summary: A toolbox for analyzing and visualizing team sports performance
+Home-page: https://github.com/vargaheni05/pyTSPA-toolbox
+Author: Kardos Benedek, Szögi Marcell, Varga Henrietta
+Author-email: varga.henrietta.julianna@hallgato.ppke.hu
+Maintainer-email: Varga Henrietta <varga.henrietta.julianna@hallgato.ppke.hu>
+Project-URL: Homepage, https://github.com/vargaheni05/pyTSPA-toolbox
+Project-URL: Documentation, https://pyTSPA-toolbox.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/vargaheni05/pyTSPA-toolbox.git
+Project-URL: Issues, https://github.com/vargaheni05/pyTSPA-toolbox/issues
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: statsmodels>=0.14.2
+Requires-Dist: matplotlib>=3.9.2
+Requires-Dist: seaborn>=0.13.2
+Requires-Dist: scipy>=1.14.1
+Requires-Dist: scikit-learn>=1.5.2
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# pyTSPA-toolbox
+Toolbox for Analyzing Team Sports Performance
