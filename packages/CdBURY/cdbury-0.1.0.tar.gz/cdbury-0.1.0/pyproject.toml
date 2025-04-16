@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CdBURY"
+version = "0.1.0"
+authors = [
+  { name="Rossidae", email="ross.whiteford@rhul.ac.uk" },
+]
+description = "A python package to simulate seawater cadmium isotopes"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICENCE"]
+dependencies = ['numpy', 'matplotlib', 'pandas']
+
+[project.urls]
+Homepage = "https://github.com/DISTILL-RHUL/CdBURY"

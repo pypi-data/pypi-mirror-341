@@ -1,0 +1,15 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+CdBURY/CdBURY.py
+CdBURY/__init__.py
+CdBURY/classes.py
+CdBURY/core.py
+CdBURY.egg-info/PKG-INFO
+CdBURY.egg-info/SOURCES.txt
+CdBURY.egg-info/dependency_links.txt
+CdBURY.egg-info/not-zip-safe
+CdBURY.egg-info/requires.txt
+CdBURY.egg-info/top_level.txt
+tests/test.py
