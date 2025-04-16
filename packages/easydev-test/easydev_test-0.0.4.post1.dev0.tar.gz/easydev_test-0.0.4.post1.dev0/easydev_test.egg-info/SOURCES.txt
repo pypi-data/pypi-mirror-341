@@ -1,0 +1,13 @@
+.gitignore
+.python-version
+README.md
+_version.py
+main.py
+pyproject.toml
+uv.lock
+.github/workflows/release.yml
+.roo/rules-code/rules.md
+easydev_test.egg-info/PKG-INFO
+easydev_test.egg-info/SOURCES.txt
+easydev_test.egg-info/dependency_links.txt
+easydev_test.egg-info/top_level.txt
