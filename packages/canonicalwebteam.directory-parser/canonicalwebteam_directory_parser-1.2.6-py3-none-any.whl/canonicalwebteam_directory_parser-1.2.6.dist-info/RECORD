@@ -1,0 +1,10 @@
+canonicalwebteam/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+canonicalwebteam/directory_parser/__init__.py,sha256=yfAbAEJQajPJAk5ekCHFiTuVrCOqJ6r2ksEhrAn0vBM,112
+canonicalwebteam/directory_parser/app.py,sha256=8XcPCoUhBQcF3wB-LWftyskyHJ659Hh8EY4OwwE1yvQ,12499
+canonicalwebteam/directory_parser/templates/sitemap_children.xml,sha256=4VqEo6pKH4KKFMrcdiv3HCJa8GBsIOhexykgnh14cKw,307
+canonicalwebteam/directory_parser/templates/sitemap_template.xml,sha256=2HUfCZZ9qq-ZVo799VtDeDOMYpTlK0ggBuWEKWur5vs,237
+canonicalwebteam_directory_parser-1.2.6.dist-info/licenses/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+canonicalwebteam_directory_parser-1.2.6.dist-info/METADATA,sha256=5DMn9h_-revzNT63htH-AfYypsQFKT_V0_2tRBInUTk,1449
+canonicalwebteam_directory_parser-1.2.6.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+canonicalwebteam_directory_parser-1.2.6.dist-info/top_level.txt,sha256=sX-Y50xTyOx5n0i9OHU_QVHH6wWwAMZzWIWGRFTT0Zg,17
+canonicalwebteam_directory_parser-1.2.6.dist-info/RECORD,,
