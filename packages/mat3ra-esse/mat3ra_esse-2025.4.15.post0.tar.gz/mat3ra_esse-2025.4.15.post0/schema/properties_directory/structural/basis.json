@@ -1,0 +1,39 @@
+{
+    "$id": "properties-directory/structural/basis",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "basis schema",
+    "type": "object",
+    "properties": {
+        "elements": {
+            "type": "array",
+            "items": {
+                "$ref": "basis/atomic_element.json"
+            }
+        },
+        "coordinates": {
+            "type": "array",
+            "items": {
+                "$ref": "basis/atomic_coordinate.json"
+            }
+        },
+        "units": {
+            "type": "string",
+            "enum": [
+                "crystal",
+                "cartesian"
+            ],
+            "default": "crystal"
+        },
+        "labels": {
+            "type": "array",
+            "items": {
+                "$ref": "basis/atomic_label.json"
+            },
+            "default": []
+        }
+    },
+    "required": [
+        "elements",
+        "coordinates"
+    ]
+}
