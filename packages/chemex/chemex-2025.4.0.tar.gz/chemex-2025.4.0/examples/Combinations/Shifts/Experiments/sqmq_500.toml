@@ -1,0 +1,11 @@
+[experiment]
+name = "shift_15n_sqmq"
+
+[conditions]
+h_larmor_frq = 499.684
+# p_total    = 1.5e-3
+# sample = "L99A/G113A/R119P T4 lysozyme"
+# temperature  = 20.5
+
+[data]
+path = "../Data/sqmq_500.txt"
