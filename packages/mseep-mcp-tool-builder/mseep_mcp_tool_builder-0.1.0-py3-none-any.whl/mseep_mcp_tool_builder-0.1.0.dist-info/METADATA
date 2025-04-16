@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: mseep-mcp-tool-builder
+Version: 0.1.0
+Summary: MCP server for dynamic tool creation
+License-File: LICENSE
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: anthropic
+Requires-Dist: geopy
+Requires-Dist: mcp
+Requires-Dist: python-dotenv
+Requires-Dist: requests>=2.32.3
