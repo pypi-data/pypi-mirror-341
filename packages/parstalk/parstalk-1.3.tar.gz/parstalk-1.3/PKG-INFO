@@ -1,0 +1,45 @@
+Metadata-Version: 2.2
+Name: parstalk
+Version: 1.3
+Summary: Convert Farsi text to finglish with vowel detection and play sound
+Author: Mohammadjavad Ghaderi
+Author-email: Mohammadjavadd.ronaldo@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyttsx3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ParsTalk
+
+ParsTalk is a simple Python library to convert Persian (Farsi) text to Finglish with vowel detection and optionally play it as speech.
+Please use punctuation marks for this library to function properly.
+Thanks.
+
+## Installation
+
+```bash
+pip install parstalk
+```
+
+## Usage
+
+```python
+from parstalk import farsi_to_finglish_with_vowels
+
+text = "سَلام"
+print(farsi_to_finglish_with_vowels(text))
+```
+
+## License
+MIT
