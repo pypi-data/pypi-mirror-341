@@ -1,0 +1,11 @@
+subdomain_permut/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+subdomain_permut/__version__.py,sha256=D0UVD6fSKhTEm2bcEShuydq4MtAQfmIq3CLzUVZH53I,21
+subdomain_permut/main.py,sha256=3Eo9DwlzV9ytQtERBY3vRiqZb8EhjPls23wGNf2Bn_o,3976
+subdomain_permut/permut_methods.py,sha256=rriBReFLi9nmZl3YguSv4aLQnKcKoP555TmaRPjlkT8,14427
+subdomain_permut/utility.py,sha256=X8KIP12rGx8I2SXja6MJkHCE_k53eiZZBr61eg45-ys,1795
+subdomain_permut-0.0.7.dist-info/licenses/LICENSE,sha256=9YkIRICiayfIzRS4YDGOETz60d6kQPtc0eOuk_-DkMU,1071
+subdomain_permut-0.0.7.dist-info/METADATA,sha256=RaGSoaraS8-Y8SoA6p5PM_DQX-39Eyei2DPDUB6hqZo,3902
+subdomain_permut-0.0.7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+subdomain_permut-0.0.7.dist-info/entry_points.txt,sha256=hqRL48b0dquOJ5NnR3xqqofwm4uPTVlZrf4LD7uW0tc,64
+subdomain_permut-0.0.7.dist-info/top_level.txt,sha256=EF9ABxdPj8i4M0y-_F75ctTfSXXDOvjOkYXPqPIZFiM,17
+subdomain_permut-0.0.7.dist-info/RECORD,,
