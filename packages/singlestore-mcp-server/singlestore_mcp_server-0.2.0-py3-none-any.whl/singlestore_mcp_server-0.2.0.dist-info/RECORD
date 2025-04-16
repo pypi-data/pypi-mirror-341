@@ -1,0 +1,17 @@
+server/__init__.py,sha256=9rG7OnYNb4JsUBUs5_8V_f4fsLdbGu_HF2eo4CJwuac,184
+server/auth.py,sha256=joI2Qwr-mnyLy25orTY82fbEvcM0lCHLajsXRBaZ6Vs,14493
+server/config.py,sha256=vmVAeIvepkyivAwpZIh-qh7qmlUrSahCS1Zq_f5sJc4,574
+server/init.py,sha256=J9Qs37zBAgJhBsiaemVwl3TIOIo9AD6lsO9cxIVcdXo,5928
+server/sample_notebook.ipynb,sha256=XusfyCxiZxYTaxj8FWOZeMFyOJ-PwOADTHxH1pQdUy0,384
+server/server.py,sha256=I39suHzexh8J0zABREYrPrdRHYweRT-R4FVGhvP0iUQ,3501
+server/version.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+server/assets/callback.html,sha256=leQjesXbdrjp7bXHzT5rquADXha5RYvVIymE9AQMkTc,12770
+server/tools/__init__.py,sha256=YZWPyWPtIyjDAh028xvSxXlGRYdQQFOW1tQCU3mjElQ,425
+server/tools/classes.py,sha256=GQuwTd2efm-aKVR86UbK8QLuo0UthE9wgxzxg2Vbho4,201
+server/tools/definitions.py,sha256=hQ65gzWB68KqpfmZE3ePWUDRezdZ6Mz89D-XvWeix1w,59990
+server/tools/registration.py,sha256=Osq49XhWhzWh3qChw6k4HEo3SwPNYRR56ek4kfPLOfY,2709
+singlestore_mcp_server-0.2.0.dist-info/METADATA,sha256=vmoK_Ng9671axdaY6mrB-GTat5ZIWjUX4cFC2Ls71zA,6592
+singlestore_mcp_server-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+singlestore_mcp_server-0.2.0.dist-info/entry_points.txt,sha256=d3J6HTyeSd5Lc07aeEsO_79bokbUYOMF1GJwOJ9jcC4,55
+singlestore_mcp_server-0.2.0.dist-info/licenses/LICENSE,sha256=IVW_2a4q3a2IU02LVYGVhbugOYMzNyHovSzSwrG0Z4w,1079
+singlestore_mcp_server-0.2.0.dist-info/RECORD,,
