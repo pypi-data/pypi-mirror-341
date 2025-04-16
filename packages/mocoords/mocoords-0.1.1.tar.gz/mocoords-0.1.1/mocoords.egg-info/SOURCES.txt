@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mocoords/__init__.py
+mocoords.egg-info/PKG-INFO
+mocoords.egg-info/SOURCES.txt
+mocoords.egg-info/dependency_links.txt
+mocoords.egg-info/requires.txt
+mocoords.egg-info/top_level.txt
+mocoords/static/parcoords.css
+mocoords/static/parcoords.js
