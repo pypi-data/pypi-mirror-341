@@ -1,0 +1,185 @@
+---
+- name: "basic1"
+  input: "mu. mu."
+  output:
+    - "mu."
+    - "mu."
+- name: "basic2"
+  input: "mu! mu!"
+  output:
+    - "mu!"
+    - "mu!"
+- name: "basic3"
+  input: "mu? mu?"
+  output:
+    - "mu?"
+    - "mu?"
+- name: "basic4"
+  input: "mi mu. mi wawa."
+  output:
+    - "mi mu."
+    - "mi wawa."
+- name: "empty"
+  input: ""
+  output: []
+- name: "whitespace"
+  input: "  \n  "
+  output: []
+- name: "newline basic"
+  input: "sina lon seme?\nmi wile lon poka...\n"
+  output:
+    - "sina lon seme?"
+    - "mi wile lon poka."
+    - "."
+    - "."
+- name: "newline alone"
+  input: "sina lon seme\nmi wile lon poka"
+  output:
+    - "sina lon seme"
+    - "mi wile lon poka"
+- name: "dash"
+  input: "mi sona ala e ni- sina seme a"
+  output:
+    - "mi sona ala e ni-"
+    - "sina seme a"
+- name: "comma"
+  input: "mi mu tawa sina, mi wawa e sina."
+  output:
+    - "mi mu tawa sina, mi wawa e sina."
+- name: "singlequotes"
+  input: "toki li tan kulupu Kuko li ni: 'o ike ala!'"
+  output:
+    - "toki li tan kulupu Kuko li ni:"
+    - "'o ike ala!"
+    - "'"
+- name: "doublequotes"
+  input: 'ona li toki e ni: "mama sina"'
+  output:
+    - "ona li toki e ni:"
+    - '"mama sina"'
+- name: "doublequotes 2"
+  input: 'this is a bit dumb, right? they said "where is the pacific ocean?"'
+  output:
+    - "this is a bit dumb, right?"
+    - 'they said "where is the pacific ocean?'
+    - '"'
+- name: "doublequotes 3"
+  input: 'they said "wow, its made"'
+  output:
+    - they said "wow, its made"
+- name: "mixed periods spoilers"
+  input: "||...||"
+  output:
+    - "||."
+    - "."
+    - "."
+    - "||"
+- name: "trailing periods"
+  input: "h.."
+  output:
+    - "h."
+    - "."
+- name: "trailing periods 2"
+  input: "h.!"
+  output:
+    - "h."
+    - "!"
+- name: "intraword punctuation 1"
+  input: "e.g. monsuta"
+  output:
+    - "e.g."
+    - "monsuta"
+- name: "intraword punctuation 2"
+  input: "isn't that game-breaking? i think so"
+  output:
+    - "isn't that game-breaking?"
+    - "i think so"
+- name: "intraword punctuation 3"
+  input: "e.g.\n- monsuta\n- monsi\n- ma"
+  output:
+    - "e.g."
+    - "-"
+    - "monsuta"
+    - "-"
+    - "monsi"
+    - "-"
+    - "ma"
+- name: "multiline with fake intraword"
+  input: >
+    toki!
+    sitelen pini ni li tu ala e toki.
+    ni kin.
+    taso ni li pini e toki anu seme:
+    pini la ni li toki sin.
+  output:
+    - "toki!"
+    - "sitelen pini ni li tu ala e toki."
+    - "ni kin."
+    - "taso ni li pini e toki anu seme:"
+    - "pini la ni li toki sin."
+- name: "fake intraword punct 1"
+  input: "!.h"
+  output:
+    - "!"
+    - "."
+    - "h"
+- name: "full width space"
+  input: "life-altering pseudo-science. and non-sense"
+  output:
+    - "life-altering pseudo-science."
+    - "and non-sense"
+- name: "discovered case 1"
+  input: "ona li ken lukin e sitelen [_ike_nanpa_lete_ike]. ni li pona kin."
+  output:
+    - "ona li ken lukin e sitelen ["
+    - "_ike_nanpa_lete_ike]"
+    - "."
+    - "ni li pona kin."
+- name: "zwj in emoji"
+  input: "👨‍👩‍👧‍👧"
+  output:
+    - "👨‍👩‍👧‍👧"
+
+- name: UCSUR 1
+  input: "󱥄󱥬󱥩󱤴󱦜󱥄󱥬󱥩󱤴"
+  output:
+    - "󱥄󱥬󱥩󱤴󱦜"
+    - "󱥄󱥬󱥩󱤴"
+# - name: "UCSUR 2 (original)"
+#   input: "󱤴󱤺󱦐󱤘󱦜󱤕󱦜󱤾󱦑󱦐󱤼󱦝󱦑"
+#   output:
+#     - "󱤴󱤺󱦐󱤘󱦜"
+#     - "󱤕󱦜"
+#     - "󱤾󱦑󱦐󱤼󱦝"
+#     - "󱦑"
+- name: "UCSUR 2 (preferred)"
+  input: "󱤴󱤺󱦐󱤘󱦜󱤕󱦜󱤾󱦑󱦐󱤼󱦝󱦑"
+  output:
+    - "󱤴󱤺󱦐󱤘󱦜󱤕󱦜󱤾󱦑󱦐󱤼󱦝󱦑"
+- name: "UCSUR 3"
+  input: "󱤴󱦐󱦑󱦐󱦑"
+  output:
+    - "󱤴󱦐󱦑󱦐󱦑"
+- name: "UCSUR 4"
+  input: "󱤴󱦐󱦐"
+  output:
+    - "󱤴󱦐󱦐"
+- name: "UCSUR 5"
+  input: "󱦑󱤴󱦐󱦐"
+  output:
+    - "󱦑󱤴󱦐󱦐"
+- name: "UCSUR 6"
+  input: "󱦐nvidia shield. and other nvidia products.󱦑"
+  output:
+    - "󱦐nvidia shield."
+    - "and other nvidia products."
+    - "󱦑"
+- name: "UCSUR 7"
+  input: "󱤴󱤺󱦐󱤘󱦜󱦐󱤕󱦐󱦜󱤾󱦑󱦐󱤼󱦝󱦑"
+  output:
+    - "󱤴󱤺󱦐󱤘󱦜"
+    - "󱦐󱤕󱦐󱦜󱤾󱦑󱦐󱤼󱦝󱦑"
+- name: "UCSUR 8"
+  input: "󱤴󱤺󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦝󱦑"
+  output:
+    - "󱤴󱤺󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦐󱦝󱦑"
