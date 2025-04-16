@@ -1,0 +1,108 @@
+Metadata-Version: 2.4
+Name: login-history-too
+Version: 0.1.1
+Summary: It's easy to use, plug-in django app that once included, stores logins history (with device data, like IP, user-agent, location etc.) of all users.
+Author-email: Tim Santor <tsantor@xstudios.com>
+Project-URL: Repository, https://github.com/tsantor/login-history-too.git
+Project-URL: Issues, https://github.com/tsantor/login-history-too/issues
+Project-URL: Changelog, https://github.com/tsantor/login-history-too/blob/master/HISTORY.md
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: django-ipware>=7.0.1
+Requires-Dist: requests>=2.32.3
+Requires-Dist: user-agents>=2.2.0
+Provides-Extra: dev
+Dynamic: license-file
+
+# Login History Too
+
+![Coverage](https://img.shields.io/badge/coverage-74%25-brightgreen)
+
+## Overview
+
+Simple login history tracking including IP address (along with its geo data), User Agent data and timestamp.
+
+## Quickstart
+
+Install Login History Too:
+
+```bash
+pip install login-history-too
+```
+
+### Settings
+
+To enable `login_history_too` in your project you need to add it to `INSTALLED_APPS` in your projects `settings.py` file:
+
+```python
+INSTALLED_APPS = (
+    ...
+    'login_history_too',
+    ...
+)
+```
+
+If you want to override the `GEOLOCATION_METHOD` to use another geolocation API:
+
+```python
+LOGIN_HISTORY_TOO = {
+    "GEOLOCATION_METHOD": "login_history_too.utils.get_ip_info"
+}
+```
+
+## Development
+
+```bash
+make env
+make pip_install
+make migrations
+make migrate
+make superuser
+make serve
+```
+
+- Visit `http://127.0.0.1:8000/` for the default "It worked" page
+- Visit `http://127.0.0.1:8000/admin/` for the Django Admin
+
+### Testing
+
+```bash
+make pytest
+make coverage
+make open_coverage
+```
+
+## Deploying
+
+```bash
+# Publish to PyPI Test before the live PyPi
+make release_test
+make release
+```
+
+## Issues
+
+If you experience any issues, please create an [issue](https://github.org/tsantor/login-history-too/issues) on Github.
+
+# History
+
+All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
+
+## 0.1.1 (2025-04-15)
+
+- Added missing static files to package.
+
+## 0.1.0 (2025-02-19)
+
+- First release
