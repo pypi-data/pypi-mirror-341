@@ -1,0 +1,2 @@
+[console_scripts]
+resume-screening = resume_screening_mcp.cli:main
