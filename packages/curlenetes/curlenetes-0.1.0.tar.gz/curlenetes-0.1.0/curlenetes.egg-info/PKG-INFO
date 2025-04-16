@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: curlenetes
+Version: 0.1.0
+Summary: A small kubectl and curl wrapper to make http requests to k8s's services
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# curlenetes
+
+A small kubectl and curl wrapper to make http requests to k8s's services
+
+How to run:
+First, you need to have kubectl and curl installed.
+
+```
+uvx curlenetes namespace.service:port/path curl parameters
+```

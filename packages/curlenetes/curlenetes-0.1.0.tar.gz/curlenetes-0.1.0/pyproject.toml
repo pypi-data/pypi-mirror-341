@@ -1,0 +1,10 @@
+[project]
+name = "curlenetes"
+version = "0.1.0"
+description = "A small kubectl and curl wrapper to make http requests to k8s's services"
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = []
+
+[project.scripts]
+curlenetes = "curlenetes:main"
