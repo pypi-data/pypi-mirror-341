@@ -1,0 +1,11 @@
+src/mcp_email_client/__init__.py,sha256=rDWynZ50L-huwU6u3TM2LahOvQ0f0lewUcQ4mjMtbRk,212
+src/mcp_email_client/__main__.py,sha256=ft0Xxgv80Ho0hnBAcMF0vmrCUd6r1R-YJi6DTmBkWnw,79
+src/mcp_email_client/config.py,sha256=jxYw1PlcoDXnMK28QqgRNxye7lsk5298qexI59v5CV0,3554
+src/mcp_email_client/mailhandler.py,sha256=6ClQ4DqZwkUL0wv5pzNNSNpsVqaD1BUCFfcjyAHjJQg,3419
+src/mcp_email_client/server.py,sha256=8ZaqlCEw-f8v63dHL6NtyF3xQYPNOfH9hWK5YW8gpW8,6397
+src/mcp_email_client/config/.gitignore,sha256=aEiIwOuxfzdCmLZe4oB1JsBmCUxwG8x-u-HBCV9JT8E,1
+template/.gitignore,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mseep_mcp_email_client-0.1.0.dist-info/METADATA,sha256=k1cAfcgWgwbNSXPDSIIqfC5oeCVFY46xU9dMHai5Bh4,1458
+mseep_mcp_email_client-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp_email_client-0.1.0.dist-info/entry_points.txt,sha256=5V-6jxT7PgGmKLQ0m_GTVRJtbDCRJPZyVUB3wKOhB18,59
+mseep_mcp_email_client-0.1.0.dist-info/RECORD,,
