@@ -1,0 +1,37 @@
+"""
+The module containing a pre-made Machine class for chat message filtering.
+"""
+
+from .construct_machine import construct_filter_list
+from ..machines import Machine
+
+
+def create_machine(
+    bypass_protection: bool = True,
+    length_filter: bool = True,
+    min_length: int = 1,
+    max_length: int = 200,
+    wordlength_filter: bool = True,
+    max_word_length: int = 20,
+    max_num_too_long_words: int = 1,
+    capitals_filter: bool = True,
+    capitals_percentage: float = 0.3,
+    capitals_mode: str = "crop",
+    symbols_filter: bool = True,
+    profanity_filter: bool = False,
+    profanity_blocklist_filepath: str = "",
+):
+    """
+    Create a Machine that is pre-made to be used in fast-paced, internet
+    chatting environments.
+    """
+
+    # pylint: disable=unused-argument
+
+    return Machine(
+        construct_filter_list(**locals()),
+        mode="normal-quick",
+    )
+
+
+chatMachine = create_machine()
