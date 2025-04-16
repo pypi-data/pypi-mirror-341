@@ -1,0 +1,12 @@
+[
+  {
+    "identifier": "mcp-server-time",
+    "name": "Time Server",
+    "description": "MCP server for time and timezone conversion capabilities. Get current time in any timezone and convert between timezones using IANA timezone names.",
+    "vendor": "Model Context Protocol",
+    "sourceUrl": "https://github.com/modelcontextprotocol/servers/blob/main/src/time",
+    "command": "uvx",
+    "args": ["mcp-server-time", "--local-timezone=America/New_York"],
+    "required_env_vars": []
+  }
+]
