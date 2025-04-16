@@ -1,0 +1,21 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "sage-agent",
+  "description": "sage-agent settings.",
+  "type": "object",
+  "properties": {
+    "apiKey": {
+      "type": "string",
+      "title": "Anthropic API Key",
+      "description": "API key for Anthropic AI services",
+      "default": ""
+    },
+    "modelName": {
+      "type": "string",
+      "title": "Model Name",
+      "description": "The name of the Anthropic model to use",
+      "default": "claude-3-5-sonnet-20241022"
+    }
+  },
+  "additionalProperties": false
+}

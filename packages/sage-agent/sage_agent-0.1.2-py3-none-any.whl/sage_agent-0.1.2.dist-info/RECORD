@@ -1,0 +1,17 @@
+sage_agent/__init__.py,sha256=TtzjR7kWMJA9UrT3_ZoLl7PH7n2wuCyAIb6cpQbdPbw,594
+sage_agent/_version.py,sha256=Mu78SamXCkJzdNjajJJWBkbHFcFy_Gmwl8wLep-oBpg,175
+sage_agent-0.1.2.data/data/share/jupyter/labextensions/sage-agent/package.json,sha256=lCHVGnPTQr_OOBYEtGd1VI3yrg2Ol-TlSq1z48-hHng,5937
+sage_agent-0.1.2.data/data/share/jupyter/labextensions/sage-agent/schemas/sage-agent/package.json.orig,sha256=bvjyEuB4XU0Djq7QjFbKAbF_Bsetq4Ybp_4Jj2bgLgU,6903
+sage_agent-0.1.2.data/data/share/jupyter/labextensions/sage-agent/schemas/sage-agent/plugin.json,sha256=uBMw5LYwlo7OXQAipPsPIrXBO7ryf66zZrcf-K2WkwI,545
+sage_agent-0.1.2.data/data/share/jupyter/labextensions/sage-agent/static/51.ac1eeba4522c9172b87a.js,sha256=rB7rpFIskXK4egVx9aYHZ09uCjQHR3oDb3YWEF6rRE0,96729
+sage_agent-0.1.2.data/data/share/jupyter/labextensions/sage-agent/static/642.9570b4cabe3ce02bf9ce.js,sha256=lXC0yr484Cv5znSunBXeQmQE_Lcx3zy1H_uWVsDAkH4,54827
+sage_agent-0.1.2.data/data/share/jupyter/labextensions/sage-agent/static/677.63a1134bb345aca29f33.js,sha256=Y6ETS7NFrKKfM2XtLkuIjxcPrrtPGz5WNLEStqUHVl8,9560
+sage_agent-0.1.2.data/data/share/jupyter/labextensions/sage-agent/static/728.4641e6bce61deb8b9aa6.js,sha256=RkHmvOYd64uapptgOvrevPdUSRREkzaoaq15k6xR2i4,7163
+sage_agent-0.1.2.data/data/share/jupyter/labextensions/sage-agent/static/remoteEntry.751047fba8d2666eac4c.js,sha256=dRBH-6jSZm6sTHXclUKQa9nRM1yprKb7b3ssnaO4Vsk,7539
+sage_agent-0.1.2.data/data/share/jupyter/labextensions/sage-agent/static/style.js,sha256=9tXgKIEMcuTQs3WkNL6NsZSQthQhci9jaALQYqcB9dY,153
+sage_agent-0.1.2.data/data/share/jupyter/labextensions/sage-agent/static/third-party-licenses.json,sha256=wxe9RmhaUDhs8yLqzudg7GNONDYLY4HghgI46DlPpQM,11042
+sage_agent-0.1.2.data/data/share/jupyter/labextensions/sage-agent/install.json,sha256=HPVNAl4XpbeEVfGYso14xf0_6KV94DdGmw2lMQor-GA,186
+sage_agent-0.1.2.dist-info/METADATA,sha256=UgUNYd4gUSedSzr19VkyTnBu9WrdcEigSsX5cv-N-KY,6034
+sage_agent-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sage_agent-0.1.2.dist-info/licenses/LICENSE,sha256=zsSUFnbKwCesfRSafkOcXkQGrMFo6zQ8LHlOt-MYHDY,1525
+sage_agent-0.1.2.dist-info/RECORD,,
