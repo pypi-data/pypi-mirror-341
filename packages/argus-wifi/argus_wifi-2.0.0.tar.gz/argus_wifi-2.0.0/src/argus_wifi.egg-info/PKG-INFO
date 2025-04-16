@@ -1,0 +1,107 @@
+Metadata-Version: 2.4
+Name: argus-wifi
+Version: 2.0.0
+Summary: Argus: WiFi Uptime and Bandwidth Monitor
+Author-email: SahooBishwajeet <biswa.2004.bdk@gmail.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2025 SahooBishwajeet
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE.
+        
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: speedtest-cli
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: psutil
+Dynamic: license-file
+
+# Argus
+
+A tool to monitor WiFi uptime and bandwidth over time.
+
+## Installation
+
+```bash
+pip install argus-wifi
+```
+
+## Usage
+
+### Regular Mode
+
+To start monitoring with default settings:
+
+```bash
+argus monitor
+```
+
+Options:
+
+- `--interval`: Time between checks in seconds (default: 300)
+- `--duration`: How long to monitor in hours (default: 24)
+- `--log`: Path to the CSV log file (default: argus.csv)
+- `--output`: Path to save the graph (default: argus_report.png)
+- `--analyze-only`: Only analyze existing data without monitoring
+
+Example with custom settings:
+
+```bash
+argus monitor --interval 600 --duration 48 --log my_log.csv --output my_report.png
+```
+
+### Daemon Mode
+
+Run Argus in the background:
+
+```bash
+# Start the daemon
+argus start --interval 300 --duration 24
+
+# Check status and configuration
+argus status
+
+# Stop the daemon
+argus stop
+```
+
+When running in daemon mode, all files (logs, data, and reports) are stored in `~/.argus/` directory.
+
+## Features
+
+- Monitor WiFi connectivity over time
+- Measure download and upload speeds
+- Track ping latency
+- Generate visual reports with matplotlib
+- Analyze historical data
+- Run in background (daemon mode)
+- CLI commands for process management
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
