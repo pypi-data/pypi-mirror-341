@@ -1,0 +1,13 @@
+mortal_curl/__init__.py,sha256=aHXLA6_B5weZsZ-hnZplADLfOCbeegRZeyIj9Qb0-fM,1128
+mortal_curl/curl_main.pyd,sha256=D08N0IM704DnD-Gg5v-9YyObbcKRucAaC28L_caFoQY,140800
+mortal_curl/curl_main.so,sha256=W4a2CR8rFy8TdT_LGX4FPa_zbaarpvaLRZqqIFRS5kc,907736
+mortal_curl/extract.pyd,sha256=kta_-9uONo3YTtlNM9t_fNlh1-6ibUhykz7uU-1waFE,90112
+mortal_curl/extract.so,sha256=_0Xd7QPkj70uk_XKLOfgYCJKviG_VBAMQuoGWz2kNZ0,591152
+mortal_curl/parse.pyd,sha256=ia_sBjSbEiL537LW47RNC1YkeXPFw2K3edYo71XQpG4,92160
+mortal_curl/parse.so,sha256=VAUHCW-59bgOHpKFfDZoWnFDnv28GL5hYpLm3SQJkeA,549024
+mortal_curl/text.pyd,sha256=pLTPW7CSkmmklf26PCcSVxBQTpBPNV2ZOO6l9kn3Q2w,19968
+mortal_curl/text.so,sha256=x4RlSjS_hAl-CMt5t6nn-2i5qi0SBeteTpEI4LVeJNs,65288
+mortal_curl-4.0.1.dist-info/METADATA,sha256=MUyNGoIoiFGAnNzCMr5xo_w6b5ZH77yBa6_M3rUT1F4,436
+mortal_curl-4.0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+mortal_curl-4.0.1.dist-info/top_level.txt,sha256=B448IgaCIhxd4-x7dGx1NFDZfA4yyT1LfdastMCVei4,12
+mortal_curl-4.0.1.dist-info/RECORD,,
