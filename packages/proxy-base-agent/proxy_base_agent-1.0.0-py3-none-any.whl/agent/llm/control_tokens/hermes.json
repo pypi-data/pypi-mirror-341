@@ -1,0 +1,34 @@
+{
+    "template_type": "hermes",
+    "begin_of_text": "",
+    "end_of_message": "<|im_end|>\n",
+    "end_of_sequence": "<|im_end|>\n",
+    "roles": {
+        "assistant": {
+            "role_name": "assistant",
+            "role_start_tag": "<|im_start|>",
+            "role_end_tag": "\n"
+        },
+        "system": {
+            "role_name": "system",
+            "role_start_tag": "<|im_start|>",
+            "role_end_tag": "\n"
+        },
+        "user": {
+            "role_name": "user",
+            "role_start_tag": "<|im_start|>",
+            "role_end_tag": "\n"
+        },
+        "tool": {
+            "role_name": "tool",
+            "role_start_tag": "<|im_start|>",
+            "role_end_tag": "\n"
+        }
+    },
+    "tool_call_start": "<tool_call>",
+    "tool_call_end": "</tool_call>",
+    "tool_list_start": "<tools>",
+    "tool_list_end": "</tools>",
+    "tool_result_start": "<tool_response>",
+    "tool_result_end": "</tool_response>"
+}
