@@ -1,0 +1,75 @@
+Metadata-Version: 2.4
+Name: frame-cli
+Version: 0.1.0
+Summary: Command line interface for managing Frame hybrid models
+Author-email: Son Pham-Ba <son.phamba@epfl.ch>
+License: GPL-3.0-or-later
+Project-URL: repository, https://github.com/CHANGE-EPFL/frame-project-cli
+Requires-Python: <3.13,>=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gitpython~=3.1.43
+Requires-Dist: python-dotenv~=1.0.1
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: requests~=2.32.3
+Requires-Dist: rich~=13.9.3
+Requires-Dist: typer~=0.15.1
+Provides-Extra: dev
+Requires-Dist: pre-commit~=3.0.4; extra == "dev"
+Requires-Dist: pytest~=8.1.1; extra == "dev"
+Requires-Dist: pytest-cov~=5.0.0; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest~=8.1.1; extra == "test"
+Requires-Dist: pytest-cov~=5.0.0; extra == "test"
+Dynamic: license-file
+
+# Frame CLI
+
+_Command line interface for managing [Frame hybrid models](https://frame-dev.epfl.ch/)_
+
+
+# 🐇 Quick start
+
+## Requirements
+
+- [uv](https://docs.astral.sh/uv/) Python package and project manager
+
+
+## Installation
+
+Frame CLI relies on [uv](https://docs.astral.sh/uv/) to manage Python virtual environments. You need to install it first if you don't already have it:
+```bash
+wget -qO- https://astral.sh/uv/install.sh | sh
+```
+Then, run the following command to install Frame CLI:
+```bash
+uv tool install git+https://github.com/CHANGE-EPFL/frame-project-cli.git
+```
+
+
+## Usage
+
+To see the list of available commands, run:
+```bash
+frame-cli --help
+```
+
+
+# 💾 Installation for development
+
+```bash
+git clone https://github.com/CHANGE-EPFL/frame-project-cli.git
+cd frame-cli
+make install
+```
+
+Create a `.env` file in the root of your project with the following content (or export environment variables in your shell):
+```bash
+FRAME_CLI_LOGGING_LEVEL=INFO
+```
+
+# ✅ Running tests
+
+```bash
+make test
+```
