@@ -1,0 +1,5 @@
+[console_scripts]
+gconsole = ginsfsm.scripts.gconsole:main
+gcreate = ginsfsm.scripts.gcreate:main
+ginsfsm-help = ginsfsm.scripts.help:main
+gserve = ginsfsm.scripts.gserve:main
