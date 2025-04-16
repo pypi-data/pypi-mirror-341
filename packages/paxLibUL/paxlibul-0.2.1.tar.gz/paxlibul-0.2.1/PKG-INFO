@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: paxLibUL
+Version: 0.2.1
+Summary: A library for internal formation tools use in PaX ULaval formations.
+Author-email: David Beauchemin <david.beauchemin@ift.ulaval.ca>, Marc Parizeau <marc.parizeau@gel.ulaval.ca>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/PAX-ULaval/pax-libraries
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+Requires-Dist: poutyne
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Dynamic: license-file
+
+# A library for internal formation tools used in PaX ULaval formations
+Most of the content is to reduce code duplication into our formation and to ease the release of those tools among the formations in the platform.
