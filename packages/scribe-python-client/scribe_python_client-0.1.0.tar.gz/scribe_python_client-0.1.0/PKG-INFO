@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: scribe-python-client
+Version: 0.1.0
+Summary: A Python client for interacting with ScribeHub.
+Home-page: https://github.com/scribe-security/scribe-python-client
+Author: Daniel Nebenzahl
+Author-email: dn@scribesecurity.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: PyJWT
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
