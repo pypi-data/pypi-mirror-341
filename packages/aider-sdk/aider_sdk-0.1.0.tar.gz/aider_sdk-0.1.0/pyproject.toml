@@ -1,0 +1,20 @@
+[project]
+name = "aider-sdk"
+version = "0.1.0"
+description = "A simple Python SDK for using Aider programmatically"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "RVCa", email = "rvca212@gmail.com"}
+]
+dependencies = [
+    "aider-chat>=0.82.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+
+[project.urls]
+"Homepage" = "https://github.com/rvca212/aider-sdk"
+"Bug Tracker" = "https://github.com/rvca212/aider-sdk/issues"

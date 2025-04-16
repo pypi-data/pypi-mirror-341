@@ -1,0 +1,9 @@
+README.md
+aider_sdk.py
+pyproject.toml
+setup.py
+aider_sdk.egg-info/PKG-INFO
+aider_sdk.egg-info/SOURCES.txt
+aider_sdk.egg-info/dependency_links.txt
+aider_sdk.egg-info/requires.txt
+aider_sdk.egg-info/top_level.txt
