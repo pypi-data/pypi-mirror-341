@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+uselessai/__init__.py
+uselessai.egg-info/PKG-INFO
+uselessai.egg-info/SOURCES.txt
+uselessai.egg-info/dependency_links.txt
+uselessai.egg-info/top_level.txt
