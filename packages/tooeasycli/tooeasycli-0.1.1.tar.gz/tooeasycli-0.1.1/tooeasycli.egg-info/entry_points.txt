@@ -1,0 +1,2 @@
+[console_scripts]
+tooeasycli = tooeasycli.main:main
