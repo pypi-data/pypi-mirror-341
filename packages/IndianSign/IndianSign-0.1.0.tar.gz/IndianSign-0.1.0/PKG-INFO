@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: IndianSign
+Version: 0.1.0
+Summary: Sign Language Detection using Mediapipe and LSTM
+Author: Your Name
