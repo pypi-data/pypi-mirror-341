@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: FFMPEG_Filters
+Version: 9.0
+Summary: FFMPEG_Filters is a set of effects for images to create a video.
+Home-page: https://github.com/Tgthegood1/FFMPEG_Filters
+Author: Tgthegood
+Author-email: almeidaaxel52@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+Hi, I'm Tgthegood.
+FFMPEG_Filters was developed to provide a simple solution to some filters not found in some of our projects. 
+Tgthegood says: â€˜This library is for youâ€™ >:3
