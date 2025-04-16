@@ -1,0 +1,7 @@
+islpy/version.py,sha256=hQc9wdBixhoG6gdjSPTFkM_xMVi6uYDD-iJr91vdEVc,72
+islpy/__init__.py,sha256=y5AwucXSrDi-y6FMkhK7F2-riplpxaX0zHJfromRCUw,37276
+islpy/_isl.cpython-39-darwin.so,sha256=KcpacGdxydpl2Fh8IJjCtYqGV6-5qQw2wHOez9xBnfM,7924520
+islpy-2025.1.4.dist-info/RECORD,,
+islpy-2025.1.4.dist-info/WHEEL,sha256=2ncFxFsSk-XWDSAyMCcBRc_CjEMbjNmC_bDw22KCjcs,129
+islpy-2025.1.4.dist-info/top_level.txt,sha256=txVjJJ85Sa3IMOF6WOh_bTkOyRDWiSW2kQOf8vSPb6M,6
+islpy-2025.1.4.dist-info/METADATA,sha256=tpnszD8oMdZAGM1hDiQJtyRvZn7mtZ2lukoqM4qaUCA,3114
