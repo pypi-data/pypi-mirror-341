@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "snowplow-signals"
+version = "0.0.4"
+description = ""
+authors = ["Snowplow <support@snowplow.io>"]
+readme = "README.md"
+packages = [{ include = "snowplow_signals", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.10.5"
+pandas = "^2.2.0"
+httpx = "^0.28.1"
+pyjwt = "^2.10.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+black = "^24.10.0"
+pre-commit = "^4.1.0"
+isort = "^6.0.0"
+ipykernel = "^6.29.5"
+respx = "^0.22.0"
+datamodel-code-generator = "^0.28.4"
+pytest-cov = "^6.1.0"
+syrupy = "^4.9.1"
+semver = "^3.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+markers = ["noauthmock: mark tests to not mock auth"]
