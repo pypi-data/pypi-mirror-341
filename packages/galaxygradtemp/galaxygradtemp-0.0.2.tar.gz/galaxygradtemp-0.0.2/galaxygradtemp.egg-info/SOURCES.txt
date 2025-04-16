@@ -1,0 +1,10 @@
+setup.py
+galaxygradtemp/__init__.py
+galaxygradtemp/models_eqx.py
+galaxygradtemp/scorenet.py
+galaxygradtemp/utils.py
+galaxygradtemp.egg-info/PKG-INFO
+galaxygradtemp.egg-info/SOURCES.txt
+galaxygradtemp.egg-info/dependency_links.txt
+galaxygradtemp.egg-info/requires.txt
+galaxygradtemp.egg-info/top_level.txt
