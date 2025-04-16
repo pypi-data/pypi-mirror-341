@@ -1,0 +1,11 @@
+parasnake/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parasnake/ps_config.py,sha256=gYU5U-u92GliUJ8_GHu1ydgo5__q2I829-aieBwiDfY,1997
+parasnake/ps_message.py,sha256=7BcKo_DmAIYqRtLwXYqJkzRglO2CKK3rdcSMfVPRvhA,8626
+parasnake/ps_node.py,sha256=95yR8_p8KO8t7Kj1xWBUJz5RykFsHom0zURnfpylyoc,9916
+parasnake/ps_nodeid.py,sha256=h6Hvo-VcsbNGTM3hxm2Ov5cb-3IKjKSidcvK3y9dD3c,875
+parasnake/ps_server.py,sha256=VbvrNohvi4Dto0UJMTq6bgqlWCUdbk-BVq9hjrmQQwY,16998
+parasnake/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parasnake-0.1.dist-info/METADATA,sha256=TF2xmqGkhUk_4pjyrOKslK42_Y2KnTtWvgA-o6wqvWM,10949
+parasnake-0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+parasnake-0.1.dist-info/licenses/LICENSE,sha256=eEFXBQxJmJL0RNvAFyrpIw8sK4vIFg-x17E6xSotgfo,1070
+parasnake-0.1.dist-info/RECORD,,
