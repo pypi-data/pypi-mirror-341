@@ -1,0 +1,2 @@
+[console_scripts]
+agentport = agentport.cli:main
