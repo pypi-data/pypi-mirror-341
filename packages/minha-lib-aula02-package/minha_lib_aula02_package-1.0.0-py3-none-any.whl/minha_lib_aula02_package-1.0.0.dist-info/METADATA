@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: minha_lib_aula02-package
+Version: 1.0.0
+Summary: Execercio para criar uma biblioteca
+Home-page: https://github.com/nuvsolutions/minha_lib_aula02
+Author: Wellington (RM364772)
+Author-email: wellington@nuvsolutions.com.br
+License: MIT
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+﻿# minha_lib_aula02
+A simple example library.
+## Installation
+\\\sh
+pip install minha_lib_aula02
+\\\
+## Usage
+\\\python
+from minha_lib_aula02 import hello_world
+print(hello_world())
+\\\
+## License
+
+Distributed under MIT license.
