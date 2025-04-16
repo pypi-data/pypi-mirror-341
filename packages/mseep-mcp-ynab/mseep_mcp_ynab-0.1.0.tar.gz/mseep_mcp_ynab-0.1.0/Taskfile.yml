@@ -1,0 +1,62 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  mcp-dev:
+    desc: "Run the MCP server in development mode"
+    cmds:
+      - uv run mcp dev src/mcp_ynab/server.py
+
+  open-browser:
+    desc: "Open the browser"
+    cmds:
+      - sleep 2 && open http://localhost:5173
+
+  dev:
+    desc: "Run the MCP server in development mode and open the browser"
+    deps:
+      - mcp-dev
+      - open-browser
+
+  deps:
+    desc: "Synchronize dependencies"
+    cmds:
+      - uv sync
+      - npm install --global @modelcontextprotocol/inspector
+
+  install:
+    desc: "Install the package locally"
+    cmds:
+      - uv sync
+      - uv pip install .
+      - echo "installed mcp-ynab at $(which mcp-ynab)"
+
+  test:
+    desc: "Run the tests"
+    cmds:
+      - pytest
+
+  test:integration:
+    desc: "Run the integration tests"
+    cmds:
+      - pytest -m "integration"
+
+  test:all:
+    desc: "Run all tests including integration tests"
+    cmds:
+      - pytest -m ""
+
+  coverage:
+    desc: "Run tests with coverage reporting"
+    cmds:
+      - pytest --cov=src/mcp_ynab --cov-report=term-missing --cov-report=html -m ""
+
+  fmt:
+    desc: "Format and lint code"
+    cmds:
+      - ruff format src/ tests/
+      - ruff check src/ tests/ --fix
