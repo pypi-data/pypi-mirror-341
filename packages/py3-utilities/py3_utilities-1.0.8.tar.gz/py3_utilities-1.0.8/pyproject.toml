@@ -1,0 +1,36 @@
+[project]
+name = "py3-utilities"
+version = "1.0.8"
+description = "Private utility package"
+authors = [
+  { name = "Gabor Erdelyi", email = "e.gabor94@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = []
+
+[tool.poetry]
+packages = [
+  { include = "utilities" }
+]
+
+[project.optional-dependencies]
+logger = ["colorlog", "python-json-logger"]
+config = ["python-dotenv", "PyYAML", "tomli-w"]
+excel = ["pandas", "openpyxl", "numpy", "portalocker"]
+os-windows = ["pandas", "openpyxl", "aiofiles", "pywin32", "pdfplumber", "python-docx"]
+os-crossplatform = ["pandas", "openpyxl", "aiofiles", "watchdog", "pdfplumber", "python-docx"]
+ai = ["openai", "azure-core", "azure-ai-documentintelligence", "aiohttp"]
+jira = ["pip-system-certs", "aiohttp"]
+all = [
+  "colorlog", "python-json-logger",
+  "python-dotenv", "PyYAML", "tomli-w",
+  "pandas", "openpyxl", "numpy", "portalocker",
+  "aiofiles", "pywin32", "watchdog", "pdfplumber", "python-docx",
+  "openai", "azure-core", "azure-ai-documentintelligence", "aiohttp",
+  "pip-system-certs"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
