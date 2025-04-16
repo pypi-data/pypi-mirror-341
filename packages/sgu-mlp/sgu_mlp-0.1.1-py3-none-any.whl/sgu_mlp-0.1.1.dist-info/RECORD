@@ -1,0 +1,15 @@
+experiments/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+experiments/config.py,sha256=H_kNO7ufPBZ7y4Pv9VMHLKNNCL1qGyCzlSPyteKejsM,2866
+experiments/data.py,sha256=63iPtlHrEKm6uBGlFa41yKQvsuH7Oz20Vc2N9TN6Rcs,14529
+experiments/experiments.py,sha256=zLjEDNbb-kdsrxAEMs_aAKxrn-L35E8DTyrL-0HZY7w,10468
+experiments/metrics.py,sha256=-bpvcI8FlwLw4enVq8FikHRNdbuG34d8vMgmKJb5Wa0,4652
+experiments/models.py,sha256=pVJRmpMksQEh97DCKhEtrVcOGldZKPoOUGSUlKGMohY,2534
+experiments/run.py,sha256=skfqoh_h2nvJP55-VDTw_UURJEoRS1p7Z9TxkTg0YC4,1742
+experiments/train.py,sha256=N_mHJ3vzeQfBYJrdIl5yAFCfIbgug9CSDobUfVjfS8g,2090
+sgu_mlp/__init__.py,sha256=sv00Yp5MHpaVWvCGfCcIIFB0YQHOzg5rkYw90Ylkb6E,41
+sgu_mlp/models.py,sha256=2nYvkierg5mOrlYERjcynimVVKa1hLhlnEcTaivVD54,18359
+sgu_mlp-0.1.1.dist-info/LICENSE,sha256=7Qf7YxQFR8vWdLQjCgYgv6wMnKB1G5aVfaqolCqLuoo,1091
+sgu_mlp-0.1.1.dist-info/METADATA,sha256=hmOq8stjva14Mxvdew1jSabZ3GfkEHRQp0StKjS9hys,6136
+sgu_mlp-0.1.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+sgu_mlp-0.1.1.dist-info/entry_points.txt,sha256=zNzAVKWUxjb9IMdf7CX3lNq1U7jGKFYtk7g90HFeMow,228
+sgu_mlp-0.1.1.dist-info/RECORD,,
