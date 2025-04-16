@@ -1,0 +1,57 @@
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "mseep-mcp-python"
+version = "0.1.4"
+description = "MCP server providing a Python REPL with persistent session"
+requires-python = ">=3.10"
+dependencies = [
+    "llm-parser-filter",
+    "mcp",
+    "mcp-gsuite",
+    "python-dotenv",
+]
+authors = [
+    { name = "Tynan Daly", email = "tynan@hdr.is" },
+]
+license = "MIT"
+keywords = [
+    "mcp",
+    "repl",
+    "python",
+    "server",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/piplin-es/mcp-python"
+Repository = "https://github.com/piplin-es/mcp-python.git"
+Issues = "https://github.com/piplin-es/mcp-python/issues"
+Github = "https://github.com/piplin-es/mcp-python"
+
+[project.scripts]
+mcp-python = "mcp_python:main"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src",
+]
+
+[tool.uv.sources.mcp-gsuite]
+path = "../mcp-gsuite"
+
+[tool.uv.sources.llm-parser-filter]
+path = "../llm-parser-filter"
