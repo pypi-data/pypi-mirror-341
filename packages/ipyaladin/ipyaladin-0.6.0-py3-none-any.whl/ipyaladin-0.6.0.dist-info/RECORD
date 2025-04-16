@@ -1,0 +1,16 @@
+ipyaladin/__about__.py,sha256=IAkOzS0fT70Gn2cjrljIt9XWV-450uJx6IWpT28TB_U,56
+ipyaladin/__init__.py,sha256=1pRRszk8arPGg6T11mj6WHTIIzTG1mo4NJAWTy1cCfo,279
+ipyaladin/widget.py,sha256=Bes-M3lu5orKgcgX7mYPTCnHaiZajDbHeveNlfgS2Vk,37596
+ipyaladin/elements/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipyaladin/elements/error_shape.py,sha256=yFCOL4OxkjuzxuLrJ_KMcnyDAQh856J7oauULW2Ar_U,3536
+ipyaladin/elements/marker.py,sha256=a7Z8XeSynpesKZ1S58B3HS9y94572s-zgaEL5keT5bg,987
+ipyaladin/static/widget.css,sha256=vkmbNK1jm1REwczcOPc3hVqOdvJ-P9RdjGyRfgklG5E,228
+ipyaladin/static/widget.js,sha256=Kuml-mB_yy0rJgQxACRagFn5oS82C9mpOe51jo3XGMw,8461
+ipyaladin/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipyaladin/utils/_coordinate_parser.py,sha256=sqa9FYRbU0GG3CQjhPNzz_e-evICyvhjzG0tBkJrq2E,4687
+ipyaladin/utils/_region_converter.py,sha256=CEtJ9_MxrDYGDZW-62r9qXZr6be3FExQUun5ZIH9zZ4,6540
+ipyaladin/utils/exceptions.py,sha256=pfs8MY5Z0aF_SquyEWxn6E4lD1WkM5tXL6rEDH8NOzI,708
+ipyaladin-0.6.0.dist-info/METADATA,sha256=I3nC2EQSiBAs2C4e06TxKBH9U0yy9vjm6NHn68HS9Lw,7034
+ipyaladin-0.6.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ipyaladin-0.6.0.dist-info/licenses/LICENSE.md,sha256=51jmaPDZ_zPNLTv_iJ2dntTIKt8kEnCxglmx-lqQK1s,1552
+ipyaladin-0.6.0.dist-info/RECORD,,
