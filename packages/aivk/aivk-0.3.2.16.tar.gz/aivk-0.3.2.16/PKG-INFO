@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: aivk
+Version: 0.3.2.16
+Summary: Aivk is ai Virtual Kernel
+Author-email: LIghtJUNction <lightjunction.me@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.13
+Requires-Dist: click>=8.1.8
+Requires-Dist: fastapi>=0.115.12
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: python-dotenv>=1.1.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: toml>=0.10.2
+Description-Content-Type: text/markdown
+
+# AIVK 概述
+
+1. aivk is virtual kernel , designed for ai.
+2. AIVK MODULE is a module for aivk.
+3. aivk is a special AIVK MODULE . 
+
+# AIVK MODULE 规范
+
+1. AIVK MODULE is a pypi package.
+2. AIVK MODULE is based on MCP.
+3. AIVK MODULE 遵循以下命名规则:
+   - PyPI 包名: `aivk_{id}` (例如 `aivk_fs`)
+   - 导入名称: `aivk_{id}` (例如 `import aivk_fs`)
+   
