@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: VisaGen
+Version: 0.1.1
+Summary: "Package projet-4bim-groupe-4"
+Author: Adele Hamelin, Arthur Latrasse, Lucas Letourneur, Mara Raducea, Rocio Aguirre
+Author-email: adele.hamelin@insa-lyon.fr, arthur.latrasse@insa-lyon.fr, lucas.letourneur@insa-lyon.fr, mara-diana.raducea@insa-lyon.fr, rocio.aguirre-hernandez@insa-lyon.fr
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pillow
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+Dynamic: license-file
