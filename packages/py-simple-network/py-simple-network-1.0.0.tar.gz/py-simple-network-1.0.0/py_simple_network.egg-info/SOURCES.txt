@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+py_simple_network/__init__.py
+py_simple_network/client.py
+py_simple_network/server.py
+py_simple_network.egg-info/PKG-INFO
+py_simple_network.egg-info/SOURCES.txt
+py_simple_network.egg-info/dependency_links.txt
+py_simple_network.egg-info/top_level.txt
