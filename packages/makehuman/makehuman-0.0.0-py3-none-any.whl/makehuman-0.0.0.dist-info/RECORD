@@ -1,0 +1,16 @@
+makehuman/__init__.py,sha256=OsYZpPqxfMXzC3jmMlGebrXNe6eZcO2vdRYIMUAwRLU,23
+makehuman/compile_models.py,sha256=amK8IkBArnRdBGze-Ab7A1f-4Bt9-VXCU6slXSaNLeQ,3026
+makehuman/compile_proxies.py,sha256=cZh9zjGqh1jZA4-jcY04g2atvRXpcZ2chV6xH1SE2I8,3297
+makehuman/compile_targets.py,sha256=EskMdF5LptsbU0pPGI9q7ySEVbsaZaSJ7jVAIY6OcV4,3434
+makehuman/create_pylint_log.py,sha256=XMYn7cdaPMtEwnB1_-1S_PYF9z0i_TgHHMGsXiJcEzE,553
+makehuman/download_assets.py,sha256=AaB7eRFKNk-foTB8cYyenKfGvvnH8F_4LhnEF0Qd_Rw,14091
+makehuman/download_assets_git.py,sha256=fiAZ7MGE3e4-f47Z7Olah6p_3u3982Y0Rd9iM-540Cw,6543
+makehuman/makehuman.py,sha256=AmE31hEjCMFPF7OqRLHtq6-GYdS-FiQRI3B__rBkTrY,21794
+makehuman/test.py,sha256=K3xj47UOcaSEnmXRTh7KMI8kzjOpXFGBeSYTbWlVz7I,40
+makehuman/testsuite/__init__.py,sha256=3nFf5J-17gDJ_49QYi9WEZGxI2ppPb1Oiw1ujYztVto,2531
+makehuman/testsuite/blender_initTest.py,sha256=aIlasXKcXiJo0InCZP6dV-9F-NFDmTa_THt4i-BoJz8,2372
+makehuman/testsuite/test_blender.py,sha256=8tJxZKdfZR5jiUQkzZ7_SHAoQXWCTTiKp6y7asWQyHM,2348
+makehuman-0.0.0.dist-info/METADATA,sha256=WvN-ymNu7k_2vrs5LajQ8GaxSgqnj06TJQR-Kk5aj1o,150
+makehuman-0.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+makehuman-0.0.0.dist-info/top_level.txt,sha256=w01LN1-EXqeBKGxv5pSSLMs9-V_FpPkVJbPCc8AIKfc,10
+makehuman-0.0.0.dist-info/RECORD,,

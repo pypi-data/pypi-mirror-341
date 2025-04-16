@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: makehuman
+Version: 0.0.0
+Requires-Dist: numpy>=1.17.4
+Requires-Dist: PyQt5>=5.12.8
+Requires-Dist: PyOpenGL>=3.1.0
+
