@@ -1,0 +1,11 @@
+COPYING
+COPYING.LGPL
+README.md
+setup.py
+tray_manager/__init__.py
+tray_manager/tray_manager.py
+tray_manager.egg-info/PKG-INFO
+tray_manager.egg-info/SOURCES.txt
+tray_manager.egg-info/dependency_links.txt
+tray_manager.egg-info/requires.txt
+tray_manager.egg-info/top_level.txt
