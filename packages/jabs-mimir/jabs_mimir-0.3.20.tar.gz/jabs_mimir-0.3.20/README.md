@@ -1,0 +1,317 @@
+# Jabs Mimir
+
+**Jabs Mimir** is a lightweight, extensible UI micro-framework built on top of `tkinter` and `ttkbootstrap`, designed for rapid internal tool development and structured form workflows.
+
+It provides:
+
+- Reusable UI primitives with validation and tooltips
+- Support for block-based form components with dynamic variable binding
+- Integration with custom validation logic
+- Modular architecture suitable for internal tooling and small boilerplate projects
+
+---
+
+## Installation
+
+```bash
+pip install jabs-mimir
+```
+
+---
+
+## Quick Start
+
+```python
+from jabs_mimir import Mimir, DataBlockWrapper, UtilityModule
+import tkinter as tk
+import ttkbootstrap as tb
+
+class App(tb.Window):
+    def __init__(self):
+        super().__init__(title="Mimir Demo")
+        self.ui = Mimir(self)
+        self.ui.setValidatorResolver(lambda name: {"not_empty": lambda val: bool(val.strip())}.get(name))
+
+        self.ui.switchView(self.mainView)
+
+    def mainView(self, ui, *args):
+        frame = tb.Frame(self)
+        fields = [
+            {"type": "heading", "label": "Basic Info"},
+            {"label": "Name", "key": "name", "variable": tk.StringVar(), "validation": "not_empty"},
+            {"label": "Age", "key": "age", "variable": tk.IntVar()}
+        ]
+
+        meta = UtilityModule.buildBlockMeta(fields)
+        block = DataBlockWrapper(meta)
+
+        ui.renderFields(frame, fields)
+        ui.addNextButton(frame, row=len(fields)+1, command=lambda: print(UtilityModule.getBlockValues(block)))
+
+        return frame
+
+if __name__ == "__main__":
+    app = App()
+    app.mainloop()
+```
+
+---
+
+## Components
+
+### `Mimir`
+Manages UI views, tooltips, validation, field rendering, and form logic.
+
+### `DataBlockWrapper`
+A wrapper for block-level form metadata and values. Supports dot-access and `.get()`/`.set()` calls.
+
+### `UtilityModule`
+Helper methods for building field metadata, extracting values, validating blocks, etc.
+
+---
+
+## License
+
+MIT License © 2025 William Lydahl
+<details>
+<summary><strong>📘 API Documentation</strong></summary>
+
+# Module jabs_mimir.DataBlockWrapper
+
+DataBlockWrapper: A flexible wrapper for structured UI data blocks.
+
+??? example "View Source"
+        """
+
+        DataBlockWrapper: A flexible wrapper for structured UI data blocks.
+
+        """
+
+        class DataBlockWrapper:
+
+            def __init__(self, meta):
+
+                self._meta = meta
+
+            @property
+
+            def meta(self):
+
+                return self._meta
+
+            def __getattr__(self, key):
+
+                fields = self._meta.get("fields_by_key", {})
+
+                if key in fields:
+
+                    return fields[key]
+
+                raise AttributeError(f"'{type(self).__name__}' object has no attribute '{key}'")
+
+            def get(self, key):
+
+                return self._meta.get("fields_by_key", {}).get(key)
+
+            def set(self, key, value):
+
+                try:
+
+                    variable = self._meta["fields_by_key"][key]
+
+                    if hasattr(variable, "set"):
+
+                        variable.set(value)
+
+                    else:
+
+                        self._meta["fields_by_key"][key] = value
+
+                except KeyError:
+
+                    raise KeyError(f"Key '{key}' not found in DataBlockWrapper.")
+
+            def items(self):
+
+                return self._meta.get("fields_by_key", {}).items()
+
+            def values(self):
+
+                return self._meta.get("fields_by_key", {}).values()
+
+            def keys(self):
+
+                return self._meta.get("fields_by_key", {}).keys()
+
+            def __dir__(self):
+
+                return super().__dir__() + list(self._meta.get("fields_by_key", {}).keys())
+
+## Classes
+
+### DataBlockWrapper
+
+```python3
+class DataBlockWrapper(
+    meta
+)
+```
+
+??? example "View Source"
+        class DataBlockWrapper:
+
+            def __init__(self, meta):
+
+                self._meta = meta
+
+            @property
+
+            def meta(self):
+
+                return self._meta
+
+            def __getattr__(self, key):
+
+                fields = self._meta.get("fields_by_key", {})
+
+                if key in fields:
+
+                    return fields[key]
+
+                raise AttributeError(f"'{type(self).__name__}' object has no attribute '{key}'")
+
+            def get(self, key):
+
+                return self._meta.get("fields_by_key", {}).get(key)
+
+            def set(self, key, value):
+
+                try:
+
+                    variable = self._meta["fields_by_key"][key]
+
+                    if hasattr(variable, "set"):
+
+                        variable.set(value)
+
+                    else:
+
+                        self._meta["fields_by_key"][key] = value
+
+                except KeyError:
+
+                    raise KeyError(f"Key '{key}' not found in DataBlockWrapper.")
+
+            def items(self):
+
+                return self._meta.get("fields_by_key", {}).items()
+
+            def values(self):
+
+                return self._meta.get("fields_by_key", {}).values()
+
+            def keys(self):
+
+                return self._meta.get("fields_by_key", {}).keys()
+
+            def __dir__(self):
+
+                return super().__dir__() + list(self._meta.get("fields_by_key", {}).keys())
+
+------
+
+#### Instance variables
+
+```python3
+meta
+```
+
+#### Methods
+
+    
+#### get
+
+```python3
+def get(
+    self,
+    key
+)
+```
+
+??? example "View Source"
+            def get(self, key):
+
+                return self._meta.get("fields_by_key", {}).get(key)
+
+    
+#### items
+
+```python3
+def items(
+    self
+)
+```
+
+??? example "View Source"
+            def items(self):
+
+                return self._meta.get("fields_by_key", {}).items()
+
+    
+#### keys
+
+```python3
+def keys(
+    self
+)
+```
+
+??? example "View Source"
+            def keys(self):
+
+                return self._meta.get("fields_by_key", {}).keys()
+
+    
+#### set
+
+```python3
+def set(
+    self,
+    key,
+    value
+)
+```
+
+??? example "View Source"
+            def set(self, key, value):
+
+                try:
+
+                    variable = self._meta["fields_by_key"][key]
+
+                    if hasattr(variable, "set"):
+
+                        variable.set(value)
+
+                    else:
+
+                        self._meta["fields_by_key"][key] = value
+
+                except KeyError:
+
+                    raise KeyError(f"Key '{key}' not found in DataBlockWrapper.")
+
+    
+#### values
+
+```python3
+def values(
+    self
+)
+```
+
+??? example "View Source"
+            def values(self):
+
+                return self._meta.get("fields_by_key", {}).values()
+</details>
