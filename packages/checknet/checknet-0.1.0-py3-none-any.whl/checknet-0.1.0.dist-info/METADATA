@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: checknet
+Version: 0.1.0
+Summary: Check internet connectivity using sockets
+Home-page: https://github.com/rgusso/checknet
+Author: Rodrigo Gusso
+Author-email: rgusso@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+# checknet
+
+A simple Python library to check internet connectivity using a TCP socket.
+
+## Installation
+
+```bash
+pip install checknet
+
+from checknet import is_connected
+
+if is_connected():
+    print("Online")
+else:
+    print("Offline")
