@@ -1,0 +1,16 @@
+b59d7e37809a40ed1709__mypyc.cp310-win_amd64.pyd,sha256=yh3LqMdG0a0GK42vVbKqjelLZDduYm0Ho8G1Gt9hcLQ,71168
+rsv/__init__.cp310-win_amd64.pyd,sha256=SmSNIpiQuGFsG1qk8KT4iGk4kYakcgO9_8Cv7hMA6LA,10752
+rsv/__init__.py,sha256=MuY2gqZIUs8jqQjyaeiPxYEEwy5fcVtT1RdDDP6IcKY,292
+rsv/decoder.cp310-win_amd64.pyd,sha256=MBGDWBTbDcY1ghPvq8KaNAuAcIcirx6iTBO97QllZYU,10752
+rsv/decoder.py,sha256=UkwZ5DT98t9KSf6ntUanPIKIUZ3sQEXtwxiB6dNjfGw,1762
+rsv/encoder.cp310-win_amd64.pyd,sha256=urECg7mQiqec6Pq2nebw6Gv5ZfPolVOgt4c9RBAQPOI,10752
+rsv/encoder.py,sha256=yi-tJDfHtW9-NGqCWEztE18PHTKiF6AfianTyL9A8uE,654
+rsv/rsv.cp310-win_amd64.pyd,sha256=NrRs1FsQqAoPm0bpY7oZpkJGwwOnhycCKiCdIz2XaMg,10752
+rsv/rsv.py,sha256=V9xds-jxAeOv6fRqsWdidKEM7Gsz0T4nk7VhF5bqjCo,1537
+rsv-1.5.3.dist-info/licenses/LICENSE,sha256=coDhUvAKmxMKo4gZti_Q8QtgQAql5aj7a4_yx9PKvb0,1085
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_main.py,sha256=iJ_aUYMZn2qXJU5lJocSXvPQLl2-P9HxyzcTu3ldMt0,813
+rsv-1.5.3.dist-info/METADATA,sha256=yqxpVjiMGnWK3HVnaCqI1JwXOw9brWZT0r-OygTq3bE,2498
+rsv-1.5.3.dist-info/WHEEL,sha256=xtqxYTqke_XhXNhgwydvlroVayIzBVjJDMBpIgge99s,101
+rsv-1.5.3.dist-info/top_level.txt,sha256=4zf1Q0Nu2IhSQ0_GHnoIax1eO8Bm-agZvim_7eXQb7E,38
+rsv-1.5.3.dist-info/RECORD,,
