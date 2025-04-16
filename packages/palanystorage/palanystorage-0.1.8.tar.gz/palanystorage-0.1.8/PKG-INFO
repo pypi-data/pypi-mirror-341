@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: palanystorage
+Version: 0.1.8
+Summary: A storage lib
+Author-email: Tiny Twist <tiny.mahua@gmail.com>
+Maintainer-email: Tiny Twist <tiny.mahua@gmail.com>
+Requires-Python: >= 3.6
+License-File: LICENSE.txt
+Requires-Dist: oss2==2.17.0
+Requires-Dist: qiniu==7.10.0
+Requires-Dist: cos-python-sdk-v5==1.9.24
+Requires-Dist: loguru==0.6.0
+Requires-Dist: typer==0.9.0
+Requires-Dist: anyconfig==0.13.0
+Requires-Dist: dataclasses==0.8 ; extra == "pylte36"
+Project-URL: Home, https://github.com/bambipig/palanystorage
+Provides-Extra: pylte36
