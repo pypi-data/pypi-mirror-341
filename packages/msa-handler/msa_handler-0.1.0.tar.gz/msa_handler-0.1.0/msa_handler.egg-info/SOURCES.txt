@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+msa_handler/__init__.py
+msa_handler/msa.py
+msa_handler.egg-info/PKG-INFO
+msa_handler.egg-info/SOURCES.txt
+msa_handler.egg-info/dependency_links.txt
+msa_handler.egg-info/requires.txt
+msa_handler.egg-info/top_level.txt
