@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+ksiterate/src/ksiterate.py
+ksiterate/src/ksiterate.egg-info/PKG-INFO
+ksiterate/src/ksiterate.egg-info/SOURCES.txt
+ksiterate/src/ksiterate.egg-info/dependency_links.txt
+ksiterate/src/ksiterate.egg-info/top_level.txt
