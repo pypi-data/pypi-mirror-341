@@ -1,0 +1,12 @@
+portage-stubs/__init__.pyi,sha256=d0RoL-ExlTHOKirxzgWnbP2CBSSo3S1DhRgucrxb6Es,443
+portage-stubs/dbapi/__init__.pyi,sha256=FDfXXS1L8aRE5nSSaMhLZOwjEMlSTcTa0CGHqmM4unk,1281
+portage-stubs/dbapi/porttree.pyi,sha256=w-xzCs9InkkOI17bkRZ5YUHUZHC6CrX8rm-6dVdPLdM,336
+portage-stubs/package/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+portage-stubs/package/ebuild/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+portage-stubs/package/ebuild/config.pyi,sha256=zWQkn0rXDWoo-7XwQhYAxlH8nrtBeuRnTN02calSnok,916
+portage-stubs/package/ebuild/doebuild.pyi,sha256=zbKhRzzZGFdTP5x47WjZfmwMhDV1x45r9W-naYtolWc,911
+portage-stubs/versions.pyi,sha256=GtLD5nmuFYM3oTYGxZ_uHQ0S0C0lSiXPataRMjNd6ts,961
+portage_stubs-0.0.4.dist-info/LICENSE.txt,sha256=H-4kxDM5V_hlShN8VAdyIIE3wGmrAoZ-SAqcAeqImM0,1088
+portage_stubs-0.0.4.dist-info/METADATA,sha256=6VCUtB9IDY9AM_BvQSwu5inJZdHEDxJqS-6AHnK_C8g,2000
+portage_stubs-0.0.4.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+portage_stubs-0.0.4.dist-info/RECORD,,
