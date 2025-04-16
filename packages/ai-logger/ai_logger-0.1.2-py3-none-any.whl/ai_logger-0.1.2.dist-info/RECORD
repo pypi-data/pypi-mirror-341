@@ -1,0 +1,16 @@
+ai_logger/__init__.py,sha256=qZTdwY5FkggMn4fse0tozkAXkoEQasY-TPx7JWblNkI,698
+ai_logger/src/__init__.py,sha256=m1AZq7P9vvlGHh9T_4jhr7sgz4ooQLKUh9KzxiogQnQ,717
+ai_logger/src/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ai_logger/src/example.py,sha256=FKAbQEcxWaorXryWY2jf0zRvpb0TrEhsIt2W1Q8nkgk,7133
+ai_logger/src/user_interface/__init__.py,sha256=YIaxt4bdDmCT05Z4dWwVHh5czfOraTzYnnV-DWPhY-w,45
+ai_logger/src/user_interface/uiux.py,sha256=1mp3Pt9mPdfWxybXH9hxZnUSkZqeD_SoUcZXuk58-QI,15717
+ai_logger/src/utils/__init__.py,sha256=L4rKuhQ4xh9fDm3gfYppXuoB3EDH5KPD6H-Vp0dkW7E,571
+ai_logger/src/utils/ai_logger.json,sha256=gbc13MQzRDv7wC-ErOA5StwyKo1YzdQgm1tt93w2OWw,326
+ai_logger/src/utils/ai_logger.py,sha256=NAq67Hj41B3Pxb4rXcVrxIK9MvSZ72AARUIaBT96LWU,23047
+ai_logger/src/utils/config.py,sha256=ZeBnmCKyUlG6J0cmsGac901Qi21CzB8ctezM7entlP8,3983
+ai_logger/src/utils/logger_tools.py,sha256=Hl5Y3wu6bOtNdxiykQrEtqKJZt455voY8_ll6qQwbVM,4142
+ai_logger/src/utils/models.py,sha256=Ksky2reaiQv9G_NznhSHUfiuWsMYbfLEqkwa38JZP6w,1897
+ai_logger-0.1.2.dist-info/METADATA,sha256=5Yac_4W0pp7RvZhX80lTJq8ix0zjyPKEPGrRicuUvGI,5795
+ai_logger-0.1.2.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+ai_logger-0.1.2.dist-info/entry_points.txt,sha256=MjbhQYyCO2AycDcRZnO4ksE9AEJfZsznPpoQq01qC40,62
+ai_logger-0.1.2.dist-info/RECORD,,

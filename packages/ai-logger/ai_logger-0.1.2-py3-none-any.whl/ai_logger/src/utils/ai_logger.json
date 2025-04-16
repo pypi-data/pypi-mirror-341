@@ -1,0 +1,18 @@
+{
+  "verbose": true,
+  "database": {
+    "use_db": true,
+    "dbname": "ai_logger_db",
+    "user": "postgres",
+    "password": "",
+    "host": "localhost",
+    "port": "5432",
+    "table_name": "ai_logs"
+  },
+  "logging": {
+    "level": "INFO",
+    "log_to_file": true,
+    "log_dir": "logs",
+    "log_to_console": true
+  }
+}
