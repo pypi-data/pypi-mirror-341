@@ -1,0 +1,6 @@
+setup.py
+ir_robots/__init__.py
+ir_robots.egg-info/PKG-INFO
+ir_robots.egg-info/SOURCES.txt
+ir_robots.egg-info/dependency_links.txt
+ir_robots.egg-info/top_level.txt
