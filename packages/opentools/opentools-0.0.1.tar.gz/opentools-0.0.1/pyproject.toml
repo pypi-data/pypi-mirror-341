@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opentools"
+version = "0.0.1"
+description = "Placeholder for opentools namespace"
+readme = "README.md" # Optional: Add if you plan to have a README
+license = { text = "MIT License" } # Or choose another license
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+# Add other metadata as needed, like author, urls, etc.
+# [project.urls]
+# "Homepage" = "https://github.com/yourusername/opentools"
