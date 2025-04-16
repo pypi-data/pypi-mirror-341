@@ -1,0 +1,3 @@
+[console_scripts]
+mmla = openmmla.cli:main
+openmmla = openmmla.cli:main
