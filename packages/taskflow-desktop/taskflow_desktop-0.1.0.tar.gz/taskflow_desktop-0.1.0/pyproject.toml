@@ -1,0 +1,97 @@
+[build-system]
+requires = [
+    "setuptools>=61.0.0",
+    "wheel>=0.37.0"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taskflow-desktop"
+version = "0.1.0"
+description = "A comprehensive task management application"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Erton Miranda", email = "erton.miranda@quatto.com.br"}
+]
+
+dependencies = [
+    "PyQt6>=6.4.0",
+    "SQLAlchemy>=2.0.0",
+    "pydantic>=2.0.0",
+    "cryptography>=39.0.0",
+    "click>=8.1.0",
+    "python-jose>=3.3.0",
+    "passlib>=1.7.4",
+    "PyYAML>=6.0",
+    "psutil>=5.9.0",
+    "prometheus-client>=0.16.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.3.0",
+    "pytest-cov>=4.0.0",
+    "mypy>=1.3.0",
+    "black>=23.3.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+    "pylint>=2.17.0",
+    "bandit>=1.7.0",
+    "safety>=2.3.0"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["taskflow"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --doctest-modules --cov=src --cov-report=xml --cov-report=html"
+testpaths = ["tests"]
+markers = [
+    "integration: marks integration tests",
+    "slow: marks tests that take a long time to run"
+]
+
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "tests/*",
+    "setup.py"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+    "pass"
+]
+fail_under = 80
+show_missing = true
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line-length = 88
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+check_untyped_defs = true
+disallow_untyped_defs = true
+strict_optional = true 

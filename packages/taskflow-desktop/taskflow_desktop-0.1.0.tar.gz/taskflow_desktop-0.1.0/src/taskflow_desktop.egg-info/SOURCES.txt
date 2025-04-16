@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/taskflow/__init__.py
+src/taskflow/__main__.py
+src/taskflow/config.py
+src/taskflow_desktop.egg-info/PKG-INFO
+src/taskflow_desktop.egg-info/SOURCES.txt
+src/taskflow_desktop.egg-info/dependency_links.txt
+src/taskflow_desktop.egg-info/requires.txt
+src/taskflow_desktop.egg-info/top_level.txt
+tests/test_config.py
+tests/test_storage.py
