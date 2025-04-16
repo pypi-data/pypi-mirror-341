@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: stpp_tplot
+Version: 0.1.4
+Summary: Simple time series plotting library based on pyspedas and matplotlib.
+Home-page: https://github.com/JackKTachi/stpp_tplot
+Author: Kohki Tachi
+Author-email: ktachiresearch@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: pyspedas
+Requires-Dist: pytz
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# stpp_tplot
+
+Simple time series plotting library based on pyspedas and matplotlib.
+
+## Overview
+
+`stpp_tplot` is a Python library that provides convenient functions for plotting time series data, especially for space physics data processed by `pyspedas`. It simplifies the creation of publication-quality plots with features like:
+
+* Multiple panel plots with shared x-axis
+* Spectrogram plots with colorbar
+* Orbit parameter labels panel
+* Customizable plot options
+
+## Installation
+
+```bash
+pip install stpp_tplot
