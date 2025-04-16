@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/md_convertor/__init__.py
+src/md_convertor/__main__.py
+src/md_convertor/convertor.py
+src/md_convertor.egg-info/PKG-INFO
+src/md_convertor.egg-info/SOURCES.txt
+src/md_convertor.egg-info/dependency_links.txt
+src/md_convertor.egg-info/entry_points.txt
+src/md_convertor.egg-info/requires.txt
+src/md_convertor.egg-info/top_level.txt
+tests/test_convertor.py

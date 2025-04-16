@@ -1,0 +1,59 @@
+[build-system]
+requires      = ["setuptools>=65.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "md_convertor"
+version = "2.0.0"
+description = "Convert markdown file to html or pdf format"
+readme = "README.md"
+authors = [{ name = "Pengfei", email = "liu.pengfei@hotmail.fr" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["markdown", "html", "pdf", "convertor"]
+dependencies = ["weasyprint", "markdown","click","pygments" ]
+requires-python = ">=3.9"
+
+    [project.optional-dependencies]
+    build = ["build", "twine"]
+    dev = ["black", "bumpver", "isort", "mypy", "pytest"]
+
+    [project.scripts]
+    md_convertor = "md_convertor.__main__:main"
+
+    [project.urls]
+    repository    = "https://github.com/pengfei99/MarkdownConvertor"
+    documentation = "https://github.com/pengfei99/MarkdownConvertor#"
+
+
+[tool.bumpver]
+current_version = "2.0.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message  = "bump version {old_version} -> {new_version}"
+commit          = true
+tag             = true
+push            = false
+
+    [tool.bumpver.file_patterns]
+    "pyproject.toml" = [
+        'current_version = "{version}"',
+        'version = "{version}"',
+    ]
+    "src/md_convertor/__init__.py" = ["{version}"]
+
+[tool.isort]
+profile                   = "black"
+import_heading_stdlib     = "Standard library imports"
+import_heading_thirdparty = "Third party imports"
+import_heading_firstparty = "Reader imports"
+
+[tool.mypy]
+strict = true
+
+    [[tool.mypy.overrides]]
+    module                 = "md_convertor"
+    ignore_missing_imports = true

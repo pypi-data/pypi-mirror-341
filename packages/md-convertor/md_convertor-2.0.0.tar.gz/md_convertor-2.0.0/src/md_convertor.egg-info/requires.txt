@@ -1,0 +1,15 @@
+weasyprint
+markdown
+click
+pygments
+
+[build]
+build
+twine
+
+[dev]
+black
+bumpver
+isort
+mypy
+pytest
