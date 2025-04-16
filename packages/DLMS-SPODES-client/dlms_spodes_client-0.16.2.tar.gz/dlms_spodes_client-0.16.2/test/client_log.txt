@@ -1,0 +1,1189 @@
+#common: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - Start <Logger DLMSClient.src.DLMS_SPODES_client.logger (DEBUG)>
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 00 02 00 ff 02 00 f4 3a 7e
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 12 21 02 21 74 9d fc e6 e7 00 c4 01 c1 01 04 cc f6 7e
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 76 6e c3 e6 e6 00 c0 01 c1 00 01 00 00 60 01 01 ff 02 00 32 bc 7e
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 18 21 02 21 96 29 74 e6 e7 00 c4 01 c1 00 09 05 4d 32 4d 5f 31 af 9f 7e
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 98 1e cd e6 e6 00 c0 01 c1 00 01 00 00 00 02 01 ff 02 00 4f 26 7e
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 12 21 02 21 b8 fd f0 e6 e7 00 c4 01 c1 01 04 cc f6 7e
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 ba 0e cf e6 e6 00 c0 01 c1 00 01 00 00 60 01 02 ff 02 00 ff 99 7e
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 19 21 02 21 da 05 f7 e6 e7 00 c4 01 c1 00 09 06 31 2e 33 2e 33 30 c1 1e 7e
+public: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - find collection in <DLMSAdapter.xml_.Xml50 object at 0x000001961B7AECC0>
+000000001232: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.02 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.03 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.04 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.05 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.06 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.07 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.08 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:39.11 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close communication channel: COM5,9600
+#common: 16.04 09:40.26 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - Start <Logger DLMSClient.src.DLMS_SPODES_client.logger (DEBUG)>
+public: 16.04 09:40.26 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+public: 16.04 09:40.26 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+public: 16.04 09:40.26 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+public: 16.04 09:40.26 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+public: 16.04 09:40.26 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+public: 16.04 09:40.26 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+public: 16.04 09:40.26 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+public: 16.04 09:40.26 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+public: 16.04 09:40.26 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+public: 16.04 09:40.26 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+public: 16.04 09:40.26 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+public: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+public: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 00 02 00 ff 02 00 f4 3a 7e
+public: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 12 21 02 21 74 9d fc e6 e7 00 c4 01 c1 01 04 cc f6 7e
+public: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 76 6e c3 e6 e6 00 c0 01 c1 00 01 00 00 60 01 01 ff 02 00 32 bc 7e
+public: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 18 21 02 21 96 29 74 e6 e7 00 c4 01 c1 00 09 05 4d 32 4d 5f 31 af 9f 7e
+public: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 98 1e cd e6 e6 00 c0 01 c1 00 01 00 00 00 02 01 ff 02 00 4f 26 7e
+public: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 12 21 02 21 b8 fd f0 e6 e7 00 c4 01 c1 01 04 cc f6 7e
+public: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 ba 0e cf e6 e6 00 c0 01 c1 00 01 00 00 60 01 02 ff 02 00 ff 99 7e
+public: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 19 21 02 21 da 05 f7 e6 e7 00 c4 01 c1 00 09 06 31 2e 33 2e 33 30 c1 1e 7e
+public: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - find collection in <DLMSAdapter.xml_.Xml50 object at 0x00000217BF92EBA0>
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:40.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:40.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:40.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:40.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:40.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:40.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:40.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:40.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:40.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:40.28 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:40.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:40.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:40.28 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close communication channel: COM5,9600
+#common: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - Start <Logger DLMSClient.src.DLMS_SPODES_client.logger (DEBUG)>
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 00 02 00 ff 02 00 f4 3a 7e
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 12 21 02 21 74 9d fc e6 e7 00 c4 01 c1 01 04 cc f6 7e
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 76 6e c3 e6 e6 00 c0 01 c1 00 01 00 00 60 01 01 ff 02 00 32 bc 7e
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 18 21 02 21 96 29 74 e6 e7 00 c4 01 c1 00 09 05 4d 32 4d 5f 31 af 9f 7e
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 98 1e cd e6 e6 00 c0 01 c1 00 01 00 00 00 02 01 ff 02 00 4f 26 7e
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 12 21 02 21 b8 fd f0 e6 e7 00 c4 01 c1 01 04 cc f6 7e
+public: 16.04 09:47.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 ba 0e cf e6 e6 00 c0 01 c1 00 01 00 00 60 01 02 ff 02 00 ff 99 7e
+public: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 19 21 02 21 da 05 f7 e6 e7 00 c4 01 c1 00 09 06 31 2e 33 2e 33 30 c1 1e 7e
+public: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - find collection in <DLMSAdapter.xml_.Xml50 object at 0x0000025AFA2E2C60>
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:47.48 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close communication channel: COM5,9600
+#common: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - Start <Logger DLMSClient.src.DLMS_SPODES_client.logger (DEBUG)>
+public: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+public: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+public: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+public: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+public: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+public: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+public: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+public: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+public: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+public: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+public: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+public: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+public: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 00 02 00 ff 02 00 f4 3a 7e
+public: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 12 21 02 21 74 9d fc e6 e7 00 c4 01 c1 01 04 cc f6 7e
+public: 16.04 09:58.46 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 76 6e c3 e6 e6 00 c0 01 c1 00 01 00 00 60 01 01 ff 02 00 32 bc 7e
+public: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 18 21 02 21 96 29 74 e6 e7 00 c4 01 c1 00 09 05 4d 32 4d 5f 31 af 9f 7e
+public: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 98 1e cd e6 e6 00 c0 01 c1 00 01 00 00 00 02 01 ff 02 00 4f 26 7e
+public: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 12 21 02 21 b8 fd f0 e6 e7 00 c4 01 c1 01 04 cc f6 7e
+public: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 ba 0e cf e6 e6 00 c0 01 c1 00 01 00 00 60 01 02 ff 02 00 ff 99 7e
+public: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 19 21 02 21 da 05 f7 e6 e7 00 c4 01 c1 00 09 06 31 2e 33 2e 33 30 c1 1e 7e
+public: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - find collection in <DLMSAdapter.xml_.Xml50 object at 0x000001A775832DB0>
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 09:58.47 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close communication channel: COM5,9600
+#common: 16.04 10:19.09 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - Start <Logger DLMSClient.src.DLMS_SPODES_client.logger (DEBUG)>
+public: 16.04 10:19.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+public: 16.04 10:19.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+public: 16.04 10:19.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+public: 16.04 10:19.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+public: 16.04 10:19.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+public: 16.04 10:19.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+public: 16.04 10:19.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+public: 16.04 10:19.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+public: 16.04 10:19.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+public: 16.04 10:19.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+public: 16.04 10:19.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+public: 16.04 10:19.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+public: 16.04 10:19.09 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 00 02 00 ff 02 00 f4 3a 7e
+public: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 12 21 02 21 74 9d fc e6 e7 00 c4 01 c1 01 04 cc f6 7e
+public: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 76 6e c3 e6 e6 00 c0 01 c1 00 01 00 00 60 01 01 ff 02 00 32 bc 7e
+public: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 18 21 02 21 96 29 74 e6 e7 00 c4 01 c1 00 09 05 4d 32 4d 5f 31 af 9f 7e
+public: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 98 1e cd e6 e6 00 c0 01 c1 00 01 00 00 00 02 01 ff 02 00 4f 26 7e
+public: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 12 21 02 21 b8 fd f0 e6 e7 00 c4 01 c1 01 04 cc f6 7e
+public: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 ba 0e cf e6 e6 00 c0 01 c1 00 01 00 00 60 01 02 ff 02 00 ff 99 7e
+public: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 19 21 02 21 da 05 f7 e6 e7 00 c4 01 c1 00 09 06 31 2e 33 2e 33 30 c1 1e 7e
+public: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - find collection in <DLMSAdapter.xml_.Xml50 object at 0x000002665B6F71D0>
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:19.10 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close communication channel: COM5,9600
+#common: 16.04 10:19.24 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - Start <Logger DLMSClient.src.DLMS_SPODES_client.logger (DEBUG)>
+#common: 16.04 10:20.28 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - Start <Logger DLMSClient.src.DLMS_SPODES_client.logger (DEBUG)>
+#common: 16.04 10:20.59 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - Start <Logger DLMSClient.src.DLMS_SPODES_client.logger (DEBUG)>
+public: 16.04 10:20.59 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+public: 16.04 10:20.59 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+public: 16.04 10:20.59 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+public: 16.04 10:20.59 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+public: 16.04 10:20.59 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+public: 16.04 10:20.59 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+public: 16.04 10:20.59 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+public: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+public: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+public: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+public: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+public: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+public: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 00 02 00 ff 02 00 f4 3a 7e
+public: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 12 21 02 21 74 9d fc e6 e7 00 c4 01 c1 01 04 cc f6 7e
+public: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 76 6e c3 e6 e6 00 c0 01 c1 00 01 00 00 60 01 01 ff 02 00 32 bc 7e
+public: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 18 21 02 21 96 29 74 e6 e7 00 c4 01 c1 00 09 05 4d 32 4d 5f 31 af 9f 7e
+public: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 98 1e cd e6 e6 00 c0 01 c1 00 01 00 00 00 02 01 ff 02 00 4f 26 7e
+public: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 12 21 02 21 b8 fd f0 e6 e7 00 c4 01 c1 01 04 cc f6 7e
+public: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 ba 0e cf e6 e6 00 c0 01 c1 00 01 00 00 60 01 02 ff 02 00 ff 99 7e
+public: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 19 21 02 21 da 05 f7 e6 e7 00 c4 01 c1 00 09 06 31 2e 33 2e 33 30 c1 1e 7e
+public: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - find collection in <DLMSAdapter.xml_.Xml50 object at 0x0000020EE60B6FC0>
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:21.00 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:21.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:21.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:21.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:21.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:21.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:21.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:21.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:21.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:21.01 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:21.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:21.01 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:21.01 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close communication channel: COM5,9600
+#common: 16.04 10:22.27 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - Start <Logger DLMSClient.src.DLMS_SPODES_client.logger (DEBUG)>
+public: 16.04 10:22.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+public: 16.04 10:22.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+public: 16.04 10:22.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+public: 16.04 10:22.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+public: 16.04 10:22.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+public: 16.04 10:22.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+public: 16.04 10:22.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+public: 16.04 10:22.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+public: 16.04 10:22.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+public: 16.04 10:22.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+public: 16.04 10:22.27 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+public: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+public: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 00 02 00 ff 02 00 f4 3a 7e
+public: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 12 21 02 21 74 9d fc e6 e7 00 c4 01 c1 01 04 cc f6 7e
+public: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 76 6e c3 e6 e6 00 c0 01 c1 00 01 00 00 60 01 01 ff 02 00 32 bc 7e
+public: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 18 21 02 21 96 29 74 e6 e7 00 c4 01 c1 00 09 05 4d 32 4d 5f 31 af 9f 7e
+public: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 98 1e cd e6 e6 00 c0 01 c1 00 01 00 00 00 02 01 ff 02 00 4f 26 7e
+public: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 12 21 02 21 b8 fd f0 e6 e7 00 c4 01 c1 01 04 cc f6 7e
+public: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 ba 0e cf e6 e6 00 c0 01 c1 00 01 00 00 60 01 02 ff 02 00 ff 99 7e
+public: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 19 21 02 21 da 05 f7 e6 e7 00 c4 01 c1 00 09 06 31 2e 33 2e 33 30 c1 1e 7e
+public: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - find collection in <DLMSAdapter.xml_.Xml50 object at 0x00000222D0123170>
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.28 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.29 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.30 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.31 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.32 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.33 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.34 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.35 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.36 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Acquire
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Open port communication channel: COM5,9600
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - c.SA=Address(upper_address=16, lower_address=None) c.DA=Address(upper_address=1, lower_address=16)
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 93 05 d1 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - opened media use in other session
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - negotiation setup: NEGOTIATION: 128->[info_size]->128 1->[window]->1
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 2c 02 21 21 10 17 2a e6 e6 00 60 1d a1 09 06 07 60 85 74 05 08 01 01 be 10 04 0e 01 00 00 00 06 5f 1f 04 00 7f ff ff ff ff e2 8f 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 38 21 02 21 30 84 d4 e6 e7 00 61 29 a1 09 06 07 60 85 74 05 08 01 01 a2 03 02 01 00 a3 05 a1 03 02 01 00 be 10 04 0e 08 00 06 5f 1f 04 00 00 10 10 04 00 00 07 36 e3 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - SET CONFORMANCE: 000000000001000000010000
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - Authentication success
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 32 4e c7 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 52 dd c4 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 1a 02 21 21 54 7e c1 e6 e6 00 c0 01 c1 00 01 00 00 2a 00 00 ff 02 00 12 80 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 74 e9 80 e6 e7 00 c4 01 c1 00 09 0c 30 30 30 30 30 30 30 30 31 32 33 32 2d 9e 7e
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - dummy task
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close
+000000001232: 16.04 10:22.37 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - TX: 7e a0 08 02 21 21 53 09 17 7e
+000000001232: 16.04 10:22.38 - DLMSClient.src.DLMS_SPODES_client.logger - INFO - RX: 7e a0 1f 21 02 21 73 56 f4 81 80 12 05 01 80 06 01 80 07 04 00 00 00 01 08 04 00 00 00 01 53 3b 7e
+000000001232: 16.04 10:22.38 - DLMSClient.src.DLMS_SPODES_client.logger - DEBUG - close communication channel: COM5,9600
