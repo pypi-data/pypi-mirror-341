@@ -1,0 +1,12 @@
+sindi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sindi/comparator.py,sha256=hbP4KZSfItyFck3os5RftRcX8S7jWzodr4yx71VGfGg,21004
+sindi/config.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sindi/diversify_predicates.py,sha256=FvEz8T2guZDjBp--BtwWIIwl39IJthgkE_4xeMuSY_k,2870
+sindi/parser.py,sha256=zhpt6YfQZk7rHJqw-vsMhZX4CfPFs_vSr5f7TU-jS3A,6998
+sindi/simplifier.py,sha256=PykWWeFVaqk9wmdyya9sWWJ4_mJ6VLtleFL2i6Xq05E,11321
+sindi/tokenizer.py,sha256=m5gdqC1TZpjOLyNraeSNrdWUEvVpIMaiKnxDuRy924k,3729
+sindi/utils.py,sha256=tjZBwa8O4RvYy-gIdEduHH1rTXkdfl0kiFMAQXU8hPY,121
+sindi-0.1.14.dist-info/METADATA,sha256=HFA3WajxKAGg3bj_X7w4tZdd6mbNKjB_tMSvI_pZEeM,2391
+sindi-0.1.14.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+sindi-0.1.14.dist-info/top_level.txt,sha256=z-p4WfsJtWTQAH0QPX-ora3tqbHi7-1rWH_EuekJt4g,6
+sindi-0.1.14.dist-info/RECORD,,
