@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+idf2yaml/__init__.py
+idf2yaml/core.py
+idf2yaml.egg-info/PKG-INFO
+idf2yaml.egg-info/SOURCES.txt
+idf2yaml.egg-info/dependency_links.txt
+idf2yaml.egg-info/requires.txt
+idf2yaml.egg-info/top_level.txt
+tests/test_round_trip.py
+tests/test_round_trip_fast.py
