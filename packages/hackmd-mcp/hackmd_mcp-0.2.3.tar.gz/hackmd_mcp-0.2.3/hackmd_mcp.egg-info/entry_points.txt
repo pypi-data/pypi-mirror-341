@@ -1,0 +1,2 @@
+[console_scripts]
+hackmd-mcp = hackmd_mcp.hackmd_mcp_server:main
