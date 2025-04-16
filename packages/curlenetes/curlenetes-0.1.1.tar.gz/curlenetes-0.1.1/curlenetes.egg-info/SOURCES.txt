@@ -1,0 +1,9 @@
+LICENSE
+README.md
+curlenetes.py
+pyproject.toml
+curlenetes.egg-info/PKG-INFO
+curlenetes.egg-info/SOURCES.txt
+curlenetes.egg-info/dependency_links.txt
+curlenetes.egg-info/entry_points.txt
+curlenetes.egg-info/top_level.txt
