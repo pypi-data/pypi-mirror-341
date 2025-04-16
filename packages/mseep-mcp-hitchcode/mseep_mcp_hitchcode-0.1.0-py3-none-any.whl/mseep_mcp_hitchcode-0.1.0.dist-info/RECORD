@@ -1,0 +1,12 @@
+mcp_hitchcode/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mcp_hitchcode/__main__.py,sha256=WAhr-TR-SUgzU8lRacTT70n91sBZgxPy6yff-Zyeu3E,55
+mcp_hitchcode/server.py,sha256=CShB6-a-U2DcIwflPtz07mGLfSmVhqutz88HXTIjNwg,33061
+mcp_hitchcode/templates/__init__.py,sha256=p_3p22zv8Ood2EEdmHnwFHT-kMYaaKzzpvhYuz5lYuc,875
+mcp_hitchcode/templates/docker_file_loader.py,sha256=ltkjOIizO0lR8fMPcf22EuC_7s1f-ItxKoPaVxn6wx8,3051
+mcp_hitchcode/templates/template_loader.py,sha256=frTPOLRzOxENI4W2ZTK2R23JhMRuSKM80o_OP3ahIgU,10807
+mseep_mcp_hitchcode-0.1.0.dist-info/licenses/LICENSE,sha256=4EOC4MLYWGvpDWGKpF4tUijIR6tLf71qm9LDlaWorDQ,1070
+mseep_mcp_hitchcode-0.1.0.dist-info/METADATA,sha256=BPqXgGLKc3La6s-BpXRue8dbM0iOb-w0uZ8YlChb61A,5186
+mseep_mcp_hitchcode-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mseep_mcp_hitchcode-0.1.0.dist-info/entry_points.txt,sha256=KVkOhe9l2MDw-_1I4CRrGVbdfeBm7XgK6aTbqVq2srI,60
+mseep_mcp_hitchcode-0.1.0.dist-info/top_level.txt,sha256=THTy0z3xFVbrI8b717q31KqBkHyUE3Cpyfan4aWLBZQ,14
+mseep_mcp_hitchcode-0.1.0.dist-info/RECORD,,
