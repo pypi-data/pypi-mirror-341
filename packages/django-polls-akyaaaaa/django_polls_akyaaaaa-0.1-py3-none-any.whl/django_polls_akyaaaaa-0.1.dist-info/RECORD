@@ -1,0 +1,14 @@
+django_polls_akyaaaaa-0.1.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+polls/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polls/admin.py,sha256=-pi7SJwC_oDNJBnSCwcuWtik5o5Id6cPZKvqAyz8hFQ,1134
+polls/apps.py,sha256=HCXsDBQXv0QW4nLKW1x4NpLq9yUqqxIIns9eEc7Ex24,240
+polls/models.py,sha256=KGJs1U8z5PgFbrcr8J8ZK5O8LY817pAUgB9vs3ZSfqQ,972
+polls/tests.py,sha256=yoQGXcCMGd46Q7kmkmw8PNLND27fMfZfx3qmBGFgRiU,1270
+polls/urls.py,sha256=JuPNpbtWfSB_at5LyxAIaMAevsJwf6IlaKVfnLFNyzs,1418
+polls/views.py,sha256=_Ua-dIePqsyilknDDgURgeH3t6APfN7Uo60j7BaYE3U,3881
+polls/migrations/0001_initial.py,sha256=Lw1E7yRGQW81742nJ7qSXngkF3weI2hsQN7WR4GBpK0,1609
+polls/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_polls_akyaaaaa-0.1.dist-info/METADATA,sha256=QRxYwfWCmS3rz-3xTE1w8T6e8RkGGEY6n2gwXiXDUXo,1653
+django_polls_akyaaaaa-0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_polls_akyaaaaa-0.1.dist-info/top_level.txt,sha256=nFZT9qJU0JMR4qxKFac47WtiOKmzCgOO6US2EbPCAKU,6
+django_polls_akyaaaaa-0.1.dist-info/RECORD,,
