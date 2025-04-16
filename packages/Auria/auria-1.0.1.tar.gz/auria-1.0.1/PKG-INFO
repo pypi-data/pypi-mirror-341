@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: Auria
+Version: 1.0.1
+Summary: Package bringing the Auria API to Python.
+Author-email: Staheos <aloealez@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/Staheos/pyAuria
+Project-URL: Issues, https://github.com/Staheos/pyAuria/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
