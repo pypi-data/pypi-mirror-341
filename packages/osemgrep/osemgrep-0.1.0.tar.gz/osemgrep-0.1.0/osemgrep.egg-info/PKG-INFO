@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: osemgrep
+Version: 0.1.0
+Summary: This package is parked by the Semgrep team. See https://github.com/returntocorp/semgrep for more information.
+Home-page: https://github.com/returntocorp/semgrep
+Author: the Semgrep team
+Classifier: Development Status :: 7 - Inactive
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
+
+This package is parked by the Semgrep team. See https://github.com/returntocorp/semgrep for more information.

@@ -1,0 +1,6 @@
+MANIFEST.in
+setup.py
+osemgrep.egg-info/PKG-INFO
+osemgrep.egg-info/SOURCES.txt
+osemgrep.egg-info/dependency_links.txt
+osemgrep.egg-info/top_level.txt
