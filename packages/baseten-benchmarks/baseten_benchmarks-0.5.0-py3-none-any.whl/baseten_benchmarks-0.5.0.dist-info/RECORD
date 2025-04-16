@@ -1,0 +1,16 @@
+baseten_benchmarks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+baseten_benchmarks/benchmark_executor.py,sha256=oGwMqapFF1qHi3VxNv6sLdtnTyv3CcqOL-Tu-cxyDP8,7609
+baseten_benchmarks/data/frank.txt,sha256=3B24zEN3FQhys8pLXI5_qXSBJQIKUIy_0QAfML80cgc,441157
+baseten_benchmarks/generic_rest_provider.py,sha256=1oaLCfT1-sfGyC_f0_DT_FkPDbLk--UIbuMoKy8F0LY,5065
+baseten_benchmarks/input_handler.py,sha256=bMVgNoRDuP1P4evnO-c3WDq5O3FxbozUwEZaVsjNHBc,8234
+baseten_benchmarks/llm_benchmark.py,sha256=W9EpFlwySjvPEgkZI8REMMGUh2-kXsz-e8gQOkHluBc,901
+baseten_benchmarks/llm_provider.py,sha256=nyCRCCaQI99RAmDIuDqBqeBKLvxDbvudbG5bNR1VT2c,263
+baseten_benchmarks/metrics_calculator.py,sha256=RwVUQDJ94XOgp48gLPaHNTHavA8QBsYxtQ42BRNVe7Y,4836
+baseten_benchmarks/parse_args.py,sha256=bMcRRDHMomNNrC2991GIKQvsJbU3zrL0c2sHCyumfxg,7335
+baseten_benchmarks/request_handler.py,sha256=x82GN7mpcF9_8MHfM8agtz0paEqyDt-m9EohanptDts,8272
+baseten_benchmarks/request_types.py,sha256=-t7fKElc-U8aZU21U5eN1i7mMJMHSRsfCP-O8tuucSY,566
+baseten_benchmarks/stream_handler.py,sha256=If51sr9qd4rtTMIaEIiJvU2ke9zaDO78k90ER47HiQI,2615
+baseten_benchmarks-0.5.0.dist-info/METADATA,sha256=A9k6KBL-0IDDy1mWWiouhHQ7DlWKl3w6Ej0ZSaKXd7Y,1437
+baseten_benchmarks-0.5.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+baseten_benchmarks-0.5.0.dist-info/entry_points.txt,sha256=43LYLY6aDWOpWMrJc0bbxxEgFNCfV--6ftRPzMiUZfM,74
+baseten_benchmarks-0.5.0.dist-info/RECORD,,
