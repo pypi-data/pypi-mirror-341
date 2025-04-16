@@ -1,0 +1,4 @@
+globus_sdk
+click
+pyyaml
+six
