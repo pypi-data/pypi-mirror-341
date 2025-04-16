@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: textutility
+Version: 0.2.1
+Summary: Useful string and text manipulation tools
+Author: Carlos
+Author-email: karlos.santana13@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+# textutility
+
+A set of useful functions for analyzing and manipulating strings in Python.
+
+## Features
+- Check if a string is a number or boolean
+- Reverse strings
+- Detect palindromes
+- Convert between snake_case and camelCase
+- And more!
+
+## Update features
+- Added is_type(), which checks if a string is a data type provided
+
+## Installation
+
+```bash
+pip install textutility
