@@ -1,0 +1,19 @@
+name: pypi-publish
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  pypi-publish:
+    name: Upload release to PyPI
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/pysei
+    permissions:
+      id-token: write
+    steps:
+      - name: Publish package to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
