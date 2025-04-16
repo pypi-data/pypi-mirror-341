@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: isend-python-api
+Version: 0.1.1
+Summary: Python SDK for iSend API
+Home-page: https://github.com/devmanoharrr/isend-python-api
+Author: Manohar Reddy
+Author-email: devmanoharrr@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+# ISend Python SDK
+
+This is a Python SDK for sending email and event data using the TruSender API.
+
+## Installation
+
+You can install it via pip:
+
+```bash
+pip install isend-python-sdk
+```
+
+```python
+from isend import ISend
+
+client = ISend("your_api_key")
+client.send_email("WelcomeTemplate", "user@example.com", {"name": "John"})
+client.send_event("Signup", "user@example.com", {"plan": "Free"})
+```
