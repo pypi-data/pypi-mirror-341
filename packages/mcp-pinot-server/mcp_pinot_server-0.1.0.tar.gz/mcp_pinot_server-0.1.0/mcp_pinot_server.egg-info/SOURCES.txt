@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+mcp_pinot/__init__.py
+mcp_pinot/prompts.py
+mcp_pinot/server.py
+mcp_pinot/utils/__init__.py
+mcp_pinot/utils/pinot_client.py
+mcp_pinot_server.egg-info/PKG-INFO
+mcp_pinot_server.egg-info/SOURCES.txt
+mcp_pinot_server.egg-info/dependency_links.txt
+mcp_pinot_server.egg-info/entry_points.txt
+mcp_pinot_server.egg-info/requires.txt
+mcp_pinot_server.egg-info/top_level.txt
+tests/test_pinot_client.py
+tests/test_server.py

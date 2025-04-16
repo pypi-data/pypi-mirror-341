@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-pinot = mcp_pinot.server:main
