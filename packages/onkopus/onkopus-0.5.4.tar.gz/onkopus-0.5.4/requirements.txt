@@ -1,0 +1,7 @@
+requests
+numpy
+pandas
+adagenes==0.4.0
+pyliftover
+redis
+pyaml
