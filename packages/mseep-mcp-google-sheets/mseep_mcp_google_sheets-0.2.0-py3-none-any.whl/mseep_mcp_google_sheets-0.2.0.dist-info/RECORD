@@ -1,0 +1,7 @@
+src/mcp_google_sheets/__init__.py,sha256=KNZ1bD9ZGfyZwlv91Ueeega_1lsRDLs2fYQDgNbBdtc,212
+src/mcp_google_sheets/server.py,sha256=-nqi1BrT8PXjlpZSD6z4P9s8-2Rl7EMmqp0v779fHo0,20605
+mseep_mcp_google_sheets-0.2.0.dist-info/METADATA,sha256=dTAZSu5aGMUNkVmFJK0KNvfRrIitDWUxFhRhc2CejD0,10114
+mseep_mcp_google_sheets-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp_google_sheets-0.2.0.dist-info/entry_points.txt,sha256=8caidg7-173W6T3l8JUqfLpkIxx3c77tp9IJFJkdsdk,61
+mseep_mcp_google_sheets-0.2.0.dist-info/licenses/LICENSE,sha256=J43iPss5Pw8nIbMP2ciQi07WWt3bBrrcPt9maIhptOs,1064
+mseep_mcp_google_sheets-0.2.0.dist-info/RECORD,,
