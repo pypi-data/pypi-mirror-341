@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: nsfw_image_detector
+Version: 0.1.0
+Summary: A Python package for NSFW image detection using EVA-based vision transformer
+Author: Freepik
+Author-email: info@freepik.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: torch>=2.0.0
+Requires-Dist: transformers>=4.30.0
+Requires-Dist: Pillow>=9.0.0
+Requires-Dist: timm>=0.6.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
