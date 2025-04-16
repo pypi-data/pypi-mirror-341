@@ -1,0 +1,29 @@
+MANIFEST.in
+setup.py
+donothing25/__init__.py
+donothing25.egg-info/PKG-INFO
+donothing25.egg-info/SOURCES.txt
+donothing25.egg-info/dependency_links.txt
+donothing25.egg-info/top_level.txt
+donothing25/CSV/mat_data.csv
+donothing25/CSV/sales_data.csv
+donothing25/DBCOMMANDS/Staging.txt
+donothing25/DBCOMMANDS/database.txt
+donothing25/DOC/PRACTICAL NO 1.docx
+donothing25/DOC/PRACTICAL NO 2.docx
+donothing25/DOC/PRACTICAL NO 3.docx
+donothing25/DOC/PRACTICAL NO 4.docx
+donothing25/DOC/PRACTICAL NO 5.docx
+donothing25/DOC/PRACTICAL NO 6.docx
+donothing25/DOC/PRACTICAL NO 7.docx
+donothing25/DOC/PRACTICAL NO 8.docx
+donothing25/DOC/pract_2b.docx
+donothing25/EXCEL/pivat table.xlsx
+donothing25/EXCEL/what if 1.xlsx
+donothing25/MANUAL/BI Manual (E-next.in) (1).pdf
+donothing25/PYTHON/Data_Visualization.py
+donothing25/PYTHON/Pandas_Searborn_Insight_Generate.py
+donothing25/R/Data_Classification.R
+donothing25/R/Data_Clustering.R
+donothing25/R/Linear_Regression.R
+donothing25/TEXT/BI PRACTICALS.txt

@@ -1,0 +1,8 @@
+include donothing25/CSV/*.csv
+include donothing25/DBCOMMANDS/*.txt
+include donothing25/DOC/*.docx
+include donothing25/EXCEL/*.xlsx
+include donothing25/MANUAL/*.pdf
+include donothing25/PYTHON/*.py
+include donothing25/R/*.R
+include donothing25/TEXT/*.txt
