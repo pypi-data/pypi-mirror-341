@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+mypackage_fayas/__init__.py
+mypackage_fayas/multiply.py
+mypackage_fayas.egg-info/PKG-INFO
+mypackage_fayas.egg-info/SOURCES.txt
+mypackage_fayas.egg-info/dependency_links.txt
+mypackage_fayas.egg-info/top_level.txt
