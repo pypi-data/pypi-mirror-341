@@ -1,0 +1,12 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+butterrand/__init__.py
+butterrand/butterfly_random.py
+butterrand.egg-info/PKG-INFO
+butterrand.egg-info/SOURCES.txt
+butterrand.egg-info/dependency_links.txt
+butterrand.egg-info/top_level.txt
