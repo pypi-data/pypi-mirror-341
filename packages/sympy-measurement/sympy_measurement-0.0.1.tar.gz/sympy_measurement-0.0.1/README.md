@@ -1,0 +1,23 @@
+# SymPy Measurement
+
+A sympy addon for measurement value and uncertainty processing.
+
+Example:
+
+```python
+from sympy import pi
+from sympy.physics.units import *
+from sympy_measurement import *
+
+t = Measurement('t', (50.22, 50.26, 50.20), s, uB=(0.2/3, 0.05/3))
+l_0 = Measurement('l_0', (68.20, 68.40, 68.10), cm, uB=0.2/3)
+d = Measurement('d', 2.2, cm)
+
+T = CombinedMeasurement('T', t / 30)
+l = CombinedMeasurement('l', l_0 + d/2, uB=0.02*cm/3)
+g = 4*pi**2 * l / T**2
+
+print(mean(T))
+print(u(g, type="A", margs=T))
+print(uvalue(g, units=(m, s)))
+```
