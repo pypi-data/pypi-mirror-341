@@ -1,0 +1,39 @@
+.jp-icon0[fill] {
+    fill: var(--jp-accent-color0)
+}
+
+.jp-icon1[fill] {
+    fill: var(--jp-accent-color1)
+}
+
+.jp-icon2[fill] {
+    fill: var(--jp-accent-color2)
+}
+
+.jp-icon3[fill] {
+    fill: var(--jp-accent-color1)
+}
+
+.jp-icon4[fill] {
+    fill: var(--jp-accent-color4)
+}
+
+.jp-icon0[stroke] {
+    stroke: var(--jp-accent-color0);
+}
+
+.jp-icon1[stroke] {
+    stroke: var(--jp-accent-color1);
+}
+
+.jp-icon2[stroke] {
+    stroke: var(--jp-accent-color2);
+}
+
+.jp-icon3[stroke] {
+    stroke: var(--jp-accent-color1);
+}
+
+.jp-icon4[stroke] {
+    stroke: var(--jp-accent-color4);
+}
