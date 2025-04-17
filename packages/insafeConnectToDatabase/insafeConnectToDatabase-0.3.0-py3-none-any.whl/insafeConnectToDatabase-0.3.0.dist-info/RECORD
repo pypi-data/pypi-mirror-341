@@ -1,0 +1,9 @@
+insafeConnectToDatabase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+insafeConnectToDatabase/cloud-sql-proxy,sha256=4sDWnMfh0PdPw2F5O0_BAxGwgLhzMBgemYHsKCzztw4,32785602
+insafeConnectToDatabase/databaseConnection.py,sha256=J6CH10C7BhLT6FMPZyEDkETfwhUOKoZsM3i_uzqSH9Y,2881
+insafeConnectToDatabase/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+insafeConnectToDatabase/util/wait_for_proxy.py,sha256=m_9uePHxfs7ZxFm5m0JEodlGolvFTQ_16d77T7nVyZ8,595
+insafeConnectToDatabase-0.3.0.dist-info/METADATA,sha256=EBBJt4gxS8hS2EvHmAflO0V0swtwGysjEXi3bC_QiEc,702
+insafeConnectToDatabase-0.3.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+insafeConnectToDatabase-0.3.0.dist-info/top_level.txt,sha256=Aumrg0ILnPAHRGSoueM9HsbTa_aof56mjNqHbXhHRFY,24
+insafeConnectToDatabase-0.3.0.dist-info/RECORD,,
