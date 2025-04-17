@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "decode"
+version = "2025.4.2"
+description = "DESHIMA code for data analysis"
+authors = [
+    "Akio Taniguchi <taniguchi.akio@gmail.com>",
+    "Juri Yamanaka <j.yamanaka@a.phys.nagoya-u.ac.jp>",
+    "Shinji Fujita <s-fujita@ism.ac.jp>",
+]
+keywords = [
+    "astronomy",
+    "data-analysis",
+    "deshima",
+    "spectroscopy",
+    "submillimeter",
+]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/deshima-dev/decode/"
+documentation = "https://deshima-dev.github.io/decode/"
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.13"
+astropy = ">=6.0, <8.0"
+dems = "^2024.7"
+fire = ">=0.5, <1.0"
+matplotlib = "^3"
+numpy = ">=1.23, <3.0"
+pandas = "^2"
+scikit-learn = "^1"
+scipy = "^1"
+tomli_w = "^1"
+xarray = ">=2024.0, <2026.0"
+zarr = "^2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25"
+ipython = ">=8.0, <10.0"
+myst-parser = ">=3.0, <5.0"
+pydata-sphinx-theme = ">=0.15, <1.0"
+pyright = "^1"
+pytest = "^8"
+sphinx = ">=7.0, <9.0"
+
+[tool.poetry.scripts]
+decode-qlook = "decode.qlook:main"
+
+[tool.pyright]
+typeCheckingMode = "basic"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
