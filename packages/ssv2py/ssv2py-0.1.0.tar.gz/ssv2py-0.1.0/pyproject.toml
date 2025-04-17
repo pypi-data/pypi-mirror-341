@@ -1,0 +1,44 @@
+[project]
+name = "ssv2py"
+version = "0.1.0"
+description = "A Python wrapper for the SSV2 API"
+authors = [
+    {name = "Nucceteere",email = "ruzgar@nucceteere.xyz"}
+]
+keywords = [ "game", "minecraft", "serverseeker", "serverseekerv2" ]
+license = {text = "GPL-3.0-only"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)"
+]
+dynamic = [ "classifiers" ]
+
+[project.urls]
+homepage = "https://git.funtimes909.xyz/ServerSeekerV2/ssv2py/src/branch/main/README.md"
+repository = "https://git.funtimes909.xyz/ServerSeekerV2/ssv2py"
+documentation = "https://git.funtimes909.xyz/ServerSeekerV2/ssv2py/wiki/"
+"Bug Tracker" = "https://git.funtimes909.xyz/ServerSeekerV2/ssv2py/issues"
+"Contribute" = "https://git.funtimes909.xyz/ServerSeekerV2/ssv2py/pulls"
+
+[tool.poetry]
+requires-poetry = ">=2.0"
+packages = [
+    { include = "ssv2py" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Topic :: Games/Entertainment",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+    "Topic :: Utilities"
+]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pre-commit = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
