@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cses-aid"
+version = "0.1.0"
+description = "A collection of helper functions for competitive programming and algorithm problem solving"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = ["competitive-programming", "algorithms", "data-structures", "cses"]
+authors = [
+    { name = "Shlok Kothari" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "Topic :: Education",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/effaf/cses-aid"
+"Documentation" = "https://github.com/effaf/cses-aid#readme"
+
+[tool.pytest.ini_options]
+testpaths = ["src/cses-aid/tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=src/cses-aid --cov-report=term-missing"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'

@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: cses-aid
+Version: 0.1.0
+Summary: A collection of helper functions for competitive programming and algorithm problem solving
+Author: Shlok Kothari
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/effaf/cses-aid
+Project-URL: Documentation, https://github.com/effaf/cses-aid#readme
+Keywords: competitive-programming,algorithms,data-structures,cses
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# CSES Helper functions
+
+This package provides utility functions for solving cses problems.
+
+While solving CSES problems, often times we would need the same functions. This package aims to provide helper
+functions to address the problem.
+
+## Installation
+
+```
+pip install cses-aid
+```
+
+## Usage
+
+```
+from cses-aid import prefix_sums, sieve
+
+print(sieve(100)) # print the first 100 prime numbers
+
+```
+
+## Contribution
+
+    Refer to CONTRIBUTING.md for all the information
+
+## Contact
+Please create an issue or hit me up if you spot an improvement! <br>
+
+[Email](shlok.kothari@gmail.com) - shlok.kothari@gmail.com
