@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: heapprint
+Version: 0.0.1
+Summary: Heap (ikkilik daraxt) tuzilishini vizual ko'rsatish uchun Python kutubxonasi
+Author: Jasur Omanov
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# Heap Visualizer
+
+Heap (ikkilik daraxt) tuzilishini konsolda vizual ko'rsatish uchun Python kutubxonasi.
+
+## O'rnatish
+
+Kutubxonani o'rnatish uchun quyidagi buyruqni ishlatishingiz mumkin:
+
+```bash
+pip install heap_visualizer
