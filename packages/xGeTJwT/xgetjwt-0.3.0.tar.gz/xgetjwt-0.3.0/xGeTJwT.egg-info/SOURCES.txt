@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+xGeTJwT/__init__.py
+xGeTJwT/xGeTJwT.py
+xGeTJwT.egg-info/PKG-INFO
+xGeTJwT.egg-info/SOURCES.txt
+xGeTJwT.egg-info/dependency_links.txt
+xGeTJwT.egg-info/requires.txt
+xGeTJwT.egg-info/top_level.txt
