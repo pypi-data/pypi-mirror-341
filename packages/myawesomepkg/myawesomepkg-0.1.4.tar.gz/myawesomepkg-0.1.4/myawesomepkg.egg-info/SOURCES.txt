@@ -1,0 +1,26 @@
+setup.py
+myawesomepkg/__init__.py
+myawesomepkg/core.py
+myawesomepkg.egg-info/PKG-INFO
+myawesomepkg.egg-info/SOURCES.txt
+myawesomepkg.egg-info/dependency_links.txt
+myawesomepkg.egg-info/top_level.txt
+myawesomepkg/TSAPY1/Practical No 1.py
+myawesomepkg/TSAPY1/Practical No 2.py
+myawesomepkg/TSAPY1/Practical No 3.py
+myawesomepkg/TSAPY1/Practical No 4 A.py
+myawesomepkg/TSAPY1/Practical No 4 B.py
+myawesomepkg/TSAPY1/Practical No 5.py
+myawesomepkg/TSAPY1/Practical No 6.py
+myawesomepkg/TSAPY1/Practical No 7.py
+myawesomepkg/TSAPY1/Practical No 8.py
+myawesomepkg/TSAPY1/__init__.py
+myawesomepkg/TSAPY1/practical_no_3.py
+myawesomepkg/TSAPY1/practical_no_4.py
+myawesomepkg/TSAPY1/practical_no_4b.py
+myawesomepkg/TSAPY1/practical_no_5_ac_and_pca.py
+myawesomepkg/TSAPY1/practical_no_6.py
+myawesomepkg/TSAPY1/practical_no_7.py
+myawesomepkg/TSAPY1/practical_no_8.py
+myawesomepkg/TSAPY1/tsa_practical_no_1.py
+myawesomepkg/TSAPY1/tsa_practical_no_2.py
