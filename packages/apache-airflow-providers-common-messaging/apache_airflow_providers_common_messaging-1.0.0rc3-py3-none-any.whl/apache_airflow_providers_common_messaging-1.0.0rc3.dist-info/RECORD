@@ -1,0 +1,12 @@
+airflow/providers/common/messaging/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+airflow/providers/common/messaging/__init__.py,sha256=NZYQ25C6gT-H9q0xhRuWVIjajfn1PCHQ5jNX1mekIN0,1503
+airflow/providers/common/messaging/get_provider_info.py,sha256=l9PWrNgLySYXITJxqYOnE7DGcKQySJIujB2gIRXl_yY,1440
+airflow/providers/common/messaging/providers/__init__.py,sha256=fbb1m_gWUmCXVSEdKidsWa-lL-rfvvpVoSxfiVFaF_o,961
+airflow/providers/common/messaging/providers/base_provider.py,sha256=2z52qyvzHFfPgS1W2q_BKJ2tENvUgUBG9E4mPEyhuxY,2030
+airflow/providers/common/messaging/providers/sqs.py,sha256=vQKiaKCpbGdgFDUDcj9Bo1XkuiXj08BBEQm6ksZ39ZY,1577
+airflow/providers/common/messaging/triggers/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/common/messaging/triggers/msg_queue.py,sha256=UmLTNK9oPYhxYciE1Yzs61ZKWb2POOHabZCmvzMHvEs,2907
+apache_airflow_providers_common_messaging-1.0.0rc3.dist-info/entry_points.txt,sha256=dWp5Ulzt-1ewaWGxPpp1RyNSQpu4rxkkM443mgka80g,112
+apache_airflow_providers_common_messaging-1.0.0rc3.dist-info/WHEEL,sha256=G2gURzTEtmeR8nrdXUJfNiB3VYVxigPQ-bEQujpNiNs,82
+apache_airflow_providers_common_messaging-1.0.0rc3.dist-info/METADATA,sha256=alzU2evJrfDuULaj_A8w-vPaqICeIBJxF2dRyBJ0Qw8,4948
+apache_airflow_providers_common_messaging-1.0.0rc3.dist-info/RECORD,,
