@@ -1,0 +1,2 @@
+[console_scripts]
+vlbi-cat-creation = vlbi_cat_creation.cli:main

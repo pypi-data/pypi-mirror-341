@@ -1,0 +1,8 @@
+vlbi_cat_creation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vlbi_cat_creation/__main__.py,sha256=-6mc-p1_hl3yLcxuLrp1YB9rnRG3o0oKyR817cDg3qo,81
+vlbi_cat_creation/cli.py,sha256=qM-mowsp0tyjJ2UziSGVGqpW6DeonKfL9qwZr6LJf0o,1701
+vlbi_cat_creation/create_bdsf_cat.py,sha256=fm3zyeKkKg-C48r8WlrpIxZ8THLpdJSUhFBukpXMuPY,285
+vlbi_cat_creation-0.1.1.dist-info/METADATA,sha256=iNvAL3ttNRVX6lQHoZXltXHTZdw0FeqTZrjzYiXEujI,1365
+vlbi_cat_creation-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+vlbi_cat_creation-0.1.1.dist-info/entry_points.txt,sha256=jNWlAibx856Xuuwc9mLhqB2bxX3Tpc0uSNRH-zLDQrk,65
+vlbi_cat_creation-0.1.1.dist-info/RECORD,,
