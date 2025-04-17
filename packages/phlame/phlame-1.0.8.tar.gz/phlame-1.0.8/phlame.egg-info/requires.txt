@@ -1,0 +1,8 @@
+numpy
+pandas
+seaborn
+matplotlib
+biopython
+ete3
+statsmodels
+pytest
