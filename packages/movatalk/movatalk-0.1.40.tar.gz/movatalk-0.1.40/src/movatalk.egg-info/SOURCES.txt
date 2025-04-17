@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/movatalk/__init__.py
+src/movatalk/_version.py
+src/movatalk.egg-info/PKG-INFO
+src/movatalk.egg-info/SOURCES.txt
+src/movatalk.egg-info/dependency_links.txt
+src/movatalk.egg-info/top_level.txt
+src/movatalk/config/__init__.py
