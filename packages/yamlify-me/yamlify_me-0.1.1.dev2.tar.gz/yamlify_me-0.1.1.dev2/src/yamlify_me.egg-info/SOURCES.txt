@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/yamlify/__init__.py
+src/yamlify/convert.py
+src/yamlify/data.py
+src/yamlify/main.py
+src/yamlify_me.egg-info/PKG-INFO
+src/yamlify_me.egg-info/SOURCES.txt
+src/yamlify_me.egg-info/dependency_links.txt
+src/yamlify_me.egg-info/entry_points.txt
+src/yamlify_me.egg-info/requires.txt
+src/yamlify_me.egg-info/top_level.txt
+tests/test_convert.py
+tests/test_merge.py
