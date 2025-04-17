@@ -1,0 +1,2 @@
+[console_scripts]
+mcp2mqtt = mcp2mqtt:main
