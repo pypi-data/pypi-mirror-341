@@ -1,0 +1,181 @@
+Metadata-Version: 2.4
+Name: cnks
+Version: 0.2.5
+Summary: CNKI Search tool with local Chrome
+Author-email: bai-z-l <b@iziliang.com>
+Requires-Python: >=3.10
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: playwright>=1.51.0
+Requires-Dist: pydantic>=2.11.3
+Description-Content-Type: text/markdown
+
+# 知网搜索MCP服务器
+
+该MCP服务器可以帮助您打开Chrome浏览器访问中国知网，搜索关键词并提取论文摘要。
+
+## 功能
+
+- 打开Chrome浏览器访问知网
+- 提供关键词搜索工具
+- **自动提取摘要内容**（v0.2.0新增）
+- **将搜索结果转换为结构化JSON数据**（v0.2.0新增）
+
+
+## 版本更新
+
+### v0.2.0
+- 简化工具接口，统一为单一的`mcp_cnks_search_and_extract`工具
+- 实现一步式搜索和内容提取
+- 支持从搜索结果提取50篇论文的摘要
+- 结果包含标题、作者、摘要、关键词和引用格式等信息
+
+### v0.1.1
+- 初始版本
+- 基本搜索功能
+- 提供链接列表
+
+## 安装
+
+确保您已安装Python 3.13或更高版本，然后执行以下命令安装：
+
+```bash
+uv add "mcp[cli]"
+```
+
+## 安装Playwright（必需）
+
+为了实现自动搜索和内容提取功能，必须安装Playwright：
+
+```bash
+# 安装playwright库
+uv add playwright
+
+# 安装playwright浏览器
+playwright install
+```
+
+## 开发模式运行
+
+使用MCP Inspector测试和调试服务器：
+
+```bash
+mcp dev src/cnks/server.py
+```
+
+## 安装到Claude Desktop
+
+准备好后，将其安装到Claude Desktop：
+
+```bash
+mcp install src/cnks/server.py --name "知网搜索助手"
+```
+
+## 使用方法
+
+在Claude或其他支持MCP的应用中可以使用以下工具：
+
+### 工具
+
+- `mcp_cnks_search_and_extract` - 搜索关键词并提取所有论文的详细内容
+
+### 资源
+
+- `webpage://current` - 当前打开的网页内容
+- `webpage://cnki/search` - 中国知网搜索页面
+- `note://internal/{name}` - 用户保存的笔记
+
+### 提示
+
+- `search-literature` - 按主题搜索文献
+- `advanced-search` - 高级文献搜索
+- `summarize-notes` - 总结所有笔记
+
+## 示例用法
+
+### 搜索并提取内容
+
+```
+请使用mcp_cnks_search_and_extract工具搜索"人工智能教育应用"相关论文并提取详细内容
+```
+
+### 使用高级搜索
+
+```
+请使用高级搜索，查找标题包含"教育科技"、作者为"张三"的论文
+```
+
+## 返回结果格式
+
+搜索并提取内容后返回的JSON格式如下：
+
+```json
+{
+  "keywords": "搜索的关键词",
+  "count": 50,
+  "results": [
+    {
+      "title": "论文标题",
+      "authors": ["作者1", "作者2"],
+      "abstract": "论文摘要...",
+      "keywords": ["关键词1", "关键词2"],
+      "cite_format": "引用格式",
+      "url": "论文URL"
+    },
+    // 更多论文...
+  ],
+  "success_count": 45,
+  "error_count": 5
+}
+```
+
+## 故障排除
+
+### Chrome未找到
+
+系统会自动在常见位置查找Chrome浏览器。如果遇到"未找到Chrome可执行文件"错误，可以通过设置环境变量来指定Chrome位置：
+
+#### Windows
+
+```cmd
+set CHROME_PATH="C:\你的Chrome路径\chrome.exe"
+```
+
+#### macOS/Linux
+
+```bash
+export CHROME_PATH="/path/to/chrome"
+```
+
+### Playwright相关问题
+
+如果在使用Playwright时遇到问题：
+
+```bash
+# 确保playwright库已安装
+uv add playwright
+
+# 安装所需浏览器
+playwright install chromium
+
+# 如果上述命令无效，可能需要管理员权限
+```
+
+### 登录知网
+
+对于需要登录的知网资源：
+
+1. 程序会检测到登录需求并等待几秒
+2. 您需要在打开的浏览器窗口中手动登录知网
+3. 登录后程序将自动继续执行提取操作
+
+### 批量提取时浏览器关闭
+
+如果在批量提取过程中浏览器意外关闭：
+
+1. 请不要手动关闭浏览器窗口
+2. 提取过程可能需要几分钟时间，请耐心等待
+3. 对于大量链接，程序会自动限制为最多处理50个
+
+## 许可证
+
+本项目使用MIT许可证 - 详情见LICENSE文件。
