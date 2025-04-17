@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: image-processing-dio-2025
+Version: 0.0.1
+Summary: Desafio Criando um Pacote de Processamento de Imagens com Python - DIO
+Home-page: https://github.com/castroxcode/image-processing-dio.git
+Author: castroxcode
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# image-processing-dio-2025
+
+Desafio Criando um Pacote de Processamento de Imagens com Python - DIO
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install image-processing-dio-2025
+
+```bash
+pip install image-processing-dio-2025
+```
+
+## Author
+Thiago Castro (castroxcode)
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
