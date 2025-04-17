@@ -1,0 +1,7 @@
+submitit
+tqdm
+wandb
+
+[torch]
+torch
+torchvision
