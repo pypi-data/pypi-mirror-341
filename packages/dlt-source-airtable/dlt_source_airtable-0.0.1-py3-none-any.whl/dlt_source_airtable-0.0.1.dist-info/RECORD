@@ -1,0 +1,8 @@
+dlt_source_airtable/__init__.py,sha256=aKjn48YPKaK9bcEIEv1MdHk_lv5rR-zB5YBSPgicJhI,2543
+dlt_source_airtable/api_client.py,sha256=1v5nVqMkx6wR-TKeZ1SwqCVh6r1HNUEIAIo22a4IK-c,226
+dlt_source_airtable/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dlt_source_airtable/tests/test_noop.py,sha256=-126gn7YdkGGKcml05Ci4f86B0okFKajjOWplvfBugk,26
+dlt_source_airtable-0.0.1.dist-info/METADATA,sha256=xBfR1HlXFgndnlbEqlP-HtHOs8DbS4NCpa5Z6mWlfNU,3148
+dlt_source_airtable-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dlt_source_airtable-0.0.1.dist-info/licenses/LICENSE,sha256=dkb6af9giJCKFd6umYkvdOk3wqrja8M_FldeDhXJYCg,1065
+dlt_source_airtable-0.0.1.dist-info/RECORD,,
