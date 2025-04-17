@@ -1,0 +1,3 @@
+[console_scripts]
+csplice=csplice.script.cli:main
+
