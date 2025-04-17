@@ -1,0 +1,28 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Rust generated files
+target/
+
+
+# uv related
+.venv
+.ruff_cache/
+
+# some
+.github
+*.lock
+.env
+test/
+
+# project specific
+temp/
+resources/docs/
+resources/delta/
+resources/cli/
+resources/output/
