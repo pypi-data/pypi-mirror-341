@@ -1,0 +1,19 @@
+[project]
+name = "vlbi-cat-creation"
+version = "0.1.1"
+description = "Create master catalogues from radio images"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "argparse>=1.4.0",
+    "bdsf[ishell]>=1.13.0.post2",
+    "pathlib>=1.0.1",
+]
+
+
+[project.scripts]
+vlbi-cat-creation = "vlbi_cat_creation.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

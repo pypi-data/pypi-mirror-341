@@ -1,0 +1,25 @@
+.vscode
+.pylintrc
+.idea
+__pycache__
+lofar_facet_selfcal.egg-info
+.venv
+
+#Distribution 
+build/
+dist/
+eggs/
+.eggs/
+wheels/
+
+#astro data
+*.ms
+*.fits
+*.sky_in
+
+#logs 
+*.log
+
+
+
+
