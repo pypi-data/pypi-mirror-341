@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jupyternetes_clients"
+dynamic = [ "version", "dependencies" ]
+authors = [
+  { name="Shaun Turner", email="shaun.turner@headinthecloudsolutions.co.uk" },
+]
+description = "Kadense Jupyternetes Kubernetes Clients" 
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["kadense", "jupyternetes", "jupyterhub", "clients"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/headinthecloudsolutions/kadense"
+Issues = "https://github.com/headinthecloudsolutions/kadense/issues"
+
+[tool.coverage.run]
+source = ["jupyternetes_clients" ]
+
+[tool.hatch.version]
+path = "jupyternetes_clients/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["jupyternetes_clients"]
+
+[tool.hatch.build]
+exclude = [
+  "test.py"
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "jupyternetes_clients/test.py"
+]
