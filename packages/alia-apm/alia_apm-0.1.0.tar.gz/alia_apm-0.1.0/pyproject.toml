@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "alia-apm"
+version = "0.1.0"
+description = "A collection of Python scripts by me, Alia. The successor of anpm."
+authors = ["Alia Normal <dan.driscoll@aussiebb.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+discord = ">2.0"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
