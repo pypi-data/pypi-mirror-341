@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: opensfc
+Version: 0.0.1
+Summary: OpenSFC is a visual, high-level automation system using flowcharts.
+Home-page: https://OpenSFC.com
+Author: Coleman Ammerman
+Author-email: colemanra3@ReedWare.com
+License: AGPL-3.0-or-later
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# OpenSFC
+
+OpenSFC is an open-source project to automate tasks using high-level visual flowcharts.
