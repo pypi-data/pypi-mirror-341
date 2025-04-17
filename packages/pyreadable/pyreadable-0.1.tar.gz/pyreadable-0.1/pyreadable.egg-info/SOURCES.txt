@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyreadable/__init__.py
+pyreadable/main.py
+pyreadable/readablity.py
+pyreadable.egg-info/PKG-INFO
+pyreadable.egg-info/SOURCES.txt
+pyreadable.egg-info/dependency_links.txt
+pyreadable.egg-info/requires.txt
+pyreadable.egg-info/top_level.txt
