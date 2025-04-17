@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/eddie_chan_mcp/__init__.py
+src/eddie_chan_mcp/main.py
+src/eddie_chan_mcp.egg-info/PKG-INFO
+src/eddie_chan_mcp.egg-info/SOURCES.txt
+src/eddie_chan_mcp.egg-info/dependency_links.txt
+src/eddie_chan_mcp.egg-info/entry_points.txt
+src/eddie_chan_mcp.egg-info/requires.txt
+src/eddie_chan_mcp.egg-info/top_level.txt

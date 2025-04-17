@@ -1,0 +1,26 @@
+[project]
+name = "eddie-chan-mcp"
+version = "0.1.2"
+description = "This is a package for fun"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+]
+keywords = [
+    "mcp",
+    "cli",
+    "python",
+]
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+license= "MIT"
+
+[project.scripts]
+eddie-chan-mcp = "eddie_chan_mcp:main"
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
