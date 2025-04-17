@@ -1,0 +1,13 @@
+wxpython>=4.2.3
+pywin32
+debugpy>=1.8.0
+
+[dev]
+pytest
+build
+ruff
+python-dotenv[cli]
+
+[ptrepl]
+ptpython
+prompt_toolkit
