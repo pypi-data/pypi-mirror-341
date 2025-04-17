@@ -1,0 +1,9 @@
+tests/__init__.py,sha256=XEIopN779yNsr8s_R50N6SlV6fMWOfZU1LChd6ndYoc,161
+tests/sample.jpg,sha256=c7WdcFqBocNrkdil7HznhXLy7p3HDakgpLEQbMiSu5g,5322
+tests/sample.pdf,sha256=gPnAZwAijuKnqYqZTD2Wld8I2PR_k_RCFIDUwsOU9kQ,9478
+tests/test_server.py,sha256=G-eql1s-y1Hk_UEDNrtDrVGn8GPu8zAvNmMK4wBI1kY,4687
+mseep_mcp_florence2-0.3.1.dist-info/METADATA,sha256=wuRikw7ANJ_HeqLGJrNKGK-DrlEeHTytsybDI3HzTvQ,3859
+mseep_mcp_florence2-0.3.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp_florence2-0.3.1.dist-info/entry_points.txt,sha256=TiXeu_y5GfMgHh_kfwsSwWMpNQadixGtlkXoFSScElw,53
+mseep_mcp_florence2-0.3.1.dist-info/licenses/LICENSE,sha256=qNFNajBQbqe4Vba93VX_V0j3pqD4kFcHulsh3TfmDh4,1082
+mseep_mcp_florence2-0.3.1.dist-info/RECORD,,
