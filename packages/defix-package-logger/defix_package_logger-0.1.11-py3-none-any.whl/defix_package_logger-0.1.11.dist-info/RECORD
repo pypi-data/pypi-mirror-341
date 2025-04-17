@@ -1,0 +1,7 @@
+defix_package_logger/__init__.py,sha256=nTBNnPGMJsyH-4bOtRSO00FccPyIt7lR-AM77cl-YMw,1087
+defix_package_logger/json_formatter.py,sha256=2trArrupktXDDKM3N8Tal5RRYwyRH_kbi3VsuDu6nSY,1482
+defix_package_logger/string_formatter.py,sha256=rIki5OoO2JsHhKTo1e5zPPDhXGN234-zStftUwjvOIk,1374
+defix_package_logger-0.1.11.dist-info/METADATA,sha256=R1_2I210yJBk-iQ0D5flzLK2CAsJxeTAC9JsA1ZQgzk,345
+defix_package_logger-0.1.11.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+defix_package_logger-0.1.11.dist-info/entry_points.txt,sha256=4K-zzTFGhGw3whdd0NdswuO9L0BioV7HeiJ1kj6KMWw,67
+defix_package_logger-0.1.11.dist-info/RECORD,,
