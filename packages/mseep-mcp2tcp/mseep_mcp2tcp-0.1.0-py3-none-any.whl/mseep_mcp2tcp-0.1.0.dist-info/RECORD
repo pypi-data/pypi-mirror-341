@@ -1,0 +1,8 @@
+tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/tcp_server.py,sha256=rVtmQ5hcAnlagVSPTSa3oLYM1g6qSP-43nOBfHF0ogc,3946
+tests/test_server.py,sha256=7_r21mm69I_QQgkhnIOW3SoRN410uW4yBewc1W-35TU,744
+mseep_mcp2tcp-0.1.0.dist-info/METADATA,sha256=1tsJrGnfD77sxA8-VW8DDzoV1UoURysfGYlMDPMfNiw,5847
+mseep_mcp2tcp-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp2tcp-0.1.0.dist-info/entry_points.txt,sha256=uDWiVbHd4RJ2S3zDrUnuRaJVAJ0A5toZ4OzHvVTMego,41
+mseep_mcp2tcp-0.1.0.dist-info/licenses/LICENSE,sha256=nNwySYRk_LMDfL7RC1-ee93pZsutGF-KChCWFSgimtQ,1071
+mseep_mcp2tcp-0.1.0.dist-info/RECORD,,
