@@ -1,0 +1,9 @@
+selenium
+webdriver-manager
+click
+colorama
+inquirer
+InquirerPy
+rich
+tabulate
+pandas
