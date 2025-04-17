@@ -1,0 +1,2 @@
+[console_scripts]
+arrow-cache-mcp = arrow_cache_mcp.server:main
