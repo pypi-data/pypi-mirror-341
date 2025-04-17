@@ -1,0 +1,2 @@
+[console_scripts]
+ovos-skill-config-tool = ovos_skill_config.main:main
