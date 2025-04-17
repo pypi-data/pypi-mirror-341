@@ -1,0 +1,17 @@
+[project]
+name = "macroeconomic-mcp-server"
+version = "0.1.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "colorama>=0.4.6",
+    "mcp[cli]>=1.6.0",
+    "numpy>=2.2.4",
+    "pandas>=2.2.3",
+    "python-dotenv>=1.1.0",
+    "requests>=2.32.3",
+]
+
+[project.scripts]
+macroeconomic-mcp-server="fred_macroeco.server:main"
