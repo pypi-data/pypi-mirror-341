@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+greetme_manoj.egg-info/PKG-INFO
+greetme_manoj.egg-info/SOURCES.txt
+greetme_manoj.egg-info/dependency_links.txt
+greetme_manoj.egg-info/top_level.txt
