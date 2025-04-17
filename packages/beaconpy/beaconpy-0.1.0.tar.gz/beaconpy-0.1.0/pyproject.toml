@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beaconpy"
+version = "0.1.0"
+description = "A Pythonic implementation of the observer pattern"
+readme = "README.md"
+authors = [
+    {name = "Fernando Rodriguez Romero", email = "frr@keepcoding.io"}
+]
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+
+[project.urls]
+"Homepage" = "https://github.com/frr149/beaconpy"
+"Bug Tracker" = "https://github.com/frr149/beaconpy/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["beaconpy/tests"]
+python_files = "test_*.py"
+pythonpath = ["."]
