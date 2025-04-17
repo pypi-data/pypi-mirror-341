@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ten_utils"
+version = "0.0.13"
+description = "A python library that implements many small tools that are often used in python development."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Караваев Александр", email = "234iskateli234@gmail.com" }]
+dependencies = [
+    "rich==13.9.4",
+    "python-dotenv==1.1.0",
+    "pydantic==2.11.3",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/Ten-o69/ten-utils"
+BugTracker = "https://github.com/Ten-o69/ten-utils/issues"
+
+[tool.setuptools]
+packages = [
+    "ten_utils",
+    "ten_utils.log",
+    "ten_utils.env_loader",
+    "ten_utils.common",
+    "ten_utils.common.errors",
+    "ten_utils.common.validators"
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra --disable-warnings"
+testpaths = ["tests"]
