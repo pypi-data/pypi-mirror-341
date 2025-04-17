@@ -1,0 +1,55 @@
+site_name: SQLAlchemy History
+site_description: SQLAlchemy History is an extension for SQLAlchemy that provides change tracking and history logging for SQLAlchemy models. It allows developers to easily track changes to their database objects over time, providing a comprehensive history of modifications.
+repo_url: https://gitlab.com/n.one.k/opensource/sqla-history
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - Cook Book: cookbook.md
+  - Examples: examples.md
+  - API Reference:
+      - BaseHistoryChanges: api/base_history_changes.md
+      - History Model: api/history_model.md
+      - HistoryCreateDTO: api/history_create_dto.md
+      - InsertStmtBuilder: api/insert_stmt_builder.md
+      - ChangeEventHandler: api/change_event_handler.md
+      - Event Listener: api/event_listener.md
+  - Changelog: changelog.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+  - toc:
+      permalink: true
+
+  - tables
+  - fenced_code
+
+theme:
+  name: material
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: "indigo"
+      accent: "indigo"
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: "indigo"
+      accent: "indigo"
+plugins:
+  - search
+extra:
+  social:
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/n.one.k/opensource/sqla-history
