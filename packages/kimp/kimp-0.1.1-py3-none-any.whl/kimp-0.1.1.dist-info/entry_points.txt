@@ -1,0 +1,3 @@
+[console_scripts]
+kimp=kimp.cli:cli
+
