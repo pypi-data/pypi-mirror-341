@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: movenet-pre-processor
+Version: 0.1.0
+Summary: 
+Author: will-s-stone
+Author-email: will@williamstone.me
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=2.2.4,<3.0.0)
+Description-Content-Type: text/markdown
+
+
