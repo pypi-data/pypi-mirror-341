@@ -1,0 +1,2 @@
+[console_scripts]
+lqcode = lqcodeAI.cli:main
