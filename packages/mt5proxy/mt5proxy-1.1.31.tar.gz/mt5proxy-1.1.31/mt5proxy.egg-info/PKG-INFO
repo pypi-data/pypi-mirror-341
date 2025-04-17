@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: mt5proxy
+Version: 1.1.31
+Summary: Mt5 http proxy for python.
+Home-page: https://github.com/qicongsheng/mt5proxy
+Author: qicongsheng
+Author-email: qicongsheng@outlook.com
+License: MIT License
+Keywords: mt5proxy
+Platform: any
+License-File: LICENSE
+Requires-Dist: MetaTrader5
+Requires-Dist: flask
+Requires-Dist: flask_httpauth
+Requires-Dist: pandas
+Requires-Dist: pytz
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: platform
+Dynamic: requires-dist
+Dynamic: summary
