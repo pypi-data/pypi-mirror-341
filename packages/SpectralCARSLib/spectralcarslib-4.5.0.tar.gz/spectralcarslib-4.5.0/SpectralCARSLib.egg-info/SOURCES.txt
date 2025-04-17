@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+SpectralCARSLib.egg-info/PKG-INFO
+SpectralCARSLib.egg-info/SOURCES.txt
+SpectralCARSLib.egg-info/dependency_links.txt
+SpectralCARSLib.egg-info/requires.txt
+SpectralCARSLib.egg-info/top_level.txt
+cars/__init__.py
+cars/cars.py
+cars/classification.py
+cars/corcars.py
+cars/optimizer.py
+cars/preprocessing.py
+cars/simple_optimizer.py
+cars/utils.py
+cars/visualization.py
