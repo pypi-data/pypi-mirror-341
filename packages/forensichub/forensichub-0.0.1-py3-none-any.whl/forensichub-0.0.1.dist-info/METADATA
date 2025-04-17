@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: forensichub
+Version: 0.0.1
+Summary: A codebase integrated Image manipulation detectoin & localization, Deepfake detection, Document manipulation detection and AIGC detection.
+Home-page: https://github.com/scu-zjz/ForensicHub
+Author: Xiaochen Ma
+Author-email: xiaochen.ma.cs@gmail.com
+License: CC-BY-4.0
+Project-URL: Github, https://github.com/scu-zjz/ForensicHub/
+Project-URL: Documentation, https://github.com/scu-zjz/ForensicHub-doc
+Project-URL: Bug Reports, https://github.com/scu-zjz/ForensicHub/issues
+Keywords: AI,artificial intelligence,image forensics,image manipulation localization,image manipulation detectionDeepfake detection,AIGC detection
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Security
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: Free For Educational Use
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+Requires-Dist: imdlbenco
+
+# ForensicHub: All-in-one solution for fake image detection!
+## Local install
+```shell
+pip install forensichub
+```
+
+Structure:
+- common # 通用组件
+- core # 核心组件，用户接入时需要继承base_dataset,base_model,base_transform三个组件并注册，用户需要自己保证使用的dataset输出与model的输入对应
+- tasks # 不同垂类任务的组件库
+- training_scripts # 训练和测试入口，以yaml格式配置管理，统一入口为run.sh
