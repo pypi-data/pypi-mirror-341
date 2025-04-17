@@ -1,0 +1,7 @@
+MANIFEST.in
+setup.py
+molingtool_sync/__init__.py
+molingtool_sync.egg-info/PKG-INFO
+molingtool_sync.egg-info/SOURCES.txt
+molingtool_sync.egg-info/dependency_links.txt
+molingtool_sync.egg-info/top_level.txt
