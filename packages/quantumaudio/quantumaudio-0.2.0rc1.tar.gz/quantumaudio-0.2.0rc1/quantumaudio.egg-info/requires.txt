@@ -1,0 +1,13 @@
+qiskit
+qiskit_aer
+numpy
+bitstring
+matplotlib
+pylatexenc
+tqdm
+packaging
+
+[demos]
+soundfile==0.12.1
+librosa==0.10.2.post1
+ipywidgets
