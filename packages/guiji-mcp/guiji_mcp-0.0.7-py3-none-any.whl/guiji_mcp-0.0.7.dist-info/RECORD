@@ -1,0 +1,11 @@
+gj_meta_mcp/__init__.py,sha256=eG9IbYp2Dbhe01hyaEngIc85bkocIyavCWpsiOXbBKk,170
+gj_meta_mcp/digital_human_generator.py,sha256=d17t37WT0uBxgiBJArn2cBp0wYLHUalAaw-KmdMsWdI,9274
+gj_meta_mcp/random_helper.py,sha256=m23a9aDa9oP2k8ovzoB0nNhSRlmvbRC_oSf81vBS1SE,348
+gj_meta_mcp/server.py,sha256=GgGqzulSnMta0bP0jBywOgI5JLncVoTdCRD6csOQDg8,4385
+gj_meta_mcp/the_logger.py,sha256=t0KEJHa9IF8lqCjuMtAqFIZciMjPuInraNCUuU86fcA,760
+guiji_mcp-0.0.7.dist-info/licenses/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+guiji_mcp-0.0.7.dist-info/METADATA,sha256=MZh-c7gM5UQxHFTtj2NfuPp4HVs4R5mCAViOYADhyVE,3451
+guiji_mcp-0.0.7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+guiji_mcp-0.0.7.dist-info/entry_points.txt,sha256=Jg5u1Bd1oaj-a9sf1sxgU7udEqrIpwZjBOYuMVc1vDs,54
+guiji_mcp-0.0.7.dist-info/top_level.txt,sha256=73393s-C5zDGgDjATDW1UpbpIRhJ39E2lTVCAyx8qps,12
+guiji_mcp-0.0.7.dist-info/RECORD,,
