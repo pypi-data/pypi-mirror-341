@@ -1,0 +1,8 @@
+README.md
+main.py
+pyproject.toml
+ddpixe_demo.egg-info/PKG-INFO
+ddpixe_demo.egg-info/SOURCES.txt
+ddpixe_demo.egg-info/dependency_links.txt
+ddpixe_demo.egg-info/requires.txt
+ddpixe_demo.egg-info/top_level.txt
