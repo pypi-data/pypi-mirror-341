@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+migrations_mcp/__init__.py
+migrations_mcp/service.py
+mseep_mseep_migrations_mcp.egg-info/PKG-INFO
+mseep_mseep_migrations_mcp.egg-info/SOURCES.txt
+mseep_mseep_migrations_mcp.egg-info/dependency_links.txt
+mseep_mseep_migrations_mcp.egg-info/top_level.txt
