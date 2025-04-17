@@ -1,0 +1,16 @@
+unicorefw/__init__.py,sha256=3lOX1cmk15Ei2dzYzeTnwk6D2ohgFC6vY6nJYaNl1cw,1308
+unicorefw/array.py,sha256=4GoDCWJXacMhbjws6rVVbBoGAGkZX8Esrou2RcmwYaI,18645
+unicorefw/core.py,sha256=ulGHNC3VMLiONq9V9UDPj7oD9veaCqYCkQW_Gd9KefI,6303
+unicorefw/crypto.py,sha256=10psmCnU8I4_JR7NERUFq9eNWeOXXgwgLJ3EaX2P7RI,2349
+unicorefw/function.py,sha256=sOyV4_YvxGfD7YvdzimZigxRmI5e6IlzIDOb6UjJnlY,9503
+unicorefw/object.py,sha256=XOetr8k9Q-wTQ5P7LWpcVif4ATb1HmQ8bMGYvYBCjdw,8690
+unicorefw/security.py,sha256=6VcBLX932svkxGB_7TwRiFyIjUNO8emjMrS4nG5zZKU,5212
+unicorefw/string.py,sha256=vMB4sCKagmpHfMP8U1clDKN5qjRf9F-NIr5xPAFRwU8,13589
+unicorefw/template.py,sha256=A0z2acED1TsH1REiL_1IpPMMIqX5WrbHA1huuY9_ubw,6437
+unicorefw/types.py,sha256=olM6Ckz5tGAqfww1JkmdQhErN9QWdHimgDqG1-JE__Y,7285
+unicorefw/utils.py,sha256=CxT2MWv7RORz5ckm3cYdyVuCVZFq-XSUse72FaajCKY,8153
+unicorefw-1.0.3.dist-info/LICENSE,sha256=k6yMnJ3ZUdEarfMm4IQFTLYt7sEHgLO6anmuk5N1sGs,1489
+unicorefw-1.0.3.dist-info/METADATA,sha256=kyNIbrjKp0iu5FJgxQTHqOeezRGPoPKa_GRYzrAoHbU,16604
+unicorefw-1.0.3.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+unicorefw-1.0.3.dist-info/top_level.txt,sha256=QrnSDQv47deHJ6gJ56kJc7AWNsiDK_jdoyKSHMsOuwQ,10
+unicorefw-1.0.3.dist-info/RECORD,,
