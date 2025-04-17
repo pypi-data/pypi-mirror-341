@@ -1,0 +1,7 @@
+README.md
+main.py
+pyproject.toml
+majian_testing.egg-info/PKG-INFO
+majian_testing.egg-info/SOURCES.txt
+majian_testing.egg-info/dependency_links.txt
+majian_testing.egg-info/top_level.txt
