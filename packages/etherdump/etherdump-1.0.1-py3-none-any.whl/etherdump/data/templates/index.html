@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html{% if language %} lang="{{language}}"{%endif%}>
+<head>
+	<meta charset="utf-8" />
+	<title>{{title|default("etherdump")}}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+	<link rel="stylesheet" type="text/css" href="/static/index.css">
+	{% if rss %}<link rel="alternate" type="application/rss+xml" href="{{rss}}">{% endif %}
+	{% block scripts %}
+	{% endblock scripts %}
+</head>
+<body>
+	<h1>{{title|default("etherdump")}}</h1>
+<table class="sortable">
+<thead>
+<tr>
+	<th>name</th>
+	<th>versions</th>
+	<th>last edited</th>
+	<th>revisions</th>
+	<th>authors</th>
+</tr>
+</thead>
+<tbody>
+{% for pad in pads %}
+<tr>
+	<td class="name">
+		<a href="{{pad.link}}">{{ pad.padid }}</a>
+	</td>
+	<td class="versions"> 
+		{% for v in pad.versions %}<a href="{{v.url}}">{{v.type}}</a> {% endfor %}
+	</td>
+	<td class="lastedited">{{ pad.lastedited_iso|datetimeformat }}</td>
+	<td class="revisions">{{ pad.revisions }}</td>
+	<td class="authors">{{ pad.author_ids|length }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+{% block info %}<p class="info">Last updated {{timestamp}}.</p>{% endblock %}
+<div id="footer"></div>
+<link href="/static/sortable.css" rel="stylesheet" />
+<script src="/static/sortable.js"></script>
+<script src="/static/index.js"></script>
+</body>
+</html>
