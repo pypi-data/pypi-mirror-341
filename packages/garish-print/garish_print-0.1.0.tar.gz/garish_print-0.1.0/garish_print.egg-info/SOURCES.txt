@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+garish_print/__init__.py
+garish_print/core.py
+garish_print.egg-info/PKG-INFO
+garish_print.egg-info/SOURCES.txt
+garish_print.egg-info/dependency_links.txt
+garish_print.egg-info/top_level.txt

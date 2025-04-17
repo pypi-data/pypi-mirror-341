@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: garish-print
+Version: 0.1.0
+Summary: A garish text output module for the terminal.
+Author-email: Chris Ward <chris@counterglow.co.uk>
+License: MIT
+Project-URL: Homepage, https://github.com/ChrixWX92/garish-print
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
