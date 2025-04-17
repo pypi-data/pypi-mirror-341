@@ -1,0 +1,85 @@
+Metadata-Version: 2.4
+Name: daytona-openai-demo
+Version: 0.1.0
+Summary: Enhanced OpenAI client with Daytona sandbox execution capabilities
+Home-page: https://github.com/brunogrbavac/daytona-openai
+Author: Bruno Grbavac
+Author-email: Bruno Grbavac <info@daytona.io>
+License: MIT
+Project-URL: Homepage, https://github.com/brunogrbavac/daytona-openai
+Project-URL: Issues, https://github.com/brunogrbavac/daytona-openai/issues
+Project-URL: Documentation, https://github.com/brunogrbavac/daytona-openai#readme
+Keywords: openai,daytona,ai,compute,sandbox
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai>=1.0.0
+Requires-Dist: daytona-sdk
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# Daytona OpenAI
+
+Enhanced OpenAI client with Daytona sandbox execution capabilities.
+
+## Overview
+
+The `daytona-openai-demo` package extends the standard OpenAI client to add compute capabilities that execute code in a Daytona sandbox environment. This allows you to automatically generate and execute code based on natural language prompts.
+
+## Installation
+
+```bash
+pip install daytona-openai-demo
+```
+
+All required dependencies (`openai` and `daytona-sdk`) will be automatically installed.
+
+## Usage
+
+```python
+from daytona_openai_demo import DaytonaOpenAI
+
+# Initialize the client
+client = DaytonaOpenAI()
+
+# Standard OpenAI request
+response = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[
+        {"role": "user", "content": "Explain quantum computing basics in 3 sentences"}
+    ]
+)
+print(response.choices[0].message.content)
+
+# Compute-enabled request (automatically generates and executes code)
+response = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[
+        {"role": "user", "content": "Generate the first 10 prime numbers."}
+    ],
+    compute=True
+)
+print(response.choices[0].message.content)
+```
+
+## Features
+
+- Seamless integration with the OpenAI Python client
+- Automatic code generation and execution in a secure sandbox
+- Support for both chat completions and legacy completions APIs
+- All standard OpenAI parameters are supported
+
+## Requirements
+
+- Python 3.10 or higher
+- OpenAI API key
+- Daytona API key
