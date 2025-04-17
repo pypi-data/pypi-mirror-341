@@ -1,0 +1,9 @@
+pypi-README.md
+pyproject.toml
+transcription_normalization_client.py
+transcription_normalization_client.egg-info/PKG-INFO
+transcription_normalization_client.egg-info/SOURCES.txt
+transcription_normalization_client.egg-info/dependency_links.txt
+transcription_normalization_client.egg-info/entry_points.txt
+transcription_normalization_client.egg-info/requires.txt
+transcription_normalization_client.egg-info/top_level.txt
