@@ -1,0 +1,14 @@
+dist
+venv
+.vscode
+.idea
+.DS_Store
+.pypirc
+.pytest_cache
+
+__pycache__
+*.py[cod]
+
+.env
+.env.*
+!.env.example
