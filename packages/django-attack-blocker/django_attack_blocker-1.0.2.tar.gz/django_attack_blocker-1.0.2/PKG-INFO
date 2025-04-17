@@ -1,0 +1,214 @@
+Metadata-Version: 2.4
+Name: django_attack_blocker
+Version: 1.0.2
+Summary: ML-based IP blocking system for Django
+Home-page: https://github.com/benab04/django-attack-blocker
+Author: Ben Abraham Biju
+Author-email: benabrahambiju@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django>=3.2
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: joblib
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Django Attack Blocker
+
+A machine learning-based IP blocking library for Django applications to detect and prevent malicious network traffic.
+
+## Overview
+
+Django Attack Blocker is a demonstration library that shows how trained models on the UNSW dataset can be used to protect specific routes in Django applications. The library uses machine learning to identify potentially malicious network traffic and can automatically block IP addresses based on the model's predictions.
+
+This middleware integrates seamlessly with Django applications and can be used to protect sensitive routes from various network attacks such as DoS, DDoS, reconnaissance, and exploitation attempts.
+
+## Features
+
+- Machine learning-based detection of malicious network traffic
+- IP address blocking and whitelisting capabilities
+- Configurable blocking thresholds
+- Temporary and permanent IP blocks
+- Django view decorators for easy integration
+- Built-in caching of block decisions for performance
+- Support for trusted IP ranges
+- Detailed statistics tracking
+
+## Installation
+
+```bash
+pip install django_attack_blocker
+```
+
+## Required Files
+
+The required model and encoder files can be downloaded from the repository:
+
+- `model.pkl`: The trained machine learning model
+- `encoder.pkl`: The feature encoder for preprocessing
+
+## Usage
+
+### Basic Setup
+
+```python
+from django_attack_blocker import MLIPBlocker
+from django_attack_blocker import with_ip_blocking
+
+# Initialize the blocker with your model
+blocker = MLIPBlocker(
+    model_path='path/to/model.pkl',
+    encoder_path='path/to/encoder.pkl',
+    block_threshold=0.5,  # Confidence threshold for blocking
+    trusted_ips=['127.0.0.1', '192.168.1.0/24'],  # Always allow these IPs
+    blocked_ips=['10.0.0.5']  # Always block these IPs
+)
+
+# Protect a view using decorator
+@with_ip_blocking(blocker)
+def my_protected_view(request):
+    # Your view code here
+    return JsonResponse({"status": "success"})
+```
+
+The complete list of parameters are shown in this table
+
+| Parameter         | Type   | Default    | Description                                                                                                        |
+| ----------------- | ------ | ---------- | ------------------------------------------------------------------------------------------------------------------ |
+| `model_path`      | string | _Required_ | Path to the pickled ML model file (.pkl)                                                                           |
+| `encoder_path`    | string | _Required_ | Path to the pickled encoder file (.pkl)                                                                            |
+| `block_threshold` | float  | 0.5        | Confidence threshold for blocking decisions (0.0-1.0), where higher values require more confidence before blocking |
+| `block_timeout`   | int    | None       | Time duration in seconds for which an IP stays blocked. If None, blocks the IP permanently                         |
+| `trusted_ips`     | list   | None       | List of IP addresses or CIDR ranges (e.g. '192.168.1.0/24') that will always be allowed                            |
+| `blocked_ips`     | list   | None       | List of IP addresses or CIDR ranges that will always be blocked                                                    |
+
+> **Note**: The model and encoder files (`model.joblib` and `encoder.pkl`) can be found in the `weights` directory of the repository.
+
+The model expects logs in a specific format, with the following columns required:
+
+```
+dur, proto, service, state, spkts, dpkts, sbytes, dbytes, rate, sttl, dttl,
+sload, dload, sloss, dloss, sinpkt, dinpkt, sjit, djit, swin, stcpb, dtcpb,
+dwin, tcprtt, synack, ackdat, smean, dmean, trans_depth, response_body_len,
+ct_srv_src, ct_state_ttl, ct_dst_ltm, ct_src_dport_ltm, ct_dst_sport_ltm,
+ct_dst_src_ltm, is_ftp_login, ct_ftp_cmd, ct_flw_http_mthd, ct_src_ltm,
+ct_srv_dst, is_sm_ips_ports
+```
+
+### Sample Request Body
+
+The request body should contain a "log" object with the network traffic features:
+
+```json
+{
+  "log": {
+    "dur": 0.0,
+    "proto": 0,
+    "service": 0,
+    "state": 1,
+    "spkts": 1,
+    "dpkts": 0,
+    "sbytes": 2048,
+    "dbytes": 0,
+    "rate": 0,
+    "sttl": 64,
+    "dttl": 64,
+    "sload": 0.0,
+    "dload": 0.0,
+    "sloss": 0,
+    "dloss": 0,
+    "sinpkt": 0.0,
+    "dinpkt": 0.0,
+    "sjit": 0.0,
+    "djit": 0.0,
+    "swin": 65535,
+    "dwin": 65535,
+    "stcpb": 0,
+    "dtcpb": 0,
+    "tcprtt": 0.0,
+    "synack": 0.0,
+    "ackdat": 0.0,
+    "smean": 2048,
+    "dmean": 0,
+    "trans_depth": 1,
+    "response_body_len": 0,
+    "ct_srv_src": 1,
+    "ct_state_ttl": 1,
+    "ct_dst_ltm": 1,
+    "ct_src_dport_ltm": 1,
+    "ct_dst_sport_ltm": 1,
+    "ct_dst_src_ltm": 1,
+    "ct_src_ltm": 1,
+    "ct_srv_dst": 1,
+    "is_ftp_login": 0,
+    "ct_ftp_cmd": 0,
+    "ct_flw_http_mthd": 1,
+    "is_sm_ips_ports": 0
+  }
+}
+```
+
+## Advanced Usage
+
+### Manual IP Management
+
+```python
+# Manually block an IP address temporarily
+blocker.block_ip('192.168.1.100', duration=3600)  # Block for 1 hour
+
+# Permanently block an IP address
+blocker.block_ip('192.168.1.101')
+
+# Unblock an IP address
+blocker.unblock_ip('192.168.1.100')
+```
+
+### Getting Statistics
+
+```python
+# Get statistics about blocked requests
+stats = blocker.get_stats()
+print(stats)
+```
+
+## UNSW Dataset
+
+This library is designed to work with models trained on the UNSW-NB15 dataset, which contains a wide range of network attacks such as:
+
+- Fuzzers
+- Analysis
+- Backdoors
+- DoS
+- Exploits
+- Generic
+- Reconnaissance
+- Shellcode
+- Worms
+
+The library blocks that address either permanently in a session or caches it for the specified block time. Default is to be blocked permanently, till next restart of the server.
+
+## License
+
+MIT
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
