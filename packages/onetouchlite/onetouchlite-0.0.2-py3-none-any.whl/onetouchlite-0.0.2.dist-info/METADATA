@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: onetouchlite
+Version: 0.0.2
+Summary: 一个简单的轻量，集成了大多数OneTouch用法的工具包
+Home-page: https://gitee.com/SunnyB0y/onetouch
+Author: 17fine
+Author-email: 2756601885@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+### 1 
+#### printc 带有颜色的print
+#### prints 带有样式的print
+### 2
+#### timer 函数计时装饰器
+### 3
+#### pace 类似于tqdm的进度条
