@@ -1,0 +1,10 @@
+examples/demo1.png,sha256=Y3a2M1oGFxmBA_tXYPD974KndiQv7RHWG1O2KdB1czM,247886
+src/mcp_scholarly/__init__.py,sha256=KNZ1bD9ZGfyZwlv91Ueeega_1lsRDLs2fYQDgNbBdtc,212
+src/mcp_scholarly/arxiv_search.py,sha256=mQvOBanv2_OgtC4vqlJ0wHQujDVXEevbML3UcYqkTsk,1161
+src/mcp_scholarly/google_scholar.py,sha256=TG9I3wIxA_LqZTnsWVB9P7oPqeZsQlT9tJd3x353nCM,1022
+src/mcp_scholarly/server.py,sha256=eyw1dkPTNiSJiLWYNqEhAJNHotDrdhQH6EmV5E70YeQ,2964
+mseep_mcp_scholarly-0.1.0.dist-info/METADATA,sha256=999gDkZO-MIe3EBDIVSfmkk0iPuLL0gGIYcyEJF9aMM,3576
+mseep_mcp_scholarly-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp_scholarly-0.1.0.dist-info/entry_points.txt,sha256=agfT7uCrWsRKJdjE_nd4BmoeDTXfxPip2GOX9u_ISvk,53
+mseep_mcp_scholarly-0.1.0.dist-info/licenses/LICENSE,sha256=y9y3VUfqWZMg3ZJNiunmU4ZgzKgbChq43VxoC_2PnvI,1070
+mseep_mcp_scholarly-0.1.0.dist-info/RECORD,,
