@@ -1,0 +1,67 @@
+from typing import Any, TypeVar, Union, cast
+
+from attrs import define as _attrs_define
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="CreateWorkspace")
+
+
+@_attrs_define
+class CreateWorkspace:
+    """
+    Attributes:
+        name (Union[None, str]): The name of the workspace.
+        description (Union[None, Unset, str]): The description of the workspace.
+    """
+
+    name: Union[None, str]
+    description: Union[None, Unset, str] = UNSET
+
+    def to_dict(self) -> dict[str, Any]:
+        name: Union[None, str]
+        name = self.name
+
+        description: Union[None, Unset, str]
+        if isinstance(self.description, Unset):
+            description = UNSET
+        else:
+            description = self.description
+
+        field_dict: dict[str, Any] = {}
+        field_dict.update(
+            {
+                "name": name,
+            }
+        )
+        if description is not UNSET:
+            field_dict["description"] = description
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: type[T], src_dict: dict[str, Any]) -> T:
+        d = src_dict.copy()
+
+        def _parse_name(data: object) -> Union[None, str]:
+            if data is None:
+                return data
+            return cast(Union[None, str], data)
+
+        name = _parse_name(d.pop("name"))
+
+        def _parse_description(data: object) -> Union[None, Unset, str]:
+            if data is None:
+                return data
+            if isinstance(data, Unset):
+                return data
+            return cast(Union[None, Unset, str], data)
+
+        description = _parse_description(d.pop("description", UNSET))
+
+        create_workspace = cls(
+            name=name,
+            description=description,
+        )
+
+        return create_workspace
