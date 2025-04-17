@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: ormir_xct
+Version: 1.0.3
+Summary: A Python package for HR-pQCT image processing
+Home-page: https://github.com/ORMIR-XCT
+Author: Michael T. Kuczynski
+Author-email: mkuczyns@ucalgary.ca
+License: GPL-3.0
+Project-URL: Source Code, https://github.com/ORMIR-XCT/ORMIR_XCT
+Keywords: medical,imaging
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: black
+Requires-Dist: flake8
+Requires-Dist: hypothesis
+Requires-Dist: pbr
+Requires-Dist: pip
+Requires-Dist: pytest
+Requires-Dist: setuptools
+Requires-Dist: itk
+Requires-Dist: itk-ioscanco
+Requires-Dist: itkwidgets
+Requires-Dist: ormir-xct
+Requires-Dist: scikit-image
+Requires-Dist: SimpleITK
+Requires-Dist: vtk
+Requires-Dist: numpy
+Requires-Dist: numba
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: notebook
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+
+A Python package for HR-pQCT image processing
