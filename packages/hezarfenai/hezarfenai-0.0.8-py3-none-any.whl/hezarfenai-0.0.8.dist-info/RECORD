@@ -1,0 +1,9 @@
+hezarfenai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hezarfenai/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hezarfenai/models/model_loader.py,sha256=WhRezUCKmoPXytitn3JJVMT_Ofn51sk2wSW0I4BJ7Mc,1538
+hezarfenai/models/news_checker.py,sha256=Ym4sPx7VL4Tuz8WpNfQbK9h27q6HzT2MluRLjAjxffQ,4450
+hezarfenai-0.0.8.dist-info/licenses/LICENSE,sha256=OJ0MzgixvMPLP5hXV3d15f-WR4woZf_huF0XmZ2mUu8,1074
+hezarfenai-0.0.8.dist-info/METADATA,sha256=R8EkQ8F8AVDIlmHgJuH5Uw12LlNWL7wNvkXsHz-uhRM,1311
+hezarfenai-0.0.8.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+hezarfenai-0.0.8.dist-info/top_level.txt,sha256=XKFRTWOv-4LsSJKmDiNYvJFwZ6FjoKZBRFl41wwCQWk,11
+hezarfenai-0.0.8.dist-info/RECORD,,
