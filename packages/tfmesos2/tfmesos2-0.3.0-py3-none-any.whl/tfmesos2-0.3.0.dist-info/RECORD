@@ -1,0 +1,7 @@
+tfmesos2/__init__.py,sha256=nT7CBY2WVTHz6SX18o_wxaS0qgj4z9DPgv0uNicODhw,588
+tfmesos2/scheduler.py,sha256=_Nd7RYEWNv_9HaxxGhS5fGAndv3qqGfumB6jZsSuGTs,19112
+tfmesos2/server.py,sha256=a0sxlRnpzIvKfbdNd53whb2gWCd5GBNVX8LHfeDF7i0,3762
+tfmesos2-0.3.0.dist-info/METADATA,sha256=bsNR_EYhK9PEjJFqBQ2NSboyAT7Pa7Xc4mLhZiQy_zU,1684
+tfmesos2-0.3.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+tfmesos2-0.3.0.dist-info/top_level.txt,sha256=CGNz3HRIbx3N4PfTt35PKypUhW-uJZPXyWNYBOq-Bk0,9
+tfmesos2-0.3.0.dist-info/RECORD,,
