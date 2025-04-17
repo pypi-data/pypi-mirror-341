@@ -1,0 +1,83 @@
+# Knit LangChain SDK
+
+Welcome to the Knit's LangChain SDK, a powerful toolkit designed to integrate AI-powered agents built using LangChain with a wide range of SaaS applications. 
+
+As an embedded integration platform, Knit provides a white-labeled solution empowering SaaS companies to effortlessly scale integrations within their own products, enriching customer experiences with dynamic, out-of-the-box functionality.
+
+The Knit LangChain SDK is designed to facilitate seamless integration between LLM agents and SaaS applications by leveraging Knit's platform and its wide range of connectors. 
+
+## Installation
+
+Kickstart your journey with the Knit LangChain SDK by installing it via pip:
+
+```bash
+pip install knit-langchain
+```
+
+## Quick Start
+
+First, get your Knit API Key by signing up at [https://dashboard.getknit.dev/signup](https://dashboard.getknit.dev/signup)
+
+Now, we're ready to start using the SDK. Here's a simple guide to help you start integrating with the Knit LangChain SDK:
+
+```python
+import logging
+from langchain_openai import ChatOpenAI
+from langchain.agents import create_tool_calling_agent, AgentExecutor
+from langchain_core.messages import HumanMessage
+from langchain_core.prompts import ChatPromptTemplate
+from knit_langchain import KnitLangChain, ToolFilter
+
+# Initialize the Knit SDK with your API key
+knit = KnitLangChain(api_key="YOUR_KNIT_API_KEY")
+
+# Initialize your Large Language Model (LLM)
+model = ChatOpenAI(
+    api_key="YOUR_OPENAI_API_KEY",
+    model="gpt-4o",  # Choose the appropriate model, e.g., gpt-4o
+    temperature=0,   # Set temperature for response variability
+)
+
+# Discover available tools from a specific app.
+# Use app_id to filter tools for a particular application
+tools = knit.find_tools(app_id="charliehr")
+
+# Retrieve specific tools you want to pass to the LLM model.
+# Use ToolFilter to select the required tools by their IDs
+tool_defs = knit.get_tools(tools=[ToolFilter(app_id="charliehr", tool_ids=[tool.tool_id for tool in tools])])
+
+# Define the conversation prompt template with predefined roles and placeholders
+prompt = ChatPromptTemplate.from_messages(
+    [
+        ("system", "You are a helpful assistant"),  # System message defining the agent role
+        ("human", "{input}"),  # Placeholder for human input
+        ("placeholder", "{agent_scratchpad}"),  # Placeholder for intermediate steps
+    ]
+)
+
+# Create the agent capable of using the defined tools and prompt
+agent = create_tool_calling_agent(model, tools, prompt)
+
+# Create an executor to run the agent with detailed output
+agent_executor = AgentExecutor(agent=agent, tools=tool_defs, verbose=True)
+
+# Configuration settings required for tool execution
+config = {"knit_integration_id": "b29fcTlZc2IwSzViSUF1NXI5SmhqOHdydTpjaGFybGllaHI="}
+
+# Invoke the agent to perform a task, supplying necessary inputs and configuration
+agent_executor.invoke(
+    {"input": "I want to get the list of offices of the company"},
+    config={"configurable": config}
+)
+```
+
+That's it! It's that easy to get started and add hundreds of SaaS applications to your AI Agent. 
+
+## Detailed Information
+That was a quick introduction of how to get started with Knit's LangChain SDK. 
+
+To know more about how to use its advanced features and for more in depth information, please refer to the detailed guide here: [Knit LangChain SDK Guide](https://developers.getknit.dev/docs/knit-ai-langchain-sdk)
+
+## Support
+
+For support, reach out to kunal@getknit.dev
