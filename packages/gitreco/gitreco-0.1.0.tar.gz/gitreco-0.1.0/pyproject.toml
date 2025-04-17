@@ -1,0 +1,14 @@
+[project]
+name = "gitreco"  # 고유한 이름이어야 함
+version = "0.1.0"
+description = "짧은 설명"
+authors = [
+    {name="JungchanSon", email="rnrmfjc@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
