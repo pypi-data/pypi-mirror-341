@@ -1,0 +1,3 @@
+[console_scripts]
+rapid-elastic=rapid_elastic.cli:main_cli
+
