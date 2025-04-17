@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: dizest_MCP
+Version: 0.1.2
+Summary: FastMCP-based tools & server (one‑command launch)
+Author-email: NowDoor <bijou@season.co.kr>
+License-Expression: MIT
+Requires-Python: >=3.8
+Requires-Dist: fastmcp>=2.0.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: langchain-openai>=0.1.0
+Requires-Dist: tavily-python>=0.3.0
