@@ -1,0 +1,2 @@
+[console_scripts]
+chefmate = chefmate.cli:cli
