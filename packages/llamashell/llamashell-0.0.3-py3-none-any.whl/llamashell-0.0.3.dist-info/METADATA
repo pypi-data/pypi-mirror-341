@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: llamashell
+Version: 0.0.3
+Summary: A powerful shell that's powered by a locally running LLM
+Home-page: https://github.com/hathibelagal-dev/llamashell
+Author: Ashraff Hathibelagal
+Project-URL: Source, https://github.com/hathibelagal-dev/llamashell
+Project-URL: Tracker, https://github.com/hathibelagal-dev/llamashell/issues
+Keywords: ai shell llm llama qwen localllama terminal linux macos
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: transformers>=4.49.0
+Requires-Dist: torch
+Requires-Dist: huggingface_hub
+Requires-Dist: requests
+Requires-Dist: prompt_toolkit
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# llamashell
+A powerful shell that's powered by a locally running LLM (ideally Llama 3.x or Qwen 2.5)
