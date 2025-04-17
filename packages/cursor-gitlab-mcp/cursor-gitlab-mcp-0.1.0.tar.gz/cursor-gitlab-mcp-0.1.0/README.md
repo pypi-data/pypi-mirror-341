@@ -1,0 +1,72 @@
+# Cursor GitLab MCP
+
+一个用于Cursor IDE的GitLab操作服务，支持自然语言命令。
+
+## 功能特点
+
+- 支持自然语言命令
+- 自动总结代码改动
+- 自动生成提交注释
+- 一键提交和推送代码
+- 查看项目信息
+- 管理分支
+
+## 安装
+
+```bash
+pip install cursor-gitlab-mcp
+```
+
+## 配置
+
+在Cursor IDE中配置MCP：
+
+```json
+{
+  "mcpServers": {
+    "gitlab": {
+      "command": "cursor-gitlab-mcp mcp-command",
+      "env": {
+        "GITLAB_API_BASE": "http://your-gitlab-server.com",
+        "GITLAB_ACCESS_TOKEN": "your-access-token"
+      }
+    }
+  }
+}
+```
+
+## 使用
+
+在Cursor IDE中使用自然语言命令：
+
+1. 代码改动相关：
+   - "总结代码改动"
+   - "查看修改内容"
+   - "生成提交注释"
+   - "提交代码"
+
+2. 项目操作：
+   - "查看我的项目"
+   - "显示所有代码库"
+   - "查看项目分支"
+   - "查看最近提交"
+
+3. Git操作：
+   - "更新代码"
+   - "推送代码"
+   - "创建新分支"
+   - "切换到指定分支"
+
+## 开发
+
+```bash
+# 安装开发依赖
+pip install -e .
+
+# 运行测试
+python -m unittest discover tests
+```
+
+## 许可证
+
+MIT 

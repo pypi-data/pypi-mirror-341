@@ -1,0 +1,3 @@
+[console_scripts]
+cursor-gitlab-mcp = gitlab_mcp.server:main
+
