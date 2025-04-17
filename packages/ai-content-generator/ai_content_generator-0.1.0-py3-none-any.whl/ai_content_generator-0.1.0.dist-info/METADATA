@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: ai-content-generator
+Version: 0.1.0
+Summary: A simple wrapper to generate content using RAM AI
+Home-page: https://github.com/sriram-65/gen_ai.git
+Author: SRIRAM
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: google-generativeai
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# AI Content Generator
+
+A simple Python module to generate content using MY AI.
