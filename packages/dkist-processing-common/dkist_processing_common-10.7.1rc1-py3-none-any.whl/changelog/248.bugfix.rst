@@ -1,0 +1,1 @@
+Fix a bug exposed by updates in the `dkist-inventory` package that did not manage HISTORY or COMMENT cards correctly.
