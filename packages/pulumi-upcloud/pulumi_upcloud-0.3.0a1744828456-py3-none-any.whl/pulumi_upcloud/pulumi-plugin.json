@@ -1,0 +1,6 @@
+{
+  "resource": true,
+  "name": "upcloud",
+  "version": "0.3.0-alpha.1744828456",
+  "server": "github://api.github.com/UpCloudLtd/pulumi-upcloud"
+}
