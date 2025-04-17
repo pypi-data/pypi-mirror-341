@@ -1,0 +1,10 @@
+nonebot_plugin_latex-0.0.3.3.dist-info/METADATA,sha256=9D5CS9oa253Lv6k_xQJodORFZOw9INvmQRe933Z5Fp8,11649
+nonebot_plugin_latex-0.0.3.3.dist-info/WHEEL,sha256=tSfRZzRHthuv7vxpI4aehrdN9scLjk-dCJkPLzkHxGg,90
+nonebot_plugin_latex-0.0.3.3.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+nonebot_plugin_latex-0.0.3.3.dist-info/licenses/LICENSE,sha256=ISc-fUbtRp39lxd4MpdVr2Saz7XF2yik0RTSRNuhlaM,9375
+nonebot_plugin_latex/__init__.py,sha256=ts1qKcobbZDutv-HDFyZXIMH00YWX1erUXEYyLLysI8,1520
+nonebot_plugin_latex/config.py,sha256=5WOJF-vsuLqGTDGgklpMm-xLd_qdwVb0VCq-n8EwoJQ,198
+nonebot_plugin_latex/converter.py,sha256=rTyeJoZOhXciLcfZ6FWOe0mHczmd2E_sTrqEbJRZ6d8,194
+nonebot_plugin_latex/data.py,sha256=RepSY3I4t61Gk5yDfGSgn9UwZWFx8cnh4dHXIShTl-Y,11579
+nonebot_plugin_latex/main.py,sha256=ZufATio6dUvVj428myBwcNub_ErQ0LcotsjUvRPup98,3093
+nonebot_plugin_latex-0.0.3.3.dist-info/RECORD,,
