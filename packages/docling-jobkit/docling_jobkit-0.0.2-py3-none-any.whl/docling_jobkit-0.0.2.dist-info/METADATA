@@ -1,0 +1,125 @@
+Metadata-Version: 2.4
+Name: docling-jobkit
+Version: 0.0.2
+Summary: Running a distributed job processing documents with Docling.
+Project-URL: Homepage, https://github.com/docling-project/docling-jobkit
+Project-URL: Repository, https://github.com/docling-project/docling-jobkit
+Project-URL: Issues, https://github.com/docling-project/docling-jobkit/issues
+Project-URL: Changelog, https://github.com/docling-project/docling-jobkit/blob/main/CHANGELOG.md
+Author-email: Michele Dolfi <dol@zurich.ibm.com>, Viktor Kuropiatnyk <vku@zurich.ibm.com>, Tiago Santana <Tiago.Santana@ibm.com>, Cesar Berrospi Ramis <ceb@zurich.ibm.com>, Panos Vagenas <pva@zurich.ibm.com>, Christoph Auer <cau@zurich.ibm.com>, Peter Staar <taa@zurich.ibm.com>
+Maintainer-email: Michele Dolfi <dol@zurich.ibm.com>, Cesar Berrospi Ramis <ceb@zurich.ibm.com>, Panos Vagenas <pva@zurich.ibm.com>, Christoph Auer <cau@zurich.ibm.com>, Peter Staar <taa@zurich.ibm.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Requires-Dist: boto3~=1.35.36
+Requires-Dist: docling~=2.28
+Requires-Dist: kfp[kubernetes]
+Requires-Dist: kfp~=2.8.0
+Requires-Dist: ray~=2.30
+Requires-Dist: typer~=0.12
+Provides-Extra: cpu
+Requires-Dist: torch>=2.6.0; extra == 'cpu'
+Requires-Dist: torchvision>=0.21.0; extra == 'cpu'
+Provides-Extra: cu124
+Requires-Dist: torch>=2.6.0; extra == 'cu124'
+Requires-Dist: torchvision>=0.21.0; extra == 'cu124'
+Provides-Extra: rapidocr
+Requires-Dist: onnxruntime~=1.7; extra == 'rapidocr'
+Requires-Dist: rapidocr-onnxruntime~=1.4; (python_version < '3.13') and extra == 'rapidocr'
+Provides-Extra: tesserocr
+Requires-Dist: tesserocr~=2.7; extra == 'tesserocr'
+Description-Content-Type: text/markdown
+
+# Docling Jobkit
+
+Running a distributed job processing documents with Docling.
+
+ > [!NOTE]
+> This is an unstable draft implementation which will quickly evolve.
+
+
+## How to use it
+
+Make sure your Ray cluster has `docling-jobkit` installed, then submit the job.
+
+```sh
+ray job submit --no-wait --working-dir . --runtime-env runtime_env.yml -- docling-ray-job
+```
+
+## Ray runtime with Docling Jobkit
+
+
+### Custom runtime environment
+
+
+1. Create a file `runtime_env.yml`:
+
+    ```yaml
+    # Expected environment if clean ray image is used. Take into account that ray worker can timeout before it finishes installing modules.
+    pip:
+    - docling-jobkit
+    ```
+
+
+2. Submit the job using the custom runtime env: 
+
+    ```sh
+    ray job submit --no-wait --runtime-env runtime_env.yml -- docling-ray-job
+    ```
+
+More examples and customization are provided in [docs/ray-job/](docs/ray-job/README.md).
+
+
+### Custom image with all dependencies
+
+Coming soon. Initial instruction from [OpenShift AI docs](https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/2-latest/html/working_with_distributed_workloads/managing-custom-training-images_distributed-workloads#creating-a-custom-training-image_distributed-workloads).
+
+
+## Get help and support
+
+Please feel free to connect with us using the [discussion section](https://github.com/docling-project/docling/discussions) of the main [Docling repository](https://github.com/docling-project/docling).
+
+## Contributing
+
+Please read [Contributing to Docling Serve](https://github.com/docling-project/docling-jobkit/blob/main/CONTRIBUTING.md) for details.
+
+## References
+
+If you use Docling in your projects, please consider citing the following:
+
+```bib
+@techreport{Docling,
+  author = {Deep Search Team},
+  month = {1},
+  title = {Docling: An Efficient Open-Source Toolkit for AI-driven Document Conversion},
+  url = {https://arxiv.org/abs/2501.17887},
+  eprint = {2501.17887},
+  doi = {10.48550/arXiv.2501.17887},
+  version = {2.0.0},
+  year = {2025}
+}
+```
+
+## License
+
+The Docling Serve codebase is under MIT license.
+
+## LF AI & Data
+
+Docling is hosted as a project in the [LF AI & Data Foundation](https://lfaidata.foundation/projects/).
+
+### IBM ❤️ Open Source AI
+
+The project was started by the AI for Knowledge team at IBM Research Zurich.

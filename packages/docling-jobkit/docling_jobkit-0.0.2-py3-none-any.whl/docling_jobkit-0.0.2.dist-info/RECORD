@@ -1,0 +1,16 @@
+docling_jobkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docling_jobkit/requirements.txt,sha256=LjEEFSFZu3UdW9vW7buA0bdRQwxtKcnpNWQujR11Egw,117
+docling_jobkit/connectors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docling_jobkit/connectors/s3_helper.py,sha256=9vW_hhp0T2mWQZUNXI1cP04fRMh34BJkYk4n7WCG-ts,17301
+docling_jobkit/kfp_pipeline/docling-s3in-s3out.py,sha256=kkqtOK4koSkdeo_VuGuA2GLS5YGELPSK5R2HFjupuQc,9044
+docling_jobkit/kfp_pipeline/docling-s3in-s3out.yaml,sha256=hWkp_XlVvJJeiFgZPbZx5KPtGNVu4HAedTM6IO0hvmQ,14263
+docling_jobkit/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docling_jobkit/model/convert.py,sha256=oSqJmqqLj-SqH7OxKfSOLozmOqORS8Cu6SOQX6RzsLs,8742
+docling_jobkit/model/s3_inputs.py,sha256=9MrrtQaLJRBOdqi7bzuT3XVSbXJAdKjPlch0IAXDnfc,1260
+docling_jobkit/ray_job/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docling_jobkit/ray_job/main.py,sha256=cXaKCUeNL2_CUwsu5MmcQQBvccaIsC_-PzNRPznZhSY,13499
+docling_jobkit-0.0.2.dist-info/METADATA,sha256=lKkcLnaofJA0wD2VBPkjt1LxL9IdtCvIOG2s37vSjZ8,4638
+docling_jobkit-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+docling_jobkit-0.0.2.dist-info/entry_points.txt,sha256=53ttacb6qMgym7mNSU0yMf10v8JkXRpm8kx6GmiPjFI,69
+docling_jobkit-0.0.2.dist-info/licenses/LICENSE,sha256=mBb7ErEcM8VS9OhiGHnQ2kk75HwPhr54W1Oiz3965MY,1088
+docling_jobkit-0.0.2.dist-info/RECORD,,
