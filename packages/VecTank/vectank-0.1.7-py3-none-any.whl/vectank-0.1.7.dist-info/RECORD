@@ -1,0 +1,13 @@
+vectank/__init__.py,sha256=fKReKSnTFDBJXoCLxGxQ8_g3lRNb5scMws746c5w86o,321
+vectank/cli.py,sha256=9GxGmMFi62u9itQ5Qd_6KQNsHco1ERrFUTpmzL9jqB8,2355
+vectank/client.py,sha256=SJbizsBHKU-AKL6NxL8oi43hLID8JDDP7MYAPMax0Jg,2978
+vectank/core.py,sha256=aI9shCqm94HjAHpTqhOlZIrsVO1NSEAKHpP51xqOvAA,3225
+vectank/server.py,sha256=2HM_5uIoSd89ZmChtjHZbltZNi7hBFJsmxh4VsXgyvo,3573
+vectank/store.py,sha256=3bUhZRZivTPKHj9yYGk2zo0M61hxeKCBd8keV9S7yPk,3472
+vectank/tank.py,sha256=k61ZsCMOblA9U-91ePlFJDOdw1Ek_yU5AHKdpwwnP_M,20395
+vectank-0.1.7.dist-info/licenses/LICENSE,sha256=tUrubmFixXlgxbS96fdnDk1l8WI-rKhcxVzFeYC7Isw,1065
+vectank-0.1.7.dist-info/METADATA,sha256=Yht4zcy-FeSZH2aQK7yWeBgxgSXVMI3_av_E-2cNmhE,8339
+vectank-0.1.7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+vectank-0.1.7.dist-info/entry_points.txt,sha256=B49t1iqga_vFB0m-LMzPGjqnuli4aA0T1q6UHhKb7uE,49
+vectank-0.1.7.dist-info/top_level.txt,sha256=uVnTxhHNf-eXGGqiHFD-LJ7iIe2PM6pJ_Z2V1FlkM8A,8
+vectank-0.1.7.dist-info/RECORD,,
