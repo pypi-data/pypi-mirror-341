@@ -1,0 +1,10 @@
+gfagraphs/__init__.py,sha256=lY5Z0Qsv2KjF66Nxvt4WeHvMyJ0dhEbuoSdUlWj2VsU,178
+gfagraphs/abstractions.py,sha256=ZXKuGfAz8zcIfxH8x731ZyYSf4pxb8TtJ8eXoW5U2no,1848
+gfagraphs/gfaparser.py,sha256=YUixiyixEdEgaxysKRtuHHi0YMUWFlscVT-9Cr9Kd1M,25157
+gfagraphs/graph.py,sha256=hi3GA-YD-k8bugiNDAAPdLaMQQ_FPUIeHR2_2lutO90,34489
+gfagraphs/nx.py,sha256=QKDZQM6Dwmnb3BtMSWGk4RC32lJI7aGHAbnKY5C0X_I,7346
+gfagraphs-0.3.20.dist-info/licenses/LICENSE,sha256=ZtWkDn_YBDwY1Yd9fMvT9GaxkACZ7utJMd10QdGc1pw,34521
+gfagraphs-0.3.20.dist-info/METADATA,sha256=XVRC2h1z9jAsLSu1pqTBde-Vn-6WuvTo5yekJ2yAQBk,1909
+gfagraphs-0.3.20.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+gfagraphs-0.3.20.dist-info/top_level.txt,sha256=56xkh6GEdJSCUb8hf2Ju6dma7WciA6DO5EIfraIk6iA,10
+gfagraphs-0.3.20.dist-info/RECORD,,
