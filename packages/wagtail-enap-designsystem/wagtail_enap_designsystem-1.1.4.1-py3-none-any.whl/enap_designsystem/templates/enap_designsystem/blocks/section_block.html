@@ -1,0 +1,29 @@
+
+{% load wagtailcore_tags %}
+{% load static %}
+
+{% block content %}
+<div style="height: 40px;"></div>
+    <section class="section-card {{self.custom_class}}" {% if self.id_slug %}id="{{self.id_slug}}"{% endif %}>
+
+        <div class="container-medium">
+        <div class="padding-global">
+        <div class="wrapper-text-blue">
+        <h2 class="h2-blue-large">{{self.title}}</h2>
+        {{self.subtitle}}
+        </div>
+        </div>
+        </div>
+        
+        <div class="container-medium">
+        <div class="padding-global">
+        {% for block in self.content %}
+            {% include_block block %}
+        {% endfor %}
+        </div>
+        </div>
+        <div style="height: 40px;"></div>
+
+    </section>
+{% endblock %}
+
