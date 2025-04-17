@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: Vectoriz
+Version: 0.0.1
+Summary: Python library for create a vectorize data by text or files.
+Home-page: https://github.com/PedroHenriqueDevBR/RAG-vector-creator
+Author: PedroHenriqueDevBR
+Author-email: pedro.henrique.particular@gmail.com
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# RAG-vector-creator
+
+## Overview
+
+This project implements a RAG (Retrieval-Augmented Generation) system for creating vector embeddings from documents. These embeddings can be used for efficient document retrieval and question answering applications.
+
+## Features
+
+- Document ingestion and preprocessing
+- Vector embedding generation using state-of-the-art models
+- Efficient storage and retrieval of embeddings
+- Integration with LLM-based generation systems
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+python app.py
+```
+
+## Build lib
+
+To build the lib run the commands:
+
+```
+python setup.py sdist bdist_wheel
+```
+
+To test the install run:
+```
+pip install .
+```
+
+## License
+
+MIT

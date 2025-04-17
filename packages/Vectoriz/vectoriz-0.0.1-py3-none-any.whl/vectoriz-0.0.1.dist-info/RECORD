@@ -1,0 +1,15 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/app.py,sha256=TJjLFj1HekduB-xzytI3pL3xZlazcINgflmZ9nvXStI,3779
+tests/files_tests.py,sha256=G2jd8RHijyksxUNeBWuLsVx-CVEBSL4Rk-jgRcuTj1E,2023
+vectoriz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vectoriz/files.py,sha256=7G9tZKA0IFYESJMfebTVPhc6vw32WjqBELRMWorOp5E,4662
+vectoriz/token_transformer.py,sha256=qdTXltVrDLjsm3s61Z4llJLjwiU9Tldzc-EeLvUN0vw,3702
+vectoriz/vector_db.py,sha256=kQ-nRmrX9TQQJfB7isz0cof8YmZNLTAbVMrJKUZwZu0,4297
+vectorizer/__init__.py,sha256=4SJa6RpMKrnetxdELnW7873w0k_onMWrIlhHKJ-_dA8,122
+vectorizer/files.py,sha256=P_AmYhb6FZOzWjXMozPXKaoc80Zcc4CvETVF1VnkVIg,1502
+vectorizer/token_transformer.py,sha256=NfO4xxkk_IlmLap91A9xy0s9JTIIUCIS2iFDbeZNbe4,879
+vectorizer/vector_db.py,sha256=TUjs8Zup_vdE2xE96R-3Wv0fmdFKLHhbuWpRA-4u4FY,2037
+vectoriz-0.0.1.dist-info/METADATA,sha256=Ad2o65dVmiU51-FXs44RDOWUuIlKMnOWrSYuoI-p7sQ,1298
+vectoriz-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+vectoriz-0.0.1.dist-info/top_level.txt,sha256=Tcfk3kazBwJ_yySjjhlIhLoTWLQGSb5xV006X18O6Nk,15
+vectoriz-0.0.1.dist-info/RECORD,,
