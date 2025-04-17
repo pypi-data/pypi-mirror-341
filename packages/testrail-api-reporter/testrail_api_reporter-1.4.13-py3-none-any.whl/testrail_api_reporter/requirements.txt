@@ -1,0 +1,12 @@
+atlassian-python-api>=3.41.11
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+httplib2
+kaleido
+oauth2client
+plotly
+psutil
+requests
+testrail-api
+xmltodict
