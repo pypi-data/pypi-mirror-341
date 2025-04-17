@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: hellotest_ire
+Version: 0.0.1
+Summary: A small package for you
+Author: ABS EMON
+Author-email: ABS EMON <iotandrobotics@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/ABS-EMON/python_package
+Project-URL: Issues, https://github.com/ABS-EMON/python_package/issues
+Keywords: greet,AI,ML
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: license-file
+
+# hellotest-ire Package
+
+This is a simple  package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
