@@ -1,0 +1,9 @@
+include pvoctopus/LICENSE
+include pvoctopus/__init__.py
+include pvoctopus/_factory.py
+include pvoctopus/_octopus.py
+include pvoctopus/_util.py
+include pvoctopus/lib/common/param/octopus_params.pv
+recursive-include pvoctopus/lib/linux *
+recursive-include pvoctopus/lib/mac *
+recursive-include pvoctopus/lib/windows *

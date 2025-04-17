@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pvoctopus
+Version: 2.0.2
+Summary: ⚠️ DEPRECATED: This package is no longer maintained.
+Home-page: https://github.com/Picovoice/octopus
+Author: Picovoice
+Author-email: hello@picovoice.ai
+License: UNKNOWN
+Keywords: Speech-to-Index,Voice Search,Keyword Spotting,Speech Recognition,Voice Recognition
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Sound/Audio :: Speech
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+This package has been deprecated.
+
