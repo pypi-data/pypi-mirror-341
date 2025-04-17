@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: mora
+Version: 0.2.0
+Summary: Self-contained Python remote administration library
+Home-page: 
+Author: omar
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# Mora
+
+A self-contained Python remote administration library.  
+Automatically starts a Telegram bot if `MORA_TOKEN` environment variable is set.  
+Author: omar
+
+## Installation
+
+```bash
+pip install .

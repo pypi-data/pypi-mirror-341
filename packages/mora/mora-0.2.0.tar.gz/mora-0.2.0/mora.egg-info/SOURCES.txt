@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mora/__init__.py
+mora/bot.py
+mora/command_exec.py
+mora/file_ops.py
+mora/handlers.py
+mora/sys_info.py
+mora.egg-info/PKG-INFO
+mora.egg-info/SOURCES.txt
+mora.egg-info/dependency_links.txt
+mora.egg-info/top_level.txt
