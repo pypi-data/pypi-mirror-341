@@ -1,0 +1,2 @@
+[console_scripts]
+pineaoth = pineaoth.main:main
