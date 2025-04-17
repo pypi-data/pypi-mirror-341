@@ -1,0 +1,11 @@
+office_assistant_mcp/__init__.py,sha256=cibhmweOraCBwITo0Q25MHCzOpd6IjsMdpS5iUVcGcE,223
+office_assistant_mcp/log_util.py,sha256=ZACrsRL41Fr91nxNfxcdxo-wKj40BD3PHzydPxjnUFM,4554
+office_assistant_mcp/mcp_server.py,sha256=c1XGUQQanOsIaGraqA1kpO1wUmvecSfSCkWSWv2aYkU,15616
+office_assistant_mcp/playwright_message.py,sha256=zp0vxHZn-uPihU-75Uh2Uk886Jqc8Z_jMDwK0xLlJec,5739
+office_assistant_mcp/playwright_util.py,sha256=wMIeBwRwzP2sDXj-RnPT-bZPrlANw6A3j4UaM-9usdE,22075
+office_assistant_mcp/prompt.py,sha256=AQjztWg0NwZfo08OjNY5p2izX05qLWmtubSeBCWpPiU,3396
+office_assistant_mcp-0.0.10.dist-info/METADATA,sha256=WHXiFtPeO5hvh2T6I5y2ayAZprxWAhSuZueoXlhD2Oc,990
+office_assistant_mcp-0.0.10.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+office_assistant_mcp-0.0.10.dist-info/entry_points.txt,sha256=4McTbA8E4czby-whDPW_qukmK0sYloRRAqOZ9s5CpLU,78
+office_assistant_mcp-0.0.10.dist-info/top_level.txt,sha256=GF6-dDZP-yOWb8XR8FB22Ax8FI5l6L7DVydNt_NsJ5Y,21
+office_assistant_mcp-0.0.10.dist-info/RECORD,,
