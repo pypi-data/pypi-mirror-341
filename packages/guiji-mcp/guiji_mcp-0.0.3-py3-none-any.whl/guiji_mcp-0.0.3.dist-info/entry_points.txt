@@ -1,0 +1,2 @@
+[console_scripts]
+guiji-mcp = gj_meta_mcp.server:main
