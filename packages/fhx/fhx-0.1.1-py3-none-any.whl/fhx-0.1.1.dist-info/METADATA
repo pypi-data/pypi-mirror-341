@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: fhx
+Version: 0.1.1
+Summary: Quickly scaffold FastHTML apps!
+Author-email: David Gwyer <d.v.gwyer@gmail.com>
+Requires-Python: >=3.12
+Requires-Dist: typer
+Description-Content-Type: text/markdown
+
+Quickly scaffold FastHTML apps!
