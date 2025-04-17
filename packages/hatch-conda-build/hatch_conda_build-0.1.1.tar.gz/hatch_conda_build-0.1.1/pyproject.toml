@@ -1,0 +1,61 @@
+[project]
+name = "hatch-conda-build"
+description = "A Hatch plugin to enable building a conda package from your pyproject.toml without having to write a separate conda build recipe meta.yaml file"
+dynamic = ["version"]
+requires-python = ">=3.9"
+readme = "README.md"
+dependencies = [
+   "hatchling",
+   "ruamel.yaml",
+   "requests",
+   "grayskull",
+   "conda-souschef >=2.2.3",
+   "build",
+   "deepmerge"
+]
+
+[build-system]
+requires = ["hatchling", "hatch-vcs>=0.3", "setuptools-scm>=7.1"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/hatch_conda_build/_version.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "src/hatch_conda_build",
+  "/pyproject.toml",
+  "/LICENSE",
+  "/README.md",
+  "/tests",
+]
+
+[project.entry-points.hatch]
+conda = "hatch_conda_build.hooks"
+
+
+[project.optional-dependencies]
+dev = [
+  "ruff",
+  "black",
+  "pytest",
+  "pytest-mock",
+  "pytest-cov"
+]
+
+[tool.hatch.envs.test]
+features = [
+  "dev"
+]
+
+[tool.hatch.envs.test.scripts]
+check = [
+  "black --check --diff .",
+  "ruff check .",
+]
+format = [
+  "black .",
+]
