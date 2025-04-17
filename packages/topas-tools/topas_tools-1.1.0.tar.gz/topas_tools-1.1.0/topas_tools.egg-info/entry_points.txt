@@ -1,0 +1,11 @@
+[console_scripts]
+cif2patterson = topas_tools.cif2patterson:main
+cif2topas = topas_tools.cif2topas:main
+expandcell = topas_tools.expandcell:main
+fh2topas = topas_tools.fh2topas:main
+make_superflip = topas_tools.make_superflip:main
+restraints_statistics = topas_tools.restraints_statistics:main
+stripcif = topas_tools.stripcif:main
+topas_ndxan = topas_tools.topas_ndxan:main
+topasdiff = topas_tools.topasdiff:main
+topasrestraints = topas_tools.topas_restraints:main
