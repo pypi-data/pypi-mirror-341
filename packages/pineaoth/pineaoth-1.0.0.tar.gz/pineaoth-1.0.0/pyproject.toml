@@ -1,0 +1,75 @@
+[project]
+name = "pineaoth"
+version = "1.0.0"
+description = "🔐 PineAoth - CLI 2FA Authenticator dengan Live OTP, SQLite & Tampilan Rich. Menyediakan fungsi OTP 2FA yang aman dan mudah digunakan, dengan antarmuka terminal yang kaya."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+  { name = "openpineaple", email = "openpineaple@gmail.com" }
+]
+keywords = ["CLI", "OTP", "2FA", "Authenticator", "TOTP", "Security", "pyotp", "rich"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Topic :: Security",
+  "Topic :: Utilities",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11"
+]
+
+dependencies = [
+  "pyotp>=2.8.0,<3.0.0",    # Pastikan versi pyotp dalam rentang yang sesuai
+  "rich>=13.0.0,<14.0.0"    # Tentukan rentang versi untuk rich agar kompatibel
+]
+
+[project.optional-dependencies]
+dev = [
+  "black>=24.0,<25.0",       # Format kode dengan black sesuai versi terbaru
+  "isort>=5.12,<6.0",         # Menyortir impor dengan isort
+  "mypy>=1.0,<2.0",           # Analisis tipe dengan mypy
+  "pytest>=7.0,<8.0",         # Menjalankan pengujian dengan pytest
+  "build",                    # Untuk membangun paket distribusi
+  "twine"                     # Untuk mengunggah ke PyPI
+]
+
+[project.scripts]
+pineaoth = "pineaoth.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | build
+  | dist
+)/  # Direktori yang akan dikecualikan dari pengecekan format
+'''
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+python_version = 3.8
+ignore_missing_imports = true
+strict = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+  "tests",  # Pastikan direktori pengujian berada di dalam folder ini
+]
