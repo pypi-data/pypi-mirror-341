@@ -1,0 +1,12 @@
+{
+    "objectType": "resource",
+    "fields": [
+      "id",
+      "clientId"
+    ],
+    "filterCriteria": "tags.name = \"Managed By\"  AND tags.value = \"Alert\" ",
+    "pageNo": 1,
+    "pageSize": 500
+  }
+    
+  
