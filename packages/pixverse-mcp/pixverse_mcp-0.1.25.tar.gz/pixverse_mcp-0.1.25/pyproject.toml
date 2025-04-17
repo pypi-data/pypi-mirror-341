@@ -1,0 +1,17 @@
+[project]
+name = "pixverse-mcp"
+version = "0.1.25"
+description = "PixVerse MCP integration for video generation"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "httpx>=0.24.0",
+    "python-dotenv>=1.0.0"
+]
+
+[project.scripts]
+pixverse-mcp = "pixverse_mcp.server:main"
+
+[tool.uvx]
+entry-point = "pixverse_mcp.server:main"

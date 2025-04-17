@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: pixverse-mcp
+Version: 0.1.25
+Summary: PixVerse MCP integration for video generation
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: httpx>=0.24.0
+Requires-Dist: python-dotenv>=1.0.0
+
+# PixVerse MCP - Video Generation
+
+A Machine Communication Protocol (MCP) implementation for PixVerse video generation API.
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+Set your PixVerse API key as an environment variable:
+
+```bash
+export PIXVERSE_API_KEY=your_api_key_here
+```
+
+Or create a `.env` file in the project root:
+
+```
+PIXVERSE_API_KEY=your_api_key_here
+```
+
+## Running the MCP Server
+
+```bash
+python -m pixverse_mcp
+```
+
+or
+
+```bash
+pixverse-mcp
+```
