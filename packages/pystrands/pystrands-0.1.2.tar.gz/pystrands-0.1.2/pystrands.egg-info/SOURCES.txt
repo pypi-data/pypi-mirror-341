@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+pystrands/__init__.py
+pystrands/__main__.py
+pystrands/client.py
+pystrands/context.py
+pystrands.egg-info/PKG-INFO
+pystrands.egg-info/SOURCES.txt
+pystrands.egg-info/dependency_links.txt
+pystrands.egg-info/top_level.txt
