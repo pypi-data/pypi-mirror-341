@@ -1,0 +1,10 @@
+ising.cpython-311-darwin.so,sha256=LGhwg1VHppEZ1XvYCpkA6iFwFl8JPD-gUK7lxWHyaVM,50408
+compdismatter/__init__.py,sha256=zi0Xbc4huQSHw2ZzRTyuqBgtWCiLLXTN_83yeetC1b4,23
+compdismatter/core.py,sha256=qhw5L1N4m2m5pikIgxeQWxawSRhhvAE664OpR2-FIM0,6192
+compdismatter/lib/ising.so,sha256=SZabXrvRxtjq8CBzbjRqrnbbqCCGL9oVXCMOmPXcfUI,33400
+compdismatter/wasm/ising.c,sha256=dCnmiAvPOruGPgbESuacTmFs9IaEpGC73JGja-q2a3M,603
+compdismatter/wasm/ising.wasm,sha256=UukGuxeSxUfKO5tnJn2frsiFRTIafg0XT25Zx5HfVBM,65
+compdismatter-0.1.0.dist-info/METADATA,sha256=mNWD5RJLl3e-q_76NfJXMe0Zni_TiqwdjZ0W4nbOT1g,57
+compdismatter-0.1.0.dist-info/WHEEL,sha256=PB7y-L3f5fb-faS38Np0on__UckIVS6NROSeP__SqYQ,109
+compdismatter-0.1.0.dist-info/top_level.txt,sha256=bX7fq7Ia8Fo1uYE0hz5zcqyO8SQ8BurQ2YHahrL8B8w,20
+compdismatter-0.1.0.dist-info/RECORD,,
