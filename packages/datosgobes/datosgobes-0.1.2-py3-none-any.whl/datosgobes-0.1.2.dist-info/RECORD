@@ -1,0 +1,9 @@
+datosgobes/__init__.py,sha256=iNQjDvmAgl5g0EihQQFT-VmOEFJAvZ5xHLTB2-eUjjI,29
+datosgobes/data_download.py,sha256=0PmKqBixlC8pKXrQvnEubztJ4xvS4L5vL3Z98cVaSJU,2750
+datosgobes/manager.py,sha256=2IzYJZnq1m4b2M5SJp1pPMTHvcQlmLOnC8-hbQ4AWBc,4631
+datosgobes/opendataset.py,sha256=yse15mLM9Sx7UZsJooj05MnJ9R6vVS-tn8M7NTNPrzE,4476
+datosgobes-0.1.2.dist-info/licenses/LICENSE,sha256=g0ZPESJ2B2vME1q7ICNWVVlOJSlnrI-a0A700lrGVe4,1068
+datosgobes-0.1.2.dist-info/METADATA,sha256=akr1sWF05bXvilIrLWPPDCEui7MBsCHGkIuqaqkiriM,561
+datosgobes-0.1.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+datosgobes-0.1.2.dist-info/top_level.txt,sha256=Ny-EN1B3DqXH6uq658HdVMkpO1fIB-UMn-SGUrT4OOw,11
+datosgobes-0.1.2.dist-info/RECORD,,
