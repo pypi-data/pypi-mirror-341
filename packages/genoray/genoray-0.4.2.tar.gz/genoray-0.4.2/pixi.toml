@@ -1,0 +1,66 @@
+[workspace]
+name = "genoray"
+channels = ["conda-forge", "bioconda"]
+platforms = ["linux-64"]
+
+[environments]
+dev = ['dev']
+doc = ['doc']
+
+[dependencies]
+python = ">=3.9"
+numpy = "==1.26"
+pandas = "==2.2.2"
+polars = "==1.26"
+typing-extensions = "==4.11"
+tqdm = "==4.65"
+more-itertools = "==10"
+
+[pypi-dependencies]
+cyvcf2 = "==0.31.1"
+hirola = "==0.3.0"
+pgenlib = "==0.92.0"
+pyranges = "==0.1.1"
+pyarrow = "==16"
+phantom-types = "==3"
+
+[feature.dev.dependencies]
+python = "3.9.*"
+htslib = "*"
+bcftools = "*"
+plink2 = "*"
+pytest = "*"
+commitizen = "*"
+pre-commit = "*"
+ruff = "*"
+pytest-cases = "*"
+ipykernel = "*"
+ipywidgets = "*"
+
+[feature.dev.pypi-dependencies]
+genoray = { path = ".", editable = true }
+jurigged = { version = ">=0.6.0, <0.7", extras = ["develoop"] }
+
+[feature.dev.tasks]
+pre-commit = "pre-commit install --hook-type commit-msg"
+i-kernel = "ipython kernel install --user --name genoray"
+gen = "sh tests/data/gen_from_vcf.sh"
+test = "pytest tests"
+bump-dry = "cz bump --dry-run"
+bump = "cz bump"
+push = "git push --follow-tags"
+publish = "rm -r dist && uv build && uv publish"
+
+[feature.doc.dependencies]
+python = "3.12.*"
+sphinx = "*"
+sphinx-book-theme = "*"
+sphinx-autobuild = "*"
+sphinx-autodoc-typehints = "*"
+myst-parser = "*"
+
+[feature.doc.pypi-dependencies]
+genoray = { path = ".", editable = true }
+
+[feature.doc.tasks]
+doc = { cmd = "make clean && make html", cwd = "docs" }
