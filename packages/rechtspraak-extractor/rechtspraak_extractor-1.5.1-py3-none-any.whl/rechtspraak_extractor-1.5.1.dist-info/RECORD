@@ -1,0 +1,11 @@
+rechtspraak_extractor/README.md,sha256=ZyZMDWN1Jvu1MVfHBNXTXrXEqvVLsBB3AOUoyKeikAU,6228
+rechtspraak_extractor/__init__.py,sha256=M2kpiuN9Q_2mk_vYDnc8OorvXxeYeOvxF9T9wcdfNnQ,212
+rechtspraak_extractor/rechtspraak.py,sha256=eBib5dWtPUdllC_AM4wjveK8asP74-BM46e3IuM-1bk,5785
+rechtspraak_extractor/rechtspraak_functions.py,sha256=Gwg3kf7eAIxHH1nOGsgD4PbsfGnA5fyIA-e7xLzIRmc,2586
+rechtspraak_extractor/rechtspraak_metadata.py,sha256=28QycpCsQL0aEmVA6ABh81vOyGA9UYB0VIs4H2bxrJg,23659
+rechtspraak_extractor/testing_file.py,sha256=xxvZVkuPk2E55CEYJWcqvJAqfJVo8NtmSQKxlW8c1X4,407
+rechtspraak_extractor-1.5.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rechtspraak_extractor-1.5.1.dist-info/METADATA,sha256=yJbK56Ps0sPSnAkqhs_1jW46WWuFHa0A52Krwi47joA,20149
+rechtspraak_extractor-1.5.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+rechtspraak_extractor-1.5.1.dist-info/top_level.txt,sha256=kZrBS0jM46OwMtPg2iW3MEVoZEuLZ8aGlMIfkkMZ_pU,22
+rechtspraak_extractor-1.5.1.dist-info/RECORD,,
