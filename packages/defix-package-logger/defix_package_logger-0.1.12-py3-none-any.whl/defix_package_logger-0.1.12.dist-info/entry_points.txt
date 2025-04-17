@@ -1,0 +1,2 @@
+[console_scripts]
+defix-package-logger = defix_package_logger:main
