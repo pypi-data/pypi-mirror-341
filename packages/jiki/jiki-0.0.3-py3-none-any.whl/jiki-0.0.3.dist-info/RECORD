@@ -1,0 +1,10 @@
+jiki/__init__.py,sha256=zwVAAyN-v1Y2WHTcv9-k9PF81h4NrB-79745zC3VqKE,10960
+jiki/cli.py,sha256=SBWLR1Xgv4UjCoymIdUsKhH-W9pfkOdUy9IhQMT865k,8729
+jiki/logging.py,sha256=Lq9xgU1cp9GGa4rfjHH-GMuA755hgz8Lb9AhDhYLGpQ,4065
+jiki/mcp_client.py,sha256=Q6R8c2HAxlCUe7G08je7ndJ-iSMOu0rnliRqCMLkHVk,4510
+jiki/orchestrator.py,sha256=tFDiFPD7YCvoWYcELgw1AfLh8LR4bFmXLTHYjWlzYAo,15879
+jiki-0.0.3.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jiki-0.0.3.dist-info/METADATA,sha256=7TX5w6l3kewPnmeOoNcSnKY5ameR3oU-uaxMVwieiPM,3035
+jiki-0.0.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+jiki-0.0.3.dist-info/top_level.txt,sha256=VWppwLh2TC0sqkJOq2B57zn5HlHWBWEN5mt3HoCeUZg,5
+jiki-0.0.3.dist-info/RECORD,,
