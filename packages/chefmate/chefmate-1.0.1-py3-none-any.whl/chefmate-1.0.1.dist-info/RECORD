@@ -1,0 +1,11 @@
+chefmate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chefmate/browser_manager.py,sha256=V1khfGVj8aeOmuQmVZLHs5H56vZRvtI97-nNe6pTK6E,2866
+chefmate/chefmate_core.py,sha256=F66-7gJJtn0_a6nM3HWLe58-3ExcAA82HK0ujmzrmEU,69631
+chefmate/cli.py,sha256=5GtohPcnSY8ygqLqZyMwZQioWfvMlF9KHTvYN15CB-4,9323
+chefmate/config.py,sha256=itkFruFKMX7eday8UnAYOfnVMthivn20tiTlG87czyA,2220
+chefmate-1.0.1.dist-info/licenses/LICENSE,sha256=gIUzdNdf-vbONssDRz-fj0uTywroTk9_ZBedvpj57XU,1094
+chefmate-1.0.1.dist-info/METADATA,sha256=eYb8gWDpR_rRRFXsLHgS41ObQ0eq2Cysv7VNo7Ch2rk,11858
+chefmate-1.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+chefmate-1.0.1.dist-info/entry_points.txt,sha256=bu-w_FqHbrOtY-gTEe0WLVNWQZa8fOT2EPCMmSEpjfI,54
+chefmate-1.0.1.dist-info/top_level.txt,sha256=jOlvGtNNEYlsbwLBD2lpAmZBSo1wq2dydfAM1lP_Ago,9
+chefmate-1.0.1.dist-info/RECORD,,
