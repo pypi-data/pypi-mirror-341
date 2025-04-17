@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+hrm_recorder.egg-info/PKG-INFO
+hrm_recorder.egg-info/SOURCES.txt
+hrm_recorder.egg-info/dependency_links.txt
+hrm_recorder.egg-info/entry_points.txt
+hrm_recorder.egg-info/requires.txt
+hrm_recorder.egg-info/top_level.txt
