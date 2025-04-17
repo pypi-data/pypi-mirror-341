@@ -1,0 +1,124 @@
+fragment statistics on StatisticsByPersonType {
+  person {
+    id
+    fullName
+  }
+  participationCount
+  absenceCount
+  absenceReasons {
+    count
+    absenceReason {
+      id
+      shortName
+      name
+      colour
+      default
+    }
+  }
+  tardinessSum
+  tardinessCount
+  extraMarks {
+    count
+    extraMark {
+      id
+      shortName
+      name
+      colourFg
+      colourBg
+      showInCoursebook
+    }
+  }
+}
+
+query statisticsByPerson($person: ID!) {
+  statistics: statisticsByPerson(person: $person) {
+    ...statistics
+  }
+}
+
+query participationsOfPerson($person: ID!) {
+  items: participationsOfPerson(person: $person) {
+    id
+    absenceReason {
+      id
+      shortName
+      name
+      colour
+      default
+    }
+    tardiness
+    relatedDocumentation {
+      id
+      datetimeStart
+      datetimeEnd
+      teachers {
+        id
+        shortName
+        fullName
+        avatarContentUrl
+      }
+      subject {
+        id
+        name
+        shortName
+        colourFg
+        colourBg
+      }
+      amended
+    }
+    canEdit
+    canDelete
+  }
+}
+
+query personalNotesForPerson($person: ID!) {
+  items: personalNotesForPerson(person: $person) {
+    id
+    note
+    extraMark {
+      id
+      shortName
+      name
+      colourFg
+      colourBg
+      showInCoursebook
+    }
+    relatedDocumentation: documentation {
+      id
+      datetimeStart
+      datetimeEnd
+      teachers {
+        id
+        shortName
+        fullName
+        avatarContentUrl
+      }
+      subject {
+        id
+        name
+        shortName
+        colourFg
+        colourBg
+      }
+    }
+    canEdit
+    canDelete
+  }
+}
+
+query statisticsByGroup($group: ID!) {
+  items: statisticsByGroup(group: $group) {
+    #    persons {
+    #      id
+    #      fullName
+    ...statistics
+    #    }
+  }
+}
+
+query personName($person: ID!) {
+  personName: personById(id: $person) {
+    id
+    fullName
+  }
+}
