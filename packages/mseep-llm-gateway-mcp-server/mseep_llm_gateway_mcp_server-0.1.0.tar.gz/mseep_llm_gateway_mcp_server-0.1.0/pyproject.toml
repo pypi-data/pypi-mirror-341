@@ -1,0 +1,196 @@
+[build-system]
+requires = [
+    "hatchling",
+    "torch",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "mseep-llm_gateway_mcp_server"
+version = "0.1.0"
+description = "A Model Context Protocol (MCP) server providing unified access to multiple LLM providers with cost optimization"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [
+    { name = "Jeffrey Emanuel", email = "jeffrey.emanuel@gmail.com" },
+]
+maintainers = [
+    { name = "Jeffrey Emanuel", email = "jeffrey.emanuel@gmail.com" },
+]
+keywords = [
+    "llm",
+    "mcp",
+    "gateway",
+    "ai",
+    "claude",
+    "gpt",
+    "gemini",
+    "deepseek",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "mcp",
+    "anthropic",
+    "openai",
+    "google-genai",
+    "httpx",
+    "aiofiles",
+    "asyncio",
+    "pydantic",
+    "tenacity",
+    "diskcache",
+    "msgpack",
+    "numpy",
+    "sentence-transformers",
+    "chromadb",
+    "prometheus-client",
+    "pandas",
+    "rich",
+    "jinja2",
+    "pillow",
+    "python-slugify",
+    "colorama",
+    "tqdm",
+    "tiktoken",
+    "python-decouple",
+    "pydantic-settings",
+    "jsonschema",
+    "matplotlib",
+    "marqo",
+    "pytest-playwright",
+    "sqlalchemy",
+    "aiosqlite",
+    "pyvis",
+    "python-docx",
+    "opencv-python",
+    "pillow",
+    "pytesseract",
+    "pdf2image",
+    "pdfplumber",
+    "fitz",
+    "pymupdf",
+    "beautifulsoup4",
+    "xmldiff",
+    "lxml",
+    "faster-whisper",
+    "html2text",
+    "readability-lxml",
+    "markdownify",
+    "trafilatura",
+    "markdown",
+]
+
+[project.license]
+file = "LICENSE"
+
+[project.optional-dependencies]
+advanced = [
+    "torch",
+    "torchvision",
+    "torchaudio",
+    "transformers",
+    "flash-attn",
+    "accelerate",
+]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "isort",
+    "mypy",
+    "ruff",
+    "types-aiofiles",
+    "pre-commit",
+]
+docs = [
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocstrings",
+    "mkdocstrings-python",
+]
+all = [
+    "llm_gateway_mcp_server[advanced,dev,docs]",
+]
+
+[project.urls]
+Homepage = "https://github.com/Dicklesworthstone/llm_gateway_mcp_server"
+Documentation = "https://github.com/Dicklesworthstone/llm_gateway_mcp_server/docs"
+Repository = "https://github.com/Dicklesworthstone/llm_gateway_mcp_server.git"
+"Bug Reports" = "https://github.com/Dicklesworthstone/llm_gateway_mcp_server/issues"
+
+[project.scripts]
+llm-gateway = "llm_gateway.cli.main:main"
+
+[tool.hatch.version]
+path = "llm_gateway/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/llm_gateway",
+    "/examples",
+    "/tests",
+    "LICENSE",
+    "README.md",
+    "pyproject.toml",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "tests",
+    "examples",
+    "llm_gateway",
+]
+
+[tool.black]
+line-length = 100
+target-version = [
+    "py313",
+]
+include = "\\.pyi?$"
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+
+[tool.mypy]
+python_version = "3.13"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+strict_optional = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "--cov=llm_gateway --cov-report=term-missing -v"
+testpaths = [
+    "tests",
+]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+select = [
+    "E",
+    "F",
+    "B",
+    "I",
+    "Q",
+]
+ignore = [
+    "E203",
+    "E501",
+    "Q000",
+]
