@@ -1,0 +1,15 @@
+auth_user_mgr/__init__.py,sha256=0ODMnhA7aMeoM4yoTuRINJtxP0BXpg9Zj8UdHRSblI8,199
+auth_user_mgr/_api.py,sha256=ru76_a2tuSW0x1MnFhVWc_qq1rQCDJ28PV6GYMQ-WOw,11706
+auth_user_mgr/_config.py,sha256=MvgB_BDagY5LbtTQTVbZ9hK3_H1MI7nh7-TliCa9C1Y,827
+auth_user_mgr/_email.py,sha256=7uwPFdPdhMfEhGLaK9w7cyGBzAWxiZry0h784MZI_mw,4669
+auth_user_mgr/_helpers.py,sha256=KFXbifkO8rZtSvRYQYPOEbPL7JJQ8_MR25d-9KLWfQo,2109
+auth_user_mgr/_user.py,sha256=wqQPhM4rR3wu2I109nJSNMlAYvFI9egVmDqspCXuXEs,1881
+auth_user_mgr/main.py,sha256=Mv_qnSrdZ2rmkzP1XPTkQSC-575if0pCoNCC0i8sDcs,10679
+auth_user_mgr/templates/invitation.html.j2,sha256=MztYuNiQSRvLnNocODTUOs039zQcvUTk64Y5TpgOfa0,394
+authentik_user_manager-0.1.6.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+authentik_user_manager-0.1.6.dist-info/LICENSES/Apache-2.0.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+authentik_user_manager-0.1.6.dist-info/LICENSES/CC-BY-4.0.txt,sha256=1VdTnfaOdxzB7tzJHRP3D8qTDlCNEe7cr6SxXbSeN0Q,17023
+authentik_user_manager-0.1.6.dist-info/METADATA,sha256=3MBkZKKEiJo5R5ewRJmv6O2R-4vUuZ_i9p6tV9aVJtE,4656
+authentik_user_manager-0.1.6.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+authentik_user_manager-0.1.6.dist-info/entry_points.txt,sha256=P91ozZq3_-f-ApYWYcyQm6pYxkR9WwZ2U35Z0MnPUc4,56
+authentik_user_manager-0.1.6.dist-info/RECORD,,
