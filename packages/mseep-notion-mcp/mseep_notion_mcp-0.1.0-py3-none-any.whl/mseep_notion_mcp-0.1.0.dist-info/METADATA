@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: mseep-notion_mcp
+Version: 0.1.0
+Summary: Notion MCP integration for todo lists
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: httpx
+Requires-Dist: mcp
+Requires-Dist: python-dotenv
