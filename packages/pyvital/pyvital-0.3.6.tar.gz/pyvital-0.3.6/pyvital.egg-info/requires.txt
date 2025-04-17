@@ -1,0 +1,7 @@
+numpy
+scipy
+sanic
+PyWavelets
+tensorflow>=2.6
+keras
+torch
