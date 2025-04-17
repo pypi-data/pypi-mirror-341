@@ -1,0 +1,8 @@
+src/mcp_google_cse/__init__.py,sha256=27OWzKy2RAwAtdkoRLVVO02LhmlDM5YAipoBfRPi_Cw,155
+src/mcp_google_cse/__main__.py,sha256=EbJl51JYGHuCaAY_OMYlAJqsh1nhrKn5p6vWNYi5Mhc,40
+src/mcp_google_cse/server.py,sha256=si5mkn570QRn1PWVghdYNM0T8ysRPogFGxaklEndShI,3527
+mseep_mcp_google_cse-0.1.4.dist-info/METADATA,sha256=kxAaPuC9MwWQ8qS9xQmh1vv71jgL2JPVKb-SrnFUDy4,9822
+mseep_mcp_google_cse-0.1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp_google_cse-0.1.4.dist-info/entry_points.txt,sha256=Eua-Jm0ReKVz8wgTzMbHSLxUZl_l52aZoyP3gyNHkD8,55
+mseep_mcp_google_cse-0.1.4.dist-info/licenses/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+mseep_mcp_google_cse-0.1.4.dist-info/RECORD,,
