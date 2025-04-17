@@ -1,0 +1,16 @@
+pkapredict/RDkit_descriptors.py,sha256=Cc1uIDhmZ4zc2Najcy9mDm4IKzn3l_JdWLu2H1eXN9I,1284
+pkapredict/__init__.py,sha256=Xb2Zrgqg4EJBSRB8v3QPurGOMxfsjVnrviq1mxtJdNY,333
+pkapredict/clean_and_visualize_pka.py,sha256=Wvk5w2cixjAeLa8mVXkFvyMlws2wHB_nP2JswBqQhvQ,1978
+pkapredict/example_descriptors_output.py,sha256=LnlRYTji9HiK0VsJx_z00B3wDspgFYh-zHiIDxT-MiI,962
+pkapredict/example_plot.py,sha256=I0keVIsniVF5dIGXPnnNWGwZp1Lt74210lsSqj4Jz-M,386
+pkapredict/load_model.py,sha256=ZcUYGpQICkZAeRexnXolkPJYh1gU4d_VFFSoo4miRKk,552
+pkapredict/plot_data.py,sha256=bKLUnrnQeprMnyzPULYd55rEjxYdDK0-2P5_y5wJS6Y,1751
+pkapredict/predict_pKa.py,sha256=swNxvvNcR3EG6I64-_JBHMJ_3XZaQP88sukWg_KQChg,3198
+pkapredict/smiles_to_rdkit_descriptors.py,sha256=P-tbAL6_5yigqHrIa63v_JV5zOQAXICy0KzD7eD3tSc,739
+pkapredict/test_package.py,sha256=SG2UKfVwXpzltJDjWfJQ2aIss_HfVrkcPGBV6ExLLOw,2982
+pkapredict/.ipynb_checkpoints/load_model-checkpoint.py,sha256=tqj7l1ZEKXbhcNO3OCkmQR0d_kOU5Kg2wIqxi_c5ijo,366
+pkapredict/models/best_pKa_model.pkl,sha256=rcOWXaAjDaNXyLz9ZH9YMTxdOpwtp5akLTjkdSWX_bg,402721
+pkapredict-0.1.6.dist-info/METADATA,sha256=EUP0CUxhjukmk1sBMnq8wlNieZGD89IYOPQOVct7sQk,6042
+pkapredict-0.1.6.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pkapredict-0.1.6.dist-info/licenses/LICENSE,sha256=XIUE2BYpxSdhrCW_tJ_VwqYxqIZA5ZCYwEZJfMCDSV0,1126
+pkapredict-0.1.6.dist-info/RECORD,,
