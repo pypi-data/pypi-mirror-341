@@ -1,0 +1,1 @@
+Update dkist-processing-common to only remove level 0 header keys from the level 1 files.
