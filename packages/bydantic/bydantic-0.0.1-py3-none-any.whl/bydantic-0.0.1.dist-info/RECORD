@@ -1,0 +1,8 @@
+bydantic/__init__.py,sha256=6ToXX59rSnSciAdJ8v_clZlyb4mHDUC8MENNFutxoZ0,949
+bydantic/core.py,sha256=yw2n6IY_NPfExRsyBZdanV_MfvOmCWc8kET92IL4q2k,49435
+bydantic/utils.py,sha256=00hKoDZiPN3rqyHnWNcc-KxHh1q_I77BOWwmztu-DXQ,5694
+bydantic-0.0.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bydantic-0.0.1.dist-info/METADATA,sha256=UItRT7ROO_D_zOXsITahKu-g-0-XyYAs0szSowC5eOU,4242
+bydantic-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+bydantic-0.0.1.dist-info/top_level.txt,sha256=Zrtmp73Zns3QOKskNrbR-wpwAeN9F9RWO7QWl3aDiN4,9
+bydantic-0.0.1.dist-info/RECORD,,
