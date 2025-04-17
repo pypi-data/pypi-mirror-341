@@ -1,0 +1,2 @@
+[console_scripts]
+rd-crawler = rd_crawler.cli:main
