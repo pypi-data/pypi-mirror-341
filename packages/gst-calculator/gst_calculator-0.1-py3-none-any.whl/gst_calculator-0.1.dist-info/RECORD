@@ -1,0 +1,14 @@
+gst_calculator/Capital_Gains_Report_Generator .py,sha256=8hbCg4LW-sFC6at-4VCDhTma3dpVewCtjWQldcmiCtI,7157
+gst_calculator/Investment_Tax_Benefits_Calculator.py,sha256=2Yh3LJzbHLmA9Nok9bSBYD3OIsQRMIYYKGwg7nkH7Y8,2162
+gst_calculator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gst_calculator/bulk_income_tax_return.py,sha256=DT18AylSiuaZGdodlsMnrQ3HuvyrwTktwQtBxsIJ-Zs,5808
+gst_calculator/business_tax.py,sha256=mMpfk6IWmDS7x245dwzGbWbRHRLHC_6SQN2bBzpOQt4,8098
+gst_calculator/gst_calculator.py,sha256=SYTLjAO3ZM5sqW6bxXEGaXI10LJIz5PkmmIrzA4utqs,6684
+gst_calculator/income_tax.py,sha256=uPKbhlp_aRj_Rp3njM43MFPQt4Acu1jj8mVgf0UPtlk,6150
+gst_calculator/tds_corporate.py,sha256=4nbl_V3sm7YzW5xtG6mLP88a05upnfevNGX562wkfvw,3076
+gst_calculator/tds_individual.py,sha256=veqFiZWvcg7o3tS_aj67eoPyqyUW0cHrss2ohYsnf1Y,5763
+gst_calculator/tempCodeRunnerFile.py,sha256=aQLl3snwG8n3v8MhYjU5jVa_6oyGgITm7aEDUWmOr40,66
+gst_calculator-0.1.dist-info/METADATA,sha256=gBYZIuULU-ZQjW66nBNVaYUjyqOPTELlcozF2kU_oXg,251
+gst_calculator-0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+gst_calculator-0.1.dist-info/top_level.txt,sha256=yP1B8h8D00SbybFBA_tHtNqQQefIc5TxAx6p3ZHhal4,15
+gst_calculator-0.1.dist-info/RECORD,,
