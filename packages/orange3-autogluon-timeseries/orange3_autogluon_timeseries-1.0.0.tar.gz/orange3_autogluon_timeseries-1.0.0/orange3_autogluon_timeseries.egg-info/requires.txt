@@ -1,0 +1,4 @@
+Orange3>=3.38.1
+autogluon.timeseries==1.2
+pandas==2.2.3
+numpy>=1.25
