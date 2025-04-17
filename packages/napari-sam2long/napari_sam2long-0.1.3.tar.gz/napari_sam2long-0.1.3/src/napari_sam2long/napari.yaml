@@ -1,0 +1,14 @@
+name: napari-sam2long
+display_name: Sam2long
+# use 'hidden' to remove plugin from napari hub search results
+visibility: hidden
+# see https://napari.org/stable/plugins/technical_references/manifest.html#fields for valid categories
+categories: ["Annotation", "Segmentation"]
+contributions:
+  commands:
+    - id: napari-sam2long.make_qwidget
+      python_name: napari_sam2long:SAM2Long
+      title: SAM2Long plugin
+  widgets:
+    - command: napari-sam2long.make_qwidget
+      display_name: SAM2Long
