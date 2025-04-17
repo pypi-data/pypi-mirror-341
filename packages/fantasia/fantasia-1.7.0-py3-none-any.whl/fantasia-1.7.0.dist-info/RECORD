@@ -1,0 +1,15 @@
+fantasia/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fantasia/config.yaml,sha256=PHxAo9DAzPHMYbZkS3Jl0WyWc0-ZIdoDnJBGRLLI_jg,4677
+fantasia/constants.yaml,sha256=S1yLt5wT4v4Q24aEQceKOU31LX8fh-Fy7oZtw8aQ0G8,2924
+fantasia/main.py,sha256=MwILBt4Lg_Pi6LsNKfo7DtWsUWaOY7WwFxxo35f-KNY,6345
+fantasia/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fantasia/src/embedder.py,sha256=UMT8wSDZxptGIoNKEG3zj0oAVNWaA_W3xODo1_hgDaQ,15776
+fantasia/src/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fantasia/src/helpers/helpers.py,sha256=Xavk9Uh-RzaB0_XYAARGA2tOYxQvw3gSb3tl_at7tek,6236
+fantasia/src/helpers/parser.py,sha256=jdnBba_5FXbg74qR_Cw67bO1sn0skbm7UX20NMgG5gM,7340
+fantasia/src/lookup.py,sha256=yRmPg6ij6ZdkAUA5vykpw6nav97uYu0sTZJ7GDuEtE0,32133
+fantasia/src/simple_gpu_task.py,sha256=LGfhol7_nCs-hmS34ILyl6kJ6A4ILMYC7t_aXnIL3Hw,5233
+fantasia-1.7.0.dist-info/METADATA,sha256=1rXx1SphnmFh7Ri1NVo_YMxfF1z3hO1ySm1JFDx6aAA,5457
+fantasia-1.7.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+fantasia-1.7.0.dist-info/entry_points.txt,sha256=8Ptq81v_QeJUm--T-jWaUjB2YueJUDwCd08kfQUfTyY,47
+fantasia-1.7.0.dist-info/RECORD,,
