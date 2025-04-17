@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: actinia-metadata-plugin
+Version: 1.0.4
+Summary: A (RESTFUL) Flask application which to communicate with a metadata catalog via OGC-CSW, in usage with GeoNetwork opensource.
+Author: Carmen Tawalika, Anika Weinmann, Markus Neteler, Jan Suleiman
+Project-URL: Homepage, https://github.com/mundialis/actinia-metadata-plugin
+Project-URL: Tutorial, https://mundialis.github.io/actinia_core
+Project-URL: API_Docs, https://redocly.github.io/redoc/?url=https://actinia.mundialis.de/latest/swagger.json
+Keywords: processing,earth observation,cloud-based processing,rest api,gis,grass gis,osgeo,metadata
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: colorlog>=3.1.4
+Requires-Dist: Flask
+Requires-Dist: Flask-Cors>=3.0.3
+Requires-Dist: Flask-RESTful>=0.3.6
+Requires-Dist: flask-restful-swagger-2>=0.35
+Requires-Dist: gunicorn>=19.7.1
+Requires-Dist: jsonmodels>=2.3
+Requires-Dist: pyscaffold
+Requires-Dist: pytest-cov>=2.5.1
+Requires-Dist: python-json-logger
+Requires-Dist: requests>=2.20.0
+Requires-Dist: setuptools>=30.3.0
+Requires-Dist: xmltodict>=0.11
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Dynamic: license-file
+
+# actinia-metadata-plugin
+
+
+You can run actinia-metadata-plugin in multiple ways:
+
+* as actinia-core plugin
+* as standalone app with gunicorn, connected with a running actinia-core instance
+
+If used as actinia-core plugin, the main.py is not executed.
+
+## Installation
+For installation or DEV setup, see docker/README.md.
+
+## DEV notes:
+
+#### Versioning:
+
+https://semver.org/ (MAJOR.MINOR.PATCH)
+
+#### Logging:
+in any module, import `from actinia_metadata_plugin.resources.logging import log` and call logger with `log.info("my info i want to log")`
