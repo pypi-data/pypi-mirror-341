@@ -1,0 +1,6 @@
+setup.py
+textcat/__init__.py
+textcat.egg-info/PKG-INFO
+textcat.egg-info/SOURCES.txt
+textcat.egg-info/dependency_links.txt
+textcat.egg-info/top_level.txt
