@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bgral/__init__.py
+bgral/core.py
+bgral.egg-info/PKG-INFO
+bgral.egg-info/SOURCES.txt
+bgral.egg-info/dependency_links.txt
+bgral.egg-info/top_level.txt
