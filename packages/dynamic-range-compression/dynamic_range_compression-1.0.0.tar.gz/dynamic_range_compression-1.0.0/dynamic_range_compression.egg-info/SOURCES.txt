@@ -1,0 +1,13 @@
+README.md
+setup.py
+dynamic_range_compression/__init__.py
+dynamic_range_compression/compressor.py
+dynamic_range_compression.egg-info/PKG-INFO
+dynamic_range_compression.egg-info/SOURCES.txt
+dynamic_range_compression.egg-info/dependency_links.txt
+dynamic_range_compression.egg-info/requires.txt
+dynamic_range_compression.egg-info/top_level.txt
+dynamic_range_compression/compressorHelper/__init__.py
+dynamic_range_compression/compressorHelper/definitions.py
+dynamic_range_compression/compressorHelper/envelope.py
+dynamic_range_compression/compressorHelper/gainReduction.py
