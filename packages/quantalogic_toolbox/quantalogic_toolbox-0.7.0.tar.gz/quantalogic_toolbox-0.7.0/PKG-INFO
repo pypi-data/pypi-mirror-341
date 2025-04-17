@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: quantalogic_toolbox
+Version: 0.7.0
+Summary: Reusable tool argument and base tool classes extracted from quantalogic.
+License: MIT
+Author: Raphael Mansuy
+Author-email: raphae.mansuy@quantalogic.app
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: docstring-parser (>=0.15,<1.0)
+Requires-Dist: pydantic (>=1.10,<3.0)
+Description-Content-Type: text/markdown
+
+# quantalogic_toolbox
+
+A standalone Python package providing reusable tool argument and base tool class definitions, extracted from the quantalogic project.
+
+## Installation
+
+```bash
+poetry add quantalogic_toolbox
+```
+
+## Usage
+
+Import and use the tool base classes and utilities:
+
+```python
+from quantalogic_toolbox.tool import Tool, ToolArgument, ToolDefinition
+```
+
+## Contents
+- `tool.py`: Core tool classes and argument validation utilities
+
+---
+
+This module was extracted from the `quantalogic` project to enable broader reuse and easier maintenance.
+
