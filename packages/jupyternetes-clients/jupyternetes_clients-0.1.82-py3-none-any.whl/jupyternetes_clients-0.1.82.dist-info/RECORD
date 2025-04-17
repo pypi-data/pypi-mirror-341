@@ -1,0 +1,8 @@
+jupyternetes_clients/__init__.py,sha256=4NGwXfy_Vf2hqCJKLhoS7rAbNvxPs-DtZlU4fnPP7e4,75
+jupyternetes_clients/_version.py,sha256=YThvBsPSPw2rCgZQb5SxE-vfr4Y0SBQRhFo1VmMzEQg,23
+jupyternetes_clients/clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyternetes_clients/clients/kubernetes_client.py,sha256=PTU3FR1rYZJgAwzeAtKrn9Vbumn7w3l-FP1PFQF62rs,4875
+jupyternetes_clients/clients/notebook_instance_client.py,sha256=LO6pSv6ZJIcRx7oZtqXdJCxits25abcnMEK0S9VEJ50,752
+jupyternetes_clients-0.1.82.dist-info/METADATA,sha256=4L2wd0H8RU7UakBKPYADb6Of16sBND4JzoKxQ_s5eig,644
+jupyternetes_clients-0.1.82.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jupyternetes_clients-0.1.82.dist-info/RECORD,,
