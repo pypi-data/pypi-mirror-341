@@ -1,0 +1,10 @@
+src/mcpo/__init__.py,sha256=hR_H6XpqvPI2TownMxLmNDkXGp721T7HxegK3hgTBys,4162
+src/mcpo/main.py,sha256=v7MAxtrH-zibFSwEGZtQhnbLrU_FpMWPpBEdG69DELI,7211
+src/mcpo/tests/test_main.py,sha256=cvnYPJrQKxpur9XUZ_dAjvZ6y1DENqJApi4Suv20NZA,7782
+src/mcpo/utils/auth.py,sha256=C_Zh1CPwYuTAisquMSKqcNQ74jbki-DuRDGBgH5mO3M,1585
+src/mcpo/utils/main.py,sha256=XiikZB-t7VSB6bY4ryy3fdrtgv--M2Gjii0gPOUHaoI,9347
+mseep_mcpo-0.0.12.dist-info/METADATA,sha256=gDVK9OnlzCXxMLK7PltwlDB5GRZmBGJZzCmWeaEQfwU,5090
+mseep_mcpo-0.0.12.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcpo-0.0.12.dist-info/entry_points.txt,sha256=j-ij685X87TgdjfomwHlfEKnc3OLvriE_Q5pldtWdSc,34
+mseep_mcpo-0.0.12.dist-info/licenses/LICENSE,sha256=YxIiY2yxO9USUxPZvsQgG2Nu8YRgIkaG2yAkbDvCXGo,1077
+mseep_mcpo-0.0.12.dist-info/RECORD,,
