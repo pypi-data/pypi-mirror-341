@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: jupyternetes_models
+Version: 0.1.82
+Summary: Kadense Jupyternetes Models
+Project-URL: Homepage, https://github.com/headinthecloudsolutions/kadense
+Project-URL: Issues, https://github.com/headinthecloudsolutions/kadense/issues
+Author-email: Shaun Turner <shaun.turner@headinthecloudsolutions.co.uk>
+Keywords: jupyterhub,jupyternetes,kadense,models
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: importlib-metadata; python_version < '3.10'
+Requires-Dist: kubernetes-asyncio
+Requires-Dist: pydantic
+Requires-Dist: pytz
+Description-Content-Type: text/markdown
+
+# jupyternetes-models
