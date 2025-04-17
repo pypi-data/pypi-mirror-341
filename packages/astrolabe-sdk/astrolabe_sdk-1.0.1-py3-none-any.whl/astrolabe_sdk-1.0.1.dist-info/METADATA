@@ -1,0 +1,57 @@
+Metadata-Version: 2.4
+Name: astrolabe-sdk
+Version: 1.0.1
+Summary: Python SDK for the OKAPI:Astrolabe API
+Keywords: space,space debris,astrolabe,space traffic coordination,okapi orbits,sdk,REST API
+Author-email: "OKAPI:Orbits" <contact@okapiorbits.space>
+Requires-Python: >= 3.10
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+License-File: LICENSE
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Requires-Dist: ruff ; extra == "dev"
+Requires-Dist: mypy ; extra == "dev"
+Requires-Dist: types-requests ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: pytest-env ; extra == "dev"
+Requires-Dist: pytest-html ; extra == "dev"
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: sphinx-book-theme ; extra == "docs"
+Requires-Dist: myst-parser ; extra == "docs"
+Requires-Dist: sphinx-autoapi ; extra == "docs"
+Requires-Dist: sphinx-click ; extra == "docs"
+Requires-Dist: myst-nb ; extra == "docs"
+Project-URL: Homepage, https://www.okapiorbits.space
+Provides-Extra: dev
+Provides-Extra: docs
+
+# Python SDK for OKAPI:Astrolabe
+
+This is a lightweight Python SDK to access the public OKAPI:Astrolabe API.
+
+## Installation
+
+The SDK is easy to install using `pip`. We recommend creating a virtual environment for the project.
+
+```
+python3 -m venv .venv
+source .venv/bin/activate
+pip install astrolabe-sdk
+```
+
+## Functionality
+
+The SDK allows for easy access to CDMs, fleet management, upload of ephemerides and maneuver plans, etc.
+
+For more details, please consult the respective section in the OKAPI:Astrolabe user manual.
+
