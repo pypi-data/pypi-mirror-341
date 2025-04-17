@@ -1,0 +1,2 @@
+[console_scripts]
+vocab-slim = vocabslim.cli:main
