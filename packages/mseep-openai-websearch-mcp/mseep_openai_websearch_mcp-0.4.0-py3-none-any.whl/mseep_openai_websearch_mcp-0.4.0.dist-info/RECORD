@@ -1,0 +1,10 @@
+docs/openai-websearch-tool.md,sha256=gJ_iUx7pxR6861_gt9Ya4j6A87PLLryPu8xMdL2SY1o,1035
+src/openai_websearch_mcp/__init__.py,sha256=0JMrWEo59vpTnWTPETByMA09FxNEq2K4joNdml9IW-A,92
+src/openai_websearch_mcp/__main__.py,sha256=Hgyf3W6rpl3z_kQjWBlOnpsZ4pw_KOgz91g7Svm9_6A,46
+src/openai_websearch_mcp/cli.py,sha256=5-UzQD49nHQIdJCB87nKL2l8kfzxqF8TZQPb2u-qCPY,4686
+src/openai_websearch_mcp/server.py,sha256=Kd2avEGSILp3_2K0HLi4HlGYbHQviJU_3MPswzdzmrI,1378
+mseep_openai_websearch_mcp-0.4.0.dist-info/METADATA,sha256=OlBDPtScTAy1iujHS0_ZD2jcG6qadvxU2N6toxae21g,3270
+mseep_openai_websearch_mcp-0.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_openai_websearch_mcp-0.4.0.dist-info/entry_points.txt,sha256=7l1bHiOm6I-eu00fmx2Q5J0H_RKEBCSrFwXFO4u8ZyU,127
+mseep_openai_websearch_mcp-0.4.0.dist-info/licenses/LICENSE,sha256=eU3zEmy5iLRox9sHZnrJPmh68JXCXqcOTKkh3PpGlZQ,1066
+mseep_openai_websearch_mcp-0.4.0.dist-info/RECORD,,
