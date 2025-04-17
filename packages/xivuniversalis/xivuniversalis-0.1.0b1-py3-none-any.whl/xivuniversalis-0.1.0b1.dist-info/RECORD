@@ -1,0 +1,10 @@
+xivuniversalis/__init__.py,sha256=gJBtXBffhk-EA5QUgDBTQostv-4d6moBvVq0M8Z0GNo,143
+xivuniversalis/client.py,sha256=9xmxYI0ui2IcQJN1dvr2U2XpE0cMNPF5HmFVEQt6z2M,22305
+xivuniversalis/decorators.py,sha256=4jop7nsTMXaI9nXVcVA4edExtUXonzFYjPmClgE2Ljw,492
+xivuniversalis/errors.py,sha256=Ujw7MFUGe_Epq95kAJCAYeQuRL7HhqH67zh1ZQvpyo4,627
+xivuniversalis/models.py,sha256=dJt6zbs1zBAUR-2eGwmaWK33c-y3z192MCDjUK-IBFk,9481
+xivuniversalis/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xivuniversalis-0.1.0b1.dist-info/METADATA,sha256=iVDqr7Uu67aTNUqO9u0GOj3KJ9c66kG-ZfdFAcyBoBc,3248
+xivuniversalis-0.1.0b1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+xivuniversalis-0.1.0b1.dist-info/licenses/LICENSE,sha256=IFaXrwIwqvcQdA_wHRkUiRbSN9MLxcmz2Znl7AW04ZU,1080
+xivuniversalis-0.1.0b1.dist-info/RECORD,,
