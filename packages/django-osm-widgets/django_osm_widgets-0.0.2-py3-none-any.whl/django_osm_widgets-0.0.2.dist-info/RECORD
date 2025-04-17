@@ -1,0 +1,11 @@
+django_osm_widgets/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+django_osm_widgets/static/django_osm_widgets/LatLonOpenlayersOSMWidget.js,sha256=OX_J5aNiTJlHQ6R5NbTzgvozAGSZxiuoGHeqwzRB1sk,4867
+django_osm_widgets/static/django_osm_widgets/marker.svg,sha256=3Y0KCcC6JCEERCsaaEnBnE7_xSFw3j19hFP3EqYbGvU,326
+django_osm_widgets/templates/django_osm_widgets/latlon-openlayers-osm.html,sha256=Itp4eR6nWrl9E8gAaz9-1TFH21qZ0PV1whwnPorSFLI,1472
+django_osm_widgets/templates/django_osm_widgets/openlayers-osm.html,sha256=Gq2t-trffjMd79pqLmJe-o4mOv1PJOEgAtBYR6rfYWY,401
+django_osm_widgets/templates/django_osm_widgets/openlayers.html,sha256=W9ixhhnBrpgGITYt99Hbs-rBWY46I7omK-v5lHPiphg,1591
+django_osm_widgets/widgets.py,sha256=6gkmjknAooQUxtRredTeLjD2PsmUyKBgaXvtRw0JwDw,787
+django_osm_widgets-0.0.2.dist-info/LICENSE,sha256=ueE8ySZQg4pTWgX9ufy4jRyCmzwYPBztzQgZxwUYmYw,1501
+django_osm_widgets-0.0.2.dist-info/METADATA,sha256=CPFXre0xm510DjeAF4i6I2PjBJ9Q78wEaBA8Zqz681o,2601
+django_osm_widgets-0.0.2.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+django_osm_widgets-0.0.2.dist-info/RECORD,,
