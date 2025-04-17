@@ -1,0 +1,10 @@
+pyeebls/__init__.py,sha256=SzvdGzlo8Vk18h02IVYj9h8tZtgFbx0Z25mt1f4V8DI,185
+pyeebls/_pyeebls.cpython-39-x86_64-linux-gnu.so,sha256=0WzYuonQkd0WRCR-IiGY6G7BNg2NfRGsN1vrJHYJ3a4,51537
+pyeebls/eebls.f,sha256=LREmUBKjhgtA5GAcClIE2IURnqQBskZfsIa6EfLoTkU,7354
+pyeebls/pyeebls.pyf,sha256=GTNJvkoOiW6BHODJGngzXw0HmL12c3czonvm5WQGYBk,1294
+pyeebls.libs/libgfortran-040039e1.so.5.0.0,sha256=FK-zEpsai1C8QKOwggx_EVLqm8EBIaqxUpQ_cFdHKIY,2686065
+pyeebls.libs/libquadmath-96973f99.so.0.0.0,sha256=k0wi3tDn0WnE1GeIdslgUa3z2UVF2pYvYLQWWbB12js,247609
+pyeebls-0.2.0.dist-info/METADATA,sha256=MT7J2egXVBDvFhG3xSsOyDG80dvusSOTrO_aLb203I4,6325
+pyeebls-0.2.0.dist-info/WHEEL,sha256=fQwHgLVU-TIelaFwujliYlr71vsGEtBB4G5SXWMFadI,152
+pyeebls-0.2.0.dist-info/RECORD,,
+pyeebls-0.2.0.dist-info/licenses/LICENSE,sha256=AiEsTU6wvna-IIAoO3u8QilGzkjYYkHdMSEaL19l2-w,1160
