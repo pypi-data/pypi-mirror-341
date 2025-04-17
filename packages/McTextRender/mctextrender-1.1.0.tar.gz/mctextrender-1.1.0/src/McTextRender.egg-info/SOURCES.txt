@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/McTextRender.egg-info/PKG-INFO
+src/McTextRender.egg-info/SOURCES.txt
+src/McTextRender.egg-info/dependency_links.txt
+src/McTextRender.egg-info/requires.txt
+src/McTextRender.egg-info/top_level.txt
+src/mctextrender/__init__.py
+src/mctextrender/background.py
+src/mctextrender/colors.py
+src/mctextrender/image.py
+src/mctextrender/text.py
+src/mctextrender/tools.py
+src/mctextrender/font/main.ttf

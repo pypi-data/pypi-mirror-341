@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: McTextRender
+Version: 1.1.0
+Summary: Render Minecraft-style colored text in Python
+Author: Ventros
+Author-email: ventros.development@gmail.com
+License: MIT
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: Pillow
+Dynamic: author
+Dynamic: author-email
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
