@@ -1,0 +1,9 @@
+mcp_todoist-0.5.1.dist-info/licenses/LICENSE,sha256=dUhuoK-TCRQMpuLEAdfme-qPSJI0TlcH9jlNxeg9_EQ,1056
+tests/__init__.py,sha256=q7IBePA7GSHfTeZXs-S6JJZHWFObV8_UlmBM8R_689I,37
+tests/test_basic.py,sha256=lMDUJUpTxnbALREdzXOxPAAgIfvs6lTCDTsBRniAvwI,1946
+tests/test_sdk_inspect.py,sha256=lDUGCabYOjGvCU6tOc9hOF2captbzCldnmrA7xDru7Y,2722
+tests/test_todoist_api.py,sha256=43Y2X9ygrM_rpyQRwRYSoYe-_--ZjBW6dca1L1AIskE,1427
+mcp_todoist-0.5.1.dist-info/METADATA,sha256=n1Y9XGweasKtfRZiNlP4C-_KutDnZ_apWhbNtId2J-8,9404
+mcp_todoist-0.5.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mcp_todoist-0.5.1.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+mcp_todoist-0.5.1.dist-info/RECORD,,
