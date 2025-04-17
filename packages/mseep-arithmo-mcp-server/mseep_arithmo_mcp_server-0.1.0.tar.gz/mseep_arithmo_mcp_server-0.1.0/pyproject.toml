@@ -1,0 +1,25 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mseep-arithmo_mcp_server"
+version = "0.1.0"
+description = "An MCP server providing fast arithmetic operations."
+authors = [
+    { name = "VARUN SAI BANDI", email = "varunsai.srinivas@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp",
+]
+
+[project.urls]
+Repository = "https://github.com/varunidealabs/simple-calculator-mcp-server.git"
+
+[project.scripts]
+simple-calculator = "simple_calculator.server:main"
