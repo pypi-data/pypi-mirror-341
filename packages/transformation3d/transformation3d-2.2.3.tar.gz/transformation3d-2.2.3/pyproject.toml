@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transformation3d"
+version = "2.2.3"
+description = "An easy-to-use class representing transformations in 3D space."
+readme = "README.md"
+authors = [
+    { name = "Tim Schneider", email = "tim@robot-learning.de" }
+]
+license = "MIT"
+dependencies = [
+    "scipy",
+    "numpy"
+]
+
+[project.urls]
+Homepage = "https://github.com/TimSchneider42/python-transformation3d"
+
+[tool.setuptools]
+packages = ["transformation"]
