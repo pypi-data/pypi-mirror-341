@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+itrm/__init__.py
+itrm/__main__.py
+itrm/itrm.py
+itrm/itrm.egg-info/PKG-INFO
+itrm/itrm.egg-info/SOURCES.txt
+itrm/itrm.egg-info/dependency_links.txt
+itrm/itrm.egg-info/requires.txt
+itrm/itrm.egg-info/top_level.txt
