@@ -1,0 +1,2 @@
+[console_scripts]
+pip-build-standalone = pip_build_standalone.cli:main

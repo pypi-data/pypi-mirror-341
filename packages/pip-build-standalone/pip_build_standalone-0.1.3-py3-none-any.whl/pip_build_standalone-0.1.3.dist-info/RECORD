@@ -1,0 +1,12 @@
+pip_build_standalone/__init__.py,sha256=9pdMG7nIu7251vEPSr9b0Sjj6PjWNrBoCfOxGxPxvjk,349
+pip_build_standalone/build.py,sha256=rY5u0F6fXpjUCnlfgD3KRBFbHnbzYGs-QcTy2GgdNzo,6529
+pip_build_standalone/cli.py,sha256=j9zPBFZ0ZpTvaAiHt9Fap25K3-SsadG_Okx2MQKg6fY,2886
+pip_build_standalone/cli_utils.py,sha256=N9SS2ZC4PFgow_tYEPMo7gm8-vEsP94lD_f_RXqv2_4,858
+pip_build_standalone/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pip_build_standalone/search_replace_files.py,sha256=JLzNXllmCn5oNtpj_xifhdMhLQO9KH4PROXDorDGhr4,2165
+pip_build_standalone/shebangs.py,sha256=hcmiuZDLE0HTh_CezI9sMBPq3-87Z9i9_oT_1Oj9gPU,2929
+pip_build_standalone-0.1.3.dist-info/METADATA,sha256=eQrte-KeD3N7oWP1LumZP9Znxccw1myrV5Facg9dSvk,8018
+pip_build_standalone-0.1.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pip_build_standalone-0.1.3.dist-info/entry_points.txt,sha256=yjUgTSR6Xr5_q4r16isOKNeidHBBgiJZfce1Jr081BM,71
+pip_build_standalone-0.1.3.dist-info/licenses/LICENSE,sha256=JhzkmuO3Ur7MsQaef8szzVks_bSjkLP_fYjwwUW8-xI,1068
+pip_build_standalone-0.1.3.dist-info/RECORD,,
