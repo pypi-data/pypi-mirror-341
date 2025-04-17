@@ -1,0 +1,14 @@
+addon/FreeCADMCP/Init.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+addon/FreeCADMCP/InitGui.py,sha256=Cqay5GgSfvJkI6DedeNx2e4-tDUkpvzRPSVBvnh6cLA,590
+addon/FreeCADMCP/rpc_server/__init__.py,sha256=UzargMIT8g2JYI2VA5zfT9LsBW14GK4LSswJVw3vJ8Y,25
+addon/FreeCADMCP/rpc_server/parts_library.py,sha256=w3Ay5ZCXx_Q2MNmMPjm9ElGjaiz7ZOwmbCMW2mhOVOo,945
+addon/FreeCADMCP/rpc_server/rpc_server.py,sha256=hP-DXugQi8nL6r2lUV4XimBoFwrLLC4HYaBvjFXKxh4,16653
+addon/FreeCADMCP/rpc_server/serialize.py,sha256=Wz2kj0cJuRQauf_9egvdEPUE9TKPTZwyT4BHNvRx6bk,2422
+src/freecad_mcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/freecad_mcp/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/freecad_mcp/server.py,sha256=u_tGCi5DmHdZdJDR28v5TGeAFk3WCajtsyCErzRQRKI,20006
+mseep_freecad_mcp-0.1.10.dist-info/METADATA,sha256=D8L7X7gfBN6H4wDM0Z4Op4vNutarurz0EHHlVI0DL7E,2889
+mseep_freecad_mcp-0.1.10.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_freecad_mcp-0.1.10.dist-info/entry_points.txt,sha256=IQOhKxq51yu6m0BgDJWrx7Y6hbzGBSMU-pj6-Iove0k,56
+mseep_freecad_mcp-0.1.10.dist-info/licenses/LICENSE,sha256=OWpAndfqILtPC_LiR42q5LjihkjTwtW1b1O1uHFZWcE,1077
+mseep_freecad_mcp-0.1.10.dist-info/RECORD,,
