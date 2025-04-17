@@ -1,0 +1,11 @@
+talk2dom/__init__.py,sha256=denZ0lJb4WfijEar7noEXIahaNzRHWVicB4oSZsJyUs,131
+talk2dom/chain.py,sha256=vehiAaEvYOoZTWtxx17dCilDao_ehrUZRDuxaYf1qmw,3506
+talk2dom/cli.py,sha256=Rn3cWPi2pO7Jig7ak1_WhsWkxqlpS198KDnLai_oHeg,7090
+talk2dom/core.py,sha256=jFXI7yG9IeozdSiCMn3cgdoNgThzrDa_gJkUftsGq-g,3946
+talk2dom/prompts/locator_prompt.txt,sha256=UhAEhdHgREQeDoaswQQ8uc-UuWbdOoHHLXsTtXdL3hs,572
+talk2dom-0.1.9.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+talk2dom-0.1.9.dist-info/METADATA,sha256=7kocWotNAnjuinuQZGJjr6ZHf-jt0PSYh9_XvmFpTDA,6444
+talk2dom-0.1.9.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+talk2dom-0.1.9.dist-info/entry_points.txt,sha256=uO7TG-i19rSPJlYisKBRBM4qBTOdHwhOioeKQXt2Ztk,47
+talk2dom-0.1.9.dist-info/top_level.txt,sha256=Fxbl0qTQ5BpvGefuWss2WzQGC-OsOtwbiLp2uOYMrTA,9
+talk2dom-0.1.9.dist-info/RECORD,,
