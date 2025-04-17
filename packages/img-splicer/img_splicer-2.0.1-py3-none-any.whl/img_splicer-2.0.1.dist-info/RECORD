@@ -1,0 +1,16 @@
+img_splicer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+img_splicer/resources.py,sha256=st38w-hPPiLxA8ZZMi_918S2uYezrZ2Kpx-KQvsDvQM,115
+img_splicer/utils.py,sha256=iyg1K4Y9LOjHyu9_WZgazYcI3ZVcCfd9_8b_lX3v-40,3935
+img_splicer/static/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+img_splicer/static/images/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+img_splicer/static/images/apple32.png,sha256=3OWAUVK2sNkTMScJYwz9MgwqqHAkuiZP1ubHTd4JLng,339167
+img_splicer/static/images/apple64.png,sha256=BSrOy6qol0J-ERyOOZEVBjM1AoWvJ5MOC1B_92lr9Og,288845
+img_splicer/static/images/linux32.png,sha256=G6bKV5mL6H5MaQAh5UtvJrJVnIfeyzEzaJ0iKKb9wyg,354015
+img_splicer/static/images/linux64.png,sha256=SeiSYiuc94VqYEUc8gjGN7J40ucdnUO4jlghHhvKt1I,354608
+img_splicer/static/images/python32.png,sha256=ZxRtUaywqJwYf76T-19V5YKroKTozIooPjENyv7uRlY,511592
+img_splicer/static/images/python64.png,sha256=ZxRtUaywqJwYf76T-19V5YKroKTozIooPjENyv7uRlY,511592
+img_splicer-2.0.1.dist-info/licenses/LICENSE,sha256=srHZ3fvcAuZY1LHxE7P6XWju2njRCHyK6h_ftEbzxSE,1057
+img_splicer-2.0.1.dist-info/METADATA,sha256=qZWuv7JXbkYo9dQ3MAYgofKBQ8CuoFsOpm8SE4dN90g,1180
+img_splicer-2.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+img_splicer-2.0.1.dist-info/top_level.txt,sha256=K-ko4g15aRHajvn7pItvlirYyIr82ucKT5soXU6sstg,12
+img_splicer-2.0.1.dist-info/RECORD,,
