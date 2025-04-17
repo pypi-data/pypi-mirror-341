@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5511b742-4032-44e8-bcae-3e2a51e9aede" name="Changes" comment="Add workflows for release" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="branchesCleanupHistory">
+      <BranchesCleanupHistory>
+        <option name="history">
+          <list>
+            <BranchCleanupEntry>
+              <option name="deletions">
+                <list>
+                  <BranchDeletion>
+                    <option name="hash" value="2f482536767cb080edde124c69e426ff992932a9" />
+                    <option name="name" value="fix-format" />
+                  </BranchDeletion>
+                  <BranchDeletion>
+                    <option name="hash" value="004f7bae93ec09dfb63effd49e4c7ea96bd69ed2" />
+                    <option name="name" value="load-excel" />
+                  </BranchDeletion>
+                  <BranchDeletion>
+                    <option name="hash" value="a2d8c6bd7e8e7e0da8848301ab063607b77f1900" />
+                    <option name="name" value="add-typer-api" />
+                  </BranchDeletion>
+                  <BranchDeletion>
+                    <option name="hash" value="38fd9f73e90324059eb1155f89395ede5f993403" />
+                    <option name="name" value="cleanup-outputs" />
+                  </BranchDeletion>
+                  <BranchDeletion>
+                    <option name="hash" value="bd12962f30cc4a893dddc7c5162ed1e5c4cfae51" />
+                    <option name="name" value="fix-environment" />
+                  </BranchDeletion>
+                  <BranchDeletion>
+                    <option name="hash" value="fd1b2112cd33a45659abfddd2c2efa4b1f23f662" />
+                    <option name="name" value="fix-release" />
+                  </BranchDeletion>
+                  <BranchDeletion>
+                    <option name="hash" value="97f5991f7f3282e437d73dc589bbae7ca3e02bd7" />
+                    <option name="name" value="fix-readme" />
+                  </BranchDeletion>
+                  <BranchDeletion>
+                    <option name="hash" value="4edf8b20863f2fcd2620e6e114475f6ca51301aa" />
+                    <option name="name" value="fix-display-graph" />
+                  </BranchDeletion>
+                  <BranchDeletion>
+                    <option name="hash" value="961bf59108baeca4b2c4ec42983d0ab854ca12bf" />
+                    <option name="name" value="fix-import" />
+                  </BranchDeletion>
+                </list>
+              </option>
+              <option name="timestamp" value="1744848570652" />
+            </BranchCleanupEntry>
+          </list>
+        </option>
+      </BranchesCleanupHistory>
+    </option>
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2kAWoVpLHuk3YZQnRc3BSTYxxuD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Makefile Target.check.executor": "Run",
+    "Makefile Target.test.executor": "Run",
+    "Python tests.pytest in tests.executor": "Run",
+    "Python.bany.executor": "Run",
+    "Python.ynab.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/adam/workspace/clones/bany/.github",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "com.koxudaxi.ruff.RuffConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.github" />
+      <recent name="$PROJECT_DIR$/bany/cmd/ynab" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Makefile Target.check">
+    <configuration name="check" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="check" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="bany" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="bany" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="TERM_WIDTH" value="256" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="software.aws.toolkits.jetbrains.core.execution.PythonAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="bany" />
+      <option name="PARAMETERS" value="extract pdf --config ./cfgs/extract-pdf-lifeatford.yml --inp &quot;$USER_HOME$/My Drive/Money/Paychecks/2025_FD&quot;" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ynab" type="PythonConfigurationType" factoryName="Python">
+      <module name="bany" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CONSOLE_WIDTH" value="1024" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="software.aws.toolkits.jetbrains.core.execution.PythonAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="bany" />
+      <option name="PARAMETERS" value="ynab --budget-name 2025 --show-categories" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="bany" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="software.aws.toolkits.jetbrains.core.execution.PythonAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </EXTENSION>
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Makefile Target.check" />
+      <item itemvalue="Python.bany" />
+      <item itemvalue="Python.ynab" />
+      <item itemvalue="Python tests.pytest in tests" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Makefile Target.check" />
+        <item itemvalue="Python tests.pytest in tests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-PY-251.23774.444" />
+        <option value="bundled-python-sdk-890ed5b35930-d9c5bdb153f4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.23774.444" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5511b742-4032-44e8-bcae-3e2a51e9aede" name="Changes" comment="" />
+      <created>1722727038570</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722727038570</updated>
+      <workItem from="1722727040646" duration="3404000" />
+      <workItem from="1727620797231" duration="1946000" />
+      <workItem from="1728781088452" duration="150000" />
+      <workItem from="1744755950750" duration="5046000" />
+      <workItem from="1744844578973" duration="2023000" />
+      <workItem from="1744846619096" duration="5306000" />
+    </task>
+    <task id="LOCAL-00001" summary="Make tracebacks shorter">
+      <option name="closed" value="true" />
+      <created>1722729779719</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722729779719</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add support for scheduled transactions">
+      <option name="closed" value="true" />
+      <created>1722729796220</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722729796220</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add example config files">
+      <option name="closed" value="true" />
+      <created>1722730081022</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722730081022</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update README.md">
+      <option name="closed" value="true" />
+      <created>1722730176182</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722730176182</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Debug failed transactions">
+      <option name="closed" value="true" />
+      <created>1727623928878</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727623928878</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add app to display categories">
+      <option name="closed" value="true" />
+      <created>1744760598357</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744760598357</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fix pyproject.toml">
+      <option name="closed" value="true" />
+      <created>1744760964724</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744760964724</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fix pyproject.toml">
+      <option name="closed" value="true" />
+      <created>1744761039347</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1744761039347</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Migrate project from poetry to uv">
+      <option name="closed" value="true" />
+      <created>1744851264117</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1744851264117</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Make tracebacks shorter" />
+    <MESSAGE value="Add support for scheduled transactions" />
+    <MESSAGE value="Add example config files" />
+    <MESSAGE value="Update README.md" />
+    <MESSAGE value="Debug failed transactions" />
+    <MESSAGE value="Add app to display categories" />
+    <MESSAGE value="Fix pyproject.toml" />
+    <MESSAGE value="Migrate project from poetry to uv" />
+    <MESSAGE value="Add workflows for release" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add workflows for release" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bany$ynab.coverage" NAME="ynab Coverage Results" MODIFIED="1744850887909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/bany$bany.coverage" NAME="bany Coverage Results" MODIFIED="1744850874927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/bany$pytest_in_tests.coverage" NAME="pytest in tests Coverage Results" MODIFIED="1744846668752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+  </component>
+</project>

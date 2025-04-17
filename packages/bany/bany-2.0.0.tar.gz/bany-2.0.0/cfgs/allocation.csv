@@ -1,0 +1,6 @@
+label,optimal_ratio,current_value,amount_to_add,children
+Total,100,170406.51,209956.55,LCB;MCB;SCB;ISB
+LCB,35,129247.02,0,
+MCB,25,12315.19,0,
+SCB,25,11366.11,0,
+ISB,15,17478.19,0,
