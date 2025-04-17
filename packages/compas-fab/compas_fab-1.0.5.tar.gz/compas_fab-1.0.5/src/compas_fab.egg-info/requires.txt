@@ -1,0 +1,5 @@
+compas<3,>=2.0.4
+compas_robots<1,>=0.3
+roslibpy>=1.1.0
+pybullet
+pyserial
