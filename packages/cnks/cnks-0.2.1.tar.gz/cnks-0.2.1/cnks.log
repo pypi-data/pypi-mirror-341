@@ -1,0 +1,1057 @@
+2025-04-17 09:20:00,502 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:20:00,503 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:20:00,503 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:20:00,503 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:20:00,503 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:20:00,503 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:20:00,503 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:20:00,505 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 09:20:00,505 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:20:00,505 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:20:00,505 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:20:00,505 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:20:00,506 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:20:00,506 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:20:00,506 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:20:00,513 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:20:00,517 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:20:00,524 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 09:20:00,526 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001AE33EB0F50>
+2025-04-17 09:20:00,527 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:20:00,527 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:20:00,527 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:20:30,047 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001AE33EB1590>
+2025-04-17 09:20:30,047 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:20:30,048 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:20:30,048 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:20:30,048 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001AE33D2B5C0>
+2025-04-17 09:20:30,049 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:20:30,049 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:20:30,049 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:21:30,815 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:21:30,815 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:21:30,815 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+
+2025-04-17 09:21:30,815 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:21:30,823 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:21:30,824 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:21:30,826 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:21:30,827 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:21:30,831 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 09:21:30,832 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 09:21:30,833 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001BE2639CF50>
+2025-04-17 09:21:30,833 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:21:30,833 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:21:30,834 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:21:30,834 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001BE2639D590>
+2025-04-17 09:21:30,834 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:21:30,834 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:21:30,835 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:21:33,442 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:21:33,442 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:21:33,442 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:21:33,442 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:21:33,442 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:21:33,442 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:21:33,442 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:21:33,450 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:21:33,453 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:21:33,458 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 09:21:33,459 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000002DEFF5DCF50>
+2025-04-17 09:21:33,459 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:21:33,459 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:21:33,460 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:31:21,070 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:31:21,070 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:31:21,070 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:31:21,070 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:31:21,070 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:31:21,070 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:31:21,070 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:31:21,071 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 09:31:21,072 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:31:21,072 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:31:21,072 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:31:21,072 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:31:21,072 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:31:21,072 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:31:21,072 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:31:21,079 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:31:21,082 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:31:21,088 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 09:31:21,090 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000002121836CF50>
+2025-04-17 09:31:21,091 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:31:21,091 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:31:21,091 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:31:37,059 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:31:37,059 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:31:37,059 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:31:37,059 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:31:37,059 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:31:37,059 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:31:37,059 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:31:37,061 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 09:31:37,061 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:31:37,061 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:31:37,061 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:31:37,061 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:31:37,061 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:31:37,061 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:31:37,061 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:31:37,069 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:31:37,072 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:31:37,089 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 09:31:37,091 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000002E8D4D9CF50>
+2025-04-17 09:31:37,091 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:31:37,091 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:31:37,091 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:43:13,835 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:43:13,835 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:43:13,835 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:43:13,835 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:43:13,835 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:43:13,836 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:43:13,836 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:43:13,837 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 09:43:13,837 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:43:13,837 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:43:13,837 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:43:13,837 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:43:13,837 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:43:13,837 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:43:13,837 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:43:13,843 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:43:13,847 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:43:20,710 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:43:20,710 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:43:20,710 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:43:20,710 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:43:20,710 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:43:20,710 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:43:20,710 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:43:20,712 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 09:43:20,712 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:43:20,712 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:43:20,712 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:43:20,712 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:43:20,712 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:43:20,712 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:43:20,712 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:43:20,718 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:43:20,721 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:43:20,726 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 09:43:20,727 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001B133391090>
+2025-04-17 09:43:20,727 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:43:20,727 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:43:20,727 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:43:27,614 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:43:27,614 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:43:27,614 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:43:27,614 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:43:27,614 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:43:27,614 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:43:27,614 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:43:27,616 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 09:43:27,616 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:43:27,616 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:43:27,616 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:43:27,616 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:43:27,616 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:43:27,616 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:43:27,616 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:43:27,622 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:43:27,625 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:43:27,630 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 09:43:27,631 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000029218F71090>
+2025-04-17 09:43:27,631 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:43:27,631 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:43:27,631 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:44:14,197 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000029218F716D0>
+2025-04-17 09:44:14,197 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-04-17 09:44:14,198 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-04-17 09:44:14,198 - cnks - DEBUG - [DEBUG] 正在使用FastMCP的search_keywords函数
+2025-04-17 09:44:14,260 - cnks - DEBUG - [DEBUG] 使用Playwright搜索，Chrome路径: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 09:44:14,654 - cnks - DEBUG - [DEBUG] 尝试使用channel='chrome'启动浏览器
+2025-04-17 09:44:15,821 - cnks - DEBUG - [DEBUG] 成功打开知网搜索页面
+2025-04-17 09:44:16,879 - cnks - DEBUG - [DEBUG] 已在搜索框中输入: ai幻觉
+2025-04-17 09:44:18,035 - cnks - DEBUG - [DEBUG] 已点击搜索按钮
+2025-04-17 09:44:20,057 - cnks - DEBUG - [DEBUG] 尝试点击排序下拉框
+2025-04-17 09:44:20,099 - cnks - DEBUG - [DEBUG] 成功点击排序下拉框
+2025-04-17 09:44:21,110 - cnks - DEBUG - [DEBUG] 尝试点击'50'选项
+2025-04-17 09:44:21,165 - cnks - DEBUG - [DEBUG] 成功点击'50'选项
+2025-04-17 09:44:23,182 - cnks - DEBUG - [DEBUG] 尝试勾选CSSCI选项
+2025-04-17 09:44:23,190 - cnks - DEBUG - [DEBUG] 未找到来源类别区域
+2025-04-17 09:44:23,263 - cnks - DEBUG - [DEBUG] 直接找到并点击了CSSCI
+2025-04-17 09:44:23,275 - cnks - DEBUG - [DEBUG] 开始查找所有包含article/abstract?v=的链接
+2025-04-17 09:44:25,289 - cnks - DEBUG - [DEBUG] 找到4条包含article/abstract?v=的链接
+2025-04-17 09:44:25,297 - cnks - DEBUG - [DEBUG] 链接 1: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwP-66PPSN-vLrCgkCZ3he1sPhN_OirybE4_N13JocrFcHUrKvVwDJLxHmcgz84D67dV4iUq18orRC1AvrKYrLieHslxHYwoK8Z4IKqClhPhHkHOsT3eATm3exOdi-fj48rjzHLF3Fm2yFwV5sELcEgZcNuOonAj4pa69AYG25y8mw==&uniplatform=NZKPT&language=CHS
+2025-04-17 09:44:25,308 - cnks - DEBUG - [DEBUG] 链接 2: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMrAC_pgYJ4lkwm6KZMVAdLBlvuq3DW_I311uBMyPxzijcqX7PUslqszhKy-wLb2lRMgmZKDu0LmKiOUl7kxhqpH_Ao_aHfnu3kR1HTby0CiRXb0TKZJRbCyOzvClMBe0tCaS8yjrD3ufvhDGQPRVULn9lM2s0M61odoUphK4petw==&uniplatform=NZKPT&language=CHS
+2025-04-17 09:44:25,314 - cnks - DEBUG - [DEBUG] 链接 3: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMQWJhujt0pJVlkgxJ8TDm15p5SwfqqP984eYgoJEbFT34UYAymvowLbRjr7yE6Lor9rwP5g3j7tmtCKnU4Ni0tktPe0BqrO6y5sPlSlKwJWdOnRCd1DbemghlcaKRgDdBDcjmmAkO_Pdw-zX8b7fvhRvSWH5OZOb7efSZNUdDYdA==&uniplatform=NZKPT&language=CHS
+2025-04-17 09:44:25,319 - cnks - DEBUG - [DEBUG] 链接 4: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMQWJhujt0pJVlkgxJ8TDm15p5SwfqqP984eYgoJEbFTzntURFap3zsbLW7Gix2l0wLVEuJvsKaRtAXk4tvB8DT9Go4CZfMjD3IAo3xaV1oMmBa6t8Biiqw7ZASFuktwryAIRvRoBiPtzC_jDm1O1cFvjOger-KXMT4Ag42PtEdrA==&uniplatform=NZKPT&language=CHS
+2025-04-17 09:44:25,319 - cnks - DEBUG - [DEBUG] 链接数量为4条，少于预期的50条
+2025-04-17 09:44:25,320 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:48:07,140 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:48:07,140 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:48:07,140 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:48:07,140 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:48:07,140 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:48:07,140 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:48:07,140 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:48:07,141 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 09:48:07,141 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:48:07,141 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:48:07,142 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:48:07,142 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:48:07,142 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:48:07,142 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:48:07,142 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:48:07,148 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:48:07,151 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:48:07,157 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 09:48:07,158 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001D6B71F1090>
+2025-04-17 09:48:07,159 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:48:07,159 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:48:07,159 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:51:01,944 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:51:01,944 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:51:01,944 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:51:01,945 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:51:01,945 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:51:01,945 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:51:01,945 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:51:01,946 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 09:51:01,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:51:01,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:51:01,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:51:01,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:51:01,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:51:01,947 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:51:01,947 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:51:01,953 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:51:01,956 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:51:01,988 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 09:51:01,989 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x00000176CD991090>
+2025-04-17 09:51:01,990 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:51:01,990 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:51:01,990 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:51:10,300 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:51:10,301 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:51:10,301 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:51:10,301 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:51:10,301 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:51:10,301 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:51:10,301 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:51:10,303 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 09:51:10,303 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:51:10,303 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:51:10,303 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:51:10,303 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:51:10,303 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:51:10,303 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:51:10,303 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:51:10,310 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:51:10,314 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:51:10,322 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 09:51:10,323 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001CEAA401090>
+2025-04-17 09:51:10,324 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:51:10,324 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:51:10,324 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 10:08:25,845 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 10:08:25,845 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 10:08:25,845 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 10:08:25,845 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 10:08:25,845 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 10:08:25,845 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 10:08:25,845 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 10:08:25,847 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 10:08:25,847 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 10:08:25,847 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 10:08:25,847 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 10:08:25,847 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 10:08:25,847 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 10:08:25,847 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 10:08:25,847 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 10:08:25,853 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 10:08:25,856 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 10:08:25,863 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 10:08:25,865 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001D17B381090>
+2025-04-17 10:08:25,865 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 10:08:25,865 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 10:08:25,866 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 10:08:48,011 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 10:08:48,011 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 10:08:48,011 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 10:08:48,011 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 10:08:48,011 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 10:08:48,011 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 10:08:48,011 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 10:08:48,012 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 10:08:48,013 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 10:08:48,013 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 10:08:48,013 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 10:08:48,013 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 10:08:48,013 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 10:08:48,013 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 10:08:48,013 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 10:08:48,019 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 10:08:48,022 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 10:08:48,027 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 10:08:48,027 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000026FD53E1090>
+2025-04-17 10:08:48,028 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 10:08:48,028 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 10:08:48,028 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 10:09:27,561 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000026FD53E16D0>
+2025-04-17 10:09:27,562 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-04-17 10:09:27,562 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-04-17 10:09:27,562 - cnks - DEBUG - [DEBUG] 正在使用FastMCP的search_keywords函数
+2025-04-17 10:09:27,593 - cnks - DEBUG - [DEBUG] 使用Playwright搜索，Chrome路径: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:09:27,990 - cnks - DEBUG - [DEBUG] 尝试使用channel='chrome'启动浏览器
+2025-04-17 10:09:29,707 - cnks - DEBUG - [DEBUG] 成功打开知网搜索页面
+2025-04-17 10:09:30,743 - cnks - DEBUG - [DEBUG] 已在搜索框中输入: 治理
+2025-04-17 10:09:31,885 - cnks - DEBUG - [DEBUG] 已点击搜索按钮
+2025-04-17 10:09:33,906 - cnks - DEBUG - [DEBUG] 尝试点击排序下拉框
+2025-04-17 10:09:33,936 - cnks - DEBUG - [DEBUG] 成功点击排序下拉框
+2025-04-17 10:09:34,945 - cnks - DEBUG - [DEBUG] 尝试点击'50'选项
+2025-04-17 10:09:35,005 - cnks - DEBUG - [DEBUG] 成功点击'50'选项
+2025-04-17 10:09:37,026 - cnks - DEBUG - [DEBUG] 尝试勾选CSSCI选项
+2025-04-17 10:09:37,034 - cnks - DEBUG - [DEBUG] 未找到来源类别区域
+2025-04-17 10:09:37,118 - cnks - DEBUG - [DEBUG] 直接找到并点击了CSSCI
+2025-04-17 10:09:37,129 - cnks - DEBUG - [DEBUG] 开始查找所有包含article/abstract?v=的链接
+2025-04-17 10:09:39,165 - cnks - DEBUG - [DEBUG] 找到50条包含article/abstract?v=的链接
+2025-04-17 10:09:39,173 - cnks - DEBUG - [DEBUG] 链接 1: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNabvUDBMoOgdum3FI15P4tVddiik8qzw21Xiwe5yDx715Ceq7iXZfyUfU_DFBcmZ3cYyyIg-3jwYgK3B_7FiMG1uR6uh0Gs4yUvl_Rv-KC_PzilBw9MletA6MN_1R4Xp9FZQhQFgWGXJNXBQpuvH4Qk85DSdtl61DXUrAyejRVVw==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,180 - cnks - DEBUG - [DEBUG] 链接 2: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNabvUDBMoOgdum3FI15P4tVddiik8qzw21Xiwe5yDx715Ceq7iXZfy_-mT9iI3V9KJUUgMvMByCZNtbvu4ErGCkXUvZj6frjFqPWKDCfQHFWUQ9KWTyowO66tT0v1h-8r1Del4y6brwFH0QlgeuLZhP-7OXg45F4pqlh1XcncwYA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,186 - cnks - DEBUG - [DEBUG] 链接 3: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMb8KUR64fn4NY2BL_mnY11CasYF5WBEkMmExZUxQQFd4f19S3ViU724iTJ_k0w97P-pO6Tb9E5hbz7vbAjZ0vwWgn0W6rL4itwG18MXywqrywBDzdpvzwQmcFHh7ImQbFApt4vzDmZAanQ17GwSuU8G0wV3mPY7C1V6v7blZ7C7Q==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,192 - cnks - DEBUG - [DEBUG] 链接 4: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMb8KUR64fn4NY2BL_mnY11CasYF5WBEkPYz6ewnfwh58HJ4ja1jVLVtMxtlEMG4AWzLbIHrt6ahcOrsAf3qhZPckqKiJ9OCyS8l0LvKxhl0dCHT1tieB49M3SJS-7gYDuVAwIbPjdGdR5OIzwgksjTRxF9u9vTcDVK2EV9MjYgZg==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,198 - cnks - DEBUG - [DEBUG] 链接 5: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMb8KUR64fn4NY2BL_mnY11CasYF5WBEkMmExZUxQQFd4f19S3ViU72LBjL4AHu0UZBKNJQ12RTf8xm973rmMhgLNoKm9lTo_UzUMSbQGLVG7fsggA7i_vKp75zv_BJBR3Uc62lnA-pzn4v-R_j_X_c7tTK4vhbSGmAz2F5Hq5nmQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,203 - cnks - DEBUG - [DEBUG] 链接 6: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwPBc2DTUsoO9uKEZYk42edBUnaalqHhAx_NomaFpne5Iv53BGkempzyVTGlLtkgelzfJ2_glxcztNvS3jGNgRqV0JHAnnUwHmBLpROrocOd7m4mbnXc_5JnWMy00Tq7x7HJdquqno-jTx2queldcw14SuYr04XZtjCluL06T9Mjzw==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,209 - cnks - DEBUG - [DEBUG] 链接 7: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwPBc2DTUsoO9uKEZYk42edBUnaalqHhAx_NomaFpne5Iv53BGkempzysrCX_-rJLRdOAH4jrvyrZVTNpHXEguuzoNoJ6xX51iIshLFUnAU5-PZ8G-9dyPZLKNDUW9x0xqb5xfAey5dka5OXAjmRX3UbzFtvxUqdKpSgaJQHw5yExw==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,215 - cnks - DEBUG - [DEBUG] 链接 8: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMX2NwplYbxeoUc3ndhH6sRS3GuHq3rXWuWQokXGkfvCVzzFPau7TpLiS_xBeKIC5EjwK0VvbYxvKIpRLC6quZk6QDSRe77GRUWhTQ75HcVv6mwmeXSJ5dNNLLAHORE7lpekMLRnFGM_ia335wzlX1oKWI2UJg7i36A6LCO-3wSkA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,221 - cnks - DEBUG - [DEBUG] 链接 9: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMX2NwplYbxeoUc3ndhH6sRS3GuHq3rXWv2bmMInV5G1BraC8N693hCkWw5MaC4XElEHVDxjalQ8c77rQNKW3wuxnyujKIi745l4WQSVRTR3XpmJ76LpxqwVPS3ynHa1hvhbbny2oL8VssF3QDkrilvOGOf-M_vcuaZyQ97A10KmA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,226 - cnks - DEBUG - [DEBUG] 链接 10: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwO9XbbR3qZADSdeaghcdj3VrGroCAMPdL-QYM1roSZWQ7_NFO0GU1prGKyY2kcti_xGAFAjDkMKUZlzgYbcP-5KyBWjqnC3oUa6jV1_xyHdrSxtJWiNLAcd9V-YnLrNrsSV6GLAF1XJb_lgmR8uUnh_kqTtaml_P3m-mlYCNsaY3w==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,232 - cnks - DEBUG - [DEBUG] 链接 11: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwO9XbbR3qZADSdeaghcdj3VrGroCAMPdL8ZMHjiKImU5J6bqNcaMIGsgXxIN-IYbpTCY6Tvt26VWtizH454tOo0JqGie4OtTnVbKYdjmtYdGOiGaWgYUnuQIzCyjAMohAs-EiHJsxPADuEMs_B2AT0tK6xiMszqvls_NJlMUFX8_A==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,237 - cnks - DEBUG - [DEBUG] 链接 12: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwO9XbbR3qZADSdeaghcdj3VrGroCAMPdL8ZMHjiKImU5J6bqNcaMIGsuajYL0354qYGIex_6pvdm4UqLlR6Koitw58kc6CYHHPneBWvcu901cLhETgv4lN7Ifx16MjZhhHLUvmI3bkkFXM-bqJ45PWRAdIi-rYapw9iYdAchUIfaw==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,242 - cnks - DEBUG - [DEBUG] 链接 13: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwOAsXEJSjJJ55SQMDkA1u_JzbFXyLsbYr73Nbxtu16JXVC2tQFS-XOSnN04d0vSMnaowfxyxx2oyv-2Qrw3OUgdyYI1duBX-tIXePUWk-2VKI70J3gACZZJs2INT0J5ZKelmdVkrdu4gIjRlY9w7gABoH9RE6ANIMb8ZKOo5cu2ag==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,248 - cnks - DEBUG - [DEBUG] 链接 14: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMAXfENgUVoSVyO_LjQe3ZRQEU_W7BcBnad558BtxHHi1kkw_DmOEM2zwAs4PHXff-lvCfXlOJl6JiZb7TgFt4aRJp1Ksf-57dKeCZV65-xkf-ZypdFBEf0Lj_VOw7cMGn5vNLMYVDuDmehW7_HCUbuq5C2SAgMTspAZfSF4U1ryQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,253 - cnks - DEBUG - [DEBUG] 链接 15: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMAXfENgUVoSVyO_LjQe3ZRQEU_W7BcBnai8zTt5ZeqSFBsz_UGPS00Cx3-unQHvgVTnb8OclhXBzrF8CODr6gITHhKxlcbk1U6WQVCL2K5cINo30H2UqiplS2GOMbNFn9kwEcFrwnX1oBUOipGLesSAlwvXQuLnlzyvyQSV_9EOw==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,259 - cnks - DEBUG - [DEBUG] 链接 16: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMAXfENgUVoSVyO_LjQe3ZRQEU_W7BcBnZihW82lMhUHDhFmDpzGwoeA7yit1aROCfr37FwrMsFwr6oKXPmViQDeKA58p-dQlYYy0BiH5YdD9fKnigHr7k0DcatoE9fgMf8mbTygxSHXobSsk02Ns17GdNtshL5dPntJmnNy5Rtgw==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,264 - cnks - DEBUG - [DEBUG] 链接 17: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwP8juQ7e5JBgssRPS-67Q0iXTWc3mUlW2CoDwvf7J6SqL_1NOGh4b0_0_GhUWqMdBdFgTyYFvRjlAKdkPSSi1JKw6caTp1xwzx4onP-ESQv7G_IDWjf3thtQhlyE-f6o4KCw2kF_DCzXFcNjczH8WQd5FFilpc0Rzfp1Mi--7aqmA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,269 - cnks - DEBUG - [DEBUG] 链接 18: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwP8juQ7e5JBgssRPS-67Q0i3oHUqlk13V5qRK4EELkowXVmg8Lic15AvPDXYiaoIidNNvug2pLleS7L4DJVjCQHe5XZLLxqpQO6r7o7_mnA2ED5FfH5Sx7gGS4bHXsCeD9pPrYwtWIyZVgJFcBtEYOtY83KltOdoA3exleHUbN4sw==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,275 - cnks - DEBUG - [DEBUG] 链接 19: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwM16kDRDj-8RgNwVewaXnE6Ntb_G9NHQJ5z5fAZRnyT18ethCf3F0AT5Bw0H2MTXuTHMN_00Z2zkfF77Tvtzn1Nq2-nrSTlUXKgyBCdgBf-MzFO5g0_z311Qi53n2q-II9I1uqeC1nHW6Q7ufE4IYQfueU0_OlOO7Gx0p0onbaP_w==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,280 - cnks - DEBUG - [DEBUG] 链接 20: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwM16kDRDj-8RgNwVewaXnE61SiU6Lm5J82ALvERoFrKxrjVFyd5KK4xE1DUquQXspxSRhzrTeaKCgRO-3LNTOOrHw12H8eq3k8_DMsTUZQZBKzBLVdbGpqDSnEtpjPC7Qx-qClw_WB2pQrO8hWuAe99ENVQ3OPQulddAymPZcnneA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,286 - cnks - DEBUG - [DEBUG] 链接 21: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwOk9xfk3lGgzPNYVYOakBmTKfopHWNn2_TPAs0yMbiN_2_gF2RnZ8HUnoAO75G8WgPunIsPPnTl62pcVnY8klhOzd3_t-SB6bs9RWwxtsyGe4qC8Yhfo5JeTFNiEfhGzeMvmX50JlMlDaCPMQPKRpDbhJNB7icw8UrlEu_m7pWdCA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,291 - cnks - DEBUG - [DEBUG] 链接 22: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwOk9xfk3lGgzPNYVYOakBmTKfopHWNn2_ScoaIR5ar_bc9ogOxYbLVbHyloa8iVCM96ZdGfF-4Ga9wF29okHaFL38snHHsMj52m1RfIRnLt2QYKlY7Nq6wdhjrLUekVveqdU0e0z-27T7_YJjNpjoA22qjgXeIuqw3urLGBQVD3yA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,297 - cnks - DEBUG - [DEBUG] 链接 23: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwP2jbF1SeQ95ZjprIygRcq78i8i9QWpwpJFIe-H0-R8rxWi5isZf46XOglaxMmxSWbMLs_JSsTQcUumK39b8f07YVSSMpS2B7Gps9avtBJegCXSDn3J3czbXYiU-W_Kd7AKZr2WqAG8Z8a6LRQp_qPWF5gfk7Xee9vGHIEu2UnWOA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,303 - cnks - DEBUG - [DEBUG] 链接 24: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwP2jbF1SeQ95ZjprIygRcq78i8i9QWpwpKuk5oJzrZGsU5bAxJV0R2pnhSDQh5z596U59uH8dB9EIaCzhSQFszMDCjVmSB_rOsCR96Zgj5aRWfnSNGcmwI8XmdZjqSUgN2r_vh-VitHvIFtGaOAR73tNv9VfX9Y4sqIsuDjG2CSkQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,309 - cnks - DEBUG - [DEBUG] 链接 25: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMBYJGOySqa3k3Gf666iwcCz3k6HJ8kNddd9O9oXb_M_Ovudlk9IRfmeOlda86cDk931QeFceibaztmb5rTyG4WIngR4JJ5umhvY3xTLcbmMJrlFKx_Z83jnkEdu9ehj-dnUPbCD32u7_H8aNabBTKnuc0PMmZXV1piO_qJHsjUyQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,314 - cnks - DEBUG - [DEBUG] 链接 26: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMBYJGOySqa3k3Gf666iwcCz3k6HJ8kNdfTp9-MATb_ZK0JsfcLjbW3dPlgc9LTB3kYqcJUhNVBfS3_vPSkFuGJJSYqomnmeIhGS3RCOBw5uDl3aG7zAn8YCeKx3B-ppsZBnjzYmW2UZtYfUwD6aJ9HsE0S2bh4qZiZK1tEmeGuQA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,320 - cnks - DEBUG - [DEBUG] 链接 27: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMBYJGOySqa3k3Gf666iwcCz3k6HJ8kNddd9O9oXb_M_Ovudlk9IRfmFhLQFQAPN6Xw8BhI8GGXiT75csmbR6iI8bQcR2oYQ3jn6nEU4PDQsqD-WffOpBZgPdgQPMfuv7c5nOwKWmyzasmDjYMyhpcCRcCoIkqmbum2_Y18Q96egQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,325 - cnks - DEBUG - [DEBUG] 链接 28: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNy_f_KMHlbCcCtmBQaYSIPnl3VJNnJpymPwizodS8Etk7_Kw9s8aGQOX5n7OqF5ojieKYct0Kjy_4B4NstHoq5UcAuqaEGOks5eLGzhgZGfgnecMaHvyrI5jB1PsZJg0X4aZe9YTbpMhZ5Kr8hyEYM8yuFCrw_W1XhbjGOJHl3CQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,331 - cnks - DEBUG - [DEBUG] 链接 29: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNy_f_KMHlbCcCtmBQaYSIPnl3VJNnJpymM_X04YFT23Vasr2TqksEtVdw5jrq7F4S-mYHfQjhdAABmPrfPmqjCbPG9eJ1z2Ao2mCFiTrJC_I9uVEmxfglQZA1o2mYdhaToLGF-ygrbzEOZJZ_37M02u2qN4BPBmfg90BSE1KBc7w==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,336 - cnks - DEBUG - [DEBUG] 链接 30: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNGSI6OrZ8mbdJ4k5tLia40uV4z-uLmHZT54VBqjtZgmWq_4txw2hCV9kiLdEo_biGbBNtUtGYqz3raZwSSLyJQbi8OJkfHTT7K8cEDdnOnyB1pm0EX4aRN_xdQxVBtVwN0gUuzP2_976oo19IPmcL0UErCqA_Du1373wNnNT1deQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,341 - cnks - DEBUG - [DEBUG] 链接 31: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNGSI6OrZ8mbdJ4k5tLia40uV4z-uLmHZT54VBqjtZgmWq_4txw2hCVRqUjR_cSqUMrL5CKP91TP9K_FdtXjJIbmAh9iz50z3ZciOYl9j4E8ZiXVWPtqCxt5_urqIoaT1kKChbozMNR8Ucikh9I2MqzLRz7bkgPjnEnpfSE206mOg==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,346 - cnks - DEBUG - [DEBUG] 链接 32: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwOSA8Tu9RnrCT00UefUPYr7_jHWhb7irs_bvfZQNHXq4dgJWJBW8LLe6lYbWNeju7B0mlBlRb1UgqY6rIQ5Shu4sWrI52-kvggecVyEd0nBR2FnSUelkv-dz3py5n03gMAUwxO7yGsga3OKsWBTHw1g7YvDVHfGMrPWgGoezeEZzA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,352 - cnks - DEBUG - [DEBUG] 链接 33: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwOSA8Tu9RnrCT00UefUPYr7_jHWhb7irs-w4t6YDuQRMzutBakjOP4m5C76hUH1e5nK-EO8MMqRUlBGDQmglj-p-SUxXM3NbPoEMgGINs0-xUZnxICbOXxN53aTkYisBDc1hFYgG5yZ6_Zz9u9xhqYCkJMVHk5KzZxJpo0I-MH6TA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,357 - cnks - DEBUG - [DEBUG] 链接 34: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNJu4hIjQVNJCK0jQWphxcfkXhbHHp5mC3fZXvH9MQlCHVjhJ29U3Z9Jji8B0HcSXkzlEYDtPKcxBDipYD8_xEQjr7tiR4GCWB1xQHXa2JjSVJ-NyeK_bXiN0OV1-oObnBRb5NlKGl5lvjXdF_GLL83pkwPctpz4PvdXJLRouurIQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,363 - cnks - DEBUG - [DEBUG] 链接 35: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNJu4hIjQVNJCK0jQWphxcfkXhbHHp5mC2bj0AbP_1hSW1uzbAm0ImaONbIa4pIV43TUJqsJtBUCJlpychfaBDsmDhV2O6n6Qdb2LtZ08alOZofIKYZ_aufJ4naQgdNhGyW8aYcUIY3IncT7uFpNqtsLfLKDcPWyD3U1mrUUFXVAA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,368 - cnks - DEBUG - [DEBUG] 链接 36: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNJu4hIjQVNJCK0jQWphxcfBVJZN_Rxyq6OG9LVGzQteyY_bl3KzpGkRP2S_judtgJTO-3pDsEQhB4iiJvssrzlhVam34NC_saxRxwt8UtG6rV_-ccqRnVyztu80ehqbJxrvi6bbHoZ-qV17nmDX-yW9KvnO0h4v8H8sAO04pS3Nw==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,374 - cnks - DEBUG - [DEBUG] 链接 37: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMyIa7-G---K-Xks2dvpTJpxKd5jPKw3oqxNhG5J2qUkSFid0OnsmtNpACtmYb1-iwqW1CVO_-W9z8m6G-sEUYcsuwWbkNo7YC4Cmn3jXqrvZy1BS7ZiKav4PRHykGVnoxhEKdQ-mwPTfxdWSWpNXUKcLN5t59tcaU7ORVWllnynw==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,379 - cnks - DEBUG - [DEBUG] 链接 38: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMyIa7-G---K-Xks2dvpTJpxKd5jPKw3oqxNhG5J2qUkSFid0OnsmtNMGTysdqrSX7qJrWgOgukeOT9pvPHhkgAH-MMYVeZv4L2vyDxmjDIKq3xhPEAhBv_-Kg7kri_dQ4h0yS-bqm8NqbdUygD-UkrNS-6EC7_EiMon-u18CEi2w==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,384 - cnks - DEBUG - [DEBUG] 链接 39: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwPn9iIIYNSDnZoCYZCjfMaCeIJGzlM6GfGE8U35KniWFpeohKKtSexntrzD35ep8g7QKAZysv1FLNXXY7akQ5v0IlOnPDq7bT5XDvlagEQ6ZpkP0Zr0hsjW7XhXqSxpDU3zHVRCQaGcu-8XQ2iPINjxwpH8ODbc5E_rGZHYw_zzBg==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,389 - cnks - DEBUG - [DEBUG] 链接 40: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwPn9iIIYNSDnZoCYZCjfMaCeIJGzlM6GfGE8U35KniWFpeohKKtSexn4_STbr0WQtFRRSVCvYqx-A0lCVBBgGXtWMaR6iy67bpcK2caqPVR8aHnWMqsvWJfjTqf_yxDJDqInC7bp5ZoXPjkR30hItduLQTr5MFaNDGECJvDtJv24w==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,395 - cnks - DEBUG - [DEBUG] 链接 41: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwPGCGtxYNPdL_BrWcMmJiT8DYJYKboHF4tTugLyGS_4q15SfLHM7Q_8Uo7BcmWuFWORtWh1s_i0fOFWnDf4pefPB10c9-UWS96dcdNLPE60HegNq8Qy_fT6mtLOy2UN3eHD_lazgQzyEWrmW-ppwSvVuKn0FrZd6XY2UsJB32egMQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,400 - cnks - DEBUG - [DEBUG] 链接 42: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwPGCGtxYNPdL_BrWcMmJiT8DYJYKboHF4sstFpuUxbO-E4CzwyIyvYZWdE0E5O5PMhsV09pkcufLiKsMhXxim-umF71lnzTnpRVD5a3VAWiTnduUk6k-5gllMDq3y-AKjl3PuUR7UOwwTkug3lFzSu7wjAzY1HJKdqGHdsNOvE2hA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,405 - cnks - DEBUG - [DEBUG] 链接 43: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwPGCGtxYNPdL_BrWcMmJiT8DYJYKboHF4sf0m7FWqp9Zw_YIB6hZ8A58FAvOSPeJ9ZgnleoaXx3K4mhV3to6thiZ2tX4V7hfPDYowOE5sFLh8Ccb-n4bR02IzNgHx7Q-gz1YsIzavFJefKqPBGXvaoOzMXy0JQhIP1eteESjYuhQQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,410 - cnks - DEBUG - [DEBUG] 链接 44: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwPP0PECmcUckbwtJ3OPSUmpJRNGxxmoeYnKYVkvwnnfLWXz4yFr4Lui3B-9cN7kQeIeON7PCyra790_8U3AHKWsiH-tdIaRsZYb-IV6yKH_Wz0XnIBY-LmaKx0dXTb_qFvmrVmKpgZepnmRjzzvsXnNgf0nekgFKs9v8MVkUep6XA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,415 - cnks - DEBUG - [DEBUG] 链接 45: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwPP0PECmcUckbwtJ3OPSUmpJRNGxxmoeYmTOEs2FfdgaFeIqWSis9G5sSYj1o417_q2RZ8KM9XoS0SPHqDUKphFVlwP5PEP0mbbR4hO824s-JI58-U0zH29queROYo9ZHnK7t1XWMU3pLE8_oSbdM4cUHKUw2gIGXEIk7FhusmeNQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,421 - cnks - DEBUG - [DEBUG] 链接 46: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNsXA5CG5xDiQjpANRYXwLqc5FmP_-krFQWv6YagOoJa1itgnDO61fZVf7vyxs3QMEh1jIt330z6wI0qZXYOJSfGkh-BmMKILGeG08RQDDgoxUjjMLsqfpWrjj4nD-Tg8M-ZncPQheWlYCCXjRdt5JN8PP1zvn86QXr40l8yQdjUw==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,427 - cnks - DEBUG - [DEBUG] 链接 47: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNsXA5CG5xDiQjpANRYXwLqc5FmP_-krFQWv6YagOoJa1itgnDO61fZxGKFbMwutA6Yc8JKjLr7x-hkC33Oa3ihH4mVWctD0K6LEwI7OLsNlKBt_g-AF_x9ryLCkJJYRZe1b1Mwickqi6lOvjRBUbXl1VVHm6d_g6WHQkgw1_VBuw==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,433 - cnks - DEBUG - [DEBUG] 链接 48: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNcMsbZ4f_v2JwghOV_7f9CmfZIh0Ns7btzSDADe9agRspUMoQHmfs6auFOWLw49xi6fiDu6dAcGmOEvCWTRJHnp3d6ubxeyEIb71URBm8Kjtv7m_xekxubunXHYC42q-T7zyzHB0ezQ8Yzmm36VuKWtUVM-hbFmV9ekGH3p6X96w==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,438 - cnks - DEBUG - [DEBUG] 链接 49: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNcMsbZ4f_v2JwghOV_7f9CmfZIh0Ns7buhmZ8yULvmZnaKxmjOBgM-1vbQdM8NjIWzWQlQaQHM1qNCfvIRh1V5zaMIh6JaF8aW9d3FDBHgNiyt8hMxijONzRo6ZHrhoKtP3jH5dM5udK5ZYV_65Pb9pcujqJ9f9YMeXfIfgQunIg==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,444 - cnks - DEBUG - [DEBUG] 链接 50: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNcMsbZ4f_v2JwghOV_7f9CmfZIh0Ns7btzSDADe9agRspUMoQHmfs6PPT4qvmtgIMl9fZC1bRfMeWiexS6zA8iSjLK3cLHcJ3LmhvTfjgvbaHHtvtxttW-45AdpA3hNSRmgs8aSW-gTjzhBbgfsjucpR3rV0cXhxMf2mY-rPaB3g==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:09:39,444 - cnks - DEBUG - [DEBUG] 链接数量正好是50条，符合预期
+2025-04-17 10:09:39,445 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 10:10:53,944 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 10:10:53,944 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 10:10:53,944 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 10:10:53,944 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 10:10:53,944 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 10:10:53,944 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 10:10:53,944 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 10:10:53,946 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 10:10:53,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 10:10:53,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 10:10:53,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 10:10:53,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 10:10:53,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 10:10:53,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 10:10:53,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 10:10:53,952 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 10:10:53,956 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 10:10:53,962 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 10:10:53,964 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000029F46341090>
+2025-04-17 10:10:53,964 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 10:10:53,964 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 10:10:53,964 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 10:11:11,536 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 10:11:11,537 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 10:11:11,537 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 10:11:11,537 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 10:11:11,537 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 10:11:11,537 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 10:11:11,537 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 10:11:11,538 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 10:11:11,538 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 10:11:11,538 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 10:11:11,538 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 10:11:11,539 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 10:11:11,539 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 10:11:11,539 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 10:11:11,539 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 10:11:11,545 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 10:11:11,548 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 10:11:11,555 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 10:11:11,556 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000019F8C501090>
+2025-04-17 10:11:11,556 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 10:11:11,557 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 10:11:11,557 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 10:20:58,422 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 10:20:58,425 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 10:20:58,425 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 10:20:58,425 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 10:20:58,425 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 10:20:58,425 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 10:20:58,425 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 10:20:58,427 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 10:20:58,427 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 10:20:58,427 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 10:20:58,427 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 10:20:58,427 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 10:20:58,427 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 10:20:58,427 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 10:20:58,427 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 10:20:58,434 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 10:20:58,437 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 10:20:58,443 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 10:20:58,444 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000020599995310>
+2025-04-17 10:20:58,444 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 10:20:58,444 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 10:20:58,444 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 10:25:00,944 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 10:25:00,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 10:25:00,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 10:25:00,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 10:25:00,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 10:25:00,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 10:25:00,946 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 10:25:00,947 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 10:25:00,947 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 10:25:00,947 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 10:25:00,947 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 10:25:00,947 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 10:25:00,947 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 10:25:00,947 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 10:25:00,947 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 10:25:00,956 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 10:25:00,961 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 10:25:00,962 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x00000214AE4C4F50>
+2025-04-17 10:25:00,962 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 10:25:00,962 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 10:25:00,962 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 10:26:50,824 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x00000214AE4C56D0>
+2025-04-17 10:26:50,825 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-04-17 10:26:50,825 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-04-17 10:26:50,825 - cnks - DEBUG - [DEBUG] 正在使用FastMCP的mcp_cnks_search_and_extract函数
+2025-04-17 10:26:50,860 - cnks - DEBUG - [DEBUG] 使用Playwright搜索，Chrome路径: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:26:51,252 - cnks - DEBUG - [DEBUG] 尝试使用channel='chrome'启动浏览器
+2025-04-17 10:26:52,523 - cnks - DEBUG - [DEBUG] 成功打开知网搜索页面
+2025-04-17 10:26:53,599 - cnks - DEBUG - [DEBUG] 已在搜索框中输入: AI幻觉
+2025-04-17 10:26:54,750 - cnks - DEBUG - [DEBUG] 已点击搜索按钮
+2025-04-17 10:26:56,775 - cnks - DEBUG - [DEBUG] 尝试点击排序下拉框
+2025-04-17 10:26:56,814 - cnks - DEBUG - [DEBUG] 成功点击排序下拉框
+2025-04-17 10:26:57,821 - cnks - DEBUG - [DEBUG] 尝试点击'50'选项
+2025-04-17 10:26:57,887 - cnks - DEBUG - [DEBUG] 成功点击'50'选项
+2025-04-17 10:26:59,911 - cnks - DEBUG - [DEBUG] 尝试勾选CSSCI选项
+2025-04-17 10:26:59,918 - cnks - DEBUG - [DEBUG] 未找到来源类别区域
+2025-04-17 10:26:59,995 - cnks - DEBUG - [DEBUG] 直接找到并点击了CSSCI
+2025-04-17 10:27:00,006 - cnks - DEBUG - [DEBUG] 开始查找所有包含article/abstract?v=的链接
+2025-04-17 10:27:02,031 - cnks - DEBUG - [DEBUG] 找到4条包含article/abstract?v=的链接
+2025-04-17 10:27:02,039 - cnks - DEBUG - [DEBUG] 链接 1: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNBGAAUGMJpnNNq9w_heZ4QQDqu2NHsirHxrMVNoUVtCyaFTzW9N73v9XT_RViSgOTSef3n6i352L_zxoOWwYA4erYwFA9DGMf7VTBeFNMxnD3VvZwYEv143jxxWSyWEdUinTF2PLDXukI25-hut4ImSMhQzm34zG19aAiDDCcwkg==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:27:02,048 - cnks - DEBUG - [DEBUG] 链接 2: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwM50YeGKv0l3MZzVLMzT3RvfsbtqWxdllEfbGmDLvvZpwbecUqtFPoyZ4uZWroIPMb2opuUVUfy5KEenT1qZcFFR00SpbSIh1EpyIVP1Vu0Q-fF_CipYM-AKW9Ba7EM1y-o1FUkcOxPzcIXKwqTz01PlfsPCem-v80wJZXXad7d4w==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:27:02,054 - cnks - DEBUG - [DEBUG] 链接 3: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwM50YeGKv0l3MZzVLMzT3RvfsbtqWxdllHcoGcBSMXx7tn1qTId5SYLml4gE7AL-xWKvb95VWQvWGMsbR_IYBZaEDYin9EWdtIG_wrBv_bLaQhbBRqHsiEX8GuR-C1PIFC0p3lb2FepVEnPsdn7u0DPFE2e-LUvGOaRdSfWWvSoaw==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:27:02,060 - cnks - DEBUG - [DEBUG] 链接 4: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwPXZa2nVcIxqjKDQ-7oAHIqQiImYAPnsMaKeNPdXdcystf9TWXJNyP1LAqmAHbIkRIb1SZPo7SDgSLNurH3DxOfxxupqOoe-2DBmhIjCjGEuJIdeguZqSFUBy7oHMGRLfoH6C5aqrT4szGezOpOISHaRFJtt1obnJ7JgCoYF9MBDw==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:27:02,061 - cnks - DEBUG - [DEBUG] 链接数量为4条，少于预期的50条
+2025-04-17 10:27:02,061 - cnki_extractor - INFO - 正在处理第 1/4 个URL: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNBGAAUGMJpnNNq9w_heZ4QQDqu2NHsirHxrMVNoUVtCyaFTzW9N73v9XT_RViSgOTSef3n6i352L_zxoOWwYA4erYwFA9DGMf7VTBeFNMxnD3VvZwYEv143jxxWSyWEdUinTF2PLDXukI25-hut4ImSMhQzm34zG19aAiDDCcwkg==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:27:02,454 - cnki_extractor - ERROR - 处理请求时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:27:02,455 - cnki_extractor - ERROR - 错误堆栈: Traceback (most recent call last):
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 59, in extract_content_from_url
+    playwright, browser, context = await get_browser()
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 33, in get_browser
+    browser = await playwright.chromium.launch(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14450, in launch
+    await self._impl_obj.launch(
+    ...<17 lines>...
+    )
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 96, in launch
+    Browser, from_channel(await self._channel.send("launch", params))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2025-04-17 10:27:02,456 - cnki_extractor - ERROR - 处理URL https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNBGAAUGMJpnNNq9w_heZ4QQDqu2NHsirHxrMVNoUVtCyaFTzW9N73v9XT_RViSgOTSef3n6i352L_zxoOWwYA4erYwFA9DGMf7VTBeFNMxnD3VvZwYEv143jxxWSyWEdUinTF2PLDXukI25-hut4ImSMhQzm34zG19aAiDDCcwkg==&uniplatform=NZKPT&language=CHS 时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:27:02,456 - cnki_extractor - INFO - 正在处理第 2/4 个URL: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwM50YeGKv0l3MZzVLMzT3RvfsbtqWxdllEfbGmDLvvZpwbecUqtFPoyZ4uZWroIPMb2opuUVUfy5KEenT1qZcFFR00SpbSIh1EpyIVP1Vu0Q-fF_CipYM-AKW9Ba7EM1y-o1FUkcOxPzcIXKwqTz01PlfsPCem-v80wJZXXad7d4w==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:27:02,842 - cnki_extractor - ERROR - 处理请求时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:27:02,843 - cnki_extractor - ERROR - 错误堆栈: Traceback (most recent call last):
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 59, in extract_content_from_url
+    playwright, browser, context = await get_browser()
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 33, in get_browser
+    browser = await playwright.chromium.launch(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14450, in launch
+    await self._impl_obj.launch(
+    ...<17 lines>...
+    )
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 96, in launch
+    Browser, from_channel(await self._channel.send("launch", params))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2025-04-17 10:27:02,843 - cnki_extractor - ERROR - 处理URL https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwM50YeGKv0l3MZzVLMzT3RvfsbtqWxdllEfbGmDLvvZpwbecUqtFPoyZ4uZWroIPMb2opuUVUfy5KEenT1qZcFFR00SpbSIh1EpyIVP1Vu0Q-fF_CipYM-AKW9Ba7EM1y-o1FUkcOxPzcIXKwqTz01PlfsPCem-v80wJZXXad7d4w==&uniplatform=NZKPT&language=CHS 时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:27:02,843 - cnki_extractor - INFO - 正在处理第 3/4 个URL: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwM50YeGKv0l3MZzVLMzT3RvfsbtqWxdllHcoGcBSMXx7tn1qTId5SYLml4gE7AL-xWKvb95VWQvWGMsbR_IYBZaEDYin9EWdtIG_wrBv_bLaQhbBRqHsiEX8GuR-C1PIFC0p3lb2FepVEnPsdn7u0DPFE2e-LUvGOaRdSfWWvSoaw==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:27:03,234 - cnki_extractor - ERROR - 处理请求时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:27:03,235 - cnki_extractor - ERROR - 错误堆栈: Traceback (most recent call last):
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 59, in extract_content_from_url
+    playwright, browser, context = await get_browser()
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 33, in get_browser
+    browser = await playwright.chromium.launch(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14450, in launch
+    await self._impl_obj.launch(
+    ...<17 lines>...
+    )
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 96, in launch
+    Browser, from_channel(await self._channel.send("launch", params))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2025-04-17 10:27:03,235 - cnki_extractor - ERROR - 处理URL https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwM50YeGKv0l3MZzVLMzT3RvfsbtqWxdllHcoGcBSMXx7tn1qTId5SYLml4gE7AL-xWKvb95VWQvWGMsbR_IYBZaEDYin9EWdtIG_wrBv_bLaQhbBRqHsiEX8GuR-C1PIFC0p3lb2FepVEnPsdn7u0DPFE2e-LUvGOaRdSfWWvSoaw==&uniplatform=NZKPT&language=CHS 时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:27:03,235 - cnki_extractor - INFO - 正在处理第 4/4 个URL: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwPXZa2nVcIxqjKDQ-7oAHIqQiImYAPnsMaKeNPdXdcystf9TWXJNyP1LAqmAHbIkRIb1SZPo7SDgSLNurH3DxOfxxupqOoe-2DBmhIjCjGEuJIdeguZqSFUBy7oHMGRLfoH6C5aqrT4szGezOpOISHaRFJtt1obnJ7JgCoYF9MBDw==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:27:03,621 - cnki_extractor - ERROR - 处理请求时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:27:03,622 - cnki_extractor - ERROR - 错误堆栈: Traceback (most recent call last):
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 59, in extract_content_from_url
+    playwright, browser, context = await get_browser()
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 33, in get_browser
+    browser = await playwright.chromium.launch(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14450, in launch
+    await self._impl_obj.launch(
+    ...<17 lines>...
+    )
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 96, in launch
+    Browser, from_channel(await self._channel.send("launch", params))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2025-04-17 10:27:03,622 - cnki_extractor - ERROR - 处理URL https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwPXZa2nVcIxqjKDQ-7oAHIqQiImYAPnsMaKeNPdXdcystf9TWXJNyP1LAqmAHbIkRIb1SZPo7SDgSLNurH3DxOfxxupqOoe-2DBmhIjCjGEuJIdeguZqSFUBy7oHMGRLfoH6C5aqrT4szGezOpOISHaRFJtt1obnJ7JgCoYF9MBDw==&uniplatform=NZKPT&language=CHS 时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:27:03,623 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 10:28:13,707 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x00000214AE4B4D60>
+2025-04-17 10:28:13,707 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-04-17 10:28:13,707 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-04-17 10:28:13,708 - cnks - DEBUG - [DEBUG] 正在使用FastMCP的mcp_cnks_search_and_extract函数
+2025-04-17 10:28:13,708 - cnks - DEBUG - [DEBUG] 使用Playwright搜索，Chrome路径: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:28:14,088 - cnks - DEBUG - [DEBUG] 尝试使用channel='chrome'启动浏览器
+2025-04-17 10:28:15,271 - cnks - DEBUG - [DEBUG] 成功打开知网搜索页面
+2025-04-17 10:28:16,352 - cnks - DEBUG - [DEBUG] 已在搜索框中输入: AI幻觉
+2025-04-17 10:28:17,480 - cnks - DEBUG - [DEBUG] 已点击搜索按钮
+2025-04-17 10:28:19,497 - cnks - DEBUG - [DEBUG] 尝试点击排序下拉框
+2025-04-17 10:28:19,535 - cnks - DEBUG - [DEBUG] 成功点击排序下拉框
+2025-04-17 10:28:20,539 - cnks - DEBUG - [DEBUG] 尝试点击'50'选项
+2025-04-17 10:28:20,586 - cnks - DEBUG - [DEBUG] 成功点击'50'选项
+2025-04-17 10:28:22,610 - cnks - DEBUG - [DEBUG] 尝试勾选CSSCI选项
+2025-04-17 10:28:22,617 - cnks - DEBUG - [DEBUG] 未找到来源类别区域
+2025-04-17 10:28:22,697 - cnks - DEBUG - [DEBUG] 直接找到并点击了CSSCI
+2025-04-17 10:28:22,709 - cnks - DEBUG - [DEBUG] 开始查找所有包含article/abstract?v=的链接
+2025-04-17 10:28:24,722 - cnks - DEBUG - [DEBUG] 找到4条包含article/abstract?v=的链接
+2025-04-17 10:28:24,731 - cnks - DEBUG - [DEBUG] 链接 1: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMqg9ay-ky86rvt2mUB3raZXUJUQFw3xKJY84nRIldnY22rV5725KHB_9iv6E7zQJGjjSt5t9nsil2oi1PWKjN61gAZKHK3LHeYEVy4MtWLmttmafz24dsF9WByxC-iZ5OHg-6dnQj_s-kRgkwfelKzJJiz4oCxprBsnnhtYN9Q2w==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:28:24,737 - cnks - DEBUG - [DEBUG] 链接 2: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMK3IrlwXLO4X4S1vqmDmXbx4I1jHmj5hU1UE2aES1qu52L9_t48ENP-snvMqmbK6bzAemgd6yxWy2i08idwcQvpsFyZJIxYAtAobyGxDH3_yQTfpQa_kHpL4SnT0MLJ9X50w6i66E9ZY90wxu18W9uTjOOowk9bJXbvhL-PRsfHg==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:28:24,743 - cnks - DEBUG - [DEBUG] 链接 3: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNMtkq-b46ihbtVGbCsEFHUCm1ogIeBcoQEamwZQM_2Fj2Le_tT8cOVYQeAgkp6ucaTZYjkCJZ0laoiTlZ4a_gh8oaUYuFNVn2X9vs2ooD1E6AonTRn4Vt2pQDSXl4tUYkjmFSwgvakfhT7WYn77_AMAibuNMbr1XeFKzb_cdKxAg==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:28:24,749 - cnks - DEBUG - [DEBUG] 链接 4: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNGMFg_A6R-LZq6umUrw4cUbRYHSeiyNQKpykw7X3q135w-PhBy3KFBZFvuSOQBzLwwttMq3rLLrW6h7G0Vgo-W4D3mL8Vspu87-WSNsuFfS1SjAYIZOWXbYCtPOw79OJNW7xn0DDh-xPCwVlMNzpoCQ40hjhBeQBfy65ORyIFr0Q==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:28:24,749 - cnks - DEBUG - [DEBUG] 链接数量为4条，少于预期的50条
+2025-04-17 10:28:24,750 - cnki_extractor - INFO - 正在处理第 1/4 个URL: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMqg9ay-ky86rvt2mUB3raZXUJUQFw3xKJY84nRIldnY22rV5725KHB_9iv6E7zQJGjjSt5t9nsil2oi1PWKjN61gAZKHK3LHeYEVy4MtWLmttmafz24dsF9WByxC-iZ5OHg-6dnQj_s-kRgkwfelKzJJiz4oCxprBsnnhtYN9Q2w==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:28:25,141 - cnki_extractor - ERROR - 处理请求时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:28:25,143 - cnki_extractor - ERROR - 错误堆栈: Traceback (most recent call last):
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 59, in extract_content_from_url
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 33, in get_browser
+    
+    ...<7 lines>...
+    
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14450, in launch
+    await self._impl_obj.launch(
+    ...<17 lines>...
+    )
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 96, in launch
+    Browser, from_channel(await self._channel.send("launch", params))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2025-04-17 10:28:25,143 - cnki_extractor - ERROR - 处理URL https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMqg9ay-ky86rvt2mUB3raZXUJUQFw3xKJY84nRIldnY22rV5725KHB_9iv6E7zQJGjjSt5t9nsil2oi1PWKjN61gAZKHK3LHeYEVy4MtWLmttmafz24dsF9WByxC-iZ5OHg-6dnQj_s-kRgkwfelKzJJiz4oCxprBsnnhtYN9Q2w==&uniplatform=NZKPT&language=CHS 时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:28:25,143 - cnki_extractor - INFO - 正在处理第 2/4 个URL: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMK3IrlwXLO4X4S1vqmDmXbx4I1jHmj5hU1UE2aES1qu52L9_t48ENP-snvMqmbK6bzAemgd6yxWy2i08idwcQvpsFyZJIxYAtAobyGxDH3_yQTfpQa_kHpL4SnT0MLJ9X50w6i66E9ZY90wxu18W9uTjOOowk9bJXbvhL-PRsfHg==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:28:25,535 - cnki_extractor - ERROR - 处理请求时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:28:25,536 - cnki_extractor - ERROR - 错误堆栈: Traceback (most recent call last):
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 59, in extract_content_from_url
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 33, in get_browser
+    
+    ...<7 lines>...
+    
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14450, in launch
+    await self._impl_obj.launch(
+    ...<17 lines>...
+    )
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 96, in launch
+    Browser, from_channel(await self._channel.send("launch", params))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2025-04-17 10:28:25,536 - cnki_extractor - ERROR - 处理URL https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMK3IrlwXLO4X4S1vqmDmXbx4I1jHmj5hU1UE2aES1qu52L9_t48ENP-snvMqmbK6bzAemgd6yxWy2i08idwcQvpsFyZJIxYAtAobyGxDH3_yQTfpQa_kHpL4SnT0MLJ9X50w6i66E9ZY90wxu18W9uTjOOowk9bJXbvhL-PRsfHg==&uniplatform=NZKPT&language=CHS 时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:28:25,536 - cnki_extractor - INFO - 正在处理第 3/4 个URL: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNMtkq-b46ihbtVGbCsEFHUCm1ogIeBcoQEamwZQM_2Fj2Le_tT8cOVYQeAgkp6ucaTZYjkCJZ0laoiTlZ4a_gh8oaUYuFNVn2X9vs2ooD1E6AonTRn4Vt2pQDSXl4tUYkjmFSwgvakfhT7WYn77_AMAibuNMbr1XeFKzb_cdKxAg==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:28:25,926 - cnki_extractor - ERROR - 处理请求时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:28:25,927 - cnki_extractor - ERROR - 错误堆栈: Traceback (most recent call last):
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 59, in extract_content_from_url
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 33, in get_browser
+    
+    ...<7 lines>...
+    
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14450, in launch
+    await self._impl_obj.launch(
+    ...<17 lines>...
+    )
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 96, in launch
+    Browser, from_channel(await self._channel.send("launch", params))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2025-04-17 10:28:25,927 - cnki_extractor - ERROR - 处理URL https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNMtkq-b46ihbtVGbCsEFHUCm1ogIeBcoQEamwZQM_2Fj2Le_tT8cOVYQeAgkp6ucaTZYjkCJZ0laoiTlZ4a_gh8oaUYuFNVn2X9vs2ooD1E6AonTRn4Vt2pQDSXl4tUYkjmFSwgvakfhT7WYn77_AMAibuNMbr1XeFKzb_cdKxAg==&uniplatform=NZKPT&language=CHS 时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:28:25,927 - cnki_extractor - INFO - 正在处理第 4/4 个URL: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNGMFg_A6R-LZq6umUrw4cUbRYHSeiyNQKpykw7X3q135w-PhBy3KFBZFvuSOQBzLwwttMq3rLLrW6h7G0Vgo-W4D3mL8Vspu87-WSNsuFfS1SjAYIZOWXbYCtPOw79OJNW7xn0DDh-xPCwVlMNzpoCQ40hjhBeQBfy65ORyIFr0Q==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:28:26,320 - cnki_extractor - ERROR - 处理请求时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:28:26,321 - cnki_extractor - ERROR - 错误堆栈: Traceback (most recent call last):
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 59, in extract_content_from_url
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\runchrome\src\cnks\extractor.py", line 33, in get_browser
+    
+    ...<7 lines>...
+    
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14450, in launch
+    await self._impl_obj.launch(
+    ...<17 lines>...
+    )
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 96, in launch
+    Browser, from_channel(await self._channel.send("launch", params))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2025-04-17 10:28:26,322 - cnki_extractor - ERROR - 处理URL https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwNGMFg_A6R-LZq6umUrw4cUbRYHSeiyNQKpykw7X3q135w-PhBy3KFBZFvuSOQBzLwwttMq3rLLrW6h7G0Vgo-W4D3mL8Vspu87-WSNsuFfS1SjAYIZOWXbYCtPOw79OJNW7xn0DDh-xPCwVlMNzpoCQ40hjhBeQBfy65ORyIFr0Q==&uniplatform=NZKPT&language=CHS 时出错: BrowserType.launch: Executable doesn't exist at C:\Users\ptelegion\AppData\Local\ms-playwright\chromium-1161\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-04-17 10:28:26,322 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 10:32:17,083 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 10:32:17,087 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 10:32:17,087 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 10:32:17,087 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 10:32:17,087 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 10:32:17,087 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 10:32:17,087 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 10:32:17,089 - mcp.server.lowlevel.server - DEBUG - Initializing server '知网搜索'
+2025-04-17 10:32:17,089 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 10:32:17,089 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 10:32:17,089 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 10:32:17,089 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 10:32:17,089 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 10:32:17,089 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 10:32:17,089 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 10:32:17,098 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 10:32:17,103 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 10:32:17,104 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001BC99964F50>
+2025-04-17 10:32:17,104 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 10:32:17,104 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 10:32:17,104 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 10:32:39,161 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001BC999656D0>
+2025-04-17 10:32:39,162 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-04-17 10:32:39,162 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-04-17 10:32:39,162 - cnks - DEBUG - [DEBUG] 正在使用FastMCP的mcp_cnks_search_and_extract函数
+2025-04-17 10:32:39,195 - cnks - DEBUG - [DEBUG] 使用Playwright搜索，Chrome路径: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:32:39,581 - cnks - DEBUG - [DEBUG] 尝试使用channel='chrome'启动浏览器
+2025-04-17 10:32:41,125 - cnks - DEBUG - [DEBUG] 成功打开知网搜索页面
+2025-04-17 10:32:42,165 - cnks - DEBUG - [DEBUG] 已在搜索框中输入: AI幻觉
+2025-04-17 10:32:43,302 - cnks - DEBUG - [DEBUG] 已点击搜索按钮
+2025-04-17 10:32:45,319 - cnks - DEBUG - [DEBUG] 尝试点击排序下拉框
+2025-04-17 10:32:45,351 - cnks - DEBUG - [DEBUG] 成功点击排序下拉框
+2025-04-17 10:32:46,360 - cnks - DEBUG - [DEBUG] 尝试点击'50'选项
+2025-04-17 10:32:46,417 - cnks - DEBUG - [DEBUG] 成功点击'50'选项
+2025-04-17 10:32:48,432 - cnks - DEBUG - [DEBUG] 尝试勾选CSSCI选项
+2025-04-17 10:32:48,440 - cnks - DEBUG - [DEBUG] 未找到来源类别区域
+2025-04-17 10:32:48,511 - cnks - DEBUG - [DEBUG] 直接找到并点击了CSSCI
+2025-04-17 10:32:48,522 - cnks - DEBUG - [DEBUG] 开始查找所有包含article/abstract?v=的链接
+2025-04-17 10:32:50,532 - cnks - DEBUG - [DEBUG] 找到4条包含article/abstract?v=的链接
+2025-04-17 10:32:50,540 - cnks - DEBUG - [DEBUG] 链接 1: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwOHnr1ZYWtJTZSyQaDvRrpGrQ00gooH4ujVRWFbj-Lw0_4tv9CpInFLWLvdeKx6_X60D36btpN-DtHRYV5_f6esr8csUySYx0Tk3d5ORG9ZRp1_YN_eJrgO5G5FExPhs4R5cBpGmwglkTmngrguGZT1g4TCBS2uX-Ijuohuut1juQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:32:50,549 - cnks - DEBUG - [DEBUG] 链接 2: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwOHnr1ZYWtJTZSyQaDvRrpGrQ00gooH4uhcmbj5mr6r7aYKd9oWW_c-Nt_iIDeY3pYqpDNBpMipclNKj6PX_tbb1osk3rJbjnqgT683rCz4dA2fGzpATAyAevQ2g6pM6dJpafkuHwRqqTICekC4E-nqkE9YtN6lViyIarPFL7ATBA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:32:50,555 - cnks - DEBUG - [DEBUG] 链接 3: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMRDU2DBUGGyPwuzhQxhf9VLUZjpLUPgfk650xmwNgic1nykcTDtpYdZ6WoWjpYKG8Mi_fAhxEoo91kOEKahpFiksV_CWKDoy8nPuwthrl6qN4efQPX3w_KAnhOJGQHtCh5eHCMFtxTo3ZjqQZIdJH0IyXtR92lbyCOsAOcnNrpZQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:32:50,560 - cnks - DEBUG - [DEBUG] 链接 4: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMRDU2DBUGGyPwuzhQxhf9VLUZjpLUPgfk650xmwNgic2wh56HYgB6p5csOT5wE4i8fKHdRhy3_i1WD-H4imnDvzTBAaaML7vuexEtfpfW3ci8I4Dudn1cIfyb5vqdV1rq-JjqY4gxo8oBtE5-vi3gNutAHqYnIEXIoSL1YVeW63g==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:32:50,560 - cnks - DEBUG - [DEBUG] 链接数量为4条，少于预期的50条
+2025-04-17 10:32:50,560 - chrome_extractor - INFO - 添加任务: 处理URL https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwOHnr1ZYWtJTZSyQaDvRrpGrQ00gooH4ujVRWFbj-Lw0_4tv9CpInFLWLvdeKx6_X60D36btpN-DtHRYV5_f6esr8csUySYx0Tk3d5ORG9ZRp1_YN_eJrgO5G5FExPhs4R5cBpGmwglkTmngrguGZT1g4TCBS2uX-Ijuohuut1juQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:32:50,560 - chrome_extractor - INFO - 找到Chrome: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:32:50,560 - chrome_extractor - INFO - 正在启动Chrome浏览器: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:32:50,944 - chrome_extractor - INFO - 尝试使用channel='chrome'启动
+2025-04-17 10:32:51,201 - chrome_extractor - INFO - 正在访问页面: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwOHnr1ZYWtJTZSyQaDvRrpGrQ00gooH4ujVRWFbj-Lw0_4tv9CpInFLWLvdeKx6_X60D36btpN-DtHRYV5_f6esr8csUySYx0Tk3d5ORG9ZRp1_YN_eJrgO5G5FExPhs4R5cBpGmwglkTmngrguGZT1g4TCBS2uX-Ijuohuut1juQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:32:52,531 - chrome_extractor - INFO - 页面加载完成
+2025-04-17 10:32:52,543 - chrome_extractor - INFO - 提取到标题: 
+2025-04-17 10:32:56,510 - chrome_extractor - INFO - 获取引用格式
+2025-04-17 10:32:58,519 - chrome_extractor - INFO - 提取到作者: ['胡泳', '王昱昊']
+2025-04-17 10:32:58,523 - chrome_extractor - INFO - 提取到摘要长度: 371 字符
+2025-04-17 10:32:58,527 - chrome_extractor - INFO - 提取到关键词: ['技术过程论;', 'AI幻觉;', '多元价值负荷;', '主体性;']
+2025-04-17 10:32:58,539 - chrome_extractor - INFO - 关闭浏览器和上下文
+2025-04-17 10:32:58,656 - chrome_extractor - INFO - 关闭Playwright
+2025-04-17 10:32:58,664 - chrome_extractor - INFO - 成功处理URL: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwOHnr1ZYWtJTZSyQaDvRrpGrQ00gooH4ujVRWFbj-Lw0_4tv9CpInFLWLvdeKx6_X60D36btpN-DtHRYV5_f6esr8csUySYx0Tk3d5ORG9ZRp1_YN_eJrgO5G5FExPhs4R5cBpGmwglkTmngrguGZT1g4TCBS2uX-Ijuohuut1juQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:33:00,677 - chrome_extractor - INFO - 添加任务: 处理URL https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwOHnr1ZYWtJTZSyQaDvRrpGrQ00gooH4uhcmbj5mr6r7aYKd9oWW_c-Nt_iIDeY3pYqpDNBpMipclNKj6PX_tbb1osk3rJbjnqgT683rCz4dA2fGzpATAyAevQ2g6pM6dJpafkuHwRqqTICekC4E-nqkE9YtN6lViyIarPFL7ATBA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:33:00,678 - chrome_extractor - INFO - 找到Chrome: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:33:00,678 - chrome_extractor - INFO - 正在启动Chrome浏览器: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:33:01,054 - chrome_extractor - INFO - 尝试使用channel='chrome'启动
+2025-04-17 10:33:01,289 - chrome_extractor - INFO - 正在访问页面: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwOHnr1ZYWtJTZSyQaDvRrpGrQ00gooH4uhcmbj5mr6r7aYKd9oWW_c-Nt_iIDeY3pYqpDNBpMipclNKj6PX_tbb1osk3rJbjnqgT683rCz4dA2fGzpATAyAevQ2g6pM6dJpafkuHwRqqTICekC4E-nqkE9YtN6lViyIarPFL7ATBA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:33:02,399 - chrome_extractor - INFO - 页面加载完成
+2025-04-17 10:33:02,412 - chrome_extractor - INFO - 提取到标题: 
+2025-04-17 10:33:06,444 - chrome_extractor - INFO - 获取引用格式
+2025-04-17 10:33:08,453 - chrome_extractor - INFO - 提取到作者: ['经羽伦', '张殿元']
+2025-04-17 10:33:08,457 - chrome_extractor - INFO - 提取到摘要长度: 310 字符
+2025-04-17 10:33:08,462 - chrome_extractor - INFO - 提取到关键词: ['生成式AI;', '幻象;', '媒介的欺骗性;', '超真实;', '分形文化;']
+2025-04-17 10:33:08,473 - chrome_extractor - INFO - 关闭浏览器和上下文
+2025-04-17 10:33:08,600 - chrome_extractor - INFO - 关闭Playwright
+2025-04-17 10:33:08,607 - chrome_extractor - INFO - 成功处理URL: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwOHnr1ZYWtJTZSyQaDvRrpGrQ00gooH4uhcmbj5mr6r7aYKd9oWW_c-Nt_iIDeY3pYqpDNBpMipclNKj6PX_tbb1osk3rJbjnqgT683rCz4dA2fGzpATAyAevQ2g6pM6dJpafkuHwRqqTICekC4E-nqkE9YtN6lViyIarPFL7ATBA==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:33:10,621 - chrome_extractor - INFO - 添加任务: 处理URL https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMRDU2DBUGGyPwuzhQxhf9VLUZjpLUPgfk650xmwNgic1nykcTDtpYdZ6WoWjpYKG8Mi_fAhxEoo91kOEKahpFiksV_CWKDoy8nPuwthrl6qN4efQPX3w_KAnhOJGQHtCh5eHCMFtxTo3ZjqQZIdJH0IyXtR92lbyCOsAOcnNrpZQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:33:10,622 - chrome_extractor - INFO - 找到Chrome: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:33:10,622 - chrome_extractor - INFO - 正在启动Chrome浏览器: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:33:11,000 - chrome_extractor - INFO - 尝试使用channel='chrome'启动
+2025-04-17 10:33:11,226 - chrome_extractor - INFO - 正在访问页面: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMRDU2DBUGGyPwuzhQxhf9VLUZjpLUPgfk650xmwNgic1nykcTDtpYdZ6WoWjpYKG8Mi_fAhxEoo91kOEKahpFiksV_CWKDoy8nPuwthrl6qN4efQPX3w_KAnhOJGQHtCh5eHCMFtxTo3ZjqQZIdJH0IyXtR92lbyCOsAOcnNrpZQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:33:12,301 - chrome_extractor - INFO - 页面加载完成
+2025-04-17 10:33:12,316 - chrome_extractor - INFO - 提取到标题: 
+2025-04-17 10:33:16,295 - chrome_extractor - INFO - 获取引用格式
+2025-04-17 10:33:18,313 - chrome_extractor - INFO - 提取到作者: ['郭栋']
+2025-04-17 10:33:18,318 - chrome_extractor - INFO - 提取到摘要长度: 226 字符
+2025-04-17 10:33:18,322 - chrome_extractor - INFO - 提取到关键词: ['人工智能;', '全息传播;', '幻觉;', '驯化;', '人机协同;', '新闻生产;']
+2025-04-17 10:33:18,335 - chrome_extractor - INFO - 关闭浏览器和上下文
+2025-04-17 10:33:18,448 - chrome_extractor - INFO - 关闭Playwright
+2025-04-17 10:33:18,456 - chrome_extractor - INFO - 成功处理URL: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMRDU2DBUGGyPwuzhQxhf9VLUZjpLUPgfk650xmwNgic1nykcTDtpYdZ6WoWjpYKG8Mi_fAhxEoo91kOEKahpFiksV_CWKDoy8nPuwthrl6qN4efQPX3w_KAnhOJGQHtCh5eHCMFtxTo3ZjqQZIdJH0IyXtR92lbyCOsAOcnNrpZQ==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:33:20,470 - chrome_extractor - INFO - 添加任务: 处理URL https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMRDU2DBUGGyPwuzhQxhf9VLUZjpLUPgfk650xmwNgic2wh56HYgB6p5csOT5wE4i8fKHdRhy3_i1WD-H4imnDvzTBAaaML7vuexEtfpfW3ci8I4Dudn1cIfyb5vqdV1rq-JjqY4gxo8oBtE5-vi3gNutAHqYnIEXIoSL1YVeW63g==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:33:20,470 - chrome_extractor - INFO - 找到Chrome: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:33:20,470 - chrome_extractor - INFO - 正在启动Chrome浏览器: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-17 10:33:20,850 - chrome_extractor - INFO - 尝试使用channel='chrome'启动
+2025-04-17 10:33:21,084 - chrome_extractor - INFO - 正在访问页面: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMRDU2DBUGGyPwuzhQxhf9VLUZjpLUPgfk650xmwNgic2wh56HYgB6p5csOT5wE4i8fKHdRhy3_i1WD-H4imnDvzTBAaaML7vuexEtfpfW3ci8I4Dudn1cIfyb5vqdV1rq-JjqY4gxo8oBtE5-vi3gNutAHqYnIEXIoSL1YVeW63g==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:33:22,260 - chrome_extractor - INFO - 页面加载完成
+2025-04-17 10:33:22,271 - chrome_extractor - INFO - 提取到标题: 
+2025-04-17 10:33:25,697 - chrome_extractor - INFO - 获取引用格式
+2025-04-17 10:33:27,706 - chrome_extractor - INFO - 提取到作者: ['张诗瑶', '沈阳']
+2025-04-17 10:33:27,711 - chrome_extractor - INFO - 提取到摘要长度: 390 字符
+2025-04-17 10:33:27,715 - chrome_extractor - INFO - 提取到关键词: ['Sora;', '传媒生态;', '认知融合;', '“IP的AI化”;', '“AI幻觉”;']
+2025-04-17 10:33:27,728 - chrome_extractor - INFO - 关闭浏览器和上下文
+2025-04-17 10:33:27,853 - chrome_extractor - INFO - 关闭Playwright
+2025-04-17 10:33:27,860 - chrome_extractor - INFO - 成功处理URL: https://kns.cnki.net/kcms2/article/abstract?v=cwBM1amFwwMRDU2DBUGGyPwuzhQxhf9VLUZjpLUPgfk650xmwNgic2wh56HYgB6p5csOT5wE4i8fKHdRhy3_i1WD-H4imnDvzTBAaaML7vuexEtfpfW3ci8I4Dudn1cIfyb5vqdV1rq-JjqY4gxo8oBtE5-vi3gNutAHqYnIEXIoSL1YVeW63g==&uniplatform=NZKPT&language=CHS
+2025-04-17 10:33:29,872 - chrome_extractor - INFO - 批量处理完成，共处理 4 个URL
+2025-04-17 10:33:29,872 - mcp.server.lowlevel.server - DEBUG - Response sent
