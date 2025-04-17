@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+JobTitleTransformer.egg-info/PKG-INFO
+JobTitleTransformer.egg-info/SOURCES.txt
+JobTitleTransformer.egg-info/dependency_links.txt
+JobTitleTransformer.egg-info/entry_points.txt
+JobTitleTransformer.egg-info/requires.txt
+JobTitleTransformer.egg-info/top_level.txt
