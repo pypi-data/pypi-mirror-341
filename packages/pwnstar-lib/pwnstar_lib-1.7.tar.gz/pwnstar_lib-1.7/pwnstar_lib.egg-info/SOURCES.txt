@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+my_library/__init__.py
+my_library/core.py
+pwnstar_lib.egg-info/PKG-INFO
+pwnstar_lib.egg-info/SOURCES.txt
+pwnstar_lib.egg-info/dependency_links.txt
+pwnstar_lib.egg-info/requires.txt
+pwnstar_lib.egg-info/top_level.txt
+tests/__init__.py
+tests/test_core.py
