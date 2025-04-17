@@ -1,0 +1,9 @@
+README.md
+main.py
+pyproject.toml
+mcppix.egg-info/PKG-INFO
+mcppix.egg-info/SOURCES.txt
+mcppix.egg-info/dependency_links.txt
+mcppix.egg-info/entry_points.txt
+mcppix.egg-info/requires.txt
+mcppix.egg-info/top_level.txt

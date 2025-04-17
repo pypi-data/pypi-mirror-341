@@ -1,0 +1,2 @@
+[console_scripts]
+mcppix = main:main
