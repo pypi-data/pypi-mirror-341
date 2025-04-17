@@ -1,0 +1,23 @@
+[project]
+name = "nyctrains"
+version = "1.2.0"
+description = "Python tools and FastAPI backend for MTA GTFS-RT subway and LIRR data"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "gtfs-realtime-bindings",
+    "httpx",
+    "yc-protobuf3-to-dict",
+    "pydantic",
+    "python-dotenv",
+    "requests",
+    "uvicorn",
+    "protobuf",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools.packages.find]
+include = ["nyctrains*"]
