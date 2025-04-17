@@ -1,0 +1,1 @@
+import{r as o}from"../chunks/Cbydd1_z.js";import{l as r,r as s}from"../chunks/0_lnsz43.js";const l=async()=>{const{data:t,error:e}=await r(),a=t==null?void 0:t.dataset_id;if(e||!a)throw e;s(307,o.toSamples(a))},n=Object.freeze(Object.defineProperty({__proto__:null,load:l},Symbol.toStringTag,{value:"Module"}));export{n as universal};
