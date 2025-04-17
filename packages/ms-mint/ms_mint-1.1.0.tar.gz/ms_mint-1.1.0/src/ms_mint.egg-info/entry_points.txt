@@ -1,0 +1,2 @@
+[console_scripts]
+ms-mint-convert = ms_mint.scripts.ms_mint_convert:main
