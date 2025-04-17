@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "stowin-py"
+version = "0.1.0"
+description = "A GNU Stow alternative in Python"
+readme = "README.md"
+authors = [{ name = "Your Name", email = "kmuthish@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["dotfiles", "stow", "symlink"]
+dependencies = ["click>=8.0.0", "tqdm>=4.65.0"]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/stowin-py"
+
+[project.scripts]
+stowin = "stowin_py.cli:cli"
