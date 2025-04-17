@@ -1,0 +1,9 @@
+eosdis_store/__init__.py,sha256=EBuMlm0KNj63yCU2Bt9xGxjlr40fMPZjRynZ-0c-kGY,163
+eosdis_store/dmrpp.py,sha256=THa65t4K_akkxMcEmm0pGRruTWBLRBBOxZMcnt9_QOU,9510
+eosdis_store/stores.py,sha256=h2QNr8Q1iSwgy5ODJOTJLGqlSIXW5fa_r-eFHZgJJDM,9757
+eosdis_store/version.py,sha256=n3oM6B_EMz93NsTI18NNZd-jKFcUPzUkbIKj5VFK5ok,22
+zarr_eosdis_store-0.1.6.dist-info/LICENSE,sha256=SlCWDSlqNAbiwJPuKptMLWH1AcWuynjHXE4IBAt8RF8,9772
+zarr_eosdis_store-0.1.6.dist-info/METADATA,sha256=RYOCeOV2qYBBd2AhsEwiCArs4a4swzvfAebQ9kDujPI,6980
+zarr_eosdis_store-0.1.6.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+zarr_eosdis_store-0.1.6.dist-info/top_level.txt,sha256=wO1-e13u7hHzga0TNfV4ARi8e-wFBfznAa4PZV4dB4Y,13
+zarr_eosdis_store-0.1.6.dist-info/RECORD,,
