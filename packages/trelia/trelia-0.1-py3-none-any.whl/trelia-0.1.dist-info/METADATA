@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: trelia
+Version: 0.1
+Summary: A package to rate student code using Gemini API
+Author: Naveen Valluri
+Requires-Python: >=3.7
+Requires-Dist: google-generativeai
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
