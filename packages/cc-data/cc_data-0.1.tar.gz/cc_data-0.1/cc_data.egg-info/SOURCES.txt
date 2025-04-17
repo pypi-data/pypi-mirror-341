@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+cc_data.egg-info/PKG-INFO
+cc_data.egg-info/SOURCES.txt
+cc_data.egg-info/dependency_links.txt
+cc_data.egg-info/top_level.txt
+cc_data/data/Openstck.PDF
+cc_data/data/Practicals.zip
+cc_data/data/abcd.png
+cc_data/data/manual.zip
+cc_data/data/regisbg.png
