@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mseep_fastn.egg-info/PKG-INFO
+mseep_fastn.egg-info/SOURCES.txt
+mseep_fastn.egg-info/dependency_links.txt
+mseep_fastn.egg-info/entry_points.txt
+mseep_fastn.egg-info/requires.txt
+mseep_fastn.egg-info/top_level.txt
