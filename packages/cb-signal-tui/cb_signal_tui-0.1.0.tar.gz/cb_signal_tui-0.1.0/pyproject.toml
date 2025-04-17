@@ -1,0 +1,32 @@
+[project]
+name = "cb-signal-tui"
+version = "0.1.0"
+description = "A live TUI crypto signal scanner using Coinbase, Z-score, and strategy classification."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "LoQiseaking69", email = "noreply@example.com" }
+]
+dependencies = [
+  "aiohttp",
+  "aiosqlite",
+  "pandas",
+  "numpy",
+  "pyttsx3",
+  "rich",
+  "scipy"
+]
+
+[project.scripts]
+cb-signal-tui = "cb_signal_tui.__main__:cli"
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["cb_signal_tui"]
+
+[tool.setuptools.exclude-package-data]
+"cb_signal_tui" = ["built/*"]
