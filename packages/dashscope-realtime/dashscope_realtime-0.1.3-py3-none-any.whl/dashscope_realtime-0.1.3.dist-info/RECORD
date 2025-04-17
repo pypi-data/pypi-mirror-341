@@ -1,0 +1,16 @@
+dashscope_realtime/__init__.py,sha256=RKKwphZRoDJmYiLY-UKgGUF3Qj6MpxaEY2CEguIqiw4,127
+dashscope_realtime/asr.py,sha256=NahyBJhjLyGF7sqJ3mYaQHRgN-ayAaMDPzJYF3fz06Q,5205
+dashscope_realtime/client.py,sha256=gyloDXl1sY9zkq-FaE6XNyWaURi9Hm9Rg7mxe8lD9E4,4447
+dashscope_realtime/config.py,sha256=lthXmz8UC_vqADJC69BVvGoZfg3ALcuWlV8L0DhKFWQ,618
+dashscope_realtime/event.py,sha256=6JUB_R6-0c8FOHhB53UQHtj3z1ucYET2wIxu4silBIE,760
+dashscope_realtime/tts.py,sha256=Py2fWKOlx2sC2cP8vc8Og2QvpHNpgDDYEYhsl1CO6KU,4761
+dashscope_realtime/__pycache__/__init__.cpython-312.pyc,sha256=TFywDBgLYkpTeYW8oWs6AmMlKu8C90a1Xt0DLtGvUe0,327
+dashscope_realtime/__pycache__/asr.cpython-312.pyc,sha256=aQ24xGdC1ziZLIJY7AaYp-SEKcIW-ZsOKqcjOJzLUIE,8231
+dashscope_realtime/__pycache__/client.cpython-312.pyc,sha256=PHi753F0iRF6G3RWu678gZu8Kc5hGHD0NJDF2w9wbGE,5561
+dashscope_realtime/__pycache__/event.cpython-312.pyc,sha256=AB5Y5k_mrt8p0RRjXoybmghB1nRyQKtL_jcfR0Ou6kk,1833
+dashscope_realtime/__pycache__/tts.cpython-312.pyc,sha256=oxZzFRgFYC8l1UGXz59BCpUIOLnGkZerKjma5KjH43U,7165
+dashscope_realtime-0.1.3.dist-info/licenses/LICENSE,sha256=dxwKrOE9HFtMRawCG73yx0V7UVXDd9gFkbbMr8Kq6O0,1083
+dashscope_realtime-0.1.3.dist-info/METADATA,sha256=4MCR73e3SMAbVjws4y5vLY7YxkiuZn_auhJwaxI-RzM,3931
+dashscope_realtime-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dashscope_realtime-0.1.3.dist-info/top_level.txt,sha256=iygTt_bfqurO7OgvBbmErL_i4F-1FeFKPkjDLJp992U,19
+dashscope_realtime-0.1.3.dist-info/RECORD,,
