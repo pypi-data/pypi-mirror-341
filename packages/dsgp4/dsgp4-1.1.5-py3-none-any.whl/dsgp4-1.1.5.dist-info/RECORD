@@ -1,0 +1,16 @@
+dsgp4/__init__.py,sha256=9LeoTyFg3ouhKVspCz4RBv1qdNBjqjxA3hO9ajNF4d4,458
+dsgp4/initl.py,sha256=IjU5iKn1nMefNagFhQIVNpCRxdSpzRbRo6owY66kSoU,1649
+dsgp4/mldsgp4.py,sha256=y1EEGtcIkqXxrEkS6ctoztAWY8Tv5BrPhyHDltQAtVU,4658
+dsgp4/newton_method.py,sha256=QdI0uo-V-_rJUt5rhAJbuHXTElptlp9GKByeJkvhn0I,8001
+dsgp4/plot.py,sha256=mNZmTM9n71RphWZAUCm1tiAXP9CPPebZRO9lxjA3jKY,7952
+dsgp4/sgp4.py,sha256=BdPCz-mLYY7nPn8-B5NQLdTjhfXEBtydBMewlIyINLU,7297
+dsgp4/sgp4_batched.py,sha256=5HcmhATIyzk3w2JA3PnJ1sBk1KGsHnVkcZXDrR_V0yU,8209
+dsgp4/sgp4init.py,sha256=Alx82PkY00zgwzRYF4vlDkjCje12g-Zgaw5bMFhBVYQ,10421
+dsgp4/sgp4init_batch.py,sha256=5P3eaBn4IBjm82y7WYCyBvxbb0rE-5UcKZsFzqqilbQ,14304
+dsgp4/tle.py,sha256=Tb5MNfsMneCV2-yoAaSkCwHSjx3jeJ0Y3aO1rbkPpVE,17543
+dsgp4/util.py,sha256=7kX4dBAV1wTaSOKsiigFo9_yyqdsKG3rvIfIOqNfkEs,18007
+dsgp4-1.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dsgp4-1.1.5.dist-info/METADATA,sha256=koj-_AJWPo6Ix0RfaBPQyre2ISuKjGtUEKlhT7KElCM,5903
+dsgp4-1.1.5.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+dsgp4-1.1.5.dist-info/top_level.txt,sha256=KnyI6xdMlAUdDqvNQfCRBZhsXOVeojoy6VvHS-ylqHE,6
+dsgp4-1.1.5.dist-info/RECORD,,
