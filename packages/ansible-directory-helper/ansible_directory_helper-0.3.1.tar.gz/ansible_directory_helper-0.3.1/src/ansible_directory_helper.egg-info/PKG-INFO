@@ -1,0 +1,54 @@
+Metadata-Version: 2.4
+Name: ansible-directory-helper
+Version: 0.3.1
+Summary: A small helper library to manage local directories for Ansible Runner
+Author-email: "Brian St. Hilaire" <brian.st-hilaire@sanctus-tech.com>
+Project-URL: Homepage, https://github.com/saint-hilaire/ansible-directory-helper
+Project-URL: Issues, https://github.com/saint-hilaire/ansible-directory-helper/issues
+Classifier: Development Status :: 7 - Inactive
+Classifier: Environment :: Console
+Classifier: Framework :: Ansible
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: ansible-core>=2.18
+
+### Deprecated
+
+Please do not use this tool, it is deprecated and no longer maintained.
+What this package sets out to do can easily be accomplished with
+Ansible Runner's `interface.run()` method instead. For example:
+
+```python
+# my_automation_tool.py
+
+from ansible_runner import interface as runner_interface
+
+runner = runner_interface.run(
+    private_data_dir='path/to/tmp-private-data',
+    playbook='setup-my-server.yml',
+    inventory={
+        'all': {
+            'hosts': {
+                'my-server.com': {'ansible_user': 'remote_user'},
+            },
+        },
+        'ungrouped': {'hosts': {}},
+    },
+    extravars={
+        'some_string': 'Hello, World!',
+        'some_list': ['Hello', 'World!'],
+    },
+    project_dir='/path/to/my_automation_tool/src/project',
+    # etc...
+)
+if runner.rc == 0:
+    print('Finished successfully')
+else:
+    print('Error')
+```
