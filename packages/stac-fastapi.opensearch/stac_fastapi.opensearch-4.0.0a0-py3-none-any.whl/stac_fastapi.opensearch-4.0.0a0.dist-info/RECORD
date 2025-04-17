@@ -1,0 +1,10 @@
+stac_fastapi/opensearch/__init__.py,sha256=iJWMUgn7mUvmuPQSO_FlyhJ5eDdbbfmGv1qnFOX5-qk,28
+stac_fastapi/opensearch/app.py,sha256=NgoH3mkNPhDlrX4wdtNqGTwelzMMnNwIwOHGqUdu9D8,4158
+stac_fastapi/opensearch/config.py,sha256=tr-j9cLib-FYSSDkiOr8qJawICIVeRgcbzA54Z8A-rI,2950
+stac_fastapi/opensearch/database_logic.py,sha256=SQ7ebK5V3EH8scH9PAq9rgFZk_uZ24ElwooANQZTC00,35587
+stac_fastapi/opensearch/version.py,sha256=edLtMX5B8mxY6BuT6MqjvWxX4Y41QM1nJUFr6JdeUSU,47
+stac_fastapi.opensearch-4.0.0a0.dist-info/METADATA,sha256=nwP8jy3KuU6bBKj99PxYdKmn-m4c5PqondF4Pa9c5_M,18538
+stac_fastapi.opensearch-4.0.0a0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+stac_fastapi.opensearch-4.0.0a0.dist-info/entry_points.txt,sha256=zjZ0Xsr9BUNJqMkdPpl6zEIUykv1uFdJtNELFRChp0w,76
+stac_fastapi.opensearch-4.0.0a0.dist-info/top_level.txt,sha256=vqn-D9-HsRPTTxy0Vk_KkDmTiMES4owwBQ3ydSZYb2s,13
+stac_fastapi.opensearch-4.0.0a0.dist-info/RECORD,,
