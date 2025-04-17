@@ -1,0 +1,33 @@
+[project]
+name = "prooverlap"
+version = "0.1.2"
+description = "Assessing feature proximity/overlap and testing statistical significance from genomic intervals"
+authors = [
+    { name="Nicolò Gualandi", email="nicolo.gualandi@uniud.it" },
+    { name="Alessio Bertozzo", email="bertozzo.alessio@spes.uniud.it" },
+    { name="Claudio Brancolini", email="claudio.brancolini@uniud.it" }
+]
+readme = "README.md"
+license = { text = "GPL-3.0" }
+requires-python = ">=3.7"
+
+dependencies = [
+    "biopython",
+    "pandas",
+    "scipy",
+    "pybedtools",
+    "numpy"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+prooverlap = "prooverlap.prooverlap:cli"
+
+[project.urls]
+"Homepage" = "https://github.com/ngualand/ProOvErlap"
+"Source" = "https://github.com/ngualand/ProOvErlap"
+"Bug Tracker" = "https://github.com/ngualand/ProOvErlap/issues"
+
