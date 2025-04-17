@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: JobTitleTransformer
+Version: 0.1.8
+Summary: A healthcare-focused job title transformation pipeline.
+Home-page: https://github.com/PrasannaDataBus/JobTitleTransformer
+Author: Prasanna UTHAMARAJ
+Author-email: prasanna.uthamaraj@informa.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: nltk
+Requires-Dist: termcolor
+Requires-Dist: tabulate
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# JobTitleTransformer
+
+This is a pipeline to transform job title datasets. It performs data transformation in multiple steps using a modular approach.
+
+This Package is dedicated to Health Care Sector and not suitable for other sectors and their Job Title values.
+
+## Installation
+
+Install with `pip`:
+
+```bash
+pip install JobTitleTransformer
