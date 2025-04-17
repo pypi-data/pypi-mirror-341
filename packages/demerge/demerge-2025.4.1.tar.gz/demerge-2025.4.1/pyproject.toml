@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "demerge"
+version = "2025.4.1"
+description = "DESHIMA merge code for observed datasets"
+authors = [
+    "Tatsuya Takekoshi <tatsuya.takekoshi@gmail.com>",
+    "Daisuke Naito <naito@naitosystems.com>",
+    "Akio Taniguchi <taniguchi@a.phys.nagoya-u.ac.jp>",
+]
+keywords = [
+    "astronomy",
+    "radio-astronomy",
+    "submillimeter",
+    "spectroscopy",
+    "deshima",
+]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/deshima-dev/demerge/"
+documentation = "https://deshima-dev.github.io/demerge/"
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.13"
+astropy = ">=6.0, <8.0"
+dems = "^2024.7"
+fire = ">=0.5, <1.0"
+h5py = "^3"
+lmfit = "^1"
+matplotlib = "^3"
+numpy = ">=1.23, <3.0"
+pandas = "^2"
+pandas-stubs = "^2"
+scikit-learn = "^1"
+scipy = "^1"
+sympy = "^1"
+zarr = "^2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25"
+deshima-rawdata = "^2024.4"
+ipython = ">=8.0, <10.0"
+myst-parser = ">=3.0, <5.0"
+pydata-sphinx-theme = ">=0.15, <1.0"
+pyright = "^1"
+pytest = "^8"
+sphinx = ">=7.0, <9.0"
+
+[tool.poetry.scripts]
+demerge = "demerge:demerge_cli"
+merge = "demerge.merge:merge_cli"
+reduce = "demerge.reduce:reduce_cli"
+
+[tool.black]
+exclude = "demerge/reduce/utils"
+
+[tool.pyright]
+exclude = ["demerge/reduce/utils"]
+typeCheckingMode = "basic"
+reportAttributeAccessIssue = "warning"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
