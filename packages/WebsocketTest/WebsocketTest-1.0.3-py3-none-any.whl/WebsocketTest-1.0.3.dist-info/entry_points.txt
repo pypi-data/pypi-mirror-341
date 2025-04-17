@@ -1,0 +1,2 @@
+[console_scripts]
+wsrun = WebsocketTest.cli:main_run_alias
