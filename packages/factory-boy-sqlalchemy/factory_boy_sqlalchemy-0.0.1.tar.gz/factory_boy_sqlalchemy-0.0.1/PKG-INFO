@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: factory-boy-sqlalchemy
+Version: 0.0.1
+Summary: More convinient use of factory boy with sqlalchemy models
+Author-email: Damian Świstowski <damian@swistowski.org>
+Requires-Python: >=3.12
+Requires-Dist: factory-boy<4.0.0,>=3.0.0
+Requires-Dist: sqlalchemy<3.0.0,>=2.0.0
+Description-Content-Type: text/markdown
+
+# factory-boy-sqlalchemy
+
+## Why this package was created?
+
+Most of factory-boy sqlalchemy packages, puts session in meta, 
+so the factory is bound to session during creation.
+
+In this package two helper functions are provided: `make_async_sqlalchemy_factory` and `make_sync_sqlalchemy_factory`, 
+which takes session less factory and bind to the session - it allows to use the same factory with async and sync session
+
+## Example
+
+```python
+import factory
+from sqlalchemy.orm import DeclarativeBase
+
+class Base(DeclarativeBase):
+    ...
+
+class User(Base):
+    id_ = factory.Faker("name") 
+    order = factory.Faker("between", from_=1, to=151)
+```
