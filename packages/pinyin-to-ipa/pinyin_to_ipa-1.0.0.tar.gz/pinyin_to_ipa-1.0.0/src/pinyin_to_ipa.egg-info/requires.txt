@@ -1,0 +1,16 @@
+ordered-set>=4.1.0
+pypinyin>=0.54
+
+[app]
+gradio
+
+[dev]
+pytest
+pytest-cov
+pytest-xdist
+tox
+ruff
+mypy
+rope
+build
+twine

@@ -1,0 +1,179 @@
+[project]
+name = "pinyin-to-ipa"
+version = "1.0.0"
+description = "A Python library, web application, and command-line tool for transcribing Pinyin to IPA. Tone markers are attached to the vowel of each syllable."
+readme = "README.md"
+requires-python = ">=3.8, <3.14"
+license = { file = "LICENSE" }
+authors = [{ name = "Stefan Taubert" }]
+maintainers = [
+  { name = "Stefan Taubert" },
+]
+keywords = [
+  "Chinese",
+  "Mandarin",
+  "Pinyin",
+  "IPA",
+  "Phonetics",
+  "Phonology",
+  "Tone",
+  "Transcription",
+  "Language",
+  "Linguistics",
+  "Speech",
+  "Romanization",
+  "Language Learning",
+  "Natural Language Processing",
+  "Grapheme-to-Phoneme"
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX",
+  "Operating System :: POSIX :: BSD",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: Unix",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Multimedia :: Sound/Audio",
+  "Topic :: Multimedia :: Sound/Audio :: Analysis",
+  "Topic :: Multimedia :: Sound/Audio :: Sound Synthesis",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+  "Topic :: Text Processing :: Linguistic",
+  "Topic :: Scientific/Engineering :: Human Machine Interfaces",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Environment :: Console",
+  "Environment :: Web Environment"
+]
+dependencies = ["ordered-set>=4.1.0", "pypinyin>=0.54"]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov", "pytest-xdist", "tox", "ruff", "mypy", "rope", "build", "twine"]
+app = ["gradio"]
+
+[project.urls]
+Homepage = "https://github.com/stefantaubert/pinyin-to-ipa"
+Issues = "https://github.com/stefantaubert/pinyin-to-ipa/issues"
+
+[project.scripts]
+pinyin-to-ipa-cli = "pinyin_to_ipa_cli.cli:run_prod"
+pinyin-to-ipa-app = "pinyin_to_ipa_app.app:run_gradio"
+
+[tool.mypy]
+python_version = "3.13"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+packages = ["pinyin_to_ipa", "pinyin_to_ipa_cli", "pinyin_to_ipa_app"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = [
+  "pinyin_to_ipa",
+  "pinyin_to_ipa.*",
+  "pinyin_to_ipa_cli",
+  "pinyin_to_ipa_cli.*",
+  "pinyin_to_ipa_app",
+  "pinyin_to_ipa_app.*",
+]
+exclude = [
+  "pinyin_to_ipa_tests",
+  "pinyin_to_ipa_tests.*",
+  "pypinyin_tests.*",
+  "pinyin_to_ipa_debug",
+  "pinyin_to_ipa_debug.*",
+]
+namespaces = true
+
+[tool.pytest.ini_options]
+log_cli = true
+log_level = "DEBUG"
+testpaths = ["src/pinyin_to_ipa_tests", "src/pypinyin_tests"]
+
+[tool.ruff]
+src = [
+  "src/pinyin_to_ipa", 
+  "src/pinyin_to_ipa_cli",
+  "src/pinyin_to_ipa_app",
+  "src/pinyin_to_ipa_tests",
+  "src/pypinyin_tests",
+]
+line-length = 88
+indent-width = 2
+
+[tool.ruff.format]
+indent-style = "space"
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+    "C4",
+    "T20",
+    "PERF",
+    "ANN",
+    "TID",
+    "EXE", 
+    "W",
+    # "D",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["pinyin_to_ipa*", "pypinyin_tests"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/pinyin_to_ipa_cli/**/*.py" = ["T201"] # print() is allowed in CLI
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py{38,39,310,311,312,313}
+isolated_build = True
+
+[testenv]
+setenv =
+  COVERAGE_FILE = .coverage.{envname}
+
+deps =
+  pytest
+  pytest-cov
+  pytest-xdist
+  mypy
+  ruff
+
+commands =
+  pinyin-to-ipa-cli
+  pinyin-to-ipa-cli -v
+  pytest -n auto \
+    --cov=src/pinyin_to_ipa \
+    --cov-append \
+    --cov-report=
+  mypy
+  ruff check
+"""
+
+[build-system]
+requires = ["setuptools >= 40.9.0", "wheel"]
+build-backend = "setuptools.build_meta"
