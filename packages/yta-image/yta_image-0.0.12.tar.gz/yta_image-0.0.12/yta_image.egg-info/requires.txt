@@ -1,0 +1,8 @@
+yta_general_utils
+yta_ai_utils
+pillow
+pillow-lut
+backgroundremover
+numpy
+scikit-image
+opencv-python
