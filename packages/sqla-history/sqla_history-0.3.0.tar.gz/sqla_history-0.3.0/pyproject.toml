@@ -1,0 +1,128 @@
+[project]
+authors = [
+  {name = "Nikitosio Noskovinni", email = "nik.noskov08@gmail.com"},
+]
+dependencies = [
+  "pydantic>=2.11.3",
+  "sqlalchemy>=2.0.40",
+  "uuid-utils>=0.10.0",
+]
+description = "This package allows you to track changes to fields in the database, saving the previous and new values ​​in the table."
+license = {text = "MIT"}
+name = "sqla-history"
+readme = "README.md"
+requires-python = ">=3.11"
+version = "0.3.0"
+
+[project.urls]
+"Examples" = "https://gitlab.com/n.one.k/opensource/sqla-history/-/tree/main/examples"
+"GitLab" = "https://gitlab.com/n.one.k/opensource/sqla-history"
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools"]
+
+[dependency-groups]
+dev = [
+  "commitizen>=4.5.1",
+]
+lint = [
+  "mypy>=1.15.0",
+  "ruff>=0.11.5",
+]
+test = [
+  "coverage>=7.8.0",
+  "pytest>=8.3.5",
+]
+
+[tool.coverage.run]
+branch = true
+command_line = "-m pytest -vv -W error::sqlalchemy.exc.SAWarning -W error::sqlalchemy.exc.SADeprecationWarning"
+concurrency = ["greenlet", "thread"]
+omit = []
+parallel = true
+source = ["sqla_history"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "pragma: no cover",
+  "raise NotImplementedError",
+  "if TYPE_CHECKING:",
+  "case _ as never:",
+  "case _:",
+  "assert_never(never)",
+]
+fail_under = 100
+precision = 2
+show_missing = true
+skip_covered = true
+skip_empty = true
+
+[tool.commitizen]
+changelog_start_rev = "0.2.0"
+name = "cz_conventional_commits"
+tag_format = "$version"
+update_changelog_on_bump = true
+version = "0.3.0"
+version_files = [
+  "pyproject.toml:version",
+]
+
+[tool.ruff]
+exclude = []
+lint.fixable = [
+  "F",
+  "E",
+  "W",
+  "I",
+  "COM",
+  "UP",
+  "RUF",
+]
+lint.ignore = [
+  "PLR2044",
+  "E501", # Line Length
+  "A003", # Class attribute ... is shadowing a python builtin
+  "D", # pydocstyle
+  "PD", # pandas-vet
+  "INP",
+  "TC001",
+  "TC002",
+  "TC003",
+  "EXE",
+  "RUF001",
+  "RUF002",
+  "RUF003",
+  "COM812",
+  "ISC001",
+]
+lint.select = ["ALL"]
+src = ["src", "tests"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = [
+  "S101",
+  "S311",
+  "PLR0913",
+  "ARG005",
+]
+
+[tool.ruff.lint.flake8-pytest-style]
+fixture-parentheses = false
+
+[tool.ruff.lint.mccabe]
+max-complexity = 6
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = []
+
+[tool.ruff.lint.pep8-naming]
+classmethod-decorators = [
+  "classmethod",
+  "pydantic.validator",
+  "pydantic.root_validator",
+]
+staticmethod-decorators = ["staticmethod"]
+
+[tool.ruff.lint.flake8-self]
+ignore-names = ["_t"] # SQLAlchemy result field, not actually private
