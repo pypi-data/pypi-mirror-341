@@ -1,0 +1,17 @@
+weltschmerz/__init__.py,sha256=c7rKQE_LDNne22Is1oc94exJkR-bKqIvFfrf9qT-Kno,9200
+weltschmerz/anidb.py,sha256=L2LQ_H2I_YQvs3O97auHhizHgLxFER71lJtobTLyRcY,19526
+weltschmerz/anime.py,sha256=eZTzeSE1oywG-agNkXCRlbpK-5yA1VcLIDwEp9yItW4,7528
+weltschmerz/delete_duplicates.py,sha256=6ARiCrvCnP7pnVBdYDpekxxXwHQRu5PXoc7nzqjhGo4,5168
+weltschmerz/filehash.py,sha256=0_ehjl1rbXv2-OHAY4l_5JIZfHyb3wftCiInnWcWsZM,4690
+weltschmerz/filehasher.py,sha256=zEhPql3pJBz8HSmGYywI4F_C4HoOd1oZ2B6IFbMwvkI,6736
+weltschmerz/masks.py,sha256=F4RSi0BbE27IvoDrnUoaJJMvUGavkt08Decmgs9ElqU,6846
+weltschmerz/move_files.py,sha256=KPcRJ19B3vw9JphP1D8fF7CSZzCtxa2fMwKjJQJsLVs,5082
+weltschmerz/pyselect.py,sha256=Nk-ckbGY3-QLbX7rmcb5Q2ZVyhxZ-c9FDXL--Mcrdcg,1612
+weltschmerz/remove_changed.py,sha256=dWNPNWkniuk33ZaVolVzlYKBJ9g-9YWs_6xs_lehH24,1742
+weltschmerz/remove_deleted.py,sha256=RSuBhrE7RY8KSQdGq5OghoH39okrMHNa-hIuwyg75a4,1933
+weltschmerz-0.0.5.dist-info/licenses/LICENSE.md,sha256=c4I3I2KuBS_0WJW-PSrUtgjvRrqVeuTO7tXgl-MDE-4,3294
+weltschmerz-0.0.5.dist-info/METADATA,sha256=gf6hv6kVDt-XT-s7ZQk2aaX3CvPAcWP6Ytt6MHlPrlY,3591
+weltschmerz-0.0.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+weltschmerz-0.0.5.dist-info/entry_points.txt,sha256=_RGnevJ5keqJ0cfvz_cOgVF4990nD-jaIR20fH9ls5g,48
+weltschmerz-0.0.5.dist-info/top_level.txt,sha256=cDdEAmOqBzrCDWz5qoDkz5ZXnLoXBefRxw8d2fH0iNw,12
+weltschmerz-0.0.5.dist-info/RECORD,,
