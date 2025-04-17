@@ -1,0 +1,14 @@
+gffx/__init__.py,sha256=EDDWSTaeYmom-jnAa4CQ0t9oDrFrF8ahjrj6kUcgw_c,116
+gffx/__main__.py,sha256=4_TFDAqZIG8L-PSbawDTY4QRj7wNsZfmw70aJTxtrJ0,4753
+gffx/context/__init__.py,sha256=yIRcexatet4RZ_I0wac-O1qED2yY8tAhYbBKehEW64A,288
+gffx/io/__init__.py,sha256=LUKYypDuvfpaWG3DBrjXwoZ6gxbxyeBMsgAmOTjMg28,11469
+gffx/io/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gffx/linalg/__init__.py,sha256=eDf2sfLy-CuLDBuvQiskDXIIRsJaDuU9TP1bv4NUgD8,4196
+gffx/obj/__init__.py,sha256=3b3TQvH9jAtr47jU15IRZJdxxJKINVyujmyL9NP6-hU,22244
+gffx/ray/__init__.py,sha256=rl7GUr0rlnMFRqBoknVKtPZzRkCowBjYZ5YgsKFRlgI,13323
+gffx/ray/camera.py,sha256=PBcJ0a62g7K7on4J9YqTrynAvV1OFXW0c6cpqY8nUf0,2837
+gffx/utils.py,sha256=0PS3dIMukPtYUqdS6SB2zEnRiN1HYPH9czxOsSQCiGI,1360
+gffx-0.1.4.dist-info/LICENSE,sha256=ye96oZM4dBrUCrY2b9pyp7w07J6-SV72Jzq9yv2z5ro,1070
+gffx-0.1.4.dist-info/METADATA,sha256=kXCLqhInVSmrMidd38xnSjeOrevpXmk_yEbup9P884E,3112
+gffx-0.1.4.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+gffx-0.1.4.dist-info/RECORD,,

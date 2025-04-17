@@ -1,0 +1,100 @@
+Metadata-Version: 2.3
+Name: gffx
+Version: 0.1.4
+Summary: A minimal graphics library in PyTorch
+License: MIT
+Author: Danzel Serrano
+Author-email: danzel.serrano@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Repository, https://github.com/dependanz/gffx
+Description-Content-Type: text/markdown
+
+### gffx - a minimal library for (differentiable) graphics
+
+```Python
+import gffx
+import torch
+import matplotlib.pyplot as plt
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+# Setup Camera
+camera = gffx.ray.Camera(
+    width   = 512,
+    height  = 512,
+    pos = [0, 0, 3],
+    dir = [0, 0, -1],
+
+    device = device
+)
+
+# Setup list of meshes
+vertices          = torch.load('path/to/vertices.pt').to(device)
+faces             = torch.load('path/to/vertices.pt').to(device)
+
+object_list = [
+    gffx.obj.mesh_from_vertices_and_faces(
+        vertices             = vertices,
+        faces                = faces,
+        init_translation     = [0, 0.0, 2],
+        init_rotation        = [0, 0, 0],
+        init_scale           = [1, 1, 1],
+        
+        ambient_color        = [0.5, 0.5, 0.5],
+        diffuse_color        = [0.5, 0.5, 0.5],
+        specular_color       = [0.5, 0.5, 0.5],
+        specular_coefficient = 1,
+        
+        device           = device
+    )
+]
+
+# Ray Trace Render
+images = gffx.ray.mesh_render(
+    meshes = object_list,
+    camera = camera,
+    light_intensity = 1.0,
+    ambient_intensity = 0.2,
+    light_pos = [5, 5, 5],
+    background_color = [0, 0, 0],
+    ray_chunk_size = 4096,
+    
+    device = device
+)
+
+plt.imshow((images[0].cpu()).permute(1, 0, 2))
+plt.gca().invert_yaxis()
+plt.show()
+```
+
+### [WIP] CLI
+
+```
+python -m gffx --vertices '/path/to/vertices.pt' --faces 'path/to/faces.pt'
+```
+
+```
+python -m gffx --vertices '/path/to/vertices.pt' --faces 'path/to/faces.pt'\
+    --center_and_scale --camera_width 512 --camera_height 512\
+    --camera_pos "[0,0,1.2]" --camera_dir "[0,0,-1]"\
+    --camera_screen_distance 1.0 --ambient_color "[0.5, 0.5, 0.5]"\
+    --diffuse_color "[0.5, 0.5, 0.5]" --specular_color "[0.5, 0.5, 0.5]"\
+    --specular_coefficient 1.0 --light_intensity 1.0\
+    --ambient_intensity 0.2 --light_pos "[5, 5, 5]"\
+    --background_color "[0, 0, 0]" --ray_chunk_size 4096\
+    --outimg './out.png'
+
+    python -m gffx --vertices  --faces /mnt/d/_doctorate/cache/vocaset/170725_00137/faces_template.npy --center_and_scale --camera_width 512 --camera_height 512 --camera_pos "[0,0,1.2]" --camera_dir "[0,0,-1]" --camera_screen_distance 1.0 --outimg ./outimg.png
+```
+
+### Motivation
+1. Installing PyTorch3D everytime in colab is a hassle. This library's first aim is to render a mesh using native operations in PyTorch.
+
