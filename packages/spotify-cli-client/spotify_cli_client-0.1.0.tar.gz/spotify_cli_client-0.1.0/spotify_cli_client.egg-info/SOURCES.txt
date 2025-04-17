@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+spotify_cli_client/__init__.py
+spotify_cli_client/cli.py
+spotify_cli_client/spotifyCLI.py
+spotify_cli_client/spotifyClient.py
+spotify_cli_client.egg-info/PKG-INFO
+spotify_cli_client.egg-info/SOURCES.txt
+spotify_cli_client.egg-info/dependency_links.txt
+spotify_cli_client.egg-info/entry_points.txt
+spotify_cli_client.egg-info/requires.txt
+spotify_cli_client.egg-info/top_level.txt
