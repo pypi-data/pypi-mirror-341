@@ -1,0 +1,2 @@
+[console_scripts]
+python-ft-deps = python_ft_deps:check_deps.main
