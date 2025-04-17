@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/hellotest_ire/__init__.py
+src/hellotest_ire/emon.py
+src/hellotest_ire/version.py
+src/hellotest_ire.egg-info/PKG-INFO
+src/hellotest_ire.egg-info/SOURCES.txt
+src/hellotest_ire.egg-info/dependency_links.txt
+src/hellotest_ire.egg-info/top_level.txt

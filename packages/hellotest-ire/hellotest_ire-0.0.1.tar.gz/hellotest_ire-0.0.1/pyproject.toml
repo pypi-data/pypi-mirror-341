@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "hellotest_ire"
+version = "0.0.1"
+authors = [
+  { name="ABS EMON", email="iotandrobotics@gmail.com" },
+]
+description = "A small package for you"
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies=[]
+keywords=['greet','AI','ML']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICENSE"]
+
+[project.urls]
+Homepage = "https://github.com/ABS-EMON/python_package"
+Issues = "https://github.com/ABS-EMON/python_package/issues"
