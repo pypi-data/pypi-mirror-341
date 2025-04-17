@@ -1,0 +1,14 @@
+docs/ARCHITECTURE.md,sha256=gl6R-xlyfZRDC3-HS_nNdIUFJHapjwyXw8VLwuHACfQ,4572
+docs/CONTRIBUTING.md,sha256=KsDvssQYUKbLq1x0Shf4RIoT-zgoTyBeKUzgiW9CySc,3466
+examples/claude_desktop_config.example.json,sha256=uG_hopM2J908AubPZO7fDNTHvo-jPrtPmZoa1hNB2Hw,442
+src/mcp_chat_analysis/embeddings.py,sha256=wz051YrBxyyHE9bn0IrbGRuuXuk6orL91FNDTRgNH5Y,5637
+src/mcp_chat_analysis/models.py,sha256=z4YQSnrjHlto-bA9BoS3SyhZ5RxNPR4F630Q0lRWwo8,3674
+src/mcp_chat_analysis/processors.py,sha256=HDPs6ZzLvMLyLZTwxlY_vBlyEokwd6FjhVPuq6fVLu4,9529
+src/mcp_chat_analysis/server.py,sha256=CxzNLxw4IouIECaalzuO6o1SLQgYqhFgIgAe6iG66tM,7143
+tests/test_embeddings.py,sha256=XhHV_N6KI8v6NHMpq9nJNt_FunqS4votF8Ra87wWfPg,3683
+tests/test_server.py,sha256=-DZ7Ix5dWKteapVB58ThlCX4Sw5e4eodCQP1pdW2j6Q,5293
+mseep_mcp_server_chat_analysis-0.1.0.dist-info/METADATA,sha256=smOoaF3K23hQ9OOef7uhMYjlY9CpXrw9eMteV0SobgU,6621
+mseep_mcp_server_chat_analysis-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp_server_chat_analysis-0.1.0.dist-info/entry_points.txt,sha256=3sMbeJEZT4VLDgHyY-VGMMS2KnzCPXXPBgaWrJBW3KQ,75
+mseep_mcp_server_chat_analysis-0.1.0.dist-info/licenses/LICENSE,sha256=BINRbPPuh19sqLhIuWfZz3Xbm4ohH89w65V8nJekMps,1074
+mseep_mcp_server_chat_analysis-0.1.0.dist-info/RECORD,,
