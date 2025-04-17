@@ -1,0 +1,17 @@
+[project]
+name = "mseep-minecraft-docker-mcp"
+version = "0.1.0"
+description = "Model Context Protocol Server for Minecraft Administration"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.2.1",
+]
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
