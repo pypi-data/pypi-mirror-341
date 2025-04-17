@@ -1,0 +1,31 @@
+[project]
+name = "csv-reconcile-fingerprint"
+version = "0.1.8"
+description = "A scoring plugin for csv-reconcile using fingerprint clustering."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name = "Katharina Brunner"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "csv-reconcile",
+    "unidecode"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/cutterkom/csv-reconcile-fingerprint"
+Changelog = "https://github.com/cutterkom/csv-reconcile-fingerprint/releases"
+Issues = "https://github.com/cutterkom/csv-reconcile-fingerprint/issues"
+CI = "https://github.com/cutterkom/csv-reconcile-fingerprint/actions"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.entry-points."csv_reconcile.scorers"]
+fingerprint = "csv_reconcile_fingerprint"
