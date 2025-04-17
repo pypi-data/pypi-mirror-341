@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+compdismatter/__init__.py
+compdismatter/core.py
+compdismatter.egg-info/PKG-INFO
+compdismatter.egg-info/SOURCES.txt
+compdismatter.egg-info/dependency_links.txt
+compdismatter.egg-info/top_level.txt
+compdismatter/lib/ising.so
+compdismatter/wasm/ising.c
+compdismatter/wasm/ising.wasm

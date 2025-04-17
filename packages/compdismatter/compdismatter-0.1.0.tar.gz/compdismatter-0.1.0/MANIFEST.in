@@ -1,0 +1,2 @@
+include compdismatter/wasm/*.wasm
+include compdismatter/lib/*.so
