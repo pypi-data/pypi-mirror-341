@@ -1,0 +1,10 @@
+django_facebook_capi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_facebook_capi/admin.py,sha256=H_J-J8LVAOoQIF02-lXsoWHJIxuZ65tKWwOSwQhBHoc,426
+django_facebook_capi/capi_utils.py,sha256=xSn7M88zRdEadZRvaRFEAqI2FNJkodHZvLbhg4m9h_4,4296
+django_facebook_capi/models.py,sha256=fJlRbpNYj0UFO0gm0A45Q2_3XHWmWkx9KhrzCFRP-dY,812
+django_facebook_capi/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_facebook_capi-1.1.3.dist-info/licenses/LICENSE,sha256=0dmvLB62SbHJaMbxBHWC5yGAiQVODwCfmAzvBEMhgTc,1068
+django_facebook_capi-1.1.3.dist-info/METADATA,sha256=WqAC18Y4sF1DZl8oV4Fm16ASNPeKJS98Q5aStruhD6A,4063
+django_facebook_capi-1.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_facebook_capi-1.1.3.dist-info/top_level.txt,sha256=rZqNfquivntcF_3lvcURUCGjpoGhViJv9cMuKcLhNgk,21
+django_facebook_capi-1.1.3.dist-info/RECORD,,
