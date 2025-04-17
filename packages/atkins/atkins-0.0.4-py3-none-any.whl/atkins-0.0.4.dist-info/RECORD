@@ -1,0 +1,15 @@
+atkins/__about__.py,sha256=FvPVfTKIS1Ff7Ejq5yZfbdIm-V03RfLv3CLxXscRy0s,120
+atkins/__init__.py,sha256=XXB2KrgUH62SCKm9IInQwLugiHhtFKddzS5FNR7t4Nc,98
+atkins/base.py,sha256=K-Ll4KVmJBHpy_L0cudYCAtH5T8ixcKXsfuggkOaRLI,325
+atkins/security.py,sha256=U4WID9Dl5MWZw5dqgCrSdNFLniXilW5tIhtWyzGbd_o,6096
+atkins/utils.py,sha256=TYxD_yblunnKv68EOBy0xg8pIuZwD_SND9zEx3IBW6Y,1446
+atkins/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atkins/services/activity_logging.py,sha256=sPpLokRPnqMlBwu2cTpo8WdMDEwq4R6B2r-Oi7qe3Ag,2077
+atkins/services/redeem_code.py,sha256=KclTVeLt2YF-sXzEjiK3KKFBnxoS73EDD0LE5E3vus8,5458
+atkins/services/user.py,sha256=Mih9cBuvQCdg-IC4PSa-nLuvmhOiOVTQrXdPVrAPGAY,3900
+atkins/services/user_credit.py,sha256=1jMYYoGhV3tntsy80AAAI-trqoXgvo1R56XOC8OmYEE,2991
+atkins/services/user_membership.py,sha256=2OFiHcNoLSOePf_c_sIz2I4UJSHlAexdnND399YHKSg,4212
+atkins-0.0.4.dist-info/METADATA,sha256=TC6M55ER6oVl9iHSx_JDPE8KYKHzbWNZ_sW0GsVCG28,1330
+atkins-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+atkins-0.0.4.dist-info/licenses/LICENSE.txt,sha256=ZOZ8BCu8Z3M-tdmivS7pusVxfPSBfPDpCQ5J-qOe8P4,1090
+atkins-0.0.4.dist-info/RECORD,,
