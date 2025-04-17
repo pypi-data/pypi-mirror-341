@@ -1,0 +1,12 @@
+README.md
+setup.py
+bodit-analysis-module/__init__.py
+bodit-analysis-module/fhBasic.py
+bodit-analysis-module/fhConst.py
+bodit-analysis-module/fhDatabase.py
+bodit-analysis-module/fhRawdata.py
+bodit_analysis_module.egg-info/PKG-INFO
+bodit_analysis_module.egg-info/SOURCES.txt
+bodit_analysis_module.egg-info/dependency_links.txt
+bodit_analysis_module.egg-info/requires.txt
+bodit_analysis_module.egg-info/top_level.txt
