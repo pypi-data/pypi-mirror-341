@@ -1,0 +1,68 @@
+Metadata-Version: 2.4
+Name: yamlify-me
+Version: 0.1.1.dev2
+Summary: Yamlify Me is a Python package that generate documents from yaml data and jinja templates.
+Author-email: Jens Klimke <jens.klimke@rwth-aachen.de>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/JensKlimke/yamlify
+Project-URL: Issues, https://github.com/JensKlimke/yamlify/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: Markdown>=3.0
+Requires-Dist: Jinja2>=3.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Dynamic: license-file
+
+# Yamlify
+
+Yamlify is a document generation tool and python library, which combines yaml and
+Jinja2.
+
+It includes:
+
+* Read data from multiple files in a folder.
+* Read data recursively from subfolders.
+* Manipulate data after reading and before rendering.
+* Render data with a jinja template file to generate a document.
+* Render data with multiple jinja template files to generate multiple documents
+
+## Usage
+
+```bash
+> datify --help
+```
+
+## I a nutshell
+
+Define data in a file data/cars/00001.yaml:
+
+``` yaml
+make: Toyota
+model: Corolla
+year: 2020
+owner: persons/john
+```
+
+Define a template file templates/template_multi.j2:
+
+```
+{{ make }} {{ model }} {{ year }} {{ filename }}
+```
+
+The command ```datify data/cars/ templates/template_multi.j2 -f {make}.txt```
+generates the file Toyota.txt:
+
+```txt
+Toyota Corolla 2020 00001.yaml
+```
+
+If you define more that one data files, multiple output files are generated
+accordingly (see tests).
+
+## License
+
+MIT - see LICENSE file
