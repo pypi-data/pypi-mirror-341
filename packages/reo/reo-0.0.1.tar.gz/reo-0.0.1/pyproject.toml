@@ -1,0 +1,14 @@
+[project]
+name = "reo"
+version = "0.0.1"
+description = "An empty package"
+readme = "README.md"
+authors = [
+    { name = "Gal Vinograd", email = "gal.vinograd@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
