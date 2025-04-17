@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: fairyspace
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/devotefairy/fairyspace#readme
+Project-URL: Issues, https://github.com/devotefairy/fairyspace/issues
+Project-URL: Source, https://github.com/devotefairy/fairyspace
+Author-email: allen <kycoolcool@gmail.com>
+Maintainer-email: allen <kycoolcool@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.11
+Requires-Dist: django>=5.2
+Requires-Dist: djangorestframework>=3.16
+Description-Content-Type: text/markdown
+
+# fairyspace
+
+A model-as-API service built with Django REST framework
+
+[![PyPI - Version](https://img.shields.io/pypi/v/fairyapi.svg)](https://pypi.org/project/fairyapi)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/fairyapi.svg)](https://pypi.org/project/fairyapi)
+
+---
+
+## Table of Contents
+
+- [fairyspace](#fairyspace)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [License](#license)
+
+## Installation
+
+```console
+pip install fairyapi
+```
+
+## License
+
+`fairyapi` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
