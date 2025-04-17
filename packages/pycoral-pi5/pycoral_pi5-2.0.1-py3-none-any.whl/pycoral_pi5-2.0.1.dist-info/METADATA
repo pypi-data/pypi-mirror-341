@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: pycoral-pi5
+Version: 2.0.1
+Summary: PyCoral built for Raspberry Pi 5 with Python 3.11
+Home-page: https://github.com/PierreGode/pycoral-pi5
+Author: Pierre Gode
+Author-email: pierre@gode.one
+License: Apache-2.0
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26.0
+Requires-Dist: Pillow
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# pycoral-pi5
