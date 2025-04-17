@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: pwnstar-lib
+Version: 1.9
+Summary: Security research package
+Author: PwnStar
+Author-email: calebhavens@gmail.com
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
