@@ -1,0 +1,11 @@
+parallm/__init__.py,sha256=OW4cR3AL99UUvrAuYznZxBoPfVdu6oNbsEpKFTuMhb0,224
+parallm/__main__.py,sha256=ZA-B9TR526t587mcyKIQA0RXhUzCesl_RM-B-xzEOo4,1411
+parallm/bedrock_query.py,sha256=hlllYwbv4M_GsefQJ94wGugMGV91gSPp_c8WI1gY8sk,5657
+parallm/cli.py,sha256=-qgf6-aer70L--BM0t7ZZSq40ZxyNeeKm2fpzntgi58,10386
+parallm/gemini_query.py,sha256=L9Nqa4ywpe_AA5g_p69sAZVKR9hbUnhXEAdZtpdUjAI,4035
+parallm/model_query.py,sha256=uQD3XS_jtkv44FLLOkLs-imrmDlkphky63kovqu1TXs,2229
+parallm-0.1.14.dist-info/METADATA,sha256=-vSUbALt5E-LBSkozLM4LJ-f3-_IOT-jpO6DPOd1pgw,20938
+parallm-0.1.14.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+parallm-0.1.14.dist-info/entry_points.txt,sha256=8UnfQPZHQw8uB_SlYHoVk1Ob4HySnhE1deUlD8KM8JI,44
+parallm-0.1.14.dist-info/top_level.txt,sha256=NZwtJzwqEyrQ3xGghda19Zq3zyR1IWgWKgBK7Cq6xy8,8
+parallm-0.1.14.dist-info/RECORD,,
