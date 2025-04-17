@@ -1,0 +1,2 @@
+[console_scripts]
+hrm_recorder = hrm_recorder.cli:main
