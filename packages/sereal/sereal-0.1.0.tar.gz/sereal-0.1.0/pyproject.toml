@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sereal"
+version = "0.1.0"
+description = "A lightweight serialization library"
+authors = [{ name = "0880" }]
+readme = "../README.md"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/0880880/sereal"

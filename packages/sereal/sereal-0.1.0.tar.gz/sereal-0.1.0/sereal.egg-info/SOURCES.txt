@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+sereal/__init__.py
+sereal/sereal.py
+sereal.egg-info/PKG-INFO
+sereal.egg-info/SOURCES.txt
+sereal.egg-info/dependency_links.txt
+sereal.egg-info/top_level.txt
