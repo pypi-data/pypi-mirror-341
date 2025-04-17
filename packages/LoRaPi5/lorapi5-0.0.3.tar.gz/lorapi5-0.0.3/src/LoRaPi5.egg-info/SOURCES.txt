@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/LoRaPi5/__init__.py
+src/LoRaPi5/constants.py
+src/LoRaPi5/lora.py
+src/LoRaPi5.egg-info/PKG-INFO
+src/LoRaPi5.egg-info/SOURCES.txt
+src/LoRaPi5.egg-info/dependency_links.txt
+src/LoRaPi5.egg-info/requires.txt
+src/LoRaPi5.egg-info/top_level.txt

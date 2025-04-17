@@ -1,0 +1,23 @@
+[project]
+name = "LoRaPi5"
+version = "0.0.3"
+dependencies = [
+    "gpiozero>=2.0.1",
+    "spidev>=3.5"
+]
+authors = [
+  { name="goldenmatrix", email="goldenmatrix@gmail.com" },
+]
+description = "A simple LoRa API for the raspberryPi5"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/leonardonels/LoRaPi5"
+Issues = "https://github.com/leonardonels/LoRaPi5/issues"
