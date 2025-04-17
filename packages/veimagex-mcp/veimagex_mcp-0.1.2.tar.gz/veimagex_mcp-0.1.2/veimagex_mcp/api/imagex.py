@@ -1,0 +1,15 @@
+import os
+from volcengine.imagex.v2.imagex_service import ImagexService
+
+
+class ImagexAPI(ImagexService):
+    def __init__(self):
+        super().__init__(
+            ak=os.getenv("VOLCENGINE_ACCESS_KEY"),
+            sk=os.getenv("VOLCENGINE_SECRET_KEY"),
+        )
+        self.service_id = os.getenv("SERVICE_ID")
+        self.domain = os.getenv("DOMAIN")
+        self.set_connection_timeout(30)
+        self.set_socket_timeout(30)
+
