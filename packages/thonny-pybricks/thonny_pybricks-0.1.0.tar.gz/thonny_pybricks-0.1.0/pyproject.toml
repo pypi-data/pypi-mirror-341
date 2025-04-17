@@ -1,0 +1,23 @@
+[project]
+name = "thonny-pybricks"
+version = "0.1.0"
+description = "A Thonny IDE plug-in to interact with Pybricks Hubs."
+authors = [
+    {name = "Roman Weiss"}
+]
+license = {text = "BSD-3-Clause"}
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = ["thonny (>=4.1.7,<5.0.0)", "pybricksdev (>=1.0.1,<2.0.0)"]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [{include = "thonnycontrib"}]
+
+[tool.poetry.group.dev.dependencies]
+twine = "^6.1.0"
+

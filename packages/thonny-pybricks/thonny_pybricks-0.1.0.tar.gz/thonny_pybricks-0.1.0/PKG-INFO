@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: thonny-pybricks
+Version: 0.1.0
+Summary: A Thonny IDE plug-in to interact with Pybricks Hubs.
+License: BSD-3-Clause
+Author: Roman Weiss
+Requires-Python: >=3.10,<3.14
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pybricksdev (>=1.0.1,<2.0.0)
+Requires-Dist: thonny (>=4.1.7,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Thonny Pybricks
+
+A Thonny IDE plug-in for interacting with Pybricks Hubs.
+
