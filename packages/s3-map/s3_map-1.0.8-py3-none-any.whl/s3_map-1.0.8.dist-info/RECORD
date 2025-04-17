@@ -1,0 +1,7 @@
+s3_map/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+s3_map/main.py,sha256=H-BNsw2wvDJJP5JHFy7Fn7uSe99kGg9S2XWbyDwRRDw,1355
+s3_map/s3_lister.py,sha256=HTVYHyTKPANdDmbKDEI3RmFkYjC_MEepeggddzeNwe4,4166
+s3_map-1.0.8.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+s3_map-1.0.8.dist-info/METADATA,sha256=DD4TnjwYqNLQfKLanyrTy_cffhVy0JlHyK9BKl_VXMg,712
+s3_map-1.0.8.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+s3_map-1.0.8.dist-info/RECORD,,
