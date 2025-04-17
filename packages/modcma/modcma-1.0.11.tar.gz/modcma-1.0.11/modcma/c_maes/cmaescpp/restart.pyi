@@ -1,0 +1,84 @@
+import numpy
+
+class Strategy:
+    def __init__(self, *args, **kwargs) -> None: ...
+    def update(self, parameters) -> float: ...
+
+class Criterion:
+    last_restart: int
+    met: bool
+    name: str
+    def __init__(self, *args, **kwargs) -> None: ...
+    def reset(self, parameters) -> None: ...
+    def update(self, parameters) -> None: ...
+
+class Criteria:
+    items: list[Criterion]
+    def __init__(self, *args, **kwargs) -> None: ...
+    def reset(self, parameters) -> None: ...
+    def update(self, parameters) -> None: ...
+    @property
+    def any(self) -> bool: ...
+
+class BIPOP(Strategy):
+    budget: int
+    budget_large: int
+    budget_small: int
+    lambda_init: int
+    lambda_large: int
+    lambda_small: int
+    mu_factor: float
+    def __init__(self, *args, **kwargs) -> None: ...
+    def large(self) -> bool: ...
+    @property
+    def used_budget(self) -> int: ...
+
+class ConditionC(Criterion):
+    def __init__(self) -> None: ...
+
+class ExceededMaxIter(Criterion):
+    max_iter: int
+    def __init__(self) -> None: ...
+
+class FlatFitness(Criterion):
+    flat_fitness_index: int
+    flat_fitnesses: numpy.ndarray[numpy.int32[m, 1]]
+    max_flat_fitness: int
+    def __init__(self) -> None: ...
+
+class IPOP(Strategy):
+    ipop_factor: float
+    def __init__(self, *args, **kwargs) -> None: ...
+
+class MaxDSigma(Criterion):
+    def __init__(self) -> None: ...
+
+class MinDSigma(Criterion):
+    def __init__(self) -> None: ...
+
+class NoEffectAxis(Criterion):
+    def __init__(self) -> None: ...
+
+class NoEffectCoord(Criterion):
+    def __init__(self) -> None: ...
+
+class NoImprovement(Criterion):
+    best_fitnesses: list[float]
+    n_bin: int
+    def __init__(self) -> None: ...
+
+class SigmaOutOfBounds(Criterion):
+    def __init__(self) -> None: ...
+
+class Stagnation(Criterion):
+    best_fitnesses: list[float]
+    median_fitnesses: list[float]
+    n_stagnation: int
+    def __init__(self) -> None: ...
+
+class TolX(Criterion):
+    tolx_vector: numpy.ndarray[numpy.float64[m, 1]]
+    def __init__(self) -> None: ...
+
+class UnableToAdapt(Criterion):
+    def __init__(self) -> None: ...
