@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+gfagraphs/__init__.py
+gfagraphs/abstractions.py
+gfagraphs/gfaparser.py
+gfagraphs/graph.py
+gfagraphs/nx.py
+gfagraphs.egg-info/PKG-INFO
+gfagraphs.egg-info/SOURCES.txt
+gfagraphs.egg-info/dependency_links.txt
+gfagraphs.egg-info/not-zip-safe
+gfagraphs.egg-info/top_level.txt
