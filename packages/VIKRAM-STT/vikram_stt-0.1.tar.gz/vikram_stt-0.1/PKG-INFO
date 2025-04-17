@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: VIKRAM-STT
+Version: 0.1
+Summary: This is a Speech to Text package created by Vikram Choure
+Author: Vikram Choure
+Author-email: vikramchoure607@gmail.com
+Requires-Dist: selenium
+Requires-Dist: webdriver-manager
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary

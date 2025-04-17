@@ -1,0 +1,7 @@
+setup.py
+VIKRAM_STT/__init__.py
+VIKRAM_STT.egg-info/PKG-INFO
+VIKRAM_STT.egg-info/SOURCES.txt
+VIKRAM_STT.egg-info/dependency_links.txt
+VIKRAM_STT.egg-info/requires.txt
+VIKRAM_STT.egg-info/top_level.txt
