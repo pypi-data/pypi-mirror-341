@@ -1,0 +1,51 @@
+[project]
+name = "ansi_stdio"
+description = "ANSI text animation library"
+version = "0.0.2"
+authors = [
+    { name = "Gareth Davidson", email = "gaz@bitplane.net" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: Public Domain",  # WTFPL
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Terminals"
+]
+dependencies = [
+    "rich",
+    "pyte",
+    "matplotlib"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/bitplane/ansi_stdio"
+"Bug Tracker" = "https://github.com/bitplane/ansi_stdio/issues"
+"Source Code" = "https://github.com/bitplane/ansi_stdio"
+
+[project.optional-dependencies]
+dev = [
+    "flake8",
+    "pre-commit",
+    "pytest",
+    "coverage",
+    "pytest-cov",
+    "pydoc-markdown",
+    "build",
+    "twine"
+]
+
+[project.scripts]
+ansi-quantize = "ansi_stdio.cli.quantize:main"
+ansi-fonts = "ansi_stdio.cli.fonts:main"
+
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.2,<4"]
