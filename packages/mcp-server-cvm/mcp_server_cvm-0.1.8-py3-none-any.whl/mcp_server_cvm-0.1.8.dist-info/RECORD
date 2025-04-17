@@ -1,0 +1,11 @@
+mcp_server_cvm/__init__.py,sha256=532KvZfJ_2S0SVW_toi7ib8eNbPtxpGNIOvs5l0Eb60,174
+mcp_server_cvm/client.py,sha256=RSNhFt_Vqir7q2A3y0bPlAcdH9ruoK8p4e5aRDk5dcc,2280
+mcp_server_cvm/run_instances.py,sha256=xrFVgN0JrBkrVijGNsdsPw4ss-I-hxALCx3guKbGZUk,3059
+mcp_server_cvm/server.py,sha256=BlCcbgYgVptn931M-QElc62GIOOZud8yyIJg48t5kZA,38714
+mcp_server_cvm/tool_cvm.py,sha256=YHMH5CBo6JTmlBvXddGmbNCmqSCtduJtKxi5kdtwLdA,13411
+mcp_server_cvm/tool_monitor.py,sha256=eRQBcLa7hkL7y6bEpbWl8AM5UpZX-EO5Hf9nxij9RTc,4672
+mcp_server_cvm/tool_vpc.py,sha256=WJflv4mH7ywkfMzu808PVp1N5EPPGg-qoUZ9b9-dF7A,3487
+mcp_server_cvm-0.1.8.dist-info/METADATA,sha256=Nild32tAFb4-G_UsoJtlQOu98znXosgNBOLY6qq28Og,6412
+mcp_server_cvm-0.1.8.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_server_cvm-0.1.8.dist-info/entry_points.txt,sha256=YRo6CeRCBGZgVpOIR-PJxkX6dRW-QIc3cd6sy5Xmhl8,55
+mcp_server_cvm-0.1.8.dist-info/RECORD,,
