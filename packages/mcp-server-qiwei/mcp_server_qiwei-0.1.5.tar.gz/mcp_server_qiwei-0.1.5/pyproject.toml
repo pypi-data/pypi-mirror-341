@@ -1,0 +1,23 @@
+[project]
+name = "mcp-server-qiwei"
+version = "0.1.5"
+description = "mcp server send new message to qiwei group"
+authors = [
+    {name = "ryanjhzheng"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "httpx",
+  'requests',
+  "mcp[cli]>=1.0.0",
+]
+
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project.scripts]
+mcp-server-qiwei = "mcp_server_qiwei.server:main"
