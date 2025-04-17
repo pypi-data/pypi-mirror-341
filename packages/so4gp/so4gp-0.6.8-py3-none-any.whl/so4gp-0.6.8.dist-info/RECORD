@@ -1,0 +1,11 @@
+so4gp/__configs__.py,sha256=4zpMcQJddzm0rtgldnXeJLkXcCWMfcujhT2lm3oBqXw,849
+so4gp/__init__.py,sha256=dvMAnJJOuRHa-mYlJuiBLWm-qiMTLykLPOrsFvUbGrg,1097
+so4gp/data_gp.py,sha256=DQSbayd9k8jzwmo874xnyPAmDRsiyMaGG5LHNrLYeaw,13161
+so4gp/gradual_patterns.py,sha256=10x29wTM8vMhvlv9BNuYO4c5nA_dytB3SA-O7DgFyOE,30605
+so4gp/miscellaneous.py,sha256=b7_CnbxSSB3tpr2Q8XsQmwQyixWZ2QA4atKFRz7YX5g,6634
+so4gp/so4gp.py,sha256=2jUyU9FtKKoC2IgWsXq5Qb0fi2GuPpyuePraX70HpyE,122093
+so4gp-0.6.8.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+so4gp-0.6.8.dist-info/METADATA,sha256=MrffT5sLOKpl0-cV_acGsj1MX4NNK3XjZxPbG2LxPZs,44989
+so4gp-0.6.8.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+so4gp-0.6.8.dist-info/top_level.txt,sha256=mcY-KaKI2Z5gLvbLgGatlyoSq7JAN4bVa4_jt0RWgFs,6
+so4gp-0.6.8.dist-info/RECORD,,
