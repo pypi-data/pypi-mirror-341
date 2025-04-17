@@ -1,0 +1,10 @@
+LICENSE,sha256=tlqYzU5EORoKFK_tM72b-m3mHwuCes6FsUN5yzL9Ecg,1069
+README.md,sha256=vEnAAOEZMBpwI6Wxbh2ThVwJmREGC0mV_5R1r-vx_wo,4784
+ryskV12/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ryskV12/client.py,sha256=rrUzrM_oAkh1B8890nhUGJtwMaL3yucvu20EbEObI-w,3685
+ryskV12/models.py,sha256=kSluFnKmoRttmNZWzjtaja8Jt1vxQBwQzL_jvGP7Z9Y,4516
+ryskV12/scripts/fetch_latest_release.sh,sha256=7bFNAGsXpjx18S0UiZ6rtxYusVRZcXj1btJ4L8wd03w,1449
+ryskv12-1.0.0.dist-info/LICENSE,sha256=tlqYzU5EORoKFK_tM72b-m3mHwuCes6FsUN5yzL9Ecg,1069
+ryskv12-1.0.0.dist-info/METADATA,sha256=JAaqFlFlxIREPNlnz3FoySuQFDd1tB5hg79SHPxWwmg,5123
+ryskv12-1.0.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+ryskv12-1.0.0.dist-info/RECORD,,
