@@ -1,0 +1,12 @@
+telepath/__init__.py,sha256=JdbyicsgTfJWYnCoHUvwJ3l5idQMUeJHWoaXNpYtmac,204
+telepath/_callbacks.py,sha256=TVuC9PhvYX9nh1yrLj5miOeBNKNK2Q9cgi9_C5Nz81k,1492
+telepath/_decrs.py,sha256=Yg7nmExA6ii94JhIDy4QDKUAxzJ6rLLWOyPkKJe4Pdg,2019
+telepath/_dto.py,sha256=4LeciSnX_YlwbyvDpkQRpMFlU-NPi05sEkMWxNB-dv0,572
+telepath/_utils.py,sha256=i-HBtrx4HxwpVNsVt9WL0Gfl9B7eg0FM2Ad5Z_SLbN4,785
+telepath/logs.py,sha256=saweuYZgfKNNMMnFSwuMXZUFcI1bXb8Ao04YRbs2AEo,1299
+telepath/stateful_widgets.py,sha256=c1cm7jAmcCNQ0UVuwu4IJ36dXvpKA2YpRTi_-r1hGSM,4441
+telepath/tgchat.py,sha256=B9hPGxprdOctEVTjmepRfeJmjtTlK2eW5onSu9XLp8g,323
+telepath/tgmixins.py,sha256=Nj-13QTbZydqUYHYsvX2OcdWi5oT2KV8zXSWztUDLJc,693
+pytelepath-1.2.1.dist-info/METADATA,sha256=mrlQSqPzzG-toEIvSGDikbqzxE9FjJTRlSU3uaNeJ9c,296
+pytelepath-1.2.1.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+pytelepath-1.2.1.dist-info/RECORD,,
