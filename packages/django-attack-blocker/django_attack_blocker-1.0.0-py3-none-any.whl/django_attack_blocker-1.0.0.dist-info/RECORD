@@ -1,0 +1,9 @@
+django_attack_blocker/__init__.py,sha256=iXfcZn78t3dBsFM7fg_CpL2VaUt181tous_64lpjknY,163
+django_attack_blocker/apps.py,sha256=m89MWUbaidVHbLXc5lAQS1r-0aAmKhZKMQsU9K_sYl0,218
+django_attack_blocker/core.py,sha256=xVEOTy8z0sVjZBasUo-r-BCKXPUfAIMQXCzULf1WkC8,12520
+django_attack_blocker/utils.py,sha256=_cvDmfGSPvNXs10lr9uhRjMRkBvdgy_Q7jDNnufIBg4,3106
+django_attack_blocker-1.0.0.dist-info/licenses/LICENSE,sha256=HG6Omfh2Cu3IU2w10jkaX2hinTuDS1fqiJVSQGjpynQ,1094
+django_attack_blocker-1.0.0.dist-info/METADATA,sha256=0wRkZ9437PuCAvqnQEFoB9fgBQHqMzrCIcm4C7550Q8,7061
+django_attack_blocker-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_attack_blocker-1.0.0.dist-info/top_level.txt,sha256=NcxRUP62-S7NT-TPEaGo7ZENvk_cH6AMxD_1l7OFXUs,22
+django_attack_blocker-1.0.0.dist-info/RECORD,,
