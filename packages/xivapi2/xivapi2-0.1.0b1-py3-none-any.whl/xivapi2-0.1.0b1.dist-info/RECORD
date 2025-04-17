@@ -1,0 +1,11 @@
+xivapi2/__init__.py,sha256=3BfqIC1xtLr_Lo811QLS5H0poWy0hnPzLsQQBD9ZgwA,219
+xivapi2/client.py,sha256=rrFgutTf-Y0Gccm1JyeigfLMJ0iOoZ-evAvCP5sJKhg,14625
+xivapi2/errors.py,sha256=paWgpfvUCcL-OrK-a9Wn_6GaOyGf0Picu5_XqJl5Dg0,658
+xivapi2/models.py,sha256=nXfu3_7VnGUgCyswVytXGWVvo39c1fpDPl-Ofu8gKUg,1956
+xivapi2/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xivapi2/query.py,sha256=aPq3ZypHABBTVc6juxFHyosNWBmr-9nHsb-IiCbl5Fo,9642
+xivapi2/utils.py,sha256=tF5r0ukI77D7efa4yu1gP4g43f1gqcxg88jDYi8xNX8,2259
+xivapi2-0.1.0b1.dist-info/METADATA,sha256=7NhKhtTaFRqkq0CSaI_FJBp2MhyIjGXvPz_ni0NeWBM,3369
+xivapi2-0.1.0b1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+xivapi2-0.1.0b1.dist-info/licenses/LICENSE,sha256=-C6_VxCdqCwdlsSetmbKx8B8WBkysA7WLtw7uGrxUr0,1063
+xivapi2-0.1.0b1.dist-info/RECORD,,
