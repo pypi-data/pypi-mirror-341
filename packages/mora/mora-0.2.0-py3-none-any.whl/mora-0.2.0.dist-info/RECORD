@@ -1,0 +1,11 @@
+mora/__init__.py,sha256=lH2Bl4t8Psyre2Q7V61XAmja43WTSeSxsSCcAZFaS-g,987
+mora/bot.py,sha256=0Mijpd4VaKUgbkmGx62NZuwpmJOgMCfO9TFB9s-pAkk,1803
+mora/command_exec.py,sha256=_coCJUzDMC7dSfv9wmZo8D4PFfR8lE8PCZD2sPUL9q8,329
+mora/file_ops.py,sha256=W9tC9FkaKN0n8n54kZzGngvXD-HNY8ikLU1WxZeQBbQ,1250
+mora/handlers.py,sha256=ElLMGJnVjr7Hz3qZ6gHoxInUuymoYJf6h-S6rZTkchI,2957
+mora/sys_info.py,sha256=VC6iGIiDgIi7Vp6Ojr20Z3l-wZpTNSKblthnfl-ux1M,547
+mora-0.2.0.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mora-0.2.0.dist-info/METADATA,sha256=RQFVK9Y8qMBFIIxBZhr327N7Zwf8BJFJrbSKQOXK5u0,690
+mora-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mora-0.2.0.dist-info/top_level.txt,sha256=qm8Qu1nqM8BH0mni6jxtw2tqEQzeAa0dy-PKPF4vnlc,5
+mora-0.2.0.dist-info/RECORD,,
