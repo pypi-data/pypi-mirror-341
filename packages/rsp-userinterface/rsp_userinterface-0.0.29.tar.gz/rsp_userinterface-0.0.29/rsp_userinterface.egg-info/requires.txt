@@ -1,0 +1,3 @@
+rsp-common>=0.0.25
+numpy
+opencv-python
