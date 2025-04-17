@@ -1,0 +1,6 @@
+setup.py
+clusterir/__init__.py
+clusterir.egg-info/PKG-INFO
+clusterir.egg-info/SOURCES.txt
+clusterir.egg-info/dependency_links.txt
+clusterir.egg-info/top_level.txt
