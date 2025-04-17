@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: batch6-musigma
+Version: 0.1.0
+Summary: A Python package for Batch 6 Mu Sigma, potentially including Grok API chat functionality.
+Author: Bhargavesh Dakka
+Author-email: bhargaveshdakka@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: groq>=0.4.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
