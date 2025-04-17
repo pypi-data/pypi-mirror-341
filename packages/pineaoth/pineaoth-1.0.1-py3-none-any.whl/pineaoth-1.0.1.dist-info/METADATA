@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: pineaoth
+Version: 1.0.1
+Summary: 🔐 PineAoth - CLI 2FA Authenticator dengan Live OTP, SQLite & Tampilan Rich. Menyediakan fungsi OTP 2FA yang aman dan mudah digunakan, dengan antarmuka terminal yang kaya.
+Author-email: openpineaple <openpineaple@gmail.com>
+License: MIT
+Keywords: CLI,OTP,2FA,Authenticator,TOTP,Security,pyotp,rich
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Security
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyotp<3.0.0,>=2.8.0
+Requires-Dist: rich<14.0.0,>=13.0.0
+Provides-Extra: dev
+Requires-Dist: black<25.0,>=24.0; extra == "dev"
+Requires-Dist: isort<6.0,>=5.12; extra == "dev"
+Requires-Dist: mypy<2.0,>=1.0; extra == "dev"
+Requires-Dist: pytest<8.0,>=7.0; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Dynamic: license-file
