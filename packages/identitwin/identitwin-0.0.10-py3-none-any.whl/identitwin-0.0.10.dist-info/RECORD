@@ -1,0 +1,15 @@
+identitwin/__init__.py,sha256=Gk_Bnerw2M57VupqLDDy5oYIS0HR95AmglfevdoGsdc,782
+identitwin/calibration.py,sha256=DGupH0KfPxYzvfukFFLS8Xz0gty01TY2WVTKdVlyh3w,10153
+identitwin/configurator.py,sha256=YvMsporqnBQ8GKdjdPt0s05m5DSWnoYP_jilO_bDZmI,22248
+identitwin/event_monitoring.py,sha256=eWQ9ZoWDxAc3OhJPekJx-wepXZvBWEnlqd0q1Ohj7K8,24279
+identitwin/performance_monitor.py,sha256=Bt9hIiaPi_K-qYYpC2YKBtajiMvm5lfT0j-eOApdMxM,15821
+identitwin/processing_analysis.py,sha256=qBS3C9aCAIoQGeQMUv_wrZWYXZrxICwmgDWNIskSfrs,30186
+identitwin/processing_data.py,sha256=VdeMqLkqVYxc38s_eGaCH_THr0ngTiJ6nm3SSWHobkc,15235
+identitwin/report_generator.py,sha256=hrcouc_3OonyW7-l9E3Mkb-RT33jZ6npjl82nsBpvzM,8479
+identitwin/state.py,sha256=RfNfyIQa2jU8nbIl0pw0D85lwpgihOQCaqydTLv4bY0,4210
+identitwin/system_monitoring.py,sha256=YFOunPEVgdsYXyLLSizWo1LeWRwbHmasoqqPAJZDHCY,37468
+identitwin-0.0.10.dist-info/licenses/LICENSE,sha256=MVKAuO44W8D1zhgjmIBaQYQleNUhSjabDuTawnciqSI,1089
+identitwin-0.0.10.dist-info/METADATA,sha256=9Itf3SY5RclpbZS8OB3SfCaRp63Jq6hEUs8Q2ABhHqU,3423
+identitwin-0.0.10.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+identitwin-0.0.10.dist-info/top_level.txt,sha256=F-hOSwrz4Q_uFwvlnbsxmAdr65iqelSnu5eteFDneyY,11
+identitwin-0.0.10.dist-info/RECORD,,
