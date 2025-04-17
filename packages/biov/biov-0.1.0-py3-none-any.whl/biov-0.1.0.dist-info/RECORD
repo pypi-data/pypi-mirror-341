@@ -1,0 +1,11 @@
+biov/__init__.py,sha256=Ng4q-7WyNfz1oN26hPosiiE5mT_6wXKwPHrOwUfRV3Y,279
+biov/_patch.py,sha256=GRp1izeyBFhsDCkX88eD0O-K0hJ8z3HbLCLucvElCsw,636
+biov/config.py,sha256=khwWWiUZo95OSbSLxsrzjvM2EIAE6_Ict8LX44Hmyks,642
+biov/dataframe.py,sha256=yKIbAeb41Os4nsRYAWMwCvLj86qoPg-9nEWW9GEz6Rg,448
+biov/types.py,sha256=zQdP9YBnkQbEgKBghp6Ks1A3WlO3wzkNo9_GL_AxvKg,567
+biov/io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biov/io/_preprocess.py,sha256=zRDTU3JYMAzYTg0oGoRgBjPzaL6rFhvRvgubxEL4kY0,693
+biov/io/gff.py,sha256=pNFbjENf0v6FylBBKfLXqJDI6UEPNDhJDfjdAuRXzgI,4833
+biov-0.1.0.dist-info/METADATA,sha256=suWcD9rmVk_zCxPpojf8cRqTaMn3XcBoEct33o9pC-M,2235
+biov-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+biov-0.1.0.dist-info/RECORD,,
