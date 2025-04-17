@@ -1,0 +1,7 @@
+setup.py
+ConnorAPI.egg-info/PKG-INFO
+ConnorAPI.egg-info/SOURCES.txt
+ConnorAPI.egg-info/dependency_links.txt
+ConnorAPI.egg-info/top_level.txt
+ConnorsAPI/__init__.py
+ConnorsAPI/api_client.py
