@@ -1,0 +1,58 @@
+Metadata-Version: 2.4
+Name: cchloader
+Version: 4.0.0
+Summary: Implementation based on sippers from GISCE
+Home-page: https://github.com/Som-Energia/cchloader
+Author: Som Energia SCCL & GISCE
+Author-email: info@somenergia.coop
+License: GPLv3
+Provides: cchloader
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: raven<6.0.0; python_version <= "2.7.18"
+Requires-Dist: raven; python_version > "2.7.18"
+Requires-Dist: pymongo<=3.13.0
+Requires-Dist: osconf
+Requires-Dist: marshmallow<3.0.0,>=2.13.5
+Requires-Dist: click<8
+Requires-Dist: six
+Requires-Dist: pytz
+Requires-Dist: psycopg2-binary
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides
+Dynamic: requires-dist
+Dynamic: summary
+
+# CCHLOADER
+
+[![Python tests](https://github.com/Som-Energia/cchloader/actions/workflows/python-tests.yml/badge.svg)](https://github.com/Som-Energia/cchloader/actions/workflows/python-tests.yml)
+
+
+Eina d'importació de CCH
+
+- Eina per a importar fitxers de corba a Comercialitzadora i a Representació a mercat..
+- Aporta el coneixement i els formats necessaris per a llegir fitxers en diferents formats.
+
+## Suporta
+- `A5D`
+- `B5D`
+- `CORBAGEN`
+- `F1`
+- `F5D`
+- `INFPA`
+- `MCILQH`
+- `MEDIDAS`
+- `MHCIL`
+- `P1`
+- `P1D`
+- `P2`
+- `P2D`
+- `REGANECU`
+- `REGANECUQH`
+- `RF5D`
