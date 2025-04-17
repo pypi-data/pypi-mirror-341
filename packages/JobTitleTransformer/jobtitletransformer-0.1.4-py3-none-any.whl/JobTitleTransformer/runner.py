@@ -1,0 +1,124 @@
+import os
+from termcolor import colored
+
+
+def run_pipeline():
+    # Root directory
+    pycharmDirectoryPrasC = r'C:/Users/prasa/Root/'
+    pycharmDirectory = ''
+
+    if os.path.isdir(pycharmDirectoryPrasC):
+        print(colored('\nWe work from ' + pycharmDirectoryPrasC, 'green'))
+        pycharmDirectory = pycharmDirectoryPrasC
+
+    # List of scripts in order of execution
+    ordered_scripts = [
+        "_encode_decode.py",
+        "Acupuncturist.py",
+        "ARNP.py",
+        "AestheticAntiAgingPhy.py",
+        "AestheticPlasticSurgeon.py",
+        "AestheticPhysician.py",
+        "AlternativeMedicinePhysician.py",
+        "Anaesthesist.py",
+        "Anatomist.py",
+        "Andrologist.py",
+        "AngiologistPhlebologist.py",
+        "AntiagingPhysician.py",
+        "BiologistBiochemist.py",
+        "BiomedicalPhysician.py",
+        "Cardiologist.py",
+        "ClinicManager.py",
+        "ClinicalStaff.py",
+        "CompanyCEO.py",
+        "CompanyManager.py",
+        "CompanyMedicalStaff.py",
+        "CompanyRepresentative.py",
+        "Consultant.py",
+        "CosmeticDermCosmeticSurgeon.py",
+        "CosmetologistMD.py",
+        "Cytologist.py",
+        "DentalAssistant.py",
+        "DentalSurgeon.py",
+        "Dentist.py",
+        "DermatologicSurgeon.py",
+        "Dermatologist.py",
+        "Distributor.py",
+        "Employee.py",
+        "Endocrinologist.py",
+        "ENTPhysician.py",
+        "Esthetician.py",
+        "EventManager.py",
+        "FacialPlasticSurgeon.py",
+        "GeneralPhysician.py",
+        "GeneralSurgeon.py",
+        "Genetician.py",
+        "Geriatrist.py",
+        "GynecologistObstetrician.py",
+        "HairTransplantSurgeon.py",
+        "Headofdepartment.py",
+        "Hematologist.py",
+        "HospitalManager.py",
+        "Immunologist.py",
+        "Influencer.py",
+        "InternalMedicine.py",
+        "LaboratoryMedicine.py",
+        "Lawyer.py",
+        "LegalCounsel.py",
+        "LPN.py",
+        "MarketingManager.py",
+        "MaxillofacialSurgeon.py",
+        "MedicalAdvisor.py",
+        "MedicalSpaManager.py",
+        "NeonatologistNeurologist.py",
+        "Neurophysiologist.py",
+        "NonmedicalStaff.py",
+        "NursePractitioner.py",
+        "Nutritionist.py",
+        "OculoplasticSurgeon.py",
+        "Oncologist.py",
+        "Ophthalmologist.py",
+        "OralMaxillofacialSurgeon.py",
+        "Orthodontist.py",
+        "Orthopedist.py",
+        "Owner.py",
+        "Pathologist.py",
+        "Pediatrician.py",
+        "Pharmacist.py",
+        "Pharmacologist.py",
+        "Photographer.py",
+        "PhysicianAssistant.py",
+        "Physiotherapist.py",
+        "PlasticReconstructiveSurgeon.py",
+        "PlasticSurgeon.py",
+        "PracticeManager.py",
+        "Press.py",
+        "ProductProjectManager.py",
+        "ProfessorTeacher.py",
+        "Psychiatrist.py",
+        "Psychologist.py",
+        "Psychotherapist.py",
+        "Radiologist.py",
+        "RN.py",
+        "ResearchScientist.py",
+        "Rheumatologist.py",
+        "Sales.py",
+        "SportsMedicinePhysician.py",
+        "Stomatologist.py",
+        "Student.py",
+        "Trichologist.py",
+        "Urologist.py",
+        "VascularSurgeon.py",
+        "TransformationHubInternSources.py"
+    ]
+
+    # Path to scripts
+    script_dir = os.path.join(pycharmDirectory, "JobTitle_Transformer")
+
+    # Execute each script
+    for script_name in ordered_scripts:
+        script_path = os.path.join(script_dir, script_name)
+        print(colored(f'\nExecuting: {script_name}', 'cyan'))
+        with open(script_path, "rb") as f:
+            code = compile(f.read(), script_path, 'exec')
+            exec(code, globals())
