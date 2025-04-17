@@ -1,0 +1,2 @@
+[console_scripts]
+mm-starknet = mm_starknet.cli.cli:app
