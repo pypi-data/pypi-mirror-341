@@ -1,0 +1,21 @@
+[project]
+name = "world-bank-mcp-server"
+version = "0.1.0"
+description = "A Model Context Protocol (MCP) server that enables secure interaction with the World Bank APIs. This server allows AI assistants to list tables and read data through a controlled interface, making data exploration and analysis safer and more structured."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "asyncio>=3.4.3",
+    "fastmcp>=2.2.0",
+    "mcp>=1.6.0",
+    "mysql-connector-python>=9.3.0",
+    "pandas>=2.2.3",
+    "requests>=2.32.3",
+]
+
+[[project.authors]]
+name = "Anshuman Saxena"
+email = "anshumax@gmail.com"
+
+[project.scripts]
+world-bank-mcp-server = "world_bank_mcp_server.server:main"

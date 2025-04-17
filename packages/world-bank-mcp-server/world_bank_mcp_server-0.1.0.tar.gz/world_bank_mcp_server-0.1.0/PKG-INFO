@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: world-bank-mcp-server
+Version: 0.1.0
+Summary: A Model Context Protocol (MCP) server that enables secure interaction with the World Bank APIs. This server allows AI assistants to list tables and read data through a controlled interface, making data exploration and analysis safer and more structured.
+Author-email: Anshuman Saxena <anshumax@gmail.com>
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: asyncio>=3.4.3
+Requires-Dist: fastmcp>=2.2.0
+Requires-Dist: mcp>=1.6.0
+Requires-Dist: mysql-connector-python>=9.3.0
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: requests>=2.32.3
+
+# World Bank MCP Server
+[![smithery badge](https://smithery.ai/badge/@anshumax/world_bank_mcp_server)](https://smithery.ai/server/@anshumax/world_bank_mcp_server)
+
+A Model Context Protocol (MCP) server that enables interaction with the open World Bank data API. This server allows AI assistants to list indicators and analyse those indicators for the countries that are available with the World Bank.
+
+## Features
+
+- List available countries in the World Bank open data API
+- List available indicators in the World Bank open data API
+- Analyse indicators, such as population segments, poverty numbers etc, for countries
+- Comprehensive logging
+
+
+## Usage
+
+### With Claude Desktop
+
+Add this to your `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "world_bank": {
+      "command": "uv",
+      "args": [
+        "--directory", 
+        "path/to/world_bank_mcp_server",
+        "run",
+        "world_bank_mcp_server"
+      ]
+    }
+  }
+}
+```
+
+### Installing via Smithery
+
+To install World Bank Data Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@anshumax/world_bank_mcp_server):
+
+```bash
+npx -y @smithery/cli install @anshumax/world_bank_mcp_server --client claude
+```
