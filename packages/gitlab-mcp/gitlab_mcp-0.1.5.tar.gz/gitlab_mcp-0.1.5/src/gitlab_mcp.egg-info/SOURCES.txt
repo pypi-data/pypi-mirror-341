@@ -1,0 +1,17 @@
+.env.example
+MANIFEST.in
+README.md
+mcp_config.json
+requirements.txt
+setup.py
+src/gitlab_mcp/__init__.py
+src/gitlab_mcp/connector.py
+src/gitlab_mcp/count_projects.py
+src/gitlab_mcp/project_stats.py
+src/gitlab_mcp/server.py
+src/gitlab_mcp.egg-info/PKG-INFO
+src/gitlab_mcp.egg-info/SOURCES.txt
+src/gitlab_mcp.egg-info/dependency_links.txt
+src/gitlab_mcp.egg-info/requires.txt
+src/gitlab_mcp.egg-info/top_level.txt
+tests/test_gitlab_mcp.py
