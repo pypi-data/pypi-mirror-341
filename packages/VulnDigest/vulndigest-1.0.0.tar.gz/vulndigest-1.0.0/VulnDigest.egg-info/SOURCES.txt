@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+VulnDigest.egg-info/PKG-INFO
+VulnDigest.egg-info/SOURCES.txt
+VulnDigest.egg-info/dependency_links.txt
+VulnDigest.egg-info/entry_points.txt
+VulnDigest.egg-info/requires.txt
+VulnDigest.egg-info/top_level.txt
+vulndigest/__init__.py
+vulndigest/__main__.py
+vulndigest/vulndigest_cli.py

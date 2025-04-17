@@ -1,0 +1,2 @@
+[console_scripts]
+vulndigest = vulndigest_cli:main
