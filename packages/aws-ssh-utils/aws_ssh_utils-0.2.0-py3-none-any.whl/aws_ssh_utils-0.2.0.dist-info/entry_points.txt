@@ -1,0 +1,2 @@
+[console_scripts]
+aws_ssh = aws_ssh_utils.ssh:cli
