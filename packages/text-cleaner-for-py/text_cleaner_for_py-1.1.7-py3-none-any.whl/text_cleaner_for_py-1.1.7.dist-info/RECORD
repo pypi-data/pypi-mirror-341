@@ -1,0 +1,13 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_advanced_cleaner.py,sha256=oGb6Lo7E74US3s8Q43b_Rbl2FvEOH7_cdX6njCf0GVw,3192
+tests/test_cleaner.py,sha256=i5JrZxb4KeTfUPwyQ82vnw_-3lDUUD6P2O03vqbR_qA,2475
+tests/test_cleaner_v1.py,sha256=KlZvu9L5bok2B2SJtTQHFHehGYov7flpxcezznTwuXY,1702
+text_cleaner_for_py/__init__.py,sha256=uO3v0Td6NGyyR1dMcFMm2JGzBHjbHtHfQWmojizUF_Q,920
+text_cleaner_for_py/advanced_cleaner.py,sha256=yZPSUjIytGF7PpnLeSWUs221aZBnczTJq8clSzF4J3k,9626
+text_cleaner_for_py/cleaner.py,sha256=j2CfOrQw5hz1_g-Ie6vugJ1macsYqs0Lh2dL0Ym0KSI,2673
+text_cleaner_for_py/cleaner_v1.py,sha256=D8AOspHyMKf-nsVgTg6DVUUs6o-K914nM0ufuu0GYnk,2288
+text_cleaner_for_py-1.1.7.dist-info/licenses/LICENSE,sha256=qUe2dLXgDA9WwA2kqBzCHGjvNLB6eihF1h7uXDkf6d0,126
+text_cleaner_for_py-1.1.7.dist-info/METADATA,sha256=CQFiGiL5BNLiQNBETPbZdrhP3LA0IjK6MjBckzbcxBU,7067
+text_cleaner_for_py-1.1.7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+text_cleaner_for_py-1.1.7.dist-info/top_level.txt,sha256=oov4Z8SjVjXeOOVILaltxTNX-6_OaB-o6HXmY3lldLw,26
+text_cleaner_for_py-1.1.7.dist-info/RECORD,,
