@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+pause/__init__.py
+pause/cmd_pause.py
+pause/pause.py
+pauseinpython.egg-info/PKG-INFO
+pauseinpython.egg-info/SOURCES.txt
+pauseinpython.egg-info/dependency_links.txt
+pauseinpython.egg-info/top_level.txt

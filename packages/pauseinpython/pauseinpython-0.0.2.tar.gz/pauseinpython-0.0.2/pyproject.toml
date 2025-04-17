@@ -1,0 +1,5 @@
+[project]
+name = "pauseinpython"
+version = "0.0.2"
+description = "'pause' command in Python"
+readme = "README.md"
