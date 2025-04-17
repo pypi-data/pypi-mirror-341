@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Run pytest (uv)",
+        "type": "python",
+        "request": "launch",
+        "module": "pytest",
+        "justMyCode": false,
+        "env": {
+          "PYTHONPATH": "."
+        },
+        "args": [
+          "tests"
+        ],
+        "console": "integratedTerminal"
+      }
+    ]
+  }
+  
