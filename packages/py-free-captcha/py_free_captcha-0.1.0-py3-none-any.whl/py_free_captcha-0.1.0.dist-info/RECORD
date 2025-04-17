@@ -1,0 +1,9 @@
+freecaptcha/__init__.py,sha256=7PSq_Fixojo6-IXJh_NLTB9E915CP2qsGVSjBNTzJmk,136
+freecaptcha/api_server.py,sha256=Xqpf3_WRWXjzgb_jgCz7ko_lMj3MUvvpi30Gn6WpfdA,2059
+freecaptcha/image_generator.py,sha256=boJe9IPzQgweftpmWzysetTb_fKw0NmL1szDopAOm98,5288
+freecaptcha/noise_adder.py,sha256=1fjwhs21E2Gj_7L2Ie1vDtD-fTUpY9Px6in_q_CjSS4,1089
+py_free_captcha-0.1.0.dist-info/licenses/LICENSE,sha256=mFDYR2lMlrmpHf2_Oqi1c-AOBJD6crwpHuYuZi1TcRU,1068
+py_free_captcha-0.1.0.dist-info/METADATA,sha256=KMx5VcCTV4DT2Ii7SwU16XfAdPjBRwY_2HTxHI3V17A,1485
+py_free_captcha-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+py_free_captcha-0.1.0.dist-info/top_level.txt,sha256=Y-nPWPcm1_HwNR8xsK1RMeTy_H5_guwnMwMK39De0Ts,12
+py_free_captcha-0.1.0.dist-info/RECORD,,
