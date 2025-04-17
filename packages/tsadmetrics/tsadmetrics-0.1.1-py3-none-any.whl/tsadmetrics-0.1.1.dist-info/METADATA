@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tsadmetrics
+Version: 0.1.1
+Summary: Librería para evaluación de detección de anomalías en series temporales
+Home-page: https://github.com/pathsko/TSADmetrics
+Author: Pedro Rafael Velasco Priego
+Author-email: Pedro Rafael Velasco Priego <i12veprp@uco.es>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
