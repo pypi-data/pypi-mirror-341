@@ -1,0 +1,89 @@
+name: Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+  - cron: "0 5 * * *"
+
+# Cancel previous runs that have not completed
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  pytest:
+    strategy:
+      matrix:
+        os:
+        - macos-latest
+        - ubuntu-latest
+        - windows-latest
+
+        python-version:
+        # These should match pyproject.toml
+        - "3.9"
+        - "3.10"
+        - "3.11"
+        - "3.12"
+        - "3.13"
+
+      fail-fast: false
+
+    runs-on: ${{ matrix.os }}
+    name: ${{ matrix.os }}-py${{ matrix.python-version }}
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        lfs: true
+
+    - uses: astral-sh/setup-uv@v5
+      with:
+        cache-dependency-glob: "**/pyproject.toml"
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install the Python package and dependencies
+      run: uv pip install --upgrade .[tests]
+
+    - name: Clone the transport-data/registry repo
+      run: coverage run -m transport_data store clone
+
+    - name: Run test suite using pytest
+      run: |
+        pytest transport_data \
+          --trace-config --color=yes -rA -vv --durations=20 \
+          --cov-append --cov-report=term --cov-report=xml \
+          --numprocesses=auto --dist=loadscope
+      shell: bash
+
+    - name: Upload test coverage to Codecov.io
+      uses: codecov/codecov-action@v5
+      with: { token: "${{ secrets.CODECOV_TOKEN }}" }
+
+  pre-commit:
+    name: Code quality
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: astral-sh/setup-uv@v5
+      with:
+        cache-dependency-glob: |
+          **/pyproject.toml
+          **/.pre-commit-config.yaml
+        python-version: "3.13"
+    - uses: actions/cache@v4
+      with:
+        path: ~/.cache/pre-commit
+        key: ${{ github.job }}|${{ hashFiles('.pre-commit-config.yaml') }}
+        # Use 'true' here to force cache recreation
+        lookup-only: ${{ github.event_name == 'schedule' }}
+    - name: Run pre-commit
+      run: |
+        uvx --with=pre-commit-uv \
+          pre-commit run \
+          --all-files --color=always --show-diff-on-failure --verbose
