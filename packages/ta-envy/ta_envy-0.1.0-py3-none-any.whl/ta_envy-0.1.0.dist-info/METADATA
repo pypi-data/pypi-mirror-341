@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: ta-envy
+Version: 0.1.0
+Summary: A minimal environment variable loader with validation and typing
+Author: Thiago Ananias
+License: MIT
+License-File: LICENSE
+Keywords: configuration,dotenv,env,settings
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: build>=1.2.2.post1
+Description-Content-Type: text/markdown
+
+# envy
+
+**ta-envy** is a minimal, dependency-free environment variable loader for Python.  
+It reads `.env` files, validates required variables, and converts values to the correct type.
+
+## 🚀 Features
+
+- ✅ Load variables from `.env` files
+- ✅ Required key validation
+- ✅ Automatic type conversion (str, int, bool, list)
+- ✅ No external dependencies
+
+## 📦 Installation
+
+```bash
+uv venv
+source .venv/bin/activate
+uv pip install .
