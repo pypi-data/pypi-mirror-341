@@ -1,0 +1,325 @@
+{% load static %}
+<div class="md-editor-v3-wrapper">
+    <textarea id="{{ editorId }}" name="{{ name }}" style="display: none;">{{ content }}</textarea>
+</div>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+<script src="https://unpkg.com/md-editor-v3@5.4.5/lib/umd/index.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/md-editor-v3@5.4.5/lib/style.css">
+
+<script>
+    const { createApp } = Vue;
+    const { MdEditor } = MdEditorV3;
+
+    createApp({
+        components: {
+            MdEditor
+        },
+        data() {
+            return {
+                text: document.getElementById('{{ editorId }}').value,
+                editorId: '{{ editorId }}',
+                placeholder: '{{ placeholder }}',
+                height: {{ height }},
+                width: '{{ width }}',
+                theme: '{{ theme }}',
+                toolbars: {{ toolbars|safe }},
+                scrollAuto: {{ scrollAuto|lower }},
+                preview: {{ preview|lower }},
+                htmlPreview: {{ htmlPreview|lower }},
+                language: '{{ language }}',
+                noPrettier: {{ noPrettier|lower }},
+                noUploadImg: {{ noUploadImg|lower }},
+                noIframeSandbox: {{ noIframeSandbox|lower }},
+                sanitize: {{ sanitize|lower }},
+                noKatex: {{ noKatex|lower }},
+                noMermaid: {{ noMermaid|lower }},
+                noHighlight: {{ noHighlight|lower }},
+                noImgZoom: {{ noImgZoom|lower }},
+                noEmojiToolbar: {{ noEmojiToolbar|lower }},
+                customIcon: {{ customIcon|safe }},
+                customToolbar: {{ customToolbar|safe }},
+                toolbarsExclude: {{ toolbarsExclude|safe }},
+                noImgMark: {{ noImgMark|lower }},
+                noImgTitle: {{ noImgTitle|lower }},
+                noToc: {{ noToc|lower }},
+                noLinkTitle: {{ noLinkTitle|lower }},
+                noLineNumber: {{ noLineNumber|lower }},
+                noCodeLineNumber: {{ noCodeLineNumber|lower }},
+                noPreviewLineNumber: {{ noPreviewLineNumber|lower }},
+                noPreviewCodeLineNumber: {{ noPreviewCodeLineNumber|lower }},
+                noPreviewCodeHighlight: {{ noPreviewCodeHighlight|lower }},
+                noPreviewImgZoom: {{ noPreviewImgZoom|lower }},
+                noPreviewImgTitle: {{ noPreviewImgTitle|lower }},
+                noPreviewToc: {{ noPreviewToc|lower }},
+                noPreviewLinkTitle: {{ noPreviewLinkTitle|lower }},
+                noPreviewMermaid: {{ noPreviewMermaid|lower }},
+                noPreviewKatex: {{ noPreviewKatex|lower }},
+                noPreviewHighlight: {{ noPreviewHighlight|lower }},
+                noPreviewImgMark: {{ noPreviewImgMark|lower }},
+                noPreviewEmoji: {{ noPreviewEmoji|lower }},
+                noPreviewCopy: {{ noPreviewCopy|lower }},
+                noPreviewHeadingAnchor: {{ noPreviewHeadingAnchor|lower }},
+                noPreviewTaskList: {{ noPreviewTaskList|lower }},
+                noPreviewSequenceDiagrams: {{ noPreviewSequenceDiagrams|lower }},
+                noPreviewFlowChart: {{ noPreviewFlowChart|lower }},
+                noPreviewDefList: {{ noPreviewDefList|lower }},
+                noPreviewFootnote: {{ noPreviewFootnote|lower }},
+                noPreviewSub: {{ noPreviewSub|lower }},
+                noPreviewSup: {{ noPreviewSup|lower }},
+                noPreviewMark: {{ noPreviewMark|lower }},
+                noPreviewAlert: {{ noPreviewAlert|lower }},
+                noPreviewAbbr: {{ noPreviewAbbr|lower }},
+                noPreviewDetails: {{ noPreviewDetails|lower }},
+                noPreviewHr: {{ noPreviewHr|lower }},
+                noPreviewTable: {{ noPreviewTable|lower }},
+                noPreviewTableAlign: {{ noPreviewTableAlign|lower }},
+                noPreviewTableHead: {{ noPreviewTableHead|lower }},
+                noPreviewTableBody: {{ noPreviewTableBody|lower }},
+                noPreviewTableFoot: {{ noPreviewTableFoot|lower }},
+                noPreviewTableCaption: {{ noPreviewTableCaption|lower }},
+                noPreviewTableColgroup: {{ noPreviewTableColgroup|lower }},
+                noPreviewTableCol: {{ noPreviewTableCol|lower }},
+                noPreviewTableTr: {{ noPreviewTableTr|lower }},
+                noPreviewTableTd: {{ noPreviewTableTd|lower }},
+                noPreviewTableTh: {{ noPreviewTableTh|lower }},
+                noPreviewTableBorder: {{ noPreviewTableBorder|lower }},
+                noPreviewTableStripe: {{ noPreviewTableStripe|lower }},
+                noPreviewTableHover: {{ noPreviewTableHover|lower }},
+                noPreviewTableSmall: {{ noPreviewTableSmall|lower }},
+                noPreviewTableResponsive: {{ noPreviewTableResponsive|lower }},
+                noPreviewTableDark: {{ noPreviewTableDark|lower }},
+                noPreviewTableLight: {{ noPreviewTableLight|lower }},
+                noPreviewTablePrimary: {{ noPreviewTablePrimary|lower }},
+                noPreviewTableSecondary: {{ noPreviewTableSecondary|lower }},
+                noPreviewTableSuccess: {{ noPreviewTableSuccess|lower }},
+                noPreviewTableInfo: {{ noPreviewTableInfo|lower }},
+                noPreviewTableWarning: {{ noPreviewTableWarning|lower }},
+                noPreviewTableDanger: {{ noPreviewTableDanger|lower }},
+                noPreviewTableActive: {{ noPreviewTableActive|lower }},
+                noPreviewTableDisabled: {{ noPreviewTableDisabled|lower }},
+                noPreviewTableBorderless: {{ noPreviewTableBorderless|lower }},
+                noPreviewTableBordered: {{ noPreviewTableBordered|lower }},
+                noPreviewTableCompact: {{ noPreviewTableCompact|lower }},
+                noPreviewTableCondensed: {{ noPreviewTableCondensed|lower }},
+                noPreviewTableHorizontal: {{ noPreviewTableHorizontal|lower }},
+                noPreviewTableVertical: {{ noPreviewTableVertical|lower }},
+                noPreviewTableMiddle: {{ noPreviewTableMiddle|lower }},
+                noPreviewTableBottom: {{ noPreviewTableBottom|lower }},
+                noPreviewTableTop: {{ noPreviewTableTop|lower }},
+                noPreviewTableNowrap: {{ noPreviewTableNowrap|lower }},
+                noPreviewTableTruncate: {{ noPreviewTableTruncate|lower }},
+                noPreviewTableBreak: {{ noPreviewTableBreak|lower }},
+                noPreviewTableEllipsis: {{ noPreviewTableEllipsis|lower }},
+                noPreviewTableMonospace: {{ noPreviewTableMonospace|lower }},
+                noPreviewTableNormal: {{ noPreviewTableNormal|lower }},
+                noPreviewTableBold: {{ noPreviewTableBold|lower }},
+                noPreviewTableItalic: {{ noPreviewTableItalic|lower }},
+                noPreviewTableUnderline: {{ noPreviewTableUnderline|lower }},
+                noPreviewTableStrike: {{ noPreviewTableStrike|lower }},
+                noPreviewTableMuted: {{ noPreviewTableMuted|lower }},
+                noPreviewTableWhite: {{ noPreviewTableWhite|lower }},
+                noPreviewTableBlack: {{ noPreviewTableBlack|lower }},
+                noPreviewTableGray: {{ noPreviewTableGray|lower }},
+                noPreviewTableGrayDark: {{ noPreviewTableGrayDark|lower }},
+                noPreviewTableGrayLight: {{ noPreviewTableGrayLight|lower }},
+                noPreviewTableGrayLighter: {{ noPreviewTableGrayLighter|lower }},
+                noPreviewTableGrayLightest: {{ noPreviewTableGrayLightest|lower }},
+                noPreviewTableGrayDarker: {{ noPreviewTableGrayDarker|lower }},
+                noPreviewTableGrayDarkest: {{ noPreviewTableGrayDarkest|lower }},
+                noPreviewTableTransparent: {{ noPreviewTableTransparent|lower }},
+                noPreviewTableInherit: {{ noPreviewTableInherit|lower }},
+                noPreviewTableInitial: {{ noPreviewTableInitial|lower }},
+                noPreviewTableUnset: {{ noPreviewTableUnset|lower }},
+                noPreviewTableRevert: {{ noPreviewTableRevert|lower }},
+                noPreviewTableCurrentcolor: {{ noPreviewTableCurrentcolor|lower }},
+                noPreviewTableNone: {{ noPreviewTableNone|lower }},
+                noPreviewTableHidden: {{ noPreviewTableHidden|lower }},
+                noPreviewTableVisible: {{ noPreviewTableVisible|lower }},
+                noPreviewTableCollapse: {{ noPreviewTableCollapse|lower }},
+                noPreviewTableSeparate: {{ noPreviewTableSeparate|lower }},
+                noPreviewTableAuto: {{ noPreviewTableAuto|lower }},
+                noPreviewTableDefault: {{ noPreviewTableDefault|lower }},
+                noPreviewTableInline: {{ noPreviewTableInline|lower }},
+                noPreviewTableBlock: {{ noPreviewTableBlock|lower }},
+                noPreviewTableInlineBlock: {{ noPreviewTableInlineBlock|lower }},
+                noPreviewTableFlex: {{ noPreviewTableFlex|lower }},
+                noPreviewTableInlineFlex: {{ noPreviewTableInlineFlex|lower }},
+                noPreviewTableGrid: {{ noPreviewTableGrid|lower }},
+                noPreviewTableInlineGrid: {{ noPreviewTableInlineGrid|lower }},
+                noPreviewTableTable: {{ noPreviewTableTable|lower }},
+                noPreviewTableTableRow: {{ noPreviewTableTableRow|lower }},
+                noPreviewTableTableCell: {{ noPreviewTableTableCell|lower }},
+                noPreviewTableTableColumn: {{ noPreviewTableTableColumn|lower }},
+                noPreviewTableTableColumnGroup: {{ noPreviewTableTableColumnGroup|lower }},
+                noPreviewTableTableHeader: {{ noPreviewTableTableHeader|lower }},
+                noPreviewTableTableHeaderGroup: {{ noPreviewTableTableHeaderGroup|lower }},
+                noPreviewTableTableFooter: {{ noPreviewTableTableFooter|lower }},
+                noPreviewTableTableFooterGroup: {{ noPreviewTableTableFooterGroup|lower }},
+                noPreviewTableTableBody: {{ noPreviewTableTableBody|lower }},
+                noPreviewTableTableBodyGroup: {{ noPreviewTableTableBodyGroup|lower }},
+                noPreviewTableTableRowGroup: {{ noPreviewTableTableRowGroup|lower }},
+                noPreviewTableTableRowHeader: {{ noPreviewTableTableRowHeader|lower }},
+                noPreviewTableTableRowFooter: {{ noPreviewTableTableRowFooter|lower }},
+                noPreviewTableTableColumnHeader: {{ noPreviewTableTableColumnHeader|lower }},
+                noPreviewTableTableColumnFooter: {{ noPreviewTableTableColumnFooter|lower }},
+            }
+        },
+        mounted() {
+            this.$refs.mdEditor.$el.addEventListener('input', () => {
+                document.getElementById(this.editorId).value = this.$refs.mdEditor.getHtml();
+            });
+        },
+        template: `
+            <md-editor
+                ref="mdEditor"
+                v-model="text"
+                :editorId="editorId"
+                :placeholder="placeholder"
+                :height="height"
+                :width="width"
+                :theme="theme"
+                :toolbars="toolbars"
+                :scrollAuto="scrollAuto"
+                :preview="preview"
+                :htmlPreview="htmlPreview"
+                :language="language"
+                :noPrettier="noPrettier"
+                :noUploadImg="noUploadImg"
+                :noIframeSandbox="noIframeSandbox"
+                :sanitize="sanitize"
+                :noKatex="noKatex"
+                :noMermaid="noMermaid"
+                :noHighlight="noHighlight"
+                :noImgZoom="noImgZoom"
+                :noEmojiToolbar="noEmojiToolbar"
+                :customIcon="customIcon"
+                :customToolbar="customToolbar"
+                :toolbarsExclude="toolbarsExclude"
+                :noImgMark="noImgMark"
+                :noImgTitle="noImgTitle"
+                :noToc="noToc"
+                :noLinkTitle="noLinkTitle"
+                :noLineNumber="noLineNumber"
+                :noCodeLineNumber="noCodeLineNumber"
+                :noPreviewLineNumber="noPreviewLineNumber"
+                :noPreviewCodeLineNumber="noPreviewCodeLineNumber"
+                :noPreviewCodeHighlight="noPreviewCodeHighlight"
+                :noPreviewImgZoom="noPreviewImgZoom"
+                :noPreviewImgTitle="noPreviewImgTitle"
+                :noPreviewToc="noPreviewToc"
+                :noPreviewLinkTitle="noPreviewLinkTitle"
+                :noPreviewMermaid="noPreviewMermaid"
+                :noPreviewKatex="noPreviewKatex"
+                :noPreviewHighlight="noPreviewHighlight"
+                :noPreviewImgMark="noPreviewImgMark"
+                :noPreviewEmoji="noPreviewEmoji"
+                :noPreviewCopy="noPreviewCopy"
+                :noPreviewHeadingAnchor="noPreviewHeadingAnchor"
+                :noPreviewTaskList="noPreviewTaskList"
+                :noPreviewSequenceDiagrams="noPreviewSequenceDiagrams"
+                :noPreviewFlowChart="noPreviewFlowChart"
+                :noPreviewDefList="noPreviewDefList"
+                :noPreviewFootnote="noPreviewFootnote"
+                :noPreviewSub="noPreviewSub"
+                :noPreviewSup="noPreviewSup"
+                :noPreviewMark="noPreviewMark"
+                :noPreviewAlert="noPreviewAlert"
+                :noPreviewAbbr="noPreviewAbbr"
+                :noPreviewDetails="noPreviewDetails"
+                :noPreviewHr="noPreviewHr"
+                :noPreviewTable="noPreviewTable"
+                :noPreviewTableAlign="noPreviewTableAlign"
+                :noPreviewTableHead="noPreviewTableHead"
+                :noPreviewTableBody="noPreviewTableBody"
+                :noPreviewTableFoot="noPreviewTableFoot"
+                :noPreviewTableCaption="noPreviewTableCaption"
+                :noPreviewTableColgroup="noPreviewTableColgroup"
+                :noPreviewTableCol="noPreviewTableCol"
+                :noPreviewTableTr="noPreviewTableTr"
+                :noPreviewTableTd="noPreviewTableTd"
+                :noPreviewTableTh="noPreviewTableTh"
+                :noPreviewTableBorder="noPreviewTableBorder"
+                :noPreviewTableStripe="noPreviewTableStripe"
+                :noPreviewTableHover="noPreviewTableHover"
+                :noPreviewTableSmall="noPreviewTableSmall"
+                :noPreviewTableResponsive="noPreviewTableResponsive"
+                :noPreviewTableDark="noPreviewTableDark"
+                :noPreviewTableLight="noPreviewTableLight"
+                :noPreviewTablePrimary="noPreviewTablePrimary"
+                :noPreviewTableSecondary="noPreviewTableSecondary"
+                :noPreviewTableSuccess="noPreviewTableSuccess"
+                :noPreviewTableInfo="noPreviewTableInfo"
+                :noPreviewTableWarning="noPreviewTableWarning"
+                :noPreviewTableDanger="noPreviewTableDanger"
+                :noPreviewTableActive="noPreviewTableActive"
+                :noPreviewTableDisabled="noPreviewTableDisabled"
+                :noPreviewTableBorderless="noPreviewTableBorderless"
+                :noPreviewTableBordered="noPreviewTableBordered"
+                :noPreviewTableCompact="noPreviewTableCompact"
+                :noPreviewTableCondensed="noPreviewTableCondensed"
+                :noPreviewTableHorizontal="noPreviewTableHorizontal"
+                :noPreviewTableVertical="noPreviewTableVertical"
+                :noPreviewTableMiddle="noPreviewTableMiddle"
+                :noPreviewTableBottom="noPreviewTableBottom"
+                :noPreviewTableTop="noPreviewTableTop"
+                :noPreviewTableNowrap="noPreviewTableNowrap"
+                :noPreviewTableTruncate="noPreviewTableTruncate"
+                :noPreviewTableBreak="noPreviewTableBreak"
+                :noPreviewTableEllipsis="noPreviewTableEllipsis"
+                :noPreviewTableMonospace="noPreviewTableMonospace"
+                :noPreviewTableNormal="noPreviewTableNormal"
+                :noPreviewTableBold="noPreviewTableBold"
+                :noPreviewTableItalic="noPreviewTableItalic"
+                :noPreviewTableUnderline="noPreviewTableUnderline"
+                :noPreviewTableStrike="noPreviewTableStrike"
+                :noPreviewTableMuted="noPreviewTableMuted"
+                :noPreviewTableWhite="noPreviewTableWhite"
+                :noPreviewTableBlack="noPreviewTableBlack"
+                :noPreviewTableGray="noPreviewTableGray"
+                :noPreviewTableGrayDark="noPreviewTableGrayDark"
+                :noPreviewTableGrayLight="noPreviewTableGrayLight"
+                :noPreviewTableGrayLighter="noPreviewTableGrayLighter"
+                :noPreviewTableGrayLightest="noPreviewTableGrayLightest"
+                :noPreviewTableGrayDarker="noPreviewTableGrayDarker"
+                :noPreviewTableGrayDarkest="noPreviewTableGrayDarkest"
+                :noPreviewTableTransparent="noPreviewTableTransparent"
+                :noPreviewTableInherit="noPreviewTableInherit"
+                :noPreviewTableInitial="noPreviewTableInitial"
+                :noPreviewTableUnset="noPreviewTableUnset"
+                :noPreviewTableRevert="noPreviewTableRevert"
+                :noPreviewTableCurrentcolor="noPreviewTableCurrentcolor"
+                :noPreviewTableNone="noPreviewTableNone"
+                :noPreviewTableHidden="noPreviewTableHidden"
+                :noPreviewTableVisible="noPreviewTableVisible"
+                :noPreviewTableCollapse="noPreviewTableCollapse"
+                :noPreviewTableSeparate="noPreviewTableSeparate"
+                :noPreviewTableAuto="noPreviewTableAuto"
+                :noPreviewTableDefault="noPreviewTableDefault"
+                :noPreviewTableInline="noPreviewTableInline"
+                :noPreviewTableBlock="noPreviewTableBlock"
+                :noPreviewTableInlineBlock="noPreviewTableInlineBlock"
+                :noPreviewTableFlex="noPreviewTableFlex"
+                :noPreviewTableInlineFlex="noPreviewTableInlineFlex"
+                :noPreviewTableGrid="noPreviewTableGrid"
+                :noPreviewTableInlineGrid="noPreviewTableInlineGrid"
+                :noPreviewTableTable="noPreviewTableTable"
+                :noPreviewTableTableRow="noPreviewTableTableRow"
+                :noPreviewTableTableCell="noPreviewTableTableCell"
+                :noPreviewTableTableColumn="noPreviewTableTableColumn"
+                :noPreviewTableTableColumnGroup="noPreviewTableTableColumnGroup"
+                :noPreviewTableTableHeader="noPreviewTableTableHeader"
+                :noPreviewTableTableHeaderGroup="noPreviewTableTableHeaderGroup"
+                :noPreviewTableTableFooter="noPreviewTableTableFooter"
+                :noPreviewTableTableFooterGroup="noPreviewTableTableFooterGroup"
+                :noPreviewTableTableBody="noPreviewTableTableBody"
+                :noPreviewTableTableBodyGroup="noPreviewTableTableBodyGroup"
+                :noPreviewTableTableRowGroup="noPreviewTableTableRowGroup"
+                :noPreviewTableTableRowHeader="noPreviewTableTableRowHeader"
+                :noPreviewTableTableRowFooter="noPreviewTableTableRowFooter"
+                :noPreviewTableTableColumnHeader="noPreviewTableTableColumnHeader"
+                :noPreviewTableTableColumnFooter="noPreviewTableTableColumnFooter"
+            />
+        `
+    }).mount('.md-editor-v3-wrapper');
+</script>
