@@ -1,0 +1,10 @@
+[console_scripts]
+dstools-askap-preprocess=dstools.cli.askap_preprocess:main
+dstools-atca-cal=dstools.cli.atca_cal:main
+dstools-create-model=dstools.cli.create_model:main
+dstools-extract-ds=dstools.cli.extract_ds:main
+dstools-insert-model=dstools.cli.insert_model:main
+dstools-plot-ds=dstools.cli.plot_ds:main
+dstools-selfcal=dstools.cli.selfcal:main
+dstools-subtract-model=dstools.cli.subtract_model:main
+
