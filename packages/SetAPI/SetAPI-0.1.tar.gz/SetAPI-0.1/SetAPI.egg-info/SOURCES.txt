@@ -1,0 +1,7 @@
+README.md
+setup.py
+MiniAPI/__init__.py
+SetAPI.egg-info/PKG-INFO
+SetAPI.egg-info/SOURCES.txt
+SetAPI.egg-info/dependency_links.txt
+SetAPI.egg-info/top_level.txt
