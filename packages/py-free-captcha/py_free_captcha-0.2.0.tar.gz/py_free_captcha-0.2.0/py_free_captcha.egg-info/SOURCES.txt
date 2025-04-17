@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+freecaptcha/__init__.py
+freecaptcha/api_server.py
+freecaptcha/image_generator.py
+freecaptcha/noise_adder.py
+py_free_captcha.egg-info/PKG-INFO
+py_free_captcha.egg-info/SOURCES.txt
+py_free_captcha.egg-info/dependency_links.txt
+py_free_captcha.egg-info/requires.txt
+py_free_captcha.egg-info/top_level.txt
