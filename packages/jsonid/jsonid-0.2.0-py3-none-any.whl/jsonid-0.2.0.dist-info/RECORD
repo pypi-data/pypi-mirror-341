@@ -1,0 +1,13 @@
+jsonid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsonid/helpers.py,sha256=N6QOKm1oNmJMSRBthe_YWCCNlHkqhSVYaEN8VpIKgHY,730
+jsonid/jsonid.py,sha256=8vN_11owa3ZbfJAR95VMZUPTBpeq3mI7XEJnZn99EyM,5502
+jsonid/registry.py,sha256=3Mvk6HslSnGVvmU3pbV-goXIERyYRmyHFiY4gteO_1I,6991
+jsonid/registry_data.py,sha256=8P7VXxg1vxN65Efkn4EAEaNKdcZLerq1Wgb9wMb3C54,16830
+jsonid/registry_matchers.py,sha256=IhbvsEcjhd4sx-PTupWMm9M59Bzvgtcu3pKFStz4xqk,3480
+jsonid/version.py,sha256=uxwIcoiumkpy71o4MXGOBxHR8TG1XIixkD3mAeSkru8,701
+jsonid-0.2.0.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsonid-0.2.0.dist-info/METADATA,sha256=D39ib9pNUUb5oEppPs6U16ddlgZMt84SpHs233pWu-k,11644
+jsonid-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+jsonid-0.2.0.dist-info/entry_points.txt,sha256=nYxBMCMcc0jYWCU1B8uRuciRtaVjPkVZ-x947H9FMyk,73
+jsonid-0.2.0.dist-info/top_level.txt,sha256=vENSttXyhLsIslprx4SfhLD8Q4U5nJuZE8JKBbwGisc,7
+jsonid-0.2.0.dist-info/RECORD,,
