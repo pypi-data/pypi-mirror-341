@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/adapters/in/__init__.py
+src/application/__init__.py
+src/core/__init__.py
+src/ports/in/__init__.py
+src/surrodocs_collector.egg-info/PKG-INFO
+src/surrodocs_collector.egg-info/SOURCES.txt
+src/surrodocs_collector.egg-info/dependency_links.txt
+src/surrodocs_collector.egg-info/requires.txt
+src/surrodocs_collector.egg-info/top_level.txt

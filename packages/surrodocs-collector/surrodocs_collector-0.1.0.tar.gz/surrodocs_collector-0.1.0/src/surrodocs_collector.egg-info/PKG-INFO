@@ -1,0 +1,72 @@
+Metadata-Version: 2.4
+Name: surrodocs-collector
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi[standard]>=0.115.12
+Dynamic: license-file
+
+# surrodocs-collector
+
+
+
+## 기술 스택
+- Python 3.12
+- UV (Python 패키지 관리자)
+- Docker
+- GitLab CI/CD
+- Pytest (테스트 프레임워크)
+
+## 개발 환경 설정
+### 패키지 관리
+- UV를 사용하여 Python 패키지 관리
+- 의존성 관리는 `pyproject.toml`을 통해 수행
+
+### 코드 스타일 및 품질
+- Ruff: 코드 린터 및 포맷터
+- Line 길이: 120자
+- Pytest: 단위 테스트 및 통합 테스트
+- GitLab CI: 지속적 통합/배포
+
+## 프로젝트 구조
+헥사고날 아키텍처를 따르는 폴더 구조:
+
+```
+src/
+├── core/           # 도메인 로직과 엔티티
+├── ports/          # 인터페이스 정의 (입력/출력 포트)
+│   ├── in/         # 입력 포트 인터페이스 (서비스 요청)
+│   └── out/        # 출력 포트 인터페이스 (서비스 응답)
+├── adapters/       # 외부 시스템과의 통신 구현
+│   ├── in/         # 입력 어댑터 (API, CLI 등)
+│   └── out/        # 출력 어댑터 (DB, 외부 서비스 등)
+└── application/    # 유스케이스 구현
+
+tests/
+├── core/           # 도메인 로직 테스트
+├── ports/          # 포트 인터페이스 테스트
+│   ├── in/         # 입력 포트 테스트
+│   └── out/        # 출력 포트 테스트
+├── adapters/       # 어댑터 테스트
+│   ├── in/         # 입력 어댑터 테스트
+│   └── out/        # 출력 어댑터 테스트
+└── application/    # 유스케이스 테스트
+```
+
+## 개발 가이드라인
+1. 코드 스타일
+   - Ruff를 사용하여 코드 린팅 및 포맷팅
+   - 최대 라인 길이: 120자
+
+2. 테스트
+   - Pytest를 사용한 단위 테스트 작성
+   - 테스트 커버리지 유지
+   - 각 모듈별로 해당하는 테스트 파일 작성
+   - 테스트 파일명은 `test_*.py` 형식으로 작성
+
+3. CI/CD
+   - GitLab CI를 통한 자동화된 빌드 및 테스트
+   - Docker 컨테이너화된 애플리케이션 배포
+ 
