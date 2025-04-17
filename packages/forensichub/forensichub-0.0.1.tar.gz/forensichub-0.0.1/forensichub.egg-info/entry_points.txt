@@ -1,0 +1,2 @@
+[console_scripts]
+forhub = ForensicHub.cli:main
