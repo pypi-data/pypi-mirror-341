@@ -1,0 +1,79 @@
+Metadata-Version: 2.4
+Name: balance_engine
+Version: 0.0.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Manufacturing
+Requires-Dist: matplotlib>=3.10.1
+Requires-Dist: pulp>=3.1.1
+Requires-Dist: scipy>=1.15.2
+Requires-Dist: tabulate>=0.9.0
+Requires-Dist: pytest ; extra == 'tests'
+Provides-Extra: tests
+Summary: Production planning and optimization engine using linear programming to balance supply with demand while minimizing costs and respecting resource constraints
+Keywords: optimization,production-planning,linear-programming,supply-chain,inventory-management
+Author: Fernando Bryan Reza Campos <fer.rezac@outlook.com>, Perla Edith Lugo Hernández <edithlugo@gmail.com>, Kevin Alexis Martínez Sánchez <xdkevinalexisxd120@gmail.com>, Fernando Ramírez López <frl23112001@gmail.com>
+Author-email: Fernando Bryan Reza Campos <fer.rezac@outlook.com>, Perla Edith Lugo Hernández <edithlugo@gmail.com>, Kevin Alexis Martínez Sánchez <xdkevinalexisxd120@gmail.com>, Fernando Ramírez López <frl23112001@gmail.com>
+License: MIT
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Repository, https://github.com/Yrrrrrf/balance_engine
+Project-URL: Bug Tracker, https://github.com/Yrrrrrf/balance_engine/issues
+
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/Yrrrrrf/balance_engine/refs/heads/main/resources/img/success.png" alt="Balance Engine Optimization Icon" width="128" height="128">
+  <div align="center">Balance Engine</div>
+</h1>
+
+> A Python/Rust module for production planning and optimization using linear programming.
+
+**Balance Engine** automates calculations to balance production with demand, allowing for precise and efficient planning while reducing costs. It uses linear programming modeling to optimize resource allocation in limited production cycles.
+
+The tool handles key production variables including:
+- Yielded Supply
+- On Hand (Finished Goods)
+- Safety Stock Targets
+- Sellable Supply
+- Effective Demand
+- Total Projected Inventory Balance
+
+## Installation
+
+```bash
+pip install balance-engine
+```
+
+## Features
+
+- **Hybrid Architecture**: Core optimization in Rust for performance, Python API for flexibility
+- **Production Planning**: Balance supply with demand while respecting capacity constraints
+- **Inventory Management**: Calculate optimal inventory levels that meet safety stock requirements
+- **Resource Allocation**: Efficiently allocate limited resources in production cycles
+
+## Project Structure
+
+- **Rust Core**: High-performance linear programming solver
+- **Python Interface**: Easy-to-use API for integration with data analysis workflows
+- **Example Code**: Sample implementations for common production planning scenarios
+### Building from Source
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/balance-engine.git
+cd balance-engine
+
+# Build the package
+maturin develop
+
+# Run tests
+pytest python/tests
+```
+
+<!-- ## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. -->
+
