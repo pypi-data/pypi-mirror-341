@@ -1,0 +1,7 @@
+pycoral/__init__.py,sha256=ZLC5l7yMfSO0M1hF-zyD3gm0w-fXRRovLU2Dbukzg4s,101
+pycoral/_pywrap_coral.so,sha256=ia_mEQNbk0pT2P-U91pE-HTfYt8urpyom_5Ih7oS2rI,700520
+pycoral_pi5-2.0.8.data/data/pycoral/_pywrap_coral.so,sha256=ia_mEQNbk0pT2P-U91pE-HTfYt8urpyom_5Ih7oS2rI,700520
+pycoral_pi5-2.0.8.dist-info/METADATA,sha256=bZzp5dHeAXLM2715ObGCovhR2yZOOT3xyGMjhIwCaio,742
+pycoral_pi5-2.0.8.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pycoral_pi5-2.0.8.dist-info/top_level.txt,sha256=p97HVly4J5yE2XSmB341ZS4BSMzSnqPXIBEIJcv1gLw,8
+pycoral_pi5-2.0.8.dist-info/RECORD,,
