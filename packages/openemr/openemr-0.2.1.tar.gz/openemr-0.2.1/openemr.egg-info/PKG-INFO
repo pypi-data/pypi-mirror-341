@@ -1,0 +1,131 @@
+Metadata-Version: 2.4
+Name: openemr
+Version: 0.2.1
+Summary: An OpenEMR api connector
+Home-page: https://gitlab.com/aapjeisbaas/openemr-python
+Author: Stein van Broekhoven
+Author-email: stein@aapjeisbaas.nl
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+OpenEMR api connector in python
+
+## install
+
+```bash
+pip install openemr
+```
+
+## How to use
+
+### 1. Create oAuth2 client in OpenEMR
+
+The easiest way to create a oAuth2 client in OpenEMR is to use the devtools on the OpenEMR webserver:
+
+```bash
+apk add jq
+cd /root
+wget https://raw.githubusercontent.com/openemr/openemr-devops/refs/heads/master/docker/openemr/flex-3.20/utilities/devtools
+chmod +x devtools
+./devtools register-oauth2-client
+```
+
+This will create a oAuth2 client in OpenEMR and return the client id and client secret.
+
+For reference these are the commands in the devtools script, you can run them manually if you don't have access to the devtools or want to change some of the parameters:
+
+```bash
+echo "Registering a oauth2 client to site ${site}"
+# collect scopes
+scopes=`cat /var/www/localhost/htdocs/openemr/docker/library/api-scope-listing`
+returnJson=`curl -X POST -k -H 'Content-Type: application/json' -s https://localhost/oauth2/${site}/registration --data "{
+    \"application_type\": \"private\",
+    \"redirect_uris\":
+        [\"https://localhost:9300/swagger/oauth2-redirect.html\"],
+    \"client_name\": \"A Private App\",
+    \"token_endpoint_auth_method\": \"client_secret_post\",
+    \"contacts\": [\"me@example.org\", \"them@example.org\"],
+    \"scope\": \"${scopes}\"
+    }"`
+clientId=`echo $returnJson | jq '.client_id'`
+clientSecret=`echo $returnJson | jq '.client_secret'`
+echo "client id: ${clientId}"
+echo "client secret: ${clientSecret}"
+```
+
+### 2. Enable the client
+
+You need to enable the client in the OpenEMR web interface.
+
+
+### 3. Use the client
+
+The connection to openemr is done by creating a client, there is one this a bit different than the other clients.
+It requires a username and password, and a client id and client secret.
+This is to authenticate with the client and authorize as the user.
+
+```python
+from openemr import Client as OpenEMRClient
+
+config = {
+    'base_url': 'https://localhost',
+    'username': 'admin',
+    'password': 'password',
+    'client_id': 'client_id',
+    'client_secret': 'client_secret'
+}
+
+def connect_to_openemr(config):
+    """Create connection to OpenEMR instance"""
+    print("Connecting to OpenEMR instance: ", config['base_url'])
+
+    client = OpenEMRClient(
+        username=config.get('username'),
+        password=config.get('password'),
+        base_url=config['base_url'],
+        client_id=config.get('client_id'),
+        client_secret=config.get('client_secret'),
+    )
+    return client
+
+client = connect_to_openemr(config)
+patients = client.get_patients()
+
+print(len(patients))
+```
+
+## Scopes
+
+The scopes are the permissions that the client has been granted.
+By default we use the list below, if you want to use different scopes you can pass them as a list to the client constructor.
+
+```python
+scopes = [
+    "openid",
+    "offline_access",
+    "api:oemr",
+    "api:fhir",
+    "api:port",
+    "user/appointment.read",
+    "user/facility.read",
+    "user/patient.read",
+    "user/practitioner.read",
+    "user/Encounter.read",
+    "user/Location.read",
+]
+```
