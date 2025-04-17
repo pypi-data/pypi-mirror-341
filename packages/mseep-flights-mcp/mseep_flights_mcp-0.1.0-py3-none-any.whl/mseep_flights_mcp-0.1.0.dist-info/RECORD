@@ -1,0 +1,7 @@
+tests/__init__.py,sha256=yfGOV2bOTM_M-fK5mWh7r36C-LgAXrgXwltDsP6iVZw,31
+tests/test_duffel_api.py,sha256=XK6Hng24Tl7ng4JE2eG97dsP7e4aOsbuZMWoofRyoRI,4870
+mseep_flights_mcp-0.1.0.dist-info/METADATA,sha256=6m6xUouo2lDZulcHsHiFh8aQDvii_rQwaquJjilDM_s,275
+mseep_flights_mcp-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_flights_mcp-0.1.0.dist-info/entry_points.txt,sha256=n4cb6ZVRkSrtVdmRhkOBss1fM-Ur_i4p-38Sl7mxzeQ,45
+mseep_flights_mcp-0.1.0.dist-info/licenses/LICENSE,sha256=2vRxo-gekCWkQ9-RQW2kI-7_kno8m7hDUfwQB9XRlbY,1069
+mseep_flights_mcp-0.1.0.dist-info/RECORD,,
