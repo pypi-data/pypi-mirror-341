@@ -1,0 +1,7 @@
+PyPDF2
+python-docx
+scikit-learn
+pyspellchecker
+stanza
+nltk
+rapidfuzz

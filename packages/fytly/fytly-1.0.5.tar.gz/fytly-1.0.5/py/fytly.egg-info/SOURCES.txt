@@ -1,0 +1,8 @@
+LICENCE.txt
+README.md
+setup.py
+py/fytly.egg-info/PKG-INFO
+py/fytly.egg-info/SOURCES.txt
+py/fytly.egg-info/dependency_links.txt
+py/fytly.egg-info/requires.txt
+py/fytly.egg-info/top_level.txt
