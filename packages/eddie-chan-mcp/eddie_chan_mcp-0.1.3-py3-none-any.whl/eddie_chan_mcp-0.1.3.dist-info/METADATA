@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: eddie-chan-mcp
+Version: 0.1.3
+Summary: This is a package for fun
+License-Expression: MIT
+Keywords: mcp,cli,python
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: mcp[cli]>=1.6.0
