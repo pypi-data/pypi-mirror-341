@@ -1,0 +1,5 @@
+setup.py
+ticker_fetcher.egg-info/PKG-INFO
+ticker_fetcher.egg-info/SOURCES.txt
+ticker_fetcher.egg-info/dependency_links.txt
+ticker_fetcher.egg-info/top_level.txt
