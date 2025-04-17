@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: LudwigFIAP-package
+Version: 1.0.0
+Summary: Descricao da sua lib LudwigFIAP
+Home-page: https://github.com/LeLudwig18/LudwigFIAP
+Author: Leandro Ludwig
+Author-email: leandro.ludwig@live.com
+License: MIT
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+# LudwigFIAP
+
+A simple example library.
+
+## Installation
+cat 
+```sh
+pip install LudwigFIAP
+```
+
+## Usage
+
+```python
+from LudwigFIAP import hello_world
+
+print(hello_world())
+```

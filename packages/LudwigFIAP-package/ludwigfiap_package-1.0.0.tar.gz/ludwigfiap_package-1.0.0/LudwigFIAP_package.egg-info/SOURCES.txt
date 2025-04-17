@@ -1,0 +1,9 @@
+README.md
+setup.py
+LudwigFIAP/__init__.py
+LudwigFIAP/core.py
+LudwigFIAP_package.egg-info/PKG-INFO
+LudwigFIAP_package.egg-info/SOURCES.txt
+LudwigFIAP_package.egg-info/dependency_links.txt
+LudwigFIAP_package.egg-info/top_level.txt
+tests/test_core.py
