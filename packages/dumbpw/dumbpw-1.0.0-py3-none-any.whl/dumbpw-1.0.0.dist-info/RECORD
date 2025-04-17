@@ -1,0 +1,13 @@
+dumbpw/__init__.py,sha256=5im1FLD_I3r3KQBW97YfQ3l-6a2Esx-ck9LSm8RIkkA,79
+dumbpw/candidate.py,sha256=Xdn262ybdINWAgaMw89K7k8RDs9x8Ljoexq9ReXoA3I,4953
+dumbpw/charspace.py,sha256=7bqw5lH4si8_R7aeMjZzUxSXTu_NUYr5HNlHWfPqNys,1022
+dumbpw/cli.py,sha256=wEfAoffle94exjegx1gAFI1QwtsqbtPhszEcwNMYPrY,2608
+dumbpw/constants.py,sha256=F0lTJTWusE-iVvx7SUVzdLRGOChpLYJ_hE27vIsxLEM,346
+dumbpw/engine.py,sha256=VWqLcDkVjKjl7-F1eurzgvzg1wkr5Q9CQGp0LBdKhqU,4185
+dumbpw/exceptions.py,sha256=lIb_F803WvDyAP-MUzcKf3HuhLugit9TOgd5E7AQMOE,180
+dumbpw/settings.py,sha256=AJvBsqkVv5GuYUxUZQxz65kwx49ff34RMAvWTxqBL0M,296
+dumbpw-1.0.0.dist-info/LICENSE,sha256=VwIBqq3G1pZwufeCBxmSwgBnMP5V8NT-5RN8NWyTahA,561
+dumbpw-1.0.0.dist-info/METADATA,sha256=EK9nJoTrHijx0GfaD9Pc9IFLJ68Bl_VoOFRSSC-NTyc,5527
+dumbpw-1.0.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+dumbpw-1.0.0.dist-info/entry_points.txt,sha256=T__N0Px3j6GI8H0N8ZRA4I7jtZAYhcXYGuqcg-_5KjA,41
+dumbpw-1.0.0.dist-info/RECORD,,
