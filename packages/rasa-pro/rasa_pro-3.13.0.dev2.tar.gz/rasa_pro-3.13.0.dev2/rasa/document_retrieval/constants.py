@@ -1,0 +1,32 @@
+# keys for storing information in the message object
+from rasa.shared.constants import OPENAI_PROVIDER, PROVIDER_CONFIG_KEY
+from rasa.shared.utils.llm import DEFAULT_OPENAI_EMBEDDING_MODEL_NAME
+
+SEARCH_QUERY_KEY = "search_query"
+RETRIEVED_DOCUMENTS_KEY = "retrieved_documents"
+POST_PROCESSED_DOCUMENTS_KEY = "post_processed_documents"
+
+# config keys
+THRESHOLD_CONFIG_KEY = "threshold"
+K_CONFIG_KEY = "k"
+VECTOR_STORE_TYPE_CONFIG_KEY = "type"
+VECTOR_STORE_CONFIG_KEY = "vector_store"
+CONNECTOR_CONFIG_KEY = "connector"
+SOURCE_PROPERTY = "source"
+POST_PROCESSING_CONFIG_KEY = "post_processing"
+QUERY_REWRITING_CONFIG_KEY = "query_rewriting"
+USE_LLM_PROPERTY = "use_generative_llm"
+
+# default values
+DEFAULT_THRESHOLD = 0.0
+DEFAULT_K = 3
+DEFAULT_VECTOR_STORE_TYPE = "faiss"
+DEFAULT_EMBEDDINGS_CONFIG = {
+    PROVIDER_CONFIG_KEY: OPENAI_PROVIDER,
+    "model": DEFAULT_OPENAI_EMBEDDING_MODEL_NAME,
+}
+DEFAULT_VECTOR_STORE = {
+    VECTOR_STORE_TYPE_CONFIG_KEY: DEFAULT_VECTOR_STORE_TYPE,
+    SOURCE_PROPERTY: "./docs",
+    THRESHOLD_CONFIG_KEY: DEFAULT_THRESHOLD,
+}
