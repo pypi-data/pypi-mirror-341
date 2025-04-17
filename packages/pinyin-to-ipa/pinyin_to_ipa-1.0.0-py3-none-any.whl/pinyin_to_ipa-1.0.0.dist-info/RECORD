@@ -1,0 +1,17 @@
+pinyin_to_ipa/__init__.py,sha256=_nkRogBlcVgaJDd7t71qdYDwWEfz0rw87PSHlRVZTIk,88
+pinyin_to_ipa/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pinyin_to_ipa/transcription.py,sha256=gQ45mvEngB0U2Qzyi3ZOPJGJB3zpdXoOZLM-XQ0kxRw,10859
+pinyin_to_ipa-1.0.0.dist-info/licenses/LICENSE,sha256=j0xXYYjsvVVc2IbyClsgbmNvpV6twGCPLt07mhsFGPE,1071
+pinyin_to_ipa_app/__init__.py,sha256=ikDQKswZsyVDDkS89ehK8c6FnyoSgfFvHn0TFCu0kxk,76
+pinyin_to_ipa_app/app.py,sha256=hlFOKx7s63ADuFzrDxwRz5xTc0WyT3YGOXvyZhJ-NZk,4613
+pinyin_to_ipa_app/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pinyin_to_ipa_cli/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+pinyin_to_ipa_cli/argparse_helper.py,sha256=rSk0Rnxp4V_4vGja5ycUPS4nQ3WfoeoivnzyTUpOvdM,407
+pinyin_to_ipa_cli/cli.py,sha256=E2cGtmRBxiUO-1CDGce-rCG-VVRWEPv1weCIgX9GAdE,2394
+pinyin_to_ipa_cli/main.py,sha256=Q-whsL9eT-QLK_Zg9uEjiJPVqRl26JZragaBFcVKwWk,1149
+pinyin_to_ipa_cli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pinyin_to_ipa-1.0.0.dist-info/METADATA,sha256=sfP_JmHEvJWpfQlV6a61A0wOD-3ufA3FOT9wUcfl_GU,8444
+pinyin_to_ipa-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pinyin_to_ipa-1.0.0.dist-info/entry_points.txt,sha256=ejNWwX7Lvoo7czlcocDKFTvBjcSguGiyay6otuVueVc,122
+pinyin_to_ipa-1.0.0.dist-info/top_level.txt,sha256=knGPkJs71RJtxpjDXpl-bOr0XHUq1HK6gLGbQdhpguk,50
+pinyin_to_ipa-1.0.0.dist-info/RECORD,,
