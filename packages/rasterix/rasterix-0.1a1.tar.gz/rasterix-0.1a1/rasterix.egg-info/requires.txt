@@ -1,0 +1,4 @@
+affine
+pandas>=2
+numpy>=2
+xarray>=2025
