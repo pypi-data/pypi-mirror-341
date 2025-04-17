@@ -1,0 +1,164 @@
+{% load static %}
+<div class="aieditor-wrapper">
+    <textarea name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %} style="display: none;">{% if widget.value %}{{ widget.value }}{% endif %}</textarea>
+    <div id="aieditor-{{ widget.name }}" class="aieditor-container"></div>
+</div>
+<script>
+    (function() {
+        function waitForAiEditor(callback, maxAttempts = 10) {
+            let attempts = 0;
+            const interval = setInterval(function() {
+                attempts++;
+                if (window.AiEditor) {
+                    clearInterval(interval);
+                    callback();
+                } else if (attempts >= maxAttempts) {
+                    clearInterval(interval);
+                    console.error('AiEditor failed to load after ' + maxAttempts + ' attempts');
+                }
+            }, 200);
+        }
+
+        function initEditor() {
+            const textarea = document.querySelector('[name="{{ widget.name }}"]');
+            const container = document.getElementById('aieditor-{{ widget.name }}');
+            const form = textarea.closest('form');
+            
+            if (!textarea || !container) {
+                console.warn('AiEditor initialization failed: missing required elements');
+                return;
+            }
+
+            try {
+                // 获取配置
+                const editorConfig = {{ widget.config|safe }};
+                const config = {
+                    ...editorConfig,
+                    element: container,
+                    content: textarea.value || '',
+                    onChange: function(editor) {
+                        const content = editor.getMarkdown();
+                        textarea.value = content;
+                        // 处理required验证
+                        if (textarea.required) {
+                            if (!content.trim()) {
+                                container.classList.add('field-required');
+                            } else {
+                                container.classList.remove('field-required');
+                            }
+                        }
+                    }
+                };
+
+                const editor = new window.AiEditor(config);
+
+                // 在表单提交前同步内容
+                if (form) {
+                    form.addEventListener('submit', function() {
+                        textarea.value = editor.getMarkdown();
+                    });
+                }
+
+                // 初始required验证
+                if (textarea.required && !textarea.value.trim()) {
+                    container.classList.add('field-required');
+                }
+
+            } catch (error) {
+                console.error('AiEditor initialization error:', error);
+                textarea.style.display = 'block';
+                container.style.display = 'none';
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', function() {
+                waitForAiEditor(initEditor);
+            });
+        } else {
+            waitForAiEditor(initEditor);
+        }
+    })();
+</script>
+<style>
+    .aieditor-wrapper {
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .aieditor-container {
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        background: #fff;
+        min-height: 400px;
+        height: 400px;
+    }
+    .field-required {
+        border-color: #dc3545 !important;
+    }
+    /* 编辑器工具栏样式 */
+    .aieditor-toolbar {
+        border-bottom: 1px solid #ced4da;
+        background: #f8f9fa;
+        padding: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        align-items: center;
+    }
+    /* 编辑器内容区��样式 */
+    .aieditor-content {
+        padding: 15px;
+        min-height: 400px;
+        height: 600px;
+        height: auto;
+        overflow-y: auto;
+    }
+    /* 工具栏按钮样式 */
+    .aieditor-toolbar button {
+        padding: 4px 8px;
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        color: #333;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 24px;
+        height: 24px;
+    }
+    .aieditor-toolbar button:hover {
+        background: #e9ecef;
+    }
+    .aieditor-toolbar button svg {
+        width: 16px;
+        height: 16px;
+    }
+    /* 下拉菜单样式 */
+    .aieditor-dropdown {
+        background: white;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+    /* 分隔符样式 */
+    .aieditor-toolbar .divider {
+        width: 1px;
+        height: 20px;
+        background: #ced4da;
+        margin: 0 4px;
+    }
+    /* 响应式布局 */
+    @media (max-width: 768px) {
+        .aieditor-toolbar {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: 4px;
+        }
+        .aieditor-toolbar button {
+            padding: 2px 4px;
+        }
+    }
+</style> 
