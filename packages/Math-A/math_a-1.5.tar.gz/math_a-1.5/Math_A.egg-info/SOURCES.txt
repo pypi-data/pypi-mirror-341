@@ -1,0 +1,5 @@
+6.py
+Math_A.egg-info/PKG-INFO
+Math_A.egg-info/SOURCES.txt
+Math_A.egg-info/dependency_links.txt
+Math_A.egg-info/top_level.txt
