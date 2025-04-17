@@ -1,0 +1,2 @@
+[console_scripts]
+catchpoint-configurator = catchpoint_configurator.cli:main
