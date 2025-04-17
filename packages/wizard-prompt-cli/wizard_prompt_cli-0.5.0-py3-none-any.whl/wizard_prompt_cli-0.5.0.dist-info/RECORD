@@ -1,0 +1,9 @@
+wizard_prompt_cli/__init__.py,sha256=jVDF3cxpVRC6sobKO0GMvgD1V4vZ8ogqrx3vqhnCldU,39
+wizard_prompt_cli/cli.py,sha256=kEcBzE1C-uujAIoerRUwElfVUShQyo0dmZLJKZC6dEQ,18723
+wizard_prompt_cli/inference.py,sha256=APXnkJWgTlEcJJXyBIlx2VeoOR1FrWVj33jqBhAucXU,8104
+wizard_prompt_cli-0.5.0.dist-info/licenses/LICENSE,sha256=c05JDIVDDA1n-ewuZgd__l01dBh-ZDnuHSUg7oDmdyU,1079
+wizard_prompt_cli-0.5.0.dist-info/METADATA,sha256=VxdvjQsQxfC8K4R84IRvv8nXttS0FUd3SRHubq7a6l8,12287
+wizard_prompt_cli-0.5.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+wizard_prompt_cli-0.5.0.dist-info/entry_points.txt,sha256=z17EJrKe6UREf9oe7gyx_xcqiDyZGokOlmwm3U-fJLo,46
+wizard_prompt_cli-0.5.0.dist-info/top_level.txt,sha256=57kUxbTdhny8oiRDqknwA-8ajJkHb4IPr3dql00d7n8,18
+wizard_prompt_cli-0.5.0.dist-info/RECORD,,
