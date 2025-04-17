@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: limpiadordelineasinutiles
+Version: 0.1.0
+Summary: Elimina las líneas vacías de los archivos Markdown y TXT.
+Author-email: Juantv01 <juanasdfg41@gmail.com>
+License: MIT License
+        
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        
+Project-URL: Homepage, https://github.com/JuanJml01/LimpiadorDeLineasInutiles.git
+Project-URL: Bug Tracker, https://github.com/JuanJml01/LimpiadorDeLineasInutiles.git
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Dynamic: license-file
+
+# Limpiador de Líneas Inútiles (Uso personal)
+
+Este script te ayuda a limpiar esos archivos Markdown que a veces se llenan de líneas vacías innecesarias.
+
+
+Este script en Python tiene las siguientes funciones:
+
+*   **`main()`**: Función principal del script. Configura el analizador de argumentos y procesa el directorio especificado.
+*   **`process_directory(directory)`**: Procesa recursivamente el directorio especificado para eliminar líneas vacías de los archivos Markdown y TXT.
+    *   `directory` (str): El directorio a procesar.
+*   **`clean_empty_lines(content)`**: Elimina las líneas vacías de un texto, excepto dentro de los bloques de código.
+    *   `content` (str): El texto a limpiar.
+    *   Returns: El texto limpio.
+
+## Ejemplo
+
+Para procesar el directorio `mi_proyecto`:
+
+```bash
+python limpiadordelineasinutiles.py mi_proyecto
+```

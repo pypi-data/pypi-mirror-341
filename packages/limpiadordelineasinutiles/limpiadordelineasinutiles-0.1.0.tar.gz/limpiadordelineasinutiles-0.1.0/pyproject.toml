@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "limpiadordelineasinutiles"  # Nombre del paquete (debe ser único en PyPI)
+version = "0.1.0"  # Versión inicial
+description = "Elimina las líneas vacías de los archivos Markdown y TXT."
+readme = "README.md"  # Archivo README (opcional)
+authors = [{ name = "Juantv01", email = "juanasdfg41@gmail.com" }]
+license = { file = "LICENSE" } # Archivo LICENSE (opcional)
+requires-python = ">=3.6"  # Versiones de Python compatibles
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",  # Cambia si usas otra licencia
+    "Operating System :: OS Independent",
+]
+dependencies = []  # Lista de dependencias (si las hay)
+
+[project.optional-dependencies]
+dev = ["pytest"] # Dependencias para desarrollo (ej: pytest)
+
+[project.urls]
+"Homepage" = "https://github.com/JuanJml01/LimpiadorDeLineasInutiles.git"  # URL del repositorio (opcional)
+"Bug Tracker" = "https://github.com/JuanJml01/LimpiadorDeLineasInutiles.git" # URL del rastreador de errores (opcional)

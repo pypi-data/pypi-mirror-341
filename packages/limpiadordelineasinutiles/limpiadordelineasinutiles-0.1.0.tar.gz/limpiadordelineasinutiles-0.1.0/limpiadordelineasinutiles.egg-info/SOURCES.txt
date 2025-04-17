@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+limpiadordelineasinutiles.egg-info/PKG-INFO
+limpiadordelineasinutiles.egg-info/SOURCES.txt
+limpiadordelineasinutiles.egg-info/dependency_links.txt
+limpiadordelineasinutiles.egg-info/requires.txt
+limpiadordelineasinutiles.egg-info/top_level.txt
