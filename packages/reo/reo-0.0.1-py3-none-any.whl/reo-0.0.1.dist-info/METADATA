@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: reo
+Version: 0.0.1
+Summary: An empty package
+Author-email: Gal Vinograd <gal.vinograd@gmail.com>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# reo
+
+An empty Python package created with uv.
+
+## Installation
+
+```bash
+pip install reo
+```
+
+## Usage
+
+```python
+import reo
+``` 
