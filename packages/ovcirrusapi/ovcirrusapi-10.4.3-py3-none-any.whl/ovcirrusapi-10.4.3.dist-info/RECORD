@@ -1,0 +1,12 @@
+api_client/__init__.py,sha256=USjTbCvG3rbXcuiKkuSi1x3RPvd15RhRF9KLjfTAQpA,168
+api_client/async_client.py,sha256=zB0JSkm5_789s2TKVgABJBUl9Oc9EvQqH5Fflqz-rLE,3334
+api_client/auth.py,sha256=oibLRS8iZIyCLEnEUxB0PNf-Dgrk9f1NCOq7qiSwyiY,3422
+api_client/client.py,sha256=JZxhVFcYWv_cP_ZfMxVvHV_eu1N3USGNzfj-IWlFEHA,2781
+models/__init__.py,sha256=j8uDNLcqlOI2N4P5Wa158487EoNkZqKc7QmHiQnhBPY,144
+models/auth.py,sha256=PruDfBbSzupbHd-7X7Ib2evuj0pk0XYcBgm4d7AGhNw,289
+models/generic.py,sha256=HtAyHINmBtyg3lNJPr7p2n1TPAvJ8m7xVb6zS7-lPBI,347
+models/user.py,sha256=5Sy2tfOEgbeEv1uO8WnbvC-7cO2mhpmE5wEJ8VCE7LM,1119
+ovcirrusapi-10.4.3.dist-info/METADATA,sha256=u_YnpJG_nyNm8r1XKyEULXg3MySaq0WKcsGQuEL323k,5511
+ovcirrusapi-10.4.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ovcirrusapi-10.4.3.dist-info/top_level.txt,sha256=L_FspEdfrQBKg0xRgHgVn3RNx24A3uwzyfcNwgGMKig,18
+ovcirrusapi-10.4.3.dist-info/RECORD,,
