@@ -1,0 +1,27 @@
+[build-system]
+requires = [
+    "setuptools >= 77.0.3",
+    "pygelf==0.4.2"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [
+    {name = "Alex Thomae", email = "egos-helpers@egos.tech"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+description = "A python library for helper functions"
+dependencies = [
+    "pygelf==0.4.2"
+]
+dynamic = ["version"]
+name = "egos-helpers"
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.6"
+
+[project.urls]
+Homepage = "https://gitlab.com/egos-tech/egos-helpers"
