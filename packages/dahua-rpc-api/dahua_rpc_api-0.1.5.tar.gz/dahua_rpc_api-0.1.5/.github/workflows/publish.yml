@@ -1,0 +1,42 @@
+name: Publish to PyPI
+
+on:
+  push:
+    tags:
+      - 'v*'  # Trigger only when pushing a tag that starts with "v"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+
+      - name: Extract version from tag
+        run: |
+          # $GITHUB_REF might look like "refs/tags/v0.2.1"
+          # so remove the "refs/tags/v" prefix and keep only "0.2.1"
+          CLEAN_VERSION="${GITHUB_REF#refs/tags/v}"
+          echo "CLEAN_VERSION=$CLEAN_VERSION" >> $GITHUB_ENV
+
+
+      - name: Build the package
+        env:
+          SETUPTOOLS_SCM_PRETEND_VERSION: ${{ env.CLEAN_VERSION }}
+        run: |
+          pip install build setuptools_scm
+          python -m build
+
+      - name: Publish distribution to PyPI
+        env:
+          TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+        run: |
+          pip install twine
+          twine upload dist/*
