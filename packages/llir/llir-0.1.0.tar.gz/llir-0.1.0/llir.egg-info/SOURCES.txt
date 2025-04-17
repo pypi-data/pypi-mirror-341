@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+llir/__init__.py
+llir/constants.py
+llir/py.typed
+llir/raw_input.py
+llir/recorder.py
+llir/send_input.py
+llir/structs.py
+llir.egg-info/PKG-INFO
+llir.egg-info/SOURCES.txt
+llir.egg-info/dependency_links.txt
+llir.egg-info/top_level.txt

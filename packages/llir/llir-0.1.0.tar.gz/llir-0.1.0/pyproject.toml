@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="llir"
+dynamic = ["version"]
+requires-python = ">=3.10"
+authors = [{name = "Yazan Sharaya", email = "yazan.sharaya.yes@gmail.com"}]
+description = "Low level mouse and keyboard input recorder and player."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["mouse", "keyboard", "macro"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+Repository = "https://github.com/Yazan-Sharaya/llir"
+
+[tool.setuptools.dynamic]
+version = {attr = "llir.__version__"}
+
+[tool.setuptools.package-data]
+"llir" = ["py.typed"]
