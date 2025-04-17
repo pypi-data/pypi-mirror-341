@@ -1,0 +1,2 @@
+include src/rwkvx/cuda/*
+include src/rwkvx/*.txt
