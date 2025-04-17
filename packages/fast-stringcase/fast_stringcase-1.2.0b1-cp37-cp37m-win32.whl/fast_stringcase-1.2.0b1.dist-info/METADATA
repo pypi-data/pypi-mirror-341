@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: fast-stringcase
+Version: 1.2.0b1
+Summary: C extension for string case conversions. The logic is ported from and based on stringcase == 1.2.0
+Author: Isham Mohamed
+Author-email: isham.iqbal@icloud.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Fast Stringcase Project
+This project provides a fast and efficient way to convert strings between different cases. This is based on stringcase version 1.2.0. This is why the version has been kept same.
+
+## Local Deployment and Testing
+To build and install use the following:
+```bash
+python -m build
+pip install .
+```
+
+To run unit tests:
+```bash
+python test_fast_stringcase.py
+```
+
+## Usage
+To use the project, simply import the fast_stringcase module and call the desired function. For example:
+```python
+import fast_stringcase
+
+print(stringcase.titlecase('FooBarBaz'))  # Output: Foo Bar Baz
+```
