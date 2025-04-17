@@ -1,0 +1,186 @@
+# django-mdeditor-v3
+
+[![ENV](https://img.shields.io/badge/release-v0.2.0-blue.svg)](https://github.com/pylixm/django-mdeditor)
+[![ENV](https://img.shields.io/badge/中文-v0.2.0-blue.svg)](./README_CN.md)
+[![ENV](https://img.shields.io/badge/python-3.7+-green.svg)](https://github.com/pylixm/django-mdeditor)
+[![ENV](https://img.shields.io/badge/django-4.0+-green.svg)](https://github.com/pylixm/django-mdeditor)
+[![LICENSE](https://img.shields.io/badge/license-GPL3.0-green.svg)](https://github.com/pylixm/django-mdeditor/master/LICENSE.txt)
+
+**Django-mdeditor-v3** 是一个基于 [md-editor-v3](https://imzbf.github.io/md-editor-v3/zh-CN/) 的Django Markdown编辑器插件应用。
+
+> **注意：** 此版本（0.2.0+）仅支持Django 4.0+，并已移除对旧版Editor.md实现的支持。如果您需要支持较早版本的Django，请使用0.1.21或更早版本。
+
+## 功能特点
+
+- 基于Vue 3的现代Markdown编辑器
+- 实时预览
+- 多种主题（明亮/暗黑）
+- 支持图片上传
+- 代码语法高亮
+- 支持流程图、数学公式等
+- 多语言支持（中文、英文）
+- 可自定义工具栏
+
+## 快速开始
+
+### 安装
+
+```bash
+pip install django-mdeditor-v3
+```
+
+### 设置
+
+1. 将`mdeditor`添加到您的`INSTALLED_APPS`设置中：
+
+```python
+INSTALLED_APPS = [
+    # ...
+    'mdeditor',
+]
+```
+
+2. 将`mdeditor`添加到您的URL配置中：
+
+```python
+from django.urls import path, include
+
+urlpatterns = [
+    # ...
+    path('mdeditor/', include('mdeditor.urls'))
+]
+```
+
+3. 在您的`settings.py`中配置媒体设置：
+
+```python
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+MEDIA_URL = '/media/'
+```
+
+4. 为开发环境添加静态文件设置：
+
+```python
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    # ...
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+```
+
+5. 创建上传文件夹：
+```bash
+mkdir -p uploads/editor
+```
+
+6. 添加Vue和md-editor-v3静态文件：
+
+创建以下目录并下载所需文件：
+   - static/mdeditor/js/vue.global.prod.js - 从 https://unpkg.com/vue@3/dist/vue.global.prod.js 下载
+   - static/mdeditor/js/md-editor-v3.umd.js - 从 https://unpkg.com/md-editor-v3@5.4.5/lib/umd/index.js 下载
+   - static/mdeditor/css/md-editor-v3.css - 从 https://unpkg.com/md-editor-v3@5.4.5/lib/style.css 下载
+
+### 使用方法
+
+#### 模型字段
+
+在您的模型中使用MDTextField：
+
+```python
+from django.db import models
+from mdeditor.fields import MDTextField
+
+class ExampleModel(models.Model):
+    name = models.CharField(max_length=10)
+    content = MDTextField()
+```
+
+#### 表单字段
+
+在您的表单中使用MDTextFormField：
+
+```python
+from django import forms
+from mdeditor.fields import MDTextFormField
+
+class MDEditorForm(forms.Form):
+    name = forms.CharField()
+    content = MDTextFormField()
+```
+
+#### 管理后台集成
+
+```python
+from django.contrib import admin
+from django.db import models
+from mdeditor.widgets import MDEditorWidget
+
+from . import models as demo_models
+
+class ExampleModelAdmin(admin.ModelAdmin):
+    formfield_overrides = {
+        models.TextField: {'widget': MDEditorWidget}
+    }
+
+admin.site.register(demo_models.ExampleModel, ExampleModelAdmin)
+```
+
+### 自定义设置
+
+在您的`settings.py`中添加以下配置：
+
+```python
+MDEDITOR_CONFIGS = {
+    'default': {
+        'width': '100%',
+        'height': 500,
+        'theme': 'light',  # light 或 dark
+        'preview_theme': 'default',  # default/github/vuepress/mk-cute/smart-blue/cyanosis
+        'editor_theme': 'default',  # default/github/gradient/kimbie等其他主题
+        'toolbar': [
+            'bold', 'underline', 'italic', 'strikeThrough', '-',
+            'title', 'sub', 'sup', 'quote', 'unorderedList', 'orderedList', '-',
+            'codeRow', 'code', 'link', 'image', 'table', 'mermaid', 'katex', '-',
+            'revoke', 'next', 'save', '=',
+            'pageFullscreen', 'fullscreen', 'preview', 'htmlPreview', 'catalog'
+        ],
+        'upload_image_formats': ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+        'image_folder': 'editor',
+        'toolbar_autofixed': True,
+        'language': 'zh-CN'  # zh-CN / en-US
+    }
+}
+```
+
+## 图片上传
+
+以下是处理图片上传的示例：
+
+```python
+from django import forms
+from django.db import models
+from mdeditor.fields import MDTextField
+
+class Article(models.Model):
+    title = models.CharField(max_length=100)
+    content = MDTextField()
+
+# 在您的视图中：
+def handle_upload(request):
+    if request.method == 'POST' and request.FILES.get('file'):
+        file_obj = request.FILES['file']
+        # 将文件保存到您的媒体目录
+        file_path = handle_uploaded_file(file_obj)
+        # 返回文件的URL
+        return JsonResponse({'success': 1, 'url': file_path})
+    return JsonResponse({'success': 0})
+```
+
+## 更多信息
+
+有关编辑器功能的更多详细信息，请参阅 [md-editor-v3文档](https://imzbf.github.io/md-editor-v3/zh-CN/)。
+
+## 许可证
+
+本项目采用GPL-3.0许可证
