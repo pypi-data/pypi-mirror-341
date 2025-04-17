@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: freesimplesql
+Version: 0.1.0
+Summary: A SQLite database browser using freesimplegui
+Requires-Python: >=3.7
+Requires-Dist: faker>=18.13.0
+Requires-Dist: freesimplegui>=5.2.0.post1
+Requires-Dist: loguru>=0.7.3
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: sqlmodel>=0.0.24
