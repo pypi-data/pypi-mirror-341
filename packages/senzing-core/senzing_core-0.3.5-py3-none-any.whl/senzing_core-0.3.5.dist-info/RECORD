@@ -1,0 +1,15 @@
+senzing_core/__init__.py,sha256=kesb9f3co_cCHdVsjzgUpN8hYw9dRaeweQaOoNZG3dM,480
+senzing_core/_helpers.py,sha256=cCDEiL__7PRd_VoIbDja6qiJpW-zWtk1-IopXogm5gE,15612
+senzing_core/_version.py,sha256=uT-CVdauvPCWV--1obQkT4RRnn7o5N_bHx_6wpfsUvg,2863
+senzing_core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+senzing_core/szabstractfactory.py,sha256=_WRE3hwnc7saaNS8bmGTdxyjs77gJhr_Bp_GS3B-HZA,6862
+senzing_core/szconfig.py,sha256=XfxJb5MYLnpdbk_8uW9hlp-yvpXz2Rz9wZwLXKIdL-w,13814
+senzing_core/szconfigmanager.py,sha256=HxY0mMoxCMXVTeRPfEBnJxnAa7I9QrUfLeLPEWF1_Ro,10204
+senzing_core/szdiagnostic.py,sha256=zupeA0rm07m0nJ7xBK1PBnmp57i8rvOOD1JD6rWPrJI,8158
+senzing_core/szengine.py,sha256=liOYk2iqUKs6dZaI-KdEiWDhEX3Zz435LYIRTf4tT9E,39737
+senzing_core/szproduct.py,sha256=tlwQONfBnzWdGcG-Eigua3aUrLesCHWNq4w3x0Xn8TQ,4712
+senzing_core-0.3.5.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+senzing_core-0.3.5.dist-info/METADATA,sha256=PpFz108hjFCYSmDZny3IYEO02bgn0Lln9ZMIn5VmYyI,4437
+senzing_core-0.3.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+senzing_core-0.3.5.dist-info/top_level.txt,sha256=h50VjoMTp-4P9LSFNJrenAnY1hNUYeMFtD9wObY6I2I,13
+senzing_core-0.3.5.dist-info/RECORD,,
