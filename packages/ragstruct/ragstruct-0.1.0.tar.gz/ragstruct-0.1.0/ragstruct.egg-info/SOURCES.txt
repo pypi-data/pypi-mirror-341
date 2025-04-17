@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+ragstruct/__init__.py
+ragstruct/core.py
+ragstruct/postinstall.py
+ragstruct/setup_prompt.py
+ragstruct/structurer.py
+ragstruct.egg-info/PKG-INFO
+ragstruct.egg-info/SOURCES.txt
+ragstruct.egg-info/dependency_links.txt
+ragstruct.egg-info/entry_points.txt
+ragstruct.egg-info/requires.txt
+ragstruct.egg-info/top_level.txt

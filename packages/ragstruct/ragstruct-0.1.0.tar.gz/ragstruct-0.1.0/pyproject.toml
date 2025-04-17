@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ragstruct"
+version = "0.1.0"
+description = "ragstruct - A Pseudo-Finetuning RAG Framework for structured JSON-based retrieval"
+authors = [
+    { name="Joshikaran K", email="joshikaran2002@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+
+dependencies = [
+    "numpy",
+    "sentence-transformers",
+    "scikit-learn"
+]
+
+[project.urls]
+Homepage = "https://github.com/Joshikarank/ragstruct"
+Repository = "https://github.com/Joshikarank/ragstruct"
+Issues = "https://github.com/Joshikarank/ragstruct/issues"
+
+[project.scripts]
+ragstruct = "ragstruct.core:cli_entry"
