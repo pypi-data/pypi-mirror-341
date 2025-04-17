@@ -1,0 +1,23 @@
+from python:3.8-slim
+ENV DEBIAN_FRONTEND=noninteractive
+# Install gcc for binary compile  & rustup for rust
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y curl gcc gcc-multilib && \
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+ENV PATH="/root/.cargo/bin:${PATH}"
+RUN pip3 install --no-cache-dir uv maturin
+
+# ##Init <repo>
+# docker build -t rust-python -f docker/dockerfile.dev .
+# docker run --rm -it -v $PWD:/w -w /w rust-python bash
+# maturin new <repo>
+# cd <repo>
+
+# ##Build <repo>
+# docker run --rm -it -v $PWD:/w -w /w rust-python bash
+# uv venv --python 3.8
+# source .venv/bin/activate
+# maturin develop
+# <repo>/Cargo.toml
+# pyo3 = { version = "0.24.0", features = ["extension-module"] }
+# maturin build
