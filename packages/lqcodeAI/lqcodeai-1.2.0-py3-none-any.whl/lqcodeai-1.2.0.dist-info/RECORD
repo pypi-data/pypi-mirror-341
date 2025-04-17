@@ -1,0 +1,17 @@
+lqcodeAI/__init__.py,sha256=EgYag7NGMwOvirOS3hUL7Bk9WMdaROtJs7IFvy8KxNQ,159
+lqcodeAI/cli.py,sha256=GmxO6gDyKnMaJMmTFM-uAh6-_2SB1ilPoE3HTFRQKP0,4109
+lqcodeAI/lqcodeAI/__init__.py,sha256=pO7oxTLHIiQuuxYMWev0Q6yq-KMJRpuad2Ifqqz0GB0,1613
+lqcodeAI/lqcodeAI/ai_biliranking.py,sha256=fFkUYYVTV_0P8KYdA5hVHvxH52GGyWVXNkkTOOvaQks,1774
+lqcodeAI/lqcodeAI/ai_chatroom.py,sha256=7-Twc8jL5You95Kr-27DMhWzvUqm4o4zi4_5FdNp0Ys,6093
+lqcodeAI/lqcodeAI/ai_idioms.py,sha256=P4lKxqwBE61akGmZfQgscPKT9J18ea7pQN3xMqhZpwk,1958
+lqcodeAI/lqcodeAI/ai_poetry.py,sha256=7gSLsDVAnvNdVX2fYfnB-3HVm8pHaRrud2UJfjMTn9I,1574
+lqcodeAI/lqcodeAI/ai_weather.py,sha256=GrsD_nL_9NzNBTPAopeKcXPGlvl_CeLUMHNrL-vRbUI,2416
+lqcodeAI/lqcodeAI/base.py,sha256=Wh3OBEEZCABbpIdLCLFMGmZ867eRd76j2zuOn8RYtmQ,5451
+lqcodeAI/lqcodeAI/config.py,sha256=Ke4XgSdHkujqihbKJRbv2a5Arq7pM1ifH1-_lUhgW_o,2666
+lqcodeAI/lqcodeAI/types.py,sha256=f2dh-hiDxRltTMBi7pfoLWV6B2czdHXbvrNRPSI0_mE,426
+lqcodeai-1.2.0.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lqcodeai-1.2.0.dist-info/METADATA,sha256=4_rOJFbn9I5MaZZ0drhvLXlXJIPte82BtG7MU8NooZ4,3476
+lqcodeai-1.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+lqcodeai-1.2.0.dist-info/entry_points.txt,sha256=c-xulSFh1NeNMsfWmGAIyQbd5S-QYyTiWUEXEyA1Z7M,45
+lqcodeai-1.2.0.dist-info/top_level.txt,sha256=2mWcII1iHDMfJwibc2hmxkcPUHBF25UO4MXwU8Dti6o,9
+lqcodeai-1.2.0.dist-info/RECORD,,
