@@ -1,0 +1,10 @@
+django_deployer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_deployer/cli.py,sha256=jRcClAX9R5fU3FJOFvnfVxvfh64LJNT0mCLr19k2fPM,627
+django_deployer/config.py,sha256=pgvr9jUDp9VV3GbYAbJbSr3Zut5LBSDNt5Yrp09gQfE,1134
+django_deployer/deployer.py,sha256=gr0mvPiRaviN6NUmDrnsb_nNj5GhmDwjjW28yi-1RPM,1527
+django_deployer/logger.py,sha256=J8MVXrO_a4ZxE1OmL7C_pMPb6EK4XKlQe_7K1bOaecM,645
+dj_deployer-1.0.1.dist-info/METADATA,sha256=XrhPtWD-yIobU6WfguhrQQT3jlgVVg-GmCzYVxC9Cb4,987
+dj_deployer-1.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dj_deployer-1.0.1.dist-info/entry_points.txt,sha256=Z_ORQLtf_4Qa486vNcM7pQz5_nCxkwD83qrlLKxzwgE,52
+dj_deployer-1.0.1.dist-info/top_level.txt,sha256=XKzN2mxiZsAhz63wQDyqGpr9ZCdqr4Z0BzvrfyQHmS8,16
+dj_deployer-1.0.1.dist-info/RECORD,,
