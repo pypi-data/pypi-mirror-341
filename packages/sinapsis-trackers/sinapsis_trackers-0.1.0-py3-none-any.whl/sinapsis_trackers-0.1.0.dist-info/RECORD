@@ -1,0 +1,15 @@
+sinapsis_cotracker/src/sinapsis_cotracker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sinapsis_cotracker/src/sinapsis_cotracker/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sinapsis_cotracker/src/sinapsis_cotracker/helpers/file_downloader.py,sha256=a652yubZa7FaOMSRb-Z6Fmrlqkp2d7kwrpf1QN_BNXw,1057
+sinapsis_cotracker/src/sinapsis_cotracker/templates/__init__.py,sha256=agegWfuajO0NNtotKabYycrMeDYYLnxH0hvlFwRUbAw,634
+sinapsis_cotracker/src/sinapsis_cotracker/templates/co_tracker_base.py,sha256=o-30AK-kaKv6g60Uh_l0D9JyDuUdPhiy76QZVi7unK4,4808
+sinapsis_cotracker/src/sinapsis_cotracker/templates/co_tracker_offline.py,sha256=1umlAVGAiXSppwzRejgx3P0h_BmVGNHLbMrLLchQ41U,5619
+sinapsis_cotracker/src/sinapsis_cotracker/templates/co_tracker_online.py,sha256=NyKBgEwp8lgQhuF29tm6S8cXNruo0g_gcTod0eCWJDU,6495
+sinapsis_cotracker/src/sinapsis_cotracker/templates/co_tracker_visualizer.py,sha256=wLiwpVPoLXn67JV86hflCwcRSNutqEqbUrgvJ-M74_k,5545
+sinapsis_supervision/src/sinapsis_supervision/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sinapsis_supervision/src/sinapsis_supervision/templates/__init__.py,sha256=IWGmXZXbOvEt6Uy_uqooz5S-eQeKlMrhtX01hiTSHBI,489
+sinapsis_supervision/src/sinapsis_supervision/templates/byte_track.py,sha256=7X0Ylbk_RnfDq_tzm8ljcm1qDa9YVSdm7lgvAI2877I,8642
+sinapsis_trackers-0.1.0.dist-info/METADATA,sha256=bhpgZ9MJvgABhpx3lpIAw9TJSiizHFnqAOGlZ4h80sU,49795
+sinapsis_trackers-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sinapsis_trackers-0.1.0.dist-info/top_level.txt,sha256=sEIBuf6XdiJYMsE8ujFgDJ6MP_HE2d1yeT_wCEQg3dk,40
+sinapsis_trackers-0.1.0.dist-info/RECORD,,
