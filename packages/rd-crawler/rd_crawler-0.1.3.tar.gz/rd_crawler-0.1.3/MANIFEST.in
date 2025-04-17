@@ -1,0 +1,3 @@
+include rd_crawler/keywords.txt
+recursive-include rd_crawler *.txt
+recursive-include rd_crawler/spiders *.py
