@@ -1,0 +1,21 @@
+Button {
+    width: 100%;
+}
+
+.change_line {
+    padding: 1;
+    text-align: center;
+}
+
+.change_line Button {
+    width: 15;
+}
+
+#more {
+    dock: right;
+}
+
+.hidden {
+    display: none;
+}
+/*  */
