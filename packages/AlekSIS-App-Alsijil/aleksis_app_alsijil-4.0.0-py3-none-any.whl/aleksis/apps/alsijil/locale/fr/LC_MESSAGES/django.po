@@ -1,0 +1,1185 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-16 17:42+0200\n"
+"PO-Revision-Date: 2021-06-16 11:59+0000\n"
+"Last-Translator: Jonathan Weth <teckids@jonathanweth.de>\n"
+"Language-Team: French <https://translate.edugit.org/projects/aleksis/aleksis-app-alsijil/fr/>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4\n"
+
+#: aleksis/apps/alsijil/checks.py:17
+msgid "Delete object"
+msgstr ""
+
+#: aleksis/apps/alsijil/checks.py:27
+msgid "Set current groups"
+msgstr ""
+
+#: aleksis/apps/alsijil/checks.py:39
+msgid "Ensure that there are no participation statuses and personal notes in cancelled lessons"
+msgstr ""
+
+#: aleksis/apps/alsijil/checks.py:41
+#, fuzzy
+#| msgid "Lesson documentation for calendar week"
+msgid "The participation status or personal note is related to a cancelled lesson."
+msgstr "Documentation de cours pour la semaine calendrier"
+
+#: aleksis/apps/alsijil/checks.py:69
+msgid "Ensure that 'groups_of_person' is set for every participation status"
+msgstr ""
+
+#: aleksis/apps/alsijil/checks.py:70
+msgid "The participation status has no group in 'groups_of_person'."
+msgstr ""
+
+#: aleksis/apps/alsijil/checks.py:92
+#, fuzzy
+#| msgid "Lesson documentation for calendar week"
+msgid "Ensure that there are no documentations on holidays"
+msgstr "Documentation de cours pour la semaine calendrier"
+
+#: aleksis/apps/alsijil/checks.py:93
+#, fuzzy
+#| msgid "Lesson documentation for calendar week"
+msgid "The documentation is on holidays."
+msgstr "Documentation de cours pour la semaine calendrier"
+
+#: aleksis/apps/alsijil/checks.py:125
+msgid "Ensure that there are no participation statuses or personal notes on holidays"
+msgstr ""
+
+#: aleksis/apps/alsijil/checks.py:127
+#, fuzzy
+#| msgid "Lesson documentation for calendar week"
+msgid "The participation status or personal note is on holidays."
+msgstr "Documentation de cours pour la semaine calendrier"
+
+#: aleksis/apps/alsijil/forms.py:29
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_teachers_and_subjects_table.html:7
+msgid "Group"
+msgstr "groupe"
+
+#: aleksis/apps/alsijil/forms.py:42 aleksis/apps/alsijil/models.py:405
+#: aleksis/apps/alsijil/models.py:550
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:63
+msgid "Person"
+msgstr "Personne"
+
+#: aleksis/apps/alsijil/model_extensions.py:9
+msgid "Can view week overview of group class register"
+msgstr ""
+
+#: aleksis/apps/alsijil/model_extensions.py:13
+msgid "Can view lesson overview of group class register"
+msgstr ""
+
+#: aleksis/apps/alsijil/model_extensions.py:15
+#, fuzzy
+#| msgid "List of all personal note filters"
+msgid "Can view all personal notes of a group"
+msgstr "Liste de filtres de notes personnelles"
+
+#: aleksis/apps/alsijil/model_extensions.py:16
+#, fuzzy
+#| msgid "List of all personal note filters"
+msgid "Can edit all personal notes of a group"
+msgstr "Liste de filtres de notes personnelles"
+
+#: aleksis/apps/alsijil/model_extensions.py:18
+#, fuzzy
+#| msgid "Lesson documentation for calendar week"
+msgid "Can view all lesson documentation of a group"
+msgstr "Documentation de cours pour la semaine calendrier"
+
+#: aleksis/apps/alsijil/model_extensions.py:21
+#, fuzzy
+#| msgid "Lesson documentation for calendar week"
+msgid "Can edit all lesson documentation of a group"
+msgstr "Documentation de cours pour la semaine calendrier"
+
+#: aleksis/apps/alsijil/model_extensions.py:23
+msgid "Can view full register of a group"
+msgstr ""
+
+#: aleksis/apps/alsijil/model_extensions.py:25
+msgid "Can register an absence for all members of a group"
+msgstr ""
+
+#: aleksis/apps/alsijil/model_extensions.py:27
+msgid "Can assign a group role for this group"
+msgstr ""
+
+#: aleksis/apps/alsijil/model_extensions.py:28
+#, fuzzy
+#| msgid "Class register"
+msgid "Can register an absence for a person"
+msgstr "Registre de la classe"
+
+#: aleksis/apps/alsijil/models.py:42
+#, fuzzy
+#| msgid "First name"
+msgid "Short name"
+msgstr "Prénom"
+
+#: aleksis/apps/alsijil/models.py:43 aleksis/apps/alsijil/models.py:595
+msgid "Name"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:45
+msgid "Foreground colour"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:46
+msgid "Background colour"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:48
+msgid "Show in coursebook"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:59
+msgid "Extra mark"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:60
+msgid "Extra marks"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:79
+msgid "Course"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:83
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:89
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:118
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_teachers_and_subjects_table.html:9
+msgid "Subject"
+msgstr "Sujet"
+
+#: aleksis/apps/alsijil/models.py:91
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:90
+msgid "Teachers"
+msgstr "Profs"
+
+#: aleksis/apps/alsijil/models.py:94
+#, fuzzy
+#| msgid "Lesson topic"
+msgid "Lesson Topic"
+msgstr "Sujet de cours"
+
+#: aleksis/apps/alsijil/models.py:95
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_coursebook.html:11
+msgid "Homework"
+msgstr "Devoirs"
+
+#: aleksis/apps/alsijil/models.py:96
+#, fuzzy
+#| msgid "Group"
+msgid "Group Note"
+msgstr "Groupe"
+
+#: aleksis/apps/alsijil/models.py:100
+msgid "Participation touched at"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:132 aleksis/apps/alsijil/models.py:415
+#: aleksis/apps/alsijil/models.py:557
+#, fuzzy
+#| msgid "Lesson documentation"
+msgid "Documentation"
+msgstr "Documentation de cours"
+
+#: aleksis/apps/alsijil/models.py:133
+#, fuzzy
+#| msgid "Lesson documentation"
+msgid "Documentations"
+msgstr "Documentation de cours"
+
+#: aleksis/apps/alsijil/models.py:408
+#, fuzzy
+#| msgid "Group"
+msgid "Groups of Person"
+msgstr "Groupe"
+
+#: aleksis/apps/alsijil/models.py:421
+#, fuzzy
+#| msgid "Absences"
+msgid "Absence Reason"
+msgstr "Absences"
+
+#: aleksis/apps/alsijil/models.py:433
+#, fuzzy
+#| msgid "Absences"
+msgid "Base Absence"
+msgstr "Absences"
+
+#: aleksis/apps/alsijil/models.py:436
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:63
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:92
+msgid "Tardiness"
+msgstr "Retard"
+
+#: aleksis/apps/alsijil/models.py:533 aleksis/apps/alsijil/models.py:534
+msgid "Participation Status"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:562
+#, fuzzy
+#| msgid "Notes"
+msgid "Note"
+msgstr "Notes"
+
+#: aleksis/apps/alsijil/models.py:564
+msgid "Extra Mark"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:571
+#, fuzzy
+#| msgid "Personal notes"
+msgid "Personal Note"
+msgstr "Notes personnelles"
+
+#: aleksis/apps/alsijil/models.py:572
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:113
+#, fuzzy
+#| msgid "Personal notes"
+msgid "Personal Notes"
+msgstr "Notes personnelles"
+
+#: aleksis/apps/alsijil/models.py:583
+msgid "A person got assigned the same extra mark multiple times per documentation."
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:596
+msgid "Icon"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:597
+msgid "Colour"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:603 aleksis/apps/alsijil/models.py:618
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:62
+#, fuzzy
+#| msgid "Group"
+msgid "Group role"
+msgstr "Groupe"
+
+#: aleksis/apps/alsijil/models.py:604
+#: aleksis/apps/alsijil/templates/alsijil/group_role/list.html:8
+#: aleksis/apps/alsijil/templates/alsijil/group_role/list.html:9
+#, fuzzy
+#| msgid "Group"
+msgid "Group roles"
+msgstr "Groupe"
+
+#: aleksis/apps/alsijil/models.py:605
+#, fuzzy
+#| msgid "Persons in group"
+msgid "Can assign group role"
+msgstr "Personnes en groupe"
+
+#: aleksis/apps/alsijil/models.py:624
+#, fuzzy
+#| msgid "Absences"
+msgid "Assigned person"
+msgstr "Absences"
+
+#: aleksis/apps/alsijil/models.py:629
+#, fuzzy
+#| msgid "Group"
+msgid "Groups"
+msgstr "Groupe"
+
+#: aleksis/apps/alsijil/models.py:631
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:64
+msgid "Start date"
+msgstr "Date de début"
+
+#: aleksis/apps/alsijil/models.py:635
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:65
+msgid "End date"
+msgstr "Date de fin"
+
+#: aleksis/apps/alsijil/models.py:636
+msgid "Can be left empty if end date is not clear yet"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:651
+msgid "Group role assignment"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:652
+msgid "Group role assignments"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:659
+#, fuzzy
+#| msgid "Personal overview"
+msgid "Can view lesson overview"
+msgstr "Vue d'ensemble personnelle"
+
+#: aleksis/apps/alsijil/models.py:660
+msgid "Can view week overview"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:661
+#, fuzzy
+#| msgid "Class register"
+msgid "Can view full register"
+msgstr "Registre de la classe"
+
+#: aleksis/apps/alsijil/models.py:662
+#, fuzzy
+#| msgid "Register absence"
+msgid "Can register absence"
+msgstr "Registre de Absence"
+
+#: aleksis/apps/alsijil/models.py:663
+#, fuzzy
+#| msgid "List of all personal note filters"
+msgid "Can list all personal note filters"
+msgstr "Liste de filtres de notes personnelles"
+
+#: aleksis/apps/alsijil/preferences.py:14
+msgid "Class register"
+msgstr "Registre de la classe"
+
+#: aleksis/apps/alsijil/preferences.py:23
+msgid "Grant the owner of a parent group the same privileges as the owners of the respective child groups in regard to group role management and generating full printouts of class registers."
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:36
+msgid "Allow group owners to assign group roles to the parents of the group's members"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:48
+msgid "Allow editing of all future documentations"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:51
+msgid "Allow editing of all documentations up to and including those on the current day"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:56
+msgid "Allow editing of all documentations up to and including those on the current date and time"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:61
+msgid "Set time range for which documentations may be edited"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:72
+msgid "User is allowed to register absences for members of groups the user is an owner of with these group types"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:76
+msgid "If you leave it empty, all member of groups the user is an owner of will be shown."
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:88
+msgid "User is allowed to view coursebook statistics for members of groups the user is an owner of with these group types"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:101
+msgid "Group type of groups to be shown first in the group select field on the coursebook overview page"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:104
+msgid "If you leave it empty, no group type will be used."
+msgstr ""
+
+#: aleksis/apps/alsijil/schema/participation_status.py:106
+msgid "List of ParticipationStatus IDs"
+msgstr ""
+
+#: aleksis/apps/alsijil/schema/participation_status.py:141
+#, python-brace-format
+msgid "Extended by {full_name} on {datetime}"
+msgstr ""
+
+#: aleksis/apps/alsijil/schema/participation_status.py:162
+msgid "Extended absence reason from coursebook."
+msgstr ""
+
+#: aleksis/apps/alsijil/tables.py:16
+#: aleksis/apps/alsijil/templates/alsijil/group_role/partials/assignment_options.html:13
+msgid "Edit"
+msgstr ""
+
+#: aleksis/apps/alsijil/tables.py:22
+#: aleksis/apps/alsijil/templates/alsijil/group_role/partials/assignment_options.html:29
+msgid "Delete"
+msgstr ""
+
+#: aleksis/apps/alsijil/tasks.py:51 aleksis/apps/alsijil/tasks.py:158
+#, fuzzy
+#| msgid "Start date"
+msgid "Loading data ..."
+msgstr "Date de début"
+
+#: aleksis/apps/alsijil/tasks.py:79
+msgid "Loading groups ..."
+msgstr ""
+
+#: aleksis/apps/alsijil/tasks.py:128 aleksis/apps/alsijil/tasks.py:187
+msgid "Generating template ..."
+msgstr ""
+
+#: aleksis/apps/alsijil/tasks.py:136 aleksis/apps/alsijil/tasks.py:195
+msgid "Generating PDF ..."
+msgstr ""
+
+#: aleksis/apps/alsijil/tasks.py:142 aleksis/apps/alsijil/tasks.py:201
+msgid "PDF generation failed"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assign.html:9
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assign.html:16
+#, python-format
+msgid "Assign group role for %(group)s"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assign.html:11
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assign.html:18
+#, fuzzy
+#| msgid "Persons in group"
+msgid "Assign group role"
+msgstr "Personnes en groupe"
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assign.html:34
+msgid "Assign"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:9
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:12
+#, python-format
+msgid "Group roles for %(group)s"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:28
+#, fuzzy
+#| msgid "Group"
+msgid "Back to my groups"
+msgstr "Groupe"
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:36
+msgid "Assign a role to a person"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:45
+#, fuzzy
+#| msgid "Current lesson"
+msgid "Current roles"
+msgstr "Lecon actuelle"
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:48
+msgid "All assignments"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:66
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:83
+msgid "Actions"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/create.html:6
+#: aleksis/apps/alsijil/templates/alsijil/group_role/create.html:7
+#: aleksis/apps/alsijil/templates/alsijil/group_role/list.html:16
+msgid "Create group role"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/edit.html:6
+#: aleksis/apps/alsijil/templates/alsijil/group_role/edit.html:7
+msgid "Edit group role"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/edit_assignment.html:7
+#: aleksis/apps/alsijil/templates/alsijil/group_role/edit_assignment.html:8
+msgid "Edit group role assignment"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/partials/assigned_roles.html:31
+msgid "No one assigned."
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/partials/assigned_roles.html:41
+msgid ""
+"\n"
+"    You can get some additional actions for each group role assignment if you click on the name of the\n"
+"    corresponding person.\n"
+"  "
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/partials/assignment_options.html:21
+msgid "Stop"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/warning.html:4
+msgid ""
+"\n"
+"    This function should only be used to define alternatives to the default excuse which also will be counted extra.\n"
+"    Don't use this to create a default excuse or if you don't divide between different types of excuse.\n"
+"  "
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:3
+#, fuzzy, python-format
+#| msgid "Personal overview"
+msgid "Personal Overview: %(full_name)s"
+msgstr "Vue d'ensemble personnelle"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:5
+#, fuzzy
+#| msgid "Contact details"
+msgid "Contact Details"
+msgstr "Détails de contact"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:44
+#, fuzzy
+#| msgid "Absences and tardiness"
+msgid "Absences and Tardiness"
+msgstr "Absences et retards"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:47
+msgid "Absences"
+msgstr "Absences"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:71
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_abbreviations.html:35
+msgid "Extra Marks"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:84
+#, fuzzy
+#| msgid "Absences and tardiness"
+msgid "Absences and Tardinesses"
+msgstr "Absences et retards"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:88
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:117
+msgid "Date"
+msgstr "Date"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:91
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_abbreviations.html:10
+msgid "Absent"
+msgstr "Absent(e)"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:119
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_teachers_and_subjects_table.html:10
+msgid "Teacher"
+msgstr "prof"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:120
+msgid "Remarks"
+msgstr "Remarque"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_abbreviations.html:3
+msgid "Abbreviations"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_abbreviations.html:5
+msgid "General"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_abbreviations.html:13
+msgid "Late"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_abbreviations.html:18
+#, fuzzy
+#| msgid "Absences"
+msgid "Absence Reasons"
+msgstr "Absences"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_coursebook.html:3
+msgid "Coursebook"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_coursebook.html:8
+msgid "Time"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_coursebook.html:9
+msgid "Subj."
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_coursebook.html:10
+msgid "Topic"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_coursebook.html:12
+msgid "Notes"
+msgstr "Notes"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_coursebook.html:13
+msgid "Te."
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:4
+#: aleksis/apps/alsijil/templates/alsijil/print/register_for_group.html:6
+#: aleksis/apps/alsijil/templates/alsijil/print/register_for_person.html:6
+#, fuzzy
+#| msgid "Class register"
+msgid "Class Register"
+msgstr "Registre de la classe"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:14
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:47
+msgid "Owners"
+msgstr "Propriétaires"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:18
+msgid "Printed on"
+msgstr "Imprimé sur"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:26
+msgid ""
+"\n"
+"      This printout is intended for archival purposes. The main copy of\n"
+"      the class register is stored in the AlekSIS School Information\n"
+"      System.\n"
+"    "
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:33
+msgid ""
+"\n"
+"      Copies of the class register, both digital and as printout, must\n"
+"      only be kept inside the school and/or on devices authorised by the\n"
+"      school.\n"
+"    "
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:40
+msgid ""
+"\n"
+"      The owner of the group and the headteacher confirm the above, as\n"
+"      well as the correctness of this printout.\n"
+"    "
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:50
+msgid "Headteacher"
+msgstr "Prof principale"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:3
+#, fuzzy, python-format
+#| msgid "Persons in group"
+msgid "Persons in Group %(group)s"
+msgstr "Personnes en groupe"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:8
+msgid "No."
+msgstr "Non."
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:9
+msgid "Last name"
+msgstr "Nom de famille"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:10
+msgid "First name"
+msgstr "Prénom"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:11
+msgid "Sex"
+msgstr "Sexe"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:12
+msgid "Date of birth"
+msgstr "Date d'anniversaire"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:13
+msgid "(a)"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:24
+msgid "(b)"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_teachers_and_subjects_table.html:11
+msgid "Per week"
+msgstr "Par semaine"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/register_for_group.html:32
+msgid "Teachers and lessons in group"
+msgstr "Profs et cours en groupe"
+
+#: aleksis/apps/alsijil/templates/alsijil/print/register_for_group.html:37
+#, fuzzy
+#| msgid "Teachers and lessons in group"
+msgid "Teachers and lessons in child groups"
+msgstr "Profs et cours en groupe"
+
+#: aleksis/apps/alsijil/views.py:85
+msgid ", "
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:87 aleksis/apps/alsijil/views.py:124
+msgid "Generate register printout …"
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:88 aleksis/apps/alsijil/views.py:125
+#, fuzzy
+#| msgid "Lesson documentation for calendar week"
+msgid "The printout has been generated successfully."
+msgstr "Documentation de cours pour la semaine calendrier"
+
+#: aleksis/apps/alsijil/views.py:89 aleksis/apps/alsijil/views.py:126
+msgid "There was a problem while generating the printout."
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:92 aleksis/apps/alsijil/views.py:129
+msgid "Download PDF"
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:154
+#, fuzzy
+#| msgid "Lesson documentation for calendar week"
+msgid "The group role has been created."
+msgstr "Documentation de cours pour la semaine calendrier"
+
+#: aleksis/apps/alsijil/views.py:166
+#, fuzzy
+#| msgid "Lesson documentation for calendar week"
+msgid "The group role has been saved."
+msgstr "Documentation de cours pour la semaine calendrier"
+
+#: aleksis/apps/alsijil/views.py:177
+#, fuzzy
+#| msgid "Lesson documentation for calendar week"
+msgid "The group role has been deleted."
+msgstr "Documentation de cours pour la semaine calendrier"
+
+#: aleksis/apps/alsijil/views.py:211 aleksis/apps/alsijil/views.py:243
+#, fuzzy
+#| msgid "Lesson documentation for calendar week"
+msgid "The group role has been assigned."
+msgstr "Documentation de cours pour la semaine calendrier"
+
+#: aleksis/apps/alsijil/views.py:262
+#, fuzzy
+#| msgid "Lesson documentation for calendar week"
+msgid "The group role assignment has been saved."
+msgstr "Documentation de cours pour la semaine calendrier"
+
+#: aleksis/apps/alsijil/views.py:283
+#, fuzzy
+#| msgid "Lesson documentation for calendar week"
+msgid "The group role assignment has been stopped."
+msgstr "Documentation de cours pour la semaine calendrier"
+
+#: aleksis/apps/alsijil/views.py:296
+#, fuzzy
+#| msgid "Lesson documentation for calendar week"
+msgid "The group role assignment has been deleted."
+msgstr "Documentation de cours pour la semaine calendrier"
+
+#, fuzzy
+#~| msgid "unexcused"
+#~ msgid "Mark as unexcused"
+#~ msgstr "Injustifié(e)"
+
+#, fuzzy
+#~| msgid "Relevant personal notes"
+#~ msgid "Reset personal note to defaults"
+#~ msgstr "Notes personnelles importantes"
+
+#, fuzzy
+#~| msgid "Lesson documentation for calendar week"
+#~ msgid "The personal note is marked as excused, but not as absent."
+#~ msgstr "Documentation de cours pour la semaine calendrier"
+
+#, fuzzy
+#~| msgid "Tardiness"
+#~ msgid "Tardiness is lower than"
+#~ msgstr "Retard"
+
+#, fuzzy
+#~| msgid "Tardiness"
+#~ msgid "Tardiness is bigger than"
+#~ msgstr "Retard"
+
+#, fuzzy
+#~| msgid "From period"
+#~ msgid "Start period"
+#~ msgstr "De la période"
+
+#, fuzzy
+#~| msgid "From period"
+#~ msgid "End period"
+#~ msgstr "De la période"
+
+#~ msgid "Excused"
+#~ msgstr "Excusé"
+
+#, fuzzy
+#~| msgid "Excused"
+#~ msgid "Excuse type"
+#~ msgstr "Excusé"
+
+#, fuzzy
+#~| msgid "Lesson documentation"
+#~ msgid "Has lesson documentation"
+#~ msgstr "Documentation de cours"
+
+#, fuzzy
+#~| msgid "Excused"
+#~ msgid "Excuse types"
+#~ msgstr "Excusé"
+
+#, fuzzy
+#~| msgid "Personal notes"
+#~ msgid "Personal note"
+#~ msgstr "Notes personnelles"
+
+#~ msgid "Personal notes"
+#~ msgstr "Notes personnelles"
+
+#~ msgid "Lesson topic"
+#~ msgstr "Sujet de cours"
+
+#, fuzzy
+#~| msgid "Group"
+#~ msgid "Group note"
+#~ msgstr "Groupe"
+
+#~ msgid "Lesson documentation"
+#~ msgstr "Documentation de cours"
+
+#, fuzzy
+#~| msgid "Lesson documentation"
+#~ msgid "Lesson documentations"
+#~ msgstr "Documentation de cours"
+
+#, fuzzy
+#~| msgid "Teachers and lessons in group"
+#~ msgid "Allow teachers to add data for lessons in holidays"
+#~ msgstr "Profs et cours en groupe"
+
+#~ msgid "Period"
+#~ msgstr "Période"
+
+#, fuzzy
+#~| msgid "Excused"
+#~ msgid "Excuse"
+#~ msgstr "Excusé"
+
+#, fuzzy, python-brace-format
+#~| msgid "Summed up tardiness"
+#~ msgid "{value}' tardiness"
+#~ msgstr "Résumé des retards"
+
+#~ msgid "Register absence"
+#~ msgstr "Registre de Absence"
+
+#, fuzzy
+#~| msgid "Register absence"
+#~ msgid "Confirm: Register absence"
+#~ msgstr "Registre de Absence"
+
+#, fuzzy
+#~| msgid ""
+#~| "\n"
+#~| "            There are no lessons for the selected group, teacher, room or time.\n"
+#~| "          "
+#~ msgid ""
+#~ "\n"
+#~ "                  There are no affected lessons. Registering this absence won't have any effect.\n"
+#~ "                "
+#~ msgstr ""
+#~ "\n"
+#~ "            Il n' y a pas des cours pour le groupe sélectionné, les profs, le salle ou le temps.\n"
+#~ "          "
+
+#, fuzzy
+#~| msgid "Group"
+#~ msgid "My groups"
+#~ msgstr "Groupe"
+
+#~ msgid "Week view"
+#~ msgstr "Vue de semaine"
+
+#~ msgid "Lesson"
+#~ msgstr "Cours"
+
+#, fuzzy
+#~| msgid "Person"
+#~ msgid "Persons"
+#~ msgstr "Personne"
+
+#, fuzzy
+#~| msgid "Current lesson"
+#~ msgid "Previous"
+#~ msgstr "Lecon actuelle"
+
+#, fuzzy
+#~| msgid ""
+#~| "\n"
+#~| "            There are no lessons for the selected group, teacher, room or time.\n"
+#~| "          "
+#~ msgid ""
+#~ "\n"
+#~ "                  This lesson overlaps with holidays and can't be edited.\n"
+#~ "                "
+#~ msgstr ""
+#~ "\n"
+#~ "            Il n' y a pas des cours pour le groupe sélectionné, les profs, le salle ou le temps.\n"
+#~ "          "
+
+#, fuzzy
+#~| msgid "Class register"
+#~ msgid "Class register: person"
+#~ msgstr "Registre de la classe"
+
+#~ msgid "Relevant personal notes"
+#~ msgstr "Notes personnelles importantes"
+
+#, fuzzy
+#~| msgid "Relevant personal notes"
+#~ msgid "Filter personal notes"
+#~ msgstr "Notes personnelles importantes"
+
+#, fuzzy
+#~| msgid "Personal note filters"
+#~ msgid "Clear all filters"
+#~ msgstr "Filtres de notes personnelles"
+
+#, fuzzy
+#~| msgid "Relevant personal notes"
+#~ msgid "Filter results"
+#~ msgstr "Notes personnelles importantes"
+
+#, fuzzy
+#~| msgid "Excused"
+#~ msgid "Without Excuse Type"
+#~ msgstr "Excusé"
+
+#~ msgid "Unexcused"
+#~ msgstr "injustifié(e)"
+
+#~ msgid "Select"
+#~ msgstr "Sélectionner"
+
+#, fuzzy
+#~| msgid "Personal note filters"
+#~ msgid "Toggle filters"
+#~ msgstr "Filtres de notes personnelles"
+
+#, fuzzy
+#~| msgid "Personal overview"
+#~ msgid "Visit lesson overview"
+#~ msgstr "Vue d'ensemble personnelle"
+
+#~ msgid "unexcused"
+#~ msgstr "Injustifié(e)"
+
+#~ msgid "Summed up tardiness"
+#~ msgstr "Résumé des retards"
+
+#, fuzzy
+#~| msgid "Summed up tardiness"
+#~ msgid "Count of tardiness"
+#~ msgstr "Résumé des retards"
+
+#, fuzzy
+#~| msgid ""
+#~| "\n"
+#~| "            There are no lessons for the selected group, teacher, room or time.\n"
+#~| "          "
+#~ msgid ""
+#~ "\n"
+#~ "            There are no lessons for the selected group or teacher in this week.\n"
+#~ "          "
+#~ msgstr ""
+#~ "\n"
+#~ "            Il n' y a pas des cours pour le groupe sélectionné, les profs, le salle ou le temps.\n"
+#~ "          "
+
+#, fuzzy
+#~| msgid "Unexcused"
+#~ msgid "Unexcused absences"
+#~ msgstr "injustifié(e)"
+
+#, fuzzy
+#~| msgid "Unexcused"
+#~ msgid "Sum of excused absences"
+#~ msgstr "injustifié(e)"
+
+#, fuzzy
+#~| msgid "Unexcused"
+#~ msgid "Regular excused absences"
+#~ msgstr "injustifié(e)"
+
+#, fuzzy
+#~| msgid "Current lesson"
+#~ msgid "My previous lesson"
+#~ msgstr "Lecon actuelle"
+
+#, fuzzy
+#~| msgid "Current lesson"
+#~ msgid "My next lesson"
+#~ msgstr "Lecon actuelle"
+
+#, fuzzy, python-format
+#~| msgid "From period"
+#~ msgid "%(period)s. period"
+#~ msgstr "De la période"
+
+#~ msgid "Change history"
+#~ msgstr "Changement d' histoire"
+
+#, fuzzy
+#~| msgid "Tardiness"
+#~ msgid "Tardiness (in m)"
+#~ msgstr "Retard"
+
+#, fuzzy
+#~| msgid "Absences"
+#~ msgid "Absent persons:"
+#~ msgstr "Absences"
+
+#~ msgid "Lesson cancelled"
+#~ msgstr "Cours annulés"
+
+#, fuzzy
+#~| msgid "Lesson start"
+#~ msgid "Lesson filter"
+#~ msgstr "Début de cours"
+
+#, fuzzy
+#~| msgid "Personal note filters"
+#~ msgid "Update filters"
+#~ msgstr "Filtres de notes personnelles"
+
+#, fuzzy
+#~| msgid "Lesson start"
+#~ msgid "Lesson table"
+#~ msgstr "Début de cours"
+
+#, fuzzy
+#~| msgid "Group"
+#~ msgid "Primary group"
+#~ msgstr "Groupe"
+
+#, fuzzy
+#~| msgid "Unexcused"
+#~ msgid "Uncounted Absences"
+#~ msgstr "injustifié(e)"
+
+#, fuzzy
+#~| msgid "unexcused"
+#~ msgid "Regular excused"
+#~ msgstr "Injustifié(e)"
+
+#, fuzzy
+#~| msgid "Class register"
+#~ msgid "Class register:"
+#~ msgstr "Registre de la classe"
+
+#~ msgid "Lesson start"
+#~ msgstr "Début de cours"
+
+#~ msgid "Lesson end"
+#~ msgstr "Fin de cours"
+
+#, fuzzy
+#~| msgid "Excused"
+#~ msgid "Without excuse type"
+#~ msgstr "Excusé"
+
+#~ msgid "Yes"
+#~ msgstr "Oui"
+
+#~ msgid "e"
+#~ msgstr "e"
+
+#, fuzzy
+#~| msgid "Week view"
+#~ msgid "Week"
+#~ msgstr "Vue de semaine"
+
+#, fuzzy
+#~| msgid "Lesson documentation for calendar week"
+#~ msgid "The lesson documentation has been saved."
+#~ msgstr "Documentation de cours pour la semaine calendrier"
+
+#, fuzzy
+#~| msgid "Lesson documentation for calendar week"
+#~ msgid "The personal note has been deleted."
+#~ msgstr "Documentation de cours pour la semaine calendrier"
+
+#, fuzzy
+#~| msgid "Lesson documentation for calendar week"
+#~ msgid "The extra mark has been created."
+#~ msgstr "Documentation de cours pour la semaine calendrier"
+
+#, fuzzy
+#~| msgid "Lesson documentation for calendar week"
+#~ msgid "The extra mark has been saved."
+#~ msgstr "Documentation de cours pour la semaine calendrier"
+
+#~ msgid "Current lesson"
+#~ msgstr "Lecon actuelle"
+
+#~ msgid "Current week"
+#~ msgstr "Semaine actuelle"
+
+#, fuzzy
+#~| msgid "Personal overview"
+#~ msgid "My overview"
+#~ msgstr "Vue d'ensemble personnelle"
+
+#, fuzzy
+#~| msgid "Unexcused"
+#~ msgid "Excused absences"
+#~ msgstr "injustifié(e)"
+
+#, fuzzy
+#~| msgid "Week view"
+#~ msgid "Back to week view"
+#~ msgstr "Vue de semaine"
+
+#, fuzzy
+#~| msgid "Lesson documentation for calendar week"
+#~ msgid "Lesson documentation for week"
+#~ msgstr "Documentation de cours pour la semaine calendrier"
+
+#~ msgid "Identifier"
+#~ msgstr "Identificateur"
+
+#~ msgid "Description"
+#~ msgstr "Description"
+
+#, fuzzy
+#~| msgid "Personal note filters"
+#~ msgid "Personal note filter"
+#~ msgstr "Filtres de notes personnelles"
+
+#, fuzzy
+#~| msgid "Personal note filters"
+#~ msgid "All personal note filters"
+#~ msgstr "Filtres de notes personnelles"
+
+#, fuzzy
+#~| msgid "Personal note filters"
+#~ msgid "Create personal note filter"
+#~ msgstr "Filtres de notes personnelles"
+
+#~ msgid "Count"
+#~ msgstr "Compter"
+
+#~ msgid "Room"
+#~ msgstr "Salle"

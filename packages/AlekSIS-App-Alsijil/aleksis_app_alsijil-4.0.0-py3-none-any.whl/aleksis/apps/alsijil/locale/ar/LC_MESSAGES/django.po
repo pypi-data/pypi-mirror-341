@@ -1,0 +1,692 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-16 17:42+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: aleksis/apps/alsijil/checks.py:17
+msgid "Delete object"
+msgstr ""
+
+#: aleksis/apps/alsijil/checks.py:27
+msgid "Set current groups"
+msgstr ""
+
+#: aleksis/apps/alsijil/checks.py:39
+msgid "Ensure that there are no participation statuses and personal notes in cancelled lessons"
+msgstr ""
+
+#: aleksis/apps/alsijil/checks.py:41
+msgid "The participation status or personal note is related to a cancelled lesson."
+msgstr ""
+
+#: aleksis/apps/alsijil/checks.py:69
+msgid "Ensure that 'groups_of_person' is set for every participation status"
+msgstr ""
+
+#: aleksis/apps/alsijil/checks.py:70
+msgid "The participation status has no group in 'groups_of_person'."
+msgstr ""
+
+#: aleksis/apps/alsijil/checks.py:92
+msgid "Ensure that there are no documentations on holidays"
+msgstr ""
+
+#: aleksis/apps/alsijil/checks.py:93
+msgid "The documentation is on holidays."
+msgstr ""
+
+#: aleksis/apps/alsijil/checks.py:125
+msgid "Ensure that there are no participation statuses or personal notes on holidays"
+msgstr ""
+
+#: aleksis/apps/alsijil/checks.py:127
+msgid "The participation status or personal note is on holidays."
+msgstr ""
+
+#: aleksis/apps/alsijil/forms.py:29
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_teachers_and_subjects_table.html:7
+msgid "Group"
+msgstr ""
+
+#: aleksis/apps/alsijil/forms.py:42 aleksis/apps/alsijil/models.py:405
+#: aleksis/apps/alsijil/models.py:550
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:63
+msgid "Person"
+msgstr ""
+
+#: aleksis/apps/alsijil/model_extensions.py:9
+msgid "Can view week overview of group class register"
+msgstr ""
+
+#: aleksis/apps/alsijil/model_extensions.py:13
+msgid "Can view lesson overview of group class register"
+msgstr ""
+
+#: aleksis/apps/alsijil/model_extensions.py:15
+msgid "Can view all personal notes of a group"
+msgstr ""
+
+#: aleksis/apps/alsijil/model_extensions.py:16
+msgid "Can edit all personal notes of a group"
+msgstr ""
+
+#: aleksis/apps/alsijil/model_extensions.py:18
+msgid "Can view all lesson documentation of a group"
+msgstr ""
+
+#: aleksis/apps/alsijil/model_extensions.py:21
+msgid "Can edit all lesson documentation of a group"
+msgstr ""
+
+#: aleksis/apps/alsijil/model_extensions.py:23
+msgid "Can view full register of a group"
+msgstr ""
+
+#: aleksis/apps/alsijil/model_extensions.py:25
+msgid "Can register an absence for all members of a group"
+msgstr ""
+
+#: aleksis/apps/alsijil/model_extensions.py:27
+msgid "Can assign a group role for this group"
+msgstr ""
+
+#: aleksis/apps/alsijil/model_extensions.py:28
+msgid "Can register an absence for a person"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:42
+msgid "Short name"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:43 aleksis/apps/alsijil/models.py:595
+msgid "Name"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:45
+msgid "Foreground colour"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:46
+msgid "Background colour"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:48
+msgid "Show in coursebook"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:59
+msgid "Extra mark"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:60
+msgid "Extra marks"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:79
+msgid "Course"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:83
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:89
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:118
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_teachers_and_subjects_table.html:9
+msgid "Subject"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:91
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:90
+msgid "Teachers"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:94
+msgid "Lesson Topic"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:95
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_coursebook.html:11
+msgid "Homework"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:96
+msgid "Group Note"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:100
+msgid "Participation touched at"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:132 aleksis/apps/alsijil/models.py:415
+#: aleksis/apps/alsijil/models.py:557
+msgid "Documentation"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:133
+msgid "Documentations"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:408
+msgid "Groups of Person"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:421
+msgid "Absence Reason"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:433
+msgid "Base Absence"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:436
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:63
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:92
+msgid "Tardiness"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:533 aleksis/apps/alsijil/models.py:534
+msgid "Participation Status"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:562
+msgid "Note"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:564
+msgid "Extra Mark"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:571
+msgid "Personal Note"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:572
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:113
+msgid "Personal Notes"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:583
+msgid "A person got assigned the same extra mark multiple times per documentation."
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:596
+msgid "Icon"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:597
+msgid "Colour"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:603 aleksis/apps/alsijil/models.py:618
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:62
+msgid "Group role"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:604
+#: aleksis/apps/alsijil/templates/alsijil/group_role/list.html:8
+#: aleksis/apps/alsijil/templates/alsijil/group_role/list.html:9
+msgid "Group roles"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:605
+msgid "Can assign group role"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:624
+msgid "Assigned person"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:629
+msgid "Groups"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:631
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:64
+msgid "Start date"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:635
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:65
+msgid "End date"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:636
+msgid "Can be left empty if end date is not clear yet"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:651
+msgid "Group role assignment"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:652
+msgid "Group role assignments"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:659
+msgid "Can view lesson overview"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:660
+msgid "Can view week overview"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:661
+msgid "Can view full register"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:662
+msgid "Can register absence"
+msgstr ""
+
+#: aleksis/apps/alsijil/models.py:663
+msgid "Can list all personal note filters"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:14
+msgid "Class register"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:23
+msgid "Grant the owner of a parent group the same privileges as the owners of the respective child groups in regard to group role management and generating full printouts of class registers."
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:36
+msgid "Allow group owners to assign group roles to the parents of the group's members"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:48
+msgid "Allow editing of all future documentations"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:51
+msgid "Allow editing of all documentations up to and including those on the current day"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:56
+msgid "Allow editing of all documentations up to and including those on the current date and time"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:61
+msgid "Set time range for which documentations may be edited"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:72
+msgid "User is allowed to register absences for members of groups the user is an owner of with these group types"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:76
+msgid "If you leave it empty, all member of groups the user is an owner of will be shown."
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:88
+msgid "User is allowed to view coursebook statistics for members of groups the user is an owner of with these group types"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:101
+msgid "Group type of groups to be shown first in the group select field on the coursebook overview page"
+msgstr ""
+
+#: aleksis/apps/alsijil/preferences.py:104
+msgid "If you leave it empty, no group type will be used."
+msgstr ""
+
+#: aleksis/apps/alsijil/schema/participation_status.py:106
+msgid "List of ParticipationStatus IDs"
+msgstr ""
+
+#: aleksis/apps/alsijil/schema/participation_status.py:141
+#, python-brace-format
+msgid "Extended by {full_name} on {datetime}"
+msgstr ""
+
+#: aleksis/apps/alsijil/schema/participation_status.py:162
+msgid "Extended absence reason from coursebook."
+msgstr ""
+
+#: aleksis/apps/alsijil/tables.py:16
+#: aleksis/apps/alsijil/templates/alsijil/group_role/partials/assignment_options.html:13
+msgid "Edit"
+msgstr ""
+
+#: aleksis/apps/alsijil/tables.py:22
+#: aleksis/apps/alsijil/templates/alsijil/group_role/partials/assignment_options.html:29
+msgid "Delete"
+msgstr ""
+
+#: aleksis/apps/alsijil/tasks.py:51 aleksis/apps/alsijil/tasks.py:158
+msgid "Loading data ..."
+msgstr ""
+
+#: aleksis/apps/alsijil/tasks.py:79
+msgid "Loading groups ..."
+msgstr ""
+
+#: aleksis/apps/alsijil/tasks.py:128 aleksis/apps/alsijil/tasks.py:187
+msgid "Generating template ..."
+msgstr ""
+
+#: aleksis/apps/alsijil/tasks.py:136 aleksis/apps/alsijil/tasks.py:195
+msgid "Generating PDF ..."
+msgstr ""
+
+#: aleksis/apps/alsijil/tasks.py:142 aleksis/apps/alsijil/tasks.py:201
+msgid "PDF generation failed"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assign.html:9
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assign.html:16
+#, python-format
+msgid "Assign group role for %(group)s"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assign.html:11
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assign.html:18
+msgid "Assign group role"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assign.html:34
+msgid "Assign"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:9
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:12
+#, python-format
+msgid "Group roles for %(group)s"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:28
+msgid "Back to my groups"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:36
+msgid "Assign a role to a person"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:45
+msgid "Current roles"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:48
+msgid "All assignments"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:66
+#: aleksis/apps/alsijil/templates/alsijil/group_role/assigned_list.html:83
+msgid "Actions"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/create.html:6
+#: aleksis/apps/alsijil/templates/alsijil/group_role/create.html:7
+#: aleksis/apps/alsijil/templates/alsijil/group_role/list.html:16
+msgid "Create group role"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/edit.html:6
+#: aleksis/apps/alsijil/templates/alsijil/group_role/edit.html:7
+msgid "Edit group role"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/edit_assignment.html:7
+#: aleksis/apps/alsijil/templates/alsijil/group_role/edit_assignment.html:8
+msgid "Edit group role assignment"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/partials/assigned_roles.html:31
+msgid "No one assigned."
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/partials/assigned_roles.html:41
+msgid ""
+"\n"
+"    You can get some additional actions for each group role assignment if you click on the name of the\n"
+"    corresponding person.\n"
+"  "
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/partials/assignment_options.html:21
+msgid "Stop"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/group_role/warning.html:4
+msgid ""
+"\n"
+"    This function should only be used to define alternatives to the default excuse which also will be counted extra.\n"
+"    Don't use this to create a default excuse or if you don't divide between different types of excuse.\n"
+"  "
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:3
+#, python-format
+msgid "Personal Overview: %(full_name)s"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:5
+msgid "Contact Details"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:44
+msgid "Absences and Tardiness"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:47
+msgid "Absences"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:71
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_abbreviations.html:35
+msgid "Extra Marks"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:84
+msgid "Absences and Tardinesses"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:88
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:117
+msgid "Date"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:91
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_abbreviations.html:10
+msgid "Absent"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:119
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_teachers_and_subjects_table.html:10
+msgid "Teacher"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/person_overview.html:120
+msgid "Remarks"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_abbreviations.html:3
+msgid "Abbreviations"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_abbreviations.html:5
+msgid "General"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_abbreviations.html:13
+msgid "Late"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_abbreviations.html:18
+msgid "Absence Reasons"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_coursebook.html:3
+msgid "Coursebook"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_coursebook.html:8
+msgid "Time"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_coursebook.html:9
+msgid "Subj."
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_coursebook.html:10
+msgid "Topic"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_coursebook.html:12
+msgid "Notes"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_coursebook.html:13
+msgid "Te."
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:4
+#: aleksis/apps/alsijil/templates/alsijil/print/register_for_group.html:6
+#: aleksis/apps/alsijil/templates/alsijil/print/register_for_person.html:6
+msgid "Class Register"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:14
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:47
+msgid "Owners"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:18
+msgid "Printed on"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:26
+msgid ""
+"\n"
+"      This printout is intended for archival purposes. The main copy of\n"
+"      the class register is stored in the AlekSIS School Information\n"
+"      System.\n"
+"    "
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:33
+msgid ""
+"\n"
+"      Copies of the class register, both digital and as printout, must\n"
+"      only be kept inside the school and/or on devices authorised by the\n"
+"      school.\n"
+"    "
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:40
+msgid ""
+"\n"
+"      The owner of the group and the headteacher confirm the above, as\n"
+"      well as the correctness of this printout.\n"
+"    "
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_cover.html:50
+msgid "Headteacher"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:3
+#, python-format
+msgid "Persons in Group %(group)s"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:8
+msgid "No."
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:9
+msgid "Last name"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:10
+msgid "First name"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:11
+msgid "Sex"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:12
+msgid "Date of birth"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:13
+msgid "(a)"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_members_table.html:24
+msgid "(b)"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/partials/register_teachers_and_subjects_table.html:11
+msgid "Per week"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/register_for_group.html:32
+msgid "Teachers and lessons in group"
+msgstr ""
+
+#: aleksis/apps/alsijil/templates/alsijil/print/register_for_group.html:37
+msgid "Teachers and lessons in child groups"
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:85
+msgid ", "
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:87 aleksis/apps/alsijil/views.py:124
+msgid "Generate register printout …"
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:88 aleksis/apps/alsijil/views.py:125
+msgid "The printout has been generated successfully."
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:89 aleksis/apps/alsijil/views.py:126
+msgid "There was a problem while generating the printout."
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:92 aleksis/apps/alsijil/views.py:129
+msgid "Download PDF"
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:154
+msgid "The group role has been created."
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:166
+msgid "The group role has been saved."
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:177
+msgid "The group role has been deleted."
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:211 aleksis/apps/alsijil/views.py:243
+msgid "The group role has been assigned."
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:262
+msgid "The group role assignment has been saved."
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:283
+msgid "The group role assignment has been stopped."
+msgstr ""
+
+#: aleksis/apps/alsijil/views.py:296
+msgid "The group role assignment has been deleted."
+msgstr ""

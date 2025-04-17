@@ -1,0 +1,93 @@
+# Uses core persons query
+query gqlPersons {
+  items: absenceCreationPersons {
+    id
+    fullName
+    shortName
+  }
+}
+
+query periodsByDay {
+  periodsByDay: periodsByDay {
+    weekday
+    periods {
+      period
+      timeStart
+      timeEnd
+    }
+  }
+}
+
+query lessonsForPersons($persons: [ID]!, $start: DateTime!, $end: DateTime!) {
+  items: lessonsForPersons(persons: $persons, start: $start, end: $end) {
+    id
+    lessons {
+      id
+      datetimeStart
+      datetimeEnd
+      course {
+        id
+        name
+      }
+      subject {
+        id
+        name
+        shortName
+        colourFg
+        colourBg
+      }
+    }
+  }
+}
+
+# Use absencesInputType?
+mutation createAbsencesForPersons(
+  $persons: [ID]!
+  $start: DateTime!
+  $end: DateTime!
+  $comment: String
+  $reason: ID!
+) {
+  createAbsencesForPersons(
+    persons: $persons
+    start: $start
+    end: $end
+    comment: $comment
+    reason: $reason
+  ) {
+    ok
+    items: participationStatuses {
+      id
+      isOptimistic
+      relatedDocumentation {
+        id
+      }
+      absenceReason {
+        id
+        name
+        shortName
+        colour
+      }
+    }
+  }
+}
+
+mutation clearAbsencesForPersons(
+  $persons: [ID]!
+  $start: DateTime!
+  $end: DateTime!
+) {
+  clearAbsencesForPersons(persons: $persons, start: $start, end: $end) {
+    ok
+    items: participationStatuses {
+      id
+      isOptimistic
+      relatedDocumentation {
+        id
+      }
+      absenceReason {
+        id
+      }
+    }
+  }
+}

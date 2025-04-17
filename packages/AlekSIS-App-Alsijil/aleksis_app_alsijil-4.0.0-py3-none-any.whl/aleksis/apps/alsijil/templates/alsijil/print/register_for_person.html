@@ -1,0 +1,15 @@
+{% extends "core/base_print.html" %}
+
+{% load static i18n %}
+
+{% block page_title %}
+  {% trans "Class Register" %} · {{ school_term.name }}
+{% endblock %}
+
+{% block extra_head %}
+  <link rel="stylesheet" href="{% static 'css/alsijil/full_register.css' %}"/>
+{% endblock %}
+
+{% block content %}
+      {% include "alsijil/print/partials/person_overview.html" with person=person %}
+{% endblock %}
