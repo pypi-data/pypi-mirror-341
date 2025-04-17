@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+tqdm
+beartype
+matplotlib
+scanpy>=1.9
+pysam
+scipy

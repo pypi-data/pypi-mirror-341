@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+peakqc/__init__.py
+peakqc/_version.py
+peakqc/fld_scoring.py
+peakqc/general.py
+peakqc/insertsizes.py
+peakqc.egg-info/PKG-INFO
+peakqc.egg-info/SOURCES.txt
+peakqc.egg-info/dependency_links.txt
+peakqc.egg-info/requires.txt
+peakqc.egg-info/top_level.txt
+tests/test_fld_scoring.py
+tests/test_insertsizes.py
