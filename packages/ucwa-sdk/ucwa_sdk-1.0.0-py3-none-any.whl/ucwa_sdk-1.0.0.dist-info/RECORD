@@ -1,0 +1,11 @@
+ucwa_sdk/__init__.py,sha256=BOcZE49WoAfQS1XFXQeAax-5W8uvHH-CREYMXzy3aUE,52
+ucwa_sdk/client.py,sha256=F6_j55qS0ms0585AEqDlVOYAIpwwXqHLrWcKLUODE-U,460
+ucwa_sdk/config.py,sha256=3Tu56eUN_-fZUPlYpG9H-F8z8KRw5vLgL7MirYC6tBA,74
+ucwa_sdk/execption.py,sha256=arb_SR_iXoKucsn4REuXpWQQNUnBN1RDm8_KV39RzWA,248
+ucwa_sdk/memory.py,sha256=OnsruK5fBY_NWflY9TLhV9-zfq_PZch8qpPGWng9cBs,366
+ucwa_sdk/model.py,sha256=lr6QQlgOPKVI2Bh_KZD0S8HcMBoMS5QkN3x_6BxPpOQ,781
+ucwa_sdk/utils.py,sha256=_xb_Qd1sEyE53VC9XgWEPz5X1TM2UlLqjHUv-lsfaoc,134
+ucwa_sdk-1.0.0.dist-info/METADATA,sha256=wpqeVqGAf1VIhKQEaFEktp7aexzBkBIV6-BH57DRFGM,4808
+ucwa_sdk-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ucwa_sdk-1.0.0.dist-info/top_level.txt,sha256=Ae9LnIdSzugedxgVo_2ZLq_o0Q493KrfJmnJ4E-YmPM,9
+ucwa_sdk-1.0.0.dist-info/RECORD,,
