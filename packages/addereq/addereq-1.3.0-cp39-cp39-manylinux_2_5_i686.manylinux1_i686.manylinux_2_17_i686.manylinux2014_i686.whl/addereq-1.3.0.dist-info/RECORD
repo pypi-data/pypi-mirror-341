@@ -1,0 +1,15 @@
+addereq-1.3.0.dist-info/WHEEL,sha256=iAkzzuttEGEvJ9kmdDOUnor3xw7Zt1CIPvOZVwuBdRE,208
+addereq-1.3.0.dist-info/RECORD,,
+addereq-1.3.0.dist-info/top_level.txt,sha256=kTOP05dPDJJ_BcjbvtEfnk5o3vVaHkqY_JPbOoDhkUc,8
+addereq-1.3.0.dist-info/METADATA,sha256=tGNX_kI6KNytvkesCdm9rF1yIN951wS5MvD9XY22bmI,4727
+addereq-1.3.0.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+addereq/logger_config.cp310-win_amd64.pyd,sha256=VdAAkarRPI0G_hsnE5aN3qG8wtMY3epdVrGBygdcsuE,28160
+addereq/logger_config.cpython-39-i386-linux-gnu.so,sha256=w7ngkmtwRNXSo1SfM7s3Du_S9CNhh8BSwUxPfTz9ZJo,100524
+addereq/fetching.cp310-win_amd64.pyd,sha256=gpZDJJ5XH2mJUW46e5YGR5yMimr6KwTbdPDpYSk4o9E,184320
+addereq/EQT.cpython-39-i386-linux-gnu.so,sha256=DCnBaY-YL2E_EOn5wJzC0xQ-IdTfsB-g_yT45H5tw_0,580576
+addereq/plotting.cpython-39-i386-linux-gnu.so,sha256=tz6ks1BrAJkvtOlgsqB7pN0-7JvkH2YBy3XpT7U1Vag,2278408
+addereq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addereq/cleaning.cpython-39-i386-linux-gnu.so,sha256=2ks9tJU8_w98e_7aWebWwCO7GlENra6zpnr0cq8NNZk,273200
+addereq/plotting.cp310-win_amd64.pyd,sha256=h1nMuFbkVJdMiGG-4Z6z-noMVP7gTb0xH7PbNAUtuyo,254464
+addereq/cleaning.cp310-win_amd64.pyd,sha256=L51pUBQ6s0EkIcvFzPutzde1PceHGMlu-O2tJj-BWMk,47104
+addereq/fetching.cpython-39-i386-linux-gnu.so,sha256=-BRn3bgMwJnJizLGoaU76gjW7wanYtJWrS-oguMzEtg,1438180
