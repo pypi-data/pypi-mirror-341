@@ -1,0 +1,31 @@
+{% load static %}
+<div class="textbus-container">
+    <textarea name="{{ widget.name }}"{% if widget.attrs %}{% for name, value in widget.attrs.items %}{% if value is not False %} {{ name }}{% if value is not True %}="{{ value }}"{% endif %}{% endif %}{% endfor %}{% endif %}>{{ widget.value }}</textarea>
+    <div id="textbus-editor-{{ widget.attrs.id }}" class="textbus-editor-container"></div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const textareaId = "{{ widget.attrs.id }}";
+        const textarea = document.getElementById(textareaId);
+        const editorContainer = document.getElementById("textbus-editor-" + textareaId);
+        
+        // 初始化Textbus编辑器
+        const config = {{ widget.config_json|safe }};
+        
+        // 创建Textbus实例
+        const textbus = new Textbus.Editor({
+            ...config,
+            content: textarea.value,
+            container: editorContainer
+        });
+        
+        // 当编辑器内容变化时，更新textarea的值
+        textbus.onChange.subscribe(content => {
+            textarea.value = content;
+        });
+        
+        // 隐藏原始textarea
+        textarea.style.display = 'none';
+    });
+</script>
