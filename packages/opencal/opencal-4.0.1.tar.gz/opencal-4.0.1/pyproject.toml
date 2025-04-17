@@ -1,0 +1,54 @@
+[project]
+authors = [
+    {name = "Jérémie DECOCK", email = "jd.jdhp@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+]
+description = "OpenCAL core library for Python"
+dynamic = ["dependencies"]
+name = "opencal"
+readme = "README.rst"
+requires-python = ">=3.11"
+version = "4.0.1"
+# web_site_url = "http://www.jdhp.org/software_en.html#opencal"
+
+
+
+# Project scripts format: `SCRIPT_NAME = "SCRIPT_PATH:SCRIPT_FUNCTION"`
+[project.scripts]
+opencal-backup = "opencal.io.sqlitedb:backup_db"
+opencal-dump = "opencal.io.sqlitedb:dump_db"
+opencal-restore = "opencal.io.sqlitedb:restore_db"
+opencal-sqlite2json = "opencal.io.sqlitedb:sqlite_to_json_file"
+
+
+[build-system]
+requires = [
+'setuptools',
+]
+build-backend = "setuptools.build_meta"
+
+# See https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+[tool.setuptools]
+packages = [
+    "opencal",
+    "opencal.io",
+    "opencal.core",
+    "opencal.core.professor",
+    "opencal.core.professor.acquisition",
+    "opencal.core.professor.consolidation",
+]
+
+# Use requirements.txt to setup dependencies (c.f. https://stackoverflow.com/a/73600610)
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+# See https://github.com/python/mypy/issues/13392#issuecomment-1784192655
+[tool.setuptools.package-data]
+"*" = ["py.typed", ".pyi"]

@@ -1,0 +1,5 @@
+[console_scripts]
+opencal-backup = opencal.io.sqlitedb:backup_db
+opencal-dump = opencal.io.sqlitedb:dump_db
+opencal-restore = opencal.io.sqlitedb:restore_db
+opencal-sqlite2json = opencal.io.sqlitedb:sqlite_to_json_file
