@@ -1,0 +1,16 @@
+ovos_skill_config/__init__.py,sha256=uJw8rnWvqZ41mwty_EDoiprB-h_DRTLSOlMeET1J99Y,65
+ovos_skill_config/main.py,sha256=xCH7s-m6d-OSN_RDEA0e0vZ--WDaxFTSkzvHZF-mZGk,9935
+ovos_skill_config/version.py,sha256=RaANGbRu5e-vehwXI1-Qe2ggPPfs1TQaZj072JdbLk4,22
+ovos_skill_config/static/config.json,sha256=dlXU9J1ZKSm2Hl9rV3sZJtRNMGwWBQ6ivk40w1pwkjA,154
+ovos_skill_config/static/favicon.ico,sha256=7jKATfdEs44h56_zVa0H0k7po5xDaa3ihYadbg8BmNI,32038
+ovos_skill_config/static/index.html,sha256=QHUx1-c43aOucJR_7xas6mYSYt1JWTF7gFPfr6Cxvzw,478
+ovos_skill_config/static/logo.svg,sha256=URmni7E1_7bcJ3_7wPn28GaYWMYdiKpgg3eBUlXEiJo,11064
+ovos_skill_config/static/neon.png,sha256=O5ms0KOQ1Zezp6hXQ9CajOarG4xAuXmpbOmKtZBqykA,6408
+ovos_skill_config/static/assets/index-BU05NY0Y.css,sha256=N1pmyH_aNxq1ahwlw-QS5EGxA_xm2D5oH4XZPBNr6C4,17696
+ovos_skill_config/static/assets/index-CLctCwWl.js,sha256=FUp-2yz0e7ZZGUMJNQ0eq--XtNlqfIHi3VufxQ15mPQ,253029
+ovos_skill_config_tool-0.7.0.dist-info/licenses/LICENSE,sha256=YMzZL09UrHcGRoeNjJIuwGY4vaC1rxDabjkJYJIsckM,11355
+ovos_skill_config_tool-0.7.0.dist-info/METADATA,sha256=D3ZD-TaNCqrf2nTwAnkQcetnmT2B59BcRmo6XHUaH2Q,27351
+ovos_skill_config_tool-0.7.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ovos_skill_config_tool-0.7.0.dist-info/entry_points.txt,sha256=l_B4nBrgkN9E_bQpPHBbCW6w0-hBwH1YELkP2BT-OeU,71
+ovos_skill_config_tool-0.7.0.dist-info/top_level.txt,sha256=b2clqhOYXgOG-f-dNpi-hGuD058MMli6alICJ2-qQdo,18
+ovos_skill_config_tool-0.7.0.dist-info/RECORD,,

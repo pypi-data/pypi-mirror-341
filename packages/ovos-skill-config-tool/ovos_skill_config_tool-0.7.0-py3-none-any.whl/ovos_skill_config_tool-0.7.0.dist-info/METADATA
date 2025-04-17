@@ -1,0 +1,524 @@
+Metadata-Version: 2.4
+Name: ovos-skill-config-tool
+Version: 0.7.0
+Summary: OpenVoiceOS/Neon Skills Configuration Tool
+Author-email: Oscillate Labs <mike@oscillatelabs.net>
+License:                                  Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright 2024 [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Project-URL: Homepage, https://github.com/OscillateLabsLLC/ovos-skill-config-tool
+Keywords: mycroft,ovos,neon,plugin,configuration,skills,tool
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi>=0.115.6
+Requires-Dist: json-database>=0.7.0
+Requires-Dist: uvicorn>=0.34.0
+Dynamic: license-file
+
+# OVOS Skill Config Tool
+
+A modern web interface for configuring OpenVoiceOS and Neon AI skills, built with React and FastAPI.
+
+## Features
+
+- Clean, intuitive UI for managing voice assistant skills
+- Support for skill-specific configuration settings
+- Dark mode support
+- Skill grouping and organization
+- Basic Authentication for security
+
+## Screenshots
+
+![OVOS Skill Config Interface](skills-interface.webp)
+
+## Technology Stack
+
+- **Frontend**: React with Vite
+- **Backend**: FastAPI
+- **Styling**: Modern Tailwind CSS with dark mode support
+- **Security**: Basic Authentication
+
+## Installation & Usage
+
+You can run the OVOS Skill Config Tool either directly via Pip or using the official Docker container.
+
+### Method 1: Pip Install (Local/Virtual Env)
+
+#### Installation
+
+Ensure you have Python 3.9+ and Pip installed. It's recommended to use a virtual environment.
+
+```bash
+# Create and activate a virtual environment (optional but recommended)
+python -m venv .venv
+source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+
+# Install the tool
+pip install ovos-skill-config-tool
+```
+
+#### Running
+
+Once installed, run the tool from your terminal (ensure your virtual environment is active if you used one):
+
+```bash
+ovos-skill-config-tool
+```
+
+The application will be available at `http://0.0.0.0:8000` by default.
+
+#### Authentication (Pip Install)
+
+By default, the application uses Basic Authentication with the credentials:
+
+- **Username**: `ovos`
+- **Password**: `ovos`
+
+You can override these by setting environment variables _before_ running the application:
+
+- `OVOS_CONFIG_USERNAME`: Sets the username.
+- `OVOS_CONFIG_PASSWORD`: Sets the password.
+
+Example:
+
+```bash
+export OVOS_CONFIG_USERNAME=myuser
+export OVOS_CONFIG_PASSWORD=mypassword
+ovos-skill-config-tool
+```
+
+All API endpoints under `/api/v1/` require Basic Authentication.
+
+#### Customization (Pip Install)
+
+When installed via Pip, the application serves static files (like `index.html`, CSS, JavaScript, and `config.json`) directly from its installation directory within your Python environment's `site-packages`.
+
+1.  **Find the Installation Directory:** You can find the location using pip:
+
+    ```bash
+    pip show ovos-skill-config-tool
+    # Look for the "Location:" line, e.g., /path/to/.venv/lib/python3.11/site-packages
+    ```
+
+    The static files will be inside `ovos_skill_config/static` within that location (e.g., `/path/to/.venv/lib/python3.11/site-packages/ovos_skill_config/static`).
+
+2.  **Modify `config.json`:** Edit the `config.json` file found in the static directory. See the configuration options below.
+
+3.  **Add Custom Logo:** Place your custom logo file (e.g., `my-logo.png`) in the same static directory alongside `config.json`. Update the `src` path in `config.json` accordingly (e.g., `"/my-logo.png"`).
+
+**Note:** Modifications made directly within the `site-packages` directory may be overwritten when you update the `ovos-skill-config-tool` package using pip.
+
+**(Advanced):** You can alternatively override the static file directory entirely by setting the `OVOS_CONFIG_STATIC_DIR` environment variable to point to a local directory containing your customized frontend build assets (including `index.html`, JS/CSS, `config.json`, and your logo).
+
+### Method 2: Docker
+
+Using Docker provides a convenient and isolated way to run the application.
+
+#### Pulling the Image
+
+Pull the latest official image from the GitHub Container Registry:
+
+```bash
+docker pull ghcr.io/oscillatelabsllc/ovos-skill-config-tool:latest
+# Or replace :latest with a specific version tag
+```
+
+#### Running the Container
+
+Run the container, mapping the port and optionally setting authentication credentials:
+
+```bash
+docker run --rm --name ovos-config -p 8000:8000 \
+  -e OVOS_CONFIG_USERNAME=myuser \
+  -e OVOS_CONFIG_PASSWORD=mypass \
+  -v $HOME/.config:/home/appuser/.config \
+  ghcr.io/oscillatelabsllc/ovos-skill-config-tool:latest
+```
+
+- `--rm`: Removes the container when it stops.
+- `--name ovos-config`: Assigns a name to the container.
+- `-p 8000:8000`: Maps port 8000 on your host to port 8000 in the container.
+- `-e OVOS_CONFIG_USERNAME=...`: Sets the authentication username. Defaults to `ovos`.
+- `-e OVOS_CONFIG_PASSWORD=...`: Sets the authentication password. Defaults to `ovos`.
+- `-v $HOME/.config:/home/appuser/.config`: **(Recommended)** Mounts a local directory to persist skill configuration data saved via the UI. Adjust the host path (`$HOME/.config`) as needed. The container path should remain `/home/appuser/.config`.
+
+The application will be available at `http://localhost:8000`.
+
+#### Customization (Docker)
+
+When running the Docker image, you can customize the appearance and logo by mounting specific files into the container's static assets directory (`/app/static`).
+
+##### Configuration File (`config.json`)
+
+The UI behavior and logo configuration are controlled by a `config.json` file located within the container at `/app/static/config.json`. Create your own `config.json` file locally with the following structure:
+
+```json
+{
+  "logo": {
+    "type": "image", // "image" or "text"
+    "src": "/my-logo.png", // Path to the logo file *relative to /app/static* inside the container
+    "alt": "My Custom Logo", // Alt text for accessibility
+    "width": 32, // Optional, defaults to 32
+    "height": 32, // Optional, defaults to 32
+    "text": "OVOS" // Text to display if type is "text"
+  }
+  // Add other future configuration options here
+}
+```
+
+**Important:** The `src` path for the logo should be relative to the static root (`/app/static`) within the container.
+
+##### Running with Customizations
+
+To use your custom files, add Docker's volume mount (`-v`) flags when running the container. Mount your local files to their corresponding paths inside `/app/static`.
+
+**Example:**
+
+Assuming you have `my-config.json` and `my-logo.png` in your current directory:
+
+```bash
+docker run --rm --name ovos-config -p 8000:8000 \
+  -v $(pwd)/my-config.json:/app/static/config.json \
+  -v $(pwd)/my-logo.png:/app/static/my-logo.png \
+  -v $HOME/.config:/home/appuser/.config \
+  -e OVOS_CONFIG_USERNAME=myuser \
+  -e OVOS_CONFIG_PASSWORD=mypass \
+  ghcr.io/oscillatelabsllc/ovos-skill-config-tool:latest
+```
+
+**Explanation:**
+
+- `-v $(pwd)/my-config.json:/app/static/config.json`: Mounts your local `my-config.json` over the default one in the container.
+- `-v $(pwd)/my-logo.png:/app/static/my-logo.png`: Mounts your local `my-logo.png` into the container at the path specified in your `my-config.json`.
+- Remaining flags are as described in the basic run command.
+
+If no custom `config.json` is mounted, the application will use the default configuration built into the image.
+
+#### Troubleshooting
+
+If you encounter issues reading from skill config files, ensure that the files are readable by the application. You can check this by running:
+
+```bash
+docker exec -it ovos-config ls -l /home/appuser/.config/ovos/skills # replace with the path to the skill config files
+```
+
+If the files are not readable, you can change the user and group that the container runs as to match your user and group. _We do not recommend running the container as root or changing the permissions of the files!_
+
+If using Docker directly:
+
+```bash
+docker run --rm --name ovos-config -p 8000:8000 \
+  -v $HOME/.config:/home/appuser/.config \
+  -u $(id -u):$(id -g) \
+  ghcr.io/oscillatelabsllc/ovos-skill-config-tool:latest
+```
+
+If using Docker Compose:
+
+```yaml
+services:
+  ovos-config:
+    image: ghcr.io/oscillatelabsllc/ovos-skill-config-tool:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - $HOME/.config:/home/appuser/.config
+    user: $(id -u):$(id -g)
+```
+
+## Using the Settings Editor
+
+Once the OVOS Skill Config Tool is running and you've logged in, you'll see a list of installed skills whose configuration can be managed.
+
+- **Skill Sections:** Each skill with manageable settings appears in its own collapsible section (accordion). Click the skill name to expand or collapse its settings.
+- **Viewing Settings:**
+  - Simple settings (strings, numbers, booleans) are displayed directly below their name.
+  - Complex settings (objects and arrays) are displayed hierarchically. Object fields show their key (bold) and value (muted color). Array items show their index in blue brackets (e.g., `[0]`, `[1]`) followed by their value. You can visually trace the structure through the indentation and connecting lines.
+- **Editing Values:**
+  - To edit a simple setting (string, number, boolean), click the pencil icon (<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path></svg>) next to it. An appropriate input field will appear.
+  - Make your changes and click the checkmark icon (<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>) to save, or the X icon (<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>) to cancel.
+  - You can edit primitive values even if they are nested inside objects or arrays.
+- **Adding Fields/Items to Objects/Arrays:**
+  - To add a new entry to an existing object or array, click the green plus icon (<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>) next to the object's key or array's index.
+  - An inline form will appear below the existing entries.
+  - If adding to an object, enter the **New field name**.
+  - Select the **Type** of the new value (String, Number, Boolean, Object, Array).
+  - Enter the **Value** (unless you chose Object or Array, which start empty).
+  - Click the small checkmark icon (<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>) within the form to save the new entry, or the X icon (<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>) to cancel.
+- **Deleting Fields/Items:**
+  - To delete any setting (top-level or nested), click the red trash icon (<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>) next to it. You will be asked for confirmation.
+- **Adding New Top-Level Settings:**
+  - At the bottom of each skill's section, there is an "Add Setting" button (<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>). Click this to reveal a form similar to the inline add form.
+  - Enter the Setting name, select the Type, enter the Value, and click the checkmark icon (<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>) to add the new setting to the skill.
+- **Undo:**
+  - If you make a change (save or delete) to a skill's settings, an "Undo Change" button (<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 7v6h-6"></path><path d="M3 17a9 9 0 0 1 9-9 9 9 0 0 1 6 2.3l3 2.7"></path></svg>) will appear at the top right of that skill's section.
+  - Clicking this button will revert the settings for that specific skill to the state _before_ the last change was made. It only undoes the single most recent change for that skill.
+
+## Developer Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/OscillateLabsLLC/ovos-skill-config-tool.git
+cd ovos-skill-config-tool
+```
+
+2. Install dependencies:
+
+```bash
+# Backend
+pip install .
+
+# Frontend
+cd frontend/ovos-settings-ui
+npm install
+```
+
+## Development
+
+This project uses [just](https://github.com/casey/just) as a command runner. Common commands:
+
+```bash
+# Build frontend
+just build-fe
+
+# Run the application
+just run
+
+# Run tests
+just test
+
+# Format code
+just fmt
+
+# Lint code
+just lint
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- OpenVoiceOS community
+- Neon AI community
+- All contributors who have helped shape this tool
+- Mycroft for the original open source voice assistant
+
+## Support
+
+For support, please:
+
+1. Open an issue in the GitHub repository
+1. [Join the OpenVoiceOS community chat in Matrix](https://matrix.to/#/!XFpdtmgyCoPDxOMPpH:matrix.org?via=matrix.org)
