@@ -1,0 +1,12 @@
+lazyreadme/__init__.py,sha256=lvwrqaWLSJo-TCUgDfAUwKeSI_QVFapKJMy4H_J23M0,93
+lazyreadme/__main__.py,sha256=AhWSOqNADbN9XnD0lD9lNMow6USGcxEwB7CqTgOga00,108
+lazyreadme/cli/__init__.py,sha256=B3z7KaJ73VlR7gycVvKXtGyk6Dppry8zxJXZaihACg0,83
+lazyreadme/cli/interface.py,sha256=IXQ5o0yl8tEkhBkBM5TScdqXJ2BOPBlDADLfC3KjgU8,3750
+lazyreadme/templates/sections.py,sha256=jU_qpHv3NqrL49tijMOJuZJdlDzmHoTRcsipXwjOwfE,7300
+lazyreadme/utils/console.py,sha256=WKV8OeYop64BvKr2WrIhbUBkHjoSG4nKlvZ1nx3Ai_A,2114
+lazyreadme-1.0.5.dist-info/licenses/LICENSE,sha256=umZoS7ZJg11iW1ANcwxlu-Y52PhQfvXlD1-KOUdXXy0,1083
+lazyreadme-1.0.5.dist-info/METADATA,sha256=bEu87LX3e0TS65QdBp_hulB_7FBq7_dW6zVczQ1Nn_c,3892
+lazyreadme-1.0.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+lazyreadme-1.0.5.dist-info/entry_points.txt,sha256=GwjBBzkdmMSQ3kuq578WlNmavGjduQO3P7miM_EzIl0,61
+lazyreadme-1.0.5.dist-info/top_level.txt,sha256=YHLYM42v16ulm_-cwgYqkDoFFy0ygN8y4hKnQLw7ZOs,11
+lazyreadme-1.0.5.dist-info/RECORD,,
