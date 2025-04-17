@@ -1,0 +1,2 @@
+[console_scripts]
+terraform-cloud-mcp = terraform_cloud_mcp.server:main
