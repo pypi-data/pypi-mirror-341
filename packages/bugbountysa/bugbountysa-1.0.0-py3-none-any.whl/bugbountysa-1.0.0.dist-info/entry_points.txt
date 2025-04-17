@@ -1,0 +1,2 @@
+[console_scripts]
+bugbountysa = core:scarp
