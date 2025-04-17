@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: accsr
+Version: 0.4.9
+Summary: Utils for accessing data from anywhere
+Author: AppliedAI
+Requires-Python: >=3.8
+Provides-Extra: test
+Provides-Extra: docs
+License-File: LICENSE.md
