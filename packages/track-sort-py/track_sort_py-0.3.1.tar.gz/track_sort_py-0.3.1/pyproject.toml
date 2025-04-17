@@ -1,0 +1,10 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "track-sort-py"
+description = "High Performance implementation of the SORT object tracking algorithm"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+keywords = ["rust", "object-tracking"]
