@@ -1,0 +1,13 @@
+sqla_history/__init__.py,sha256=ehpys07aBBBLUlTrjw-fHUKm0W2XQbOBgeARCfnxoGo,523
+sqla_history/base.py,sha256=IG79Wh9w2nfyT_M49MaiUoHkL_DsLM5EMIQvhDvBTvc,1108
+sqla_history/context.py,sha256=XOjJhUAuMCpGtthiYx3jTQuuBoeaGCg5My273yMwxUM,1368
+sqla_history/dto.py,sha256=FEEytSZ2zoKtzyF_0UWVGSPC4_yXwaHIkjVb9hVkjzw,1031
+sqla_history/event_handlers.py,sha256=vBkc4VC5a5TcPr0I0IGrjHAdbnrKzfOQ-iDnzsLDiQ0,8123
+sqla_history/not_set.py,sha256=w0x9PqBcKseebmPCkyjgo9pLJXlAknKPJbJZqqxmGfg,88
+sqla_history/stmt_builder.py,sha256=_btl3Bb0FLSK0NiUF8gAJ8VA01hdM9W4J27clvMUfq4,3352
+sqla_history/types_.py,sha256=5pSM9WPmNdgzHNG6jWl3ijldF43fkbCrKIUyaSH4YDw,133
+sqla_history/utils.py,sha256=23p2kIeLNImTLPJynWa_HYPZ4PfgWj1BtEHIBW-O3Kk,101
+sqla_history-0.3.0.dist-info/METADATA,sha256=VRgfmRpU6eScel0GXHefVzsadFjtpVU9SAVMF8BQmuw,5408
+sqla_history-0.3.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sqla_history-0.3.0.dist-info/top_level.txt,sha256=o64LShVU4Y3uMGOWmBZoA8JFn1qreS0G_o84IYbqN0U,13
+sqla_history-0.3.0.dist-info/RECORD,,
