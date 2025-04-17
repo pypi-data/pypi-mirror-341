@@ -1,0 +1,11 @@
+pyevaljs4/__init__.py,sha256=S53UKqpi5i4pQ07cQDqpYJ76zhBNeNFbth2y7KKxaU0,599
+pyevaljs4/__version__.py,sha256=2IT4kGrMZMW6neO6nX0mLx7xUdTtiUxktpNX7CwzX5o,41
+pyevaljs4/_program.py,sha256=dAdUHV5XwsEDOZVRPxIxE7ba9eiIFLK5KxfUkq2XSC0,1557
+pyevaljs4/exceptions.py,sha256=QdRE3XXje5s7kV_e9xTpDcQBHKv-NboUjX-MhKCOEik,101
+pyevaljs4/pyevaljs.py,sha256=mbH9_aqCaJUv3SAI5IzVblE5n92V8JFkgtabsVVqWO0,4322
+pyevaljs4/settings.py,sha256=DOqDt5qwfrqjX5uoWJNYzNr-BHhBfi_zDvvkJlXCO0M,47
+pyevaljs4/utils.py,sha256=z8DxAwY-OxXGKFiiGFj4XBVR6ereqTS71d8gFZNVPL0,193
+pyevaljs4-0.2.0.dist-info/METADATA,sha256=_s1yP1faKYcBYhJ0NffINDCQmcBHpzK1fJSwawngp9k,2997
+pyevaljs4-0.2.0.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+pyevaljs4-0.2.0.dist-info/top_level.txt,sha256=uf1xHqdnrTQuI-BxfuvFsZZaz7aR_Njc6MPdlQpNxYY,10
+pyevaljs4-0.2.0.dist-info/RECORD,,
