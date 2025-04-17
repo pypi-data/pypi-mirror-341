@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pudim_hunter_driver_scraper
+Version: 0.0.4
+Summary: Playwright-based scraper implementation for The Pudim Hunter platform
+Home-page: UNKNOWN
+Author: Luis Machado Reis
+Author-email: luis.reis@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/luismr/pudim-hunter-driver-scraper
+Project-URL: Bug Tracker, https://github.com/luismr/pudim-hunter-driver-scraper/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE.md
+
+UNKNOWN
+
