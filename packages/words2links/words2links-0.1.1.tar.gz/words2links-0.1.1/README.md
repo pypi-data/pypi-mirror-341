@@ -1,0 +1,147 @@
+# words2links (关键词到论文链接)
+
+一个基于MCP协议的服务，用于将搜索关键词转换为中国知网CSSCI来源的论文链接列表。
+
+## 功能特点
+
+- 基于关键词搜索中国知网(CNKI)学术资源
+- 自动筛选CSSCI来源的学术论文
+- 返回格式化的论文标题和链接列表
+- 支持流式进度反馈
+- 兼容Claude和其他支持MCP协议的AI助手
+
+## 技术实现
+
+本服务基于以下技术栈：
+- Python 3.12+
+- MCP (Model Context Protocol) 1.6.0+
+- Playwright 用于网页自动化
+- Chrome/Chromium 浏览器作为后端渲染引擎
+
+## 快速开始
+
+### 系统要求
+- Python 3.12 或更高版本
+- Chrome 或 Chromium 浏览器
+- Windows/MacOS/Linux 操作系统
+
+### 安装
+
+1. 从PyPI安装（推荐）:
+```bash
+pip install words2links
+```
+
+2. 或从源码安装:
+```bash
+git clone https://github.com/yourusername/words2links.git
+cd words2links
+pip install -e .
+```
+
+### 配置Claude桌面版
+
+#### Windows
+编辑 `%APPDATA%/Claude/claude_desktop_config.json`
+
+#### MacOS
+编辑 `~/Library/Application\ Support/Claude/claude_desktop_config.json`
+
+添加以下配置：
+
+<details>
+  <summary>已发布版本配置</summary>
+  
+```json
+"mcpServers": {
+  "words2links": {
+    "command": "uvx",
+    "args": [
+      "words2links"
+    ]
+  }
+}
+```
+</details>
+
+<details>
+  <summary>开发版本配置</summary>
+  
+```json
+"mcpServers": {
+  "words2links": {
+    "command": "uv",
+    "args": [
+      "--directory",
+      "C:\\Users\\ptelegion\\1st_cursor_proj\\kwds2rslt\\words2links",
+      "run",
+      "words2links"
+    ]
+  }
+}
+```
+</details>
+
+## 使用方法
+
+启动Claude桌面版后，在对话中可以使用以下工具：
+
+### 搜索论文工具
+- 工具名称：`search_papers`
+- 参数：`keyword` - 搜索关键词
+- 返回格式：`关键词\n论文1\n@URL1\n论文2\n@URL2...`
+
+示例提示词：
+> 请使用words2links服务搜索关于"数字经济"的CSSCI论文，并列出前5篇论文的标题和链接。
+
+## 开发
+
+### 构建与发布
+
+1. 同步依赖并更新锁文件：
+```bash
+uv sync
+```
+
+2. 构建包分发：
+```bash
+uv build
+```
+
+3. 发布到PyPI：
+```bash
+uv publish
+```
+
+### 调试
+
+由于MCP服务器通过标准输入输出运行，调试可能比较困难。推荐使用[MCP Inspector](https://github.com/modelcontextprotocol/inspector)进行调试。
+
+使用npm启动MCP Inspector：
+```bash
+npx @modelcontextprotocol/inspector uv --directory C:\Users\ptelegion\1st_cursor_proj\kwds2rslt\words2links run words2links
+```
+
+启动后，Inspector会显示一个可在浏览器中访问的URL，开始调试。
+
+## 常见问题
+
+1. **问题**: 服务无法连接到知网
+   **解决方案**: 检查网络连接，确保能够正常访问知网网站
+
+2. **问题**: 浏览器自动化失败
+   **解决方案**: 确保已安装Chrome浏览器，并检查浏览器版本与Playwright兼容性
+
+## 许可证
+
+[MIT许可证](LICENSE)
+
+## 贡献指南
+
+欢迎贡献代码、提交问题或功能建议。请通过GitHub Issues或Pull Requests参与项目改进。
+
+## 致谢
+
+- 感谢MCP协议团队提供的开发框架
+- 感谢Playwright团队的出色浏览器自动化工具
+- 感谢中国知网提供的学术资源平台
