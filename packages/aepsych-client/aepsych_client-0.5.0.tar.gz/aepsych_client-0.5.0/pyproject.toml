@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.usort]
+first_party_detection = false
+
+[tool.black]
+target-version = ["py310"]
+
+[tool.ufmt]
+formatter = "ruff-api"
+sorter = "usort"
+
+[tool.ruff]
+include = [
+    "aepsych_client/**/*.py", "tests/**/*.py",
+]
