@@ -1,0 +1,6 @@
+src/mcp_server_things3/__init__.py,sha256=5zcbuERGzYQcWjGn1C2cR5u7V8KJ5N-5xabMY3hIJEA,94
+src/mcp_server_things3/applescript_handler.py,sha256=rUTnd2mAEopbfZgzLwNpK8cmWNRPCaxUJEInlwXhqiQ,7011
+src/mcp_server_things3/server.py,sha256=OzcjGsCTGdF_h4g3HLS0dcl8bENeiEYmmikPM8xLCck,10624
+mseep_mcp_server_things3-0.1.0.dist-info/METADATA,sha256=OazS_i8oFReUxycOmibxa4gLPSxkT9LxBqd6K-_xTMY,205
+mseep_mcp_server_things3-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp_server_things3-0.1.0.dist-info/RECORD,,
