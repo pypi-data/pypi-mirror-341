@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+beta4dist/__init__.py
+beta4dist/beta4_model.py
+beta4dist/distribution.py
+beta4dist.egg-info/PKG-INFO
+beta4dist.egg-info/SOURCES.txt
+beta4dist.egg-info/dependency_links.txt
+beta4dist.egg-info/requires.txt
+beta4dist.egg-info/top_level.txt
+tests/__init__.py
+tests/test_beta4_model.py
+tests/test_distribution.py
