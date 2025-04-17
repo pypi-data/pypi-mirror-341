@@ -1,0 +1,11 @@
+vilocify/__init__.py,sha256=U7SVXbVNwlRtRsUBjJwwHAnCNCNUfEb6or9edAcDFnA,1362
+vilocify/cli.py,sha256=Mk22tt4-82b0Nblc45vFErrCSBZtRpVz1Sk8FZdR00c,5805
+vilocify/http.py,sha256=xYDmaSxengBVWj5kd8t0Mbl0QzS0a4-b2zJQI5XDF6s,1333
+vilocify/jsonapy.py,sha256=DGjGHJuuvsvtOe_JMZM-lXI2NPigdNR6yOcyeAHSMsw,20436
+vilocify/models.py,sha256=gDgcnOHmbhgMWjFNVVdIh19TZxeoVlJrzb1sb6DVsNk,4466
+vilocify/py.typed,sha256=iQgaxDTbIMAeY3hsNru0YZV7K9FjJr2wMx3YLHlgpnE,67
+vilocify_sdk-0.4.0.dist-info/LICENSE,sha256=35plBHrTIXUDMxjYM5FR67CNyGxJhXKnP3ziVY0REKc,1067
+vilocify_sdk-0.4.0.dist-info/METADATA,sha256=TqcOqz5Wug-aFg4KRvlr7xTeynbBF1VnhZG_EQXOGIo,6522
+vilocify_sdk-0.4.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+vilocify_sdk-0.4.0.dist-info/entry_points.txt,sha256=0tbeTD0RCAlGr3ThQt5PFAy_v1oqeyLgw9GKv9hYYIU,45
+vilocify_sdk-0.4.0.dist-info/RECORD,,
