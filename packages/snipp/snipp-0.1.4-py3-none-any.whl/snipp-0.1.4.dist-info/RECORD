@@ -1,0 +1,10 @@
+snipp_shadowplay/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snipp_shadowplay/cli.py,sha256=i6f_bw1c7KAfX2t0K-ZYZWEkYlFUk7WPI_Xn7-UbE90,302
+snipp_shadowplay/config.py,sha256=GgsD2uLIblXR2c4sj7RlKcECbPSrnGnzDN7goErmAvU,358
+snipp_shadowplay/utils.py,sha256=QjI5_fGMBrHonWr-6dNaR_67Dfjzk5MsVnT9nmVhE_w,544
+snipp_shadowplay/watcher.py,sha256=sypVVtiSQd79raZ7CJSMZtiqBf9V1wUkqPcLxrcVD2U,2620
+snipp-0.1.4.dist-info/METADATA,sha256=xxqDraSCdjGZ1wjz3IWO8WygwtQ6O7qQHptQ3cVyCVc,3357
+snipp-0.1.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+snipp-0.1.4.dist-info/entry_points.txt,sha256=MeHGwZMAsPF3MQ6EEsIZmk-xLhjQQrjwAm37iaPUK9g,52
+snipp-0.1.4.dist-info/top_level.txt,sha256=A3WRYjRKqYftz8ZMvj0WzfPfDxY0_hDaRLaznOYZKqk,17
+snipp-0.1.4.dist-info/RECORD,,
