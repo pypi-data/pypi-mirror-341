@@ -1,0 +1,71 @@
+Metadata-Version: 2.4
+Name: masterpiece-xmlformat
+Version: 1.0.9
+Summary: XML serialization format for the `masterpiece` framework
+Author-email: J Meskanen <juham.api@gmail.com>
+Maintainer-email: "J. Meskanen" <juham.api@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://gitlab.com/juham/masterpiece_xmlformat
+Project-URL: Bug Reports, https://gitlab.com/juham/masterpiece
+Project-URL: Source, https://gitlab.com/juham/masterpiece_xmlformat
+Project-URL: Say Thanks!, http://meskanen.com
+Keywords: object-oriented,plugin,framework
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: masterpiece>=0.1.44
+Requires-Dist: pytz>=2024.1
+Requires-Dist: importlib-metadata
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
+Dynamic: license-file
+
+XML Serialization Format
+========================
+
+Adds support for XML serialization in masterpiece applications, enabling configuration through XML files.
+
+
+
+Usage
+-----
+
+To install:
+
+.. code-block:: bash
+  
+  pip install masterpiece-xmlformat
+
+Once installed, you can pass the `--init` and `--application_serialization_format` 
+startup arguments to create a default set of configuration files. For example, to create 
+XML configuration files for the 'examples/myapp.py' application:
+
+.. code-block:: bash
+
+  python examples/myapp.py --init --application_serialization_format XMLFormat
+
+Upon successful execution, there should be a file located at `~/.myapp/config/MyApp.xml` 
+with the following content:
+
+.. code-block:: xml
+
+  <?xml version='1.0' encoding='utf-8'?>
+  <MyApp>
+    <solar>0.0</solar>
+    <color>yellow</color>
+  </MyApp>
+
+To use XML as the default format, add the following line of code to your application:
+
+.. code-block:: python
+
+  Application.serialization_format = "XMLFormat"
+
+License
+-------
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
