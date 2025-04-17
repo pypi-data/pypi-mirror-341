@@ -1,0 +1,52 @@
+Metadata-Version: 2.2
+Name: TDistributionClassifier
+Version: 1.1.5
+Summary: A binary classifier using Student's t-distribution for univariate and multivariate continuous data.
+Home-page: https://github.com/Luckyy0311
+Author: Abdul Mofique Siddiqui
+Author-email: mofique7860@gmail.com
+License: Proprietary
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# T-Distribution Classifier
+
+A lightweight binary classifier using Student's T-distribution. Works on both univariate and multivariate data.
+
+## Installation
+
+To install the package locally, clone the repository and run:
+
+```bash
+pip install TDistributionClassifier
+
+## Import example
+from TDistributionClassifier import TDistributionClassifier
+
+## Author
+Made by Abdul Mofique Siddiqui
+
+## License
+This project is licensed under the MIT License â€” free to use, modify, and distribute with proper attribution.
+
+Â© 2025 Abdul Mofique Siddiqui
+
+
