@@ -1,0 +1,4 @@
+[console_scripts]
+ansi-fonts=ansi_stdio.cli.fonts:main
+ansi-quantize=ansi_stdio.cli.quantize:main
+
