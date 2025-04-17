@@ -1,0 +1,85 @@
+{% load static %}
+<!-- 直接从 CDN 加载 Textbus 的静态文件 -->
+<link href="https://unpkg.com/@textbus/editor@3.8.4/bundles/textbus.min.css" rel="stylesheet">
+<script src="https://unpkg.com/@textbus/editor@3.8.4/bundles/textbus.min.js"></script>
+
+<style>
+    .textbus-container {
+        margin-bottom: 15px;
+    }
+    .textbus-editor-container {
+        min-height: 300px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+</style>
+
+<div class="textbus-container">
+    <textarea name="{{ widget.name }}" data-config='{{ widget.config_json|safe }}'{% if widget.attrs %}{% for name, value in widget.attrs.items %}{% if value is not False %} {{ name }}{% if value is not True %}="{{ value }}"{% endif %}{% endif %}{% endfor %}{% endif %}>{{ widget.value }}</textarea>
+    <div id="textbus-editor-{{ widget.attrs.id }}" class="textbus-editor-container"></div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const textareaId = "{{ widget.attrs.id }}";
+        const textarea = document.getElementById(textareaId);
+        const editorContainer = document.getElementById("textbus-editor-" + textareaId);
+
+        // 初始化Textbus编辑器
+        const config = {{ widget.config_json|safe }};
+
+        // 检查Textbus是否已加载
+        if (typeof textbus !== 'undefined' && textbus.editor) {
+            try {
+                // 使用textbus.editor.createEditor创建Textbus实例
+                const editor = textbus.editor.createEditor({
+                    ...config,
+                    content: textarea.value
+                });
+
+                // 挂载到容器
+                editor.mount(editorContainer);
+
+                // 当编辑器内容变化时，更新textarea的值
+                editor.onChange.subscribe(content => {
+                    textarea.value = content;
+                });
+
+                // 隐藏原始textarea
+                textarea.style.display = 'none';
+            } catch (e) {
+                console.error('初始化Textbus编辑器时出错:', e);
+                editorContainer.innerHTML = '<div style="color: red; padding: 10px; border: 1px solid red;">初始化Textbus编辑器失败。请确保已正确加载Textbus库。</div>';
+            }
+        } else {
+            console.error('Textbus库未正确加载。请检查控制台是否有其他错误。');
+            editorContainer.innerHTML = '<div style="color: red; padding: 10px; border: 1px solid red;">Textbus库未正确加载。请检查控制台是否有其他错误。</div>';
+
+            // 尝试动态加载Textbus库
+            const script = document.createElement('script');
+            script.src = 'https://unpkg.com/@textbus/editor@3.8.4/bundles/textbus.min.js';
+            script.onload = function() {
+                console.log('Textbus库已动态加载。正在初始化编辑器...');
+                if (typeof textbus !== 'undefined' && textbus.editor) {
+                    try {
+                        const editor = textbus.editor.createEditor({
+                            ...config,
+                            content: textarea.value
+                        });
+                        editor.mount(editorContainer);
+                        editor.onChange.subscribe(content => {
+                            textarea.value = content;
+                        });
+                        textarea.style.display = 'none';
+                    } catch (e) {
+                        console.error('动态加载后初始化Textbus编辑器时出错:', e);
+                    }
+                }
+            };
+            script.onerror = function() {
+                console.error('动态加载Textbus库失败。');
+            };
+            document.head.appendChild(script);
+        }
+    });
+</script>
