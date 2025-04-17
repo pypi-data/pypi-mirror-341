@@ -1,0 +1,6 @@
+src/mcp_discord_chat/__init__.py,sha256=KNZ1bD9ZGfyZwlv91Ueeega_1lsRDLs2fYQDgNbBdtc,212
+src/mcp_discord_chat/server.py,sha256=RsBb3BvckAyGONdaJfoBtFR6dcHLQUXvCJVFgSFLu80,10654
+mseep_mcp_discord_chat-0.1.0.dist-info/METADATA,sha256=an30ivQN5OKSwEfH1fkAEptkOWXjCwHwywyDbRCTplA,2997
+mseep_mcp_discord_chat-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp_discord_chat-0.1.0.dist-info/entry_points.txt,sha256=y5hkpPqQ4CeP4HKb_67XU1r0YG5lysTIoTm-8tTcNIA,59
+mseep_mcp_discord_chat-0.1.0.dist-info/RECORD,,
