@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "identitwin"
+version = "0.0.4"
+description = "A Tool to setup a Raspberri Pi for Structural Health Monitoring accelerations and displacements"
+authors = [
+    { name = "Angel Navarro-Mora", email = "ahnavarro@itcr.ac.cr" },
+    { name = "Alvaro Perez-Mora", email = "alvaroenrique2001@estudiantec.cr" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.8"
+# Declare dependencies as dynamic
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+packages = ["identitwin"]
+package-dir = {"" = "src"}
+
+[tool.setuptools.dynamic]
+# Specify the file containing the dependencies
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.package-data]
+identitwin = ["tests/*.py"]
