@@ -1,0 +1,19 @@
+# Auto-generated __init__.py
+
+# Version of the pyfunc2 package
+__version__ = "0.1.0"
+
+# Import necessary modules and functions here
+from .create_dir_structure import create_dir_structure
+from .create_dir_structure import test
+from .create_dir_structure_from_headers import create_dir_structure_from_headers
+from .create_folders_files import create_folders_files
+from .get_code_extension_dict import get_code_extension_dict
+from .get_dictionary_structure_by_separator_list import get_dictionary_structure_by_separator_list2
+from .get_dictionary_structure_by_separator_list import get_dictionary_structure_by_separator_list
+from .get_dictionary_structure_from_headers_content import get_dictionary_structure_from_headers_content
+from .get_header_list import get_header_list
+from .get_url_list import get_url_list
+
+# Public API of the package
+__all__ = [create_dir_structure, test, create_dir_structure_from_headers, create_folders_files, get_code_extension_dict, get_dictionary_structure_by_separator_list2, get_dictionary_structure_by_separator_list, get_dictionary_structure_from_headers_content, get_header_list, get_url_list]
