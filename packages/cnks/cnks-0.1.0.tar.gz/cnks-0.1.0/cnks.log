@@ -1,0 +1,95 @@
+2025-04-17 09:20:00,502 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:20:00,503 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:20:00,503 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:20:00,503 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:20:00,503 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:20:00,503 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:20:00,503 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:20:00,505 - mcp.server.lowlevel.server - DEBUG - Initializing server 'ÖªÍøËÑË÷'
+2025-04-17 09:20:00,505 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:20:00,505 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:20:00,505 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:20:00,505 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:20:00,506 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:20:00,506 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:20:00,506 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:20:00,513 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:20:00,517 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:20:00,524 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 09:20:00,526 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001AE33EB0F50>
+2025-04-17 09:20:00,527 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:20:00,527 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:20:00,527 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:20:30,047 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001AE33EB1590>
+2025-04-17 09:20:30,047 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:20:30,048 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:20:30,048 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:20:30,048 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001AE33D2B5C0>
+2025-04-17 09:20:30,049 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:20:30,049 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:20:30,049 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:21:30,814 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:21:30,815 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:21:30,815 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:21:30,815 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+
+2025-04-17 09:21:30,815 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Initializing server 'ÖªÍøËÑË÷'
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Initializing server 'ÖªÍøËÑË÷'
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:21:30,816 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:21:30,823 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:21:30,824 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:21:30,826 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:21:30,827 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:21:30,831 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 09:21:30,832 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 09:21:30,833 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001BE2639CF50>
+2025-04-17 09:21:30,833 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:21:30,833 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:21:30,834 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:21:30,834 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001BE2639D590>
+2025-04-17 09:21:30,834 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:21:30,834 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:21:30,835 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-04-17 09:21:33,442 - mcp.server.lowlevel.server - DEBUG - Initializing server 'cnks'
+2025-04-17 09:21:33,442 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:21:33,442 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:21:33,442 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:21:33,442 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:21:33,442 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:21:33,442 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Initializing server 'ÖªÍøËÑË÷'
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-04-17 09:21:33,444 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-04-17 09:21:33,450 - mcp.server.fastmcp.resources.resource_manager - DEBUG - Adding resource
+2025-04-17 09:21:33,453 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-04-17 09:21:33,458 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-04-17 09:21:33,459 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000002DEFF5DCF50>
+2025-04-17 09:21:33,459 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-04-17 09:21:33,459 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-04-17 09:21:33,460 - mcp.server.lowlevel.server - DEBUG - Response sent
