@@ -1,0 +1,10 @@
+teer/__about__.py,sha256=lMJuzErDqSTucMra4hF3gjfAXdvmEKVjS5CSsaktMgA,123
+teer/__init__.py,sha256=WTu7JnXQHuUMwQYMb4pRGNJTdkhl7sVdyUiWiVBzQxE,2431
+teer/http.py,sha256=QhcLBjXREuojQsN9th2N05uTEePDV7qis8ue-HRvqsA,2784
+teer/resources/__init__.py,sha256=f9cxrQW15l6kszJ-q4JMC-Wh4B7eG4qFrYULnFkvafs,151
+teer/resources/base.py,sha256=A6B3ao0g-KLRPP26obWnGD_MSjfpp0HsUUPlypdV45g,2734
+teer/resources/ingest.py,sha256=hjCNuCqGKqhq-pMoBuPogM11nFwzVoBFkVKa51K1e8k,1238
+teer-0.0.1.dist-info/METADATA,sha256=shl1gs4vOBUk581C8drAg4JZnRyknBKZ4RPVc1A1PpM,2212
+teer-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+teer-0.0.1.dist-info/licenses/LICENSE.txt,sha256=ISfthpAADcFlJHlW3oxCL6Z5bYZUcQYbx7EKq-PSanA,1093
+teer-0.0.1.dist-info/RECORD,,
