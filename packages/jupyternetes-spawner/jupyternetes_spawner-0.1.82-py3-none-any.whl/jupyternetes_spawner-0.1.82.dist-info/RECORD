@@ -1,0 +1,10 @@
+jupyternetes_spawner/__init__.py,sha256=IbD4YEUZCJfumhv6eCR_3P0g9UiGioIt7cSIkCC1Gao,356
+jupyternetes_spawner/_version.py,sha256=YThvBsPSPw2rCgZQb5SxE-vfr4Y0SBQRhFo1VmMzEQg,23
+jupyternetes_spawner/spawner.py,sha256=j7YfDSypL1bB2Zp-cPDGney9d3lm5-8-Mw65NV2rT6w,3549
+jupyternetes_spawner/utils.py,sha256=2fUxD-5fGpcKQ2Y8zTaFlGvnTpvF-8_PzhE_BIwOvyA,2693
+jupyternetes_spawner/unit_test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyternetes_spawner/unit_test/mockers.py,sha256=IH-Z8o3EcD0Gdlwy7sfBwQkMxMtdA6HB8nZhOS5i6Yw,1165
+jupyternetes_spawner/unit_test/test_utils.py,sha256=T3DftGygsN5DtDMZDevHRdydj0hIFhxLqHvnoCEDyIw,1394
+jupyternetes_spawner-0.1.82.dist-info/METADATA,sha256=fBu-5nCYfNoDDmnW7awQ0mugk3TjC9ARmO-RJ1ao59A,1149
+jupyternetes_spawner-0.1.82.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jupyternetes_spawner-0.1.82.dist-info/RECORD,,
