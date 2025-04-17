@@ -1,0 +1,9 @@
+xhs_mcp_server/__init__.py,sha256=Yzbl9fK6FwMGyKd9wAqy52FO9wpiAc13pi9AMzyseRU,342
+xhs_mcp_server/__login__.py,sha256=K810kYHTLqZTBOkymz1QeKE3MiSBnAlidBoKDGkKZT0,59
+xhs_mcp_server/__main__.py,sha256=-rZqVdZ99EcZkv1890jeGmqvBuGmmxbq2rSKdtSUOr4,57
+xhs_mcp_server/server.py,sha256=GRpj6ShU-PmvKE0AVsjgqb4LH6rqvRXJxMFS9b8SVxc,2801
+xhs_mcp_server/write_xiaohongshu.py,sha256=WI6BoxsU6MPHSM_210bTYM9-bIye3RV7_IZXKIiSYG8,10374
+xhs_mcp_server-0.1.7.dist-info/METADATA,sha256=pUdaA8uffugM-c_gV-hgx3_G5Br8-mFxkwzGVm5uY04,1927
+xhs_mcp_server-0.1.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+xhs_mcp_server-0.1.7.dist-info/entry_points.txt,sha256=mW1Dn0Zw4C3b56kgEk9IvRtTo7v_DsGpRw3at_ln1Mw,84
+xhs_mcp_server-0.1.7.dist-info/RECORD,,
