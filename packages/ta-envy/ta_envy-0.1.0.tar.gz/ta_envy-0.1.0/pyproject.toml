@@ -1,0 +1,23 @@
+[project]
+name = "ta-envy"
+version = "0.1.0"
+description = "A minimal environment variable loader with validation and typing"
+authors = [{ name = "Thiago Ananias" }]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["env", "dotenv", "configuration", "settings"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+dependencies = [
+    "build>=1.2.2.post1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-legacy-version = true
