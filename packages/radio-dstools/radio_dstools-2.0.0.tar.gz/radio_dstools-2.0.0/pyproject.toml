@@ -1,0 +1,84 @@
+[tool.poetry]
+name = "radio-dstools"
+version = "2.0.0"
+description = "A processing pipeline to produce dynamic spectra from visibilities."
+authors = ["Joshua Pritchard <joshua.pritchard@csiro.au>"]
+packages = [
+    {include = "dstools"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+click = "^8.0.3"
+matplotlib = "^3.8.2"
+numpy = "^2.0.0"
+scipy = "^1.14.1"
+astropy = "6.1.7"
+pandas = "2.2.3"
+h5py = "^3.11.0"
+colorlog = "^6.8.2"
+casatasks = "^6.7"
+dask = "^2024.11.2"
+xarray = "^2024.11.0"
+mpl-point-clicker = "^0.4.1"
+radio-beam = "^0.3.8"
+fixms = "^0.4.0"
+python-casacore = "^3.6.1"
+rm-lite = "^2025.4.0"
+cal-cabb = "^0.1.0"
+
+[tool.poetry.scripts]
+dstools-atca-cal = "dstools.cli.atca_cal:main"
+dstools-askap-preprocess = "dstools.cli.askap_preprocess:main"
+dstools-create-model = "dstools.cli.create_model:main"
+dstools-insert-model = "dstools.cli.insert_model:main"
+dstools-selfcal = "dstools.cli.selfcal:main"
+dstools-subtract-model = "dstools.cli.subtract_model:main"
+dstools-extract-ds = "dstools.cli.extract_ds:main"
+dstools-plot-ds = "dstools.cli.plot_ds:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pre-commit = "^4.1.0"
+coverage = "^7.4.1"
+mypy = "^1.15.0"
+pytest-mock = "^3.12.0"
+pytest-cov = "^4.1.0"
+ruff = "^0.11.4"
+isort = "^6.0.1"
+python-lsp-server = "^1.12.2"
+
+[tool.ruff]
+lint.ignore = ["E741"]
+
+[tool.pyright]
+reportMissingTypeStubs = false
+reportGeneralTypeIssues = false
+reportOptionalSubscript = false
+reportOptionalMemberAccess = false
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::DeprecationWarning:casaconfig",
+    "ignore:'datfix' made the change.*:astropy.wcs.FITSFixedWarning",
+    "ignore:'obsfix' made the change.*:astropy.wcs.FITSFixedWarning",
+]
+
+[tool.mypy]
+
+[[tool.mypy.overrides]]
+module = "pandas.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "astropy.*"
+ignore_missing_imports = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
