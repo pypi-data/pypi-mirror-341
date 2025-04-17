@@ -1,0 +1,32 @@
+[project]
+name = "masks-fp"
+version = "1.0.0"
+description = "Masks fp is a powerful wrapping tool that preserves meta and anatomical information. 🎭"
+license = "MIT"
+authors = [
+    {name = "A-4S",email = "dev.forsythe@gmail.com"}
+]
+keywords = [
+    "python",
+    "wrapper",
+    "functional-programming",
+    "tool",
+    "fp"
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pipe-fp (>=2.0.0,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "masks_fp", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+ruff = "^0.11.4"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
