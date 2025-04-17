@@ -1,0 +1,2 @@
+[console_scripts]
+arrow-cache-cleanup = arrow_cache.utils:cleanup_command
