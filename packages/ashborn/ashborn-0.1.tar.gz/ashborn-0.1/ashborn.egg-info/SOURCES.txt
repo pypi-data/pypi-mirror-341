@@ -1,0 +1,41 @@
+LICENSE.txt
+README.md
+setup.py
+ashborn.egg-info/PKG-INFO
+ashborn.egg-info/SOURCES.txt
+ashborn.egg-info/dependency_links.txt
+ashborn.egg-info/not-zip-safe
+ashborn.egg-info/top_level.txt
+src/ashborn/__init__.py
+src/ashborn/main.py
+src/ashborn/data/ML TS XAI HC/HC/1. Exploratory Data Analysis.ipynb
+src/ashborn/data/ML TS XAI HC/HC/2. Image Analysis.ipynb
+src/ashborn/data/ML TS XAI HC/HC/3 (A). Extraction of Structured Data.ipynb
+src/ashborn/data/ML TS XAI HC/HC/3 (B). Extraction of Unstructured Data.ipynb
+src/ashborn/data/ML TS XAI HC/HC/4. Data Mining on Non Clinical Data.ipynb
+src/ashborn/data/ML TS XAI HC/HC/5. Natural Language Processing.ipynb
+src/ashborn/data/ML TS XAI HC/HC/data/diabetes.csv
+src/ashborn/data/ML TS XAI HC/HC/data/lung.jpeg
+src/ashborn/data/ML TS XAI HC/ML/1. PCA - EDA.ipynb
+src/ashborn/data/ML TS XAI HC/ML/2. KNN Classifier.ipynb
+src/ashborn/data/ML TS XAI HC/ML/3. Linear Discriminant Analysis.ipynb
+src/ashborn/data/ML TS XAI HC/ML/4. Linear Regression.ipynb
+src/ashborn/data/ML TS XAI HC/ML/5. Logistic Regression.ipynb
+src/ashborn/data/ML TS XAI HC/ML/6. Bayesian Classifier.ipynb
+src/ashborn/data/ML TS XAI HC/ML/data/balance-scale.csv
+src/ashborn/data/ML TS XAI HC/ML/data/balance-scale.txt
+src/ashborn/data/ML TS XAI HC/ML/data/machine-data.csv
+src/ashborn/data/ML TS XAI HC/ML/data/wine-dataset.csv
+src/ashborn/data/ML TS XAI HC/TS/1. EDA - Handling Time Series Data.ipynb
+src/ashborn/data/ML TS XAI HC/TS/2. Feature Engineering.ipynb
+src/ashborn/data/ML TS XAI HC/TS/3. Temporal Relationships.ipynb
+src/ashborn/data/ML TS XAI HC/TS/4. Up-Down-Sampling and Interpolation.ipynb
+src/ashborn/data/ML TS XAI HC/TS/5. Stationarity - Trend - Seasonality.ipynb
+src/ashborn/data/ML TS XAI HC/TS/6. Autocorrelation - Partial Autocorrelation.ipynb
+src/ashborn/data/ML TS XAI HC/TS/AllinOne.ipynb
+src/ashborn/data/ML TS XAI HC/TS/data/daily-min-temperatures.csv
+src/ashborn/data/ML TS XAI HC/TS/data/daily-total-female-births.csv
+src/ashborn/data/ML TS XAI HC/TS/data/raw_sales.csv
+src/ashborn/data/ML TS XAI HC/TS/data/shampoo_sales.csv
+src/ashborn/utils/__init__.py
+src/ashborn/utils/shell_utils.py
