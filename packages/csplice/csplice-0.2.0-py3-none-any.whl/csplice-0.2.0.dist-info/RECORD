@@ -1,0 +1,10 @@
+csplice/__init__.py,sha256=yR2PJh9_YG-RAdDiKzjYaJDJEUlc7bvjuSNXZJ9n6_Q,124
+csplice/core/__init__.py,sha256=rjmHxUBTJbfp8p59Ib_U9Xy4N9UorFE3SG-6GhUXe-4,345
+csplice/core/gtftobed.py,sha256=iKzUMm0fMjGVMJEeRsrwwwzUDpq_CqgtecaRHNrcag4,2356
+csplice/core/readoverlap.py,sha256=DbRhTWgoL9IJ-dNDr8J4q9EtNV3jy3uWm9ilmyIEank,4439
+csplice/script/__init__.py,sha256=PNqahAOc9_KKs8qrBpkPpjdepA4KNV7SjiVqxu_TLy8,88
+csplice/script/cli.py,sha256=GtU2fra-Ipi8OMsOR5eqcws2OXlFKVPxNAGpO3W3JiE,5253
+csplice-0.2.0.dist-info/METADATA,sha256=4camqURgOFur3oiRpRDbShLm7tnd7G7lOGMxwElTIp0,2878
+csplice-0.2.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+csplice-0.2.0.dist-info/entry_points.txt,sha256=TQrbK_9mfkX-Xj-CKTD-BWqpJzqkhrg1fnFHTQICEf8,51
+csplice-0.2.0.dist-info/RECORD,,
