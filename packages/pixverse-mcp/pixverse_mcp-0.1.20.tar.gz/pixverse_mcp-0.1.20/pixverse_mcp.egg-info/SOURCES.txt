@@ -1,0 +1,9 @@
+README.md
+main.py
+pyproject.toml
+pixverse_mcp.egg-info/PKG-INFO
+pixverse_mcp.egg-info/SOURCES.txt
+pixverse_mcp.egg-info/dependency_links.txt
+pixverse_mcp.egg-info/entry_points.txt
+pixverse_mcp.egg-info/requires.txt
+pixverse_mcp.egg-info/top_level.txt
