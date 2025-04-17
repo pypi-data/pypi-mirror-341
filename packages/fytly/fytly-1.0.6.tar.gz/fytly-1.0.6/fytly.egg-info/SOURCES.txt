@@ -1,0 +1,16 @@
+LICENCE.txt
+README.md
+setup.py
+api/__init__.py
+api/main.py
+fytly.egg-info/PKG-INFO
+fytly.egg-info/SOURCES.txt
+fytly.egg-info/dependency_links.txt
+fytly.egg-info/requires.txt
+fytly.egg-info/top_level.txt
+py/Comparator.py
+py/Component.py
+py/Configs.py
+py/PayloadReader.py
+py/Preprocesser.py
+py/__init__.py
