@@ -1,0 +1,9 @@
+catabra_pandas/__init__.py,sha256=VVBLF0hoq3464dk0aC9saEosALtNOYtRpnkdjhFhuAQ,829
+catabra_pandas/__version__.py,sha256=aLSs067c5PYJH0nA_8diNZR9EZ_39klXJDC1LQPBKB8,124
+catabra_pandas/merging.py,sha256=K-SDOn5BC0DVS9J75HSgC5m5rRuU_UXfLD_1cKrRM9s,56793
+catabra_pandas/misc.py,sha256=tHLKjLVI7tJfr5EhwiMOCfDTunKFKJ-ExroDmkGGPmI,59709
+catabra_pandas/resampling.py,sha256=gPGeYggp5i27dnTyS7MKHDaPDGPfhCurQinCQyJ9Bhc,105703
+catabra_pandas-0.0.5.dist-info/LICENSE,sha256=_y_2h1VYRMmhSH8DecBTcknki022BJrfAtG5yWzp8tg,12621
+catabra_pandas-0.0.5.dist-info/METADATA,sha256=FWiAj6SL0G3CLMvw_bOGZ4pqD37FwrhElIoPTGR7f7A,7066
+catabra_pandas-0.0.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+catabra_pandas-0.0.5.dist-info/RECORD,,
