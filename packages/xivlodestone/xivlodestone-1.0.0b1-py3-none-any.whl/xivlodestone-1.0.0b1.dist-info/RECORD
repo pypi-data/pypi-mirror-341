@@ -1,0 +1,11 @@
+xivlodestone/__init__.py,sha256=IEUIc58JePMcaJAKA-gByZvk9XlZaMYksBDQ3P0ww68,134
+xivlodestone/enums.py,sha256=2VtWCZrWFRnK4Rqx-KVXL7SPkUJlpSYi6b-NH_n8nCY,3092
+xivlodestone/errors.py,sha256=DNNlr5_khSZFDgAgZjQDXZkcf5TuGUsG90NBoLREOK8,358
+xivlodestone/lodestone.py,sha256=7y4JqC_8wHrZxjtS-2YikZB6_nAo1pADNXkauFUYKws,28876
+xivlodestone/models.py,sha256=YnMMgasExvEscu-0JUimE4nEOVunRTsPBwoEv2YhRSI,13122
+xivlodestone/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xivlodestone/scraper.py,sha256=TAzII7glrBbyrJkQQOFXjKTm5PvI4rcaBqywUHIeYQY,3758
+xivlodestone-1.0.0b1.dist-info/METADATA,sha256=SFVGxPlLj1hbQAEJ5Dumufa-XPgQ1r3-0Lw0qsZOP28,4261
+xivlodestone-1.0.0b1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+xivlodestone-1.0.0b1.dist-info/licenses/LICENSE.md,sha256=IFaXrwIwqvcQdA_wHRkUiRbSN9MLxcmz2Znl7AW04ZU,1080
+xivlodestone-1.0.0b1.dist-info/RECORD,,
