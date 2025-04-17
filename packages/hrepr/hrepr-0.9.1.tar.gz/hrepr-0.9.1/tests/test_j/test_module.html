@@ -1,0 +1,128 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-type" content="text/html" charset="UTF-8" /><script>$$HREPR = {
+    scriptStatus: {},
+    counters: {},
+    fromHTML(html) {
+        const node = document.createElement("div");
+        node.innerHTML = html;
+        return node.childNodes[0];
+    },
+    prepare(node_id) {
+        const self = document.getElementById(node_id);
+        let resolve = null;
+        self.__object = new Promise((rs, rj) => { resolve = rs });
+        self.__object.__resolve = resolve;
+        return self;
+    },
+    swap(orig, repl) {
+        if (repl?.getElement) {
+            repl = repl.getElement();
+        }
+        if (!(repl instanceof HTMLElement)) {
+            repl = window.$$REPRESENT?.(repl);
+        }
+        if (repl instanceof HTMLElement) {
+            repl.__object = orig.__object;
+            for (let attr of orig.attributes) {
+                if (attr.name === "class") {
+                    repl.classList.add(...orig.classList);
+                }
+                else {
+                    repl.setAttribute(attr.name, attr.value);
+                }
+            }
+            orig.replaceWith(repl);
+        }
+        else {
+            orig.remove();
+        }
+    },
+    isFunc(x) {
+        let hasprop = prop => Object.getOwnPropertyNames(x).includes(prop);
+        return (hasprop("arguments") || !hasprop("prototype"));
+    },
+    trycb(cb, ecb, sel) {
+        try {
+            cb();
+        }
+        catch (error) {
+            if (!ecb?.(error, sel)) {
+                throw error;
+            };
+        }
+    },
+    run(scripts, sel, cb, ecb = null) {
+        ecb = ecb || window.$$ERROR;
+        if (scripts.length == 0) {
+            $$HREPR.trycb(cb, ecb, sel);
+            return;
+        }
+        const counter = {count: scripts.length, cb, ecb, sel};
+        for (let script of scripts) {
+            let counters = (this.counters[script] ||= []);
+            counters.push(counter);
+            let status = this.scriptStatus[script];
+            if (status === undefined) {
+                this.scriptStatus[script] = false;
+                let scriptTag = document.createElement("script");
+                scriptTag.src = script;
+                scriptTag.onerror = (err) => {
+                    err = Error(`Could not load script: ${script}`);
+                    err.stack = null;
+                    $$HREPR.scriptStatus[script] = err;
+                    $$HREPR.triggerScript(script, err);
+                };
+                scriptTag.onload = () => {
+                    $$HREPR.scriptStatus[script] = true;
+                    $$HREPR.triggerScript(script);
+                };
+                document.head.appendChild(scriptTag);    
+            }
+            else if (status instanceof Error) {
+                ecb?.(status, sel);
+            }
+            else if (status) {
+                $$HREPR.triggerScript(script);
+            }
+        }
+    },
+    triggerScript(script, error = null) {
+        for (let counter of this.counters[script] || []) {
+            counter.count--;
+            if (!counter.count) {
+                if (error) {
+                    counter.ecb?.(error, counter.sel);
+                }
+                else {
+                    $$HREPR.trycb(counter.cb, counter.ecb, counter.sel);
+                }
+            }
+        }
+    },
+    ucall(obj, sym, ...arglist) {
+        if (sym) {
+            return $$HREPR.isFunc(obj[sym]) ? obj[sym](...arglist) : new obj[sym](...arglist);
+        }
+        else {
+            return $$HREPR.isFunc(obj) ? obj(...arglist) : new obj(...arglist);
+        }
+    },
+}
+</script></head><body><div><h2>The buttons should increment by 2, 3 and 4 respectively.</h2><h4>Note: this will NOT work when browsing the file directly, view using a server e.g. with `python -m http.server`.</h4><button style="width:100px;" id="H8">ERROR!</button><button style="width:100px;" id="H13">ERROR!</button><button style="width:100px;" id="H16">ERROR!</button></div><script>$$HREPR.prepare("H8");</script><script type="module">import { bytwo as bytwo__19 } from "./counter.esm.js";
+const $$INTO = document.getElementById("H8");
+$$HREPR.run([],'#H8',()=>{
+const obj = $$HREPR.ucall(bytwo__19,null,$$INTO);
+$$INTO.__object.__resolve(obj);
+
+});</script><script>$$HREPR.prepare("H13");</script><script type="module">import { by as by__23 } from "./counter.esm.js";
+const $$INTO = document.getElementById("H13");
+$$HREPR.run([],'#H13',()=>{
+const obj = $$HREPR.ucall(by__23,"three",$$INTO);
+$$INTO.__object.__resolve(obj);
+
+});</script><script>$$HREPR.prepare("H16");</script><script type="module">import default__26 from "./counter.esm.js";
+const $$INTO = document.getElementById("H16");
+$$HREPR.run([],'#H16',()=>{
+const obj = $$HREPR.ucall(default__26,null,$$INTO,{"increment": 4});
+$$INTO.__object.__resolve(obj);
+
+});</script></body></html>

@@ -1,0 +1,55 @@
+[project]
+name = "hrepr"
+version = "0.9.1"
+description = "Extensible HTML representation for Python objects."
+authors = [
+    { name = "Olivier Breuleux", email = "breuleux@gmail.com" }
+]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+]
+dependencies = [
+    "ovld~=0.5.1",
+]
+requires-python = ">= 3.9"
+
+[project.urls]
+Homepage = "https://github.com/breuleux/hrepr"
+Repository = "https://github.com/breuleux/hrepr"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.2",
+    "pytest-cov>=5.0.0",
+    "pytest-regressions>=2.5.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hrepr"]
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:coroutine '_coro' was never awaited",
+]
+
+[tool.coverage.run]
+omit = [
+    "hrepr/textgen.py"
+]
+
+[tool.ruff]
+line-length = 80
+
+[tool.ruff.lint]
+extend-select = ["I"]
+ignore = ["E241", "F722", "E501", "E203", "F811", "F821"]
