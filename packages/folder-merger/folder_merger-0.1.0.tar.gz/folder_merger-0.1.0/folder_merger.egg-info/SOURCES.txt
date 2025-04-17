@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+folder_merger/__init__.py
+folder_merger/cli.py
+folder_merger/merger.py
+folder_merger.egg-info/PKG-INFO
+folder_merger.egg-info/SOURCES.txt
+folder_merger.egg-info/dependency_links.txt
+folder_merger.egg-info/entry_points.txt
+folder_merger.egg-info/requires.txt
+folder_merger.egg-info/top_level.txt
