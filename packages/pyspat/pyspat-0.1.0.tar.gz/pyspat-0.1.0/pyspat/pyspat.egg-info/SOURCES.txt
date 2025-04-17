@@ -1,0 +1,17 @@
+LICENCE
+README.md
+pyproject.toml
+pyspat/core/__init__.py
+pyspat/core/pointpattern.py
+pyspat/core/window.py
+pyspat/geom/__init__.py
+pyspat/plot/__init__.py
+pyspat/pyspat.egg-info/PKG-INFO
+pyspat/pyspat.egg-info/SOURCES.txt
+pyspat/pyspat.egg-info/dependency_links.txt
+pyspat/pyspat.egg-info/requires.txt
+pyspat/pyspat.egg-info/top_level.txt
+pyspat/sim/__init__.py
+pyspat/stats/__init__.py
+tests/test_pointpattern.py
+tests/test_window.py
