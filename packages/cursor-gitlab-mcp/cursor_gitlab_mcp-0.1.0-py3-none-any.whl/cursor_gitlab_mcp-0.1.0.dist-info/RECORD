@@ -1,0 +1,10 @@
+gitlab_mcp/__init__.py,sha256=RTBLaMy_L2pe4lghnARtzSbShAnTMS8TxNbzguDgWJ0,374
+gitlab_mcp/connector.py,sha256=_JpV_Nrudfc-S03a3tufsqT5ASsNYe1d6VUbTP1f4P0,5878
+gitlab_mcp/count_projects.py,sha256=Nqnn8clbgv-5l0PgxcTOldg8mkMKrFn4TvPL-rYUUGg,1
+gitlab_mcp/project_stats.py,sha256=Nqnn8clbgv-5l0PgxcTOldg8mkMKrFn4TvPL-rYUUGg,1
+gitlab_mcp/server.py,sha256=t7W0qclfFeXT7hFeCov08FG4Da6S5p-WSWFTdltOxM8,18092
+cursor_gitlab_mcp-0.1.0.dist-info/METADATA,sha256=nXdkEFQpeqphlCPO0FaxtWC-FuHtajypOueXoGv9dvE,1800
+cursor_gitlab_mcp-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+cursor_gitlab_mcp-0.1.0.dist-info/entry_points.txt,sha256=K4iv0EHkJ30r72S-QoPW421SX5h5Tky45RWM409_GIk,62
+cursor_gitlab_mcp-0.1.0.dist-info/top_level.txt,sha256=hpQVP8m9mLPrS0bIP1M38IiiJoHusbCze-M9Pqo0U10,11
+cursor_gitlab_mcp-0.1.0.dist-info/RECORD,,
