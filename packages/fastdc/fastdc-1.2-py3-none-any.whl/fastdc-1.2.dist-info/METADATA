@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fastdc
+Version: 1.2
+Summary: FastDC: A fast, modular, and AI-integrated Discord bot framework.
+Home-page: UNKNOWN
+Author: Arya Wiratama
+Author-email: aryawiratama2401@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: chatterbot
+Requires-Dist: discord.py
+Requires-Dist: groq
+Requires-Dist: python-dotenv
+Requires-Dist: spacy
+
+UNKNOWN
+
