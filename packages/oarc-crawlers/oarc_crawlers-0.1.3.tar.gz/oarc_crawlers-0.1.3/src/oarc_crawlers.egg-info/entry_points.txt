@@ -1,0 +1,7 @@
+[console_scripts]
+oarc-arxiv = oarc_crawlers.cli.arxiv_cli:main
+oarc-bs = oarc_crawlers.cli.beautiful_soup_cli:main
+oarc-crawlers = oarc_crawlers.cli.main:main
+oarc-ddg = oarc_crawlers.cli.ddg_cli:main
+oarc-github = oarc_crawlers.cli.github_cli:main
+oarc-youtube = oarc_crawlers.cli.youtube_cli:main
