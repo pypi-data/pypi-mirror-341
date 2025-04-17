@@ -1,0 +1,15 @@
+ims/fieldupdater/__init__.py,sha256=3yK8CS4fOpjH1mIHIfDsR-wtvzbphfkmZ8RVqPK09To,112
+ims/fieldupdater/configure.zcml,sha256=eAIJlfutXffrwbVQ-lcLtdyCxaY5xWuZ_w1XzhXNYZ4,737
+ims/fieldupdater/testing.py,sha256=kyBncg8or4YgYMjwRhp6w3u46Jg8nnhY0Zph1oEI0MA,1561
+ims/fieldupdater/browser/__init__.py,sha256=_6Yl-eMBve0mGQA-aiFg4qvQ7GUCV5eGvIcoRf4mEPw,3
+ims/fieldupdater/browser/configure.zcml,sha256=LHDCGWHqOWjSnU1E6PmZhr2iOjid_Y2T2QsHq_atagU,515
+ims/fieldupdater/browser/mass.pt,sha256=WBl2U8tbKE3RglKk4_fI1tXQ6w_vLwrLBZxHfjUYRCM,11051
+ims/fieldupdater/browser/mass.py,sha256=W0TbjUHvq03tMwWwJOsC5ZBI2HDXVZyx5Jwn7HC2iy0,15479
+ims/fieldupdater/browser/schema.pt,sha256=o3AwxD_1Gh6EcTMivOHJ5Bn1yy5lEjxI588ZkDHZWi4,2434
+ims/fieldupdater/profiles/default/controlpanel.xml,sha256=TLa6jqZhxlJI2_f1KYCngZDz6Qbui4weTq2a0WsnIAk,554
+ims/fieldupdater/profiles/default/metadata.xml,sha256=hU9lnPsp-DKFzuIwKVuk8tG2nw2K5dFRD8JZWU8GT1s,72
+ims/fieldupdater/profiles/uninstall/controlpanel.xml,sha256=Tv4FnIVdt-azQV-_h5G7eZfZNJJ6ZArQjCt1rqVFK6Y,241
+ims.fieldupdater-3.0.1.dist-info/METADATA,sha256=218IxGHN0PBAthL1dyZDR8pR-8UxX0zfRAF9HL5YJY8,844
+ims.fieldupdater-3.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ims.fieldupdater-3.0.1.dist-info/entry_points.txt,sha256=ue9oriqwbY5mDverBYmB-21XfmR2FdG-YWncKEEp-pE,42
+ims.fieldupdater-3.0.1.dist-info/RECORD,,
