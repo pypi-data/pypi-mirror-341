@@ -1,0 +1,6 @@
+{
+  "resource": true,
+  "name": "temporalcloud",
+  "version": "0.7.0-alpha.1744805521",
+  "server": "https://github.com/Grip-Security/pulumi-temporalcloud/releases/download/v${VERSION}/"
+}
