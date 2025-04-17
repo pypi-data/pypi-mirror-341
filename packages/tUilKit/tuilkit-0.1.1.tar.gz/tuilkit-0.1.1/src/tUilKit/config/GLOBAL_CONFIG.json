@@ -1,0 +1,22 @@
+{
+    "FOLDER_PATHS": {
+        "TEST_LOG_FILES"  : "testLogs/",
+        "LOG_FILES"       : "logFiles/",
+        "INPUT"           : "inputData/",
+        "OUTPUT"          : "outputData/"
+    },
+    "FILES": {
+        "LOG_FILE"        : "log.log"
+    },
+    "FILE_PATHS"          : {
+        "LOG_FILE"        : "logFiles/log.log",
+        "INPUT_FILE"      : "inputData/input.txt",
+        "OUTPUT_FILE"     : "outputData/output.txt"
+    },
+    "DISPLAY"             : {
+        "FULL_PATH"       : "no",
+        "FILENAME_LIST"   : "yes",
+        "DETAIL"          : "summary",
+        "LOGGING"         : "verbose"
+    }
+}
