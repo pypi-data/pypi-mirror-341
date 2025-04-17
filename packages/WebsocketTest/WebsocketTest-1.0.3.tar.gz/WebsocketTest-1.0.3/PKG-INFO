@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: WebsocketTest
+Version: 1.0.3
+Summary: websocket api autotest
+Author: chencheng
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
