@@ -1,0 +1,2 @@
+[console_scripts]
+parse_smsdb = parse_smsdb.parse_smsdb:main
