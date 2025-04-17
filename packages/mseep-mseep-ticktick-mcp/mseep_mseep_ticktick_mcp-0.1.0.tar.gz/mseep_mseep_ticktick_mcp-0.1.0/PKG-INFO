@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: mseep_mseep-ticktick-mcp
+Version: 0.1.0
+Summary: Package published under mseep brand
+Home-page: https://github.com/parkjs814/ticktick-mcp
+Author: Jaesung Park
+Author-email: mseep <support@skydeck.ai>
+Requires-Python: >=3.10
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
