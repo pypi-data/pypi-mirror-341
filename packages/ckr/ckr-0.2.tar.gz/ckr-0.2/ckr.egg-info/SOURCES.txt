@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+ckr/Joker.py
+ckr/__init__.py
+ckr.egg-info/PKG-INFO
+ckr.egg-info/SOURCES.txt
+ckr.egg-info/dependency_links.txt
+ckr.egg-info/top_level.txt
