@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cloudMappingAI"
+version = "0.0.2"
+authors = [
+  { name="Dzaky Faishalariq", email="mipamm4@gmail.com" },
+]
+dependencies = [
+  "datasets==3.1.0",
+  "evaluate==0.4.3",
+  "roboflow==1.1.49",
+]
+description = "Library for cloud mapping using Artificial Intelligence by semantic segmentation image"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]

@@ -1,0 +1,4 @@
+.gitignore
+dist/
+src/cloudMappingAI.egg-info/
+tests/
