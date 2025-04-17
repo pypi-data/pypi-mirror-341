@@ -1,0 +1,2 @@
+[console_scripts]
+spt = spotify_cli_client.cli:cli

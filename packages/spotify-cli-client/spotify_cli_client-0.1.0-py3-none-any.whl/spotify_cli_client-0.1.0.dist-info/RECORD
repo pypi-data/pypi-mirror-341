@@ -1,0 +1,10 @@
+spotify_cli_client/__init__.py,sha256=QPWtj5wDRTINDxVUL7XPqG3HoxHNvYOg08EnuSZB2Hc,21
+spotify_cli_client/cli.py,sha256=Xeliah4wJtBM09iq5BwRFVq633D2ewARicLcy3bCL8A,1049
+spotify_cli_client/spotifyCLI.py,sha256=zNX31z14Q7ovKqvbUwpMIBZPntqaCMX77MmfpsJRzjw,7269
+spotify_cli_client/spotifyClient.py,sha256=WFISmYjkdiYz4YF19jDifVerwOt4KbtTYiGS8kk8fh8,9051
+spotify_cli_client-0.1.0.dist-info/licenses/LICENSE,sha256=znoCKmZvaXIQ1NI-dFIV7DDu_rmvosv1xxuPZFqCLsI,1069
+spotify_cli_client-0.1.0.dist-info/METADATA,sha256=EBYUOlIu0nV969lsYd2c_4SHaRlYNjKAbiFOw8Rb73k,3123
+spotify_cli_client-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+spotify_cli_client-0.1.0.dist-info/entry_points.txt,sha256=1FLsVb5DGheeHK4WucPwAT5di8VABsIiu-KVHc_1NGk,51
+spotify_cli_client-0.1.0.dist-info/top_level.txt,sha256=q1LWn5QxgmZAscQa8bdS9FWOa8Qbe_GmTOTsqaIXJtc,19
+spotify_cli_client-0.1.0.dist-info/RECORD,,
