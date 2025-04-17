@@ -1,0 +1,62 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "clacky-stats"
+version = "0.1.3"
+authors = [
+    "ClackyAI <contact@clacky.ai>"
+]
+description = "Code contribution statistics tool for Clacky AI projects"
+readme = "README.md"
+license = "MIT"
+packages = [{include = "bin"}]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Version Control :: Git",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+typer = "*"
+rich = "*"
+pyyaml = "*"
+tqdm = "*"
+matplotlib = "*"
+pandas = "*"
+semver = "*"
+imgcat = "*"
+cogapp = "*"
+codespell = "*"
+uv = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-env = "*"
+pip-tools = "*"
+pre-commit = "*"
+lox = "*"
+
+[tool.poetry.scripts]
+clacky-stats = "bin.cli:main"
+
+[tool.poetry.urls]
+Homepage = "https://github.com/clacky-ai/clacky-stats"
+Repository = "https://github.com/clacky-ai/clacky-stats.git"
+Documentation = "https://github.com/clacky-ai/clacky-stats#readme"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
