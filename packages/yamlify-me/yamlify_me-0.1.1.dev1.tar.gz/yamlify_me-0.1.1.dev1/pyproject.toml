@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yamlify-me"
+version = "0.1.1-dev.01"
+description = "Yamlify Me is a Python package that generate documents from yaml data and jinja templates."
+readme = "README.md"
+authors = [{ name = "Jens Klimke", email = "jens.klimke@rwth-aachen.de" }]
+license = { text = "MIT" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+]
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/JensKlimke/yamlify"
