@@ -1,0 +1,2 @@
+[console_scripts]
+dizest_MCP = dizest_MCP.cli:main
