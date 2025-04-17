@@ -1,0 +1,8 @@
+rasterix/__init__.py,sha256=3-ipA2RgFW3FZ_uOr0_CagEw8p8JTMWepIIg3tZCSjY,253
+rasterix/_version.py,sha256=oixvE9DVoe4z2vLWfAweh5smrXr9lPfc9uA5ZFJvxvo,21
+rasterix/raster_index.py,sha256=Lq-X2F5Zrz5dR2odKvUuG-zYk0nwZ6bBnT-pkRVxJVQ,14976
+rasterix-0.1a1.dist-info/licenses/LICENSE,sha256=QFnsASMx8_yBNbrS7GVOhJ5CglGsLMj83Rn61uWyMs8,10265
+rasterix-0.1a1.dist-info/METADATA,sha256=0HsuR9lB_sx5wDg7nMWcGcc-ryDajKLGsnAQKQrl8FU,798
+rasterix-0.1a1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+rasterix-0.1a1.dist-info/top_level.txt,sha256=xrxwvEojFP_KT72cB7W-Bax_gPoV4e7Jw_4c41uiaj0,9
+rasterix-0.1a1.dist-info/RECORD,,
