@@ -1,0 +1,9 @@
+colorspacious
+dill
+numpy>2
+matplotlib
+scipy
+tqdm
+zarr
+cmasher>=1.9.2
+awkward>=2.8.1

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["quantem"]
+
+[project]
+name = "quantem"
+version = "0.1.0"
+description = "quantitative electron microscopy analysis toolkit."
+keywords = ["EM","TEM","STEM","4DSTEM"]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+  "colorspacious",
+  "dill",
+  "numpy>2",
+  "matplotlib",
+  "scipy",
+  "tqdm",
+  "zarr",
+  "cmasher>=1.9.2",
+  "awkward>=2.8.1",
+]
+
+[dependency-groups]
+dev = [
+    "jupyterlab>=4.4.0",
+    "pre-commit>=4.2.0",
+    "ruff>=0.11.5",
+]
