@@ -1,0 +1,10 @@
+konnect-stubs/curl/__init__.pyi,sha256=thAEKS2Q5HcUbiNaeWGVycsn-25eRHdDOCK4lJkONv8,304
+konnect-stubs/curl/_enums.pyi,sha256=fvgwRh0GzRPA1ApyAum4uT0eweeeBYyig70lMpKiS-0,795
+konnect-stubs/curl/_exceptions.pyi,sha256=UhjgSG2XbKcepEXmHcq8Rh20JgngPVZXShOZJvKbq1U,200
+konnect-stubs/curl/_multi.pyi,sha256=fGYq4veRR6AE4gCVIYqdSOMT1uwhV8gMRU554Ir0PcE,607
+konnect-stubs/curl/abc.pyi,sha256=9kix_tqDTx8-nOq5-6uQYnyFqAQ5jhxRzNy09yGV8Ic,708
+konnect-stubs/curl/requests.pyi,sha256=_IYt_5ZQHknUxtnJnyngEAtDuu9q2LOYEdXK_-0-W5o,434
+types_konnect_curl-0.2.1.dist-info/LICENCE.txt,sha256=-rPda9qyJvHAhjCx3ZF-Efy07F4eAg4sFvg6ChOGPoU,16726
+types_konnect_curl-0.2.1.dist-info/METADATA,sha256=KzDm-2eI71fUzGLNGil72wtHAN-TaIgCM2wW-JbJepU,449
+types_konnect_curl-0.2.1.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+types_konnect_curl-0.2.1.dist-info/RECORD,,
