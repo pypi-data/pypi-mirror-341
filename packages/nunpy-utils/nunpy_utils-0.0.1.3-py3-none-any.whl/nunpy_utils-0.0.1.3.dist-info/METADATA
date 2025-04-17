@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: nunpy-utils
+Version: 0.0.1.3
+Summary: Yet another utility library for Python
+Home-page: https://github.com/nunziati/nunpy
+Author: Giacomo Nunziati
+Author-email: giacomo.nunziati.0@gmail.com
+License: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# nunpy
+Yet another utility package.
