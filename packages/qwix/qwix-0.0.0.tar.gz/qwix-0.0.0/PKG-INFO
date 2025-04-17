@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: qwix
+Version: 0.0.0
+Summary: Qwix is a Jax quantization library.
+Author-email: Qwix Developers <qwix-dev@google.com>
+License-Expression: Apache-2.0
+Project-URL: Source, https://github.com/google/qwix
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: absl-py
+Requires-Dist: jax
+Requires-Dist: jaxlib
+Requires-Dist: flax
+Dynamic: license-file
+
+Qwix is not published on PyPI yet. Please install from
+[source](https://github.com/google/qwix).

@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/qwix.egg-info/PKG-INFO
+src/qwix.egg-info/SOURCES.txt
+src/qwix.egg-info/dependency_links.txt
+src/qwix.egg-info/requires.txt
+src/qwix.egg-info/top_level.txt
