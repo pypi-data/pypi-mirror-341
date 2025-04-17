@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: livesearch
+Version: 0.0.1
+Summary: A tool to setup device controls
+Home-page: https://github.com/c3n3/livesearch
+Author: Caden Churchman
+Author-email: ccaden21@gmail.com
+Project-URL: Bug Tracker, https://github.com/c3n3/livesearch/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LIVESEARCH
+
+This is a very simple package
+
+```python
+import livesearch
+
+items = [
+    "pineapple",
+    "banana",
+    "apple",
+]
+
+results = livesearch.search("app", items)
+
+for res in results:
+    print(res)
+```
+
+This will print:
+```
+apple
+banana
+```
+
+## Notes
+
+- Regex always enabled
+
+## FAQ
+
+Is this the fastest search
+> No
+
+Will this be updated in the future
+> If I feel like it, or people start using it a lot

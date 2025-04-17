@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./livesearch/__init__.py
+./livesearch/__main__.py
+livesearch/__init__.py
+livesearch/__main__.py
+livesearch.egg-info/PKG-INFO
+livesearch.egg-info/SOURCES.txt
+livesearch.egg-info/dependency_links.txt
+livesearch.egg-info/top_level.txt
