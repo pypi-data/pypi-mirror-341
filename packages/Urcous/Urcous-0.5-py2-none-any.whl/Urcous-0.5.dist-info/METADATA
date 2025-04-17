@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Urcous
+Version: 0.5
+Summary: Urcous 2D and 3D engine library for python 2.4
+Home-page: UNKNOWN
+Author: Vladik
+Author-email: vladhruzd25@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.4
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/plain
+
+Urcous — 2D and 3D engine for Python 2.4
+
+
