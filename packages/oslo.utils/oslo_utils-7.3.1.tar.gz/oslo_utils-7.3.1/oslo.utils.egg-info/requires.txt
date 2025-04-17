@@ -1,0 +1,12 @@
+iso8601>=0.1.11
+oslo.i18n>=3.15.3
+pytz>=2013.6
+netaddr>=0.10.0
+netifaces>=0.10.4
+debtcollector>=1.2.0
+pyparsing>=2.1.0
+packaging>=20.4
+PyYAML>=3.13
+
+[:(python_version>="3.9")]
+tzdata>=2022.4
