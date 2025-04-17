@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pudim-hunter-driver-scraper
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9
+License-File: LICENSE.md
+Requires-Dist: pudim-hunter-driver>=0.0.2
+Requires-Dist: playwright>=1.41.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: pytest>=7.4.0
+Requires-Dist: pytest-asyncio>=0.21.0
+Requires-Dist: pytest-cov>=4.1.0
+Requires-Dist: black>=23.0.0
+Requires-Dist: flake8>=6.0.0
+Requires-Dist: mypy>=1.0.0
+Requires-Dist: isort>=5.12.0
+Requires-Dist: wheel>=0.40.0
+Requires-Dist: twine>=4.0.2
+
+UNKNOWN
+
