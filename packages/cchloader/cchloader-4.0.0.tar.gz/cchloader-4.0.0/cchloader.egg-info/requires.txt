@@ -1,0 +1,13 @@
+pymongo<=3.13.0
+osconf
+marshmallow<3.0.0,>=2.13.5
+click<8
+six
+pytz
+psycopg2-binary
+
+[:python_version <= "2.7.18"]
+raven<6.0.0
+
+[:python_version > "2.7.18"]
+raven
