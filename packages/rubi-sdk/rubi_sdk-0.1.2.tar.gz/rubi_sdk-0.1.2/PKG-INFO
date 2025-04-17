@@ -1,0 +1,73 @@
+Metadata-Version: 2.4
+Name: rubi_sdk
+Version: 0.1.2
+Summary: A2A Core SDK - A framework for building AI agents and applications
+Requires-Python: >=3.12
+Requires-Dist: asyncclick>=8.1.8
+Requires-Dist: asyncio>=3.4.3
+Requires-Dist: click>=8.1.8
+Requires-Dist: httpx-sse>=0.4.0
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: jwcrypto>=1.5.6
+Requires-Dist: pydantic>=2.10.6
+Requires-Dist: pyjwt>=2.10.1
+Requires-Dist: sse-starlette>=2.2.1
+Requires-Dist: starlette>=0.46.1
+Requires-Dist: streamlit>=1.44.0
+Requires-Dist: uvicorn>=0.34.0
+Description-Content-Type: text/markdown
+
+# A2A SDK
+
+A2A SDK is a framework for building AI agents and applications. It provides core functionality for creating, managing, and communicating with AI agents.
+
+## Features
+
+- Type-safe agent communication protocol
+- Built-in client and server implementations
+- Extensible agent framework
+- Support for multiple agent types and hosting environments
+
+## Installation
+
+```bash
+pip install rubi_sdk
+```
+
+## Quick Start
+
+### Creating a Server
+
+```python
+from rubi_sdk.server import A2AServer
+from rubi_sdk.types import Task
+
+server = A2AServer()
+server.start()
+```
+
+### Creating a Client
+
+```python
+from rubi_sdk.client import A2AClient
+
+client = A2AClient()
+response = await client.send_task({"prompt": "Hello, world!"})
+```
+
+## Project Structure
+
+The SDK is organized into the following main components:
+
+- `rubi_sdk.types` - Core type definitions
+- `rubi_sdk.client` - Client implementation
+- `rubi_sdk.server` - Server implementation
+- `rubi_sdk.utils` - Utility functions and classes
+
+## Contributing
+
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) for details.
+
+## License
+
+This project is licensed under the terms specified in the [LICENSE](LICENSE) file. 
