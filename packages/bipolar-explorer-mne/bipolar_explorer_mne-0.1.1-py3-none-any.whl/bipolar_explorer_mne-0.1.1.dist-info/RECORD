@@ -1,0 +1,9 @@
+bipolar_explorer_mne/__init__.py,sha256=e3S0EcDGJlWIp2hddSFjvt633jfeZ4W7VyAeLpfTWVM,37
+bipolar_explorer_mne/__version__.py,sha256=qWl-ozkM7DvUi3gdL-briQUYDw40AQ4HqAdt999TNyw,87
+bipolar_explorer_mne/bipolar_explorer.py,sha256=bfcxEOk1wflz3b9fvXyGxAWY1WcmtitysKhXEVRxViQ,6584
+bipolar_explorer_mne/visualization.py,sha256=S9liPNygRztoRfdux36jn_8-EzmYDvFCFnr_UASW_pw,2035
+bipolar_explorer_mne-0.1.1.dist-info/licenses/LICENSE,sha256=xr0wQnIQiPJnLYNlWEr6qT54NTsDrafha3H3hcO04vo,1502
+bipolar_explorer_mne-0.1.1.dist-info/METADATA,sha256=QnjQeCgFKU9o87KD5268Lc5ILgcH98p__rKBo0bbZl0,4320
+bipolar_explorer_mne-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+bipolar_explorer_mne-0.1.1.dist-info/top_level.txt,sha256=MxoZSCY7hBwlZQiueTzrQenqqhbqvof2sTamjAeObtA,21
+bipolar_explorer_mne-0.1.1.dist-info/RECORD,,
