@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: freesimplesql
+Version: 0.1.1
+Summary: A SQLite database browser using freesimplegui
+Requires-Python: >=3.7
+Requires-Dist: faker>=18.13.0
+Requires-Dist: freesimplegui>=5.2.0.post1
+Requires-Dist: loguru>=0.7.3
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: sqlmodel>=0.0.24
+Description-Content-Type: text/markdown
+
+# FreeSimpleSQL
+
+![Screenshot](screenshot.png)
+
+**FreeSimpleSQL** is a lightweight, zero-dependency SQL runner for SQLite, designed for simplicity and speed.
+
+## Features
+
+- 🐍 Use as a Python module: `python -m freesimplesql`
+- 📜 Run via script: `python run_freesimplesql.py`
+- 💾 No installation required, pure Python
+- 📜 View the DB records only, no roadmap to support edit operations
+
+## Quick Start
+
+### 1. Run as a module
+
+```sh
+python -m freesimplesql
+```
+
+### 2. Run by script
+
+```sh
+freesimplesql.exe
+```
+
+## Installation
+
+Clone the repo and use directly, or install with pip:
+
+```sh
+pip install freesimplesql
+```
+
+## License
+
+MIT License
