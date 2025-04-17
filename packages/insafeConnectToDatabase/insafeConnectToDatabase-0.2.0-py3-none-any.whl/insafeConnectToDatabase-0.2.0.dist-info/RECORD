@@ -1,0 +1,8 @@
+insafeConnectToDatabase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+insafeConnectToDatabase/databaseConnection.py,sha256=K0qtijimNsra6eLHKNarXZyKovfBa8oARDdkG3vhwj4,2059
+insafeConnectToDatabase/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+insafeConnectToDatabase/util/wait_for_proxy.py,sha256=c00WJqzmfvmzAEoDDIZh7WHn8ZumFuC4Qa1h8_nWOa0,596
+insafeConnectToDatabase-0.2.0.dist-info/METADATA,sha256=mGJM6LE_hePr7YJXIwI3UVxVF_zzAInQ--Czv6hycUQ,630
+insafeConnectToDatabase-0.2.0.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+insafeConnectToDatabase-0.2.0.dist-info/top_level.txt,sha256=Aumrg0ILnPAHRGSoueM9HsbTa_aof56mjNqHbXhHRFY,24
+insafeConnectToDatabase-0.2.0.dist-info/RECORD,,
