@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: transformation3d
+Version: 2.2.3
+Summary: An easy-to-use class representing transformations in 3D space.
+Author-email: Tim Schneider <tim@robot-learning.de>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/TimSchneider42/python-transformation3d
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scipy
+Requires-Dist: numpy
+Dynamic: license-file
+
+# python-transformation
+Provides a `Transformation` class that represents a transformation in 3D space.
+Currently, this class supports multiplication by other transformations, inversion and point projection.
+
+## Installation
+Install via
+```bash
+pip install transformation3d
+```
