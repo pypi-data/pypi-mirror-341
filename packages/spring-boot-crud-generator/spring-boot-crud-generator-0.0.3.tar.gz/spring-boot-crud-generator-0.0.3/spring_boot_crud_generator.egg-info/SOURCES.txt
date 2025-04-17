@@ -1,0 +1,8 @@
+README.md
+setup.py
+spring-boot-crud-generator/__init__.py
+spring_boot_crud_generator.egg-info/PKG-INFO
+spring_boot_crud_generator.egg-info/SOURCES.txt
+spring_boot_crud_generator.egg-info/dependency_links.txt
+spring_boot_crud_generator.egg-info/entry_points.txt
+spring_boot_crud_generator.egg-info/top_level.txt
