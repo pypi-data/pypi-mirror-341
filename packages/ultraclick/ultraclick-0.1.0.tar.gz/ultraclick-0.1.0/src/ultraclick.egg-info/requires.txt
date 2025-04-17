@@ -1,0 +1,9 @@
+click
+rich
+rich_click
+
+[dev]
+check-manifest
+
+[test]
+coverage
