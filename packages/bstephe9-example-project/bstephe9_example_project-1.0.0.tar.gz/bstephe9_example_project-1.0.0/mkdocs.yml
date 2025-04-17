@@ -1,0 +1,52 @@
+site_name: bstephe9-example-project
+repo_url: https://github.com/bstephe9/bstephe9-example-project
+site_url: https://bstephe9.github.io/bstephe9-example-project
+site_description: This is a template repository for Python projects that use uv for their dependency management.
+site_author: Ben Stephenson
+edit_uri: edit/main/docs/
+repo_name: bstephe9/bstephe9-example-project
+copyright: Maintained by <a href="https://bstephe9.com">bstephe9</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["bstephe9_example_project"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/bstephe9/bstephe9-example-project
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/bstephe9-example-project
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
