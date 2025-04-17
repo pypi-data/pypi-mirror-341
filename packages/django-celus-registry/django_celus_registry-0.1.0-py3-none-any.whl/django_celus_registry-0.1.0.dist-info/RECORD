@@ -1,0 +1,12 @@
+django_celus_registry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_celus_registry/admin.py,sha256=zyMxZGQGF74L39NOIeijqMMCDov7sBvP6mw5-wz0Zlc,2132
+django_celus_registry/apps.py,sha256=rkfzQ6pWibdLGgdy-HZSG41602GUOzsQmCWvNSvQJOc,231
+django_celus_registry/migrations/0001_initial.py,sha256=310unEtSznhc4sgmFXYb_RGHM1oFPH1REIvy1UQV3bA,4561
+django_celus_registry/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_celus_registry/models.py,sha256=LBCDhLg2rT8O59rWmOzzj5D6VCWZ0eVlg-bB4Gt0hR4,3101
+django_celus_registry/serializers.py,sha256=9tiNgQ85UJnX5eSTh7Hbz-KHm4LFOGNcD2z6w4uT7WQ,1368
+django_celus_registry/tasks.py,sha256=rLZ4nv8asteafTwqQSP25caDXWnMsqQf1TJ_oAkLFjQ,7899
+django_celus_registry-0.1.0.dist-info/LICENSE,sha256=qr0RnSalRt3v0pvotvNtyT5tV_jG6hLnApgkJkkkTUw,1057
+django_celus_registry-0.1.0.dist-info/METADATA,sha256=V7Vqno3sPnDvjP2pUfsQcvFOi8G90op67Vby__ftm70,1739
+django_celus_registry-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+django_celus_registry-0.1.0.dist-info/RECORD,,
