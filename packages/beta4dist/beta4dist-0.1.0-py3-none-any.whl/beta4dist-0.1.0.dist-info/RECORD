@@ -1,0 +1,11 @@
+beta4dist/__init__.py,sha256=i4GVX5J2hUJsuA40aIp_NUxFCBm9FnivSXiZcr0Phro,195
+beta4dist/beta4_model.py,sha256=ZAlCbagQyv3irchu3dBq5x60tgGUhzEigH9jOPEwrkc,4920
+beta4dist/distribution.py,sha256=zkcytGqNeGjRKx-5HlR1ewWa-J3NTCDVR5JYQjrjv_8,3412
+tests/__init__.py,sha256=so-58IQlZ5jXtRAaP9sS2dDKMGqWuyGY6dkp3KehSjc,92
+tests/test_beta4_model.py,sha256=ywZukjxTlZiBtxFrin4tXNRJ0-V0CND5hP8CiVvBdsQ,953
+tests/test_distribution.py,sha256=zT1wVFzCgcH8i_dxcytYALh19g5tZHyOF9SrIKVlwfA,839
+beta4dist-0.1.0.dist-info/LICENSE,sha256=ksHerKgEXrJhokukrQrqPVD-BEphums7VkL9O7MaUUg,1094
+beta4dist-0.1.0.dist-info/METADATA,sha256=Xt8tEcU0_BY743NlQlUbDfITA9WgADrAKCdm45n8OtQ,3468
+beta4dist-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+beta4dist-0.1.0.dist-info/top_level.txt,sha256=LUGMuND3TiaYOein2Ku54Ze7l-Ed4wo7c8yqGl8H5kg,16
+beta4dist-0.1.0.dist-info/RECORD,,
