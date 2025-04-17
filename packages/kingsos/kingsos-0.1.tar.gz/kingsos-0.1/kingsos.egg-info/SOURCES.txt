@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+kingsos.egg-info/PKG-INFO
+kingsos.egg-info/SOURCES.txt
+kingsos.egg-info/dependency_links.txt
+kingsos.egg-info/top_level.txt
+kingsos_uploader/__init__.py
