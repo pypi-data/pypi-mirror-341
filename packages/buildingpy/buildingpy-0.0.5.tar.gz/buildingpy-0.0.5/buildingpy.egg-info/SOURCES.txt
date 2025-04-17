@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+buildingpy/__init__.py
+buildingpy/buildingpy.py
+buildingpy.egg-info/PKG-INFO
+buildingpy.egg-info/SOURCES.txt
+buildingpy.egg-info/dependency_links.txt
+buildingpy.egg-info/top_level.txt
