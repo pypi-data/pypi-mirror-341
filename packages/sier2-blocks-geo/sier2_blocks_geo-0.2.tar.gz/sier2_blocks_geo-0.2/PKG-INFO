@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: sier2-blocks-geo
+Version: 0.2
+Summary: Geo blocks for sier2
+Author: jacobgolding
+Author-email: jacobgolding <jacobgolding@users.noreply.github.com>
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/x-rst
+
+Sier2 Blocks Geo
+==================
+
+This library provides useful blocks for geospatial analysis.
+It requires geoviews.
+
