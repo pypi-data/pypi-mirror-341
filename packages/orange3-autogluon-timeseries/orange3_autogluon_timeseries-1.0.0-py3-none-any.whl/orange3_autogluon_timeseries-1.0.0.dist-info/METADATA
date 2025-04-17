@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: orange3-autogluon-timeseries
+Version: 1.0.0
+Summary: AutoGluon Time Series forecasting widget for Orange3
+Home-page: https://github.com/KordyakIM/autogluon-timeseries-widget
+Author: Иван Кордяк
+Author-email: KordyakIM@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Dist: Orange3>=3.38.1
+Requires-Dist: autogluon.timeseries==1.2
+Requires-Dist: pandas==2.2.3
+Requires-Dist: numpy>=1.25
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
