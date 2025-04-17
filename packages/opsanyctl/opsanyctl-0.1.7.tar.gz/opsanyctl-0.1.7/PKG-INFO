@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: opsanyctl
+Version: 0.1.7
+Summary: OpsAny's command-line tool!
+Home-page: UNKNOWN
+Author: OpsAny
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
+OpsAny's command-line tool
+
+### model
+
+- hello
+- get
+- api-resource
+
+
+
+
