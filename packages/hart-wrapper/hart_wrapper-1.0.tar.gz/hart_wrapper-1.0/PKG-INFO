@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: hart-wrapper
+Version: 1.0
+Summary: HaRT package test
+Author-email: Nikita Soni <nisoni@cs.stonybrook.edu>
+Project-URL: Homepage, https://github.com/humanlab/HaRT
+Project-URL: Issues, https://github.com/humanlab/HaRT/issues
+Keywords: hart,hulm
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE copy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+Requires-Dist: transformers[torch]
+Requires-Dist: more_itertools
+Dynamic: license-file
+
+# HaRT-Wrapper
