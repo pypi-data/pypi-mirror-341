@@ -1,0 +1,29 @@
+# pyproject.toml
+
+[build-system]
+requires=['setuptools', 'wheel']
+build-backend='setuptools.build_meta'
+
+[project]
+name='pdf_join'
+version='1.0.8'
+description="Join PDFs from the command line."
+readme='README.md'
+authors=[{name="Michael Wilson", email='mawilson@udel.edu'}]
+classifiers=[
+	'Development Status :: 4 - Beta',
+	'Programming Language :: Python',
+	'Programming Language :: Python :: 3',
+]
+keywords=['pdf', 'merge']
+requires-python='>=3'
+dependencies=[
+	'PyPDF2 >=3.0.0',
+	'tqdm'
+]
+
+[project.urls]
+Homepage='https://github.com/mawilson1234/pdf_join'
+
+[project.scripts]
+pdf-join='pdf_join.__main__:main'
