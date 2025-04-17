@@ -1,0 +1,1 @@
+MAX_BYTES_PER_SECOND = 2 ** 30
