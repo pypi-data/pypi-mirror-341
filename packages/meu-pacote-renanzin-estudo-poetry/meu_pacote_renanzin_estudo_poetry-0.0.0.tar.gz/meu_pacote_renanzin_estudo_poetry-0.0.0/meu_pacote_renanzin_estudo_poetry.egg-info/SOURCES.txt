@@ -1,0 +1,6 @@
+setup.py
+meu_pacote/minha_lib.py
+meu_pacote_renanzin_estudo_poetry.egg-info/PKG-INFO
+meu_pacote_renanzin_estudo_poetry.egg-info/SOURCES.txt
+meu_pacote_renanzin_estudo_poetry.egg-info/dependency_links.txt
+meu_pacote_renanzin_estudo_poetry.egg-info/top_level.txt
