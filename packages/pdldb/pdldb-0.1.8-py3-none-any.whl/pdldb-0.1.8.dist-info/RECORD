@@ -1,0 +1,11 @@
+pdldb/__init__.py,sha256=vaRII2oL9EOsjGbxaDbBvaXyMqwfg6KT7W9TGlUFkPQ,112
+pdldb/base_table_manager.py,sha256=q-O5DjtzLwbtCts4BVyzSWdmTR2mIDYeNeRwptpWeTg,9189
+pdldb/base_table_validator.py,sha256=Vgf1yLVW4GsmFizIFdrszXa88zFp6q4SFMJGiTPwtuc,3346
+pdldb/lake_manager.py,sha256=3WQd_obXdMlUosxg-JrhfHYZs8wPcwOt-iVJc12QEs0,24495
+pdldb/local_table_manager.py,sha256=BvV4n7HXnpiGRrLjPKvdW2EfTS-yzQ3QBut00L8QW3Q,1708
+pdldb/s3_table_manager.py,sha256=dWB0WYMnaYYwina2Jz0PyDKTT23bU_sxYu5QI5eodV0,4008
+pdldb-0.1.8.dist-info/METADATA,sha256=d3bcUv5CU56CTWJXf2RdjQ7xmJ7WdCeY0fwyc5l-_T8,4300
+pdldb-0.1.8.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pdldb-0.1.8.dist-info/entry_points.txt,sha256=gh4NB_fYPBzOCUGSPzJTRjTzSM6luWZodZV0BemoJEI,37
+pdldb-0.1.8.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pdldb-0.1.8.dist-info/RECORD,,
