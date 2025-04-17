@@ -1,0 +1,12 @@
+torch
+numpy
+scikit-learn
+scipy
+
+[dev]
+pytest
+sphinx
+sphinx-rtd-theme
+myst-parser
+sphinx-autodoc-typehints
+pre-commit

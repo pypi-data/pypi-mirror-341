@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: torchnaut
+Version: 1.0.1
+Summary: PyTorch Nonparametric Aleatoric Uncertainty Modeling Toolkit
+Author-email: "Domokos M. Kelen" <kdomokos@info.ilab.sztaki.hu>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: sphinx-rtd-theme; extra == "dev"
+Requires-Dist: myst-parser; extra == "dev"
+Requires-Dist: sphinx-autodoc-typehints; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Dynamic: license-file
