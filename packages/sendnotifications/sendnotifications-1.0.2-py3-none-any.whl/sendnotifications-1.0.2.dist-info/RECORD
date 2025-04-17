@@ -1,0 +1,8 @@
+sendnotifications/__init__.py,sha256=EQ-W6ab6NOmsHqw3La1nly2VnzuzQcIjncR29VCspok,207
+sendnotifications/channels.py,sha256=vAFpa16maHSjefKmQEFbMk_S3uMVuiRJRwp3s7mHDfE,7250
+sendnotifications/sendonemail.py,sha256=qIFxNiBqxGBHBzgsYvjOO4Rk3lY2nJL-3la0KD2NDJU,2268
+sendnotifications/sendonteams.py,sha256=yBH6NZfXYAbmcBZMZQyPBJwZbjqBd_C5ceFqcIEOL_M,7191
+sendnotifications-1.0.2.dist-info/METADATA,sha256=P06AJh5rvSYu8PqnpHtJX7nskdY3wmLjy4yCQOcG2No,1790
+sendnotifications-1.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sendnotifications-1.0.2.dist-info/licenses/LICENSE,sha256=llB-C7SLF68LQedYpudoyicclWpG3nKSOgoWOgUfLYA,1091
+sendnotifications-1.0.2.dist-info/RECORD,,
