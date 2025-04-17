@@ -1,0 +1,5 @@
+click>=8.1.8
+rich>=13.9.4
+
+[all]
+pipdeptree>=2.26.0
