@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fourier_mellin.egg-info/PKG-INFO
+fourier_mellin.egg-info/SOURCES.txt
+fourier_mellin.egg-info/dependency_links.txt
+fourier_mellin.egg-info/not-zip-safe
+fourier_mellin.egg-info/requires.txt
+fourier_mellin.egg-info/top_level.txt
+tests/test_module.py
+tests/test_resolution.py
