@@ -1,0 +1,12 @@
+mctextrender/__init__.py,sha256=YQeur4KyobaMI0vTiMDHC69J68LjZ4pvVWWH4NJnMfs,317
+mctextrender/background.py,sha256=_LcBP4S6binXUM5m9P0n5N3cyklYjBzEJ63KwL6auZc,652
+mctextrender/colors.py,sha256=D_2QJILoUsi_0LxbqwDOogMvw9lZikX3yiMPk7e-XOM,1365
+mctextrender/image.py,sha256=guwasfiU1C0_7oj0dKpBpDGbysi_cZnljXMcIdvpSJQ,1915
+mctextrender/text.py,sha256=gb1AFRMKq_zAGnNGes43vuBwDfNNRdOEndGC2opTQnE,2541
+mctextrender/tools.py,sha256=uo8SvErWcwKxYZ-P-iPB2Vm3Tj1_fZdA7CKlQTKHR6M,492
+mctextrender/font/main.ttf,sha256=plJOejH7M7aPUtnfzAtFPFDmn4w0eKN6t2ruacsQJLg,11812604
+mctextrender-1.1.0.dist-info/licenses/LICENSE,sha256=bI3PTuqEVhwch3Bw0zSGUTPMp43ExXIeTMkWfnE9NVA,1108
+mctextrender-1.1.0.dist-info/METADATA,sha256=96EtL9etvuMvsZmePoYUFyft2EVZQ4eHsSoP7a0Tr54,410
+mctextrender-1.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mctextrender-1.1.0.dist-info/top_level.txt,sha256=LusM6TwbVavn0uDJ4GVw4_g1OJvGIC4pu0Xyzuuxu5E,13
+mctextrender-1.1.0.dist-info/RECORD,,
