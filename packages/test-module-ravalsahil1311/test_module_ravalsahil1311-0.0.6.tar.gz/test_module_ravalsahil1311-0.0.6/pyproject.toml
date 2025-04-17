@@ -1,0 +1,20 @@
+[project]
+name = "test_module_ravalsahil1311"
+version = "0.0.6"
+authors = [
+  { name="Raval Sahil", email="ravalsahil1311@gmail.com" },
+  { name="Raval Sahil-AtQor", email="sahil.raval@atqor.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/AzureEase/TestModule"
+Issues = "https://github.com/AzureEase/TestModule/issues"
