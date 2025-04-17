@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/freshservice_mcp/__init__.py
+src/freshservice_mcp/server.py
+src/freshservice_mcp.egg-info/PKG-INFO
+src/freshservice_mcp.egg-info/SOURCES.txt
+src/freshservice_mcp.egg-info/dependency_links.txt
+src/freshservice_mcp.egg-info/entry_points.txt
+src/freshservice_mcp.egg-info/requires.txt
+src/freshservice_mcp.egg-info/top_level.txt
+tests/test-fs-mcp.py
