@@ -1,0 +1,17 @@
+square_authentication/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+square_authentication/configuration.py,sha256=i0uNtNSQd-n1rBxFM6jsIz1Wy3d090RcdTViSqHKc7Y,2973
+square_authentication/main.py,sha256=zP8Affuljk1m7fsRSa1WG8KP0xdcVgOvA-62bWlLe4s,1660
+square_authentication/messages.py,sha256=BA9KC0vW9UD1ZXT4VneVqVNLlgdbMdsAwAgxhJISLf4,1175
+square_authentication/data/config.ini,sha256=_740RvKpL5W2bUDGwZ7ePwuP-mAasr5cXXB81yq_Jv8,906
+square_authentication/pydantic_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+square_authentication/pydantic_models/core.py,sha256=qeNETcJv7mnRKGhATOW2bg0NlHuyzvot1dZ1b1qqhwU,610
+square_authentication/routes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+square_authentication/routes/core.py,sha256=nfATWJ3NWQkCe9gmMhJIh1lsdxmiCQ1OL3HoqIhFd88,57195
+square_authentication/routes/utility.py,sha256=KDr8KdkT0jAGPjfP-b5XXYG7p49WU7J1FiK6oSIckQI,1779
+square_authentication/utils/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+square_authentication/utils/encryption.py,sha256=WakaiEAgWpTJltxBzqOtv81_DCDKfzJqt60fWSPoNvo,2027
+square_authentication/utils/token.py,sha256=t-RPBY4cYyT1ro3lkLBTOy2BeRGBfluBVBivL5DLmDg,680
+square_authentication-5.1.5.dist-info/METADATA,sha256=0GDaWp1LZIJ1WGH1_r-uf0GhBgfuERwosV8hzZ8wl0s,4258
+square_authentication-5.1.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+square_authentication-5.1.5.dist-info/top_level.txt,sha256=wDssVJIl9KIEJPj5rR3rv4uRI7yCndMBrvHd_6BGXQA,22
+square_authentication-5.1.5.dist-info/RECORD,,
