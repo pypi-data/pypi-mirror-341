@@ -1,0 +1,10 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adapters/in/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+application/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ports/in/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+surrodocs_collector-0.1.0.dist-info/licenses/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+surrodocs_collector-0.1.0.dist-info/METADATA,sha256=xL1xbmntT0pTKsCYQ9befUR5BgQ9JMUgkf6Nl5e39LY,2286
+surrodocs_collector-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+surrodocs_collector-0.1.0.dist-info/top_level.txt,sha256=4ZFrg6ywU1tYgimHCvtwiIbsB2EQfE1xkrcKsrSThIg,41
+surrodocs_collector-0.1.0.dist-info/RECORD,,
