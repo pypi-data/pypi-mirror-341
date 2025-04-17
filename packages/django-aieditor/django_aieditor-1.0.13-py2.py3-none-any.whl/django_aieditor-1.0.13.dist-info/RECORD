@@ -1,0 +1,16 @@
+django_aieditor/__init__.py,sha256=mcelodPEK5yg_zqhsskITHImgIjoQT4l8YHVur8bBcI,88
+django_aieditor/apps.py,sha256=_TKRyzWUzWCC2dhggYm4vSnpp3MJLp2IyuDorMweYW8,176
+django_aieditor/fields.py,sha256=WHVY_w4SPHAjxv-bLWYVkJv8DqbLA3pUv9mnhNvVkZ4,3760
+django_aieditor/urls.py,sha256=Nl6q7JsClNT6u5DzRKTNxLs_5PZRPCQqgDnmEQSFnjo,160
+django_aieditor/views.py,sha256=xnA5dS1hMbct8v5vFDAbRWUPpGYYOexyuPKgI8ayTpo,1060
+django_aieditor/static/django_aieditor/css/aieditor.min.css,sha256=Iq2PDnDGrr_zGjC0i5685CBGdzu0cX5dnnPxau_8gD8,31664
+django_aieditor/static/django_aieditor/css/style.css,sha256=47CZPuJHsJeiVwift3iQWkRriEgHkOO5sGBuSbbZUx4,15661
+django_aieditor/static/django_aieditor/js/aieditor.umd.js,sha256=bDj0qIlexqxHGjlsQp8MmaDs2nv9W4oPoeiIU0BdDMM,1774976
+django_aieditor/static/django_aieditor/js/index.js,sha256=sOHOnEorcg0chZK9boJNIXMLMJjPB2zToJ6nFSStakA,1049419
+django_aieditor/static/django_aieditor/js/init.js,sha256=tYFfqcUdiFGWSo841tKCO9SMcgrVqwJ9W6HBwevvLmA,303
+django_aieditor/templates/django_aieditor/widget.html,sha256=c4zXaC_FTlUgEe-KNHCsoszbbCKH8B89NZfwgs55Sp0,5172
+django_aieditor-1.0.13.dist-info/licenses/LICENSE,sha256=niL3YSMREUKcnqeX5sXdVZdnJ1yZW9gZC4qEzMFIeME,1066
+django_aieditor-1.0.13.dist-info/METADATA,sha256=XcbAQ-vfWS7yev-ZECWwW4E1oc5_5BaX_AbowpTq4l4,3088
+django_aieditor-1.0.13.dist-info/WHEEL,sha256=MAQBAzGbXNI3bUmkDsiV_duv8i-gcdnLzw7cfUFwqhU,109
+django_aieditor-1.0.13.dist-info/top_level.txt,sha256=nigaOz5a7QKHSxgfupIN0CwAH9hD_4FqeSIITRmWZmk,16
+django_aieditor-1.0.13.dist-info/RECORD,,
