@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+tests/test_core.py
+vocabslim/__init__.py
+vocabslim/cli.py
+vocabslim/core.py
+vocabslim.egg-info/PKG-INFO
+vocabslim.egg-info/SOURCES.txt
+vocabslim.egg-info/dependency_links.txt
+vocabslim.egg-info/entry_points.txt
+vocabslim.egg-info/requires.txt
+vocabslim.egg-info/top_level.txt
