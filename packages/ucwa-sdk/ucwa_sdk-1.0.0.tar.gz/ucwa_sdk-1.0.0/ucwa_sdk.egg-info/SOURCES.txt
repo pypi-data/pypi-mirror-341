@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+tests/test_client.py
+ucwa_sdk/__init__.py
+ucwa_sdk/client.py
+ucwa_sdk/config.py
+ucwa_sdk/execption.py
+ucwa_sdk/memory.py
+ucwa_sdk/model.py
+ucwa_sdk/utils.py
+ucwa_sdk.egg-info/PKG-INFO
+ucwa_sdk.egg-info/SOURCES.txt
+ucwa_sdk.egg-info/dependency_links.txt
+ucwa_sdk.egg-info/requires.txt
+ucwa_sdk.egg-info/top_level.txt

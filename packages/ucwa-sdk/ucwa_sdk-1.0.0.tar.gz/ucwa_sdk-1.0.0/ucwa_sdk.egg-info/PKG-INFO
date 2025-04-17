@@ -1,0 +1,179 @@
+Metadata-Version: 2.2
+Name: ucwa-sdk
+Version: 1.0.0
+Summary: UCWA SDK for AI memory management and model integration
+Home-page: https://github.com/your-org/ucwa-sdk
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+UCWA SDK
+The UCWA SDK is a powerful tool that allows AI labs and developers to integrate and interact with UCWA (Universal Context Window API) services. With this SDK, you can easily extend AI models (LLMs, multimodal models, etc.) by utilizing external memory extensions and scaling their context window dynamically.
+
+This SDK provides both a Python library and API client to interact with the UCWA services, offering memory management, storage, retrieval, and much more.
+
+Features
+Vector Memory: Leverage FAISS to manage and store vectors in a scalable, high-performance system.
+
+OpenAI Embedding Support: Integrates with OpenAI models to embed and scale context windows dynamically.
+
+Async & Streaming APIs: Handle large-scale requests with asynchronous support for optimized performance.
+
+API Key Authentication: Secure your API interactions with API key-based authentication.
+
+Rate Limiting: Ensure fair usage with built-in rate limiting for API calls.
+
+Dockerized: Easily deploy the API with Docker for local or cloud-based installations.
+
+Postgres + FAISS Persistence: Data is persistently stored for quick retrieval using PostgreSQL and FAISS.
+
+Logging & Health Checks: Built-in logging support and health check endpoints for production-grade stability.
+
+Installation
+To install the UCWA SDK and set up the client in your Python environment, follow these steps.
+
+Install from PyPI
+To install the SDK, simply run:
+
+bash
+Copy
+Edit
+pip install ucwa-sdk
+Install from Source
+Alternatively, you can install the SDK directly from the source code by cloning the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/ucwa-sdk.git
+cd ucwa-sdk
+python setup.py install
+Dependencies
+The following Python packages are required:
+
+requests
+
+fastapi
+
+pydantic
+
+faiss-cpu (for memory vector management)
+
+asyncio
+
+httpx
+
+Ensure that all dependencies are installed, either via pip install or through the provided requirements.txt.
+
+Configuration
+Before using the SDK, you need to configure the API key for secure authentication.
+
+Set your API Key: You'll need to generate an API key from the UCWA service. Add it to your environment variables or directly in your code.
+
+bash
+Copy
+Edit
+export UCWA_API_KEY="your-api-key-here"
+Base URL Configuration: Configure the UCWA base API URL in the configuration file (config.py), or set it as an environment variable.
+
+python
+Copy
+Edit
+BASE_URL = "https://your-ucwa-api-url.com"
+Usage
+Here’s an example of how to interact with the UCWA API using the SDK.
+
+1. Initialize the Client
+To initialize the API client, simply import and create an instance of UCWAClient.
+
+python
+Copy
+Edit
+from ucwa_sdk import UCWAClient
+
+client = UCWAClient(api_key="your-api-key")
+2. Add Memory (Storing Vectors)
+Use the add_memory method to store memory (vectors) for a given model:
+
+python
+Copy
+Edit
+response = client.memory.add_memory(
+    model_name="OpenAI GPT-3",
+    vector_data=[0.1, 0.2, 0.3, 0.4],  # Your vector data here
+    metadata={"example_key": "example_value"}
+)
+print(response)
+3. Search Memory
+You can search the memory storage for a vector match:
+
+python
+Copy
+Edit
+response = client.memory.search_memory(
+    query_vector=[0.1, 0.2, 0.3, 0.4]
+)
+print(response)
+4. Stream Data (Async)
+For large-scale operations, the SDK supports streaming data. Here's how to use it:
+
+python
+Copy
+Edit
+async def stream_data():
+    async with client.stream() as stream:
+        async for chunk in stream.fetch_data(query="some_query"):
+            print(chunk)
+
+# Run in an async environment
+import asyncio
+asyncio.run(stream_data())
+Docker Deployment
+If you want to deploy UCWA as a containerized application, we provide a Docker configuration.
+
+1. Build the Docker Image
+From the docker/ directory:
+
+bash
+Copy
+Edit
+docker build -t ucwa-api .
+2. Run the Docker Container
+Run the container locally or deploy it to any cloud service:
+
+bash
+Copy
+Edit
+docker run -d -p 8000:8000 ucwa-api
+Tests
+The SDK includes unit and integration tests for verifying functionality.
+
+Run Unit Tests
+Run the tests locally with:
+
+bash
+Copy
+Edit
+pytest tests/
+Ensure you have pytest installed before running tests:
+
+bash
+Copy
+Edit
+pip install pytest
+
+
