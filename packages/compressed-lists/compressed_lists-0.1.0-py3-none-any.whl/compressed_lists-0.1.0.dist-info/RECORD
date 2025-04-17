@@ -1,0 +1,10 @@
+compressed_lists/CompressedIntegerList.py,sha256=B4Eq3DgNeRbAL9Qpw3QQtwglMX4CT24dMSxGaIO12KE,2362
+compressed_lists/CompressedList.py,sha256=7lIXMwW-451SgDMJ8pyMKi7kh1bjWDJb7n46ZkYQ8_c,18585
+compressed_lists/CompressedStringList.py,sha256=pnz5C9WSeSkn9JgTclgYpf2ngUoaEfqw3lltf2LVMU0,2219
+compressed_lists/__init__.py,sha256=u1mmk8IyiPBrzcT5j-78aQDsLW6Ssk73UrHysT1cLNg,779
+compressed_lists/partition.py,sha256=tUeQY5CP3nb3n-iWMd5a4cJftxB3n7ptGKjmty0vbpM,8478
+compressed_lists-0.1.0.dist-info/licenses/LICENSE.txt,sha256=qI2hRZobcUlj8gqFqXwqt522HeYyWvHLF00zCSZofHA,1084
+compressed_lists-0.1.0.dist-info/METADATA,sha256=V5uNObHECSupJ_QumenbqO3BgbVXjh9hl2_HYYP7E28,3235
+compressed_lists-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+compressed_lists-0.1.0.dist-info/top_level.txt,sha256=F89a770vqkz9CN7_voSVePD3jhhCwTQ51KalyJO4xpQ,17
+compressed_lists-0.1.0.dist-info/RECORD,,
