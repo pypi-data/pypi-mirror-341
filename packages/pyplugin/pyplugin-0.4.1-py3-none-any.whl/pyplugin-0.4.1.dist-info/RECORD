@@ -1,0 +1,13 @@
+pyplugin/__init__.py,sha256=N4Ih-5iJOykXEGmFAxR-P0tHRkt_P8uZMcs2tMws1QY,372
+pyplugin/base.py,sha256=Goi3RtSNL0hywxHL1Al-1ZE20gLCTpM6UwbUEl5iuIo,38068
+pyplugin/decorators.py,sha256=AevuETUOUA7fFeXFjynpH18D7m5rlxtO7zhkAnPeGkc,303
+pyplugin/exceptions.py,sha256=SHwV3sEQ0ptlebiKC9az_So8toNd3WubbhQIPOlF3us,887
+pyplugin/group.py,sha256=1pguWokLLuiEntzfSVBSadmQisw_yaa0oij2AV1ctfM,8372
+pyplugin/settings.py,sha256=DQQ1xJ46gHHwp2CtYKZjtdIBs_LoBkFcHQnFqRHKNa4,4215
+pyplugin/types.py,sha256=7UweG38xE02cdOe9Zks7RgkbAbkOVXVeQOkiBZNdvQo,132
+pyplugin/utils.py,sha256=5AZL2ZmmWFoaLc8QmvUg9xCNkVo7eGy_ydA0WKBClwQ,5265
+pyplugin-0.4.1.dist-info/licenses/LICENSE,sha256=rn-D-ox-YiNP5CPHvRAyPxPYfGO4WqxbTDKgM6UpYVs,1063
+pyplugin-0.4.1.dist-info/METADATA,sha256=F-2Ax2M7sioVvRuYi0CnzNgCUgMqXfGWERXXM66wtXI,4646
+pyplugin-0.4.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pyplugin-0.4.1.dist-info/top_level.txt,sha256=UCZYsl99thOPUVZJvbSVDQobDYPw5LERfauXTtqCrys,9
+pyplugin-0.4.1.dist-info/RECORD,,
