@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: ims.fieldupdater
+Version: 3.0.1
+Summary: Update all objects in Plone based on a schema/field strategy
+Project-URL: homepage, https://git.imsweb.com/plone/ims.fieldupdater
+Project-URL: documentation, https://git.imsweb.com/plone/ims.fieldupdater
+Project-URL: repository, https://git.imsweb.com/plone/ims.fieldupdater
+Author-email: Eric Wohnlich <wohnlice@imsweb.com>
+License: GPL
+Classifier: Framework :: Plone :: 6.0
+Classifier: Framework :: Plone :: 6.1
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Requires-Dist: plone>=6.0.4
+Provides-Extra: test
+Requires-Dist: formencode; extra == 'test'
+Requires-Dist: plone-app-robotframework; extra == 'test'
+Requires-Dist: plone-app-testing; extra == 'test'
+Requires-Dist: plone-mocktestcase; extra == 'test'
+Requires-Dist: pytest-plone; extra == 'test'
