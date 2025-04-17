@@ -1,0 +1,27 @@
+[project]
+name = "lightning-client-mcp"
+version = "0.0.3"
+authors = [
+  { name="Evan Hallmark", email="ehallmark1122@gmail.com" },
+]
+description = "A Bitcoin lightning client designed for agentic workflows and tools."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "grpcio-tools==1.71.0",
+    "grpcio==1.71.0",
+    "protobuf==5.29.4"
+]
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/ehallmark/btc-lightning-client"
+Issues = "https://github.com/ehallmark/btc-lightning-client/issues"
