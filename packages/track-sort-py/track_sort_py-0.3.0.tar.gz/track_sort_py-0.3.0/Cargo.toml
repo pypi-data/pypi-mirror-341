@@ -1,0 +1,16 @@
+[lib]
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+name = "track_sort"
+
+[package]
+name = "track-sort-py"
+version = "0.3.0"
+edition = "2021"
+license = "Apache 2.0"
+homepage = "https://gitlab.com/leandrosansilva/track-sort-py"
+repository = "https://gitlab.com/leandrosansilva/track-sort-py.git"
+
+[dependencies]
+track-sort = { git = "https://gitlab.com/leandrosansilva/track-sort-rs", rev = "521df79690dfe39c4acb7432631eb2ad658981cd" }
+pyo3 = { version = "0.24.0", features = ["extension-module", "abi3-py38"] }
