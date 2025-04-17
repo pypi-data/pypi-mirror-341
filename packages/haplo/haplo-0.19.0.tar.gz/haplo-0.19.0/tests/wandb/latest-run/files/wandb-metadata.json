@@ -1,0 +1,37 @@
+{
+  "os": "macOS-14.6.1-arm64-arm-64bit",
+  "python": "3.11.8",
+  "startedAt": "2024-09-20T17:33:44.357651Z",
+  "args": [
+    "end_to_end_tests/test_train_session.py::test_simple_train_session"
+  ],
+  "program": "/Users/golmschenk/Applications/PyCharm Professional Edition.app/Contents/plugins/python-ce/helpers/pycharm/_jb_pytest_runner.py",
+  "git": {
+    "remote": "https://github.com/golmschenk/ml4a.git",
+    "commit": "94c69dc22d32f6de9735309866c911af205b712b"
+  },
+  "root": "/Users/golmschenk/Code/haplo/tests",
+  "host": "Carbon.local",
+  "username": "golmschenk",
+  "executable": "/opt/homebrew/Caskroom/mambaforge/base/envs/haplo/bin/python",
+  "cpu_count": 10,
+  "cpu_count_logical": 10,
+  "disk": {
+    "/": {
+      "total": "994662584320",
+      "used": "867486146560"
+    }
+  },
+  "memory": {
+    "total": "34359738368"
+  },
+  "cpu": {
+    "count": 10,
+    "countLogical": 10
+  },
+  "gpuapple": {
+    "gpuType": "Apple M1 Max",
+    "vendor": "sppci_vendor_Apple",
+    "cores": 32
+  }
+}

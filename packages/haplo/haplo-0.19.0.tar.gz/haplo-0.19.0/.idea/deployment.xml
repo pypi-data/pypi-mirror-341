@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+    <option name="confirmBeforeUploading" value="false" />
+    <serverData>
+      <paths name="adapt">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ml4a" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/data" />
+            <excludedPath local="true" path="$PROJECT_DIR$/sessions" />
+            <excludedPath local="true" path="$PROJECT_DIR$/wandb" />
+            <excludedPath local="true" path="$PROJECT_DIR$/dist" />
+            <excludedPath local="true" path="$PROJECT_DIR$/target" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="argon">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../qusi" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="emu">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../qusi" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="fugu">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../qusi" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="golmsche@adapt:22 agent">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../qusi" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="golmsche@adapt_foyer:22 agent">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../qusi" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="golmsche@fugu:22 agent">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../qusi" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="golmsche@pfe:29810 agent">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home1/golmsche/haplo" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/home1/golmsche/haplo_example_application" local="$PROJECT_DIR$/../haplo_example_application" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="golmschenk@temp:22 agent">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../qusi" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="gs66-emu-intel (acfeac84-28ff-4bed-85cb-5573b41a61c6)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="qusi" local="$PROJECT_DIR$/../qusi" web="/" />
+            <mapping deploy="haplo" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="kilnbot">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../qusi" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="pfe">
+        <serverdata>
+          <mappings>
+            <mapping deploy="haplo" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/../qusi/data" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../qusi/dist" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../qusi/logs" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../qusi/__pycache__" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="root@argon:22 agent">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../qusi" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="temp">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../qusi" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
