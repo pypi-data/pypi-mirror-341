@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: DeepESN
+Version: 1.1.5
+Summary: Deep Echo State Network Python library (DeepESNpy), 2018
+Home-page: https://github.com/lucapedrelli/DeepESN
+Author: Luca Pedrelli
+Author-email: lucapedrelli@gmail.com
+License: BSD 3-Clause
+License-File: LICENSE
+Requires-Dist: scipy
+Requires-Dist: numpy

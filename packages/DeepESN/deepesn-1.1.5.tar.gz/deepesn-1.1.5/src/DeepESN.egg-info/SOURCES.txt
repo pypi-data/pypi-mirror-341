@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/DeepESN.egg-info/PKG-INFO
+src/DeepESN.egg-info/SOURCES.txt
+src/DeepESN.egg-info/dependency_links.txt
+src/DeepESN.egg-info/requires.txt
+src/DeepESN.egg-info/top_level.txt
+src/deepesn/__init__.py
+src/deepesn/configurations.py
+src/deepesn/deepesn.py
+src/deepesn/metrics.py
+src/deepesn/task.py
