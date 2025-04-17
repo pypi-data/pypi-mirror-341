@@ -1,0 +1,11 @@
+splinecy.cpython-39-darwin.so,sha256=9cfG8LkZhbxxVAPGXGfoVVJyt5w7qfom4j7lzvNrfaI,420816
+multispline-0.8.5.dist-info/RECORD,,
+multispline-0.8.5.dist-info/WHEEL,sha256=48dbRWQu-wQK6HzYm6z2k6nSXePVyoOnwcIau0vT0_E,117
+multispline-0.8.5.dist-info/METADATA,sha256=3xwfcFF9U5yXxW2UJsF0brf1NV2K6tyCYRnAhj5Jpm0,12849
+multispline-0.8.5.dist-info/licenses/LICENSE,sha256=SoYy71N5LOOh_qX2eiXLoX4iqVTK3E6hgY13KIxEP7A,1072
+multispline/spline.py,sha256=-MnkxIY5UjsSlnOJByJomw2PTY4o0lBGQRStJyfD4so,25522
+multispline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multispline/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multispline/tests/test_tricubic.py,sha256=HLDuUXWqYDc02seyAdI-OsIJ3Nxd8jJny9XpvGM1pSI,3823
+multispline/tests/test_cubic.py,sha256=0SOYCKsq0kIEbAM4ToLSDuzLyZS0HyOn-657VYC2Jw0,5275
+multispline/tests/test_bicubic.py,sha256=f0Ka-T1UdR7MJ8Hcm2xzDonS7qqJ_btP_Ovz3aq2ZY8,3660
