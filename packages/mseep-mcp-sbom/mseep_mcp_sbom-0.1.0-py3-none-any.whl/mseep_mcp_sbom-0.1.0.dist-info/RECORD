@@ -1,0 +1,8 @@
+docs/mcp-inspector.png,sha256=VgJE706eJtXFTmYe6RFiXB2IW-pspbbhM7dCsj_Jqg0,108811
+src/mcp_sbom/__init__.py,sha256=p8vSsILJhMvjAbBhqC_9Y0jU--eJkoDMryoitX85QIE,155
+src/mcp_sbom/sbom.json,sha256=qczaVpvekQYONfK69Lvi8s7rutExb8Ew36wZZcKKRto,947239
+src/mcp_sbom/server.py,sha256=b_Mp93eapN6oCco0REscCqpM4KA_SmZ6L4i2Ul0YLNM,2021
+mseep_mcp_sbom-0.1.0.dist-info/METADATA,sha256=ME5ZTk35xDT1z-dGJQqFo792q9wVENMZ0hbqlV382o0,1540
+mseep_mcp_sbom-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp_sbom-0.1.0.dist-info/entry_points.txt,sha256=jAi6uhzD5p8G8qufsKHxW3HuwkDvNFGDJ28zVHFEmyY,43
+mseep_mcp_sbom-0.1.0.dist-info/RECORD,,
