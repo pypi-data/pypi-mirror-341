@@ -1,0 +1,13 @@
+fredipy/__init__.py,sha256=4SMi8rdCnc0GEUhj_uI2prK7rM9AQhUxmBOC8kFbuVY,207
+fredipy/constraints.py,sha256=U3b3sXMJ6WSFkEIKZoQTT2BS5pJWN2PjR0uz-anb62A,3529
+fredipy/covariance.py,sha256=baI4fkogF76LWexbPrGSBvJ7kYQEy9RSh3vbSwzcvvA,4183
+fredipy/integrators.py,sha256=LehA0PyAso6LPIjoI69oTUu97c2P5IsHcbRlmm3NrWc,9702
+fredipy/kernels.py,sha256=7eRJoi93GUW8Ya0QcuMobvP1Vujgw9Tdtxz0Av9S9MU,17637
+fredipy/models.py,sha256=InVT9ATSBOfXG6Xh_1PmgTwAG7eReuItufwQvPtKa9E,7751
+fredipy/operators.py,sha256=SXlHniF4k7f7rY1B7xSOkr7ZdGcdTpHPCDsO5z46wS0,1270
+fredipy/util.py,sha256=g4DszlgC4eXy1GpJeGNLfiRK4khT4lTzBeMBccfOv5M,1508
+fredipy-0.2.0.dist-info/licenses/LICENSE,sha256=Z5_DE-iep5PlW2XwAvcK6jqp99HwIWXtI-mFcDMAut4,1102
+fredipy-0.2.0.dist-info/METADATA,sha256=tMGuTr1jRsIZ8TZrd6WRtHFasLnYhoADax90h3KevME,8564
+fredipy-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+fredipy-0.2.0.dist-info/top_level.txt,sha256=80_5jc68bckee2kJN2CUEXbSIYqFv5gngghct7UgqX8,8
+fredipy-0.2.0.dist-info/RECORD,,
