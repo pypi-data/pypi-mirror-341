@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Aasan.egg-info/PKG-INFO
+Aasan.egg-info/SOURCES.txt
+Aasan.egg-info/dependency_links.txt
+Aasan.egg-info/top_level.txt
+aasan/__init__.py
+aasan/files.py
