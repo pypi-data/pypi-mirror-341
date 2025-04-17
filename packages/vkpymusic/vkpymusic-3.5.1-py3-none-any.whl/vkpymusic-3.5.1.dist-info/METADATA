@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: vkpymusic
+Version: 3.5.1
+Summary: Python library for VK Audio (API)
+License: MIT
+Keywords: vk,api,music,downloader,python
+Author: Issa Mansur (EDEXADE)
+Author-email: issa_mansur@mail.ru
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aiofiles (>=23.2)
+Requires-Dist: httpx (>=0.25)
+Requires-Dist: requests (>=2.32.3)
+Project-URL: Homepage, https://github.com/issamansur/vkpymusic
+Project-URL: Repository, https://github.com/issamansur/vkpymusic
+Description-Content-Type: text/markdown
+
+README_RU.md
