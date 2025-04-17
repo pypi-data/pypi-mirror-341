@@ -1,0 +1,10 @@
+src/create_mcp_server/__init__.py,sha256=GHtzdXbeOQhWGCLjXTrTEDqq9vace8LQonQ3X6snoFI,10510
+src/create_mcp_server/__main__.py,sha256=XnpTzfJc0T-j9tHtdkA8ovTr1c139ffTewcJGhxYDaM,49
+src/create_mcp_server/template/README.md.jinja2,sha256=vav2TqfF8rutaRHpj6rY7x6YjBMGXij_l62P6n8mI14,3019
+src/create_mcp_server/template/__init__.py.jinja2,sha256=kTuRDcmoAa4al59WMbwXx_TjJhMqmpzCMFCZ981BL1M,213
+src/create_mcp_server/template/server.py.jinja2,sha256=OnEGhqsG5VN5MupLqNUnaxILTSYjQuu2bo4w4EBtecE,4939
+mseep_create_mcp_server-1.0.6.dev0.dist-info/METADATA,sha256=6sfz8VKYC4JHYciA7LxYOm2lAuYvhbA7WorhIS0WCRE,3129
+mseep_create_mcp_server-1.0.6.dev0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_create_mcp_server-1.0.6.dev0.dist-info/entry_points.txt,sha256=eLP18okSbY7jfWfivRWHx0cAk8iDlDZvkKDSJU0kiS8,61
+mseep_create_mcp_server-1.0.6.dev0.dist-info/licenses/LICENSE,sha256=XhPbvB0SD8KgPOzefJFCSuLX3hG2PVje0vRDHiYe5Q0,1071
+mseep_create_mcp_server-1.0.6.dev0.dist-info/RECORD,,
