@@ -1,0 +1,12 @@
+teer/__about__.py,sha256=nuV7VmerTTH6jtz5EUDHQ4M7TWttvBcQCa0IoIAavBU,123
+teer/__init__.py,sha256=WTu7JnXQHuUMwQYMb4pRGNJTdkhl7sVdyUiWiVBzQxE,2431
+teer/http.py,sha256=QhcLBjXREuojQsN9th2N05uTEePDV7qis8ue-HRvqsA,2784
+teer/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+teer/resources/__init__.py,sha256=f9cxrQW15l6kszJ-q4JMC-Wh4B7eG4qFrYULnFkvafs,151
+teer/resources/base.py,sha256=NqNPlX3wme--00RTtdDNdZDfreYX_l9bxsNyYliMFoo,2812
+teer/resources/ingest.py,sha256=O3334_-YxF9fnd14BjHsW2xMsm5HRAjs4OnB1MDyKGE,1316
+teer-0.0.6.data/data/teer/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+teer-0.0.6.dist-info/METADATA,sha256=ADrCCw4In1e2lgMuC7zJ26Ae8W6z6NfQgj2eAIc5JVQ,2355
+teer-0.0.6.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+teer-0.0.6.dist-info/licenses/LICENSE.txt,sha256=ISfthpAADcFlJHlW3oxCL6Z5bYZUcQYbx7EKq-PSanA,1093
+teer-0.0.6.dist-info/RECORD,,
