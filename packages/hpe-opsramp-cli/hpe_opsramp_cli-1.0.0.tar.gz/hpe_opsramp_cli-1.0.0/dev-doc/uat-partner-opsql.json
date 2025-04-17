@@ -1,0 +1,12 @@
+{
+    "objectType": "resource",
+    "fields": [
+      "id",
+      "clientId"
+    ],
+    "filterCriteria": "tags.name = \"Managed By\"  AND tags.value = \"Alert\" AND state = \"active\" AND name IN (\"testdevice-api7\",\"Node2\") ",
+    "pageNo": 1,
+    "pageSize": 500
+  }
+    
+  

@@ -1,0 +1,36 @@
+[project]
+name = "hpe-opsramp-cli"
+version = "1.0.0"
+description = "OpsRamp CLI is a command line utility for the HPE OpsRamp SaaS platform"
+readme = "README.md"
+authors = [
+    { name = "BalaSubramanian-Vetrivel", email = "balasubramanian.vetrivel@hpe.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "opentelemetry-api>=1.31.0",
+    "opentelemetry-exporter-jaeger>=1.21.0",
+    "opentelemetry-exporter-otlp>=1.31.0",
+    "opentelemetry-instrumentation-logging>=0.52b0",
+    "opentelemetry-instrumentation-requests>=0.52b0",
+    "opentelemetry-sdk>=1.31.0",
+    "pytest>=8.3.4",
+    "pyyaml==6.0.2",
+    "requests>=2.32.3",
+    "rich==13.9.4",
+    "typer>=0.15.2",
+    "types-pyyaml>=6.0.12.20241230",
+    "types-requests>=2.32.0.20250306",
+    "typing-extensions==4.12.2",
+]
+
+[project.scripts]
+opsramp-cli = "hpe_opsramp_cli.main:app" 
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+testpaths = ["tests"]
