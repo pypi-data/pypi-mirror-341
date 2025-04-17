@@ -1,0 +1,10 @@
+onetouchlite/__init__.py,sha256=V9L_owfc9iNq47AdBIR6fglzJSk9BFAp0VzQsdBTZXc,138
+onetouchlite/tools/__init__.py,sha256=V9L_owfc9iNq47AdBIR6fglzJSk9BFAp0VzQsdBTZXc,138
+onetouchlite/tools/superprint.py,sha256=2qBO5Ty85OdJm67pr1GF4ONtd0fDJQRrCxKaBo-nwj0,7257
+onetouchlite/tools/timer.py,sha256=SRixlnsyWlFHDllhM0ssTyuOVgr85Ydm9AhIzbH1huA,2050
+onetouchlite/utils/libprogress.so,sha256=psbK6Iyo9ICyAUXIIzjJ4qfIH9m3Ptwdg2Wbrpd7YD0,21376
+onetouchlite/utils/progress.dll,sha256=-THeJb_UqgGsY9eX6wwK6idgtWiD6U9QmLwWcYHvpL8,73477
+onetouchlite-0.0.8.dist-info/METADATA,sha256=Q2zYXz8Jd4qB79V7Pquzu7hq1pSahBJCgDIootu8-ag,794
+onetouchlite-0.0.8.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+onetouchlite-0.0.8.dist-info/top_level.txt,sha256=bcDwFXLGxHXMYfPHXMvDxhrt_EhRCxWYoD03_nBK7VU,13
+onetouchlite-0.0.8.dist-info/RECORD,,
