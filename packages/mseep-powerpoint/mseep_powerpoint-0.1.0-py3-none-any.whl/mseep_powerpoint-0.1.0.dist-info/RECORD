@@ -1,0 +1,10 @@
+src/powerpoint/__init__.py,sha256=W4kiN9fOk2lmg1nqoI2k4IWoF-3-gE0Vtb8y_FgYoVM,518
+src/powerpoint/chart_manager.py,sha256=byJp3ve9C0Oxyu9zDiUwp0MlkYN0BFCvabcopKWO8qs,3924
+src/powerpoint/presentation_manager.py,sha256=3uT21Fn5fMa8ot72Nac42AENzVc368yK7y0p6x3bwAU,12964
+src/powerpoint/server.py,sha256=Ib0hTV8Pc3w3gwDXCBBUFwBAnDWmugKu7wS-2PiJhNA,31369
+src/powerpoint/vision_manager.py,sha256=-Ryw6hY_zvMPXK4cuwd9BheYRoBkkSGAVDtQUTzdTvs,1874
+mseep_powerpoint-0.1.0.dist-info/METADATA,sha256=iZpyD1z1AAlEocG3wVTA8ydHRXgS89i9fbnleRNZa0w,5507
+mseep_powerpoint-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_powerpoint-0.1.0.dist-info/entry_points.txt,sha256=6s_V_k1JPWd3GHxb53R0hka_R9WXViUpBu3zSpSIrzw,47
+mseep_powerpoint-0.1.0.dist-info/licenses/LICENSE,sha256=ehPgNW77OWFZR0gBlAiuPCgWYv2o1WMy6HkZPJxt1m8,1062
+mseep_powerpoint-0.1.0.dist-info/RECORD,,
