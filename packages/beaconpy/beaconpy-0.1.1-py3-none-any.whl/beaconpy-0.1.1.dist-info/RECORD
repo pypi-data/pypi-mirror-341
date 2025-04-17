@@ -1,0 +1,10 @@
+beaconpy/__init__.py,sha256=0dHqCXDCu1gghUMLcyjyRQ3IE8tyQ3fMqV42CFrJysY,292
+beaconpy/beacon.py,sha256=hgaSZ_3w1TNjylObWVJi9Q8BwF2bdT9VmMvzTKiKne4,26487
+beaconpy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+beaconpy/tests/conftest.py,sha256=pCZHm1MdF0p6Mc0P52cEzmzggtrlyYcUsJ4ZYa6l-WU,147
+beaconpy/tests/test_beacon.py,sha256=-1hw01LoSgCQ9s-02dIKa_uvn74bQSOgttzDzrRnoeU,32547
+beaconpy-0.1.1.dist-info/licenses/LICENSE,sha256=uGSfX5j14TNGaNCR2Yl4GZtdmUh-y_J1opZzfAzx2nM,1083
+beaconpy-0.1.1.dist-info/METADATA,sha256=ebtnlUM9xhKrQXI4INgu-M6JAQsgVR90m7rxy6o10MU,5028
+beaconpy-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+beaconpy-0.1.1.dist-info/top_level.txt,sha256=aAaJrPWRpi5yGpwh5R4M8t8ptztCNFqymzAVKlP4brk,9
+beaconpy-0.1.1.dist-info/RECORD,,
