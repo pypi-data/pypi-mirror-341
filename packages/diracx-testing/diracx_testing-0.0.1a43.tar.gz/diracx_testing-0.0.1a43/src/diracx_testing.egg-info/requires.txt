@@ -1,0 +1,9 @@
+pytest
+pytest-asyncio
+pytest-cov
+pytest-xdist
+httpx
+uuid-utils
+
+[testing]
+diracx-testing
