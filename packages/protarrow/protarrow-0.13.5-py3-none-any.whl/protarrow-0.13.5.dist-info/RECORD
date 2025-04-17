@@ -1,0 +1,11 @@
+protarrow/__init__.py,sha256=8DEC9_8nqBer9J_qSaWvclkWAzKUZslnPQh4iHqJOwg,755
+protarrow/arrow_to_proto.py,sha256=zoZsB-O4qdN52HG6y3Ub3FXIUBlRAIwYn4DYFq2kY5w,21844
+protarrow/cast_to_proto.py,sha256=bFoFikG9G6x2yYzsDl_J8bE1k2B_6Bjm9rZdB-26cQI,8702
+protarrow/common.py,sha256=35xQOLrIWM1B73sl2xSfGYtWLnnZKEcJO5_D4754HIM,2896
+protarrow/message_extractor.py,sha256=rGFmiYZ6WimDqVf6EjXztlk0RcUQCRUpj6tX9LgMiSc,4621
+protarrow/proto_to_arrow.py,sha256=IjzZfuD8fTduzVBuxKzW0dLnoEVS6sd2-Mq2SUjNv8A,19457
+protarrow-0.13.5.dist-info/LICENSE,sha256=uyjEjj4HgWbpHPwrbbf_67iglzueI7PfBgVhKS2Naew,10140
+protarrow-0.13.5.dist-info/METADATA,sha256=Pj9cRjkh4_cooGhgcpHf2nK-WKCQk5v2xQBPxk2hXy4,5517
+protarrow-0.13.5.dist-info/NOTICE,sha256=qy405K0b_AnXealJRkWiCeVqzmPM7pR2iPsG9KxlhzI,111
+protarrow-0.13.5.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+protarrow-0.13.5.dist-info/RECORD,,
