@@ -1,0 +1,241 @@
+# Persona CLI
+
+**Persona CLI** is a command-line tool for creating and managing projects that use the `persona-toolkit` — a modular
+function-calling framework designed for agent-based systems.
+
+This CLI helps you scaffold projects, generate tools, test them locally, and run the FastAPI server that exposes your
+tools via REST API.
+
+---
+
+## 🚀 Installation
+
+To use the CLI, first install the `persona-toolkit` library (assuming it's published or available locally):
+
+```bash
+pip install persona-toolkit
+```
+
+> Or if you're developing locally:
+
+```bash
+cd persona-toolkit/
+poetry install
+```
+
+The CLI is exposed as:
+
+```bash
+persona-toolkit
+```
+
+---
+
+## 📆 Features
+
+### `init`
+
+Create a new project scaffold with Poetry and the required structure:
+
+```bash
+persona-toolkit init my-project
+```
+
+This will:
+
+- Initialize a Poetry project
+- Install `persona-toolkit` as a dependency
+- Create a `tools/` folder where your tools will live
+
+---
+
+### `add-tool`
+
+Add a new tool interactively:
+
+```bash
+persona-toolkit add-tool
+```
+
+You'll be prompted for a tool name. A new Python file will be created in the `tools/` directory with a ready-to-edit
+template including:
+
+- `Input` and `Output` models (using Pydantic)
+- A `run()` function
+
+---
+
+### `test-tool`
+
+Test a tool locally by manually entering its input values:
+
+```bash
+persona-toolkit test-tool echo
+```
+
+This will:
+
+- Import the specified tool from the `tools/` directory
+- Prompt for input fields
+- Run the `run()` function and show the output
+
+You can use the cli to pass input values:
+
+```bash
+persona-toolkit test-tool echo --input '{"message": "Hello, World!"}'
+```
+
+---
+
+### `run`
+
+Start the FastAPI server and expose your tools via HTTP:
+
+```bash
+persona-toolkit run --port 8000
+```
+
+You can now access:
+
+- `GET /tools` — list available tools
+- `GET /tools/{tool}/schema` — get tool schema
+- `POST /invocations` — run a tool
+
+---
+
+## 🗂 Project Structure
+
+```bash
+my-project/
+├── pyproject.toml         # Poetry project config
+├── tools/
+│   └── echo_test.py            # Example tool
+```
+
+Each tool must define:
+
+- `NAME` (a str with tool name)
+- `Input` (a Pydantic model)
+- `Output` (a Pydantic model)
+- `run(input: Input, **kwargs) -> Output`
+
+> kwargs includes: `project_id`, `session_id` and `user_id`
+
+---
+
+## 💡 Example Tool
+
+```python
+# tools/echo_test.py
+
+from pydantic import BaseModel, Field
+
+NAME = "echo"
+
+
+class Input(BaseModel):
+    message: str = Field(description="Message to echo")
+
+
+class Output(BaseModel):
+    message: str
+
+
+def run(args: Input, **kwargs) -> Output:
+    """
+    Echo the message back.
+
+    The `context` in kwargs can be used to store and retrieve state across invocations.
+    For example, if a previous message exists in the context, it will be appended to the current message.
+    """
+    context = kwargs.get("context", {})
+    previous_message = context.get("message")
+    if previous_message:
+        input.message = f"{previous_message} {input.message}"
+    context["message"] = input.message
+
+    return Output(message=f"Echo: {args.message}")
+```
+
+### Understanding kwargs and context
+
+The `kwargs` parameter is a dictionary that provides additional metadata and runtime information to the tool's `run()`
+function.
+It includes the following keys:
+
+- `project_id`: The ID of the project where the tool is being executed.
+- `session_id`: The ID of the current session, which can be used to track the state of the conversation or interaction.
+- `user_id`: The ID of the user invoking the tool, which can be useful for personalizing responses or tracking
+  user-specific data.
+- `context`: A dictionary that can be used to store and retrieve state across invocations. This allows tools to maintain
+  context and share information between different runs.
+
+The `context` dictionary is particularly useful for tools that need to remember previous interactions or maintain a
+conversation history.
+For example, if a tool needs to keep track of the last message sent by the user, it can store that message in the
+`context` and retrieve it in subsequent invocations, it can be used to:
+
+- Store intermediate results.
+- Append or modify input values based on previous invocations.
+- Share data across different tools in the same session.
+
+### Example of using kwargs
+
+```python
+# tools/echo_test.py
+
+from pydantic import BaseModel, Field
+
+NAME = "echo"
+
+
+class Input(BaseModel):
+    message: str = Field(description="Message to echo")
+
+
+class Output(BaseModel):
+    message: str
+
+
+def run(args: Input, **kwargs) -> Output:
+    """
+    Echo the message back.
+    """
+    # Access primary infos from kwargs
+    project_id = kwargs.get("project_id")
+    session_id = kwargs.get("session_id")
+    user_id = kwargs.get("user_id")
+
+    # TODO: Do something with project_id, session_id, user_id
+
+    return Output(message=f"Echo: {args.message}")
+```
+
+---
+
+## 💻 Local Development
+
+To run the CLI locally, you can use the following command:
+
+```bash
+python persona_toolkit/cli.py --port 8001
+```
+
+You can use local `tools` folder to test your tools. Just make sure to set the `PYTHONPATH` to the root of the project:
+
+## ✅ Requirements
+
+- Python 3.10+
+- Poetry
+- Uvicorn (installed automatically)
+
+---
+
+## 📃 License
+
+MIT License
+
+---
+
+Built for the [Persona Agent System](https://github.com/your-org/persona) 🤖
+
