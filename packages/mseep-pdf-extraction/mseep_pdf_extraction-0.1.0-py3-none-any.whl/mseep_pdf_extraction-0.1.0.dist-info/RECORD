@@ -1,0 +1,7 @@
+src/pdf_extraction/__init__.py,sha256=KNZ1bD9ZGfyZwlv91Ueeega_1lsRDLs2fYQDgNbBdtc,212
+src/pdf_extraction/pdf_extractor.py,sha256=AT-cP4NweOw4R86jq0n6C4STmOiQ1xiJ6gmtvPPjHzk,3280
+src/pdf_extraction/server.py,sha256=sXzTu-5hNgjv2pU-aOkG6q5uh-gh9x946dikqWFQBtw,2269
+mseep_pdf_extraction-0.1.0.dist-info/METADATA,sha256=XWckzHElF9ru3sXy7OhLwDAVsXH7_22CuBFDavfta84,1643
+mseep_pdf_extraction-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_pdf_extraction-0.1.0.dist-info/entry_points.txt,sha256=VMFfT7b2M6Y-gnrJVzn8KU7LhunndvQ-FwaZDlD8je0,55
+mseep_pdf_extraction-0.1.0.dist-info/RECORD,,
