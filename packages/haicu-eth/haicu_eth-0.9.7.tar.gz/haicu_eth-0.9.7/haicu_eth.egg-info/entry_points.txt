@@ -1,0 +1,2 @@
+[console_scripts]
+haicu_eth-ctl = haicu_eth.__main__:main
