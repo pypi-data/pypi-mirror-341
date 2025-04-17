@@ -1,0 +1,10 @@
+README.md
+setup.py
+gitreco/__init__.py
+gitreco/cli.py
+gitreco.egg-info/PKG-INFO
+gitreco.egg-info/SOURCES.txt
+gitreco.egg-info/dependency_links.txt
+gitreco.egg-info/entry_points.txt
+gitreco.egg-info/requires.txt
+gitreco.egg-info/top_level.txt

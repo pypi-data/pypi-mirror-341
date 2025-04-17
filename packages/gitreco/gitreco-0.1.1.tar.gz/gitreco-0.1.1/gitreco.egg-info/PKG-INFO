@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: gitreco
+Version: 0.1.1
+Summary: Generate commit messages using LLM and git diff
+Author: Jungchan Son
+Author-email: rnrmfjc@gmail.com
+Requires-Python: >=3.7
+Requires-Dist: ollama
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
