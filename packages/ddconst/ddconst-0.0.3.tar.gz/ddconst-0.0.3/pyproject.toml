@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=65.6.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ddconst"
+description = "Constants used across multiple codebases"
+authors = [
+    { name = "Daniel Danis", email = "daniel.gordon.danis@protonmail.com" },
+]
+
+dynamic = ["version"]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["constants", "plotting", "utility"]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7.0.0,<8.0.0"]
+
+[project.urls]
+"Repository" = "https://github.com/ielis/ddconst"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+zip-safe = false
+
+[tool.setuptools.dynamic]
+version = { attr = "ddconst.__version__" }
