@@ -1,0 +1,2 @@
+[console_scripts]
+eddie-chan-mcp = eddie_chan_mcp:main
