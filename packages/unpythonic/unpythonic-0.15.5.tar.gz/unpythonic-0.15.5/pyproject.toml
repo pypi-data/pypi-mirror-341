@@ -1,0 +1,76 @@
+[project]
+name = "unpythonic"
+description = "Supercharge your Python with parts of Lisp and Haskell."
+authors = [
+    { name = "Juha Jeronen", email = "juha.m.jeronen@gmail.com" },
+]
+requires-python = ">=3.8,<3.13"
+readme = "README.md"
+dynamic = []
+dependencies = [
+    "mcpyrate>=3.6.4",
+    "sympy>=1.13",
+]
+keywords = [
+    "functional-programming",
+    "language-extension",
+    "syntactic-macros",
+    "tail-call-optimization",
+    "tco",
+    "continuations",
+    "currying",
+    "lazy-evaluation",
+    "dynamic-variable",
+    "macros",
+    "lisp",
+    "scheme",
+    "racket",
+    "haskell",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+version = "0.15.5"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Repository = "https://github.com/Technologicat/unpythonic"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.version]
+source = "file"
+path = "unpythonic/__init__.py"
+
+[tool.pdm.build]
+includes = [
+    "unpythonic",
+]
+excludes = [
+    "**/tests",
+    "**/__pycache__",
+]
+
+[tool.mypy]
+show_error_codes = true
