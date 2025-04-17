@@ -1,0 +1,3 @@
+[console_scripts]
+aemet-mcp-eng = aemet_mcp_eng.server:main
+aemet-mcp-es = aemet_mcp_es.server:main
