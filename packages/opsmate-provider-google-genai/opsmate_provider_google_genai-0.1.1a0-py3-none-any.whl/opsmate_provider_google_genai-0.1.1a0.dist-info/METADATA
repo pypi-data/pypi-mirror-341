@@ -1,0 +1,81 @@
+Metadata-Version: 2.4
+Name: opsmate-provider-google-genai
+Version: 0.1.1a0
+Summary: Google GenAI provider for opsmate
+Author-email: Jingkai He <jingkai@hey.com>
+License: MIT License
+        
+        Copyright (c) 2025 Jingkai He
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Requires-Python: <4.0,>=3.10
+Requires-Dist: google-genai>=1.5.0
+Requires-Dist: jsonref<2.0.0,>=1.1.0
+Requires-Dist: opsmate
+Description-Content-Type: text/markdown
+
+# opsmate-provider-google-genai
+
+`opsmate-provider-google-genai` provides selected models from [Google GenAI](https://cloud.google.com/vertex-ai/generative-ai).
+
+## Installation
+
+```bash
+opsmate install opsmate-provider-google-genai
+```
+
+After installation you can list all the models via
+
+```bash
+$ opsmate list-models
+```
+
+## Limitations
+
+### Only Vertex AI models are supported
+:warning: This provider currently does not support [Gemini API](https://ai.google.dev/gemini-api/docs/api-key), because the Gemini API [does not support `default` value](https://github.com/googleapis/python-genai/blob/edf6ee359fdce14d03e1e2c7b2dc50fa5b0fdee3/google/genai/_transformers.py#L653-L657) in the response schema.
+
+As the result, currently only [vertex AI](https://cloud.google.com/vertex-ai) models are supported, meaning **you need to have a Google Cloud account in order to use this provider**.
+
+### Limited region support for gemini-2.5-pro
+
+By the time the provider is published, the `gemini-2.5-pro-preview-03-25` and `gemini-2.5-pro-exp-03-25` models are only available in the `us-central1` region. To use it you will need to set `GOOGLE_CLOUD_LOCATION` as below:
+
+```bash
+export GOOGLE_CLOUD_LOCATION=us-central1
+
+# or
+export GOOGLE_CLOUD_LOCATION=global
+```
+
+## Usage
+
+```bash
+export GOOGLE_CLOUD_PROJECT=<your-project-id>
+export GOOGLE_CLOUD_LOCATION=<your-location>
+
+opsmate chat -m gemini-2.0-flash-001
+```
+
+## Uninstall
+
+```bash
+opsmate uninstall -y opsmate-provider-google-genai
+```
