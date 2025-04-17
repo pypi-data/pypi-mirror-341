@@ -1,0 +1,31 @@
+name: ormir_xct
+channels:
+  - simpleitk
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - pip
+  - python=3.11.11
+  - pip:
+    - ormir-xct
+    - itk
+    - itk-core
+    - itk-filtering
+    - itk-io
+    - itk-ioscanco
+    - itk-numerics
+    - itk-registration
+    - itk-segmentation
+    - itkwidgets
+    - kimimaro
+    - notebook
+    - numpy
+    - numba
+    - pandas
+    - pbr
+    - scipy
+    - scikit-image
+    - setuptools
+    - SimpleITK
+    - vtk
