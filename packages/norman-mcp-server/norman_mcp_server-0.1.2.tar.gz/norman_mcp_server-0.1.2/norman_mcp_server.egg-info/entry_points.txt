@@ -1,0 +1,3 @@
+[console_scripts]
+norman-mcp = norman_mcp.cli:main
+norman-mcp-sse = norman_mcp.sse_server:run_server
