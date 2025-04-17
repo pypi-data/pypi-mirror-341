@@ -1,0 +1,2 @@
+[console_scripts]
+signDNE = signDNE._signDNE_cli:main
