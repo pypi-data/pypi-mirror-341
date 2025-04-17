@@ -1,0 +1,2 @@
+[console_scripts]
+fhx = fasthtml_cli:cli.app

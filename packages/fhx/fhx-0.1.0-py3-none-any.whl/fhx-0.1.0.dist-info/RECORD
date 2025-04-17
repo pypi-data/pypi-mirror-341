@@ -1,0 +1,7 @@
+fasthtml_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fasthtml_cli/cli.py,sha256=WEl-Cxgw7iCIUV54swKeNlU4Ky20v_BVrFyBlx4R1LU,662
+fasthtml_cli/fasthtml_templates/basic.py,sha256=yuxhhDe-7p6BvUx5EBS7YVIiGR56HqLFTiHhcxDNZug,169
+fhx-0.1.0.dist-info/METADATA,sha256=GH5HgjZo26cXngjM_3y50dpSOCSSnLWXN40f6OE6KD8,253
+fhx-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fhx-0.1.0.dist-info/entry_points.txt,sha256=i_I0L8aKdPPB0Cwlg-sFZFipgDt-4EjZ8UE5oM3hP2w,45
+fhx-0.1.0.dist-info/RECORD,,
