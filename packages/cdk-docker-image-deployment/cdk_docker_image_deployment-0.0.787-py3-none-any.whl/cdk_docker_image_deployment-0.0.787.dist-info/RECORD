@@ -1,0 +1,10 @@
+cdk_docker_image_deployment/__init__.py,sha256=ScEiDxHhr04kswlrbb4QnH6Un22Jxsqc2hK4Y2x_bvY,29287
+cdk_docker_image_deployment/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdk_docker_image_deployment/_jsii/__init__.py,sha256=a8u4lNid7XdXqm-WT1KPks9Zi2qU9aPL8ohGAQj-8II,1482
+cdk_docker_image_deployment/_jsii/cdk-docker-image-deployment@0.0.787.jsii.tgz,sha256=R6tIYXDJhqji3Av4KTLRQgELtI7zBcCFOoG1E_d-0Vk,13090924
+cdk_docker_image_deployment-0.0.787.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+cdk_docker_image_deployment-0.0.787.dist-info/METADATA,sha256=Doft4la3X4wIi9TJsDtKVPtadc59NXHUQnf5bi9SRjw,3852
+cdk_docker_image_deployment-0.0.787.dist-info/NOTICE,sha256=1CkO1kwu3Q_OHYTj-d-yiBJA_lNN73a4zSntavaD4oc,67
+cdk_docker_image_deployment-0.0.787.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+cdk_docker_image_deployment-0.0.787.dist-info/top_level.txt,sha256=WdzWJDV-WRpz7LHNc3kSSBBcEbKJGcyyW5BcqU_l1Ew,28
+cdk_docker_image_deployment-0.0.787.dist-info/RECORD,,
