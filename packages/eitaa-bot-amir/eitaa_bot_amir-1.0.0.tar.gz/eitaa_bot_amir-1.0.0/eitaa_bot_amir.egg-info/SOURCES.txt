@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+eitaa_bot_amir.egg-info/PKG-INFO
+eitaa_bot_amir.egg-info/SOURCES.txt
+eitaa_bot_amir.egg-info/dependency_links.txt
+eitaa_bot_amir.egg-info/requires.txt
+eitaa_bot_amir.egg-info/top_level.txt
+eitaabot/__init__.py
+eitaabot/api.py

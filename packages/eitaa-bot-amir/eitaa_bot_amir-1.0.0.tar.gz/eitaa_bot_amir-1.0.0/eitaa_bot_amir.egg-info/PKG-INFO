@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: eitaa-bot-amir
+Version: 1.0.0
+Summary: A Python package for interacting with Eitaa Bot API
+Home-page: https://github.com/amirhossinpython/eitaabot
+Author: AmirhossiKhazai
+Author-email: amirhossinpython03@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A Python package that provides a convenient way to interact with Eitaa Bot API.
+
+## Features
+- Send messages
+- Send photos
+- Send files and documents
+...
+
+## Install
+```bash
+pip install eitaa_bot
+```
+
+## Usage
+```python
+from eitaa_bot import EitaaBot
+...
+```
