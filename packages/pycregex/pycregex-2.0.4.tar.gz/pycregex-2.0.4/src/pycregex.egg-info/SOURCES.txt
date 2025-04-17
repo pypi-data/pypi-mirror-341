@@ -1,0 +1,14 @@
+COPYING
+MANIFEST.in
+Makefile
+README.md
+pyproject.toml
+setup.py
+src/pycregex/__init__.py
+src/pycregex/stub.c
+src/pycregex.egg-info/PKG-INFO
+src/pycregex.egg-info/SOURCES.txt
+src/pycregex.egg-info/dependency_links.txt
+src/pycregex.egg-info/requires.txt
+src/pycregex.egg-info/top_level.txt
+tests/test_pycregex.py
