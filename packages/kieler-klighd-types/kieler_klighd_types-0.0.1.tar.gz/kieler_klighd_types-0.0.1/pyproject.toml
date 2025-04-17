@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kieler-klighd-types"
+version = "0.0.1"
+description = 'Types for creating language servers that can speak with klighd clients.'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = []
+authors = [
+  { name = "Max Kasperowski", email = "mka@informatik.uni-kiel.de" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = ["pydantic"]
+
+[project.urls]
+Homepage = "https://github.com/kieler/kieler-klighd-types"
+Issues = "https://github.com/kieler/kieler-klighd-types/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kieler_klighd_types"]
