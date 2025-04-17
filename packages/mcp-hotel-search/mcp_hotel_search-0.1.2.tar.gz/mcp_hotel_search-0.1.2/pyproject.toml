@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-hotel-search"
+version = "0.1.2" # Increment version slightly
+description = "Hotel search service built with Google's Agent Developer Kit (ADK) and MCP"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Arjun Prabhulal", email = "code.aicloudlab@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "google-search-results",
+    "google-adk",
+    "mcp" 
+]
+
+[project.urls]
+Homepage = "https://github.com/arjunprabhulal/mcp-hotel-search"
+"Bug Tracker" = "https://github.com/arjunprabhulal/mcp-hotel-search/issues"
+
+[project.scripts]
+mcp-hotel-search = "hotel_mcp_server:main"
+
+[tool.setuptools]
+py-modules = ["hotel_mcp_server"]

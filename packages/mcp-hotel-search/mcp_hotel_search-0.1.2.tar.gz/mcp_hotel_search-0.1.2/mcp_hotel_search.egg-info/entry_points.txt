@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-hotel-search = hotel_mcp_server:main
