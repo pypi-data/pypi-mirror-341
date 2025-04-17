@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: pwnstar-lib
+Version: 2.4
+Summary: Security research package
+Author: Security Researcher
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: summary
+
+# PwnStar Lib
+
+A package for security research purposes.
