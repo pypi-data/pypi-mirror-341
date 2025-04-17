@@ -1,0 +1,34 @@
+[build-system]
+build-backend = "scikit_build_core.build"
+
+requires = [ "cython", "numpy", "scikit-build-core" ]
+
+[project]
+name = "multispline"
+version = "0.8.5"
+authors = [
+	{name = "Zach Nasipak"}
+]
+description = "Cubic splines in multiple dimensions"
+readme = "README.md"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	'License :: OSI Approved :: MIT License',
+	"Natural Language :: English",
+	"Programming Language :: C++",
+	"Programming Language :: Cython",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "numpy"
+]
+
+[tool.cibuildwheel]
+# Disable building PyPy wheels on all platforms
+skip = "pp*"
+
+[tool.scikit-build]
+sdist.include = [ "cpp/", 'cython/' ]
+sdist.exclude = ["tutorial*", ".github/", ".gitignore" ]
+wheel.packages = [ "multispline" ]
+wheel.exclude = [ "**.cpp", "**.hpp", "**.pyx", "**/CMakeLists.txt"]
