@@ -1,0 +1,119 @@
+# Payler SDK
+
+Python SDK for integration with the Payler payment system.
+
+## Installation
+
+```bash
+pip install payler-sdk
+```
+
+## Features
+
+- Card saving and management
+- Customer registration
+- Processing payments with saved cards
+- Transaction status handling
+- Get payment status
+- Recurrent template management
+- Saved card status verification
+
+## Quick Start
+
+```python
+from payler_sdk import PaylerClient
+
+# Initialize the client
+client = PaylerClient(
+    base_url="sandbox.payler.com",
+    auth_key="your_auth_key",
+)
+
+# Save card and process payment
+response = client.initialize_save_card_session(
+    customer_id="customer123",
+    currency="RUB",
+    return_url_success="https://your-website.com/payment/sync-cards"
+)
+
+# Get the redirect URL for card saving
+redirect_url = response.save_card_url
+
+# After card saving, process payment with saved card
+payment = client.charge_saved_card(
+    amount=100.50,
+    order_id="order_12345",
+    currency="RUB",
+    recurrent_template_id="template_id_from_saved_card"
+)
+
+# Get payment status
+status = client.get_payment_status(order_id="order_12345")
+```
+
+## Usage Examples
+
+### Register a New Customer
+
+```python
+from payler_sdk.models import PaylerCustomerUpdateOrCreateRequest
+
+customer = PaylerCustomerUpdateOrCreateRequest(
+    name="Erlich Bachman",
+    email="erlich.bachman@gmail.com",
+    phone="+79001234567"
+)
+response = client.register_new_customer(customer)
+customer_id = response.customer_id
+```
+
+### Get Card Status After Saving
+
+```python
+from payler_sdk.models import PaylerGetStatusSaveCardRequest
+
+request = PaylerGetStatusSaveCardRequest(session_id="your_session_id")
+response = client.get_status_save_card(request)
+print(f"Card status: {response.card_status}")
+print(f"Template ID: {response.recurrent_template_id}")
+```
+
+### Get Template Information
+
+```python
+from payler_sdk.models import PaylerTemplateRequest
+
+request = PaylerTemplateRequest(recurrent_template_id="your_template_id")
+template = client.get_template(request)
+print(f"Card holder: {template.card_holder}")
+print(f"Card number: {template.card_number}")
+print(f"Is active: {template.active}")
+```
+
+### Error Handling
+
+```python
+from payler_sdk.exceptions import PaylerApiError
+
+try:
+    payment = client.charge_saved_card(...)
+except PaylerApiError as e:
+    # Handle any API error from Payler
+    print(f"API error: {e}, status code: {e.status_code}")
+    # You can check the specific type if needed:
+    # if isinstance(e, PaylerSpecificError):
+    #     handle_specific_error(e)
+```
+
+## Requirements
+
+- Python 3.8+
+- requests library
+
+## Contributing
+
+Contributions are welcome! Feel free to submit issues or pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
