@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+pycoral/__init__.py
+pycoral_pi5.egg-info/PKG-INFO
+pycoral_pi5.egg-info/SOURCES.txt
+pycoral_pi5.egg-info/dependency_links.txt
+pycoral_pi5.egg-info/requires.txt
+pycoral_pi5.egg-info/top_level.txt
+tests/test_basic.py
