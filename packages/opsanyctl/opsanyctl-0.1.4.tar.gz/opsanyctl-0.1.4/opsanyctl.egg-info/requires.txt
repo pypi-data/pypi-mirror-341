@@ -1,0 +1,4 @@
+setuptools==58.3.0typer==0.15.1
+rich==13.9.4
+pyyaml==6.0.2
+requests==2.25.0
