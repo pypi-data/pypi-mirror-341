@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantumaudio"
+version = "0.2.0"
+authors = [
+    {name = "Moth Quantum and collaborators", email = "qap.support@mothquantum.com"},
+]
+description = """A Python package for building Quantum Representations of Digital Audio. Developed by Moth Quantum.
+"""
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["audio","quantum computing","signal processing"]
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"Intended Audience :: Science/Research",
+ 	"Intended Audience :: Developers",
+ 	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+ 	"Programming Language :: Python :: 3.11",
+ 	"Programming Language :: Python :: 3.12"
+]
+dependencies = [
+	"qiskit",
+	"qiskit_aer",
+	"numpy",
+	"bitstring",
+	"matplotlib",
+	"pylatexenc",
+	"tqdm",
+	"packaging"
+]
+license = "Apache-2.0"
+
+[project.urls]
+Homepage = "https://mothquantum.com"
+Repository = "https://github.com/moth-quantum/quantum-audio"
+Documentation = "https://quantumaudio.readthedocs.io/"
+
+[project.optional-dependencies]
+demos = [
+	"soundfile==0.12.1",
+ 	"librosa==0.10.2.post1",
+    	"ipywidgets"
+]

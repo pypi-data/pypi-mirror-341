@@ -1,0 +1,13 @@
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+media/*
+!media/qsm_example.png
+!media/audio_example.mp3
+!docs/_build/singlehtml/
+docs/*
+!docs/*.rst
+!docs/guides/
+!docs/contents/
+!docs/Makefile
+!docs/make.bat
