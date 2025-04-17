@@ -1,0 +1,13 @@
+README.md
+setup.py
+snipp.egg-info/PKG-INFO
+snipp.egg-info/SOURCES.txt
+snipp.egg-info/dependency_links.txt
+snipp.egg-info/entry_points.txt
+snipp.egg-info/requires.txt
+snipp.egg-info/top_level.txt
+snipp_shadowplay/__init__.py
+snipp_shadowplay/cli.py
+snipp_shadowplay/config.py
+snipp_shadowplay/utils.py
+snipp_shadowplay/watcher.py
