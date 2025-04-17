@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+setup.py
+dax_client/client.py
+dax_client/exceptions.py
+dax_client/models.py
+dax_client/query.py
+dax_client/telemetry.py
+dax_client/utils.py
+dax_client.egg-info/PKG-INFO
+dax_client.egg-info/SOURCES.txt
+dax_client.egg-info/dependency_links.txt
+dax_client.egg-info/requires.txt
+dax_client.egg-info/top_level.txt
