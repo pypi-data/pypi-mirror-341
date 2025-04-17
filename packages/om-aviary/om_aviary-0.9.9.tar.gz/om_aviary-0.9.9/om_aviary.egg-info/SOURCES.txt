@@ -1,0 +1,7 @@
+README.md
+setup.py
+om_aviary.egg-info/PKG-INFO
+om_aviary.egg-info/SOURCES.txt
+om_aviary.egg-info/dependency_links.txt
+om_aviary.egg-info/requires.txt
+om_aviary.egg-info/top_level.txt

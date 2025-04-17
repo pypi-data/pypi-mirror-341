@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: om-aviary
+Version: 0.9.9
+Summary: om-aviary is now aviary
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: aviary
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: summary
+
+# om-aviary is now aviary
+
+This package has been renamed. Use `pip install aviary` instead.
+
+New package: https://pypi.org/project/aviary/
