@@ -1,0 +1,42 @@
+{
+    "id": "Foo",
+    "title": "Foo",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "type": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "default": [
+                "Foo"
+            ]
+        },
+        "literal": {
+            "type": "string"
+        },
+        "b": {
+            "range": "Bar.json",
+            "allOf": [
+                {
+                    "$ref": "Bar.json"
+                }
+            ]
+        },
+        "b2": {
+            "type": "array",
+            "items": {
+                "range": "Bar.json",
+                "allOf": [
+                    {
+                        "$ref": "Bar.json"
+                    }
+                ]
+            },
+            "range": "Bar.json"
+        }
+    }
+}
