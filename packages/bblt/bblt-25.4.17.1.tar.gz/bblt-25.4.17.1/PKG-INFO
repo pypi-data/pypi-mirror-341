@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bblt
+Version: 25.4.17.1
+Summary: APP Launch Test
+Home-page: https://github.com/xiaoyaoamiao/lt.git
+Author: bob
+Author-email: miao2005xu@163.com
+License: MIT License
+Keywords: launchtest
+Platform: any
+Requires-Dist: ImageHash==4.2.1
+Requires-Dist: facebook-wda==1.0.11
+Requires-Dist: Pillow==9.2.0
+Requires-Dist: opencv-python==4.10.0.84
+Requires-Dist: paddleocr>=2.9.1
+Requires-Dist: paddlepaddle>=2.6.1
+Requires-Dist: pandas==2.2.3
+Requires-Dist: matplotlib==3.5.0
+Requires-Dist: Appium-Python-Client==4.4.0
