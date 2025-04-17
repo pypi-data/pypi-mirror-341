@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+pymixture/__init__.py
+pymixture.egg-info/PKG-INFO
+pymixture.egg-info/SOURCES.txt
+pymixture.egg-info/dependency_links.txt
+pymixture.egg-info/top_level.txt

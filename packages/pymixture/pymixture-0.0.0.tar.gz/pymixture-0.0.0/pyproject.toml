@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "pymixture"
+version         = "0.0.0"
+description     = "A package for mixture models"
+readme          = "README.md"
+requires-python = ">=3.9"
+authors         = [{ name = "Omri Tomer", email = "omritomer1990@gmail.com" }]
+license         = { text = "BSD-3-Clause" }
+
+classifiers     = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+"Source" = "https://github.com/omritomer/pymixture"
