@@ -1,0 +1,172 @@
+# Pixi-Coder CLI
+
+🚀 A powerful AI-powered CLI agent that generates production-ready full stack applications with just a few commands. Built with modern tech stacks and best practices.
+
+[![PyPI version](https://badge.fury.io/py/pixi-coder.svg)](https://badge.fury.io/py/pixi-coder)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## ✨ Features
+
+- 🏗️ **Full-Stack Application Generation**: Create complete Next.js applications with Supabase backend
+- 🤖 **Multiple AI Models**: Choose between Claude 3.7, GPT-4.1, or Gemini 2.5 Pro for code generation
+- 🔐 **Built-in Authentication**: Seamless auth integration with Supabase
+- 📊 **Database & Migrations**: Automatic schema setup and SQL migrations
+- 🎯 **TypeScript Support**: Full TypeScript integration with proper types
+- ⚡ **Real-time Features**: Built-in real-time capabilities with Supabase
+
+
+
+## 🚀 Quick Start
+
+### Installation
+
+```bash
+# Install from PyPI
+pip install pixi-coder
+
+# Or install from source
+git clone https://github.com/gocodeo-ai/pixi-coder.git
+cd pixi-coder
+pip install -e .
+```
+
+### Basic Usage
+
+```bash
+# Initialize a new project
+gocodeo build init
+```
+## 🤖 Supported AI Models
+
+Pixi-Coder currently supports the following AI models for code generation:
+
+- **Anthropic**
+- **OpenAI**
+- **Google Gemini**
+
+You can select the desired model during the `gocodeo build init` process.
+## 🛠️ Project Creation Flow
+
+1. **Project Setup**
+   ```bash
+   gocodeo build init
+   ```
+   You'll be prompted for:
+   - Project name
+   - Project description
+
+2. **Tech Stack Selection**
+   ```
+   Available Tech Stacks:
+
+   1. Next.js + Supabase
+      Modern full-stack app with serverless backend
+      Features: Authentication, Real-time, PostgreSQL, TypeScript
+   ```
+
+3. **Supabase Configuration**
+   ```
+   For Supabase integration, provide:
+   - Supabase Project URL
+   - Supabase Anon Key
+   - Supabase Access Token
+   ```
+
+
+4. **AI Model Selection**
+   ```
+   Choose from:
+   1. Claude 3.7 Sonnet (Anthropic)
+      High quality code with excellent documentation
+
+   2. GPT-4.1 (OpenAI)
+      Fast and reliable code generation
+
+   3. Gemini 2.5 Pro (Google)
+      Advanced reasoning and error-free code
+   ```
+
+## 🔑 Environment Setup
+
+Create a `.env` file in your project root:
+
+```env
+# Required for Gemini model
+GOOGLE_API_KEY=your_google_api_key
+
+# Required for GPT-4 model
+OPENAI_API_KEY=your_openai_api_key
+
+# Required for Claude model
+ANTHROPIC_API_KEY=your_anthropic_api_key
+```
+
+Note: You only need the API key for the model you plan to use.
+
+
+
+## 🏗️ Build Process
+
+The CLI agent executes the following tasks:
+
+1. 🔨 **Project Initialization**
+   - Sets up project structure
+   - Configures Next.js with TypeScript
+
+2. 🔒 **Authentication Setup**
+   - Implements Supabase authentication
+   - Creates auth UI components
+   - Sets up protected routes
+
+3. 💾 **Data Persistence**
+   - Configures database schema
+   - Sets up Supabase client
+   - Implements data models
+
+4. 🛢️ **Database Migrations**
+   - Runs authentication setup
+   - Creates schema
+   - Configures row-level security policies
+
+5. 📦 **Dependency Installation**
+   - Installs required npm packages
+   - Sets up development environment
+
+6. 🚀 **Development Server**
+   - Starts Next.js development server
+   - Opens application in browser
+
+## 📝 Example Output
+
+```
+✅ Build complete!
+╭────────────── Build Summary ──────────────╮
+│                                           │
+│         Project: counter-app              │
+│         Description: create a counter app │
+│         Tech Stack: Next.js with Supabase │
+│         Files Generated: 40               │
+│         Status: FINISHED                  │
+│                                           │
+╰───────────────────────────────────────────╯
+```
+## 🌟 Vision
+
+Our vision is to empower developers by providing an AI agent that can understand high-level requirements and translate them into robust, production-ready code, drastically reducing development time and effort for common SaaS patterns.
+
+## 🎯 Mission
+
+The mission of Pixi-Coder is to **build and maintain a powerful, easy-to-use tool that automates the generation of full-stack applications**, enabling developers to focus on unique features and innovation.
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🔗 Links
+
+- GitHub: [https://github.com/gocodeo-ai/pixi-coder](https://github.com/gocodeo-ai/pixi-coder)
+- PyPI: [https://pypi.org/project/pixi-coder](https://pypi.org/project/pixi-coder)
+- Documentation: [Coming Soon]
