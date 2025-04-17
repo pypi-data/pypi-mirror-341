@@ -1,0 +1,3 @@
+markitdown[all,pdf,xlsx]>=0.1.1
+mcp[cli]>=1.6.0
+typing>=3.10.0.0
