@@ -1,0 +1,9 @@
+kicadcliwrapper/lib.py,sha256=Mt3YdEJJQTnJ3KXXru29oPOFxVzyRYCz7atMv6yfYJQ,4009
+kicadcliwrapper/main.py,sha256=cs51Hloaq1q2trvkBw83spMblPoali1KUa48t2vRIaU,6602
+kicadcliwrapper/generated/kicad_cli.py,sha256=Wdr66HFiU6fcEWWTuIX2cPTB2l7Pl1_UBhS1bnJj6gI,44711
+kicadcliwrapper/generated/kicad_cli_l1.py,sha256=seVPm2Tn3nm4nD0HjaIC29BNQYaYxNw7NHZSvsaMUyc,86888
+kicadcliwrapper/generated/kicad_cli_l2.py,sha256=etcpvbNlaAyFJogaj4iycLIA803QrhVwikrLQhOGw60,113376
+kicadcliwrapper-1.0.5.dist-info/METADATA,sha256=BxJ5LJAiDwoQVbppZlvPkxrwynwoemoN79oXiRS6BR4,1713
+kicadcliwrapper-1.0.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+kicadcliwrapper-1.0.5.dist-info/licenses/LICENSE,sha256=rtrMhtSKZXy9jsz8Jx05YEPsem_T3bhDcjMi9_XUxpE,1064
+kicadcliwrapper-1.0.5.dist-info/RECORD,,
