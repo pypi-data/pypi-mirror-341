@@ -1,0 +1,13 @@
+digest: 03ff978b
+name: dataset
+profile: '{"num_rows": 2539, "num_elements": 17773}'
+schema: '{"mlflow_colspec": [{"type": "long", "name": "home_team_name", "required":
+  true}, {"type": "long", "name": "away_team_name", "required": true}, {"type": "double",
+  "name": "prob_away_avg", "required": true}, {"type": "double", "name": "avg_home_PlayersForwardCarries_last_29_home_only",
+  "required": false}, {"type": "double", "name": "avg_home_PlayersLostControlCarries_last_34_away_only",
+  "required": false}, {"type": "double", "name": "avg_home_PlayersAttackPassesReception_last_13_away_only",
+  "required": false}, {"type": "double", "name": "avg_home_team_goals_last_22", "required":
+  false}]}'
+source: '{"tags": {"mlflow.user": "railnlays", "mlflow.source.name": "/home/railnlays/.cache/pypoetry/virtualenvs/api-python-bet-project-WnPsnQn2-py3.12/lib/python3.12/site-packages/ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code
