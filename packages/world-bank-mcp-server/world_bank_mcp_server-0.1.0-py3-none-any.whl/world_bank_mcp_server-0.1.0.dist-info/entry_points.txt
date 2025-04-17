@@ -1,0 +1,2 @@
+[console_scripts]
+world-bank-mcp-server = world_bank_mcp_server.server:main
