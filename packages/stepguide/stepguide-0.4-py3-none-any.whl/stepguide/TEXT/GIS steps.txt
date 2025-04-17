@@ -1,0 +1,1176 @@
+
+PRACTICAL NO.1
+Familiarizing Quantum GIS: Installation of QGIS, datasets for both Vector and Raster data, Maps.
+Installation of QGIS:
+Click next to continue the setup >
+                  
+
+Accept Terms and Conditions & Check the checkbox of license Agreement and Click next >
+                  
+
+Browse to the folder where you want to install the application>
+                  
+Click install to begin the installation >
+                   
+Click the Finish to exit the setup wizard :
+                   
+HomePage of QGIS :
+
+Datasets for both Vector and Raster data
+
+Practical No	Practical Title	Required data
+
+2	calculating line lengths and statistics	1)IND_rails.shp
+2)IND_adm0.shp
+
+
+
+3	Adding raster layers, 
+raster styling and analysis	1)g1_gpwv3_pdens_90_ascii_one.zip
+2)g1_gpwv3_pdens_00_ascii_one.zip
+	Raster 
+mosaicking and clipping 	1)FAS_India1.2018349.terra.367.2km.tif
+2)FAS_India2.2018349.terra.367.2km.tif
+3)FAS_India3.2018350.terra.367.2km.tif
+4)FAS_India4.2018350.terra.367.2km.tif
+5)IND_adm0.shp
+
+4	Making a Map	1)IND_adm1.shp
+2)maharashtra_administrative.shp
+3)maharashtra_highway.shp
+4)maharashtra_water.shp
+5)Maharashtra_location.shp
+Importing Spreadsheets or CSV files 	1)earthquake.csv
+
+5
+Working with terrain Data	1)10n060e_20101117_gmted_max300.tif
+	Working with attributes	1)ne_10m_populated_places_simple.shp
+
+6	Working with Projections	1)ne_10m_admin_0_countries.shp
+	Working with WMS Data	1)ne_10m_admin_0_countries.shp
+2)MiniScale_(standard)_R17.tif
+
+
+7	Georeferencing Topo Sheets and Scanned Maps 	1)maha.jpg
+	Georeferencing Aerial Imagery 	1)India-physical-blank-map-8282222_1280.html
+	Digitizing Map Data	2)BX24G_GeoTifv1-02_clip.tif
+
+
+8	Table joins	1)t1_2013_06_tracked.shp
+2)ca_tracks_pop.csv
+	Spatial joins	1)nybb_12c(1).shp
+2)OEM_NursingHomes_001.shp
+	points in polygon analysis,	1)ne_10m_admin_0_countries.shp
+2)earthquake.csv
+	Performing spatial queries	1)ne_10m_populated_places_simple.shp
+2)ne_10m_rivers_lake_centerlines.shp
+
+
+9	Nearest Neighbor Analysis	1)earthquake.csv
+2) ne_10m_populated_places_simple.shp
+	Sampling Raster Data using Points 	1)Us,tmax_nohads_II_20140525_float.tif
+2)2013_Gaz_ua_national.txt
+	Sampling Raster Data using Polygons	1)Us,tmax_nohads_II_20140525_float.tif
+2)T1_2013_us_country.shp
+	Interpolating Point Data	A)Shapefiles(1).zip
+1)Arlington_Sounding_2007_stpl83.shp
+2)Boundary2004_550_stpl83.shp
+10	Batch Processing using Processing Framework 
+	1)ne_10m_rivers_lake_centerlines.shp 2)IND_adm0.shp
+3)ne_10m_populated_places_simple.zip
+	Automating Complex Workflows using Processing Modeler	1)LC_hd_global_2001.tif.gz
+2)LC_hd_global_2012.tif.gz
+	Automating Map Creation with Print Composer Atlas 	1)HI_Wetlands.shp
+2)County10.shp
+
+Maps:
+Google Maps :
+Default Mode:
+Satellite Mode:              
+Traffic Map:
+Air Quality Map:            
+Street View Map:                  
+Terrain Map:             
+
+-------------------------------------
+PRACTICAL NO.2
+Creating and Managing Vector Data: Adding vector layers, setting properties, formatting, 
+calculating line lengths and statistics
+
+Creating and Managing Vector Data
+Select Layer > New Shapefile Layer > 
+
+Set File name : kudal.shp > Geometry type : Polygon > Add Minimum 2 Field List : id,name > Ok >  
+                    
+Output after adding Polygon Shapefile Layer >
+   
+Right click on Added Layer > Properties >
+                             
+Layer Properties > Symbology : Set Color > Apply >
+                     
+Layer Properties > Labels :Single Labels > Apply >
+                        
+Output After Setting Properties >             
+
+Output after adding Polygon Shapefile Layers : Buildings , Bank, Hospitals, Gardens  >               
+
+Set File name : Ground.shp > Geometry type : Point > Add Minimum 2 Field List : id,name > Ok >
+                                      
+Output after adding Point Shapefile Layer >
+
+Set File name : Roads.shp > Geometry type : LineString > Add Minimum 2 Field List : id,name > Ok >           
+
+Output after adding LineString Shapefile Layer >
+        
+Final Output after adding all Polygon ,Point and LineString Shapefile Layers  >
+          
+
+Adding vector layers:
+Add layer > Add Vector Layer 
+        
+Select Vector > Browse Vector Database > IND_adm.zip > Add >
+       
+Select IND_adm0.shp > Click Add Layers
+       
+
+Output after adding IND_adm0.shp >
+      
+Setting properties:
+Right Click on IND adm0.shp layer > Properties > 
+                       
+
+Go to Symbology > select color(Outline blue) > Apply >
+                 
+
+Output after setting color properties >
+         
+
+Formatting and calculating line lengths and statistics:
+Add layer > Add Vector Layer > Browse Vector Database > IND_rrd.zip > Add >              
+
+Output after adding IND_rrd  > 
+           
+Right click on IND rails.shp layer > Open Attribute Table >
+                      
+Attribute Table of IND_rails.shp >              
+
+At attribute table > Open field Calculator > Set Output field name : Trak_len> Set Output field type : Decimal number > Set expression : $length / 1000 > ok
+              
+Attribute table after adding Trak_len field > 
+             
+Select Vector > Analysis Tools > Basic Statistics for fields.. > click
+        
+Open Basic Statistics for fields > select Input layer : IND_rails.shp >  Set  Field to calculate statistics on : Trak_len >  Save as and give name in html format > Run
+                    
+Output of log content > Click Close >
+          
+Line lengths and statistics :
+
+--------------------------------------------
+
+PRACTICAL NO.3
+
+Exploring and Managing Raster data: Adding raster layers, raster styling and analysis, raster mosaicking and clipping
+
+Adding raster layers:
+Layer > Add Layer > Add Raster Layer >
+            
+
+Select gl_gpwv3_pdens_00_ascii_one zip file > Open >
+            
+
+Click on Add >
+                  
+
+Select Items to Add > Select glds00g60.asc Item > Click Add Layers >
+                              
+Output after adding Raster Layer : gl_gpwv3_pdens_00_ascii_one.zip >
+   
+Layer > Add Layer > Add Raster Layer > Select gl_gpwv3_pdens_90_ascii_one zip file > Open >
+              
+
+Click on Add >
+             
+Select Items to Add > Select glds90g60.asc Item > Click Add Layers >
+                      
+Output after adding Raster Layer : gl_gpwv3_pdens_90_ascii_one.zip >
+      
+Raster styling and analysis:
+Open Properties of gl_gpwv3_pdens_00_ascii_one Layer > Select render type as Singleband pseudocolor > Min : 0 and Max : 240 > select light color ramp > Apply  >
+                   
+
+Output After Setting Properties to gl_gpwv3_pdens_00_ascii_one Layer >
+     
+
+Open Properties of gl_gpwv3_pdens_90_ascii_one Layer > Select render type as Singleband pseudocolor > Min : 0 and Max : 240 > select light color ramp > Apply  >
+                
+Output After Setting Properties to gl_gpwv3_pdens_90_ascii_one Layer >
+       
+
+Now Select Raster > Raster Calculator > 
+                 
+
+Select gl_gpwv3_pdens_00_ascii_one - gl_gpwv3_pdens_90_ascii_one for Raster Calculator Expression > Browse the location and file name in Output Layer box > Click Ok >
+                   
+
+Output after Applying Raster Calculation on two layers >
+    
+
+Change the properties of Output layer > Render Type as Singleband pseudocolor > Min : -2000 and Max : 6000 > Interpolation as Discrete > change color classes as below > Apply >
+               
+Final Output of Raster Analysis :
+         
+Raster mosaicking and clipping:
+Layer > Add Layer > Add Raster Layer > 
+                 
+Select all .2km files > Open > 
+               
+Add the Selected layers  > 
+              
+Output of added Layers >  
+          
+Raster > Miscellaneous > Merge > 
+        
+Select All .2km files > Ok >
+                   
+
+Scroll down and select browse at Merged > Save to File > Run >                  
+
+Output After Merging >
+                      
+Layer > Add vector layer > Select IND_adm0.shp > Add > 
+                    
+Open Properties > Change  Color as Outline blue > Apply >
+                     
+
+Output After adding IND_adm0 Layer > 
+                  
+Raster > Extraction > Clip Raster by Mask Layer.. > 
+                         
+Select Saved Merged Layer > Select Source CRS As WGS 84 > Run >
+                                
+Final Output After Clip raster by Mask Layer > 
+--------------------------------------------------
+
+
+PRACTICAL NO.4
+Making a Map, Working with Attributes, Importing Spreadsheets or CSV files Using Plugins, Searching and Downloading OpenStreetMap Data:
+
+Making a Map, Working with Attributes:
+Layer > Add Layer > Add Vector Layer >
+            
+
+Select  IND_adm1.shp , maharashtra_administrative.shp , maharashtra_coastline.shp , maharashtra_highway.shp , maharashtra_location.shp , maharashtra_natural.shp , maharashtra_poi.shp , maharashtra_water.shp  files  > Open >
+Add All .shp files > Add >
+             
+Output after adding All .shp layers :
+                                        
+Open Properties of IND_adm1 > Change Color > Apply >
+           
+Output After changing properties :
+                          
+Go to Project > New Print Layout > Give Name > Click Ok >
+
+Add Item > Add Map >
+            
+
+Map Inserted at Print Layout >
+        
+Add Item > Add Picture >
+          
+Select Picture from Item Properties > Place Picture at Map >
+            
+Add Item > Add Label >
+              
+Add label from Item Properties > Place Label >
+          
+Add Item > Add Legend >
+         
+Place Legend At blank space At map >
+ 
+Add Item > Add Scale Bar >
+           
+Place Scale Bar at map >
+          
+Add Item > Add North Arrow >
+         
+Place North Arrow At map >
+         
+Importing Spreadsheets or CSV files Using Plugins:
+Layer > Add Layer > Add Delimited Text Layer.. >
+           
+Select earthquakes.csv at File name  > File Format : CSV >Geometry Definition :  Point coordinates > Add >
+               
+Output Of Earthquakes Map As point coordinates >
+       
+Searching and Downloading OpenStreetMap Data:
+Go to Plugins > Search OSM place search > Install >
+               
+Go to Plugins > QuickOSM > Install >
+                
+Go to Plugins > QuickMapServices > Install >
+               
+Web > QuickMapServices > OSM > OSM Standard > 
+              
+Search Sindhudurg at OSM place search >
+            
+Select Sindhudurg Layer > Create Mask >
+
+Save Vector Layer  > Ok >
+
+Select saved Sindhudurg Vector Layer >
+--------------------------------------------------
+PRACTICAL NO.5
+Working with attributes, terrain Data
+Layer > Add Layer > Add Vector > 
+        
+Select  ne_10m_populated_places_simple.zip file > Add >
+            
+Output After adding ne_10m_populated_places_simple.Zip file :     
+
+Select and right click to the ne_10m_populated_places_simple layer > Open Attribute Table >
+          
+Output of Attribute Table >         
+
+Open features using an expression > give expression as : pop_max > 100 and pop_max < 10000 > Click select features >
+        
+Output After applying Expression >
+          
+Open features using an expression > give expression as : adm0name = ‘India’ > Click select features >
+        
+
+Output After applying Expression >
+       
+
+Open features using an expression > give expression as : sov0name = ‘United States’ > Click select features >
+      
+Output After applying Expression >
+        
+
+Open features using an expression > give expression as : sov_a3 = ‘RUS’ > Click select features >
+         
+
+Output After applying Expression >
+      
+Open features using an expression > give expression as : rank_max < 8 > Click select features >
+          
+
+Output After applying Expression >
+       
+
+Terrain Data
+Layer > add Layer > Add Raster Layer.. >
+           
+
+Give Source from Pc : "GMTED2010N10E060_300\10n060e_20101117_gmted_dsc300.tif" > Add >
+           
+Raster > Extraction > Clip Raster by Extent >
+          
+
+At Clipping extent select “Draw on Canvas” Option > Save to File(Permenent) > Run >
+        
+
+Output of Clipped Layer >
+          
+
+Raster > Extraction > Contour.. >
+         
+Select Input Layer as Clipped Layer > Interval between contour lines:100.000000 > Save to file > Run >
+            
+
+Output after the Contour >
+         
+Properties > Labels > Value: ELEV > Apply >
+              
+Output after adding ELEV Label to Layer >
+       
+Open Attribute Table >
+
+Open Attribute Table > click Highest Value at ELEV column > Click on Search > Output >
+       
+
+Hillshade Analysis :
+Raster > Analysis > Hillshade >
+           
+Select Input Layer as Clipped layer > Go with default values > Run >
+ 
+Output Of Hillshade analysis >
+-----------------------------------------
+PRACTICAL NO.6
+Working with Projections and WMS Data
+Layer > Add Layer > Add Vector Layer >
+      
+Select ne_10m_admin_0_countries.zip file > Add >
+            
+Output After adding ne_10m_admin_0_countries vector layer >
+        
+Change Projection:
+Layer > Save As.. >
+                         
+Give File name > At CRS Click Select CRS Option >
+                        
+
+Select EPSG:4284 CRS or any CRS > Click Ok >
+                    
+
+After Selecting CRS > Click Ok >
+                    
+Output After Changing Projection >
+
+
+Working with Projections and WMS Data
+Layer > Add Layer > Add Raster Layer >
+        
+
+Select MiniScale_(standard)_R17 TIF file > Open >
+            
+
+Add MiniScale_(standard)_R17.tif >
+             
+
+Output after adding MiniScale_(standard)_R17.tif >
+       
+
+Open properties of MiniScale_(standard)_R17 layer > Select coordinate reference system(CRS) >
+            
+
+At CRS Search EPSG:27700 at Filter > select British National Grid > Ok >
+                    
+Select Defaut transformation > Ok >
+                    
+Click Ok at Properties with EPSG:27700 CRS >
+           
+Output after adding EPSG:27700/ British National Grid CRS >
+        
+------------------------------------------
+PRACTICAL NO.7
+Georeferencing Topo Sheets and Scanned Maps 
+Georeferencing Aerial Imagery 
+Digitizing Map Data
+
+Georeferencing Topo Sheets and Scanned Maps :
+At OSM Place search > Search :”Maharashtra” and select >
+  
+
+At OSM Place search > Select Create mask from slected object option >
+               
+Output after Creating mask >
+   
+Raster > Georeferencer.. >
+                  
+
+At Georefrencer > Go to File > Select Open Raster Option >
+                
+
+Select Maharashtra Image from Local Storage > Open >
+               
+
+Output After adding maharashtra image at georefrencer >
+        
+
+At Georefrencer > Go to Edit > Select Add Point Option >
+                       
+
+At Enter Map Coordinates > Select ‘From Map Canvas’ Option >
+       
+
+After selecting points from Map canvas it updated at X and Y > Click Ok >
+       
+
+Georefrencer window after adding points to the map >
+      
+At Georefrencer > Go to Settings > Select Transformation Settings.. Option >
+                 
+
+At Transformation Settings > Transformation type : Thin Plate Spline > At Output raster : Save the .tif file > Check the checkbox of ‘Load in QGIS when done’ > Ok >
+                    
+
+At Georefrencer > Go to File > Select Start Geireferencing  >
+                      
+
+Output After Georeferencing map >
+     
+
+Open properties of Maha_modified Layer > Decrease Transperency > Ok >
+    
+
+Final Output after Setting Properties:
+       
+Georeferencing Aerial Imagery 
+
+Layer > Add Layer > Add Vector Layer >
+            
+At Vector add IND_adm.zip > At Select Items to Add : IND_adm0.shp Polygon(1) > Click Add Layers >
+          
+
+Output after adding IND_adm0.shp layer >
+          
+
+Raster > Georeferencer.. >
+                
+
+At georeferencer > Select File > Open Raster >
+  
+                  
+Select india-physical-blank-map-8282222_1280.webp file from Local Storage > Open >
+             
+Output After adding India image at georefrencer >
+            
+At Georefrencer > Go to Edit > Select Add Point Option >
+                    
+At Enter Map Coordinates > Select ‘From Map Canvas’ Option >
+         
+Georeferencer window after adding points to the map >
+         
+At Georefrencer > Go to Settings > Select Transformation Settings.. Option >
+                  
+At Transformation Settings > Transformation type : Thin Plate Spline > At Output raster : Save the .tif file > Check the checkbox of ‘Load in QGIS when done’ > Ok >
+                         
+At Georeferencer > Go to File > Select Start Geireferencing  >
+                      
+Output After Georeferencing map >
+        
+Open properties of India-physical-blank-map_modified Layer > Decrease Transperency > Ok >
+
+Final Output after Setting Properties:      
+Digitizing Map Data
+
+Layer > Add Layer > Add Raster Layer >
+           
+At Raster : add “BX24_GeoTifv1-02-clip.tif” >
+          
+Output after adding BX24_GeoTifv1-02-clip.tif raster layer  >
+        
+Layer > create Layer > New SpatiaLite Layer >
+            
+At New SpatiaLite Layer > Set Databse : newdb.sqlite > Layer name : area > Geometry type : Multipolygon > Ok >
+                           
+
+Select area that to be add at SpatiaLite Layer > Give pkuid : Autogenerate > Click Ok >
+                
+
+Output after Selecting areas at spatiaLite Layer >
+                  
+At New SpatiaLite Layer > Set Databse : newdb.sqlite > Layer name : road > Geometry type : MultiLine > Ok >
+                             
+
+Select roads(Lines) that to be add at SpatiaLite Layer > Give pkuid : Autogenerate > Click Ok >
+                 
+Output after Selecting roads at spatiaLite Layer >
+            
+Output of area(Multipolygon) spatiaLite Layer >
+        
+Output of roads(MultiLine) spatiaLite Layer >
+          
+Output of Raster layer and spatiaLite Layer >
+      
+Output of spatiaLite Layers >
+---------------------------------------------------
+PRACTICAL NO.7
+Georeferencing Topo Sheets and Scanned Maps 
+Georeferencing Aerial Imagery 
+Digitizing Map Data
+
+Georeferencing Topo Sheets and Scanned Maps :
+At OSM Place search > Search :”Maharashtra” and select >
+  
+
+At OSM Place search > Select Create mask from slected object option >
+               
+Output after Creating mask >
+   
+Raster > Georeferencer.. >
+                  
+
+At Georefrencer > Go to File > Select Open Raster Option >
+                
+
+Select Maharashtra Image from Local Storage > Open >
+               
+
+Output After adding maharashtra image at georefrencer >
+        
+
+At Georefrencer > Go to Edit > Select Add Point Option >
+                       
+
+At Enter Map Coordinates > Select ‘From Map Canvas’ Option >
+       
+
+After selecting points from Map canvas it updated at X and Y > Click Ok >
+       
+
+Georefrencer window after adding points to the map >
+      
+At Georefrencer > Go to Settings > Select Transformation Settings.. Option >
+                 
+
+At Transformation Settings > Transformation type : Thin Plate Spline > At Output raster : Save the .tif file > Check the checkbox of ‘Load in QGIS when done’ > Ok >
+                    
+
+At Georefrencer > Go to File > Select Start Geireferencing  >
+                      
+
+Output After Georeferencing map >
+     
+
+Open properties of Maha_modified Layer > Decrease Transperency > Ok >
+    
+
+Final Output after Setting Properties:
+       
+Georeferencing Aerial Imagery 
+
+Layer > Add Layer > Add Vector Layer >
+            
+At Vector add IND_adm.zip > At Select Items to Add : IND_adm0.shp Polygon(1) > Click Add Layers >
+          
+
+Output after adding IND_adm0.shp layer >
+          
+
+Raster > Georeferencer.. >
+                
+
+At georeferencer > Select File > Open Raster >
+  
+                  
+Select india-physical-blank-map-8282222_1280.webp file from Local Storage > Open >
+             
+
+Output After adding India image at georefrencer >
+            
+
+At Georefrencer > Go to Edit > Select Add Point Option >
+                    
+
+At Enter Map Coordinates > Select ‘From Map Canvas’ Option >
+         
+Georeferencer window after adding points to the map >
+         
+
+At Georefrencer > Go to Settings > Select Transformation Settings.. Option >
+                  
+
+At Transformation Settings > Transformation type : Thin Plate Spline > At Output raster : Save the .tif file > Check the checkbox of ‘Load in QGIS when done’ > Ok >
+                         
+At Georeferencer > Go to File > Select Start Geireferencing  >
+                      
+
+Output After Georeferencing map >
+        
+
+Open properties of India-physical-blank-map_modified Layer > Decrease Transperency > Ok >
+          
+
+Final Output after Setting Properties:
+      
+Digitizing Map Data
+Layer > Add Layer > Add Raster Layer >
+           
+At Raster : add “BX24_GeoTifv1-02-clip.tif” >
+          
+Output after adding BX24_GeoTifv1-02-clip.tif raster layer  >
+        
+Layer > create Layer > New SpatiaLite Layer >
+            
+At New SpatiaLite Layer > Set Databse : newdb.sqlite > Layer name : area > Geometry type : Multipolygon > Ok >
+                           
+
+Select area that to be add at SpatiaLite Layer > Give pkuid : Autogenerate > Click Ok >
+                
+
+Output after Selecting areas at spatiaLite Layer >
+                  
+At New SpatiaLite Layer > Set Databse : newdb.sqlite > Layer name : road > Geometry type : MultiLine > Ok >
+                             
+Select roads(Lines) that to be add at SpatiaLite Layer > Give pkuid : Autogenerate > Click Ok >
+                 
+Output after Selecting roads at spatiaLite Layer >
+            
+Output of area(Multipolygon) spatiaLite Layer >
+        
+Output of roads(MultiLine) spatiaLite Layer >
+          
+Output of Raster layer and spatiaLite Layer >
+      
+Output of spatiaLite Layers >
+-------------------------------------------
+PRACTICAL NO.8
+Managing Data Tables and Saptial data Sets: Table joins, spatial joins, points in polygon 
+analysis, performing spatial queries
+Table joins:
+Layer > Add Layer > Add Vector Layer >
+          
+
+Add “tl_2013_06_tract.zip” file >
+        
+
+Select Default Transoformation > Click Ok >
+                
+
+Output After Adding vector Layer >
+       
+
+
+Layer > Add Layer > Add Delimited Layer >
+            
+
+
+ Add “ca_tracts_pop.csv” file > Select CSV file format and no geometry > Click Add >
+             
+
+Right Click to the tl_2013_06_tract Layer > Open Attribute Table > 
+        
+
+Right Click to the ca_tracts_pop Layer > Open Attribute Table >
+              
+
+Go to properties of tl_2013_06_tract Layer >
+                 
+Select Mange joins to other layer Option At Properties > Select Join Layer As “ca_tracts_pop” > Join Field as “GEO.id2” > Target Field As GEOID > Click Ok >
+                        
+
+Now At tl_2013_06_tract layer > Go to Joins > Add The Join layer that Created >
+             
+
+Open Attribute Table of “tl_2013_06_tract” layer >
+        
+
+
+
+
+Open Properties of Vector Layer > Select Graduated At Symbology And Select Mode:Equal Interval > Clcik Ok >
+                
+
+Output After Setting Properties >
+         
+Spatial joins:
+Layer > Add Layer > Add Vector Layer >
+           
+
+
+Select nybb_12c(1).zip > Click Add >
+          
+
+Select Default Transformation > Click Ok >
+                 
+
+
+Output After Adding vector Layer >
+         
+
+Layer > Add Layer > Add Vector Layer > Select “OEM_NursingHomes_001 (1).zip” > Add >
+              
+
+Output After Adding OEM_NursingHomes_001 (1) Layer >
+            
+
+Open Attribute Table Of “nybb_12c(1)” layer >
+                      
+Output of Attribute Table >
+            
+
+Open Attribute Table Of “OEM_NursingHomes_001 (1)” layer >
+                        
+
+Output of Attribute Table >
+  
+
+
+Vector > Data Management Tools > Join Attributes by Location.. >
+           
+Select nybb_12c(1) as Base Layer > OEM_NursingHomes_001 (1) as Join Layer > Run >
+          
+
+Output Of Join Layer >
+         
+
+Open Attribute Table of Join Layer >
+                      
+Output of Attribute Table >
+  
+Select Identify Features >
+
+Click Any Subject at Layer And see Output at Identify Features tab >
+        
+
+
+points in polygon analysis:
+Layer > Add Layer > Add Vector Layer >
+            
+
+Select “ne_10m_admin_0_countries.zip” file > Click add >
+             
+
+Output After Adding Vector Layer >
+     
+
+Layer > Add Layer > Add Delimited text Layer.. >
+                
+
+Select “earthquakes.csv” > Select File format As csv and Geometry Definition As Point Coordinates > Add >
+            
+Output After adding Delimited Text Layer >
+     
+
+Vector > Analysis Tools > Count Points in Polygon.. >
+              
+
+Select ne_10m_admin_0_countries At Polygons > earthquakes at Ponits > Class Field : location.name > Count Field Name : Earth_count > Run >
+           
+
+Output After Adding New Analysis Layer >
+         
+Open Attribute Table of New Analysis Layer >
+                          
+
+Output Of Attribute Table >
+ 
+
+Select Identify Features >
+                       
+Click Any Subject at Layer And see Output at Identify Features tab >
+  
+Performing spatial queries:
+Layer > Add Layer > Add Vector Layer >
+            
+
+Select “ne_10m_populated_places_simple.zip” file > Add >
+                
+
+Output After Adding “ne_10m_populated_places_simple” vector layer >
+   
+Layer > Add Layer > Add Vector Layer >
+              
+
+Select “ne_10m_rivers_lake_centerlines.zip” file > Add >
+          
+
+Output After Adding “ne_10m_rivers_lake_centerlines” vector layer >
+   
+Vector > Geoprocessing Tools > Buffer >
+            
+At Buffer Set Input Layer :ne_10m_rivers_lake_centerlines > Distanace : 0.5000 > Save > Run >
+          
+
+Output of Buffered Layer >
+    
+
+Vector > Research Tools > Select by Location.. > 
+                   
+
+Select Features From : Buffered Layer That recently Created > Check the Intersect Option > By comparing to the features from : ne_10m_populated_places_simple layer > Run >
+            
+Output After Using Research Tools To Layer >
+    
+Final Output After Adding Labels to the Layer >
+---------------------------------------------------
+PRACTICAL NO.9
+Advanced GIS Operations 1: Nearest Neighbor Analysis, Sampling Raster Data using Points or Polygons, Interpolating Point Data
+
+Nearest Neighbor Analysis:
+Layer > Add Layer > Add Vector Layer >
+                  
+
+Select “ne_10m_populated_places_simple.zip” >
+                   
+
+Layer > Add Layer > Add Delimited Text Layer > Select “earthquakes (1).csv” > Add >
+                    
+
+Output after adding Vector and delimited text layers >
+     
+Vector > Analysis Tools > Distance Matrix >
+                          
+
+Select Input point layer : earthquakes > Input unique ID Field:id > Target point layer:ne_10m_populated_places_simple > Target unique ID field:adm0name > Run >
+                  
+
+Attribute table of Distance matrix layer >
+                      
+
+
+Open properties of earthquakes > Joins > add Vector join > Join layer:dist_matrix > Join field:InputID > Target field :id > Ok >
+                    
+Join layer dist_matrix > Apply >
+                        
+
+Attribute table of earthquakes >
+   
+
+Open properties of earthquakes > Click Query Builder >
+                    
+Filter expression : “location.name”=’California’ > Test > Ok >
+                         
+
+Output after applying expression >
+                 
+
+Open properties of ne_10m_populated_places_simple > Click Query Builder >
+                      
+
+Filter expression : “adm0name”=’California’ > Test > Ok >
+                         
+Output after applying expression >
+                
+MMQGIS > Create > Hub Lines / Distance >
+                            
+
+Select Hub layer:ne_10m_populated_places_simple ,Hub Name Field:adm0name > Spoke layer : earthquakes > apply >
+                        
+
+Final Output after applying hub lines >
+             
+
+
+Sampling Raster Data using Points:
+Layer > Add Layer > Add Raster Layer >
+                      
+
+Select “us.tmax_nohads_ll_20140525_float.tif” file > Add >              
+Output After adding “us.tmax_nohads_ll_20140525_float.tif” >
+      
+
+Layer > Add Layer > Add Delimited Text Layer >
+                   
+
+Select “2013_Gaz_ua_national.txt” file > File Format :Custom Delimiters[Tab] > Geometry Definition : Point Coordinates > Add >                                     
+                  
+
+Output After adding “2013_Gaz_ua_national.txt” >
+           
+
+Plugins > Manage and Install Plugins >                 
+                   
+Install the “Point sampling tool” > Enable >                    
+                       
+
+Plugins > Analyses > Point Sampling Tool >                    
+                     
+
+Select 2013_Gaz_ua_national Layer > Get Values from-2013_Gaz_ua_national:GEOID,2013_Gaz_ua_national:NAME and us.tmax_nohads_ll_20140525_float:Band 1 > Save > Ok >
+      
+
+Output after applying Point Sampling Tool >  
+
+Open Attribute Table of Layer >
+                              
+
+Output of Attribute Table >
+                              
+
+Select “Identify Features” >
+                              
+
+Final Output After Identifying Features >
+      
+Sampling Raster Data using Polygons:
+Output After adding “us.tmax_nohads_ll_20140525_float.tif” >
+    
+
+Layer > Add Layer > Add Vector Layer >
+                     
+Select “tl_2013_us_county.zip” > Add >
+                      
+
+Select Default Transformation > Ok >                                    
+
+Output after adding “tl_2013_us_county.shp” layer >
+      
+                                         
+Processing > Toolbox >
+                               
+Input layer : tl_2013_us_county.shp > Raster layer : us.tmax_nohads_ll_20140525_float > Output column prefix : zs_ > Run                        
+                  
+
+Open attribute table of zone layer >
+                               
+
+Attribute table of Zone layer >
+    
+
+Open Properties > Symbology > Select Graduated > Apply >
+                      
+Output after chnaging symbology >
+                  
+Interpolating Point Data:
+Layer > Add layer > Add Vector Layer.. >
+                         
+
+Select “Shapefiles (1).zip” > Add >
+                       
+
+Select items Arlington_Soundings_2007_stpl83.shp and Boundary2004_550_stpl83.shp > Add Layers >
+                                
+
+Select Default Transformation > Ok >
+                               
+Output After adding Vector Layers >
+                   
+Processing > Toolbox >
+                           
+
+Select TIN interpolation >                                              
+
+Vector layer :Shapefiles (1)-Arlington_Soundings_2007_stpl83.shp > Extend: Calculate from layer > Shapefiles (1)-Arlington_Soundings_2007_stpl83.shp >
+                       
+
+Output of Interpolation >             
+
+Raster > Extraction > Clip Raster by mask layer >
+                            
+Select Input layer:interpo > Mask layer : Shapefiles (1)-Boundry2004_550_stpl83.shp> Run
+                    
+
+Output after Extraction >                  
+
+Open properties of Extracted Raster Layer > Render type:Singleband pseudocolor > Mode:Continuous > Apply >                              
+                     
+
+Output of Extracted Raster Layer After applying symbology >
+              
+
+Raster > Extraction > Contour.. >
+                         
+
+Input Layer: Extracted Raster Layer > Interval between contour lines:5.000 > Attribute name:ELEV > Run >
+                  
+
+Output Contour Extraction >
+              
+
+Open properties of Contour layer > Select Single Labels > Value: ELEV > Ok
+                          
+
+Final Output >
+-----------------------------------------------
+PRACTICAL NO.10
+
+Advance GIS Operations 2: Batch Processing using Processing Framework 
+Automating Complex Workflows using Processing Modeler 
+Automating Map Creation with Print Composer Atlas 
+
+Batch Processing using Processing Framework:
+Vector > Geoprocessing Tools.. > Clip.. >
+               
+
+At clip > Click the “Run as batch process” button >
+                     
+
+At Batch Processing : Add Input layer:ne_10m_rivers_lake_centerlines.zip ,Overlay layer : IND_adm.zip and Clipped : clippedne_10m_rivers_lake_centerlines.gpkg > Autofill mode : Fill with parameter values and Parameter to use : Input layer > Ok >
+                    
+
+Add another row > Add Input layer:ne_10m_populated_places_simple.zip ,Overlay layer : IND_adm.zip and Clipped : clippedne_10m_populated_places_simple.gpkg > Autofill mode : Fill with parameter values and Parameter to use : Input layer > Ok >
+                     
+
+After Adding two rows > Click at Checkbox of “Load Layers on completion” > Run >
+              
+
+Batch processing window >
+         
+
+Output After clipping >
+           
+
+Automating Complex Workflows using Processing Modeler:
+Processing > Graphical Modeler >
+                              
+
+Select Raster Layer at Inputs > Give Description > Ok
+                       
+Output after adding raster input >
+               
+
+At Algorithms Select Majority/Minority Filter >select raster_input for model input > ok >
+          
+
+At Algorithms Select Polygonize > select “Majority/Minority Filter” for input layer > Band number : 1 > Name of Field to create : DN > ok >
+          
+
+At Algorithms Select Extract by attribute > select “Polygonize” for input layer > selection attribute : DN > Operator : = > Value : 12 > ok >
+          
+Output after adding Input and algorithms in model >
+          
+
+Save the model at default location >
+             
+
+Layer > Add Layer > Add Raster Layer >
+              
+
+Select “LC_hd_global_2001.tif.gz” >
+                
+Output after adding Vector LC_hd_global_2001.tif.gz >
+              
+
+Select “LC_hd_global_2012.tif.gz” >
+                   
+
+Output after adding “LC_hd_global_2012.tif.gz” >
+              
+
+At Processing Toolbox > Clcik vect model > Set raster_input:LC_hd_global_2001.tif > vectorized : model1.gpkg > Run >
+             
+
+At Processing Toolbox > Clcik vect model > Set raster_input:LC_hd_global_2012.tif > vectorized : model2.gpkg > Run >
+            
+
+Output after adding model1 and model 2 >
+            
+Automating Map Creation with Print Composer Atlas:
+Add Layer > new vector layer > HI_Wetlands.shp
+Add Layer > new vector layer > country10.shp
+    
+
+Project > New Print Layout
+Add Item > Add Map
+     
+
+Switch to the Atlas tab. Check the Generate an atlas box. Select the county10 as the Coverage layer. An also check the Hidden coverage layer box
+  
+1.Go to Atlas > Preview Atlas.
+2.Go to Add Item > Add Label.
+3.Under the Item properties tab, click Insert an expression... button.
+4.Add an expression like below and click OK. concat('County of ', "NAME10")
+     
+Adjust the font size to your liking.
+   
+Add another label and enter Wetlands Map under the Main properties. Since there is no expression here, this text will remain the same on all maps.
+ 
+Switch to the main QGIS window. Right-click the county10 layer and select Properties.
+In the Style tab, select the Inverted polygons renderer. Select white as the fill color and click OK.
+  
+
+Switch to the Print Composer window. If we want the effect of the inverted polygons to show, we need to uncheck the Hidden coverage layer box under Atlas generation.
+
+
+1.Switch to the main QGIS window. Right-click the county10 layer and select Properties.
+2.In the Style tab, select Rule-based renderer as the Sub renderer. Double-click the area under Rule.
+3.In the Expression string builder, expand the Atlas group of functions.
+4.Enter the expression as : $id=$atlas_featureid
+  
+Back in the Print Composer window, click the Update preview button under Item properties tab to see the changes
+    
+
+Go to Add Item > Add Label and select the area on the map. Click Insert an expression button.
+Enter the expression as: concat('Created on: ', to_date($now))
+   
+Once you are satisfied with the map layout, go to Atlas > Export Atlas as Images.
+                
+Here are the map images for reference.
+
+
+     
+
+
+
+
+        
+        
+    
+         
+         
+
+                  
+              

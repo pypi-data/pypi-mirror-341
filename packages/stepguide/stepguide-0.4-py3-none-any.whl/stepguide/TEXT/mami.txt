@@ -1,0 +1,3007 @@
+Import "sample.csv" or "EarthquakeDatabase.txt" file in a new QGIS project.
+
+Using attribute table perform the following tasks
+
+Format "Tsunami" with red color and others using black color symbol.
+
+Show the place with highest number of death value.
+
+Show the places where Tsunami occurred for highest time in terms of hours.
+
+Show all the Natural calamities that occurred in India
+
+Show all the places where Tsunami occurred between 2000 and 2019.
+
+Add the following layers in QGIS
+
+Earthquake Database.txt
+
+ne 10m admin 0 countries.shp
+
+Calculate the total earthquakes / Tsunami occurred in each country.
+
+Show the total number of earthquake / Tsunami occurred in India.
+
+
+
+🎯 Objective
+You’ll work with earthquake data and a world countries shapefile to:
+
+Import and style data based on tsunami occurrence.
+
+Find extreme cases based on deaths and duration.
+
+Filter based on year, type, and country.
+
+Join and aggregate to count disasters per country.
+
+✅ Part 1: Import CSV / Text File into QGIS
+🔹 Step 1: Open QGIS & Start a New Project
+Launch QGIS → Project > New.
+
+🔹 Step 2: Import sample.csv or EarthquakeDatabase.txt
+Go to Layer > Add Layer > Add Delimited Text Layer.
+
+Browse for sample.csv or EarthquakeDatabase.txt.
+
+Set:
+
+X field = Longitude
+
+Y field = Latitude
+
+Geometry CRS = EPSG:4326
+
+Click Add → Your data will appear as points on the map.
+
+✅ Part 2: Style the "Tsunami" Field
+🔹 Step 1: Open Layer Properties
+Right-click your imported layer → Properties > Symbology.
+
+🔹 Step 2: Use Categorized Styling
+Choose Categorized.
+
+Column: Tsunami
+
+Click Classify:
+
+Value 1 → Red symbol (tsunami occurred).
+
+Value 0 → Black symbol (no tsunami).
+
+Click Apply and OK.
+
+✅ Part 3: Find Places with Highest Deaths
+🔹 Step 1: Open Attribute Table
+Right-click the layer → Open Attribute Table.
+
+🔹 Step 2: Sort by Deaths
+Click on the Deaths column header → Sort descending.
+
+Top row shows the place with the highest deaths.
+
+You can Zoom to Feature by right-clicking it.
+
+✅ Part 4: Places with Longest Tsunami Duration
+🔹 Step 1: Sort by "Time"
+In the attribute table, sort the Time column (assumed to be in hours).
+
+The top row is where the tsunami lasted the longest.
+
+Right-click → Zoom to Feature.
+
+✅ Part 5: Show All Natural Calamities in India
+🔹 Step 1: Use Select by Expression
+Go to Select Features Using Expression (🔍 icon with abacus).
+
+Use expression:
+
+sql
+Copy
+Edit
+"Country" = 'India' AND "Calamity_Type" IS NOT NULL
+Click Select Features.
+
+The selected rows are natural calamities in India.
+
+✅ Part 6: Filter Tsunamis from 2000 to 2019
+🔹 Step 1: Use Expression
+Go to Select by Expression, use:
+
+sql
+Copy
+Edit
+"Year" >= 2000 AND "Year" <= 2019 AND "Tsunami" = 1
+Click Select Features.
+
+Use Zoom to Selected or export selected if needed.
+
+✅ Part 7: Add Country Shapefile
+🔹 Step 1: Load ne_10m_admin_0_countries.shp
+Layer > Add Layer > Add Vector Layer.
+
+Browse and load the shapefile.
+
+✅ Part 8: Join Earthquake Data with Country Polygons
+🔹 Step 1: Make Sure CRS Matches
+Both layers should be in EPSG:4326.
+
+Right-click layer → Layer CRS > Set Layer CRS.
+
+🔹 Step 2: Perform Spatial Join
+Go to Vector > Data Management Tools > Join Attributes by Location (Summary).
+
+Target Layer = ne_10m_admin_0_countries.shp
+
+Join Layer = Earthquake data
+
+Geometric Predicate: Intersects
+
+Summaries:
+
+Count of features
+
+Optional: Count where Tsunami = 1
+
+Output = Country_Earthquake_Join
+
+✅ Part 9: Calculate Earthquakes / Tsunamis Per Country
+🔹 Step 1: Open Attribute Table of Output Layer
+Column like count shows total disasters.
+
+If Tsunami was included as summary, you'll have sum_Tsunami.
+
+🔹 Step 2: Style Map
+Go to Properties > Symbology
+
+Use Graduated style on count or sum_Tsunami.
+
+Choose color ramp (e.g., Reds for high counts).
+
+✅ Part 10: Show Total Events in India
+🔹 Step 1: Filter by India
+Open Attribute Table of Joined Layer
+
+Use filter:
+
+sql
+Copy
+Edit
+"NAME" = 'India'
+Check count and sum_Tsunami for totals.
+
+🏁 Final Deliverables (Optional)
+Create a Print Layout:
+
+Add map, legend, scale bar, title, and north arrow.
+
+Export as PDF or JPEG.
+
+-----------------------------------------------------------------------------------------------------
+Open "Open Street Map"
+
+Search "University of Mumbai Fort Campus"
+
+Geo-reference the aerial image of University of Mumbai Fort Campus.
+
+(Hint: use Image from required Files)
+
+Using spatial query find the places those are approximately located within 2 KM region of river.
+
+Show locations from India region
+
+Open Ind_adm0.shp file in QGIS and locate Mumbai region.
+
+Geo-reference the Mumbai Scan Map at appropriate location.
+
+(Hint: use Image from required Files)
+
+
+✅ PART 1: Open OpenStreetMap & Search Mumbai University Fort Campus
+🔹 Step 1: Open a New QGIS Project
+Open QGIS → Project > New.
+
+🔹 Step 2: Install and Use QuickMapServices
+Go to Plugins > Manage and Install Plugins.
+
+Search for QuickMapServices → Install.
+
+Once installed: Web > QuickMapServices > OSM > OpenStreetMap.
+
+This adds a base map.
+
+🔹 Step 3: Search for "University of Mumbai Fort Campus"
+In the toolbar, activate Locator Bar (if not already visible).
+
+Type: University of Mumbai Fort Campus
+
+Hit Enter → QGIS will zoom to the location.
+
+✅ PART 2: Geo-Reference Aerial Image of Mumbai University
+📌 Hint: Use provided image file (e.g., aerial_scan_mumbai.jpg)
+🔹 Step 1: Open the GeoReferencer Tool
+Go to Raster > Georeferencer > Georeferencer.
+
+Click Open Raster → Select the aerial image (e.g., MumbaiUniversity.jpg).
+
+🔹 Step 2: Add Ground Control Points (GCPs)
+Use Add Point Tool in the GeoReferencer.
+
+On the image, click known points (like road intersections, corners).
+
+Match them with corresponding coordinates on OpenStreetMap:
+
+Choose From Map Canvas to click directly on the OSM layer.
+
+🔹 Add at least 4 GCPs for good accuracy.
+
+🔹 Step 3: Set Transformation Settings
+Click the gear icon (Settings):
+
+Transformation: Linear / Helmert
+
+Output Raster: choose location & name (e.g., Georef_MumbaiUniv.tif)
+
+Target CRS: EPSG:4326
+
+🔹 Step 4: Start Georeferencing
+Click the green Play button (Start Georeferencing).
+
+✅ PART 3: Spatial Query – Places within 2 km of River
+🔹 Step 1: Add River Layer (Assuming you have it)
+If provided, load river.shp via Layer > Add Layer > Add Vector Layer.
+
+🔹 Step 2: Buffer the River Layer (2 km)
+Go to Vector > Geoprocessing Tools > Buffer.
+
+Input Layer: River
+
+Distance: 2000 meters
+
+Segments: 10
+
+Output: river_buffer_2km.shp
+
+🔹 Step 3: Load Locations Layer
+Load the point layer (e.g., sample.csv, earthquake.csv, or any place data).
+
+🔹 Step 4: Run Spatial Query
+Go to Vector > Spatial Query > Spatial Query.
+
+Set:
+
+Select features from: your location layer (e.g., places)
+
+That are within: river_buffer_2km
+
+Click Apply/Run.
+
+🌟 These selected features are within 2 km of the river.
+
+✅ PART 4: Filter Locations from India
+🔹 Step 1: Make Sure Place Layer Has Country Info
+Ensure a column like "Country" exists with entries like "India".
+
+🔹 Step 2: Select by Expression
+Open Attribute Table → Click Select by Expression (abacus icon).
+
+Use:
+
+sql
+Copy
+Edit
+"Country" = 'India'
+Click Select.
+
+Now only locations from India are selected.
+
+✅ PART 5: Locate Mumbai Region in India Map
+🔹 Step 1: Load Ind_adm0.shp (India boundary shapefile)
+Layer > Add Layer > Add Vector Layer → Load Ind_adm0.shp.
+
+🔹 Step 2: Zoom to Mumbai
+Use the search bar or manually zoom to Maharashtra → Mumbai region.
+
+✅ PART 6: Geo-Reference Mumbai Scan Map
+📌 Hint: Use image file like Mumbai_scan_map.jpg
+🔹 Step 1: Open Georeferencer Again
+Raster > Georeferencer
+
+Load the scan image: Mumbai_scan_map.jpg
+
+Add GCPs by identifying known locations from the image and matching them with map canvas (e.g., CST, Marine Drive).
+
+Use EPSG:4326 and save the georeferenced image (e.g., Mumbai_scan_georef.tif)
+
+Click Start Georeferencing.
+
+✅ It will now appear in the correct place in Mumbai.
+
+🧭 Optional: Add Print Layout
+Project > New Print Layout
+
+Add the map, legend, north arrow, and title.
+
+Export as JPEG or PDF.
+
+-----------------------------------------------------------------------------------------------------
+Add ne 10madmin 0 countries.zip layer:
+
+1. Save with shape file
+
+2. Add raster layer with R17.tif
+
+3. Set appropriate properties and show output with grid EPSG 27700.
+
+2 Open "Open Street Map"
+
+Search "Statue of Unity"
+
+Geo-reference the aerial image of Statue of Unity Region. (Hint: use Image from required Files)
+
+3 Demonstrate the projection of WMS map.
+
+
+✅ TASK 1: Add ne_10m_admin_0_countries.zip, R17.tif, and configure EPSG:27700
+🔹 Step 1: Add ne_10m_admin_0_countries.zip (Natural Earth Vector Layer)
+Extract the ZIP file to a folder (if not already).
+
+Go to Layer > Add Layer > Add Vector Layer.
+
+Click ... and select the file ne_10m_admin_0_countries.shp.
+
+Click Add → The countries will appear on the map.
+
+✔️ This is a shapefile (".shp"), which includes .dbf, .shx, .prj.
+
+🔹 Step 2: Save It as a New Shapefile (Optional)
+Right-click on the layer in Layers Panel → Export > Save Features As.
+
+Format: ESRI Shapefile
+
+CRS: choose EPSG:27700 - British National Grid
+
+Filename: e.g., countries_27700.shp
+
+Click OK to save the new file.
+
+🔹 Step 3: Add Raster Layer R17.tif
+Go to Layer > Add Layer > Add Raster Layer.
+
+Browse and select the raster file R17.tif.
+
+Click Add → The raster will load.
+
+🔹 Step 4: Set CRS and Display Grid in EPSG:27700
+Click the CRS at the bottom-right of QGIS window.
+
+Search for EPSG:27700 → Click OK
+
+All layers will now be shown using British National Grid.
+
+🔹 Step 5: Show Grid Lines
+Go to View > Decorations > Grid.
+
+In the dialog:
+
+Interval: 10000 m for both X and Y
+
+CRS: EPSG:27700
+
+Click OK
+
+Grid lines will appear over your map.
+
+✅ TASK 2: OpenStreetMap & Geo-Reference Statue of Unity Image
+🔹 Step 1: Load OpenStreetMap
+If not already, install QuickMapServices:
+
+Plugins > Manage and Install Plugins > Search: QuickMapServices
+
+Go to Web > QuickMapServices > OSM > OpenStreetMap.
+
+🔹 Step 2: Search "Statue of Unity"
+In the Locator Bar (or via coordinates), type:
+
+nginx
+Copy
+Edit
+Statue of Unity, Gujarat
+Hit Enter → QGIS will zoom to the region.
+
+🔹 Step 3: Open Georeferencer for the Image
+Go to Raster > Georeferencer.
+
+Open the aerial image (e.g., Statue_Unity_Scan.jpg).
+
+Click Add GCP Tool (crosshair icon).
+
+🔹 Step 4: Add Ground Control Points (GCPs)
+Click on known locations in the image.
+
+Match to exact locations on the OpenStreetMap canvas using "From Map Canvas".
+
+Add at least 4 points.
+
+🔹 Step 5: Set Transformation and Export
+Go to Settings > Transformation Settings.
+
+Transformation Type: Linear / Helmert
+
+Target CRS: EPSG:4326 (or match the project CRS)
+
+Output file: Statue_Unity_Georef.tif
+
+Click Start Georeferencing.
+
+The image is now aligned to the correct location.
+
+✅ TASK 3: Demonstrate WMS Projection
+🔹 Step 1: Add a WMS Layer
+Go to Layer > Add Layer > Add WMS/WMTS Layer.
+
+Click New → Enter:
+
+Name: OpenStreetMap WMS
+
+URL: https://ows.terrestris.de/osm/service?
+
+Click OK → Then Connect.
+
+🔹 Step 2: Choose a Layer and Load It
+In the list, choose a WMS layer like:
+
+OSM-WMS
+
+Click Add → The WMS layer will load on the map.
+
+🔹 Step 3: Change Project Projection (To Show CRS Transformation)
+Click CRS icon in bottom-right → choose EPSG:27700
+
+This changes the project CRS, not the WMS data.
+
+QGIS will reproject the WMS tiles on the fly.
+
+You may notice slight shifts in rendering due to reprojection.
+
+🧭 Summary of Projections Used:
+Vector/Raster CRS: EPSG:27700 (British Grid)
+
+Statue of Unity Geo-reference: EPSG:4326 (WGS 84)
+
+WMS Reprojection: From source CRS to EPSG:27700
+
+-----------------------------------------------------------------------------------------------------
+Open "Open Street Map" Search "University of Mumbai Fort Campus"
+
+Geo-reference the aerial image of University of Mumbai Fort Campus.
+
+(Hint: use Image from required Files)
+
+2 Import "10n060e 20101117 gmted mea300.tif" raster data which represent surface elevations map of India.
+
+To study the elevation of hilly area of North India, extract the required Raster area by Extent. Perform Hill Shade surface analysis using the above elevation map.
+
+3 Add Mumbai map and highlight the all Chowpatty in Mumbai.
+
+
+✅ Task 1: Geo-reference University of Mumbai Fort Campus
+🔹 Step 1: Load OpenStreetMap
+Install QuickMapServices (if not already):
+
+Plugins > Manage and Install Plugins > QuickMapServices
+
+Load OSM:
+
+Web > QuickMapServices > OSM > OpenStreetMap
+
+🔹 Step 2: Search for "University of Mumbai Fort Campus"
+In the Locator bar (top right of QGIS), type:
+
+nginx
+Copy
+Edit
+University of Mumbai Fort Campus
+QGIS will zoom to its location near CST (Chhatrapati Shivaji Terminus), Mumbai.
+
+🔹 Step 3: Open the GeoReferencer
+Raster > Georeferencer > Georeferencer
+
+Click the folder icon → Load your aerial image (e.g., Mumbai_Univ_Scan.jpg)
+
+🔹 Step 4: Add Ground Control Points (GCPs)
+Use the Add Point tool in GeoReferencer.
+
+Click recognizable points on the image (e.g., corners of buildings, CST, main gate).
+
+Choose “From Map Canvas” → click same location in OSM layer.
+
+Add at least 4 GCPs.
+
+🔹 Step 5: Transform and Save
+Click the gear icon (Transformation Settings):
+
+Transformation type: Helmert or Linear
+
+Target CRS: EPSG:4326 (WGS 84)
+
+Output raster: Georef_UM_Fort.tif
+
+Click Start Georeferencing → It will generate a georeferenced image and add it to your project.
+
+✅ Task 2: Hillshade Analysis from Elevation Map of India
+🔹 Step 1: Import the Elevation Raster
+Layer > Add Layer > Add Raster Layer
+
+Load 10n060e_20101117_gmted_mea300.tif
+
+This raster represents elevation for a part of India.
+
+🔹 Step 2: Clip to North India (Extract by Extent)
+Go to Raster > Extraction > Clip Raster by Extent
+
+In the window:
+
+Select Input Layer: gmted_mea300.tif
+
+Click “Draw on Canvas” → select rectangle over Himalayan/North India region
+
+Output file: north_india_elevation.tif
+
+Click Run
+
+🔹 Step 3: Perform Hillshade Analysis
+Go to Raster > Analysis > Hillshade
+
+Input Raster: north_india_elevation.tif
+
+Set parameters:
+
+Azimuth = 315° (light from NW)
+
+Altitude = 45°
+
+Z Factor = 1
+
+Output = north_india_hillshade.tif
+
+Click Run
+
+✔️ A hillshade raster will appear—showing shaded relief of the terrain.
+
+✅ Task 3: Highlight Chowpatty Locations on Mumbai Map
+🔹 Step 1: Load Mumbai Map (Vector or Raster)
+Layer > Add Layer > Add Vector/Raster Layer
+
+Load the Mumbai city map file (e.g., Mumbai.shp, Mumbai_map.tif)
+
+🔹 Step 2: Add Chowpatty Locations
+You have two options:
+
+✅ Option A: Manually Add Chowpatty Points
+Create a new Point layer:
+
+Layer > Create Layer > New Shapefile Layer
+
+Geometry type: Point
+
+Fields: name (Text)
+
+Save as: chowpatty.shp
+
+Toggle Editing Mode → Use Add Point Tool
+
+Place points at:
+
+Girgaum Chowpatty
+
+Juhu Chowpatty
+
+Versova
+
+Aksa Beach
+
+Dadar Chowpatty
+
+Save edits → Exit edit mode
+
+✅ Option B: Load Provided Chowpatty Data
+If you have a CSV or SHP of beaches, load it directly:
+
+Use Layer > Add Layer > Add Delimited Text Layer for CSV
+
+Or add shapefile if available
+
+🔹 Step 3: Style Chowpatty Points
+Right-click on the Chowpatty layer → Properties > Symbology
+
+Choose Marker symbol → set color (e.g., Blue) and icon
+
+Add labels:
+
+Go to Labels tab → Select Single Labels
+
+Label with field: name
+
+Apply and close
+
+🖨️ Optional: Export Map Layout
+Project > New Print Layout
+
+Add Map, North Arrow, Legend, Scale Bar
+
+Layout > Export as Image (JPG or PNG)
+
+-----------------------------------------------------------------------------------------------------
+
+Open "Open Street Map"
+
+Search "University of Mumbai Fort Campus"
+
+Geo-reference the aerial image of University of Mumbai Fort Campus.
+
+Geo-reference the aerial image of Church gate
+
+Region. (Hint: use Image from required Files)
+
+Import "10n060e_20101117_gmted_mea300.tif" raster data which represent surface elevations map of India.
+
+To study the elevation of hilly area of North India, extract the required Raster area by Extent.
+
+Perform Terrain analysis using the above elevation map.
+
+
+✅ TASK 1: Geo-reference University of Mumbai Fort Campus and Churchgate Region
+🔹 Step 1: Load OpenStreetMap as a Base Map
+Install QuickMapServices plugin:
+
+Plugins > Manage and Install Plugins → Search: QuickMapServices
+
+After installation:
+
+Go to Web > QuickMapServices > OSM > OpenStreetMap
+
+🔹 Step 2: Search "University of Mumbai Fort Campus"
+Use the Locator bar (top-right corner in QGIS).
+
+Type:
+
+nginx
+Copy
+Edit
+University of Mumbai Fort Campus
+Hit Enter → QGIS zooms to the location near CST, Mumbai.
+
+🔹 Step 3: Open GeoReferencer
+Go to Raster > Georeferencer > Georeferencer.
+
+Click Open Raster → Browse and select the aerial image:
+
+e.g., Mumbai_University_Fort_Campus.jpg
+
+🔹 Step 4: Add Ground Control Points (GCPs)
+Click the Add Point Tool (crosshair).
+
+In the image, click on identifiable features (e.g., CST station, University buildings).
+
+Choose From Map Canvas to click the corresponding location on OSM.
+
+Add at least 4-5 GCPs for accuracy.
+
+🔹 Step 5: Set Transformation Settings and Georeference
+Go to Settings > Transformation Settings:
+
+Transformation Type: Linear or Helmert
+
+Target CRS: EPSG:4326 - WGS 84
+
+Output Raster: name it UM_Fort_Campus_Georef.tif
+
+Click Start Georeferencing
+
+🔹 Step 6: Repeat for Churchgate Region
+In GeoReferencer, click File > Open Raster → Load Churchgate.jpg
+
+Add GCPs by matching image features (like Churchgate Station, Oval Maidan) with OSM locations.
+
+Set Transformation Settings (same as above).
+
+Save as Churchgate_Georef.tif
+
+Click Start Georeferencing
+
+✅ Now both georeferenced aerial images are aligned to real-world coordinates.
+
+✅ TASK 2: Import Elevation Raster for India
+🔹 Step 1: Load Elevation Data
+Go to Layer > Add Layer > Add Raster Layer
+
+Browse and select:
+
+10n060e_20101117_gmted_mea300.tif
+
+Click Add
+
+✅ You will see the elevation data covering a large part of India.
+
+✅ TASK 3: Extract Hilly Area (North India) by Extent
+🔹 Step 1: Use Clip by Extent Tool
+Go to Raster > Extraction > Clip Raster by Extent
+
+Input Layer: gmted_mea300.tif
+
+Click the Select Extent on Canvas tool
+
+Draw a rectangle covering North India (e.g., Himachal, Uttarakhand, Nepal border)
+
+Set Output File: north_india_elevation.tif
+
+Click Run
+
+✅ You now have a raster layer focused on North India.
+
+✅ TASK 4: Perform Terrain Analysis
+Terrain Analysis includes:
+Slope: How steep the terrain is
+
+Aspect: Direction of slope
+
+Hillshade: Simulates shadows to show elevation shape
+
+🔹 Step 1: Generate Slope
+Go to Raster > Terrain Analysis > Slope
+
+Input = north_india_elevation.tif
+
+Output: north_slope.tif
+
+Click Run
+
+🔹 Step 2: Generate Aspect
+Raster > Terrain Analysis > Aspect
+
+Input = north_india_elevation.tif
+
+Output: north_aspect.tif
+
+Click **Run`
+
+🔹 Step 3: Generate Hillshade
+Raster > Analysis > Hillshade
+
+Input = north_india_elevation.tif
+
+Azimuth = 315°, Altitude = 45° (default values are good)
+
+Output: north_hillshade.tif
+
+Click Run
+
+🔹 Step 4: Style the Outputs
+Right-click each raster → Properties > Symbology
+
+Use:
+
+Gradient (white to black) for slope and hillshade
+
+Color wheel for aspect
+
+🧭 Optional: Add Print Layout for Visualization
+Project > New Print Layout
+
+Add the map canvas, legend, north arrow, scale bar
+
+Export as high-res JPEG or PDF
+
+--------------------------------------------------------------------------------------------------------------
+
+1 Create a Road map and add vector layer from Vashi to thane route. Use google map and add dataset to the layer.
+
+20
+
+2 Create vector layer of your own residential area and highlighted buildings, hospitals, and temple with the formatting.
+
+
+✅ Task 1: Create a Road Map from Vashi to Thane Using Google Map as Reference
+🔹 Step 1: Open QGIS and Add Google Satellite or Road Map
+Install QuickMapServices (if not already):
+
+Plugins > Manage and Install Plugins
+
+Search: QuickMapServices → Install
+
+Load Google Map:
+
+Go to Web > QuickMapServices > Google > Google Road or Google Satellite
+
+🔹 Step 2: Create a New Line Vector Layer for Roads
+Go to Layer > Create Layer > New Shapefile Layer
+
+Set:
+
+File name: VashiToThaneRoad.shp
+
+Geometry type: Line
+
+CRS: EPSG:4326 (default WGS 84)
+
+Add attribute fields:
+
+id (Integer)
+
+name (Text)
+
+Click OK to save the layer.
+
+🔹 Step 3: Draw the Route from Vashi to Thane
+Right-click the layer → Toggle Editing
+
+Select Add Line Feature Tool
+
+Use Google Map reference to trace the actual route from Vashi to Thane
+
+After finishing the line, enter attributes like:
+
+id = 1
+
+name = "Vashi to Thane Road"
+
+Click Save Edits → Then toggle editing off.
+
+🔹 Step 4: Style the Road
+Right-click layer → Properties > Symbology
+
+Choose Line:
+
+Set color: e.g., Red or Blue
+
+Set width: 1.0 to 2.5 px
+
+Apply and close.
+
+✅ Your custom road from Vashi to Thane is now mapped and styled.
+
+✅ Task 2: Create a Vector Map of Your Residential Area
+🔹 Step 1: Create Polygon Layer for Your Area
+Layer > Create Layer > New Shapefile Layer
+
+Set:
+
+File name: ResidentialArea.shp
+
+Geometry type: Polygon
+
+Add attributes:
+
+id (Integer)
+
+name (Text)
+
+🔹 Step 2: Add Your Residential Boundary
+Toggle Editing on the ResidentialArea.shp layer
+
+Use Add Polygon Feature Tool
+
+Draw the boundary of your colony or society
+
+Attribute Example:
+
+id = 1
+
+name = "My Home Area"
+
+✅ Save and exit edit mode.
+
+🔹 Step 3: Add Buildings, Hospitals, Temples (Point Layers)
+Repeat these steps for each category:
+
+➤ Buildings
+Create New Point Shapefile Layer → Name: Buildings.shp
+
+Attributes: id, name
+
+Add points on the map where buildings exist.
+
+Style:
+
+Symbol: Square or custom building icon
+
+Color: Gray or Blue
+
+Labels: On name field
+
+➤ Hospitals
+Create New Point Layer → Name: Hospitals.shp
+
+Attributes: id, name
+
+Add points for nearby hospitals.
+
+Style:
+
+Symbol: Cross (+)
+
+Color: Red
+
+Labels enabled
+
+➤ Temples
+Create New Point Layer → Name: Temples.shp
+
+Attributes: id, name
+
+Add temples from your area.
+
+Style:
+
+Symbol: Triangle or use SVG icon (temple)
+
+Color: Orange or Purple
+
+Label field: name
+
+🔹 Step 4: Final Formatting
+Adjust layer order:
+
+Area polygon at bottom
+
+Roads above that
+
+Points (buildings, hospitals, temples) on top
+
+Label all layers appropriately:
+
+Right-click → Properties > Labels
+
+Enable Single Labels, select the name field
+
+🔹 Step 5: Export the Map (Optional)
+Project > New Print Layout
+
+Add the map, north arrow, scale bar, and title.
+
+Export as PDF / JPEG.
+
+--------------------------------------------------------------------------------------------------------------
+
+
+Add vector layers, use this file "\IND_rails.shp and \IND_adm0.shp" from database, set all appropriate properties, formatting and calculate line lengths and statistics with total area covered by water bodies in India.
+
+✅ Step 1: Add Vector Layers IND_rails.shp and IND_adm0.shp
+🔹 1. Open QGIS and Create a New Project
+Project > New
+
+🔹 2. Load the Vector Layers
+Go to: Layer > Add Layer > Add Vector Layer
+
+Browse to:
+
+\IND_rails.shp → Click Add
+
+\IND_adm0.shp → Click Add
+
+✅ You’ll now see:
+
+Railway lines across India (IND_rails)
+
+India's national boundary (IND_adm0)
+
+✅ Step 2: Set Layer CRS (Coordinate Reference System)
+Right-click each layer → Layer CRS > Set Layer CRS
+
+Choose EPSG:4326 (WGS 84) or the CRS used in your dataset
+
+For accurate area/length calculations, reproject to a metric CRS:
+
+Recommended: EPSG:32643 – UTM Zone 43N (for central India)
+
+🔁 Reproject layers:
+Right-click layer → Export > Save Features As
+
+Format: ESRI Shapefile
+
+CRS: EPSG:32643
+
+Save as: IND_rails_projected.shp, IND_adm0_projected.shp
+
+✅ Step 3: Set Appropriate Symbology and Labels
+🔹 For IND_rails_projected.shp
+Right-click → Properties > Symbology
+
+Set:
+
+Line style: Solid
+
+Color: Black or Red
+
+Width: 0.5 to 1 px
+
+Optional: Label the rail lines if they have a name or type field.
+
+🔹 For IND_adm0_projected.shp
+Right-click → Properties > Symbology
+
+Fill: Transparent or light color
+
+Border: Solid outline in dark color
+
+✅ Step 4: Calculate Line Lengths of Railways
+🔹 1. Add a New Field to Store Lengths
+Right-click IND_rails_projected.shp → Open Attribute Table
+
+Click the Toggle Editing (pencil icon)
+
+Click Field Calculator (Σ icon)
+
+🔹 2. Set Parameters in Field Calculator
+Field Name: length_km
+
+Field Type: Decimal (Float)
+
+Expression:
+
+qgis
+Copy
+Edit
+length($geometry)/1000
+(This converts meters to kilometers)
+
+Click OK → Lengths in kilometers are now calculated
+
+Save edits → Toggle editing off
+
+🔹 3. Calculate Total Railway Length
+In the Attribute Table → click Field Statistics (bar chart icon)
+
+Select field: length_km
+
+Check the Sum → this is the total railway length in India.
+
+✅ Step 5: Calculate Total Area Covered by Water Bodies in India
+🔹 1. Add or Create Water Body Layer (if not already)
+If you have a layer like water_bodies.shp, load it.
+
+If not, digitize it manually using polygons:
+
+Create a new shapefile with Polygon geometry
+
+Draw polygons over known lakes/rivers/reservoirs
+
+🔹 2. Project the Water Body Layer to Metric CRS
+Same as before: export it using EPSG:32643
+
+🔹 3. Add a New Field to Calculate Area
+Open Attribute Table of the water layer
+
+Toggle Editing → Click Field Calculator
+
+Add field:
+
+Name: area_sqkm
+
+Type: Decimal (Float)
+
+Expression:
+
+qgis
+Copy
+Edit
+area($geometry)/1000000
+(This converts m² to km²)
+
+Save edits → Toggle Editing Off
+
+🔹 4. Get Total Area Covered by Water Bodies
+Click Field Statistics
+
+Choose field: area_sqkm
+
+The Sum value = total water-covered area in km²
+
+✅ Summary of Tasks and Results
+
+Task	Tool Used	Result
+Add shapefiles	Add Vector Layer	India boundary + rail lines
+Format & style	Symbology settings	Clean and colored map
+Rail length calculation	Field Calculator + Stats	Total railway length in km
+Water area	Polygon Layer + Area Field	Total water-covered area in km²
+🖨️ Optional: Print Layout
+Project > New Print Layout
+
+Add:
+
+Map
+
+Title: “India – Railways and Water Coverage”
+
+Legend, scale bar, north arrow
+
+Export as PDF or JPEG
+
+---------------------------------------------------------------------------------------------------
+
+Add raster layers, use "gl_gpwv3_pdens_90_ascii_one\glds90ag60.asc":
+
+1. Set Properties, symbology
+
+2. Apply raster styling and analysis
+
+3. Apply raster mosaicking and clipping
+
+Write all the steps and show proper output
+
+
+🎯 Objective:
+Add a population density raster layer
+
+Apply styling and raster analysis
+
+Perform mosaicking (if multiple rasters) and clipping to area of interest
+
+✅ Step 1: Add Raster Layer .asc File
+🔹 1. Open QGIS and Load the Raster
+Go to Layer > Add Layer > Add Raster Layer
+
+Browse to:
+
+pgsql
+Copy
+Edit
+gl_gpwv3_pdens_90_ascii_one\glds90ag60.asc
+Click Add
+
+✅ The ASCII raster will load. It represents population density in 1990.
+
+🔹 2. Check Raster Properties
+Right-click the layer → Properties > Information
+
+Confirm:
+
+CRS (should be WGS 84: EPSG:4326)
+
+Cell size
+
+NoData value (often set to -9999 or -9999.0)
+
+✅ Step 2: Apply Raster Styling and Visualization
+🔹 1. Change Color Ramp (Symbology)
+Right-click on the raster → Properties > Symbology
+
+Render Type: Singleband pseudocolor
+
+Color Ramp: Choose a gradient (e.g., Yellow to Red, or Viridis)
+
+Mode: Equal Interval or Quantile
+
+Number of Classes: 5 to 9 (optional)
+
+Click Classify → Then click Apply and OK
+
+✅ The raster will now show population density patterns with color variation.
+
+🔹 2. Apply Histogram Stretch (Optional)
+Go to Properties > Symbology
+
+Under Contrast Enhancement: Set to Stretch to MinMax
+
+Click Apply
+
+🔹 3. Enable Transparency for NoData
+In the same dialog:
+
+Go to Transparency
+
+Add a new transparency value: -9999 (or whatever your NoData is)
+
+Click Apply
+
+✅ Now the blank/no-data areas will be transparent.
+
+✅ Step 3: Raster Analysis (Optional)
+🔹 1. Raster Calculator – Reclassify or Threshold
+Go to Raster > Raster Calculator
+
+To extract high population areas (e.g., >1000 people/km²):
+
+qgis
+Copy
+Edit
+"glds90ag60@1" > 1000
+Output Layer: high_density.tif
+
+✅ This creates a binary raster highlighting high-density zones.
+
+✅ Step 4: Raster Mosaicking and Clipping
+🔹 A. Raster Mosaicking (if you have multiple .asc files)
+Go to Raster > Miscellaneous > Merge
+
+Input layers: Select multiple .asc or .tif raster tiles
+
+Output file: merged_population.tif
+
+Check Place each input file into a separate band (disable if not needed)
+
+Click Run
+
+✅ You now have one single raster layer combining all tiles.
+
+🔹 B. Clipping Raster to Boundary
+Option 1: Clip by Polygon (e.g., admin boundary)
+Load a shapefile like IND_adm0.shp (India boundary)
+
+Go to Raster > Extraction > Clip Raster by Mask Layer
+
+Input:
+
+Raster Layer: glds90ag60.asc (or merged raster)
+
+Mask Layer: IND_adm0
+
+Output: india_pop_clip.tif
+
+Click Run
+
+✅ The raster will now cover only the selected region.
+
+Option 2: Clip by Custom Extent
+Go to Raster > Extraction > Clip Raster by Extent
+
+Manually draw the extent on canvas
+
+Save output as clipped_extent.tif
+
+✅ Final Output Suggestions
+Add labels and legend using Project > New Print Layout
+
+Include:
+
+Population density color legend
+
+North arrow and scale bar
+
+Title: "Population Density 1990 - India"
+
+--------------------------------------------------------------------------------------
+
+1 Open Ind_adm0.shp file in QGIS
+
+Geo-reference the Indian Political Map at appropriate location. (Hint: use Image from required Files)
+
+10
+
+2 Import "10n060e 20101117 gmted mea300.tif" raster data which represent surface elevations map of India. To study the elevation of hilly area of North India, extract the required Raster area by Extent. Perform Terrain analysis using the above elevation map.
+
+20
+
+3 Import "10n060e_20101117_gmted_mea300.tif" raster data which represent surface elevations map of India. To study the elevation of hilly area of North India, extract the required Raster area by Extent. Perform Hill Shade surface analysis using the above elevation map.
+
+
+✅ TASK 1: Open Ind_adm0.shp and Geo-reference the Indian Political Map
+🔹 Step 1: Load Ind_adm0.shp (India's Political Boundary)
+Open QGIS → Start a New Project
+
+Go to Layer > Add Layer > Add Vector Layer
+
+Browse to and load Ind_adm0.shp
+✅ This shapefile shows the India country boundary
+
+🔹 Step 2: Open the GeoReferencer
+Go to Raster > Georeferencer > Georeferencer
+
+In the GeoReferencer window:
+
+Click the Open Raster icon
+
+Load the scanned Indian Political Map image
+(e.g., India_Political_Scan.jpg or similar)
+
+🔹 Step 3: Add Ground Control Points (GCPs)
+Click the Add Point tool (crosshair) in GeoReferencer
+
+Click on known locations on the map image (e.g., Delhi, Mumbai, Kolkata)
+
+When prompted, choose From Map Canvas
+
+Click the corresponding location on the Ind_adm0.shp boundary
+
+Add at least 4-5 GCPs spread across India
+
+🔹 Step 4: Set Transformation Parameters
+Go to Settings > Transformation Settings
+
+Choose:
+
+Transformation type: Helmert or Polynomial 1
+
+Target SRS (CRS): EPSG:4326 (WGS 84)
+
+Output file: India_Political_Georef.tif
+
+Check "Load into QGIS when done"
+
+Click OK
+
+🔹 Step 5: Start Georeferencing
+Click the green play button (Start Georeferencing)
+
+The georeferenced image will now load on top of the shapefile boundary
+
+✅ Your Indian Political Map image is now aligned to its actual location.
+
+✅ TASK 2: Import Elevation Data and Perform Terrain Analysis
+🔹 Step 1: Load the Elevation Raster
+Go to Layer > Add Layer > Add Raster Layer
+
+Browse and load:
+
+Copy
+Edit
+10n060e_20101117_gmted_mea300.tif
+✅ This raster contains elevation data of India
+
+🔹 Step 2: Extract North India Area by Extent
+Go to Raster > Extraction > Clip Raster by Extent
+
+Set:
+
+Input Layer: gmted_mea300.tif
+
+Click Select Extent on Canvas → draw a rectangle over Himalayas/North India
+
+Output file: north_india_elevation.tif
+
+Click Run
+
+✅ This will crop the elevation raster to the North India region
+
+🔹 Step 3: Perform Terrain Analysis – Slope & Aspect
+➤ A. Slope Analysis
+Go to Raster > Terrain Analysis > Slope
+
+Input: north_india_elevation.tif
+
+Output: north_slope.tif
+
+Click Run
+
+✅ This shows how steep each terrain pixel is.
+
+➤ B. Aspect Analysis
+Go to Raster > Terrain Analysis > Aspect
+
+Input: north_india_elevation.tif
+
+Output: north_aspect.tif
+
+Click **Run`
+
+✅ This shows direction of slope (e.g., north-facing, south-facing)
+
+✅ TASK 3: Hillshade Surface Analysis of North India
+🔹 Step 1: (Repeat if needed) Clip Elevation Data to North India
+If not already clipped, redo Task 2 → Step 2
+
+🔹 Step 2: Generate Hillshade
+Go to Raster > Analysis > Hillshade
+
+Input: north_india_elevation.tif
+
+Parameters:
+
+Azimuth: 315° (light from northwest)
+
+Altitude: 45°
+
+Z Factor: 1
+
+Output: north_hillshade.tif
+
+Click Run
+
+✅ This will simulate light and shadows across the hills to give a 3D-like effect
+
+🔹 Step 3: Style the Hillshade
+Right-click north_hillshade.tif → Properties > Symbology
+
+Use:
+
+Singleband gray color ramp
+
+Contrast enhancement: Stretch to MinMax
+
+✅ The hillshade now highlights terrain features visually.
+
+🧭 Optional: Add Print Layout
+Project > New Print Layout
+
+Add:
+
+Base map
+
+Political map overlay
+
+Terrain or hillshade map
+
+North arrow, scale bar, legend
+
+Export as PDF or JPEG
+
+-------------------------------------------------------------------------------------------------
+
+Import "10n060e_20101117_gmted_mea300.tif raster data which represent surface elevations map of India. To study the elevation of hilly area of North India, extract the required Raster area by Extent. Perform Terrain analysis using the above elevation map.
+
+20
+
+2 Use clipper tool from raster and use appropriate attributes, set interval between contour 100.
+
+✅ TASK 1: Import Elevation Raster, Extract North India, Perform Terrain Analysis
+🔹 Step 1: Load the Elevation Raster (10n060e_20101117_gmted_mea300.tif)
+Open QGIS
+
+Go to Layer > Add Layer > Add Raster Layer
+
+Browse to and load:
+
+Copy
+Edit
+10n060e_20101117_gmted_mea300.tif
+✅ This file represents surface elevation of India.
+
+🔹 Step 2: Clip to Hilly Area of North India (By Extent)
+Go to: Raster > Extraction > Clip Raster by Extent
+
+In the dialog:
+
+Input layer: 10n060e_20101117_gmted_mea300.tif
+
+Click Select Extent on Canvas → Draw a box over Himachal Pradesh, Uttarakhand, North East of Jammu & Kashmir (the hilly areas)
+
+Output file: north_india_elevation.tif
+
+Click Run
+
+✅ This gives you a clipped raster for just North India’s hilly region.
+
+🔹 Step 3: Perform Terrain Analysis
+➤ A. Generate Slope Map
+Go to: Raster > Terrain Analysis > Slope
+
+Input: north_india_elevation.tif
+
+Output: slope_north.tif
+
+Click Run
+
+➤ B. Generate Aspect Map
+Go to: Raster > Terrain Analysis > Aspect
+
+Input: north_india_elevation.tif
+
+Output: aspect_north.tif
+
+Click **Run`
+
+✅ You now have maps showing steepness (slope) and direction of slope (aspect)
+
+✅ TASK 2: Generate Contour Lines Using Clipper Tool
+🔹 Step 1: Use Clipper Tool to Prepare Raster (Optional)
+You’ve already clipped North India. If needed, reclip a smaller area:
+
+Raster > Extraction > Clipper
+
+Use Draw on Canvas or exact coordinates.
+
+Save as: clip_hills.tif
+
+🔹 Step 2: Generate Contour Lines
+Go to: Raster > Extraction > Contour
+
+In the dialog:
+
+Input layer: north_india_elevation.tif (or clipped raster)
+
+Interval between contour lines: 100 (meters)
+
+Output file: north_contours.shp
+
+Click Run
+
+✅ This creates vector contour lines every 100 meters (e.g., 200m, 300m, ..., 6000m)
+
+🔹 Step 3: Style the Contours
+Right-click north_contours.shp → Properties > Symbology
+
+Line color: Brown or Gray
+
+Line width: 0.26 or 0.5 px
+
+✅ You can now clearly visualize elevation zones with labeled lines.
+
+🔹 Step 4: Add Labels to Contours (Optional)
+Right-click north_contours.shp → Properties > Labels
+
+Choose:
+
+Single Labels
+
+Value: ELEV (or the field showing elevation)
+
+Click Apply
+
+✅ Now the contour lines will display their elevation values on the map.
+
+-----------------------------------------------------------------------------------------------
+
+
+Create a 3-vector layer to store points representing locations: college, restaurant, hospitals.
+
+25
+
+1. Add roads and railway tracks.
+
+2. Change the color and size of point markers on vector layer to visually differentiate between categories of restaurants.
+
+
+1. create a map from above layers: add label, legend, scale, Add a suitable title with proper formatting.
+
+
+To solve this problem using QGIS, follow these steps. I'll break it down into two parts: creating and customizing the vector layers, then creating the map layout.
+
+### Part 1: Creating Vector Layers for Points (College, Restaurant, and Hospitals)
+
+1. **Open QGIS**: Launch QGIS and start a new project.
+
+2. **Create a New Point Vector Layer for Locations**:
+   - Go to the **Layer** menu and select **Create Layer** > **New Shapefile Layer**.
+   - In the dialog box, select **Point** as the geometry type.
+   - Define the **Coordinate Reference System (CRS)**. You can use **EPSG:4326 (WGS 84)** for global coordinates or a local CRS for your region.
+   - Add fields for the points, such as:
+     - **Name** (text field)
+     - **Category** (text field - to differentiate between college, restaurant, and hospital)
+     - **Description** (optional text field)
+
+   - Click **OK** to create the layer.
+
+3. **Add Features to the Point Layer**:
+   - Toggle **Editing** mode by clicking the **pencil icon** on the toolbar.
+   - Use the **Add Point Feature** tool to add points for your locations. For each location:
+     - **Name**: e.g., “College A”, “Restaurant B”, or “Hospital C”.
+     - **Category**: Enter the category (e.g., "College", "Restaurant", "Hospital").
+     - **Description**: Enter any additional information, if needed.
+
+4. **Save and Stop Editing**:
+   - Once you have added all the points, click **Save Layer Edits** and **Toggle Editing** to stop editing.
+
+### Part 2: Adding Roads and Railway Tracks
+
+1. **Add Road and Railway Track Layers**:
+   - You can download shapefiles for roads and railway tracks from open data sources like OpenStreetMap (OSM) or government websites.
+   - Once you have the shapefiles for roads and railway tracks, go to **Layer** > **Add Layer** > **Add Vector Layer**, and select the shapefiles for roads and railways.
+   - These will appear as separate layers in the **Layers Panel**.
+
+2. **Customize the Symbology for Roads and Railways**:
+   - Right-click on the road and railway layers and select **Properties**.
+   - Under the **Symbology** tab, adjust the **line style** and **color** to differentiate between roads and railways.
+     - Roads: Set a solid line with a road-like color (e.g., gray or brown).
+     - Railways: Set a dashed line with a railway-like color (e.g., dark gray or black).
+
+### Part 3: Customizing the Point Markers for Categories (Restaurants)
+
+1. **Change the Marker Style for Different Categories**:
+   - Right-click the point vector layer and select **Properties**.
+   - Go to the **Symbology** tab.
+   - Choose **Categorized** as the symbol layer type.
+   - Select the **Category** field for classification.
+   - Click the **Classify** button to generate the different categories (college, restaurant, hospital).
+   - Change the color and size of the point markers for each category:
+     - For **Colleges**, you could choose a blue marker.
+     - For **Restaurants**, choose a red or green marker.
+     - For **Hospitals**, choose a yellow or green marker.
+   - You can also adjust the **size** of the points to visually differentiate between categories.
+
+2. **Apply and Close**:
+   - After setting the marker styles, click **OK** to apply the changes.
+
+### Part 4: Creating the Map
+
+1. **Add a Label to the Points**:
+   - Right-click on the point layer and select **Properties**.
+   - Go to the **Labels** tab.
+   - Select **Single labels**.
+   - Choose the **Name** field to display the name of the locations as labels.
+   - Customize the font, size, and placement of the labels to your preference.
+   - Click **OK**.
+
+2. **Add a Legend**:
+   - Go to **Project** > **New Print Layout**.
+   - Give your layout a name and click **OK**.
+   - In the layout window, go to the **Add Legend** button on the toolbar and draw a box to place the legend.
+   - Customize the legend to display the point markers for each category (restaurant, hospital, college) along with roads and railways.
+   - You can adjust the legend’s appearance and order by right-clicking on it and selecting **Properties**.
+
+3. **Add a Scale Bar**:
+   - In the layout window, click the **Add Scale Bar** button on the toolbar.
+   - Draw the scale bar on the map layout.
+   - You can change its style and units by right-clicking on it and selecting **Properties**.
+
+4. **Add a Title**:
+   - In the layout window, click the **Add Label** button.
+   - Draw a box at the top of the map layout and type your desired title (e.g., “Map of Locations: Colleges, Restaurants, and Hospitals”).
+   - Customize the font, size, and positioning as needed.
+
+5. **Adjust Map Layout**:
+   - You can adjust the map’s extent, gridlines, and other elements to fit the layout.
+   - Use the **Move Item Content** tool to reposition elements on the layout.
+
+6. **Export the Map**:
+   - Once you’re satisfied with the map, go to **Layout** > **Export as Image** or **Export as PDF** to save the map.
+
+### Summary of Steps:
+1. Create vector point layers for college, restaurant, and hospital locations.
+2. Add roads and railway track layers.
+3. Customize point markers based on categories (e.g., different colors and sizes).
+4. Add labels, legend, and scale to the map layout.
+5. Add a title and format the layout.
+6. Export the map as an image or PDF.
+
+These steps should help you create the map with differentiated markers, roads, railway tracks, and all the required map elements.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Create vector layer for your residential layer. Add required data to demonstrate the join attribute by location.
+
+
+To show the count points in polygon by using analysis tools.
+
+
+To solve the problem of creating a **residential vector layer**, **joining attributes by location**, and **counting points within polygons** using QGIS, follow the steps below.
+
+### Part 1: Creating a Residential Vector Layer
+
+1. **Open QGIS**: Launch QGIS and start a new project.
+
+2. **Create a New Residential Layer**:
+   - Go to **Layer** > **Create Layer** > **New Shapefile Layer**.
+   - Choose **Point** as the geometry type (assuming we are marking residential points).
+   - Define the **Coordinate Reference System (CRS)**. You can use **EPSG:4326 (WGS 84)** for global coordinates or a local CRS.
+   - Add fields to the layer, such as:
+     - **ID** (integer field)
+     - **Type** (text field, e.g., "Apartment", "Bungalow")
+     - **Owner** (text field)
+     - **Population** (integer field, optional)
+   
+   Click **OK** to create the layer.
+
+3. **Add Residential Points**:
+   - Toggle **Editing** mode by clicking the **pencil icon** on the toolbar.
+   - Use the **Add Point Feature** tool to add points to represent residential locations.
+   - For each point, enter the corresponding values for **Type**, **Owner**, and **Population** (if required).
+   - Save the edits and stop editing.
+
+### Part 2: Create a Polygon Layer (e.g., Residential Zones or Administrative Boundaries)
+
+1. **Create Polygon Layer**:
+   - Go to **Layer** > **Create Layer** > **New Shapefile Layer**.
+   - Choose **Polygon** as the geometry type.
+   - Define the **Coordinate Reference System (CRS)** as per the project needs (e.g., **EPSG:4326 (WGS 84)**).
+   - Add necessary fields to represent attributes of the polygons, such as:
+     - **Zone_Name** (text field)
+     - **Zone_ID** (integer field)
+
+   Click **OK** to create the polygon layer.
+
+2. **Add Polygons**:
+   - Toggle **Editing** mode and use the **Add Polygon Feature** tool to create polygons representing residential zones or administrative boundaries.
+   - For each polygon, enter the relevant information for **Zone_Name** and **Zone_ID**.
+   - Save and stop editing once the polygons are created.
+
+### Part 3: Join Attributes by Location (Points to Polygons)
+
+To perform a **spatial join** to combine information from the residential points layer with the polygon layer based on their location:
+
+1. **Go to the Processing Toolbox**:
+   - Open the **Processing Toolbox** by clicking on **Processing** > **Toolbox**.
+
+2. **Perform the Spatial Join**:
+   - In the Processing Toolbox, search for **"Join attributes by location"**.
+   - Select the **Join attributes by location (summary)** tool from the results.
+   - Set the following parameters:
+     - **Input layer**: Choose your **Residential Points Layer**.
+     - **Join layer**: Choose your **Polygon Layer** (residential zones or administrative boundaries).
+     - **Geometric predicate**: Choose **"intersects"** (or another suitable predicate based on your needs).
+     - **Summarize the attributes of the points**: Select which attributes from the point layer you want to summarize (e.g., Population, Owner).
+     - **Join type**: Choose **"Create separate fields for each summary"** or any other suitable option.
+   
+   - Click **Run** to execute the join. The output will be a new layer where the residential points have been joined with their corresponding polygon's attributes.
+
+### Part 4: Count Points in Polygon Using Analysis Tools
+
+To count the number of points (residential locations) that fall within each polygon (e.g., residential zones or administrative boundaries), use the **"Count points in polygon"** tool.
+
+1. **Use the Count Points in Polygon Tool**:
+   - In the Processing Toolbox, search for **"Count points in polygon"**.
+   - Select the **Count points in polygon** tool.
+   - Set the following parameters:
+     - **Input layer**: Choose your **Polygon Layer** (e.g., residential zones).
+     - **Points layer**: Choose your **Residential Points Layer**.
+     - **Count field name**: Provide a name for the new field that will store the count of points in each polygon (e.g., **"Point_Count"**).
+
+   - Click **Run** to execute the tool.
+
+   After running the tool, a new polygon layer will be created with an additional field (**Point_Count**) that holds the count of points (residential locations) within each polygon (zone).
+
+### Part 5: Visualizing the Results
+
+1. **Style the Polygon Layer**:
+   - Right-click the **Polygon Layer** and select **Properties**.
+   - Go to the **Symbology** tab and choose **Graduated** as the symbol style.
+   - Choose the **Point_Count** field to visualize the number of points in each polygon.
+   - Select a color ramp to represent the point count (e.g., from light to dark).
+   - Click **OK** to apply the changes.
+
+2. **Label the Polygons**:
+   - Right-click the **Polygon Layer** and select **Properties**.
+   - Go to the **Labels** tab and select **Single labels**.
+   - Choose the **Point_Count** field to display the count of points in each polygon.
+   - Customize the font, size, and placement of the labels as needed.
+
+### Part 6: Creating the Map Layout
+
+1. **Go to Print Layout**:
+   - Go to **Project** > **New Print Layout** to create a map layout.
+   - Give the layout a name and click **OK**.
+
+2. **Add Map Elements**:
+   - In the print layout window, use the **Add Map** tool to add the map to the layout.
+   - Adjust the extent of the map to focus on the relevant areas.
+   - Use the **Add Legend** tool to add a legend that describes the polygon layer and the point count.
+   - Use the **Add Scale Bar** tool to add a scale bar.
+   - Use the **Add Label** tool to add a title to the map (e.g., "Residential Points by Zone").
+
+3. **Export the Map**:
+   - Once you're satisfied with the layout, go to **Layout** > **Export as Image** or **Export as PDF** to save the map.
+
+### Summary of Steps:
+1. Create the **residential points layer** and add attributes like type, owner, and population.
+2. Create the **polygon layer** representing residential zones or boundaries.
+3. Perform **spatial join** to combine point attributes with polygon attributes.
+4. Use **Count points in polygon** to count the number of points within each polygon.
+5. Style the polygons based on the point count and label them.
+6. Create the map layout, including the map, legend, scale bar, and title.
+7. Export the map.
+
+By following these steps, you can effectively demonstrate **joining attributes by location** and **counting points in polygons** in QGIS.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+1
+
+1. Add 1 Highways (id="375")
+
+2. Add 6 Farms (id, own name) (2 farms near Highway)
+
+3. Add 4 narrow Paths between farms (id)
+
+4. Add a main road that passes near farms and touches the highway.
+
+5. Add 2 Farm houses in any two farms (id, frm id).
+
+6. Add 4 Residential areas. (at-least one near farm and one near main road)
+
+7. Add two Primary Schools
+
+8. Add a Bus stop and an Auto Stand near a main road.
+
+9. Add a Grampanchayat office
+
+10. Add 4 wells (3 in farms and 1 in residential area)
+
+2 
+Perform the following queries on above layers
+
+1. Show all the farms that contains well.
+
+2. Calculate area of each farm and Show the largest farm.
+
+3. Show all the paths that intersect with Highways.
+
+
+To solve the problem step by step using QGIS, we'll break it down into two parts: adding the layers and features, then performing the queries as specified.
+
+---
+
+### Part 1: Adding Layers and Features
+
+#### Step 1: Create a New Project in QGIS
+1. **Open QGIS**: Launch QGIS and start a new project.
+
+#### Step 2: Create Layers for Different Features
+
+1. **Create the Highways Layer**:
+   - Go to **Layer** > **Create Layer** > **New Shapefile Layer**.
+   - Set the geometry type to **Line** (for highways).
+   - Add the following field:
+     - **id** (integer field)
+   - Click **OK** to create the layer.
+   
+   - Add a highway with **id = 375** using the **Add Line Feature** tool. Draw a highway line in your map area.
+
+2. **Create the Farms Layer**:
+   - Go to **Layer** > **Create Layer** > **New Shapefile Layer**.
+   - Set the geometry type to **Polygon** (for farms).
+   - Add the following fields:
+     - **id** (integer field)
+     - **owner_name** (text field)
+   - Click **OK** to create the layer.
+
+   - Add six farms by creating polygons. For two of them, place them near the highway. Assign the **id** and **owner_name** for each farm as you add them.
+
+3. **Create the Paths Layer**:
+   - Go to **Layer** > **Create Layer** > **New Shapefile Layer**.
+   - Set the geometry type to **Line** (for paths).
+   - Add an **id** field (integer field).
+   - Click **OK** to create the layer.
+   
+   - Add four narrow paths by drawing lines between farms, assigning an **id** to each path.
+
+4. **Create the Main Road Layer**:
+   - Go to **Layer** > **Create Layer** > **New Shapefile Layer**.
+   - Set the geometry type to **Line** (for the main road).
+   - Add an **id** field (integer field).
+   - Click **OK** to create the layer.
+   
+   - Draw the main road, ensuring it passes near farms and touches the highway. Assign an **id** to the main road.
+
+5. **Create the Farmhouses Layer**:
+   - Go to **Layer** > **Create Layer** > **New Shapefile Layer**.
+   - Set the geometry type to **Point** (for farmhouses).
+   - Add the following fields:
+     - **id** (integer field)
+     - **frm_id** (integer field, referencing the farm)
+   - Click **OK** to create the layer.
+   
+   - Add two farmhouses, placing them in different farms. Assign an **id** and **frm_id** for each farmhouse.
+
+6. **Create the Residential Areas Layer**:
+   - Go to **Layer** > **Create Layer** > **New Shapefile Layer**.
+   - Set the geometry type to **Polygon** (for residential areas).
+   - Add the following fields:
+     - **id** (integer field)
+   - Click **OK** to create the layer.
+   
+   - Add four residential areas. Ensure that at least one is near a farm and one near the main road.
+
+7. **Create the Primary Schools Layer**:
+   - Go to **Layer** > **Create Layer** > **New Shapefile Layer**.
+   - Set the geometry type to **Point** (for schools).
+   - Add the following fields:
+     - **id** (integer field)
+   - Click **OK** to create the layer.
+   
+   - Add two primary schools as points in your map.
+
+8. **Create the Bus Stop and Auto Stand Layer**:
+   - Go to **Layer** > **Create Layer** > **New Shapefile Layer**.
+   - Set the geometry type to **Point** (for bus stop and auto stand).
+   - Add the following fields:
+     - **id** (integer field)
+   - Click **OK** to create the layer.
+   
+   - Add a bus stop and auto stand near the main road.
+
+9. **Create the Grampanchayat Office Layer**:
+   - Go to **Layer** > **Create Layer** > **New Shapefile Layer**.
+   - Set the geometry type to **Point** (for the office).
+   - Add the following fields:
+     - **id** (integer field)
+   - Click **OK** to create the layer.
+   
+   - Add the Grampanchayat office as a point.
+
+10. **Create the Wells Layer**:
+    - Go to **Layer** > **Create Layer** > **New Shapefile Layer**.
+    - Set the geometry type to **Point** (for wells).
+    - Add the following fields:
+      - **id** (integer field)
+   - Click **OK** to create the layer.
+
+    - Add four wells, three within the farms and one within a residential area.
+
+---
+
+### Part 2: Performing the Queries
+
+Now that all the layers and features have been created, let's perform the required queries.
+
+#### Query 1: Show All the Farms that Contain a Well
+
+1. **Perform a Spatial Join**:
+   - Go to the **Processing Toolbox** (View > Panels > Processing Toolbox).
+   - Search for **"Join attributes by location"**.
+   - Select **Join attributes by location (summary)**.
+   - Set the following parameters:
+     - **Input layer**: Choose the **Farms Layer**.
+     - **Join layer**: Choose the **Wells Layer**.
+     - **Geometric predicate**: Choose **"Contains"**.
+     - **Summary**: Choose **Count** to count the wells in each farm.
+   
+   - Click **Run**. This will generate a new layer showing farms that contain wells.
+
+2. **Style the Results**:
+   - Right-click the result layer, go to **Properties**, and style it to show only farms that have a well (e.g., using a different color or label).
+
+#### Query 2: Calculate the Area of Each Farm and Show the Largest Farm
+
+1. **Calculate Area**:
+   - Right-click the **Farms Layer** and select **Open Field Calculator**.
+   - In the expression box, type:
+     ``` 
+     $area
+     ```
+   - Name the field **"Area"** and set the field type to **Decimal Number**.
+   - Click **OK** to create the area field.
+
+2. **Show the Largest Farm**:
+   - Go to the **Attribute Table** of the **Farms Layer**.
+   - Sort the **Area** field in descending order.
+   - The largest farm will be at the top.
+
+#### Query 3: Show All the Paths that Intersect with Highways
+
+1. **Perform a Spatial Query**:
+   - Go to the **Processing Toolbox** and search for **"Extract by location"**.
+   - Select the **Extract by location** tool.
+   - Set the following parameters:
+     - **Input layer**: Choose the **Paths Layer**.
+     - **Predicates**: Choose **"Intersects"**.
+     - **Overlay layer**: Choose the **Highways Layer**.
+   
+   - Click **Run**. This will create a new layer showing all the paths that intersect with highways.
+
+2. **Style the Results**:
+   - Right-click the result layer and style it to make it visually distinct.
+
+---
+
+### Part 3: Creating the Map Layout
+
+1. **Create the Map Layout**:
+   - Go to **Project** > **New Print Layout** to create a new map layout.
+   - Add a map, legend, scale bar, and title to the layout.
+   - Customize the map to show all the layers and highlight the results of your queries.
+
+2. **Export the Map**:
+   - Once you’re happy with the map, go to **Layout** > **Export as Image** or **Export as PDF** to save your map.
+
+---
+
+### Summary of Steps:
+1. **Create vector layers** for all features (Highways, Farms, Paths, Main Road, Farmhouses, Residential Areas, Schools, Bus Stops, Grampanchayat Office, and Wells).
+2. **Add features** to the layers (e.g., farms, highways, roads, points for buildings).
+3. **Perform spatial queries** using tools like **Join attributes by location**, **Extract by location**, and **Field Calculator** to calculate areas.
+4. **Style and display the results** of queries (e.g., farms with wells, largest farm, paths intersecting highways).
+5. **Create a map layout** and export the map for presentation.
+
+This approach should allow you to create the necessary layers, features, and queries in QGIS effectively.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Create a map of Railway route CST to Chembur including the building adjacent rails. Use any 7 layers and show stations.
+
+
+2 Create dataset for all layers.
+
+Here’s how you can **create a map of the railway route from CST (Chhatrapati Shivaji Terminus) to Chembur**, **add adjacent buildings**, and use **7 layers**, including **stations**, using **QGIS** step by step.
+
+---
+
+## ✅ PART 1: Create a Map of Railway Route CST to Chembur
+
+---
+
+### 🔹 Step 1: Open QGIS & Create New Project
+
+- Launch **QGIS**
+- Start a **new project**
+
+---
+
+### 🔹 Step 2: Add Base Map (Optional but Helpful)
+
+- Install the **QuickMapServices Plugin** (if not already installed):
+  - Go to **Plugins > Manage and Install Plugins > Search "QuickMapServices" > Install**
+- After installation:
+  - Go to **Web > QuickMapServices > OpenStreetMap > OSM Standard**
+  - You now have a satellite/street map to guide your drawing.
+
+---
+
+### 🔹 Step 3: Create Vector Layers
+
+You’ll create **7 vector layers** as mentioned.
+
+#### 🟢 1. Railway Line Layer (Line Geometry)
+
+- Go to **Layer > Create Layer > New Shapefile Layer**
+- Geometry Type: **Line**
+- Add field: `id` (Integer)
+- Name it: `railway_route`
+- Click **OK** and save it
+- Use **Add Line Feature** to draw railway from **CST to Chembur** (follow base map)
+
+#### 🟢 2. Station Points (Point Geometry)
+
+- New Shapefile Layer → Geometry: **Point**
+- Fields:
+  - `station_id` (Integer)
+  - `station_name` (Text)
+- Name it: `stations`
+- Click OK
+- Add stations along the line:
+  - CST, Masjid, Sandhurst Road, Byculla, Chinchpokli, Curry Road, Parel, Dadar, Matunga, Sion, Kurla, Tilak Nagar, Chembur
+
+#### 🟢 3. Buildings (Polygon Geometry)
+
+- New Shapefile Layer → Geometry: **Polygon**
+- Fields:
+  - `building_id` (Integer)
+  - `type` (Text – e.g., residential/commercial)
+- Name it: `buildings`
+- Draw buildings that are **adjacent to the railway** and **near stations**
+
+#### 🟢 4. Roads Layer (Line Geometry)
+
+- Geometry: **Line**
+- Field: `road_name` (Text)
+- Name: `roads`
+- Draw nearby roads connecting to stations
+
+#### 🟢 5. Railway Buffer Zone (Polygon)
+
+- Create later using **Buffer Tool** to define safety/buffer zone
+
+#### 🟢 6. Admin Boundaries (Polygon)
+
+- Create a layer showing **ward or local boundary**
+- Field: `name` (Text)
+- Use polygons to represent local areas crossed by the railway
+
+#### 🟢 7. Land Use / Zone (Polygon)
+
+- Fields: `zone_type` (text: commercial, residential, slum, etc.)
+- Show areas (by polygons) showing types of zones crossed
+
+---
+
+## ✅ PART 2: Create Dataset for All Layers
+
+For each layer, you'll **digitize features** by toggling edit mode:
+
+---
+
+### 🚉 Railway Route Layer
+
+- Click on `railway_route` > Toggle Editing (pencil icon)
+- Use **Add Line Feature** to trace the railway line from **CST to Chembur**
+- Save the feature
+
+---
+
+### 🏫 Station Points
+
+- Toggle editing on `stations`
+- Use **Add Point Feature**
+- Click at each station location
+- Enter `station_id` and `station_name` (CST = 1, Chembur = last, etc.)
+- Save edits
+
+---
+
+### 🏢 Buildings
+
+- Toggle edit mode on `buildings`
+- Use **Add Polygon Feature**
+- Digitize shapes near the railway (residential or commercial)
+- For each, assign `building_id` and `type`
+
+---
+
+### 🛣 Roads
+
+- Toggle editing on `roads`
+- Use **Add Line Feature**
+- Digitize roads connecting stations or running parallel
+- Assign road names (optional)
+
+---
+
+### 🟫 Railway Buffer Zone
+
+- Use **Buffer Tool**:
+  - Go to **Processing Toolbox**
+  - Search: **Buffer**
+  - Input Layer: `railway_route`
+  - Distance: **20 meters** (or your choice)
+  - Output Layer: Save as `railway_buffer`
+- This gives a safety or proximity zone around the tracks
+
+---
+
+### 📍 Administrative Boundaries
+
+- Use polygons to mark wards or zones (e.g., `Fort`, `Byculla`, `Chembur`)
+- Enter `name` field accordingly
+
+---
+
+### 🗺 Land Use
+
+- Use polygon layer
+- Mark different zones (residential, slum, commercial)
+- Enter `zone_type` during digitizing
+
+---
+
+## ✅ PART 3: Style the Layers
+
+1. **Go to Layer Properties > Symbology**
+2. Use:
+   - **Railway** – black or red thick line
+   - **Stations** – circles with labels
+   - **Buildings** – fill by type (residential = blue, commercial = yellow)
+   - **Buffer** – semi-transparent red
+   - **Roads** – gray thin lines
+   - **Admin areas** – outline only
+   - **Land use** – different color fills
+
+---
+
+## ✅ PART 4: Create a Map Layout
+
+1. Go to **Project > New Print Layout**
+2. Name the layout: `CST_Chembur_Map`
+3. In Layout:
+   - **Add Map** (drag to place full map)
+   - **Add Title**: “CST to Chembur Railway Route with Adjacent Features”
+   - **Add Legend**
+   - **Add North Arrow**
+   - **Add Scale Bar**
+4. Export as **PDF** or **Image**
+
+---
+
+## ✅ BONUS: Label the Stations
+
+- Right-click on `stations` layer > Properties > **Labels**
+- Enable **Single Labels**
+- Choose `station_name` for label
+- Adjust font/placement as needed
+
+---
+
+## ✅ FINAL OUTPUT
+
+You now have:
+- 7 Layers:
+  1. Railway Route
+  2. Stations
+  3. Buildings
+  4. Roads
+  5. Buffer Zone
+  6. Administrative Boundaries
+  7. Land Use
+- Full map from CST to Chembur
+- Styled, labeled, export-ready map layout
+
+---
+
+Let me know if you'd like sample datasets or attribute tables for each layer!
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+Create vector data. (add minimum 5 layers)
+
+30
+
+1. Line
+
+2. Polygon
+
+3. Add point object
+
+Prepare appropriate database.
+
+2 Demonstrate the use of analytical tools distance matrix, points in layer
+
+
+Here is a detailed, step-by-step guide to **create vector data with at least 5 layers**, including **Line, Polygon, and Point objects**, **prepare a database**, and **use analytical tools like Distance Matrix and Points in Polygon** in **QGIS**.
+
+---
+
+## ✅ PART 1: Create Vector Data with Minimum 5 Layers
+
+---
+
+### 🔹 Step 1: Open QGIS and Start a New Project
+
+- Open **QGIS Desktop**
+- Save your project: `Project > Save As` → give a name like `vector_analysis.qgz`
+
+---
+
+### 🔹 Step 2: Create a New GeoPackage Database (to store all layers)
+
+A GeoPackage (`.gpkg`) is a database file that stores multiple layers in one file.
+
+1. Go to **Layer > Create Layer > New GeoPackage Layer**
+2. Name the GeoPackage file: `my_analysis_data.gpkg`
+3. Choose **Layer Name**: e.g., `roads`
+4. Set Geometry Type: **Line**
+5. Add Fields:
+   - `id` (integer)
+   - `road_name` (text)
+6. Click **OK** to create the layer and add it to the map.
+
+---
+
+### 🔹 Step 3: Add Additional Layers to the Same GeoPackage
+
+To add more layers into the same GeoPackage:
+
+1. Go to **Layer > Create Layer > New GeoPackage Layer**
+2. Use the same file: `my_analysis_data.gpkg`
+3. Add the following layers:
+
+| Layer Name       | Geometry | Fields                             |
+|------------------|----------|-------------------------------------|
+| buildings        | Polygon  | `id` (int), `type` (text)           |
+| parks            | Polygon  | `id` (int), `park_name` (text)      |
+| houses           | Point    | `id` (int), `owner` (text)          |
+| bus_stops        | Point    | `id` (int), `stop_name` (text)      |
+
+Repeat this process for each.
+
+Now you have 5 layers:
+1. Roads (Line)
+2. Buildings (Polygon)
+3. Parks (Polygon)
+4. Houses (Point)
+5. Bus Stops (Point)
+
+---
+
+### 🔹 Step 4: Digitize Data in Each Layer
+
+#### 🛣 Roads
+- Right-click `roads` > Toggle Editing
+- Use **Add Line Feature** to draw 2–3 road lines
+- Enter `id` and `road_name`
+- Click **Save Layer Edits**
+
+#### 🏢 Buildings
+- Toggle editing on `buildings`
+- Use **Add Polygon Feature** to draw 3–4 buildings
+- Enter attributes like type: "residential", "office", etc.
+
+#### 🌳 Parks
+- Add polygons representing parks (at least 2)
+
+#### 🏠 Houses
+- Add point features for houses
+- Give unique owner names
+
+#### 🚌 Bus Stops
+- Add 2–3 bus stops as points near roads
+
+---
+
+## ✅ PART 2: Analytical Tools
+
+---
+
+### 🔹 Tool 1: **Distance Matrix** (Find distance between houses and bus stops)
+
+1. Go to **Processing Toolbox** (View > Panels > Processing Toolbox)
+2. Search: **Distance Matrix**
+3. Select: **Distance Matrix**
+
+#### Set Parameters:
+- **Input point layer**: `houses`
+- **Target point layer**: `bus_stops`
+- **Output matrix type**: `Linear (N*k)`
+- **Use only the nearest (k) target points**: `1` (nearest)
+- Choose an output file: CSV or temporary layer
+
+> This gives a table showing the distance from each house to its nearest bus stop.
+
+---
+
+### 🔹 Tool 2: **Count Points in Polygon** (Find how many houses fall in each building or park)
+
+1. Go to **Processing Toolbox**
+2. Search: **Count Points in Polygon**
+3. Select: **Count Points in Polygon**
+
+#### Set Parameters:
+- **Polygon layer**: `buildings` or `parks`
+- **Point layer**: `houses`
+- Output: Save to temporary or file layer
+
+> This adds a new field to the polygon layer showing the **count of points (houses)** inside each building/park.
+
+---
+
+## ✅ PART 3: View and Style Results
+
+- Open **attribute tables** of your layers
+- For Distance Matrix: View CSV to analyze nearest distances
+- For Count in Polygon: Sort by count to find which building/park has most houses
+
+---
+
+## ✅ PART 4: Optional – Create a Layout Map
+
+1. Go to **Project > New Print Layout**
+2. Name: `Vector Analysis Map`
+3. Add a map, title, legend, north arrow, and scale bar
+4. Export as PDF or Image
+
+---
+
+## ✅ Summary
+
+### You’ve Completed:
+✔ Created a **GeoPackage database**  
+✔ Added **5 vector layers**: Roads, Buildings, Parks, Houses, Bus Stops  
+✔ Digitized features (line, polygon, point)  
+✔ Used **Distance Matrix** to analyze proximity  
+✔ Used **Points in Polygon** to count house points inside polygons
+
+---
+
+Let me know if you want screenshots, sample data, or help with styling or map layout!
+
+-------------------------------------------------------------------------------------------------------------
+
+Max. Marks: 50
+
+1
+
+Use "Mumbai Map":
+
+1. Add scale to 40000, CRS-WGS 84
+
+30
+
+2. Add legend
+
+3. Add scale Bar
+
+4. Set proper suitable properties.
+
+5. Give proper name to map
+
+6. Import CSV File
+
+7. Specify layer name and show geometry CRS-WGS 84
+
+2  Install and enable plugins (experimental plugins).
+
+
+✅ PART 1: Work with "Mumbai Map"
+🔹 Step 1: Open QGIS and Load Mumbai Map
+Open QGIS Desktop
+
+Start a new project
+
+Load the Mumbai Map:
+
+If it’s a shapefile, use: Layer > Add Layer > Add Vector Layer
+
+Browse and load the map file
+
+🔹 Step 2: Set CRS to WGS 84
+Look at the bottom-right corner of QGIS – click on the CRS code
+
+In the dialog:
+
+Search and select WGS 84 (EPSG:4326)
+
+Click OK
+
+To confirm:
+
+Right-click on your Mumbai layer > Layer CRS > Set Layer CRS > WGS 84 (EPSG:4326)
+
+🔹 Step 3: Set Scale to 1:40000
+On the status bar (bottom), find the scale box
+
+Type 1:40000 and press Enter
+
+🔹 Step 4: Add Map Elements (Legend, Scale Bar, Title)
+Go to Project > New Print Layout
+
+Give layout a name: Mumbai_Map_Layout
+
+In the layout window:
+
+✅ Add Map:
+Click Add Map tool → drag on the page to place your map
+
+✅ Add Title:
+Use Add Label tool
+
+Enter title: Mumbai Map - Urban Features
+
+Format: Bold, 16–20pt font
+
+✅ Add Legend:
+Click Add Legend
+
+Customize which layers appear using the Item Properties panel
+
+✅ Add Scale Bar:
+Click Add Scale Bar
+
+In properties:
+
+Set Units: meters/kilometers
+
+Set scale ratio accordingly (1:40000)
+
+🔹 Step 5: Set Suitable Map Properties
+In the Print Layout, under Item Properties of the map:
+
+Set Map Scale to 1:40000
+
+Lock scale so it doesn’t change
+
+You may also:
+
+Add North Arrow from Add Picture
+
+Choose CRS and units properly
+
+🔹 Step 6: Import CSV File
+Go to Layer > Add Layer > Add Delimited Text Layer
+
+Click ... Browse and choose your .csv file
+
+Choose X and Y fields (e.g., Longitude = X, Latitude = Y)
+
+Set Geometry CRS as EPSG:4326 (WGS 84)
+
+Set Layer Name (e.g., Hospital_Locations)
+
+Click Add
+
+✅ CSV points will appear as a new point layer on your map.
+
+✅ PART 2: Install and Enable Plugins (including Experimental Plugins)
+🔹 Step 1: Open Plugin Manager
+Go to Plugins > Manage and Install Plugins
+
+🔹 Step 2: Enable Experimental Plugins
+In the Plugin Manager:
+
+Click Settings tab
+
+Check the box: "Show also experimental plugins"
+
+Click OK
+
+🔹 Step 3: Install Useful Plugins
+Some helpful plugins:
+
+
+Plugin Name	Purpose
+QuickMapServices	Add base maps (like Google/OSM)
+MMQGIS	Tools for CSV, geometry, joins
+Lat Lon Tools	Convert coordinates
+Value Tool	View raster values interactively
+To install:
+
+Go to All tab
+
+Search plugin name (e.g., QuickMapServices)
+
+Click Install
+
+----------------------------------------------------------------------------------
+Create a map of your own residential area
+
+1. Add 4 Area (id, name)
+
+2. Add 4 Garden (id, name)
+
+3. Add 2 Highways (id, name)
+
+4. Add 2 railway track (id, name, line)
+
+5. Add 5 Railway stations( id, name, line)
+
+6. Add 5 Restaurants (id, name)
+
+[At least 2 should be inside any garden]
+
+7. Add 5 Hospitals
+
+8. Add 10 Building/residential compound / Business Park.
+
+2
+
+Perform the following queries on above layers
+
+1. Add a new column Garden area and calculate the area of each garden
+
+2. Show the largest garden.
+
+3. Show all the railway tracks that intersect with Highways.
+
+4. Find all the restaurants inside a garden.
+
+5. Find all the railway tracks that do not intersects with highway
+
+
+✅ PART 1: Create Layers and Add Features
+🔹 Step 1: Create a GeoPackage Database
+Layer > Create Layer > New GeoPackage Layer
+
+Name the file: urban_features.gpkg
+
+Create first layer:
+
+
+Layer Name	Geometry	Fields
+area	Polygon	id (int), name (text)
+Click OK — it will be added to the map.
+
+🔹 Step 2: Add Remaining Layers in the Same GeoPackage
+Repeat the process by selecting the same .gpkg file.
+
+
+Layer Name	Geometry	Fields
+garden	Polygon	id (int), name (text)
+highways	Line	id (int), name (text)
+railway_tracks	Line	id (int), name (text), line (text)
+railway_stations	Point	id (int), name (text), line (text)
+restaurants	Point	id (int), name (text)
+hospitals	Point	id (int), name (text)
+buildings	Polygon	id (int), name (text)
+🔹 Step 3: Add Features to Layers
+✅ Use the "Digitizing" Tools:
+Right-click each layer → Toggle Editing
+
+Use:
+
+Add Polygon Feature → for area, garden, buildings
+
+Add Line Feature → for highways, railway_tracks
+
+Add Point Feature → for railway_stations, restaurants, hospitals
+
+💡 While adding restaurants, ensure at least 2 are inside garden polygons.
+
+After adding features → Click Save Layer Edits and Toggle Editing again to stop.
+
+✅ PART 2: Perform Spatial and Attribute Queries
+🔹 Query 1: Add Garden Area Column and Calculate Area
+Open Attribute Table of garden layer
+
+Click Field Calculator (abacus icon)
+
+Create a new field:
+
+Name: area_m2
+
+Type: Decimal / Float
+
+Expression: area($geometry)
+
+Click OK – now each garden has its area in square meters
+
+🔹 Query 2: Show the Largest Garden
+In the attribute table of garden layer
+
+Click Sort on the area_m2 column (descending)
+
+The first row = largest garden
+
+You can also select it on the map and highlight it.
+
+🔹 Query 3: Railway Tracks Intersecting Highways
+Menu > Vector > Research Tools > Select by Location
+
+Parameters:
+
+Select features from: railway_tracks
+
+Where the features intersect
+
+By comparing to: highways
+
+Click Run
+
+View selected tracks in the attribute table
+
+🔹 Query 4: Restaurants Inside a Garden
+Vector > Research Tools > Select by Location
+
+Select features from: restaurants
+
+Where features are within
+
+Comparing to: garden
+
+Click Run
+
+Selected restaurants are the ones inside any garden
+
+🔹 Query 5: Railway Tracks that Do Not Intersect Highways
+Use Invert Selection:
+
+First, run previous intersect query to select intersecting tracks
+
+In railway_tracks attribute table:
+
+Click Invert Selection (top toolbar)
+
+Now the selection shows tracks not intersecting highways
+
+OR you can use expression in Select by Expression:
+
+sql
+Copy
+Edit
+NOT intersects(geometry(@layer), geometry(get_feature('highways', 'id', attribute('id'))))
+For complex intersections, prefer using Processing Toolbox > Extract by Location (inverse).
+
+✅ Optional: Create a Layout Map
+Go to Project > New Print Layout
+
+Add your map, title, legend, scale bar, and export to PDF
+
+----------------------------------------------------------------------------------------------------------------
+
+25
+
+1. Add 4 Area (id, name)
+
+2. Add 4 Garden (id, name)
+
+3. Add 2 Highways (id, name)
+
+4. Add 2 railway track (id, name, line)
+
+5. Add 5 Railway stations (id, name, line)
+
+[At least 2 should be inside any garden] 6. Add 5 Restaurants (id, name)
+
+7. Add 5 Hospitals
+
+8. Add 10 Building/residential compound/ Business.
+
+Create a Map using above layers
+
+Add the following
+
+1. Add a North Pointer
+
+2. Add Legend and Scale
+
+3. Use "any "Symbol to indicate hospitals.
+
+4. Use a symbol indicating Metro station for one of the railway stations.
+
+5. Save your map in JPEG format with 1500 dpi of resolution.
+
+
+
+Here is a **step-by-step guide** to complete your **QGIS map project** (25 marks) using the layers and features you described, and creating a high-resolution map with symbology, legend, scale, and export.
+
+---
+
+## ✅ PART 1: Create Vector Layers and Add Features
+
+---
+
+### 🔹 Step 1: Create a GeoPackage or Shapefiles
+
+1. Go to **Layer > Create Layer > New GeoPackage Layer** (or New Shapefile Layer)
+2. Create each layer with appropriate geometry and fields:
+
+| Layer Name           | Geometry | Fields                                     |
+|----------------------|----------|---------------------------------------------|
+| `area`               | Polygon  | `id` (int), `name` (text)                   |
+| `garden`             | Polygon  | `id` (int), `name` (text)                   |
+| `highways`           | Line     | `id` (int), `name` (text)                   |
+| `railway_tracks`     | Line     | `id` (int), `name` (text), `line` (text)    |
+| `railway_stations`   | Point    | `id` (int), `name` (text), `line` (text)    |
+| `restaurants`        | Point    | `id` (int), `name` (text)                   |
+| `hospitals`          | Point    | `id` (int), `name` (text)                   |
+| `buildings`          | Polygon  | `id` (int), `name` (text)                   |
+
+---
+
+### 🔹 Step 2: Digitize Features
+
+1. Load all layers into QGIS.
+2. Right-click each layer → **Toggle Editing**
+3. Use the **Add Feature** tool:
+   - **Polygons** for `area`, `garden`, `buildings`
+   - **Lines** for `highways`, `railway_tracks`
+   - **Points** for `railway_stations`, `hospitals`, `restaurants`
+
+⚠️ Make sure:
+- At least **2 railway stations** are **inside any garden**
+- Add realistic, non-overlapping features for visual clarity
+
+---
+
+## ✅ PART 2: Style the Layers
+
+---
+
+### 🔹 Step 3: Symbolize Hospitals with Custom Symbol
+
+1. Right-click `hospitals` layer → **Properties > Symbology**
+2. Choose a symbol:
+   - Click the **symbol box**
+   - Choose from **"SVG Marker"** or **"Font Marker"**
+   - Use hospital cross or medical symbol
+
+---
+
+### 🔹 Step 4: Symbolize One Railway Station as Metro
+
+1. Right-click `railway_stations` layer → **Properties > Symbology**
+2. Click **"Rule-based" rendering**
+3. Add two rules:
+   - **Rule 1**: `"name" = 'Chembur Metro'` → choose a **Metro symbol**
+   - **Rule 2**: all others → default station symbol
+
+---
+
+## ✅ PART 3: Create the Map Layout
+
+---
+
+### 🔹 Step 5: Add Layout
+
+1. Go to **Project > New Print Layout**
+2. Give it a name: `CityMapLayout`
+
+---
+
+### 🔹 Step 6: Add Map
+
+1. In the layout window, use **Add Map** tool
+2. Drag on canvas to place the map view
+
+---
+
+### 🔹 Step 7: Add North Arrow
+
+1. Click **Add Picture**
+2. In **Item Properties**, click **Browse**
+3. Choose a North Arrow symbol from the default QGIS SVGs:
+   - `svg/arrows/NorthArrow_01.svg`
+
+---
+
+### 🔹 Step 8: Add Legend and Scale
+
+- **Legend**:
+  - Click **Add Legend**
+  - Use **Item Properties** to remove unwanted layers or rename
+- **Scale Bar**:
+  - Click **Add Scale Bar**
+  - Set:
+    - Units: **meters** or **kilometers**
+    - Scale: choose ratio or single/double box style
+
+---
+
+### 🔹 Step 9: Title and Map Styling
+
+1. Click **Add Label**
+2. Type map title: `Urban Features Map`
+3. Use font formatting: bold, 14–18 pt
+4. Adjust colors, font size for clarity
+
+---
+
+## ✅ PART 4: Export Map as JPEG at 1500 DPI
+
+---
+
+### 🔹 Step 10: Export as High-Resolution Image
+
+1. In Print Layout, go to **Layout > Export as Image**
+2. Choose location and name
+3. In **Export Options**:
+   - Format: JPEG
+   - **DPI: 1500**
+   - Click **Save**
+
+---
+
+## ✅ Final Checklist
+
+| Requirement                                      | ✅ Done |
+|--------------------------------------------------|--------|
+| 4 Areas with ID and Name                         | ✅      |
+| 4 Gardens                                        | ✅      |
+| 2 Highways                                       | ✅      |
+| 2 Railway Tracks                                 | ✅      |
+| 5 Railway Stations (2 inside gardens)            | ✅      |
+| 5 Restaurants                                    | ✅      |
+| 5 Hospitals with custom symbol                   | ✅      |
+| 10 Buildings/Residential/Business Areas          | ✅      |
+| Metro station styled uniquely                    | ✅      |
+| North Arrow added                                | ✅      |
+| Legend and Scale Bar added                       | ✅      |
+| Map exported to JPEG at 1500 DPI                 | ✅      |
+
+---
+
+Let me know if you want a **sample project file** or help designing **custom symbols**!
+
+-------------------------------------------------------------------------------------------------------------
+
+1
+
+Perform Nearest neighbor analysis to find the nearest earthquake prone area located near a populated place.
+
+20
+
+[Hint: use signif.txt and ne_10m_populated_places_simple.shp]
+
+2
+
+Add the following layers in QGIS
+
+20
+
+3
+
+EarthquakeDatabase.txt
+
+ne_10m_admin 0 countries.shp
+
+Calculate the total earthquakes / Tsunami occurred in each country.
+
+Show the total number of earthquake / Tsunami occurred in India.
+
+
+Here's a **step-by-step solution in QGIS** for the tasks you've described. We'll cover how to:
+
+1. **Perform Nearest Neighbor Analysis** to find the **nearest earthquake** to populated places.
+2. **Add required layers** (`signif.txt`, `ne_10m_populated_places_simple.shp`, `EarthquakeDatabase.txt`, `ne_10m_admin_0_countries.shp`)
+3. **Calculate earthquake/tsunami counts per country**, and extract count for **India**.
+
+---
+
+## ✅ Part 1: Nearest Neighbor Analysis
+
+---
+
+### 🔹 Step 1: Load Required Files into QGIS
+
+1. Open QGIS.
+2. Go to **Layer > Add Layer > Add Delimited Text Layer**
+   - Browse to `signif.txt` (earthquake data)
+   - Set X field: `LONGITUDE`, Y field: `LATITUDE`
+   - CRS: `WGS 84` (EPSG:4326)
+   - Click **Add** → layer will load as points.
+3. Load `ne_10m_populated_places_simple.shp`
+   - Use **Layer > Add Layer > Add Vector Layer**
+
+✅ Now you have **earthquakes** and **populated places**.
+
+---
+
+### 🔹 Step 2: Perform Nearest Neighbor Analysis
+
+1. Open **Processing Toolbox**: `Processing > Toolbox`
+2. Search for: `Distance to nearest hub`
+   - Use: **"Distance to nearest hub (points to layer)"**
+3. Fill parameters:
+   - **Source points**: `ne_10m_populated_places_simple` (populated places)
+   - **Destination hubs**: `signif` (earthquakes)
+   - **Output distance field name**: `dist_to_eq`
+   - Output layer: Save as temporary or permanent
+4. Click **Run**
+
+✅ You now have a new layer where each **populated place** has a field showing **distance to nearest earthquake**.
+
+> Optionally, **sort by distance** to find the **most at-risk population centers**.
+
+---
+
+## ✅ Part 2: Add More Layers
+
+---
+
+### 🔹 Step 3: Add Earthquake and Country Data
+
+1. Again use **Layer > Add Layer > Add Delimited Text Layer**
+   - Browse to `EarthquakeDatabase.txt`
+   - Set Longitude/Latitude fields if available (or it may be attribute-only data)
+2. Add `ne_10m_admin_0_countries.shp`
+   - Vector → Open Vector Layer
+
+✅ Now you have **country boundaries** and **earthquake records**.
+
+---
+
+## ✅ Part 3: Count Earthquakes and Tsunamis by Country
+
+---
+
+### 🔹 Step 4: Ensure Proper CRS and Join
+
+1. Make sure all layers use **CRS: EPSG:4326 (WGS 84)**
+2. Convert `EarthquakeDatabase.txt` to points (if it contains location fields):
+   - Use Add Delimited Text Layer with `LONGITUDE`, `LATITUDE`
+   - Layer name: `eq_points`
+
+---
+
+### 🔹 Step 5: Count Points in Polygons
+
+1. Open **Vector > Analysis Tools > Count Points in Polygon**
+2. Parameters:
+   - **Polygons**: `ne_10m_admin_0_countries`
+   - **Points**: `eq_points`
+   - Field name: `quake_count`
+3. Run → Output layer contains **earthquake counts per country**
+
+> ✅ Optional: Use **filter** for tsunamis:
+   - First create a filtered layer from `eq_points`:
+   - **Right-click layer > Filter**
+   - Apply: `"tsunami" = 1`
+   - Use that layer in `Count Points in Polygon` to count tsunamis.
+
+---
+
+## ✅ Part 4: View Result for India
+
+---
+
+### 🔹 Step 6: Find Earthquake Count for India
+
+1. Open **Attribute Table** of resulting layer (with `quake_count`)
+2. Use **Select Features by Expression**:
+   ```sql
+   "NAME" = 'India'
+   ```
+3. You'll see India selected with a column `quake_count` showing the number of earthquakes.
+
+---
+
+## ✅ Summary of Tools Used
+
+| Task                                                | Tool Used                                       |
+|-----------------------------------------------------|--------------------------------------------------|
+| Load earthquake & population data                   | Add Delimited Text + Add Vector Layer           |
+| Nearest earthquake to population                    | Distance to Nearest Hub (Points to Layer)       |
+| Earthquake/Tsunami count per country                | Count Points in Polygon                         |
+| Filter for tsunami only                             | Right-click Layer > Filter                      |
+| Identify earthquake count for India                 | Select Features by Expression                   |
+
+---
+
+If you'd like, I can provide screenshots or a **QGIS project file** template for faster setup. Would that help?
+
+
+
+
+
+
+
+
