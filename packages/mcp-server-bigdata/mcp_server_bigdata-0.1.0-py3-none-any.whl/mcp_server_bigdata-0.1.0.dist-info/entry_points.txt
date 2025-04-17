@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-server-bigdata = mcp_server_bigdata:main
