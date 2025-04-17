@@ -1,0 +1,10 @@
+ragstruct/__init__.py,sha256=z-BsQMMP6KYqAi7spzDSLVHl1m3JTmuiF_npGHsXLo0,965
+ragstruct/core.py,sha256=_TBsxs3U4ewHAgt1RPhFnikDrAnRE1BPhbu0OG93ZuM,2791
+ragstruct/postinstall.py,sha256=4XVBZoOE7bczvBkYI-0cr8dfgv7qwCrHCyMAXY36XG8,181
+ragstruct/setup_prompt.py,sha256=I3Z30dxbNBWJopfE0nBQuXztCmjaRrvaE2ONZdDgkZs,2036
+ragstruct/structurer.py,sha256=iJMk00nVkBnNDPcdvwncfRl7TOSdN4qifKwKWzhqx4o,2113
+ragstruct-0.1.0.dist-info/METADATA,sha256=qdCIlfzql8Lu1QSnVVsitpb3bSbuCBD9Y7dckKpOoOw,5192
+ragstruct-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ragstruct-0.1.0.dist-info/entry_points.txt,sha256=oLHpjsHHwd8HItQNAm345Y4FWjYwHp77OwISBLdRrfw,55
+ragstruct-0.1.0.dist-info/top_level.txt,sha256=D5fvrfzH2N6hpfcmFL-adyDoJBGxR6qg02uoDeWr2G8,10
+ragstruct-0.1.0.dist-info/RECORD,,
