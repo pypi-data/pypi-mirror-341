@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: evaics
+Version: 0.2.34
+Summary: EVA ICS v4 Python SDK
+Home-page: https://github.com/eva-ics/eva4
+Author: Bohemia Automation / Altertech
+Author-email: div@altertech.com
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Communications
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: busrt>=0.1.0
+Requires-Dist: msgpack>=1.0.3
+
+# EVA ICS v4 SDK (Python)
+
+EVA ICS v4 software development kit (Python)
+
+Technical documentation: <https://info.bma.ai/en/actual/eva4/sdk/>
+
