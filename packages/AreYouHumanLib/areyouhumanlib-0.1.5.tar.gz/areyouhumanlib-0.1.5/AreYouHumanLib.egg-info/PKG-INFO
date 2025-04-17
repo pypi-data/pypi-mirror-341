@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: AreYouHumanLib
+Version: 0.1.5
+Summary: .
+Author-email: Andrzej <andrzej.krajnow1337@gmail.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: emoji_data_python>=1.6.0
+Requires-Dist: alive-progress>=3.2.0
+Requires-Dist: requests>=2.32.0
+Requires-Dist: aiogram>=3.18.0
+Requires-Dist: pillow>=11.2.1
+Requires-Dist: click>=8.1.8
+Requires-Dist: numpy>=2.2.4
+
+# AreYouHuman
+A library for generating random captcha using emojis. The rendering is done by PIL.
+
+## Installation 
+```bash
+pip install AreYouHumanLib  
+```
+
+> [!WARNING]
+> Before using it for the first time, you must download the emoji using the console command `AreYouHuman download` or download and unzip the archive:
+**[emojis.zip](https://github.com/krajnow/AreYouHuman/blob/master/emojis.zip)**
+
+## Usage
+```python
+from AreYouHuman import Captcha  
+
+from AreYouHuman.types import Response
+
+captcha = Captcha()  
+
+response: Response = captcha.generate()  
+
+# Correct answer (5 emojis)  
+print(response.emojis_answer)
+
+# Full emoji list (15 items: 10 wrong + 5 correct)  
+print(response.emojis_list)  
+
+# CAPTCHA image (BytesIO)  
+print(response.image)
+```
