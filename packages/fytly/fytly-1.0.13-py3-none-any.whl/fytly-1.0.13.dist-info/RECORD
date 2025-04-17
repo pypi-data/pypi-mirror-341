@@ -1,0 +1,16 @@
+fytly-1.0.13.data/data/configs/app.properties,sha256=Mp5-LzPZQ_jiXXI4PVj8CXhfVEpHHpKNL0ft5gujRQA,136
+fytly-1.0.13.data/data/configs/jd_keywords.txt,sha256=WrAnSoyYRzuazfUa4ffd2E-DQDoxKeRtJASZjyJLmyA,99
+fytly-1.0.13.data/data/configs/jfd_keywords.txt,sha256=6_80AKkMh2lpIIM-m3ZP6yDdxtmZjKKMRMXxJXN2pCg,116
+fytly-1.0.13.data/data/configs/pd_keywords.txt,sha256=ItW74gj1siFbKu-WrHcjOSRf-PO06U0Z6DyHMH7chJo,119
+fytly-1.0.13.data/data/configs/pfd_keywords.txt,sha256=RBh4jOaa4s_D9WeWgVyU67NCILJnOUm-tzJnr2oh6Jg,140
+scorer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scorer/comparator.py,sha256=mY80siLbXLYOgOGLoVbFtN7Wg3aEhkkW7_3Ngu-kuQw,2121
+scorer/component.py,sha256=-vh5qAa3_PLqQPVDKJ9O12k9hjQYxi_n7rLXMm-zg0E,3963
+scorer/configs.py,sha256=8JHKfo0AJKXdXf7LHJdUXRyiGmT96TzeJ_RbuGYxa88,512
+scorer/payloadreader.py,sha256=6VStQOwgrouVkI5VyEbvC89cfLRxbzbzTrhJFgeuzJA,450
+scorer/preprocesser.py,sha256=EcNKDUfsXl4-0pohphAnFehJlyrIH2ZHwjTuWbcDZis,1745
+fytly-1.0.13.dist-info/LICENCE.txt,sha256=Tbfy0KxEmChNdloNi6V-gXuVoqPJFgVq0MXQRv-h6cg,1071
+fytly-1.0.13.dist-info/METADATA,sha256=_UGaGV_GpBp9iSWa3cccDm2FUhvxI37sttZPZvrfEpM,739
+fytly-1.0.13.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+fytly-1.0.13.dist-info/top_level.txt,sha256=DricZBJavb1zXsdN2OErPZeEVzc7ZUbL4_Dgl8OyEcE,7
+fytly-1.0.13.dist-info/RECORD,,
