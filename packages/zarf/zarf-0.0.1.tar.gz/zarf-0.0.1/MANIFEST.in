@@ -1,0 +1,5 @@
+recursive-include zarf *.py*
+include README.md
+include LICENSE
+include requirements-dev.txt
+include setup.py

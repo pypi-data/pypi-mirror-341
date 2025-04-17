@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements-dev.txt
+setup.py
+zarf/__init__.py
+zarf/tests.py
+zarf.egg-info/PKG-INFO
+zarf.egg-info/SOURCES.txt
+zarf.egg-info/dependency_links.txt
+zarf.egg-info/top_level.txt
