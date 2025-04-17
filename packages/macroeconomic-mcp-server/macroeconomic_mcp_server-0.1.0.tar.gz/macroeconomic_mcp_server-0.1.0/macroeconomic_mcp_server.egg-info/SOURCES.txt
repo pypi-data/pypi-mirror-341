@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+fred_macroeco/__init__.py
+fred_macroeco/server.py
+fred_macroeco/data/__init__.py
+fred_macroeco/data/fred_client.py
+fred_macroeco/data/fred_map_series.py
+macroeconomic_mcp_server.egg-info/PKG-INFO
+macroeconomic_mcp_server.egg-info/SOURCES.txt
+macroeconomic_mcp_server.egg-info/dependency_links.txt
+macroeconomic_mcp_server.egg-info/entry_points.txt
+macroeconomic_mcp_server.egg-info/requires.txt
+macroeconomic_mcp_server.egg-info/top_level.txt
