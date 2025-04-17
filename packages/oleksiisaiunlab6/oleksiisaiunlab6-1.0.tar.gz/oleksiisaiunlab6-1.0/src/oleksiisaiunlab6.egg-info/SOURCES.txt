@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+data/abbreviations.txt
+data/end.log
+data/start.log
+src/oleksiisaiunlab6/__init__.py
+src/oleksiisaiunlab6/constants.py
+src/oleksiisaiunlab6/race_report.py
+src/oleksiisaiunlab6/utilities.py
+src/oleksiisaiunlab6.egg-info/PKG-INFO
+src/oleksiisaiunlab6.egg-info/SOURCES.txt
+src/oleksiisaiunlab6.egg-info/dependency_links.txt
+src/oleksiisaiunlab6.egg-info/requires.txt
+src/oleksiisaiunlab6.egg-info/top_level.txt
+tests/test_race_report.py
