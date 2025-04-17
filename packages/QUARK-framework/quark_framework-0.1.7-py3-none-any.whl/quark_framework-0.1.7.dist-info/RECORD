@@ -1,0 +1,15 @@
+quark/__main__.py,sha256=UOxjC9MmvP7jE3ACtNOmYgzXC7A4-eKXtTxDkT4WJoA,4639
+quark/argument_parsing.py,sha256=VLzqPodFSSE0x4ondAq9LWPrrF3dR5V1VeLTsePqAgU,1118
+quark/benchmarking.py,sha256=3wTuBKJIH48yD7Cb3cEYc9qr4_tPkkAoswv39QV-1Rc,8640
+quark/config_parsing.py,sha256=6mAyCeOxzm2HmsOl0uYcuzYS11r-AbJzHEQLfZYEzrE,4185
+quark/core.py,sha256=-qcOEHnUnKxkvpcj7q5-GUxxx4KKVvjHpoK-SpHvp_4,2406
+quark/quark_logging.py,sha256=2oGldZFLilU5bg2eSwz8ENOrPVi3gHeRjvWlpMpRh7Q,391
+quark/interface_types/graph.py,sha256=5W_9ADNeVYNiQJIaEdZWGkePUDD2VqJTZSAYNol4M9E,507
+quark/interface_types/ising.py,sha256=HNOQHyUEgTb3pwWA5MO_Xiw8cG75X5tdJ1VlCMnY_u8,223
+quark/interface_types/qubo.py,sha256=x7aj2Mj8kbqMypAExy9qULRIkg5morazo59eVSXsQeI,661
+quark/plugin_manager/factory.py,sha256=lsrD7Egbb1hb_SXlS3u-1xRmd0IGYAhMPPqSRBDwJAw,698
+quark/plugin_manager/loader.py,sha256=iTDVEGVwNDu5QXYR2J67OuNa2t6bMNAs1hljaRa4Ang,927
+quark_framework-0.1.7.dist-info/METADATA,sha256=uZOseBjELHhOV9RP9s1-_48mNNy6jLJunNBd_ATaOxI,899
+quark_framework-0.1.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+quark_framework-0.1.7.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+quark_framework-0.1.7.dist-info/RECORD,,
