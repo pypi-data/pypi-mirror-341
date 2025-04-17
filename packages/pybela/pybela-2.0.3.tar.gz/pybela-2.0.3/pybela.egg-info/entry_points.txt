@@ -1,0 +1,3 @@
+[console_scripts]
+test = test:run_tests
+test-send = test:run_test_send
