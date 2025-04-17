@@ -1,0 +1,13 @@
+mindoptpy/__init__.py,sha256=9iDHDd_fFtJD__68BToO4iSA9tNEdxa3VfiwlfEEWPk,546
+mindoptpy/__init__.pyi,sha256=fayOF_SJkLSZKp_hLc9FJnwCii1ergdAkVmrmG5JLEg,127508
+mindoptpy/libiomp5md.dll,sha256=y2i8fu0i34nnjCDswMkdGN-tSyEgRmxVwTYjQOIM3Xs,1961328
+mindoptpy/mindopt.dll,sha256=QMOCYnw9j4UgWLxxEkYjw9TuC1Ywpxv6-OUEddkdaU0,51740672
+mindoptpy/mindoptpy.pyd,sha256=Tk_4teX5lN720zvK62BPVdYW6R748_wdrqcKNZ9XUP4,1839616
+mindoptpy/win64-x86/lib/mindoptmilp_2_1_1.dll,sha256=iqRErkp3fIdmv4nfJBtU3kRi-8sWKMOLYtyvJiEjjnE,41598976
+mindoptpy/win64-x86/lib/mindoptmilp_2_1_1.lib,sha256=sGnR8HF2i_b-XGDP3hJxN0Vtq9-6uh0IeCumlareub4,11506
+mindoptpy/win64-x86/lib/mindoptmiqcp_2_1_1.dll,sha256=eO9kKcwZDIahqLE345imZ56TG1uxyAQP7dyhk1kr7h4,53668864
+mindoptpy/win64-x86/lib/mindoptmiqcp_2_1_1.lib,sha256=RnwnDJDJCAChqUfRsNPGjVR_8gwBYIdjGdYQyyEBqF8,3798
+mindoptpy-2.1.1.dist-info/METADATA,sha256=i0mnc_rscueg1TFC7nazBdlzeY_AXP1RsiKkIunB2QA,1875
+mindoptpy-2.1.1.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+mindoptpy-2.1.1.dist-info/top_level.txt,sha256=0KPM6liOQzTSfqpr2HooeF6l6myUNsmlTU-NWzKv0NY,10
+mindoptpy-2.1.1.dist-info/RECORD,,
