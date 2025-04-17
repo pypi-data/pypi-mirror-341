@@ -1,0 +1,9 @@
+[project]
+name = 'librapidsmpf-cu12'
+authors = [
+    {name = 'RAPIDS', email = 'pypi@rapids.ai' },
+]
+description = 'Zero version placeholder for librapidsmpf-cu12'
+license = {text = 'Apache-2.0'}
+dependencies = []
+version = '0.0.0a0'
