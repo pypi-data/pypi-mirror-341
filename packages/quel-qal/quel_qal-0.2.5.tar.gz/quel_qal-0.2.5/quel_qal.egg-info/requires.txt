@@ -1,0 +1,15 @@
+ipympl
+matplotlib==3.9.2
+numba
+numpy
+opencv-python
+openpyxl
+pandas
+pooch
+roipoly
+scikit-image
+scikit-learn
+scipy
+statsmodels
+tqdm
+lazy-loader
