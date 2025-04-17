@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: onecc
+Version: 0.2.2
+Summary: Python package for ONE compiler
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: circle-schema
+Requires-Dist: h5py
+
+onecc
+-----
+
+onecc package is a python wrapper of `onecc` command line application provided in [ONE](https://github.com/Samsung/ONE).
+
+
