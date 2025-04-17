@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: mseep_mseep-migrations-mcp
+Version: 0.1.0
+Summary: Package published under mseep brand
+Author-email: mseep <support@skydeck.ai>
+Requires-Python: >=3.6
