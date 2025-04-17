@@ -1,0 +1,2 @@
+[console_scripts]
+lprof_ext = lprof_ext.cli:main

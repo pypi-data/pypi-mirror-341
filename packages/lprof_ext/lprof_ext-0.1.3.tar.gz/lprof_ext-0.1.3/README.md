@@ -1,0 +1,134 @@
+# Line Profiler Extension for Python (`lprof_ext`)
+
+`lprof_ext` is a lightweight Python script profiler extention that seamlessly integrates with the `line_profiler` library.
+It simplifies performance analysis by automatically adding `@lprofile_ext` decorators to your Python code and collecting detailed line-by-line performance statistics.
+This tool is ideal for developers looking to identify bottlenecks and optimize their Python scripts efficiently.
+
+
+## Features
+- Automatic Profiling: Adds `@lprofile_ext` decorators to your code without manual intervention.
+- Line-by-Line Analysis: Leverages line_profiler to provide granular performance metrics for each line of code.
+- Easy Integration: Works with any Python script via a simple command-line interface.
+- Lightweight: Minimal dependencies and straightforward setup.
+- Open Source: Freely available for contributions and customization.
+
+## Table of Contents
+- [Installation](#installation)
+  - [From PyPI](#from-pypi)
+  - [Prerequisites](#prerequisites)
+  - [Usage](#usage)
+  - [Example](#example)
+- [Output](#output)
+- [Build from Source](#build-from-source)
+- [Reference](#reference)
+- [Next](#next)
+## Installation
+### From PyPI
+
+Install the latest stable version of `lprof_ext` using `pip`:
+```bash
+pip3 install --no-cache-dir lprof_ext
+```
+
+### Prerequisites
+ - Python 3.8 or higher
+ - `line_profiler` (automatically installed as a dependency)
+
+### Usage
+To profile a Python script, run the following command, replacing `<entrypoint.py>` with the path to your script:
+```bash
+# [Important] - You must run at project root for *.py file scanning.
+lprof_ext <entrypoint.py>
+```
+
+### Example
+Suppose you have a script named `example.py`:
+```python
+def compute_fibonacci(n):
+    if n <= 1:
+        return n
+    return compute_fibonacci(n-1) + compute_fibonacci(n-2)
+
+def main():
+    result = compute_fibonacci(30)
+    print(f"Result: {result}")
+
+if __name__ == "__main__":
+    main()
+```
+
+Run the profiler:
+```bash
+lprof_ext example.py
+```
+
+After execution, `lprof_ext` will output performance statistics into `lprof_ext.json`, showing execution time, number of calls, and percentage of time spent on each line of code in the profiled functions.
+
+## Output
+A `JSON` file will be exported , default is `lprof_ext.json`.
+
+You can visualize it in our GUI tool [`Prof_GUI`](https://github.com/RuProf/prof_gui)
+
+```bash
+docker run --rm -d --name prof_gui \
+           -v ./lprof_ext.json:/lprof_ext.json \
+           -p 8080:8080 \
+           ruprof/prof_gui:rust
+```
+
+
+
+
+## Build from Source
+If you prefer to build lprof_ext from source (e.g., to use the latest development version or contribute), follow these steps:
+1. Clone the repository (replace <repository-url> with the actual URL):
+```bash
+git clone https://github.com/RuProf/lprof_ext
+cd lprof_ext
+```
+2. Set up a virtual environment
+```bash
+# Choose one of the following environments
+# Docker env
+docker build -t lprof_ext -f dockerfile .
+docker run --rm -it -v $PWD:/w -w /w --entrypoint bash lprof_ext
+
+# or venv
+python3 -m venv .venv
+source .venv/bin/activate
+uv sync # Install dependencies and build the package using uv
+pip3 install .
+```
+
+3. Verify the installation:
+```bash
+lprof_ext -h
+```
+
+### Requirements for Building
+- uv (optional, for dependency management; install via pip install uv)
+- setuptools and wheel (for building the package)
+
+## Reference
+lprof_ext is built on top of **line_profiler**, an excellent line-by-line profiling library. <br/>
+For more details on how line-by-line profiling works, refer to [line_profiler](https://github.com/pyutils/line_profiler) official documentation.
+
+### Stucture
+```bash
+follow the number for hirerachy.
+.
+├── cli.py       # 1. cli interface
+├── exporter.py  # 6. standalone lib for snapshot
+├── flow.py      # 2. flow of profiling
+├── __init__.py  # 0. module
+├── lib_prof.py  # 4. transform the `line_profiler lstats` into `lprof_ext.json` format for GUI Visualising.
+├── profiler.py  # 3. functions for profiling. call in flow.
+└── tools.py     # 5. foundation class
+```
+
+## Release History
+[CHANGELOG.md](https://github.com/yourusername/lprof_ext/blob/main/CHANGELOG.md)
+
+## Next
+- [] mapping dict for `import as` redirect
+- [] trace the third party library , by specifying the list
