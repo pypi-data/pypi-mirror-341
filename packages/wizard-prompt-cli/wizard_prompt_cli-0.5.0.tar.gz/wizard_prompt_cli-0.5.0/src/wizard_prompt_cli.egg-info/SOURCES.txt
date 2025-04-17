@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/wizard_prompt_cli/__init__.py
+src/wizard_prompt_cli/cli.py
+src/wizard_prompt_cli/inference.py
+src/wizard_prompt_cli.egg-info/PKG-INFO
+src/wizard_prompt_cli.egg-info/SOURCES.txt
+src/wizard_prompt_cli.egg-info/dependency_links.txt
+src/wizard_prompt_cli.egg-info/entry_points.txt
+src/wizard_prompt_cli.egg-info/requires.txt
+src/wizard_prompt_cli.egg-info/top_level.txt
+tests/test_cli.py
+tests/test_file_filtering.py
+tests/test_parse.py

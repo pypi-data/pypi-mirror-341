@@ -1,0 +1,10 @@
+openai>=1.20.0
+click>=8.1.8
+pyyaml>=6.0.2
+rich>=13.9.4
+tiktoken>=0.9.0
+litellm>=1.66.1
+
+[dev]
+pytest>=7.3.1
+pytest-mock>=3.10.0
