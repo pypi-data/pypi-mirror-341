@@ -1,0 +1,2 @@
+- Add use_search tests
+- Add metadata tests
