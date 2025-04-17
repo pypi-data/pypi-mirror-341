@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: featurelib
+Version: 1.0.0
+Summary: Separate complicated functionality from your class
+Author-email: Soumyo Deep Gupta <deep.main.ac@gmail.com>
+Maintainer-email: Soumyo Deep Gupta <deep.main.ac@gmail.com>
+License-Expression: MIT
+Project-URL: Documentation, https://d33p0st.in/docs/featurelib/
+Project-URL: GitHub, https://github.com/d33p0st/featurelib
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+[![Downloads](https://static.pepy.tech/badge/featurelib)](https://pepy.tech/project/featurelib)
+
+Featurelib is a python library containing a collection of carefully designed tools for separating functionality from the main underlying class. It allows creation of Feature classes that are typically different than any normal class in python. A Feature class contains a partial implementation which will then be inherited by the main class for it access it. This severely changes the game-plan for maintaining relatively larger projects by increasing readability and decreasing clutter and at the same time providing a better view over future updates and extensibility.
+
+A full comprehensive documentation can be found at [d33p0st.in/docs/featurelib](https://d33p0st.in/docs/featurelib).
+
+## Installation
+
+```zsh
+pip install featurelib
+```
