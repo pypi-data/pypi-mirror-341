@@ -1,0 +1,80 @@
+Metadata-Version: 2.3
+Name: wtwco-igloo
+Version: 2.0.0
+Summary: Python SDK for Igloo Cloud
+License: MIT
+Author: WTW
+Author-email: software.support@wtwco.com
+Requires-Python: >=3.9.2,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aiofiles (>=24.1.0,<25.0.0)
+Requires-Dist: aiohttp (>=3.10.11,<4.0.0)
+Requires-Dist: azure-storage-blob (>=12.20.0,<13.0.0)
+Requires-Dist: cryptography (>=44.0.1,<45.0.0)
+Requires-Dist: msal (>=1.28.1,<2.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: wtwco-igloo-cloud-api-client (>=3.0.1,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Igloo Python Connector
+
+Igloo Python Connector is a Python wrapper for the Igloo Cloud API. It also provides additional useful methods and examples.
+
+## Installation
+
+Note, we assume you have Python 3.9 or later already installed on your machine. If not, please download and install the latest version of Python from the [official website](https://www.python.org/downloads/).
+Also note, we recommend that you perform the installation within a Python virtual environment. [See here for more info](https://docs.python.org/3/library/venv.html#creating-virtual-environments).
+
+Once created, please activate your virtual environment and install the Igloo Python Connector package using the following command:
+
+```shell
+pip install wtwco-igloo
+```
+
+You should now be able to import the package in your Python code:
+
+```python
+import wtwco_igloo
+```
+
+## Connecting to the API
+
+Connect to the API with device code flow:
+
+```python
+from wtwco_igloo import Connection
+
+connection = Connection.from_device_code(api_url, client_id, tenant_id)
+
+# View your workspaces
+print(connection.get_workspaces())
+```
+
+## Documentation and Examples
+
+For documentation and examples please see [WTW Client Services](https://clientservices.insurancetechnology.com/).
+
+## Release Notes
+
+### 2.0
+
+Version 2.0 of the wtwco-igloo package is a major upgrade from the previous 1.0 release and supports all of the new features of Igloo Cloud 2025.1. The introduction of Workspaces has, however, lead to a number of breaking changes. These include:
+
+1. Functions for getting models, projects and calculation pools have been moved from the Connection class to a new Workspace class. You can fetch the list of workspaces in your Igloo Cloud environment by calling the new function Connection.get_workspaces. For simple examples of how to get models, projects and calculation pools in a workspace you can look at the example code in `model_example.py`, `project_example.py` and `calculation_pool_example.py`.
+1. Table and Column names returned by get_input_data are now capitalised according to how they have been defined in the model. Because Python is case-sensitive you may need to update any code that retrieves data from a Python dictionary that is keyed on a table or column name.
+1. Data tables that are expecting a run reference should now be updated by posting `<ProjectName>\<RunName>` as a string to the data table, rather than posting the run id value. Similarly when updating a data table that is expecting a reference to an uploaded file, you should use the uploaded file name rather than the id.
+
+In addition to the changes above there are a number of new additions to the wtwco-igloo package, including:
+
+1. A new Workspace class representing a workspace in Igloo Cloud. This provides a new way for getting models, projects and other things that belong to the workspace.
+1. A new UploadedFile class representing an uploaded file in Igloo Cloud. This class allows you to rename and delete uploaded files as required.
+1. Some new attributes have been added to the Job class to allow you to see when a job was started and finished, as well as some other calculation job related properties.
+1. A new get_job method has been added to the Run class for getting the latest job information associated with a run.
+
+For documentation and examples please see [WTW Client Services](https://clientservices.insurancetechnology.com/).
+
