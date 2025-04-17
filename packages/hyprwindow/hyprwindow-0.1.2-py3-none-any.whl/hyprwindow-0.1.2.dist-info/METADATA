@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: hyprwindow
+Version: 0.1.2
+Summary: A utility tool for managing windows in the Hyprland compositor environment.
+Author-email: Antrax <fredcox@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.13
+Requires-Dist: confz>=2.1.0
+Requires-Dist: rich>=14.0.0
