@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mighty-sdk-core
+Version: 0.1.1
+Summary: This is the core module for the Mighty Network's SDK, providing essential functionalities and utilities.
+Author: Nguyen Truong
+Author-email: nguyen.truong@c0x12c.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.11.14,<4.0.0)
+Requires-Dist: cryptography (>=43.0.3,<44.0.0)
+Requires-Dist: pydantic (>=2.10.6,<3.0.0)
+Requires-Dist: pynacl (>=1.5.0,<2.0.0)
+Requires-Dist: semver-range (>=0.0.3,<0.0.4)
+Requires-Dist: urllib3 (>=2.3.0,<3.0.0)
+Requires-Dist: varint (>=1.0.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# mighty-sdk-core
+
+This directory contains the core functionalities of the Mighty Network's official SDK. It includes essential modules and utilities that provide the foundational features required for the SDK to operate efficiently.
+
+
+
