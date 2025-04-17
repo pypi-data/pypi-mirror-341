@@ -1,0 +1,10 @@
+tsadmetrics/__init__.py,sha256=KLfasKUf6WmL4KSgMpHi3fEk8tUZk1iNBw6XKIi18W0,1575
+tsadmetrics/binary_metrics.py,sha256=nwfPdfHAc_4tJMNlyIwMwFQRLvCU-ik9lQLqlaWLqTs,37741
+tsadmetrics/metric_utils.py,sha256=Y_lOE01_uyC22wnw3_G-kKUEJdqevDIWMWvSDE8Cjms,10477
+tsadmetrics/non_binary_metrics.py,sha256=JIOvkigSjHBZLKbGJj7ESe0lPM7P1JPoIUnbiMZuuLg,2896
+tsadmetrics/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsadmetrics/utils.py,sha256=G0yWxgTZ9MBzyB0XDLrO2TMwmtm4hssDp5Sr0CG9FqY,1834
+tsadmetrics-0.1.2.dist-info/METADATA,sha256=awmwvfq5pcaF9ikzThF8Uq5IKsj0U8WZVKCbXIsncJg,756
+tsadmetrics-0.1.2.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+tsadmetrics-0.1.2.dist-info/top_level.txt,sha256=rRMFvkwJRUuenl0__YY_3BNr-rkdhAdj28iICkpC5a4,12
+tsadmetrics-0.1.2.dist-info/RECORD,,
