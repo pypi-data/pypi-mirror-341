@@ -1,0 +1,13 @@
+[project]
+name = "nm-mysql-mcp-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp>=1.0.0",
+    "mysql-connector-python>=9.1.0",
+]
+
+[project.scripts]
+nm-mysql-mcp-server ="mysql_mcp_server:server.main"
