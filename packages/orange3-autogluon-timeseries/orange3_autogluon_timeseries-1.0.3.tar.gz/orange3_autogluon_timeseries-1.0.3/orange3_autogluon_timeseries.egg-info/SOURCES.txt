@@ -1,0 +1,8 @@
+README.md
+setup.py
+orange3_autogluon_timeseries.egg-info/PKG-INFO
+orange3_autogluon_timeseries.egg-info/SOURCES.txt
+orange3_autogluon_timeseries.egg-info/dependency_links.txt
+orange3_autogluon_timeseries.egg-info/entry_points.txt
+orange3_autogluon_timeseries.egg-info/requires.txt
+orange3_autogluon_timeseries.egg-info/top_level.txt
