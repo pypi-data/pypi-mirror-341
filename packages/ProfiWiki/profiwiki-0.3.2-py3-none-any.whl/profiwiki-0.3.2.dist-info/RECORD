@@ -1,0 +1,11 @@
+profiwiki/__init__.py,sha256=vNiWJ14r_cw5t_7UDqDQIVZvladKFGyHH2avsLpN7Vg,22
+profiwiki/docker.py,sha256=vo71iETzK11zQF1ebSRP1zsYQrCmtaaotc1F2BNysDY,5629
+profiwiki/patch.py,sha256=HS2OG06L_5ezWexDVm-xKIvtKeHaEdE8vM3E4fSi5rE,2219
+profiwiki/profiwiki_cmd.py,sha256=io4oN_adDce9xXcrZbuwWUqzVHxBPPUq6pbDrSB9RP8,6473
+profiwiki/profiwiki_core.py,sha256=akj1oVZNHHTaukaoN9gEOuLDzfuG54bLauoRsASoXiM,13931
+profiwiki/version.py,sha256=wTl2SvsVOpq85pz5tSgFWGu7_4_z-ZhQu_OjCEBtnDQ,919
+profiwiki-0.3.2.dist-info/METADATA,sha256=OruQ6B_ieAipkpRTiD-77JcUoHVcf9fdsNLLZIoViVQ,3277
+profiwiki-0.3.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+profiwiki-0.3.2.dist-info/entry_points.txt,sha256=wJ-I8_lq1d7LvCFFTh090fbFyfbFZGgZ0HKgq6fW1K4,59
+profiwiki-0.3.2.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+profiwiki-0.3.2.dist-info/RECORD,,
