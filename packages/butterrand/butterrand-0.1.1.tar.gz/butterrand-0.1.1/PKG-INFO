@@ -1,0 +1,119 @@
+Metadata-Version: 2.4
+Name: butterrand
+Version: 0.1.1
+Summary: Random number generator based on butterfly effect and chaotic maps
+Author: Bùi Phong Phú
+Author-email: omerasutvail@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# 🦋 ButterRand
+
+**ButterRand** là một thư viện Python sinh số ngẫu nhiên dựa trên **hiệu ứng cánh bướm (Butterfly Effect)** – một hiện tượng trong lý thuyết hỗn loạn, nơi các thay đổi nhỏ ban đầu có thể dẫn đến kết quả hoàn toàn khác biệt.
+
+Thư viện này sử dụng các kỹ thuật như **logistic map**, **sine map** và các hàm gây nhiễu (`sin`, `cos`, `tan`,...) để tạo ra chuỗi số có tính hỗn loạn cao và cực kỳ khó dự đoán – phù hợp cho các mô phỏng phức tạp, các nghiên cứu khoa học, hoặc mục đích giáo dục.
+
+---
+
+## 🚀 Cài đặt
+
+```bash
+pip install butterrand
+```
+
+---
+
+## 🧠 Ý tưởng phía sau
+
+ButterRand dựa trên lý thuyết hệ động học hỗn loạn, cụ thể là hiệu ứng cánh bướm. Việc áp dụng **logistic map** và các hàm gây nhiễu phi tuyến tính giúp sinh ra chuỗi số không lặp lại theo kiểu cổ điển như các hàm ngẫu nhiên thông thường.
+
+---
+
+## 🔧 Cách sử dụng
+
+```python
+from butterrand import ButterflyRandom
+
+# Tạo một đối tượng sinh số ngẫu nhiên
+br = ButterflyRandom(
+    seed="abc123",            # Chuỗi hoặc số
+    mode="logistic",          # Có thể là "logistic" hoặc "sine"
+    noise_function="sin",     # "sin", "cos", "tan", ...
+    epsilon=1e-8              # Độ nhiễu nhỏ để tạo hỗn loạn
+)
+
+print(br.next_float())        # Số thực từ 0.0 đến 1.0
+print(br.next_int(1, 100))    # Số nguyên từ 1 đến 99
+```
+
+---
+
+## ⚙️ Tham số khởi tạo
+
+| Tham số          | Kiểu dữ liệu       | Mô tả                                                                 |
+|------------------|--------------------|----------------------------------------------------------------------|
+| `seed`           | str, int, float    | Giá trị khởi tạo, đảm bảo tính nhất quán nếu cần                    |
+| `mode`           | str                | `"logistic"` hoặc `"sine"`                                          |
+| `noise_function` | str hoặc callable  | Các hàm toán học `"sin"`, `"cos"`, `"tan"` hoặc hàm người dùng tự định nghĩa |
+| `epsilon`        | float              | Một số rất nhỏ để tạo ra sự thay đổi không đáng kể nhưng gây hỗn loạn lớn |
+
+---
+
+## 📦 Các hàm chính
+
+| Hàm               | Mô tả                                                |
+|------------------|------------------------------------------------------|
+| `next_float()`   | Trả về số thực ngẫu nhiên trong khoảng (0.0, 1.0)    |
+| `next_int(a, b)` | Trả về số nguyên ngẫu nhiên trong khoảng `[a, b)`    |
+
+---
+
+## 🧪 Ứng dụng
+
+- Mô phỏng hỗn loạn (chaos simulation)
+- Sinh dữ liệu mô phỏng (synthetic data)
+- Thị giác máy tính, nghệ thuật số
+- Giảng dạy và nghiên cứu về hệ động học hỗn loạn
+
+⚠️ **Không nên sử dụng cho bảo mật thực tế.**
+
+---
+
+## 📁 MANIFEST.in
+
+Đảm bảo thêm `README.md` vào gói khi đóng gói:
+
+```text
+include README.md
+```
+
+---
+
+## 📄 Giấy phép
+
+**MIT License** – miễn phí sử dụng, chia sẻ và sửa đổi.
+
+---
+
+## 👤 Tác giả
+
+Phát triển bởi **[Điền tên bạn tại đây]**
+
+---
+
+> 🦋 "Một cái đập cánh của con bướm ở Brazil có thể gây ra cơn lốc xoáy ở Texas."  
+> — Edward Lorenz (cha đẻ lý thuyết hỗn loạn)
