@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: mseep-ida-mcp-docs
+Version: 0.1.0
+Summary: IDA Pro MCP Documentation and Utilities
+Home-page: 
+Author: mseep
+Author-email: support@skydeck.ai
+Keywords: mseep
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: python
+Requires-Dist: mcp
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
