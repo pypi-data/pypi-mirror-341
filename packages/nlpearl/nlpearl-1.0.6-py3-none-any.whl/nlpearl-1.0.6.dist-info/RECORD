@@ -1,0 +1,12 @@
+nlpearl/__init__.py,sha256=1TxmH47vzF4XXe959ZhR0JWHWlhrq3eMRTZen4gNJpc,202
+nlpearl/_helpers.py,sha256=5rew81xyiGDHNaVQCT_mT7d7vwXeq_rx-wcWzcMz3tc,1541
+nlpearl/account.py,sha256=o3QlkGQerJCT1ZgLJZ6O-WPFm-X80kf34Pkcn-ncb-4,548
+nlpearl/call.py,sha256=ofRpAb_1tRbUeAuJf8HWGcHbEZs7iWamC0rpFiZxlpU,535
+nlpearl/inbound.py,sha256=ScOJC-AGKS92NS9z01kEe7tykFYjBgg0Nd7nsPos3Dk,6076
+nlpearl/outbound.py,sha256=jkX-KwDWBndDyl2WodBrGYxvoROieiRCikE0Cub48Bw,11934
+nlpearl/pearl.py,sha256=zAQdzV86AYn03AqS84POVMNAtID3l6hr3IUpv3WF9M8,1417
+nlpearl-1.0.6.dist-info/LICENSE,sha256=ohRFqpqSd6-kLFl8RTvv3OTppLk4AW7Na3CWDs1a3pY,1531
+nlpearl-1.0.6.dist-info/METADATA,sha256=hNDPcYtkuD9wYscyb2g4X99tnPGW8QIsls-vmTJ8bfY,12085
+nlpearl-1.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nlpearl-1.0.6.dist-info/top_level.txt,sha256=Dam04EiNpzx7UaCYNhMWp_AfeKDYnAQMhFURfrCO6YY,8
+nlpearl-1.0.6.dist-info/RECORD,,
