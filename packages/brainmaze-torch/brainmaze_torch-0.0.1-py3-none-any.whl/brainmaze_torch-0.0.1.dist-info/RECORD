@@ -1,0 +1,13 @@
+brainmaze_torch/__init__.py,sha256=EYmBvRAL5Seuau-vvWQnGYQJv_JySRSUZwtQbiW-y4M,169
+brainmaze_torch/_config.py,sha256=H-2IYv_WiX13CsnitIb9E4KpkNqmyU7x6Tyj0dImGpg,2693
+brainmaze_torch/models_generic.py,sha256=iWv7aSO9PP9sMvAv-MY-QNTsWCWh4oJd4v9hHoe5tOc,2350
+brainmaze_torch/seizure_detection/__init__.py,sha256=Z-5UsCjILlYBGD3J3ygEzPJPtTSuJ5aaK9fnbPg9FFw,1342
+brainmaze_torch/seizure_detection/_seizure_detect.py,sha256=EDsGDPOnYKdpB275er9vUM9a1lFpkJPuLvskjRudRAs,2133
+brainmaze_torch/seizure_detection/_models/__init__.py,sha256=-PUQ4HGpq3lUX_-XMm8n9E7wEVcDiaxysMMiS18260c,3239
+brainmaze_torch/seizure_detection/_models/modelA_paper.pt,sha256=TweeBNr2IpldnZAby3pHFgDM6zLGPZV2K2AS895GXpE,6549954
+brainmaze_torch/seizure_detection/_models/modelB_full.pt,sha256=94DbA8ZvYHO9QEECpyrGXnrR3urXPwtk6RER3JhfHcY,6549954
+brainmaze_torch-0.0.1.dist-info/licenses/LICENSE,sha256=zRDXwBubwc9ju1NFXiQLDjU8_avqOIk-xHePUGl-_VY,1553
+brainmaze_torch-0.0.1.dist-info/METADATA,sha256=RpAbnnKKjnXU7W67NSMoMw0snr3PyMAssqEik_urVGg,5996
+brainmaze_torch-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+brainmaze_torch-0.0.1.dist-info/top_level.txt,sha256=i_ODhdv0xkbo1XXrXyME-q-WaI0fbeDhFlvSjND1Jwc,16
+brainmaze_torch-0.0.1.dist-info/RECORD,,
