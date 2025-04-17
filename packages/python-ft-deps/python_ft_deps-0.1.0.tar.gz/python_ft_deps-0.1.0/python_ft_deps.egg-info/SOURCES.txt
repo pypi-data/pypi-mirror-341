@@ -1,0 +1,8 @@
+README.md
+check_deps.py
+pyproject.toml
+python_ft_deps.egg-info/PKG-INFO
+python_ft_deps.egg-info/SOURCES.txt
+python_ft_deps.egg-info/dependency_links.txt
+python_ft_deps.egg-info/requires.txt
+python_ft_deps.egg-info/top_level.txt
