@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: emtilebatch
+Version: 0.1.3
+Summary: Python package of the EM data Tile Batch script
+Home-page: https://github.com/mpicbg-scicomp
+Author: HongKee Moon
+Author-email: moon@mpi-cbg.de
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# TileBatch Python package for EM Facility
+This is the script for the tile process with IMOD package.
+
+## Pre-requirements
+
+* IMOD installation: https://bio3d.colorado.edu/imod/doc/guide.html
+
+## Usage
+
+```bash
+python -m pip install emtilebatch
+python -m pip install --upgrade emtilebatch # for upgrade
+
+python -m tilebatch -D 2x3 [your folder]
+```
+
+
+
