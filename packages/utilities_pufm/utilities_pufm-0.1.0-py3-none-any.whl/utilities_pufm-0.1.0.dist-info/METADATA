@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: utilities_pufm
+Version: 0.1.0
+Summary: Utilities Packages
+Author: Lucas Batista
+Author-email: lucas.daniel.bp@gmail.com
+Requires-Python: >=3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: rich (>=14.0.0,<15.0.0)
+Requires-Dist: sqlalchemy (>=2.0.40,<3.0.0)
+Description-Content-Type: text/markdown
+
+# utilities
+Utilitários presentes em praticamente todos os projetos pessoais.
+
