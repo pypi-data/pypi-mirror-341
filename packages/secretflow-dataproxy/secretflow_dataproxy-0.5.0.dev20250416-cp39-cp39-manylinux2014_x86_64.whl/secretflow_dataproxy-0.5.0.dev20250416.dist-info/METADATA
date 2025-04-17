@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: secretflow-dataproxy
+Author: SecretFlow Team
+Author-email: secretflow-contact@service.alipay.com
+Home-page: https://github.com/secretflow/dataproxy
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9, <3.12
+Requires-Dist: pyarrow==14.0.2
+Requires-Dist: numpy<2.0
+Version: 0.5.0.dev20250416
+
+UNKNOWN
