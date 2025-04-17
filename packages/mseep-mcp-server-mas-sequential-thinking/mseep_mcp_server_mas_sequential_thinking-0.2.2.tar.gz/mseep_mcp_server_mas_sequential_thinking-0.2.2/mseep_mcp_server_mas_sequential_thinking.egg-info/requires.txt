@@ -1,0 +1,12 @@
+agno
+asyncio
+exa-py
+python-dotenv
+mcp
+groq
+
+[dev]
+pytest
+black
+isort
+mypy
