@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-server-qiwei"
+version = "0.2.1"
+description = "Qiwei MCP Server"
+authors = [{ name = "ryanjhzheng", email = "zhengjianhong95@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.13"
+keywords = ["mcp", "qiwei"]
+dependencies = [
+  "httpx",
+  'requests',
+  "mcp[cli]>=1.0.0",
+]
+
+[project.scripts]
+mcp-server-qiwei = "mcp_server_qiwei.server:main"
