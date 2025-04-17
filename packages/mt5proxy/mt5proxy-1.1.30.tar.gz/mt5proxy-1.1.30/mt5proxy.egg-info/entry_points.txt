@@ -1,0 +1,2 @@
+[console_scripts]
+mt5proxy = mt5proxy.__main__:main

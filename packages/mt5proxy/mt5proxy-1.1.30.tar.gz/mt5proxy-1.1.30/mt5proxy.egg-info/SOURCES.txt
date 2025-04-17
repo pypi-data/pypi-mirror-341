@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+mt5proxy/__init__.py
+mt5proxy/__main__.py
+mt5proxy/help.py
+mt5proxy/mt5client.py
+mt5proxy/proxy.py
+mt5proxy.egg-info/PKG-INFO
+mt5proxy.egg-info/SOURCES.txt
+mt5proxy.egg-info/dependency_links.txt
+mt5proxy.egg-info/entry_points.txt
+mt5proxy.egg-info/requires.txt
+mt5proxy.egg-info/top_level.txt
