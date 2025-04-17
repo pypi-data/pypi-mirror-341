@@ -1,0 +1,31 @@
+[project]
+name = "mseep-mcp-server-esignatures"
+version = "0.1.0"
+description = "MCP server for eSignatures (https://esignatures.com)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.2.0",
+    "twine>=6.1.0",
+]
+authors = [
+    { name = "eSignatures", email = "dev@esignatures.com" },
+]
+
+[project.urls]
+Homepage = "https://github.com/esignaturescom/mcp-server-perplexity"
+Repository = "https://github.com/esignaturescom/mcp-server-perplexity"
+
+[project.scripts]
+mcp-server-esignatures = "mcp_server_esignatures:main"
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src",
+]
