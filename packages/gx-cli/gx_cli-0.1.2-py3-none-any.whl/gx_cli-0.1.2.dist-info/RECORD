@@ -1,0 +1,12 @@
+gx/__init__.py,sha256=e-ErxMPmP4n26N9WpvqMIh0tn9TLj55H1Ob1U2ufjMo,72
+gx/globals.py,sha256=R-tMx74iFlBOBynL4j4ApQVnyKDQOmOOgbpNuJOvqmg,88
+gx/gpu.py,sha256=NC6Z4Pcz_VGtxT0anMBQGp6xI_CADmiOSz1Z401wTSU,3687
+gx/main.py,sha256=7POK735Re3E5N-E_7RRwukV3HjDKUVGYb5J_zcsSQSk,8477
+gx/notify.py,sha256=STv_E_WyzaBK3gm4S9CIyZHi-vjy40swAn09X56lvKQ,3007
+gx/occupier.py,sha256=XBeBo_1Up5JjtnHK1ebRaVJz78KFScAAEXnq-W2jHmk,3981
+gx/settings.py,sha256=Gnh3d5UAf6grLV53bU2t6acC2SokQBnDIaqaVV4tfbY,1788
+gx_cli-0.1.2.dist-info/METADATA,sha256=rB5cIetAIM5yEg2uV0S4uXZWq8vTlu_4UaPoBxUULT4,3706
+gx_cli-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+gx_cli-0.1.2.dist-info/entry_points.txt,sha256=Y1MCQODrdnhd6Mi5SAn8BnEEW362HwPessdOD3QZbJ4,36
+gx_cli-0.1.2.dist-info/licenses/LICENSE,sha256=1Q_hFLDpRXED2psfkwratHwlya5q4xvDmgV6azglFTE,1064
+gx_cli-0.1.2.dist-info/RECORD,,
