@@ -1,0 +1,38 @@
+Metadata-Version: 2.2
+Name: yta_multimedia
+Version: 0.1.136
+Summary: Youtube Autónomo Multimedia Module is here.
+Author: Daniel Alcalá
+Author-email: <danielalcalavalera@gmail.com>
+Keywords: youtube autonomo multimedia utils module
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+Requires-Dist: yta_general_utils
+Requires-Dist: moviepy
+Requires-Dist: backgroundremover
+Requires-Dist: numba
+Requires-Dist: pygame
+Requires-Dist: yta_audio
+Requires-Dist: yta_image
+Requires-Dist: imageio
+Requires-Dist: scikit-image
+Requires-Dist: pillow
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: scenedetect
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+These are all the multimedia utils we need in the Youtube Autónomo project to work in a better way. This module includes audio, image and video generation and editing utilities.

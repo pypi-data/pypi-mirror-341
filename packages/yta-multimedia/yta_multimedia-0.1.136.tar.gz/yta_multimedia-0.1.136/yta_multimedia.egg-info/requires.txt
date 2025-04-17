@@ -1,0 +1,15 @@
+yta_general_utils
+moviepy
+backgroundremover
+numba
+pygame
+yta_audio
+yta_image
+imageio
+scikit-image
+pillow
+opencv-python
+numpy
+scenedetect
+scipy
+matplotlib
