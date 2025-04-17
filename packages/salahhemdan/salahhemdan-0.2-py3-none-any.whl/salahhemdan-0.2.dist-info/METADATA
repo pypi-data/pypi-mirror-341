@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: salahhemdan
+Version: 0.2
+Summary: social downloader Vedio & Images
+Home-page: https://wa.me/+201211979158
+Author: Salah Hemdan
+Author-email: 42.capsalah@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# salahhemdan
+
+مكتبة لتحميل وسائط من كل مواقع سوشيال ميديا 
+
+تدعم الفيديوهات والصور والصوتيات
+
+تم البرمجة بواسطة المبرمج صلاح حمدان
+
+## التثبيت
+```bash
+pip install salahhemdan
+```
+
+## الاستخدام
+```python
+from salahhemdan import download_media
+
+data = download_media("yourlink") #رابط المراد تحميله
+print(data)
+```
