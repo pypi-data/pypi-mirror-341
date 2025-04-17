@@ -1,0 +1,97 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Distribution / packaging
+dist/
+sdist/
+downloads/
+build/
+eggs/
+wheels/
+.eggs/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+coverage/
+.pytest_report/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE/Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.files/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# API keys and secrets
+*.pem
+
+# uv lock files (optional, if you want to track them)
+# uv.lock
+
+# Local development settings
+local_settings.py
+
+# Database files
+*.db
+*.sqlite3
+*.sqlite
+.chainlit/config.toml
+.chainlit/translations/bn.json
+.chainlit/translations/en-US.json
+.chainlit/translations/gu.json
+.chainlit/translations/he-IL.json
+.chainlit/translations/hi.json
+.chainlit/translations/ja.json
+.chainlit/translations/kn.json
+.chainlit/translations/ml.json
+.chainlit/translations/mr.json
+.chainlit/translations/nl.json
+.chainlit/translations/ta.json
+.chainlit/translations/te.json
+.chainlit/translations/zh-CN.json

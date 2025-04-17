@@ -1,0 +1,88 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aki-ai"
+dynamic = ["version"]
+description = "Aki - An advanced AI assistant framework"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = [
+    "chainlit==2.5.5",
+    "langchain==0.3.18",
+    "langgraph==0.3.16",
+    "langchain_community==0.3.17",
+    "duckduckgo-search<=8.0.0",
+    "langchain-aws>=0.2.19",
+    "python-dotenv>=1.1.0",
+    "tiktoken>=0.9.0",
+    "ollama>=0.4.7",
+    "langchain-ollama>=0.3.1",
+    "jsonschema>=4.23.0",
+    "pathspec==0.12.1",
+    "psutil==5.9.8",
+    "mcp>=1.6.0",
+    "tiktoken>=0.8.0",
+    "colorama==0.4.6",
+    "asyncpg>=0.25",
+    "sqlalchemy[asyncio]>=2.0.0",
+    "aiosqlite>=0.19.0",
+    "sqlparse>=0.5.3",
+    "pydantic>=2.10.6",
+    "chardet>=5.2.0",
+    "markitdown[all]>=0.1.1",
+    "onnxruntime==1.19.2",
+    "wcmatch==10.0",
+    "tree-sitter==0.24.0",
+    "tree-sitter-c>=0.23.0",
+    "tree-sitter-cpp>=0.23.0",
+    "tree-sitter-c-sharp>=0.23.0",
+    "tree-sitter-go>=0.23.0",
+    "tree-sitter-java>=0.23.0",
+    "tree-sitter-javascript>=0.23.0",
+    "tree-sitter-php>=0.23.0",
+    "tree-sitter-python>=0.23.0",
+    "tree-sitter-ruby>=0.23.0",
+    "tree-sitter-rust>=0.23.0",
+    "tree-sitter-typescript>=0.23.0",
+    "tree-sitter-css>=0.23.0",
+    "tree-sitter-scala>=0.23.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "flake8>=6.1.0",
+    "coverage>=7.8.0",
+    "pytest-asyncio>=0.26.0",
+    "hatch>=1.14.1",
+    "pip>=25.0.1",
+    "ruff>=0.11.4",
+]
+
+[tool.hatch.version]
+path = "src/aki/version.py"
+pattern = "__version__ = \"(?P<version>.+)\""
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aki"]
+
+[tool.hatch.env]
+requires = [ "hatch-pip-compile" ]
+
+[tool.hatch.envs.default.scripts]
+release = "scripts/build_release.sh"
+
+[project.scripts]
+aki = "aki.app:main"
+
+[project.urls]
+Documentation = "https://github.com/Aki-community/aki#readme"
+Issues = "https://github.com/Aki-community/aki/issues"
+Source = "https://github.com/Aki-community/aki"
