@@ -1,0 +1,21 @@
+[project]
+name = "bim2rdf-speckle"
+version = "0"
+description = "BIM2RDF/access speckle data"
+authors = [
+    {name =  "Majid alDosari", email = "majid.aldosari@pnnl.gov" }, 
+]
+readme = "README.md"
+dependencies = [
+    "gql[requests]",
+    "json2rdf>=67", "boltons",]
+[dependency-groups]
+dev = [
+    "fire",
+    "ipython", "ipdb",
+    "json2rdf[cli]",
+    "project",]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
