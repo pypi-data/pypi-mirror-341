@@ -1,0 +1,12 @@
+gridient/__init__.py,sha256=RugSk4LddiusIKRDL8AtHdplCP0DF5zdpk2JTXN9AhQ,752
+gridient/_version.py,sha256=Mmxse1R0ki5tjz9qzU8AQyqUsLt8nTyCAbYQp8R87PU,511
+gridient/layout.py,sha256=oy1Aym1oDx8yz-ZnL9IpsyblDwilMQ3CAZM2x_8Pmlg,11950
+gridient/stacks.py,sha256=nAp6FCzMlTBQB_nIbDgRP5COiS9hO3Qv2MYprGyCCec,7413
+gridient/styling.py,sha256=3PNbilbd7PGXQNG-OV-irJtVVbiRrtajSxomkXdqfJA,1456
+gridient/tables.py,sha256=VbSFGnjBLDayrUSP02Fs-1gJake0Uc-YIOgndTk_d5s,10151
+gridient/values.py,sha256=UWbClm08B607z5HlBmt9kSzSLiP9tClIb5g4bOTGa6Q,22196
+gridient/workbook.py,sha256=JuLhDIZ26cmAVckBPLyh5a1GMONBJJ7lkX_1dRqNwTA,2201
+gridient-0.1.1.dist-info/METADATA,sha256=KvuRltr13MYJCfFvF8-8GVe6WlEp0DBsTG1EJVT2lxI,2276
+gridient-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+gridient-0.1.1.dist-info/top_level.txt,sha256=TPGMhOvzuMRTT-JMovAn2zgKFH1tfjQaGm-N6f_UQtI,9
+gridient-0.1.1.dist-info/RECORD,,
