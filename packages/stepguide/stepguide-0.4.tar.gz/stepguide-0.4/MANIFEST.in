@@ -1,0 +1,8 @@
+include stepguide/CSV/*.csv
+include stepguide/DBCOMMANDS/*.txt
+include stepguide/DOC/*.docx
+include stepguide/EXCEL/*.xlsx
+include stepguide/MANUAL/*.pdf
+include stepguide/PYTHON/*.py
+include stepguide/R/*.R
+include stepguide/TEXT/*.txt

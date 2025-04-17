@@ -1,0 +1,29 @@
+MANIFEST.in
+setup.py
+stepguide/__init__.py
+stepguide.egg-info/PKG-INFO
+stepguide.egg-info/SOURCES.txt
+stepguide.egg-info/dependency_links.txt
+stepguide.egg-info/top_level.txt
+stepguide/CSV/p1.csv
+stepguide/CSV/s1.csv
+stepguide/CSV/s11.csv
+stepguide/CSV/s2.csv
+stepguide/DOC/PRACTICAL NO 1.docx
+stepguide/DOC/PRACTICAL NO 10.docx
+stepguide/DOC/PRACTICAL NO 2.docx
+stepguide/DOC/PRACTICAL NO 3.docx
+stepguide/DOC/PRACTICAL NO 4.docx
+stepguide/DOC/PRACTICAL NO 5.docx
+stepguide/DOC/PRACTICAL NO 6.docx
+stepguide/DOC/PRACTICAL NO 7.docx
+stepguide/DOC/PRACTICAL NO 8.docx
+stepguide/DOC/PRACTICAL NO 9.docx
+stepguide/DOC/steps.docx
+stepguide/MANUAL/FGIS Journal.pdf
+stepguide/MANUAL/FGIS Viva .pdf
+stepguide/MANUAL/steps.pdf
+stepguide/TEXT/Formatted_QGIS_Instructions.txt
+stepguide/TEXT/GIS steps.txt
+stepguide/TEXT/mami.txt
+stepguide/TEXT/steps1.txt

@@ -1,0 +1,894 @@
+id,content
+1,QGIS Practical  Residential Area Mapping Project
+2,Step-by-Step Guide  Map Creation in QGIS
+3,Step 1: Create a New QGIS Project
+4,Open QGIS
+5,Save the project as ResidentialArea.qgz
+6,Step 2: Create Area Layer
+7,Go to: Layer  Create Layer  New Shapefile Layer
+8,o Geometry Type: Polygon
+9,o File Name: area.shp
+10,o Fields:
+11,id  Whole number (Integer)
+12,name  Text (String)
+13,Step 3: Add 4 Areas
+14,Click on the layer  Toggle Edit Mode
+15,Use Add Polygon Feature to draw:
+16,"o id: 1, name: Vashi"
+17,"o id: 2, name: Nerul"
+18,"o id: 3, name: Sanpada"
+19,"o id: 4, name: Thane"
+20,Save edits and exit Edit Mode
+21,Step 4: Create Garden Layer
+22,Geometry Type: Polygon
+23,File Name: garden.shp
+24,Fields:
+25,"o id, name"
+26,Step 5: Add 4 Gardens
+27,Example gardens:
+28,"o id: 1, name: Central Park"
+29,"o id: 2, name: Eco Garden"
+30,"o id: 3, name: Lotus Garden"
+31,"o id: 4, name: Riverside Park"
+32,Step 6: Create Highway Layer
+33,Geometry Type: Line
+34,File Name: highway.shp
+35,Fields:
+36,"o id, name"
+37,Step 7: Add 2 Highways
+38,Example:
+39,"o id: 1, name: Mumbai-Pune Expressway"
+40,"o id: 2, name: Palm Beach Road"
+41,Step 8: Create Railway Track Layer
+42,Geometry Type: Line
+43,File Name: railway_track.shp
+44,Fields:
+45,"o id, name, line (e.g., Central/Western)"
+46,Step 9: Add 2 Railway Tracks
+47,Example:
+48,"o id: 1, name: Harbour Line, line: Central"
+49,"o id: 2, name: Thane Line, line: Central"
+50,Step 10: Create Railway Station Layer
+51,Geometry Type: Point
+52,File Name: station.shp
+53,Fields:
+54,"o id, name, line"
+55,Step 11: Add 5 Railway Stations
+56,Example:
+57,"o id: 1, name: Vashi"
+58,"o id: 2, name: Sanpada"
+59,"o id: 3, name: Nerul"
+60,"o id: 4, name: Thane"
+61,"o id: 5, name: Belapur"
+62,Step 12: Create Restaurant Layer
+63,Geometry Type: Point
+64,File Name: restaurant.shp
+65,Fields:
+66,"o id, name"
+67,Step 13: Add 5 Restaurants
+68,Example:
+69,"o id: 1, name: Pizza Paradise (inside garden)"
+70,"o id: 2, name: Green Garden Caf (inside garden)"
+71,"o id: 3, name: Burger Point"
+72,"o id: 4, name: Tandoori Delight"
+73,"o id: 5, name: Spice Hub"
+74,Step 14: Create Hospital Layer
+75,Geometry Type: Point
+76,File Name: hospital.shp
+77,Fields:
+78,"o id, name"
+79,Step 15: Add 5 Hospitals
+80,Example:
+81,"o id: 1, name: Metro Hospital"
+82,"o id: 2, name: Lifeline Hospital"
+83,"o id: 3, name: CityCare Clinic"
+84,"o id: 4, name: Sunshine Hospital"
+85,"o id: 5, name: Global Health Centre"
+86,Step 16: Create Building / Compound / Business Park Layer
+87,Geometry Type: Point
+88,File Name: building.shp
+89,Fields:
+90,"o id, name"
+91,Step 17: Add 10 Buildings / Compounds / Business Parks
+92,Example:
+93,"o id: 1, name: Orchid Residency"
+94,"o id: 2, name: Skyline Apartments"
+95,"o id: 3, name: Blue Heaven Towers"
+96,"o id: 4, name: Techno Park"
+97,"o id: 5, name: Galaxy Heights"
+98,"o id: 6, name: Marvel Residency"
+99,"o id: 7, name: Emerald Greens"
+100,"o id: 8, name: Skyline Business Hub"
+101,"o id: 9, name: Sunshine Plaza"
+102,"o id: 10, name: Neptune Chambers"
+103,Performing Spatial Queries on Layers in QGIS
+104,Query 1: Add a new column Garden_area and calculate the area of each garden
+105,1. Right-click on the garden layer  Click Open Attribute Table.
+106,2. Click on the Toggle Editing Mode ( pencil icon).
+107,3. Click the Field Calculator ( icon).
+108,4. Create a new field:
+109,o Output field name: Garden_area
+110,o Output field type: Decimal (or Float)
+111,o Expression: area($geometry) (This calculates area in square meters)
+112,"5. Click OK, then Save Edits and Toggle Editing Mode Off."
+113,Query 2: Show the Largest Garden
+114,1. Right-click on the garden layer  Open Attribute Table.
+115,2. Click the column header Garden_area to sort it descending (largest on top).
+116,3. The topmost row is your largest garden.
+117,4. You can also select it on the map by clicking that row.
+118,Query 3: Show all Railway Tracks that Intersect with Highways
+119,1. Go to Vector  Spatial Query  Spatial Query.
+120,2. In the dialog box:
+121,o Select features from: railway_track
+122,o Where the feature: intersects
+123,o Reference features of: highway
+124,3. Click Apply or Run.
+125,4. The railway tracks intersecting with highways will be selected on the map.
+126,5. You can export these selections if needed:
+127,o Right-click railway_track  Export  Save Selected Features As
+128,Query 4: Find all Restaurants Inside a Garden
+129,1. Go to Vector  Spatial Query.
+130,2. Select:
+131,o Select features from: restaurant
+132,o Where the feature: within
+133,o Reference features of: garden
+134,3. Click Apply or Run.
+135,4. Restaurants inside gardens will be highlighted.
+136,Query 5: Find Railway Tracks that Do NOT Intersect with Highways
+137,1. Go to Vector  Spatial Query.
+138,2. Set:
+139,o Select features from: railway_track
+140,o That do not intersect
+141,o Reference features of: highway
+142,3. Click Apply.
+143,4. These selected tracks are not intersecting any highways
+144,Create a Map Layout and Add Elements
+145,Step 1: Open Print Layout
+146,In QGIS top menu  Click Project  New Print Layout
+147,Give layout name: ResidentialMapLayout  Click OK
+148,Step 2: Add the Map to Layout
+149,In the layout window  Click Add Map tool ( icon)
+150,Drag a rectangle across the layout to place the map
+151,Your active QGIS map canvas will appear
+152,Step 3: Add North Pointer
+153,Click Add Image tool ( icon)
+154,Drag to create image box
+155,In Item Properties panel:
+156,o Click the folder icon  Choose any north arrow from C:\Program
+157,Files\QGIS <version>\apps\qgis\svg\north_arrows
+158,o Resize and place at top-right or top-left
+159,Step 4: Add Legend
+160,Click Add Legend tool ( icon)
+161,Click on layout to place it
+162,"In Item Properties, you can:"
+163,o Rename layer names if needed
+164,o Uncheck unwanted layers
+165,o Adjust spacing and font
+166,Step 5: Add Scale Bar
+167,Click Add Scalebar tool ( icon)
+168,Click on layout to place it
+169,In Item Properties:
+170,"o Choose units (e.g., meters)"
+171,o Set style and number of segments
+172,"Step 6: Use ""+"" Symbol for Hospitals"
+173,"In Layers Panel, right-click hospital  Properties  Symbology"
+174,Choose Marker Symbol  Select Cross (+) symbol
+175,Change color to Red or Blue
+176,Apply and Close
+177,Step 7: Set Metro Icon for One Railway Station
+178,Right-click station layer  Open Attribute Table
+179,"Choose a station (e.g., Vashi)  Note its ID"
+180,In Layer Properties  Symbology  Choose Categorized
+181,o Column: id
+182,o Assign normal symbol to others
+183,o Assign Metro icon (SVG) to Vashi:
+184,Click on symbol  SVG Marker  Choose metro icon like subway
+185,symbol
+186,Apply and Close
+187,Step 8: Export as JPEG (1200 dpi)
+188,In the Print Layout window:
+189,o Click Layout  Export as Image
+190,o Choose file format: JPEG
+191,o Set Resolution (DPI): 1200
+192,"o Save the image (e.g., ResidentialMap.jpg)"
+193,QGIS Practical: Create a Farm & Village Themed Map
+194,Step 1: Start New QGIS Project
+195,Open QGIS
+196,Save project as VillageMap.qgz
+197,Part 1: Creating the Map
+198,Step 1: Create a New Project
+199,1. Open QGIS and create a new project by selecting Project > New.
+200,Step 2: Add the Highway Layer
+201,1. Create the Highway Layer:
+202,o Open Layer > Create Layer > New Shapefile Layer.
+203,o Choose the layer type as Line.
+204,o Add a field for the id (Field type: Integer).
+205,"o Save the layer as ""Highway""."
+206,"o Add the highway with id = 375 using the Add Line Feature tool, drawing"
+207,the highway on the map.
+208,Step 3: Create Farms Layer
+209,1. Create the Farms Layer:
+210,o Open Layer > Create Layer > New Shapefile Layer.
+211,o Choose the layer type as Point.
+212,o Add fields for id (Integer) and own_name (Text).
+213,"o Save the layer as ""Farms""."
+214,o Add 6 farms using the Add Point Feature tool. Ensure that 2 are near the
+215,highway.
+216,Step 4: Create Narrow Paths Layer
+217,1. Create the Narrow Paths Layer:
+218,o Open Layer > Create Layer > New Shapefile Layer.
+219,o Choose the layer type as Line.
+220,o Add a field for id (Integer).
+221,"o Save the layer as ""Narrow Paths""."
+222,o Draw 4 narrow paths connecting the farms using the Add Line Feature tool.
+223,Step 5: Create the Main Road Layer
+224,1. Create the Main Road Layer:
+225,o Open Layer > Create Layer > New Shapefile Layer.
+226,o Choose the layer type as Line.
+227,o No additional attributes needed.
+228,"o Save the layer as ""Main Road""."
+229,o Draw the main road passing near farms and touching the highway.
+230,Step 6: Create Farmhouses Layer
+231,1. Create the Farmhouses Layer:
+232,o Open Layer > Create Layer > New Shapefile Layer.
+233,o Choose the layer type as Point.
+234,o Add fields for id (Integer) and frm_id (Integer).
+235,"o Save the layer as ""Farmhouses""."
+236,"o Add 2 farmhouses, linking them to specific farms via the frm_id."
+237,Step 7: Create Residential Areas Layer
+238,1. Create the Residential Areas Layer:
+239,o Open Layer > Create Layer > New Shapefile Layer.
+240,o Choose the layer type as Point.
+241,"o Save the layer as ""Residential Areas""."
+242,"o Add 4 residential areas (one near a farm, one near the main road)."
+243,Step 8: Create Primary Schools Layer
+244,1. Create the Primary Schools Layer:
+245,o Open Layer > Create Layer > New Shapefile Layer.
+246,o Choose the layer type as Point.
+247,"o Save the layer as ""Primary Schools""."
+248,o Add 2 primary school locations.
+249,Step 9: Create Bus Stop and Auto Stand Layer
+250,1. Create the Bus Stop and Auto Stand Layer:
+251,o Open Layer > Create Layer > New Shapefile Layer.
+252,o Choose the layer type as Point.
+253,"o Save the layer as ""Bus Stop & Auto Stand""."
+254,o Add the bus stop and auto stand near the main road.
+255,Step 10: Create Grampanchayat Office Layer
+256,1. Create the Grampanchayat Office Layer:
+257,o Open Layer > Create Layer > New Shapefile Layer.
+258,o Choose the layer type as Point.
+259,"o Save the layer as ""Grampanchayat Office""."
+260,o Add the Grampanchayat office location.
+261,Step 11: Create Wells Layer
+262,1. Create the Wells Layer:
+263,o Open Layer > Create Layer > New Shapefile Layer.
+264,o Choose the layer type as Point.
+265,"o Save the layer as ""Wells""."
+266,o Add 4 wells (3 on farms and 1 in a residential area).
+267,Step 12: Style the Layers
+268,"1. For each layer, you can set the styling in the Layer Properties:"
+269,"o Set different symbols for each feature (e.g., highways, farms, houses,"
+270,schools).
+271,o Use different colors and labels to differentiate them visually.
+272,Spatial Queries  Farm Village Map
+273,Query 1: Show all the farms that contain wells
+274,Steps:
+275,1. Go to Vector  Spatial Query
+276,2. In the dialog:
+277,o Input Layer: farms
+278,o Predicate: Contains
+279,o Reference Layer: well
+280,3. Click Run
+281,4. Selected farms will be highlighted (these contain wells)
+282,Optional: Use Create Layer from Selected Features to export selected farms.
+283,Query 2: Calculate area of each farm and show the largest farm
+284,Steps:
+285,1. Open Attribute Table of farms layer
+286,2. Enter Field Calculator (abacus icon)
+287,3. Create new field:
+288,o Field Name: farm_area
+289,o Output Field Type: Decimal (Float)
+290,o Expression: area($geometry)  Click OK
+291,4. Sort the farm_area column (descending)
+292,5. The top row will show the largest farm
+293,Query 3: Show all paths that intersect with highways
+294,Steps:
+295,1. Go to Vector  Spatial Query
+296,2. Select:
+297,o Input Layer: paths
+298,o Predicate: Intersects
+299,o Reference Layer: highway
+300,3. Click Run
+301,4. Intersecting paths will be selected
+302,Optional: Export as new layer  Export  Save Selected Features As
+303,Step 1: Prepare Your Data Layers
+304,"You will need to create vector layers for each element (Highways, Farms, Paths, etc.). Follow"
+305,the steps to create them.
+306,1. Create Highway Layer
+307,o Layer Type: Vector Layer (Line)
+308,o Attributes: id (375)
+309,"o Style: Set the line width to represent the highway (e.g., thick line, dark color)."
+310,o Draw the highway feature on the map using the Add Line tool.
+311,2. Create Farms Layer
+312,o Layer Type: Vector Layer (Point)
+313,"o Attributes: id, own_name"
+314,"o Style: Use different symbols for each farm. For example, a farm icon or circle"
+315,with farm names as labels.
+316,o Draw 6 farms. Place 2 near the highway for proximity.
+317,3. Create Narrow Paths Layer
+318,o Layer Type: Vector Layer (Line)
+319,o Attributes: id
+320,o Style: Use a thinner line style to represent narrow paths.
+321,o Draw 4 narrow paths connecting the farms.
+322,4. Create Main Road Layer
+323,o Layer Type: Vector Layer (Line)
+324,o Attributes: None.
+325,o Style: Set a moderate line width.
+326,o Draw a main road that passes near the farms and touches the highway.
+327,5. Create Farmhouses Layer
+328,o Layer Type: Vector Layer (Point)
+329,"o Attributes: id, frm_id (Farm ID)"
+330,"o Style: Use a unique symbol (e.g., house icon)."
+331,"o Draw 2 farmhouses, assigning them to farms based on proximity."
+332,6. Create Residential Areas Layer
+333,o Layer Type: Vector Layer (Polygon/Point)
+334,o Attributes: None.
+335,o Style: Use a distinctive color or pattern to represent the residential areas.
+336,"o Draw 4 residential areas, ensuring that at least one is near a farm and one near"
+337,the main road.
+338,7. Create Primary Schools Layer
+339,o Layer Type: Vector Layer (Point)
+340,o Attributes: None.
+341,o Style: Use a school icon symbol.
+342,o Draw 2 primary schools at appropriate locations on the map.
+343,8. Create Bus Stop and Auto Stand Layer
+344,o Layer Type: Vector Layer (Point)
+345,o Attributes: None.
+346,o Style: Use an icon symbol for bus stops and auto stands.
+347,o Draw the bus stop and auto stand near the main road.
+348,9. Create Grampanchayat Office Layer
+349,o Layer Type: Vector Layer (Point)
+350,o Attributes: None.
+351,"o Style: Use a unique symbol for the Grampanchayat office (e.g., government"
+352,building).
+353,o Draw the Grampanchayat office at a central location.
+354,10. Create Wells Layer
+355,o Layer Type: Vector Layer (Point)
+356,o Attributes: None.
+357,o Style: Use a well icon or a simple circle.
+358,"o Draw 4 wells, with 3 on farms and 1 in a residential area."
+359,Step 2: Add Styles and Labels
+360,"For each layer, apply styles to differentiate the elements visually. Here's how you can style"
+361,each layer:
+362,1. Highways
+363,o Open Layer Properties -> Symbology.
+364,"o Change the line width to 4 or 5 pixels, and set a darker color (e.g., dark gray or"
+365,black).
+366,2. Farms
+367,o Open Layer Properties -> Symbology.
+368,o Set the symbol to a circle or farm icon.
+369,o Use different colors for each farm or a similar color palette for a uniform look.
+370,3. Narrow Paths
+371,o Open Layer Properties -> Symbology.
+372,o Set the line width to 1 pixel and select a lighter color like gray.
+373,4. Main Road
+374,o Open Layer Properties -> Symbology.
+375,o Set the line width to 3 pixels and choose a color like brown or gray.
+376,5. Farmhouses
+377,o Open Layer Properties -> Symbology.
+378,"o Set a unique symbol, like a house or dot, for each farmhouse."
+379,6. Residential Areas
+380,o Open Layer Properties -> Symbology.
+381,o Use a fill color like light yellow or green to represent residential areas.
+382,o Add labels for residential area names if applicable.
+383,7. Primary Schools
+384,o Open Layer Properties -> Symbology.
+385,o Use a school icon or symbol.
+386,8. Bus Stop and Auto Stand
+387,o Open Layer Properties -> Symbology.
+388,o Use bus stop and auto stand icons from the symbol library.
+389,9. Grampanchayat Office
+390,o Open Layer Properties -> Symbology.
+391,o Use a government building or office symbol.
+392,10. Wells
+393,o Open Layer Properties -> Symbology.
+394,o Use a circle or water well icon.
+395,Step 3: Label Features
+396,1. Label Farms: Enable labeling for the Farms layer. Go to Layer Properties ->
+397,"Labels, and choose to label the farms by own_name."
+398,2. Label Residential Areas: Enable labeling for the Residential Areas layer and add
+399,relevant names or IDs.
+400,Step 4: Create a Map Layout
+401,1. Open Print Layout: Go to Project -> New Print Layout.
+402,2. Add Map: Click on Add Map and draw a rectangle to add the map to the layout.
+403,"3. Add Legends, Scale, and North Arrow: Use the Add Legend, Add Scale Bar, and"
+404,Add North Arrow tools to complete your map.
+405,4. Customize: Arrange these elements on the layout and customize their properties (font
+406,"size, color, etc.)."
+407,Step 5: Save and Export
+408,"Once the map looks good, save your project and export it as a PNG, PDF, or other format via"
+409,Layout -> Export as Image/PDF.
+410,Part 2: Open Street Map and Geo-Reference the Taj Mahal Image
+411,Step 1: Open OpenStreetMap in QGIS
+412,1. Install QuickMapServices Plugin:
+413,o Go to Plugins > Manage and Install Plugins.
+414,"o Search for QuickMapServices, and install it."
+415,"o Once installed, go to Web > QuickMapServices > OSM to add the"
+416,OpenStreetMap layer.
+417,"Step 2: Search for Taj Mahal, Agra"
+418,1. Use the Search Tool:
+419,"o In the QGIS toolbar, click on the Find tool (magnifying glass) and search for"
+420,"""Taj Mahal, Agra""."
+421,o QGIS will zoom to the location of Taj Mahal.
+422,Step 3: Add the Aerial Image of Taj Mahal
+423,1. Add the Image:
+424,o Go to Raster > Add Raster Layer.
+425,o Browse for the image file of the Taj Mahal (ensure the file is available locally
+426,or from a specific directory).
+427,o Click Open to add the image as a new raster layer.
+428,Step 4: Geo-Reference the Image
+429,1. Open the Geo-Referencer:
+430,o Go to Raster > Georeferencer > Georeferencer.
+431,o The GeoReferencer window will open.
+432,2. Add Ground Control Points (GCP):
+433,"o In the Geo-Referencer window, select the Add Point tool."
+434,"o Click on known locations (for example, corners of the Taj Mahal, identifiable"
+435,landmarks) on the aerial image and match them to their coordinates on the
+436,map.
+437,3. Transform the Image:
+438,"o Once enough GCPs are added, click Start Georeferencing."
+439,o The software will transform the image and align it with the map based on the
+440,points you provided.
+441,Step 5: Save and Export the Map
+442,"1. Once the map is ready, you can export it by going to Project > New Print Layout"
+443,and selecting the layers to display on your final map.
+444,"2. Add elements like legend, scale bar, and north arrow as needed."
+445,3. Export the layout as an image or PDF via the Export as Image option in the Print
+446,Layout.
+447,Part 1: Create the Layers
+448,Step 1: Create the Area Layer
+449,1. Create the Area Layer:
+450,o Open Layer > Create Layer > New Shapefile Layer.
+451,o Choose the layer type as Polygon.
+452,o Add fields for id (Integer) and name (Text).
+453,"o Save the layer as ""Areas""."
+454,o Add 4 areas using the Add Polygon Feature tool.
+455,Step 2: Create the Garden Layer
+456,1. Create the Garden Layer:
+457,o Open Layer > Create Layer > New Shapefile Layer.
+458,o Choose the layer type as Polygon.
+459,o Add fields for id (Integer) and name (Text).
+460,"o Save the layer as ""Gardens""."
+461,"o Add 4 garden locations, ensuring that 2 are inside any area."
+462,Step 3: Create the Railway Track Layer
+463,1. Create the Railway Track Layer:
+464,o Open Layer > Create Layer > New Shapefile Layer.
+465,o Choose the layer type as Line.
+466,"o Add fields for id (Integer), name (Text), and line (Text)."
+467,"o Save the layer as ""Railway Tracks""."
+468,o Draw 2 railway tracks using the Add Line Feature tool.
+469,Step 4: Create the Railway Station Layer
+470,1. Create the Railway Station Layer:
+471,o Open Layer > Create Layer > New Shapefile Layer.
+472,o Choose the layer type as Point.
+473,"o Add fields for id (Integer), name (Text), and line (Text)."
+474,"o Save the layer as ""Railway Stations""."
+475,o Add 5 railway stations using the Add Point Feature tool.
+476,Step 5: Create the Restaurant Layer
+477,1. Create the Restaurant Layer:
+478,o Open Layer > Create Layer > New Shapefile Layer.
+479,o Choose the layer type as Point.
+480,o Add fields for id (Integer) and name (Text).
+481,"o Save the layer as ""Restaurants""."
+482,"o Add 5 restaurants, ensuring that at least 2 are inside any garden."
+483,Part 2: Creating the Map
+484,Step 1: Style the Layers
+485,1. Style the Layers:
+486,o Right-click on each layer and select Properties.
+487,o Set the symbology for each layer:
+488,Areas: Choose a color fill for areas.
+489,Gardens: Use a distinct color for gardens.
+490,Railway Tracks: Use a line symbol to represent tracks.
+491,"Railway Stations: Use a point symbol, and for one station, choose a"
+492,symbol indicating a Metro Station.
+493,Restaurants: Use a different symbol for restaurants.
+494,Step 2: Add a North Pointer
+495,1. Add North Pointer:
+496,o Go to the Layout tab > Add Item > Add North Arrow.
+497,o Select a suitable north pointer and place it on the map.
+498,Step 3: Add a Legend
+499,1. Add Legend:
+500,o Go to Layout > Add Item > Add Legend.
+501,o The legend will automatically include the layers in the map. Adjust the
+502,placement and styling as needed.
+503,Step 4: Add a Scale Bar
+504,1. Add a Scale Bar:
+505,o Go to Layout > Add Item > Add Scale Bar.
+506,o Choose the scale type and adjust its position on the map.
+507,Step 5: Add a Title
+508,1. Add a Title:
+509,o Go to Layout > Add Item > Add Label.
+510,"o Add a suitable title (e.g., ""Map of My Residential Area"")."
+511,"o Format the title by adjusting font size, style, and position."
+512,Part 3: Save the Map
+513,Step 1: Export the Map as JPEG
+514,"1. Once you have styled your map with all necessary layers, legends, and other items, go"
+515,to:
+516,o Project > New Print Layout.
+517,o Name your layout and click OK.
+518,"2. In the layout view, adjust the map area, ensuring everything fits nicely."
+519,"3. Once satisfied, go to Layout > Export as Image."
+520,o Set the resolution to 1200 dpi.
+521,o Choose JPEG as the format.
+522,o Save the image in the desired location.
+523,Part 4: Open and Geo-reference the Aerial Image of Girgaum Chowpatty
+524,Beach
+525,Step 1: Open OpenStreetMap in QGIS
+526,1. Install QuickMapServices Plugin:
+527,o Go to Plugins > Manage and Install Plugins.
+528,o Search for QuickMapServices and install it.
+529,"o Once installed, go to Web > QuickMapServices > OSM to add OpenStreetMap."
+530,Step 2: Search for Girgaum Chowpatty Beach
+531,1. Search for Girgaum Chowpatty Beach:
+532,"o Use the Find tool (magnifying glass) in the toolbar to search for ""Girgaum"
+533,"Chowpatty Beach""."
+534,o QGIS will zoom to the location.
+535,Step 3: Add and Geo-reference the Aerial Image
+536,1. Add the Aerial Image:
+537,o Go to Raster > Add Raster Layer.
+538,o Browse to the directory where the aerial image is stored and open it.
+539,2. Geo-reference the Image:
+540,o Go to Raster > Georeferencer > Georeferencer.
+541,"o Add Ground Control Points (GCP) by clicking known locations (e.g.,"
+542,identifiable corners or landmarks) on the aerial image and matching them with
+543,coordinates on the map.
+544,3. Transform the Image:
+545,"o Once enough GCPs are added, click Start Georeferencing."
+546,o The software will align the aerial image with the map.
+547,Task 1: Geo-reference the Maharashtra Map
+548,Step 1: Open Ind_adm0.shp in QGIS
+549,1. Launch QGIS and go to Layer > Add Layer > Add Vector Layer.
+550,2. Browse to the location of Ind_adm0.shp and open it.
+551,o The map of India should appear.
+552,Step 2: Geo-reference the Maharashtra Map
+553,1. Add the Image of Maharashtra:
+554,o Go to Raster > Add Raster Layer.
+555,o Browse to the directory where the image of Maharashtra is stored (you might
+556,need to use the image from the required files).
+557,2. Open the Geo-referencing Tool:
+558,o Go to Raster > Georeferencer > Georeferencer.
+559,o Click on Open Raster in the Georeferencer window and select the
+560,Maharashtra map image.
+561,3. Add Ground Control Points (GCP):
+562,o Use the Add Point tool to click on well-known locations (like city corners or
+563,landmarks) on both the Maharashtra image and the base map of India.
+564,o Use the View to match each GCPs coordinates in the image to its
+565,corresponding position on the base map.
+566,4. Start Georeferencing:
+567,"o Once you have enough GCPs, click on Start Georeferencing."
+568,o The Maharashtra map will align with the rest of the India map in the
+569,appropriate location.
+570,Task 2: Create a Raster Data Model for Population Density Change
+571,Step 1: Import the Population Density Grids for 1990 and 2000
+572,1. Load the Population Density Grids:
+573,o Go to Raster > Add Raster Layer.
+574,o Browse and select the Population Density Grid for 1990
+575,(population_density_1990.tif) and 2000
+576,(population_density_2000.tif).
+577,Step 2: Calculate the Difference in Population
+578,1. Open the Raster Calculator:
+579,o Go to Raster > Raster Calculator.
+580,o The Raster Calculator window will open.
+581,2. Calculate the Difference:
+582,"o In the Raster Calculator, create an expression to calculate the difference"
+583,between the 2000 and 1990 population density grids. Example:
+584,arduino
+585,CopyEdit
+586,"""population_density_2000"" - ""population_density_1990"""
+587,o Click OK to create the new raster layer.
+588,Step 3: Distinguish Populated Areas
+589,1. Style the Population Density Change:
+590,o Right-click on the resulting difference layer and select Properties.
+591,o Go to the Symbology tab.
+592,o Set the Color Ramp to display positive and negative changes in population
+593,"(e.g., using a blue-to-red gradient)."
+594,Red can represent areas with increased population.
+595,Blue can represent areas with decreased population.
+596,2. Adjust the Symbology:
+597,o Set the min/max values appropriately for the color scheme to clearly highlight
+598,changes.
+599,Task 3: Import and Analyze Elevation Data
+600,Step 1: Import the Elevation Data
+601,1. Load the Surface Elevation Raster:
+602,o Go to Raster > Add Raster Layer.
+603,o Browse and select the raster file 10n060e_20101117_gmted_mea300.tif (this
+604,represents the surface elevation map of India).
+605,o The raster map should appear with elevation data.
+606,Step 2: Extract the Required Raster Area (North India)
+607,1. Extract by Extent:
+608,o Go to Raster > Extraction > Clipper.
+609,"o In the Clipper window, select Extract by Extent."
+610,o Set the Extent to cover the hilly areas of North India (you can manually adjust
+611,the extent or use coordinates for a more precise selection).
+612,o Click Run to extract the region of interest.
+613,Step 3: Perform Hillshade Surface Analysis
+614,1. Generate Hillshade:
+615,o Go to Raster > Analysis > Hillshade.
+616,o Select the extracted raster layer.
+617,o Set the Azimuth and Altitude for the hillshade. Typical values:
+618,Azimuth = 315 (for light source in the west).
+619,Altitude = 45 (standard light angle).
+620,o Click OK to generate the hillshade.
+621,2. Style the Hillshade Layer:
+622,"o Right-click on the hillshade layer, select Properties."
+623,"o In the Symbology tab, choose a Black and White color ramp for a realistic"
+624,shadow effect.
+625,o Adjust the Contrast Enhancement to enhance details of the elevation.
+626,Task 1: Terrain Analysis with Elevation Data
+627,Step 1: Import the Elevation Data
+628,1. Open QGIS and go to Raster > Add Raster Layer.
+629,"2. Browse and select the raster file 10n060e_20101117_gmted_mea300.tif, which"
+630,represents the surface elevation map of India.
+631,3. The raster map will load and show elevation data.
+632,Step 2: Extract the Required Raster Area (North India)
+633,1. Go to Raster > Extraction > Clipper.
+634,"2. In the Clipper window, select Extract by Extent."
+635,o Set the extent manually or specify the coordinates for the northern region of
+636,India.
+637,o Click Run to extract the area of interest (the hilly area of North India).
+638,"Step 3: Perform Terrain Analysis (Slope, Aspect, Hillshade)"
+639,1. Generate Slope:
+640,o Go to Raster > Terrain Analysis > Slope.
+641,o Select the extracted elevation raster.
+642,o Choose the output file path and click Run.
+643,o The slope raster will show the steepness of the terrain.
+644,2. Generate Aspect (direction of slope):
+645,o Go to Raster > Terrain Analysis > Aspect.
+646,o Select the extracted elevation raster and click Run.
+647,"o This raster will show the direction of slope, which is helpful for understanding"
+648,terrain orientation.
+649,3. Generate Hillshade:
+650,o Go to Raster > Analysis > Hillshade.
+651,o Select the extracted elevation raster.
+652,o Set the Azimuth (315) and Altitude (45) for lighting parameters.
+653,o Click Run to generate a hillshade that simulates shadows based on terrain.
+654,o The hillshade layer will give a 3D effect to highlight the terrain's features.
+655,4. Style the Layers:
+656,"o Right-click on each resulting raster (slope, aspect, and hillshade) and go to"
+657,Properties.
+658,"o In the Symbology tab, choose appropriate color ramps to visualize the terrain"
+659,features. For example:
+660,Slope: Use a color gradient where steep slopes are shown in darker
+661,colors.
+662,"Aspect: Use a color scheme that shows direction (e.g., greens for"
+663,"north-facing slopes, yellows for south-facing slopes)."
+664,Hillshade: Apply a gray scale to enhance the 3D effect.
+665,Task 2: Import and Analyze sample.csv in QGIS
+666,Step 1: Import the sample.csv File
+667,1. Go to Layer > Add Layer > Add Delimited Text Layer.
+668,2. Browse to the location of sample.csv and select it.
+669,"3. In the Add Layer window, ensure that the X and Y fields are set to the correct"
+670,longitude and latitude columns in the CSV file (if geographic coordinates are
+671,provided).
+672,4. Click OK to load the data points from the CSV into the map.
+673,Step 2: Format Tsunami with Red Colour
+674,1. Open Attribute Table:
+675,o Right-click on the CSV layer and select Open Attribute Table.
+676,2. Apply Style Based on Tsunami:
+677,o Right-click on the CSV layer and choose Properties.
+678,o Go to the Symbology tab.
+679,o Choose Categorized styling and select the column containing the type of
+680,"natural calamity (e.g., ""Calamity_Type"")."
+681,o Set the Tsunami entries to Red and other calamities to Black by manually
+682,choosing the color.
+683,Step 3: Show the Place with Highest Number of Deaths
+684,1. Find Highest Death Count:
+685,"o In the Attribute Table, sort the column for ""Deaths"" in descending order."
+686,o Note the place with the highest death count.
+687,2. Highlight the Location:
+688,o Right-click on the layer and choose Zoom to Feature(s) to zoom into the
+689,location with the highest death toll.
+690,Step 4: Show the Place with Tsunami Occurred for the Highest Time (in Hours)
+691,1. Sort by Time:
+692,"o In the Attribute Table, find the column for Time (the duration of the"
+693,tsunami).
+694,o Sort this column to identify the place where the tsunami lasted the longest in
+695,terms of hours.
+696,2. Highlight the Location:
+697,o Zoom to the location with the longest tsunami duration by right-clicking the
+698,layer and selecting Zoom to Feature(s).
+699,Step 5: Show All Natural Calamities in India
+700,1. Filter for Natural Calamities:
+701,"o In the Attribute Table, create a Query using the Select by Expression tool."
+702,"o Set the expression to select all rows where the ""Calamity_Type"" is not null or"
+703,"equals ""Natural Calamity."""
+704,o Highlight the locations of all the natural calamities on the map.
+705,Step 6: Show Tsunami Occurred Between 2000 and 2019
+706,1. Filter Tsunami Occurrences:
+707,"o In the Attribute Table, filter the data based on the year."
+708,o Use the Select by Expression tool with an expression like:
+709,bash
+710,CopyEdit
+711,"""Year"" >= 2000 AND ""Year"" <= 2019 AND ""Calamity_Type"" ="
+712,'Tsunami'
+713,2. Zoom to the Selected Features:
+714,o Right-click the layer and select Zoom to Selected to view all the places where
+715,the tsunami occurred between 2000 and 2019.
+716,1. Automating Map Creation with Print Composer Atlas (20 Marks)
+717,Objective:
+718,"To automatically generate individual maps for each feature (e.g., each ward, zone, or district)"
+719,using the Atlas feature in QGIS Print Layout.
+720,Steps:
+721,1. Open QGIS and Load Data:
+722,"Load the polygon shapefile layer (e.g., wards, villages, etc.) which will act as the"
+723,coverage layer.
+724,2. Go to Project  New Print Layout:
+725,"Give your layout a name (e.g., ""Atlas Maps"")."
+726,3. Add a Map Frame:
+727,Click the Add Map tool and draw the map canvas on the layout.
+728,4. Enable Atlas Generation:
+729,"In the right panel, click on the Atlas tab  Check Generate an Atlas."
+730,5. Select the Coverage Layer:
+731,"Under Coverage Layer, select the layer with features you want to make individual"
+732,maps for.
+733,6. Set Page Name Field (Optional):
+734,"Choose a field (like name, ID, etc.) for the map name."
+735,7. Map Frame Configuration:
+736,"Select the map frame  In the Item Properties, check Controlled by Atlas."
+737,8. Add Labels (Optional):
+738,"Add text labels using dynamic variables like [% ""name"" %] to display names on each"
+739,map.
+740,9. Configure Output Settings (Optional):
+741,"Under Atlas  Export Atlas, choose format (PDF/Images), file naming pattern, and"
+742,output folder.
+743,10. Preview and Export:
+744,"Use Preview Atlas to check each map, then Export Atlas to generate all maps"
+745,automatically.
+746,Conclusion:
+747,Using the Atlas tool in Print Composer saves time and effort by automating map creation for
+748,multiple features.
+749,2. Demonstrate the Use of Raster Data Sampling in QGIS
+750,Objective:
+751,"To extract or analyze pixel values from a raster image (like elevation, temperature, NDVI,"
+752,etc.) using sample points or vector layers.
+753,Steps to Perform Raster Data Sampling in QGIS:
+754,1. Open QGIS and Load Data:
+755,"o Load a Raster layer (e.g., DEM, satellite image)."
+756,o Load or create a Point or Polygon vector layer to extract data from the raster.
+757,2. Check Coordinate Reference System (CRS):
+758,o Ensure both raster and vector layers are in the same CRS.
+759,3. Install Processing Plugin (if not already):
+760,o Go to Plugins  Manage and Install Plugins  Enable Processing.
+761,4. Open the Sample Raster Values Tool:
+762,o Go to Processing  Toolbox.
+763,o Search Sample raster values.
+764,5. Configure the Tool:
+765,o Input Layer: Select the vector layer (points or polygons).
+766,o Raster Layer(s): Select the raster(s) you want to sample from.
+767,o Choose whether to append results as fields to the vector layer.
+768,6. Run the Tool:
+769,o Click Run and wait for the process to finish.
+770,7. View Results:
+771,o The output will be a new vector layer with raster values added as new
+772,attributes (fields).
+773,8. Export the Results (Optional):
+774,o Right-click the output layer  Export  Save Features As  Save as new
+775,shapefile or CSV for analysis.
+776,Conclusion:
+777,"Raster data sampling is useful for extracting pixel-based information at specific locations,"
+778,"aiding spatial analysis like elevation at points, NDVI values at farms, etc."
+779,1. Demonstrate Interpolation of Point Data in QGIS
+780,Objective:
+781,To generate a continuous surface (raster) from discrete point data using interpolation
+782,techniques such as IDW (Inverse Distance Weighting) or TIN (Triangulated Irregular
+783,Network).
+784,Steps:
+785,1. Open QGIS and Load Point Data:
+786,"o Load a vector point layer (e.g., rainfall stations, temperature data, etc.) that has"
+787,"a numeric attribute (like rainfall value, elevation, etc.)."
+788,2. Check Attribute Table:
+789,"o Ensure that each point has a numeric value in a specific field (e.g., ""rainfall"")."
+790,3. Open Interpolation Tool:
+791,o Go to Processing  Toolbox.
+792,o Search and open Interpolation under Raster Analysis.
+793,4. Configure Interpolation Parameters:
+794,o Input layer: Select your point layer.
+795,"o Interpolation attribute: Choose the numeric field (e.g., rainfall)."
+796,o Interpolation method: Select IDW (Inverse Distance Weighted) or TIN.
+797,o Extent & Resolution: Define the output raster extent and resolution.
+798,5. Run the Tool:
+799,o Click Run to create the interpolated raster.
+800,6. View and Style the Output:
+801,o The resulting raster layer appears in the Layers panel.
+802,"o Use the Symbology tab to apply a color ramp (e.g., greens to reds) to"
+803,visualize the surface.
+804,7. (Optional) Add Contours:
+805,o You can generate contour lines from the raster using the Contour tool in the
+806,toolbox.
+807,Conclusion:
+808,"Interpolation helps convert point-based data into a continuous surface, useful for visualizing"
+809,"variations in elevation, temperature, rainfall, etc."
+810,2. Demonstrate the Use of Raster Data Sampling in QGIS
+811,Objective:
+812,"To extract pixel values from a raster dataset (e.g., elevation, NDVI) using a vector layer"
+813,(point or polygon).
+814,Steps:
+815,1. Open QGIS and Load Data:
+816,"o Load your Raster layer (e.g., DEM, NDVI)."
+817,o Load or create a vector layer (points or polygons) for sampling locations.
+818,2. Check CRS Compatibility:
+819,o Make sure both raster and vector layers have the same Coordinate Reference
+820,System (CRS).
+821,3. Open Sample Raster Values Tool:
+822,o Go to Processing  Toolbox.
+823,o Search and open Sample raster values under Raster Analysis.
+824,4. Set Parameters:
+825,o Input point/polygon layer: Choose the vector layer.
+826,o Raster layer(s): Select one or more raster layers.
+827,o Enable append raster values as new attributes.
+828,5. Run the Tool:
+829,o Click Run to generate a new vector layer with raster values added.
+830,6. View Results:
+831,o Open the attribute table of the output layer to view the sampled raster values in
+832,new columns.
+833,7. (Optional) Export Results:
+834,o Right-click the result layer  Export  Save Features As CSV or Shapefile.
+835,Conclusion:
+836,"Raster sampling helps extract data like elevation or NDVI at specific locations, enabling"
+837,deeper spatial analysis.
+838,1. Validate Map Data Using Excel
+839,Objective:
+840,To clean and validate spatial data in Excel before using it for mapping in QGIS or other GIS
+841,software.
+842,Steps:
+843,A. Format the Dataset
+844,"1. Open the Excel file containing the map data (e.g., coordinates, names, attributes)."
+845,"2. Ensure that each column has proper headings like ID, Name, Latitude, Longitude,"
+846,"Type, etc."
+847,3. Check that all values are correctly placed under respective columns.
+848,B. Remove Duplicate Entries
+849,1. Select the entire dataset (including headers).
+850,2. Go to the Data tab  Click Remove Duplicates.
+851,"3. Select columns (e.g., Latitude and Longitude) to check for duplicates."
+852,4. Click OK  Excel will remove duplicate rows if found.
+853,C. Coding of Variable
+854,1. Convert text-based categories into numeric codes for analysis.
+855,"o Example: ""Urban"" = 1, ""Rural"" = 2."
+856,"2. Insert a new column like Location Code, then apply codes using IF or"
+857,VLOOKUP.
+858,excel
+859,CopyEdit
+860,"=IF(B2=""Urban"",1,2)"
+861,D. Verify the Plausibility of Data
+862,1. Check if all coordinates are valid:
+863,o Latitude should be between -90 to +90
+864,o Longitude should be between -180 to +180
+865,2. Sort or filter columns to identify outliers or blank values.
+866,3. Use Conditional Formatting to highlight invalid or missing entries.
+867,Conclusion:
+868,"Validating map data in Excel ensures clean, structured, and accurate inputs for GIS mapping."
+869,2. Validate Map Data Using QGIS
+870,Objective:
+871,"To check, prepare, and visualize map data using QGIS software for accurate spatial"
+872,representation.
+873,Steps:
+874,A. Verify the Coordinates of Map Data
+875,1. Load the CSV or Shapefile containing map data into QGIS.
+876,"2. If using a CSV, go to Layer  Add Layer  Add Delimited Text Layer."
+877,o Select X (Longitude) and Y (Latitude) fields.
+878,"3. Ensure the correct Coordinate Reference System (CRS) (e.g., WGS 84"
+879,EPSG:4326).
+880,B. Prepare the Data for Mapping
+881,1. Inspect the attribute table for missing or incorrect entries.
+882,2. Remove or correct invalid data using Field Calculator or Attribute Table Editor.
+883,3. Use Geometry Check Tool:
+884,o Go to Vector  Geometry Tools  Check Validity.
+885,o Fix invalid geometries if required.
+886,C. Map the Data
+887,"1. Once cleaned, visualize the data by:"
+888,"o Applying Symbology based on attributes (e.g., type, category)."
+889,"o Labeling points using field values (e.g., name or ID)."
+890,2. You can also add Basemaps from XYZ Tiles to verify positions visually.
+891,Conclusion:
+892,"QGIS allows precise validation and visualization of spatial data, ensuring readiness for"
+893,mapping and analysis.
