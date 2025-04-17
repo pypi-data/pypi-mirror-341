@@ -1,0 +1,16 @@
+{
+    "mcpServers": {
+        "akshare-mcp": {
+            "command": "uv",
+            "args": [
+                "--directory",
+                "/Users/hlchen/CodeHub/akshare_mcp_server",
+                "run",
+                "akshare-mcp"
+            ],
+            "env": {
+                "AKSHARE_API_KEY": "<insert_api_key_if_needed>"
+            }
+        }
+    }
+} 
