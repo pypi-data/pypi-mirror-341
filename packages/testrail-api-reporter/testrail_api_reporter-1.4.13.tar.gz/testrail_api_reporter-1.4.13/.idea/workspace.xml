@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BlackConnectSettings" port="45489" lineLength="120" triggerOnReformat="true" />
+  <component name="ChangeListManager">
+    <list default="true" id="fd3fa05e-b401-4af2-9bcc-61de0d73b66d" name="Changes" comment="Drop support of python 3.7" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/testrail_api_reporter" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2EB7uW6fNOQHkfhreiLLGscxEJC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ilyavereshchagin/Work/testrail_reporter_pkg/src/testrail_api_reporter/tests/utils&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;me.lensvol.blackconnect.settings&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/testrail_api_reporter/tests/utils" />
+      <recent name="$PROJECT_DIR$/src/testrail_api_reporter/tests" />
+      <recent name="$PROJECT_DIR$/src/testrail_api_reporter" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/testrail_api_reporter" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/venv" />
+      <recent name="$PROJECT_DIR$/sss" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="testrail_reporter" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd3fa05e-b401-4af2-9bcc-61de0d73b66d" name="Changes" comment="" />
+      <created>1662057346421</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662057346421</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Update to 1.4.7">
+      <option name="closed" value="true" />
+      <created>1705422144371</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705422144371</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update to 1.4.7">
+      <option name="closed" value="true" />
+      <created>1705422185679</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1705422185679</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Update to 1.4.8">
+      <option name="closed" value="true" />
+      <created>1705483940228</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1705483940228</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Update to 1.4.8">
+      <option name="closed" value="true" />
+      <created>1705484079459</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1705484079459</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Update to 1.4.8">
+      <option name="closed" value="true" />
+      <created>1705484157568</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1705484157568</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Update to 1.4.8">
+      <option name="closed" value="true" />
+      <created>1705484409670</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1705484409670</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Update to 1.4.8">
+      <option name="closed" value="true" />
+      <created>1705484577146</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1705484577146</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Update to 1.4.8">
+      <option name="closed" value="true" />
+      <created>1705484886923</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1705484886923</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Update to 1.4.9">
+      <option name="closed" value="true" />
+      <created>1705931836028</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1705931836028</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Update to 1.4.9">
+      <option name="closed" value="true" />
+      <created>1705932067544</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1705932067544</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Update to 1.4.10">
+      <option name="closed" value="true" />
+      <created>1706624941183</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1706624941183</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Update to 1.4.10">
+      <option name="closed" value="true" />
+      <created>1710259766236</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1710259766236</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Update to 1.4.11">
+      <option name="closed" value="true" />
+      <created>1710259943082</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1710259943082</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Update to 1.4.11">
+      <option name="closed" value="true" />
+      <created>1710259990636</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1710259990636</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Update to 1.4.11">
+      <option name="closed" value="true" />
+      <created>1710260160480</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1710260160480</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Update to 1.4.11">
+      <option name="closed" value="true" />
+      <created>1710260445679</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1710260445679</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Update to 1.4.11">
+      <option name="closed" value="true" />
+      <created>1710260688458</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1710260688458</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Update to 1.4.11">
+      <option name="closed" value="true" />
+      <created>1710260825148</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1710260825148</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Update to 1.4.11">
+      <option name="closed" value="true" />
+      <created>1710263532950</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1710263532950</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Update to 1.4.11">
+      <option name="closed" value="true" />
+      <created>1711562362949</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1711562362949</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Update to 1.4.11">
+      <option name="closed" value="true" />
+      <created>1711565832576</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1711565832576</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Relax requirements.txt">
+      <option name="closed" value="true" />
+      <created>1711976927336</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1711976927336</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Relax requirements.txt">
+      <option name="closed" value="true" />
+      <created>1711977067797</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1711977067797</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Update GA and README.md">
+      <option name="closed" value="true" />
+      <created>1724069192678</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1724069192678</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Update GA and README.md">
+      <option name="closed" value="true" />
+      <created>1724069408345</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1724069408345</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Update GA and README.md">
+      <option name="closed" value="true" />
+      <created>1724069590569</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1724069590569</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Update GA and README.md">
+      <option name="closed" value="true" />
+      <created>1724069813017</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1724069813017</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Rearrange project structure, add tests for upload_image">
+      <option name="closed" value="true" />
+      <created>1724074159075</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1724074159075</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Rearrange project structure, add tests for upload_image">
+      <option name="closed" value="true" />
+      <created>1724075082595</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1724075082595</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Rearrange project structure, add tests for upload_image">
+      <option name="closed" value="true" />
+      <created>1724075451949</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1724075451949</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Fix linters">
+      <option name="closed" value="true" />
+      <created>1724075875796</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1724075875796</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Fix linters">
+      <option name="closed" value="true" />
+      <created>1724076310588</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1724076310588</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Fix linters">
+      <option name="closed" value="true" />
+      <created>1724076650779</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1724076650779</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Fix linters">
+      <option name="closed" value="true" />
+      <created>1724076816115</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1724076816115</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Fix linters">
+      <option name="closed" value="true" />
+      <created>1724077152688</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1724077152688</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Fix linters">
+      <option name="closed" value="true" />
+      <created>1724078082581</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1724078082581</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Fix linters">
+      <option name="closed" value="true" />
+      <created>1724078748339</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1724078748340</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Add test_reporter_utils_delete_file.py">
+      <option name="closed" value="true" />
+      <created>1724182771850</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1724182771850</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Add test_reporter_utils_delete_file.py">
+      <option name="closed" value="true" />
+      <created>1724182922599</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1724182922599</updated>
+    </task>
+    <task id="LOCAL-00053" summary="100% cover &quot;reporter_utils&quot;">
+      <option name="closed" value="true" />
+      <created>1724184194714</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1724184194714</updated>
+    </task>
+    <task id="LOCAL-00054" summary="100% cover &quot;reporter_utils&quot;">
+      <option name="closed" value="true" />
+      <created>1724184274177</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1724184274177</updated>
+    </task>
+    <task id="LOCAL-00055" summary="100% cover &quot;reporter_utils&quot;">
+      <option name="closed" value="true" />
+      <created>1724184457811</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1724184457811</updated>
+    </task>
+    <task id="LOCAL-00056" summary="100% cover &quot;reporter_utils&quot;">
+      <option name="closed" value="true" />
+      <created>1724184745155</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1724184745155</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Add explicit coding (utf-8)">
+      <option name="closed" value="true" />
+      <created>1724185310922</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1724185310922</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Add explicit coding (utf-8)">
+      <option name="closed" value="true" />
+      <created>1725025566885</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1725025566886</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Fix readme file">
+      <option name="closed" value="true" />
+      <created>1725028937667</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1725028937668</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Update README.txt">
+      <option name="closed" value="true" />
+      <created>1725029712512</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1725029712513</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Add explicit support tag for python 3.13">
+      <created>1744828168738</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1744828168739</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Drop support of python 3.7">
+      <created>1744828282999</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1744828282999</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix linters" />
+    <MESSAGE value="Update to 1.3.5 (add community stuff, bugfixes, linters stuff)" />
+    <MESSAGE value="Update to 1.4.1" />
+    <MESSAGE value="Update to 1.4.2" />
+    <MESSAGE value="Update to 1.4.3" />
+    <MESSAGE value="Update to 1.4.4" />
+    <MESSAGE value="Update to 1.4.7" />
+    <MESSAGE value="Update to 1.4.8" />
+    <MESSAGE value="Update to 1.4.9" />
+    <MESSAGE value="Update to 1.4.10" />
+    <MESSAGE value="Update to 1.4.11" />
+    <MESSAGE value="Relax requirements.txt" />
+    <MESSAGE value="Update GA and README.md" />
+    <MESSAGE value="Rearrange project structure, add tests for upload_image" />
+    <MESSAGE value="Fix linters" />
+    <MESSAGE value="Add test_reporter_utils_delete_file.py" />
+    <MESSAGE value="100% cover &quot;reporter_utils&quot;" />
+    <MESSAGE value="Add explicit coding (utf-8)" />
+    <MESSAGE value="Fix readme file" />
+    <MESSAGE value="Update README.txt" />
+    <MESSAGE value="Add explicit support tag for python 3.13" />
+    <MESSAGE value="Drop support of python 3.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Drop support of python 3.7" />
+  </component>
+</project>
