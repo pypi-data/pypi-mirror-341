@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+sample_anous/__init__.py
+sample_anous/add.py
+sample_anous.egg-info/PKG-INFO
+sample_anous.egg-info/SOURCES.txt
+sample_anous.egg-info/dependency_links.txt
+sample_anous.egg-info/top_level.txt
