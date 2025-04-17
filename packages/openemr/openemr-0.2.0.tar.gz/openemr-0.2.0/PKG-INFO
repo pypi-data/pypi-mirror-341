@@ -1,0 +1,55 @@
+Metadata-Version: 2.4
+Name: openemr
+Version: 0.2.0
+Summary: An OpenEMR api connector
+Home-page: https://gitlab.com/aapjeisbaas/openemr-python
+Author: Stein van Broekhoven
+Author-email: stein@aapjeisbaas.nl
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+OpenEMR api connector in python
+
+## install
+
+```bash
+pip install openemr
+```
+
+## Example login to the api from your project
+
+```python
+import openemr
+from os import getenv
+# login to OpenEMR and pull in data
+try:
+    emrUsername = str(getenv('EMRUSER'))
+    emrPassword = str(getenv('EMRPASS'))
+    baseUrl = str(getenv('BASE_URL'))
+    emr = openemr.Client(client_user=emrUsername, client_pass=emrPassword, url=str(baseUrl + "/apis/api"))
+    patients = emr._patient_search()
+except:
+    exit("failed to login to OpenEMR, check the ENV vars")
+```
+
+
+## Stability?
+
+It's really stable I've been running production with this for about a 6 months on the current version to send out SMS appointment reminders to clients.
+
+![Google Analytics](https://www.google-analytics.com/collect?v=1&tid=UA-48206675-1&cid=555&aip=1&t=event&ec=repo&ea=view&dp=gitlab%2Fopenemr-python%2FREADME.md&dt=openemr-python)
