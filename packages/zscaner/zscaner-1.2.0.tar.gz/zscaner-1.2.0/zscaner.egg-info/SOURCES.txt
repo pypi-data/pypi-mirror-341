@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+zscaner/__init__.py
+zscaner.egg-info/PKG-INFO
+zscaner.egg-info/SOURCES.txt
+zscaner.egg-info/dependency_links.txt
+zscaner.egg-info/requires.txt
+zscaner.egg-info/top_level.txt
