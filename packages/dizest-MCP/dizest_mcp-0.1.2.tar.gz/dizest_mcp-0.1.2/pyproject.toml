@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dizest_MCP"
+version = "0.1.2"
+description = "FastMCP-based tools & server (one‑command launch)"
+authors = [{ name = "NowDoor", email = "bijou@season.co.kr" }]
+license = "MIT"
+requires-python = ">=3.8"
+dependencies = [
+  "fastmcp>=2.0.0",
+  "python-dotenv>=1.0.0",
+  "langchain-openai>=0.1.0",
+  "tavily-python>=0.3.0",
+  # 위 두 개는 original 코드에 쓰였으므로 필요
+]
+
+[project.scripts]
+dizest_MCP = "dizest_MCP.cli:main"
