@@ -1,0 +1,10 @@
+hopsa/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+hopsa/_modidx.py,sha256=hCGvzWsyN_d3W_A8yizxi7i4l-ehnpM4gF4LawAT5aQ,1119
+hopsa/core.py,sha256=9lt7jRS1rvws4AKail9WyDC_ZwHnICR1pAo3-bKdVPQ,189
+hopsa/nbs.py,sha256=wvdeHyAnRMcO5Qr_vgSBRaRkAowHbF4SNixZ4YgLiDQ,17643
+hopsa/ossys.py,sha256=HfvBbXsD05cckfBfaXX4VifPqs7ZtUZEmEKofY4b9rM,962
+hopsa-0.1.0.dist-info/METADATA,sha256=1FYxuNMS-5_qtuvnPXRGUz_YxuZcpfr6hEbph9KNIZU,2209
+hopsa-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+hopsa-0.1.0.dist-info/entry_points.txt,sha256=WwaaJlq6X208zwH1tn0RTIoYcmeA_YUgL72er_qexJA,37
+hopsa-0.1.0.dist-info/licenses/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+hopsa-0.1.0.dist-info/RECORD,,
