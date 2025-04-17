@@ -1,0 +1,10 @@
+moviepy
+pillow
+scikit-image
+numpy
+pydub
+exrex
+validators
+lxml
+selenium
+python-dotenv
