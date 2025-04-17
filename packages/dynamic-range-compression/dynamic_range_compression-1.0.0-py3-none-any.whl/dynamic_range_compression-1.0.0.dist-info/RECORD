@@ -1,0 +1,10 @@
+dynamic_range_compression/__init__.py,sha256=1MzW3sPrsSQoV1W0YI2Fc40nPEYEHgT4M9c1QOZBqk0,90
+dynamic_range_compression/compressor.py,sha256=I8OBZoynMjHI1xUzGQ5OhjZDRlibD2EonD6M2AHcYus,8937
+dynamic_range_compression/compressorHelper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dynamic_range_compression/compressorHelper/definitions.py,sha256=pPJMVfpnPQ4oeG1WBgX8kxScQYIroilaqiDEKzfRdm8,7408
+dynamic_range_compression/compressorHelper/envelope.py,sha256=PXhrO6Jr9Ds9zT7-cTD3DYn4Cx2rfarx9kcKlWkjgEU,2080
+dynamic_range_compression/compressorHelper/gainReduction.py,sha256=o8frNnLnu2z-BMiRbR42z19kNZKhnQThCQoDLLy41QI,6491
+dynamic_range_compression-1.0.0.dist-info/METADATA,sha256=J_mA8jSJbSC9Bmzy3IEB7ZZeYgdI6stvuXFYhsgdQzM,5069
+dynamic_range_compression-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dynamic_range_compression-1.0.0.dist-info/top_level.txt,sha256=vPCvAknxNyos_QXz1AJ5y4YsSowyrRAfvmJlZvKRcd8,26
+dynamic_range_compression-1.0.0.dist-info/RECORD,,
