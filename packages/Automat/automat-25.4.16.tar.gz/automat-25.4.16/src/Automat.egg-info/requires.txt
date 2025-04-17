@@ -1,0 +1,7 @@
+
+[:python_version < "3.10"]
+typing_extensions
+
+[visualize]
+graphviz>0.5.1
+Twisted>=16.1.1
