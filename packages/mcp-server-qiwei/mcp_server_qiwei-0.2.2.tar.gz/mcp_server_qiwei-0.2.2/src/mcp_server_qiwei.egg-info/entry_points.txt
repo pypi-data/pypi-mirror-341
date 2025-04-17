@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-server-qiwei = mcp_server_qiwei.server:main
