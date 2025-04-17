@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: ansi_stdio
+Version: 0.0.1
+Summary: ANSI text animation library
+Author-email: Gareth Davidson <gaz@bitplane.net>
+License-File: LICENSE.md
+Requires-Dist: rich
+Requires-Dist: pyte
+Requires-Dist: matplotlib
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: coverage ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: build ; extra == "dev"
+Requires-Dist: twine ; extra == "dev"
+Provides-Extra: dev
