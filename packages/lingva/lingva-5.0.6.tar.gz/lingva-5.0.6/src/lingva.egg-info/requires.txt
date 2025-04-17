@@ -1,0 +1,9 @@
+click>=8.0.3
+polib>=1.1.1
+
+[chameleon]
+chameleon
+
+[dev]
+pytest>=8.0.0
+ruff>=0.11.0

@@ -1,0 +1,72 @@
+[project]
+name = "lingva"
+description = "Translation toolset"
+authors = [
+    {name = "Wichert Akkerman", email = "wichert@wiggy.net"},
+]
+maintainers = [
+    { name = "Arkadii Yakovets" },
+    { name = "Serhii Murza" },
+]
+
+readme = "README.rst"
+dynamic = ["version"]
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+keywords = ["translation", "po", "gettext", "Babel"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "click >= 8.0.3",
+    "polib >= 1.1.1"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest >= 8.0.0",
+    "ruff >= 0.11.0"
+]
+chameleon = [
+    "chameleon"
+]
+
+[project.scripts]
+polint = "lingva.polint:main"
+pot-create = "lingva.extract:main"
+
+[project.entry-points."lingva.extractors"]
+python = "lingva.extractors.python:PythonExtractor"
+chameleon = "lingva.extractors.xml:ChameleonExtractor"
+xml = "lingva.extractors.xml:ChameleonExtractor"
+zope = "lingva.extractors.xml:ZopeExtractor"
+zcml = "lingva.extractors.zcml:ZCMLExtractor"
+
+[project.urls]
+homepage = "https://github.com/vacanza/lingva"
+tracker = "https://github.com/vacanza/lingva/issues"
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+norecursedirs = ".git tmp* .eggs bin build include lib share src"
+
+[tool.setuptools.dynamic]
+version = { attr = "lingva.__version__" }
+
+[tool.isort]
+known_first_party = ["lingva", "tests"]
+line_length = 99
+multi_line_output = 3
+profile = "black"
+
+[tool.ruff]
+line-length = 99
+
+[tool.ruff.lint]
+select = ["E4", "E5", "E7", "E9", "F", "W"]
+
+[tool.ruff.lint.flake8-errmsg]
+max-string-length = 99
