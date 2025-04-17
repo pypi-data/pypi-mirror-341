@@ -1,0 +1,2 @@
+[console_scripts]
+bany = bany.__main__:app
