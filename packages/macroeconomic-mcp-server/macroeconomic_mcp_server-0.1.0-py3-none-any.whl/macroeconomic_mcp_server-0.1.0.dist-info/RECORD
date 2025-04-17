@@ -1,0 +1,10 @@
+fred_macroeco/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+fred_macroeco/server.py,sha256=YkNBuOEPiASbcVNYTulkNz8KbiW6KcjZESt_8l7hWxg,2426
+fred_macroeco/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fred_macroeco/data/fred_client.py,sha256=evNQ4hVpPJTS3fwgUhTM4uYgG272yu33FYwxThLLMoQ,10586
+fred_macroeco/data/fred_map_series.py,sha256=mmsCGt6zZ8u-bnj5wFhoHsJ8WnYbfIFqQMrYqs6dDBw,4263
+macroeconomic_mcp_server-0.1.0.dist-info/METADATA,sha256=W7l6K4GjZ0T1MLMjYYPl_Wn6gzZesMc-wkcKZnY8C2I,3979
+macroeconomic_mcp_server-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+macroeconomic_mcp_server-0.1.0.dist-info/entry_points.txt,sha256=SUfcYCaniRHRWv3KUA_z2ncwg5kyzaq4742X3YMyEL4,71
+macroeconomic_mcp_server-0.1.0.dist-info/top_level.txt,sha256=ei2DMvMxicuqYv-d-m4dJvRHtNHm2XAMbmbomHxBYpU,14
+macroeconomic_mcp_server-0.1.0.dist-info/RECORD,,
