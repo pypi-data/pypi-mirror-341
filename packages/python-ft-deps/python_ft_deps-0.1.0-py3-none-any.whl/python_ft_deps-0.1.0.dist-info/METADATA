@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: python-ft-deps
+Version: 0.1.0
+Summary: Check if your dependencies are free-threading compatible
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mousebender>=2025.0
+Requires-Dist: packaging>=24.2
+Requires-Dist: uv>=0.6.14
+
+# Check if your dependencies are free-threading compatible
+
+How to run:
+1. install `uv`
+2. `uv run .`
