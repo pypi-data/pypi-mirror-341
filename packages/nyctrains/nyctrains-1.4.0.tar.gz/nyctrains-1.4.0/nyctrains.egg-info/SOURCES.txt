@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+nyctrains/__init__.py
+nyctrains/main.py
+nyctrains/mta_client.py
+nyctrains.egg-info/PKG-INFO
+nyctrains.egg-info/SOURCES.txt
+nyctrains.egg-info/dependency_links.txt
+nyctrains.egg-info/requires.txt
+nyctrains.egg-info/top_level.txt

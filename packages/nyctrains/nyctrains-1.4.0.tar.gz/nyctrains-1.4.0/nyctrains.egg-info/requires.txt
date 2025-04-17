@@ -1,0 +1,9 @@
+fastapi
+gtfs-realtime-bindings
+httpx
+yc-protobuf3-to-dict
+pydantic
+python-dotenv
+requests
+uvicorn
+protobuf
