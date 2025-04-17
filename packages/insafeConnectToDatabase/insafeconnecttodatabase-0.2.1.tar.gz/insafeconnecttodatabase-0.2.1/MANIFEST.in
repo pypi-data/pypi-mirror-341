@@ -1,0 +1,1 @@
+include src/insafeConnectToDatabase/cloud-sql-proxy
