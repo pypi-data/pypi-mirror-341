@@ -1,0 +1,11 @@
+src/mcp_server_esignatures/__init__.py,sha256=KNZ1bD9ZGfyZwlv91Ueeega_1lsRDLs2fYQDgNbBdtc,212
+src/mcp_server_esignatures/input_schema_contracts.py,sha256=rh4ZAeYTpzCFYFMcuS2lF71GIuznXfUTLv8x07qI3S8,9496
+src/mcp_server_esignatures/input_schema_document_elements.py,sha256=guh_p7soXuT6SWZgRaxqJw4K3lcbWz7uUjuOwywQiO8,6741
+src/mcp_server_esignatures/input_schema_template_collaborators.py,sha256=fRUaJWOnFhKMGFckckn6CgL6uTDRNsznD_rwOzZ_xcg,865
+src/mcp_server_esignatures/input_schema_templates.py,sha256=k0iLT6RtHMYZowTNJ7jQx84aIepH-X-PkEgXkaOmF5Y,2024
+src/mcp_server_esignatures/server.py,sha256=c7fhCkBNhJRE2Hf1VD6uNvb6QHKrqJTEjrd7XfU_Z84,9727
+mseep_mcp_server_esignatures-0.1.0.dist-info/METADATA,sha256=KrH57wb2FOuv9HdUdDAmhsaeUm5cocAD0nr01Lxvxw8,4881
+mseep_mcp_server_esignatures-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mseep_mcp_server_esignatures-0.1.0.dist-info/entry_points.txt,sha256=6-OsuWZYue_txVzHKfOlB4eMjsLfAh8GiJDHVr-b-KQ,71
+mseep_mcp_server_esignatures-0.1.0.dist-info/licenses/LICENSE,sha256=Q2jS8SxX9Ikijh1wn2IsUfdVXMNwfxS22iJs5abVgXs,1068
+mseep_mcp_server_esignatures-0.1.0.dist-info/RECORD,,
