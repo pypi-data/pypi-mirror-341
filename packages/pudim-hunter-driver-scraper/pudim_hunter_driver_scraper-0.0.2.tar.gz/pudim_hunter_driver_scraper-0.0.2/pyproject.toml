@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pudim_hunter_driver_scraper"
+version = "0.0.2"
+authors = [
+    { name="Luis Machado Reis" },
+]
+description = "A Python package that provides a scraper implementation for The Pudim Hunter platform using Playwright"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pudim-hunter-driver>=0.0.2",
+    "playwright>=1.41.0",
+    "pydantic>=2.0.0",
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/luismr/pudim-hunter-driver-scraper"
+"Bug Tracker" = "https://github.com/luismr/pudim-hunter-driver-scraper/issues"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3 
