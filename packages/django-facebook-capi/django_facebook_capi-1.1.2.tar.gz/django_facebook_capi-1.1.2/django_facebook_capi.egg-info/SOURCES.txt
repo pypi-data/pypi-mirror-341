@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+django-facebook-capi/__init__.py
+django-facebook-capi/admin.py
+django-facebook-capi/capi_utils.py
+django-facebook-capi/models.py
+django-facebook-capi/migrations/__init__.py
+django_facebook_capi.egg-info/PKG-INFO
+django_facebook_capi.egg-info/SOURCES.txt
+django_facebook_capi.egg-info/dependency_links.txt
+django_facebook_capi.egg-info/requires.txt
+django_facebook_capi.egg-info/top_level.txt
