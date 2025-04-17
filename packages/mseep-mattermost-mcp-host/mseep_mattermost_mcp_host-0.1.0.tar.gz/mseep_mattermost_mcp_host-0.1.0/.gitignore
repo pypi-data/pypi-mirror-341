@@ -1,0 +1,26 @@
+.env
+
+.vscode/
+
+# OS-specific files
+.DS_Store
+# Git
+.git/
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+.pytest_cache
+
+.idea
+
+# Docs for Coding Agents
+.docs/
