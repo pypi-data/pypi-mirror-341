@@ -1,0 +1,5 @@
+juham-core>=0.1.5
+importlib-metadata
+
+[dev]
+check-manifest

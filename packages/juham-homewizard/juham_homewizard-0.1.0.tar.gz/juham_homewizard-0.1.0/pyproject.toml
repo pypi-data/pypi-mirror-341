@@ -1,0 +1,56 @@
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+packages = ["juham_homewizard"]
+
+[project]
+name = "juham-homewizard"
+version = "0.1.0"
+description = "Homewizard Watermeter plugin for Juham"
+readme = {file = "README.rst", content-type = "text/markdown"}
+requires-python = ">=3.8"
+license = "MIT"
+keywords = ["object-oriented", "plugin", "framework", "homewizard", "home automation"]
+authors = [
+  {name = "J Meskanen", email = "juham.api@gmail.com" }
+]
+maintainers = [
+  {name = "J. Meskanen", email = "juham.api@gmail.com" }
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development",
+  "Programming Language :: Python :: 3.8",
+]
+
+dependencies = [
+  "juham-core >= 0.1.5",
+  "importlib-metadata",
+]
+
+[project.optional-dependencies]
+dev = ["check-manifest"]
+
+
+[project.entry-points."juham.plugins"]
+homewizard_watermeter_plugin = "juham_homewizard:HomeWizardWaterMeter"
+
+
+[project.urls]
+"Homepage" = "https://gitlab.com/juham/juham/juham-homewizard"
+"Bug Reports" = "https://gitlab.com/juham/juham/juham-homewizard"
+"Funding" = "https://meskanen.com"
+"Say Thanks!" = "http://meskanen.com"
+"Source" = "https://gitlab.com/juham/juham/juham-homewizard"
+
+
+
+[tool.mypy]
+files = ["juham_homewizard"]
+ignore_missing_imports = true

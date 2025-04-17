@@ -1,0 +1,68 @@
+Metadata-Version: 2.4
+Name: juham-homewizard
+Version: 0.1.0
+Summary: Homewizard Watermeter plugin for Juham
+Author-email: J Meskanen <juham.api@gmail.com>
+Maintainer-email: "J. Meskanen" <juham.api@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://gitlab.com/juham/juham/juham-homewizard
+Project-URL: Bug Reports, https://gitlab.com/juham/juham/juham-homewizard
+Project-URL: Funding, https://meskanen.com
+Project-URL: Say Thanks!, http://meskanen.com
+Project-URL: Source, https://gitlab.com/juham/juham/juham-homewizard
+Keywords: object-oriented,plugin,framework,homewizard,home automation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: juham-core>=0.1.5
+Requires-Dist: importlib-metadata
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
+Dynamic: license-file
+
+Homewizard watermeter plugin for Juham™
+=======================================
+
+Description
+-----------
+
+Homewizard watermeter support for Juham™. Reads the watermeter with the specified
+frequency (the default is 60s) and publishes the readings to Juham MQTT network.
+
+
+.. image:: _static/images/homewizard_watermeter.png
+   :alt: HomeWizard watermeter 
+   :width: 640px
+   :align: center  
+
+
+
+Getting Started
+---------------
+
+### Installation
+
+1. Install 
+
+   .. code-block:: bash
+
+      pip install juham-homewizard
+
+
+      
+2. Configure
+
+To configure edit the `HomewizardWaterMeter*.json` configuration file to match your network and
+desired reading frequency in seconds.
+
+   .. code-block:: python
+
+      {
+        "url": "http://192.168.86.70/api/v1/data",
+	"update_interval": 60
+      }
+
