@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+setup.py
+fdbtk_utils/fdbtk.py
+fdbtk_utils/utils.py
+fdbtk_utils.egg-info/PKG-INFO
+fdbtk_utils.egg-info/SOURCES.txt
+fdbtk_utils.egg-info/dependency_links.txt
+fdbtk_utils.egg-info/requires.txt
+fdbtk_utils.egg-info/top_level.txt
