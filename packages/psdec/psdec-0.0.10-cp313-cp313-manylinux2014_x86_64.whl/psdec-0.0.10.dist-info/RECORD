@@ -1,0 +1,10 @@
+psdec/__init__.cpython-313-x86_64-linux-gnu.so,sha256=IjekT5USRrHl5M12Hlzm42OyDQoOmTS1nwotVIMwsnQ,28136
+psdec/mac_code.cpython-313-x86_64-linux-gnu.so,sha256=BC9OFOhxd1pmD5BIVB6qb764jNqNhMZShfbQmOJxC9I,113328
+psdec/register.cpython-313-x86_64-linux-gnu.so,sha256=C-zaxKAc38gaUTPOVF5lVM1Tn-X_5lT0rMC-oSK21ek,82656
+psdec/verifier.cpython-313-x86_64-linux-gnu.so,sha256=TAh_AGfG_2S852Tf6yE4gjQtv272ndvs9a9mbuAu2Oc,177328
+psdec-0.0.10.dist-info/licenses/LICENSE.txt,sha256=_ywIXyFWVrPDafIW-CpPeKF2ZdFPRCcskDdRaDAaQdk,1054
+psdec-0.0.10.dist-info/METADATA,sha256=mm1AEABN_wNKO0EcoVsFxh3Atkr7TdLquhSQ94J0NHo,2924
+psdec-0.0.10.dist-info/WHEEL,sha256=vG1XBdG7WsaghAYsDHwT3Lai6iN7CbaXcolmOj9KFdI,112
+psdec-0.0.10.dist-info/entry_points.txt,sha256=aYeEHVWwFkyt-HzLutfHOGilgVlQgoH1p3BQTsdjxeI,123
+psdec-0.0.10.dist-info/top_level.txt,sha256=0BRcgSb_UuseIVf_273u8s4oBHUmMUmkYBhmAR1xsk4,6
+psdec-0.0.10.dist-info/RECORD,,
