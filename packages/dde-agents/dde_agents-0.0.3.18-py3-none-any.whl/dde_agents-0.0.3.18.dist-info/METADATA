@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: dde-agents
+Version: 0.0.3.18
+Summary: This is a SDK to help you create AI agents.
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/DDE-64-bit/DDE-Agents
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: openai
