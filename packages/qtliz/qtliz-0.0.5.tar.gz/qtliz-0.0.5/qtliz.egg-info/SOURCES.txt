@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+qtliz.egg-info/PKG-INFO
+qtliz.egg-info/SOURCES.txt
+qtliz.egg-info/dependency_links.txt
+qtliz.egg-info/entry_points.txt
+qtliz.egg-info/requires.txt
+qtliz.egg-info/top_level.txt
