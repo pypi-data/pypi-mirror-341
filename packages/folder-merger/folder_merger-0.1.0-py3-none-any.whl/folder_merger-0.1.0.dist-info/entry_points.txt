@@ -1,0 +1,2 @@
+[console_scripts]
+folder-merger = folder_merger.cli:main
