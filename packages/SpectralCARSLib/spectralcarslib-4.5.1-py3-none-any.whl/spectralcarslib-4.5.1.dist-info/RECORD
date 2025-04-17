@@ -1,0 +1,15 @@
+SpectralCARSLib/__init__.py,sha256=GTwS4r1_T-PBDY4wJR8BlUiEhBDoQ3DXkGrPtbdL1Oo,1294
+SpectralCARSLib/cars.py,sha256=acuH0iDJSHPNOPa3fYoW0-BZTL66O3KYA7SyITat4GE,12952
+SpectralCARSLib/classification.py,sha256=fs8uJK1Xd7rzc9P0vkGbKiDFpUq-lmldtinQMLBpvEY,26791
+SpectralCARSLib/corcars.py,sha256=31RRSaXMQfuuQA-_iK3aQECwUdmmeyPE45Mj1WiaawA,18430
+SpectralCARSLib/core.py,sha256=Vl8xBEtB1dd24XI76gn8JbC6_cS3xVYTK4Wb7JP6ot8,15566
+SpectralCARSLib/optimizer.py,sha256=XTchwHz3WX4qofoZsLo53SERVCTBB5I4vnxSh3W1dmo,54111
+SpectralCARSLib/preprocessing.py,sha256=_rCP05bkm_OQUlCYFxsNlljSrfV8fBIcAfQMdO7Tzkg,2461
+SpectralCARSLib/simple_optimizer.py,sha256=UHk23KaIyzc2fGlAbgW3ds6GfgbNBQeyIVSi5paWFxg,82183
+SpectralCARSLib/utils.py,sha256=ztCQPLprriUIKDCJJlPRYYl9ydofPAY0RlSXyLzhYlM,844
+SpectralCARSLib/visualization.py,sha256=OxtgqVgnFwV6dZ8XnpEhzLhBhGEedXSqueOcNivMQV4,6978
+spectralcarslib-4.5.1.dist-info/licenses/LICENSE,sha256=6gIQQwLTTNF2SEZPID4XR8U3nPXfKikfkfp_qqM2tcU,1164
+spectralcarslib-4.5.1.dist-info/METADATA,sha256=E-4Sko3uekxvhWsJgjuRJQ4L9iEG54kriX8JqOks-gM,9704
+spectralcarslib-4.5.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+spectralcarslib-4.5.1.dist-info/top_level.txt,sha256=lOO9Sf5pPiKj_BG9KbSG0XedPlqAhiPJKH_WwH06nzU,16
+spectralcarslib-4.5.1.dist-info/RECORD,,
