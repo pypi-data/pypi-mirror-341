@@ -1,0 +1,9 @@
+tqdm
+transformers>=4.49.0
+accelerate
+
+[cuda11]
+cupy-cuda11x
+
+[cuda12]
+cupy-cuda12x
