@@ -1,0 +1,15 @@
+nilspodlib/__init__.py,sha256=Hg0i5ozIEoeq2XXRFHaD8ksbot6V22kJPNLwPW4AY1U,243
+nilspodlib/_session_base.py,sha256=v9wsEfgWMmT2Psqy51q6K2KBymu_5QlyqSX3cqxvQBE,5707
+nilspodlib/calibration_utils.py,sha256=w6u2NrtovAdEewcGtzSFve7I8vExMrR9X7TsKddbmvE,8792
+nilspodlib/consts.py,sha256=_WNNhGcaBcI-S6wp-IGsvzOId9pVxZut2sjIiIUiTq4,1228
+nilspodlib/dataset.py,sha256=M0sTxL9QoLqzKsEjuyiF9Rsg9umukDkJHH5QaaQNW8E,35833
+nilspodlib/datastream.py,sha256=iKoED2JSyNvEBTrcmn3mAZXWWUzvBXS3psiYpTaMRXc,7404
+nilspodlib/exceptions.py,sha256=mSO8qAwTTT9XX9D-fX7Xzvr30H-sZ58BV4WgXk2DK0I,2217
+nilspodlib/header.py,sha256=nAimiEvSjlhsMUlw3F_Hk4dWpPCgsWoR-pCGhcdVQ3k,15909
+nilspodlib/legacy.py,sha256=gw0jGrQ3zrZ_dmZ82MonRYqmuaGKy0lUH5KgKysbKuw,13038
+nilspodlib/session.py,sha256=TTE2iO068Lf0FrOkDVZ_wT_6mOjPe08i4H_b0Z3odks,29502
+nilspodlib/utils.py,sha256=f5KH4qIFHkkKhemOC9grO88OgKA3jkNkW6HEaolU9vQ,5749
+nilspodlib-4.0.0.dist-info/LICENSE,sha256=7E6JrNYdHeQPZzaP_PKTWKN9iPU1ftiJFMNU5VoJCgo,1073
+nilspodlib-4.0.0.dist-info/METADATA,sha256=inuQyWmBGwom6QUVCT50891t7g2R9RBfh8JoSdWlqIU,3324
+nilspodlib-4.0.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+nilspodlib-4.0.0.dist-info/RECORD,,
