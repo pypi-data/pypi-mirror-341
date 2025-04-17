@@ -1,0 +1,17 @@
+pyproject.toml
+setup.py
+gst_calculator/Capital_Gains_Report_Generator .py
+gst_calculator/Investment_Tax_Benefits_Calculator.py
+gst_calculator/__init__.py
+gst_calculator/bulk_income_tax_return.py
+gst_calculator/business_tax.py
+gst_calculator/gst_calculator.py
+gst_calculator/income_tax.py
+gst_calculator/tds_corporate.py
+gst_calculator/tds_individual.py
+gst_calculator/tempCodeRunnerFile.py
+gst_calculator.egg-info/PKG-INFO
+gst_calculator.egg-info/SOURCES.txt
+gst_calculator.egg-info/dependency_links.txt
+gst_calculator.egg-info/requires.txt
+gst_calculator.egg-info/top_level.txt

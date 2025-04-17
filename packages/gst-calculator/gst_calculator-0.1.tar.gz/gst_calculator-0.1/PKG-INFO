@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: gst_calculator
+Version: 0.1
+Summary: Indian GST Tax Calculator (New Regime)
+Author: Ayush Bisht
+Requires-Dist: reportlab
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
