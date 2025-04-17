@@ -1,0 +1,13 @@
+from pydantic import BaseModel
+from datetime import datetime
+from typing import Optional
+
+class JobConversationOppositeUser(BaseModel):
+    id: str
+    login: str
+    lastLoggedInAt: Optional[datetime] = None
+    isSystem: Optional[bool] = None
+    reviewCount: Optional[int] = None
+    isOnHoliday: Optional[bool] = None
+    isModerator: Optional[bool] = None
+    photo: Optional[str] = None
