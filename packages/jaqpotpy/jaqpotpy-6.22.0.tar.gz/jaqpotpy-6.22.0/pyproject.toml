@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jaqpotpy"
+dynamic = ["version"]
+description = "Client library for managing machine learning models on the Jaqpot platform"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.7"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "torch>=2.0.0",
+    "onnx>=1.13.0",
+    "onnxruntime>=1.13.0",
+    "httpx",
+    "pydantic>=2.0",
+    "jaqpot-api-client>=6.40.7"
+]
+
+[[project.authors]]
+name = "Unit of Process Control and Informatics | National Technical University of Athens"
+email = "upci.ntua@gmail.com"
+
+[project.urls]
+Homepage = "https://github.com/ntua-unit-of-control-and-informatics/jaqpotpy"
+
+[tool.hatch.version]
+path = "jaqpotpy/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/jaqpotpy",
+]
