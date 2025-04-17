@@ -1,0 +1,77 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = 'pinnsolve'
+dynamic = ['version']
+description = 'Physics Informed Neural Networks leveraging the power of simulators.'
+readme = 'README.md'
+authors = [
+    { name = 'Roman Manasipov', email = 'romantheorphys@gmail.com' }
+]
+license = { file = 'LICENSE' }
+requires-python = '>=3.9'
+dependencies = [
+    "jax",
+    "torch",
+    "pandas",
+    "scipy",
+    "plotly",
+    "bokeh",
+    "matplotlib",
+    "seaborn",
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+"repository" = "https://github.com/rmanasipov/pinnsolve"
+"Documentation" = "https://github.com/rmanasipov/pinnsolve"
+
+[tool.hatch.version]
+path = "pinnsolve/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["pinnsolve"]
+
+[tool.hatch.envs.default]
+dependencies = [
+    "pytest",
+    "pytest-cov",
+]
+
+[tool.hatch.envs.dev]
+dependencies = [
+    "ruff",
+    "isort",
+    "pre-commit",
+]
+
+[tool.ruff]
+target-version = "py39"
+line-length = 100
+select = ["E", "F", "W", "I", "N", "UP", "B", "A"]
+
+[tool.ruff.isort]
+known-first-party = ["pinnsolve"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
