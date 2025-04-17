@@ -1,0 +1,10 @@
+lightshifts/__init__.py,sha256=Qerj5F6rir0yM9Y-bzdzurXidR6hoEKvrt6MdSzGvUk,120
+lightshifts/atom.py,sha256=D4-Z9itZEuzCVmyxDpZ_N-2mRN5Z616QeYehxPPsMSU,6436
+lightshifts/auxiliary.py,sha256=uIcEGFeO5HSdZvvCuaXCPInihjtc-6mDTCWNRsle7GU,5346
+lightshifts/consts.py,sha256=fG8FFJVafiyUzoowGMA7_KkVL8ci8r69X7VE3Q58qtU,422
+lightshifts/lightshift_solver.py,sha256=18Yup-ov8BlF70FGoLUpB6BazuN_p9mV_-Qa92hyvh8,13344
+lightshifts-1.0.dist-info/licenses/LICENSE,sha256=T4mtB8GYNxE4TCP4xuyw2g4gO5fUfd5QFC4jfagzNSE,1068
+lightshifts-1.0.dist-info/METADATA,sha256=ayh43ohwkkK8ngaN3HkLiZlPVNpDcJLBzYv1vJlOxbg,7661
+lightshifts-1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+lightshifts-1.0.dist-info/top_level.txt,sha256=0hFeWrI5OQewp-rC6_j53s-FY4JzsHaBNuB9ypaFRUI,12
+lightshifts-1.0.dist-info/RECORD,,
