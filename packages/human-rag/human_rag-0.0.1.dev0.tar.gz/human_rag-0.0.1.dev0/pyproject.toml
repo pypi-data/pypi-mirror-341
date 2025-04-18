@@ -1,0 +1,19 @@
+[project]
+name = "human-rag"
+version = "0.0.1.dev"
+description = "A RAG system that operates like a human"
+readme = "README.md"
+authors = [{ name = "Gus", email = "contact@memobase.io" }]
+requires-python = ">=3.11"
+dependencies = ["openai>=1.75.0", "pydantic>=2.11.3"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+exclude = ["examples/*", "docs/*", ".github/*", ".git/*", "tests/*"]
+
+
+[dependency-groups]
+dev = ["pytest-asyncio>=0.26.0", "pytest>=8.3.5"]

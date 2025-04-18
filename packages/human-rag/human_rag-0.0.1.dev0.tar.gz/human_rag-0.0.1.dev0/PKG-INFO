@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: human-rag
+Version: 0.0.1.dev0
+Summary: A RAG system that operates like a human
+Author-email: Gus <contact@memobase.io>
+Requires-Python: >=3.11
+Requires-Dist: openai>=1.75.0
+Requires-Dist: pydantic>=2.11.3
+Description-Content-Type: text/markdown
+
+<div align="center">
+  <h1>📒 HumanRAG</h1>
+  <p><strong>A RAG system that operates like a human</strong></p>
+  <p>
+    <a href="https://pypi.org/project/human_rag/" > 
+    	<img src="https://img.shields.io/badge/python->=3.11-blue">
+    </a>
+    <a href="https://pypi.org/project/human_rag/">
+      <img src="https://img.shields.io/pypi/v/human_rag.svg">
+    </a>
+  </p>
+</div>
