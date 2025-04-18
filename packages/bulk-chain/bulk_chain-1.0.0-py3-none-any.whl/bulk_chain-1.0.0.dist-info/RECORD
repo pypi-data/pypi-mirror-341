@@ -1,0 +1,15 @@
+bulk_chain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bulk_chain/api.py,sha256=d_c10Je8wUSnCdQjyWCHVx4FGW6M2_pBMMqKsI_YJaY,5119
+bulk_chain/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bulk_chain/core/llm_base.py,sha256=DZ9l4HpCs9uKTZp68miw_XCqmRAJBqQPuYSK889CeUk,1785
+bulk_chain/core/service_batch.py,sha256=LMxrZeQXV_AJAoCaMCHVx8TvjcmCaKUQhNE8K4D8pCo,1031
+bulk_chain/core/service_data.py,sha256=OWWHHnr_plwxYTxLuvMrhEc1PbSx-XC3rbFzV0hy3vk,1107
+bulk_chain/core/service_dict.py,sha256=lAghLU-3V3xYGv5BTA327Qcw8UJYmgQRMFdggzlrUgo,383
+bulk_chain/core/service_json.py,sha256=6o1xM_8c9QEjH9Q3qEmJylU9nahfRXhUd5sFF2dGJwo,182
+bulk_chain/core/service_schema.py,sha256=KIP4n0Tz2h1i7SIMGhgAhoiCgUFXOT1rzMt38yACS2U,1154
+bulk_chain/core/utils.py,sha256=Dx9Gy-jPpk-w_8WUekN0Ij4RBIWVAPg74vA3N0JgGqc,2471
+bulk_chain-1.0.0.dist-info/LICENSE,sha256=VF9SjNpwwSSFEY_eP_8A1ocDCrbwfjI1pZexXdCkOwo,1076
+bulk_chain-1.0.0.dist-info/METADATA,sha256=TR86CmhcHJ3Sep8TlHZ0Ede_PnH8G5iMILUvVvSskJY,3810
+bulk_chain-1.0.0.dist-info/WHEEL,sha256=pL8R0wFFS65tNSRnaOVrsw9EOkOqxLrlUPenUYnJKNo,91
+bulk_chain-1.0.0.dist-info/top_level.txt,sha256=Hxq_wyH-GDXKBaA63UfBIiMJO2eCHJG5EOrXDphpeB4,11
+bulk_chain-1.0.0.dist-info/RECORD,,
