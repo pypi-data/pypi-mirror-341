@@ -1,0 +1,7 @@
+{
+  "domain": "no_ip",
+  "name": "No-IP.com",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/no_ip",
+  "iot_class": "cloud_polling"
+}

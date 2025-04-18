@@ -1,0 +1,9 @@
+{
+  "domain": "osramlightify",
+  "name": "Osramlightify",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/osramlightify",
+  "iot_class": "local_polling",
+  "loggers": ["lightify"],
+  "requirements": ["lightify==1.0.7.3"]
+}

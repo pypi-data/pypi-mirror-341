@@ -1,0 +1,7 @@
+{
+  "domain": "clicksend_tts",
+  "name": "ClickSend TTS",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/clicksend_tts",
+  "iot_class": "cloud_push"
+}

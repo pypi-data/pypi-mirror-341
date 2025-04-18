@@ -1,0 +1,8 @@
+{
+  "domain": "event",
+  "name": "Event",
+  "codeowners": ["@home-assistant/core"],
+  "documentation": "https://manual.leaxcdms.com/integrations/event",
+  "integration_type": "entity",
+  "quality_scale": "internal"
+}

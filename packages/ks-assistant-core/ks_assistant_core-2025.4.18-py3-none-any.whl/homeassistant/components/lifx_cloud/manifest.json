@@ -1,0 +1,7 @@
+{
+  "domain": "lifx_cloud",
+  "name": "LIFX Cloud",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/lifx_cloud",
+  "iot_class": "cloud_push"
+}

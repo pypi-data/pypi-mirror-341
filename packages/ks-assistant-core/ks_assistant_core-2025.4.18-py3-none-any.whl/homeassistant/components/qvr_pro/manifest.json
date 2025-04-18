@@ -1,0 +1,9 @@
+{
+  "domain": "qvr_pro",
+  "name": "QVR Pro",
+  "codeowners": ["@oblogic7"],
+  "documentation": "https://manual.leaxcdms.com/integrations/qvr_pro",
+  "iot_class": "local_polling",
+  "loggers": ["pyqvrpro"],
+  "requirements": ["pyqvrpro==0.52"]
+}

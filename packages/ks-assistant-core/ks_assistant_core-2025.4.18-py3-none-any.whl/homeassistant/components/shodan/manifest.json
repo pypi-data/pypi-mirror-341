@@ -1,0 +1,9 @@
+{
+  "domain": "shodan",
+  "name": "Shodan",
+  "codeowners": ["@fabaff"],
+  "documentation": "https://manual.leaxcdms.com/integrations/shodan",
+  "iot_class": "cloud_polling",
+  "loggers": ["shodan"],
+  "requirements": ["shodan==1.28.0"]
+}

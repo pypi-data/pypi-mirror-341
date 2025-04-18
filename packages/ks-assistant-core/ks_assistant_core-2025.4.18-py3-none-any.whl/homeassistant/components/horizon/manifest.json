@@ -1,0 +1,9 @@
+{
+  "domain": "horizon",
+  "name": "Unitymedia Horizon HD Recorder",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/horizon",
+  "iot_class": "local_polling",
+  "loggers": ["horimote"],
+  "requirements": ["horimote==0.4.1"]
+}

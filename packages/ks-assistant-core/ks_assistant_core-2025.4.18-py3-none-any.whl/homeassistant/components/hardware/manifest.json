@@ -1,0 +1,10 @@
+{
+  "domain": "hardware",
+  "name": "Hardware",
+  "codeowners": ["@home-assistant/core"],
+  "config_flow": false,
+  "documentation": "https://manual.leaxcdms.com/integrations/hardware",
+  "integration_type": "system",
+  "quality_scale": "internal",
+  "requirements": ["psutil-home-assistant==0.0.1"]
+}

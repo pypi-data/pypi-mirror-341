@@ -1,0 +1,10 @@
+{
+  "domain": "repairs",
+  "name": "Repairs",
+  "codeowners": ["@home-assistant/core"],
+  "config_flow": false,
+  "dependencies": ["http"],
+  "documentation": "https://manual.leaxcdms.com/integrations/repairs",
+  "integration_type": "system",
+  "quality_scale": "internal"
+}

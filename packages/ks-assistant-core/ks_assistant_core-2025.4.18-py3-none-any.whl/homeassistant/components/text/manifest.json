@@ -1,0 +1,8 @@
+{
+  "domain": "text",
+  "name": "Text",
+  "codeowners": ["@home-assistant/core"],
+  "documentation": "https://manual.leaxcdms.com/integrations/text",
+  "integration_type": "entity",
+  "quality_scale": "internal"
+}

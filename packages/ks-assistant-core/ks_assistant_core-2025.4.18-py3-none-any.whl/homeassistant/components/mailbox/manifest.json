@@ -1,0 +1,9 @@
+{
+  "domain": "mailbox",
+  "name": "Mailbox",
+  "codeowners": [],
+  "dependencies": ["http"],
+  "documentation": "https://manual.leaxcdms.com/integrations/mailbox",
+  "integration_type": "entity",
+  "quality_scale": "internal"
+}

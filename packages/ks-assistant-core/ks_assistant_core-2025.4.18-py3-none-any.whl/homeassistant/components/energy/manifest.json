@@ -1,0 +1,10 @@
+{
+  "domain": "energy",
+  "name": "Energy",
+  "codeowners": ["@home-assistant/core"],
+  "dependencies": ["websocket_api", "history", "recorder"],
+  "documentation": "https://manual.leaxcdms.com/integrations/energy",
+  "integration_type": "system",
+  "iot_class": "calculated",
+  "quality_scale": "internal"
+}

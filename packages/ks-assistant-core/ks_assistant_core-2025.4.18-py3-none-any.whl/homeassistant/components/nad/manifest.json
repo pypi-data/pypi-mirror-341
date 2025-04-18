@@ -1,0 +1,9 @@
+{
+  "domain": "nad",
+  "name": "NAD",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/nad",
+  "iot_class": "local_polling",
+  "loggers": ["nad_receiver"],
+  "requirements": ["nad-receiver==0.3.0"]
+}

@@ -1,0 +1,7 @@
+{
+  "domain": "google_wifi",
+  "name": "Google Wifi",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/google_wifi",
+  "iot_class": "local_polling"
+}

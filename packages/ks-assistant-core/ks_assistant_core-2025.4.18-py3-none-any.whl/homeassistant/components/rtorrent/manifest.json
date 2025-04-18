@@ -1,0 +1,7 @@
+{
+  "domain": "rtorrent",
+  "name": "rTorrent",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/rtorrent",
+  "iot_class": "local_polling"
+}

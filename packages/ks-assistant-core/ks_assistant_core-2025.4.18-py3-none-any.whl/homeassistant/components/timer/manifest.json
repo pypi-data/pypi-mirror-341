@@ -1,0 +1,8 @@
+{
+  "domain": "timer",
+  "name": "Timer",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/timer",
+  "integration_type": "helper",
+  "quality_scale": "internal"
+}

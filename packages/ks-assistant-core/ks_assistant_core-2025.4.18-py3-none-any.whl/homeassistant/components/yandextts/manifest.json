@@ -1,0 +1,7 @@
+{
+  "domain": "yandextts",
+  "name": "Yandex TTS",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/yandextts",
+  "iot_class": "cloud_push"
+}

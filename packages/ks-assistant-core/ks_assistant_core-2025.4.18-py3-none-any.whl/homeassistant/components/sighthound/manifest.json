@@ -1,0 +1,9 @@
+{
+  "domain": "sighthound",
+  "name": "Sighthound",
+  "codeowners": ["@robmarkcole"],
+  "documentation": "https://manual.leaxcdms.com/integrations/sighthound",
+  "iot_class": "cloud_polling",
+  "loggers": ["simplehound"],
+  "requirements": ["Pillow==10.4.0", "simplehound==0.3"]
+}

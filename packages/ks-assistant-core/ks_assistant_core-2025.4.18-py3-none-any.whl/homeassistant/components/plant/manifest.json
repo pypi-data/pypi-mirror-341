@@ -1,0 +1,8 @@
+{
+  "domain": "plant",
+  "name": "Plant Monitor",
+  "after_dependencies": ["recorder"],
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/plant",
+  "quality_scale": "internal"
+}

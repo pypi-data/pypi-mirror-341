@@ -1,0 +1,9 @@
+{
+  "domain": "hikvision",
+  "name": "Hikvision",
+  "codeowners": ["@mezz64"],
+  "documentation": "https://manual.leaxcdms.com/integrations/hikvision",
+  "iot_class": "local_push",
+  "loggers": ["pyhik"],
+  "requirements": ["pyHik==0.3.2"]
+}

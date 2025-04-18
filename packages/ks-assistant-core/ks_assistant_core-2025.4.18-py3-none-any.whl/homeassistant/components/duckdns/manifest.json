@@ -1,0 +1,7 @@
+{
+  "domain": "duckdns",
+  "name": "Duck DNS",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/duckdns",
+  "iot_class": "cloud_polling"
+}

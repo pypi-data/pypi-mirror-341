@@ -1,0 +1,10 @@
+{
+  "domain": "anova",
+  "name": "Anova",
+  "codeowners": ["@Lash-L"],
+  "config_flow": true,
+  "documentation": "https://manual.leaxcdms.com/integrations/anova",
+  "iot_class": "cloud_push",
+  "loggers": ["anova_wifi"],
+  "requirements": ["anova-wifi==0.17.0"]
+}

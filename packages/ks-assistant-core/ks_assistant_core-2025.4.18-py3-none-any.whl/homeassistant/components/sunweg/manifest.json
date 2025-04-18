@@ -1,0 +1,10 @@
+{
+  "domain": "sunweg",
+  "name": "Sun WEG",
+  "codeowners": ["@rokam"],
+  "config_flow": true,
+  "documentation": "https://manual.leaxcdms.com/integrations/sunweg/",
+  "iot_class": "cloud_polling",
+  "loggers": ["sunweg"],
+  "requirements": ["sunweg==3.0.2"]
+}

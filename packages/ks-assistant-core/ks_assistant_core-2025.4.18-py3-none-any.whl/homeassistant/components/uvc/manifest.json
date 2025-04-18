@@ -1,0 +1,9 @@
+{
+  "domain": "uvc",
+  "name": "Ubiquiti UniFi Video",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/uvc",
+  "iot_class": "local_polling",
+  "loggers": ["uvcclient"],
+  "requirements": ["uvcclient==0.11.0"]
+}

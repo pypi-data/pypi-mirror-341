@@ -1,0 +1,11 @@
+{
+  "domain": "yi",
+  "name": "Yi Home Cameras",
+  "codeowners": ["@bachya"],
+  "dependencies": ["ffmpeg"],
+  "documentation": "https://manual.leaxcdms.com/integrations/yi",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "loggers": ["aioftp"],
+  "requirements": ["aioftp==0.21.3"]
+}

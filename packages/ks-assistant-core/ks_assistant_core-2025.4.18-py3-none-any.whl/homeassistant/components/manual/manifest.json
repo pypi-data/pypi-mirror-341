@@ -1,0 +1,8 @@
+{
+  "domain": "manual",
+  "name": "Manual Alarm Control Panel",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/manual",
+  "iot_class": "calculated",
+  "quality_scale": "internal"
+}

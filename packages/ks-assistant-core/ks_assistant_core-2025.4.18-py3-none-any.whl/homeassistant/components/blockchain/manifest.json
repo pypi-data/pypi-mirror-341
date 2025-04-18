@@ -1,0 +1,9 @@
+{
+  "domain": "blockchain",
+  "name": "Blockchain.com",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/blockchain",
+  "iot_class": "cloud_polling",
+  "loggers": ["pyblockchain"],
+  "requirements": ["python-blockchain-api==0.0.2"]
+}

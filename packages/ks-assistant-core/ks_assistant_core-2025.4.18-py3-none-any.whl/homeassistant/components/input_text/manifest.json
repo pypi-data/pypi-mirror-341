@@ -1,0 +1,8 @@
+{
+  "domain": "input_text",
+  "name": "Input Text",
+  "codeowners": ["@home-assistant/core"],
+  "documentation": "https://manual.leaxcdms.com/integrations/input_text",
+  "integration_type": "helper",
+  "quality_scale": "internal"
+}

@@ -1,0 +1,9 @@
+{
+  "domain": "twilio_call",
+  "name": "Twilio Call",
+  "codeowners": [],
+  "dependencies": ["twilio"],
+  "documentation": "https://manual.leaxcdms.com/integrations/twilio_call",
+  "iot_class": "cloud_push",
+  "loggers": ["twilio"]
+}

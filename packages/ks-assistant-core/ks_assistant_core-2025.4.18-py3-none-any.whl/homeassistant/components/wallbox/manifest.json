@@ -1,0 +1,10 @@
+{
+  "domain": "wallbox",
+  "name": "Wallbox",
+  "codeowners": ["@hesselonline"],
+  "config_flow": true,
+  "documentation": "https://manual.leaxcdms.com/integrations/wallbox",
+  "iot_class": "cloud_polling",
+  "loggers": ["wallbox"],
+  "requirements": ["wallbox==0.7.0"]
+}

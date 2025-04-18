@@ -1,0 +1,9 @@
+{
+  "domain": "joaoapps_join",
+  "name": "Joaoapps Join",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/joaoapps_join",
+  "iot_class": "cloud_push",
+  "loggers": ["pyjoin"],
+  "requirements": ["python-join-api==0.0.9"]
+}

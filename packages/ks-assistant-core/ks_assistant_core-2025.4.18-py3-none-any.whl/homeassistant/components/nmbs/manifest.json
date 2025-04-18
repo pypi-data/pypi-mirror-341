@@ -1,0 +1,9 @@
+{
+  "domain": "nmbs",
+  "name": "NMBS",
+  "codeowners": ["@thibmaek"],
+  "documentation": "https://manual.leaxcdms.com/integrations/nmbs",
+  "iot_class": "cloud_polling",
+  "loggers": ["pyrail"],
+  "requirements": ["pyrail==0.0.3"]
+}

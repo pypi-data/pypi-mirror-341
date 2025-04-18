@@ -1,0 +1,9 @@
+{
+  "domain": "demo",
+  "name": "Demo",
+  "codeowners": ["@home-assistant/core"],
+  "dependencies": ["conversation", "group", "zone"],
+  "documentation": "https://manual.leaxcdms.com/integrations/demo",
+  "iot_class": "calculated",
+  "quality_scale": "internal"
+}

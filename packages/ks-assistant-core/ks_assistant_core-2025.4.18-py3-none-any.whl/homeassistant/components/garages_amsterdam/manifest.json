@@ -1,0 +1,9 @@
+{
+  "domain": "garages_amsterdam",
+  "name": "Garages Amsterdam",
+  "codeowners": ["@klaasnicolaas"],
+  "config_flow": true,
+  "documentation": "https://manual.leaxcdms.com/integrations/garages_amsterdam",
+  "iot_class": "cloud_polling",
+  "requirements": ["odp-amsterdam==6.0.2"]
+}

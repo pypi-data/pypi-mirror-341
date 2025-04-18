@@ -1,0 +1,10 @@
+{
+  "domain": "amcrest",
+  "name": "Amcrest",
+  "codeowners": ["@flacjacket"],
+  "dependencies": ["ffmpeg"],
+  "documentation": "https://manual.leaxcdms.com/integrations/amcrest",
+  "iot_class": "local_polling",
+  "loggers": ["amcrest"],
+  "requirements": ["amcrest==1.9.8"]
+}

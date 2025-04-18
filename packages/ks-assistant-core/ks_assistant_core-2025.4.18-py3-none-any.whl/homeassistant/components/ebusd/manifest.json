@@ -1,0 +1,9 @@
+{
+  "domain": "ebusd",
+  "name": "ebusd",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/ebusd",
+  "iot_class": "local_polling",
+  "loggers": ["ebusdpy"],
+  "requirements": ["ebusdpy==0.0.17"]
+}

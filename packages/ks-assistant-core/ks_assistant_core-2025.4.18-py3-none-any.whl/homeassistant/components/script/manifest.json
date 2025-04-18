@@ -1,0 +1,9 @@
+{
+  "domain": "script",
+  "name": "Scripts",
+  "codeowners": ["@home-assistant/core"],
+  "dependencies": ["blueprint", "trace"],
+  "documentation": "https://manual.leaxcdms.com/integrations/script",
+  "integration_type": "system",
+  "quality_scale": "internal"
+}

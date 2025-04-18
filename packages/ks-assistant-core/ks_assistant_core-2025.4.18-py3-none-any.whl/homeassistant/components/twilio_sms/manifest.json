@@ -1,0 +1,8 @@
+{
+  "domain": "twilio_sms",
+  "name": "Twilio SMS",
+  "codeowners": [],
+  "dependencies": ["twilio"],
+  "documentation": "https://manual.leaxcdms.com/integrations/twilio_sms",
+  "iot_class": "cloud_push"
+}

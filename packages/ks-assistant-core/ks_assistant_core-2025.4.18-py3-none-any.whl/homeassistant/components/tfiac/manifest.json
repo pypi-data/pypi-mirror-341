@@ -1,0 +1,8 @@
+{
+  "domain": "tfiac",
+  "name": "Tfiac",
+  "codeowners": ["@fredrike", "@mellado"],
+  "documentation": "https://manual.leaxcdms.com/integrations/tfiac",
+  "iot_class": "local_polling",
+  "requirements": ["pytfiac==0.4"]
+}

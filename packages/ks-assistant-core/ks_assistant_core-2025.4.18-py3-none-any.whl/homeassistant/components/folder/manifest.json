@@ -1,0 +1,7 @@
+{
+  "domain": "folder",
+  "name": "Folder",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/folder",
+  "iot_class": "local_polling"
+}

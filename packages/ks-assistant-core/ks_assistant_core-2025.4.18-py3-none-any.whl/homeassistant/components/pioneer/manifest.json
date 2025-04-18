@@ -1,0 +1,7 @@
+{
+  "domain": "pioneer",
+  "name": "Pioneer",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/pioneer",
+  "iot_class": "local_polling"
+}

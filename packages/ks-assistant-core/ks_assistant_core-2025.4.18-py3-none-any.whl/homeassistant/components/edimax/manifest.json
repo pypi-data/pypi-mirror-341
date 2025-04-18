@@ -1,0 +1,9 @@
+{
+  "domain": "edimax",
+  "name": "Edimax",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/edimax",
+  "iot_class": "local_polling",
+  "loggers": ["pyedimax"],
+  "requirements": ["pyedimax==0.2.1"]
+}

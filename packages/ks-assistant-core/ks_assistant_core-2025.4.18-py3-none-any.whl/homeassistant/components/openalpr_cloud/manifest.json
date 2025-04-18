@@ -1,0 +1,7 @@
+{
+  "domain": "openalpr_cloud",
+  "name": "OpenALPR Cloud",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/openalpr_cloud",
+  "iot_class": "cloud_push"
+}

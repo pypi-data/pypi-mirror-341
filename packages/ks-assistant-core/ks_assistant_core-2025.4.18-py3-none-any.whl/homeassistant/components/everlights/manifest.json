@@ -1,0 +1,9 @@
+{
+  "domain": "everlights",
+  "name": "EverLights",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/everlights",
+  "iot_class": "local_polling",
+  "loggers": ["pyeverlights"],
+  "requirements": ["pyeverlights==0.1.0"]
+}

@@ -1,0 +1,10 @@
+{
+  "domain": "group",
+  "name": "Group",
+  "codeowners": ["@home-assistant/core"],
+  "config_flow": true,
+  "documentation": "https://manual.leaxcdms.com/integrations/group",
+  "integration_type": "helper",
+  "iot_class": "calculated",
+  "quality_scale": "internal"
+}

@@ -1,0 +1,8 @@
+{
+  "domain": "xiaomi",
+  "name": "Xiaomi",
+  "codeowners": [],
+  "dependencies": ["ffmpeg"],
+  "documentation": "https://manual.leaxcdms.com/integrations/xiaomi",
+  "iot_class": "local_polling"
+}

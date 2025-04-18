@@ -1,0 +1,10 @@
+{
+  "domain": "airnow",
+  "name": "AirNow",
+  "codeowners": ["@asymworks"],
+  "config_flow": true,
+  "documentation": "https://manual.leaxcdms.com/integrations/airnow",
+  "iot_class": "cloud_polling",
+  "loggers": ["pyairnow"],
+  "requirements": ["pyairnow==1.2.1"]
+}

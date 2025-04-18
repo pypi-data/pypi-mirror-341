@@ -1,0 +1,10 @@
+{
+  "domain": "sun",
+  "name": "Sun",
+  "codeowners": ["@Swamp-Ig"],
+  "config_flow": true,
+  "documentation": "https://manual.leaxcdms.com/integrations/sun",
+  "iot_class": "calculated",
+  "quality_scale": "internal",
+  "single_config_entry": true
+}

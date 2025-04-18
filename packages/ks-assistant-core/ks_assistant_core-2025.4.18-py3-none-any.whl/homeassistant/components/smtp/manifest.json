@@ -1,0 +1,7 @@
+{
+  "domain": "smtp",
+  "name": "SMTP",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/smtp",
+  "iot_class": "cloud_push"
+}

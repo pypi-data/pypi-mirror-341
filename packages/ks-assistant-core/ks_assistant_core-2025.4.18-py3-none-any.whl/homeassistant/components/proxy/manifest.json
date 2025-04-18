@@ -1,0 +1,7 @@
+{
+  "domain": "proxy",
+  "name": "Camera Proxy",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/proxy",
+  "requirements": ["Pillow==10.4.0"]
+}

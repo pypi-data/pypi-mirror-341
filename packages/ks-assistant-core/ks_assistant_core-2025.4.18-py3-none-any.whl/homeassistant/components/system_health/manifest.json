@@ -1,0 +1,9 @@
+{
+  "domain": "system_health",
+  "name": "System Health",
+  "codeowners": [],
+  "dependencies": ["http"],
+  "documentation": "https://manual.leaxcdms.com/integrations/system_health",
+  "integration_type": "system",
+  "quality_scale": "internal"
+}

@@ -1,0 +1,8 @@
+{
+  "domain": "counter",
+  "name": "Counter",
+  "codeowners": ["@fabaff"],
+  "documentation": "https://manual.leaxcdms.com/integrations/counter",
+  "integration_type": "helper",
+  "quality_scale": "internal"
+}

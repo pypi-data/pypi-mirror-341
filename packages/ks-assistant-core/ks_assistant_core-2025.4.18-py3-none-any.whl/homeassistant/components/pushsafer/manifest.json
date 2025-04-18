@@ -1,0 +1,7 @@
+{
+  "domain": "pushsafer",
+  "name": "Pushsafer",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/pushsafer",
+  "iot_class": "cloud_push"
+}

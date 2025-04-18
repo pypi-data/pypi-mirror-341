@@ -1,0 +1,9 @@
+{
+  "domain": "history",
+  "name": "History",
+  "codeowners": ["@home-assistant/core"],
+  "dependencies": ["http", "recorder"],
+  "documentation": "https://manual.leaxcdms.com/integrations/history",
+  "integration_type": "system",
+  "quality_scale": "internal"
+}

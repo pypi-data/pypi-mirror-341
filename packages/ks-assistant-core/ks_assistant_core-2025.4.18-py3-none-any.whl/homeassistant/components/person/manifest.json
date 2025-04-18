@@ -1,0 +1,11 @@
+{
+  "domain": "person",
+  "name": "Person",
+  "after_dependencies": ["device_tracker"],
+  "codeowners": [],
+  "dependencies": ["image_upload", "http"],
+  "documentation": "https://manual.leaxcdms.com/integrations/person",
+  "integration_type": "system",
+  "iot_class": "calculated",
+  "quality_scale": "internal"
+}

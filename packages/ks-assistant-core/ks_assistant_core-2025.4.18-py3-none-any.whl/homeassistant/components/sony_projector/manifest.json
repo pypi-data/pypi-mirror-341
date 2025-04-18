@@ -1,0 +1,9 @@
+{
+  "domain": "sony_projector",
+  "name": "Sony Projector",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/sony_projector",
+  "iot_class": "local_polling",
+  "loggers": ["pysdcp"],
+  "requirements": ["pySDCP==1"]
+}

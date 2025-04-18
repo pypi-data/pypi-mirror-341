@@ -1,0 +1,9 @@
+{
+  "domain": "saj",
+  "name": "SAJ Solar Inverter",
+  "codeowners": ["@fredericvl"],
+  "documentation": "https://manual.leaxcdms.com/integrations/saj",
+  "iot_class": "local_polling",
+  "loggers": ["pysaj"],
+  "requirements": ["pysaj==0.0.16"]
+}

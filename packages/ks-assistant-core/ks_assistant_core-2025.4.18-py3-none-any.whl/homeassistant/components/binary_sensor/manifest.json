@@ -1,0 +1,8 @@
+{
+  "domain": "binary_sensor",
+  "name": "Binary Sensor",
+  "codeowners": ["@home-assistant/core"],
+  "documentation": "https://manual.leaxcdms.com/integrations/binary_sensor",
+  "integration_type": "entity",
+  "quality_scale": "internal"
+}

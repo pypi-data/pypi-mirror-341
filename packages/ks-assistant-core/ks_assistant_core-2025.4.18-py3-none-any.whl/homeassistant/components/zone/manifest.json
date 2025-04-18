@@ -1,0 +1,9 @@
+{
+  "domain": "zone",
+  "name": "Zone",
+  "codeowners": ["@home-assistant/core"],
+  "config_flow": false,
+  "documentation": "https://manual.leaxcdms.com/integrations/zone",
+  "integration_type": "system",
+  "quality_scale": "internal"
+}

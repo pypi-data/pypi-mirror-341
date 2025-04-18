@@ -1,0 +1,9 @@
+{
+  "domain": "openevse",
+  "name": "OpenEVSE",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/openevse",
+  "iot_class": "local_polling",
+  "loggers": ["openevsewifi"],
+  "requirements": ["openevsewifi==1.1.2"]
+}

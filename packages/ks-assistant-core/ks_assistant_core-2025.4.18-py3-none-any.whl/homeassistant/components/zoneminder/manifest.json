@@ -1,0 +1,9 @@
+{
+  "domain": "zoneminder",
+  "name": "ZoneMinder",
+  "codeowners": ["@rohankapoorcom", "@nabbi"],
+  "documentation": "https://manual.leaxcdms.com/integrations/zoneminder",
+  "iot_class": "local_polling",
+  "loggers": ["zoneminder"],
+  "requirements": ["zm-py==0.5.4"]
+}

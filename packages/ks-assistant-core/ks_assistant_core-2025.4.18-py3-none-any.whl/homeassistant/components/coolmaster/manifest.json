@@ -1,0 +1,10 @@
+{
+  "domain": "coolmaster",
+  "name": "CoolMasterNet",
+  "codeowners": ["@OnFreund"],
+  "config_flow": true,
+  "documentation": "https://manual.leaxcdms.com/integrations/coolmaster",
+  "iot_class": "local_polling",
+  "loggers": ["pycoolmasternet_async"],
+  "requirements": ["pycoolmasternet-async==0.1.5"]
+}

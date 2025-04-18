@@ -1,0 +1,9 @@
+{
+  "domain": "minio",
+  "name": "Minio",
+  "codeowners": ["@tkislan"],
+  "documentation": "https://manual.leaxcdms.com/integrations/minio",
+  "iot_class": "cloud_push",
+  "loggers": ["minio"],
+  "requirements": ["minio==7.1.12"]
+}

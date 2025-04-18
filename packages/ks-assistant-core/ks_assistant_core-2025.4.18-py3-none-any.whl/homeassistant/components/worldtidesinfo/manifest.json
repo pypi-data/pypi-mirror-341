@@ -1,0 +1,7 @@
+{
+  "domain": "worldtidesinfo",
+  "name": "World Tides",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/worldtidesinfo",
+  "iot_class": "cloud_polling"
+}

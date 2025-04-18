@@ -1,0 +1,7 @@
+{
+  "domain": "worxlandroid",
+  "name": "Worx Landroid",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/worxlandroid",
+  "iot_class": "local_polling"
+}

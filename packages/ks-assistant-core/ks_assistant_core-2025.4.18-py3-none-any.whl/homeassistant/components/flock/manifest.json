@@ -1,0 +1,7 @@
+{
+  "domain": "flock",
+  "name": "Flock",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/flock",
+  "iot_class": "cloud_push"
+}

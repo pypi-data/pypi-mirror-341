@@ -1,0 +1,8 @@
+{
+  "domain": "foursquare",
+  "name": "Foursquare",
+  "codeowners": [],
+  "dependencies": ["http"],
+  "documentation": "https://manual.leaxcdms.com/integrations/foursquare",
+  "iot_class": "cloud_push"
+}

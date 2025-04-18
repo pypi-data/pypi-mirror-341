@@ -1,0 +1,7 @@
+{
+  "domain": "openhardwaremonitor",
+  "name": "Open Hardware Monitor",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/openhardwaremonitor",
+  "iot_class": "local_polling"
+}

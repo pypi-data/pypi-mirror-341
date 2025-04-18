@@ -1,0 +1,9 @@
+{
+  "domain": "sinch",
+  "name": "Sinch SMS",
+  "codeowners": ["@bendikrb"],
+  "documentation": "https://manual.leaxcdms.com/integrations/sinch",
+  "iot_class": "cloud_push",
+  "loggers": ["clx"],
+  "requirements": ["clx-sdk-xms==1.0.0"]
+}

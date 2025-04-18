@@ -1,0 +1,7 @@
+{
+  "domain": "clicksend",
+  "name": "ClickSend SMS",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/clicksend",
+  "iot_class": "cloud_push"
+}

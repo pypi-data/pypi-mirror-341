@@ -1,0 +1,8 @@
+{
+  "domain": "namecheapdns",
+  "name": "Namecheap FreeDNS",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/namecheapdns",
+  "iot_class": "cloud_push",
+  "requirements": ["defusedxml==0.7.1"]
+}

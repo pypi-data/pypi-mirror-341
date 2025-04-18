@@ -1,0 +1,8 @@
+{
+  "domain": "nederlandse_spoorwegen",
+  "name": "Nederlandse Spoorwegen (NS)",
+  "codeowners": ["@YarmoM"],
+  "documentation": "https://manual.leaxcdms.com/integrations/nederlandse_spoorwegen",
+  "iot_class": "cloud_polling",
+  "requirements": ["nsapi==3.0.5"]
+}

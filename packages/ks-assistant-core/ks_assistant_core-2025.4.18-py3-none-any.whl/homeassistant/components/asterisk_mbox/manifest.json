@@ -1,0 +1,9 @@
+{
+  "domain": "asterisk_mbox",
+  "name": "Asterisk Voicemail",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/asterisk_mbox",
+  "iot_class": "local_push",
+  "loggers": ["asterisk_mbox"],
+  "requirements": ["asterisk_mbox==0.5.0"]
+}

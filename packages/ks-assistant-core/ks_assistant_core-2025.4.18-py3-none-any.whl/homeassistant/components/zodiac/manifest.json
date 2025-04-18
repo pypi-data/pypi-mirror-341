@@ -1,0 +1,9 @@
+{
+  "domain": "zodiac",
+  "name": "Zodiac",
+  "codeowners": ["@JulienTant"],
+  "config_flow": true,
+  "documentation": "https://manual.leaxcdms.com/integrations/zodiac",
+  "iot_class": "calculated",
+  "quality_scale": "silver"
+}

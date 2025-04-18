@@ -1,0 +1,8 @@
+{
+  "domain": "ziggo_mediabox_xl",
+  "name": "Ziggo Mediabox XL",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/ziggo_mediabox_xl",
+  "iot_class": "local_polling",
+  "requirements": ["ziggo-mediabox-xl==1.1.0"]
+}

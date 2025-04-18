@@ -1,0 +1,7 @@
+{
+  "domain": "london_air",
+  "name": "London Air",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/london_air",
+  "iot_class": "cloud_polling"
+}

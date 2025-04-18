@@ -1,0 +1,7 @@
+{
+  "domain": "citybikes",
+  "name": "CityBikes",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/citybikes",
+  "iot_class": "cloud_polling"
+}

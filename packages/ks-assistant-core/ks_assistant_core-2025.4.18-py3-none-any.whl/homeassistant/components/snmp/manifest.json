@@ -1,0 +1,9 @@
+{
+  "domain": "snmp",
+  "name": "SNMP",
+  "codeowners": ["@nmaggioni"],
+  "documentation": "https://manual.leaxcdms.com/integrations/snmp",
+  "iot_class": "local_polling",
+  "loggers": ["pyasn1", "pysmi", "pysnmp"],
+  "requirements": ["pysnmp-lextudio==6.0.11"]
+}

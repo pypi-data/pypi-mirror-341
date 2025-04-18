@@ -1,0 +1,7 @@
+{
+  "domain": "hitron_coda",
+  "name": "Rogers Hitron CODA",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/hitron_coda",
+  "iot_class": "local_polling"
+}

@@ -1,0 +1,9 @@
+{
+  "domain": "aftership",
+  "name": "AfterShip",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://manual.leaxcdms.com/integrations/aftership",
+  "iot_class": "cloud_polling",
+  "requirements": ["pyaftership==21.11.0"]
+}

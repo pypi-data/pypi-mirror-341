@@ -1,0 +1,7 @@
+{
+  "domain": "telnet",
+  "name": "Telnet",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/telnet",
+  "iot_class": "local_polling"
+}

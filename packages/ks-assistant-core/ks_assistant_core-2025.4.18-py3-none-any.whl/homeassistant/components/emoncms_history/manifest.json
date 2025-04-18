@@ -1,0 +1,7 @@
+{
+  "domain": "emoncms_history",
+  "name": "Emoncms History",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/emoncms_history",
+  "iot_class": "local_polling"
+}

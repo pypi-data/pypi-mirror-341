@@ -1,0 +1,8 @@
+{
+  "domain": "logger",
+  "name": "Logger",
+  "codeowners": ["@home-assistant/core"],
+  "documentation": "https://manual.leaxcdms.com/integrations/logger",
+  "integration_type": "system",
+  "quality_scale": "internal"
+}

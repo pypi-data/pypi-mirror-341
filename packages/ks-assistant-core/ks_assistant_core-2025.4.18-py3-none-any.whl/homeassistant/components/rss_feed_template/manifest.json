@@ -1,0 +1,9 @@
+{
+  "domain": "rss_feed_template",
+  "name": "RSS Feed Template",
+  "codeowners": ["@home-assistant/core"],
+  "dependencies": ["http"],
+  "documentation": "https://manual.leaxcdms.com/integrations/rss_feed_template",
+  "iot_class": "local_push",
+  "quality_scale": "internal"
+}

@@ -1,0 +1,9 @@
+{
+  "domain": "websocket_api",
+  "name": "KS Assistant WebSocket API",
+  "codeowners": ["@home-assistant/core"],
+  "dependencies": ["http"],
+  "documentation": "https://manual.leaxcdms.com/integrations/websocket_api",
+  "integration_type": "system",
+  "quality_scale": "internal"
+}

@@ -1,0 +1,11 @@
+{
+  "domain": "whirlpool",
+  "name": "Whirlpool Appliances",
+  "codeowners": ["@abmantis", "@mkmer"],
+  "config_flow": true,
+  "documentation": "https://manual.leaxcdms.com/integrations/whirlpool",
+  "integration_type": "hub",
+  "iot_class": "cloud_push",
+  "loggers": ["whirlpool"],
+  "requirements": ["whirlpool-sixth-sense==0.18.8"]
+}

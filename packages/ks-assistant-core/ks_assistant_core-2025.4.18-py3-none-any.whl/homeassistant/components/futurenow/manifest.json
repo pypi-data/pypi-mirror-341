@@ -1,0 +1,8 @@
+{
+  "domain": "futurenow",
+  "name": "P5 FutureNow",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/futurenow",
+  "iot_class": "local_polling",
+  "requirements": ["pyfnip==0.2"]
+}

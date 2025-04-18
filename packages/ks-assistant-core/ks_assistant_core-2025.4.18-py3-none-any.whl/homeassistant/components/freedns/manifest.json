@@ -1,0 +1,7 @@
+{
+  "domain": "freedns",
+  "name": "FreeDNS",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/freedns",
+  "iot_class": "cloud_push"
+}

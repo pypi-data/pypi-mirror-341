@@ -1,0 +1,7 @@
+{
+  "domain": "logentries",
+  "name": "Logentries",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/logentries",
+  "iot_class": "cloud_push"
+}

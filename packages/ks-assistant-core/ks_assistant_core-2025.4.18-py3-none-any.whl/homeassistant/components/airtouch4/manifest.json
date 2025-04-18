@@ -1,0 +1,10 @@
+{
+  "domain": "airtouch4",
+  "name": "AirTouch 4",
+  "codeowners": ["@samsinnamon"],
+  "config_flow": true,
+  "documentation": "https://manual.leaxcdms.com/integrations/airtouch4",
+  "iot_class": "local_polling",
+  "loggers": ["airtouch4pyapi"],
+  "requirements": ["airtouch4pyapi==1.0.5"]
+}

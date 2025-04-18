@@ -1,0 +1,9 @@
+{
+  "domain": "bayesian",
+  "name": "Bayesian",
+  "codeowners": ["@HarvsG"],
+  "documentation": "https://manual.leaxcdms.com/integrations/bayesian",
+  "integration_type": "helper",
+  "iot_class": "local_polling",
+  "quality_scale": "internal"
+}

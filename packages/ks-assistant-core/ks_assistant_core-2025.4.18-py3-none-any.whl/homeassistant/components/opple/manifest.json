@@ -1,0 +1,9 @@
+{
+  "domain": "opple",
+  "name": "Opple",
+  "codeowners": [],
+  "documentation": "https://manual.leaxcdms.com/integrations/opple",
+  "iot_class": "local_polling",
+  "loggers": ["pyoppleio"],
+  "requirements": ["pyoppleio-legacy==1.0.8"]
+}
