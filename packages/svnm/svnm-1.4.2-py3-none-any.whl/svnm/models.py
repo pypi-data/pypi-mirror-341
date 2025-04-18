@@ -1,0 +1,4 @@
+from svnm.cifar10 import Cifar10
+from svnm.genderdetection import GenderDetection
+from svnm.facedetection import FaceDetection
+from svnm.handwrittendigitrecognition import HandwrittenDigitRecognition
