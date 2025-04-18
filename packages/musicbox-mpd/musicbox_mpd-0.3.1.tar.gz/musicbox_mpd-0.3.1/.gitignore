@@ -1,0 +1,7 @@
+config.json
+*.db
+*.exe
+*.pyc
+dist/*
+config.old.json
+*.snap
