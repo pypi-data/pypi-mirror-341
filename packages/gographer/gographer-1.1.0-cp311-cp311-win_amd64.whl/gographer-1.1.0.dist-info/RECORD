@@ -1,0 +1,9 @@
+gographer-1.1.0.dist-info/METADATA,sha256=qwm1IqK_mdtNClP-1dAUJjz8a23FL4flr6-mPEgksiA,1782
+gographer-1.1.0.dist-info/WHEEL,sha256=tAGdc4C2KTz7B2CZ8Jf3DcKSAviAbCg44UH9ma2gYww,96
+gographer-1.1.0.dist-info/entry_points.txt,sha256=oKJliJi4WDQCNg6QERLnriKQgk9eAawFwf-WTtgO4-8,50
+gographer-1.1.0.dist-info/licenses/LICENSE.md,sha256=riiPk03qS8Km93-yO0q5L4xk_UHnWh7lr-oThc1e87I,1559
+gographer/__init__.py,sha256=9rajfTFZAOlX0x3TI8HL03Yues4zFA0yN2uXm7rvPKw,119
+gographer/__init__.pyi,sha256=NcboqOuB1AO9IZpKY4POJSqG1mjMKxz665nYFyCWvmI,5539
+gographer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gographer/gographer.cp311-win_amd64.pyd,sha256=qaROOaums7xzzzLihMujOECLjfYbnRBpDI5cMwC8tUs,21650944
+gographer-1.1.0.dist-info/RECORD,,
