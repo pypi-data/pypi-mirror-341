@@ -1,0 +1,10 @@
+fastapi_context/.gitignore,sha256=gGfFnVkeVR2HRG84P-md_4km1mFUo2pRWIruljWuASE,3546
+fastapi_context/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_context/config.py,sha256=HhC4IdJuNme2nWsO59Oqkw9wQxpG8ckXJV9z0DnHrys,2374
+fastapi_context/context_middleware.py,sha256=OTVOYqVNQwFPhBlEDsJidsFAEeGD9Ap1OGPGd-Jdib8,2360
+fastapi_context/exceptions.py,sha256=-U1pzfbNHATbzXl3A4zgfgIsk30hOtKD-NW4QRszuPo,438
+fastapi_context/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_context/plugins/auth_plugin.py,sha256=It_R5HG9_WKAB8MU3-xsBa-pubZfcT4K2ul55NuNj1U,7021
+fastapi_context-0.1.0.dist-info/METADATA,sha256=PhALOe3W1j8QiekHj9UpKN2tT9ZCwaquKTmcBV9ivKs,749
+fastapi_context-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+fastapi_context-0.1.0.dist-info/RECORD,,
