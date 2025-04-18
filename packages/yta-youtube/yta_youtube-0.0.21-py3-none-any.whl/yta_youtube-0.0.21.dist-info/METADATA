@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: yta-youtube
+Version: 0.0.21
+Summary: Youtube Autonomous Youtube interaction module.
+Author: danialcala94
+Author-email: danielalcalavalera@gmail.com
+Requires-Python: ==3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pillow (>=10.4.0,<11.0.0)
+Requires-Dist: yt_dlp (>=2025.1.26,<2026.0.0)
+Requires-Dist: yta_general_utils (>=0.0.250,<0.1.0)
+Requires-Dist: yta_google_api (>=0.0.6,<0.1.0)
+Description-Content-Type: text/markdown
+
+# Youtube Autonomous Youtube interaction module
+
+The simplest way to interact with Youtube.
