@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: agio
+Version: 0.0.1
+Author-email: paulwinex <paulwinex@gmail.com>
+Requires-Python: <3.14,>=3.12
+Requires-Dist: requests>=2.32.3
