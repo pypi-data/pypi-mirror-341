@@ -1,0 +1,273 @@
+import os
+import sys
+import json
+import asyncio
+import aiohttp
+from mcp.server.fastmcp import FastMCP
+import requests
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+# 从环境变量读取API URL
+DATA_ANALYSIS_API_URL = os.environ.get("DATA_ANALYSIS_API_URL", "http://llmtest.ouyeelf.com/api/v1/process/8e874fc9-6782-4e4a-b589-21d2a71adfbb")
+# 公司API接口信息
+COMPANY_API_URL = os.environ.get("COMPANY_API_URL", "http://llmtest.ouyeelf.com/api/v2/assistant/chat/completions")
+MODEL_ID = os.environ.get("MODEL_ID", "578751c7-377a-4669-ac57-accfbb1fe157")
+
+# 创建MCP服务器
+mcp = FastMCP("DataAnalysis")
+
+class DataAnalysisServer:
+    def __init__(self, api_url):
+        self.api_url = api_url
+        logger.info(f"Data Analysis Server initialized with API URL: {api_url}")
+
+    def analyze_data(self, query, tools=None):
+        """
+        Analyze data based on the query and optional tools.
+        
+        Args:
+            query (str): The query to analyze.
+            tools (list, optional): List of tools to use for analysis.
+            
+        Returns:
+            dict: The analysis result.
+        """
+        logger.info(f"Analyzing data with query: {query}")
+        
+        # Prepare the request data
+        request_data = {
+            "query": query
+        }
+        
+        if tools:
+            request_data["tools"] = tools
+            
+        try:
+            # Send the request to the API
+            logger.info(f"Sending request to API: {self.api_url}")
+            response = requests.post(self.api_url, json=request_data)
+            response.raise_for_status()  # Raise an exception for HTTP errors
+            
+            # Parse the response
+            result = response.json()
+            logger.info(f"Received API response: {json.dumps(result, indent=2)}")
+            
+            # Check if the response has the expected structure
+            if 'data' in result and 'result' in result['data']:
+                # Check if the result contains an 'output' field (new API structure)
+                if 'output' in result['data']['result']:
+                    logger.info("Found 'output' field in result, using it as the analysis result")
+                    return {
+                        'status': 'success',
+                        'result': result['data']['result']['output']
+                    }
+                # Fall back to using the entire result field
+                logger.info("Using entire 'result' field as the analysis result")
+                return {
+                    'status': 'success',
+                    'result': result['data']['result']
+                }
+            else:
+                logger.error(f"Unexpected API response structure: {result}")
+                return {
+                    'status': 'error',
+                    'message': 'Unexpected API response structure',
+                    'details': result
+                }
+                
+        except requests.exceptions.RequestException as e:
+            logger.error(f"API request failed: {str(e)}")
+            return {
+                'status': 'error',
+                'message': f'API request failed: {str(e)}'
+            }
+        except json.JSONDecodeError as e:
+            logger.error(f"Failed to parse API response: {str(e)}")
+            return {
+                'status': 'error',
+                'message': f'Failed to parse API response: {str(e)}'
+            }
+        except Exception as e:
+            logger.error(f"Unexpected error during analysis: {str(e)}")
+            return {
+                'status': 'error',
+                'message': f'Unexpected error during analysis: {str(e)}'
+            }
+
+@mcp.tool()
+async def analyze_data(query: str) -> dict:
+    """分析公司算账经营数据并生成报告
+    
+    Args:
+        query: 用户的查询内容，例如"请分析1-6月份边际贡献最高的5家分公司"或"2024年6月通宝产品的信息化成本是多少"
+    
+    Returns:
+        包含分析结果的JSON对象
+    """
+    print(f"接收到数据分析查询: {query}")
+    
+    async with aiohttp.ClientSession() as session:
+        headers = {
+            "Content-Type": "application/json"
+        }
+        
+        # 构建请求数据
+        data = {
+            "inputs": {
+                "question": "",
+                "input": query,
+                "id": "StructuredChatAgent-9b44c"
+            },
+            "tweaks": {
+                "GptsToolWrapper-2da13": {},
+                "BishengLLM-5ce00": {},
+                "GptsToolWrapper-0f494": {},
+                "StructuredChatAgent-9b44c": {},
+                "ConversationBufferMemory-eedfe": {}
+            }
+        }
+        
+        try:
+            print(f"发送请求到API: {DATA_ANALYSIS_API_URL}")
+            async with session.post(DATA_ANALYSIS_API_URL, headers=headers, json=data) as response:
+                if response.status != 200:
+                    error_text = await response.text()
+                    print(f"API请求失败，状态码: {response.status}, 错误: {error_text}")
+                    return {
+                        "status": "error",
+                        "message": f"API请求失败，状态码: {response.status}",
+                        "data": None
+                    }
+                
+                # 处理响应
+                response_json = await response.json()
+                print(f"API响应状态: {response_json.get('status_code')} - {response_json.get('status_message')}")
+                
+                # 打印完整的响应结构，帮助调试
+                print(f"API响应结构: {json.dumps(response_json, ensure_ascii=False, indent=2)[:500]}...")
+                
+                # 提取分析结果
+                if response_json.get('status_code') == 200 and 'data' in response_json:
+                    if 'result' in response_json['data']:
+                        # 从output字段获取结果，而不是result字段
+                        if 'output' in response_json['data']['result']:
+                            analysis_result = response_json['data']['result']['output']
+                            print(f"成功获取分析结果，长度: {len(analysis_result)}")
+                            return {
+                                "status": "success",
+                                "message": "数据分析完成",
+                                "data": analysis_result
+                            }
+                        # 如果没有output字段，尝试从result字段获取
+                        elif 'result' in response_json['data']['result']:
+                            analysis_result = response_json['data']['result']['result']
+                            print(f"从result字段获取分析结果，长度: {len(analysis_result)}")
+                            return {
+                                "status": "success",
+                                "message": "数据分析完成",
+                                "data": analysis_result
+                            }
+                        else:
+                            print("响应中未找到分析结果")
+                            return {
+                                "status": "error",
+                                "message": "响应中未找到分析结果",
+                                "data": None
+                            }
+                    else:
+                        print("响应中未找到result字段")
+                        return {
+                            "status": "error",
+                            "message": "响应中未找到result字段",
+                            "data": None
+                        }
+                else:
+                    print(f"API请求未成功: {response_json.get('status_message')}")
+                    return {
+                        "status": "error",
+                        "message": f"API请求未成功: {response_json.get('status_message')}",
+                        "data": None
+                    }
+        
+        except Exception as e:
+            print(f"调用API时发生错误: {str(e)}")
+            return {
+                "status": "error",
+                "message": f"调用API时发生错误: {str(e)}",
+                "data": None
+            }
+
+@mcp.tool()
+async def query_company_info(query: str) -> str:
+    """查询公司信息
+    
+    Args:
+        query: 用户的查询内容，例如"欧冶金诚服务有限公司"
+    
+    Returns:
+        公司相关信息的回答
+    """
+    print(f"接收到查询: {query}")
+    
+    # 确保查询内容包含公司名称
+    if "公司" not in query and "企业" not in query and "信息" not in query:
+        query = f"请介绍一下{query}公司的企业信息"
+    
+    print(f"处理后的查询: {query}")
+    
+    async with aiohttp.ClientSession() as session:
+        headers = {
+            "User-Agent": "Apifox/1.0.0 (https://apifox.com)",
+            "Content-Type": "application/json"
+        }
+        
+        data = {
+            "model": MODEL_ID,
+            "messages": [
+                {
+                    "role": "user",
+                    "content": query
+                }
+            ],
+            "temperature": 0,
+            "stream": True
+        }
+        
+        try:
+            print(f"发送请求到API: {COMPANY_API_URL}")
+            async with session.post(COMPANY_API_URL, headers=headers, json=data) as response:
+                if response.status != 200:
+                    error_text = await response.text()
+                    print(f"API请求失败，状态码: {response.status}, 错误: {error_text}")
+                    return f"API请求失败，状态码: {response.status}"
+                
+                # 处理流式响应
+                full_response = ""
+                print("开始接收流式响应...")
+                async for line in response.content:
+                    line = line.decode('utf-8').strip()
+                    if line.startswith("data: "):
+                        try:
+                            json_data = json.loads(line[6:])  # 去掉 "data: " 前缀
+                            if json_data.get("choices") and json_data["choices"][0].get("delta"):
+                                delta = json_data["choices"][0]["delta"]
+                                if delta.get("content"):
+                                    content = delta["content"]
+                                    full_response += content
+                                    print(f"接收到内容片段: {content[:20]}..." if len(content) > 20 else f"接收到内容片段: {content}")
+                        except json.JSONDecodeError as e:
+                            print(f"JSON解析错误: {e}, 行内容: {line[:50]}...")
+                
+                print(f"完整响应长度: {len(full_response)}")
+                return full_response
+        
+        except Exception as e:
+            print(f"调用API时发生错误: {str(e)}")
+            return f"调用API时发生错误: {str(e)}"
+
+if __name__ == "__main__":
+    print(f"启动数据分析服务器... API URL: {DATA_ANALYSIS_API_URL}")
+    mcp.run() 
