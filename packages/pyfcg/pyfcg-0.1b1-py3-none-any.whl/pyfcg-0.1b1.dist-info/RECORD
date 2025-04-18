@@ -1,0 +1,12 @@
+pyfcg/__init__.py,sha256=jeRB1ejk7El81N8L3hTkJHWytQ2c0vxjzgBv45272Bw,318
+pyfcg/agent.py,sha256=goFd8K9QMh-SRQu9NGSV4R8YsjjweTLPbiHI6UDBqHk,2057
+pyfcg/cxn.py,sha256=8Y6WmfmBBT54kZTQDz2wEHMzAqOs_YCTf2PamXq8zZA,1612
+pyfcg/fcg_go_bridge.py,sha256=fxLYn_B02crZ_UfppCHIjpDU2VLf7oMcvJz30wmi8L8,4797
+pyfcg/grammar.py,sha256=oDHGOEn_towLZ4XJcKs1AI0Y12sM9HPtAa3SsqjS9OI,7323
+pyfcg/routes.py,sha256=uSP6xgCOpbu5cn-xxNmnjRZ7iRWv0vfYq_eQmT8O4m4,5920
+pyfcg/utils.py,sha256=CL_CiR5xF1lRpimJB84nqU7KN8GmM_updsmONKtZqj8,3932
+pyfcg/test/testje.txt,sha256=yLmjwg2gWZHkv4C4ovU6kcv42-ucfR919RZr8tF_gbQ,18
+pyfcg-0.1b1.dist-info/METADATA,sha256=kVACkVHRFYRmqSNWnGouChd3WqhL-CfRwHUoQ_jnPo0,988
+pyfcg-0.1b1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pyfcg-0.1b1.dist-info/top_level.txt,sha256=q5b7u6nj-YPU5OZyprKKKfFOfWcTJTEhmTCSwgk5f2o,6
+pyfcg-0.1b1.dist-info/RECORD,,
