@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: nextgen-mft
+Version: 0.2.0
+Summary: Secure, AI-powered Managed File Transfer (SFTP/HTTPS + Crypto + Anomaly Detection)
+Author: Raghava Chellu
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: typer
+Requires-Dist: requests
+Requires-Dist: paramiko
+Requires-Dist: cryptography
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+
+# NextGen MFT
+Secure, AI-powered Managed File Transfer library.
