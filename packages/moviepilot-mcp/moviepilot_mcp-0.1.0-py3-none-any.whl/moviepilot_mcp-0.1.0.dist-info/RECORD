@@ -1,0 +1,10 @@
+apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apis/media.py,sha256=iqQeseqjYKJyjkvzJKvfKrwtKk8TIzKsbSISU62-o_Q,3406
+apis/suscribe.py,sha256=RlscUvMO1Ko1f8nG966IdJIs8EzDApAw2fyw1PHtTwU,4027
+moviepilot_mcp-0.1.0.dist-info/licenses/LICENSE,sha256=gRwNuAbSpkzeusCzFXRaVQv8dzwHMJIeC3brHdTBc1A,1066
+schemas/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+schemas/subscribe.py,sha256=tg0oPQNrE8V_8-U3mb1EDRG2oOvItL0ZvZdQ7YddfG8,4863
+moviepilot_mcp-0.1.0.dist-info/METADATA,sha256=cdaSySp-gEjCDAACm1PrvEOZrcgApZW_hLHs31_xY8k,9550
+moviepilot_mcp-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+moviepilot_mcp-0.1.0.dist-info/top_level.txt,sha256=Y6B42RDYaUMTOWMHRmKoTe6afiAQn8VhFW4seCKaOSs,13
+moviepilot_mcp-0.1.0.dist-info/RECORD,,
