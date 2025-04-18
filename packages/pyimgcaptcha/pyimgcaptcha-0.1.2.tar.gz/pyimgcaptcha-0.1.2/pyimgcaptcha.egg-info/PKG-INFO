@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: pyimgcaptcha
+Version: 0.1.2
+Summary: Library for generating CAPTCHA images
+Author: redderi
+Author-email: redderi <vrudko22@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow>=8.0.0
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-python
+
+# CAPTCHA Library
+
+![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
+
+Library for generating CAPTCHA images with Python.
+
+## License
+This project is licensed under the MIT License.
+
+## Installation
+```bash
+pip install captcha-library
