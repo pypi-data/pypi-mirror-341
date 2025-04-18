@@ -1,0 +1,8 @@
+cli.py
+setup.py
+aiia_cli.egg-info/PKG-INFO
+aiia_cli.egg-info/SOURCES.txt
+aiia_cli.egg-info/dependency_links.txt
+aiia_cli.egg-info/entry_points.txt
+aiia_cli.egg-info/requires.txt
+aiia_cli.egg-info/top_level.txt
