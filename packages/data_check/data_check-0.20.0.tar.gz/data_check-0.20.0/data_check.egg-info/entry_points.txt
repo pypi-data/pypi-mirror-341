@@ -1,0 +1,2 @@
+[console_scripts]
+data_check = data_check.cli.main:cli
