@@ -1,0 +1,3 @@
+[console_scripts]
+sonicscribe = SonicScribe.main:main
+translate-srt = SonicScribe.translate_srt:main

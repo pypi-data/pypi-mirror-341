@@ -1,0 +1,16 @@
+SonicScribe/__init__.py,sha256=a9AIuDcqUBpBZqbbZYhcstFN0ZD7KwALePqyF7aSDV4,1456
+SonicScribe/main.py,sha256=97VBvQpNnUGK6GffvppDxRYasNjcNFjTSewXeceOkI4,12040
+SonicScribe/translate_srt.py,sha256=7reRaP2uUgSI5KYi2F7JiD5sCTOdN8exse8LjhQApY8,6127
+SonicScribe/utils/__init__.py,sha256=MkC9m5xEc5AO0Iv356zOisJ96yeVnlkwKPijIxSiLrA,655
+SonicScribe/utils/audio_extractor.py,sha256=Hl9mIcy4SClnu6x-uXGmHlqsszU72kqfTA6w5-Q99t0,2037
+SonicScribe/utils/file_manager.py,sha256=zlk7eGoH4PenTXwSByCBciNfeUGjNmIQ1gRLJWzaoLw,4342
+SonicScribe/utils/language_detector.py,sha256=LqT1KnYQfcdOE_aLQ7V7fQFnDa_ST5KTUyDnhQHsh7U,756
+SonicScribe/utils/logger.py,sha256=IUZqia2t2V5DeeYaoc7xkCIQN8H7IxPILRmrN19MH3o,726
+SonicScribe/utils/translator.py,sha256=jIsW71bbUrfAl9VuMA4uZfmVv48p9yt8IdHemQ9e4uI,4443
+SonicScribe/utils/whisper_api.py,sha256=EPPCU6V8a_mbrao-Gn2tHTurW9kia6zeW2nzz7F0MCA,5388
+sonicscribe-1.0.3.dist-info/licenses/LICENCE,sha256=GPjbW8eAD2QaEOL1sq8cmeVxzmrsq56KvNeCb6RjFaM,1083
+sonicscribe-1.0.3.dist-info/METADATA,sha256=eBemNo8wvfJLsZhL3yu59ofqnwD7vVOqur4NLurSiOE,9107
+sonicscribe-1.0.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sonicscribe-1.0.3.dist-info/entry_points.txt,sha256=jUK2-37XGhXpZ4tTWH2X9LhIga8WYBdJjTte2-aKelA,101
+sonicscribe-1.0.3.dist-info/top_level.txt,sha256=LUu7_5GsuL1NH8v70NMZFgDIhzCQrHHORdWL3G5M45s,12
+sonicscribe-1.0.3.dist-info/RECORD,,
