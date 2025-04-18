@@ -1,0 +1,8 @@
+de4rec/__init__.py,sha256=uG1uv5tZuSw_XSc8qKrjK-VX7DUggGBaVafug88mJio,382
+de4rec/s3_tools.py,sha256=4rh_h9h_uvEkvM5yWoU_cJO26yhui-wluRvNBzb6Q4E,3391
+de4rec/text_encoder.py,sha256=o-UadhiyTqMCG3iLAK3PNScaNzgLCATeSBRTnDHTbYc,10392
+de4rec/train.py,sha256=owRLWxPKIHGFmQkxsoeutOeaRyWhyBtClJtzetSG-24,13838
+de4rec-0.5.3.dist-info/METADATA,sha256=496Em_REpqTyvKHRe3wf26MAkB_LgQTJlGUybyLCpT4,1501
+de4rec-0.5.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+de4rec-0.5.3.dist-info/top_level.txt,sha256=cjrqqWttbkRbWesx9cBJGUsw3eTokYcQYeMmwN5aS4o,7
+de4rec-0.5.3.dist-info/RECORD,,
