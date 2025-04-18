@@ -1,0 +1,13 @@
+fen2image/BoardRepresentation.py,sha256=hr2TmpFECdhvzKR-atsT5eXTIU6lJylwlMamlt-NYuQ,3497
+fen2image/Fen.py,sha256=iRuX6SggIIDSK1Z0ZHEF8hjetv0Oc2fpXVQVqjJAhLg,6392
+fen2image/__init__.py,sha256=SgmxS4sVmtb_X1GVjR1TQUTooIrLwAxEtdCnKfkWyW0,27
+fen2image/constants.py,sha256=1b_E0YAprAVBpzN_swMcvHBv1XlZrOMFBY_Fzg-q4zg,570
+fen2image/core.py,sha256=ACvY7P6b3zZqC6uuT80f2ZhVYROnzUwlyl1sG2cpZ48,403
+fen2image/utils.py,sha256=1FYI_VfrDXEHU9xtcHyqJsifMi7EASbryWUKQtK_b4I,951
+fen2image-1.0.1.dist-info/licenses/LICENSE,sha256=sfuITpZtRN3u3Kh8ohqSSkbYljbEKQQVxELUZMAUIec,1070
+tests/test_board_representation.py,sha256=I1YqXea9m-DiIAk17-AnFeroFoOnLfkPNLATU8d3Grk,5774
+tests/test_fen.py,sha256=m6TMnNsy60zR3UIvkknzTT8DBbwQZb9Ijkzk1F0ETyE,5231
+fen2image-1.0.1.dist-info/METADATA,sha256=3KBh5dYQVKq6YNz2q0A0q4_C_qjzyjSZTTqX90MjyZI,712
+fen2image-1.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+fen2image-1.0.1.dist-info/top_level.txt,sha256=tPs1jnyb1WLZWiB6sd8d6CaG2k6z5G8VEVvbwoa8O5A,16
+fen2image-1.0.1.dist-info/RECORD,,
