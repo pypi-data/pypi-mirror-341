@@ -1,0 +1,7 @@
+fastapi_gssapi/__init__.py,sha256=RUYeXpUkrvZcXfABr_GO4rrEkK8HScNzd7RujiCsMH8,150
+fastapi_gssapi/dependency.py,sha256=Ny4pnvrTYdH-H-zQihq9aYBoLtqvmZ0A2VBvVLHEYnw,1067
+fastapi_gssapi/middleware.py,sha256=lkVcyrqQI6Fa6NLe-1QiKYu9zh4qlaD6rfxSEJ48AWI,1836
+fastapi_gssapi-0.1.0.dist-info/METADATA,sha256=6nz41yyAKsHXF4bzvdRw3rRQncov9WCMgWir0c_RUHs,836
+fastapi_gssapi-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fastapi_gssapi-0.1.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fastapi_gssapi-0.1.0.dist-info/RECORD,,
