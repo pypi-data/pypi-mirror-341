@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: cave-mapper
+Version: 0.1.0
+Summary: Add your description here
+Author-email: Ben Pedigo <benjamindpedigo@gmail.com>
+Requires-Python: <3.13,>=3.10
+Requires-Dist: caveclient[cv]>=7.7.0
+Requires-Dist: mkdocs-material>=9.6.11
+Requires-Dist: mkdocs>=1.6.1
+Requires-Dist: point-cloud-utils>=0.34.0
