@@ -1,0 +1,9 @@
+fake-useragent
+httpx
+pycryptodome
+pydantic>=2.0
+python-dotenv
+pyyaml
+requests
+setuptools
+tenacity

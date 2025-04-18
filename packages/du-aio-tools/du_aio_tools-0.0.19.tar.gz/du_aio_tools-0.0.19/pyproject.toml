@@ -1,0 +1,17 @@
+[project]
+name = "du-aio-tools"
+version = "0.0.19"
+description = "async tools"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "fake-useragent",
+    "httpx",
+    "pycryptodome",
+    "pydantic>=2.0",
+    "python-dotenv",
+    "pyyaml",
+    "requests",
+    "setuptools",
+    "tenacity",
+]

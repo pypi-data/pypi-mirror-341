@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: du-aio-tools
+Version: 0.0.19
+Summary: async tools
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: fake-useragent
+Requires-Dist: httpx
+Requires-Dist: pycryptodome
+Requires-Dist: pydantic>=2.0
+Requires-Dist: python-dotenv
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: setuptools
+Requires-Dist: tenacity
+
+# du_tools
+
+### 自用轮子
+
+> 项目更新 pydantic~=2.10
+
+# 安装包
+
+```bash
+pip install du_aio_tools
+# 推荐使用 uv
+uv add du_aio_tools
+```
+
+### 使用 uv 构建包
+
+```bash
+uv build  # 在当前项目中运行构建命令
+uv publish # 发布构建的包
+```
+
+
