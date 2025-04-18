@@ -1,0 +1,10 @@
+canonical_loader/__init__.py,sha256=x9s8JfGrRjp7RY6VrgGFnanEN2TgtFH10dprppAQfAM,175
+canonical_loader/base_canonical_loader.py,sha256=Or8xfEaWWH9FcWxDhMznI-bcBmgH6KvSuthpE0k75I0,6601
+canonical_loader/canonic_convert_utils.py,sha256=bc0m5v48wk5_zjDxnDJr8GMHydWysOBV11g8eFKVwxA,1083
+canonical_loader/canonic_date_utils.py,sha256=NgW_0aQGBpmX2D6l2t8jO-0P7KflVllMXoW_oKMEHaM,622
+canonical_loader/canonical_loader.py,sha256=BnYMD04ddEUVBt2e6dP_ATuXh9XdYj6SlZkV7iAi1Cw,1734
+canonical_loader/s3_canonical_loader.py,sha256=TjVMD1FUG9sHrkH4C4a5eA2XSYvVCfIgCfWEFxtN3nw,2517
+canonical_loader-0.2.0.dist-info/METADATA,sha256=p5bDFKbOgjNYosWBTPVL91BlXJpv9Z_bsUqiX8XDDzY,3619
+canonical_loader-0.2.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+canonical_loader-0.2.0.dist-info/top_level.txt,sha256=0FJEaspm9VKEivy_tDqkV9RjxIug8dJCy6BlxkSQtHg,17
+canonical_loader-0.2.0.dist-info/RECORD,,
