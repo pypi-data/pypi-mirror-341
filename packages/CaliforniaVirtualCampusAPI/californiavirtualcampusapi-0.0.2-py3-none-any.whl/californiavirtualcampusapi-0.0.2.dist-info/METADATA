@@ -1,0 +1,68 @@
+Metadata-Version: 2.4
+Name: CaliforniaVirtualCampusAPI
+Version: 0.0.2
+Summary: A simple API for the California Virtual Campus platform.
+Home-page: https://github.com/rob-m1/california-virtual-campus-api
+Author: Robert Meli
+Author-email: Robert Meli <robertmeli1@outlook.com>
+Project-URL: Homepage, https://github.com/rob-m1/california-virtual-campus-api
+Project-URL: Issues, https://github.com/rob-m1/california-virtual-campus-api/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: selenium
+Requires-Dist: setuptools
+Requires-Dist: textdistance
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+
+# California Virtual Campus API
+A simple API for the California Virtual Campus platform.
+---
+
+Documentation can be found at:
+https://cvc-api.github.io/
+
+Installation:
+```bash
+python -m pip install CaliforniaVirtualCampusAPI 
+```
+
+Update:
+```bash
+python -m pip install CaliforniaVirtualCampusAPI --upgrade
+```
+
+To use the package in your program, please import the package:
+```python
+from cvc import *
+```
+
+Uninstallation:
+```bash
+python -m pip uninstall CaliforniaVirtualCampusAPI 
+```
+
+## Usage
+Request a particular list of courses and retrieve all of their data.
+
+Example:
+```python
+from cvc import *
+
+courseIDs = getCourseIDsBySearch("Pasadena City College", "COMP122", "CS2", "FUNDAMENTALS OF COMPUTER SCIENCE I")
+getCourseContentByID(courseIDs[0]).printAll()
+```
+
+## License
+This project is also licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0). See LICENSE for more details.
+
+The course data used by this project is provided by California Virtual Campus and is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).

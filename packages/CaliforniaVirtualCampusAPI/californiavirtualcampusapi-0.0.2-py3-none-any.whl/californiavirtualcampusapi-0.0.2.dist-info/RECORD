@@ -1,0 +1,10 @@
+californiavirtualcampusapi-0.0.2.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+cvc/__init__.py,sha256=g90rZKt4Nwr9wq0WqjaB9XKgQaUmKd77Tqb6qG5ZXZo,3349
+cvc/course.py,sha256=rBI6PBDO6lgJjAh7vMsLn0HHrpiBhYxkEaHGFvL0_H4,1684
+cvc/courseSection.py,sha256=AF1Z7lxpsfbrkVYhUWN4IxJu6FakzJYA-YvHTJSsOzg,1494
+cvc/helperFunctions.py,sha256=KHBppFH08s2UBDF3HwEN-TfyGFv3ol00o1wM-RC5a20,14820
+cvc/sharedVariables.py,sha256=MqqbuaxCSHtk5Zvfpta8MBNBfXylUAgU-Ax7lpMWSBc,5290
+californiavirtualcampusapi-0.0.2.dist-info/METADATA,sha256=mnWJ3PVDEq_VGqcgsbCUfKsV324wem_C44u_xBRI2dI,2116
+californiavirtualcampusapi-0.0.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+californiavirtualcampusapi-0.0.2.dist-info/top_level.txt,sha256=Xl8r26dcC9C_0vduGLOID-P1stj-5P6LLgupR1m55MU,4
+californiavirtualcampusapi-0.0.2.dist-info/RECORD,,
