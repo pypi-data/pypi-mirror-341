@@ -1,0 +1,10 @@
+pydsmc/__init__.py,sha256=no0A1DR9e64DvcjUmIxvIcqs9LnThOzO8H5ggonEgMU,416
+pydsmc/evaluator.py,sha256=r6eO2yeCn_qfazmPFp1NMsNyZMrHWxNuY2E42vOf8p4,21373
+pydsmc/json_translator.py,sha256=DHArt6MvHMFzUpL4C9sYbDo4_iuYk0dsUIZsjn8kTEs,3845
+pydsmc/property.py,sha256=HHQG5e4JRb3CiDQux9gflZruogsDLVpNOfErQMG0xag,12422
+pydsmc/statistics.py,sha256=dIpFYzDFoPXLtih8aQe1JpHpX-wWN8W3q2xOnaUe8WM,24393
+pydsmc/utils.py,sha256=jTJp5xs2N68bXY6a0tFEIL38luUp84ScwXmtoeQtIn0,3999
+pydsmc-0.2.4.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+pydsmc-0.2.4.dist-info/METADATA,sha256=fElEmmu61OKL9d-AvNnGOahlcdlEys1KPSmboN6TU7g,6608
+pydsmc-0.2.4.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+pydsmc-0.2.4.dist-info/RECORD,,
