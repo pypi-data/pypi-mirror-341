@@ -1,0 +1,15 @@
+!.gitignore
+!.gitlab-ci.yml
+.*
+desktop.ini
+*.pyc
+*.egg-info
+*.DS_Store
+*.DS
+*.ipynb_checkpoints*
+build/*
+docs/_build/*
+dist/*
+src/empyre/version.py
+htmlcov/
+coverage.xml

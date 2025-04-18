@@ -1,0 +1,87 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "empyre"
+dynamic = ["version"]
+description = "Electron Microscopy Python Reconstruction"
+readme = "README.rst"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.6"
+authors = [
+    { name = "Jan Caron", email = "j.caron@fz-juelich.de" },
+]
+keywords = [
+    "Electron Microscopy",
+    "Inverse Problem Solving",
+    "Model-based Reconstrution",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "matplotlib >= 3.2",
+    "numpy >= 1.17",
+    "Pillow",
+    "scikit-image",
+    "scipy",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+3d = [
+    "mayavi >= 4.7",
+]
+all = [
+    "cmocean",
+    "pyfftw",
+]
+colors = [
+    "cmocean",
+]
+docs = [
+    "nbsphinx",
+    "nbsphinx_link",
+    "numpydoc",
+    "pandoc",
+    "sphinx",
+    "sphinx_rtd_theme",
+]
+fftw = [
+    "pyfftw",
+]
+io = [
+    "hyperspy",
+    "tvtk",
+]
+tests = [
+    "coverage",
+    "pyroma",
+    "pytest",
+    "pytest-cov",
+    "pytest-flake8",
+    "pytest-runner",
+]
+
+[project.urls]
+Homepage = "https://iffgit.fz-juelich.de/empyre/empyre"
+
+[tool.hatch.version]
+path = "src/empyre/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/tests",
+]
