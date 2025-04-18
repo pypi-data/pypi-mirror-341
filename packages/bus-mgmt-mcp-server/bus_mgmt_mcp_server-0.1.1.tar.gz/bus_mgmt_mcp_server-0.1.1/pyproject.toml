@@ -1,0 +1,16 @@
+[project]
+name = "bus-mgmt-mcp-server"
+version = "0.1.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.entry_points]
+console_scripts = [
+    "bus-mgmt-mcp-server = bus_mgt_mcp_server.bus_mgmt_mcp_server:main"
+]
