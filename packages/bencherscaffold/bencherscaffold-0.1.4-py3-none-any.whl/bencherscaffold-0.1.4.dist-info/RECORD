@@ -1,0 +1,13 @@
+bencherscaffold/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bencherscaffold/bencher_pb2.py,sha256=h6VFGtsJKQryEXhreyAq9BtoC-ovaIJxOXbwlWppN4A,1667
+bencherscaffold/bencher_pb2.pyi,sha256=KEw3VpH9b_lSdPeQ8KX1rWI_IUSOk1dRU1el7CEtucc,1080
+bencherscaffold/bencher_pb2_grpc.py,sha256=JQFqooj2QuTsIg5gwplzH67JkLT245YZO8LYR6_f-bY,2651
+bencherscaffold/grcp_service.py,sha256=0kqqhCn8IgtOdR3ZQs1XvxFUxmdP9pPC5wJJ7a2wftA,1473
+bencherscaffold/protos/bencher.proto,sha256=EILHdtko19JQUeJAdG9VP087t8B3MaD7fouq2H5Fq3E,439
+bencherscaffold/protos/second_level_services.proto,sha256=YOkXWMhse0dfHwD2IEbvW4OshAP7fguYgmiJISCJgX0,169
+bencherscaffold/second_level_services_pb2.py,sha256=-GIZ80N6_st1w5eDARw2Iwgy6tG5pNkEJjgI0vvJmYY,1325
+bencherscaffold/second_level_services_pb2.pyi,sha256=yVzUzYlkTMVpVByIJXdZwrQfV1JHIjZDyzuEj4d6pdg,191
+bencherscaffold/second_level_services_pb2_grpc.py,sha256=YoFDlxf4NMxmk0IR9ZGoQUSHLeLGD5LORjtwVl8F5lM,2728
+bencherscaffold-0.1.4.dist-info/METADATA,sha256=i9TrRJscYg_ujzHMxTrlMYVczOTullS_m_4c99BlAF4,1209
+bencherscaffold-0.1.4.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+bencherscaffold-0.1.4.dist-info/RECORD,,
