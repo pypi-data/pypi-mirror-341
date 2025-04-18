@@ -1,0 +1,3 @@
+[console_scripts]
+lttngmouse=lttngmouse.cli:_cli
+
