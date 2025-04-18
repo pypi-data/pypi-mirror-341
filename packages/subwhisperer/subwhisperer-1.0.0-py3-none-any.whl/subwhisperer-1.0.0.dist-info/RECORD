@@ -1,0 +1,14 @@
+subwhisperer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+subwhisperer/cli.py,sha256=65lTwEsRiSc_34kxfjdD1Jji9Ztz2yLBQVrEiGyhVyg,5172
+subwhisperer/core/__init__.py,sha256=ro9ff84ZFw9Vu5SkS3DNshhPW5elnF7AyVYMsNH3xHo,384
+subwhisperer/core/audio_extractor.py,sha256=6C_N2Xn6NM_6O7m9KhHlKqk_jH0q68TR-F1LKyXvxBI,2974
+subwhisperer/core/file_utility.py,sha256=eB2qWEg7DvyoVQDF93d0a_y4gNstF8E3xiUJIReiprM,2112
+subwhisperer/core/segment_detector.py,sha256=HkxA2VpFOtW45_nvArW_AyDJr3W2KVNnfaiWFNpmL1w,1032
+subwhisperer/core/text_merger.py,sha256=SBGQ6LV5E1RW_8zXVmnkz1-y-rTOYwcfRQzEnEEhuSg,4291
+subwhisperer/core/transcription_processor.py,sha256=sncOvuZl8TML5pZetvZHccbWUvIrJEjW_YZBRSPFEYY,1515
+subwhisperer/core/whisper_transcriber.py,sha256=LdlHWp7U64NTzUjMtZ1KCXot2a8qXJEUHYIz7DYXQkQ,791
+subwhisperer-1.0.0.dist-info/METADATA,sha256=XKB8H0mfxGU9PL9-QT-eIUen48EuDJU5nu7vKre8uRI,5175
+subwhisperer-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+subwhisperer-1.0.0.dist-info/entry_points.txt,sha256=BXcQ0TkwMlSsf0TzJu6NHy46abOzeSgRCLZk-TE16nA,55
+subwhisperer-1.0.0.dist-info/top_level.txt,sha256=uydDgYrMpRfkPnlUcsOyHXBPfyBSkGDA3SrLDjvj29U,13
+subwhisperer-1.0.0.dist-info/RECORD,,
