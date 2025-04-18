@@ -1,0 +1,3 @@
+[console_scripts]
+mmqtt=mmqtt.main:main
+
