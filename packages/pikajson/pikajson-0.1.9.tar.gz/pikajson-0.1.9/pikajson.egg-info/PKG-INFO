@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pikajson
+Version: 0.1.9
+Home-page: https://zvonobot.ru
+Author: EvgrDan
+Requires-Dist: pika
+
+Description
+===========
+
+Socket server and client for work with JSON through rabbitmq
+It works only on python3
