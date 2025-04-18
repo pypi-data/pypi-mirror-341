@@ -1,0 +1,6 @@
+README.md
+setup.py
+byted_overpass_data_gauss_slave.egg-info/PKG-INFO
+byted_overpass_data_gauss_slave.egg-info/SOURCES.txt
+byted_overpass_data_gauss_slave.egg-info/dependency_links.txt
+byted_overpass_data_gauss_slave.egg-info/top_level.txt
