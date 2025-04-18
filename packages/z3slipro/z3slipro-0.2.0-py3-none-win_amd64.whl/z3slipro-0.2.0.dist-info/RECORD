@@ -1,0 +1,9 @@
+z3slipro/__init__.py,sha256=kIK3Vu-shkniqRw82BNZ6lHgYFeGQ1UwOrx_hzBtRVU,321
+z3slipro/z3slipro.pyd,sha256=9p4hs59Azeez5KxAcijLib0phxwk9JR53UfwpAC-lzE,317952
+z3slipro/z3slipro.pyi,sha256=tJjyb9bGU7YYSVJAWqC2rBvON8gk1HUMq5lUQWHLFpE,902
+z3slipro-0.2.0.data/data/tests/test_zcube_api.py,sha256=BioIsSljS-CiHQXr2LpWqgIB7VkczJOY-dbr_7H50YU,18040
+z3slipro-0.2.0.dist-info/licenses/LICENSE,sha256=7NUoqHRN_Trisvc00ccO4e3EnAWwhE00f7vyyDRV3pE,4911
+z3slipro-0.2.0.dist-info/METADATA,sha256=t22_ANJexrl0yvaRYyhEGfalcL2UXhec2UyLR1M4lNc,22980
+z3slipro-0.2.0.dist-info/WHEEL,sha256=GRAwO4abswPoD8u6X5Ix8yKoy-wTIXRf_V-PAIDNIsM,97
+z3slipro-0.2.0.dist-info/top_level.txt,sha256=eG4FdbTEu-wVmwjWMi-BByn-C0bXsUby_mmv1MoE5EU,9
+z3slipro-0.2.0.dist-info/RECORD,,
