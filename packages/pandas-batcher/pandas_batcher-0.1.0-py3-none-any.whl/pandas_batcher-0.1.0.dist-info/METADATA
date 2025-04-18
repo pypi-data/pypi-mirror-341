@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: pandas-batcher
+Version: 0.1.0
+Summary: Reads data in batches, applies pandas transformations (row-level transformations only), writes the data in batches locally or to GCP or Azure cloud providers.
+Project-URL: Homepage, https://github.com/datarootsio/pandas-batcher
+Project-URL: Issues, https://github.com/datarootsio/pandas-batcher/issues
+Author-email: Ali Al-Gburi <ali.al-gburi@dataroots.io>
+License: MIT
+License-File: LICENCE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Pandas-batcher
+
+### Support for aggregations:
