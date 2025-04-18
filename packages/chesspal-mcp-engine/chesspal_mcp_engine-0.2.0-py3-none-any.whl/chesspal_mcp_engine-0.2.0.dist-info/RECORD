@@ -1,0 +1,12 @@
+dylangames_mcp_chess_engine/__init__.py,sha256=Mex0Ai6spRyEllY2yn745eHuhJaCBhbyXIune77zEp8,159
+dylangames_mcp_chess_engine/config.py,sha256=t2-PaJ9K7yP9E_cZvzXeBw_dXcMBwFZbVtZ3GvzyQkM,2926
+dylangames_mcp_chess_engine/engine_wrapper.py,sha256=FiGf4iYiTD1FA3oUD9WYEEi_J6wIOAO2imVxDP3Y_Zo,10480
+dylangames_mcp_chess_engine/logging_config.py,sha256=02q0LHscWYMPvEd-5Z_x26Q74agJ9IGXVJgFfN3mKjM,2819
+dylangames_mcp_chess_engine/main.py,sha256=KCsGwMZgdNji2pvfm7Zcqy2V6fbuc8mVnuD-4VHjmKs,11306
+dylangames_mcp_chess_engine/models.py,sha256=AuVwjoLA81dqpP4uAYU0_PMmZV_R6NRLwX0DD1VTZg4,721
+dylangames_mcp_chess_engine/shutdown.py,sha256=7vGdZ07cxmR4ivZwZm-YNhOkQsl0wdsyUR5_AsChI-0,2988
+chesspal_mcp_engine-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+chesspal_mcp_engine-0.2.0.dist-info/METADATA,sha256=zKtwvOcytRclxOjtbqBaAo8JiUW_rBuf002vi6_BS1w,13549
+chesspal_mcp_engine-0.2.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+chesspal_mcp_engine-0.2.0.dist-info/entry_points.txt,sha256=eMo4ZX76UGGlv15RmkvPtay1VTAhsq0HGqYhtXHmeF4,77
+chesspal_mcp_engine-0.2.0.dist-info/RECORD,,
