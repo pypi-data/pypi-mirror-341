@@ -1,0 +1,10 @@
+mcp_server_snowflake/__init__.py,sha256=y_NCLOyGAMoYOqbHUWsBLiJcfnWGyBhppeIuh82Koes,95
+mcp_server_snowflake/main.py,sha256=J62XSSjhD62lLW4a9G8yWKsPBVwuEQ4rAfEQbPjESWQ,24208
+mcp_server_snowflake/utils/__init__.py,sha256=5Wjdkfzy6ZNItzAnwTjtfu9KEzYJLy3Si6AoiqAdRDs,52
+mcp_server_snowflake/utils/snowflake_conn.py,sha256=VHLwZyGarfl_t2132dNdEHEMG9LKgeXAV02lOuEASBI,11804
+mcp_server_snowflake/utils/template.py,sha256=rmr8QZcGQO-aSx33uFArubrg7EuvmvsEapupx8tKYq8,5531
+mcp_snowflake-0.2.0.dist-info/METADATA,sha256=8-tzbADMNxQ0sWUMcdOH8xI1rkXjdN2fQ9KI2M9iNtM,7460
+mcp_snowflake-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_snowflake-0.2.0.dist-info/entry_points.txt,sha256=7srVAagMLaPJXdeT0bcpknqJ_iIgiMlCsj7NpZIMFyg,77
+mcp_snowflake-0.2.0.dist-info/licenses/LICENSE,sha256=Qv_xpgtDO-5Dv2U-340OKZkBTZ_56oRaX8QOPhj6KB4,1070
+mcp_snowflake-0.2.0.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-snowflake = mcp_server_snowflake.main:run_stdio_server
