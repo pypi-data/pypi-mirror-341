@@ -1,0 +1,9 @@
+modwrap/__init__.py,sha256=-CMHyTfxKjNKJsCIi_dhI63wc6ajsvZOQnh_NI7i_Bs,61
+modwrap/__main__.py,sha256=RT8D3D4jG_J-ODIp7X2PvMnNPcKad8A6THpWIbo_7KI,156
+modwrap/console.py,sha256=AuFyU1itcw2VzXZcMtxO__6zl41A96gd52gKL9-8pvo,2385
+modwrap/core.py,sha256=PzE16PafZu7KTYlOEa9OSi61geKa1VANcWMjuCMVcvw,6947
+modwrap-1.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+modwrap-1.0.2.dist-info/METADATA,sha256=5GwKk2HNPq8bV6Nqny1TcB_DAqKESjaxFoLIK2Ydlck,1965
+modwrap-1.0.2.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+modwrap-1.0.2.dist-info/entry_points.txt,sha256=JoydXPRBp0ngATF2xFxHTaN3pINLNth01I-x3mdexOE,47
+modwrap-1.0.2.dist-info/RECORD,,
