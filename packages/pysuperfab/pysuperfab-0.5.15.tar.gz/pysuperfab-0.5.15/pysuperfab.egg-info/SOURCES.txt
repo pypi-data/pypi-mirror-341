@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pysuperfab/__init__.py
+pysuperfab/juliapkg.json
+pysuperfab.egg-info/PKG-INFO
+pysuperfab.egg-info/SOURCES.txt
+pysuperfab.egg-info/dependency_links.txt
+pysuperfab.egg-info/requires.txt
+pysuperfab.egg-info/top_level.txt
