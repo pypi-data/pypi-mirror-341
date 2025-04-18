@@ -1,0 +1,10 @@
+numpy>=1.18
+scipy>=1.0.0
+matplotlib>=3.1
+tqdm>=4.0
+mpmath>=1.2.0
+cython
+seislib>=0.6.26
+pyrf96>=0.1.0
+pyhk>=0.1.0
+pyfm2d>=0.1.2
