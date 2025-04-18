@@ -1,0 +1,10 @@
+setup.py
+pytwojs/__init__.py
+pytwojs/_program.py
+pytwojs/exceptions.py
+pytwojs/interpreter.py
+pytwojs/utils.py
+pytwojs.egg-info/PKG-INFO
+pytwojs.egg-info/SOURCES.txt
+pytwojs.egg-info/dependency_links.txt
+pytwojs.egg-info/top_level.txt
