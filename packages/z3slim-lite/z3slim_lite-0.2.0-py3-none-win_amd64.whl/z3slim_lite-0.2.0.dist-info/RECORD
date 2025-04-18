@@ -1,0 +1,9 @@
+z3slim_lite/__init__.py,sha256=YI7TFRjTBg3jqqk-ArMQfPNlLm3MEEZ8qo0D7fcQCqg,287
+z3slim_lite/z3slim_lite.pyd,sha256=Bf3wi9kTaBd2eLUp0bMP8ZUkTgh5-zVVpztFpSPzOJE,314368
+z3slim_lite/z3slim_lite.pyi,sha256=gzPlojr9FcU4GkzKKQA_JYALuYVl5u6z4CzT8gIM1Ik,805
+z3slim_lite-0.2.0.data/data/tests/test_zcube_api.py,sha256=vy7ENOM6Z2Jyo9KptzRTv1FHMUU8neLqkG21YlIaUfA,18036
+z3slim_lite-0.2.0.dist-info/licenses/LICENSE,sha256=b1n8SCFMtZb7gACppaPppKZwlPZVwIYHbKNvTY6KalY,2504
+z3slim_lite-0.2.0.dist-info/METADATA,sha256=kpD2mxRqcCK0iwAbKewVIvUhfz2I62ytnaCumdnRzqc,23021
+z3slim_lite-0.2.0.dist-info/WHEEL,sha256=GRAwO4abswPoD8u6X5Ix8yKoy-wTIXRf_V-PAIDNIsM,97
+z3slim_lite-0.2.0.dist-info/top_level.txt,sha256=b6GY6peHRC6UKV0_9qSsSM77N1hoIoDb2OHBZBS9P2I,12
+z3slim_lite-0.2.0.dist-info/RECORD,,
