@@ -1,0 +1,48 @@
+# This workflow will automatically rebuild the types, bump the version number, commit the changes back to the master and upload the Python Package to PyPI
+
+
+name: Upload Python Package
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Semantic version to increase'
+        required: true
+        type: choice
+        options:
+          - 'major'
+          - 'minor'
+          - 'patch'
+
+jobs:
+  release-build:
+    runs-on: ubuntu-latest
+      
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Rebuild Klighd Types
+        run: |
+          python -m venv ls-env
+          source ls-env/bin/activate
+          pip install -r requirements.txt
+          ./rebuild_types.sh
+          hatch version ${{ inputs.version }}
+          
+      - uses: stefanzweifel/git-auto-commit-action@v5
+
+      - name: Build Package
+        run: |
+          python -m pip install --upgrade build
+          python -m build
+
+      - name: Publish to PyPI
+        run: |
+          python -m pip install --upgrade twine
+          python -m twine upload --repository pypi dist/* -u __token__ -p ${{ secrets.PYPI_TOKEN }}
+
