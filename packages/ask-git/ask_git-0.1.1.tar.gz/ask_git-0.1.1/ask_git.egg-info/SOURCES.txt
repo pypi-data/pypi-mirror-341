@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+ask_git/__init__.py
+ask_git/cli.py
+ask_git/ollama_client.py
+ask_git/prompt_builder.py
+ask_git.egg-info/PKG-INFO
+ask_git.egg-info/SOURCES.txt
+ask_git.egg-info/dependency_links.txt
+ask_git.egg-info/entry_points.txt
+ask_git.egg-info/requires.txt
+ask_git.egg-info/top_level.txt

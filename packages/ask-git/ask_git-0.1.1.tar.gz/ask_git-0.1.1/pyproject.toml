@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ask-git"
+version = "0.1.1"
+description = "Ask Git anything — Powered by Ollama."
+authors = [{name = "Aayush Rajesh Jadhav", email = "aayushrj22@gmail.com"}]
+dependencies = [
+    "typer[all]",
+    "requests",
+    "gitpython",
+    "rich"
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.scripts]
+ask-git = "ask_git.cli:main"
+
+[tool.setuptools]
+packages = ["ask_git"]
