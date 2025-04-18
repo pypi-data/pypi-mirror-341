@@ -1,0 +1,13 @@
+mb_nlp/__init__.py,sha256=ykSodzEZrUZGDBosTs3tkRqSUhDpZhDbb2UDgNf4z4w,48
+mb_nlp/classifier.py,sha256=1kRHAT59aiunmxW4qeq0O6uVls8Gd8faR6bcPlFWokI,4226
+mb_nlp/version.py,sha256=KUbBWU0KLSk6dWDvmoQItmb-bx2Va7p7yrB93zIS5Q0,206
+mb_nlp/classifier/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mb_nlp/classifier/bert.py,sha256=N3z0Vj8KF2PWYtSD3lAPttMezYqJ3IcvNMRJ7ZzyUdI,6029
+mb_nlp/data/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mb_nlp/data/dataset.py,sha256=bbZR2qE2iUKw3aeuQM9NtG8HjF3Bq-0vEHpUjdA6Nhk,1537
+mb_nlp/utils/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mb_nlp/utils/helpers.py,sha256=9dcwxcndx4T65YJrZ053b8SJvRH0iMVLWh6iUxzwTCM,62
+mb_nlp-1.0.3.dist-info/METADATA,sha256=5Abrp1N6oIhVVGuE2IqdC25Glw9cH30JzP8p0Jq5zRQ,340
+mb_nlp-1.0.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mb_nlp-1.0.3.dist-info/top_level.txt,sha256=F5BpSwWfLc6fWBpuxWjRSi9PePfhDJTj_TB04uuUZEA,7
+mb_nlp-1.0.3.dist-info/RECORD,,
