@@ -1,0 +1,10 @@
+spark_jdbc_reader/__init__.py,sha256=7aNo9xTS1WXXeKq07z4Q4-pTbrTJK62zWIsbs1fWR0k,2001
+spark_jdbc_reader/exceptions.py,sha256=jG4BzYrRYwSaL2ADel2HNno9xlv03xnVgephp3OhfEE,138
+spark_jdbc_reader/reader.py,sha256=2HEEa8kZ-Jry_BDU0smTTOx7S0PDUJDs7MYDCcytg44,3291
+spark_jdbc_reader-1.0.3.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_reader.py,sha256=mdOboBeK4BlD2SSqj-T4a8ZYQiFsmTMQuA30te75KTM,4626
+spark_jdbc_reader-1.0.3.dist-info/METADATA,sha256=_-cMj8HU6TPQSjdJGGx4Zg92Q3loHnM9MK2SIHCg7aI,942
+spark_jdbc_reader-1.0.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+spark_jdbc_reader-1.0.3.dist-info/top_level.txt,sha256=A7YOY6KdaDp-s3bYuZj20kN1yBJtwWkwM_8DFyRul5E,24
+spark_jdbc_reader-1.0.3.dist-info/RECORD,,
