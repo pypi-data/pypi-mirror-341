@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+ohms_law_ksu/__init__.py
+ohms_law_ksu/calc.py
+ohms_law_ksu.egg-info/PKG-INFO
+ohms_law_ksu.egg-info/SOURCES.txt
+ohms_law_ksu.egg-info/dependency_links.txt
+ohms_law_ksu.egg-info/top_level.txt

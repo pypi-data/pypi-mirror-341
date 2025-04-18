@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=69", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ohms-law-ksu"
+version = "0.3.0"
+description = "Calculate voltage, current and resistance using Ohm's Law."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Research Group", email = "email@protected.edu"}]
+license = "MIT"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Source = "https://anonymous.4open.science/r/ohms_law-EE95"
