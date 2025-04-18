@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+pylizlib/__init__.py
+pylizlib/cli.py
+pylizlib.egg-info/PKG-INFO
+pylizlib.egg-info/SOURCES.txt
+pylizlib.egg-info/dependency_links.txt
+pylizlib.egg-info/entry_points.txt
+pylizlib.egg-info/requires.txt
+pylizlib.egg-info/top_level.txt
