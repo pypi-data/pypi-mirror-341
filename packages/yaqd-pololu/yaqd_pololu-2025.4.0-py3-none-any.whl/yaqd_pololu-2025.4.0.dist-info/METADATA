@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: yaqd-pololu
+Version: 2025.4.0
+Summary: Daemons for Pololu motor controllers.
+Author: Dan Kohler
+Maintainer: yaq developers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE
+Requires-Dist: yaqd-core>=2023.6.0
+Requires-Dist: pyyaml
+Project-URL: Homepage, https://yaq.fyi
+Project-URL: Issues, https://github.com/yaq-project/yaqd-pololu/issues
+Project-URL: Source, https://github.com/yaq-project/yaqd-pololu
+
+# yaqd-pololu
+
+[![PyPI](https://img.shields.io/pypi/v/yaqd-pololu)](https://pypi.org/project/yaqd-pololu)
+[![Conda](https://img.shields.io/conda/vn/conda-forge/yaqd-pololu)](https://anaconda.org/conda-forge/yaqd-pololu)
+[![yaq](https://img.shields.io/badge/framework-yaq-orange)](https://yaq.fyi/)
+[![black](https://img.shields.io/badge/code--style-black-black)](https://black.readthedocs.io/)
+[![ver](https://img.shields.io/badge/calver-YYYY.0M.MICRO-blue)](https://calver.org/)
+[![log](https://img.shields.io/badge/change-log-informational)](https://github.com/yaq-project/yaqd-pololu/-/blob/main/CHANGELOG.md)
+
+Daemons for Pololu motor controllers.
+
+This package contains the following daemon(s):
+
+- https://yaq.fyi/daemons/pololu-ticcmd
+
+Maintainers:
+
+- Dan Kohler
+

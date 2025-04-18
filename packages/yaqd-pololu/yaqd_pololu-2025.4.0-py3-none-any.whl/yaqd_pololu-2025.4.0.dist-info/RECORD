@@ -1,0 +1,11 @@
+yaqd_pololu/VERSION,sha256=m3muKXxNju3tURWYnh8yfS8ko-oUXNQrHVPX-SXzRPs,10
+yaqd_pololu/__init__.py,sha256=g_YyrI0aWCKzCRMulXNqwZVCJQy8-vBPyDkGKzETQoU,72
+yaqd_pololu/__version__.py,sha256=IJtm4PkwLF72tMjhpgyNqmGSwxOoF3J3nRmmEQhQsEA,575
+yaqd_pololu/_pololu_ticcmd.py,sha256=qQ-ynVNawhS77fqCc95egweF65911OCN9rAJPlDMTLc,2414
+yaqd_pololu/pololu-ticcmd.avpr,sha256=ofY-PIJuyJWr0wP3_bAC93PAqLOQdJ2E545WsEINQQs,13888
+yaqd_pololu/pololu-ticcmd.toml,sha256=bcYHQ_BRyURJRbjZW-Vlj_-TzbaODGJg6PL0esKqF14,669
+yaqd_pololu-2025.4.0.dist-info/entry_points.txt,sha256=2HeT-mGwoyYa0LvyQHtgKMIR-QwCvr54g_b_V3Pm3JQ,83
+yaqd_pololu-2025.4.0.dist-info/licenses/LICENSE,sha256=gQ0onXQnjXJoTSbNwqxcuw8B8tGCEvORxsRGc5mnrdU,7633
+yaqd_pololu-2025.4.0.dist-info/WHEEL,sha256=G2gURzTEtmeR8nrdXUJfNiB3VYVxigPQ-bEQujpNiNs,82
+yaqd_pololu-2025.4.0.dist-info/METADATA,sha256=gIinU5YljLm9o80fDfjtmmnm58aIt8eRtQSknyIkH4g,1706
+yaqd_pololu-2025.4.0.dist-info/RECORD,,

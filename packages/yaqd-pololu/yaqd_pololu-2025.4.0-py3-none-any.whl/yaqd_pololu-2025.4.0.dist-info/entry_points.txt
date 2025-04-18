@@ -1,0 +1,3 @@
+[console_scripts]
+yaqd-pololu-ticcmd=yaqd_pololu._pololu_ticcmd:PololuTicCMD.main
+
