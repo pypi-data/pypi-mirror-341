@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyimgcaptcha"
+version = "0.1.1"
+authors = [
+    {name = "redderi", email = "vrudko22@gmail.com"},
+]
+description = "Library for generating CAPTCHA images"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "Pillow>=8.0.0",
+]
+
+[tool.setuptools]
+# Автоматически найдет все пакеты
+packages = ["pyimgcaptcha"]
+
+# Правильный формат для включения LICENSE
+[tool.setuptools.package-data]
+"*" = ["LICENSE"]
