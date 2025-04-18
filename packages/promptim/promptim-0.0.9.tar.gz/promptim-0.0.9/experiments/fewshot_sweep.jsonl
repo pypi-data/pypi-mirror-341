@@ -1,0 +1,4 @@
+{"initial_prompt": {"model_config": {"model": "openai:gpt-4o"}}, "optimizer": {"kind": "fewshot", "model": {"model": "claude-3-5-sonnet-20241022","max_tokens_to_sample": 8192}}}
+// {"initial_prompt": {"model_config": {"model": "openai:o1"}}, "optimizer": {"kind": "fewshot", "model": {"model": "claude-3-5-sonnet-20241022","max_tokens_to_sample": 8192}}}
+{"initial_prompt": {"model_config": {"model": "openai:o1-mini"}}, "optimizer": {"kind": "fewshot", "model": {"model": "claude-3-5-sonnet-20241022","max_tokens_to_sample": 8192}}}
+// {"initial_prompt": {"model_config": {"model": "anthropic:claude-3-5-sonnet-20241022"}}, "optimizer": {"kind": "fewshot", "model": {"model": "claude-3-5-sonnet-20241022","max_tokens_to_sample": 8192}}}

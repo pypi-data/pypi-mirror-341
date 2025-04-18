@@ -1,0 +1,26 @@
+{
+  "name": "email_cs_10",
+  "dataset": "email_cs_10",
+  "description": "Triage emails",
+  "evaluators": "./evaluators.py:accuracy_evaluator",
+  "evaluator_descriptions": {
+    "accuracy": "Evaluates if the predicted category matches the reference class"
+  },
+  "optimizer": {
+    "model": {
+      "model": "openai:o1"
+    },
+    "kind": "metaprompt",
+    "max_reasoning_steps": 1
+  },
+  "initial_prompt": {
+    "identifier": "cs_email10:f1ba6c30",
+    "upload_to": "cs_email10"
+  },
+  "algorithm": {
+    "batch_size": 40,
+    "train_size": 40,
+    "epochs": 10,
+    "debug": false
+  }
+}

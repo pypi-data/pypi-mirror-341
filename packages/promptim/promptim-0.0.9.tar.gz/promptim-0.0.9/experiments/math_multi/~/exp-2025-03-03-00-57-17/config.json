@@ -1,0 +1,27 @@
+{
+  "name": "math_word_problems",
+  "dataset": "math_word_problems_5",
+  "description": "Solve math word problems",
+  "evaluator_descriptions": {
+    "correctness": "Evaluates if the predicted answer equals the reference answer"
+  },
+  "optimizer": {
+    "model": {
+      "model": "claude-3-5-sonnet-20241022"
+    }
+  },
+  "initial_prompts": {
+    "classifier": {
+      "prompt_str": "Respond in one word with the language you should use in responding to the following question:\n\n{problem}."
+    },
+    "math_solver": {
+      "prompt_str": "Respond to the following problem in {language}:\n\n{problem}."
+    }
+  },
+  "algorithm": {
+    "batch_size": 40,
+    "train_size": 40,
+    "epochs": 10,
+    "debug": false
+  }
+}

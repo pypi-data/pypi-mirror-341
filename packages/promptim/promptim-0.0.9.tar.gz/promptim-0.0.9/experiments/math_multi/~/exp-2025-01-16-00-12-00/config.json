@@ -1,0 +1,26 @@
+{
+  "name": "math_word_problems",
+  "dataset": "math_word_problems_5",
+  "description": "Solve math word problems",
+  "evaluators": "./evaluators.py:correctness_evaluator",
+  "evaluator_descriptions": {
+    "correctness": "Evaluates if the predicted answer equals the reference answer"
+  },
+  "optimizer": {
+    "model": {
+      "model": "claude-3-5-sonnet-20241022",
+      "max_tokens_to_sample": 8192
+    },
+    "kind": "feedback_guided"
+  },
+  "initial_prompt": {
+    "identifier": "math_word_problems:01582e18",
+    "upload_to": "math_word_problems"
+  },
+  "algorithm": {
+    "batch_size": 40,
+    "train_size": 40,
+    "epochs": 10,
+    "debug": false
+  }
+}

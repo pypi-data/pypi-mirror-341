@@ -1,0 +1,30 @@
+{
+  "name": "email_elon",
+  "dataset": "email_elon",
+  "description": "Triage emails",
+  "evaluators": "email_elon.evaluators:accuracy_evaluator",
+  "evaluator_descriptions": {
+    "accuracy": "Evaluates if the predicted category matches the reference class"
+  },
+  "optimizer": {
+    "model": {
+      "model": "claude-3-5-sonnet-20241022",
+      "max_tokens_to_sample": 8192
+    },
+    "kind": "metaprompt",
+    "max_reasoning_steps": 1
+  },
+  "initial_prompt": {
+    "identifier": "langchain-ai/elon_email:38f8f365",
+    "upload_to": "elon_email",
+    "model_config": {
+      "model": "openai:gpt-4o"
+    }
+  },
+  "algorithm": {
+    "batch_size": 40,
+    "train_size": 40,
+    "epochs": 10,
+    "debug": false
+  }
+}

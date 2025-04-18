@@ -1,0 +1,26 @@
+{
+  "name": "math_word_problems",
+  "dataset": "math_word_problems_5",
+  "description": "Solve math word problems",
+  "evaluators": "./evaluators.py:correctness_evaluator",
+  "evaluator_descriptions": {
+    "correctness": "Evaluates if the predicted answer equals the reference answer"
+  },
+  "optimizer": {
+    "model": {
+      "model": "openai:o1"
+    },
+    "kind": "metaprompt",
+    "max_reasoning_steps": 1
+  },
+  "initial_prompt": {
+    "identifier": "math_word_problems:7f489060",
+    "upload_to": "math_word_problems"
+  },
+  "algorithm": {
+    "batch_size": 40,
+    "train_size": 40,
+    "epochs": 10,
+    "debug": false
+  }
+}

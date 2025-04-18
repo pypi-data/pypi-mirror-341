@@ -1,0 +1,29 @@
+{
+  "name": "email_cs_simple",
+  "dataset": "email_cs_simple",
+  "description": "Triage emails",
+  "evaluators": "./evaluators.py:accuracy_evaluator",
+  "evaluator_descriptions": {
+    "accuracy": "Evaluates if the predicted category matches the reference class"
+  },
+  "optimizer": {
+    "model": {
+      "model": "claude-3-5-sonnet-20241022",
+      "max_tokens_to_sample": 8192
+    },
+    "kind": "fewshot"
+  },
+  "initial_prompt": {
+    "identifier": "email_cs_simple:e4ebc623",
+    "upload_to": "email_cs_simple",
+    "model_config": {
+      "model": "openai:gpt-4o"
+    }
+  },
+  "algorithm": {
+    "batch_size": 40,
+    "train_size": 40,
+    "epochs": 3,
+    "debug": false
+  }
+}
