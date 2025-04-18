@@ -1,0 +1,10 @@
+dysys/__init__.py,sha256=3vgX4RoQ5jfJuYM9f7-12UKEkS3XEZ2cCtbobHUOvuk,120
+dysys/controltf.py,sha256=YOXLuMOLkZDASTJgKltVLrYCB19sLU_4Uk2IBC83npg,3710
+dysys/statespacesymbolic.py,sha256=AWWN3pq8KmFSQWJBjVoutIjR16g5cLhq2f1-BKCsk_E,5469
+dysys/sysdyn.py,sha256=Ykb1Wfo2ZX7zeZl5qgORnyw0i2RqwPpo5qyTz6LIWLo,1189
+dysys/transferfunctions.py,sha256=yUZHe8VADGUXayr-f9xblGBMau_oedHeY4o0ePQ87mM,2222
+dysys/transferfunctionsymbolic.py,sha256=OkW5xNGv0JZ-X4Vq-oHdrS47oH8t1vl6Co3cmRF3buQ,6409
+dysys-0.1.7.dist-info/LICENSE,sha256=I8L2XUY1TqJY-MyTDuOI8SFmGle20V00ZtmeeyfRRlA,1498
+dysys-0.1.7.dist-info/METADATA,sha256=YzQpAhAIfYkfOSZgmHqHRRbqAWHrFfZV85FKc4Sjtig,2510
+dysys-0.1.7.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+dysys-0.1.7.dist-info/RECORD,,
