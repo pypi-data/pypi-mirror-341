@@ -1,0 +1,38 @@
+name: Generate Colormap Gallery
+
+on:
+  push:
+    branches: [main]
+  # pull_request:
+    # branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up micromamba
+        uses: mamba-org/setup-micromamba@v1
+        with:
+          environment-name: mcmaps-env
+          create-args: >-
+            python=3.12
+            matplotlib
+            pandas
+
+      - name: Generate colormap gallery HTML
+        shell: bash -l {0}
+        run: |
+          python -m mcmaps.generate_gallery
+
+      - name: Commit and push gallery with PAT
+        run: |
+          git config user.name "syedhamidali"
+          git config user.email "hamidsyed37@gmail.com"
+          git add docs/source/_static/colormap_gallery.html
+          git commit -m "chore: update colormap gallery [skip ci]" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GH_PUSH_TOKEN }}@github.com/syedhamidali/mcmaps.git HEAD:main
