@@ -1,0 +1,17 @@
+[project]
+name = "mcp-server-uv"
+version = "0.1.0"
+description = "A MCP server project"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [ "mcp>=1.6.0",]
+[[project.authors]]
+name = "liuheng"
+email = "liuheng@bonree.com"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+mcp-server-uv = "mcp_server_uv:main"
