@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: codex-autotest
+Version: 0.2.0
+Summary: CLI tool to generate and review tests using OpenAI Codex
+Author: Adrian Marten
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: openai
+Requires-Dist: PyYAML
+Provides-Extra: dev
+Requires-Dist: mutmut; extra == "dev"
+Requires-Dist: hypothesis; extra == "dev"
+Dynamic: author
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: summary

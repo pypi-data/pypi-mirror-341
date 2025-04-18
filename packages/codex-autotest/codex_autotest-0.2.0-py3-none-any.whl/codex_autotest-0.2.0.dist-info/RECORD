@@ -1,0 +1,13 @@
+codex_autotest/__init__.py,sha256=cQASjNPzkAcYDDii97nj4X1OzWd9sl5B4mL7eXkWSpQ,57
+codex_autotest/cli.py,sha256=266aSxGKK3clZlzpUqo_t3qiQh_3T77cpwlJI9HNoAo,10988
+codex_autotest/config.py,sha256=VYKXPnllH9tZVf1r-eR608BMln0SYdlxtCsE44lwl9w,1040
+codex_autotest/openai_client.py,sha256=dLXR6-h8T5mHZ16JswqOSemjo65Md0ll2RyolCh1LXs,1086
+codex_autotest-0.2.0.dist-info/licenses/LICENSE,sha256=YIteKZUNmU3wpEboJwBhYxQGKb21O-By8JEmZteB7LU,1069
+tests/__init__.py,sha256=HQnaYbOc9pepzVUgmUGnq1-LJOW0UOJeCO5LpECVzvc,40
+tests/test_cli.py,sha256=3oyo74UixbYBg_zBLDpsKU_gRzvI_nDgPYfqK-qXrv4,6052
+tests/test_config.py,sha256=hYQBr_16Uci1IMhyqWU4EbT-NFo2J9a_qNBaTrLYETM,831
+codex_autotest-0.2.0.dist-info/METADATA,sha256=Uvi9jVkNkMbrl5A2DS8nPPo7SFXqXLQAyIqq2x-YDFo,435
+codex_autotest-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+codex_autotest-0.2.0.dist-info/entry_points.txt,sha256=IQWCWoboswXXwcJqFHtM9lFQYsvnuv413xSMvg06woI,59
+codex_autotest-0.2.0.dist-info/top_level.txt,sha256=0w5U_70gYS7tsbsg765tMd1l8mhpGDSxc_BuhrA7WmA,21
+codex_autotest-0.2.0.dist-info/RECORD,,
