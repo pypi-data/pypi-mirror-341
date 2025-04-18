@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: near-omni-client
+Version: 0.0.1
+Summary: Minimal Python library to interact with the NEAR blockchain and Chain Signatures
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: base58>=2.1.1
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: loguru>=0.7.3
+Requires-Dist: py-near-primitives>=0.2.3
+Requires-Dist: pydantic>=2.11.3
+Requires-Dist: pynacl>=1.5.0
+
+# near-omni-client
+
+**near-omni-client** is minimal Python library to interact with the NEAR blockchain and Chain Signatures.
+
+## Features
+
+- Lightweight
+- Fully asynchronous
+
+## Getting Started
+
+Install the latest version of `near-omni-client` by running:
+
+```console
+$ pip install near-omni-client
+
+# or if using uv
+
+$ uv add near-omni-client
+```
+
+Create a NEAR account and get your private key using the [NEAR CLI](https://github.com/near/near-cli-rs)
+
