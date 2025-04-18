@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: my_package_matykina_olga
+Version: 0.1.1
+Summary: Описание моего Python-пакета
+Author-email: Your Name <youremail@example.com>
+License: MIT
+Requires-Python: <4,>=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+Requires-Dist: numpy>=1.19.2
