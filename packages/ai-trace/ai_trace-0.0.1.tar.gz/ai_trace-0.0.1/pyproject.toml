@@ -1,0 +1,27 @@
+[project]
+name = "ai-trace"
+requires-python = ">=3.11"
+version = "0.0.1"
+description = "Add your description here"
+readme = "README.md"
+dependencies = []
+
+[tool.poetry]
+packages = [{include = "ai_trace"}]
+
+[dependency-groups]
+dev = [
+    "crewai>=0.114.0",
+    "langchain-community>=0.3.21",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]  # Look from the root directory
+include = ["ai_trace*"]  # Include all ai_trace packages
+
+[tool.setuptools.package-data]
+"ai_trace" = ["**/*.html", "**/*.css", "**/*.js"]  # Include all HTML, CSS, JS files

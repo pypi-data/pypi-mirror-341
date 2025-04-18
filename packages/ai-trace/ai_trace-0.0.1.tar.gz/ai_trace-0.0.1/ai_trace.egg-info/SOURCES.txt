@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+ai_trace/__init__.py
+ai_trace/_version.py
+ai_trace/trace_crewai.py
+ai_trace.egg-info/PKG-INFO
+ai_trace.egg-info/SOURCES.txt
+ai_trace.egg-info/dependency_links.txt
+ai_trace.egg-info/top_level.txt
+ai_trace/assets/__init__.py
+ai_trace/assets/index.html
