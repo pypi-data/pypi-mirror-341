@@ -1,0 +1,17 @@
+numpy<2.0
+scipy>=1.14.0
+mujoco==3.2.7
+mujoco-mjx==3.2.7
+hydra-core
+jax
+flax
+orbax
+distrax
+metrx
+gymnasium
+pyyaml
+opencv-python
+wget
+gitpython
+datasets
+huggingface_hub
