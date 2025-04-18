@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: reelsWatchBot
+Version: 0.0.20
+Summary: A Python package to create a telegram bot that can download Instagram Reels from any public Instagram page.
+Author: djalti
+Author-email: abdeldjalilselamnia@gmail.com
+Keywords: python,instagram,scrape,download,reels,pages,telegram,bot,automation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: insta-scrape-py
+Requires-Dist: python-telegram-bot
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+reelsWatchBot is a Python package that allows you to create a Telegram bot that can download Instagram Reels from any public Instagram page. The bot uses the Instapy package to download the reels from the links sent by the users. The bot can be customized to handle different types of messages and commands, and can be deployed on any platform that supports Python. The package is easy to use and can be customized to suit your needs.
