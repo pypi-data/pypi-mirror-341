@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: raysim
+Version: 0.1.0
+Summary: A distributed simulation framework using Ray.
+Author-email: Harry Chen <harrychen0805@outlook.com>
+Project-URL: Homepage, https://github.com/harry0805/raysim
+Project-URL: Bug Tracker, https://github.com/harry0805/raysim/issues
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ray[default]
+Requires-Dist: tqdm
+Dynamic: license-file
+
+# RaySim
+
+A distributed simulation framework built on Ray that provides tools for creating and running agent-based simulations.
+
+## Installation
+
+To install the package in development mode:
+
+```
+pip install -e <path_to_this_project_root> --config-settings editable_mode=strict
+```
+
+## Usage
+
+See simExample.py for an example of how to use the package.
