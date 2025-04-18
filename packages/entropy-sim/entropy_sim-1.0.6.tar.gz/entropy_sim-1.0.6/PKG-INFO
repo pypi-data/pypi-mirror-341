@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: entropy-sim
+Version: 1.0.6
+Summary: A lightweight Python library for modeling chemical mixtures.
+License: CC BY-NC
+Author: Milo Knowles
+Author-email: miloknowles97@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1.21.3,<2.0.0)
+Requires-Dist: pint (>=0.20.0,<1.0.0)
+Requires-Dist: pydantic (>=2.1.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# EntroPy Sim
+
+EntroPy Sim is a Python library for fast and simple simulations of chemical mixtures.
+
+## Background
+
+A ton of thermodynamics and chemical libraries exist, but have the following issues:
+- They are very large or have many large dependencies, preventing us from using them in a serverless environment
+- They're suited for scripts and scientific analysis, but not use in a production application
+- They don't have a very convenient API. For example, to use Cantera we have to write a YAML file that it can load in
+- They're not written in Python, requiring a build step (usually a Python wrapper around C++). Our Cantera build usually takes 10 minutes to run
+
+We wanted a library that has a well-designed Python API, is very small, and is suited to fast, approximate simulations.
+
+## Installation
+
+```bash
+pip install entropy-sim
+```
