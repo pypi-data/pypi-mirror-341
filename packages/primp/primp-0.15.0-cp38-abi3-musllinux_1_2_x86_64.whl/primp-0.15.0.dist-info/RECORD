@@ -1,0 +1,9 @@
+primp-0.15.0.dist-info/METADATA,sha256=K8nUXYEVXf2mEBEckhyNnJxBUg_IDQedY9pe2XlauaY,13640
+primp-0.15.0.dist-info/WHEEL,sha256=2WikbznHg4Dby7kI8xjupvhQFZUh1_vEPOpoPXj0bYQ,105
+primp-0.15.0.dist-info/licenses/LICENSE,sha256=ZPD9tCar0h91tI4v-TuZdrjDdLqzU4rzPTxtP3x--uc,1063
+primp.libs/libgcc_s-df042f68.so.1,sha256=iUlYeHxsK7WWeNTf6Q9E9blJ4gh6KvDMTN_qXH7QWsE,429345
+primp/primp.pyi,sha256=p9QZWj9b7VmTeCTdcUzA_lGFQsJIw6R9iIVacMa6624,5285
+primp/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+primp/__init__.py,sha256=nmZTJ1c_Sjlb7oUs_nO6Srawqlr0wZf_BwM_Wa_qVtk,10840
+primp/primp.abi3.so,sha256=Bl6shTFcQkWIfEqpUBrwjY2Ie9N9c73HQ0RCTh7mXdw,7729089
+primp-0.15.0.dist-info/RECORD,,
