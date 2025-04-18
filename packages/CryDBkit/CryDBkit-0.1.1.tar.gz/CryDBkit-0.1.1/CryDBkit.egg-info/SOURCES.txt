@@ -1,0 +1,9 @@
+README.md
+setup.py
+CryDBkit/__init__.py
+CryDBkit/website.py
+CryDBkit.egg-info/PKG-INFO
+CryDBkit.egg-info/SOURCES.txt
+CryDBkit.egg-info/dependency_links.txt
+CryDBkit.egg-info/requires.txt
+CryDBkit.egg-info/top_level.txt
