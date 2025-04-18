@@ -1,0 +1,8 @@
+README.md
+setup.py
+MothPriest.egg-info/PKG-INFO
+MothPriest.egg-info/SOURCES.txt
+MothPriest.egg-info/dependency_links.txt
+MothPriest.egg-info/requires.txt
+MothPriest.egg-info/top_level.txt
+mothpriest/__init__.py
