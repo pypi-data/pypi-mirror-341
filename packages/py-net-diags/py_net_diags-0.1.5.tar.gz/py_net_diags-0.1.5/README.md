@@ -1,0 +1,428 @@
+# py-net-diags
+
+A Python package for network diagnostics that collects various metrics about your machine's network connection.
+
+## Installation
+
+### Basic Installation
+
+```bash
+pip install py-net-diags
+```
+
+### With Optional speedcheck Support
+
+```bash
+pip install py-net-diags[speedcheck]
+```
+
+## Configuration
+
+### Environment Variables
+
+Create a `.env` file based on the provided `.env-sample`:
+
+```
+# ConnectWise API Configuration
+RUNNING_IN_ASIO=true/false    # Set to true if running in ASIO environment
+CW_BASE_URL=your_cw_url       # ConnectWise base URL
+AUTHORIZATION=your_auth_token # ConnectWise authorization token
+CLIENTID=your_client_id       # ConnectWise client ID
+
+# Retry Configuration
+RETRY_ATTEMPTS=3              # Number of retry attempts for operations
+RETRY_DELAY=2                 # Delay in seconds between retry attempts
+```
+
+## Usage Examples
+
+### Run locally (without ConnectWise upload)
+
+```python
+import logging
+
+log = logging.getLogger(__name__)
+
+log.setLevel(logging.INFO)
+log.addHandler(logging.StreamHandler())
+
+try:
+    import os
+    import sys
+    import traceback
+    import argparse
+    from py_net_diags import NetworkDiagnostics
+except Exception as e:
+    log.exception(e, stack_info=True)
+    sys.exit(1)
+
+os.environ["RUNNING_IN_ASIO"] = "False"
+
+log.debug("Starting Bot to run network diagnostics...")
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Run network diagnostics and upload results to ConnectWise.")
+    parser.add_argument("--targets", help="List of targets to test, separated by commas")
+    parser.add_argument("--log-level", choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"], default="INFO", help="Set the logging level")
+
+    return parser.parse_args()
+
+def main():
+    try:
+        args = parse_args()
+        user_input = args.targets
+        log_level = args.log_level
+
+        if log_level:
+            log.setLevel(getattr(logging, log_level.upper()))
+
+        log.debug(f"User input received: {user_input}")
+
+        network_diag = NetworkDiagnostics(log=log)
+
+        try:
+            targets = network_diag.parse_targets(user_input)
+            log.debug(f"Parsed targets: {targets}")
+        except Exception:
+            log.exception(f"Error processing user input: {traceback.format_exc()} {type(user_input)}", stack_info=True)
+            targets = []
+
+        log.debug("Running network diagnostics...")
+        diagnostics = network_diag.build_diagnostics_dict(additional_targets=targets)
+        network_diag.print_diagnostics(diagnostics)
+
+        success, file_path = network_diag.write_diagnostics_to_files(diagnostics)
+
+        if success:
+            log.info(f"Network diagnostics successfully generated and uploaded to {file_path}")
+
+        msg = network_diag.format_diagnostic_message(diagnostics)
+        md_msg = network_diag.format_diagnostic_message_markdown(diagnostics)
+        log.debug(f"Formatted message: {msg}")
+        log.debug(f"Formatted markdown message: {md_msg}")
+
+        diagnostics_log_dict = {"diagnostics": diagnostics}
+
+        log.debug(f"Diagnostics log dictionary: {diagnostics_log_dict} -> {msg}")
+
+        log.info(f"Network diagnostics completed successfully. -> {file_path}")
+
+    except Exception:
+        log.exception(f"An exception occurred while performing task: {traceback.format_exc()}", stack_info=True)
+    finally:
+        log.debug("Bot execution has ended.")
+
+if __name__ == "__main__":
+    main()
+```
+
+### Run locally (with ConnectWise upload)
+
+```python
+import logging
+
+log = logging.getLogger(__name__).setLevel(logging.DEBUG)
+log.setLevel(logging.DEBUG)
+log.addHandler(logging.StreamHandler())
+
+try:
+    import os
+    import sys
+    import traceback
+    import argparse
+    from py_net_diags import NetworkDiagnostics, ConnectWiseServiceAPI
+except Exception as e:
+    log.exception(e, stack_info=True)
+    sys.exit(1)
+
+os.environ["RUNNING_IN_ASIO"] = "False"
+
+log.debug("Starting Bot to run network diagnostics...")
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Run network diagnostics and upload results to ConnectWise.")
+    parser.add_argument("--targets", help="List of targets to test, separated by commas")
+    parser.add_argument("--ticket-id", help="ConnectWise ticket ID for uploading results")
+    parser.add_argument("--log-level", choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"], help="Set the logging level")
+
+    return parser.parse_args()
+
+def main():
+    try:
+        args = parse_args()
+        user_input = args.targets
+        ticket_id = args.ticket_id
+        log_level = args.log_level
+
+        if log_level:
+            log.setLevel(getattr(logging, log_level.upper()))
+
+        log.debug(f"User input received: {user_input}")
+
+        network_diag = NetworkDiagnostics(log=log)
+
+        try:
+            targets = network_diag.parse_targets(user_input)
+            log.debug(f"Parsed targets: {targets}")
+        except Exception:
+            log.exception(f"Error processing user input: {traceback.format_exc()} {type(user_input)}", stack_info=True)
+            targets = []
+
+        log.debug("Running network diagnostics...")
+        diagnostics = network_diag.build_diagnostics_dict(additional_targets=targets)
+        network_diag.print_diagnostics(diagnostics)
+
+        success, file_path = network_diag.write_diagnostics_to_files(diagnostics)
+
+        if ticket_id is not None and success:
+            service_api = ConnectWiseServiceAPI(log=log)
+            ticket_id = network_diag.parse_ticket_id(ticket_id)
+            log.debug(f"Parsed ticket ID: {ticket_id}")
+            attachment_response = service_api.upload_attachment(ticket_id=ticket_id, file_path=file_path)
+            log.debug(f"Attachment uploaded successfully: {attachment_response}")
+
+        msg = network_diag.format_diagnostic_message(diagnostics)
+        md_msg = network_diag.format_diagnostic_message_markdown(diagnostics)
+        log.debug(f"Formatted message: {msg}")
+        log.debug(f"Formatted markdown message: {md_msg}")
+
+        if ticket_id is not None:
+            try:
+                note_response = service_api.add_ticket_note(ticket_id=ticket_id, note_text=md_msg, internal=True)
+                log.debug(f"Note created successfully: {note_response}")
+            except Exception as e:
+                log.exception(e, stack_info=True)
+        else:
+            log.debug("No ticket ID provided.")
+
+        diagnostics_log_dict = {"diagnostics": diagnostics}
+
+        log.debug(f"Diagnostics log dictionary: {diagnostics_log_dict} -> {msg}")
+
+    except Exception:
+        log.exception(f"An exception occurred while performing task: {traceback.format_exc()}", stack_info=True)
+    finally:
+        log.debug("Bot execution has ended.")
+
+if __name__ == "__main__":
+    main()
+```
+
+### Run in ASIO
+
+```python
+from cw_rpa import Logger, Input
+import logging
+
+OVERWRITE_LOG = True
+
+if OVERWRITE_LOG:
+    log = Logger(level=logging.WARNING)
+    log.warning("Overwriting log file at the end with text content.")
+else:
+    log = Logger(level=logging.DEBUG)
+    log.debug("Using normal logging format and file.")
+
+log.debug("Importing required modules...")
+
+try:
+    import os
+    import sys
+    import traceback
+    from py_net_diags import NetworkDiagnostics, ConnectWiseServiceAPI
+except Exception as e:
+    log.exception(e, stack_info=True)
+    sys.exit(1)
+
+os.environ["RUNNING_IN_ASIO"] = "True"
+
+log.debug("Starting Bot to run network diagnostics...")
+
+def find_result_file(filename: str, starting_directory: str = ".", max_depth: int = 3) -> str:
+    """
+    find_result_file: Find the specified file starting in the given directory and going down through the subdirectories.
+
+    Args:
+        filename (str): The name of the file to find
+
+    Kwargs:
+        starting_directory (str, optional): The directory to start searching from. (default: ".").
+        max_depth (int, optional): The maximum depth to search through subdirectories. (default: 3).
+
+    Returns:
+        str: The full path to the found file, or an empty string if not found.
+    """
+    # Normalize the starting directory path
+    starting_directory = os.path.abspath(starting_directory)
+
+    # Check if the starting directory exists
+    if not os.path.exists(starting_directory):
+        return ""
+
+    # Perform a breadth-first search to avoid going too deep unnecessarily
+    current_depth = 0
+    directories_to_search = [(starting_directory, current_depth)]
+
+    while directories_to_search:
+        current_dir, depth = directories_to_search.pop(0)
+
+        # Skip if we've exceeded the max depth
+        if depth > max_depth:
+            continue
+
+        try:
+            # List all entries in the current directory
+            entries = os.listdir(current_dir)
+
+            # First check for the target file in the current directory
+            for entry in entries:
+                full_path = os.path.join(current_dir, entry)
+
+                # If it's a file and matches the filename, return the full path
+                if os.path.isfile(full_path) and entry == filename:
+                    return full_path
+
+            # Then add subdirectories to the search queue if we're not at max depth
+            if depth < max_depth:
+                for entry in entries:
+                    full_path = os.path.join(current_dir, entry)
+                    if os.path.isdir(full_path):
+                        directories_to_search.append((full_path, depth + 1))
+        except (PermissionError, OSError):
+            # Skip directories we don't have permission to access
+            continue
+
+    # If we've searched all directories up to max_depth and haven't found the file
+    return ""
+
+
+def overwrite_log_file(file_path: str, message: str, overwrite: bool = False) -> bool:
+        try:
+            if overwrite and os.path.exists(file_path):
+                with open(file_path, "w", encoding='utf-8') as result_file:
+                    result_file.write(message)
+                return True
+            else:
+                log.info("Not overwriting existing log file.")
+        except Exception as e:
+            log.exception(e, stack_info=True)
+            return False
+
+def main():
+    try:
+        input = Input()
+
+        log.debug("Bot execution has started.")
+
+        # Replace these with the keys in your input schema
+        user_input = input.get_value("Endpoints_1744302956989")
+        ticket_id = input.get_value("TicketID_1744387558332")
+
+        log.debug(f"User input received: {user_input}")
+
+        # Create an instance of the NetworkDiagnostics class
+        network_diag = NetworkDiagnostics(log=log)
+
+        try:
+            targets = network_diag.parse_targets(user_input)
+            log.debug(f"Parsed targets: {targets}")
+        except Exception:
+            log.exception(f"Error processing user input: {traceback.format_exc()} {type(user_input)}", stack_info=True)
+            targets = []
+
+        if ticket_id is not None:
+            try:
+                service_api = ConnectWiseServiceAPI(log=log)
+                ticket_id = network_diag.parse_ticket_id(ticket_id)
+                log.debug(f"Parsed ticket ID: {ticket_id}")
+            except Exception:
+                log.exception(f"Error parsing ticket ID: {traceback.format_exc()}", stack_info=True)
+                ticket_id = None
+
+        log.debug("Running network diagnostics...")
+        diagnostics = network_diag.build_diagnostics_dict(additional_targets=targets)
+        network_diag.print_diagnostics(diagnostics)
+
+        success, file_path = network_diag.write_diagnostics_to_files(diagnostics)
+
+        if ticket_id is not None and success:
+            attachment_response = service_api.upload_attachment(ticket_id=ticket_id, file_path=file_path)
+            log.debug(f"Attachment uploaded successfully: {attachment_response}")
+
+        msg = network_diag.format_diagnostic_message(diagnostics)
+        md_msg = network_diag.format_diagnostic_message_markdown(diagnostics)
+        log.debug(f"Formatted message: {msg}")
+        log.debug(f"Formatted markdown message: {md_msg}")
+
+        if ticket_id is not None:
+            try:
+                note_response = service_api.add_ticket_note(ticket_id=ticket_id, note_text=md_msg, internal=True)
+                log.debug(f"Note created successfully: {note_response}")
+            except Exception as e:
+                log.exception(e, stack_info=True)
+        else:
+            log.debug("No ticket ID provided.")
+
+        diagnostics_log_dict = {"diagnostics": diagnostics}
+
+        log.debug(f"Diagnostics log dictionary: {diagnostics_log_dict} -> {msg}")
+        log.result_success_message(msg)
+
+        log.result_data(diagnostics_log_dict)
+
+        result_txt_file = find_result_file("Result.txt")
+
+        log.info(f"Result.txt file found: {result_txt_file}")
+
+        overwrite_log_file(result_txt_file, md_msg, overwrite=OVERWRITE_LOG)
+
+
+    except Exception:
+        log.exception(f"An exception occurred while performing task: {traceback.format_exc()}", stack_info=True)
+        log.result_failed_message(f"An exception occurred while performing task: {traceback.format_exc()}")
+    finally:
+        log.debug("Bot execution has ended.")
+
+if __name__ == "__main__":
+    main()
+```
+
+## Conda Environment Setup
+
+### Basic Environment
+
+```yaml
+name: net-diags
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - py-net-diags
+```
+
+### With speedcheck Support
+
+```yaml
+name: net-diags-full
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - "py-net-diags[speedcheck]"
+```
+
+Save either of these as `environment.yml` and create the environment with:
+
+```bash
+conda env create -f environment.yml
+```
+
+## License
+
+MIT
