@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: ProxiesGrabber
+Version: 1.0.6
+Summary: A Python package for scraping free proxy lists from various online sources.
+Home-page: https://github.com/alfarttusie/ProxiesGrabber
+Author: alfarttusie
+Author-email:  muhammed@alfarttusie.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# ProxiesGrabber
+
+## Overview
+ProxiesGrabber is a Python package designed to scrape free proxy lists from various online sources. It uses multithreading to enhance performance and efficiently gather proxies.
+
+## Features
+- Fetches free proxies from multiple sources
+- Uses multithreading for better performance
+- Automatically formats proxies into `IP:PORT`
+- Simple and easy-to-use interface
+
+## Installation
+You can install ProxiesGrabber via GitHub or PyPI.
+
+### Install from GitHub
+```sh
+pip install git+https://github.com/alfarttusie/ProxiesGrabber.git
+```
+
+### Install from PyPI
+```sh
+pip install ProxiesGrabber
+```
+
+## Usage
+```python
+from ProxiesGrabber import ProxiesGrabber
+
+scraper = ProxiesGrabber()
+print(scraper.list)  # List of formatted proxies
+```
+
+## Dependencies
+- `requests`
+
+## License
+MIT License
+
+## Author
+[alfarttusie](https://github.com/alfarttusie)
+
