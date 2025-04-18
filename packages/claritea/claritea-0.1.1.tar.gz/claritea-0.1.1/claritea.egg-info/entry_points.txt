@@ -1,0 +1,2 @@
+[console_scripts]
+claritea = claritea:main
