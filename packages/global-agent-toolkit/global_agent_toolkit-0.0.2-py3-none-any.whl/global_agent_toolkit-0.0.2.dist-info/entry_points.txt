@@ -1,0 +1,2 @@
+[console_scripts]
+global-agent-toolkit = global_agent_toolkit:main
