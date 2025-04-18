@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: ohms-law-ksu
+Version: 0.3.0
+Summary: Calculate voltage, current and resistance using Ohm's Law.
+Home-page: https://anonymous.4open.science/r/ohms_law-EE95/
+Author: KSU Student
+Author-email: Research Group <email@protected.edu>
+License-Expression: MIT
+Project-URL: Source, https://anonymous.4open.science/r/ohms_law-EE95
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# Ohm's Law Calculator
+- Let's you calculate voltage, current, and resistance using Ohm's Law.
+- Tutorial: youtube or invidious /watch?v=JkeNVaiUq_c
