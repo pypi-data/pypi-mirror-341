@@ -1,0 +1,9 @@
+# build artifacts
+*.egg-info
+build/
+dist/
+site/
+__pycache__
+
+# test artifacts
+.coverage*

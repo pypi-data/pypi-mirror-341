@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "arrakis-api-count",
+  "description": "v0.1",
+  "type": "object",
+  "properties": {
+    "request": {
+      "type": "string",
+      "const": "Count"
+    },
+    "args": {
+      "type": "object",
+      "properties": {
+        "pattern": {
+          "type": "string"
+        },
+        "data_type": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["uint32", "uint64", "int32", "int64", "float32", "float64"]
+          }
+        },
+        "min_rate": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "max_rate": {
+          "type": "integer",
+          "exclusiveminimum": 0
+        },
+        "publisher": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "pattern",
+        "data_type",
+        "min_rate",
+        "max_rate",
+        "publisher"
+      ]
+    }
+  },
+  "required": [
+    "request",
+    "args"
+  ]
+}
