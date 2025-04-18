@@ -1,0 +1,11 @@
+llamashell/__init__.py,sha256=AsEfriCWUPO17VqIjXwKdEtOhrWtm52RkmLsYEjlE0s,75
+llamashell/llm.py,sha256=8J_TmVVfGCpORnZ2RaxmhIPcI1C8MStkqBzzVfKgyYA,1596
+llamashell/main.py,sha256=ld2-7UG9Jw1wB7HdvYmy7lbhl2jTMiEnaTiZ-ZblBnc,300
+llamashell/shell.py,sha256=qgWm8yDMlsraItwdqa2mgBbLv0YnxAYGoZkpFB9F4No,8568
+llamashell/tools.py,sha256=kzKPOSbFIXg7VysHCZ8JTLMymF4hFnMgIBS5UO2lV_8,11819
+llamashell-0.0.4.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+llamashell-0.0.4.dist-info/METADATA,sha256=xfqSlOGV9ff49wjc-y7PJL4LoVFqgHof91vTGYo42zk,1275
+llamashell-0.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+llamashell-0.0.4.dist-info/entry_points.txt,sha256=8LmdTAXPyKltm00nTENrvXeL92rSCe3k5bm23ACq8Ts,52
+llamashell-0.0.4.dist-info/top_level.txt,sha256=c--sNZ0rn1OFQF2ZQaAA0On7trpozE3Dyb091aGPgf4,11
+llamashell-0.0.4.dist-info/RECORD,,
