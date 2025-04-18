@@ -1,0 +1,58 @@
+# stv_utils
+
+## 简介
+- 
+- 检测操作系统类型
+- 检测是否为中文环境
+- 判断是否在IDLE中运行
+- 根据系统执行清屏命令
+- 提供颜色和文本样式的字典列表
+- 自定义`argparse`模块的帮助信息格式
+
+## 版本信息
+
+当前脚本版本为：0.0.3
+
+## 功能说明
+
+### `is_ch()`
+
+该函数用于检测当前系统是否为Windows系统，并且语言环境是否为中文。如果是，则返回`True`。
+
+### `system_check(verbose=False, more_verbose=False)`
+
+该函数使用`platform`模块检测操作系统类型。参数`verbose`和`more_verbose`用于控制返回的信息格式：
+
+- `verbose=True`：返回系统名称字符串
+- `more_verbose=True`：返回原始检测结果
+- 默认情况下，返回一个布尔值，表示是否为Windows系统
+
+### `is_idle()`
+
+该函数通过检查`sys.modules`来判断当前脚本是否在IDLE中运行。
+
+### `system_clear(force=False)`
+
+该函数根据系统类型执行相应的清屏命令。如果当前在IDLE中运行，则不会执行清屏。参数`force=True`可以强制执行清屏。
+
+### `color()`
+
+该函数返回一个包含前景色、背景色和文本样式的字典列表，用于在终端中输出彩色文本和不同样式的文本。
+
+### `CustomHelpFormatter`
+
+`CustomHelpFormatter`类继承自`argparse.HelpFormatter`，用于自定义`argparse`模块的帮助信息格式。该类重写了`_format_action_invocation`方法，以自定义命令行参数的显示方式。
+
+## 注意事项
+
+- 请确保在运行脚本前已安装Python环境。
+- 本脚本不包含任何个人可识别信息（PII）。
+- 本脚本不包含任何网站超链接。
+
+## 开发者信息
+
+（此处可以添加开发者的联系方式、贡献者名单等信息，但请确保不包含个人可识别信息。）
+
+## 许可证
+
+ MIT
