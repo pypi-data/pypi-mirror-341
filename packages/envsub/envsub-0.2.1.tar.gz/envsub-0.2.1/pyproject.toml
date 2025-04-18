@@ -1,0 +1,61 @@
+[project]
+name = "envsub"
+version = "0.2.1"
+description = "A text preprocessing tool with environment variable substitution."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Guillaume Gauvrit", email = "guillaume@gauvr.it" }]
+requires-python = ">=3.9"
+keywords = ["environment", "substitution", "variables"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Rust",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing",
+    "Typing :: Typed",
+]
+dependencies = []
+
+# used by sphinx-notes/pages@v3
+[project.optional-dependencies]
+docs = [
+    "furo >=2024.5.6",
+    "linkify-it-py >=2.0.3,<3",
+    "myst-parser >=3.0.0,<4; python_version < '3.10'",
+    "myst-parser >=4.0.0,<5; python_version >= '3.10'",
+    "sphinx >=7.0.1,<8",
+    "sphinx-autodoc2 >=0.5.0,<1",
+]
+
+[tool.uv]
+default-groups = []
+
+[dependency-groups]
+dev = ["pip>=24.2", "pytest>=8.3.3", "pyyaml>=6.0.2"]
+docs = [
+    "sphinx>=7.0.0",
+    "sphinx-autodoc2 >=0.5.0,<1",
+    "furo>=2024.8.6",
+    "linkify-it-py >=2.0.3,<3",
+    "myst-parser >=3.0.0,<4; python_version < '3.10'",
+    "myst-parser >=4.0.0,<5; python_version >= '3.10'",
+]
+
+
+[project.scripts]
+envsub = "envsub:sub"
+
+[project.urls]
+Homepage = "https://github.com/mardiros/envsub/"
+Documentation = "https://mardiros.github.io/envsub/"
+Repository = "https://github.com/mardiros/envsub.git"
+Issues = "https://github.com/mardiros/envsub/issues"
+Changelog = "https://mardiros.github.io/envsub/changelog.html"
+
+[tool.maturin]
+bindings = "pyo3"
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
