@@ -1,0 +1,10 @@
+panini/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+panini/drivers.py,sha256=OihmYKM_9P8v20vdn-2UPjexNJLHQOzYGcI3-weFjRY,5425
+panini/main.py,sha256=5t0SMzYmz8-5s3vU5VdryvOZcP-m4W5DQJHFQhOE8lA,779
+panini/utils.py,sha256=FUansvuogPg5ylN6Ep8D9UvlbqMmwtsQPGiMGI26r-o,2700
+panini_compose-0.1.2.dist-info/licenses/LICENSE,sha256=ufboMDroO1Lch8xobBree41goRKSkqm6byktntWdKP0,1073
+panini_compose-0.1.2.dist-info/METADATA,sha256=bNXJQl-ZY8Me33_RBwUtCMdPJ36xRxzZLdFLTumEkyQ,623
+panini_compose-0.1.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+panini_compose-0.1.2.dist-info/entry_points.txt,sha256=MDdoKgt9axC267JZj4Dfo35TAn62oS_rJsmfOv3LHJE,44
+panini_compose-0.1.2.dist-info/top_level.txt,sha256=DHh29ov9P7UCFc0V-FAsy8PO7Kvcjaky7cKQ-4dwLrM,7
+panini_compose-0.1.2.dist-info/RECORD,,
