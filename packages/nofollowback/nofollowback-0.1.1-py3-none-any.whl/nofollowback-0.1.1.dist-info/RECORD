@@ -1,0 +1,9 @@
+nofollowback/__init__.py,sha256=8_GjEVSXklpUcbhs-pdssG7Iv4U_ScYwQ1XBwZjfMTQ,54
+nofollowback/cli.py,sha256=0aa0E6oSAiJqjVL4B98LkNMiG3YCvbccRKaKC6MPEso,1398
+nofollowback/github.py,sha256=zqzvEG_mzweODJ_VMlIiYDkX1GjDEpyUmdGzHnqfs1w,1733
+nofollowback-0.1.1.dist-info/licenses/LICENSE,sha256=dkX25pwwYQNPGUCcGvFTIdmggvVUTvtooWesCsrmTF8,1067
+nofollowback-0.1.1.dist-info/METADATA,sha256=gLVD31T9_pyQHsRULO2rUhoGWe78cD-vbkEMEwk7hEo,944
+nofollowback-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+nofollowback-0.1.1.dist-info/entry_points.txt,sha256=CsD47_1DAZKOBuFWXdkhwbHc3tdfRFch-eOXdzQLupg,54
+nofollowback-0.1.1.dist-info/top_level.txt,sha256=Z5l8SwfWXgbt2KoYhKFP6nJO4sgrqFzd4581qTkxiA4,13
+nofollowback-0.1.1.dist-info/RECORD,,
