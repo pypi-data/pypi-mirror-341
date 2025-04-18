@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+smartreq/__init__.py
+smartreq/cli.py
+smartreq.egg-info/PKG-INFO
+smartreq.egg-info/SOURCES.txt
+smartreq.egg-info/dependency_links.txt
+smartreq.egg-info/entry_points.txt
+smartreq.egg-info/top_level.txt
