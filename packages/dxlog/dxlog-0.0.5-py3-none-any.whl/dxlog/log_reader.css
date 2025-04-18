@@ -1,0 +1,28 @@
+Button {
+    width: 100%;
+}
+
+.change_line {
+    padding: 1;
+    text-align: center;
+}
+
+.change_line Button {
+    width: 15;
+}
+
+#more {
+    dock: right;
+}
+
+.hidden {
+    display: none;
+}
+
+#log_buttons Button {
+    width: 50%;
+}
+
+#log_buttons {
+    align: center middle;
+}
