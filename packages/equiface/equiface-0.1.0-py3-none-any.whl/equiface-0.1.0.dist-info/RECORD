@@ -1,0 +1,11 @@
+equiface/__init__.py,sha256=oub4DrlMzMh1YuCIVwWwuSfP-jRsqXNYnbrFPLIJiG8,343
+equiface/constants.py,sha256=M7P-sPW3nq-WtemRZF4fKoGNh4tJFqDPiMd3OIZX-Zk,368
+equiface/image_utils.py,sha256=bZGWFAgFz5L8v3AJzicfgo5GslJvaP_Oe13ZAGKdU1U,2038
+equiface/logging_utils.py,sha256=9UrfJGP5plpYfzIB1yOQtOBP1m6knIKGfFlOuKlOk60,2048
+equiface/verification.py,sha256=wL-K0H6SYikMQHf9MtGay_63Iq73MhN973wr8jUSuJw,5337
+equiface-0.1.0.dist-info/licenses/LICENSE,sha256=nTU3in-uuGQEpiBLoVZmmJBq1icyTkRRghEku6sfMlI,1085
+equiface-0.1.0.dist-info/METADATA,sha256=_OTVbLFWj6mrpjYLArIV1PwqqYMqSuE5NQFcbdhZ36k,472
+equiface-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+equiface-0.1.0.dist-info/entry_points.txt,sha256=SUC2pUtdttUI3Ic6wC9TTYai4pvtTPIUqgtPYtnkzLE,52
+equiface-0.1.0.dist-info/top_level.txt,sha256=nKVOQUnyM_Xv_H0qTE10Sk_JodBeyoQoaCUWG-BDVEk,9
+equiface-0.1.0.dist-info/RECORD,,
