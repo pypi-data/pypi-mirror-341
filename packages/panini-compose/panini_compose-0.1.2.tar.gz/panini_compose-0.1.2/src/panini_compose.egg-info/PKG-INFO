@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: panini-compose
+Version: 0.1.2
+Summary: Compose project tasks
+Project-URL: Homepage, https://ihucos.github.io/panini
+Project-URL: Repository, https://github.com/ihucos/panini
+Keywords: docker compose,process management,local development,docker
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# panini
+
+Check out the docs here: https://ihucos.github.io/panini/

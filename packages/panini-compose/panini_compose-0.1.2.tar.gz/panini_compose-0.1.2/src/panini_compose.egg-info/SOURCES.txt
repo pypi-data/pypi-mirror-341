@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/panini/__init__.py
+src/panini/drivers.py
+src/panini/main.py
+src/panini/utils.py
+src/panini_compose.egg-info/PKG-INFO
+src/panini_compose.egg-info/SOURCES.txt
+src/panini_compose.egg-info/dependency_links.txt
+src/panini_compose.egg-info/entry_points.txt
+src/panini_compose.egg-info/top_level.txt
