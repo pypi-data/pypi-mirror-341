@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+python-multipart
+pandas
+pydantic
+requests
+perf_ssr
+plotly>=5.18.0
+plotly-upset-hd>=0.0.2
+rich
+colorlog>=6.8.2
