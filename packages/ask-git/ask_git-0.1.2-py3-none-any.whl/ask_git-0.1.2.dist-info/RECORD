@@ -1,0 +1,9 @@
+ask_git/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ask_git/cli.py,sha256=B2TamBohcl78f9XEOOf8vlcDxvmSovXBwpU7Y2RRmys,472
+ask_git/ollama_client.py,sha256=cgWQ2HVP6tmJWmRmeGzJIDlvEZ3KRECn43NOHV85Ssw,481
+ask_git/prompt_builder.py,sha256=OJx5lzgPDS3bmLyBXFLuWSFQD3zJJTCl6_ZDiBEzL8E,2002
+ask_git-0.1.2.dist-info/METADATA,sha256=eyqIPPeEXiskqE7rrGiG0MGsFRuTGnCvkdVmLbsmA-Y,3269
+ask_git-0.1.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ask_git-0.1.2.dist-info/entry_points.txt,sha256=ChRxQna3JA5-OGsIvYPjgJL8qojswKDzShWVYq0rT98,45
+ask_git-0.1.2.dist-info/top_level.txt,sha256=Oc4sFCXP2nMR_OP6CPFBraf6oD8BjLvp7NkM6CEbWWI,8
+ask_git-0.1.2.dist-info/RECORD,,
