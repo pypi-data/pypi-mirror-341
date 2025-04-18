@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+parstalk/__init__.py
+parstalk/core.py
+parstalk.egg-info/PKG-INFO
+parstalk.egg-info/SOURCES.txt
+parstalk.egg-info/dependency_links.txt
+parstalk.egg-info/requires.txt
+parstalk.egg-info/top_level.txt
