@@ -1,0 +1,15 @@
+pyproject.toml
+my_package/__init__.py
+my_package/database.py
+my_package/init0.py
+my_package/init1.py
+my_package/init2.py
+my_package/init3.py
+my_package/init4.py
+my_package/main0.py
+my_package/user_management.py
+my_package_matykina_olga.egg-info/PKG-INFO
+my_package_matykina_olga.egg-info/SOURCES.txt
+my_package_matykina_olga.egg-info/dependency_links.txt
+my_package_matykina_olga.egg-info/requires.txt
+my_package_matykina_olga.egg-info/top_level.txt
