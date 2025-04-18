@@ -1,0 +1,14 @@
+yt_experiments/__init__.py,sha256=rDYoixqZCOqxTa0ttlc3_Kq7fcmKWx8uzxLclvPQxTU,74
+yt_experiments/_version.py,sha256=anBcPGggCP0f-o9w0IsZYV49rl6HvJbHcuDN39x3mxw,23
+yt_experiments/octree/converter.cp313-win_amd64.pyd,sha256=1D-DvExInVee_MFk3XXyfxMoxjJIzU1Qkz5XfgxUeeo,222208
+yt_experiments/octree/converter.pyx,sha256=YT98k-qB6ZSP_RlrYpyhqQ6RaO8KEW17quUbmcTSjco,9759
+yt_experiments/octree/tests/test_converter.py,sha256=FVxkswhM-lI8q0pn1cEVm-zNXfGC13w7__mlcblS5XQ,2338
+yt_experiments/tests/test_yt_experiments.py,sha256=Xqx_npFeItKzNe8grbM3-ffsaIBvjp-lDBqYgGz8v5I,102
+yt_experiments/tiled_grid/__init__.py,sha256=HoBNIJaHXuutJc7CeVZw2EGYRNgq5IXcHMP54ZO9AeY,198
+yt_experiments/tiled_grid/tiled_grids.py,sha256=3DId1kHXUDTxYw2TD7CuicR3lMR3mgVu5gmJaQXPVIQ,17185
+yt_experiments/tiled_grid/tests/test_tiled_grid.py,sha256=445SYe4gTyseBrWP0xJpdOJyhfW1AYetNn3fpqxvI2I,2880
+yt_experiments-0.2.2.dist-info/licenses/LICENSE,sha256=rABI0uQ-nhv2sMAsq-iMZURjPDLw8X0LEHDrS5kovRs,1529
+yt_experiments-0.2.2.dist-info/METADATA,sha256=QkpLheTel9OevsiaWQ3FM8K_k6bGLg_yuGEBo0Y4BrU,2818
+yt_experiments-0.2.2.dist-info/WHEEL,sha256=6WoW_bHwIgUwfRGomr3tsp2x5B1WboZF1vodYe1_93Y,101
+yt_experiments-0.2.2.dist-info/top_level.txt,sha256=kwSwofS1RckMqHYaQCLM65TUY9fYcycjWJ1GGPvhPmM,15
+yt_experiments-0.2.2.dist-info/RECORD,,
