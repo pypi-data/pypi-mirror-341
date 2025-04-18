@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+import "bencherscaffold/protos/bencher.proto";
+
+service SecondLevelBencher {
+
+  rpc evaluate_point(BenchmarkRequest) returns (EvaluationResult){};
+}
