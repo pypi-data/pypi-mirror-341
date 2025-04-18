@@ -1,0 +1,10 @@
+conservation/__init__.py,sha256=Jzb_RfgvXCrm_SQ4AfeGVi1N36YybxnM5mpyxrnihgI,33
+conservation/commands.py,sha256=Ltz6Yl72dmUt2zIrIr8N2O4sCkD_z6syAOzTQ8RCWKY,1404
+conservation/conservation_codon.py,sha256=M7GqkOtmdGH_3VTIItHUm6Js9GOrkXHyc9SHQTOgGJg,12844
+conservation/version.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+conservation-0.1.0.data/scripts/conservation,sha256=O_iab78qla3MKhZNKtiKRz2ZCHAveyMUHvf_VJa81WI,110
+conservation-0.1.0.dist-info/LICENSE.txt,sha256=39zxcma5h39PvuEPHFryWCQ9078nhUu_zjyUgtSzliQ,1063
+conservation-0.1.0.dist-info/METADATA,sha256=tYYb-Tn1f_a0drIC4f9zjyNsuyRPuFqr-AhusWoQmE0,3187
+conservation-0.1.0.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+conservation-0.1.0.dist-info/top_level.txt,sha256=Qo6_qnWr386gfB1Xj6xZCf4YKE7civBcGeZTTZv3Ya0,13
+conservation-0.1.0.dist-info/RECORD,,
