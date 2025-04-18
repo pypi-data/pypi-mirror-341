@@ -1,0 +1,7 @@
+config.json
+*.db
+*.exe
+*.pyc
+dist/*
+config.old.json
+musicbox-mpd_test_amd64.snap
