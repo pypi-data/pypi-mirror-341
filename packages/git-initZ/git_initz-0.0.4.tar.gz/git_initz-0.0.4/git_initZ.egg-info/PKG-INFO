@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: git-initZ
+Version: 0.0.4
+Summary: 這是笨貓貓[實驗中的模型]
+Requires-Python: >=3.8.10
+Description-Content-Type: text/markdown
+
+
+# 版本歷史 (Changelog)
+
+## pip install [[0.0.3]]
+- **使用:**
+```python
+%env KEY={input()}
+!pip install git-initZ==0.0.3 -v
+```
+
+```python
+import os,getpass;os.environ['KEY']=getpass.getpass('Enter your KEY:')
+!pip install git-initZ==0.0.3 -v
+```
+
+- **登入:**
+```python
+%run login
+```
+
