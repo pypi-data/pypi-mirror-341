@@ -1,0 +1,8 @@
+README.md
+setup.py
+ola_mundo/__init__.py
+ola_mundo/funcoes.py
+ola_mundo.egg-info/PKG-INFO
+ola_mundo.egg-info/SOURCES.txt
+ola_mundo.egg-info/dependency_links.txt
+ola_mundo.egg-info/top_level.txt

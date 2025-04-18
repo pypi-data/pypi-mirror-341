@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: ola_mundo
+Version: 0.0.1
+Summary: Uma saudação para te livrar da maldição!
+Home-page: https://github.com/josecarloslima/DIO-Suzano-Python/tree/main/ola_mundo_pkg
+Author: jose_carlos_lima
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# ola_mundo
+
+Description. 
+O pacote traz uma saudaÃ§Ã£o para te livrar da maldiÃ§Ã£o.
+	funÃ§Ã£o: olÃ¡ mundo
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install ola_mundo
+
+```bash
+pip install ola_mundo
+```
+
+
+## Author
+JosÃ© Carlos Lima
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
