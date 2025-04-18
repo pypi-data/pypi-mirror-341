@@ -1,0 +1,18 @@
+[project]
+name = "global-agent-toolkit"
+version = "v0.0.2"
+description = "..."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[[project.authors]]
+name = "Arthur Brenno"
+email = "64020210+arthurbrenno@users.noreply.github.com"
+
+[project.scripts]
+global-agent-toolkit = "global_agent_toolkit:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

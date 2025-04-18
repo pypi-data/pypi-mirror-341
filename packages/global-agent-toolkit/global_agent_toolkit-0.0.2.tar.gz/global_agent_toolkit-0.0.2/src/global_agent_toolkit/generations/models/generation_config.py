@@ -1,0 +1,18 @@
+import httpx
+from src.cortex.genai.generations.models.trace_params import TraceParams
+from src.infrastructure.models.base_model import BaseModel
+from src.infrastructure.models.field import Field
+
+
+class GenerationConfig(BaseModel):
+    temperature: float | None = Field(default=None)
+    max_output_tokens: int | None = Field(default=None)
+    n: int | None = Field(default=None)
+    top_p: float | None = Field(default=None)
+    top_k: float | None = Field(default=None)
+    google_generation_kwargs: dict[str, object] | None = Field(default=None)
+    trace_params: TraceParams = Field(default_factory=lambda: TraceParams())
+    timeout: httpx.Timeout | float | None = Field(default=None)
+
+    class Config:
+        arbitrary_types_allowed = True
