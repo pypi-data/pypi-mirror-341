@@ -1,0 +1,62 @@
+[project]
+name = "pyixapi"
+version = "0.2.6"
+description = "Python API client library for IX-API"
+authors = [{ name = "Guillaume Mazoyer", email = "oss@mazoyer.eu" }]
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.9"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = ["PyJWT>=2.4.0,<2.11", "requests>=2.20.0,<3.0"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff>=0.9,<0.10"]
+
+[tool.poetry]
+requires-poetry = ">=2.0"
+packages = [{ include = "pyixapi" }]
+
+[tool.ruff]
+line-length = 120
+exclude = [".git", ".tox", ".venv", "env", "_build", "build", "dist", "examples", "__main__.py"]
+
+[tool.ruff.lint]
+select = [
+    "C90", # mccabe complexity
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort-like checks
+    "DTZ", # flake8-datetimez
+    "ICN", # flake8-import-conventions
+    "TCH", # flake8-type-checking
+    "T10", # flake8-debugger
+    "Q",   # flake8-quotes
+    "YTT", # flake8-2020
+]
+
+task-tags = ["FIXME", "TODO", "XXX"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint.isort]
+known-first-party = ["pyixapi"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 31
+
+[build-system]
+requires = ["poetry-core>=2.0"]
+build-backend = "poetry.core.masonry.api"
