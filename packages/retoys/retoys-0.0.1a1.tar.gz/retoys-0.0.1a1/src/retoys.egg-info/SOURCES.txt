@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/retoys/__init__.py
+src/retoys/foo.py
+src/retoys.egg-info/PKG-INFO
+src/retoys.egg-info/SOURCES.txt
+src/retoys.egg-info/dependency_links.txt
+src/retoys.egg-info/requires.txt
+src/retoys.egg-info/top_level.txt
