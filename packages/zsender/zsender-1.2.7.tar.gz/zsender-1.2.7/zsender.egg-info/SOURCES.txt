@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+zsender/__init__.py
+zsender.egg-info/PKG-INFO
+zsender.egg-info/SOURCES.txt
+zsender.egg-info/dependency_links.txt
+zsender.egg-info/requires.txt
+zsender.egg-info/top_level.txt
