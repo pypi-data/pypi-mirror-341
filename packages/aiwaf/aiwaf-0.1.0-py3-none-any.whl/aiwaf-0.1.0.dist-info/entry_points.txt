@@ -1,0 +1,2 @@
+[console_scripts]
+aiwaf-detect = aiwaf.trainer:detect_and_train

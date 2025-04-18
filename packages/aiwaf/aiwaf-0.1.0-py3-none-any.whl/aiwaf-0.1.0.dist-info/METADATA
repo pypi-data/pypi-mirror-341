@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: aiwaf
+Version: 0.1.0
+Summary: AI‑driven pluggable Web Application Firewall for Django (CSV or DB storage)
+Author: Aayush Gauba
+Requires-Dist: django>=3.0
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: joblib
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
