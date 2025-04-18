@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+INFORMEGE/INFORMEGE.py
+INFORMEGE/__init__.py
+INFORMEGE.egg-info/PKG-INFO
+INFORMEGE.egg-info/SOURCES.txt
+INFORMEGE.egg-info/dependency_links.txt
+INFORMEGE.egg-info/top_level.txt

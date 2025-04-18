@@ -1,0 +1,1 @@
+from .INFORMEGE import *
