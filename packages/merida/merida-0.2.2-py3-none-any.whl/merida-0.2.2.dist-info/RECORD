@@ -1,0 +1,17 @@
+merida/__about__.py,sha256=m6kyaNpwBcP1XYcqrelX2oS3PJuOnElOcRdBa9pEb8c,22
+merida/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+merida/lightcurves_cls.py,sha256=wOCGIUf1tTDT4co3Thfxb5-rVkx1cAVSIR7FYwWsjJs,12224
+merida/matching_stars.py,sha256=mECuBEanJ4tbCyaHHrI-u2Xn8mrDiww66aO_6Bsm7zg,3033
+merida/metadata_cls.py,sha256=57hZknEsJ1l-vahxsEMIfxfHVtao3vQRFo6gmbnUWtc,8272
+merida/moa9yr_lightcurve_cls.py,sha256=ocQXTfzlX5KUb2NZjC8vtzKTnlSTkSovyEdiup185uk,4900
+merida/moa_rereduced_lightcurve_cls.py,sha256=ONYnCYaMAiXWKvZMmGJUOUlLRwBt46hdZJ6taNX8Tfs,8077
+merida/ra_dec_converter.py,sha256=lQIIU_aXwzdbM5sEfWtsSbbWaBRnKXyAanb6yU95OWE,2887
+merida/season_determiner.py,sha256=b7F1kzXt39wSx-mfPidcNcTK5gIXfFeve4_4m_usFVQ,1312
+merida/server_for_lightcurves.py,sha256=KilQl-FaBjt9dQwPBmWw3HLrvIDSAxTLfvDcT8AEBAE,2791
+merida/sumi_tags.py,sha256=LRjTNE2SYrrA64Nds4VBPz9xl9n1r1bAv1HL32yf-W0,8524
+merida/zones_for_lightcurves.py,sha256=3Ub0XHBEoREvZZ_mYIei9z71PTmqhx1axNRWLnWAoeI,23343
+merida/analysis/valid_data_points.py,sha256=KFKWa-OKgFWDd08CRF8igAhUMgoYnRcND6tr_zxaGvE,1604
+merida-0.2.2.dist-info/METADATA,sha256=MOk4B7g3MPxiriB_wuZ4nIyEHvKAwOMdeBx3TL_nj88,3173
+merida-0.2.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+merida-0.2.2.dist-info/licenses/LICENSE,sha256=M059K2NRzJLe_KwycNUSIc-OoyZHvWwwa4lJMH3c6V8,1075
+merida-0.2.2.dist-info/RECORD,,
