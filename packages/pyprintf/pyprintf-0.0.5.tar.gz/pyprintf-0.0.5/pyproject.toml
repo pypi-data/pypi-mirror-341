@@ -1,0 +1,56 @@
+[project]
+authors = [
+  {name = "Zsolt Oroszlány", email = "hello@playfulsparkle.com"},
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Text Processing :: General",
+  "Typing :: Typed",
+  "Framework :: Pytest",
+]
+dependencies = [
+  "typing-extensions>=4.0.0; python_version<'3.11'",
+]
+description = "A lightweight, Open Source pyprintf sprintf() implementation written in Python"
+keywords = [
+  "pyprintf",
+  "sprintf",
+  "parser",
+  "python",
+  "formatting",
+]
+license = {text = "BSD-3-Clause"}
+maintainers = [
+  {name = "Zsolt Oroszlány", email = "hello@playfulsparkle.com"},
+]
+name = "pyprintf"
+readme = "README.md"
+requires-python = ">=3.10"
+version = "0.0.5"
+
+[project.urls]
+"Bug Tracker" = "https://github.com/playfulsparkle/pyprintf/issues"
+"Change Log" = "https://github.com/playfulsparkle/pyprintf/blob/main/CHANGELOG.md"
+"Github" = "https://github.com/playfulsparkle/pyprintf"
+"Homepage" = "https://github.com/playfulsparkle/pyprintf"
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=65.0.0", "wheel"]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8.3.0",
+  "pytest-cov>=4.1.0",
+  "flake8>=7.0.0",
+]
