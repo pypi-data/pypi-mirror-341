@@ -1,0 +1,8 @@
+README.md
+setup.py
+salahai/__init__.py
+salahai.egg-info/PKG-INFO
+salahai.egg-info/SOURCES.txt
+salahai.egg-info/dependency_links.txt
+salahai.egg-info/requires.txt
+salahai.egg-info/top_level.txt

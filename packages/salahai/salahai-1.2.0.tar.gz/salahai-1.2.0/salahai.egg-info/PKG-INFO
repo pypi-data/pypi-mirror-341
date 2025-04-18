@@ -1,0 +1,66 @@
+Metadata-Version: 2.4
+Name: salahai
+Version: 1.2.0
+Summary: SalahAi - ذكاء اصطناعي ذكي
+Home-page: https://facebook.com/cap.salah.hemdan
+Author: Salah Hemdan
+Author-email: salah1hemdaan@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# SalahAi
+
+مكتبة `salahai` هي واجهة بايثون خفيفة للتحدث مع الذكاء الاصطناعي تم انشائها بواسطة المبرمج صلاح حمدان
+
+## التثبيت
+
+```bash
+pip install salahai
+```
+
+## الاستخدام
+
+```python
+from salahai import SalahAi
+
+bot = SalahAi()
+
+# استعلام محادثة
+print(bot.ask("هل تعرف صلاح حمدان"))
+```
+
+```python
+from salahai import SalahAi
+
+token = '0000' #توكن بوتك
+ai = SalahAi(token)
+
+ai.start_bot()
+```
+
+## الميزات
+
+- سهولة استخدام
+- ذكاء وتركيز عالي في سؤالك
+- تركيز عالي في حدود سؤالك
+- خوادم قوية لتحسين سرعة الاستجابة
+
+## تواصل مع المبرمج
+
+```python
+• https://t.me/FFJFF5
+• https://facebook.com/cap.salah.hemdan
+```
