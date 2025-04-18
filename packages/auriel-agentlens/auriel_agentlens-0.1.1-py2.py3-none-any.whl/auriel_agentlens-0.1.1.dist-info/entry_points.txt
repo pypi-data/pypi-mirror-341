@@ -1,0 +1,2 @@
+[console_scripts]
+agentlens = agentlens.core:cli
