@@ -1,0 +1,7 @@
+django_mjml_email/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mjml_email/backend.py,sha256=8kR0YcD4K3KvKsLxEXYhRtJRfpCfX0ftBpIkvxqXGmw,364
+django_mjml_email/mjml_email.py,sha256=yMPsnMAKvGBHDKP43TVwwnBnDRjDBnGkMM3Bteg5wfI,3567
+django_mjml_email-0.1.0.dist-info/licenses/LICENSE,sha256=hekvDmuBYVDieIH3UjZ4NmmoKzNEuxP25_Kn_hUtZkE,1692
+django_mjml_email-0.1.0.dist-info/WHEEL,sha256=G2gURzTEtmeR8nrdXUJfNiB3VYVxigPQ-bEQujpNiNs,82
+django_mjml_email-0.1.0.dist-info/METADATA,sha256=xPhbqvafT1eiWC6ZBzXUrODlYg46CskgBc6yR3Zz93k,3971
+django_mjml_email-0.1.0.dist-info/RECORD,,
