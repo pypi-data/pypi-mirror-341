@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+brainrot_id/__init__.py
+brainrot_id/cli.py
+brainrot_id/core.py
+brainrot_id.egg-info/PKG-INFO
+brainrot_id.egg-info/SOURCES.txt
+brainrot_id.egg-info/dependency_links.txt
+brainrot_id.egg-info/entry_points.txt
+brainrot_id.egg-info/requires.txt
+brainrot_id.egg-info/top_level.txt
+brainrot_id/data/components.json
+brainrot_id/data/phrases.json
+tests/test_basic.py
