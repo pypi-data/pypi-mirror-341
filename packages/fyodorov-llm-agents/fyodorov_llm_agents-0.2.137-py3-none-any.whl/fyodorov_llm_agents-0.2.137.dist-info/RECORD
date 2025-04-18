@@ -1,0 +1,8 @@
+fyodorov_llm_agents/agents/agent.py,sha256=W1VkCeKAN7PYabUFlrchmad91P4NFcuqr1rRquwH1hI,6564
+fyodorov_llm_agents/agents/openai.py,sha256=FA5RS7yn3JwvFA8PXju60XSYC_2oUZFNgBUzeIYtGv0,1154
+fyodorov_llm_agents/tools/mcp_tool.py,sha256=t7-MYW0I50KS4ia810XOr-MyL90m2PQ5BB7uZQdvKyA,2818
+fyodorov_llm_agents/tools/tool.py,sha256=HyOk0X_3XE23sa8J-8UZx657tJ0sxwZWMbA4OPxXU6E,7940
+fyodorov_llm_agents-0.2.137.dist-info/METADATA,sha256=AodLWW4IVJSL_DIxdTt6AYH5oXNVVYMcqZgWL17qUAo,552
+fyodorov_llm_agents-0.2.137.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+fyodorov_llm_agents-0.2.137.dist-info/top_level.txt,sha256=4QOslsBp8Gh7ng25DceA7fHp4KguTIdAxwURz97gH-g,20
+fyodorov_llm_agents-0.2.137.dist-info/RECORD,,
