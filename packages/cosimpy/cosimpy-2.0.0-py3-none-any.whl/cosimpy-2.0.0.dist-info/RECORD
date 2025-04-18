@@ -1,0 +1,10 @@
+cosimpy/EM_Field.py,sha256=kUWLqhmlOlCbCi50XkekzxwNja1VZ6xWCWVjQV8Fd_Y,67495
+cosimpy/Exceptions.py,sha256=Kk05XtaDlLLE8w6Q1JnvBqNk1GOGfqa5gi-KHjHg4D4,13460
+cosimpy/RF_Coil.py,sha256=PMI2x3mLaYYp4iqtayO4xXJGTDmF-W2JwdVLSV9yPh8,23809
+cosimpy/S_Matrix.py,sha256=Dzd2AzBpl5yNCWXyiFabvtQdoT3jluS8YnYCrjkH0XA,77015
+cosimpy/__init__.py,sha256=elcmuN2Q71fFpAKaPmINIW-lNat2pchdJAgRqTL8Ozg,117
+cosimpy-2.0.0.dist-info/licenses/LICENSE,sha256=7yDZ12Y3klSYFoStIdt5ztUWKD_k3dM0XMdXdJQ-4NU,1155
+cosimpy-2.0.0.dist-info/METADATA,sha256=jxPja7ghWXnzPZrIdgd57KSxsc_FSdxOq-IJOyuGqak,7346
+cosimpy-2.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+cosimpy-2.0.0.dist-info/top_level.txt,sha256=l5VdvZlKOIBhwnxSFLzpldfYXYI_HFCm2NqhOmGtVdA,8
+cosimpy-2.0.0.dist-info/RECORD,,
