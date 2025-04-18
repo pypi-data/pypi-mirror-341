@@ -1,0 +1,16 @@
+## Deployment
+
+To deploy a new version:
+
+1. Update version in pyproject.toml
+2. Build package:
+
+```bash
+python -m build .
+```
+
+3. Upload to PyPI:
+
+```bash
+twine upload dist/yala_events_mcp-{version}.tar.gz dist/yala_events_mcp-{version}-py3-none-any.whl
+```
