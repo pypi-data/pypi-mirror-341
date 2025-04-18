@@ -1,0 +1,5 @@
+[console_scripts]
+ayu = ayu:main
+
+[pytest11]
+ayu-plugin = ayu.plugin
