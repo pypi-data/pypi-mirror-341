@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+zmaker/__init__.py
+zmaker.egg-info/PKG-INFO
+zmaker.egg-info/SOURCES.txt
+zmaker.egg-info/dependency_links.txt
+zmaker.egg-info/requires.txt
+zmaker.egg-info/top_level.txt
