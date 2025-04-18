@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: satquest
+Version: 0.1.0a0
+Summary: SATQuest
+Home-page: https://github.com/sdpkjc/SATQuest
+Author: 你的名字
+Author-email: you@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# SATQuest
