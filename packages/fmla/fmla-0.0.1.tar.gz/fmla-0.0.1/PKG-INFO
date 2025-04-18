@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: fmla
+Version: 0.0.1
+Summary: FMLA Python package
+Author: Pipped Engineer
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# FMLA
+
+A Python package that displays a welcome message when imported.
+
+## Installation
+
+```bash
+pip install fmla
+```
+
+## Usage
+
+```python
+import fmla
+```
+
+## Development
+
+This project uses Poetry for dependency management.
+
+```bash
+# Install dependencies
+poetry install
+
+# Run tests
+poetry run pytest
+
+# Run linting
+poetry run flake8 fmla
+poetry run black fmla
+poetry run isort fmla
+poetry run mypy fmla
+```
+
