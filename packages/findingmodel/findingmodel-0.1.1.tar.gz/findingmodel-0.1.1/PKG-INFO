@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: findingmodel
+Version: 0.1.1
+Summary: Definition and tools for Open Imaging Finding Models
+Keywords: finding model,common data element,medical imaging,data model,radiology
+Author: Tarik Alkasab, Vijay Dawal
+Author-email: Tarik Alkasab <tarik@alkasab.org>, Vijay Dawal <vijaydawal@microsoft.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: instructor>=1.6.4
+Requires-Dist: jinja2>=3.1.4
+Requires-Dist: motor>=3.6.0
+Requires-Dist: openai>=1.54.4
+Requires-Dist: pydantic-settings>=2.6.1
+Requires-Python: >=3.11
+Project-URL: Homepage, https://github.com/openimagingdata/findingmodel
+Project-URL: Issues, https://github.com/openimagingdata/findingmodel/issues
+Description-Content-Type: text/markdown
+
+# findingmodel
+Python library for managing Open Imaging Finding Model objects (essentially, drafts of Common Data Elements).
