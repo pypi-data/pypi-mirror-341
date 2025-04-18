@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: pydantic-kitbash
+Version: 0.0.2
+Summary: Sphinx extension for documenting Pydantic models.
+License-Expression: LGPL-3.0-or-later
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: docutils
+Requires-Dist: pydantic~=2.0
+Requires-Dist: pyyaml
+Requires-Dist: sphinx~=7.0
+Dynamic: license-file
+
+# pydantic-kitbash
+
+pydantic-kitbash is a Sphinx extension that auto-generates reference documentation
+for Pydantic models.
