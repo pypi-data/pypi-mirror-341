@@ -1,0 +1,2 @@
+[hatch]
+nuitka2 = nuitka_hatch2.hooks
