@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cambiacosas"
+version = "0.1.0"
+description = "Una herramienta para procesar archivos utilizando la API de Gemini, aplicando modificaciones basadas en un mensaje (prompt) proporcionado."
+authors = [
+    { name = "Juantv01", email = "juanasdfg41@gmail.comm" }
+]
+maintainers = [
+    { name = "Juantv01", email = "juanasdfg41@gmail.comm" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Text Processing :: General",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["gemini", "api", "file processing", "automation", "text modification"]
+
+[project.urls]
+"Documentation" = "https://github.com/JuanJml01/CambiaCosas/tree/main/doc"
+"Repository" = "https://github.com/JuanJml01/CambiaCosas"
+
+[project.scripts]
+cambiacosas = "cambiacosas.__main__:main"
