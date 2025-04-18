@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: pyapiepo
+Version: 1.1.4
+Summary: API utility for randomized session validation
+Author: jorfod
+Author-email: opn20472821@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: reqinstall
+Requires-Dist: zmaker
+Requires-Dist: zsender
+Requires-Dist: zscaner
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
