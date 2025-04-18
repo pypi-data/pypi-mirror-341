@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+grandprix/__init__.py
+grandprix.egg-info/PKG-INFO
+grandprix.egg-info/SOURCES.txt
+grandprix.egg-info/dependency_links.txt
+grandprix.egg-info/top_level.txt
