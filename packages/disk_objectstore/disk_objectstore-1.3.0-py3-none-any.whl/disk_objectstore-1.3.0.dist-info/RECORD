@@ -1,0 +1,17 @@
+disk_objectstore/__init__.py,sha256=7il9kGXpT-OPorT4kvufAT5XvOh6H0J7TcC8YkRVW_w,315
+disk_objectstore/backup_utils.py,sha256=R0CNP5Rf-ubC3WuA2DD53k3RNkQybVgs6-NcopdW6-k,12976
+disk_objectstore/cli.py,sha256=E9cb3ATtTkvjn3iIUYeFKB1QVJrvCUt0fqRkFn6NOKM,8817
+disk_objectstore/container.py,sha256=n0t3b6R1c0QIF4y_byoe1hFZvuYe2cAZFupiHhfg-Bk,134383
+disk_objectstore/database.py,sha256=QZ367NIbjs1XBeAHrk3FAu58x8X5YSL3Jp3oOxxGS0Q,3742
+disk_objectstore/dataclasses.py,sha256=LHThmmo67jW-x4j3p52kxWlltvgvTJaMwAfVb-TZ6-s,4805
+disk_objectstore/exceptions.py,sha256=TpjRb0jMegseqLceoEP_O6TwbFJ5m7tTwRr6FvkgFi8,950
+disk_objectstore/py.typed,sha256=8PjyZ1aVoQpRVvt71muvuq5qE-jTFZkK-GLHkhdebmc,26
+disk_objectstore/utils.py,sha256=PxoDmPO9Fz3m0tpgVxe7oKm0uJ41bKC6uIcY6xRb_Fo,67724
+disk_objectstore/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+disk_objectstore/examples/example_objectstore.py,sha256=8lCZeK6p-H4O8l7SiqYmwmxxCO0Gv_2B12cEYOUB_H4,10407
+disk_objectstore/examples/profile_zeros.py,sha256=--O1p8psbUzwpXh2gDYf2Fd56W7OTrEpuKGExc1-IUU,6653
+disk_objectstore-1.3.0.dist-info/entry_points.txt,sha256=Xhh1fKf-Hd1AOc-4blNlxZ4sUw6-salFTPS2Qcvyoms,53
+disk_objectstore-1.3.0.dist-info/licenses/LICENSE.txt,sha256=7BHBdP5EC-3HsnBeD1aqOw6PL0jBn-zad3szXoMBnNs,1084
+disk_objectstore-1.3.0.dist-info/WHEEL,sha256=G2gURzTEtmeR8nrdXUJfNiB3VYVxigPQ-bEQujpNiNs,82
+disk_objectstore-1.3.0.dist-info/METADATA,sha256=bP9JB3Iu8bY1b1l1wS39k2SdV3AyhCEoTTUq7hWipIs,4791
+disk_objectstore-1.3.0.dist-info/RECORD,,
