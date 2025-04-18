@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+./scripts/deflakyzavr
+deflakyzavr/__init__.py
+deflakyzavr/__main__.py
+deflakyzavr/_deflakyzavr_plugin.py
+deflakyzavr/_jira_stdout.py
+deflakyzavr/_messages.py
+deflakyzavr/py.typed
+deflakyzavr/version
+deflakyzavr/version.py
+deflakyzavr.egg-info/PKG-INFO
+deflakyzavr.egg-info/SOURCES.txt
+deflakyzavr.egg-info/dependency_links.txt
+deflakyzavr.egg-info/requires.txt
+deflakyzavr.egg-info/top_level.txt
