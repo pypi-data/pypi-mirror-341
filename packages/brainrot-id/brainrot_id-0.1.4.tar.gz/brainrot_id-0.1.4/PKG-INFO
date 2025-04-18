@@ -1,0 +1,90 @@
+Metadata-Version: 2.4
+Name: brainrot-id
+Version: 0.1.4
+Summary: Brain-melting ID generator for post-modern applications
+Author: Nercy
+Author-email: nercysvoboda@gmail.com
+Project-URL: Homepage, https://github.com/n3rcy/brainrot-id
+Project-URL: Bug Tracker, https://github.com/n3rcy/brainrot-id/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: emoji>=2.0.0
+Requires-Dist: cryptography>=3.4
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# рџ§ рџ’ў BrainRot-ID
+
+**BrainRot-ID** is a post-modern, meme-fueled ID generator for:
+- Meme-based systems
+- Absurdist programming
+- Cryptography experiments
+- Anyone bored with UUIDs
+
+## рџљЂ Features
+
+- **Three generation modes:** `normal`, `extreme`, `nuclear`
+- **Built-in meme dictionary** (absurdist, Italian-sounding words)
+- **Cryptographic uniqueness** (SHA3-256 + UUID)
+- **Emoji integration** for extra flair
+- **Random transformations:** upper-case, character swaps, repetitions, emoji, and more
+- **CLI & Python API**
+- **Easily extendable** вЂ” add your own phrases!
+
+## рџ› пёЏ Installation
+
+```bash
+pip install brainrot-id
+```
+
+## рџђЌ Usage in Python
+
+```python
+from brainrot_id import generate_id
+
+print(generate_id('nuclear'))
+# Example output: "TUNGx6 SAHURрџ’Ґ ::deadbeef"
+```
+
+Available modes: `'normal'`, `'extreme'`, `'nuclear'`.
+
+## рџ’» Command Line Usage
+
+```bash
+brainrot-id --mode nuclear --count 3
+```
+
+- `--mode` вЂ” generation mode (`normal`, `extreme`, `nuclear`)
+- `--count` вЂ” number of IDs to generate
+
+## рџ§© How does it work?
+
+The generator randomly combines meme phrases, Italian-style nouns and verbs, emojis, and a cryptographic hash. In `nuclear` mode, extra random transformations are applied for maximum chaos.
+
+## рџ§Є Testing
+
+Basic tests ensure ID format and length for all modes:
+
+```bash
+pytest tests/
+```
+
+## рџ¤ќ Contributing
+
+PRs with new meme phrases or ideas are welcome! Just add them to `data/phrases.json` or `data/components.json`.
+
+## рџ“„ License
+
+MIT
