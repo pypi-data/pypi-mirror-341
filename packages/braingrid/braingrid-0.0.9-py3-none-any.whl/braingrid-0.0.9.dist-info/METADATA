@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: braingrid
+Version: 0.0.9
+Summary: 
+License: MIT
+Author: Kennete Basco
+Author-email: 97374837+kankenny@users.noreply.github.com
+Requires-Python: >=3.11,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
