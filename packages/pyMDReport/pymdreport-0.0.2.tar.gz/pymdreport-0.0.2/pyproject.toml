@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyMDReport"
+version = "0.0.2"
+authors = [
+  { name="jacozzola" },
+]
+description = "A Python package made to automatically create .md reports"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/jacozzola/pyMDReport"
+Issues = "https://github.com/jacozzola/pyMDReport/issues"

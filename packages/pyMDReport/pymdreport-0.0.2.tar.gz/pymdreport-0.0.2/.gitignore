@@ -1,0 +1,7 @@
+dist
+notes
+
+src/main.py
+src/test
+
+__pycache__
