@@ -1,0 +1,11 @@
+envsub-0.2.1.dist-info/METADATA,sha256=OWfvLFvEyonycCAtex4jL8ypLWyT5fESdyvcl8ocESo,3854
+envsub-0.2.1.dist-info/WHEEL,sha256=_6kdhUAwdXFNoVDlhgbbljfv0z-zRN2adeNGPnKJZD8,108
+envsub-0.2.1.dist-info/entry_points.txt,sha256=g12l_7WuetC36PiIyzLD2yY0bMu0WGCwrgUbRga0YdY,36
+envsub-0.2.1.dist-info/licenses/LICENSE,sha256=O24cf-QWT1Q3vBNfLySFaaXMkICtLxpROkdYyg5Q59g,1080
+envsub.libs/libgcc_s-e52197c3.so.1,sha256=vkPW1Auw6CH9Bjk7frmX3hry_1H9c0tRI0Ncyg71WUI,724137
+envsub/__main__.py,sha256=kuLN_PUXWrT30p00GVU3JmmHBQRYynCWG0tZjDVMQIw,450
+envsub/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+envsub/__init__.py,sha256=3wDUX3yXsjoGIu7QHMr6dR-c8cvRf7_qxdqNQsEblFM,103
+envsub/envsub.pyi,sha256=XQSxfQsGnBGdzAfp8gt7HxGAfg9T1F9ogfdDHd7uHuM,325
+envsub/envsub.cpython-311-aarch64-linux-musl.so,sha256=eh0VUjlQEt1s_LRyVtSUZcfXBqzAXFfaZJVXTuIOQw8,788913
+envsub-0.2.1.dist-info/RECORD,,
