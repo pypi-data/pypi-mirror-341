@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: cambiacosas
+Version: 0.1.1
+Summary: Una herramienta para procesar archivos utilizando la API de Gemini, aplicando modificaciones basadas en un mensaje (prompt) proporcionado.
+Author-email: Juantv01 <juanasdfg41@gmail.comm>
+Maintainer-email: Juantv01 <juanasdfg41@gmail.comm>
+License: MIT
+Project-URL: Documentation, https://github.com/JuanJml01/CambiaCosas/tree/main/doc
+Project-URL: Repository, https://github.com/JuanJml01/CambiaCosas
+Keywords: gemini,api,file processing,automation,text modification
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Text Processing :: General
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# cambiacosas
+
+cambiacosas es un script de Python que procesa archivos en una carpeta especificada utilizando la API de Gemini. Modifica los archivos basándose en un prompt proporcionado en un archivo separado.
+
+## Uso
+
+```bash
+python -m cambiacosas <nombre_carpeta> <archivo_prompt> [--divide]
+```
+
+- `<nombre_carpeta>`: Ruta a la carpeta que contiene los archivos a procesar.
+- `<archivo_prompt>`: Ruta al archivo que contiene el prompt de procesamiento.
+- `--divide`: (Opcional) Si está presente, los archivos grandes (>300 líneas) se dividen en archivos de fragmentos procesados separados en lugar de fusionarlos.
