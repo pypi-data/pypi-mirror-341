@@ -1,0 +1,17 @@
+django_kc_auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_kc_auth/apps.py,sha256=hydvz1oeTqPKJmYoaTyD6QG5ZDFaZHTjvVp3fvk6Yik,780
+django_kc_auth/backends.py,sha256=OYY325QP4xh_fDdWNdxDh8S3mzJq_NopKg6xI0GnChk,3230
+django_kc_auth/keycloak_openid_config.py,sha256=ME2z22o9PZsnOpz31XZhcvcXBGfESJQjAalwZSvz_Gs,2208
+django_kc_auth/middleware.py,sha256=IZ9FSIWV-omIFmaMoaOkCFoyrbAQ1GB8mE4N9eXQ8Po,2679
+django_kc_auth/models.py,sha256=3MQijRv_o-JHb8LJeId8h05bo7vWQKolrrZTl3Eb5Iw,1359
+django_kc_auth/signals.py,sha256=7IywsCUgUmrzwqNvEpd06tfOwqHtkD5u0QHsq_sqg7o,67
+django_kc_auth/urls.py,sha256=fLBqdssj1LIUIGZkOOPvhVVOQsgDCljkNx1oF9v5iO0,1150
+django_kc_auth/views.py,sha256=409IV2-vLiwbd1Vwjp3J3VLK9e36veOZdaoFfqL0RVU,13967
+django_kc_auth/management/commands/add_permissions.py,sha256=_XKfhXE02EvoxnuSkS9ztCIc3jVU5A1VclEPyLsEXP4,943
+django_kc_auth/migrations/0001_initial.py,sha256=01ZgEkdS4zj3p78wJ2uqkibdh3k_a15QVIlFK7FmPcU,2251
+django_kc_auth/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_kc_auth/templatetags/kc_auth_filters.py,sha256=3GGfml1dYh0Avr-ZN4jKStmtrv5azWydI3F6x6rfqzU,817
+django_kc_auth-0.0.5.dist-info/METADATA,sha256=BCOda2e0s4E9rVpHGuu8HsmrXmF30_iPEFsc87lEEiU,6025
+django_kc_auth-0.0.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_kc_auth-0.0.5.dist-info/top_level.txt,sha256=nEUYACyMRH1SNLYTFdvI0pdaWlFcUSotgpbRVkMBW9E,15
+django_kc_auth-0.0.5.dist-info/RECORD,,
