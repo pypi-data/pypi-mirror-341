@@ -1,0 +1,38 @@
+[project]
+name = "autogen-graph"
+version = "0.1.2"
+description = "Graph based execution for Autogen agentchat agents"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "autogen-agentchat>=0.5.1",
+]
+license = { text = "MIT" }
+authors = [{ name = "A Somaraju", email = "abhinav@aegis-enterprise.com" }]
+
+
+[dependency-groups]
+dev = [
+    "autogen-ext[openai]>=0.5.1",
+    "ipython>=9.1.0",
+    "mypy>=1.15.0",
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.26.0",
+    "pytest-cov>=6.1.1",
+    "ruff>=0.11.4",
+]
+
+[tool.ruff]
+include = ["src/**", "tests/*.py"]
+line-length = 120
+fix = true
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.uv]
+prerelease = "allow"
+
+[project.urls]
+Repository = "https://github.com/abhinav-aegis/autogen-graph"
+Issues = "https://github.com/abhinav-aegis/autogen-graph/issues"
