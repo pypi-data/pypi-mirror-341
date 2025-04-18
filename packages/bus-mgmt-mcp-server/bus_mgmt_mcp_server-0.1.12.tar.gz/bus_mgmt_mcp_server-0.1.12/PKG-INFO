@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: bus-mgmt-mcp-server
+Version: 0.1.12
+Summary: Bus Management MCP Server
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: fastmcp
+
+Run these
+
+```bash
+uv venv
+source .venv/bin/activate
+uv pip install -r requirement.txt
+```
+
+You can put client code in your server to test it like this:
+```py
+import asyncio
+client = Client(mcp)
+
+async def call_tool(name: str):
+    async with client:
+        result = await client.call_tool("greet", {"name": name})
+        print(result[0].text)
+
+asyncio.run(call_tool("Tom"))
+asyncio.run(call_tool("Jill"))
+```
+
+Then to run the MCP Inspector and your MCP server code: 
+
+```bash
+mcp dev bus_mgmt_mcp_server/bus_mgmt_mcp_server.py
+```
+or you can do this.
+
+```bash
+uv run bus_mgmt_mcp_server/bus_mgmt_mcp_server.py
+```
+
+Then to publish the server to pypi you can do this:
+
+Sign up an pypi.org and get an api token you can use to publish.
+
+```bash
+
+```
