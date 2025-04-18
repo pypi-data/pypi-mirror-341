@@ -1,0 +1,8 @@
+uagents_adapter/__init__.py,sha256=NkzSlTSpBrLGsSghzKP7OX1b9XD2b6DKFodJQE-iYtc,339
+uagents_adapter/crewai/__init__.py,sha256=adOQupLWdKH4QEceyMJHxsYzi6pU4POJX2WJd6zgu-g,595
+uagents_adapter/crewai/tools.py,sha256=Ea9o4MMIWLtVJVjKxKVH6bWmxjz772L-7AQjtIBi4Hk,29503
+uagents_adapter/langchain/__init__.py,sha256=hf7qQZMxTzrFCHsAsi_q2PdQD-7DOlRTMrMmAQipLUY,637
+uagents_adapter/langchain/tools.py,sha256=l0956DffFSgEVRDx84u1Cn8ac8Uw0hWGzJZ3TFK4CB8,25218
+uagents_adapter-0.1.0.dist-info/METADATA,sha256=kGShgTCPMNTWi8rYw7azp-Y00lV42Mg_6J6hMuS3FvI,5900
+uagents_adapter-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+uagents_adapter-0.1.0.dist-info/RECORD,,
