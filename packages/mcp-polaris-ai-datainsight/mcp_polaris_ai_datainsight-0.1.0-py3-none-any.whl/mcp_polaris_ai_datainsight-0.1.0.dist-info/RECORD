@@ -1,0 +1,8 @@
+src/server.py,sha256=nq5-otMPv1FXbFmTnustKVSYQGkREtHv4JgqnXdrR0A,977
+src/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/tools/datainsight_tool.py,sha256=WXMBIZ7y_1E-yTNmQSwmLYOTC0s0QrQnhB8FBlV44gA,1639
+mcp_polaris_ai_datainsight-0.1.0.dist-info/entry_points.txt,sha256=VIsHVl9MAg94bOmhO2PPg4RBT88_bXLhMh3S_nmYssc,61
+mcp_polaris_ai_datainsight-0.1.0.dist-info/LICENSE,sha256=qwjPfwuNR-R00uZuAhLxj2xw9Ql_QE3oo1xmUBLJsZk,1093
+mcp_polaris_ai_datainsight-0.1.0.dist-info/METADATA,sha256=ktF1wX7G-20FFtoynSasbYE50eBDzpWEscd7GD4q-Cg,3377
+mcp_polaris_ai_datainsight-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+mcp_polaris_ai_datainsight-0.1.0.dist-info/RECORD,,
