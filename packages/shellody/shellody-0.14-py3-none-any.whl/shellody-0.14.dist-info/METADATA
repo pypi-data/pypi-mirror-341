@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: shellody
+Version: 0.14
+Summary: An extensible interface to build powerful interactive shell applications
+Project-URL: Source Code, https://github.com/abastidian/shellody
+Author: abastidian@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: prompt-toolkit~=3.0.50
+Provides-Extra: build
+Requires-Dist: hatch~=1.14.0; extra == 'build'
+Requires-Dist: twine~=6.1.0; extra == 'build'
+Provides-Extra: test
+Requires-Dist: flake8~=7.1.1; extra == 'test'
+Requires-Dist: pytest-asyncio~=0.26.0; extra == 'test'
+Requires-Dist: pytest~=8.3.5; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Sellody
+
+An extensible interface to build powerful interactive shell applications.
+
+Documentation coming soon.
