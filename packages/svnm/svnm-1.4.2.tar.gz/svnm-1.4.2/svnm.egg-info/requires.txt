@@ -1,0 +1,12 @@
+huggingface_hub
+matplotlib
+numpy
+pandas
+pyfiglet
+setuptools
+tensorflow-cpu
+termcolor
+ultralytics
+opencv-python
+keras_facenet
+deepface
