@@ -1,0 +1,16 @@
+notte_sdk/__init__.py,sha256=cco3JQI3_a0U1S-4V2XER7w5YuGCwyNGQpkhAkCj5RA,160
+notte_sdk/client.py,sha256=nW8QWObYFqaQj5Ux0Yiseo4L1621t1MK4DfU-O313Uo,1367
+notte_sdk/errors.py,sha256=yETg6rOO817W5XE37YiFFZxwiqj1z4uHOa6d0tyv31w,1429
+notte_sdk/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notte_sdk/types.py,sha256=4gBNST-naZZoYodGG9OVy2K81NbLF1YJh44U2DhIc9s,26418
+notte_sdk/vault.py,sha256=WU87RYBQJSYI0Ie3NX6znAIH6s5vNkWEzJNvfpRPhbw,2642
+notte_sdk/endpoints/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notte_sdk/endpoints/agents.py,sha256=HVptZ6Gr-xuldrsTeYNnHCzdp4PHJ1xzYQt18Dx23y4,12192
+notte_sdk/endpoints/base.py,sha256=xhmWKCM1ic_VOyXOhlyFdOCxzOLSppu7eRpv0-VG38I,9207
+notte_sdk/endpoints/env.py,sha256=S4K3y7iYzpTxRCbVj67-ZCf6u8F6zljaPI_1WYiwZXY,9833
+notte_sdk/endpoints/persona.py,sha256=LaGOfu5QkpsYdtE9PjzjKzcPMVUdQZvR7nU1Tu4RY24,10511
+notte_sdk/endpoints/sessions.py,sha256=4o3cGBhqnuT3FiPa1Sb5Q8iIRVmj236sTuKi2rFoOyo,14749
+notte_sdk/endpoints/vault.py,sha256=9yA2kxmRqW8TqU6OCC3nfeiO4BKIv6CHRjHLI-S7T48,2603
+notte_sdk-1.4.0.dist-info/METADATA,sha256=-SMxGbLnslp9K-98ZSO0H4svys5lu2hteXKYfCpuMug,273
+notte_sdk-1.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+notte_sdk-1.4.0.dist-info/RECORD,,
