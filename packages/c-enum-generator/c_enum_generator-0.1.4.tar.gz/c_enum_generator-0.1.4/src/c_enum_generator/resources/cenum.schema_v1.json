@@ -1,0 +1,201 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "ModuleDescriptor": {
+            "properties": {
+                "copyright_file": {
+                    "title": "copyright_file",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "Path to file containing copyright statement to insert into header files. Can be empty"
+                },
+                "enums": {
+                    "title": "enums",
+                    "type": "array",
+                    "description": "List of enum descriptors",
+                    "items": {
+                        "type": "object",
+                        "$ref": "#/definitions/EnumDescriptor"
+                    }
+                },
+                "module_name": {
+                    "title": "module_name",
+                    "type": "string",
+                    "description": "C module name (file name)"
+                },
+                "project_name": {
+                    "title": "project_name",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "Used to generate header guard"
+                }
+            },
+            "type": "object",
+            "required": [
+                "module_name"
+            ],
+            "additionalProperties": false
+        },
+        "EnumDescriptor": {
+            "properties": {
+                "capitalise": {
+                    "title": "capitalise",
+                    "type": "boolean",
+                    "default": true,
+                    "description": "If set to true the enum entry names will be capitalised"
+                },
+                "continuous": {
+                    "title": "continuous",
+                    "type": "boolean",
+                    "description": "Assumes the values of enum are continuous without breaks. Raises error if this is the enum entries are not continuous"
+                },
+                "count_entry": {
+                    "title": "count_entry",
+                    "type": "boolean",
+                    "description": "Adds special enum \"_count\" entry with number of all normal (excludes \"_max\", \"_min\") entries"
+                },
+                "display_value_default": {
+                    "title": "display_value_default",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "If set the it will be used in \"xxx_to_display_str(...)\" function if the input is invalid"
+                },
+                "doco": {
+                    "title": "doco",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "Doco string for this enum. Can be multiline, separated by line separator"
+                },
+                "entries": {
+                    "title": "entries",
+                    "type": "array",
+                    "description": "List of enum entry descriptors",
+                    "items": {
+                        "type": "object",
+                        "$ref": "#/definitions/EnumEntryDescriptor"
+                    }
+                },
+                "entry_prefix": {
+                    "title": "entry_prefix",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "Prefix for enum entries. If not set the \"name\" will be used"
+                },
+                "max_entry": {
+                    "title": "max_entry",
+                    "type": "boolean",
+                    "description": "Adds special enum \"_max\" entry with maximum value of all entries"
+                },
+                "min_entry": {
+                    "title": "min_entry",
+                    "type": "boolean",
+                    "description": "Adds special enum \"_min\" entry with minimum value of all entries"
+                },
+                "name": {
+                    "title": "name",
+                    "type": "string",
+                    "description": "Name of enum. Has to be valid c identifier"
+                },
+                "name_value_default": {
+                    "title": "name_value_default",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "If set the it will be used in \"xxx_to_name_str(...)\" function if the input is invalid"
+                },
+                "unique": {
+                    "title": "unique",
+                    "type": "boolean",
+                    "default": true,
+                    "description": "If set to true the enum entry will be check for uniqueness. Special entries like \"_max\", \"_min\", \"_count\" are ignored for this purpose"
+                }
+            },
+            "type": "object",
+            "required": [
+                "continuous",
+                "count_entry",
+                "max_entry",
+                "min_entry",
+                "name"
+            ],
+            "additionalProperties": false
+        },
+        "EnumEntryDescriptor": {
+            "properties": {
+                "display_value": {
+                    "title": "display_value",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "Display string for enum entry"
+                },
+                "doco": {
+                    "title": "doco",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "Doco string for enum entry"
+                },
+                "name": {
+                    "title": "name",
+                    "type": "string",
+                    "description": "Name of enum entry. has to be proper c identifier"
+                },
+                "value": {
+                    "title": "value",
+                    "type": [
+                        "integer",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "Enum entry value"
+                }
+            },
+            "type": "object",
+            "required": [
+                "name"
+            ],
+            "additionalProperties": false
+        },
+        "CEnumsSchema": {
+            "properties": {
+                "modules": {
+                    "title": "modules",
+                    "type": "array",
+                    "description": "List of C module descriptors",
+                    "items": {
+                        "type": "object",
+                        "$ref": "#/definitions/ModuleDescriptor"
+                    }
+                }
+            },
+            "type": "object",
+            "additionalProperties": false
+        }
+    },
+    "$ref": "#/definitions/CEnumsSchema",
+    "$id": "https://gitlab.com/maciej.matuszak/c-enum-generator/cenum.schema_v1",
+    "title": "C enum generator data schema",
+    "description": "Describes the C enum generator schema"
+}
