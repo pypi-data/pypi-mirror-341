@@ -1,0 +1,2 @@
+[console_scripts]
+generate-colormap-gallery = mcmaps:save_colormap_gallery_html

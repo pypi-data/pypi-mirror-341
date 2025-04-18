@@ -1,0 +1,13 @@
+mcmaps/__init__.py,sha256=sbQdkFNp4JTLvBMGsBpsXtDthJF8tF7gk9iDCvNAeFU,6840
+mcmaps/generate_gallery.py,sha256=j6yzKAd-2GKz0fxI-U26wMqFUqwX6nQD7yNpmG_JW5I,633
+mcmaps/version.py,sha256=fo5PXsZuloQZu3LdpIFTUAXvJmY2L9N5sNGe2tvdU98,511
+mcmaps/__pycache__/__init__.cpython-312.pyc,sha256=N-XTiO0ZUwHQRsf3vz240NBsso7QxVYEIaywhWSk8lU,9257
+mcmaps/data/BlueDarkRed18.txt,sha256=6iJKWslQ5HUSPAl0SvcHQHMUgYfCZDi6xDu5ryfN-3o,315
+mcmaps/data/SunShine12.txt,sha256=TVkxcntsVQooJAZa6tBKhI3u1on_5_10oymIEBtUnCU,181
+mcmaps/data/SyedSpectral.txt,sha256=JbiEc-51qs7WA5cbbqSlsA3nk3cihCXfgGXTCBAfPLQ,2706
+mcmaps/source/_static/colormap_gallery.html,sha256=b10p4bJrEyBFL3dKVsE59JHwszniSrXX3bf4j8QGoY8,3819
+mcmaps-1.0.0.dist-info/METADATA,sha256=xn5WJ9sVW-H1G6SkGW8dcKVzGX72nzmjjTbNr-EjDds,1424
+mcmaps-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mcmaps-1.0.0.dist-info/entry_points.txt,sha256=aZnSEmWlrbNPtK_LCwa_fsJZQbu5nEwoaMt6ZuBCUQw,80
+mcmaps-1.0.0.dist-info/top_level.txt,sha256=9VOFAPatYVTpSIvhs8uGVpzZk9RyeOALRyMjVCoIaLQ,7
+mcmaps-1.0.0.dist-info/RECORD,,
