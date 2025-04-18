@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: zmprinter
+Version: 0.1.1
+Summary: Python SDK for ZMPrinter
+Author-Email: Anderson <andersonby@163.com>
+License: MIT
+Requires-Python: >=3.11
+Requires-Dist: pythonnet>=3.0.5
+Requires-Dist: Pillow>=11.2.1
+Description-Content-Type: text/markdown
+
