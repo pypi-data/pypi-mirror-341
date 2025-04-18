@@ -1,0 +1,7 @@
+setup.py
+qipdsl_cuda.egg-info/PKG-INFO
+qipdsl_cuda.egg-info/SOURCES.txt
+qipdsl_cuda.egg-info/dependency_links.txt
+qipdsl_cuda.egg-info/not-zip-safe
+qipdsl_cuda.egg-info/requires.txt
+qipdsl_cuda.egg-info/top_level.txt
