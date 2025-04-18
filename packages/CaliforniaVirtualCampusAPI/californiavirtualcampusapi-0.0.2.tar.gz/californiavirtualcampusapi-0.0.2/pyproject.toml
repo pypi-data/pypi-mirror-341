@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CaliforniaVirtualCampusAPI"
+version = "0.0.2"
+authors = [
+  { name="Robert Meli", email="robertmeli1@outlook.com" },
+]
+description = "A simple API for the California Virtual Campus platform."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: Apache Software License',
+]
+
+dependencies = [
+    "Requests",
+    "beautifulsoup4",
+    "selenium",
+    "setuptools",
+    "textdistance"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]  # list of folders that contain the packages (["."] by default)
+include = ["cvc*"]  # package names should match these glob patterns (["*"] by default)
+namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
+
+
+[project.urls]
+Homepage = "https://github.com/rob-m1/california-virtual-campus-api"
+Issues = "https://github.com/rob-m1/california-virtual-campus-api/issues"

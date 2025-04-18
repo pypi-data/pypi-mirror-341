@@ -1,0 +1,17 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/CaliforniaVirtualCampusAPI.egg-info/PKG-INFO
+src/CaliforniaVirtualCampusAPI.egg-info/SOURCES.txt
+src/CaliforniaVirtualCampusAPI.egg-info/dependency_links.txt
+src/CaliforniaVirtualCampusAPI.egg-info/requires.txt
+src/CaliforniaVirtualCampusAPI.egg-info/top_level.txt
+src/cvc/__init__.py
+src/cvc/course.py
+src/cvc/courseSection.py
+src/cvc/helperFunctions.py
+src/cvc/sharedVariables.py
+tests/test.py
