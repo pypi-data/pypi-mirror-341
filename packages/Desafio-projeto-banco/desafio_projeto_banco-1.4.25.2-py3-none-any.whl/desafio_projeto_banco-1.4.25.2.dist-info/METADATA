@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: Desafio_projeto_banco
+Version: 1.4.25.2
+Summary: É um projeto de banco, um desafio proposto pela DIO.
+Home-page: https://github.com/mekaroi/Desafio_projeto_banco
+Author: Igor Mekaro
+Author-email: iguinhoo.msn@hotmail.com
+License: MIT,
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+## Meu Banco
+
+Um pacote Python simples que simula um sistema bancário com funcionalidades basicas de criação de contas e operações.
+
+## Description
+
+- Criar contas bancárias com tilular, funções de depósito, saque e extrato.
+- Armazenamento de multiplas contas.
+- Listar todas as contas cadastradas com seus respectivos usuarios.
+
+## Installation
+
+Você pode instalar o pacote Desafio-projeto-banco usando:
+
+pip install Desafio-projeto-banco
+
+## Author
+
+Igor Merkaro
+
+## License
+
+[MIT](LICENSE)
