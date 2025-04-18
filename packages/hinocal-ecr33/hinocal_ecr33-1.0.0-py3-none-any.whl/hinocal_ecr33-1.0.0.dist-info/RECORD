@@ -1,0 +1,8 @@
+hinocal/__init__.py,sha256=Z45IZcfxpgTNqi4vLjGZWGw11cOqFx0N_VHEC6Fp_7Q,25
+hinocal/hinocal.py,sha256=FqSsqBsdwKuTRaGRCBa2it7kVsCuxSuqioP2Ai3tn4o,8099
+hinocal/util.py,sha256=3GBH8lZGOq2r4F9sgM_eaXwZ4pSU1ZCj72_PtLaCyp0,20855
+hinocal_ecr33-1.0.0.dist-info/METADATA,sha256=M8tnmadPMjWQLfpBRz1p10xKZgLfll2QB0lXKN69xnE,4013
+hinocal_ecr33-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+hinocal_ecr33-1.0.0.dist-info/entry_points.txt,sha256=2NqRTjNHU6gSo4SRgHB__dOAKGbLESfWnVke0BciwEI,41
+hinocal_ecr33-1.0.0.dist-info/top_level.txt,sha256=Olplhn9L4xe2K4GblSWuk_UXkCBIwY4447WojW_NyWA,8
+hinocal_ecr33-1.0.0.dist-info/RECORD,,
