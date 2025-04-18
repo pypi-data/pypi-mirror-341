@@ -1,0 +1,14 @@
+pengwann-0.5.2.dist-info/METADATA,sha256=ScUM0VqqLY_MyFuAmKrVKo1vTWXZrn4cZnbRHerJzJU,7304
+pengwann-0.5.2.dist-info/WHEEL,sha256=_czbP61TsBkf9T201RekHMHlqESnWn7yJwXBJC9P-w0,104
+pengwann-0.5.2.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pengwann/_geometry.pyi,sha256=_bjzsD2jCcT9zVFg-nwGBFYbcG_XqR8W29u4_Bc2jwM,214
+pengwann/io.py,sha256=5pU3neUccSbd5L5MVnqe-x3YWcrrsJaAhhfTBdPupmE,7955
+pengwann/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pengwann/descriptors.py,sha256=5tlASsSRXpThcsPYAydvHm5nJW74dsZldUuYmLQjbbg,31085
+pengwann/utils.py,sha256=Xx_NoIuN3M1CUsaRU_n_tj2QI-SnuednwhQWaYG85Ug,4888
+pengwann/occupations.py,sha256=izCt02x0tCvHL2ekBxdQnaTC6BaGTS1ps30rSqGuO1k,6890
+pengwann/geometry.py,sha256=V6wGDq2O9T5cJH3PK-Vn_D1-t6JOdWVkGvKa5f8lhLg,15464
+pengwann/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pengwann/interactions.py,sha256=BoeLwVp1mSfuqXXYSRL9zj6AnefoZUKuQ3v38-lNJ6k,26405
+pengwann/_geometry.cpython-313-darwin.so,sha256=saobZaxPQTMpoZeUwVH_nz50WjsLnKfBEcY3BDulJ0Y,665248
+pengwann-0.5.2.dist-info/RECORD,,
