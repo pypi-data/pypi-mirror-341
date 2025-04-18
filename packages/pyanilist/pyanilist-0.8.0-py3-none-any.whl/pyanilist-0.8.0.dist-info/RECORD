@@ -1,0 +1,14 @@
+pyanilist/__init__.py,sha256=-y8OLMcjxywdTZrQ-UWtMm9qBZdnVWQo6SCCnZdNGC0,1709
+pyanilist/_aclient.py,sha256=vv_4ygbA9L8fD3BG-PqkIFZ4NQnkufE2DsfE9DtDvWI,41043
+pyanilist/_client.py,sha256=7TqHezsCOWOLBsnOolA7dESNiMiXv4aYIe6Uo5zM0kc,40927
+pyanilist/_enums.py,sha256=E2fuVt6UNV6_Gt1i5hGF8bxoB03TePDCDuumjtjQZf4,8736
+pyanilist/_errors.py,sha256=jrq3mJT7E4Eoynw9lP403624Gcy4iv8xhgyRLWaWPe8,1534
+pyanilist/_query.py,sha256=OODClYC0TUh82eTKBCzgFdaz5a2zMMTlQ-6hw-4jiQU,17294
+pyanilist/_types.py,sha256=4vTWIxtY2ncQUpXbYxG7wCcs_60fdpOrG5t1WgnCdaw,20950
+pyanilist/_utils.py,sha256=VVzCpzOAT2iP9FTBMSrqs2n_pGHOGTrSNOGvwACf1io,7178
+pyanilist/_version.py,sha256=YbHmH03q4Z6SUjnOgjLOYfYTwQNNRh6No9Ebv0Y6GYw,58
+pyanilist/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyanilist-0.8.0.dist-info/METADATA,sha256=E7OhTl1iOtkcu5W08UAOq4Ffqs9GoXw-c5RKrM3Y5E0,2720
+pyanilist-0.8.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pyanilist-0.8.0.dist-info/licenses/LICENSE,sha256=egXao0FbN0n8hiEjvjRfAOSuTbHTkk6hMc85piMvXR0,1077
+pyanilist-0.8.0.dist-info/RECORD,,
