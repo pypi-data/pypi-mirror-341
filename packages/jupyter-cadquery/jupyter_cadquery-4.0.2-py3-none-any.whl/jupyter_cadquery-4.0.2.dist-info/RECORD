@@ -1,0 +1,15 @@
+jupyter-config/jupyter_server_config.d/jupyter_cadquery.json,sha256=3F0bRPEbxXGit1o8d0jXTiFnLQsA5IfIntMJ1K1l728,90
+jupyter_cadquery/__init__.py,sha256=eSKDOXWlQKmFIpdpL4DgF-OwP0oNEgI5iLSuJVQAIWM,3182
+jupyter_cadquery/_version.py,sha256=ZlqOipoMknXFMWIY6OjyzlCkrivmqc8AexC_DWJUhr0,1124
+jupyter_cadquery/app.py,sha256=Z1M-iOfl2PLU1RXAcAn_pW7l0QBqe-gGJf0yRUS1r_s,4188
+jupyter_cadquery/comms.py,sha256=UbGiabyQ-w9pDJ2JtB6pb1gwG-8-SyfaviyKZ2z5wYc,5283
+jupyter_cadquery/config.py,sha256=WBMYgyYdKuM3U3yELqWzKuOw5OT7vzncflPGat3f4Rw,2806
+jupyter_cadquery/logo.py,sha256=pXpZ9ddLWObbEMJsyIHqznAVtpmbwKyA_-TD8XwCOrg,196063
+jupyter_cadquery/replay.py,sha256=QCcNv3SoRSr4BvAiWekdNZQkjDGfXKK1bOxCeKREfR4,21278
+jupyter_cadquery/show.py,sha256=u5k0Ci3OPSgnroaizNoaCViGmAVe4a92A8fMRVZa8Lc,18798
+jupyter_cadquery/tools.py,sha256=pM9z5GjYbmC60BOUSKyrf1hJkSKE3quhTSsAy9J3s40,3039
+jupyter_cadquery-4.0.2.data/data/etc/jupyter/jupyter_server_config.d/jupyter_cadquery.json,sha256=3F0bRPEbxXGit1o8d0jXTiFnLQsA5IfIntMJ1K1l728,90
+jupyter_cadquery-4.0.2.dist-info/METADATA,sha256=Zk3vXDN_iWuP8qucvRWGDehhdhVvKeOAXQL4DgDCuAY,34553
+jupyter_cadquery-4.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jupyter_cadquery-4.0.2.dist-info/licenses/LICENSE,sha256=aFIxR2bO-b92v0GQH7pCbfUqgF3BRffUwINbbWpGb5I,11345
+jupyter_cadquery-4.0.2.dist-info/RECORD,,
