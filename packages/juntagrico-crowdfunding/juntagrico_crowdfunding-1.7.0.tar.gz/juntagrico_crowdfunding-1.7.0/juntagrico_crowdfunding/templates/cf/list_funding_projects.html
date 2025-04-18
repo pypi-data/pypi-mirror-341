@@ -1,0 +1,20 @@
+{% extends "cf/public_access_wrapper.html" %}
+{% load juntagrico.config %}
+{% load crowdfunding_config %}
+{% block page_title %}
+    <h3>{% vocabulary "funding_project_pl" %}</h3>
+{% endblock %}
+
+{% block content %}
+
+    {% if funding_projects.count > 0 %}
+    <ul>
+        {% for f in funding_projects %}
+        <li><a href="{% url 'jcf:list' f.id %}">{{ f.title }}</a></li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>Derzeit laufen keine {% vocabulary "funding_project_pl" %}</p>
+    {% endif %}
+
+{% endblock %}

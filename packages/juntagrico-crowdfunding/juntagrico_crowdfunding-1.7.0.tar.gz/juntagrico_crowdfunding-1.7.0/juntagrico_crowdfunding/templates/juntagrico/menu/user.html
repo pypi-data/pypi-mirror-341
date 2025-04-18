@@ -1,0 +1,14 @@
+{% extends "juntagrico/menu/user.html" %}
+{% load juntagrico.common %}
+{% load crowdfunding_config %}
+{% block extend %}
+    {% has_active_funding_projects as show_link %}
+    {% if show_link %}
+        <li class="nav-item">
+            <a class="nav-link {{ menu.crowdfunding }}" href="{% url 'jcf:home' %}">
+                {% vocabulary "funding_project_pl" %}
+            </a>
+        </li>
+    {% endif %}
+    {{ block.super }}
+{% endblock %}
