@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "drftokit"
+version = "0.1.2"
+description = "DRF and Django model field optimizer for selective ORM loading."
+authors = ["pytools <hyhlinux@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+django = ">=2.2"
+djangorestframework = ">=3.11"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
