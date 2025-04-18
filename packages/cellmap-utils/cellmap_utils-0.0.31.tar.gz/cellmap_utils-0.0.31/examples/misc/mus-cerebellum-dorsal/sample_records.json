@@ -1,0 +1,50 @@
+[
+  {
+    "name": "jrc_mus-dorsal-striatum-2",
+    "description": "Wild-type, 8 month old mouse, strain: C57BL6/129 from Gene Targeting & Transgenic Facility of HHMI Janelia Research Campus",
+    "protocol": "Wild-type, 8 month old mouse, strain: C57BL6/129 from Gene Targeting & Transgenic Facility of HHMI Janelia Research Campus",
+    "contributions": "Sample provided by Yumei Wu, Christina Whites, and Pietro De Camilli (Yale), prepared for imaging by Yumei Wu and Christina Whites (Yale), with imaging and post-processing by Wei Qui, Gleb Shtengel, and Harald Hess(HHMI/Janelia).",
+    "subtype": [
+      "Brain"
+    ],
+    "type": [
+      "Tissue"
+    ]
+  },
+  {
+    "name": "jrc_mus-cortex-3",
+    "description": "Wild-type, 8 month old mouse, strain: C57BL6/129 from Gene Targeting & Transgenic Facility of HHMI Janelia Research Campus",
+    "protocol": "Wild-type, 8 month old mouse, strain: C57BL6/129 from Gene Targeting & Transgenic Facility of HHMI Janelia Research Campus",
+    "contributions": "Sample provided by Yumei Wu, Christina Whites, and Pietro De Camilli (Yale), prepared for imaging by Yumei Wu and Christina Whites (Yale), with imaging and post-processing by Wei Qui, Gleb Shtengel, and Harald Hess(HHMI/Janelia).",
+    "subtype": [
+      "Brain"
+    ],
+    "type": [
+      "Tissue"
+    ]
+  },
+  {
+    "name": "jrc_mus-cerebellum-4",
+    "description": "Wild-type, 8 month old mouse, strain: C57BL6/129 from Gene Targeting & Transgenic Facility of HHMI Janelia Research Campus",
+    "protocol": "Wild-type, 8 month old mouse, strain: C57BL6/129 from Gene Targeting & Transgenic Facility of HHMI Janelia Research Campus",
+    "contributions": "Sample provided by Yumei Wu, Christina Whites, and Pietro De Camilli (Yale), prepared for imaging by Yumei Wu and Christina Whites (Yale), with imaging and post-processing by Wei Qui, Gleb Shtengel, and Harald Hess(HHMI/Janelia).",
+    "subtype": [
+      "Brain"
+    ],
+    "type": [
+      "Tissue"
+    ]
+  },
+  {
+    "name": "jrc_mus-cerebellum-5",
+    "description": "Wild-type, 8 month old mouse, strain: C57BL6/129 from Gene Targeting & Transgenic Facility of HHMI Janelia Research Campus",
+    "protocol": "Wild-type, 8 month old mouse, strain: C57BL6/129 from Gene Targeting & Transgenic Facility of HHMI Janelia Research Campus",
+    "contributions": "Sample provided by Yumei Wu, Christina Whites, and Pietro De Camilli (Yale), prepared for imaging by Yumei Wu and Christina Whites (Yale), with imaging and post-processing by Wei Qui, Gleb Shtengel, and Harald Hess(HHMI/Janelia).",
+    "subtype": [
+      "Brain"
+    ],
+    "type": [
+      "Tissue"
+    ]
+  }
+]
