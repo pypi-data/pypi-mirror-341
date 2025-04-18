@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+tempfilerepr/__init__.py
+tempfilerepr/base24.py
+tempfilerepr.egg-info/PKG-INFO
+tempfilerepr.egg-info/PKG-INFO.bak
+tempfilerepr.egg-info/SOURCES.txt
+tempfilerepr.egg-info/dependency_links.txt
+tempfilerepr.egg-info/top_level.txt
