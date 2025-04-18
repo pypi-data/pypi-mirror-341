@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+mywork_anous/__init__.py
+mywork_anous/lcm.py
+mywork_anous.egg-info/PKG-INFO
+mywork_anous.egg-info/SOURCES.txt
+mywork_anous.egg-info/dependency_links.txt
+mywork_anous.egg-info/top_level.txt
