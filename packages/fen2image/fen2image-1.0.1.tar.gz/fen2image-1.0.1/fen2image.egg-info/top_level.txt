@@ -1,0 +1,4 @@
+dist
+fen2image
+resources
+tests

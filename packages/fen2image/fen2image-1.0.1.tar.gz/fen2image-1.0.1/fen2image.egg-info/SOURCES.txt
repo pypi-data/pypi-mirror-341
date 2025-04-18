@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+fen2image/BoardRepresentation.py
+fen2image/Fen.py
+fen2image/__init__.py
+fen2image/constants.py
+fen2image/core.py
+fen2image/utils.py
+fen2image.egg-info/PKG-INFO
+fen2image.egg-info/SOURCES.txt
+fen2image.egg-info/dependency_links.txt
+fen2image.egg-info/requires.txt
+fen2image.egg-info/top_level.txt
+tests/test_board_representation.py
+tests/test_fen.py

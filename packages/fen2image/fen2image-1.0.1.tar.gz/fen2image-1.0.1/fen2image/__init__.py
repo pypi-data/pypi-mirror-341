@@ -1,0 +1,1 @@
+from .core import fen2image
