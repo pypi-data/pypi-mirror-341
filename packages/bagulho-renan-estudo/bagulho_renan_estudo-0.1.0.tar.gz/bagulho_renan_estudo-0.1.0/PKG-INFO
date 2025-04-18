@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: bagulho-renan-estudo
+Version: 0.1.0
+Summary: 
+Author: RainingSunny
+Author-email: 122507753+RainingSunny@users.noreply.github.com
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: httpx (>=0.28.1,<0.29.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+
