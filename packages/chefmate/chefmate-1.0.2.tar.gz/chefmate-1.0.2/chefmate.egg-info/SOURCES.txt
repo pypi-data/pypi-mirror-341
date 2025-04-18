@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+chefmate/__init__.py
+chefmate/browser_manager.py
+chefmate/chefmate_core.py
+chefmate/cli.py
+chefmate/config.py
+chefmate.egg-info/PKG-INFO
+chefmate.egg-info/SOURCES.txt
+chefmate.egg-info/dependency_links.txt
+chefmate.egg-info/top_level.txt

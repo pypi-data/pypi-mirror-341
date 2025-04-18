@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chefmate"
+version = "1.0.2"
+description = "Automation tool for CodeChef"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.7"
+authors = [
+    { name = "Anuj Kumar Sah", email = "anujsah282005@gmail.com" }
+]
+dependencies = []
+license = {text = "MIT"}
+keywords = ["CodeChef", "CLI", "automation", "competitive-programming"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools"
+]
