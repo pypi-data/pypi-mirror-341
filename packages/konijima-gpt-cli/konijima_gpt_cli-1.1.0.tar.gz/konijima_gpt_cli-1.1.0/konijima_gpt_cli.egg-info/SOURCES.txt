@@ -1,0 +1,15 @@
+LICENSE
+README.md
+gpt.py
+pyproject.toml
+setup.py
+core/__init__.py
+core/commands.py
+core/config.py
+core/memory.py
+konijima_gpt_cli.egg-info/PKG-INFO
+konijima_gpt_cli.egg-info/SOURCES.txt
+konijima_gpt_cli.egg-info/dependency_links.txt
+konijima_gpt_cli.egg-info/entry_points.txt
+konijima_gpt_cli.egg-info/requires.txt
+konijima_gpt_cli.egg-info/top_level.txt
