@@ -1,0 +1,11 @@
+sbgeom.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+SBGeom/sbgeom_cpp.pyi,sha256=2pLIbTCb72kFfQB8sFtOdlf9_BSSpO3mLARUA5I3Uus,12958
+SBGeom/Coils.py,sha256=1NaBX8FCnuVCvE0zTFVR46tOmJt12IfTMsp_tvyNBaQ,6937
+SBGeom/__init__.py,sha256=0eEuXRtTBw-p1OCUv2zo00yfPsoar4CmiVHLm2ueHe4,119
+SBGeom/VMEC.py,sha256=Dincy-g_1udTy9nI7SNLkmYvSYebz9fbsDTTjkKN_C8,23644
+SBGeom/Mesh.py,sha256=nkGu3yEn6lP8jWmDNZYZKVhvFNVA4hF97Bx6EBiz98Y,2072
+SBGeom/sbgeom_cpp.pypy39-pp73-x86_64-linux-gnu.so,sha256=zn_D-6psZuGoWGCHHvobmU-HMneic8tcv_gwRK3xcJQ,746433
+SBGeom/sbgeom.cpp,sha256=helWLVGmdHm-5yqPpLrrafCLGQ0Tb2IMM-e5TBEjbF8,18007
+sbgeom-0.0.5.dist-info/WHEEL,sha256=swzdqj9c4yHAKpKF9sANVf9zRmMkwYqDyVJigPNKe_E,166
+sbgeom-0.0.5.dist-info/METADATA,sha256=EJ02OaOnwP-BsAsw9plKtgxQbNwI350pYm5h-MuKebY,2081
+sbgeom-0.0.5.dist-info/RECORD,,
