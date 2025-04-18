@@ -1,0 +1,7 @@
+fdc_sdk/__init__.py,sha256=ztEa5WuuZt_uKFJKd6xDA7PoQhgAXoQs4lBHxdTA0pw,33
+fdc_sdk/fw_client.py,sha256=JXCazIuRoCL9g5P75fpj5wPgoZrvZca16rZufwB75RM,3220
+fdc_sdk/test.py,sha256=UHyjSSgnsBIoDU53IXOzhzGTXBBhI2KkH1u16uioVv8,1373
+fdc_sdk-0.0.4.dist-info/METADATA,sha256=pLSN0ol9Qu06P-vpuEgR_kbldO3pfPbK9TzZWBzHB4o,3036
+fdc_sdk-0.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+fdc_sdk-0.0.4.dist-info/top_level.txt,sha256=SEAd25fkWBDJObYGZHUAfE6kd4kkpop5PyN2lqqgCLk,8
+fdc_sdk-0.0.4.dist-info/RECORD,,
