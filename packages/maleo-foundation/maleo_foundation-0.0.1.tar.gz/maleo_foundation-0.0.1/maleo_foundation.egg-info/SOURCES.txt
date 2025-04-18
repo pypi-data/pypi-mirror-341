@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+maleo_foundation.egg-info/PKG-INFO
+maleo_foundation.egg-info/SOURCES.txt
+maleo_foundation.egg-info/dependency_links.txt
+maleo_foundation.egg-info/requires.txt
+maleo_foundation.egg-info/top_level.txt
