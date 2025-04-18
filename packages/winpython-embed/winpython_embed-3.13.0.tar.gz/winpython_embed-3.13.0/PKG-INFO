@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: winpython-embed
+Version: 3.13.0
+Summary: Get WinPython from pip
+Author: Tanix
+Author-email: tanixlu@foxmail.com
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+
+# winpython-embed
+
+**Install WinPython from pip**
+
+## Usage
+
+```cmd
+pip install winpython-embed==3.13 --target install_location
+```
+
+support 3.8 to 3.13
+
+## Build Package
+```cmd
+python -m build --sdist
+```
+
+## Test Installation
+```cmd
+pip install -v --target embed .\dist\winpython_embed-3.13.0.tar.gz
+```
+
+## Publish to PyPI
+```cmd
+python -m twine upload dist/*
+```
