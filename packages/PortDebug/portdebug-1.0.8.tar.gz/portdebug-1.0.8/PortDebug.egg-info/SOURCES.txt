@@ -1,0 +1,10 @@
+setup.py
+PortDebug/__init__.py
+PortDebug/main.py
+PortDebug.egg-info/PKG-INFO
+PortDebug.egg-info/SOURCES.txt
+PortDebug.egg-info/dependency_links.txt
+PortDebug.egg-info/entry_points.txt
+PortDebug.egg-info/not-zip-safe
+PortDebug.egg-info/requires.txt
+PortDebug.egg-info/top_level.txt
