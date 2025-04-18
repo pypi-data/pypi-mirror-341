@@ -1,0 +1,15 @@
+pyproject.toml
+my_package_matykina_olga/__init__.py
+my_package_matykina_olga/__main__.py
+my_package_matykina_olga/database.py
+my_package_matykina_olga/init0.py
+my_package_matykina_olga/init1.py
+my_package_matykina_olga/init2.py
+my_package_matykina_olga/init3.py
+my_package_matykina_olga/init4.py
+my_package_matykina_olga/user_management.py
+my_package_matykina_olga.egg-info/PKG-INFO
+my_package_matykina_olga.egg-info/SOURCES.txt
+my_package_matykina_olga.egg-info/dependency_links.txt
+my_package_matykina_olga.egg-info/requires.txt
+my_package_matykina_olga.egg-info/top_level.txt
