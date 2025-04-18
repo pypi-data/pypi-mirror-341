@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "drftokit"
+version = "0.1.5"
+description = "DRF tokit."
+authors = ["pytools <hyhlinux@gmail.com>"]
+license = "MIT"
+readme = "doc.md"  # 添加这一行来引用README文件
+
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+django = ">=2.2"
+djangorestframework = ">=3.11"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
