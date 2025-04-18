@@ -1,0 +1,13 @@
+jiwer/__init__.py,sha256=eZezAL8Oy_7PjdkS8RcBq2nCbwPM5xYL_MtfVeZVthk,1646
+jiwer/alignment.py,sha256=jJwmolCT8Y2zA_XNV1rV_BXjUNLs3GkS5R8KjC_w6Ic,11990
+jiwer/cli.py,sha256=Vp6MN8-f71DZ8ss2WjKdD1U06IYeoSCm7pRtyi7ZdFg,4131
+jiwer/measures.py,sha256=_nStnDU8o3UINLD2Kn0Z7MnuI-urM6fR2zepB1W1EK4,6753
+jiwer/process.py,sha256=KcQkvtF1CteFt280kcrtb0vO9YLpv4hGZ65mJrc-ARA,13699
+jiwer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jiwer/transformations.py,sha256=ItQWzDewwn-mi-HT5q1wBp-6hvzElVXZWc9tDQlOIaA,3673
+jiwer/transforms.py,sha256=U2Bo2Z--okfs1e8MFg41JkZycHoZf7I1L43yHPf6408,17847
+jiwer_gml-4.0.1.dist-info/METADATA,sha256=qPub4waPMjpoXQsx24BbeBCDbktt3eoEt0DLPqO1dkI,3291
+jiwer_gml-4.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jiwer_gml-4.0.1.dist-info/entry_points.txt,sha256=8oEFq-cC9n7LMfoAp9OVFuHDqN8JIhveIygLQAi8uvc,40
+jiwer_gml-4.0.1.dist-info/licenses/LICENSE,sha256=G0psrf2FFjKvhQMKkS2yAtTsXuynrnLw3a-2AmH6XoM,11339
+jiwer_gml-4.0.1.dist-info/RECORD,,
