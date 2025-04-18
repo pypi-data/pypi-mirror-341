@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+sudoh/__init__.py
+sudoh/cli.py
+sudoh.egg-info/PKG-INFO
+sudoh.egg-info/SOURCES.txt
+sudoh.egg-info/dependency_links.txt
+sudoh.egg-info/entry_points.txt
+sudoh.egg-info/top_level.txt
