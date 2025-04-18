@@ -1,0 +1,8 @@
+persistence_client/__init__.py,sha256=gh4gCaxdLLdSNtGdknAI71ZJ-06rP4m2QlHTDHkqFkU,216
+persistence_client/client.py,sha256=xAURP8KlBxb1jwwPsseKEoVOH2Wl-WZfG18Eg-mcXEE,1414
+persistence_client/schemas.py,sha256=rdyiwVCDiVb0cv1KChtrWFMp7L2mHVJy-e5nZ1D9TU0,409
+persistence_client-0.1.5.dist-info/METADATA,sha256=23BdYmRq6UYhsGD3_Yr_O1OQHIxObI08Iqy8VXUsEa8,267
+persistence_client-0.1.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+persistence_client-0.1.5.dist-info/entry_points.txt,sha256=_8JrrUQw5iBwwcFD9HDbM6dHfX8akgnwWRFYSpZt4v8,63
+persistence_client-0.1.5.dist-info/top_level.txt,sha256=qYqPiWvlQ9j6vTF2hohCvd2UkQkflPwg76QBOQxXqhE,19
+persistence_client-0.1.5.dist-info/RECORD,,
