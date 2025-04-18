@@ -1,0 +1,2 @@
+[console_scripts]
+yala-events-mcp = yala_events_mcp.server:main
