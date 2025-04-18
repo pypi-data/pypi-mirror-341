@@ -1,0 +1,2 @@
+[console_scripts]
+lijunshi-demo = lijunshi_demo:main
