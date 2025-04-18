@@ -1,0 +1,59 @@
+Metadata-Version: 2.4
+Name: MJOLNIR
+Version: 1.3.5
+Summary: Neutron Scattering software suite
+Home-page: https://github.com/MJOLNIRPackage/MJOLNIR
+Author: Jakob Lass
+Author-email: MJOLNIRPackage@gmail.com
+License: MPL-2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: matplotlib>=3
+Requires-Dist: numpy<2.0,>=1.14
+Requires-Dist: h5py>=2.5
+Requires-Dist: scipy
+Requires-Dist: datetime
+Requires-Dist: pytest>=4.6
+Requires-Dist: pyperclip
+Requires-Dist: decorator
+Requires-Dist: pandas
+Requires-Dist: future
+Requires-Dist: sympy
+Requires-Dist: pip>=20
+Requires-Dist: ufit>=1.4.0
+Requires-Dist: pyqtgraph
+Requires-Dist: regex
+Provides-Extra: amber
+Requires-Dist: torch; extra == "amber"
+Requires-Dist: AMBER-ds4ms; extra == "amber"
+Provides-Extra: gui
+Requires-Dist: MJOLNIRGui; extra == "gui"
+Dynamic: license-file
+
+MJOLNIR
+============
+Neutron scattering software to be used at CAMEA-like Neutron Instruments.
+
+## Installation
+This package is to be install through the Python Package Manager by issuing 
+
+```shell
+pip install MJOLNIR
+```
+
+For full documentation see http://mjolnir.readthedocs.io/en/latest/ or https://www.psi.ch/en/sinq/camea/data-treatment. 
+
