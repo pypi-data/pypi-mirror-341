@@ -1,0 +1,9 @@
+synctl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synctl/__version__.py,sha256=_rdDXO0eF8Rb-UlqwwfOrLeR0p4mNliGj-gv5nXgbms,22
+synctl/cli.py,sha256=tiwArwbBG7uJhZub1u-6No_B62Rt5Ei05qZg9y1xTMU,302151
+synctl-2.0.6.dist-info/LICENSE,sha256=gKJ_hoCUHJ5RqfExNkepLaIksmHv5BXluwWfBoa_S0I,1064
+synctl-2.0.6.dist-info/METADATA,sha256=toq9zfQHJgo8Sdt8I5PKgCfzLsl9nM9WgSu7-E8iAv8,1695
+synctl-2.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+synctl-2.0.6.dist-info/entry_points.txt,sha256=Cz2Q8kaOOx6mJTxfXw68Bn-z1tzZpurz0WroVm0OEf8,44
+synctl-2.0.6.dist-info/top_level.txt,sha256=DtA8K06GY4_9Hr5cgz8qoK4WMyyI0kIIuaYQbRd8iek,7
+synctl-2.0.6.dist-info/RECORD,,
