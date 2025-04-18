@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+aws_access_key_id/__init__.py
+aws_access_key_id.egg-info/PKG-INFO
+aws_access_key_id.egg-info/SOURCES.txt
+aws_access_key_id.egg-info/dependency_links.txt
+aws_access_key_id.egg-info/top_level.txt
+tests/test_aws_access_key_id.py

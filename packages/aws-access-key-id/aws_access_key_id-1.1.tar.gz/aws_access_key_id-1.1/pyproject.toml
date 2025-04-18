@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aws-access-key-id"
+version = "1.1"
+description = "Decode AWS Access Key IDs to extract AWS account ID and resource type"
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [
+    { name="Nag Medida", email="nagwww@gmail.com" }
+]
+license = {text = "MIT"}
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/yourusername/aws-access-key-id"
+
+
