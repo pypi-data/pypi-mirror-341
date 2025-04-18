@@ -1,0 +1,9 @@
+notte_pools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notte_pools/base.py,sha256=GUMr-Mo7HZw7L52cpduAPHicZi8M4LCfr7WJs4y1VNM,9402
+notte_pools/cdp_pool.py,sha256=it2XxS6xG44k5uX_YuoJxHyDMT6wnITl48Mo7ewLuLg,2820
+notte_pools/local_pool.py,sha256=X2az-a1yvAunnGKCePIi24omb9oT2kT-wIuD9VNi10c,12553
+notte_pools/ports.py,sha256=QrNfJQi9mCns-0xIL7oJAizwwcWPB5zDHCuN5UUiPX8,3337
+notte_pools/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notte_pools-1.4.0.dist-info/METADATA,sha256=keuCT6aVW4t76BOxUg1vmbROmDglZ_BJmMplEwA6anA,493
+notte_pools-1.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+notte_pools-1.4.0.dist-info/RECORD,,
