@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+jpgis_dem.egg-info/PKG-INFO
+jpgis_dem.egg-info/SOURCES.txt
+jpgis_dem.egg-info/dependency_links.txt
+jpgis_dem.egg-info/entry_points.txt
+jpgis_dem.egg-info/requires.txt
+jpgis_dem.egg-info/top_level.txt
+jpgisdem/__init__.py
+tests/test_jpgisdem.py

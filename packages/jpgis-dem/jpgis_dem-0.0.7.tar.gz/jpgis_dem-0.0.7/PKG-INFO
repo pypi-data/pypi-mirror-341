@@ -1,0 +1,70 @@
+Metadata-Version: 2.4
+Name: jpgis-dem
+Version: 0.0.7
+Summary: Convert JPGIS .xml DEM files to geotiffs.
+Home-page: https://github.com/gpxz/jpgis-dem
+Download-URL: https://github.com/gpxz/jpgis-dem
+Author: Andrew Nisbet
+Author-email: andrew@gpxz.io
+License: The MIT License
+Keywords: elevation
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: GIS
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: lxml
+Requires-Dist: numpy
+Requires-Dist: rasterio
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# JPGIS DEM tool
+
+A CLI tool to convert Japanese DEM XML files into Geotifs. A Python port of [tmizu23/demtool](https://github.com/tmizu23/demtool).
+
+## Installation
+
+Install with pip
+
+```bash
+pip install jpgis-dem
+```
+
+
+## Usage
+
+Convert a single xml file 
+
+```bash
+jpgis-dem xml2tif FG-GML-3622-57-DEM10B-20190510.xml 3622-57.geotiff
+```
+
+
+Convert a 10m zip containing a single xml file
+
+```bash
+jpgis-dem xml2tif FG-GML-3622-57-DEM10B.zip 3622-57.geotiff
+```
+
+
+Convert a 5m zip containing multiple xml files into a merged geotiff
+
+```bash
+jpgis-dem xml2tif FG-GML-3624-31-DEM5B.zip 3624-31.geotiff
+```
