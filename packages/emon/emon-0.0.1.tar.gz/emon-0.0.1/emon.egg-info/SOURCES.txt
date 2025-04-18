@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+emon/__init__.py
+emon.egg-info/PKG-INFO
+emon.egg-info/SOURCES.txt
+emon.egg-info/dependency_links.txt
+emon.egg-info/requires.txt
+emon.egg-info/top_level.txt
