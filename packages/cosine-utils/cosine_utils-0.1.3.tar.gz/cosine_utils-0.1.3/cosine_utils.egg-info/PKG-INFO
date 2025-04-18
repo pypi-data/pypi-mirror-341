@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: cosine_utils
+Version: 0.1.3
+Summary: A package to compute cosine similarity between vectors
+Home-page: https://github.com/yourusername/cosine_utils
+Author: Your Name
+Author-email: your-email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: cython
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Cosine Utils
+
+This package provides a utility to compute cosine similarity between vectors as a percentage. It's implemented using Cython for better performance.
+
+## Installation
+
+You can install it via pip:
+
+```bash
+pip install cosine_utils
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

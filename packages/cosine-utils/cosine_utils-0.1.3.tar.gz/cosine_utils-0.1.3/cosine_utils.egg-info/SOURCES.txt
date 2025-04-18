@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+cosine_utils/__init__.py
+cosine_utils/cosine_utils.c
+cosine_utils/cosine_utils.pyx
+cosine_utils.egg-info/PKG-INFO
+cosine_utils.egg-info/SOURCES.txt
+cosine_utils.egg-info/dependency_links.txt
+cosine_utils.egg-info/requires.txt
+cosine_utils.egg-info/top_level.txt
