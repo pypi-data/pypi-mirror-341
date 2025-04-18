@@ -1,0 +1,3 @@
+[console_scripts]
+live-translate-client = live_translation.client.cli:main
+live-translate-server = live_translation.server.cli:main
