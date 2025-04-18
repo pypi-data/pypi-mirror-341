@@ -1,0 +1,30 @@
+[build-system]
+requires = ["maturin>=1.4,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "complexipy"
+keywords = ["cognitive", "complexity", "cognitive complexity", "rust", "fast"]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+
+dependencies = ["typer==0.12.5"]
+
+[project.scripts]
+complexipy = "complexipy.main:app"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+module-name = "complexipy.rust"
+
+[dependency-groups]
+dev = [
+    "maturin>=1.8.3",
+    "mkdocs-material>=9.6.12",
+    "pytest>=8.3.5",
+]
