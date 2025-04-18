@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: sudoh
+Version: 0.1.0
+Summary: A simple CLI tool that automatically re-runs your last shell command with sudo. If you get a permissions error, just type sudoh to repeat your previous command as root. Supports bash and zsh.
+Author: Your Name
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: requires-python
+Dynamic: summary
