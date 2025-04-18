@@ -1,0 +1,8 @@
+build/
+*.pyc
+*~
+venv/
+testing/
+padinfo.json
+.etherdump
+etherdump.egg-info

@@ -1,0 +1,12 @@
+{
+	"protocol": "http",
+	"port": 9001,
+    "hostname": "localhost",
+    "apiversion": "1.2.9",
+    "apiurl": "/api/",
+    "apikey": "8f55f9ede1b3f5d88b3c54eb638225a7bb71c64867786b608abacfdb7d418be1",
+    "groups": {
+	    "71FpVh4MZBvl8VZ6": {"name": "Transmediale", "id": 43},
+	    "HyYfoX3Q6S5utxs5": {"name": "test", "id": 42 }
+    }
+}
