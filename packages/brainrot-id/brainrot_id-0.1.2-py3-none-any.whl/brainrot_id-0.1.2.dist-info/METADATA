@@ -1,0 +1,61 @@
+Metadata-Version: 2.4
+Name: brainrot-id
+Version: 0.1.2
+Summary: Brain-melting ID generator for post-modern applications
+Author: Nercy
+Author-email: nercysvoboda@gmail.com
+Project-URL: Homepage, https://github.com/ваш-ник/brainrot-id
+Project-URL: Bug Tracker, https://github.com/ваш-ник/brainrot-id/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: emoji>=2.0.0
+Requires-Dist: cryptography>=3.4
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# рџ§ рџ’ў BrainRot-ID
+
+Post-modern ID generator for:
+- Meme-based systems
+- Absurdist programming
+- Cryptography schizotics
+- People bored with UUIDs
+
+## Installation
+```bash
+pip install brainrot-id
+```
+
+## Usage
+```python
+from brainrot_id import generate_id
+
+print(generate_id('nuclear'))  # "TUNGx6 SAHURрџ’Ґ ::deadbeef"
+```
+
+## CLI
+```bash
+brainrot-id --mode extreme --count 5
+```
+
+## Features
+- 3 modes of operation
+- Built-in meme dictionary
+- Cryptographic uniqueness
+- Emoji integration
+- Italian-sounding suffixes
+
+## Contributing
+PRs with new meme phrases welcome!
