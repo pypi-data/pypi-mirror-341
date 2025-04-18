@@ -1,0 +1,12 @@
+setuptools_gopy/__init__.py,sha256=-SvfLIdKzazd-RHrMOwUdZKJs1RyLoWOLCV5WC_jz6I,114
+setuptools_gopy/_command.py,sha256=hPP8UMDCV2PR-UCJhJoC6zI72mknpLnUNnq26zIIIL4,1832
+setuptools_gopy/cmd_build.py,sha256=B2YjNbUSpOQ_nNog7Pa2gIPdOP39yMYmeRNRhMXeaEs,13011
+setuptools_gopy/extension.py,sha256=4-GNskG7cvyomhK_9L0-Pt-N48Cn9KwNKi3oyJNY1TQ,1206
+setuptools_gopy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+setuptools_gopy/setuptools_ext.py,sha256=P9LltDVHnZMKiiUurqihPPuKeUW3GCizfyK8R5VEiXc,1897
+setuptools_gopy-0.0.4.dist-info/METADATA,sha256=5kIsJiBvnLX7l5e8CWPu1A_OqPvIfDqUmxBHW-6MgpE,2697
+setuptools_gopy-0.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+setuptools_gopy-0.0.4.dist-info/entry_points.txt,sha256=qHKXdL42oqMXVxGV6Ibt9S-LOR-OCSfklTrG60rA9Ao,268
+setuptools_gopy-0.0.4.dist-info/top_level.txt,sha256=1Cq8QhN0LG5mgyyYWI74XhsVFx_evCA0wYM0UwMoQLA,16
+setuptools_gopy-0.0.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+setuptools_gopy-0.0.4.dist-info/RECORD,,
