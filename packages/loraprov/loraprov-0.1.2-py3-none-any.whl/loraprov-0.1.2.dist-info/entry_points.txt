@@ -1,0 +1,3 @@
+[console_scripts]
+loraprov=loraprov.cli:_main
+
