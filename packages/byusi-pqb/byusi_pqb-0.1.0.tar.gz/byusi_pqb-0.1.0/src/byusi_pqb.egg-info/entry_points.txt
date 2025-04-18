@@ -1,0 +1,2 @@
+[console_scripts]
+pqb = pqb.cli:main

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/byusi_pqb.egg-info/PKG-INFO
+src/byusi_pqb.egg-info/SOURCES.txt
+src/byusi_pqb.egg-info/dependency_links.txt
+src/byusi_pqb.egg-info/entry_points.txt
+src/byusi_pqb.egg-info/requires.txt
+src/byusi_pqb.egg-info/top_level.txt
