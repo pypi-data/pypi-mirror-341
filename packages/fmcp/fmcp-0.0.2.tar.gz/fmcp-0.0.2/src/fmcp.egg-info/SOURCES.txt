@@ -1,0 +1,8 @@
+pyproject.toml
+src/fmcp.egg-info/PKG-INFO
+src/fmcp.egg-info/SOURCES.txt
+src/fmcp.egg-info/dependency_links.txt
+src/fmcp.egg-info/entry_points.txt
+src/fmcp.egg-info/requires.txt
+src/fmcp.egg-info/top_level.txt
+src/ning/__init__.py
