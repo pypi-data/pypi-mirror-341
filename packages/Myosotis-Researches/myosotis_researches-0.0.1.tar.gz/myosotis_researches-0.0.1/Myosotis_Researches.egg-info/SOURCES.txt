@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Myosotis_Researches.egg-info/PKG-INFO
+Myosotis_Researches.egg-info/SOURCES.txt
+Myosotis_Researches.egg-info/dependency_links.txt
+Myosotis_Researches.egg-info/top_level.txt
+myosotis_research/CcGAN.py
+myosotis_research/__init__.py
