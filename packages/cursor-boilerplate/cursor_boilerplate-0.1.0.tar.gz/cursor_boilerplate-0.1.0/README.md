@@ -1,0 +1,31 @@
+# Cursor Boilerplate
+
+Cursor IDE를 위한 보일러플레이트 프로젝트 생성기입니다.
+
+## 설치 방법
+
+```bash
+pip install cursor-boilerplate
+```
+
+## 사용 방법
+
+```bash
+uvx my-project-name
+```
+
+또는 특정 경로에 프로젝트를 생성하려면:
+
+```bash
+uvx my-project-name --path /path/to/directory
+```
+
+## 기능
+
+- 새로운 프로젝트 디렉토리 생성
+- .cursor 디렉토리 및 파일 자동 복사
+- 사용자 지정 경로 지원
+
+## 라이센스
+
+MIT 
