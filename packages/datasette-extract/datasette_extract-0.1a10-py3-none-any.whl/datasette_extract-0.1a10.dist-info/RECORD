@@ -1,0 +1,17 @@
+datasette_extract/__init__.py,sha256=fOAj0tt5Z1LKdNvWE2MNlRWuyHuKDD0XuUMXDi9FGH0,18362
+datasette_extract/static/extract.css,sha256=xdXcPYFA8Px4T40wk3n68WZqBA_KHK2uQf2n0Nwt0h0,119
+datasette_extract/static/heic2any-0.0.4.min.js,sha256=_Cax4jSNTW2BdgWPfp1wxECqmPjw5Ywm_jQQ0amQ4Ig,1352452
+datasette_extract/templates/_extract_base_styles.html,sha256=948vz-yHW5LRlYBN107hE_yRj6TAN7pIgiIToi4r39g,2829
+datasette_extract/templates/_extract_drop_handler.html,sha256=azPvk0xxEU5wyTNyqr-qLCaECUoTqfrGr6v-KHJqrY8,3200
+datasette_extract/templates/extract.html,sha256=wiWG_G71ANv1Hi0FZTMa7CFBXlxGV0gKCSArB63Fo38,253
+datasette_extract/templates/extract_create_table.html,sha256=4-udG78nsmkwHBam5dP0R-xYKAVR56uAyLmAV2hq13E,6224
+datasette_extract/templates/extract_progress.html,sha256=1XDjYO6w1LKfbaNL05iiUX0pWFLzL8ddsx584iNNlpE,5398
+datasette_extract/templates/extract_to_table.html,sha256=Ocg6PV5277kJQ88Z5N4YWTIyjeRzVvKQj1NG7sFBDk8,5045
+datasette_extract-0.1a10.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tests/conftest.py,sha256=sUah-5Z8nYoNkL0C-EVgtEz-Zn2jiKK42Pou-Sv2X1I,310
+tests/test_web.py,sha256=nwHBG_AXHKSbOslmBdH2IG5jhDauke8spR6pqwBOp5U,6611
+datasette_extract-0.1a10.dist-info/METADATA,sha256=8UrZlwgeUNyMn9bBZocPvoDeUT_1_vC78qBvux_zCCU,5381
+datasette_extract-0.1a10.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+datasette_extract-0.1a10.dist-info/entry_points.txt,sha256=r1VDBFCVBm3_TonqOAhFwzANzakDyKluQ6VLdmbF2ts,40
+datasette_extract-0.1a10.dist-info/top_level.txt,sha256=S6QDE9W9eVrXz1265YH81SEQUPECVRRxZv_xEaeLrW8,24
+datasette_extract-0.1a10.dist-info/RECORD,,
