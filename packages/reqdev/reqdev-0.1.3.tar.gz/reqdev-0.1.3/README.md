@@ -1,0 +1,178 @@
+# ReqDev
+
+ReqDev is a smart Python package that analyzes your Python projects and automatically generates `requirements.txt` files based on actual imports used in your code.
+
+## Problem
+
+Have you ever:
+- Deleted a virtual environment without saving your dependencies?
+- Inherited a project without a requirements file?
+- Wanted to clean up your requirements.txt to only include what you're actually using?
+
+ReqDev solves these problems by scanning your Python code and identifying the packages you need.
+
+## Features
+
+- 🔍 **Accurate Detection**: Scans Python files and notebooks to detect import statements
+- 🧠 **Smart Mapping**: Correctly maps import names to PyPI package names (knows `cv2` is `opencv-python`, etc.)
+- 📦 **Version Detection**: Optionally includes the exact version of each package
+- 📑 **Jupyter Support**: Analyzes Jupyter notebooks for imports
+- 🚀 **Fast**: Quickly scans even large codebases
+- 🔧 **Configurable**: Easy to customize via CLI flags
+- 🎨 **Beautiful Output**: Colorful terminal display of results
+- 🔄 **Smart Local Import Filtering**: Excludes your project's local modules from requirements
+- 🧩 **Implicit Dependency Detection**: Identifies dependencies not directly imported (like pymysql, pysql, pillow)
+- 🕵️ **Deep SQL Detection**: Examines file contents to detect SQL-related libraries even when not imported
+- 🛡️ **Compatibility Checks**: Automatically filters out packages known to be problematic with your Python version
+- 🌱 **Environment File Detection**: Automatically adds python-dotenv when .env files are present
+- 📈 **Latest Versions**: Fetches the latest compatible versions from PyPI
+
+## Installation
+
+```bash
+pip install reqdev
+```
+
+## Usage
+
+Basic usage:
+
+```bash
+reqdev
+```
+
+This will analyze the current directory and create a `requirements.txt` file.
+
+### Advanced Usage
+
+```bash
+# Specify a different project directory
+reqdev --path /path/to/your/project
+
+# Specify a different output file
+reqdev --output dependencies.txt
+
+# Generate requirements without version numbers
+reqdev --no-versions
+
+# Use latest versions from PyPI instead of installed versions
+reqdev --latest
+
+# Temporarily install packages to get precise versions
+reqdev --install
+
+# Skip Jupyter notebooks
+reqdev --no-notebooks
+
+# Disable implicit dependency detection
+reqdev --no-implicit
+
+# Filter out packages known to be problematic with your Python version
+reqdev --compat
+
+# Manually exclude specific packages
+reqdev --exclude pysql mysql-python
+
+# Enable verbose output
+reqdev --verbose
+
+# Show detailed debugging information
+reqdev --debug
+```
+
+## How It Works
+
+1. ReqDev recursively finds all Python files in your project
+2. It identifies local modules to exclude from requirements
+3. It parses each file using Python's AST to extract import statements
+4. It filters out standard library modules and local modules
+5. It maps import names to PyPI package names (e.g., `cv2` → `opencv-python`)
+6. It detects implicit dependencies based on project structure (like pymysql, pysql for database projects)
+7. It detects configuration files like .env and .flaskenv
+8. It filters out problematic packages based on your Python version (if --compat is used)
+9. It fetches the latest compatible versions from PyPI (if --latest is used)
+10. It determines package versions (if enabled)
+11. It generates a properly formatted requirements.txt file
+
+## Advantages Over Alternatives
+
+- **More Accurate**: Better mapping of import names to PyPI packages than tools like `pipreqs`
+- **Smarter Filtering**: Detects and excludes your project's local modules from requirements
+- **Implicit Dependencies**: Identifies dependencies that aren't directly imported but needed
+- **Deep Content Analysis**: Examines file content to detect SQL usage patterns
+- **Compatibility Awareness**: Filters out packages known to be problematic with your Python version
+- **Latest Versions**: Can fetch the latest compatible versions from PyPI
+- **Config File Detection**: Automatically includes python-dotenv when environment files are present
+- **Handles Jupyter**: Support for analyzing `.ipynb` files
+- **Flexible Version Control**: Can generate with or without version pinning
+- **Smart Install Option**: Can temporarily install packages to determine exact versions
+- **Colorful UI**: Easy-to-read terminal output
+- **Debugging Support**: Debug flag helps troubleshoot dependency detection
+
+## Implicit Dependencies
+
+ReqDev can detect implicit dependencies based on project structure:
+
+- **Environment Files**: Adds `python-dotenv` when .env, .flaskenv or similar files are found
+- **MySQL/Database**: Detects `pymysql`, `mysql-connector-python` if SQL files or patterns are present
+- **Django**: Adds common Django dependencies like `pillow` and `django-crispy-forms`
+- **Flask**: Adds dependencies like `gunicorn` and `flask-login`
+- **Data Science**: Ensures `matplotlib` is included with pandas/numpy projects
+
+You can disable this feature with `--no-implicit` if needed.
+
+## Compatibility Handling
+
+ReqDev can automatically filter out packages known to cause installation problems:
+
+- **pysql**: Incompatible with Python 3.7+ (syntax issues)
+- **pysqlite3**: Most users should use the built-in sqlite3 module
+- **mysql-python**: Deprecated, replaced by mysql-connector-python
+- **distribute**: Merged into setuptools
+- And others...
+
+Enable this feature with `--compat` to avoid installation errors.
+
+## Version Management
+
+ReqDev offers several options for handling package versions:
+
+- **Default**: Uses versions of currently installed packages
+- **--no-versions**: Generates requirements without version constraints
+- **--latest**: Fetches the latest compatible versions from PyPI (recommended)
+- **--install**: Temporarily installs packages to determine versions
+
+Using `--latest` is recommended for most projects as it ensures your requirements file includes the most up-to-date compatible versions.
+
+## Troubleshooting
+
+If a package isn't being detected:
+
+1. Try running with the `--debug` flag: `reqdev --debug`
+2. Check that any files containing SQL-related content are accessible
+3. Make sure the import name is correctly mapped in our database
+4. For SQL libraries specifically, we now scan both filenames and content
+
+If you encounter installation errors with the generated requirements.txt:
+
+1. Try running with the `--compat` flag to exclude problematic packages
+2. Use `--exclude package_name` to manually exclude specific problematic packages 
+3. Check if the package is compatible with your Python version
+4. Try using `--latest` to get the most up-to-date versions
+
+## Development
+
+To contribute to ReqDev:
+
+1. Clone the repository
+2. Install development dependencies: `pip install -e ".[dev]"`
+3. Run tests: `pytest`
+4. Submit a pull request
+
+## License
+
+MIT
+
+## Credits
+
+Built with love by Naman Garg

@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+reqdev.egg-info/PKG-INFO
+reqdev.egg-info/SOURCES.txt
+reqdev.egg-info/dependency_links.txt
+reqdev.egg-info/entry_points.txt
+reqdev.egg-info/requires.txt
+reqdev.egg-info/top_level.txt
+requirements/__init__.py
+requirements/requirements/__init__.py
+requirements/requirements/analyzer.py
+requirements/requirements/cli.py
+requirements/requirements/mapping.py
+tests/test_analyzer.py

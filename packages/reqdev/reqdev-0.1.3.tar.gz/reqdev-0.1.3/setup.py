@@ -1,0 +1,50 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="reqdev",
+    version="0.1.3",
+    description="Smartly generates requirements.txt for Python projects with no virtual environment",
+    author="Naman Garg",
+    author_email="namangarg2075@gmail.com",
+    packages=find_packages(),
+    include_package_data=True,
+    license="MIT",
+    keywords=["requirements", "dependencies", "packaging", "pip", "dev-tools", "requirements.txt", "python"],
+    install_requires=[
+        "astroid>=2.5.0",
+        "packaging>=20.0",
+        "requests>=2.25.0",
+        "colorama>=0.4.4",
+        "tomli>=2.0.0; python_version < '3.11'",
+        "tqdm>=4.50.0",
+    ],
+    entry_points={
+        "console_scripts": [
+            "reqdev=requirements.requirements.cli:main",
+        ],
+    },
+    project_urls={
+        "Homepage": "https://github.com/namangarg2075/reqdev",
+        "Bug Tracker": "https://github.com/namangarg2075/reqdev/issues",
+        "Documentation": "https://github.com/namangarg2075/reqdev#readme",
+        "Source Code": "https://github.com/namangarg2075/reqdev",
+    },
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8", 
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Topic :: Software Development :: Build Tools",
+        "Intended Audience :: Developers",
+        "Intended Audience :: System Administrators",
+        "Operating System :: OS Independent",
+        "Environment :: Console",
+    ],
+    python_requires=">=3.7",
+)

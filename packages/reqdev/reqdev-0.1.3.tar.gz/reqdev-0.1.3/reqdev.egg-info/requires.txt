@@ -1,0 +1,8 @@
+astroid>=2.5.0
+packaging>=20.0
+requests>=2.25.0
+colorama>=0.4.4
+tqdm>=4.50.0
+
+[:python_version < "3.11"]
+tomli>=2.0.0
