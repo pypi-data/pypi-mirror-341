@@ -1,0 +1,3 @@
+[console_scripts]
+lts-scan=lts_scan.cli:main
+
