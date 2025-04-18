@@ -1,0 +1,104 @@
+formats:
+  linear: '__symbol__'
+  linear_u: '__symbol__ [__unit__]'
+  log: '$\log_{10}\,__symbol__$'
+  log_u: '$\log_{10}\,\left(__symbol__ / __unit__\right)$'
+
+scripts:
+  star: '\bigstar'
+  bh: '\mathrm{BH}'
+  uv: '\mathrm{UV}'
+
+  obs: '\mathrm{obs}'  # observed
+  int: '\mathrm{int}'  # intrinsic
+
+  lya: '\mathrm{Ly}\alpha'
+  ha: '\mathrm{H}\alpha'
+  hb: '\mathrm{H}\beta'
+
+  U: '\mathrm{U}'
+  B: '\mathrm{B}'
+  V: '\mathrm{U}'
+
+  esc: '\mathrm{esc}'  # as in "escape fraction"
+
+  None: ''
+
+labels:
+  ########## Physical properties of galaxies ##########
+  m:
+    symbol: '\mathrm{M}'
+    unit: 'Msun'
+    description: 'Mass'
+  sfr:
+    symbol: '\mathrm{SFR}'
+    unit: 'Msun yr-1'
+    description: 'Star-formation rate'
+  ssfr:
+    symbol: '\mathrm{sSFR}'
+    unit: 'yr-1'
+    description: 'Specific star-formation rate'
+  xi:
+    symbol: '\xi_\mathrm{ion}'
+    unit: 'Hz erg-1'
+    description: 'Ionizing photon production efficiency'
+  Z:
+    symbol: '\mathrm{Z}'
+    unit: 'Zsun'
+    description: 'Metallicity'
+  f:
+    symbol: 'f'
+    description: 'Escape fraction'
+  lum:
+    symbol: '\mathrm{L}'
+    unit: 'erg s−1'
+    description: 'Luminosity'
+
+  ########## Observed properties of galaxies ##########
+  z:
+    symbol: 'z'
+    description: 'Redshift'
+  absmag:
+    symbol: '\mathrm{M}'
+    description: 'Absolute magnitude'
+  beta:
+    symbol: '\beta'
+    description: 'UV spectral slope'
+  ebv:
+    symbol: '\mathrm{E(B-V)}'
+    description: 'Color excess'
+  a:
+    symbol: 'A'
+    description: 'Dust attenuation'
+
+  ################# Galaxy evolution ##################
+  smf:
+    symbol: '\Phi'
+    unit: 'Mpc-3 dex-1'
+    description: 'Stellar mass function'
+  sfrd:
+    symbol: '\mathrm{SFRD}'
+    unit: 'Msun yr-1 Mpc-3'
+    description: 'Star-formation rate density'
+
+  ################### Spectroscopy ####################
+  wave:
+    symbol: '\lambda'
+    unit: 'AA'
+    description: 'Wavelength'
+  flam:
+    symbol: 'f^\lambda'
+    unit: 'erg s−1 cm−2 A-1'
+    description: 'Spectral flux density'
+  fnu:
+    symbol: 'f^\nu'
+    unit: 'erg s−1 cm−2 A-1'
+    description: 'Spectral flux density'
+  ew:
+    symbol: '\mathrm{EW}'
+    unit: 'AA'
+    description: 'Equivalent width'
+  bd:
+    symbol: '\mathrm{H}\alpha/\mathrm{H}\beta'
+    description: 'Balmer decrement'
+    wrap: true
