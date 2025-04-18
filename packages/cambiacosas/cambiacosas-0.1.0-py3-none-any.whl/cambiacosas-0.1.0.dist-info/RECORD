@@ -1,0 +1,14 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cambiacosas/__main__.py,sha256=ME-REf585AIi1aPrVDs6GozQydSjn8Ksg_Rv44FCVEY,15885
+cambiacosas/administracion_archivo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cambiacosas/administracion_archivo/edit_file.py,sha256=gBkWB23TLXBfoiN_zN7nmoUlj7bS8AzTNG4SQ44b1H4,4437
+cambiacosas/administracion_archivo/file_info.py,sha256=sQQgtywtodiul1PCes86Y-YQzUbtKurxRz8HrE4LxmI,1991
+cambiacosas/googleapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cambiacosas/googleapi/api_client.py,sha256=SxmsrfHZ5sb1BMs6vcpPr-QR1a0FCYD6SD27qHdfyjQ,3165
+cambiacosas/googleapi/gemini_options.py,sha256=w-LTV5ZQmp4hvUaKpr8qOc24irvCazvd9929s2Dxhrc,6086
+cambiacosas-0.1.0.dist-info/licenses/LICENSE,sha256=OphKV48tcMv6ep-7j-8T6nycykPT0g8ZlMJ9zbGvdPs,1066
+cambiacosas-0.1.0.dist-info/METADATA,sha256=LxSV-cDCVHVJtXol3cULGgVeDj-FBdwOCs-fkjcXgpQ,1194
+cambiacosas-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+cambiacosas-0.1.0.dist-info/entry_points.txt,sha256=ppHHvtCu8XfY5NjhUEJjUyG7LtuNzQQhUzQGDdI0MHk,58
+cambiacosas-0.1.0.dist-info/top_level.txt,sha256=KOWICZVFdvyI7D3yW1XEYwXA3_55unineQOLct81GEc,21
+cambiacosas-0.1.0.dist-info/RECORD,,
