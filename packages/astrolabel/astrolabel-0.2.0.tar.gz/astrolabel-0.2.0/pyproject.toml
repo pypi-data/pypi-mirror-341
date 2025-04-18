@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "astrolabel"
+version = "0.2.0"
+description = "A lightweight Python package for managing astronomy plot labels"
+authors = ["Ivan Kramarenko <im.kramarenko@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ivkram/astrolabel"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+astropy = ">=6.0"
+dacite = ">=1.8.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = ">=7.4.0"
+pytest-cov = ">=4.1.0"
+tox = ">=4.6.0"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
