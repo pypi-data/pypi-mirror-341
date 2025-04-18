@@ -1,0 +1,3 @@
+[console_scripts]
+ftml-studio=src.ftml_studio.cli:main
+
