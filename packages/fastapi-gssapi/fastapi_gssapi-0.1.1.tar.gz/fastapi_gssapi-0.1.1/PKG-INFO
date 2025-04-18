@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: fastapi-gssapi
+Version: 0.1.1
+Summary: GSSAPI for FastAPI
+Project-URL: Homepage, https://github.com/bewing/fastapi-gssapi
+Project-URL: Issues, https://github.com/bewing/fastapi-gssapi/issues
+Author-email: Brandon Ewing <brandon.ewing@warningg.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Requires-Python: ~=3.9
+Requires-Dist: fastapi>=0.100.0
+Requires-Dist: gssapi<2,>=1.8.2
+Description-Content-Type: text/markdown
+
+fastapi-gssapi
+==============
+
+ASGI Middleware and FastAPI Dependency for adding Kerberos/GSS authentication
+to FastAPI
+
+Installation
+============
+Use your favorite package manager to install from PyPI
+
+Usage
+=====
+
+Middleware
+----------
+See the [FastAPI Advanced Middleware](https://fastapi.tiangolo.com/advanced/middleware/) documentation
+
+basic:
+
+```python
+from fastapi import FastAPI
+from fastapi_gssapi import GSSAPIMiddleware
+app = FastAPI()
+app.add_middleware(GSSAPIMiddleware)
+```
+
+Dependency
+----------
+See the [example app](https://github.com/bewing/fastapi-gssapi/blob/main/example/app.py)
