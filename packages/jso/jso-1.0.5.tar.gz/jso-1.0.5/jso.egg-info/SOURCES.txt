@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+setup.py
+jso/__init__.py
+jso/misc.so
+jso/misc_py.py
+jso.egg-info/PKG-INFO
+jso.egg-info/SOURCES.txt
+jso.egg-info/dependency_links.txt
+jso.egg-info/requires.txt
+jso.egg-info/top_level.txt

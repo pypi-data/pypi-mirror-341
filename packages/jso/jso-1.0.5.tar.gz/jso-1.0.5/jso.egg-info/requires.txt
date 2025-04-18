@@ -1,0 +1,3 @@
+pynetdicom
+pydicom
+cx_Oracle
