@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+service Bencher {
+  rpc evaluate_point(BenchmarkRequest) returns (EvaluationResult){};
+}
+
+// a benchmark request contains a point and the name of the benchmark
+message BenchmarkRequest {
+  string benchmark = 1;
+  Point point = 2;
+}
+
+// a point is a list of doubles
+message Point {
+  repeated double values = 1;
+}
+
+// an evaluation result just contains a double (for now)
+message EvaluationResult {
+  double value = 1;
+}
