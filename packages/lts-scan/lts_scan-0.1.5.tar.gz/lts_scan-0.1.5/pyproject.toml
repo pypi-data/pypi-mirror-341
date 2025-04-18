@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "lts-scan"
+version = "0.1.5"
+description = "Lightweight TLS Scanner using SSL Labs API"
+authors = ["Alexandre Meline <alexandre.meline.dev@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/alexandre-meline/LTS_scan"
+keywords = ["tls", "ssl", "scanner", "ssllabs", "security"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.11.16"
+
+[tool.poetry.scripts]
+lts-scan = "lts_scan.cli:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
