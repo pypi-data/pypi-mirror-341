@@ -1,0 +1,2 @@
+[ape_cli_subcommands]
+ape_tx = ape_tx._cli:cli

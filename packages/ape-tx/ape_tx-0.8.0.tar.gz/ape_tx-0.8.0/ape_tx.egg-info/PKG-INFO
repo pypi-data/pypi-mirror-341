@@ -1,0 +1,162 @@
+Metadata-Version: 2.4
+Name: ape-tx
+Version: 0.8.0
+Summary: ape-tx: transact from the command line
+Home-page: https://github.com/unparallaled-js/ape-tx
+Author: Juliya Smith
+Author-email: juliya@juliyasmith.com
+License: Apache-2.0
+Keywords: ethereum
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9,<4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: eth-ape<0.9,>=0.8.31
+Requires-Dist: click
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-xdist; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: hypothesis<7.0,>=6.2.0; extra == "test"
+Requires-Dist: ape-vyper; extra == "test"
+Provides-Extra: lint
+Requires-Dist: black>=25.1.0; extra == "lint"
+Requires-Dist: mypy>=1.15.0; extra == "lint"
+Requires-Dist: types-setuptools; extra == "lint"
+Requires-Dist: flake8>=7.2.0; extra == "lint"
+Requires-Dist: isort>=5.10.1; extra == "lint"
+Requires-Dist: mdformat>=0.7.22; extra == "lint"
+Requires-Dist: mdformat-gfm>=0.3.5; extra == "lint"
+Requires-Dist: mdformat-frontmatter>=0.4.1; extra == "lint"
+Requires-Dist: mdformat-pyproject>=0.0.2; extra == "lint"
+Provides-Extra: release
+Requires-Dist: setuptools>=75; extra == "release"
+Requires-Dist: wheel; extra == "release"
+Requires-Dist: twine; extra == "release"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: hypothesis<7.0,>=6.2.0; extra == "dev"
+Requires-Dist: ape-vyper; extra == "dev"
+Requires-Dist: black>=25.1.0; extra == "dev"
+Requires-Dist: mypy>=1.15.0; extra == "dev"
+Requires-Dist: types-setuptools; extra == "dev"
+Requires-Dist: flake8>=7.2.0; extra == "dev"
+Requires-Dist: isort>=5.10.1; extra == "dev"
+Requires-Dist: mdformat>=0.7.22; extra == "dev"
+Requires-Dist: mdformat-gfm>=0.3.5; extra == "dev"
+Requires-Dist: mdformat-frontmatter>=0.4.1; extra == "dev"
+Requires-Dist: mdformat-pyproject>=0.0.2; extra == "dev"
+Requires-Dist: setuptools>=75; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: commitizen; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pytest-watch; extra == "dev"
+Requires-Dist: IPython; extra == "dev"
+Requires-Dist: ipdb; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ape-tx
+
+Transact using the command line
+
+## Dependencies
+
+- [python3](https://www.python.org/downloads) version 3.9 or greater, python3-dev
+
+## Installation
+
+### via `pip`
+
+You can install the latest release via [`pip`](https://pypi.org/project/pip/):
+
+```bash
+pip install ape-tx
+```
+
+### via `setuptools`
+
+You can clone the repository and use [`setuptools`](https://github.com/pypa/setuptools) for the most up-to-date version:
+
+```bash
+git clone https://github.com/antazoey/ape-tx.git
+cd ape-tx
+python3 setup.py install
+```
+
+## Quick Usage
+
+Deploy contracts:
+
+```bash
+ape tx deploy MyContract arg0 arg1 --sender AccountAlias
+```
+
+Check balances:
+
+```bash
+ape tx bal AccountAlias --network ethereum:mainnet
+```
+
+Transfer money:
+
+```bash
+ape tx transfer --from AccountAlias --to 0x8656bDDC790dA239824eE2eA782d350c80AA2Cf4 --value "1 ETH"
+```
+
+View transaction traces:
+
+```bash
+ape tx trace 0x053cba5c12172654d894f66d5670bab6215517a94189a9ffc09bc40a589ec04d
+```
+
+Make calls:
+
+```bash
+ape tx call \
+  --network "ethereum:mainnet:alchemy" \
+   --contract 0x0A56d07a0B8Ba800358DdEEb20eb46a618BFBE27 \
+   --method balanceOf \
+   0x8656bDDC790dA239824eE2eA782d350c80AA2Cf4
+```
+
+Make transactions:
+
+```bash
+ape tx invoke \
+  --network "ethereum:mainnet:alchemy" \
+  --contract 0x0A56d07a0B8Ba800358DdEEb20eb46a618BFBE27 \
+  --method transfer \
+  --sender AccountAlias \
+  0x8656bDDC790dA239824eE2eA782d350c80AA2Cf4 123
+```
+
+## Development
+
+This project is in development and should be considered a beta.
+Things might not be in their final state and breaking changes may occur.
+Comments, questions, criticisms and pull requests are welcomed.
