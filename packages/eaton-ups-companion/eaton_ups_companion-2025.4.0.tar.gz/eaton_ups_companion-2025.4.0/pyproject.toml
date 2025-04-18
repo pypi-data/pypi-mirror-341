@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_scheme = "guess-next-dev"
+local_scheme = "node-and-date"
+
+[project]
+name = "eaton-ups-companion"
+dynamic = ["version"]
+dependencies = [
+  "aiohttp",
+]
+requires-python = ">=3.10"
+authors = [
+  {name = "Jimmy Everling", email = "jimmy@sockless.tech"},
+]
+description = "Asynchronous Python library for Eaton UPS Companion API"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["eaton", "ups companion", "ups"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/sockless-coding/eaton-ups-companion"
+Repository = "https://github.com/sockless-coding/eaton-ups-companion.git"
+"Bug Tracker" = "https://github.com/sockless-coding/eaton-ups-companion/issues"
