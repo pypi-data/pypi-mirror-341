@@ -1,0 +1,2 @@
+class HostFileManager:
+    pass

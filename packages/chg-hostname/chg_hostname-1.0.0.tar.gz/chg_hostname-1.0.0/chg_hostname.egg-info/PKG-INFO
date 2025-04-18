@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: chg-hostname
+Version: 1.0.0
+Summary: The chg_hostname project is a command-line tool designed to manage your system's host file. It allows users to back up the host file, restore it from a backup, and append new host entries based on a provided JSON configuration file (hosts.json). The tool also includes functionality to replace loopback addresses in the provided configuration.
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic>=2.11.3
+Requires-Dist: rich>=14.0.0
+Requires-Dist: typer>=0.15.2
+
+## Project Overview
+
+This project focuses on managing the system's host file, typically located at `/etc/hosts` on Unix-like systems. The primary goal is to provide a structured way to define and manipulate host-to-IP address mappings, often using a JSON configuration file `(hosts.json)`.  The project aims to simplify the process of adding, modifying, and backing up host file entries.  It's important to note that the scope of this project is specifically the management of the host file, and it is designed to work with a particular JSON schema.
+
+**hosts.json Structure**
+The `hosts.json` file is the core configuration file for this project. It uses a JSON format to define the host entries. Here's a breakdown of its structure:
+
+```javascript
+{
+  "loopback_ip": "10.0.0.0",
+  "host_entries": [
+    {
+      "ip": "10.0.0.0",
+      "hostname": "example.com"
+    },
+    {
+      "ip": "10.0.0.0",
+      "hostname": "example.com"
+    },
+    // ... more host entries
+  ]
+}
+```
+
+**loopback_ip (Optional):** This string field specifies the IP address of the current host on the network (e.g., "10.0.0.56"). It's important to understand that this is not necessarily the standard loopback address (127.0.0.1), but rather the actual network IP of the machine where this configuration is being used. This field is optional. The name it is due to this ip being replaced for the (127.0.0.1) where it does find a match in the host_entries
+
+**host_entries:** This is an array of objects, where each object defines a single host entry.
+
+**ip:** A string representing the IP address (e.g., "10.0.0.3"). The project uses the ipaddress module in Python to validate this IP.
+
+**hostname:** A string representing the hostname (e.g., "example.lan").
+
+### Scope of the Project:
+The `chg_hostname` project is specifically designed for managing the system's host file by appending new entries based on the provided hosts.json file format. It offers functionalities for backing up and restoring the entire host file. The project's scope is limited to these operations and does not include functionalities for dynamically managing DNS records, interacting with DNS servers, or modifying existing entries within the host file beyond the replacement of loopback addresses based on the loopback_ip in the configuration.

@@ -1,0 +1,44 @@
+[project]
+name = "chg-hostname"
+version = "1.0.0"
+description = "The chg_hostname project is a command-line tool designed to manage your system's host file. It allows users to back up the host file, restore it from a backup, and append new host entries based on a provided JSON configuration file (hosts.json). The tool also includes functionality to replace loopback addresses in the provided configuration."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.11.3", "rich>=14.0.0", "typer>=0.15.2"]
+
+[dependency-groups]
+dev = [
+  "black>=25.1.0",
+  "isort>=6.0.1",
+  "mypy>=1.15.0",
+  "pytest>=8.3.5",
+  "pytest-mock>=3.14.0",
+  "setuptools>=78.1.0",
+]
+
+
+[project.scripts]
+chg-hostname = "chg_hostname.__main__:main"
+
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.mypy]
+strict = true
+namespace_packages = true
+explicit_package_bases = true
+mypy_path = "chg_hostname"
+
+[tool.isort]
+profile = "black"
+src_paths = ["chg_hostname"]
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.pytest.ini_options]
+pythonpath = ["chg_hostname"]
+addopts = "-v"
