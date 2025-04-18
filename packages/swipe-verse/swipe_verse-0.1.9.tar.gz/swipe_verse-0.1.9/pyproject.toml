@@ -1,0 +1,93 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "swipe-verse"
+version = "0.1.9"
+description = "A multiverse card-based decision game with themes across different realities"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Michael" }
+]
+dependencies = [
+    "flet>=0.27.0",
+    "pillow>=9.0.0",
+    "pydantic>=2.0.0",
+    "aiohttp>=3.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.18.0",
+    "pytest-mock>=3.10.0",
+    "mypy>=1.0.0",
+    "ruff>=0.0.230",
+    "mkdocs>=1.3.0",
+    "mkdocs-material>=8.2.0",
+    "pytest-cov>=4.1.0",
+]
+
+[project.scripts]
+swipe-verse = "swipe_verse.main:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = "flet.*"
+ignore_missing_imports = true
+
+# Ignore missing stubs for common third-party libraries
+[[tool.mypy.overrides]]
+module = [
+  "PIL", "PIL.*",
+  "aiohttp", "aiohttp.*",
+  "pydantic", "pydantic.*",
+  "pytest", "pytest.*",
+  "swipe_verse.tui", "swipe_verse.tui.*",
+  "swipe_verse.cli", "swipe_verse.cli.*",
+]
+ignore_missing_imports = true
+
+# Relax strictness in test code
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+check_untyped_defs = false
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "swipe_verse.ui.*"
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+check_untyped_defs = false
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+asyncio_mode = "strict"
+asyncio_default_fixture_loop_scope = "function"
+
+## Include package files and scenario JSON files in distributions
+[tool.hatch.build.targets.wheel]
+include = ["swipe_verse/**"]
+
+[tool.hatch.build.targets.sdist]
+include = ["swipe_verse/**"]
