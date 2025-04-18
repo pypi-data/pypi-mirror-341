@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+GraphPlotYT.egg-info/PKG-INFO
+GraphPlotYT.egg-info/SOURCES.txt
+GraphPlotYT.egg-info/dependency_links.txt
+GraphPlotYT.egg-info/requires.txt
+GraphPlotYT.egg-info/top_level.txt
