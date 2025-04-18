@@ -1,0 +1,16 @@
+lib2opds/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+lib2opds/__main__.py,sha256=jyan2hNI4e42YZMQEKuzo4POKL-jX4tK7UUA7RMxkxo,3051
+lib2opds/config.py,sha256=GROYeOyrwmagTUKjsTJf9idD4CtQ_6c19FQ1ppU5kEE,2989
+lib2opds/ebooks.py,sha256=ekPA23KJxqCNQXhPCz_w8RQLbIXCc9X77_9yP7Cktgk,6980
+lib2opds/feeds.py,sha256=WsyeLpwilM3pZxt1_Wq_4PNrN32wRyIW69vbqrj938M,2700
+lib2opds/opds.py,sha256=zH9T2CxI4VIjAmV2x5mBhoVIrImt9RmXVmLZ3eObpKU,10815
+lib2opds/publications.py,sha256=3DTcakfIpBIqVoXWrctAJPIHtWY8TaBcnf0ZA5uylWI,1006
+lib2opds/repositories.py,sha256=TtMbp5_8xjINB8pXEccAr15mxgs-VA45X2oYjRfKFFw,8450
+lib2opds/sidecars.py,sha256=cWAMYVHCZM6oaC1RK42d1mk4s7zzQYty0oFhNmJfxBc,4536
+lib2opds/templates/acquisition-feed.xml,sha256=2A8Qn_3K28dC2OLw6uppvU_AyT-jsNw4bzNb6j9jdf8,2074
+lib2opds/templates/navigation-feed.xml,sha256=UrbW_0V3IWJZVLWL2RLbqv6XiZK2QDmQS-Woa_ApUe8,1661
+lib2opds-0.2.0.dist-info/METADATA,sha256=wDAsYO75Oql9bLiGAHfIEJjPAsKZjVFpW_2NkYxMmWo,44541
+lib2opds-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+lib2opds-0.2.0.dist-info/entry_points.txt,sha256=oBiorZJ5FGTC5n3SB6lnG8E6f9VY84GLOg2Rmnd12v8,51
+lib2opds-0.2.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+lib2opds-0.2.0.dist-info/RECORD,,
