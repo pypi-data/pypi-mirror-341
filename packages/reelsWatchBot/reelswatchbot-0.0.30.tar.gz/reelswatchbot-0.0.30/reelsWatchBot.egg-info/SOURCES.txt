@@ -1,0 +1,9 @@
+README.md
+setup.py
+reelsWatchBot/__init__.py
+reelsWatchBot/reelsWatchBot.py
+reelsWatchBot.egg-info/PKG-INFO
+reelsWatchBot.egg-info/SOURCES.txt
+reelsWatchBot.egg-info/dependency_links.txt
+reelsWatchBot.egg-info/requires.txt
+reelsWatchBot.egg-info/top_level.txt
