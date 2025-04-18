@@ -1,0 +1,21 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+sidtools/__init__.py
+sidtools/cli - Copy.py
+sidtools/cli.py
+sidtools/cli_og.py
+sidtools/cli_v2.py
+sidtools/cli_v3.py
+sidtools/s_make.py
+sidtools/s_make_old.py
+sidtools/s_run.py
+sidtools/s_store.py
+sidtools/s_store_og.py
+sidtools/s_store_v2.py
+sidtools.egg-info/PKG-INFO
+sidtools.egg-info/SOURCES.txt
+sidtools.egg-info/dependency_links.txt
+sidtools.egg-info/entry_points.txt
+sidtools.egg-info/top_level.txt
