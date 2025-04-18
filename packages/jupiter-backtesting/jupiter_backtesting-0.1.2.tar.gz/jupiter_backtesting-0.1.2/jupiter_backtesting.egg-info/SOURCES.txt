@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+jupiter_backtesting/__init__.py
+jupiter_backtesting/analyzer.py
+jupiter_backtesting/optimizer.py
+jupiter_backtesting/stats.py
+jupiter_backtesting/strategy.py
+jupiter_backtesting/utils.py
+jupiter_backtesting.egg-info/PKG-INFO
+jupiter_backtesting.egg-info/SOURCES.txt
+jupiter_backtesting.egg-info/dependency_links.txt
+jupiter_backtesting.egg-info/requires.txt
+jupiter_backtesting.egg-info/top_level.txt
