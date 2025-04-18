@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/jyelib/__init__.py
+src/jyelib/array.py
+src/jyelib/httpcli.py
+src/jyelib.egg-info/PKG-INFO
+src/jyelib.egg-info/SOURCES.txt
+src/jyelib.egg-info/dependency_links.txt
+src/jyelib.egg-info/requires.txt
+src/jyelib.egg-info/top_level.txt
+tests/test_arry.py
+tests/test_httpcli.py
