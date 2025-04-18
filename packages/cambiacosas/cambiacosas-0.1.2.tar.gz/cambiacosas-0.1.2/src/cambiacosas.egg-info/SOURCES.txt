@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/cambiacosas/__main__.py
+src/cambiacosas.egg-info/PKG-INFO
+src/cambiacosas.egg-info/SOURCES.txt
+src/cambiacosas.egg-info/dependency_links.txt
+src/cambiacosas.egg-info/entry_points.txt
+src/cambiacosas.egg-info/top_level.txt
+src/cambiacosas/administracion_archivo/__init__.py
+src/cambiacosas/administracion_archivo/edit_file.py
+src/cambiacosas/administracion_archivo/file_info.py
+src/cambiacosas/googleapi/__init__.py
+src/cambiacosas/googleapi/api_client.py
+src/cambiacosas/googleapi/gemini_options.py
