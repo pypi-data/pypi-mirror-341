@@ -1,0 +1,9 @@
+ordinalcorr/__init__.py,sha256=bQ58XQHz1qYqDpvHlGwQlGlBpme1q3F39rD1o1vnDY8,352
+ordinalcorr/dichotomous.py,sha256=NTZmt7PFp5ZIEk49VUG3x9abq8lwM01heLhzzMFfeZQ,7429
+ordinalcorr/polytomous.py,sha256=zMFtNJFO8vGyvoVxRupkwHVYoMm7aj5t4LjrEQYP3T0,7050
+ordinalcorr/types.py,sha256=XiUj6tpKOi-FcR0N0zkX1DrVIqfoocdYtfMZzp9rk6Y,166
+ordinalcorr/validation.py,sha256=UAjr5wkaFuyB9zK3BRATQCKVpLEEzrQxiCX5CnmZl5U,617
+ordinalcorr-0.5.2.dist-info/METADATA,sha256=6Oe-eai1sNOU4WBighnMD4dx66fs6c8O3asZdWaPSok,2911
+ordinalcorr-0.5.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ordinalcorr-0.5.2.dist-info/licenses/LICENSE,sha256=O-YtoaNyubXvoSnhl3DJ-U-Lnez8OCLBM43-lDghqe8,1092
+ordinalcorr-0.5.2.dist-info/RECORD,,
