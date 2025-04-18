@@ -1,0 +1,20 @@
+[project]
+name = "pillar-security"
+readme = "README.md"
+version = "0.0.9"
+dependencies = [
+    'wrapt>=1.16.0',
+    'requests>=2.26.0',
+]
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+test = [
+    "openai>=1.75.0",
+    "flake8>=7.2.0",
+    "pytest>=8.3.5",
+]
