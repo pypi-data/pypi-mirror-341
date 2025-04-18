@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="agresta_project_update_form" model="ir.ui.view">
+        <field name="name">Agresta Project updates</field>
+        <field name="model">project.update</field>
+        <field name="inherit_id" ref="project.project_update_view_form" />
+        <field name="arch" type="xml">
+            <data>
+                <field name="progress" position="replace">
+                    <field name="progress" string="Progress percent" class="oe_inline" editable="0"/> %%
+                    <field name="auto" invisible="1"/>
+                    <field name="project_execution_weight" invisible="1"/>
+                    <field name="total_budget"
+                                attrs="{'invisible': [('project_execution_weight', '!=', 'budget')]}" editable="0"/> €
+                    <field name="total_hours"
+                                attrs="{'invisible': [('project_execution_weight', '!=', 'budget')]}" editable="0"/> 
+                    <field name="material_expenses"
+                                attrs="{'invisible': [('project_execution_weight', '!=', 'budget')]}" editable="0"/>
+                    <field name="total_incomes"
+                                attrs="{'invisible': [('project_execution_weight', '!=', 'budget')]}" editable="0"/> 
+                    <field name="execution_value" 
+                                attrs="{'invisible': [('project_execution_weight', '!=', 'budget')]}" editable="0"/> 
+                </field>
+                <field name="progress" position="attributes">
+                    <attribute name="options">{'editable': False}</attribute>
+                </field>
+                <field name='project_id' position="attributes">
+                    <attribute name="invisible">0</attribute>
+                    <attribute name="readonly">1</attribute>
+                    <attribute name="options">{'editable': False}</attribute>
+
+                </field>
+                <xpath expr="/form/sheet/div" position="before">
+                    <div class="oe_button_box" name="button_box">
+                    <button name="button_recalculate"
+                            string="Recalculate"
+                            type="object"
+                            class="btn-primary"
+                            groups="agresta_project_budget.group_agresta_project_manager" 
+                            attrs="{'invisible': ['|',('project_execution_weight', '!=', 'budget'),('auto', '=', False)]}" data-hotkey="r" />
+                    </div>
+                </xpath>
+                <xpath expr="/form/sheet/notebook/page[@name='description']" position="after">
+                    <page string="Task updates"
+                        name="task_updates"
+                        id="task_updates_tab"
+                        groups="agresta_project_budget.group_agresta_project_user" 
+                        attrs="{'invisible': [('project_execution_weight', '!=', 'budget')]}">
+                        <group>
+                            <field name="currency_id" invisible="1"/>
+                            <field name="project_task_update_ids" mode="tree">
+                                <tree editable="top" string="Task Updates" default_order="date" col="6">
+                                    <field name="is_editable" invisible='1'/>
+                                    <field name="task_id" colspan="4" readonly="1"/>
+                                    <field name="date" colspan="4" readonly="1" />
+                                    <field name="execution_pcnt" colspan="2" attrs="{'readonly': [('is_editable', '!=', True)]}" />
+                                    <field name="current_execution" colspan="2"/>
+                                    <field name="budget_amount" colspan="2"/>
+                                </tree>
+                            </field>
+                            <span colspan="2" class="text-muted" >
+                                <i class="fa fa-lightbulb-o"/> You only can change percent value to task updates of last month. To create a new task update, please, enter to the task and create there. 
+                            </span>
+                        </group>
+                    </page>
+                </xpath>
+            </data>
+        </field>
+    </record>
+
+   <record id="agresta_project_update_list" model="ir.ui.view">
+        <field name="name">Project Update List</field>
+        <field name="model">project.update</field>
+        <field name="arch" type="xml">
+            <tree string="Tags">
+                <field name="project_id"></field>
+                <field name="date"></field>
+                <field name="total_budget"/>
+                <field name="progress"/>
+                <field name="total_execution"/>
+                <field name="total_hours"/>
+                <field name="material_expenses"/>
+                <field name="total_incomes"/>
+                <field name="execution_value"/>
+                <field name="real_time_evaluation"/>
+                <field name="project_hourly_price"  avg="Media precio hora" />
+                <field name="project_allocated_hours"/>
+                <field name="project_hourly_expenses"/>
+                <field name="project_total_expenses"/>
+                <field name="project_balance_hours"/>
+                <field name="project_execution_kpi"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="agresta_update_search" model="ir.ui.view">
+        <field name="name">agresta.update.search</field>
+        <field name="model">project.update</field>
+        <field name="arch" type="xml">
+        <search string="Search Update">
+            <field name="name"/>
+            <field name="project_id" invisible="1"/>
+            <field name="user_id"/>
+            <field name="description"/>
+            <field name="status"/>
+            <filter name="last_updates" string="Ultimas actualizaciones" domain="[
+                    ('date', '&gt;=', (context_today() + relativedelta(days=-11)).strftime('%Y-%m-%d'))
+                    ]"/>
+            <separator/>
+            <filter string="My Updates" name="my_updates" domain="[('user_id', '=', uid)]"/>
+            <filter string="Followed Updates" name="followed_updates" domain="[('message_is_follower', '=', True)]"/>
+            <separator/>
+            <filter string="My Projects" name="my_projects" domain="[('project_id.user_id', '=', uid)]"/>
+            <filter string="Followed Projects" name="followed_projects" domain="[('project_id.message_is_follower', '=', True)]"/>
+            <separator/>
+            <filter string="On Track" name="on_track" domain="[('status', '=', 'on_track')]"/>
+            <filter string="At Risk" name="at_risk" domain="[('status', '=', 'at_risk')]"/>
+            <filter string="Off Track" name="off_track" domain="[('status', '=', 'off_track')]"/>
+            <filter string="On Hold" name="on_hold" domain="[('status', '=', 'on_hold')]"/>
+            <separator/>
+            <filter name="date" string="Date" date="date"/>
+            <group expand="0" string="Group By">
+                <filter string="Proyecto" name="project_id" context="{'group_by': 'project_id'}"/>
+                <filter string="Fecha" name="date" context="{'group_by': 'date'}"/>
+                <filter string="Plan" name="project_analytic_plan" context="{'group_by': 'project_analytic_plan'}"/>
+                <filter string="Estado" name="status" context="{'group_by': 'status'}"/>
+            </group>
+        </search>
+        </field>
+    </record>        
+
+
+    <record id="agresta_project_update" model="ir.actions.act_window">
+        <field name="name">Project Updates</field>
+        <field name="res_model">project.update</field>
+        <field name="view_mode">tree,pivot,graph,form</field>
+        <field name="domain">[('auto', '=', True)]</field>
+        <field name="context">{"search_default_last_updates":1}</field>
+        <field name="search_view_id" ref="agresta_update_search"/>
+    </record>
+    <record id="project_update_action_view_tree" model="ir.actions.act_window.view">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="agresta_project_update_list"/>
+        <field name="act_window_id" ref="agresta_project_update"/>
+    </record>
+
+    <menuitem 
+        id="show_updates"
+        name="Actualizaciones de proyecto"
+        parent="project.menu_project_report"
+        action="agresta_project_update"
+        groups="group_agresta_project_manager"
+        sequence="30"/>
+</odoo>
