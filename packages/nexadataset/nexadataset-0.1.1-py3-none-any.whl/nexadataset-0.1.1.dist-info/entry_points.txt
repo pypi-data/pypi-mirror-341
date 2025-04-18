@@ -1,0 +1,2 @@
+[console_scripts]
+nexadataset = nexadataset.cli.main:cli
