@@ -1,0 +1,5 @@
+grpcio
+grpcio-tools
+pydantic
+PyJWT
+nest_asyncio
