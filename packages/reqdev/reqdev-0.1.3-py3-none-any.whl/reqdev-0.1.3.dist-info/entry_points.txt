@@ -1,0 +1,2 @@
+[console_scripts]
+reqdev = requirements.requirements.cli:main
