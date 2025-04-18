@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+apis/__init__.py
+apis/media.py
+apis/suscribe.py
+moviepilot_mcp.egg-info/PKG-INFO
+moviepilot_mcp.egg-info/SOURCES.txt
+moviepilot_mcp.egg-info/dependency_links.txt
+moviepilot_mcp.egg-info/requires.txt
+moviepilot_mcp.egg-info/top_level.txt
+schemas/__init__.py
+schemas/subscribe.py
