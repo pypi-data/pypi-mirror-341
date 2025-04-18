@@ -1,0 +1,3 @@
+[console_scripts]
+local_env_setup=local_env_setup.scripts.local_env_setup:main
+
