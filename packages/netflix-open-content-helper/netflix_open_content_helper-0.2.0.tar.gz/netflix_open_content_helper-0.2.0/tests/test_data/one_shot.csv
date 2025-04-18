@@ -1,0 +1,2 @@
+project,name,frame_start,frame_end,renumber
+sparks,sparks.%04d.exr,5000,5001,1001

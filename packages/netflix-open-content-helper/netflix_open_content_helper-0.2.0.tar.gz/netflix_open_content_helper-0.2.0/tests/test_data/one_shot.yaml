@@ -1,0 +1,6 @@
+---
+- project: sparks
+  name: sparks.%04d.exr
+  frame_start: 5000
+  frame_end: 5001
+  renumber: 1001
