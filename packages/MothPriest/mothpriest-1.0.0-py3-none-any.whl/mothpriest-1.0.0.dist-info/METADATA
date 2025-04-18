@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: MothPriest
+Version: 1.0.0
+Summary: Module for creating intuitive and efficient file parsers
+Author: Cameron Churchwell
+Author-email: cameronchurchwell@icloud.com
+Requires-Dist: pathlib
+Requires-Dist: typing
+Requires-Dist: Pillow
+Requires-Dist: pytest
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
