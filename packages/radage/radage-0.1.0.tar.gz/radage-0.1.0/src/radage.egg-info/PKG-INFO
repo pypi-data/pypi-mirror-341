@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: radage
+Version: 0.1.0
+Summary: Radioisotopic analysis and plotting in python.
+Home-page: https://github.com/sarttiso/radage
+Author: Adrian Tasistro-Hart
+Author-email: adrian@tasistro-hart.com
+License: GPL-3.0-only
+Project-URL: Documentation, https://adrian.tasistro-hart.com/radage
+Project-URL: Source, https://github.com/sarttiso/radage
+Project-URL: Changelog, https://adrian.tasistro-hart.com/radage/changelog.html
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: importlib-metadata; python_version < "3.8"
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+Requires-Dist: matplotlib
+Provides-Extra: testing
+Requires-Dist: setuptools; extra == "testing"
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: pytest-cov; extra == "testing"
+Dynamic: license-file
+
+# radage
+**Adrian Tasistro-Hart**
+
+---
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0)
+
+This python package provides classes and functions for working with isotopic measurements of uranium, thorium, and lead to produce radioisotopic dates.
