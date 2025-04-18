@@ -1,0 +1,12 @@
+README.md
+setup.py
+scripts/gen_grid_shape.py
+scripts/regrid.py
+src/fauxioapi/__init__.py
+src/fauxioapi/fauxioapi.py
+src/fauxioapi.egg-info/PKG-INFO
+src/fauxioapi.egg-info/SOURCES.txt
+src/fauxioapi.egg-info/dependency_links.txt
+src/fauxioapi.egg-info/requires.txt
+src/fauxioapi.egg-info/top_level.txt
+src/fauxioapi/data/griddesc.txt
