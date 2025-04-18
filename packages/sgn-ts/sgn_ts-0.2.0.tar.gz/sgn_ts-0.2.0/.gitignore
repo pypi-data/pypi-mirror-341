@@ -1,0 +1,13 @@
+# artifacts
+*.egg-info
+build/
+dist/
+site/
+__pycache__
+_version.py
+.coverage
+*in.txt
+*out.txt
+
+# IDE files
+.idea/
