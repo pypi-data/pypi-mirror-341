@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+hello1314996/__init__.py
+hello1314996/core.py
+hello1314996.egg-info/PKG-INFO
+hello1314996.egg-info/SOURCES.txt
+hello1314996.egg-info/dependency_links.txt
+hello1314996.egg-info/top_level.txt
