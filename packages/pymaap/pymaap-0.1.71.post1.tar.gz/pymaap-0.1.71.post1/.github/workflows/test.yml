@@ -1,0 +1,56 @@
+name: Run PyMAAP Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: [3.10, 3.11, 3.12]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pytest pytest-cov pytest-html
+          pip install -e .[dev]
+
+      - name: Run tests with HTML + terminal coverage
+        run: |
+          pytest -v --cov=pymaap --cov-report=term --cov-report=html --html=pytest-report.html
+
+      - name: Upload pytest HTML report
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: pytest-report-${{ matrix.python-version }}
+          path: pytest-report.html
+
+      - name: Upload coverage report to gh-pages
+        if: ${{ matrix.python-version == '3.12' }}
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git fetch
+          git switch gh-pages
+          rm -rf reports/pymaap
+          mkdir -p reports/pymaap
+          cp -r htmlcov/* reports/pymaap/
+          git add reports/pymaap
+          git commit -m "Update coverage report for $GITHUB_SHA" || echo "No changes"
+          git push origin gh-pages
