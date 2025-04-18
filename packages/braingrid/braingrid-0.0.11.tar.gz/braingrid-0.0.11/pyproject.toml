@@ -1,0 +1,45 @@
+[project]
+name = "braingrid"
+version = "0.0.11"
+description = ""
+authors = [
+    {name = "Kennete Basco",email = "97374837+kankenny@users.noreply.github.com"}
+]
+license = { text = "MIT License" }
+requires-python = ">=3.11,<3.13"
+
+dependencies = []
+
+[project.scripts]
+braingrid = "braingrid:main"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+flake8 = "^7.1.2"
+isort = "^6.0.1"
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.venv
+  | \.env
+  | build
+  | dist
+  | \.mypy_cache
+)\
+'''
+
+[tool.commitizen]
+version = "0.0.11"
+tag_format = "v$version"
+version_files = [
+  "pyproject.toml:version",
+  "braingrid/__version__.py"
+]
