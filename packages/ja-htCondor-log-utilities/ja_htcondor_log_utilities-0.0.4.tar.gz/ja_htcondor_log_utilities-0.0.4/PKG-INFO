@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: ja_htCondor_log_utilities
+Version: 0.0.4
+Summary: Utilities to analize, summarize, and visualize condor log files
+Author-email: Joseph Areeda <joseph.areeda@ligo.org>
+Project-URL: Bug Tracker, https://git.ligo.org/joseph-areeda/ja_htcondor_log_utilities/-/issues
+Project-URL: Source Code, https://git.ligo.org/joseph-areeda/ja_htcondor_log_utilities
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: <3.12,>=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gwpy>=3.0.7
+Requires-Dist: matplotlib>=3.3.0
+Requires-Dist: numpy
+Requires-Dist: astropy
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: ja-webutils
+Dynamic: license-file
+
+# htCondor log utilities
+
+The problem we are trint to solve is how to find which log file out
+of sveral thousand jobs to examne manually.
+
+## Programs
+
+- scalng-log-analyzer - Coverts one or more htCondor job logs to
+  a CSV file for import into summary and visualization programs.

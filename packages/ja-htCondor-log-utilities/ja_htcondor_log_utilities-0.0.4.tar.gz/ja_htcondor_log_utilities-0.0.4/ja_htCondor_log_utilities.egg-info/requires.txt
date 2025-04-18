@@ -1,0 +1,7 @@
+gwpy>=3.0.7
+matplotlib>=3.3.0
+numpy
+astropy
+python-dateutil
+pytz
+ja-webutils

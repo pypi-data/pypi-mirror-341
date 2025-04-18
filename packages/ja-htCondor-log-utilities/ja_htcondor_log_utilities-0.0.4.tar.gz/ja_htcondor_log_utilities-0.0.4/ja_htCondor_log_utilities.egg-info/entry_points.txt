@@ -1,0 +1,2 @@
+[console_scripts]
+scaling-log-analyzer = condor_log_utils.scaling_log_analyzer:main

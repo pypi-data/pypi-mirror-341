@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+qodana.yaml
+tox.ini
+condor_log_utils/JobLog.py
+condor_log_utils/__init__.py
+condor_log_utils/_version.py
+condor_log_utils/scaling_log_analyzer.py
+ja_htCondor_log_utilities.egg-info/PKG-INFO
+ja_htCondor_log_utilities.egg-info/SOURCES.txt
+ja_htCondor_log_utilities.egg-info/dependency_links.txt
+ja_htCondor_log_utilities.egg-info/entry_points.txt
+ja_htCondor_log_utilities.egg-info/requires.txt
+ja_htCondor_log_utilities.egg-info/top_level.txt
