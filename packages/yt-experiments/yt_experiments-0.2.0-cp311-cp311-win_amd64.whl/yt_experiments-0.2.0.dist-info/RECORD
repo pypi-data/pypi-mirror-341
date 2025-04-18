@@ -1,0 +1,9 @@
+yt_experiments/__init__.py,sha256=rDYoixqZCOqxTa0ttlc3_Kq7fcmKWx8uzxLclvPQxTU,74
+yt_experiments/_version.py,sha256=0D6srYi9ejPUnwpjVmDoJB-oMuBqPSiP50LPRoM8G0I,23
+yt_experiments/octree/converter.cp311-win_amd64.pyd,sha256=-xUnY2_WJZXSLHP8flFsegzuxEHlPe85ksLqODBqVTM,218112
+yt_experiments/octree/converter.pyx,sha256=YT98k-qB6ZSP_RlrYpyhqQ6RaO8KEW17quUbmcTSjco,9759
+yt_experiments-0.2.0.dist-info/licenses/LICENSE,sha256=rABI0uQ-nhv2sMAsq-iMZURjPDLw8X0LEHDrS5kovRs,1529
+yt_experiments-0.2.0.dist-info/METADATA,sha256=WUSSUAHZxeXMKepCYcfdsBl0hlzy0FLW_9lHGXvZVxs,2818
+yt_experiments-0.2.0.dist-info/WHEEL,sha256=_ZWIY2n7n6SpiuIFl1-RvcMp4Ty36T57FKf-7NzqZHM,101
+yt_experiments-0.2.0.dist-info/top_level.txt,sha256=kwSwofS1RckMqHYaQCLM65TUY9fYcycjWJ1GGPvhPmM,15
+yt_experiments-0.2.0.dist-info/RECORD,,
