@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: rick-portal-gun
+Version: 0.4.1
+Summary: Add your description here
+Author-email: Sebastián Ramírez <tiangolo@gmail.com>
+Requires-Python: >=3.10
