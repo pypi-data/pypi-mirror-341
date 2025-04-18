@@ -1,0 +1,10 @@
+matplotlib
+pyvisa
+wxPython
+lxml
+
+[nidaqmx]
+nidaqmx
+
+[zhinst]
+zhinst
