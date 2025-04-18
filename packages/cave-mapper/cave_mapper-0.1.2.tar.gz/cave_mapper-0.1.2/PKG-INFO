@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: cave-mapper
+Version: 0.1.2
+Summary: Tools for mapping between objects and representations in the CAVE ecosystem
+Project-URL: Homepage, https://bdpedigo.github.io/cave-mapper/
+Project-URL: Repository, https://github.com/bdpedigo/cave-mapper.git
+Project-URL: Issues, https://github.com/bdpedigo/cave-mapper/issues
+Author-email: Ben Pedigo <benjamindpedigo@gmail.com>
+License-Expression: MIT
+Requires-Python: <3.13,>=3.10
+Requires-Dist: caveclient[cv]>=7.7.0
+Requires-Dist: mkdocs-material>=9.6.11
+Requires-Dist: mkdocs>=1.6.1
+Requires-Dist: point-cloud-utils>=0.34.0
+Description-Content-Type: text/markdown
+
+# cave-mapper
+
+Tools for mapping between objects and representations in the Connectome Annotation and
+Versionining Engine (CAVE) ecosystem.
+
+This package is a work in progress and is mainly a place to stash functions that I
+find useful.
+
+## Installation
+
+```bash
+pip install cave-mapper
+```
+
+or
+
+```bash
+uv pip install cave-mapper
+```
+
+or 
+
+```bash
+uv add install cave-mapper
+```
+
+## Available Functions
+
+- `map_points_via_mesh`: This takes points and a root ID (likely points that were annotated on the surface of that object) and maps them to voxels/supervoxel IDs that are guaranteed to be part of the root ID.
