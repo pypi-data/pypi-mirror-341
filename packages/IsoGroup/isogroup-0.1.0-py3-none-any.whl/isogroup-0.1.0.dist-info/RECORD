@@ -1,0 +1,10 @@
+isogroup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+isogroup/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+isogroup/base/cluster.py,sha256=vjASAE0g3Mr7nlp-ZMTYPDZrSiHd6osN8zRYweCec9k,1294
+isogroup/base/feature.py,sha256=RsVvuOiNbtxL4lO6uQhtHhpol9_nD5hy7uNF-gA3sdw,748
+isogroup/base/sample.py,sha256=PR2TNC_4MHh1mbCtYMOZ_AnK3BBO006P3wjU7gJQwSE,458
+isogroup/ui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+isogroup-0.1.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+isogroup-0.1.0.dist-info/METADATA,sha256=zyK05-_RPrjVFkpFT2jO_frSgS9kd9KKw2-H20gfTys,630
+isogroup-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+isogroup-0.1.0.dist-info/RECORD,,
