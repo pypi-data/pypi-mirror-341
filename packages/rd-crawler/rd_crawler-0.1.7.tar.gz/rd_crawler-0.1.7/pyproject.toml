@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rd_crawler"
+version = "0.1.7"
+description = "중소기업 R&D 사업정보 수집 크롤러"
+readme = "README.md"
+authors = [
+    {name = "Dongsoo Kim"}
+]
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "scrapy>=2.11.0",
+    "pandas",
+    "openpyxl",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "mypy",
+    "pytest",
+    "pytest-cov",
+]
+
+[project.scripts]
+rd-crawler = "rd_crawler.cli:main"
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/rd_crawler"
+"Bug Tracker" = "https://github.com/yourusername/rd_crawler/issues"
+
+[tool.setuptools]
+packages = ["rd_crawler", "rd_crawler.spiders"]
+package-data = {"rd_crawler" = ["*.txt", "keywords.txt"]}
+include-package-data = true
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
