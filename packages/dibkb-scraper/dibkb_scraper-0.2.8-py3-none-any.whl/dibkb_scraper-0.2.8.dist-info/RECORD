@@ -1,0 +1,9 @@
+dibkb_scraper/__init__.py,sha256=rp6oSmBDqO8TS6kPueVWbjPHfaQBQWlmQAfghiWQnWQ,170
+dibkb_scraper/amazon.py,sha256=mZFiWcBZfd18hTEcaxOQDfDcFiHV90UO1tjiI7LND_M,16039
+dibkb_scraper/models.py,sha256=xutUAiBLlkSxpFWQxZ4vq6RPlTHGT0lWUMOyERKbm0o,1502
+dibkb_scraper/playwright.py,sha256=DcMUkYEeZraBX62e5w_CogfFVk4qij7XEe76P3YZyVo,4298
+dibkb_scraper/utils.py,sha256=UjzLd-z4P1F6_ThSFOZz3QcKeFAk2MerG8yiGAf9PgM,1815
+dibkb_scraper-0.2.8.dist-info/METADATA,sha256=wXnMrEtt2esJOE_okI8ap9nc79gbcJ4MMm8VB-CW8OM,9107
+dibkb_scraper-0.2.8.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dibkb_scraper-0.2.8.dist-info/top_level.txt,sha256=WXVe3ZKe-nzZCYn3pVW17Aj6HH0sTis1c2giuUPsX8k,14
+dibkb_scraper-0.2.8.dist-info/RECORD,,
