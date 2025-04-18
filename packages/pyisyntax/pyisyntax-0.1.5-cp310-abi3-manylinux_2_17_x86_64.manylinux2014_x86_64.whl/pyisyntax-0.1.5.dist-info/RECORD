@@ -1,0 +1,11 @@
+isyntax/__init__.py,sha256=m4BuPQ8bPeEoltBIpWdyHiZjXh4rTrnXyQxa71YtQNA,66
+isyntax/_pyisyntax.abi3.so,sha256=sM7Ixld6WUh2KPsguIBKsPWSio0S7WyX4xRXncdFpFA,1763376
+isyntax/wrapper.py,sha256=ji8VtbtEzR5r3pk0Fra3HgHifrGjbLoLNurwvUciANo,8301
+isyntax/lowlevel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+isyntax/lowlevel/io_management.py,sha256=9Ruh8XldrGYp8x_5H_WvuV0cF8LMMiKcHz8ka9eufWQ,3571
+isyntax/lowlevel/libisyntax.py,sha256=-8h9K12l4nUm1Jp2CCPq4G9Ewc7bM1u0t4yr0QoMCBY,7644
+pyisyntax-0.1.5.dist-info/METADATA,sha256=uNcRuyzZoZh_-DVMPYMS-a1Avlw3fiSHJ5sXYraghpQ,2255
+pyisyntax-0.1.5.dist-info/WHEEL,sha256=n4hg-nagCjZO4vg_VJwXcJnyNReL-Zpu5r-87M-37fI,149
+pyisyntax-0.1.5.dist-info/top_level.txt,sha256=prW7-iPkw91u_XTOzNEwXHwtJedbt531Zk4EXss7CkY,8
+pyisyntax-0.1.5.dist-info/RECORD,,
+pyisyntax-0.1.5.dist-info/licenses/LICENSE,sha256=eKo8d-7o2VI1N6WpXbAPFDjlUt-zPcTh15qDBbmdvnc,1056
