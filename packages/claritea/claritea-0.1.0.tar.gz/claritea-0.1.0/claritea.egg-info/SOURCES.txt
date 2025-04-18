@@ -1,0 +1,8 @@
+README.md
+claritea.py
+pyproject.toml
+claritea.egg-info/PKG-INFO
+claritea.egg-info/SOURCES.txt
+claritea.egg-info/dependency_links.txt
+claritea.egg-info/requires.txt
+claritea.egg-info/top_level.txt
