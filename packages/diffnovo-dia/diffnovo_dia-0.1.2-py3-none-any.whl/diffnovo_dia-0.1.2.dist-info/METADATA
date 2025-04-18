@@ -1,0 +1,177 @@
+Metadata-Version: 2.4
+Name: diffnovo-dia
+Version: 0.1.2
+Summary: Transformer-diffusion de novo peptide sequencing for data-independent acquisition mass spectrometry
+Author-email: Shiva Ebrahimi <shivaebrahimi@my.unt.edu>
+License: Apache 2.0
+Project-URL: Homepage, https://github.com/Biocomputing-Research-Group/DiffNovo-DIA
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lightning<2.1,>=2.0
+Requires-Dist: pytorch-lightning<2.0,>=1.9
+Requires-Dist: pyteomics>=4.6
+Requires-Dist: torch<2.1,>=2.0
+Requires-Dist: numpy<2.0
+Requires-Dist: numba>=0.48.0
+Requires-Dist: lxml>=4.9.1
+Requires-Dist: h5py>=3.12.1
+Requires-Dist: einops>=0.4.1
+Requires-Dist: tqdm>=4.65.0
+Requires-Dist: lark>=1.1.4
+Requires-Dist: selfies>=2.1.1
+Requires-Dist: sortedcontainers>=2.4.0
+Requires-Dist: dill>=0.3.6
+Requires-Dist: rdkit>=2023.03.1
+Requires-Dist: pillow>=9.4.0
+Requires-Dist: spectrum-utils>=0.4.1
+Requires-Dist: tensorboard
+Requires-Dist: psutil>=6.1.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: pandas>=2.0.2
+Requires-Dist: transfusion_asr>=0.1.0
+Dynamic: license-file
+
+
+# DiffNovo_DIA
+## Transformer-Diffusion de novo peptide sequencing for data-independent acquisition mass spectrometry.
+ 
+DiffNovo_DIA is an extension of the Transformer_DIA model that integrates a transformer architecture with a diffusion model to improve de novo peptide sequencing from data-independent acquisition (DIA) mass spectrometry.
+
+---
+
+## Installation
+
+To manage dependencies efficiently, we recommend using [conda](https://docs.conda.io/en/latest/). Start by creating a dedicated conda environment:
+
+```sh
+conda create --name diffnovo-dia python=3.10
+```
+
+Activate the environment:
+
+```sh
+conda activate diffnovo-dia
+```
+
+Install DiffNovo_DIA and its dependencies via pip:
+
+```sh
+pip install diffnovo-dia
+```
+
+To verify a successful installation, check the command-line interface:
+
+```sh
+diffnovo-dia --help
+```
+
+---
+
+
+
+
+## Data Preprocessing 
+### Feature Extraction  
+
+To use DiffNovo_DIA, you must first generate a feature file that serves as structured input to the model. We provide a script which takes your spectrum and feature files as input and produces a pickle file containing the formatted features. The generated features include:
+
+- **Keys**: Peptide sequences 
+- **Values**: List containing the following attributes: 
+  - `precursor_mz` 
+  - `precursor_charge` 
+  - `scan_list_middle` 
+  - `ms1` 
+  - `mz_list` 
+  - `int_list` 
+  - `neighbor_right_count` 
+  - `neighbor_size_half` 
+
+To run the script, use the provided script feature_extractor.py to generate feature file required by Transformer_DIA and DiffNovo_DIA models. The script takes the following inputs:
+
+- A feature CSV file
+- An MGF spectrum file
+It will generate a pickled feature file compatible with both diffnovo_dia and transformer_dia models.
+
+```sh
+python feature_extractor.py --feature_file your_feature.csv --spectrum_file your_spectra.mgf --output_file output_features.pkl
+```
+
+### MGF Annotation 
+Use this script to annotate .mgf files with peptide sequences for models like PepNet, DiffNovo, Transformer-DIA and DiffNovo_DIA. The annotation process links each precursor ion in feature file to spectra in the MGF file.
+
+For Transformer-DIA and DiffNovo_DIA, the recommended selection mode is five_rt, which automatically selects the top five spectra whose retention times are closest to the mean retention time of the corresponding precursor ion. The selection spectra for annotation should be aligned with spectra selection in feature extraction — for example, we used five_rt for both.
+
+You can run the script using:
+
+For annotating with PepNet, set the model_name to pepnet. For other models, leave the model_name empty.
+
+```sh
+python annotate_mgf.py --model_name pepnet --spectrum_file input.mgf --feature_file features.csv --selection five_rt
+```
+If you're not using PepNet, simply leave model_name empty:
+
+```sh
+python annotate_mgf.py --model_name "" --spectrum_file input.mgf --feature_file features.csv --selection five_rt
+```
+
+---
+Both feature_extractor.py and annotate_mgf.py are located in the data_utils/ directory.
+
+
+## Usage
+
+### Predict Peptide Sequences
+
+DiffNovo_DIA predicts peptide sequences from MS/MS spectra stored in MGF files. Predictions are saved as a CSV file:
+
+```sh
+diffnovo-dia --mode=denovo --model=pretrained_checkpoint.ckpt --peak_path=path/to/spectra.mgf --peak_feature=path/to/precursor_feature.pkl
+```
+
+---
+
+### Evaluate *de novo* Sequencing Performance
+
+To assess the performance of *de novo* sequencing against known annotations:
+
+```sh
+diffnovo-dia --mode=eval --model=pretrained_checkpoint.ckpt --peak_path=path/to/spectra.mgf --peak_feature=path/to/precursor_feature.pkl
+```
+
+Annotations in the MGF file must include peptide sequences in the `SEQ` field.
+
+---
+
+### Train a New Model
+
+To train a new Transformer model from scratch, provide labeled training and validation datasets in MGF format:
+
+```sh
+diffnovo-dia --mode=train --peak_path=path/to/train/annotated_spectra.mgf \ 
+--peak_feature=path/to/train/precursor_feature.pkl \
+--peak_path_val=path/to/validation/annotated_spectra.mgf \
+--peak_feature_val==path/to/validation/precursor_feature.pkl
+```
+
+MGF files must include peptide sequences in the `SEQ` field.
+
+---
+
+### Fine-Tune an Existing Model
+
+To fine-tune a pretrained Transformer-DIA model, set the `--train_from_scratch` parameter to `false`:
+
+```sh
+diffnovo-dia --mode=train --model=pretrained_checkpoint.ckpt \
+--peak_feature=path/to/train/precursor_feature.pkl \
+--peak_path_val=path/to/validation/annotated_spectra.mgf \
+--peak_feature_val==path/to/validation/precursor_feature.pkl
+```
+
+---
+
+
