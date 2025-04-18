@@ -1,0 +1,51 @@
+Metadata-Version: 2.4
+Name: jsonblob
+Version: 0.0.1
+Summary: Non official jsonblob api client
+Author-email: Roman Smolnyk <poma23324@gmail.com>
+Project-URL: Homepage, https://jsonblob.com/api
+Keywords: jsonblob
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: requests
+Dynamic: license-file
+
+# jsonblob
+
+Non official jsonblob api client
+
+## API
+
+<https://jsonblob.com/api>
+
+## Usage
+
+```python
+from jsonblob import JSONBlobClient
+
+json_blob = JSONBlobClient()
+
+blob_id = json_blob.create({"hello": "world"})
+success = json_blob.update({"zebra": "bebra"})
+
+print(json_blob.get(blob_id))
+
+```
+
+```python
+from jsonblob import JSONBlobStorage
+
+json_blob = JSONBlobStorage(keys_blob_id = None)
+
+print(json_blob.keys_blob_id)
+print(json_blob.keys)
+
+blob_id = json_blob.set("Zebra", {"hello": "world"})
+
+print(json_blob.get("Zebra"))
+
+```
