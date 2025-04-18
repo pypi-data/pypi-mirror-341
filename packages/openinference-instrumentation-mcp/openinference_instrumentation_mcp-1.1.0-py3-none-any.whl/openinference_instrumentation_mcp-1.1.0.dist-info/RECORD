@@ -1,0 +1,8 @@
+openinference/instrumentation/mcp/__init__.py,sha256=0ddrN9McGSKZfwSUs6O8UYDgc8I57HBo0slsU7x9I1E,2603
+openinference/instrumentation/mcp/package.py,sha256=sy05sKsbtiHJiFTVzc4YiahRCVh6RGvA2J2ufwomeBY,33
+openinference/instrumentation/mcp/version.py,sha256=LGVQyDsWifdACo7qztwb8RWWHds1E7uQ-ZqD8SAjyw4,22
+openinference_instrumentation_mcp-1.1.0.dist-info/METADATA,sha256=glSlLgja2mhMBBfxj2MiRkJYbmM7k8Z6drKgMDyfFeM,1713
+openinference_instrumentation_mcp-1.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+openinference_instrumentation_mcp-1.1.0.dist-info/entry_points.txt,sha256=vmFnoasmEdrPiiAZJkvEdr7UiosL4Aw74YVOd47lmEU,171
+openinference_instrumentation_mcp-1.1.0.dist-info/licenses/LICENSE,sha256=x_Y7OX-lWxSUhmKoivlrD6WN3jWlIHxdug8BJv2SI34,10870
+openinference_instrumentation_mcp-1.1.0.dist-info/RECORD,,
