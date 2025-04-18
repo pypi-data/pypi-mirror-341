@@ -1,0 +1,6 @@
+werkflow-core
+docker
+werkflow-file
+werkflow-secrets
+werkflow-shell
+werkflow-system
