@@ -1,0 +1,5 @@
+[openinference_instrumentor]
+beeai = openinference.instrumentation.crewai:BeeAIInstrumentor
+
+[opentelemetry_instrumentor]
+beeai = openinference.instrumentation.crewai:BeeAIInstrumentor
