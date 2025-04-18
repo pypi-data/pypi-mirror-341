@@ -1,0 +1,13 @@
+README.md
+setup.py
+dna_analyzer/__init__.py
+dna_analyzer/cpg_analyzer.py
+dna_analyzer/sequence_analyzer.py
+dna_analyzer/utils.py
+dna_analyzer.egg-info/PKG-INFO
+dna_analyzer.egg-info/SOURCES.txt
+dna_analyzer.egg-info/dependency_links.txt
+dna_analyzer.egg-info/requires.txt
+dna_analyzer.egg-info/top_level.txt
+tests/__init__.py
+tests/test_analyzers.py
