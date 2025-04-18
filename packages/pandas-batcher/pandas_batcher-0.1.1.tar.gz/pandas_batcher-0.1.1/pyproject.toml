@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling>=1.24"]   
+build-backend = "hatchling.build"
+
+[project]
+name = "pandas-batcher"           
+version = "0.1.1"
+description = "Reads data in batches, applies pandas transformations (row-level transformations only), writes the data in batches locally or to GCP or Azure cloud providers."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Ali Al-Gburi", email = "ali.al-gburi@dataroots.io"}]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/datarootsio/pandas-batcher"
+Issues   = "https://github.com/datarootsio/pandas-batcher/issues"
+
+[tool.hatch.version]
+path = "src/pandas_batcher/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pandas_batcher"]
