@@ -1,0 +1,52 @@
+site_name: bayes-econ
+repo_url: https://github.com/thomaspinder/bayes-econ
+site_url: https://thomaspinder.github.io/bayes-econ
+site_description: A Python package for Bayesian economic analysis
+site_author: Thomas Pinder
+edit_uri: edit/main/docs/
+repo_name: thomaspinder/bayes-econ
+copyright: Maintained by <a href="https://thomaspinder.com">thomaspinder</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["src/bayes_econ"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/thomaspinder/bayes-econ
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/bayes-econ
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
