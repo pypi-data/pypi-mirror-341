@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.MD
+README.PyPI.MD
+setup.py
+lightningpkg/__init__.py
+lightningpkg/input.py
+lightningpkg/list.py
+lightningpkg/my.py
+lightningpkg.egg-info/PKG-INFO
+lightningpkg.egg-info/SOURCES.txt
+lightningpkg.egg-info/dependency_links.txt
+lightningpkg.egg-info/top_level.txt

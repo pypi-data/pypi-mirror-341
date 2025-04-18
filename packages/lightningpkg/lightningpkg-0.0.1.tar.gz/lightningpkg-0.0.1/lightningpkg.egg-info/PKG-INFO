@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: lightningpkg
+Version: 0.0.1
+Summary: It is a wine quality prediction package
+Author: Juhe
+Author-email: juhe.terence@gmail.com
+License: MIT
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: license
+Dynamic: license-file
+Dynamic: summary
