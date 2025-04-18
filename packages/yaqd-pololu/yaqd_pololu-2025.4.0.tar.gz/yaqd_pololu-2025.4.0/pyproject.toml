@@ -1,0 +1,60 @@
+[build-system]
+requires = ["flit_core >=3.2"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "yaqd-pololu"
+authors = [
+  {name="Dan Kohler"}
+]
+maintainers = [
+  {name="yaq developers"},
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["yaqd-core>=2023.6.0", "pyyaml"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+dynamic = ["version", "description"]
+
+[project.urls]
+Homepage = "https://yaq.fyi"
+Source = "https://github.com/yaq-project/yaqd-pololu"
+Issues = "https://github.com/yaq-project/yaqd-pololu/issues"
+
+[tool.flit.module]
+name = "yaqd_pololu"
+
+[tool.optional-dependencies]
+dev = ["black", "pre-commit"]
+
+[project.scripts]
+yaqd-pololu-ticcmd = "yaqd_pololu._pololu_ticcmd:PololuTicCMD.main"
+
+
+[tool.black]
+line-length = 99
+target-version = ['py39',]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | build
+  | dist
+)/
+'''
