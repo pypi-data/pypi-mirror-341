@@ -1,0 +1,13 @@
+safetensors_dataset/__init__.py,sha256=nRht_XAU2qsQz-XdvL6fG_0LOQ22Ks1tWP4uOoSP3Bo,249
+safetensors_dataset/loading.py,sha256=ceNDeBgXY1rxbkXapen2ryuX4Md9R9gWg6Wv-ClPfSk,1429
+safetensors_dataset/protocol.py,sha256=QUoGjwbkTO0MKsrBtbwoBz6fV3Ger7oMw2kNqinqfn4,1562
+safetensors_dataset/safetensors.py,sha256=JF6r2xG_PxcptefNytphpiGT3bBTOXrw8HZIdKWlORg,29881
+safetensors_dataset/safetensors.pyi,sha256=5q8lg7fu25FSgdR2JcTY6hTyxRUxQ49Hwek_Jnk8EcI,4287
+safetensors_dataset/safetensors_dict.py,sha256=IRejaob54aGZQ_aJQfiHPUkAdm5JNTueGtBv0bg4S-4,3521
+safetensors_dataset/utils.py,sha256=uLYbyJliRlMLJs_EcWX_bShDQe7qkKASZREyXfSF_Uk,10300
+safetensors_dataset/version.py,sha256=4a9Is8p_8PskQEDMOUQTKqs47XD6bUGsZWJGIxhqPug,29
+safetensors_dataset-0.0.10.post1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+safetensors_dataset-0.0.10.post1.dist-info/METADATA,sha256=BpSYNRQdZpS7Fz5Xl1JEg4klc4dK8cYlz8LPT2aWHM4,1382
+safetensors_dataset-0.0.10.post1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+safetensors_dataset-0.0.10.post1.dist-info/top_level.txt,sha256=MR8Q-XqQWOy5GMXozSvyDRI03pkANlw-FTdhsf_nubs,20
+safetensors_dataset-0.0.10.post1.dist-info/RECORD,,
