@@ -1,0 +1,9 @@
+ecidacli/__init__.py,sha256=Z3Bifq21kj3x6B5R5KmWIbZo6JjgHX5z6-tCXisKl_Q,9809
+ecidacli/docker_interface.py,sha256=a6JzOseA9oLWHdpVFQlUXeLWDo57Mjq_72hQ237BGGg,6964
+ecidacli/ecida-templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ecidacli/ecida-templates/module.py,sha256=4qBq0RMMFOvzDtKhGKH6xZDA1NFX6wOHNuhjZKD4CRU,496
+ecidacli-0.1.22.dist-info/METADATA,sha256=jxnN6KDTvNGGercJBzLTA3Vu-LG3S9YKJVc2nbJjAdk,2058
+ecidacli-0.1.22.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ecidacli-0.1.22.dist-info/entry_points.txt,sha256=1FnuyxWUzKv3jbeOZp12UMA7Gk7OhCeY_kg63cmB1-E,43
+ecidacli-0.1.22.dist-info/top_level.txt,sha256=1g72ybGJLDapSzLPknCQrGMnSvFd4hDapeB5EN2WxKU,9
+ecidacli-0.1.22.dist-info/RECORD,,
