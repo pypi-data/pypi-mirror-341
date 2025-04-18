@@ -1,0 +1,7 @@
+sample/__init__.py,sha256=eJUhUcyOxh8swfmDZgrUugpBVnbIWSkbZxcmwT5GmDw,111
+sample/package_data.dat,sha256=EweZDmulyhRes16ZGCqb7EZTG8VN32VqYCx4D6AkDe4,9
+sample/simple.py,sha256=O-8lo9i9Le7X5kSxsQVsJD5OG40FnKYXejYQuDCZpOI,70
+conradbzura_sample_project-0.4rc0.dist-info/METADATA,sha256=bzQa33QSVFoEo1NOoNqHtyFDA6LTgcxCpF-HaHBnLxA,559
+conradbzura_sample_project-0.4rc0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+conradbzura_sample_project-0.4rc0.dist-info/top_level.txt,sha256=qvn_SI4HZ9peodVhGOb2WhbFYzsM78H6CJvTqxgQYT0,7
+conradbzura_sample_project-0.4rc0.dist-info/RECORD,,
