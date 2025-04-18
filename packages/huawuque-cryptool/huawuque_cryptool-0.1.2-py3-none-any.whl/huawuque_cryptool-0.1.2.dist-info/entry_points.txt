@@ -1,0 +1,5 @@
+[console_scripts]
+cryptool = cryptool.cli.main:main
+
+[gui_scripts]
+cryptool-gui = cryptool.gui.main_window:main
