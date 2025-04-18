@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+mypackage_aswin/__init.py
+mypackage_aswin/__init__.py
+mypackage_aswin/arithmetic.py
+mypackage_aswin.egg-info/PKG-INFO
+mypackage_aswin.egg-info/SOURCES.txt
+mypackage_aswin.egg-info/dependency_links.txt
+mypackage_aswin.egg-info/top_level.txt
