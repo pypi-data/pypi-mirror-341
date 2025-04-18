@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: LbAdmin
+Version: 0.0.15
+Summary: Administration tools for the LHCb environment and software
+Home-page: https://gitlab.cern.ch/lhcb-core/LbAdmin
+Author: CERN - LHCb Core Software
+Author-email: lhcb-core-soft@cern.ch
+License: GPLv3+
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: LbCommon
+Requires-Dist: lbinstall
+
+LHCb Admin tools 
+====================================
+|pipeline status| |coverage report|
+
+
+Administration and releae tools for the LHCb environment.
+
+.. |pipeline status| image:: https://gitlab.cern.ch/lhcb-core/LbAdmin/badges/master/pipeline.svg
+                     :target: https://gitlab.cern.ch/lhcb-core/LbAdmin/commits/master
+.. |coverage report| image:: https://gitlab.cern.ch/lhcb-core/LbAdmin/badges/master/coverage.svg
+                     :target: https://gitlab.cern.ch/lhcb-core/LbAdmin/commits/master
