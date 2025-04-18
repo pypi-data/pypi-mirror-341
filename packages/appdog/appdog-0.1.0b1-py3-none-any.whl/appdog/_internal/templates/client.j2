@@ -1,0 +1,126 @@
+# generated from appdog:
+#   uri: {{ uri }}
+#   timestamp: {{ timestamp }}
+"""{{ title }} generated API client."""
+
+from pathlib import Path
+from typing import Any
+
+from typing_extensions import Self, Unpack
+
+from appdog._internal.clients import BaseClient, ClientConfig
+
+from . import models  # noqa: F401
+
+
+class {{ class_name }}(BaseClient):
+    """Client for the {{ title }} API."""
+
+    def __init__(self, __name: str, **config: Unpack[ClientConfig]) -> None:
+        config.setdefault('base_url', '{{ base_url }}')
+        super().__init__(__name, **config)
+
+    @classmethod
+    def load(cls, project_dir: Path | str | None = None) -> Self:  # type: ignore
+        """Load the client from the project directory."""
+        return super().load('{{ name }}', project_dir=project_dir)
+
+{%- for endpoint in endpoints %}
+
+    async def {{ endpoint.name }}(
+        self,
+        {%- if endpoint.request_body %}
+        data: {{ get_request_body_type(endpoint) }},
+        {%- endif %}
+        {%- set required_params = (endpoint.parameters | selectattr("in", "in", ["path", "query"]) | selectattr("required")) | list %}
+        {%- set optional_params = (endpoint.parameters | selectattr("in", "in", ["path", "query"]) | rejectattr("required")) | list %}
+        {%- for param in required_params %}
+        {%- set param_name = param.get("name") %}
+        {%- set param_snake = to_snake_case(param_name) %}
+        {{ param_snake }}: {{ get_python_type(param) }},
+        {%- endfor %}
+        {%- for param in optional_params %}
+        {%- set param_name = param.get("name") %}
+        {%- set param_snake = to_snake_case(param_name) %}
+        {{ param_snake }}: {{ get_python_type(param) }} | None = None,
+        {%- endfor %}
+    ) -> {{ get_response_type(endpoint) }}:
+        """{{ endpoint.description or endpoint.summary or endpoint_key }}"""
+        # Format path parameters
+        path = '{{ endpoint.path }}'
+        {%- for param in get_path_params(endpoint) %}
+        {%- set param_name = param.get("name") %}
+        {%- set param_snake = to_snake_case(param_name) %}
+        path = path.replace('{{ "{" + param.get("name") + "}" }}', str({{ param_snake }}))
+        {%- endfor %}
+        # Prepare query parameters
+        {%- if get_query_params(endpoint) %}
+        params = {}  # noqa: F841
+        {%- for param in get_query_params(endpoint) %}
+        {%- set param_name = param.get("name") %}
+        {%- set param_snake = to_snake_case(param_name) %}
+        if {{ param_snake }} is not None:
+            params['{{ param.get("name") }}'] = {{ param_snake }}
+        {%- endfor %}
+        {%- endif %}
+        {%- if endpoint.method == 'get' %}
+        kwargs: dict[str, Any] = {}
+        {%- if has_query_params(endpoint) %}
+        kwargs['params'] = params
+        {%- endif %}
+        {%- set response_model = get_response_model(endpoint) %}
+        {%- if response_model %}
+        kwargs['return_type'] = {{ response_model }}
+        {%- endif %}
+        return await self._get(path, **kwargs)  # type: ignore
+        {%- elif endpoint.method == 'post' %}
+        kwargs: dict[str, Any] = {}
+        {%- if endpoint.request_body %}
+        kwargs['data'] = data
+        {%- endif %}
+        {%- if has_query_params(endpoint) %}
+        kwargs['params'] = params
+        {%- endif %}
+        {%- set response_model = get_response_model(endpoint) %}
+        {%- if response_model %}
+        kwargs['return_type'] = {{ response_model }}
+        {%- endif %}
+        return await self._post(path, **kwargs)
+        {%- elif endpoint.method == 'put' %}
+        kwargs: dict[str, Any] = {}
+        {%- if endpoint.request_body %}
+        kwargs['data'] = data
+        {%- endif %}
+        {%- if has_query_params(endpoint) %}
+        kwargs['params'] = params
+        {%- endif %}
+        {%- set response_model = get_response_model(endpoint) %}
+        {%- if response_model %}
+        kwargs['return_type'] = {{ response_model }}
+        {%- endif %}
+        return await self._put(path, **kwargs)  # type: ignore
+        {%- elif endpoint.method == 'patch' %}
+        kwargs: dict[str, Any] = {}
+        {%- if endpoint.request_body %}
+        kwargs['data'] = data
+        {%- endif %}
+        {%- if has_query_params(endpoint) %}
+        kwargs['params'] = params
+        {%- endif %}
+        {%- set response_model = get_response_model(endpoint) %}
+        {%- if response_model %}
+        kwargs['return_type'] = {{ response_model }}
+        {%- endif %}
+        return await self._patch(path, **kwargs)  # type: ignore
+        {%- elif endpoint.method == 'delete' %}
+        kwargs: dict[str, Any] = {}
+        {%- if has_query_params(endpoint) %}
+        kwargs['params'] = params
+        {%- endif %}
+        {%- set response_model = get_response_model(endpoint) %}
+        {%- if response_model %}
+        kwargs['return_type'] = {{ response_model }}
+        {%- endif %}
+        return await self._delete(path, **kwargs)
+        {%- endif %}
+{%- endfor -%}
