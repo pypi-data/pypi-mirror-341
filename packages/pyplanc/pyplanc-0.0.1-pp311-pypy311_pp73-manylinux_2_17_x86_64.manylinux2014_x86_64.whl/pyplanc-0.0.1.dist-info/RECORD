@@ -1,0 +1,9 @@
+pyplanc.pypy311-pp73-x86_64-linux-gnu.so,sha256=1PPaIixsGw-bX9fI5wpWh-KvHUk9llfAJ47KgPV1MH0,263289
+pyplanc.libs/libgfortran-040039e1.so.5.0.0,sha256=FK-zEpsai1C8QKOwggx_EVLqm8EBIaqxUpQ_cFdHKIY,2686065
+pyplanc.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+pyplanc.libs/libnmflib-2b93700b.so,sha256=Ov_39DbBKEU9gfr0JjUbviRlaS_zx6E7d09KrVQi2vY,7488321
+pyplanc.libs/libquadmath-96973f99.so.0.0.0,sha256=k0wi3tDn0WnE1GeIdslgUa3z2UVF2pYvYLQWWbB12js,247609
+pyplanc-0.0.1.dist-info/METADATA,sha256=N0ztAQfKsntfOG-qwrmGfa4Nk_OBfBujNun7X-GNK08,31863
+pyplanc-0.0.1.dist-info/WHEEL,sha256=ywr53uramw5XOSU426izydQ81SgLji5i1M_ul1_Dy9s,170
+pyplanc-0.0.1.dist-info/RECORD,,
+pyplanc-0.0.1.dist-info/licenses/license.md,sha256=rXhocLBCoFp3OFPPdC729HjDpUof3xK74IC42nCBJCE,25875
