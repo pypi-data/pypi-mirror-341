@@ -1,0 +1,10 @@
+rustac-0.6.0rc0.dist-info/METADATA,sha256=7wmSxGEcGucMFyZsnanC6NKzBOH13uJkEH0A45J1GB8,6778
+rustac-0.6.0rc0.dist-info/WHEEL,sha256=vZCrFUqux3RT3x-5MYcfGpyb4lW1eii-LV1Nx1Zs4nE,129
+rustac-0.6.0rc0.dist-info/entry_points.txt,sha256=VOfQuX3XvdEjnORlanFpZCmqvedck5-ChS6qgi8Cii8,37
+rustac-0.6.0rc0.dist-info/licenses/LICENSE-APACHE,sha256=Yseh419WQGiW16p8pS0MwNJyrAIrXSeW59aQXbijY2o,9723
+rustac-0.6.0rc0.dist-info/licenses/LICENSE-MIT,sha256=I_GOA9xJ35FiL-KnYXZJdATkbO2KcV2dK2enRGVxzKM,1023
+rustac/__init__.py,sha256=VBG-p5XoEAo4Fm7HU4ba-vULrej3aiBj8-9I9vybsHA,107
+rustac/__init__.pyi,sha256=VMNGxgS1CjzgHOn9BxFamy5lNITvrQxXYvMbaAeTDPI,17749
+rustac/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rustac/rustac.cpython-310-x86_64-linux-gnu.so,sha256=fMW1rdo8PXiuxpI5ogRtk8MVvKfM-AdfQeQLAz5Q5bU,64628008
+rustac-0.6.0rc0.dist-info/RECORD,,
