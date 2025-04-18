@@ -1,0 +1,2 @@
+[console_scripts]
+sheng-dholuo = sheng_dholuo_translator.translator:main

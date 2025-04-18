@@ -1,0 +1,12 @@
+Tests/__init__.py,sha256=mSCi2jujnmoSJTkM5iYzW09GySbi84z8AW9zk-uStdU,57
+Tests/test_translator.py,sha256=VNsCTavgaj6Gj_PzzpS6DoHL8MWnzt6d-xnEU6-w3qk,4786
+sdk-translator/__init__.py,sha256=mSCi2jujnmoSJTkM5iYzW09GySbi84z8AW9zk-uStdU,57
+sdk-translator/translator.py,sha256=0rzj9YZsWsFoWAD4GtGBiZlIflN-ZUvlXaqSAahO5tg,30366
+sheng_dholuo_translator/__init__.py,sha256=mSCi2jujnmoSJTkM5iYzW09GySbi84z8AW9zk-uStdU,57
+sheng_dholuo_translator/phrases.csv,sha256=x03QuUEM1UVgoiUk7SmUmuE4R4kAbokeZy0Nb9Fg-ss,4141
+sheng_dholuo_translator/translator.py,sha256=AYv_854faXV1FSK6SxptNzu4nEVqWnArsddRFqRV6K8,7997
+sheng_dholuo_translator-0.1.0.dist-info/METADATA,sha256=Xz5MEZ7DiGmbvq_LAO32_3deg3XIUVgUmlqjUmREqjU,2678
+sheng_dholuo_translator-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sheng_dholuo_translator-0.1.0.dist-info/entry_points.txt,sha256=w9lFYz7JrChR6_KffloyeHDT5RAh0b4E92K7oc2FjZI,73
+sheng_dholuo_translator-0.1.0.dist-info/top_level.txt,sha256=WqfSf49aLkOjZrhIdMpYgDCu_1xoA2_3z1bMEt3Xu8g,45
+sheng_dholuo_translator-0.1.0.dist-info/RECORD,,
