@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+django_layered_start/__init__.py
+django_layered_start/cli.py
+django_layered_start.egg-info/PKG-INFO
+django_layered_start.egg-info/SOURCES.txt
+django_layered_start.egg-info/dependency_links.txt
+django_layered_start.egg-info/entry_points.txt
+django_layered_start.egg-info/requires.txt
+django_layered_start.egg-info/top_level.txt
+django_layered_start/core/__init__.py
+django_layered_start/core/app_creator.py
+django_layered_start/core/layered_structure.py
+django_layered_start/core/project_creator.py
