@@ -1,0 +1,98 @@
+[build-system]
+requires = ["hatchling", "hatch-fancy-pypi-readme"]
+build-backend = "hatchling.build"
+
+[project]
+name = "libertem-holo"
+dynamic = ["version", "readme"]
+description = "Electron holography reconstruction using LiberTEM"
+requires-python = ">=3.9"
+license-files = { paths = ["LICENSE"] }
+dependencies = [
+    "libertem",
+    "numpy",
+    # Minimum constraints of numba for all Python versions we support
+    # See https://numba.readthedocs.io/en/stable/release-notes-overview.html
+    "numba>=0.53;python_version < '3.10'",
+    "numba>=0.55;python_version < '3.11'",
+    "numba>=0.57;python_version < '3.12'",
+    "numba>=0.59;python_version < '3.13'",
+    "numba>=0.61;python_version < '3.14' and python_version >= '3.10'",
+    # for any future Python release, constrain numba to a recent version,
+    # otherwise, version resolution might try to install an ancient version
+    # that isn't constrained properly:
+    "numba>=0.61;python_version >= '3.14'",  
+    "scipy",
+    "sparse",
+    "sparseconverter",
+    "scikit-image",
+    "empyre",  # used in example notebook(s)
+]
+keywords = ["electron microscopy", "holography", "off-axis holography"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+authors = [
+    { name = "Alexander Clausen", email = "a.clausen@fz-juelich.de" },
+    { name = "Dieter Weber", email = "d.weber@fz-juelich.de" },
+    { name = "Patrick Adrian", email = "patrick.adrian.gunawan@stud.th-luebeck.de" },
+]
+
+[project.urls]
+Repository = "https://github.com/LiberTEM/LiberTEM-holo"
+Documentation = "https://libertem.github.io/LiberTEM-holo"
+
+[tool.hatch.metadata.hooks.fancy-pypi-readme]
+"content-type" = "text/x-rst"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "README.rst"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.substitutions]]
+pattern = ":(cite|doc):`[^`]+` ?"
+replacement = ""
+
+[tool.hatch.version]
+path = "src/libertem_holo/__version__.py"
+
+[tool.hatch.build.hooks.custom]
+# this enables hatch_build.py
+
+[tool.ruff.lint]
+ignore = [
+    "PLR0913",  # too many arguments
+    "D419",  # empty docstring - used to "un-document" functions, for example inherited ones
+]
+select = [
+    "E4",
+    "E7",
+    "E9",
+    "F",
+    "ALL",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"{**/tests/*,conftest.py}" = [
+    "S101",  # "assert" used - yeah no shit it's a testcase
+    "D103",  # missing docstring
+    "D100",  # missing module docstring
+    "ANN201",  # missing return type annotation
+    "ANN001",  # missing argument annotation
+    "INP001",  # "implicit namespace package" doesn't make sense for tests
+]
