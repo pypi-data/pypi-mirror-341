@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+pandas_signals/__init__.py
+pandas_signals/core.py
+pandas_signals.egg-info/PKG-INFO
+pandas_signals.egg-info/SOURCES.txt
+pandas_signals.egg-info/dependency_links.txt
+pandas_signals.egg-info/requires.txt
+pandas_signals.egg-info/top_level.txt
