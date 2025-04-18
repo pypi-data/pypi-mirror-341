@@ -1,0 +1,26 @@
+[
+    {            
+        "displayname": "Malika Khelfallah",
+        "authorname": "Khelfallah Malika",
+        "affiliation": "Jülich Research Centre, Ernst Ruska Centre",
+        "github": "malika576",
+        "contribution": "Reconstruction and alignment functions",
+        "orcid": "0000-0001-6940-5792"
+    },
+    {            
+        "displayname": "J. V. Vas",
+        "authorname": "Joseph Vimal Vas",
+        "affiliation": "Jülich Research Centre, Ernst Ruska Centre",
+        "github": "jvvas",
+        "contribution": "Documentation, feedback, data, etc",
+        "orcid": "0009-0006-3796-9466"
+    },
+    {
+        "displayname": "Alexander Clausen",
+        "authorname": "Clausen, Alexander",
+        "affiliation": "Jülich Research Centre, Ernst Ruska Centre",
+        "github": "sk1p",
+        "contribution": "Code structure and repository management, GPU support, tests, UDF implementation, performance optimization and benchmarks, ...",
+        "orcid": "0000-0002-9555-7455"
+    }
+]
