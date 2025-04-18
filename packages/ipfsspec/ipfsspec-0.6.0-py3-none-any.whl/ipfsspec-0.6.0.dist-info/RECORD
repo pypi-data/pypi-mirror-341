@@ -1,0 +1,12 @@
+ipfsspec/__init__.py,sha256=TARSvvnqzyKKAM0aQO9Gdt4bGTi_SU3oHPVAq33l1TI,316
+ipfsspec/async_ipfs.py,sha256=WQmLoGeE9GivsLlobMhJU7PTAamcw939zYN44ljQhSQ,15049
+ipfsspec/car.py,sha256=-5kntSfpTCu0xKMfCwUrrdI56plQcSQFfvS4UP7Er8o,4047
+ipfsspec/tracing.py,sha256=xwbe5Adr506ZF9nKYsoWFx1Wjs1CjrCvA10kLFnMUPc,974
+ipfsspec/unixfsv1.py,sha256=G3O1crW-NaTNeH55Qg8_l8MB1aP0b567GVgWa_QcZkA,2450
+ipfsspec/utils.py,sha256=Qg9kXAKG-Dsz5Q_lPDfQVbQ9SvnOEAVaZ9kVTGY_p3s,489
+ipfsspec-0.6.0.dist-info/licenses/LICENSE,sha256=h3hSZerE5IbYpK2czp7P2_d8Tpvnye4wq5TpU1mJuoE,1091
+ipfsspec-0.6.0.dist-info/METADATA,sha256=O5W6Da_jeq1fgsHIQ0ceMkJZCzfQdqR4yhPvXSXsBWU,1982
+ipfsspec-0.6.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ipfsspec-0.6.0.dist-info/entry_points.txt,sha256=9DoyKvsLADESB6hBYcHGBCJFqbvIQ9eBG7smXTgl2vs,87
+ipfsspec-0.6.0.dist-info/top_level.txt,sha256=b_MnQXx2vyaaoxPmnjgHLiTGgtxFYPgt74sMSFsNN40,9
+ipfsspec-0.6.0.dist-info/RECORD,,
