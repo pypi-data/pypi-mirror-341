@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: lakehouse-dataflow
+Version: 0.1.0
+Summary: Pipeline de dados da Lakehouse
+Home-page: UNKNOWN
+Author: superfrete
+Author-email: guilherme.caly@superfrete.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
