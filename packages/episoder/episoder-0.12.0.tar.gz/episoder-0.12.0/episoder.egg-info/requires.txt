@@ -1,0 +1,8 @@
+argparse
+requests
+beautifulsoup4
+sqlalchemy>=1.3
+
+[test]
+pytest
+pyfakefs
