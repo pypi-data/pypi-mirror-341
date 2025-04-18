@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: windroselab
+Version: 0.1.5
+Summary: *WindRose Generator* is a Python library for creating customizable wind rose diagrams from Excel data. Visualize wind speed, direction, and frequency with options to adjust fonts, colors, styles, and export high-quality plots for reports or analysis.
+Home-page: https://github.com/AbdolvahabT/windroselab
+Author: Seyed Abdolvahab Taghavi
+Author-email: abdolvahab.taghavi@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib>=3.8.2
+Requires-Dist: numpy>=1.26.2
+Requires-Dist: pandas>=2.1.4
+Requires-Dist: Pillow>=10.1.0
+Requires-Dist: xlrd==1.2.0
+Requires-Dist: tkvalidate==1.0.1
+Requires-Dist: PyPDF2==3.0.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+*WindRose Generator* is a powerful Python tool designed to transform raw wind data (speed and direction) from Excel files into professional wind rose diagrams. Tailored for environmental scientists, meteorologists, and researchers, this library simplifies the process of generating insightful visualizations while offering extensive customization:  
+
+#### Key Features:  
+- *Excel Integration*: Directly import wind data from .xlsx or .csv files.  
+- *Customization*:  
+  - Adjust *colors, **fonts, and **labels* for axes, titles, and legends.  
+  - Modify *plot styles* (e.g., bar width, transparency, radial bins).  
+  - Choose *color palettes* for wind speed gradients.  
+- *Export Flexibility*: Save plots as PNG, SVG, or jpg for publications.  
+- *Automated Analysis*: Calculate frequency distributions and statistical summaries.  
+
+
+
+
+
+For Test run Main.py and give it the data.
