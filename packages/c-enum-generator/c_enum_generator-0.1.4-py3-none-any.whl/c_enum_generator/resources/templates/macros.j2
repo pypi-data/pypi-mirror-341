@@ -1,0 +1,24 @@
+{# Formats C style doco #}
+{%- macro c_doco(doco) -%}
+{%- if doco -%}
+/**
+{%- for line in doco|splitlines %}
+ * {{ line }}
+{%- endfor %}
+ **/
+{%- endif -%}
+{%- endmacro -%}
+
+{# Prints the name of enum #}
+{%- macro enum_name_e(name) -%}{{ name }}_e{%- endmacro -%}
+
+{# Prints the name of enum typedef #}
+{%- macro enum_name_t(name) -%}{{ name }}_t{%- endmacro -%}
+
+{%- macro entry_name(enum_desc, name) -%}
+    {%- if enum_desc.capitalise -%}
+        {{ (enum_desc.entry_prefix | default(enum_desc.name))| upper }}_{{ name | upper -}}
+    {%- else -%}
+        {{ enum_desc.entry_prefix | default(enum_desc.name) }}_{{ name -}}
+    {%- endif -%}
+{%- endmacro -%}

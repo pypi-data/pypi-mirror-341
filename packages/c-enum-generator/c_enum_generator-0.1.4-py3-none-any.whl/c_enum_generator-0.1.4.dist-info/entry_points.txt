@@ -1,0 +1,3 @@
+[json2any.plugin]
+helper_provider = c_enum_generator.CGenHelperProvider:CGenHelperProvider
+schema_provider = c_enum_generator.CGenSchemaProvider:CGenSchemaProvider
