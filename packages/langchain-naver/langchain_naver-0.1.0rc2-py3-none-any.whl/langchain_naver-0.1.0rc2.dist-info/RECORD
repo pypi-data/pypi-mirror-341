@@ -1,0 +1,9 @@
+langchain_naver/__init__.py,sha256=BB06zgpu0r56Jn9jaayFm8yimvSO1Cz5eRZUx2nb8AY,164
+langchain_naver/chat_models.py,sha256=C5KFq6MARgwKXy779menmwjujepQqyBPZeEC57p8JHg,7106
+langchain_naver/const.py,sha256=NUlXYQUiDJtB83VDcQEwb875MZYadGpm_jAVGmL2ea0,40
+langchain_naver/embeddings.py,sha256=_TxC4VHgK4wyqHuJeLQ7_pnZNb7TUyZbJcIXNt4cv48,8841
+langchain_naver-0.1.0rc2.dist-info/licenses/LICENSE,sha256=zba9tBaYTSTKIImRoWDwG9w0LCOSiBX82Ou_fz7Fz6E,1071
+langchain_naver-0.1.0rc2.dist-info/METADATA,sha256=Eq5mI1LyTzyg8I_mnE0mAf_Qc8norYg3GsHWFk4CVVU,1267
+langchain_naver-0.1.0rc2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+langchain_naver-0.1.0rc2.dist-info/top_level.txt,sha256=IFARRSbfYVNkPmz1J0Koo2WJ43UfYMEyUmGjol_f9fU,16
+langchain_naver-0.1.0rc2.dist-info/RECORD,,
