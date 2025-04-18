@@ -1,0 +1,9 @@
+scrapers/__init__.py,sha256=LrmiKoXkNTQrJyeri-Td2YuOnYxXJHllVN9GPjvHPSY,158
+scrapers/base.py,sha256=dmyEgiE1clW3pA9JXw-ZmU4ioVDqznQPMZg-h8VemuM,7329
+scrapers/nya.py,sha256=lQp0sK0rvASinhyrqLRz_kjst3vsCxlT1XbQ9t0OLLQ,3554
+scrapers/x1337.py,sha256=LWX-ViDJZlnIqbH7zy5IsQzaqMCqJPQBCJZvneVnBgw,4353
+scrapers/yts.py,sha256=Z08g1wFw_p1-s42gm7g2PQJ7xIFQi42HWf53oPvQ7hE,4177
+torrent_scrapers-0.0.2.dist-info/licenses/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+torrent_scrapers-0.0.2.dist-info/WHEEL,sha256=G2gURzTEtmeR8nrdXUJfNiB3VYVxigPQ-bEQujpNiNs,82
+torrent_scrapers-0.0.2.dist-info/METADATA,sha256=b7zc7xr6A53Q8gpde-6_XaLXNcS5qcf9eZb3bSMg-Oc,3457
+torrent_scrapers-0.0.2.dist-info/RECORD,,
