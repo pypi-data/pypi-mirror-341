@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["AO3Parser"]
+
+[project]
+name = "ao3-parser"
+version = "3.1.1"
+authors = [
+  {name="petak33"},
+]
+description = "Package for parsing AO3 pages into works and creating urls based on requirements."
+
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies  = ["BeautifulSoup4"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["ao3", "archiveofourown", "archive of our own", "ao3 api"]
+
+[project.urls]
+Homepage = "https://github.com/petak33/ao3-parser"
+Issues = "https://github.com/petak33/ao3-parser/issues"

@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+AO3Parser/__init__.py
+AO3Parser/extra.py
+AO3Parser/page.py
+AO3Parser/params.py
+AO3Parser/search.py
+AO3Parser/work.py
+ao3_parser.egg-info/PKG-INFO
+ao3_parser.egg-info/SOURCES.txt
+ao3_parser.egg-info/dependency_links.txt
+ao3_parser.egg-info/requires.txt
+ao3_parser.egg-info/top_level.txt
+tests/test_page_parsing.py
+tests/test_work_parsing.py
