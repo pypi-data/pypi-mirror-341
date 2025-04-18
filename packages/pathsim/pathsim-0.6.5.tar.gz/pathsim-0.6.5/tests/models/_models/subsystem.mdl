@@ -1,0 +1,151 @@
+{
+  "type": "Simulation",
+  "metadata": {
+    "duration": 2000,
+    "timestamp": "2025-03-15T16:34:09.774967"
+  },
+  "structure": {
+    "blocks": [
+      {
+        "id": 1721475743232,
+        "type": "Subsystem",
+        "params": {
+          "blocks": [
+            {
+              "id": 1721475742224,
+              "type": "Integrator",
+              "params": {
+                "initial_value": 2
+              }
+            },
+            {
+              "id": 1721476001744,
+              "type": "Integrator",
+              "params": {
+                "initial_value": 0
+              }
+            },
+            {
+              "id": 1721475742560,
+              "type": "Function",
+              "params": {
+                "func": {
+                  "type": "dill",
+                  "data": "gASVYwEAAAAAAACMCmRpbGwuX2RpbGyUjBBfY3JlYXRlX2Z1bmN0aW9ulJOUKGgAjAxfY3JlYXRlX2NvZGWUk5QoQwCUSwJLAEsASwJLBEsDQyyVAFsAAAAAAAAAAABTAVUAUwItCAAALQoAAC0FAABVAS0FAABVAC0KAAAkAJROSwFLAoeUjAJtdZSFlIwCeDGUjAJ4MpSGlIxTQzpcVXNlcnNcbWlsYW5cT25lRHJpdmVcVU5JX1Byb21vdGlvblxQYXRoU2ltXHBhdGhzaW1cZXhhbXBsZXNcZXhhbXBsZV9zdWJzeXN0ZW0ucHmUjAg8bGFtYmRhPpRoDkskQxqAAJxSoBGgUqgRoVWhGZleqELRHS6wEtIdM5RoBSkpdJRSlH2UjAhfX25hbWVfX5SMCF9fbWFpbl9flHNoDk5OdJRSlH2UfZSMD19fYW5ub3RhdGlvbnNfX5R9lHOGlGJoEowCbXWUTegDczAu",
+                  "name": "<lambda>"
+                }
+              }
+            },
+            {
+              "id": 1721475741888,
+              "type": "Interface",
+              "params": {}
+            }
+          ],
+          "connections": [
+            {
+              "id": 1721475742896,
+              "source": {
+                "block": 1721476001744,
+                "port": 0
+              },
+              "targets": [
+                {
+                  "block": 1721475742224,
+                  "port": 0
+                },
+                {
+                  "block": 1721475742560,
+                  "port": 1
+                },
+                {
+                  "block": 1721475741888,
+                  "port": 1
+                }
+              ]
+            },
+            {
+              "id": 1721476002384,
+              "source": {
+                "block": 1721475742224,
+                "port": 0
+              },
+              "targets": [
+                {
+                  "block": 1721475742560,
+                  "port": 0
+                },
+                {
+                  "block": 1721475741888,
+                  "port": 0
+                }
+              ]
+            },
+            {
+              "id": 1721476002704,
+              "source": {
+                "block": 1721475742560,
+                "port": 0
+              },
+              "targets": [
+                {
+                  "block": 1721476001744,
+                  "port": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": 1721475741552,
+        "type": "Scope",
+        "params": {
+          "sampling_rate": null,
+          "t_wait": 0.0,
+          "labels": []
+        }
+      }
+    ],
+    "events": [],
+    "connections": [
+      {
+        "id": 1721476661632,
+        "source": {
+          "block": 1721475743232,
+          "port": 0
+        },
+        "targets": [
+          {
+            "block": 1721475741552,
+            "port": 0
+          }
+        ]
+      },
+      {
+        "id": 1721476662544,
+        "source": {
+          "block": 1721475743232,
+          "port": 1
+        },
+        "targets": [
+          {
+            "block": 1721475741552,
+            "port": 1
+          }
+        ]
+      }
+    ]
+  },
+  "params": {
+    "dt": 0.05,
+    "dt_min": 1e-16,
+    "dt_max": null,
+    "Solver": "GEAR52A",
+    "tolerance_fpi": 1e-09,
+    "iterations_min": 1,
+    "iterations_max": 200,
+    "tolerance_lte_abs": 1e-05,
+    "tolerance_lte_rel": 0.001
+  }
+}
