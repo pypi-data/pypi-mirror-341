@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/randomriver/RandomRiver.py
+src/randomriver/__init__.py
+src/randomriver.egg-info/PKG-INFO
+src/randomriver.egg-info/SOURCES.txt
+src/randomriver.egg-info/dependency_links.txt
+src/randomriver.egg-info/top_level.txt

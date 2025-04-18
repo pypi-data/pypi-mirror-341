@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: randomriver
+Version: 0.0.1
+Summary: An ensemble decision tree machine learning algorithm for time series data
+Home-page: https://codeberg.org/tomathon/randomriver
+Author: tomathon
+Author-email: tomathon@pm.me
+License: GPL-3
+Project-URL: Bug Tracker, https://codeberg.org/tomathon/randomriver/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Dynamic: license-file
+
+
+## **ABOUT**
+
+#### `randomriver` is an ensemble decision tree machine learning algorithm for time series data
+
+
+### ----------------------------
