@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyfractionx.egg-info/PKG-INFO
+pyfractionx.egg-info/SOURCES.txt
+pyfractionx.egg-info/__init__.py
+pyfractionx.egg-info/dependency_links.txt
+pyfractionx.egg-info/top_level.txt
