@@ -1,0 +1,2 @@
+[console_scripts]
+sisx = sisx.cli:main

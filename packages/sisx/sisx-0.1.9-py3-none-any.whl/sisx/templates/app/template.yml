@@ -1,0 +1,55 @@
+minimum_cli_version: "2.7.0"
+files_to_render:
+  - snowflake.yml
+  - pyproject.toml
+variables:
+  - name: name
+    description: Name of the Streamlit app
+  - name: app_type
+    description: Type of compute to use (warehouse or compute_pool)
+    default: warehouse
+  - name: query_warehouse
+    description: Warehouse to use for queries
+    required: false
+    default: ""
+  - name: app_warehouse
+    description: Warehouse to use for running the app
+    required: false
+    default: ""
+  - name: compute_pool
+    description: Compute pool to use for the app
+    required: false
+    default: ""
+  - name: schema
+    description: Schema to use for the app
+    default: public
+  - name: database
+    description: Database to use for the app
+    default: streamlit
+  - name: role
+    description: Role to use for the app
+    default: accountadmin
+  - name: preview_database
+    description: Database to use for preview deployments
+    type: string
+    help: Database to use when deploying the app in preview mode
+    default: "${database}"
+    required: false
+  - name: preview_schema
+    description: Schema to use for preview deployments
+    type: string
+    help: Schema to use when deploying the app in preview mode
+    default: "${schema}"
+    required: false
+  - name: preview_role
+    description: Role to use for preview deployments
+    type: string
+    help: Role to use when deploying the app in preview mode
+    default: "${role}"
+    required: false
+  - name: stage
+    type: string
+    help: Stage to store app artifacts
+    prompt: "What stage should the app be deployed to?"
+    default: streamlit_stage
+    required: false
