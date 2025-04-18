@@ -1,0 +1,9 @@
+dagster_deltalake_pandas/__init__.py,sha256=NDKfttk6DthHPv0W7FNgZasJHEkvZQAHYgfBSEGkgtw,383
+dagster_deltalake_pandas/deltalake_pandas_type_handler.py,sha256=JEQljnO4E0Ecsh0W3riaMsQvei8OgZrc15IBZ3udklo,1106
+dagster_deltalake_pandas/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dagster_deltalake_pandas/version.py,sha256=B5_KTP-FyikpTJttPb3-R24m53usTHHQpjdZOhW-ls0,27
+dagster_deltalake_pandas-0.26.11rc1.dist-info/LICENSE,sha256=-gtoVIAZYUHYmNHISZg982FI4Oh19mV1nxgTVW8eCB8,11344
+dagster_deltalake_pandas-0.26.11rc1.dist-info/METADATA,sha256=Zlkb2Tv2RP_j-4S8xq-NwwO3uDVndW8aQ91d8mdrY84,787
+dagster_deltalake_pandas-0.26.11rc1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+dagster_deltalake_pandas-0.26.11rc1.dist-info/top_level.txt,sha256=HJDFWMS1Pk-4_bw2oUyOR32zn7jTRCKfrJ8AVtSKiEY,25
+dagster_deltalake_pandas-0.26.11rc1.dist-info/RECORD,,
