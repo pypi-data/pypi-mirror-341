@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/codal_tsetmc_datastore.egg-info/PKG-INFO
+src/codal_tsetmc_datastore.egg-info/SOURCES.txt
+src/codal_tsetmc_datastore.egg-info/dependency_links.txt
+src/codal_tsetmc_datastore.egg-info/requires.txt
+src/codal_tsetmc_datastore.egg-info/top_level.txt

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "cython"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codal-tsetmc-datastore"
+version = "1.0.0"
+description = "Private datastore module for codal-tsetmc (Tehran Stock Market)"
+authors = [
+    { name = "Mohsen Ebrahimi", email = "mohsenebrahimy.ir@gmail.com" }
+]
+license = { text = "LICENSE.txt" }
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "codal-tsetmc>=1.7.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/mohsenebrahimyir/codal-tsetmc-datastore"
+Repository = "https://github.com/mohsenebrahimyir/codal-tsetmc-datastore"
