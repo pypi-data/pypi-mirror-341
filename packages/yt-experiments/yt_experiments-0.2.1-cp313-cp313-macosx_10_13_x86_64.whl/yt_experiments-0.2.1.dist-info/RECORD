@@ -1,0 +1,9 @@
+yt_experiments-0.2.1.dist-info/RECORD,,
+yt_experiments-0.2.1.dist-info/WHEEL,sha256=CAEnsYkCnsTBAHMrpKhgZUUTcGmT5qlV2Rwkjvexu2Q,111
+yt_experiments-0.2.1.dist-info/top_level.txt,sha256=kwSwofS1RckMqHYaQCLM65TUY9fYcycjWJ1GGPvhPmM,15
+yt_experiments-0.2.1.dist-info/METADATA,sha256=elEoxMUzSQQMpEcx4BeQ4_I3PC8BRWPT51RnNSqIuFI,2755
+yt_experiments-0.2.1.dist-info/licenses/LICENSE,sha256=AEwQzk360xVJF6-iQ5xKl8ggaUUyvvT2HObXFuy9qwo,1501
+yt_experiments/_version.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+yt_experiments/__init__.py,sha256=kEbCEYB-cupF5iXRrt9T6KeiAM168dvT2w5SW1kYSIo,71
+yt_experiments/octree/converter.cpython-313-darwin.so,sha256=ZSjaeNMcSCTsqyvCpJMK-v3KFjF215uGDPwmBZM4urs,290992
+yt_experiments/octree/converter.pyx,sha256=8KDLSxTu1MHe_9gPBRHgpQhFudPKe5prVEQRXLblhdc,9466
