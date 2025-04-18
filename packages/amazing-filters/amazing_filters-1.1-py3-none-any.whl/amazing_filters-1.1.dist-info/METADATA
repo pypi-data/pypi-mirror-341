@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: amazing_filters
+Version: 1.1
+Summary: A package for embedding and applying easy image filters
+Author: Rodrigo Ginde
+License-Expression: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+Dynamic: requires-python
+
+# amazing_filters
+
+A package for embedding and applying easy image filters.
