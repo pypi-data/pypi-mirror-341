@@ -1,0 +1,14 @@
+[project]
+name = "rick-portal-gun"
+version = "0.4.1"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sebastián Ramírez", email = "tiangolo@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
