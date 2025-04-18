@@ -1,0 +1,8 @@
+build/*
+.vscode/*
+*.vtk
+*.json
+**/__pycache__/*
+pybind11/*
+examples/helias5_vmec.nc4
+examples/HELIAS5_coils_all_corr.h5
