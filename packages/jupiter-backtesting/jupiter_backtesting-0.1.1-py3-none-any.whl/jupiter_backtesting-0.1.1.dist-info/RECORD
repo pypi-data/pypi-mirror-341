@@ -1,0 +1,10 @@
+jupiter_backtesting/__init__.py,sha256=rNusmonh5Jihof-L4RF1CVihDsd0Rha8Ol2nq3lBui0,158
+jupiter_backtesting/analyzer.py,sha256=ygMWQ0s4vJts6OX0xxrCc77rhpOhcIpXOctZLkNaO5Q,3218
+jupiter_backtesting/optimizer.py,sha256=9er42W8h5lf04RGOwM3eugVzJ6CwLEasa3wCX-XKvmE,2161
+jupiter_backtesting/stats.py,sha256=EUq3g2Q03tYyrNuyu85CIHCyEl5HhlAq5-W54gYVrEA,5190
+jupiter_backtesting/strategy.py,sha256=KlZUid9WYZWzDkP16gDmGFhP_IUl8hfZZDz_xTzOQ1w,562
+jupiter_backtesting/utils.py,sha256=zx5hN5m-uSsj9dxnUARC5S5RkCrfzxDZtRmgVXb-4zk,710
+jupiter_backtesting-0.1.1.dist-info/METADATA,sha256=o4L1QuWNtz81P8c_Dfcrnrzb8eP-Oaz26UQIS2uf3BQ,962
+jupiter_backtesting-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+jupiter_backtesting-0.1.1.dist-info/top_level.txt,sha256=bV9aQm4IVHGojbWi0cy22hOiB-iQpr28a7GpQf7QPIo,20
+jupiter_backtesting-0.1.1.dist-info/RECORD,,
