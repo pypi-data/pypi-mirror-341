@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+kdm/__init__.py
+kdm/operations.py
+kdm.egg-info/PKG-INFO
+kdm.egg-info/SOURCES.txt
+kdm.egg-info/dependency_links.txt
+kdm.egg-info/top_level.txt
