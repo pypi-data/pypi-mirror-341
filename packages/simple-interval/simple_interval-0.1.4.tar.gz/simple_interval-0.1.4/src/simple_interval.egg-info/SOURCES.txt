@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/simple_interval/__init__.py
+src/simple_interval/simple_interval.py
+src/simple_interval.egg-info/PKG-INFO
+src/simple_interval.egg-info/SOURCES.txt
+src/simple_interval.egg-info/dependency_links.txt
+src/simple_interval.egg-info/top_level.txt
