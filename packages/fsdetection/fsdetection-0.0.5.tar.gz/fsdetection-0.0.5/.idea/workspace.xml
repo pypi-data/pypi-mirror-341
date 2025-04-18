@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="036990b8-98de-43ef-bbe3-ebfdd319833f" name="Changes" comment="Add pretrained weights into lora">
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="d498fed66718bdbf782295cf3b5f0bdb81000f96" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HichTala&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HichTala/fsdetection.git&quot;,
+    &quot;accountId&quot;: &quot;c565684e-624a-4091-b53b-ec07699eaf42&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2rJlewPjt7zAC8rr7S0Nvzlatni" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.fs_trainer.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hicham/Documents&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-PY-251.23774.444" />
+        <option value="bundled-python-sdk-890ed5b35930-d9c5bdb153f4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.23774.444" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="036990b8-98de-43ef-bbe3-ebfdd319833f" name="Changes" comment="" />
+      <created>1736285158832</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736285158832</updated>
+      <workItem from="1736285160301" duration="76000" />
+      <workItem from="1736339173652" duration="1543000" />
+      <workItem from="1736615994605" duration="629000" />
+      <workItem from="1739195234065" duration="642000" />
+      <workItem from="1739354789136" duration="6087000" />
+      <workItem from="1740407351590" duration="3225000" />
+      <workItem from="1740413999890" duration="1896000" />
+      <workItem from="1740471509507" duration="1761000" />
+      <workItem from="1740560472036" duration="4165000" />
+      <workItem from="1740640931027" duration="5276000" />
+      <workItem from="1740681051915" duration="652000" />
+      <workItem from="1740682457541" duration="474000" />
+      <workItem from="1740686849078" duration="35000" />
+      <workItem from="1740993692164" duration="177000" />
+      <workItem from="1744890065697" duration="384000" />
+    </task>
+    <task id="LOCAL-00001" summary="Fix self.model has no attribute model">
+      <option name="closed" value="true" />
+      <created>1736285223225</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736285223225</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add save lora weights">
+      <option name="closed" value="true" />
+      <created>1739358507397</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739358507397</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Remove overflooding logs">
+      <option name="closed" value="true" />
+      <created>1739358817523</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739358817523</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add forgotten os import">
+      <option name="closed" value="true" />
+      <created>1739358837986</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739358837986</updated>
+    </task>
+    <task id="LOCAL-00005" summary="remove peft verifications">
+      <option name="closed" value="true" />
+      <created>1740411420667</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740411420667</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Remove freeze module">
+      <option name="closed" value="true" />
+      <created>1740641987897</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740641987898</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add pretrained weights into lora">
+      <option name="closed" value="true" />
+      <created>1740681099427</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740681099427</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix self.model has no attribute model" />
+    <MESSAGE value="Add save lora weights" />
+    <MESSAGE value="Remove overflooding logs" />
+    <MESSAGE value="Add forgotten os import" />
+    <MESSAGE value="remove peft verifications" />
+    <MESSAGE value="Remove freeze module" />
+    <MESSAGE value="Add pretrained weights into lora" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add pretrained weights into lora" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/fsdetection$fs_trainer.coverage" NAME="fs_trainer Coverage Results" MODIFIED="1739359567284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/fsdetection/transformers" />
+  </component>
+</project>
