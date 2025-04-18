@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: pyfcg
+Version: 0.1b1
+Description-Content-Type: text/markdown
+Requires-Dist: wget==3.2
+Requires-Dist: requests==2.32.3
+Requires-Dist: appdirs==1.4.4
+Requires-Dist: penman
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+
+# PyFCG
+
+*A Python interface to FCG and Babel, built on FCG Go.*
+
+## Installation
+
+To install this package from PyPI, run the following command.
+
+```bash
+pip install pyfcg
+```
+
+## Use
+
+Start a PyFCG session with:
+
+```
+import pyfcg as fcg
+fcg.init(port=9600)
+```
+
+This starts up FCG Go, listening at port 9600.
+
+Then:
+
+```
+fcg.load_demo_grammar()
+fcg.start_web_interface(port=8010,open=True)
+fcg.activate_monitors(['trace-fcg'])
+fcg.comprehend("the linguist likes the mouse", grammar='*fcg-constructions*')
+```
+
+And you can enjoy everything at http://localhost:8010 !
+
+## Documentation
+
+Full documentation of this package, including examples can be found on [pyfcg.readthedocs.io](https://pyfcg.readthedocs.io).
