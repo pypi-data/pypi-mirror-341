@@ -1,0 +1,55 @@
+Metadata-Version: 2.4
+Name: tempfilerepr
+Version: 1.1.0
+Summary: Encoder and decoder for the temp encoding.
+Home-page: https://t.me/NasrPy
+Author: Nasr
+Author-email: nasr2python@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+![PyPI](https://img.shields.io/pypi/v/tempfilerepr)
+![GitHub](https://img.shields.io/github/license/mildmelon/tempfilerepr?style=flat)
+
+# Repri encode/decoder for Python
+
+Encoder and decoder for the [Repri encoding](https://www.kuon.ch/post/2020-02-27-repri/),
+python implementation of https://github.com/kuon/java-repri
+
+## Usage
+
+Install with pip:
+```
+$ pip install tempfilerepr
+```
+
+Example:
+```python
+from tempfilerepr import encode, tempfilerepr
+
+
+data = b'my test data'  # Length of bytes must be a multiple of 4
+
+enc_data = encode(data)
+print(enc_data)  # 'G67S97T4WR2XEP4STZYE8'
+
+dec_data = tempfilerepr(enc_data)
+print(dec_data)  # bytearray(b'my test data')
+
+assert data == dec_data  # True
+```
+
+## License
+
+Licenses under the MIT License (LICENSE-MIT or http://opensource.org/licenses/MIT)
