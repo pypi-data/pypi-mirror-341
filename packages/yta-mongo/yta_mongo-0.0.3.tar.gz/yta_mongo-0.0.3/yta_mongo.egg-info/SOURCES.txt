@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+yta_mongo/__init__.py
+yta_mongo/clients.py
+yta_mongo/validation.py
+yta_mongo.egg-info/PKG-INFO
+yta_mongo.egg-info/SOURCES.txt
+yta_mongo.egg-info/dependency_links.txt
+yta_mongo.egg-info/requires.txt
+yta_mongo.egg-info/top_level.txt
