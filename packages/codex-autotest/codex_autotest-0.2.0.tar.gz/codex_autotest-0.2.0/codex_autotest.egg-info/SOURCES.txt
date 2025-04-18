@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+codex_autotest/__init__.py
+codex_autotest/cli.py
+codex_autotest/config.py
+codex_autotest/openai_client.py
+codex_autotest.egg-info/PKG-INFO
+codex_autotest.egg-info/SOURCES.txt
+codex_autotest.egg-info/dependency_links.txt
+codex_autotest.egg-info/entry_points.txt
+codex_autotest.egg-info/requires.txt
+codex_autotest.egg-info/top_level.txt
+tests/__init__.py
+tests/test_cli.py
+tests/test_config.py

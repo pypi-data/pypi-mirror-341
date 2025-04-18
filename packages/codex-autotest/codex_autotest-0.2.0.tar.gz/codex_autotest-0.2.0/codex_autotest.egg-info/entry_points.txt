@@ -1,0 +1,2 @@
+[console_scripts]
+codex-autotest = codex_autotest.cli:main

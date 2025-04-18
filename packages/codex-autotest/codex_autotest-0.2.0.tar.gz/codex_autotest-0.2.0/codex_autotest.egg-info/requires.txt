@@ -1,0 +1,7 @@
+click
+openai
+PyYAML
+
+[dev]
+mutmut
+hypothesis
