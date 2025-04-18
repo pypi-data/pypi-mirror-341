@@ -1,0 +1,7 @@
+psutil
+pandas
+geopandas
+matplotlib
+seaborn
+pytest
+pytest-cov
