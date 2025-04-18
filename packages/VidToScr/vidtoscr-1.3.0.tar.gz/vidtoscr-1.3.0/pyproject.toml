@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=58", "wheel>=0.38"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "VidToScr"
+version = "1.3.0"
+description = "A library to convert video files to SCR format."
+readme = "README.md"
+authors = [
+    { name = "Marcin Jacek Chmiel", email = "martingonn.dev@outlook.com" }
+]
+license = { text = "Apache Software License" }
+dependencies = []
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+homepage = "https://github.com/Martingonn/VID-to-SCR-Lib"
