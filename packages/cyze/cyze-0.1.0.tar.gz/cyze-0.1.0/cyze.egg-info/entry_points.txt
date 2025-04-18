@@ -1,0 +1,3 @@
+[console_scripts]
+cyze = cyze.cyze:main
+
