@@ -1,0 +1,3 @@
+[console_scripts]
+dependency-risk-profiler = dependency_risk_profiler.cli.typer_cli:main
+dependency-risk-profiler-legacy = dependency_risk_profiler.cli.main:main
