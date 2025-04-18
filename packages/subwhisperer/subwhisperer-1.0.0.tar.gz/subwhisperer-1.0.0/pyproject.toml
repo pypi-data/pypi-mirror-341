@@ -1,0 +1,37 @@
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["subwhisperer*"]
+
+[project]
+name = "subwhisperer"
+version = "1.0.0"
+description = "Generate subtitles (SRT/TXT) from video using OpenAI Whisper."
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.10"
+
+license     = {text = "MIT"}
+authors     = [{name="Smarandii", email="olegsmarandi@gmail.com"}]
+keywords    = ["whisper", "subtitle", "srt", "caption", "cuda"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Console",
+]
+
+dependencies = [
+    "ffmpeg-python>=0.2.0",
+    "openai-whisper>=20240930",
+    "pydub>=0.25.1",
+    "torch==2.6.0",
+    "torchaudio==2.6.0",
+    "torchvision==0.21.0",
+    "transformers>=4.51.3",
+]
+
+[project.scripts]
+subwhisperer    = "subwhisperer.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Smarandii/subwhisperer"
+Documentation = "https://github.com/Smarandii/subwhisperer#readme"
+Source = "https://github.com/Smarandii/subwhisperer"
