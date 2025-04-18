@@ -1,0 +1,2 @@
+[console_scripts]
+cambiacosas = cambiacosas.__main__:main
