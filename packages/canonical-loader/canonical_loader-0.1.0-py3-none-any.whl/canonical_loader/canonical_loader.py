@@ -1,0 +1,146 @@
+from .canonic_date_utils import extract_save_date_in_file_name, extract_date_ref_in_file_name, extract_start_date_in_file_name, extract_end_date_in_file_name, extract_initial_date_in_file_name, extract_final_date_in_file_name
+from .canonic_convert_utils import map_df_to_csv_for_canonicality, map_df_to_data_for_canonicality, map_data_to_df_for_canonicality
+from shining_pebbles import scan_files_including_regex, load_csv_in_file_folder_by_regex, load_xlsx_in_file_folder_by_regex, get_today
+from tqdm import tqdm
+
+class CanonicalLoader:
+    def __init__(self, regex, file_folder):
+        self.regex = regex
+        self.file_folder = file_folder
+        self.families = None
+        self.file_name = None
+        self.file_name_prefix = None
+        self.date_save = None
+        self.date_ref = None
+        self.start_date = None
+        self.end_date = None
+        self.initial_date = None
+        self.final_date = None
+        self.dates = None
+        self.file_extension = None
+        self.file_name_format = None
+        self.df = None
+        self.data = None
+        self.meta_data = None
+        self.df_reloaded = None
+        self._load_pipelines()
+        
+        
+    def get_families_of_file_name(self):
+        if self.families is None:
+            self.families = scan_files_including_regex(file_folder=self.file_folder, regex=self.regex)
+        return self.families
+
+    def get_file_name(self):
+        if self.file_name is None:
+            self.file_name = self.families[-1]
+        return self.file_name
+
+    def get_file_format(self):
+        if self.file_name is None:
+            self.get_file_name()
+        self.file_extension = self.file_name.split('.')[-1]
+        
+    
+    def get_dates(self):
+        if self.dates is None:
+            if self.file_name is None:
+                self.get_file_name()
+            self.date_save = extract_save_date_in_file_name(self.file_name)
+            if '-at' in self.file_name:
+                self.date_ref = extract_date_ref_in_file_name(self.file_name)
+                file_name_prefix = self.file_name.split('-at')[0]
+            if '-from' in self.file_name:
+                self.start_date = extract_start_date_in_file_name(self.file_name)
+                self.end_date = extract_end_date_in_file_name(self.file_name)
+                file_name_prefix = self.file_name.split('-from')[0]
+            if '-between' in self.file_name:
+                self.initial_date = extract_initial_date_in_file_name(self.file_name)
+                self.final_date = extract_final_date_in_file_name(self.file_name)
+                file_name_prefix = self.file_name.split('-between')[0]
+            self.dates = {
+                'save': self.date_save,
+                'ref': self.date_ref,
+                'start': self.start_date,
+                'end': self.end_date,
+                'initial': self.initial_date,
+                'final': self.final_date,
+            }
+            self.file_name_prefix = file_name_prefix.replace('dataset-', '').replace('json-', '')
+        return self.dates
+
+    def get_file_name_format(self):
+        if self.file_name_format is None:
+            if self.file_name is None:
+                self.get_file_name()
+            if self.dates is None:
+                self.get_dates()
+            self.file_extension = self.file_name.split('.')[-1]
+        mapping_prefix = {
+            'csv': 'dataset-',
+            'json': 'json-',
+        }
+        file_name_format = mapping_prefix[self.file_extension] + self.file_name_prefix
+        if self.date_ref is not None:
+            file_name_format += f'-at{self.date_ref}'
+        elif self.start_date is not None:
+            file_name_format += f'-from{self.start_date}-to{self.end_date}'
+        elif self.initial_date is not None:
+            file_name_format += f'-between{self.initial_date}-and{self.final_date}'
+
+        file_name_format += f'-save{get_today().replace("-", "")}.{self.file_extension}'
+        self.file_name_format = file_name_format
+        return self.file_name_format
+
+    def get_df(self):
+        if self.df is None:
+            if self.file_extension == 'csv':
+                self.df = load_csv_in_file_folder_by_regex(file_folder=self.file_folder, regex=self.file_name)
+            elif self.file_extension == 'xls':
+                self.df = load_xlsx_in_file_folder_by_regex(file_folder=self.file_folder, regex=self.file_name)
+        return self.df
+
+    def get_data(self):
+        if self.data is None:
+            self.data = map_df_to_data_for_canonicality(self.df)
+        return self.data
+
+    def get_meta_data(self):
+        if self.meta_data is None:
+            self.meta_data = {
+                'file_name': self.file_name,
+                'file_name_format': self.file_name_format,
+                'file_extension': self.file_extension,
+                'dates': self.dates,
+                'columns': self.df.columns.tolist(),
+                # 'dtypes': self.df.dtypes.to_dict(),
+            }
+        return self.meta_data
+
+    def _load_pipelines(self):
+        print(f'Loading pipelines from {self.file_folder} with regex {self.regex}')
+        pipelines = [
+            self.get_families_of_file_name,
+            self.get_file_name,
+            self.get_file_name_format,
+            self.get_df,
+            self.get_data,
+            self.get_meta_data,
+        ]
+        for pipeline in tqdm(pipelines):
+            print(f'Loading {pipeline.__name__}')
+            pipeline()
+
+        return pipelines        
+
+    def reload_df_from_data(self):
+        df_reloaded = map_data_to_df_for_canonicality(self.data)
+        df_reloaded.index.name = self.df.index.name
+        self.df_reloaded = df_reloaded
+        return df_reloaded
+
+    def save_data_as_df(self):
+        if self.df_reloaded is None:
+            self.reload_df_from_data()
+        map_df_to_csv_for_canonicality(self.df_reloaded, file_folder='dataset-canon', file_name=self.file_name_format, option_including_index=True, option_korean=True)
+        return None
