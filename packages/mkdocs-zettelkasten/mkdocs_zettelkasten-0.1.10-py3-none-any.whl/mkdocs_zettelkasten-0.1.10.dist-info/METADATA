@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: mkdocs-zettelkasten
+Version: 0.1.10
+Summary: Add Zettelkasten features to MkDocs
+Home-page: https://github.com/buvis/mkdocs-zettelkasten
+Author: Tomáš Bouška
+Author-email: tomas@buvis.net
+License: MIT
+Keywords: mkdocs python markdown zettelkasten
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mkdocs>=1.1
+Requires-Dist: jinja2
+Requires-Dist: gitpython
+Requires-Dist: pymdown-extensions
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# MkDocs Zettelkasten
+
+This is a [Zettelkasten](https://zettelkasten.de) theme and plugin for [MkDocs](https://www.mkdocs.org). It renders the MkDocs pages as cards (zettels).
+
+For more information, head on over to [the documentation](https://buvis.github.io/mkdocs-zettelkasten/)
+
+## Development
+
+### Update
+
+1. Update dependencies: `make update`
+2. Increment version in `setup.py`
+3. Test: `make test`
+4. Build: `make build`
+5. Check if compliant with PyPI: `make check`
+6. Publish the new version to PyPI: `make publish`
