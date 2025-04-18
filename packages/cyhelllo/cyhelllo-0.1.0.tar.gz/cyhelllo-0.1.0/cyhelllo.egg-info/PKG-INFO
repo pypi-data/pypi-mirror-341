@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: cyhelllo
+Version: 0.1.0
+Summary: A Cythonized Hello World example
+Home-page: https://github.com/abhinives/cyhello
+Author: Abhinivesh
+Author-email: abhinivesh.s0305@email.com
+License: Proprietary - See LICENSE file
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Cython
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9,<3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: provides-extra
+Dynamic: requires-python
+Dynamic: summary
+
+helloworld
