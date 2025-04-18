@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: nawa-tracking
+Version: 0.1.0
+Summary: NAWA – Smart Pilgrim Tracking toolkit (face matching, behaviour analytics, PDF reports)
+Home-page: https://github.com/kapp1/nawa-smart-hajj
+Author: Khalid Al-...
+Author-email: "Khalid A." <kapp6@protonmail.com>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/Kapp1/nawa-tracking
+Project-URL: Documentation, https://github.com/Kapp1/nawa-smart-hajj
+Project-URL: Source, https://github.com/Kapp1/nawa-tracking
+Project-URL: Issues, https://github.com/Kapp1/nawa-tracking/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fpdf2>=2.7.7
+Requires-Dist: boto3>=1.34
+Requires-Dist: streamlit
+Requires-Dist: plotly
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# 🕋 nawa‑tracking
+
+> **Python SDK & PoC** for the NAWA Smart Pilgrim Management Platform  
+> AI‑powered facial‑matching, behaviour analysis, and PDF reporting.
+
+## Quick install
+
+```bash
+pip install git+https://github.com/Kapp1/nawa-tracking.git
