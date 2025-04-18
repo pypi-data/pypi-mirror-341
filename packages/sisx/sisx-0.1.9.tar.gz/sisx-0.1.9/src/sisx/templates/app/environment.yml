@@ -1,0 +1,11 @@
+name: streamlit_app
+channels:
+  - snowflake
+dependencies:
+  - python=3.11.9
+  - streamlit=1.39.0
+  - snowflake-snowpark-python=1.23.0
+  - streamlit-extras
+  - pandas
+  - numpy
+  - plotly

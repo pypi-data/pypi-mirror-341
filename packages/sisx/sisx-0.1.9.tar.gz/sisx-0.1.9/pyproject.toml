@@ -1,0 +1,83 @@
+[project]
+name = "sisx"
+version = "0.1.9"
+description = "Python package to make it easy to develop, test and deploy performant streamlit-in-snowflake apps"
+authors = [{ name = "Zachary Blackwood", email = "zblackwo@gmail.com" }]
+dependencies = [
+    "streamlit",
+    "snowflake-snowpark-python",
+    "plotly",
+    "numpy>=1.24.4,<2.0.0",
+    "pandas",
+    "typer",
+    "snowflake-cli>=3.7.0",
+    "pytest>=8.3.5",
+    "rich>=13.7.0",
+    "tomli>=2.0.1",
+    "pyarrow<19.0.0",
+]
+requires-python = ">=3.10,<3.13"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Source = "https://github.com/blackary/sisx"
+Tracker = "https://github.com/blackary/sisx/issues"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+sisx = "sisx.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+exclude = [".git", ".vscode", ".pytest_cache", ".mypy_cache", ".env"]
+line-length = 88
+
+[tool.ruff.lint]
+ignore = ["B008", "ISC001", "E501", "W191"]
+select = [
+    "B",
+    "E",
+    "F",
+    "W",
+    "I",
+    "N",
+    "C4",
+    "EXE",
+    "ISC",
+    "ICN",
+    "PIE",
+    "PT",
+    "RET",
+    "SIM",
+    "ERA",
+    "PLC",
+    "RUF",
+    "ARG",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sisx"]
+
+[tool.hatch.build.targets.wheel.sources]
+"src/sisx/templates" = "src/sisx/templates"
+"src/sisx/templates/shared/.streamlit" = "src/sisx/templates/shared/.streamlit"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest-cov>=6.0.0",
+    "pytest-xdist>=3.6.1",
+    "streamlit-extras>=0.6.0",
+    "types-pyyaml>=6.0.12.20250326",
+    "types-toml>=0.10.8.20240310",
+]

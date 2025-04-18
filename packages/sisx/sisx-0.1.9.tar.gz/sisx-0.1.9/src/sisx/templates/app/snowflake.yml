@@ -1,0 +1,29 @@
+definition_version: "2"
+env:
+  name: "<!name!>"
+  schema: "<!schema!>"
+  database: "<!database!>"
+  preview_database: "<!preview_database!>"
+  preview_schema: "<!preview_schema!>"
+  preview_role: "<!preview_role!>"
+  stage: "<!stage!>"
+  role: "<!role!>"
+  <!! if app_type == "warehouse" !!>query_warehouse: "<!query_warehouse!>"<!! endif !!>
+  <!! if app_type == "warehouse" !!>app_warehouse: "<!app_warehouse!>"<!! endif !!>
+  <!! if app_type == "compute_pool" !!>compute_pool: "<!compute_pool!>"<!! endif !!>
+entities:
+  streamlit_app:
+    type: streamlit
+    identifier:
+      name: <% ctx.env.name %>
+      schema: <% ctx.env.schema %>
+      database: <% ctx.env.database %>
+    stage: <% ctx.env.stage %>
+    <!! if app_type == "warehouse" !!>query_warehouse: <% ctx.env.query_warehouse %><!! endif !!>
+    <!! if app_type == "compute_pool" !!>compute_pool: <% ctx.env.compute_pool %><!! endif !!>
+    main_file: streamlit_app.py
+    pages_dir: pages/
+    artifacts:
+      - "**/*.py"
+      - "*.yml"
+      <!! if app_type == "compute_pool" !!>- "requirements.txt"<!! endif !!>

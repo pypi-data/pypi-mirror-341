@@ -1,0 +1,27 @@
+name: Test
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  pytest:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install the latest version of uv and set the python version
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - name: Test with python 3.12
+        run: uv run --frozen pytest -v --junit-xml=test-results.xml
+      - if: always()
+        uses: pmeier/pytest-results-action@v0.6.0
+        with:
+          path: test-results.xml
+          summary: true
+          display-options: fEX
