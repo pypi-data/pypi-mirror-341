@@ -1,0 +1,12 @@
+fastcore
+tqdm
+langfuse
+instructor
+pydantic
+numpy
+plotly
+mlflow
+gitpython
+
+[dev]
+pytest
