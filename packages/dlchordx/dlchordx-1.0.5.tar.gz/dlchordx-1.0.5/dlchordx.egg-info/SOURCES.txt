@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+dlchordx/__init__.py
+dlchordx/chord.py
+dlchordx/chord_prog.py
+dlchordx/const.py
+dlchordx/parser.py
+dlchordx.egg-info/PKG-INFO
+dlchordx.egg-info/SOURCES.txt
+dlchordx.egg-info/dependency_links.txt
+dlchordx.egg-info/top_level.txt
+test/__init__.py
+test/test_chord.py
+test/test_chord_parser.py
+test/test_quality_parser.py
+test/test_utils.py

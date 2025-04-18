@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dlchordx
+Version: 1.0.5
+Summary: chord library
+Home-page: https://github.com/anime-song/DLChordX
+Author: anime-song
+License: MIT
+Keywords: music chord
+License-File: LICENSE
