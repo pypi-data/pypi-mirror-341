@@ -1,0 +1,10 @@
+django-payments>=3.0.0
+
+[dev]
+django-stubs[compatible-mypy]
+mock
+pre-commit
+pytest
+pytest-django
+pytest-mock
+types-braintree

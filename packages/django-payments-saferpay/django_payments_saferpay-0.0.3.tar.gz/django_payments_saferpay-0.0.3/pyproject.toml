@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-payments-saferpay"
+description = "SaferPay integration for django-payments"
+dynamic = ["version"]
+readme = "README.md"
+requires-python = ">=3.9"
+license-files = ["LICENSE"]
+keywords = ["django", "payments", "saferpay"]
+authors = [
+  { name = "EPFL CEDE", email = "oleg.demakov@epfl.ch" },
+]
+classifiers = [
+  "Environment :: Web Environment",
+  "Framework :: Django :: 4.2",
+  "Framework :: Django :: 5.0",
+  "Framework :: Django :: 5.1",
+  "Framework :: Django",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+  "django-payments>=3.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "django-stubs[compatible-mypy]",
+  "mock",
+  "pre-commit",
+  "pytest",
+  "pytest-django",
+  "pytest-mock",
+  "types-braintree",
+]
+
+[project.urls]
+Documentation = "https://github.com/epfl-cede/django-payments-saferpay#readme"
+Issues = "https://github.com/epfl-cede/django-payments-saferpay/issues"
+Source = "https://github.com/epfl-cede/django-payments-saferpay"
+
+[tool.setuptools.packages]
+find = {where = ["src"]}
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "tests.django_settings"
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py39"
+
+[tool.mypy]
+strict = true
+
+[tool.setuptools_scm]
+write_to = "src/django_payments_saferpay/version.py"
+version_scheme = "post-release"
+
+[[tool.mypy.overrides]]
+# Parts of django-payments are typed, but no py.typed marker
+module = "payments.*"
+ignore_missing_imports = true
