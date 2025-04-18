@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: antdb
+Version: 0.1.0
+Summary: Python library for managing fake databases, in memory, so you no longer need to create lists to store data.
+Author-email: Antonio Henrique Machado <machadoah@proton.me>
+Requires-Python: >=3.13
+Requires-Dist: pydantic-settings>=2.8.1
+Requires-Dist: pydantic>=2.11.3
+Description-Content-Type: text/markdown
+
+# 👻 AntiDB
+
+AntiDB is a Python library for managing fake databases, in memory, so you no longer need to create lists to store data.
