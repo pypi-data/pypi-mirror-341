@@ -1,0 +1,14 @@
+BacSC/ClusterDE.py,sha256=rmhCWQgISyCkkbjUZECWdSphayE78Jf8aDjRDhBkHd0,12960
+BacSC/NB_est.py,sha256=soOZIH22Daxf9dCudg5PStwA0mfR6QNqdbTMOlB48Cg,9352
+BacSC/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BacSC/clustering_opt.py,sha256=_vwt56xwDiLmUSjofWznRyq559715xPMGzKTtmY35Ns,4212
+BacSC/countsplit.py,sha256=AndKTsB0d2_8QX3-fyYHRRGJhOv6WlL4lquFQhYB6kQ,3522
+BacSC/near_corr.py,sha256=KWXExMHguOPmQKbd2PETHmv-vWqRm4WgiHvA_dZbUfE,4584
+BacSC/scDEED.py,sha256=_f-Hx3E54dYzP75s1EMySO3mF5RKcn_tGiaWV4Igdog,6580
+BacSC/scTransform.py,sha256=cD8xt7vt_iRClTsTOpobRxBIuibdvDKXihWzQWi8Pk8,10330
+BacSC/util.py,sha256=l0WmlplYYFhtGAgQ23TReKFiMoeQk7F6xh8PhoEm-z8,2711
+BacSC/util_probe.py,sha256=SYNooRoK2lLFp0T9QVjIqS-X-4V6EbEdXdzOGDUqGk0,1425
+bacsc-0.1.0.dist-info/METADATA,sha256=cncZpvl5E83fD5xzM5wkXb505AWVkQNB2JBDSQyF8cc,4419
+bacsc-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+bacsc-0.1.0.dist-info/licenses/LICENSE,sha256=68yoH3P2BQC9wEhcJFIIaUdnZ7qoIfIAzV5PHs96rh8,1071
+bacsc-0.1.0.dist-info/RECORD,,
