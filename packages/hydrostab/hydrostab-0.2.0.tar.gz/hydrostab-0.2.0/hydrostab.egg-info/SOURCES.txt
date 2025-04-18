@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+hydrostab/__init__.py
+hydrostab/experimental.py
+hydrostab/ras.py
+hydrostab/utils.py
+hydrostab.egg-info/PKG-INFO
+hydrostab.egg-info/SOURCES.txt
+hydrostab.egg-info/dependency_links.txt
+hydrostab.egg-info/requires.txt
+hydrostab.egg-info/top_level.txt
+tests/test_edge_cases.py
+tests/test_stability.py
