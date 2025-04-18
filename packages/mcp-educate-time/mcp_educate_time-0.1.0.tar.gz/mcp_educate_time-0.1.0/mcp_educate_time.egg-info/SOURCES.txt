@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+mcp_educate_time/__init__.py
+mcp_educate_time/server.py
+mcp_educate_time.egg-info/PKG-INFO
+mcp_educate_time.egg-info/SOURCES.txt
+mcp_educate_time.egg-info/dependency_links.txt
+mcp_educate_time.egg-info/requires.txt
+mcp_educate_time.egg-info/top_level.txt
