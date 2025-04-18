@@ -1,0 +1,16 @@
+pip
+numpy
+urllib3
+requests
+pandas
+curlify
+PyYAML
+psycopg2-binary
+pymysql
+pyhive
+thrift
+sasl
+thrift-sasl
+setuptools
+wheel
+paramiko
