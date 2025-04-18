@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+readme.md
+requirements.txt
+setup.py
+mcp_server_dlis/__init__.py
+mcp_server_dlis/__main__.py
+mcp_server_dlis/dlis_server.py
+mcp_server_dlis.egg-info/PKG-INFO
+mcp_server_dlis.egg-info/SOURCES.txt
+mcp_server_dlis.egg-info/dependency_links.txt
+mcp_server_dlis.egg-info/entry_points.txt
+mcp_server_dlis.egg-info/requires.txt
+mcp_server_dlis.egg-info/top_level.txt
+mcp_server_dlis/tests/__init__.py
+mcp_server_dlis/tests/test.py
