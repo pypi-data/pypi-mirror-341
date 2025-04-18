@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+k8s_mcp_server.egg-info/PKG-INFO
+k8s_mcp_server.egg-info/SOURCES.txt
+k8s_mcp_server.egg-info/dependency_links.txt
+k8s_mcp_server.egg-info/entry_points.txt
+k8s_mcp_server.egg-info/requires.txt
+k8s_mcp_server.egg-info/top_level.txt
+mcp_server_k8s/__init__.py
+mcp_server_k8s/__main__.py
+mcp_server_k8s/py.typed
+mcp_server_k8s/server.py
