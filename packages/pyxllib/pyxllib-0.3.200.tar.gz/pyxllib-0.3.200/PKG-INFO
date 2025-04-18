@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: pyxllib
+Version: 0.3.200
+Summary: 厦门理工模式识别团队通用python代码工具库
+Project-URL: Homepage, https://github.com/XLPRUtils/pyxllib
+Author-email: code4101 <877362867@qq.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: <3.13,>=3.6
+Requires-Dist: arrow
+Requires-Dist: beautifulsoup4
+Requires-Dist: charset-normalizer
+Requires-Dist: decorator
+Requires-Dist: deprecated
+Requires-Dist: envariable
+Requires-Dist: fire
+Requires-Dist: humanfriendly
+Requires-Dist: jinja2
+Requires-Dist: loguru
+Requires-Dist: lxml
+Requires-Dist: more-itertools
+Requires-Dist: numpy
+Requires-Dist: pandas>=0.23.4
+Requires-Dist: pillow
+Requires-Dist: pympler
+Requires-Dist: pyperclip
+Requires-Dist: pyyaml
+Requires-Dist: qiniu
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: ujson
+Requires-Dist: xlrd
+Description-Content-Type: text/markdown
+
+
+# 1 安装
+
+```
+pip install pyxllib
+```
+
+更多介绍: https://www.yuque.com/xlpr/pyxllib/install
+
+# 2 文档
+
+文档都在语雀: https://www.yuque.com/xlpr/pyxllib
