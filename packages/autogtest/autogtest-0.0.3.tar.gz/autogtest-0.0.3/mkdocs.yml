@@ -1,0 +1,52 @@
+site_name: autogtest
+repo_url: https://github.com/10-neon/autogtest
+site_url: https://10-neon.github.io/autogtest
+site_description: generate gmock files
+site_author: dongyilong
+edit_uri: edit/main/docs/
+repo_name: 10-neon/autogtest
+copyright: Maintained by <a href="https://10-neon.com">10-neon</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["src/autogtest"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/10-neon/autogtest
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/autogtest
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
