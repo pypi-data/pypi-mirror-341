@@ -1,0 +1,2 @@
+[console_scripts]
+swipe-verse = swipe_verse.main:main
