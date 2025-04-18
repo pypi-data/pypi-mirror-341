@@ -1,0 +1,2 @@
+[console_scripts]
+data-analysis-mcp = data_analysis_mcp.app:main
