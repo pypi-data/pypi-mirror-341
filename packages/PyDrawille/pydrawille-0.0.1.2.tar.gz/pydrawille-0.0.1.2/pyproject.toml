@@ -1,0 +1,72 @@
+[project]
+name = "PyDrawille"
+dynamic = []
+requires-python = ">= 3.8"
+dependencies = [
+    "numpy",
+    "pillow >= 10.0.0",
+]
+authors = [
+    { name = "金羿Eilles", email = "EillesWan@outlook.com" },
+]
+description = "Using Unicode braille characters to draw pixels in console."
+license = "Apache-2.0"
+keywords = [
+    "console",
+    "drawille",
+    "unicode",
+    "braille",
+    "pixel",
+    "ascii",
+    "image",
+]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+version = "0.0.1.2"
+
+[project.readme]
+file = "README.en.md"
+content-type = "text/markdown"
+
+[project.optional-dependencies]
+dev = [
+    "twine",
+]
+
+[project.urls]
+Homepage = "https://github.com/EillesWan/PyDrawille"
+Issues = "https://github.com/EillesWan/PyDrawille/issues"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.build]
+source-includes = [
+    "README.en.md",
+    "README.md",
+    "LICENSE",
+]
+excludes = [
+    "refant/",
+    "./*.otf",
+    "./*.ttf",
+    "./*.png",
+    "./test.py",
+    "./test_draw.py",
+]
+
+[tool.pdm.version]
+source = "file"
+path = "PyDrawille/__init__.py"
+
+[tool.pyright]
+typeCheckingMode = "standard"
