@@ -1,0 +1,10 @@
+llmproc/__init__.py,sha256=idcqUpvU616-6Xw4yyuiKh3lr5WBqLRLwnoiqQQ4qkk,387
+llmproc/_program_docs.py,sha256=Dh2tP2TQaFEOP4Mu5LstYZGrpmGrsmuQ3nNMYTfUMu8,9405
+llmproc/llm_process.py,sha256=NcBFE9_f21aUBe3jqtIyr4q7rGDhoZUUb9mG7AAPOx4,23036
+llmproc/program.py,sha256=izccw0gVHfr4CVyp0PS5DXxN1uLHmELXAz06KTdR7bU,23888
+llmproc/program_exec.py,sha256=8K0p46UyN6nZZyThQFrT0PF-aQ3jP-IWmaFy_Z_TDxE,19094
+llmproc-0.6.1.dist-info/METADATA,sha256=9T2nJHKxOJ4UxCyobmUgZp1UiGSExre7b_qpJyMSfuc,8865
+llmproc-0.6.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+llmproc-0.6.1.dist-info/entry_points.txt,sha256=cS8t7S48BAigdAWz8X-NJ_nfFgXLUcFPCEmmAOyXfe4,109
+llmproc-0.6.1.dist-info/top_level.txt,sha256=d-iVXGgv_1Mk_agd_cQC6PuffQeqzN-uhj1LVPhJ0TE,8
+llmproc-0.6.1.dist-info/RECORD,,
