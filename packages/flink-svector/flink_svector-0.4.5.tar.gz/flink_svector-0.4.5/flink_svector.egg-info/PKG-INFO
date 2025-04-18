@@ -1,0 +1,194 @@
+Metadata-Version: 2.4
+Name: flink-svector
+Version: 0.4.5
+Summary: A distributed version control system for tracking changes in source code
+Home-page: https://github.com/siddharth-coder8/flink
+Author: Siddharth Shah
+Author-email: team@svector.co.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: firebase-admin
+Requires-Dist: tabulate
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Flink: A Version Control System with Firebase
+Flink is a lightweight, version control system that stores repositories in Firebase Firestore and Storage. It supports user accounts, public/private repositories, and commands like init, add, commit, push, clone, and list-repos.
+Features
+
+Register and login with flink register and flink login.
+Create public or private repositories with flink init.
+Stage and commit files with flink add and flink commit.
+Push changes to Firebase with flink push.
+Clone repositories with flink clone.
+List your repositories with flink list-repos.
+Uses Firebase for secure, scalable storage.
+
+Prerequisites
+
+Python 3.6+.
+A Firebase project with Firestore and Storage enabled.
+Firebase Admin SDK service account JSON file.
+
+Installation
+Install Flink globally with pip:
+pip install flink
+
+This installs Flink and its dependency (firebase-admin) automatically.
+Firebase Setup
+
+Go to Firebase Console.
+
+Create a project (e.g., flink-vcs).
+
+Enable Firestore and Storage.
+
+Generate a service account key:
+
+Go to Project Settings > Service Accounts > Generate New Private Key.
+Download the JSON file (e.g., your-project-firebase-adminsdk.json).
+
+
+Set the FLINK_SERVICE_ACCOUNT environment variable:
+export FLINK_SERVICE_ACCOUNT=/path/to/your-project-firebase-adminsdk.json
+
+Add to ~/.zshrc or ~/.bashrc for permanence:
+echo 'export FLINK_SERVICE_ACCOUNT=/path/to/your-project-firebase-adminsdk.json' >> ~/.zshrc
+source ~/.zshrc
+
+
+Set Firebase rules:
+
+Firestore (in Firebase Console > Firestore > Rules):rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    match /repositories/{repo} {
+      allow read: if resource.data.visibility == 'public' || (request.auth != null && resource.data.owner == request.auth.uid);
+      allow write: if request.auth != null && resource.data.owner == request.auth.uid;
+    }
+  }
+}
+
+
+Storage (in Firebase Console > Storage > Rules):rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /repositories/{repo}/{allPaths=**} {
+      allow read: if get(/databases/$(database)/documents/repositories/$(repo)).data.visibility == 'public' ||
+                    (request.auth != null && get(/databases/$(database)/documents/repositories/$(repo)).data.owner == request.auth.uid);
+      allow write: if request.auth != null && get(/databases/$(database)/documents/repositories/$(repo)).data.owner == request.auth.uid;
+    }
+  }
+}
+
+
+
+
+
+User Setup
+
+Register:
+flink register your.email@example.com
+
+Enter a password when prompted.
+
+Login:
+flink login your.email@example.com
+
+Enter your password.
+
+
+Usage
+
+Initialize a repository (public or private):
+mkdir myrepo
+cd myrepo
+flink init
+
+Choose public or private when prompted.
+
+Add files:
+echo "<h1>Hello</h1>" > index.html
+flink add index.html
+
+
+Commit changes:
+flink commit -m "Initial commit"
+
+
+Push to Firebase:
+flink push
+
+
+Clone a repository (public or owned private):
+cd /path/to/another/dir
+flink clone myrepo
+ls myrepo
+# Should show: index.html
+
+
+List your repositories:
+flink list-repos
+
+Shows your repos with visibility and latest commit.
+
+
+Example
+Create a private webpage repo:
+flink register user@example.com
+# Enter password
+flink login user@example.com
+# Enter password
+mkdir myrepo
+cd myrepo
+flink init
+# Choose 'private'
+echo '<!DOCTYPE html><html><body><h1>Hello, World!</h1></body></html>' > index.html
+flink add index.html
+flink commit -m "Add index.html"
+flink push
+flink list-repos
+cd /tmp
+flink clone myrepo
+cat myrepo/index.html
+
+Troubleshooting
+
+Command not found: Ensure flink is in PATH:pip install --user flink
+echo 'export PATH="$HOME/Library/Python/3.12/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+
+Firebase errors: Verify FLINK_SERVICE_ACCOUNT and Firebase rules.
+Login failed: Check email/password or register.
+Permission denied: Install with --user or fix pip cache:sudo chown -R $USER:staff ~/Library/Caches/pip
+
+
+
+Contributing
+
+Fork the repo: github.com/siddharth-coder8/flink.
+Clone and install:git clone https://github.com/siddharth-coder8/flink
+cd flink
+pip install --user .
+
+
+Submit pull requests with features (e.g., flink log, branch).
+
+License
+MIT License. See LICENSE for details.
+Contact
+Created by SVECTOR (team@svector.co.in). Report issues at github.com/siddharth-coder8/flink/issues.
