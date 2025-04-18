@@ -1,0 +1,14 @@
+esptool
+pyserial
+pyqt5
+pyqt5-tools
+flask
+flask-cors
+pillow
+requests
+Send2Trash
+asttokens
+mypy
+docutils
+pylint
+jedi
