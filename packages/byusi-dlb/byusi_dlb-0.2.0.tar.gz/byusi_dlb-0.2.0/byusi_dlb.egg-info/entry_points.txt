@@ -1,0 +1,2 @@
+[console_scripts]
+dlb = dlb.cli:main

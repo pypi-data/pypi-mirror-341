@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: byusi-dlb
+Version: 0.2.0
+Summary: Multi-threaded downloader with Rich progress bars
+Home-page: https://gitee.com/byusi/dlb
+Author: ByUsi
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich>=10.0.0
+Requires-Dist: requests>=2.25.1
+Requires-Dist: python-dotenv>=0.19.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# dlb
+
+### Installer
+1. 使用 pip 的 PyPi 安装
+```python
+pip install dlb
+```
+
+2. 使用开源仓库安装
+```python
+pip install git+https://gitee.com/byusi/dlb.git
+```
