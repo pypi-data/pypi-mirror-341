@@ -1,0 +1,2 @@
+[console_scripts]
+tw50 = tw50:main
