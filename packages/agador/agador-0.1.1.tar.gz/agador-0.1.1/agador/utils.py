@@ -1,0 +1,196 @@
+from typing import Optional, Dict
+import ipaddress
+import sys
+from os import getenv, getcwd
+from os.path import isdir
+import re
+import argparse
+from git import Repo
+import yaml
+from decouple import config, UndefinedValueError
+from cron_converter import Cron
+
+from nornir.core.inventory import Host
+
+from umnet_napalm.abstract_base import AbstractUMnetNapalm
+
+from .nornir import inventory_filters
+from .mappers import save_to_db, save_to_file
+
+class CommandMapError(Exception):
+    def __init__(self, cmd:str, error_str:str):
+        super().__init__(f"command map error for '{cmd}' - {error_str}")
+
+def get_from_args_or_env(cli_arg: str, args: argparse.Namespace) -> str:
+    """
+    Pull a value from parsed arparse, if it's not there look for it
+    in the environment
+    """
+    if getattr(args, cli_arg, False):
+        return args.arg
+
+    env_arg = cli_arg.replace("-", "_").upper()
+    if getenv(env_arg):
+        return getenv(env_arg)
+
+    print(
+        f"ERROR: Please provide {cli_arg} as cli input or as {env_arg} environment variable"
+    )
+    sys.exit(1)
+
+
+def is_ip_address(ip: str) -> bool:
+    """
+    Returns whether a string is an IP (eg 10.233.0.10 or fe80::1)
+    """
+    try:
+        ipaddress.ip_address(ip)
+    except ValueError:
+        return False
+    return True
+
+
+def is_ip_or_prefix(ip: str) -> bool:
+    """
+    Returns whether a string is an ip (10.233.0.10) or
+    IP + prefix (10.233.0.10/24). IPv6 works as well.
+    """
+    try:
+        ipaddress.ip_interface(ip)
+    except ValueError:
+        return False
+    return True
+
+
+def git_update(repo_path: str, commit_message: str):
+    """
+    Updates git repo and if applicable, the remote origin.
+    Will overwrite origin.
+    """
+    repo = Repo(repo_path)
+    status = repo.git.status()
+
+    repo.git.add(all=True)
+    repo.index.commit(commit_message)
+    try:
+        origin = repo.remote(name="origin")
+    except ValueError:
+        origin = None
+
+    if origin:
+        origin.push()
+
+
+def parse_command_map() -> dict:
+    """
+    Parses and validates command_map file, replacing text references
+    to functions to references to the actual functions where applicable.
+
+    Future task: pydantic-based validation
+    """
+
+    db_module = save_to_db
+    file_module = save_to_file
+
+    with open(f"{getcwd()}/agador/command_map.yml", encoding="utf-8") as fh:
+        cmd_map = yaml.safe_load(fh)
+
+    output = {}
+    for cmd, data in cmd_map["commands"].items():
+
+        output[cmd] = {}
+
+        # validating frequency, which is required
+        if "frequency" not in data:
+            raise CommandMapError(cmd, "Must specify frequency")
+        try:
+            output[cmd]["frequency"] = Cron(data["frequency"])
+        except ValueError:
+            raise CommandMapError(cmd, "Invalid frequency - must be in crontab format")
+
+        # validating umnet_napalm getter specification
+        if "getter" not in data:
+            raise CommandMapError(cmd,"Must specify umnet_napalm getter")
+        if data["getter"] not in dir(AbstractUMnetNapalm):
+           raise CommandMapError(cmd, f"Unknown umnet_napalm getter {data['getter']}")
+        output[cmd]["getter"] = data["getter"]
+
+        # validating and retrieving inventory filter fuction
+        inv_filter = data.get("inventory_filter", None)
+        if inv_filter:
+            if inv_filter not in dir(inventory_filters):
+                raise CommandMapError(cmd, f"Unknown inventory filter {inv_filter}")
+
+            output[cmd]["inventory_filter"] = getattr(inventory_filters, inv_filter)
+
+        # validating and retrieving save_to_file class
+        file_data = data.get("save_to_file", None)
+        if file_data:
+            if "mapper" not in file_data:
+                raise CommandMapError(cmd, "Must specify mapper for save_to_file")
+
+            if "destination" not in file_data:
+                raise CommandMapError(cmd, "Must specify destination for save_to_file")
+
+            destination = resolve_envs(file_data["destination"])
+            if not isdir(destination):
+                raise CommandMapError(cmd, "Invalid desintation folder for save_to_file")
+            
+            if file_data["mapper"] not in dir(file_module):
+                raise CommandMapError(cmd, f"Unknown save_to_file mapper {file_data['mapper']}")
+
+            output[cmd]["save_to_file"] = {
+                "mapper": getattr(file_module, file_data["mapper"]),
+                "destination": destination,
+            }
+
+        # validating and retrieving save_to_db class
+        db_data = data.get("save_to_db", None)
+        if db_data:
+            if db_data not in dir(db_module):
+                raise CommandMapError(cmd, f"Unknown save_to_db mapper {db_data}")
+
+            output[cmd]["save_to_db"] = getattr(db_module, db_data)
+
+        if not db_data and not file_data:
+            raise CommandMapError(cmd,"Must specifiy either save_to_db or save_to_file")
+
+    return output
+
+
+def get_device_cmd_list(
+    cmd_map: dict, host: Host, cmd_list_filter: Optional[list] = None
+) -> Dict[str, dict]:
+    """
+    Gets list of commands tied to a device based on its
+    host inventory data. Optionally provide a list of commands to
+    restrict the output to.
+
+    Returns a dict mapping the getter commands to run to the arguments they need to be run
+    with (if any)
+    """
+    cmd_list = {}
+    for cmd, data in cmd_map.items():
+
+        if cmd_list_filter and cmd not in cmd_list_filter:
+            continue
+
+        if not data.get("inventory_filter") or data["inventory_filter"](host):
+            cmd_list[cmd] = data.get("getter_args", {})
+
+    return cmd_list
+
+def resolve_envs(input_str:str)->str:
+    """
+    Takes an input string and searches for all instances of '${ENV_VAR}', replacing
+    ENV_VAR with the value in the .env file. Raises an exception
+    if the ENV_VAR is not found
+    """
+    for m in re.finditer(r"\${(\w+)}", input_str):
+        var = m.group(1)
+        try:
+            input_str = re.sub(r'\${' + var + '}', config(var), input_str)
+        except UndefinedValueError:
+            raise ValueError(f"Invalid env var {m.group(1)} in {input_str}")
+        
+    return input_str
