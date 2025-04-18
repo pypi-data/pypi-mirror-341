@@ -1,0 +1,11 @@
+mcp_server_dlis/__init__.py,sha256=q6RCDEFfMqKUmFsnvoKyjMTCSd-j1yr4v_e-8oBYG94,455
+mcp_server_dlis/__main__.py,sha256=O_UI-fE2K9hHXYpdG1mTiLw-DVvvIWJoqXJ23aDcK6c,40
+mcp_server_dlis/dlis_server.py,sha256=iYwi_BncjU5PsiDWEp5DRza1BOsXhzEtOo73WSC5iuU,11383
+mcp_server_dlis/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcp_server_dlis/tests/test.py,sha256=riLq_mO0jA4tBziF8aZChG2WLuHhPtnNaEuVXmQczHE,2876
+mcp_server_dlis-0.1.1.dist-info/licenses/LICENSE,sha256=KdOVELIf1TMDViYaBY4TkQmLs9plLF7bCtIuiaFSWtc,1068
+mcp_server_dlis-0.1.1.dist-info/METADATA,sha256=jSbfhElYFD3cdVlxGT9-HgwGC4DQROTSszBavlYKbF8,4441
+mcp_server_dlis-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mcp_server_dlis-0.1.1.dist-info/entry_points.txt,sha256=YhwaWKzCauN13sknzf4POhjBfy-AdKsFpdJegZZ1vd4,49
+mcp_server_dlis-0.1.1.dist-info/top_level.txt,sha256=D2Oe2-f2oC23ht0IoZA8VQY50briRXCOutvMsOEk6Pc,16
+mcp_server_dlis-0.1.1.dist-info/RECORD,,

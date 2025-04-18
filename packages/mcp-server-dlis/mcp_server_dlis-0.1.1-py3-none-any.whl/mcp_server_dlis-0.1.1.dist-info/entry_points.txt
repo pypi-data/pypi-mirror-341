@@ -1,0 +1,2 @@
+[console_scripts]
+dlis-server = dlis_server:main
