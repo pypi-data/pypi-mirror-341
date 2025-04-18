@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+amazing_filters.egg-info/PKG-INFO
+amazing_filters.egg-info/SOURCES.txt
+amazing_filters.egg-info/dependency_links.txt
+amazing_filters.egg-info/requires.txt
+amazing_filters.egg-info/top_level.txt
