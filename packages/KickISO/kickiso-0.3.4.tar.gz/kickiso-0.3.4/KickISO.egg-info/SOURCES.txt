@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+KickISO.egg-info/PKG-INFO
+KickISO.egg-info/SOURCES.txt
+KickISO.egg-info/dependency_links.txt
+KickISO.egg-info/requires.txt
+KickISO.egg-info/top_level.txt
+kickapi/__init__.py
+kickapi/channel_data.py
+kickapi/chat_data.py
+kickapi/kickapi.py
+kickapi/video_data.py
