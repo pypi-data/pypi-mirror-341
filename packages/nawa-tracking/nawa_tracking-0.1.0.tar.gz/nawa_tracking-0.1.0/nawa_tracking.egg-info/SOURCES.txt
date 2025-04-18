@@ -1,0 +1,22 @@
+.gitignore
+LICENSE
+README.md
+app.py
+index_faces.py
+nawa_report.pdf
+pyproject.toml
+setup.py
+examples/test_match.py
+faces/IMG_0025_Original.jpeg
+faces/volunteer_001.png
+nawa/__init__.py
+nawa/behavior.py
+nawa/matcher.py
+nawa/report.py
+nawa/utils.py
+nawa_tracking.egg-info/PKG-INFO
+nawa_tracking.egg-info/SOURCES.txt
+nawa_tracking.egg-info/dependency_links.txt
+nawa_tracking.egg-info/requires.txt
+nawa_tracking.egg-info/top_level.txt
+ docs/demo_report.pdf
