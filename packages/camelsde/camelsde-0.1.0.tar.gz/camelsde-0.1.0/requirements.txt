@@ -1,0 +1,6 @@
+polars
+pandas
+geopandas
+plotly
+pydantic
+pyarrow
