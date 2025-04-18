@@ -1,0 +1,10 @@
+ai_trace/__init__.py,sha256=zsufPCog2KRRcU_ErdNnwajhixThTlDH82xKBh5-KaE,192
+ai_trace/_version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+ai_trace/trace_crewai.py,sha256=CBdug8KGXrQqNRT9DP53OlGSJp4fnpavTxm7t60iJ04,5847
+ai_trace/assets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ai_trace/assets/index.html,sha256=FG7TfGf2OTH6w1XaYPJxLzwC4rJpMtJIyggidmsqMwk,1055273
+ai_trace-0.0.1.dist-info/licenses/LICENSE,sha256=P0TDz1TQQFz8apzIppcTFirR2BRknOBTfOPfI5v-xcQ,2713
+ai_trace-0.0.1.dist-info/METADATA,sha256=mQ27QIDKhYR_KrenXvzvED2UY1dwVhljytF2Up1c-rI,1842
+ai_trace-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ai_trace-0.0.1.dist-info/top_level.txt,sha256=NcDct3tEeXt214UODUZNQqdsXE7Sk8QkpaCAlwS7u70,9
+ai_trace-0.0.1.dist-info/RECORD,,
