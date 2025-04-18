@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: lora-gpiozero
+Version: 0.0.3
+Summary: A simple implementation of LoRa for the raspberry pi5, utilising gpiozero and spidev already installed on Raspberry Pi OS.
+Author-email: goldenmatrix <goldenmatrix@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/leonardonels/lora-gpiozero
+Project-URL: Issues, https://github.com/leonardonels/lora-gpiozero/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gpiozero>=2.0.1
+Requires-Dist: spidev>=3.5
+Dynamic: license-file
+
+<div align="center">
+    <h1>lora-gpiozero</h1>
+    A simple implementation of LoRa for the raspberry pi5, 
+    utilising gpiozero and spidev already installed on Raspberry Pi OS.
+</div>
+
+> Tested with a sx1278 lora module at 433MHz.
+
+## :runner: To install and use on a raspberrypi
+> Create a virtual environment that can access system packages
+```commandline
+python3 -m venv .venv --system-site-packages
+source .venv/bin/activate
+```
+> Install with pip
+```commandline
+pip install lora-gpiozero
+```
