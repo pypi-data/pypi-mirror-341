@@ -1,0 +1,9 @@
+mcp_server_k8s/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcp_server_k8s/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcp_server_k8s/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcp_server_k8s/server.py,sha256=1UWntht7jxsda7nlnavOw4FqeLPU2Bv1vyEYwzKvZt4,9643
+k8s_mcp_server-0.1.0.dist-info/METADATA,sha256=EgwAhifKDueylodxUlldkeZ7lLn4g6CliXeJojwWcn0,3963
+k8s_mcp_server-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+k8s_mcp_server-0.1.0.dist-info/entry_points.txt,sha256=kvVZHO_P5Q9Fo5Y8dBS4klNyGfKk0lCoLguoQPJCXpA,62
+k8s_mcp_server-0.1.0.dist-info/top_level.txt,sha256=ooxaz7_z0I6bOcINqyJBUKiAxw6taHeps-JpOaGEZfs,15
+k8s_mcp_server-0.1.0.dist-info/RECORD,,
