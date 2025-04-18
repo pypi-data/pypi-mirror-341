@@ -1,0 +1,10 @@
+license.txt
+pyproject.toml
+readme.md
+src/ultraclick/__init__.py
+src/ultraclick.egg-info/PKG-INFO
+src/ultraclick.egg-info/SOURCES.txt
+src/ultraclick.egg-info/dependency_links.txt
+src/ultraclick.egg-info/requires.txt
+src/ultraclick.egg-info/top_level.txt
+tests/test_demo.py
