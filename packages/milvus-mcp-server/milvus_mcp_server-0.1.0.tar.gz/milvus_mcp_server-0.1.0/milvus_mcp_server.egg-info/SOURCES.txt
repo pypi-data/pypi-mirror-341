@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+mcp_server_milvus/__init__.py
+mcp_server_milvus/blogpost.md
+mcp_server_milvus/server.py
+milvus_mcp_server.egg-info/PKG-INFO
+milvus_mcp_server.egg-info/SOURCES.txt
+milvus_mcp_server.egg-info/dependency_links.txt
+milvus_mcp_server.egg-info/entry_points.txt
+milvus_mcp_server.egg-info/requires.txt
+milvus_mcp_server.egg-info/top_level.txt

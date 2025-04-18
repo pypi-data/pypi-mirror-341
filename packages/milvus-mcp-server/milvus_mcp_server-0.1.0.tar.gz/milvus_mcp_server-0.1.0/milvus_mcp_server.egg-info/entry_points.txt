@@ -1,0 +1,2 @@
+[console_scripts]
+milvus-mcp-server = mcp_server_milvus.server:main
