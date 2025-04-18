@@ -1,0 +1,21 @@
+[project]
+name = "anytype-client" 
+version = "0.1.0"
+description = " A Python Client for Anytype."
+readme = "README.md"
+authors = [
+  {name = "Charles K. Neimog", email = "charlesneimog@outlook.com"},
+]
+license = {text = "GPL-3.0-or-later"}
+
+[project.urls]
+"Source Code" = "https://github.com/charlesneimog/anytype-client" 
+
+[tool.setuptools]
+packages = ["anytype"]
+
+[tool.black]
+line-length = 100
+fast = true
+
+
