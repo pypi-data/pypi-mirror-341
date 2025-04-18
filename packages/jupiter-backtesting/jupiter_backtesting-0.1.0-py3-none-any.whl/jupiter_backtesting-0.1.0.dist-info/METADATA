@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: jupiter-backtesting
+Version: 0.1.0
+Summary: Lightweight Vectorbt extension with in-built statistical backtesting methods
+Author-email: Dein Name <deine@mail.de>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: vectorbt
+Requires-Dist: pandas_ta
+Requires-Dist: hyperopt
+
+# Jupiter 🪐
+
+> Lightweight extension of `vectorbt` with advanced statistical analysis, modular backtesting, and clean strategy integration.
+
+## Features
+
+- Strategy base class
+- Analyzer with in-depth metrics (Sharpe, Sortino, Calmar, etc.)
+- Time-based train/test splitting
+- Hyperopt optimizer integration
+- Modular, extensible structure
+
+## Installation
+
+```bash
+pip install -r requirements.txt
