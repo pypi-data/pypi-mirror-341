@@ -1,0 +1,2 @@
+[console_scripts]
+vevod = vevod_mcp.cli:main
