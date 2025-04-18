@@ -1,0 +1,7 @@
+README.md
+setup.py
+yadu/__init__.py
+yadu.egg-info/PKG-INFO
+yadu.egg-info/SOURCES.txt
+yadu.egg-info/dependency_links.txt
+yadu.egg-info/top_level.txt
