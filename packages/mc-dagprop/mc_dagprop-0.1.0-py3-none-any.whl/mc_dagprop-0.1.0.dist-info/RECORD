@@ -1,0 +1,8 @@
+mc_dagprop/__init__.py,sha256=UxT7v_pmt9dtn46LIL-bCHD80lY_ytCSygEt0KiwgTg,262
+mc_dagprop/mc_dagprop.cp312-win_amd64.pyd,sha256=AGfSS68t-a01qt4uBDDuuYKlE0VlLlGYT9aBc-HtxaU,211456
+mc_dagprop/mc_dagprop.cpp,sha256=AxjfSMktDNRIm1EJmUTWdd4rnsozS9iI_Jd1JkM47ew,9102
+mc_dagprop/mc_dagprop.pyi,sha256=bvKouk1fDdpMXsK-aYs1lN5p__pb1jwe8nyStDQ-coI,1451
+mc_dagprop/py.typed.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mc_dagprop-0.1.0.dist-info/METADATA,sha256=sJdNl710I9WUAJctt3QQPQMo_BKOx_arUXejGgFVv3w,334
+mc_dagprop-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+mc_dagprop-0.1.0.dist-info/RECORD,,
