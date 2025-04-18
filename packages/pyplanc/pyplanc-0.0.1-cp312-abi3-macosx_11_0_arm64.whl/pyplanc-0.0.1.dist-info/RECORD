@@ -1,0 +1,6 @@
+pyplanc.abi3.so,sha256=tHELR9QUoGfxKSJQQ4u304Q1LtexkRPwAMHMGK1A2PQ,278960
+pyplanc.dylibs/libnmflib.dylib,sha256=HWxU7VmdCpjKTC6cDHaMGcH3HDwG4dnPp-0zsTVd7sA,5096784
+pyplanc-0.0.1.dist-info/RECORD,,
+pyplanc-0.0.1.dist-info/WHEEL,sha256=ILCg3aNSK5rOceVzmoTe_EQGGNMtJugYytts6Pg1rAI,140
+pyplanc-0.0.1.dist-info/METADATA,sha256=N0ztAQfKsntfOG-qwrmGfa4Nk_OBfBujNun7X-GNK08,31863
+pyplanc-0.0.1.dist-info/licenses/license.md,sha256=rXhocLBCoFp3OFPPdC729HjDpUof3xK74IC42nCBJCE,25875
