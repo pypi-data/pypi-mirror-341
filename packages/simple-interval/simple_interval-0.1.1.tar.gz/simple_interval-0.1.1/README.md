@@ -1,0 +1,38 @@
+# Simple Interval
+
+Using Python threading to run a function at a specific interval. This implementation is very similar to the implemention of `threading.Timer` in [Python](https://docs.python.org/3/library/threading.html#threading.Timer) - it just runs on an interval instead of single time.
+
+It does not account for how long the function takes to run - so it's an approximate interval and will wait the full interval from when the function ends to run again. This is different from the JavaScript implementation of `setInterval` for example, where the function is called on the tick and can result in multiple overlapping calls.
+
+It works like that because that's what I needed for my use case.
+
+## Installation
+
+```bash
+uv add simple-interval
+```
+or 
+```bash
+pip install simple-interval
+```
+
+## Usage
+
+```python
+import time
+
+from simple_interval import set_interval
+
+def print_hello():
+    print("Hello, world!")
+
+interval = set_interval(print_hello, 1.0)
+
+try:
+    while True:
+        # Do other stuff...
+        time.sleep(0.1)
+except KeyboardInterrupt:
+    # Stop the interval
+    clear_interval(interval)
+```
