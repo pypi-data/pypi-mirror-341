@@ -1,0 +1,133 @@
+from typing import Type, TypeVar, Generic, List, Optional, Any
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy.future import select
+from sqlalchemy.exc import NoResultFound
+from sqlalchemy import asc, desc
+from db.base_model import Base
+from db.exception import handle_db_exceptions
+
+ModelType = TypeVar("ModelType", bound=Base)
+
+class BaseRepository(Generic[ModelType]):
+    def __init__(self, model: Type[ModelType]):
+        self.model = model
+
+    @handle_db_exceptions(allow_return=True)
+    async def get_one(self, db: AsyncSession, options: Optional[List[Any]] = None, **filters) -> Optional[ModelType]:
+        """Fetch one record, with optional eager loading."""
+        stmt = select(self.model)
+
+        if filters:
+            stmt = stmt.filter_by(**filters)
+
+        if options:
+            stmt = stmt.options(*options)
+
+        result = await db.execute(stmt)
+        return result.scalars().first()
+
+    @handle_db_exceptions(allow_return=True, return_data=[])
+    async def get_all(
+        self, db: AsyncSession, offset: int = 0, limit: Optional[int] = 100, order_by: Optional[str] = None, sort: str = "asc", **filters
+    ) -> List[ModelType]:
+        """
+        Fetch multiple records based on provided filters with pagination.
+
+        Args:
+            db (AsyncSession): The database session.
+            offset (int): The starting index of records to fetch. Default is 0.
+            limit (Optional[int]): The maximum number of records to fetch.
+                                   If None, returns all records.
+            **filters: Key-value pairs for filtering results.
+
+        Returns:
+            List[ModelType]: A list of matching records.
+        """
+        stmt = select(self.model)
+
+        if filters:
+            stmt = stmt.filter_by(**filters)
+
+        if order_by:
+            column = getattr(self.model, order_by, None)
+            if column:
+                stmt = stmt.order_by(asc(column) if sort.lower() == "asc" else desc(column))
+
+        # Validate limit and offset
+        if limit is not None and limit <= 0:
+            raise ValueError("Limit must be greater than 0.")
+        if offset < 0:
+            raise ValueError("Offset cannot be negative.")
+
+        if limit is not None:
+            stmt = stmt.offset(offset).limit(limit)
+
+        result = await db.execute(stmt)
+        return result.scalars().all()
+
+
+    @handle_db_exceptions()
+    async def create(self, db: AsyncSession, obj_data: dict) -> ModelType:
+        related_fields = {}
+
+        for key, value in obj_data.items():
+            if hasattr(self.model, key):  # Check if the key is a valid attribute of the model
+                relation = getattr(self.model, key)
+                if hasattr(relation, "property") and hasattr(relation.property, "mapper"):
+                    related_model = relation.property.mapper.class_
+
+                    if isinstance(value, list):
+                        if isinstance(value[0], dict):
+                            # Create new related or fetch by ID if present
+                            related_objs = []
+                            for v in value:
+                                if "id" in v:
+                                    obj = await db.get(related_model, v["id"])
+                                    if obj:
+                                        related_objs.append(obj)
+                                else:
+                                    related_objs.append(related_model(**v))
+                            related_fields[key] = related_objs
+
+                        elif isinstance(value[0], int):  # Many-to-many via list of IDs
+                            stmt = select(related_model).where(related_model.id.in_(value))
+                            result = await db.execute(stmt)
+                            related_fields[key] = result.scalars().all()
+
+                    elif isinstance(value, dict):
+                        # One-to-one or many-to-one with embedded dict
+                        related_fields[key] = related_model(**value)
+
+        # Merge nested/related processed fields
+        obj_data = {**obj_data, **related_fields}
+        obj = self.model(**obj_data)
+
+        db.add(obj)
+        await db.flush()  # Ensure it's in the DB context
+        await db.refresh(obj)  # Refresh to get latest state from DB
+        return obj
+
+
+    @handle_db_exceptions()
+    async def update(self, db: AsyncSession, id: int, obj_data: dict) -> ModelType:
+        """Update a record."""
+        obj = await self.get_one(db, id=id)
+        if obj is None:
+            error_text = f"{self.model.__name__} with ID {id} not found"
+            raise NoResultFound(error_text)  # Custom error handling
+        for key, value in obj_data.items():
+            setattr(obj, key, value)
+        await db.flush()
+        await db.refresh(obj)
+        return obj       
+
+    @handle_db_exceptions()
+    async def delete(self, db: AsyncSession, id: int) -> bool:
+        """Delete a record."""
+        obj = await self.get_one(db, id=id)
+        if obj:            
+            await db.delete(obj)
+            await db.flush()
+            return True
+
+        return False
