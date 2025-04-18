@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: stdpipe
+Version: 0.2.3
+Summary: Simple Transient Detection Pipeline
+Home-page: https://github.com/karpov-sv/stdpipe
+Author: Sergey Karpov
+Author-email: karpov.sv@gmail.com
+License-File: LICENSE.md
