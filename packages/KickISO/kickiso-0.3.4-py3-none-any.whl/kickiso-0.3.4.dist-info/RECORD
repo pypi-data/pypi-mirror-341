@@ -1,0 +1,10 @@
+kickapi/__init__.py,sha256=mtLNruRkQJqkx-riDrIv500CsY48XtyhfhmLecXhzaY,58
+kickapi/channel_data.py,sha256=hOHGOxxsEP5CtmH_nWI35p1b3Z4n6eSPgxOfFbWymw0,592
+kickapi/chat_data.py,sha256=PionHaRvzcVkiPq_fcNPkon8pnxzOGnyasBVxu3x6D4,1032
+kickapi/kickapi.py,sha256=JY1GEJLeK_C0orpKbe2nbXJPjBhcaM89ZEDJ647Cotc,2841
+kickapi/video_data.py,sha256=HaZhw-5Ihql1ky6iiqTKbqf8RM55plES6zNOmgI5zTQ,881
+kickiso-0.3.4.dist-info/licenses/LICENSE,sha256=UbSpyc_HDbeYAHjxmJGq_k3PlXV4g-K6243wT8EULao,1096
+kickiso-0.3.4.dist-info/METADATA,sha256=QdZ_Ia0kXd-8Ymnst8R0MiM7eGXNyyzU7QMTVamsNPU,6943
+kickiso-0.3.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+kickiso-0.3.4.dist-info/top_level.txt,sha256=h0dBs5RQIICBBtM5HdPpdv9wok0kSduMHgWtIN4GBVA,8
+kickiso-0.3.4.dist-info/RECORD,,
