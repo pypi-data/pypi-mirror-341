@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: modelscope_image_gen_mcp
+Version: 0.1.4
+Summary: A Model Context Protocol (MCP) server to generate images by text prompts via modelscope
+Author-email: Zhiling Luo <godot.lzl@alibaba-inc.com>
+Requires-Python: >=3.11
+Requires-Dist: mcp>=1.0.0
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# ModelScope Image Generation MCP
+
+# Project description
+## Feature
+-  📝 Support text to image generation backed by models on ModelScope
+
+## Prerequisites
+1. Python 3.11+
+2. ModelScope Token (obtained from [Modelscope](https://www.modelscope.cn/))
+3. Node.js (optional, for MCP Inspector)
+
+## Install
+
+install modelscope-image-gen-mcp throuh pip
+```bash
+pip install modelscope-image-gen-mcp
+```
+
+## Debug by MCP Inspector
+start the inspector by following command in terminal (replace YOUR_MODELSCOPE_TOKEN with your own token):
+```bash
+npx @modelcontextprotocol/inspector -e MODELSCOPE_TOKEN=YOUR_MODELSCOPE_TOKEN python -m modelscope_image_gen_mcp
+```
+
+## Start the server
+start the server by following command:
+```bash
+env MODELSCOPE_TOKEN=YOUR_MODELSCOPE_TOKEN python -m modelscope_image_gen_mcp
+```
+or you can add following json into your config file
+```json
+{
+    "mcpServers": {
+        "modelscope-image-gen-mcp": {
+            "command": "python",
+            "args": [
+                "-m",
+                "modelscope_image_gen_mcp"
+            ],
+            "env": {
+                "MODELSCOPE_TOKEN": "YOUR_MODELSCOPE_TOKEN"
+            }
+        }
+    }
+}
+```
