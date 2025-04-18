@@ -1,0 +1,15 @@
+specnn4pde/__init__.py,sha256=eNLLAuW94quC13VOH23rieokmFGOyXyxgb0yuOpxL_Y,64
+specnn4pde/colormaps.mat,sha256=nAUCE9x3vy5PlKPXUZvKiAU7PAUVHGKJ9d0dbjfYLno,40317
+specnn4pde/linalg.py,sha256=mwxkP56vwAu3ZzRVHY_37UhQPX9l5TvzyrOZkuvvxdc,7494
+specnn4pde/myplot.py,sha256=RBoBMhtFTHhMn2F9GVv4gGqgpuocYhvl52WiNv_e1pk,25940
+specnn4pde/nn.py,sha256=6HaAWlHSHo809H5jc8TmX67U7yrpCVL58R_SzIdwpvA,10589
+specnn4pde/npde.py,sha256=AZtF8JNS1dig5iHsHuofYAo-_huLQ-Rd3DREWf-thB0,72042
+specnn4pde/spectral.py,sha256=hINum1j6dHOTHQxEpbOJbjD5laOuePEtlcfZ-ClcY_I,22059
+specnn4pde/torch_linalg.py,sha256=Yq6g5kRDQFF_ooGV1Z-3GVjxZcnly0q7Zl6Qm9EZIXw,3787
+specnn4pde/torch_special.py,sha256=zOk28udSU9sChJzFKHU-cG7X_zeyUaOmSXoVsKz7Fng,7884
+specnn4pde/utils.py,sha256=Qg9HlLcMxpzyys3IXjr6rkdc4L9pkrta1qMJSOxxZWw,11012
+specnn4pde-0.1.8.dist-info/licenses/LICENSE,sha256=9tZg7MJu1ISWOuSfR85POKrnVpqeuSCk-1yc6iJOFfg,1091
+specnn4pde-0.1.8.dist-info/METADATA,sha256=8KGbsV7xCOrcyey_D-g6UuxGhv_nceqdOX7Obljec58,3921
+specnn4pde-0.1.8.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+specnn4pde-0.1.8.dist-info/top_level.txt,sha256=fKk-8IFaXpUmX3oazaH2Solv2v9peikEL3WO_ek5lGk,11
+specnn4pde-0.1.8.dist-info/RECORD,,
