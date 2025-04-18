@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fen2image"
+version = "1.0.0"
+description = "Convert chess FEN strings to PIL Image"
+authors = [{ name = "Théo Gueuret", email = "tgueuret@live.fr" }]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "pillow",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
