@@ -1,0 +1,13 @@
+arrakis_schema/__init__.py,sha256=OojvnSwGW7BQnjCxaSFh_fbxveH8_Q3SiBgIGpGKPHM,1056
+arrakis_schema/_version.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+arrakis_schema/count.json,sha256=JHU3Kby4eMisoHkDXIghmARw4gl7oe35MYyS_A2UceI,1045
+arrakis_schema/describe.json,sha256=ZPr2yqBcHwa4By5nVEy8aPktnK2ONGUKvg5sIrGu_rA,526
+arrakis_schema/descriptor.json,sha256=QI3g1Yg7MJRsMgoOCQ7dAWcb0zr_ARfa9BS4oV1COyQ,412
+arrakis_schema/find.json,sha256=MNxJSqvh9U79c-mp93NqGUo9-r7W8Ew-aFowkzhitk0,1043
+arrakis_schema/partition.json,sha256=zdSZY-PfR6xYgqq0Tvod4XnJHIZWIyGC3SHzueBnrcw,474
+arrakis_schema/publish.json,sha256=eg0Uo8CvblcPRRBzwarQePjZFbHle2FFSCL8zfGBcCM,470
+arrakis_schema/stream.json,sha256=D5SOfeFBYmknYmyygHWbZSbzUzrYWYlPu3bqjfdpC-U,688
+arrakis_schema-0.1.1.dist-info/METADATA,sha256=uC5bPM32czUs9UzYxn5cYrSWIlplBveMpdey9w0H148,3713
+arrakis_schema-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+arrakis_schema-0.1.1.dist-info/licenses/LICENSE,sha256=gLanaSeoTXOzWRr3tIGf2O_ZrQ9qoY4GgCUSuEOYFs0,9236
+arrakis_schema-0.1.1.dist-info/RECORD,,

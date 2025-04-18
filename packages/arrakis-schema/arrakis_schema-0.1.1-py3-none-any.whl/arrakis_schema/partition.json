@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "arrakis-api-partition",
+  "description": "v0.1",
+  "type": "object",
+  "properties": {
+    "request": {
+      "type": "string",
+      "const": "Partition"
+    },
+    "args": {
+      "type": "object",
+      "properties": {
+        "publisher_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "publisher_id"
+      ]
+    }
+  },
+  "required": [
+    "request",
+    "args"
+  ]
+}

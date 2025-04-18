@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "arrakis-api-descriptor",
+  "description": "v0.1",
+  "type": "object",
+  "properties": {
+    "request": {
+      "enum": [
+        "Count",
+        "Describe",
+        "Find",
+        "Publish",
+        "Partition",
+        "Stream"
+      ]
+    },
+    "args": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "request",
+    "args"
+  ]
+}
