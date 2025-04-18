@@ -1,0 +1,16 @@
+[project]
+name = 'art61336-test-project-1'
+version = '0.1.0'
+description = 'Описание моего Python-пакета'
+authors = [
+  {name = 'Your Name', email = 'youremail@example.com'}
+]
+readme = 'README.md'
+requires-python = '>=3.12'
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["package"]

@@ -1,0 +1,5 @@
+pyproject.toml
+package/art61336_test_project_1.egg-info/PKG-INFO
+package/art61336_test_project_1.egg-info/SOURCES.txt
+package/art61336_test_project_1.egg-info/dependency_links.txt
+package/art61336_test_project_1.egg-info/top_level.txt
