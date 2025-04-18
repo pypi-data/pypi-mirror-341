@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: pillar-security
+Version: 0.0.9
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: wrapt>=1.16.0
+Requires-Dist: requests>=2.26.0
+Provides-Extra: test
+Requires-Dist: openai>=1.75.0; extra == "test"
+Requires-Dist: flake8>=7.2.0; extra == "test"
+Requires-Dist: pytest>=8.3.5; extra == "test"
+Dynamic: license-file
+
+## Pillar Security SDK
+Secure Your LLM powered applications with Pillar Security SDK
+
+## Install for development
+
+```
+pip install -e .
+```
