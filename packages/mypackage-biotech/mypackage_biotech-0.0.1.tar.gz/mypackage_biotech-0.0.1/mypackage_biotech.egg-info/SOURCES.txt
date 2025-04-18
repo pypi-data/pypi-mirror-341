@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+mypackage_biotech/__init__.py
+mypackage_biotech/operations.py
+mypackage_biotech.egg-info/PKG-INFO
+mypackage_biotech.egg-info/SOURCES.txt
+mypackage_biotech.egg-info/dependency_links.txt
+mypackage_biotech.egg-info/top_level.txt
