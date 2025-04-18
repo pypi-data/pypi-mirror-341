@@ -1,0 +1,2 @@
+[console_scripts]
+gocodeo = gocodeo_cli.cli:app
