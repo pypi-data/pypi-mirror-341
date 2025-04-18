@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+mcp_jira/__init__.py
+mcp_jira/server.py
+mcp_jira.egg-info/PKG-INFO
+mcp_jira.egg-info/SOURCES.txt
+mcp_jira.egg-info/dependency_links.txt
+mcp_jira.egg-info/entry_points.txt
+mcp_jira.egg-info/requires.txt
+mcp_jira.egg-info/top_level.txt
