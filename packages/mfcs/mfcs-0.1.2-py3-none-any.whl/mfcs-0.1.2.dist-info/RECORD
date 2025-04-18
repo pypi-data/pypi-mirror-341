@@ -1,0 +1,9 @@
+mfcs/__init__.py,sha256=Ae4ndIz3d242c-uPNSc00bQq7fHrlGcOhJTLaUTOJTA,403
+mfcs/function_prompt.py,sha256=PRrMgNCIUyroFM23wmsKnoi6cfcy90Qk13m97azBSXE,4528
+mfcs/memory_prompt.py,sha256=boUT6OQQDNHkw2Mf7qkPc_-HnrDRIvmA0lOSa1qIwSA,6030
+mfcs/response_parser.py,sha256=eUJsBdKg_EmTton40Ye1cyr2H8Ddz_qOJs3ppOo9e_Y,15252
+mfcs/result_manager.py,sha256=MG-wMHeaTLoMvh8WurhfNVoz9rZ5jwq9jVrwzCGZmb0,5246
+mfcs-0.1.2.dist-info/METADATA,sha256=6uJseowd5_Aa38tpQS7WnJamxtBRCd1k_KywsY_NTnc,8793
+mfcs-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mfcs-0.1.2.dist-info/licenses/LICENSE,sha256=0fbRozox6317PsNo-i5RRRofaindh6-yHwUY3O-9UY4,1064
+mfcs-0.1.2.dist-info/RECORD,,
