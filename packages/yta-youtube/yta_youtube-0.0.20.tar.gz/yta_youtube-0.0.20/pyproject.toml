@@ -1,0 +1,24 @@
+[project]
+name = "yta-youtube"
+version = "0.0.20"
+description = "Youtube Autonomous Youtube interaction module."
+authors = [
+    {name = "danialcala94",email = "danielalcalavalera@gmail.com"}
+]
+readme = "README.md"
+requires-python = "==3.9"
+dependencies = [
+    "yta_general_utils (>=0.0.250,<0.1.0)",
+    "yta_google_api (>=0.0.6,<0.1.0)",
+    "yt_dlp (>=2025.1.26,<2026.0.0)",
+    # Please, remove the use of 'pillow' as it is only for returning a Image instance
+    "pillow (>=10.4.0,<11.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "yta_youtube", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
