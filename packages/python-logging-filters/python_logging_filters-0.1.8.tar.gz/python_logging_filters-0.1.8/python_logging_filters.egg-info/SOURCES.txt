@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+python_logging_filters/__init__.py
+python_logging_filters.egg-info/PKG-INFO
+python_logging_filters.egg-info/SOURCES.txt
+python_logging_filters.egg-info/dependency_links.txt
+python_logging_filters.egg-info/top_level.txt
+python_logging_filters.egg-info/zip-safe
