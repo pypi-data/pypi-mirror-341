@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: lightgraph
+Version: 0.2.0
+Summary: A lightweight Python binding for lightGraph network visualization
+Author-email: Hao Zhu <haozhu233@gmail.com>, Donna Slonim <donna.slonim@tufts.edu>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: IPython
+
+# lightgraph
