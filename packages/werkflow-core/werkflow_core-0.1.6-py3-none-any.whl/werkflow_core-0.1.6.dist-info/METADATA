@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: werkflow-core
+Version: 0.1.6
+Summary: The base Werkflow Modules library for creating modules.
+Author-email: Ada Lundhe <adalundhe@lundhe.audio>
+Keywords: pypi,cicd,python,werkflow,workflow,werkflow-core
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
