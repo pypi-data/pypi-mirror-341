@@ -1,0 +1,10 @@
+pydantic_argparse_next/__init__.py,sha256=oCn4Lu1GHBtd7QyFJ8IjzOgb_nNT6vZQ1kpcGOp8itY,63
+pydantic_argparse_next/parser/__init__.py,sha256=AGKEbjtN7GruG7oZLUMf8MusdEu5IRDl4E5Kp0DQiB8,103
+pydantic_argparse_next/parser/classes.py,sha256=RoT4wTTeVLJ6FRwz8oM9F4aCXjAOQTdFFIBP1e8RfOc,12518
+pydantic_argparse_next/parser/fields.py,sha256=wpaZK2KccZAnmzyG2Ii-4QuKK3ybPJc6RF-udqXWEIM,10497
+pydantic_argparse_next/parser/parse.py,sha256=ly5OVc_juhA_Hf-ghO_QcYhNNBXcobpbmxU27JsvYRI,1882
+pydantic_argparse_next/parser/parser.py,sha256=iuwEXEnClHWk3kf1HiK02WFmciiur90KmUy6Ujvkx0w,17068
+pydantic_argparse_next/parser/utils.py,sha256=If-fOhCHOToyR8lyZTshDWOJFh_DluHLnUU-t8Lb4uU,1793
+pydantic_argparse_next-1.0.5.dist-info/METADATA,sha256=KQHN9VInxYce6FH42Kbe6vrd0wB7Z8tzai8xsnAaEzg,2996
+pydantic_argparse_next-1.0.5.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+pydantic_argparse_next-1.0.5.dist-info/RECORD,,
