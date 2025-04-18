@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: nofollowback
+Version: 0.1.1
+Summary: CLI tool to list GitHub users you follow who don't follow you back.
+Author-email: Yongjin Kim <yongjin@example.com>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.31.0
+Requires-Dist: click>=8.1.7
+Dynamic: license-file
+
+# NoFollowBack 🕵️‍♀️
+
+A tiny CLI tool to check which GitHub accounts you follow **aren't following you back**.
+
+## Installation
+
+```bash
+pip install nofollowback
+```
+
+## Usage
+
+Check accounts that don't follow you back:
+
+```bash
+nofollowback <github_username>
+```
+
+Example:
+
+```bash
+$ nofollowback YongjinKim-Dev
+🚫 Accounts Not Following You Back (2):
+ • alice
+ • bob
+```
+
+If you encounter GitHub's rate limits or prefer authenticated requests, you can use your GitHub Personal Access Token:
+
+```bash
+nofollowback <github_username> --token <your_github_token>
+```
