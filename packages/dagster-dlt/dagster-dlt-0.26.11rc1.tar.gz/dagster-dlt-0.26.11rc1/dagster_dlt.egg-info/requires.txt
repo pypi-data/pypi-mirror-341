@@ -1,0 +1,5 @@
+dagster==1.10.11rc1
+dlt>=0.4
+
+[test]
+duckdb
