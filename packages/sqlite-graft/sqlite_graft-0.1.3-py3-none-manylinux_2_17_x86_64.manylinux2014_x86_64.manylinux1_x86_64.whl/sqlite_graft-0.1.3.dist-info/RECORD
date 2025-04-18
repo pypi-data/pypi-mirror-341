@@ -1,0 +1,6 @@
+sqlite_graft/__init__.py,sha256=3MutmoZihSaACMWp6Haz2KuA0KumvXQtxxQOXLkTW2w,509
+sqlite_graft/libgraft.so,sha256=X6VtZ4EXzJ1NLVVw0KdNaWROjeXcdIcpXh2M1wohlA0,7629360
+sqlite_graft-0.1.3.dist-info/METADATA,sha256=ELY5PJBElWTRln7ZXhU5rBMzZLWKbrQF4k3K0rRjJ04,266
+sqlite_graft-0.1.3.dist-info/WHEEL,sha256=wwF5DGkDjzS6VxNVcfxlE4uI01GZ5xR0eDNRLQKKJNI,154
+sqlite_graft-0.1.3.dist-info/top_level.txt,sha256=H9gzvfRkFesjDdgBJ6AEsvbBX8SfY6yCDOVE7ZBZRX8,13
+sqlite_graft-0.1.3.dist-info/RECORD,,
