@@ -1,0 +1,2 @@
+[console_scripts]
+bgpt = bgpt.main:main_cli
