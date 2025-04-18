@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: fastApi-context
+Version: 0.1.0
+Summary: 
+Author: hxnie
+Author-email: 920521013@qq.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: python-jose (>=3.4.0,<4.0.0)
+Requires-Dist: redis (>=5.2.1,<6.0.0)
+Requires-Dist: starlette (>=0.46.2,<0.47.0)
+Requires-Dist: starlette-context (>=0.4.0,<0.5.0)
+Requires-Dist: virtualenv (>=20.30.0,<21.0.0)
+Description-Content-Type: text/markdown
+
+# Auth check and more plugins for fastApi
