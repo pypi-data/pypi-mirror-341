@@ -1,0 +1,8 @@
+[console_scripts]
+qvextract = quiver.qvextract:main
+qvextractspecific = quiver.qvextractspecific:main
+qvfrompdbs = quiver.qvfrompdbs:main
+qvls = quiver.qvls:main
+qvrename = quiver.qvrename:main
+qvscorefile = quiver.qvscorefile:main
+qvsplit = quiver.qvsplit:main
