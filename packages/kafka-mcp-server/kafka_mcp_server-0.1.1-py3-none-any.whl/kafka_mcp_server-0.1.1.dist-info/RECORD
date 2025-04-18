@@ -1,0 +1,10 @@
+kafka_mcp_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kafka_mcp_server/kafka.py,sha256=VKpb1gQS-XdYgydd0jrle1YjpmkJsm7vcGB0fcWa8iA,4905
+kafka_mcp_server/server.py,sha256=5kgPx1FtZwx-e-AmMLP-RQXuckZJQs4CrEx6vqdVRXs,2814
+kafka_mcp_server/settings.py,sha256=cmbSJJvELTAMSp6XBrOrI5SwP-XC4u8xzj4HiWq5hlM,1423
+kafka_mcp_server-0.1.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+kafka_mcp_server-0.1.1.dist-info/METADATA,sha256=sByLr1Iy-KNcoAZH_ROT8iB093NqBCnNaYKsbpIdSCw,3024
+kafka_mcp_server-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+kafka_mcp_server-0.1.1.dist-info/entry_points.txt,sha256=6fEzz0-iPEZC3cqnuvvBEFtcW5xccaV7UkwXKLfiUxk,66
+kafka_mcp_server-0.1.1.dist-info/top_level.txt,sha256=ZoKPaR0RH5pvnzcDDepRpmAopin3Bz2O5qgFO2nrLyc,17
+kafka_mcp_server-0.1.1.dist-info/RECORD,,
