@@ -1,0 +1,3 @@
+[console_scripts]
+job_dir.py = pbs4py.scripts.job_dir:main
+qdel_user_jobs.py = pbs4py.scripts.qdel_user_jobs:main
