@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "cybermoon"
+version = "1.0.0"
+dependencies = [
+  "pygame>=2.3.0",
+  "pyautogui>=0.9.53"
+]
+authors = [
+  { name="Anders Reenberg Andersen", email="andersra@live.dk" }
+]
+description = "A futuristic pygame"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/areenberg/CyberMoon"
+Issues = "https://github.com/areenberg/CyberMoon/issues"
