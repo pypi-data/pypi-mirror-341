@@ -1,0 +1,8 @@
+ipycanvas
+ipywidgets
+ipyevents
+
+[testing]
+tox
+pytest
+pytest-cov

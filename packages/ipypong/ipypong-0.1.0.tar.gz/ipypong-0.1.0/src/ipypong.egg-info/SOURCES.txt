@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+src/ipypong/__init__.py
+src/ipypong.egg-info/PKG-INFO
+src/ipypong.egg-info/SOURCES.txt
+src/ipypong.egg-info/dependency_links.txt
+src/ipypong.egg-info/requires.txt
+src/ipypong.egg-info/top_level.txt
