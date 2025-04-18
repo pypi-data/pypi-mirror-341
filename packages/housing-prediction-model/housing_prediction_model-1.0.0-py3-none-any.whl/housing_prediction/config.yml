@@ -1,0 +1,197 @@
+
+training_data_file: housing_dataset.csv
+
+target: SalePrice
+
+pipeline_name: housing_predicion_model
+pipeline_save_file: housing_predicion_model_output 
+
+n_estimators: 100
+max_depth: 7
+eta: 0.1
+subsample: 0.7
+colsample_bytree: 0.8
+random_state: 42
+test_size: 0.2
+
+
+features:
+  - Id
+  - MSSubClass
+  - MSZoning
+  - LotFrontage
+  - LotArea
+  - Street
+  - Alley
+  - LotShape
+  - LandContour
+  - Utilities
+  - LotConfig
+  - LandSlope
+  - Neighborhood
+  - Condition1
+  - Condition2
+  - BldgType
+  - HouseStyle
+  - OverallQual
+  - OverallCond
+  - YearBuilt
+  - YearRemodAdd
+  - RoofStyle
+  - RoofMatl
+  - Exterior1st
+  - Exterior2nd
+  - MasVnrType
+  - MasVnrArea
+  - ExterQual
+  - ExterCond
+  - Foundation
+  - BsmtQual
+  - BsmtCond
+  - BsmtExposure
+  - BsmtFinType1
+  - BsmtFinSF1
+  - BsmtFinType2
+  - BsmtFinSF2
+  - BsmtUnfSF
+  - TotalBsmtSF
+  - Heating
+  - HeatingQC
+  - CentralAir
+  - Electrical
+  - 1stFlrSF
+  - 2ndFlrSF
+  - LowQualFinSF
+  - GrLivArea
+  - BsmtFullBath
+  - BsmtHalfBath
+  - FullBath
+  - HalfBath
+  - BedroomAbvGr
+  - KitchenAbvGr
+  - KitchenQual
+  - TotRmsAbvGrd
+  - Functional
+  - Fireplaces
+  - FireplaceQu
+  - GarageType
+  - GarageYrBlt
+  - GarageFinish
+  - GarageCars
+  - GarageArea
+  - GarageQual
+  - GarageCond
+  - PavedDrive
+  - WoodDeckSF
+  - OpenPorchSF
+  - EnclosedPorch
+  - 3SsnPorch
+  - ScreenPorch
+  - PoolArea
+  - PoolQC
+  - Fence
+  - MiscFeature
+  - MiscVal
+  - MoSold
+  - YrSold
+  - SaleType
+  - SaleCondition
+
+
+drop_features:
+  - YearBuilt
+  - YearRemodAdd
+  - GarageYrBlt
+
+temporal_features:
+  - YearBuilt
+  - YearRemodAdd
+  - GarageYrBlt
+
+reference_variable: YrSold
+
+arbitrary_variable: LotFrontage
+
+numerical_features:
+  - MSSubClass
+  - LotFrontage
+  - LotArea
+  - OverallQual
+  - OverallCond
+  - YearBuilt
+  - YearRemodAdd
+  - MasVnrArea
+  - BsmtFinSF1
+  - BsmtFinSF2
+  - BsmtUnfSF
+  - TotalBsmtSF
+  - 1stFlrSF
+  - 2ndFlrSF
+  - LowQualFinSF
+  - GrLivArea
+  - BsmtFullBath
+  - BsmtHalfBath
+  - FullBath
+  - HalfBath
+  - BedroomAbvGr
+  - KitchenAbvGr
+  - TotRmsAbvGrd
+  - Fireplaces
+  - GarageYrBlt
+  - GarageCars
+  - GarageArea
+  - WoodDeckSF
+  - OpenPorchSF
+  - EnclosedPorch
+  - 3SsnPorch
+  - ScreenPorch
+  - PoolArea
+  - MiscVal
+  - MoSold
+  - YrSold
+
+
+categorical_features:
+  - MSZoning
+  - Street
+  - Alley
+  - LotShape
+  - LandContour
+  - Utilities
+  - LotConfig
+  - LandSlope
+  - Neighborhood
+  - Condition1
+  - Condition2
+  - BldgType
+  - HouseStyle
+  - RoofStyle
+  - RoofMatl
+  - Exterior1st
+  - Exterior2nd
+  - MasVnrType
+  - ExterQual
+  - ExterCond
+  - Foundation
+  - BsmtQual
+  - BsmtCond
+  - BsmtExposure
+  - BsmtFinType1
+  - BsmtFinType2
+  - Heating
+  - HeatingQC
+  - CentralAir
+  - Electrical
+  - KitchenQual
+  - Functional
+  - FireplaceQu
+  - GarageType
+  - GarageFinish
+  - GarageQual
+  - GarageCond
+  - PavedDrive
+  - PoolQC
+  - Fence
+  - MiscFeature
+  - SaleType
+  - SaleCondition
