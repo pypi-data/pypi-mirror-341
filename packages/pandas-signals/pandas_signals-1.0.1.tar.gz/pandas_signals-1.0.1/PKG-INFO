@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: pandas-signals
+Version: 1.0.1
+Summary: Signal processing utilities for Pandas
+Home-page: https://github.com/marketcalls/pandas-signals
+Author: Rajandran R
+Author-email: rajandran@marketcalls.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
