@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-server-monday-yajie = mcp_server_monday:main
