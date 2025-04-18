@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+bgpt/bgpt/__init__.py
+bgpt/bgpt/main.py
+bgpt/bgpt.egg-info/PKG-INFO
+bgpt/bgpt.egg-info/SOURCES.txt
+bgpt/bgpt.egg-info/dependency_links.txt
+bgpt/bgpt.egg-info/entry_points.txt
+bgpt/bgpt.egg-info/requires.txt
+bgpt/bgpt.egg-info/top_level.txt
+tests/test_bgpt.py
