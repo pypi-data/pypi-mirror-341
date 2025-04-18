@@ -1,0 +1,2 @@
+[console_scripts]
+hexa = hexa_mlops.cli:main
