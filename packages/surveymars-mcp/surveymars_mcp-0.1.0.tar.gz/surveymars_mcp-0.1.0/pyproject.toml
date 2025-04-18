@@ -1,0 +1,19 @@
+[project]
+name = "surveymars-mcp"
+version = "0.1.0"
+description = "SurveyMars MCP server"
+readme = "README.md"
+keywords = [
+    "SurveyMars",
+    "mcp",
+    "Survey",
+]
+requires-python = ">=3.11"
+dependencies = [ "mcp>=1.6.0",]
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+surveymars-mcp = "surveymars_mcp:main"
