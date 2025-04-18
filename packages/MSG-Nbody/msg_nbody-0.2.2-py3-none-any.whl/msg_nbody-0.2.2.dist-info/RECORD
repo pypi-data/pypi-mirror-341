@@ -1,0 +1,11 @@
+MSG_Nbody/MSG_Nbody.py,sha256=RQm00m553k-yjnBltH_NdK2AJ_pULfWLHqeGmmLhS9k,5954
+MSG_Nbody/__init__.py,sha256=nxppX8KCE-DNpUnQ3picmIGwMGpwpvnA9UESZK0sMWg,147
+MSG_Nbody/acceleration_potential.py,sha256=nrVfN7cD1yJ0okUqBtA226N5rXNvtlIIE8kwO1FlwzI,5649
+MSG_Nbody/analysis.py,sha256=o90Am1NLZByQpi7E8f9GAYYFArmt_57gi6kv7Nw7L7Q,61628
+MSG_Nbody/input_output.py,sha256=iBy8QbNf_SqA6PSpfA9xYqaG6kg4h6M2CJmAs-Qf_Ps,7297
+MSG_Nbody/simulation_setup.py,sha256=AMp6gGaFXTmM9EScwvwZHpVGD1Qx-97frF6WisJbZL4,14414
+msg_nbody-0.2.2.dist-info/LICENSE,sha256=-cd6zWV3ski35ldYQOI6BEkhgc01hg7xv86F4uItNos,1077
+msg_nbody-0.2.2.dist-info/METADATA,sha256=vWxIs12uNe7P9rsdeqiKmlJ9Sc8rVdc9ciNCjdvv7TA,2126
+msg_nbody-0.2.2.dist-info/WHEEL,sha256=beeZ86-EfXScwlR_HKu4SllMC9wUEj_8Z_4FJ3egI2w,91
+msg_nbody-0.2.2.dist-info/top_level.txt,sha256=CCuU_nWeMZISfIZSvb8X0DBs26MsucbMaNxWVuqlMLg,10
+msg_nbody-0.2.2.dist-info/RECORD,,
