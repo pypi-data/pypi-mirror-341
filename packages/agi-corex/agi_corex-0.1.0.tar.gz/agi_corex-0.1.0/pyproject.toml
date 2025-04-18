@@ -1,0 +1,26 @@
+[project]
+name = "agi-corex"
+version = "0.1.0"
+description = "Experimental AGI framework with neuro-symbolic reasoning, evolutionary agents and plastic learning"
+authors = [{ name = "Adolfo", email = "tu-email@example.com" }]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "networkx"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
