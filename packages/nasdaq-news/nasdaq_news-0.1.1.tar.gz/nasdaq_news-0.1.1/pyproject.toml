@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nasdaq-news"
+version = "0.1.1"
+authors = [
+  { name="Shekhar Biswas", email="shekhar07.nitdgp@gmail.com" },
+]
+description = "Python package to fetch NASDAQ-100 stock news from FMP API"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+dependencies = [
+    "requests",
+    "pandas",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/shekharbiswas/nasdaq_news"
+"Repository" = "https://github.com/shekharbiswas/nasdaq_news"
