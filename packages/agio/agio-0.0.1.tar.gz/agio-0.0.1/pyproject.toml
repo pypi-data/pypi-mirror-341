@@ -1,0 +1,21 @@
+[project]
+name = "agio"
+version = "0.0.1"
+requires-python = ">=3.12, <3.14"
+dependencies = [
+    "requests>=2.32.3",
+]
+authors = [
+    { name = "paulwinex", email = "paulwinex@gmail.com" }
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "uv"]
+build-backend = "setuptools.build_meta"
+
+#[tool.setuptools]
+#zip_safe = false
+
+[tool.setuptools.packages.find]
+where = ["."]
+# include_package_data = true

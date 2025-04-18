@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+agio/__init__.py
+agio.egg-info/PKG-INFO
+agio.egg-info/SOURCES.txt
+agio.egg-info/dependency_links.txt
+agio.egg-info/requires.txt
+agio.egg-info/top_level.txt
