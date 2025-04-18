@@ -1,0 +1,10 @@
+pykeyboard/__init__.py,sha256=ewPn17ofzK9vSFurysZO_zfDJ9iFiTzUqvWGN5UDI44,154
+pykeyboard/inline_keyboard.py,sha256=8DL1jCHWlq5m6B4YXIRcj_BNzR8gZDKIWnnQCf57qbI,3998
+pykeyboard/inline_pagination_keyboard.py,sha256=A_Tsndpi37E_UCRRELFZHAyHoanmRjwOg1VCHLQCCsY,3785
+pykeyboard/reply_keyboard.py,sha256=xpYM3enrRpCjXSJF3KVMh0o_ionNTaXE9T7bfIrTPek,827
+pykeyboard/telethon.py,sha256=1VeujWtrrqDknvlJPOZVnJi2ALUMJecEpNrk8sbdcIs,1331
+pykeyboard2-0.2.0a1.dist-info/licenses/LICENSE,sha256=jdy0W5V31dnTN1lNJCE2Y8vNc21UWYgpgLk5Caedm2Q,1086
+pykeyboard2-0.2.0a1.dist-info/METADATA,sha256=DC_wDHggYq-zzbbGbkAVXRr4rc0-QgnIkChG3PHO9hY,6498
+pykeyboard2-0.2.0a1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pykeyboard2-0.2.0a1.dist-info/top_level.txt,sha256=r2tM_mIxRUs13IVcmVheybSSvef57LuHu7pQIK5T5i0,11
+pykeyboard2-0.2.0a1.dist-info/RECORD,,
