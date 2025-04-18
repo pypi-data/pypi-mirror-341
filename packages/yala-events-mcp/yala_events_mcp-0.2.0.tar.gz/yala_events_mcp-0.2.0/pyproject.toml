@@ -1,0 +1,25 @@
+[project]
+name = "yala-events-mcp"
+version = "0.2.0"
+description = "YALA Events MCP Server with stdio transport"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [
+    { name = "YALA Team" }
+]
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.6.0",
+    "python-dotenv>=1.0.0"
+]
+
+[project.scripts]
+yala-events-mcp = "yala_events_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["yala_events_mcp"]
