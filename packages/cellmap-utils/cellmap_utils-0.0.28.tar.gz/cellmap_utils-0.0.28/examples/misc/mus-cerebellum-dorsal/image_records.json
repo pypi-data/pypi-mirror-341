@@ -1,0 +1,202 @@
+[
+  {
+    "source": {
+      "bias_V": 0,
+      "scan_hz": 0.1,
+      "current_nA": 0.25,
+      "duration_days": 44,
+      "landing_energy_eV": 900
+    },
+    "name": "fibsem-int16",
+    "url": "/nrs/cellmap/data/jrc_mus-dorsal-striatum-2/jrc_mus-dorsal-striatum-2.zarr/recon-1/em/fibsem-int16",
+    "description": "eFIB-SEM Data",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      },
+      "color": "white"
+    },
+    "sample_type": "scalar",
+    "content_type": "em",
+    "dataset_name": "jrc_mus-dorsal-striatum-2",
+    "institution": "HHMI / Janelia Research Campus",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "grid_translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "jrc_mus-dorsal-striatum-2_groundtruth"
+  },
+  {
+    "source": {
+      "bias_V": 0,
+      "scan_hz": 0.1,
+      "current_nA": 0.25,
+      "duration_days": 31,
+      "landing_energy_eV": 900
+    },
+    "name": "fibsem-int16",
+    "url": "/nrs/cellmap/data/jrc_mus-cortex-3/jrc_mus-cortex-3.zarr/recon-1/em/fibsem-int16",
+    "description": "eFIB-SEM Data",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      },
+      "color": "white"
+    },
+    "sample_type": "scalar",
+    "content_type": "em",
+    "dataset_name": "jrc_mus-cortex-3",
+    "institution": "HHMI / Janelia Research Campus",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "grid_translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "jrc_mus-cortex-3_groundtruth"
+  },
+  {
+    "source": {
+      "bias_V": 0,
+      "scan_hz": 0.1,
+      "current_nA": 0.25,
+      "duration_days": 7,
+      "landing_energy_eV": 900
+    },
+    "name": "fibsem-int16",
+    "url": "/nrs/cellmap/data/jrc_mus-cerebellum-4/jrc_mus-cerebellum-4.zarr/recon-1/em/fibsem-int16",
+    "description": "eFIB-SEM Data",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      },
+      "color": "white"
+    },
+    "sample_type": "scalar",
+    "content_type": "em",
+    "dataset_name": "jrc_mus-cerebellum-4",
+    "institution": "HHMI / Janelia Research Campus",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "grid_translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "jrc_mus-cerebellum-4_groundtruth"
+  },
+  {
+    "source": {
+      "bias_V": 0,
+      "scan_hz": 0.1,
+      "current_nA": 0.25,
+      "duration_days": 22,
+      "landing_energy_eV": 900
+    },
+    "name": "fibsem-int16",
+    "url": "/nrs/cellmap/data/jrc_mus-cerebellum-5/jrc_mus-cerebellum-5.zarr/recon-1/em/fibsem-int16",
+    "description": "eFIB-SEM Data",
+    "format": "zarr",
+    "display_settings": {
+      "invertLUT": false,
+      "contrastLimits": {
+        "end": 255,
+        "max": 255,
+        "min": 0,
+        "start": 0
+      },
+      "color": "white"
+    },
+    "sample_type": "scalar",
+    "content_type": "em",
+    "dataset_name": "jrc_mus-cerebellum-5",
+    "institution": "HHMI / Janelia Research Campus",
+    "grid_dims": [
+      "z",
+      "y",
+      "x"
+    ],
+    "grid_scale": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "grid_translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "grid_units": [
+      "nm",
+      "nm",
+      "nm"
+    ],
+    "grid_index_order": "C",
+    "stage": "dev",
+    "image_stack": "jrc_mus-cerebellum-5_groundtruth"
+  }
+]

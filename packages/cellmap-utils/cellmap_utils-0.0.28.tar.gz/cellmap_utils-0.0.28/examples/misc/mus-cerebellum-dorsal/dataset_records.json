@@ -1,0 +1,54 @@
+[
+  {
+    "name": "jrc_mus-dorsal-striatum-2",
+    "description": "Mouse dorsal striatum",
+    "thumbnail_url": "s3://janelia-cosem-datasets/jrc_mus-dorsal-striatum-2/thumbnail.jpg",
+    "stage": "dev",
+    "publications": [
+      {
+        "url": "https://doi.org/10.25378/janelia.28754705",
+        "name": "aligned eFIB-SEM data",
+        "pub_type": "doi"
+      }
+    ]
+  },
+  {
+    "name": "jrc_mus-cortex-3",
+    "description": "Mouse cerebral cortex",
+    "thumbnail_url": "s3://janelia-cosem-datasets/jrc_mus-cortex-3/thumbnail.jpg",
+    "stage": "dev",
+    "publications": [
+      {
+        "url": "https://doi.org/10.25378/janelia.28754702",
+        "name": "aligned eFIB-SEM data",
+        "pub_type": "doi"
+      }
+    ]
+  },
+  {
+    "name": "jrc_mus-cerebellum-4",
+    "description": "Mouse deep nuclei",
+    "thumbnail_url": "s3://janelia-cosem-datasets/jrc_mus-cerebellum-4/thumbnail.jpg",
+    "stage": "dev",
+    "publications": [
+      {
+        "url": "https://doi.org/10.25378/janelia.28754318",
+        "name": "aligned eFIB-SEM data",
+        "pub_type": "doi"
+      }
+    ]
+  },
+  {
+    "name": "jrc_mus-cerebellum-5",
+    "description": "Mouse deep nuclei",
+    "thumbnail_url": "s3://janelia-cosem-datasets/jrc_mus-cerebellum-5/thumbnail.jpg",
+    "stage": "dev",
+    "publications": [
+      {
+        "url": "https://doi.org/10.25378/janelia.28754696",
+        "name": "aligned eFIB-SEM data",
+        "pub_type": "doi"
+      }
+    ]
+  }
+]
