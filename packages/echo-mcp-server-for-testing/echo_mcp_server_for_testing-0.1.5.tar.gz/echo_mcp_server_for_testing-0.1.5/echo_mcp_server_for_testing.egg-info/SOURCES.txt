@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+uv.lock
+.github/workflows/publish.yml
+echo_mcp_server_for_testing/__init__.py
+echo_mcp_server_for_testing/_version.py
+echo_mcp_server_for_testing/main.py
+echo_mcp_server_for_testing.egg-info/PKG-INFO
+echo_mcp_server_for_testing.egg-info/SOURCES.txt
+echo_mcp_server_for_testing.egg-info/dependency_links.txt
+echo_mcp_server_for_testing.egg-info/entry_points.txt
+echo_mcp_server_for_testing.egg-info/requires.txt
+echo_mcp_server_for_testing.egg-info/top_level.txt
