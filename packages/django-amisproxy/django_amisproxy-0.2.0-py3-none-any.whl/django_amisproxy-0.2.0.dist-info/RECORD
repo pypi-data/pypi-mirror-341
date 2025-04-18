@@ -1,0 +1,13 @@
+amisproxy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+amisproxy/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+amisproxy/apps.py,sha256=uTtI6dJ0tAnOQY_yLfGwCRdY91O7pewcn8VcRwaMex0,150
+amisproxy/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+amisproxy/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+amisproxy/urls.py,sha256=nS8SyGVpz0Nxit51mJTu3jsqEOmjyopBmI560MzG6Jk,147
+amisproxy/views.py,sha256=wsLdtueHPdeOqfDmEEEiAcdVU8TQ9gYckQJ87CMMkUw,5721
+amisproxy/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_amisproxy-0.2.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_amisproxy-0.2.0.dist-info/METADATA,sha256=vyUdnjwyxKQNWvGmod-yWPeTnYkWtcHdVNzqVlxvjhg,14549
+django_amisproxy-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_amisproxy-0.2.0.dist-info/top_level.txt,sha256=j_IHDPHgbh_efSm65aqnsqcJo1hJtbsp4CId5X74V-w,10
+django_amisproxy-0.2.0.dist-info/RECORD,,
