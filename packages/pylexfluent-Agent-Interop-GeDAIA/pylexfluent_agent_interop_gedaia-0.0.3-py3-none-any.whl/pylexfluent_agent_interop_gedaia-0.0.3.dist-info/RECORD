@@ -1,0 +1,9 @@
+aig/__init__.py,sha256=GaTnuhKPv8uJDCFPqMArKAp6urv60QogTxEaFJGH_PI,606
+aig/demo/client/ollama_client.py,sha256=UO2rOFi488MIJWRx3fGgX0I_33AoSgkUwuG-DFaD0fc,4893
+aig/demo/server/Pipfile,sha256=N50FogFBzZ7BA5JndKerOgV_tCtXsA02ET0AmWCQHXE,139
+aig/demo/server/math_server.py,sha256=7uPH5qQ6iLKMN1DonxkBwhK1h8xS3q47YXK6f1WJeCc,4078
+aig/demo/server/package-lock.json,sha256=9bCDP7Ooisih8VhiwKlXjsXBjrGwtVCdBS46UBTjTAk,85
+pylexfluent_agent_interop_gedaia-0.0.3.dist-info/METADATA,sha256=OnZ8jSPSdxj4MFGk0kAMtzLpMRJ6dWtAeLTi-G0SNbc,1779
+pylexfluent_agent_interop_gedaia-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pylexfluent_agent_interop_gedaia-0.0.3.dist-info/licenses/LICENSE,sha256=U3T4jphItNG5YyLgwbqdXpjNSDJou7zjPGmrj816ypA,35150
+pylexfluent_agent_interop_gedaia-0.0.3.dist-info/RECORD,,
