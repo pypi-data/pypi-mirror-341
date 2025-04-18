@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling >= 1.26", "setuptools >= 65"]
+build-backend = "hatchling.build"
+
+[project]
+name = "py-h264"
+version = "0.2.2"
+description = "A Python library for encoding videos to H.264 and converting images to videos."
+requires-python = ">=3.8"
+authors = [
+    { name="Orphan Byte", email="orphanbyte@proton.me" }
+]
+readme = "README.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Multimedia :: Video :: Conversion",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+license = { file = "LICENSE" }
+
+[project.urls]
+Documentation = "https://github.com/orphanbyte/py-h264#readme"
+Source = "https://github.com/orphanbyte/py-h264"
+Issues = "https://github.com/orphanbyte/py-h264/issues"
+
+[tool.hatch.build]
+include = [
+    "pyh264/**",
+    "README.md",
+    "LICENSE"
+]
+
