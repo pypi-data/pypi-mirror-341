@@ -1,0 +1,15 @@
+dlchordx/__init__.py,sha256=ruT29F-HXWyrQpRc1xNxMTCyKB1amOzyyLxv3r8xo3s,209
+dlchordx/chord.py,sha256=wdNpyB7zW5WAQMoyENRL4T_cdLZYpq6chLMIAafnkTg,30779
+dlchordx/chord_prog.py,sha256=-VNqSm4XDu0SykQ_R5e1tpu9WeAygc2kW8L8fKgOTQc,2343
+dlchordx/const.py,sha256=GtgcVoBV6Afr8BJ7NqokMnZ0ZMFQT6eKX001oDJTQ1U,3249
+dlchordx/parser.py,sha256=DY4a3x3E6h-NrvSDh8GICvUFPDCUNAgLPopHSy9VRK4,6775
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_chord.py,sha256=p9Vo_Z9LAMWCfmcZGb948OJp6uCuzzjxRQgBSpYlR8k,3868
+test/test_chord_parser.py,sha256=uLSi5IywXgcMeoFixj6r5pW9ivgDMDzdOOmToYAhBJw,740
+test/test_quality_parser.py,sha256=dezkLFfs04A2a_NYplvnCnCwjk5b6eS5oA6R7jNsEwc,3784
+test/test_utils.py,sha256=lA--FTx8HEPQqA-KNWswP0o2XBINchZy4WB2S3VQ1Wc,1393
+dlchordx-1.0.5.dist-info/LICENSE,sha256=2eu38HKxMDQo71WMQjKHTBzvEHSTLQG3mYOJIAI9zeU,1088
+dlchordx-1.0.5.dist-info/METADATA,sha256=eXdJqJ61-Oat5eN_9PiR-tntNzQw1mJFJVOQWbSofVI,212
+dlchordx-1.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dlchordx-1.0.5.dist-info/top_level.txt,sha256=p8v3FKOYI4Zw3Awb95HBKuZn9EtGVj5QyiAnQRc06lk,14
+dlchordx-1.0.5.dist-info/RECORD,,
