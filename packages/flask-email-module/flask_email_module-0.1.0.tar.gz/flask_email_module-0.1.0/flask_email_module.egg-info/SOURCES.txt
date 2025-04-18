@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+flask_email_module/__init__.py
+flask_email_module/main.py
+flask_email_module.egg-info/PKG-INFO
+flask_email_module.egg-info/SOURCES.txt
+flask_email_module.egg-info/dependency_links.txt
+flask_email_module.egg-info/requires.txt
+flask_email_module.egg-info/top_level.txt

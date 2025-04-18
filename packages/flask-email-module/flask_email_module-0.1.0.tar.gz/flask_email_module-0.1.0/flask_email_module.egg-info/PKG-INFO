@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: flask_email_module
+Version: 0.1.0
+Summary: A Flask module that captures login form data and sends it via email.
+Home-page: https://github.com/Baskar245/flask_email_module
+Author: Baskar
+Author-email: newtonbaskar04@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Flask
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Flask
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# flask_email_module
+
+This module starts a simple Flask app with a login form that sends submitted username and password to a given email using SMTP.
+
+## Installation
+
+```bash
+pip install flask_email_module
