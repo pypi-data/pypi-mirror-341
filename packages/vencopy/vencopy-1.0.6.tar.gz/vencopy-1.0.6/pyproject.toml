@@ -1,0 +1,77 @@
+[project]
+name = "vencopy"
+version = "1.0.6"
+description = "Vehicle Energy Consumption in Python: A tool to simulate load flexibility of electric vehicle fleets."
+authors = [
+    { name = "Fabia Miorelli", email = "fabia.miorelli@dlr.de" },
+    { name = "Niklas Wulff", email = "niklas.wulff@dlr.de" }
+]
+readme = "README.md"
+license-expression = "BSD-3-Clause"
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Unix",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+
+requires-python = ">=3.9"
+
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "click",
+    "pyyaml",
+    "scipy",
+    "matplotlib",
+]
+
+[project.urls]
+Homepage = 'https://gitlab.com/dlr-ve/esy/vencopy/vencopy'
+Documentation = 'https://dlr-ve.gitlab.io/esy/vencopy/vencopy/index.html'
+Repository = 'https://gitlab.com/dlr-ve/esy/vencopy/vencopy.git'
+Gitter = 'https://gitter.im/vencopy/community'
+
+
+[project.optional-dependencies]
+docs = [
+    "sphinx", 
+    "sphinx-rtd-theme", 
+    "rst2pdf"
+    ]
+
+test = [
+    "coverage",
+    "pytest",
+    "pytest-cov",
+    ]
+
+dev = [
+    "black",
+    ]
+
+[build-system]
+requires = ["hatchling>=1.26.1"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+python_files = ["test_*.py", "*_test.py", "tests.py"]
+
+[tool.coverage.run]
+branch = true
+source = ["vencopy"]
+
+[tool.coverage.report]
+show_missing = true
+precision = 2
+
