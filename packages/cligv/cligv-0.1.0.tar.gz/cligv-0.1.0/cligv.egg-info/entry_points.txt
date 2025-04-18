@@ -1,0 +1,2 @@
+[console_scripts]
+cligv = cligv.cli:main
