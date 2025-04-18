@@ -1,0 +1,10 @@
+celery_worker/__init__.py,sha256=xrCoEzOsCucDY8J6FU3ODmFnOex5-tDYV_OL4q_4sOc,95
+celery_worker/app.py,sha256=xSMU2LPKzKKZ7rBRBhfE5XJRa5mvDssGyMYL7iozi8U,1000
+celery_worker/config.py,sha256=f0uH8cLmOcjjkV9H6_Ug63n5CWvCLYrGXsF1NaYJdLY,859
+celery_worker/tasks/__init__.py,sha256=h1N91azuk3Q0cQnsQpvouP-RxfZ3-vFrs2ApvU6X5c4,48
+celery_worker/tasks/demo.py,sha256=0trxeeO7XK_VOsJfv1aED7idTPIvQIrzglR4EUXrVWs,222
+django_celery_worker-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_celery_worker-0.0.1.dist-info/METADATA,sha256=7LZqS02yXe9DwOaHIC2mrcM41P1NY1LIGs-R-Bj1LwY,270
+django_celery_worker-0.0.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+django_celery_worker-0.0.1.dist-info/top_level.txt,sha256=7c_iyhlg7USpsBLEHf-beuyy-FvhjT73cMnSHacGxP8,14
+django_celery_worker-0.0.1.dist-info/RECORD,,
