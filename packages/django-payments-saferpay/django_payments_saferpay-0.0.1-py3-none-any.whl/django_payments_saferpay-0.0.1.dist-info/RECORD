@@ -1,0 +1,9 @@
+django_payments_saferpay/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+django_payments_saferpay/facade.py,sha256=oGQOKatKlNDePLxEEnykrAHbSetPXXrS2JBM1hMv-CU,16442
+django_payments_saferpay/provider.py,sha256=AAQIIcPx0LA_wsaM3Y1t5HbiJXky2Em8V-Mtv--FyRY,7659
+django_payments_saferpay/version.py,sha256=vgltXBYF55vNcC2regxjGN0_cbebmm8VgcDdQaDapWQ,511
+django_payments_saferpay-0.0.1.dist-info/licenses/LICENSE,sha256=hQ5r9x4OutMn_QVl4zt056LjU4Zde4aRZmoG2Y7ZTQI,1526
+django_payments_saferpay-0.0.1.dist-info/METADATA,sha256=M2XYBwvDSl4ydxB5yR3C5Hs9hJoCpEMgYtisOlj6CbE,3427
+django_payments_saferpay-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_payments_saferpay-0.0.1.dist-info/top_level.txt,sha256=v-G6cLToSHRQW6ulai7rTAILqscSn5cjPNMq3qr_ve0,25
+django_payments_saferpay-0.0.1.dist-info/RECORD,,
