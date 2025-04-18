@@ -1,0 +1,14 @@
+bim2rdf/__init__.py,sha256=GbPclW2oFRKWCpLBb23zjxlklIPo1I1hWG1xt3thXh0,1341
+bim2rdf/cache.py,sha256=CaU3XEp7gbbFD_uyxi-twKYBVaa2KLqBpQkGfoSrf3o,413
+bim2rdf/cli.py,sha256=XwDRjgLY3rrk39H2ZmDg_2yzZ0RczdtbcmktcuJtiqs,1277
+bim2rdf/config.py,sha256=elDyt8kGIbBYSfujYwIxZaPu6bnoyttAoLjUV04mtMo,668
+bim2rdf/engine.py,sha256=NuW6NTgQ33WBF0tg13tJ3bZOpzBNs1trenrb2NACJHc,7233
+bim2rdf/queries.py,sha256=R03pwXdcQI_9SjzFzxVNWvnshVfEokRuQC9SeCfU8XE,12166
+bim2rdf/rdf.py,sha256=T1m-LV4-legxKP-zsy4oGRK5uXMHoMLW49rSduuDplw,1101
+bim2rdf/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bim2rdf/utils/substitution.py,sha256=0La6dV1k1dO2Ju0RV_8w5Yw9VUka77DhEHcABn9jjt4,1562
+bim2rdf-2025.4.1785.dist-info/METADATA,sha256=la0e3puu4jvzUR86NSyW0FU6KSgXUGK_x2XxsZyunrY,1810
+bim2rdf-2025.4.1785.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+bim2rdf-2025.4.1785.dist-info/entry_points.txt,sha256=bLTUxbtMVEoCr8nuTnNJD3vyVjp0PS-honjRL-Ap7rQ,44
+bim2rdf-2025.4.1785.dist-info/licenses/LICENSE.md,sha256=_VkChWv9fuluHpX9guGwxj6MnSt6kryszNtuD8JadpI,1340
+bim2rdf-2025.4.1785.dist-info/RECORD,,
