@@ -1,0 +1,10 @@
+samwich_cli/controller.py,sha256=ktD_ns-6jZCiSDAPSzwk-4-hp_AIWVMWaxoG4kUh3wg,4895
+samwich_cli/file_utils.py,sha256=k4vqwnSCDLzhJOWx8l9GHn4u6i4RwRNEY4KE-3In0SY,5527
+samwich_cli/main.py,sha256=w1PKPSkous_mLd-YcaEOWX_Hq0A97tSzfhDdF8XHays,2101
+samwich_cli/model.py,sha256=fKE5G8Smo1RoISqlELRLoxb_PXpmIEkoQn_2s2yMO98,2842
+samwich_cli/sam_utils.py,sha256=4O5dyubb9xM0xI4raaEz8rDHsRjErx1wwkjR4FT8s00,2324
+samwich_cli-0.11.0.dist-info/METADATA,sha256=36mFmQWSO7U-dsZGSiHdsPAwgKFfxHTtkeGH5hmrWsY,4469
+samwich_cli-0.11.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+samwich_cli-0.11.0.dist-info/entry_points.txt,sha256=XsiL5Cy4ah71K_AAxYSK09vuvAZ62kMclYNTr31tH7I,53
+samwich_cli-0.11.0.dist-info/licenses/LICENSE,sha256=zpYqoa66KKnufAtHRlovPpvvqZoLhE0m8dJ7KLbXL-s,1067
+samwich_cli-0.11.0.dist-info/RECORD,,
