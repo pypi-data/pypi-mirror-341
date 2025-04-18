@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: cppython
+Version: 0.9.2.dev1
+Summary: A Python management solution for C++ dependencies
+Author-Email: Synodic Software <contact@synodic.software>
+License: MIT
+Project-URL: homepage, https://github.com/Synodic-Software/CPPython
+Project-URL: repository, https://github.com/Synodic-Software/CPPython
+Requires-Python: >=3.13
+Requires-Dist: typer>=0.15.2
+Requires-Dist: pydantic>=2.11.3
+Requires-Dist: packaging>=24.2
+Requires-Dist: requests>=2.32.3
+Requires-Dist: types-requests>=2.32.0.20250328
+Provides-Extra: pytest
+Requires-Dist: pytest>=8.3.5; extra == "pytest"
+Requires-Dist: pytest-mock>=3.14.0; extra == "pytest"
+Provides-Extra: git
+Requires-Dist: dulwich>=0.22.8; extra == "git"
+Provides-Extra: pdm
+Requires-Dist: pdm>=2.23.1; extra == "pdm"
+Provides-Extra: cmake
+Requires-Dist: cmake>=4.0.0; extra == "cmake"
+Provides-Extra: conan
+Requires-Dist: conan>=2.15.1; extra == "conan"
+Requires-Dist: libcst>=1.7.0; extra == "conan"
+Description-Content-Type: text/markdown
+
+# CPPython
+A Python management solution for C++ dependencies
