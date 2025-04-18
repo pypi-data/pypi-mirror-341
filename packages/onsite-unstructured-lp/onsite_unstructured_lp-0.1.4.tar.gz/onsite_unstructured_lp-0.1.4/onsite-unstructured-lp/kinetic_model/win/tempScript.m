@@ -1,0 +1,20 @@
+currentDir = pwd;
+cd ..
+cd(currentDir);
+x0=947.26;
+y0=2117.26;
+yaw=1.919;
+v0=5.5;
+acc=0.0;
+gear=2;
+steer=0.0;
+slope=-0.2;
+load('a_brake.mat');
+load('a_thr.mat');
+load('brake.mat');
+load('thr.mat');
+localPort = 25003;
+remotePort = 25002;
+remoteIP = '127.0.0.1';
+modelName='VehicleModel_SJTU';
+run('control_simulink.m');
