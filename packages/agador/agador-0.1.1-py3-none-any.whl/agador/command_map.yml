@@ -1,0 +1,86 @@
+### List of agador commands that map a umnet_napalm getter to the functions used to process
+## that data.
+## Each entry under 'commands' is something you can run with agador's run.py
+##
+## Under each command entry you can provide the following data:
+##   frequency: how often the command should be run in crontab format
+##   getter: name of the umnet_napalm getter function
+##
+##   getter_args: arguments to pass to the getter as key value pairs (kwargs)
+##
+##   inventory_filter: name of filter function in nornir/inventory_filters.py that specifies
+##                     what devices in netbox the command applies to. If not specified, the command
+##                     will get run against all active network devices.
+##
+##   save_to_file: if the result of the getter should get saved to a file, specify this section.
+##     mapper: the name of the class in mappers/save_to_file.py used to transform the getter data
+##     destination: the destination folder for the files to get saved in. Note that here you can
+##                reference variables defined in ~/.env
+##
+##   save_to_db: if the result of the getter should get saved to umnet_db, provide the mapper class
+##               in mappers/save_to_db.py used to process the data.
+##
+## 'frequency', 'getter' and one of 'save_to_file' or 'save_to_db' (or both) MUST be specified, everything else is
+##  optional.
+
+commands:
+
+  config:
+    frequency: 35 9 * * *
+    getter: get_config
+    getter_args:
+      retrieve: running
+    save_to_file:
+      mapper: SaveConfig
+      destination: ${FILES_DIR}/device-config-backups
+
+  facts:
+    frequency: 35 9 * * *
+    getter: get_facts
+    save_to_db: UpdateDevice
+  
+  inventory:
+    frequency: 20 9 * * *
+    getter: get_inventory
+    save_to_db: UpdateInventory
+
+  lldp_neighbors:
+    frequency: 0 * * * *
+    getter: get_lldp_neighbors
+    inventory_filter: non_security_filter
+    save_to_db: UpdateNeighbor
+
+  lags:
+    frequency: 0 * * * *
+    getter: get_lag_interfaces
+    save_to_db: UpdateLAG
+
+  arp_table:
+    frequency: 0 */4 * * *
+    getter: get_arp_table
+    inventory_filter: routers_filter
+    save_to_db: UpdateARP
+
+  ip_inerfaces:
+    frequency: 0 * * * *
+    getter: get_ip_interfaces
+    inventory_filter: routers_filter
+    save_to_db: UpdateIPInterface
+
+  routes:
+    frequency: 0 */4 * * *
+    getter: get_active_routes
+    inventory_filter: routers_filter
+    save_to_db: UpdateRoute
+
+  mpls:
+    frequency: 0 */4 * * *
+    getter: get_mpls_switching
+    inventory_filter: mpls_filter
+    save_to_db: UpdateMPLS
+
+  vni:
+    frequency: 0 */4 * * *
+    getter: get_vni_information
+    inventory_filter: vxlan_filter
+    save_to_db: UpdateVNI
