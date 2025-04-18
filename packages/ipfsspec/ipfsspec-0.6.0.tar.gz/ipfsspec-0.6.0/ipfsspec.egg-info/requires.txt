@@ -1,0 +1,7 @@
+fsspec>=2024.12.0
+requests
+aiohttp
+aiohttp-retry
+multiformats
+dag-cbor>=0.2.2
+pure-protobuf<3,>=2.1.0
