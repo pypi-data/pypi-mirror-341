@@ -1,0 +1,2 @@
+[console_scripts]
+oneread = oneread.cli:main
