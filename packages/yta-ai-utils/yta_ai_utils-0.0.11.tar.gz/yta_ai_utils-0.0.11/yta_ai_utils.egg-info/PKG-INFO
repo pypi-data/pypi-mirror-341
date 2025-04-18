@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: yta_ai_utils
+Version: 0.0.11
+Summary: Youtube Autónomo AI utils are here.
+Author: Daniel Alcalá
+Author-email: <danielalcalavalera@gmail.com>
+Keywords: youtube autonomo ai utils
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+Requires-Dist: yta-general-utils
+Requires-Dist: google-generativeai
+Requires-Dist: transformers
+Requires-Dist: ollama
+Requires-Dist: openai
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: whisper_timestamped
+Requires-Dist: python-dotenv
+Requires-Dist: re_gpt
+Requires-Dist: ai21
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+These are the AI utils we need in the Youtube Autónomo project to work in a better way.

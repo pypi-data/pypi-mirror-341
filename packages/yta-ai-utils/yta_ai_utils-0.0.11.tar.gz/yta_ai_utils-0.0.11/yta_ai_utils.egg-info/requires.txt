@@ -1,0 +1,11 @@
+yta-general-utils
+google-generativeai
+transformers
+ollama
+openai
+requests
+tqdm
+whisper_timestamped
+python-dotenv
+re_gpt
+ai21
