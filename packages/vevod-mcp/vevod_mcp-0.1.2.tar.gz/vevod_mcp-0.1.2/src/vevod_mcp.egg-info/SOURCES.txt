@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/vevod_mcp/__init__.py
+src/vevod_mcp/cli.py
+src/vevod_mcp/mcp_server.py
+src/vevod_mcp.egg-info/PKG-INFO
+src/vevod_mcp.egg-info/SOURCES.txt
+src/vevod_mcp.egg-info/dependency_links.txt
+src/vevod_mcp.egg-info/entry_points.txt
+src/vevod_mcp.egg-info/requires.txt
+src/vevod_mcp.egg-info/top_level.txt
+src/vevod_mcp/api/__init__.py
+src/vevod_mcp/api/vod.py
