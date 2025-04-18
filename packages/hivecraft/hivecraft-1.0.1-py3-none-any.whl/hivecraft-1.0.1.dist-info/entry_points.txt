@@ -1,0 +1,2 @@
+[console_scripts]
+hivecraft = hivecraft.__main__:main
