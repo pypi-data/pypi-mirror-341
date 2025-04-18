@@ -1,0 +1,12 @@
+django_layered_start/__init__.py,sha256=ZtEqgGIAIwSuBQuy11300jt67WmXkiT552oEjp8gftc,23
+django_layered_start/cli.py,sha256=iNtoaWj0Cu1HwHMl-KbyWouj042UtDCqQud6vVFD7HM,677
+django_layered_start/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_layered_start/core/app_creator.py,sha256=ktLVA4Ls5P69GxWT8LA99aTbZcVAMLpBzCGTkpn9opA,518
+django_layered_start/core/layered_structure.py,sha256=b-_wl2dL-_TskRs2Kyz50nWug6THcgp3OzIL-1pXRWY,3889
+django_layered_start/core/project_creator.py,sha256=3leyiz6zY34p-NdOLxHHOMsOrJc7AI40ikSnVrazZ1M,814
+django_layered_start-1.2.2.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_layered_start-1.2.2.dist-info/METADATA,sha256=Gh4n3dRmdIn4tRbYZkNozCbMpPmxlxMb3eP8dYAgxQc,3990
+django_layered_start-1.2.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_layered_start-1.2.2.dist-info/entry_points.txt,sha256=taxcyopEpRuxjbrVZqe2aMO8lXke9UA4PGlZLfq6oS0,72
+django_layered_start-1.2.2.dist-info/top_level.txt,sha256=K4fCU_evc18MQXYhblNNivmxqbYfSqjqbFwJ2nf8lzQ,21
+django_layered_start-1.2.2.dist-info/RECORD,,
