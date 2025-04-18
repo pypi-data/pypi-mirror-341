@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: zsender
+Version: 1.2.7
+Summary: A system for sending data via POST request with client-side uniqueness control
+Author: foofro
+Author-email: opn5726634@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: reqinstall
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
