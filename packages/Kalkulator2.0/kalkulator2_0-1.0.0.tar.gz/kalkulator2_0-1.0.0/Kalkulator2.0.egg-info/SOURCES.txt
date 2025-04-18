@@ -1,0 +1,8 @@
+README.md
+setup.py
+Calculator/__init__.py
+Calculator/operations.py
+Kalkulator2.0.egg-info/PKG-INFO
+Kalkulator2.0.egg-info/SOURCES.txt
+Kalkulator2.0.egg-info/dependency_links.txt
+Kalkulator2.0.egg-info/top_level.txt
