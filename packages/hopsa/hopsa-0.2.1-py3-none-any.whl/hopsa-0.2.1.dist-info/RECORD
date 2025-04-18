@@ -1,0 +1,12 @@
+hopsa/__init__.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+hopsa/_modidx.py,sha256=9ON-H83Ffykj-M3BI6Av_XGrWctSRSXoDYUJ-voPe2w,2035
+hopsa/core.py,sha256=9lt7jRS1rvws4AKail9WyDC_ZwHnICR1pAo3-bKdVPQ,189
+hopsa/lgtst.py,sha256=g17v33xrktddcnwcYtMMTcOUcKZG6HQC19wO7jUMusY,2201
+hopsa/nbs.py,sha256=8Qjh8Zk37i3gw7sZFVAsgEC5jZhTqzh9Sm1DTPrRj-U,17696
+hopsa/nbuse.py,sha256=XGePjGd8MNX3YV1qT_F_yYMF0BXURVtbe9oXT-0SX7k,17712
+hopsa/ossys.py,sha256=HkdD7WQoxaps6moM4LTLVR23gfd4702D-zcfLStcGlc,1395
+hopsa-0.2.1.dist-info/METADATA,sha256=pW7hAw-KtXfgE9WZ8qJBPa5bTB5AWm228BufoOaTZi4,2273
+hopsa-0.2.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+hopsa-0.2.1.dist-info/entry_points.txt,sha256=WwaaJlq6X208zwH1tn0RTIoYcmeA_YUgL72er_qexJA,37
+hopsa-0.2.1.dist-info/licenses/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+hopsa-0.2.1.dist-info/RECORD,,
