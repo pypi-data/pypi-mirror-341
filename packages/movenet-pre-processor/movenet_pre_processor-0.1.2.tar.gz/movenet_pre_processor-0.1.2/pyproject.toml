@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "movenet-pre-processor"
+version = "0.1.2"
+description = ""
+authors = ["will-s-stone <will@williamstone.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^2.2.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
