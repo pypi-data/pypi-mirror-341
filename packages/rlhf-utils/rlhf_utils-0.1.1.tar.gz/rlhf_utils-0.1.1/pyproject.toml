@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rlhf-utils"
+version = "0.1.1"
+description = "Efficient utilities for working with Large Language Models"
+readme = "README.md"
+authors = [{name = "LLM Researcher", email = "your.email@example.com"}]
+license = {text = "MIT"}
+requires-python = ">=3.7"
+dependencies = [
+    "openai>=1.0.0",
+    "datasets>=2.0.0",
+    "tqdm>=4.45.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8", 
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Development Status :: 4 - Beta",
+]
+keywords = ["llm", "rlhf", "ai", "openai", "gpt", "parallel", "utility"]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/rlhf-utils"
+Documentation = "https://github.com/yourusername/rlhf-utils#readme"
+"Bug Tracker" = "https://github.com/yourusername/rlhf-utils/issues"
+"Source Code" = "https://github.com/yourusername/rlhf-utils"
+
+[tool.black]
+line-length = 88
+target-version = ["py37", "py38", "py39", "py310"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3 
