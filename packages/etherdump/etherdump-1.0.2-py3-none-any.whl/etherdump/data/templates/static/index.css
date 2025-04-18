@@ -1,0 +1,38 @@
+body {
+    margin: 2em;
+}
+
+/* this rule is important for the *.dhtml.html */
+.removed {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted gray;
+    color: black;
+}
+
+a:hover {
+    /*text-decoration: underline;*/
+    border-bottom: 1px solid gray;
+}
+
+td.versions a {
+    text-transform: uppercase;
+    font-size: smaller;
+    padding: 1px;
+    color: gray;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+td.versions a:hover {
+    background: black;
+    color: gray;
+}
+
+td {
+    padding-right: 1em;
+}
+
