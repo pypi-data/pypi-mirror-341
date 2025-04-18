@@ -1,0 +1,3 @@
+[console_scripts]
+mcp-polaris-ai-datainsight=src.server:run
+
