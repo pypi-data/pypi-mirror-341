@@ -1,0 +1,5 @@
+svg-py
+gtgt>=0.2.1
+mutalyzer_crossmapper
+mutalyzer_hgvs_parser
+setuptools
