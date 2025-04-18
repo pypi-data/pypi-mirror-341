@@ -1,0 +1,11 @@
+vevod_mcp/__init__.py,sha256=z3JBaaT0PcGcEEDEKcpMGX6lK-h8GDf2wAhx5XSixls,171
+vevod_mcp/cli.py,sha256=oXawXBgC8u7ayNnsCPO94ktynmuqcX__HJhxJm6wfj0,530
+vevod_mcp/mcp_server.py,sha256=XmssW__37by3h0F6lgAGS-xaXrIr1RYmf4NJDHL1wio,30780
+vevod_mcp/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vevod_mcp/api/vod.py,sha256=kJ7yhXj0GrOed3v5RMaHhsP8LS6K2f6ybONkmeftmG8,458
+vevod_mcp-0.1.1.dist-info/licenses/LICENSE.txt,sha256=YSYApykAw8ibdjIu4DFQ6frvV-ec1l4hFpBrsNo5Rwo,11368
+vevod_mcp-0.1.1.dist-info/METADATA,sha256=icdgIbaKFMBqAJ8sNhP8lbfj44K9nKrYbE_20ckgbTE,1548
+vevod_mcp-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+vevod_mcp-0.1.1.dist-info/entry_points.txt,sha256=mS5houH_jszVg6eLQfR9Bj7rXSQH9QMe3jp8kdAs0-M,49
+vevod_mcp-0.1.1.dist-info/top_level.txt,sha256=jmomBQlImLpvb7zEFZOQwi04KX5j1qJLEIe4gGiMtso,10
+vevod_mcp-0.1.1.dist-info/RECORD,,
