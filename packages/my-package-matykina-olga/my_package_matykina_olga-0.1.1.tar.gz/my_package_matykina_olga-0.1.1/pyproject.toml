@@ -1,0 +1,19 @@
+[build-system]
+  requires = ['setuptools>=42', 'wheel']
+  build-backend = 'setuptools.build_meta'
+[project]
+  name = 'my_package_matykina_olga'
+  version = '0.1.1'
+  description = 'Описание моего Python-пакета'
+  authors = [
+    {name = 'Your Name', email = 'youremail@example.com'}
+  ]
+  readme = 'README.md'
+  license = {text = 'MIT'}
+  requires-python = '>=3.7,<4'
+  dependencies = [
+    'requests>=2.25.1',
+    'numpy>=1.19.2'
+  ]
+[tool.setuptools]
+packages = {find = {}}
