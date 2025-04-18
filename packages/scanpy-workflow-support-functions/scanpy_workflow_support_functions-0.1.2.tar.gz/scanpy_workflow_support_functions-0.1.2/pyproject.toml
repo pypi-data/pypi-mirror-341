@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scanpy_workflow_support_functions"
+version = "0.1.2"
+description = "This package has the compilations of functions useful for the scanpy guided single cell RNAseq analysis"
+readme = "README.md"
+authors = [{ name = "Ankit Patel", email = "ankit.patel@qmul.ac.uk" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",  # Add dependencies here
+    "pandas",
+    "scanpy",
+    "squidpy",
+    "cell2location"
+]
+
+## set up github and update this urls.
+
+[project.urls]
+"Homepage" = "https://github.com/avpatel18/scanpy_workflow_support_functions"
+"Bug Tracker" = "https://github.com/avpatel18/scanpy_workflow_support_functions/issues"

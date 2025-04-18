@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: scanpy_workflow_support_functions
+Version: 0.1.2
+Summary: This package has the compilations of functions useful for the scanpy guided single cell RNAseq analysis
+Author: Ankit Patel
+Author-email: Ankit Patel <ankit.patel@qmul.ac.uk>
+Project-URL: Homepage, https://github.com/avpatel18/scanpy_workflow_support_functions
+Project-URL: Bug Tracker, https://github.com/avpatel18/scanpy_workflow_support_functions/issues
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scanpy
+Requires-Dist: squidpy
+Requires-Dist: cell2location
+Dynamic: license-file
+
+# scanpy workflow support function
+
+This package will be useful to you if you are using scanpy to analyse your singlecell RNA-seq data.
+
+This package contains lot of scanpy functions grouped together to speed up your analysis.
+
+There are additional plotting functions.
+
+There are functions to read, analyse and visulise spatial data as well.
