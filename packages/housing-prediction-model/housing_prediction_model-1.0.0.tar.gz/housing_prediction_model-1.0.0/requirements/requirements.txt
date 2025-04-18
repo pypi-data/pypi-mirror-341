@@ -1,0 +1,15 @@
+requests
+numpy
+pandas
+seaborn
+matplotlib
+scikit-learn
+joblib
+pydantic
+strictyaml
+ruamel.yaml
+setuptools
+flake8
+black
+feature_engine
+xgboost

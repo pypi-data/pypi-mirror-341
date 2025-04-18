@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: housing-prediction-model
+Version: 1.0.0
+Summary: ML model to predict housing prices
+Author: Kaushik T D Roy
+Author-email: kaushiktd@gmail.com
+License: BSD-3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: joblib
+Requires-Dist: pydantic
+Requires-Dist: strictyaml
+Requires-Dist: ruamel.yaml
+Requires-Dist: setuptools
+Requires-Dist: flake8
+Requires-Dist: black
+Requires-Dist: feature_engine
+Requires-Dist: xgboost
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+ML model to predict housing prices
