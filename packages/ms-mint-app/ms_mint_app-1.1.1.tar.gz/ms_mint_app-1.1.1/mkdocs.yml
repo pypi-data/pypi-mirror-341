@@ -1,0 +1,25 @@
+site_name: ms-mint-app
+site_url: https://github.com/lewisresearchgroup/ms-mint-app
+site_author: Soren Wacker 
+nav:
+  - Home: 'index.md'
+  - Installation: 'install.md' 
+  - Quickstart: 'quickstart.md'
+  - GUI: 'gui.md'
+  - Target lists: 'targets.md'
+  - Developer Notes: 'developer-notes.md'
+  - Gallery: 'gallery.md'
+extra:
+  analytics:
+    provider: google
+    property: G-F718PR80XX
+  consent:
+    title: Cookie consent
+    description: > 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+theme:
+  name: material
+      
