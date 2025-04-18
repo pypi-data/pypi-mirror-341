@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: MSpypi
+Version: 1.0
+Summary: Un package python pour les opérations mathématiques courantes
+Home-page: https://stagee.readthedocs.io/en/latest/
+Author: ngouhouo nabil
+Author-email: nabilf045@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://stagee.readthedocs.io/en/latest/
+Project-URL: Source, https://app.readthedocs.org/projects/stagee/
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+
+
+# MSI
+
+Un package Python pour les calculs mathématiques courants
+
+
+
+## Documentation
+
+Pour accéder à la documentation de `MSI`, cliquez sur le lien suivant :
+
+[Documentation MSI](https://stagee.readthedocs.io/en/latest/)
+
+Merci d'avoir utilisé MSI ! Nous espérons qu’il vous
+
+
