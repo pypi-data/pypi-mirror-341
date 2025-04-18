@@ -1,0 +1,11 @@
+netflix_open_content_helper/__init__.py,sha256=TwNRA8E1QXuxWHNyEJJ-Mr1SHQRfzmo-vGBvbJzBURU,505
+netflix_open_content_helper/__main__.py,sha256=FGqvxYqoOGDE5PZpudYrSY9xUGv0N9pS_kmMWjHa2RA,223
+netflix_open_content_helper/cli.py,sha256=h3bflbpFFRsafkQSKcHnwKOcjOV24P5waCHbSiW6OLg,8750
+netflix_open_content_helper/models.py,sha256=AKoiGBn5fqmPMBdDkJsKkK9nuoCReH0-YEBeXt8TtZY,223
+netflix_open_content_helper/parser.py,sha256=TmQnLgmxEKuj4Ioy0Dh9PCl2YWxPcXuMK0P9dUI7Zgw,1176
+netflix_open_content_helper/config/config.yaml,sha256=dhNG5OT5NppjTAClpG-kuiOwdfj2pfTrz0gD9nexRTk,1888
+netflix_open_content_helper-0.2.0.dist-info/METADATA,sha256=S5L4dpCJB-7W6J2mpJjGQZROTdUVdnZHcw6FrUtKUCs,6990
+netflix_open_content_helper-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+netflix_open_content_helper-0.2.0.dist-info/entry_points.txt,sha256=38PMFb_aTwWz365-rjLkyNrtLch4eTHG1aUI00TgLrU,60
+netflix_open_content_helper-0.2.0.dist-info/licenses/LICENSE,sha256=l2v1DsxyRcAzUTyczrmXFJ25aCfWXlAFBkBS0W9l0Ns,1070
+netflix_open_content_helper-0.2.0.dist-info/RECORD,,
