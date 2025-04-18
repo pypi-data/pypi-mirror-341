@@ -1,0 +1,2 @@
+[console_scripts]
+commit_maker = commit_maker.main:main
