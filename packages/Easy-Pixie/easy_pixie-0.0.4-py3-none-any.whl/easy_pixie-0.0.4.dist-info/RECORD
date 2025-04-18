@@ -1,0 +1,15 @@
+easy_pixie/__init__.py,sha256=4fbYfN5wbmFfntWWwIxWYaK4tuUA957VTAzg8L4h0b0,107
+easy_pixie/color.py,sha256=ZBm1Abbfee5taJ4EuxCDZiAEAG0hDjpPGQ4cPmXlkcw,5946
+easy_pixie/shape.py,sha256=ou_LEucCDKfQP-PNf8DryyOEBqwjwXBZgx5zvlVoTMg,3610
+easy_pixie/text.py,sha256=1RskiQyFOZIsmdaYbXKbT5YdyztF4szylepWOgE5ZHs,6949
+easy_pixie/data/color/ui-gradient.json,sha256=TfwRqAAiQxyMcTy11s4jpORHRMtwX6RP0TtJHO8hiTc,27912
+easy_pixie/data/font/OPPOSans-B.ttf,sha256=5bC16VeIXProgzynv_awSXj3yeRatBE0GcuhCx-OU_s,10372280
+easy_pixie/data/font/OPPOSans-H.ttf,sha256=3zm9DQMaQpru6Uptzd09SHV8M583MjvKiq_MiXvxaws,10444508
+easy_pixie/data/font/OPPOSans-L.ttf,sha256=-lp9XjSNKfL8T8KiKYbZVDLual0Z2tr2C2p5FCX9NZQ,10780512
+easy_pixie/data/font/OPPOSans-M.ttf,sha256=bt4_k1ifr6LSJ-1O5P0SNFzUcLWLQrqcIz2OSU6CQ6g,10556904
+easy_pixie/data/font/OPPOSans-R.ttf,sha256=t4JDn2h3YbmD5dRHGHAiYkCQHceomA8uoGFexohvWos,10630656
+easy_pixie-0.0.4.dist-info/licenses/LICENSE,sha256=NDZqgSQkQqwX3UjQK_3ifRU1Mv0e8LxEP5E2BAxEWjA,1067
+easy_pixie-0.0.4.dist-info/METADATA,sha256=SbydsxOvU6BW_e5ZGv8Tur68wn6Hp1CDstQdC6xK0qc,2405
+easy_pixie-0.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+easy_pixie-0.0.4.dist-info/top_level.txt,sha256=j6JxGOCVXonrPIfGlfh9iq68lTW23NC3GTcKMur01WA,11
+easy_pixie-0.0.4.dist-info/RECORD,,
