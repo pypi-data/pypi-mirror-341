@@ -1,0 +1,13 @@
+bio_showcase/db.sqlite3,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bio_showcase/main.py,sha256=1BpVuVMngeO64osDGIGxYbxkq7ypSnHogvN2zq8v3ZA,340
+bio_showcase/manage.py,sha256=m7KSNK2lq64Bo1dys1e0HROKZxRyzs-k3e-7tJN7clI,690
+bio_showcase/bio_showcase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bio_showcase/bio_showcase/asgi.py,sha256=dx8KZEWJ8BjPgat2P-7w9pCN2MPs9zG7yU2Xg8R2ZyU,430
+bio_showcase/bio_showcase/settings.py,sha256=FBLpEuNGHnASKvnU3fLVLJ-3iKT0PkbUtUgLuE3u8OM,3480
+bio_showcase/bio_showcase/urls.py,sha256=PFgvra2U2NybniMmo0zsZmv-rdMX8SVZvZx9qkH1l3g,790
+bio_showcase/bio_showcase/wsgi.py,sha256=mlnwzZGt4qjjnkMpVJD644QJ9J9JbOvuL7KT89jqlWs,417
+bio_showcase-2025.4.18.5.dist-info/METADATA,sha256=SvNodrZgvvOEAmzoyLAzPs2S8xtBOdvkiZTRU290PdU,398
+bio_showcase-2025.4.18.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+bio_showcase-2025.4.18.5.dist-info/entry_points.txt,sha256=o_cM3HgsWp0Z-Bg7TM-_qDb43Mf202Ov-LxCU0UysDI,56
+bio_showcase-2025.4.18.5.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+bio_showcase-2025.4.18.5.dist-info/RECORD,,
