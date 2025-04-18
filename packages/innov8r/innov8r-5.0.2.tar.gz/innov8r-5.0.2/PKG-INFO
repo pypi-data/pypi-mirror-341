@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: innov8r
+Version: 5.0.2
+Summary: Python-based GUI application designed to streamline software development workflows with innovative tools and utilities. It provides developers with an intuitive and user-friendly interface for building efficient and scalable solutions
+Home-page: https://github.com/TechForEverybody/Innov8r-IDE
+Author: Shivkumar Chauhan
+Author-email: sksinghat95@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# innov8r
+
+**innov8r** is a Python-based GUI application designed to streamline software development workflows with innovative tools and utilities. It provides developers with an intuitive and user-friendly interface for building efficient and scalable solutions.
+
+---
+
+## Installation
+
+Install the application using pip:
+
+```bash
+pip install innov8r
