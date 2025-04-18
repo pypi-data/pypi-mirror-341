@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+kafka_mcp_server/__init__.py
+kafka_mcp_server/kafka.py
+kafka_mcp_server/server.py
+kafka_mcp_server/settings.py
+kafka_mcp_server.egg-info/PKG-INFO
+kafka_mcp_server.egg-info/SOURCES.txt
+kafka_mcp_server.egg-info/dependency_links.txt
+kafka_mcp_server.egg-info/entry_points.txt
+kafka_mcp_server.egg-info/requires.txt
+kafka_mcp_server.egg-info/top_level.txt
