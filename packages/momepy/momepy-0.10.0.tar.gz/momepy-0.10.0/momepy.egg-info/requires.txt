@@ -1,0 +1,13 @@
+geopandas>=0.14.0
+libpysal>=4.12.0
+networkx>=3.2
+packaging
+pandas>=2.0
+shapely>=2
+tqdm>=4.65
+
+[plus]
+numba
+inequality
+mapclassify
+esda
