@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+captcha_library/__init__.py
+captcha_library/module.py
+pyimgcaptcha.egg-info/PKG-INFO
+pyimgcaptcha.egg-info/SOURCES.txt
+pyimgcaptcha.egg-info/dependency_links.txt
+pyimgcaptcha.egg-info/requires.txt
+pyimgcaptcha.egg-info/top_level.txt
+tests/__init__.py
+tests/test_generate_captcha.py
