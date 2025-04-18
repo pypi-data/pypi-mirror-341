@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nexadataset"
+version = "0.1.1"
+description = "数据集管理平台SDK"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "shimingming", email = "shimingming@zoneyet.com" }
+]
+keywords = ["nexa", "dataset", "sdk", "async", "download"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "setuptools~=75.8.0",
+    "pyjwt~=2.10.1",
+    "httpx~=0.27.0",
+    "aiofiles~=22.1.0",
+    "pydantic~=2.11.1",
+    "tenacity~=9.0.0",
+    "tqdm~=4.67.1",
+    "click~=8.1.7",
+    "pydantic-settings~=2.8.1",
+    "urllib3~=2.3.0",
+]
+
+[project.urls]
+Homepage = "http://172.16.1.35/shimingming/nexadataset-sdk"
+
+[project.scripts]
+nexadataset = "nexadataset.cli.main:cli"
