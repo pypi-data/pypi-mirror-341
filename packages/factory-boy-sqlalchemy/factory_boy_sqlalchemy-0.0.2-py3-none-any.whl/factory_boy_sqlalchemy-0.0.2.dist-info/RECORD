@@ -1,0 +1,8 @@
+fbsa/__init__.py,sha256=UikORIWz67FfiwVv0k3ELhJVFoXILj-sGoATAhe_vZw,100
+fbsa/factory.py,sha256=3CtxoFBG88-wuqKHjexdWAMt_owIFHHoMROgzsw07Fo,5378
+fbsa/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fbsa/pytest.py,sha256=nItDip4ZYXN4IMXNinnv_u1cIrO5czrBPcsT4_OTBsM,896
+fbsa/types.py,sha256=UUizY0-m892uulPXiEj00zrMsmS_LITOg9604wFKGGw,554
+factory_boy_sqlalchemy-0.0.2.dist-info/METADATA,sha256=zw846Rdx30Gg8KmpQSL3V9WEU1Iy0m0aCVqMVbSA0_w,983
+factory_boy_sqlalchemy-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+factory_boy_sqlalchemy-0.0.2.dist-info/RECORD,,
