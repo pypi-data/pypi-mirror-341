@@ -1,0 +1,36 @@
+{% extends "mails/email.txt" %}
+{% load juntagrico.config %}
+{% block content %}
+Vielen Dank für deine Unterstützung.
+
+Bitte überweise den Betrag von {% config "currency" %} {{ fund.contribution }} auf das folgende Konto:
+    {% config "organisation_address" as addr%}
+    {{ addr.name }}
+    {% if addr.extra %}{{ addr.extra }}{% endif %}
+    {{ addr.street }} {{ addr.number }}
+    {{ addr.zip }} {{ addr.city }}
+    {% config "organisation_bank_connection" as bank%}
+    {{ bank.NAME }}
+    Postkonto-Nummer: {{ bank.PC }}
+    IBAN: {{ bank.IBAN }}
+    BIC: {{ bank.BIC }}
+    Zahlungsgrund: {{ fund.fundable.funding_project.title }} {{ fund.fundable.name }}
+
+Wir bereiten in der Zwischenzeit deine Patenschaftsbestätigung vor und senden diese an:
+    {{ fund.funder.first_name }} {{ fund.funder.last_name }}
+    {{ fund.funder.addr_street }}
+    {{ fund.funder.addr_zipcode }} {{ fund.funder.addr_location }}
+
+{% if password %}
+Mit deiner E-mail-Addresse und folgendem Passwort kannst du dich auf {{serverurl}}/accounts/login/?next={% url 'jcf:home' %} anmelden.
+Passwort: {{ password }}
+{% else %}
+Du findest hier eine Übersicht deiner Beiträge {{serverurl}}{% url 'jcf:contribution' %}
+{% endif %}
+Bitte beachte, dass es mehrere Tage dauern kann, bis deine Zahlung bestätigt wird.
+
+Bei Fragen helfen wir gerne weiter: {% config "info_email" %}
+
+Bis bald und liebe Grüsse die {% config "organisation_name" %}-Betriebsgruppe
+{% endblock %}
+

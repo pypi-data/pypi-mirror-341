@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block small_menu_content %}
+    {% if user.is_authenticated and user.member %}
+        {{ block.super }}
+    {% else %}
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars">
+            </i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            {% if user.is_authenticated and user.funder %}
+                {% include "cf/funder_menu.html" %}
+            {% else %}
+                {% include "cf/guest_menu.html" %}
+            {% endif %}
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block allcontent %}
+    {% if user.is_authenticated and user.member %}
+        {{ block.super }}
+    {% else %}
+        <div class="sidebar col-md-3 d-none d-md-block">
+            {% if user.is_authenticated and user.funder %}
+                {% include "cf/funder_menu.html" %}
+            {% else %}
+                {% include "cf/guest_menu.html" %}
+            {% endif %}
+        </div>
+        <div class="content-container col-md-9 col-sm-12">
+            <div class="messages row">
+                <div class="col-md-12">
+                    {% for message in l_messages %}
+                        {{ message }}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="content row">
+                <div class="col-md-12">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block footer_content %}
+    {% if user.is_authenticated and user.member %}
+        {{ block.super }}
+    {% endif %}
+{% endblock %}
