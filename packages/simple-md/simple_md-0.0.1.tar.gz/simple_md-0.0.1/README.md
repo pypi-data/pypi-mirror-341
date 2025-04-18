@@ -1,0 +1,1 @@
+this is simple to find lcm of two numbers
