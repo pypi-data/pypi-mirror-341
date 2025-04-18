@@ -1,0 +1,89 @@
+Metadata-Version: 2.4
+Name: astroviper
+Version: 0.0.16
+Summary: Astro Visibility and Image Parallel Execution Reduction
+Author-email: Jan-Willem Steeb <jsteeb@nrao.edu>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2023, Associated Universities, Inc.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Requires-Python: <3.14,>=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: astropy
+Requires-Dist: dask
+Requires-Dist: distributed
+Requires-Dist: gdown
+Requires-Dist: graphviper>=0.0.33
+Requires-Dist: matplotlib
+Requires-Dist: numba>=0.59.0
+Requires-Dist: numpy
+Requires-Dist: prettytable
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: pytest-html
+Requires-Dist: scipy
+Requires-Dist: xarray
+Requires-Dist: zarr
+Requires-Dist: bokeh
+Requires-Dist: jupyterlab
+Requires-Dist: pyarrow
+Requires-Dist: graphviz
+Requires-Dist: xradio
+Requires-Dist: python_casacore>=3.6.1; sys_platform != "darwin"
+Requires-Dist: ipympl
+Provides-Extra: docs
+Requires-Dist: ipykernel; extra == "docs"
+Requires-Dist: ipympl; extra == "docs"
+Requires-Dist: ipython; extra == "docs"
+Requires-Dist: jupyter-client; extra == "docs"
+Requires-Dist: nbsphinx; extra == "docs"
+Requires-Dist: recommonmark; extra == "docs"
+Requires-Dist: scanpydoc; extra == "docs"
+Requires-Dist: sphinx-autoapi; extra == "docs"
+Requires-Dist: sphinx-autosummary-accessors; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
+Requires-Dist: twine; extra == "docs"
+Requires-Dist: pandoc; extra == "docs"
+Dynamic: license-file
+
+# AstroVIPER
+
+AstroVIPER (Visibility and Image Parallel Execution Reduction) is in development.
+
+[![Python 3.11 3.12 3.13](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-blue)](https://www.python.org/downloads/release/python-3130/)
+[![Linux Tests](https://github.com/casangi/astroviper/actions/workflows/python-testing-linux.yml/badge.svg?branch=main)](https://github.com/casangi/astroviper/actions/workflows/python-testing-linux.yml?query=branch%3Amain)
+[![macOS Tests](https://github.com/casangi/astroviper/actions/workflows/python-testing-macos.yml/badge.svg?branch=main)](https://github.com/casangi/astroviper/actions/workflows/python-testing-macos.yml?query=branch%3Amain)
+[![ipynb Tests](https://github.com/casangi/astroviper/actions/workflows/run-ipynb.yml/badge.svg?branch=main)](https://github.com/casangi/astroviper/actions/workflows/run-ipynb.yml?query=branch%3Amain)
+[![Coverage](https://codecov.io/gh/casangi/astroviper/branch/main/graph/badge.svg)](https://codecov.io/gh/casangi/astroviper/branch/main/astroviper)
+<!-- [![Documentation Status](https://readthedocs.org/projects/astroviper/badge/?version=latest)](https://astroviper.readthedocs.io) -->
+[![Version Status](https://img.shields.io/pypi/v/astroviper.svg)](https://pypi.python.org/pypi/astroviper/)
+
+
+
+
