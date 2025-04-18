@@ -1,0 +1,17 @@
+sidtools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sidtools/cli - Copy.py,sha256=MSZtn9kwalvewuaE8zMaAlcVTc54EGSL7DGXfPlPOOw,4010
+sidtools/cli.py,sha256=5ReaZrNe3exzWVRnIYol7LefGIDrlf51-cGmB1EX5dA,4487
+sidtools/cli_og.py,sha256=8NgqDTKTAzR7clEgWOuKl137wSEZaMbfqYGd-52Etow,880
+sidtools/cli_v2.py,sha256=kyfmU-fvos3-q-36RitzignjYsLpgLP7hWckOjQmGAs,2714
+sidtools/cli_v3.py,sha256=1sT3kHfCmpLNzkV2tuFSvXgZAnySvGddBOKepNyxgIU,2045
+sidtools/s_make.py,sha256=G5WBnZZ9TTdqeoz2C8lLdaYO-8yClnk1GWZltBxbik4,3335
+sidtools/s_make_old.py,sha256=1pi9i97BH0gIEfSqVaTs9MRH89fsN1W5T54dNBsRN-8,2738
+sidtools/s_run.py,sha256=oYN3C23LWTMaEh-JoeXN_SH1v0MiuP6UpIp6kT7_6B4,1396
+sidtools/s_store.py,sha256=vYSCXjRmG84OW7-8DWwiAqllNXRb8RAvqfEmT8okkWQ,3114
+sidtools/s_store_og.py,sha256=8S-530Ij1teFLq1IC3E97C3oXKVHslMQ7g9CsmRHQBI,2516
+sidtools/s_store_v2.py,sha256=9v0cqM91aTSb7fGIHuAsMAou1CDa9ms5o-CUaO6qO-c,3463
+sidtools-0.2.5.dist-info/METADATA,sha256=36C-oPhv9HkHUpi0z8wbxWAOf3FemZjfn1aZG4ZggEw,398
+sidtools-0.2.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sidtools-0.2.5.dist-info/entry_points.txt,sha256=qxM8t3OOSjvthHCUMsAUA3aP3x1ONNrf9axBT1-ZZBc,120
+sidtools-0.2.5.dist-info/top_level.txt,sha256=KLq3YxPBbBVY7aib9BNSazufdy6DEyQtPKh3-v2v_hU,9
+sidtools-0.2.5.dist-info/RECORD,,
