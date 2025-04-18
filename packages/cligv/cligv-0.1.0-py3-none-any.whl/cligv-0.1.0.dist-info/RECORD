@@ -1,0 +1,13 @@
+cligv/__init__.py,sha256=6kWYBI2akL3vYYlllQNC7zdVr8T3u56-yG4LCfM2-j8,58452
+cligv/alignment.py,sha256=_W1iol8O0fE5qzQZm8uIlCPZoxmhZWTLNsqTIHawgX0,4552
+cligv/browser.py,sha256=tbeqiKE_a_ylHmNjxOWenkpdozATmx1y6jlzyHQlB7w,58375
+cligv/clean.py,sha256=PBnF4iPKT2v756zHaIFOPpvYFARh6wrIiCgKQTcaXzg,690
+cligv/cli.py,sha256=HzCg7BfsCG5vt-GkWEP_U03RK0WAK6-jn1gcujAHztE,5023
+cligv/themes.py,sha256=ejqOcjY0TJJVg6WW5v3nwRTwsh5iKFnU8ZlZX9_uHU0,3324
+cligv/utils.py,sha256=92CsZpWYfqB4yDXeX4Ep9OmPeVWSWk472wSFMIDZ5_U,4198
+cligv-0.1.0.dist-info/licenses/LICENSE.txt,sha256=LnL_P5eq7ETeBcKApDHOu7upDWAaNjScmQx89bGln3o,1073
+cligv-0.1.0.dist-info/METADATA,sha256=9pK69uWi_M0Ys6VqRTg1VLzlKuai_ZJgX69DOt0b-i8,3571
+cligv-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+cligv-0.1.0.dist-info/entry_points.txt,sha256=x_9n0rouGa4GZyYmsyZcTpXIoG-MBkZpoo4MP5G7pTE,41
+cligv-0.1.0.dist-info/top_level.txt,sha256=uJlxMHvpqkWTmpYEZkVXzS3yh2B0fzu84AWDjmXxVSQ,6
+cligv-0.1.0.dist-info/RECORD,,
