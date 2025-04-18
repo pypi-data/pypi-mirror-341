@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+haicu_eth/__init__.py
+haicu_eth/__main__.py
+haicu_eth/eeprom.py
+haicu_eth/format.py
+haicu_eth/ftdi.py
+haicu_eth/zmq.py
+haicu_eth.egg-info/PKG-INFO
+haicu_eth.egg-info/SOURCES.txt
+haicu_eth.egg-info/dependency_links.txt
+haicu_eth.egg-info/entry_points.txt
+haicu_eth.egg-info/requires.txt
+haicu_eth.egg-info/top_level.txt
