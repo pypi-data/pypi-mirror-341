@@ -1,0 +1,54 @@
+# TouchLab Comm Python - README
+
+The **TouchLab Comm Python** repository provides a communication layer that includes both Python and C++ components, allowing for seamless integration of C++ backend code with Python interfaces. This setup is useful for handling communication protocols in robotics or similar applications, particularly with ROS integration in mind.
+
+## Overview
+
+This repository is a hybrid C++ and Python package used for communication handling. The core logic is implemented in C++ (`comm.cpp`), while the Python layer interacts with it for high-level scripting purposes.
+
+---
+
+## Nodes/Scripts
+
+### Python Scripts
+- **examples/example.py**: This script showcases a basic example of how to interact with the communication layer in Python.
+
+---
+
+## Library/Module Overview
+
+### C++ Library
+- **src/comm.cpp**: This is the core implementation of the communication module in C++. The C++ layer handles the low-level communication and integrates seamlessly with the Python interface.
+
+### Python Setup
+- **setup.py**: This file configures the installation process for the Python component of the repository. It bridges the communication layer, enabling Python to interface with the underlying C++ logic.
+
+---
+
+## Example Usage
+
+Here’s an example of how to use the repository:
+
+1. Compile the C++ code using `CMakeLists.txt`.
+2. Install the Python package using `setup.py` (instructions below).
+3. Run the example Python script located in `examples/example.py` to see a demo of the communication system in action.
+
+```bash
+python3 examples/example.py
+```
+
+This script will demonstrate how to interface with the communication layer using Python.
+
+---
+
+## Dependencies
+
+1. **C++ Compiler**: To compile the C++ library.
+2. **Python**: Required for the Python scripts and package installation.
+3. **CMake**: Used for compiling the C++ components.
+
+More details regarding dependencies and configurations can be found on the repository's Wiki (to be added in future versions).
+
+---
+
+This repository will continue to be developed, adding more examples and expanding the communication capabilities.
