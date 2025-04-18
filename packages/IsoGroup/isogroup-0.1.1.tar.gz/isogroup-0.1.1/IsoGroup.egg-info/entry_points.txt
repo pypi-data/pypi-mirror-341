@@ -1,0 +1,2 @@
+[console_scripts]
+isogroup = isogroup.ui.cli:start_cli
