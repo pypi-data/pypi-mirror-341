@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: werkflow-system
+Version: 0.3.2
+Summary: A module for working with operating systems of all architectures and types.
+Author-email: Ada Lundhe <adalundhe@lundhe.audio>
+Keywords: pypi,cicd,python,werkflow,workflow,operating-systems
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: werkflow-core
+Requires-Dist: psutil
+Requires-Dist: distro
+Dynamic: license-file
