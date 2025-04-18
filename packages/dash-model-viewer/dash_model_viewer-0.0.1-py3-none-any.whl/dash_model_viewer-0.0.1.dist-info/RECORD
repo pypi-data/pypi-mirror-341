@@ -1,0 +1,12 @@
+dash_model_viewer/DashModelViewer.py,sha256=YNVXv2BnZN2dSJFTuk8ERckB8CPQtaoWKlXajC8Mm9c,7327
+dash_model_viewer/__init__.py,sha256=oUejSYn7ue6RzIveBrJMhHxn7aso-ONLL8zbvL2Y69c,2263
+dash_model_viewer/_imports_.py,sha256=W-rrbQyGUPPFSwenBAyc-Unc-6iHoS9X_LO0N000dx8,81
+dash_model_viewer/dash_model_viewer.min.js,sha256=NWhLTwhFvsHHohIuSFBz7_NRrF0EiTjtcC4RHYZaQk4,6268
+dash_model_viewer/dash_model_viewer.min.js.map,sha256=3yHqu03uXbJx4PxxDZApn24IcewRX2IFUXteMqC9OBo,25693
+dash_model_viewer/metadata.json,sha256=emZ88mHDUMyFi4srfXl2YfiGsl-wNfSM_tQkn1Yp4UY,5233
+dash_model_viewer/package-info.json,sha256=Ypy7HZb_hWXA3kdy6sP7qFDAIaRg4buLX5g33He-U-o,2094
+dash_model_viewer-0.0.1.dist-info/LICENSE,sha256=z4ahMr1XLl_UxT58Rl_ONjbuCT8nil_oZE7uMCKstY0,11353
+dash_model_viewer-0.0.1.dist-info/METADATA,sha256=QuIsteNLQl-Vkds_E8nB5Iqs1qLn0z0XOoHxQXCLdwM,4155
+dash_model_viewer-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dash_model_viewer-0.0.1.dist-info/top_level.txt,sha256=0j6Z8suQ4qqKE7TNVAClbAVYScu8LVjP7A7tSYsb9N8,18
+dash_model_viewer-0.0.1.dist-info/RECORD,,
