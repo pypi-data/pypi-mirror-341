@@ -1,0 +1,39 @@
+
+name: Publish to PyPI
+
+# ──────────────────── Triggers ────────────────────
+on:
+  push:
+    branches: [main]          # ← deploy on every commit that lands on main
+  workflow_dispatch:          # ← run it by hand if you need a hot‑fix
+
+# ──────────────────── Job ────────────────────
+jobs:
+  test-build-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Check out the code
+    - uses: actions/checkout@v4
+
+    # 2. Set up Python
+    - uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"        # match the oldest version you support
+
+    # 3. Install build tools & your runtime deps (if any)
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install build twine
+        python -m pip install -r requirements.txt
+
+
+    # 5. Build both wheel and sdist inside ./dist
+    - name: Build distribution artefacts
+      run: python -m build             # uses pyproject.toml automatically
+
+    # 6. Upload to PyPI
+    - name: Upload to pypi
+      run: >-
+        twine upload dist/* -u __token__ -p ${{ secrets.PYPI_TOKEN }}
