@@ -1,0 +1,9 @@
+README.md
+setup.py
+qipdsl/__init__.py
+qipdsl.egg-info/PKG-INFO
+qipdsl.egg-info/SOURCES.txt
+qipdsl.egg-info/dependency_links.txt
+qipdsl.egg-info/requires.txt
+qipdsl.egg-info/top_level.txt
+qipdsl/matrix_ops/__init__.py
