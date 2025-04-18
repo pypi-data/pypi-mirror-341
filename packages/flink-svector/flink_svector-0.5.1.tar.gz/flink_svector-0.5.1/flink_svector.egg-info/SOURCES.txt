@@ -1,0 +1,9 @@
+setup.py
+flink/__init__.py
+flink/flink.py
+flink_svector.egg-info/PKG-INFO
+flink_svector.egg-info/SOURCES.txt
+flink_svector.egg-info/dependency_links.txt
+flink_svector.egg-info/entry_points.txt
+flink_svector.egg-info/requires.txt
+flink_svector.egg-info/top_level.txt
