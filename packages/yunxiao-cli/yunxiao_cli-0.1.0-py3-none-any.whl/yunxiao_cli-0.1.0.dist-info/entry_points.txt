@@ -1,0 +1,2 @@
+[console_scripts]
+yunxiao-cli = yunxiao.main:cli
