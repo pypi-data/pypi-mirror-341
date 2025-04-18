@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: supurr-sdk
+Version: 0.1.0
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: =3.10.15
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: setuptools (>=78.1.0,<79.0.0)
+Requires-Dist: web3 (==5.31.4)
+Description-Content-Type: text/markdown
+
+
