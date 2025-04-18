@@ -1,0 +1,11 @@
+shops_nocodb_updater/__init__.py,sha256=9q11s4zJ0kBzMSkQggQsNTPt6KnagmgGEdAtgRTtofY,339
+shops_nocodb_updater/client.py,sha256=_h0ikh2_FLIAN9Xj7-RFBqrq28q4-EsDSvBsTQpkyac,58685
+shops_nocodb_updater/models/__init__.py,sha256=-OYMinPgaI03xeL5P6R3i9OyTDmcSuTzqtT4BeeBOps,320
+shops_nocodb_updater/models/base.py,sha256=O3K7rp2uwCl2u3efP46k4Z6rwrZXyBe2yYulbUVva60,3580
+shops_nocodb_updater/models/mapping.py,sha256=Y_-d1Ifb-zNiXRlq2kYbD5N3hjkBNFZ3Z-pXRxHGvaU,3427
+shops_nocodb_updater/models/shop_models.py,sha256=_jG5zNYfW2YS51ZjMK-dnECKrLCnUO5-kQ33brxpP0s,8775
+shops_nocodb_updater/models/types.py,sha256=QrAsRE-jxbnaglXvVakHUEhbhsxPefvE1gQnqyjB4cY,64
+shops_nocodb_updater/utils.py,sha256=rkAZSHIAo0aafDhkj2Y2DZlAZiAlU861miR3AM9fv2c,7607
+shops_nocodb_updater-2.1.1.dev27277.dist-info/METADATA,sha256=Ef46BcVzE6Rc-7Z0HW3J1QB5fb8IT2Rdiqpgmv87X-c,5951
+shops_nocodb_updater-2.1.1.dev27277.dist-info/WHEEL,sha256=9jVypgI8LevED4l0j3YDHs5IZdbkcE7aWw9FT9n2UzI,92
+shops_nocodb_updater-2.1.1.dev27277.dist-info/RECORD,,
