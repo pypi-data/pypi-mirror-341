@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pyprintf/__init__.py
+src/pyprintf/core.py
+src/pyprintf.egg-info/PKG-INFO
+src/pyprintf.egg-info/SOURCES.txt
+src/pyprintf.egg-info/dependency_links.txt
+src/pyprintf.egg-info/requires.txt
+src/pyprintf.egg-info/top_level.txt
+tests/test_sprintf.py
+tests/test_sprintf_validation.py
