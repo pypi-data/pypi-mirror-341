@@ -1,0 +1,6 @@
+py_volume_watcher/__init__.py,sha256=dEpdKSVmnoUOwSc5ot7pkMnr-JmJStzgTowrCv6J_Fw,46
+py_volume_watcher/_observer.py,sha256=pwH8kZxL9gvmlbg7m8VtVxPe6uriWsHoTiiTx4ti0jw,3988
+py_volume_watcher/watcher.py,sha256=kJqjPo9P66_SJdHcfhFBarUZ8YgbUyj1tsPd2BGxOJo,3023
+py_volume_watcher-0.1.0.dist-info/METADATA,sha256=FUvnczvyxoNh_CwPeL-6gVfmMP6EjcIxDgBU7E_EQtY,4430
+py_volume_watcher-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+py_volume_watcher-0.1.0.dist-info/RECORD,,
