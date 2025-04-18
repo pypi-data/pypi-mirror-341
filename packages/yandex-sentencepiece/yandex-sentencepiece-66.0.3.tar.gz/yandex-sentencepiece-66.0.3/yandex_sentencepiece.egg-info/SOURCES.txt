@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_sentencepiece.egg-info/PKG-INFO
+yandex_sentencepiece.egg-info/SOURCES.txt
+yandex_sentencepiece.egg-info/dependency_links.txt
+yandex_sentencepiece.egg-info/top_level.txt
