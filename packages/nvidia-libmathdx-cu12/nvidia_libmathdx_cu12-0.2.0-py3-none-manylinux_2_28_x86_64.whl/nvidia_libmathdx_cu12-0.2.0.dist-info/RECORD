@@ -1,0 +1,11 @@
+nvidia/cu12/include/libcommondx.h,sha256=XJ93l5kIUdvdEDBhHbg4AHAiw43-Fd7XkDNa247SGuo,11657
+nvidia/cu12/include/libcublasdx.h,sha256=mSLZMgFUEA5riJjJfQQSxWhJCkFZzJOXiBz7ZLR9Y0E,33418
+nvidia/cu12/include/libcufftdx.h,sha256=xb2YhtsN9OFPeujxL5s8Zy3b0Ia5DzuuioEtEyMIDFs,18379
+nvidia/cu12/include/libcusolverdx.h,sha256=hXTWQycHurMExDL6_yQrRmYKOK0apshvRdUHbmP8VMU,14124
+nvidia/cu12/include/libmathdx.h,sha256=Ja4-EWrnYpGy_0hIzTNrvwtHwsjFuFQ914hypLKVyKk,1731
+nvidia/cu12/lib/libmathdx.so.0,sha256=SGGuSYtwoBl-z1CuqlDR63hZuQIIigKzpRuCJKR-Ogk,22600545
+nvidia_libmathdx_cu12-0.2.0.dist-info/LICENSE.txt,sha256=3msDJkcYEbWT9ekrH0eBdZ8K8Ncmvzmw8XXOD8wRdtI,16681
+nvidia_libmathdx_cu12-0.2.0.dist-info/METADATA,sha256=i3E8t4ZzXrMS75OVQ4xP_bqBi8wYJmnAqz2FkzbmTm0,1371
+nvidia_libmathdx_cu12-0.2.0.dist-info/WHEEL,sha256=YsPJU3cRTvgRnpBeAvOqAH2HVCDAeW-d4SJi1snfRdE,109
+nvidia_libmathdx_cu12-0.2.0.dist-info/top_level.txt,sha256=fTkAtiFuL16nUrB9ytDDtpytz2t0B4NvYTnRzwAhO14,7
+nvidia_libmathdx_cu12-0.2.0.dist-info/RECORD,,
