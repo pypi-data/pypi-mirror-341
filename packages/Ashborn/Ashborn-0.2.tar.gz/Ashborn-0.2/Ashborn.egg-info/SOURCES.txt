@@ -1,0 +1,25 @@
+LICENSE.txt
+README.md
+setup.py
+Ashborn.egg-info/PKG-INFO
+Ashborn.egg-info/SOURCES.txt
+Ashborn.egg-info/dependency_links.txt
+Ashborn.egg-info/not-zip-safe
+Ashborn.egg-info/top_level.txt
+ashborn.egg-info/PKG-INFO
+ashborn.egg-info/SOURCES.txt
+ashborn.egg-info/dependency_links.txt
+ashborn.egg-info/not-zip-safe
+ashborn.egg-info/top_level.txt
+src/ashborn/__init__.py
+src/ashborn/main.py
+src/ashborn/data/ML TS XAI HC/HC/1. Exploratory Data Analysis.ipynb
+src/ashborn/data/ML TS XAI HC/HC/2. Image Analysis.ipynb
+src/ashborn/data/ML TS XAI HC/HC/3 (A). Extraction of Structured Data.ipynb
+src/ashborn/data/ML TS XAI HC/HC/3 (B). Extraction of Unstructured Data.ipynb
+src/ashborn/data/ML TS XAI HC/HC/4. Data Mining on Non Clinical Data.ipynb
+src/ashborn/data/ML TS XAI HC/HC/5. Natural Language Processing.ipynb
+src/ashborn/data/ML TS XAI HC/HC/data/diabetes.csv
+src/ashborn/data/ML TS XAI HC/HC/data/lung.jpeg
+src/ashborn/utils/__init__.py
+src/ashborn/utils/shell_utils.py
