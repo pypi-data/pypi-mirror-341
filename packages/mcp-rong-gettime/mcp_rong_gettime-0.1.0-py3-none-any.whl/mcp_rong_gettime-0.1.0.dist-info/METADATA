@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: mcp-rong-gettime
+Version: 0.1.0
+Summary: Add your description here
+Home-page: https://github.com/你的用户名/mytool
+Author: rong
+Author-email: 35050456257@qq.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: setuptools>=78.1.0
+Requires-Dist: twine>=6.1.0
+Requires-Dist: wheel>=0.45.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-python
+
+get_tiem_test
