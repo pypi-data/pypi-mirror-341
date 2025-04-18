@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+persistence_client/__init__.py
+persistence_client/client.py
+persistence_client/schemas.py
+persistence_client.egg-info/PKG-INFO
+persistence_client.egg-info/SOURCES.txt
+persistence_client.egg-info/dependency_links.txt
+persistence_client.egg-info/requires.txt
+persistence_client.egg-info/top_level.txt
