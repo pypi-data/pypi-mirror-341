@@ -1,0 +1,28 @@
+"""
+这是原始的数据分析服务器文件，现已被重构为更好的项目结构。
+请使用新的项目结构。
+"""
+
+# 原始代码备份
+import os
+import sys
+import json
+import asyncio
+import aiohttp
+from mcp.server.fastmcp import FastMCP
+import requests
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+# 从环境变量读取API URL
+DATA_ANALYSIS_API_URL = os.environ.get("DATA_ANALYSIS_API_URL", "http://llmtest.ouyeelf.com/api/v1/process/8e874fc9-6782-4e4a-b589-21d2a71adfbb")
+# 公司API接口信息
+COMPANY_API_URL = os.environ.get("COMPANY_API_URL", "http://llmtest.ouyeelf.com/api/v2/assistant/chat/completions")
+MODEL_ID = os.environ.get("MODEL_ID", "578751c7-377a-4669-ac57-accfbb1fe157")
+
+# 创建MCP服务器
+mcp = FastMCP("DataAnalysis")
+
+# ... 原始代码的其余部分 ... 
