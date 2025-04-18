@@ -1,0 +1,4 @@
+sortedcontainers>=2.4.0
+
+[arbitrary-precision]
+fractions
