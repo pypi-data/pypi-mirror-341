@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-elevenlabs = mcp_elevenlabs.__init__:main

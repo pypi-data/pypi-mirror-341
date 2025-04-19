@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+mcp_elevenlabs/__init__.py
+mcp_elevenlabs/server.py
+mcp_elevenlabs.egg-info/PKG-INFO
+mcp_elevenlabs.egg-info/SOURCES.txt
+mcp_elevenlabs.egg-info/dependency_links.txt
+mcp_elevenlabs.egg-info/entry_points.txt
+mcp_elevenlabs.egg-info/requires.txt
+mcp_elevenlabs.egg-info/top_level.txt
