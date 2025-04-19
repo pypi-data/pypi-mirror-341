@@ -1,0 +1,10 @@
+fractal_output/__init__.py,sha256=oc1HKVje-U7C19ceNfSWstWTZsFBywFdfwuXWTOldzU,195
+fractal_output/manager.py,sha256=vwirExaK7R8gJw3miOorH7lJAQxn0jdz03_5h8ii0DY,191
+fractal_output/resource.py,sha256=ih-3lqX09Ykz6ppMms9aoTINkNOJPDMfXqf3DIOCtks,2329
+fractal_output/transformer.py,sha256=OxKCMoIhiWrVOARA4-BYpbFQ3wPkgLWVnrSiHDj4krA,476
+fractal_output/version.py,sha256=hwOJuFUEKtsgiOt4l6op9s-hviovM6TK1uCdtRNWY4E,22
+fractal_output-2.0.0.dist-info/METADATA,sha256=5kZxSQ9MY16-28CWZVi9i-wSFXBKJYeutr-cyhzgt5Y,2408
+fractal_output-2.0.0.dist-info/WHEEL,sha256=MAQBAzGbXNI3bUmkDsiV_duv8i-gcdnLzw7cfUFwqhU,109
+fractal_output-2.0.0.dist-info/entry_points.txt,sha256=n9FTy4tX8alGVwkJi3K1zGBGbEL7gSJJpU2yZavRp2c,68
+fractal_output-2.0.0.dist-info/top_level.txt,sha256=hmtu8TtViJQ_Z2QbNU1d1dor8oyiSCmlehaErVXRmRs,15
+fractal_output-2.0.0.dist-info/RECORD,,
