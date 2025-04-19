@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retoys"
+authors = [
+    { name = "Reza Esfandiarpoor", email = "me@example.com" },
+]
+description = "Sample project"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dynamic = [
+  "version",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "tqdm",
+    "rich"
+]
+
+[tool.setuptools.dynamic]
+version = { attr = "retoys_imp.__version__" }
+
+[project.urls]
+Homepage = "https://github.com/Reza-esfandiarpoor/retoys"
+Issues = "https://github.com/Reza-esfandiarpoor/retoys/issues"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+known_third_party = "wandb"
+
