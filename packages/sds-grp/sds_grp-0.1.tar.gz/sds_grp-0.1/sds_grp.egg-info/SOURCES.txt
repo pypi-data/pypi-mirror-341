@@ -1,0 +1,6 @@
+setup.py
+sds_grp/__init__.py
+sds_grp.egg-info/PKG-INFO
+sds_grp.egg-info/SOURCES.txt
+sds_grp.egg-info/dependency_links.txt
+sds_grp.egg-info/top_level.txt
