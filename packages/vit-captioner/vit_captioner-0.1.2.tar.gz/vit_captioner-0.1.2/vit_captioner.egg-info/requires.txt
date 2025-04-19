@@ -1,0 +1,8 @@
+opencv-python
+numpy
+torch
+transformers
+Pillow
+matplotlib
+tqdm
+Katna
