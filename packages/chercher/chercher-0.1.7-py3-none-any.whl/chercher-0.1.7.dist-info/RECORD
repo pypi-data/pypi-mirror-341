@@ -1,0 +1,11 @@
+chercher/__init__.py,sha256=UVPn2d0vvlMTQ2xE-jGyO9mS4CsSQdMl6aoVfwLnQLg,150
+chercher/cli.py,sha256=dRrE9Mo-LyZN4OVI96W34lhAcmApiZY8_yU6dkJ2hwY,3048
+chercher/db.py,sha256=IAKAp1jclWGcY6QngbANjiZI6Tj54RRfyj3OU3zcIkY,1486
+chercher/hookspecs.py,sha256=qPgJvTiz8cTCJLsa380KfJ76XPBrhsMy8IIvEfcmCkM,270
+chercher/models.py,sha256=MBaAyTNSCXi6X_FLk7pBO9bkFvUIAdPnBLEVOxaxPNk,111
+chercher/plugin_manager.py,sha256=nybI5urG9_qwuo3EbygY9SvHUr-90f4KXzNwn5KjDiU,273
+chercher/settings.py,sha256=qcag9mogxioel4Ywyxz5rUPr2QWNXOhuC6pvhFjQOXc,1371
+chercher-0.1.7.dist-info/METADATA,sha256=eyNtWaEfk48p5cn2UhxcuLm_pjD6y4yqclULNJCVnVI,680
+chercher-0.1.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+chercher-0.1.7.dist-info/entry_points.txt,sha256=VxSk539OJSFEcSvA8Fmjh-0XQBKn-rPq9TITnXlcPGE,46
+chercher-0.1.7.dist-info/RECORD,,
