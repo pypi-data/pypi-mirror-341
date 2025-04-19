@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+augvid/__init__.py
+augvid/_utils.py
+augvid/layers.py
+augvid.egg-info/PKG-INFO
+augvid.egg-info/SOURCES.txt
+augvid.egg-info/dependency_links.txt
+augvid.egg-info/requires.txt
+augvid.egg-info/top_level.txt

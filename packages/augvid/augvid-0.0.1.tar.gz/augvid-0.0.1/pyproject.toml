@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "augvid"
+requires-python = ">=3.8"
+description="A collection of video augmentation layers"
+license = "MIT"
+dynamic = ["version", "readme"]
+keywords = ["augmentation", "video", "tensorflow", "keras"]
+dependencies = [
+    "tensorflow>=2.15.0",
+    "keras>=2.15.0",
+    "numpy>=1.25.1"
+]
+authors = [
+    {name = "Viktor Fairuschin", email = "folio.peptisch-4q@icloud.com"},
+]
+
+[project.urls]
+Repository = "https://github.com/ViktorFairuschin/augvid"
+
+[project.optional-dependencies]
+dev = [
+    "opencv-python",
+    "decord; platform_system != 'Darwin'",
+    "eva-decord; platform_system == 'Darwin'"
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "augvid.__version__"}
+readme = {file = "README.md", content-type = "text/markdown"}

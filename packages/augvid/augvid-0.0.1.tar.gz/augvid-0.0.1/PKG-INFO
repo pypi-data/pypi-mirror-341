@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: augvid
+Version: 0.0.1
+Summary: A collection of video augmentation layers
+Author-email: Viktor Fairuschin <folio.peptisch-4q@icloud.com>
+License-Expression: MIT
+Project-URL: Repository, https://github.com/ViktorFairuschin/augvid
+Keywords: augmentation,video,tensorflow,keras
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tensorflow>=2.15.0
+Requires-Dist: keras>=2.15.0
+Requires-Dist: numpy>=1.25.1
+Provides-Extra: dev
+Requires-Dist: opencv-python; extra == "dev"
+Requires-Dist: decord; platform_system != "Darwin" and extra == "dev"
+Requires-Dist: eva-decord; platform_system == "Darwin" and extra == "dev"
+Dynamic: license-file
+
+# AugVid
+
+**AugVid** is a collection of augmentation layers for videos inspired by the corresponding image preprocessing layers from `tf.keras`. 
+
+## Installation
+
+```bash
+pip install augvid
+```
+
+## Getting Started
+
+The augmentation layers can be added during the model construction:
+
+```python
+import keras
+from augvid import RandomVideoBrightness, RandomHorizontalVideoFlip
+
+
+model = keras.Sequential([
+    RandomVideoBrightness(max_delta=0.1),
+    RandomHorizontalVideoFlip(),
+    # add more layers here
+])
+```
+

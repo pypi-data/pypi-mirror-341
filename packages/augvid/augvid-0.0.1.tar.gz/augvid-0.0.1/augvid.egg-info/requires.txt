@@ -1,0 +1,12 @@
+tensorflow>=2.15.0
+keras>=2.15.0
+numpy>=1.25.1
+
+[dev]
+opencv-python
+
+[dev:platform_system != "Darwin"]
+decord
+
+[dev:platform_system == "Darwin"]
+eva-decord
