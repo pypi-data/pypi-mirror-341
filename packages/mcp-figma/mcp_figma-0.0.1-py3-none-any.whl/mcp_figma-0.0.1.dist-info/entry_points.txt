@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-figma = mcp_figma.__init__:main
