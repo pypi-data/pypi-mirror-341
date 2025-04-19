@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: newsbinpro_client
+Version: 1.0.3
+Summary: A client for the Newsbin Pro Usenet Downloader
+Home-page: https://github.com/jonnybergdahl/Python-NewsbinPro-Client
+Author: Jonny Bergdahl
+Author-email: github@bergdahl.it
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Home Automation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is an asyncio Python library to communicate with the [Newsbin Pro](https://www.newsbin.com/) Remote Control interface.
+
+It implements all of [Remote Control Version 6.10 Interface Spec](https://help.newsbin.com/index.php/Version_6.10_Interface_Spec).
+
+## Installation
+
+```
+pip install newsbinpro_client
+```
+
+## Documentation
+
+The full library documentation can be found [here](https://jonnybergdahl.github.io/newsbinpro_client/).
+
+## Getting started
+
+In order to activate the remote control interface, go to _Options_ - _Settings_, select `_Remote Control`
+in the left menu, and check `Enable Remote Control`. You can optionally set a password and change the port.
+Then click _OK_ to save. If you have a firewall active in your machine, you need to [open the TCP port for 
+access](https://www.windowscentral.com/how-open-port-windows-firewall).
+
+Check out the instructions on github.com/jonnybergdahl/Python-Newsbinpro-client. You will  find a sample script
+that show how it is used.
+
+### Sample use
+
+The following code connects to Newsbin Pro and prints out the version number and basic
+statistics.
+
+```python
+import asyncio
+
+from newsbinpro_client import NewsbinProClient
+
+HOST = "172.30.1.60"
+PORT = 118
+PASSWORD = "password"
+
+async def main(host: str, port: int, password: str) -> None:
+
+    # Create a client instance
+    client = NewsbinProClient(host,
+                              port,
+                              password)
+
+    print(f"Connecting to {host}:{port}")
+    await client.connect()
+    print(f"Newsbin Pro version        : {client.newsbin_version}")
+    status = await client.get_status()
+    print(f"Current speed              : {status.speed}")
+    print(f"Data folder free space     : {status.data_folder_free_space_str}")
+    print(f"Download folder free space : {status.download_folder_free_space_str}")
+
+    await client.disconnect()
+if __name__ == "__main__":
+    asyncio.run(main(HOST, PORT, PASSWORD))
+
+```
+
+Output:
+```
+Newsbin Pro version        : Newsbin Server 6.91RC2
+Current speed              : 64702260
+Data folder free space     : 944.83 GB
+Download folder free space : 944.83 GB
+```
