@@ -1,0 +1,6 @@
+dimod>=0.12.18
+cirq>=1.4.1
+qiskit-ibm-runtime>=0.35.0
+qiskit>=1.1.0
+qiskit-aer>=0.15.1
+bidict>=0.23.1
