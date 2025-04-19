@@ -1,0 +1,21 @@
+[project]
+name = "mcp-amadeus"
+version = "0.0.1"
+description = "MCP server for Amadeus integration"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "httpx>=0.24.0",
+]
+
+[project.scripts]
+mcp-amadeus = "mcp_amadeus.__init__:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/mcp-amadeus"
+"Bug Tracker" = "https://github.com/yourusername/mcp-amadeus/issues"

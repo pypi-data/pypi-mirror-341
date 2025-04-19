@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+mcp_amadeus/__init__.py
+mcp_amadeus/server.py
+mcp_amadeus.egg-info/PKG-INFO
+mcp_amadeus.egg-info/SOURCES.txt
+mcp_amadeus.egg-info/dependency_links.txt
+mcp_amadeus.egg-info/entry_points.txt
+mcp_amadeus.egg-info/requires.txt
+mcp_amadeus.egg-info/top_level.txt
