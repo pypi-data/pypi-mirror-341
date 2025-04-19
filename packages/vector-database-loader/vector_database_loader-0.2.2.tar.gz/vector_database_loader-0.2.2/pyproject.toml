@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "vector-database-loader"
+version = "0.2.2"
+description = "A generalized tool for currating and loading content into vector databases"
+authors = ["danjamk"]
+license = "MIT"
+readme = "README-PYPI.md"
+repository = "https://github.com/danjamk/vector-database-loader"
+homepage = "https://medium.com/@dan.jam.kuhn/data-pipelines-for-rag-a-python-utility-for-populating-vector-databases-3f6c164756e9"
+keywords = ["vector", "database", "loader", "milvus", "langchain", "pinecone"]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+python-dotenv = "^1.0.1"
+langchain-openai = "^0.3.2"
+langchain-community = "^0.3.16"
+colorama = "^0.4.6"
+langchain-pinecone = "^0.2.2"
+selenium = "^4.28.1"
+unstructured = "^0.16.17"
+docx2txt = "^0.8"
+langchain = "^0.3.17"
+google-api-python-client = "^2.160.0"
+google-auth-httplib2 = "^0.2.0"
+google-auth-oauthlib = "^1.2.1"
+pymilvus = "^2.5.4"
+langchain-milvus = "^0.1.8"
+
+[tool.poetry.group.test.dependencies]
+nltk = "^3.9.1"
+langchain-huggingface = "^0.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"
