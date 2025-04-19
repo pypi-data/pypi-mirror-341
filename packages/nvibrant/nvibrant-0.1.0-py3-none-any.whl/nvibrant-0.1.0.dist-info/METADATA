@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: nvibrant
+Version: 0.1.0
+Summary: 🟢 Nvidia Digital Vibrance on Wayland
+Author-email: Tremeschin <29046864+Tremeschin@users.noreply.github.com>
+License-Expression: GPL-3.0
+Requires-Python: >=3.9
