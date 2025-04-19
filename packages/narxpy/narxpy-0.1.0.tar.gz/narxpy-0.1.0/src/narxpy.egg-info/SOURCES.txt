@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/narxpy/__init__.py
+src/narxpy/model.py
+src/narxpy.egg-info/PKG-INFO
+src/narxpy.egg-info/SOURCES.txt
+src/narxpy.egg-info/dependency_links.txt
+src/narxpy.egg-info/requires.txt
+src/narxpy.egg-info/top_level.txt
+tests/test_model.py
