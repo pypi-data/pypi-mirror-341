@@ -1,0 +1,11 @@
+comics/__init__.py,sha256=lOEjErValeICNiH7iw57TTNN5uDsXc7rzjy0dla8H6k,189
+comics/exceptions.py,sha256=E6tlp1rkQT8I0InoEfXu5PHfI84Mieq7XqE1HDi60lg,225
+comics/gocomics.py,sha256=HUq0wU6qksdvYVao1--Tink289_PR-Wt2j2NHmpn33Y,9991
+comics/constants/__init__.py,sha256=aoIus_MUqMz_aGlHARDbFVUEMhf9Q0fTewKyeyq-F08,92
+comics/constants/directory.py,sha256=oZjkomzAM2ygymtorHegfi4cAdnPOtal9DpLDg40fDk,3449
+comics/constants/endpoints.json,sha256=Ra9ofDlziNYQ0Y0kmWIm4jtVX5Aj8h4Y73XdhCnqrjc,29233
+comics-0.5.4.dist-info/licenses/LICENSE,sha256=vDYEH9c1w_dtIm1_hoa5G9YH4nnaR0F4eqEIeNkNNAI,1068
+comics-0.5.4.dist-info/METADATA,sha256=lKj6JHpxnh01eE3PXLSrLdcXzkQut7CgDAgCncWZLoA,5240
+comics-0.5.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+comics-0.5.4.dist-info/top_level.txt,sha256=7JJcb0xPuwlSTJD0bliGfDIVaoWPMS5SDJ4QAMA6ZKY,7
+comics-0.5.4.dist-info/RECORD,,
