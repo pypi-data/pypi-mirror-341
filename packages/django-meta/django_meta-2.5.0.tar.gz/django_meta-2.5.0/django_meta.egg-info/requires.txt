@@ -1,0 +1,4 @@
+
+[docs]
+django<6.0
+sphinx-rtd-theme
