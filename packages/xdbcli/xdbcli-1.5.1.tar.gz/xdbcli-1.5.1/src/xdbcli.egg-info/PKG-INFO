@@ -1,0 +1,121 @@
+Metadata-Version: 2.4
+Name: xdbcli
+Version: 1.5.1
+Summary: Light CLI Oracle, Postgres, Mysql, Mssql
+Author-email: Aleksandr Shabelsky <a.shabelsky@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/shabelski89/pydb
+Project-URL: Bug Tracker, https://github.com/shabelski89/pydb/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama==0.4.4
+Requires-Dist: pep517==0.12.0
+Requires-Dist: wcwidth==0.2.5
+Requires-Dist: zipp==3.6.0
+Requires-Dist: pyparsing==3.0.7
+Requires-Dist: tomli==1.2.3
+Requires-Dist: typing_extensions==4.1.1
+Requires-Dist: importlib-metadata==4.8.3
+Requires-Dist: prettytable==2.5.0
+Requires-Dist: cffi==1.15.1
+Requires-Dist: cryptography==40.0.2
+Requires-Dist: pycparser==2.21
+Provides-Extra: oracle
+Requires-Dist: oracledb==1.4.2; extra == "oracle"
+Provides-Extra: postgres
+Requires-Dist: psycopg2-binary==2.9.1; extra == "postgres"
+Provides-Extra: mysql
+Requires-Dist: PyMySQL==1.0.2; extra == "mysql"
+Provides-Extra: mssql
+Requires-Dist: JayDeBeApi==1.2.3; extra == "mssql"
+Dynamic: license-file
+
+# About
+Universal python client for MYSQL, ORACLE, POSTGRES.
+
+### Features
+<ul>
+    <li>Inline CLI usage</li>
+    <li>Script usage</li>
+    <li>CSV Export</li>
+    <li>ZIP export result</li>
+</ul> 
+
+# Requirements
+
+Language: `python>=3.6`
+
+## Install requirements from internet
+
+```shell
+pip install -r requirements.txt
+```
+
+## Install requirements from local
+
+1. Download package to specific platform
+```shell
+pip download --platform=manylinux1_x86_64 -r requirements.txt
+```
+
+2. Copy to destination and install from downloaded packages
+```shell
+pip install -r requirements.txt --no-index --find-links file:///path/to/packages
+```
+
+# Install pydb package
+
+### pip
+1. Download `pydb-x.y.z-py3-none-any.whl`
+2. Upgrade pip
+3. Install use pip
+
+```shell
+pip install --upgrade pip
+pip install pydb-x.y.z-py3-none-any.whl
+```
+
+> NOTE: `x`.`y`.`z` equal pydb package version.
+
+# Usage package
+### CLI example
+```shell
+dbclient -c "postgres://user:password@hostname:port/database"
+command> SELECT * FROM systems ORDER BY id;
++----+-----------------+------------+------------+
+| id | system          | system_key | system_eng |
++----+-----------------+------------+------------+
+| 1  | Анализаторы SNT | SNT        | None       |
+| 2  | Капкан          | KAPKAN     | None       |
+| 3  | Спайдер         | SPIDER     | SPIDER     |
+| 4  | Профит          | PROFIT     | PROFIT     |
++----+-----------------+------------+------------+
+```
+
+### Script example
+
+```python
+from pydb.exporter import Exporter
+from pydb.dbms import UniDbConnector
+
+
+cfg = dict(host='localhost', port=3306, user='', password='', database='profit', dbms='mysql')
+u = UniDbConnector(config=cfg)
+
+q = 'SELECT * FROM table ;'
+data = u.fetchall(query=q)
+
+e = Exporter(filename='data')
+e.to_csv(data=data)
+```
+
+# Build
+
+```shell
+python -m pip install --upgrade build
+python -m build
+```
