@@ -1,0 +1,23 @@
+[project]
+name = "nyan"
+version = "0.14.1"
+description = "The easiest way to start coding games and graphics projects in Python"
+authors = [
+    { name = "ducaale", email = "sharaf.13@hotmail.com" }
+]
+requires-python = ">=3.9"
+license = "MIT"
+readme = "README.md"
+
+dependencies = [
+    "pygame>=2.6.1",
+    "pyinstaller>=6.13",
+]
+
+[project.scripts]
+nyan-packager = "nyan.nyan_packager:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
