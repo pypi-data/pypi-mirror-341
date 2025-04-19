@@ -1,0 +1,7 @@
+psycopg2>=2.9.10
+pydantic>=2.11.3
+sqlalchemy>=2.0.40
+
+[dev]
+black
+pytest
