@@ -1,0 +1,6 @@
+setup.py
+sds_rest/__init__.py
+sds_rest.egg-info/PKG-INFO
+sds_rest.egg-info/SOURCES.txt
+sds_rest.egg-info/dependency_links.txt
+sds_rest.egg-info/top_level.txt
