@@ -1,0 +1,9 @@
+Licence.txt
+README.md
+setup.py
+Area_afrose/__init__.py
+Area_afrose/area_trirec.py
+Area_afrose.egg-info/PKG-INFO
+Area_afrose.egg-info/SOURCES.txt
+Area_afrose.egg-info/dependency_links.txt
+Area_afrose.egg-info/top_level.txt
