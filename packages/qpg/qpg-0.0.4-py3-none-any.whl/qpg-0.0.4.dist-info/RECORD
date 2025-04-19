@@ -1,0 +1,10 @@
+qpg/__init__.py,sha256=XDmSy3zbsBJOsokZkeHcQYKwEd_X5DaND9BRCI8EDT4,235
+qpg/base.py,sha256=4LxhRlTv1IjCisMkPoEU7zSLO4UQqX5yyACAhebyS4Q,5577
+qpg/schemas.py,sha256=zr7FnHs8oVmiMtY9xkEDrwyT4uPMp7aMnTKG2TAIJic,897
+qpg/db/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+qpg/db/models.py,sha256=5WBhSpdFImlP-RKQvp40Ky4CCkbF7_HtWSOy_I73RG8,624
+qpg/db/utils.py,sha256=JQIhefIr-hmy9dxDLmbDi4amt58OufTkWvFQ_rmOnpk,1056
+qpg-0.0.4.dist-info/METADATA,sha256=tepTM71hpJ03MV6nuVnMM18cnSG0FNmgFlsBZAfILhA,2087
+qpg-0.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+qpg-0.0.4.dist-info/top_level.txt,sha256=zYqeJXh3TTl2NAUNxOhVp9nkFWbTxkPghDIQ0BCGv34,4
+qpg-0.0.4.dist-info/RECORD,,
