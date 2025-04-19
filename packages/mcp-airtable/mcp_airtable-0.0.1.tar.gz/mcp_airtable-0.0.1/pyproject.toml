@@ -1,0 +1,13 @@
+[project]
+name = "mcp-airtable"
+version = "0.0.1"
+description = "MCP server for Airtable integration"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "httpx>=0.24.0",
+]
+
+[project.scripts]
+mcp-airtable = "mcp_airtable.__init__:main"

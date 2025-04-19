@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+mcp_airtable/__init__.py
+mcp_airtable/server.py
+mcp_airtable.egg-info/PKG-INFO
+mcp_airtable.egg-info/SOURCES.txt
+mcp_airtable.egg-info/dependency_links.txt
+mcp_airtable.egg-info/entry_points.txt
+mcp_airtable.egg-info/requires.txt
+mcp_airtable.egg-info/top_level.txt

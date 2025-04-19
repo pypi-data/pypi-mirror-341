@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-airtable = mcp_airtable.__init__:main
