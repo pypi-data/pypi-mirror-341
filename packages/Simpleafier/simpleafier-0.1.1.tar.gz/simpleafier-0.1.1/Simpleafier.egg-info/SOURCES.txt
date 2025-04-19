@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+Simpleafier.egg-info/PKG-INFO
+Simpleafier.egg-info/SOURCES.txt
+Simpleafier.egg-info/dependency_links.txt
+Simpleafier.egg-info/top_level.txt
+simpleafier/__init__.py
+tests/__init__.py
+tests/test_simponly.py
