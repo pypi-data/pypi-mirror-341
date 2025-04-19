@@ -1,0 +1,8 @@
+README.md
+setup.py
+phi_decoding/__init__.py
+phi_decoding/phi_decoding.py
+phi_decoding.egg-info/PKG-INFO
+phi_decoding.egg-info/SOURCES.txt
+phi_decoding.egg-info/dependency_links.txt
+phi_decoding.egg-info/top_level.txt
