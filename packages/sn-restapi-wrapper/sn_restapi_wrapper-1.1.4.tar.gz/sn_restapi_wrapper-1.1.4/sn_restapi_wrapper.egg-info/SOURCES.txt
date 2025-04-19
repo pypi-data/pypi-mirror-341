@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+changelog.txt
+license.txt
+setup.py
+sn_restapi_wrapper/__init__.py
+sn_restapi_wrapper/fetch_data.py
+sn_restapi_wrapper.egg-info/PKG-INFO
+sn_restapi_wrapper.egg-info/SOURCES.txt
+sn_restapi_wrapper.egg-info/dependency_links.txt
+sn_restapi_wrapper.egg-info/requires.txt
+sn_restapi_wrapper.egg-info/top_level.txt
