@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: flet-camera-webview
+Version: 0.1.0
+Summary: Камера для Flet через WebView
+Home-page: https://github.com/yourusername/flet_camera
+Author: Риженков Олександр
+Author-email: you@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: flet
+Requires-Dist: flet_webview
+Requires-Dist: websockets
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
