@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+cmdinput.egg-info/PKG-INFO
+cmdinput.egg-info/SOURCES.txt
+cmdinput.egg-info/dependency_links.txt
+cmdinput.egg-info/requires.txt
+cmdinput.egg-info/top_level.txt
