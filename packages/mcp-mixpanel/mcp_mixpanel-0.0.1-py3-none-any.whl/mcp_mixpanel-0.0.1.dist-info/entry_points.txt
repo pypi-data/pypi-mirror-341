@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-mixpanel = mcp_mixpanel.__init__:main
