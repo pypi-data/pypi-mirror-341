@@ -1,0 +1,8 @@
+README.md
+setup.py
+pingthis.egg-info/PKG-INFO
+pingthis.egg-info/SOURCES.txt
+pingthis.egg-info/dependency_links.txt
+pingthis.egg-info/entry_points.txt
+pingthis.egg-info/requires.txt
+pingthis.egg-info/top_level.txt
