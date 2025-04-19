@@ -1,0 +1,64 @@
+Metadata-Version: 2.4
+Name: linkedin-games-solver
+Version: 0.1.1
+Summary: A solver for LinkedIn's puzzle games using Selenium
+Home-page: https://github.com/zanebookbinder/LinkedIn-Games-Solver
+Author: Zane Bookbinder
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: attrs==25.3.0
+Requires-Dist: certifi==2025.1.31
+Requires-Dist: charset-normalizer==3.4.1
+Requires-Dist: h11==0.14.0
+Requires-Dist: idna==3.10
+Requires-Dist: outcome==1.3.0.post0
+Requires-Dist: PySocks==1.7.1
+Requires-Dist: readchar==4.2.1
+Requires-Dist: rich==14.0.0
+Requires-Dist: selenium==4.31.0
+Requires-Dist: sniffio==1.3.1
+Requires-Dist: sortedcontainers==2.4.0
+Requires-Dist: trio==0.29.0
+Requires-Dist: trio-websocket==0.12.2
+Requires-Dist: typing_extensions==4.13.1
+Requires-Dist: urllib3==2.3.0
+Requires-Dist: websocket-client==1.8.0
+Requires-Dist: websockets==15.0.1
+Requires-Dist: wsproto==1.2.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# LinkedIn-Games-Solver
+
+A Python package designed to solve LinkedIn's puzzle games, including Tango, Queens, and Zip. This tool uses Selenium to automate gameplay, solving each game efficiently by navigating the game board, avoiding obstacles, and following game rules.
+
+Uses Selenium to open a Safari browser, read today's game board, solve it, and input the correct answer.
+
+## Usage
+
+Install package: `pip install linkedin-games-solver`
+
+Run in command line: `linkedin-solver`
+
+Or use in Python:
+
+`from linkedin_games_solver import solver`
+`solver.main()`
+
+## Supported Games:
+
+Tango: Fill a grid with Moon and Sun symbols according to specific rules.
+
+Queens: Place queens on a chessboard.
+
+Zip: Find a path between sequential numbers in a grid while avoiding walls and covering every square.
