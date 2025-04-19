@@ -1,0 +1,10 @@
+include README.md
+include requirements.txt
+include cli命令.txt
+include .env
+include pytest.ini
+include cryptool/core/*.py
+include cryptool/cli/*.py
+include cryptool/gui/*.py
+include cryptool/utils/*.py
+include cryptool/__init__.py
