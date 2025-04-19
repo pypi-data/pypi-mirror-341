@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cisco_api_files_mxoran
+Version: 0.0.1
+Summary: Downloader for files using Cisco MCE's APIs.
+Author-email: Martin Moran <martin.moran@nttdata.com>
+Project-URL: Homepage, https://github.com/martinstevemoran/toshare/cisco_api_files
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Download reports using the APIs from the My Cisco Entitlements (or MCE).
+
+This script helps to donwload reports using the APIs from the My Cisco Entitlements (or MCE), and use these files for data validation.
