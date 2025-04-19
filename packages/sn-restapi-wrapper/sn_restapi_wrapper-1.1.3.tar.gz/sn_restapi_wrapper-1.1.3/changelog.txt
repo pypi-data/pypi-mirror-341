@@ -1,0 +1,39 @@
+# Change Log
+
+=============================
+
+1.0.0 (2024-06-20)
+------------------
+- First release for pre-release testing 
+
+1.0.1 (2024-06-20)
+------------------
+- Second release for pre-release model with updated README.md with use case
+
+1.0.2 (2024-06-20)
+------------------
+- Third release for pre-release model with updated README.md with use case
+
+1.0.3 (2024-06-20)
+------------------
+- Fourth release for pre-release model with updated README.md with use case
+
+1.0.4 (2024-06-20)
+------------------
+- Fifth release for pre-release model with updated README.md with use case
+
+1.1.0 (2024-07-01)
+------------------
+- First release for standard (previous pre-release) and custom query application with updated README.md with use case
+
+1.1.1 (2024-07-01)
+------------------
+- First release for standard (previous pre-release) and custom query application (correction) with updated README.md with use case
+
+1.1.2 (2024-07-01)
+------------------
+- First release for standard (previous pre-release) and custom query application (correction) with updated README.md with use case
+
+1.1.3 (2025-04-18)
+------------------
+- First release for standard (previous pre-release) and custom query application (correction) with bug fix for SSL verification

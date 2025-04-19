@@ -1,0 +1,177 @@
+Metadata-Version: 2.1
+Name: sn_restapi_wrapper
+Version: 1.1.3
+Summary: A wrapper for ServiceNow RestAPI to pull large data volumes from different tables based on a time period
+Author: Mihindu Perera
+Author-email: mihinduperera35@gmail.com
+License: MIT
+Keywords: wrapper,servicenow-restapi
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: license.txt
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: tqdm
+
+# sn_restapi_wrapper 
+
+### About 
+
+This package acts as a wrapper for ServiceNow RESTAPI application enabling a user to extract data from any table within ServiceNow within a particular time duration, ideally as a date-time format. 
+
+The package overcomes the standard limitation of the ServiceNow RESTAPI by using a function of offset, with a rate limit of  5000 and then iterating over the users given time duration. To speed the efficiency of the package threading is used to execute tasks concurrently within the same process for a given time duration- where the tasks are split by the date.
+
+### Installation 
+Install the package into your env using ```pip install sn-restapi-wrapper```
+
+### Requirements
+The core-package requires these applications to be present at minimum
+1. requests 
+2. pandas 
+3. concurrent.futures
+4. tqdm 
+
+### Usage
+
+#### Standard Query - Without filters
+```python
+# ServiceNow credentials instance URL and endpoint
+instance_url = 'https://xxx.service-now.com'  # Replace with specified url
+endpoint = '/api/now/table/xxx'  # Replace with table name [incident, incident_task, ...]
+
+# Replace 'username' and 'password' with ServiceNow credentials
+username = 'xxx' 
+password = 'xxx'
+
+# Import the sn_restapi_wrapper as srw 
+import sn_restapi_wrapper as srw
+
+# Example usage:
+
+# Specify a list of field names to extract
+fields = []
+
+# Important: specify fields names used in the backed system. If no fields are mentioned as a list all fields will be pulled but be more time consuming.
+
+# Important: specify start/end date and  start/end time within specified format
+start_date = 'yyyy-mm-dd'
+end_date = 'yyyy-mm-dd'
+start_time = 'HH:mi:ss'
+end_time = 'HH:mi:ss'
+date_field = 'xxx' # Ensure the date field is properly specified  e.g 'sys_created_on'
+
+# Pulling data into a pandas dataframe
+data = srw.fetch_filtered_data(
+	instance_url, 
+	endpoint, 
+	date_field, 
+	start_date, 
+	end_date, 
+	start_time, 
+	end_time, 
+	username, 
+	password, 
+	fields
+)
+
+# Examine data frame
+data.shape
+```
+#### Custom Query - With filters
+```python
+# ServiceNow credentials instance URL and endpoint
+instance_url = 'https://xxx.service-now.com'  # Replace with specified url
+endpoint = '/api/now/table/xxx'  # Replace with table name [incident, incident_task, ...]
+
+# Replace 'username' and 'password' with ServiceNow credentials
+username = 'xxx' 
+password = 'xxx'
+
+# Import the sn_restapi_wrapper as srw 
+import sn_restapi_wrapper as srw
+
+# Example usage:
+
+# Specify a list of field names to extract
+fields = []
+
+# Important: specify fields names used in the backed system. If no fields are mentioned as a list all fields will be pulled but be more time consuming.
+
+# Important: specify start/end date and  start/end time within specified format
+start_date = 'yyyy-mm-dd'
+end_date = 'yyyy-mm-dd'
+start_time = 'HH:mi:ss'
+end_time = 'HH:mi:ss'
+date_field = 'xxx' # Ensure the date field is properly specified  e.g 'sys_created_on'
+filter = 'xxxxxxx' # Ensure additional filter is specified
+
+# Pulling data into a pandas dataframe fetch_filtered_data_custom for filtered data
+data = srw.fetch_filtered_data_custom(
+	instance_url, 
+	endpoint, 
+	date_field, 
+	start_date, 
+	end_date, 
+	start_time, 
+	end_time, 
+	username, 
+	password, 
+	fields,
+	additional_filter=filter
+)
+
+# Examine data frame
+data.shape
+```
+### License
+This project is licensed under the MIT License. However, this doesnot include the ServiceNow RestAPI which is the sole property of ServiceNow. This is only a wrapper for the ServiceNow RestAPI.
+
+### Contact
+For support, please contact mihinduperera35@gmail.com
+
+# Change Log
+
+=============================
+
+1.0.0 (2024-06-20)
+------------------
+- First release for pre-release testing 
+
+1.0.1 (2024-06-20)
+------------------
+- Second release for pre-release model with updated README.md with use case
+
+1.0.2 (2024-06-20)
+------------------
+- Third release for pre-release model with updated README.md with use case
+
+1.0.3 (2024-06-20)
+------------------
+- Fourth release for pre-release model with updated README.md with use case
+
+1.0.4 (2024-06-20)
+------------------
+- Fifth release for pre-release model with updated README.md with use case
+
+1.1.0 (2024-07-01)
+------------------
+- First release for standard (previous pre-release) and custom query application with updated README.md with use case
+
+1.1.1 (2024-07-01)
+------------------
+- First release for standard (previous pre-release) and custom query application (correction) with updated README.md with use case
+
+1.1.2 (2024-07-01)
+------------------
+- First release for standard (previous pre-release) and custom query application (correction) with updated README.md with use case
+
+1.1.3 (2025-04-18)
+------------------
+- First release for standard (previous pre-release) and custom query application (correction) with bug fix for SSL verification
