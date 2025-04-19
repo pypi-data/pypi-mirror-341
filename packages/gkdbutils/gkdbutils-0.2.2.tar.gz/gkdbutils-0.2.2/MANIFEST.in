@@ -1,0 +1,4 @@
+graft gkdbutils/ingesters/cassandra/cql
+graft gkdbutils/ingesters/mysql/sql
+global-exclude .gitignore __pycache__ *.py[cod]
+
