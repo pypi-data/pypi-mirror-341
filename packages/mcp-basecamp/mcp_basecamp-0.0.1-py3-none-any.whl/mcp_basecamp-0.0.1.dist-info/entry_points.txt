@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-basecamp = mcp_basecamp.__init__:main
