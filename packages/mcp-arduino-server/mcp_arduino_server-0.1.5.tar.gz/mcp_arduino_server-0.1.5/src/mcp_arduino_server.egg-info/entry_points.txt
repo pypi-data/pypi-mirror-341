@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-arduino-server = mcp_arduino_server.server:main

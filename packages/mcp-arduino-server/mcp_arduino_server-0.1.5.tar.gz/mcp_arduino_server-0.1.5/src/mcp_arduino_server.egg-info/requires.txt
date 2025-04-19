@@ -1,0 +1,4 @@
+mcp[cli]
+thefuzz[speedup]>=0.20.0
+wireviz
+openai
