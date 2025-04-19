@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-x-server = mcp_x_server.__main__:cli
