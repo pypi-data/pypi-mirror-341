@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+coral_protocol/__init__.py
+coral_protocol/cli.py
+coral_protocol/jar/coral-server-1.0-SNAPSHOT.jar
+coral_server.egg-info/PKG-INFO
+coral_server.egg-info/SOURCES.txt
+coral_server.egg-info/dependency_links.txt
+coral_server.egg-info/entry_points.txt
+coral_server.egg-info/top_level.txt
