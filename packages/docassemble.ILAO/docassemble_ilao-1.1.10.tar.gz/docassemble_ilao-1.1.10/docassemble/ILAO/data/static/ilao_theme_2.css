@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+.btn, .nav-pills .nav-link, .progress, .nav-pills, .nav-link {
+  border-radius: 0;
+}
+
+div{
+	font-family: 'Muli', sans-serif;
+	color: #181c36;
+}
+span {
+font-family: 'Muli', sans-serif;
+}
+html {
+  font-size: 100%;
+  	font-family: 'Muli', sans-serif;
+	color: #181c36;
+}
+body {
+  font-weight: 400;
+  font-size: 1.0rem;
+  	font-family: 'Muli', sans-serif;
+	color: #181c36;
+  }
+  
+h1 {
+  font-weight: 600;
+  font-size: 2.75rem;
+  	font-family: 'Muli', sans-serif;
+}  
+h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  	font-family: 'Muli', sans-serif;
+	color: #181c36;
+}  
+h3{
+  font-weight: 600;
+  font-size: 2rem;
+  	font-family: 'Muli', sans-serif;
+	color: #181c36;
+
+}
+h4{
+ font-weight: 600;
+ font-size: 1.75rem;
+ 	font-family: 'Muli', sans-serif;
+	color: #181c36;
+}
+h5 {
+font-weight: 400;
+font-size: 1.75rem;
+	font-family: 'Muli', sans-serif;
+	color: #181c36;
+}
+h6 {
+font-weight: 400;
+font-size: 1.5rem;
+	font-family: 'Muli', sans-serif;
+	color: #181c36;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #0079d0;
+}
+a
+{
+    color: #0079d0;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.btn-primary {
+    border-radius: 0px;
+    color: #fff;
+    background-color: #0079d0;
+    border-color: #0079d0;
+}
+
+.btn-danger {
+  background-color: #E90046;
+}
+
+.btn-link {
+    color: #0079d0;
+}
+
+.btn-warning {
+ background-color: #FFCD6E;
+}
+.btn-success {
+  background-color: #007D56;
+}
+
+.daterm {
+  cursor: pointer;
+  color: #007D56;
+  text-decoration: underline dotted;
+}
+
+.daterm:hover {
+  color: #007D56;
+  text-decoration: underline dotted;
+}
+
+div.progress-bar {
+  background-color: #0079d0;
+}
+
+.al-title div {
+  color: #FFFFFF;
+}
+
+.bg-dark {
+    background-color: #181C36 !important;
+}
+
+.title-row-1 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.title-row-2 {
+    font-size: .7em;
+    font-weight: normal;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #181C36;
+    border-color: #181C36;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+}
+
+.navbar {
+    padding-top: 0.3rem;
+    padding-bottom: .3rem;
+}
+
+.collapse.show {
+    margin-bottom: 1rem;
+}
+
+.daquestionbackbutton {
+    text-decoration: none;
+}
+
+.text-info {
+    color: #0079d0;
+}
+
+footer a {
+    color: #0079d0;
+}
+
+.page-item:first-child .page-link {
+    border-radius: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.page-item:last-child .page-link {
+    border-radius: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.daquestionbackbutton {
+    font-weight: bold;
+}
+
+.danav-vertical .danavlink { 
+  color: #0079d0
+} 
+
+/* dev only */
+.danavbarcontainer .btn-link {
+    color: var(--bs-nav-link-color);
+}
+
+.danavbarcontainer .btn-link:hover {
+    color: var(--bs-nav-link-hover-color);
+}
+
+
+/*
+Added 5.5.2023
+*/
+
+.da-review-button {
+  border-radius: 0;
+}
+
+.form-select {
+  border-radius: 0;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+
+.dropdown-menu {
+  --bs-dropdown-border-radius: 0;
+}
+
+.al_three_parts_date .col > * {
+  width: 100%;
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+.radialProgressBar {
+  border-radius: 50% !important;
+}
+
+.radialProgressBar .overlay {
+  border-radius: 50% !important;
+}
+
+.al_collapse_template a.al_toggle,
+.al_display_template a.al_toggle {
+  color: #0079d0; /* ILAO blue */
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+.ilao-info {
+max-height: unset;
+}
+
+.ilao-info > *:last-child {
+margin-bottom: 0;
+}
+
+.cm-line span, .cm-line, .cm-gutterElement {
+  font-family: monospace;
+}
+
+/*
+Section navigation improvements
+Added 5.2.2024
+*/
+
+a.daclickable.danavlink, 
+.dropdown-item.daclickable {
+  color: #0079d0;
+  font-weight: bold;
+}
+
+.danav-vertical {
+  color: var(--bs-secondary-color);
+}
+
+.daclickable.nav-link.active {
+  font-weight: normal;
+}
+
+.danav-vertical .danavlink:not(.daclickable) {
+  color: var(--bs-secondary-color);
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: #0079d0;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: var(--bs-dropdown-link-active-color);
+  font-weight: normal;
+}
+
+.danav-vertical .danavlink.active:not(.daclickable) {
+  color: #fff;
+}
+
+#daquestion .bg-secondary-subtle {
+    background-color: #f8f9fa !important;
+}
+
+#daquestion .bg-secondary-subtle:hover {
+    background-color: var(--bs-btn-hover-bg) !important;
+}
+
+#daquestion .da-review.bg-secondary-subtle:hover {
+    background-color: #f8f9fa !important;
+}
+
+.text-light-emphasis {
+    color: black !important;
+}
+
+
+/* Set this css variable in an scss file
+:root {
+  --bs-dark-rgb: #181C36;
+} */
+
+
+
+

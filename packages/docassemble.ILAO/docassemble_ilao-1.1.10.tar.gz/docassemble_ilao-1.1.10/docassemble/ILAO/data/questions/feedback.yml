@@ -1,0 +1,125 @@
+metadata:
+  title: Feedback
+  short title: Feedback
+  title url: https://www.illinoislegalaid.org 
+  exit url: https://www.illinoislegalaid.org
+---
+include:
+  - docassemble.AssemblyLine:assembly_line.yml
+  - docassemble.ILAO:shared-basic-questions.yml
+#  - docassemble.ILAO:ilao-interview-framework.yml
+---
+modules:
+  - .toolbox
+  - .ilao_easy_forms_database
+---
+features:
+  css: ilao_theme_2.css
+---
+default screen parts:
+  logo: |
+    <div class="title-container">
+      <div class="al-logo">
+        <img src="/packagestatic/docassemble.ILAO/logo_white_30.svg" alt="ILAO logo">
+      </div>
+      <div class="al-title">
+        <div class="title-row-1">${ all_variables(special='metadata').get('title','').rstrip() }</div>
+        <div class="title-row-2">${ "Easy Form" }</div>
+      </div>
+    </div> 
+  short logo: |
+    <div class="title-container">
+      <div class="al-logo">
+        <img src="/packagestatic/docassemble.ILAO/logo_white_30.svg" alt="ILAO logo">
+      </div>
+      <div class="al-title">
+        <div class="title-row-1">${ all_variables(special='metadata').get('short title','').rstrip() }</div>
+        <div class="title-row-2">${ "Easy Form" }</div>
+      </div>
+    </div>
+  back button label: |
+    Back
+  under: |
+    If you have more to say, [**contact ILAO**](https://www.illinoislegalaid.org/contact-us).
+  footer: off
+---
+mandatory: True
+code: |
+  user.email
+  if email_sent_ok == True:
+    ending_screen
+---
+code: |
+  if url_args.get('easy_form_title') == "" or url_args.get('easy_form_title') == None:
+    easy_form_session_info_not_found = True
+  else:
+    easy_form_session_info_not_found = False
+  
+---
+id: email forms
+question: |
+  Easy Form feedback
+subquestion: |
+  % if easy_form_session_info_not_found == True:
+  Let us know what you think about the Easy Form.
+  % else:
+  Let us know what you think about the **${ url_args.get('easy_form_title') }** Easy Form.
+  % endif
+fields:
+  - Which Easy Form did you use?: easy_form_selection
+    code: get_easy_forms_names()
+    show if:
+      code: easy_form_session_info_not_found
+  - Feedback: feedback
+    input type: area
+  - Rate: rating
+    input type: radio
+    choices:
+      - ":thumbs-up: I like this program": like
+      - ":thumbs-down: I don't like this program": don't like
+    required: False
+  - Email: user.email
+    datatype: email
+    required: False
+continue button label: Submit
+---
+template: forms_email
+subject: |
+  Easy Form feedback
+content: |
+  % if easy_form_session_info_not_found == True:
+  **Easy Form information not automatically loaded.**
+  
+  Easy Form title (selected by user): ${ easy_form_selection }
+  
+  ILAO Easy Form launch page: ${ easy_forms_info(easy_form_selection)['url'] }
+  % else:
+  Easy Form title: ${ url_args.get('easy_form_title') }
+
+  ILAO Easy Form launch page: ${ url_args.get('easy_form_interview') }
+  % endif
+
+  User email: ${ user.email }
+
+  User feedback: ${ feedback }
+  
+  Rating: ${ rating }
+
+  --- Debug info ---
+
+  Interview page: ${ url_args.get('easy_form_page') }
+  
+  Variable sought (if any): ${ url_args.get('easy_form_variable') }
+
+  Error message: ${ url_args.get('easy_form_error_message') }
+ 
+---
+code: |
+  email_sent_ok = send_email(to="formsupport@illinoislegalaid.org", template=forms_email)
+---
+id: email ending screen
+event: ending_screen
+question: |
+  Feedback sent
+subquestion: |
+  Thank you for your feedback!

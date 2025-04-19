@@ -1,0 +1,367 @@
+---
+objects:
+  - form: DADict
+  - user: Individual
+  - debt_collector: Individual
+  - court_list: ALCourtLoader.using(file_name='docassemble.ILAO:data/sources/il_courts.xlsx')
+  - landlord: ALIndividual
+  - property_manager: ALIndividual
+
+---
+terms: 
+# old terms below - question-circle icons removed
+  - "Certified Mail :question-circle:": |
+      If you send a letter as Certified Mail, you can see when it was delivered or that a delivery attempt was made. You can purchase Certified Mail at your Post Office.
+  - "creditor :question-circle:": |
+      A creditor is someone you owe money to. Examples: a bank, a credit card company, or a company you bought something from.
+  - ".zip file :question-circle:": |
+      A .zip file is a single file that contains one or more files.
+  - "green words :question-circle:": |
+      This is an example. Click anywhere else on the screen to close.
+  - "section :question-circle:": |
+      Sections can be on the side or top of your screen. "About you" is an example.
+  - "exempt :question-circle:": |
+      If something is exempt from collection, then the courts cannot force you to use it to pay a debt.
+  - "secured :question-circle:": |
+      A loan is secured by property if it is used like collateral for the loan. If the loan is not repaid, the lender can force a sale of the property to get payment.
+  - "Appearance :question-circle:": |
+      An Appearance tells the court you are participating in the court case. It helps you receive court papers and information about court dates.
+  - "Answer :question-circle:": |
+      An Answer tells the court if you agree with the claims in the Complaint. In some cases you do not need to file an Answer.
+  - "Commercial delivery service :question-circle:": |
+      A company like UPS or FedEx can be used to deliver your forms.
+  - "(EFM or EFSP) :question-circle:": |
+      The court's e-filing system is an electronic filing manager (EFM) or an approved electronic filing service provider (EFSP).
+# old terms above
+
+
+  - "Certified Mail": |
+      If you send a letter as Certified Mail, you can see when it was delivered or that a delivery attempt was made. You can purchase Certified Mail at your Post Office.
+  - "creditor": |
+      A creditor is someone you owe money to. Examples: a bank, a credit card company, or a company you bought something from.
+  - ".zip file": |
+      A .zip file is a single file that contains one or more files.
+  - "green words": |
+      This is an example. Click anywhere else on the screen to close.
+  - "section": |
+      Sections can be on the side or top of your screen. "About you" is an example.
+  - "exempt": |
+      If something is exempt from collection, then the courts cannot force you to use it to pay a debt.
+  - "secured": |
+      A loan is secured by property if it is used like collateral for the loan. If the loan is not repaid, the lender can force a sale of the property to get payment.
+  - "Appearance": |
+      An Appearance tells the court you are participating in the court case. It helps you receive court papers and information about court dates.
+  - "Answer": |
+      An Answer tells the court if you agree with the claims in the Complaint. In some cases you do not need to file an Answer.
+  - "Commercial delivery service": |
+      A company like UPS or FedEx can be used to deliver your forms.
+  - "(EFM or EFSP)": |
+      The court's e-filing system is an electronic filing manager (EFM) or an approved electronic filing service provider (EFSP).
+  - "Eviction Complaint": |
+      An Eviction Complaint asks the court to evict tenants. It explains why the tenants should be evicted and gives information needed to begin the eviction.
+  - "Notice": |
+      A written Notice tells the tenant why the landlord is ending the lease. The notice should be given to the tenant before an eviction case is filed.
+  - "Demand": |
+      A written Demand for immediate possession tells the person that they have no right to be on the property and must leave. The Demand should be given to the occupant before an eviction case is filed.
+  - "Eviction Order": |
+      An Eviction Order gives the possession of the property to the landlord. It can order tenants to leave the property by a specific date. If the tenants do not leave by that date, the landlord can have the sheriff remove the tenants from the property. Eviction Orders can also award a landlord a money judgment for rent, court costs, or lawyers' fees.
+  - "circuit court clerk": |
+      The office that takes care of files and documents for circuit court cases.
+  - "appellate court clerk": |
+      The office that takes care of files and documents for appellate court cases.
+  - "Supreme Court clerk": |
+      The office that takes care of files and documents for Supreme Court cases.     
+
+
+---
+id: your name
+question:  |
+  What is your name?
+fields:
+  - First name: user.name.first
+  - Middle name: user.name.middle
+    required: False
+  - Last name: user.name.last
+  - Suffix: user.name.suffix
+    code: |
+      name_suffix()
+    required: False  
+---
+id: your birthdate
+question: |
+  When were you born?
+fields:
+  - Birthdate: user.birthdate
+    datatype: date
+---
+id: your address
+question: |
+  What is your address?
+fields:
+  - Street address: user.address.address
+    address autocomplete: True
+  - Address line 2: user.address.unit
+    required: False
+  - City: user.address.city
+  - State: user.address.state
+    code: |
+      states_list()
+    default: IL      
+  - ZIP code: user.address.zip
+    required: False
+---
+# address question using AL
+id: your address
+sets:
+  - users[0].address.address
+  - users[0].address.city
+  - users[0].address.zip
+question: |
+  What is your address?
+subquestion: |
+  Use an address where you can be contacted.
+fields:
+  - Street address: users[0].address.address
+    address autocomplete: True
+  - Address line 2: users[0].address.unit
+    required: False
+  - City: users[0].address.city
+  - State: users[0].address.state
+    code: |
+      states_list()
+    default: IL      
+  - ZIP code: users[0].address.zip
+---
+# user_ask_role question using AL
+id: is the user the plaintiff or defendant?
+comment: |
+  This question is asked if the interview can be used by both
+  a Plaintiff and a Defendant. It sets the value of `user_role`,
+  `plaintiffs`, `defendants`, `petitioners` and `respondents`.
+  
+  If you know your interview is exclusively
+  used by the Plaintiff or Defendant, set `user_role = 'plaintiff'` or 
+  `user_role='defendant'` in your code.
+question: |
+  Did you start this case, or are you responding to a case that someone else filed against you?
+subquestion: |
+  ${ collapse_template(user_role_help) }  
+
+fields: 
+  - no label: user_ask_role
+    datatype: radio
+    choices:
+      - I started the case.: plaintiff
+      - I am responding to a case filed against me.: defendant
+  - note: |
+      Okay, you are the **Plaintiff** or **Petitioner** in this case. The other 
+      side is the Defendant or Respondent.
+    show if:
+      variable: user_ask_role
+      is: "plaintiff"
+  - note: |
+      Okay, you are the **Defendant** or **Respondent** in this case. The other 
+      side is the Plaintiff or Petitioner.
+    show if:
+      variable: user_ask_role
+      is: "defendant"
+---
+template: user_role_help
+subject: |
+  **How do I know?**
+content: |  
+  If you are the first person to file a form in the case, you started the case. You are the **Plaintiff** or the **Petitioner.**
+  
+  If you are responding to a case or court papers someone else filed, you are the **Defendant** or the **Respondent.**
+---
+code: |
+  current_interview_url = current_context().filename
+---
+code: |
+  user_has_saved_answers = len(interview_list(filename=current_interview_url)[0]) > 1 if interview_list(filename=current_interview_url) else False
+---
+id: load saved answers
+event: load_answer
+comment: |
+  Docassemble 1.1.44 enabled pagination of interview_list()
+question: |
+  You have saved answers available for this Easy Form.
+subquestion: |
+  % for interview in interview_list(filename=current_interview_url)[0]:
+  * ${'<a class="xyz" href="' + interview_url(i=current_interview_url, session=interview['session']) + '">' +  interview['title'] +  (' (' + interview.get("subtitle",'') + ')' if interview.get('subtitle') else '')  +"</a>" }  Last visited ${format_date(interview['modtime'])}, currently on page **${interview['dict'].get('_internal',{}).get('steps')}**
+  % endfor
+  
+  [**View all of your saved Easy Forms**](${url_of('interviews')})
+---
+# added 11-1-2021 to customize email ALDocumentBundle forms functionality
+---
+generic object: ALDocumentBundle
+template: x.get_email_copy
+content: |
+  Get a copy of your forms by email
+---
+id: start a new session
+question: |
+  Do you want to start over?
+subquestion: |
+  % if not user_logged_in():
+  You may lose access to your current answers. Make sure you have downloaded
+  any forms that you need.
+  % else:
+  You can still access your current answers by visiting the "My Easy Forms"
+  page.
+  % endif
+  
+  Click **Start over** to start a new copy of the form you are working on,
+  or **Back** if you want to keep working.
+back button label: |
+  Back
+continue button label: |
+  Start over
+continue button field: al_start_over_confirmation
+---
+#See documentation on county functionality
+generic object: ALAddress
+code: |  
+  if is_illinois_county(x) == True:
+    if county_in_list(court_list, x.county) == False:
+      x.trial_court_index
+      x.county = trial_court.address.county + " County" 
+    else:
+      x.county = end_in_county(x.county)
+  else:
+    x.county = end_in_county(x.county)
+  x.county_correct = True
+---
+depends on:
+  - x.county
+generic object: ALAddress
+id: county dropdown
+question: |
+  What county is ${x.on_one_line()} in?
+subquestion: |
+  We could not find the county for ${ x.on_one_line(bare=True) } in the list of Illinois counties, but you can select it here.
+
+  ${ collapse_template(county_lookup_help) }
+fields:
+  - no label: x.trial_court_index
+    code: |
+      ilao_court_county_lookup(court_list)
+validation code: |
+  if x.trial_court_index == "-1":
+    trial_court = court_list.as_court('trial_court', 15)
+  else:
+    trial_court = court_list.as_court('trial_court', x.trial_court_index)
+---
+template: county_lookup_help
+subject: |
+  **How do I look up the county?**
+content: |  
+  You can use this **[City-to-County Finder](https://www.statsamerica.org/CityCountyFinder/)** to find the county.
+---
+id: accept terms
+question: |
+  Terms of use
+subquestion: |
+  This program does not provide legal advice. It does not take the place of advice from a lawyer.
+
+  Using this program does not create an attorney-client relationship between you and Illinois Legal Aid Online or its employees.
+
+  ${ collapse_template(get_legal_help) }  
+
+fields:
+  - To continue, you must accept the [**terms of use**](https://www.illinoislegalaid.org/about/terms-of-use) and [**privacy policy**](https://www.illinoislegalaid.org/about/privacy-policy).: accept
+    datatype: checkboxes
+    none of the above: False
+    minlength: 1
+    choices:
+      - I accept the terms of use and privacy policy.
+    validation messages:
+      minlength: |
+        You cannot continue unless you agree to the terms of use and privacy policy.
+continue button field: accept_terms
+---
+template: get_legal_help
+subject: |
+  **What if I need legal advice?**
+content: |  
+  If you have questions or concerns about your legal problem and want legal advice you should talk to a lawyer.
+  
+  Use [**Get Legal Help**](https://www.illinoislegalaid.org/get-legal-help) to find free or low-cost legal services in your area.
+
+---
+id: custom error action
+event: al_custom_error_action
+decoration: bug
+question: |
+  Something went wrong
+subquestion: |
+  We ran into an error when we tried to load this screen.
+  You can try one of these steps to recover your work:
+  
+  * Click **Back** and try again,
+  * [:comment-dots: **Tell us what happened**](${ interview_url(i="docassemble.ILAO:feedback.yml", easy_form_interview=ilao_easy_form_url , easy_form_title=ilao_easy_form_title, easy_form_page=current_context().question_id, easy_form_variable=current_context().variable, easy_form_error_message=action_argument('error_message'), local=False,reset=1) }){target="_blank"}, or
+  * Visit the [**ILAO Form Library**](https://www.illinoislegalaid.org/form-library) and try another Easy Form.
+  
+  ${ collapse_template(al_formatted_error_message) }
+buttons:
+  - Exit: exit
+  - Restart: restart
+  
+---
+template: al_formatted_error_message
+subject: |
+  **Technical information**
+content: |
+  <h2 class="h4">${ word("Error") }</h2>
+  ${ action_argument('error_message') }
+  % if get_config("debug") and action_argument("error_history"):
+  <h2 class="h4">${ word("History") }</h2>
+  <pre>
+  ${ action_argument("error_history") }
+  </pre>
+  % endif
+  % if get_config("debug") and action_argument("error_trace"):
+  <h2 class="h4">${ word("Log") }</h2>
+  ${ indent(action_argument("error_trace")) }
+  % endif
+---
+id: signature
+question: |
+  Do you want to add your e-signature to your forms?
+subquestion: |
+  This program can put "**/s/ ${users[0].name.full(middle='full')}**" where you would sign your name. The court will accept this as your signature.
+  
+  If you do not add your **{e-signature}** now, you must sign your forms before you file them.
+
+  ${collapse_template(signature_help)}
+field: e_signature
+choices:
+  - Yes: True
+  - No, I will sign my forms later.: False
+terms:
+  - "e-signature": |
+      An e-signature is an electronic signature. It is a digital version of a signature that has the same effect as a hand-written signature.
+---
+template: signature_help
+subject: |
+  **PLACEHOLDER - What does it mean to sign the forms?**
+content: |  
+  Add language in the specific form interview based on the legal requirements of the form.
+---
+id: forms assembling
+continue button field: forms_assembling
+question: |
+  Almost done
+subquestion: |
+  After you click **Next**, it may take a few moments to finish making your forms.
+  
+  ###### You do not need to refresh your screen. Hang in there!
+  
+  [NEWLINE]
+---
+generic object: ALDocumentBundle
+template: x.get_email_copy
+content: |
+  Send a copy of your forms to your email
+---
