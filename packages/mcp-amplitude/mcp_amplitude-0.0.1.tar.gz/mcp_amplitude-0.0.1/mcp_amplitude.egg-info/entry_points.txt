@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-amplitude = mcp_amplitude.__init__:main

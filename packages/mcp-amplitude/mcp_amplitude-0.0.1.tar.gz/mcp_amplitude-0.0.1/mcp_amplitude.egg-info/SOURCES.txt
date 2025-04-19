@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+mcp_amplitude/__init__.py
+mcp_amplitude/server.py
+mcp_amplitude.egg-info/PKG-INFO
+mcp_amplitude.egg-info/SOURCES.txt
+mcp_amplitude.egg-info/dependency_links.txt
+mcp_amplitude.egg-info/entry_points.txt
+mcp_amplitude.egg-info/requires.txt
+mcp_amplitude.egg-info/top_level.txt
