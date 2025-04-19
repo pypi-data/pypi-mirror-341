@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: sqla-history
+Version: 0.5.0
+Summary: This package allows you to track changes to fields in the database, saving the previous and new values ​​in the table.
+Project-URL: GitLab, https://gitlab.com/n.one.k/opensource/sqla-history
+Project-URL: Documentation, https://sqla-history-bba862.gitlab.io
+Project-URL: Examples, https://gitlab.com/n.one.k/opensource/sqla-history/-/tree/main/examples
+Author-email: Nikitosio Noskovinni <nik.noskov08@gmail.com>
+License: MIT
+Requires-Python: >=3.11
+Requires-Dist: pydantic>=2.11.3
+Requires-Dist: sqlalchemy>=2.0.40
+Provides-Extra: uuid-utils
+Requires-Dist: uuid-utils>=0.10.0; extra == 'uuid-utils'
+Description-Content-Type: text/markdown
+
+# SQLAlchemy History
+
+SQLAlchemy History is an extension for SQLAlchemy that provides change tracking and history logging for SQLAlchemy models. It allows developers to easily track changes to their database objects over time, providing a comprehensive history of modifications.
+
+See [documentation](https://sqla-history-bba862.gitlab.io)
+
+See [example](https://gitlab.com/n.one.k/opensource/sqla-history/-/tree/main/examples)
