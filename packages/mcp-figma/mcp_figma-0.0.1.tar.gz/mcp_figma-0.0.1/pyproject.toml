@@ -1,0 +1,13 @@
+[project]
+name = "mcp-figma"
+version = "0.0.1"
+description = "MCP server for Figma integration"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "httpx>=0.24.0",
+]
+
+[project.scripts]
+mcp-figma = "mcp_figma.__init__:main"

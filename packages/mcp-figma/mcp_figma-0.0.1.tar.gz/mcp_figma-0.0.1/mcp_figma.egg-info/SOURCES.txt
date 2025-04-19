@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+mcp_figma/__init__.py
+mcp_figma/server.py
+mcp_figma.egg-info/PKG-INFO
+mcp_figma.egg-info/SOURCES.txt
+mcp_figma.egg-info/dependency_links.txt
+mcp_figma.egg-info/entry_points.txt
+mcp_figma.egg-info/requires.txt
+mcp_figma.egg-info/top_level.txt

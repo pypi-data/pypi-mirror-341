@@ -1,0 +1,88 @@
+# Figma MCP Server
+
+A Model Context Protocol (MCP) server for Figma integration. This server provides tools for interacting with Figma, including querying files, comments, projects, and performing operations.
+
+## Features
+
+- **File Access**: Get file information, version history, and export files
+- **Comments**: Create, read, and manage comments on designs
+- **Team Management**: Access teams, projects, and file permissions
+- **Component Libraries**: Access and query component libraries
+- **Resources**: Access metadata about Figma objects
+- **Prompts**: Templates for common Figma workflows
+
+## Installation
+
+```bash
+pip install mcp-figma
+```
+
+## Configuration
+
+Set the following environment variables:
+
+```bash
+export FIGMA_BASE_URL="https://api.figma.com/v1"
+export FIGMA_ACCESS_TOKEN="your_figma_personal_access_token"
+```
+
+You can generate a personal access token in Figma by going to Account Settings > Personal Access Tokens.
+
+## Usage
+
+### Starting the server directly
+
+```bash
+mcp-figma
+```
+
+### Using with Claude Desktop
+
+Add the following to your `claude_desktop_config.json` file:
+
+```json
+{
+  "mcpServers": {
+    "mcp-figma": {
+      "command": "uvx",
+      "args": [
+        "mcp-figma"
+      ],
+      "env": {
+        "FIGMA_BASE_URL": "https://api.figma.com/v1",
+        "FIGMA_ACCESS_TOKEN": "your_figma_personal_access_token"
+      }
+    }
+  }
+}
+```
+
+Replace the environment variables with your actual Figma credentials.
+
+## Available Tools
+
+* **get_file**: Get details of a specific Figma file
+* **get_file_nodes**: Get specific nodes from a Figma file
+* **get_comments**: Get comments from a Figma file
+* **create_comment**: Create a comment on a Figma file
+* **get_file_versions**: Get version history of a Figma file
+* **get_team_projects**: Get projects for a Figma team
+* **get_project_files**: Get files in a Figma project
+* **export_image**: Export parts of a Figma document as images
+
+## Available Resources
+
+* **figma://files**: List of recently accessed Figma files
+* **figma://teams**: List of Figma teams you belong to
+* **figma://components**: List of components in a file
+* **figma://styles**: List of styles in a file or team library
+
+## Available Prompts
+
+* **create_comment_prompt**: Template for creating a new comment
+* **analyze_design_prompt**: Template for analyzing a design file
+* **export_assets_prompt**: Template for exporting assets from a design
+
+## Version
+
+0.0.1
