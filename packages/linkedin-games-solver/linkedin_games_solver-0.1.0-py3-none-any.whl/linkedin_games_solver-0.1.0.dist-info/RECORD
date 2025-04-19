@@ -1,0 +1,12 @@
+linkedin_games_solver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linkedin_games_solver/queens_solver.py,sha256=B-Xw2kSdrSUHD4jFV9RHnFS9hKQQnofwZOh5iGlKAi4,7185
+linkedin_games_solver/solver.py,sha256=a5yxmcKTVLto0r1W7lgrHrl63HNvwqNfhPciebFKSTc,3107
+linkedin_games_solver/tango_solver.py,sha256=-oDfKCX3GDU9qhRC_Py6EesAidaQ3IXQDCXRWq3zAZw,14202
+linkedin_games_solver/web_scraper.py,sha256=LJQb2Xmi8NrQmaP06PHFnzXH65Dzxt4MrcaOwMxrHoc,555
+linkedin_games_solver/zip_solver.py,sha256=NGqEHfrhMq9d9dQDLiTcPcjmyxsHS9vL7ZkooWNMFGk,8657
+linkedin_games_solver-0.1.0.dist-info/licenses/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+linkedin_games_solver-0.1.0.dist-info/METADATA,sha256=u8x2-OwBCYiE_S7oyWlI9_LlNq3i_P4kc1MoYFUDB7g,1063
+linkedin_games_solver-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+linkedin_games_solver-0.1.0.dist-info/entry_points.txt,sha256=QKaqg9LY7a82ASXemenVVvm-olfWp8CczDOPP8of19I,70
+linkedin_games_solver-0.1.0.dist-info/top_level.txt,sha256=Bib0q1qpTY9TonjT4esZItGuy0ntuDOPOO7qCk_2XBc,22
+linkedin_games_solver-0.1.0.dist-info/RECORD,,

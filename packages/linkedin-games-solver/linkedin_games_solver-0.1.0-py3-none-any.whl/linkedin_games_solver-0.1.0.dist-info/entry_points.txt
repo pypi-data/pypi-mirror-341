@@ -1,0 +1,2 @@
+[console_scripts]
+linkedin-solver = linkedin_games_solver.solver:main
