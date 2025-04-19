@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+service Bencher {
+  rpc evaluate_point(BenchmarkRequest) returns (EvaluationResult){};
+}
+
+enum BenchmarkType {
+  PURELY_CONTINUOUS = 0;
+  PURELY_BINARY = 1;
+  PURELY_CATEGORICAL = 2;
+  PURELY_ORDINAL_REAL = 3;
+  PURELY_ORDINAL_INT = 4;
+  MIXED = 5;
+}
+
+enum PointType {
+  CONTINUOUS = 0;
+  BINARY = 1;
+  INTEGER = 2;
+  CATEGORICAL = 3;
+}
+
+message Benchmark {
+  string name = 1;
+  BenchmarkType type = 2;
+  string description = 3;
+}
+
+// a benchmark request contains a point and the name of the benchmark
+message BenchmarkRequest {
+  Benchmark benchmark = 1;
+  Point point = 2;
+}
+
+// a point is a list of doubles
+message Point {
+  repeated double values = 1;
+  PointType type = 2;
+}
+
+// an evaluation result just contains a double (for now)
+message EvaluationResult {
+  double value = 1;
+}

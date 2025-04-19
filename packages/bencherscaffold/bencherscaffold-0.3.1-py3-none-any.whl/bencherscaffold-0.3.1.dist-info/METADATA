@@ -1,0 +1,36 @@
+Metadata-Version: 2.3
+Name: bencherscaffold
+Version: 0.3.1
+Summary: 
+License: MIT
+Author: Leonard Papenmeier
+Author-email: leonard.papenmeier@posteo.de
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: grpcio (>=1.60.1,<2.0.0)
+Requires-Dist: protobuf (>=4.25.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+# BencherScaffold
+
+This repository contains the scaffold for the [Bencher](https://github.com/LeoIV/Bencher) project.
+It contains the protobuf files and the generated python code to communicate with the Bencher server.
+
+Please refer to the [Bencher](https://github.com/LeoIV/Bencher) repository for more information.
+
+## Installation
+
+```shell
+pip install git+https://github.com/LeoIV/BencherScaffold.git
+```
+
+## Usage
+
+See the [Bencher](https://github.com/LeoIV/Bencher) repository for usage examples.
