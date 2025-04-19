@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: nidl
+Version: 0.0.0
+Author-email: nidl developers <antoine.grigis@cea.fr>
+License: CeCILL-B
+Project-URL: Source, https://github.com/neurospin-deppinsight/nidl
+Project-URL: Tracker, https://github.com/neurospin-deppinsight/nidl/issues
+Platform: Linux
+Platform: OSX
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Requires-Dist: tqdm
+
+
+A Deep Learning toolbox for NeuroImaging
+========================================
+
+\:+1: If you are using the code please add a star to the repository :+1:
+
+
+WIP
