@@ -1,0 +1,6 @@
+setup.py
+sds_dum/__init__.py
+sds_dum.egg-info/PKG-INFO
+sds_dum.egg-info/SOURCES.txt
+sds_dum.egg-info/dependency_links.txt
+sds_dum.egg-info/top_level.txt
