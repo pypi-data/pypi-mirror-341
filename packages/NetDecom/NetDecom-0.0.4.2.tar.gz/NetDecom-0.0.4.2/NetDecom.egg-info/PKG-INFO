@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: NetDecom
+Version: 0.0.4.2
+Summary: Dimensionality Reduction and Decomposition of Undirected Graph Models and Bayesian Networks
+Author: Hugh
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+
+# NetDecom Documentation
+
+## Overview
+NetDecom is a Python package for advanced graph analysis, providing algorithms for convex subgraph extraction and recursive decomposition of both undirected graphs and directed acyclic graphs (DAGs). Built on NetworkX, it offers efficient implementations of three core functionalities.
+
+## Installation
+
+```pycon
+>>> pip install NetDecom
+```
+
+## Core Functionalities
+
+### 1. Convex Subgraph Extraction (Undirected Graphs)
+Finds the minimal convex subgraph containing a given node set R:
+
+```pycon
+>>> import NetDecom as nd
+>>> import networkx as nx
+>>> G = nx.Graph([(1, 2), (2, 3), (3, 4)])
+>>> nd.IPA(G, [1, 3])  # Inducing Path Absorbing Algorithm
+>>> nd.CMSA(G, [1, 3])  # Close Minimal Separator Absorbing Algorithm
+```
+
+### 2. Recursive Graph Decomposition
+Decomposes graphs into maximal prime subgraphs using MCS ordering:
+
+```pycon
+>>> MCS = [1, 2, 3, 4]  # Maximum Clique Sequence
+>>> nd.Decom_CMSA((G, MCS))  # CMSA-based decomposition
+>>> nd.Decom_IPA((G, MCS))  # IPA-based decomposition
+```
+
+### 3. DAG Convex Subgraph Extraction
+For directed acyclic graphs:
+
+```pycon
+>>> D = nx.DiGraph([(1, 2), (2, 3), (3, 4)])
+>>> nd.CMDSA(D, [1, 3])  # Close Minimal D-Sepator Absorbing Algorithm
+```
+
+## Notes
+- All input graphs must be NetworkX Graph/DiGraph objects.
+- MCS ordering should follow graph topology.
+- DAG decomposition features are under development.
