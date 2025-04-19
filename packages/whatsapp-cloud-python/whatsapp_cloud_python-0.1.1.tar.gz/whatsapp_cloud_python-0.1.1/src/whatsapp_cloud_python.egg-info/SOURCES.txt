@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/whatsapp_cloud_python.egg-info/PKG-INFO
+src/whatsapp_cloud_python.egg-info/SOURCES.txt
+src/whatsapp_cloud_python.egg-info/dependency_links.txt
+src/whatsapp_cloud_python.egg-info/requires.txt
+src/whatsapp_cloud_python.egg-info/top_level.txt
