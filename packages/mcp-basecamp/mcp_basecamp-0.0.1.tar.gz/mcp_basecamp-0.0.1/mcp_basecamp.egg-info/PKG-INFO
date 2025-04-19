@@ -1,0 +1,123 @@
+Metadata-Version: 2.4
+Name: mcp-basecamp
+Version: 0.0.1
+Summary: MCP server for Basecamp integration
+Project-URL: Homepage, https://github.com/user/mcp-basecamp
+Project-URL: Bug Tracker, https://github.com/user/mcp-basecamp/issues
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: httpx>=0.24.0
+
+# Basecamp MCP Server
+
+A Model Context Protocol (MCP) server for Basecamp integration. This server provides tools for interacting with Basecamp, including managing projects, to-do lists, messages, schedules, and team members.
+
+## Features
+
+- **Project Management**: Create, read, and manage Basecamp projects
+- **To-Do Lists**: Create and manage to-do lists and items
+- **Messaging**: Post and retrieve messages within projects
+- **People**: Access information about team members
+- **Scheduling**: Manage calendar events and schedules
+- **Resources**: Access metadata about Basecamp objects
+- **Prompts**: Templates for common Basecamp workflows
+
+## Installation
+
+```bash
+pip install mcp-basecamp
+```
+
+## Configuration
+
+You'll need to set the following environment variables:
+
+```bash
+export BASECAMP_BASE_URL="https://3.basecampapi.com"
+export BASECAMP_API_KEY="your_api_token"
+export BASECAMP_ACCOUNT_ID="your_account_id"
+export BASECAMP_USER_AGENT="MCP Basecamp Server (your-email@example.com)"
+```
+
+Notes:
+- The `BASECAMP_BASE_URL` is typically `https://3.basecampapi.com` for Basecamp 3
+- The `BASECAMP_API_KEY` is your personal access token
+- The `BASECAMP_ACCOUNT_ID` is your Basecamp account ID
+- The `BASECAMP_USER_AGENT` should include your email for identification as required by Basecamp's API
+
+## Usage
+
+### Starting the server directly
+
+```bash
+mcp-basecamp
+```
+
+### Using with Claude Desktop
+
+Add the following to your `claude_desktop_config.json` file:
+
+```json
+"mcp-basecamp": {
+  "command": "uvx",
+  "args": [
+    "mcp-basecamp"
+  ],
+  "env": {
+    "BASECAMP_BASE_URL": "https://3.basecampapi.com",
+    "BASECAMP_API_KEY": "your_api_token",
+    "BASECAMP_ACCOUNT_ID": "your_account_id",
+    "BASECAMP_USER_AGENT": "MCP Basecamp Server (your-email@example.com)"
+  }
+}
+```
+
+Replace the environment variables with your actual Basecamp credentials.
+
+## Available Tools
+
+### Projects
+* **get_projects**: Get a list of all active projects
+* **get_project**: Get details of a specific project
+* **create_project**: Create a new project
+
+### To-Do Lists
+* **get_todos**: Get all to-do lists for a project
+* **get_todo_list**: Get details of a specific to-do list
+* **create_todo_list**: Create a new to-do list
+* **create_todo_item**: Create a new to-do item in a list
+
+### Messages
+* **get_messages**: Get all messages for a project
+* **create_message**: Create a new message in a project
+
+### People
+* **get_people**: Get a list of all people in the account
+* **get_person**: Get details of a specific person
+
+### Schedule
+* **get_schedule**: Get the calendar for a project
+* **create_schedule_event**: Create a new calendar event
+
+## Available Resources
+
+* **basecamp://projects**: List of all Basecamp projects
+* **basecamp://project/{project_id}**: Details of a specific project
+* **basecamp://people**: List of all people in the account
+* **basecamp://project/{project_id}/todolist/{todolist_id}**: Details of a to-do list
+* **basecamp://project/{project_id}/schedule**: Project schedule
+
+## Available Prompts
+
+* **create_project**: Template for creating a new project
+* **weekly_status**: Template for creating a weekly status update
+* **todo_list**: Template for creating a to-do list
+
+## Version
+
+0.0.1
+
+## License
+
+MIT

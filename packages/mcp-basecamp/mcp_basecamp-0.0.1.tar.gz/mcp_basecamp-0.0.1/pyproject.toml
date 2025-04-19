@@ -1,0 +1,21 @@
+[project]
+name = "mcp-basecamp"
+version = "0.0.1"
+description = "MCP server for Basecamp integration"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "httpx>=0.24.0",
+]
+
+[project.scripts]
+mcp-basecamp = "mcp_basecamp.__init__:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+"Homepage" = "https://github.com/user/mcp-basecamp"
+"Bug Tracker" = "https://github.com/user/mcp-basecamp/issues"

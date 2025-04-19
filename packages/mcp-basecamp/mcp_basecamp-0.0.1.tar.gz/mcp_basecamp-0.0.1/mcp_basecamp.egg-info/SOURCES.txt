@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+mcp_basecamp/__init__.py
+mcp_basecamp/server.py
+mcp_basecamp.egg-info/PKG-INFO
+mcp_basecamp.egg-info/SOURCES.txt
+mcp_basecamp.egg-info/dependency_links.txt
+mcp_basecamp.egg-info/entry_points.txt
+mcp_basecamp.egg-info/requires.txt
+mcp_basecamp.egg-info/top_level.txt
