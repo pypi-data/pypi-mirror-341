@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "testforge-cli-utils"
+version = "0.1.5"
+description = "Test Automation Framework for system-level validation (CXL, PCIe, BMC, firmware)"
+authors = [
+    { name = "Marie Infantraj", email = "marioredfoxfshm@gmail.com" }
+]
+license = { text = "GPL-3.0-or-later" }
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "click",
+    "pyyaml",
+    "rich"
+]
+
+[project.scripts]
+testforge = "testforge_cli_utils.cli:cli"
