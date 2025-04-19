@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: retoys
+Version: 0.0.2
+Summary: Sample project
+Author-email: Reza Esfandiarpoor <me@example.com>
+Project-URL: Homepage, https://github.com/Reza-esfandiarpoor/retoys
+Project-URL: Issues, https://github.com/Reza-esfandiarpoor/retoys/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: rich
+Dynamic: license-file
+
+# REToys
+
+REToys is just a playground for trying things related to packaging and releasing python projects.
