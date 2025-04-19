@@ -1,0 +1,1 @@
+this is a finding area of rectangle and triangle

@@ -1,0 +1,9 @@
+Licence.txt
+README.md
+setup.py
+kalai_package/__init__.py
+kalai_package/area_trirec.py
+kalai_package.egg-info/PKG-INFO
+kalai_package.egg-info/SOURCES.txt
+kalai_package.egg-info/dependency_links.txt
+kalai_package.egg-info/top_level.txt
