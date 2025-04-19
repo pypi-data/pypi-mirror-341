@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+pymergecap/__init__.py
+pymergecap/__main__.py
+pymergecap/config.ini
+pymergecap/main.py
+pymergepcap.egg-info/PKG-INFO
+pymergepcap.egg-info/SOURCES.txt
+pymergepcap.egg-info/dependency_links.txt
+pymergepcap.egg-info/entry_points.txt
+pymergepcap.egg-info/requires.txt
+pymergepcap.egg-info/top_level.txt
