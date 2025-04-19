@@ -1,0 +1,10 @@
+[run]
+branch = True
+omit = 
+    func_adl_xAOD/template/*
+    test/*
+
+[report]
+exclude_lines =
+    # Don't complain if tests don't hit defensive assertion code:
+    raise NotImplementedError
