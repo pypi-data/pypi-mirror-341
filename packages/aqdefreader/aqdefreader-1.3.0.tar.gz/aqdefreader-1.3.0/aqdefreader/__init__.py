@@ -1,0 +1,34 @@
+"A module to read DFQ files in the Q-DAS ASCII transfer format."
+
+from .part import Part
+from .characteristic import Characteristic
+from .measurement import Measurement
+from .file import DfqFile
+from .operations import (
+    read_dfq_file,
+    create_characteristic_dataframe,
+    create_column_dataframe,
+)
+
+__all__ = [
+    "Part",
+    "Characteristic",
+    "Measurement",
+    "DfqFile",
+    "read_dfq_file",
+    "create_characteristic_dataframe",
+    "create_column_dataframe",
+]
+
+
+__project__ = "aqdefreader"
+__version__ = "1.3.0"
+__author__ = "successfactory consulting group"
+__author_email__ = "office@successfactory.cc"
+__url__ = "https://github.com/successfactory/aqdef-reader"
+
+__classifiers__ = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
