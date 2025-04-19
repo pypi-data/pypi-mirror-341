@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graph_split"
+version = "0.3.2"
+description = "A package to split edges of graphs using different criteria compatible with machine learning model training."
+readme = "README.md"
+license = "GPL-3.0-only"
+authors = [
+  { name = "Nure Tasnina", email = "tasnina@vt.edu" }
+]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/Murali-group/graph-split"

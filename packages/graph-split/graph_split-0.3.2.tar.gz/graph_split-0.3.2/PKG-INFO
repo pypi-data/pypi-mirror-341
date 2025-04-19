@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: graph_split
+Version: 0.3.2
+Summary: A package to split edges of graphs using different criteria compatible with machine learning model training.
+Author-email: Nure Tasnina <tasnina@vt.edu>
+License-Expression: GPL-3.0-only
+Project-URL: Homepage, https://github.com/Murali-group/graph-split
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# graph-split
+A module to split a graph in different ways (for deep learning applications)
