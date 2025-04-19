@@ -1,0 +1,382 @@
+all_expanded_jobs:
+  .build_template:
+    cache:
+      key: ''
+      paths:
+      - .build/
+    script:
+    - echo "Running build template"
+    stage: build
+    variables:
+      BUILD_TYPE: default
+  .build_with_deps:
+    before_script:
+    - echo "Installing dependencies"
+    - apt-get update -y
+    - apt-get install -y build-essential
+    cache:
+      key: ''
+      paths:
+      - .build/
+    script:
+    - echo "Running build template"
+    stage: build
+    variables:
+      BUILD_TYPE: default
+  .test_template:
+    image: python:3.10-slim
+    script:
+    - echo "Running test template"
+    stage: test
+    variables:
+      TEST_LEVEL: basic
+  build_linux:
+    artifacts:
+      paths:
+      - .build/linux_build.log
+    before_script:
+    - echo "Installing dependencies"
+    - apt-get update -y
+    - apt-get install -y build-essential
+    cache:
+      key: ''
+      paths:
+      - .build/
+    rules:
+    - if: ' == "true" || true == "true"'
+    script:
+    - echo "Building for Linux"
+    - echo "Build type: release"
+    - echo "Platform: linux"
+    - echo "Global var: global-value"
+    - echo "Build output" > .build/linux_build.log
+    stage: build
+    variables:
+      BUILD_TYPE: release
+      PLATFORM: linux
+  build_macos:
+    artifacts:
+      paths:
+      - .build/macos_build.log
+    cache:
+      key: ''
+      paths:
+      - .build/
+    rules:
+    - if: ' == "true" || true == "true"'
+    script:
+    - echo "Building for macOS"
+    - echo "Build type: release"
+    - echo "Platform: macos"
+    - echo "Global var: global-value"
+    - echo "Build output" > .build/macos_build.log
+    stage: build
+    variables:
+      BUILD_TYPE: release
+      PLATFORM: macos
+  build_optnotrun:
+    rules:
+    - if: ' == "true"'
+    script:
+    - echo "This job is created to be run at improper time"
+  build_windows:
+    artifacts:
+      paths:
+      - .build/windows_build.log
+    before_script:
+    - echo "Installing dependencies"
+    - apt-get update -y
+    - apt-get install -y build-essential
+    cache:
+      key: ''
+      paths:
+      - .build/
+    rules:
+    - if: ' == "true" || true == "true"'
+    script:
+    - echo "Building for Windows"
+    - echo "Build type: release"
+    - echo "Platform: windows"
+    - echo "Global var: global-value"
+    - echo "Build output" > .build/windows_build.log
+    stage: build
+    variables:
+      BUILD_TYPE: release
+      PLATFORM: windows
+  default:
+    image: ubuntu:20.04
+    tags:
+    - docker
+  integration_test:
+    image: python:3.10-slim
+    needs:
+    - job: test_linux
+    - job: test_macos
+    - job: test_windows
+    rules:
+    - if: true == "true"
+    script:
+    - echo "Running integration tests"
+    - echo "Test level: integration"
+    - cat .build/linux_build.log
+    - cat .build/macos_build.log
+    - cat .build/windows_build.log
+    stage: test
+    variables:
+      TEST_LEVEL: integration
+    when: manual
+  setup:
+    artifacts:
+      paths:
+      - .build/
+    script:
+    - echo "Setting up environment"
+    - mkdir -p .build
+    stage: setup
+  test_linux:
+    image: python:3.10-slim
+    needs:
+    - job: build_linux
+    rules:
+    - if: ' == "true" || true == "true"'
+    script:
+    - echo "Testing Linux build"
+    - echo "Test level: basic"
+    - echo "Using build artifact from: .build/linux_build.log"
+    - cat .build/linux_build.log
+    stage: test
+    variables:
+      TEST_LEVEL: basic
+  test_macos:
+    image: python:3.10-slim
+    needs:
+    - job: build_macos
+    rules:
+    - if: ' == "true" || true == "true"'
+    script:
+    - echo "Testing macOS build"
+    - echo "Test level: basic"
+    - echo "Using build artifact from: .build/macos_build.log"
+    - cat .build/macos_build.log
+    stage: test
+    variables:
+      TEST_LEVEL: basic
+  test_missing:
+    image: python:3.10-slim
+    needs:
+    - job: build_nonexistent
+    rules:
+    - if: merge_request == "schedule"
+    script:
+    - echo "This job should not run because its needs are not satisfied"
+    stage: test
+    variables:
+      TEST_LEVEL: basic
+  test_mixed:
+    image: python:3.10-slim
+    needs:
+    - job: build_linux
+    - job: build_optnotrun
+      optional: true
+    rules:
+    - if: ' == "true" || true == "true"'
+    script:
+    - echo "Testing with mixed needs"
+    - echo "This job should run even though one need is missing"
+    - cat .build/linux_build.log
+    stage: test
+    variables:
+      TEST_LEVEL: basic
+  test_windows:
+    image: python:3.10-slim
+    needs:
+    - job: build_windows
+    rules:
+    - if: ' == "true"'
+    script:
+    - echo "Testing Windows build"
+    - echo "Test level: basic"
+    - echo "Using build artifact from: .build/windows_build.log"
+    - cat .build/windows_build.log
+    stage: test
+    variables:
+      TEST_LEVEL: basic
+dependency_errors:
+- Job 'integration_test' needs job 'test_windows' which will not run in this pipeline
+- '[Optional] Job ''test_mixed'' needs job ''build_optnotrun'' which will not run
+  in this pipeline'
+global_variables:
+  BUILD_ALL: 'true'
+  BUILD_IMAGE: ubuntu:20.04
+  CI_PIPELINE_SOURCE: merge_request
+  GLOBAL_VAR: global-value
+  TEST_IMAGE: python:3.10-slim
+jobs:
+  build_linux:
+    artifacts:
+      paths:
+      - .build/linux_build.log
+    before_script:
+    - echo "Installing dependencies"
+    - apt-get update -y
+    - apt-get install -y build-essential
+    cache:
+      key: ''
+      paths:
+      - .build/
+    rules:
+    - if: ' == "true" || true == "true"'
+    script:
+    - echo "Building for Linux"
+    - echo "Build type: release"
+    - echo "Platform: linux"
+    - echo "Global var: global-value"
+    - echo "Build output" > .build/linux_build.log
+    stage: build
+    variables:
+      BUILD_TYPE: release
+      PLATFORM: linux
+
+  build_macos:
+    artifacts:
+      paths:
+      - .build/macos_build.log
+    cache:
+      key: ''
+      paths:
+      - .build/
+    rules:
+    - if: ' == "true" || true == "true"'
+    script:
+    - echo "Building for macOS"
+    - echo "Build type: release"
+    - echo "Platform: macos"
+    - echo "Global var: global-value"
+    - echo "Build output" > .build/macos_build.log
+    stage: build
+    variables:
+      BUILD_TYPE: release
+      PLATFORM: macos
+
+  build_windows:
+    artifacts:
+      paths:
+      - .build/windows_build.log
+    before_script:
+    - echo "Installing dependencies"
+    - apt-get update -y
+    - apt-get install -y build-essential
+    cache:
+      key: ''
+      paths:
+      - .build/
+    rules:
+    - if: ' == "true" || true == "true"'
+    script:
+    - echo "Building for Windows"
+    - echo "Build type: release"
+    - echo "Platform: windows"
+    - echo "Global var: global-value"
+    - echo "Build output" > .build/windows_build.log
+    stage: build
+    variables:
+      BUILD_TYPE: release
+      PLATFORM: windows
+
+  default:
+    image: ubuntu:20.04
+    tags:
+    - docker
+    variables: {}
+
+  integration_test:
+    image: python:3.10-slim
+    needs:
+    - job: test_linux
+    - job: test_macos
+    - job: test_windows
+    rules:
+    - if: true == "true"
+    script:
+    - echo "Running integration tests"
+    - echo "Test level: integration"
+    - cat .build/linux_build.log
+    - cat .build/macos_build.log
+    - cat .build/windows_build.log
+    stage: test
+    variables:
+      TEST_LEVEL: integration
+    when: manual
+
+  setup:
+    artifacts:
+      paths:
+      - .build/
+    script:
+    - echo "Setting up environment"
+    - mkdir -p .build
+    stage: setup
+    variables: {}
+
+  test_linux:
+    image: python:3.10-slim
+    needs:
+    - job: build_linux
+    rules:
+    - if: ' == "true" || true == "true"'
+    script:
+    - echo "Testing Linux build"
+    - echo "Test level: basic"
+    - echo "Using build artifact from: .build/linux_build.log"
+    - cat .build/linux_build.log
+    stage: test
+    variables:
+      TEST_LEVEL: basic
+
+  test_macos:
+    image: python:3.10-slim
+    needs:
+    - job: build_macos
+    rules:
+    - if: ' == "true" || true == "true"'
+    script:
+    - echo "Testing macOS build"
+    - echo "Test level: basic"
+    - echo "Using build artifact from: .build/macos_build.log"
+    - cat .build/macos_build.log
+    stage: test
+    variables:
+      TEST_LEVEL: basic
+
+  test_mixed:
+    image: python:3.10-slim
+    needs:
+    - job: build_linux
+    - job: build_optnotrun
+      optional: true
+    rules:
+    - if: ' == "true" || true == "true"'
+    script:
+    - echo "Testing with mixed needs"
+    - echo "This job should run even though one need is missing"
+    - cat .build/linux_build.log
+    stage: test
+    variables:
+      TEST_LEVEL: basic
+jobs_list:
+- build_linux
+- build_macos
+- build_windows
+- default
+- integration_test
+- setup
+- test_linux
+- test_macos
+- test_mixed
+workflow_applied_variables:
+  BUILD_ALL: 'true'
+workflow_run: true
+workflow_triggered_rule:
+  if: $CI_PIPELINE_SOURCE == "merge_request"
+  variables:
+    BUILD_ALL: 'true'
