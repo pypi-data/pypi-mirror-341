@@ -1,0 +1,3 @@
+[console_scripts]
+post_processing = post_processing:main
+process_files = process_files:main
