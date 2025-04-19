@@ -1,0 +1,27 @@
+Jinja2<4,>=3.0.0
+pyenet
+toml
+Pillow<11,>=5.1.0
+aiohttp<3.8.0,>=3.3.0
+packaging>=19.0
+Twisted
+
+[:platform_system == "Windows"]
+pypiwin32
+
+[dev]
+flake8
+coveralls
+pytest
+pytest-cov
+pytest-asyncio
+Sphinx
+tox
+sphinx_rtd_theme
+Twisted[conch,tls]
+
+[from]
+geoip2<5.0,>=2.9
+
+[ssh]
+Twisted[conch,tls]
