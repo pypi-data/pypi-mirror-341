@@ -1,0 +1,14 @@
+sl_shared_assets/__init__.py,sha256=V7EvTTSB_GhetCbyYPg2RoiG1etDVeML5EBWgGvUo7E,2227
+sl_shared_assets/cli.py,sha256=1OzQUYZS741ca2x8LUCTOOTsC1leZGuwqEt0Q2qUNUQ,4676
+sl_shared_assets/data_classes.py,sha256=wRh493DHBfd2GuuWtHT0vKC7AVWhsE-wyQosZEpHvg0,87529
+sl_shared_assets/legacy_tools.py,sha256=x9Vl_BHUQf_-E6t2xx1r2autzqnmyWY3CNuKzMH97TE,14763
+sl_shared_assets/packaging_tools.py,sha256=3kAXFK37Lv4JA1YhjcoBz1x2Ell8ObCqe9pwxAts4m4,6709
+sl_shared_assets/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sl_shared_assets/server.py,sha256=VtFwS4PEy24n_pGz9W56zufkZEf_PKxIllP2ZnF5Zgc,13269
+sl_shared_assets/suite2p.py,sha256=sQ5Zj0TJFD-gUHqtWnRvapBpr8QgmaiVil123cWxGxc,20511
+sl_shared_assets/transfer_tools.py,sha256=J26kwOp_NpPSY0-xu5FTw9udte-rm_mW1FJyaTNoqQI,6606
+sl_shared_assets-1.0.0rc9.dist-info/METADATA,sha256=TVcnp1yuSKs3by_NONUTGY9XncBQRtLVleYviPtrjcg,47806
+sl_shared_assets-1.0.0rc9.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sl_shared_assets-1.0.0rc9.dist-info/entry_points.txt,sha256=3VPr5RkWBkusNN9OhWXtC-DN0utu7uMrUulazIK2VNA,166
+sl_shared_assets-1.0.0rc9.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sl_shared_assets-1.0.0rc9.dist-info/RECORD,,
