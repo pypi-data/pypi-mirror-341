@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/INA3221_linux/__init__.py
+src/INA3221_linux.egg-info/PKG-INFO
+src/INA3221_linux.egg-info/SOURCES.txt
+src/INA3221_linux.egg-info/dependency_links.txt
+src/INA3221_linux.egg-info/requires.txt
+src/INA3221_linux.egg-info/top_level.txt
