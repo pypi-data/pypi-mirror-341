@@ -1,0 +1,6 @@
+setup.py
+sds_scal/__init__.py
+sds_scal.egg-info/PKG-INFO
+sds_scal.egg-info/SOURCES.txt
+sds_scal.egg-info/dependency_links.txt
+sds_scal.egg-info/top_level.txt
