@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+pyproject.toml
+test_cli_bibul.egg-info/PKG-INFO
+test_cli_bibul.egg-info/SOURCES.txt
+test_cli_bibul.egg-info/dependency_links.txt
+test_cli_bibul.egg-info/entry_points.txt
+test_cli_bibul.egg-info/requires.txt
+test_cli_bibul.egg-info/top_level.txt
