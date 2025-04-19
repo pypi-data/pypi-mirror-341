@@ -1,0 +1,7 @@
+xe_addons.cp310-win_amd64.pyd,sha256=0cGY10mQmgoA_FKaTcCiYk6W-7DZlI8Ui47ITnb-YAs,4076032
+xe_batch.cp310-win_amd64.pyd,sha256=yI9m7JYrcaU34JfU_1q7hBdV0kElkuEGs5gTNzsbong,4864512
+xe_linear.cp310-win_amd64.pyd,sha256=G4km_ltqC-3x-slL2x7LrfYPstecbHuxPsORiW5_C_k,10560512
+bigdl_core_xe_all-2.7.0b20250418.dist-info/METADATA,sha256=fzVE5PFbwzdHF6pDJbj_nbyZtslojUhbCGgHVorWhF8,75
+bigdl_core_xe_all-2.7.0b20250418.dist-info/WHEEL,sha256=511d4E-R31_CDl-sZnO1YsP0y38Viqo_PrB7qSYgCb8,101
+bigdl_core_xe_all-2.7.0b20250418.dist-info/top_level.txt,sha256=139OuvCSE8VWJwpMsG-Uoudes4kBXlsnSvewPwGJ4jg,8
+bigdl_core_xe_all-2.7.0b20250418.dist-info/RECORD,,
