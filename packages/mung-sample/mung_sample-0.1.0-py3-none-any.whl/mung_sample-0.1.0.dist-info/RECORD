@@ -1,0 +1,10 @@
+pkg_a/__init__.py,sha256=pr0H0NrmUWewBWbKO6jtPjhu6qUTUH6ENeLMrNaEQ5Q,52
+pkg_a/a_calc.py,sha256=HfNHe60f-PnHJkX1wx6128prJYVHVdNxnhHEW1HM21Q,66
+pkg_a/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg_b/__init__.py,sha256=pr0H0NrmUWewBWbKO6jtPjhu6qUTUH6ENeLMrNaEQ5Q,52
+pkg_b/b_calc.py,sha256=HfNHe60f-PnHJkX1wx6128prJYVHVdNxnhHEW1HM21Q,66
+pkg_b/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mung_sample-0.1.0.dist-info/METADATA,sha256=TF7OG3jb7c50SMl8kOUYZmODTmb3K_Ei8xbv6w5ib0g,154
+mung_sample-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mung_sample-0.1.0.dist-info/top_level.txt,sha256=KnoL4Hsel-MrXas7TN3O9DzPnKbAi5DyAm4SjZZ-sJ0,12
+mung_sample-0.1.0.dist-info/RECORD,,
