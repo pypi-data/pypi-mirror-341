@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: aqdefreader
+Version: 1.3.0
+Summary: A module to read DFQ files in the Q-DAS ASCII transfer format.
+Home-page: https://github.com/successfactory/aqdef-reader
+Author: successfactory consulting group
+Author-email: office@successfactory.cc
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+**aqdef-reader** is a Python module to read AQDEF (Q-DAS or qdas) ASCII files via Python. The package comes with data structures to cover the tranfer file format header elements such as parts (Teiletyp) and characteristics (Merkmale). As the ASCII files might already come with measured, values, the reader function can already read these values (Messwerte) and stores them as part of the characteristics described in the transfer file.
