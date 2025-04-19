@@ -1,0 +1,2 @@
+[console_scripts]
+fshow = fshow.core:main

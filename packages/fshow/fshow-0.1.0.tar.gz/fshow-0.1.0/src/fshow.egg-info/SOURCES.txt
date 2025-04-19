@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/fshow/__init__.py
+src/fshow/core.py
+src/fshow/fshow.py
+src/fshow.egg-info/PKG-INFO
+src/fshow.egg-info/SOURCES.txt
+src/fshow.egg-info/dependency_links.txt
+src/fshow.egg-info/entry_points.txt
+src/fshow.egg-info/requires.txt
+src/fshow.egg-info/top_level.txt
