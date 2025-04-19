@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-twitter = mcp_twitter.__init__:main

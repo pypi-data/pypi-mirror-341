@@ -1,0 +1,21 @@
+[project]
+name = "mcp-twitter"
+version = "0.0.1"
+description = "MCP server for Twitter integration"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "httpx>=0.24.0",
+]
+
+[project.scripts]
+mcp-twitter = "mcp_twitter.__init__:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/mcp-twitter"
+"Bug Tracker" = "https://github.com/yourusername/mcp-twitter/issues"

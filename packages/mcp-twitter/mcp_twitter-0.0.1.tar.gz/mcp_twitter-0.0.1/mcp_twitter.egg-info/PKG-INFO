@@ -1,0 +1,109 @@
+Metadata-Version: 2.4
+Name: mcp-twitter
+Version: 0.0.1
+Summary: MCP server for Twitter integration
+Project-URL: Homepage, https://github.com/yourusername/mcp-twitter
+Project-URL: Bug Tracker, https://github.com/yourusername/mcp-twitter/issues
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: httpx>=0.24.0
+
+# Twitter MCP Server
+
+A Model Context Protocol (MCP) server for Twitter integration. This server provides tools for interacting with Twitter, including searching tweets, retrieving user profiles, posting tweets, and analyzing trends.
+
+## Features
+
+- **User Management**: Get user profiles and details
+- **Tweet Operations**: Post, read, and search tweets
+- **Trends Analysis**: Discover and analyze trending topics
+- **Resources**: Access Twitter data through URI templates
+- **Prompts**: Templates for common Twitter workflows
+
+## Installation
+
+```bash
+pip install mcp-twitter
+```
+
+## Configuration
+
+Set the following environment variables:
+
+```bash
+# Required for read-only operations (Bearer Token authentication)
+export TWITTER_BEARER_TOKEN="your_bearer_token"
+
+# Required for write operations (OAuth 1.0a)
+export TWITTER_API_KEY="your_api_key"
+export TWITTER_API_SECRET="your_api_secret"
+export TWITTER_ACCESS_TOKEN="your_access_token"
+export TWITTER_ACCESS_SECRET="your_access_secret"
+
+# Optional - change API base URL if needed
+export TWITTER_BASE_URL="https://api.twitter.com/2"
+```
+
+## Usage
+
+### Starting the server directly
+
+```bash
+mcp-twitter
+```
+
+### Using with Claude Desktop
+
+Add the following to your `claude_desktop_config.json` file:
+
+```json
+"mcp-twitter": {
+  "command": "uvx",
+  "args": [
+    "mcp-twitter"
+  ],
+  "env": {
+    "TWITTER_BEARER_TOKEN": "your_bearer_token",
+    "TWITTER_API_KEY": "your_api_key",
+    "TWITTER_API_SECRET": "your_api_secret",
+    "TWITTER_ACCESS_TOKEN": "your_access_token",
+    "TWITTER_ACCESS_SECRET": "your_access_secret"
+  }
+}
+```
+
+Replace the environment variables with your actual Twitter API credentials.
+
+## Available Tools
+
+* **get_user**: Get details of a specific Twitter user by username
+* **get_tweet**: Get details of a specific tweet by ID
+* **search_tweets**: Search for tweets matching a query
+* **get_user_tweets**: Get recent tweets from a specific user
+* **get_trending_topics**: Get trending topics on Twitter
+* **post_tweet**: Post a new tweet (requires OAuth 1.0a credentials)
+
+## Available Resources
+
+* **twitter://user/{username}**: Get details about a Twitter user
+* **twitter://tweets/user/{username}**: Get recent tweets from a specific user
+* **twitter://trends**: Get current trending topics on Twitter
+
+## Available Prompts
+
+* **draft_tweet**: Template for drafting a tweet on a specific topic
+* **analyze_trends**: Template for analyzing Twitter trends
+* **engagement_strategy**: Template for developing a Twitter engagement strategy
+
+## Getting Twitter API Credentials
+
+1. Create a Twitter Developer account at [developer.twitter.com](https://developer.twitter.com/)
+2. Create a new project and app
+3. Generate the necessary keys and tokens:
+   - For read-only access: Bearer Token
+   - For write access: Consumer Keys (API Key & Secret) and Authentication Tokens (Access Token & Secret)
+
+## Version
+
+0.0.1
