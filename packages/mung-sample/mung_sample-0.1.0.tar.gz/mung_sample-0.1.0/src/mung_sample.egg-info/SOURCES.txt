@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/mung_sample.egg-info/PKG-INFO
+src/mung_sample.egg-info/SOURCES.txt
+src/mung_sample.egg-info/dependency_links.txt
+src/mung_sample.egg-info/top_level.txt
+src/pkg_a/__init__.py
+src/pkg_a/a_calc.py
+src/pkg_a/py.typed
+src/pkg_b/__init__.py
+src/pkg_b/b_calc.py
+src/pkg_b/py.typed
