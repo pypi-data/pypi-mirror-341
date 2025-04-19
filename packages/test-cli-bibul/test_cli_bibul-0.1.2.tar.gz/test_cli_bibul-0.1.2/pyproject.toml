@@ -1,0 +1,21 @@
+[project]
+name = "test-cli-bibul"
+version = "0.1.2"
+description = "CLI pour gérer les images et conteneurs Docker Probayes"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "typer[all]",
+]
+
+[project.scripts]
+test-cli-bibul = "cli.py:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["docker_cli*"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
