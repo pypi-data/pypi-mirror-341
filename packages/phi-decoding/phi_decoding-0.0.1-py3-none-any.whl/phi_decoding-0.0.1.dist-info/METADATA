@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: phi_decoding
+Version: 0.0.1
+Summary: Adaptive Foresight Sampling
+Home-page: https://github.com/xufangzhi/phi
+Author: Fangzhi Xu, Hang Yan
+Author-email: fangzhixu98@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# PyPi Package of phi-Decoding
