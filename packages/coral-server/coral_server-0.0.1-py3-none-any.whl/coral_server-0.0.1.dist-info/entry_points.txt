@@ -1,0 +1,2 @@
+[console_scripts]
+coral-server = coral_protocol.cli:main
