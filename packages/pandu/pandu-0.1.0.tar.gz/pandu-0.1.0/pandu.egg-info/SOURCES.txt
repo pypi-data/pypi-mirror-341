@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+pandu.egg-info/PKG-INFO
+pandu.egg-info/SOURCES.txt
+pandu.egg-info/dependency_links.txt
+pandu.egg-info/requires.txt
+pandu.egg-info/top_level.txt
