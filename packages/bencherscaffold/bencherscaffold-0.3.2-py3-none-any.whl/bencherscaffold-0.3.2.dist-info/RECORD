@@ -1,0 +1,15 @@
+bencherscaffold/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bencherscaffold/client.py,sha256=1hdsTFesUXBqippsmuHLapOq0h30EibHx_c5zhU7bKw,3195
+bencherscaffold/protoclasses/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bencherscaffold/protoclasses/bencher_pb2.py,sha256=iRdTtZvrvdme-UlOGcXSptFhD7qcbIqNWpSNhHdJyBc,2559
+bencherscaffold/protoclasses/bencher_pb2.pyi,sha256=C80K2HVPcwUic4J20F3E214gPWu2HKFqpCERM3kqb2s,2579
+bencherscaffold/protoclasses/bencher_pb2_grpc.py,sha256=cy1ueoHxZOr4w_GR6--FuaJyl6bwq1zPB15Xu0aAxq0,2664
+bencherscaffold/protoclasses/grcp_service.py,sha256=g_Jq2NeqGAfmuU2frd1cWI1b9ZMHULwzRNUHr8EZAfA,1692
+bencherscaffold/protoclasses/second_level_services_pb2.py,sha256=7BWxVvfBcP005zj8b_d-HZjU6wyX9F13ytHknzuL2f0,1338
+bencherscaffold/protoclasses/second_level_services_pb2.pyi,sha256=ID9piXl2EXnDr5wmsOnKRsXO8qT0y1_rrTTg3dujdxE,204
+bencherscaffold/protoclasses/second_level_services_pb2_grpc.py,sha256=2z-t2ZfQB3hKtKFBOf9fQs6-Ah9fxeuKA875IUerUhM,2741
+bencherscaffold/protos/bencher.proto,sha256=PJFGkcrnveeoyo3sTmLEhOTL_bz0rB0PgE8Xzc7icls,806
+bencherscaffold/protos/second_level_services.proto,sha256=YOkXWMhse0dfHwD2IEbvW4OshAP7fguYgmiJISCJgX0,169
+bencherscaffold-0.3.2.dist-info/METADATA,sha256=cfSFkUT37vc7coQqlnZ5cvynCvJOfjtyflXR_SNOg58,1209
+bencherscaffold-0.3.2.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+bencherscaffold-0.3.2.dist-info/RECORD,,
