@@ -1,0 +1,7 @@
+httpx
+beautifulsoup4
+bs4
+pydantic
+fake-useragent
+playwright_stealth
+pytest-playwright
