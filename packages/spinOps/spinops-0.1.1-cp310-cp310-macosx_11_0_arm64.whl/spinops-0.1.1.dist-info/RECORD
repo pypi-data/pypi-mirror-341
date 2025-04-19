@@ -1,0 +1,15 @@
+spinOps/__init__.py,sha256=Zf0Pg7tkS0rXoIcWv430SyXIWmNwm7mdVp6ZZmyGX8A,254
+spinOps/spinOps.c,sha256=pwE4-14BckKWoaUsMFWECCscWZNh_9PVSIG59_rmi50,867792
+spinOps/spinOps.cpython-310-darwin.so,sha256=UIp-f2ye3tsqmqgry_x9De-x_Zz6hjQNnTX6LdMMBUs,192608
+spinOps/spinOps.pyx,sha256=CTL6l-XyGKclwKwK0M64wcXnZLWvUX_4AYjkRSDwS2g,30127
+spinOps/c_code/spatial.c,sha256=Tp38S41pL4RDomncDpXEKu8WuMSSygxOD3l_DB0iTv8,9854
+spinOps/c_code/spatial.h,sha256=9Lx0lTHZR8AtodtC1SVsr_qCJyKXkpt5Sp4KfK27T5g,624
+spinOps/c_code/spin.c,sha256=j30S505oL1h0mVYlyWG3Epsmebn2qqsiV4N6aaG09Ps,35158
+spinOps/c_code/spin.h,sha256=mVFXN_EGV1andV5r0BLGSQRtwIgMIcQhe0-V-sK35Ik,1607
+spinops-0.1.1.dist-info/licenses/LICENSE,sha256=yfb7K9-lbs-m3qiwZYtmQVo9xLvvHZo1kkj5a3Jf3Bw,1078
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_spinOps.py,sha256=-tS1QI8qblrFxojMp-_owsljaR72vYobmDUgapO3fkg,2142
+spinops-0.1.1.dist-info/METADATA,sha256=ej1bMStJLOfeW2NXZjgzAdSK9OT3hbM95Erl4PXQBzY,1590
+spinops-0.1.1.dist-info/WHEEL,sha256=NfahIKfn_gSpSor1VWW6qnC7-sAIhm2Whn8tiyavqJI,109
+spinops-0.1.1.dist-info/top_level.txt,sha256=Dp-vFMtESirAotkSwqtGyVX0p45xMsoEM56ale8Q8wk,14
+spinops-0.1.1.dist-info/RECORD,,
