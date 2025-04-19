@@ -1,0 +1,10 @@
+[project]
+name = "AppChecker"
+version = "0.1.2"
+description = "Adds healthcheck for PythonApp"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "build>=1.2.2.post1",
+    "halo>=0.0.31",
+]
