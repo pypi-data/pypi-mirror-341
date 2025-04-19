@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+qrhost/__init__.py
+qrhost/qrhost.py
+qrhost.egg-info/PKG-INFO
+qrhost.egg-info/SOURCES.txt
+qrhost.egg-info/dependency_links.txt
+qrhost.egg-info/entry_points.txt
+qrhost.egg-info/requires.txt
+qrhost.egg-info/top_level.txt
