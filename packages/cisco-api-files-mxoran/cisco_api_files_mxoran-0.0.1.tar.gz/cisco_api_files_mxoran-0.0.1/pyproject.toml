@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools >= 75.3.2","requests >= 2.31.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cisco_api_files_mxoran"
+version = "0.0.1"
+authors = [
+  { name="Martin Moran", email="martin.moran@nttdata.com" },
+]
+description = "Downloader for files using Cisco MCE's APIs."
+readme = "README.md"
+requires-python = ">=3.8.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/martinstevemoran/toshare/cisco_api_files"
