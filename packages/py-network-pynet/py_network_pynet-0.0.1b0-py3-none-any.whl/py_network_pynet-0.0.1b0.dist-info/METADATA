@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: py-network-pynet
+Version: 0.0.1b0
+Author: Bill Clark
+Maintainer: Bill Clark
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: crccheck
+Requires-Dist: numpy
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: pyyaml
+Requires-Dist: pyzmq>23.0
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+Description-Content-Type: text/markdown
+
+# Py-Net
+
+So Py-Net (Pine Nut, heh) is because I'm tired of rewriting network interfaces constantly.
+
+Fix it here, fix it everywhere.
+
+Contains a better thread, process, and connection. Allowing for easier control and termination of systems.
+
+## Server
+
+There's a `ServerNetworking` class in place to act as a server.
+
+## Client
+
+There's a `ClientNetworking` class in place to act as a client.
+
+
+## Everything else
+
+Is a WIP, meaning tests and documentation and bug fixes.
