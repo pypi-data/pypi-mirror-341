@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "xwx"
+version = "1.0.6"
+description = ""
+authors = ["Taehwan Kim <dmsdl5030@g.skku.edu>"]
+readme = "README.md"
+packages = [
+    {include = "xwx", from = "src"},
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
