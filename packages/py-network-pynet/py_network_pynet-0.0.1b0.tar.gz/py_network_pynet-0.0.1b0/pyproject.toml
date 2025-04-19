@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/pynet/__init__.py"
+
+[tool.hatch.build]
+directory = "build"
+
+[tool.hatch.build.targets.sdist]
+ignore-vcs = true
+include = [
+    "src/*"
+]
+exclude = [
+    "__pycache__"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src/pynet"
+]
+sources = [ "src" ]
+
+[project]
+name = "py-network-pynet"
+requires-python = ">=3.8"
+readme = {file="README.md", content-type = "text/markdown"}
+dynamic = ["version"]
+dependencies = [
+    "numpy",
+    "pyyaml",
+    "pytest",
+    "pyzmq>23.0",
+    "pytest-cov",
+    "crccheck",
+    "sphinx",
+    "sphinx-rtd-theme"
+]
+authors = [
+    {name = "Bill Clark"}
+]
+maintainers = [
+    {name = "Bill Clark"}
+]
