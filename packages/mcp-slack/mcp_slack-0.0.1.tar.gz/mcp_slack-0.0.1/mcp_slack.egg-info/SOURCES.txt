@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+mcp_slack/__init__.py
+mcp_slack/server.py
+mcp_slack.egg-info/PKG-INFO
+mcp_slack.egg-info/SOURCES.txt
+mcp_slack.egg-info/dependency_links.txt
+mcp_slack.egg-info/entry_points.txt
+mcp_slack.egg-info/requires.txt
+mcp_slack.egg-info/top_level.txt
