@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: pingthis
+Version: 1.0.5
+Summary: Terminal ping tool
+Author: eytin
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: rich
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: summary
+
+# PingThis
+
+**PingThis** is an internal network pinging tool designed for simplicity and usability. It provides a clean, terminal-friendly way to check the status of multiple hosts.
+
+## Installation
+
+Clone the repo and install the package with pip:
+
+```bash
+git clone https://github.com/eytin/pingthis.git
+cd pingthis
+pip install .
