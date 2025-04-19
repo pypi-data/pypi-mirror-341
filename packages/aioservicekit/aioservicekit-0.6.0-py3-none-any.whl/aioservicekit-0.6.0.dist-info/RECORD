@@ -1,0 +1,12 @@
+aioservicekit/__init__.py,sha256=iF06TW-39eCW2HWu5PbBjTrNPvgsaasWRMpozhj4yPE,604
+aioservicekit/channels.py,sha256=OZlSeRr5mxtq9HY-nyebrcgmla2tJvACyTQ98VEcjBs,10680
+aioservicekit/events.py,sha256=FU3JYyRMb5k-y49TXk9du4d4TBNpKoIb11IPcbMBTJE,9792
+aioservicekit/groups.py,sha256=FwzKMrX7WHBbw7Si89fInkibB0fz0Jzyudn2rSVvcSY,7107
+aioservicekit/services.py,sha256=EWSvzL7f2-2vZYQNnE7W5t2JCYzh86iZ0bOuIrYPpys,20238
+aioservicekit/tasks.py,sha256=ogfcWXEv58a_HuEs9O0QaPhtvqeTYn4KoxyjVfwzDvM,8001
+aioservicekit/utils.py,sha256=QS0O_bITvBftP3cQ_9vjRsph-tumyO0ILmGiPT9Cy48,4295
+aioservicekit-0.6.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aioservicekit-0.6.0.dist-info/METADATA,sha256=tBR0scEVHn6iteJ6qqT1PAxHS0lg4r5p7ZsLp4DAIGY,15866
+aioservicekit-0.6.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+aioservicekit-0.6.0.dist-info/top_level.txt,sha256=2U_txdqquSlW4vbWaysZO-8qZPjrLkxTQSObWhJ-04U,14
+aioservicekit-0.6.0.dist-info/RECORD,,
