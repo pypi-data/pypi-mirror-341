@@ -1,0 +1,2 @@
+[console_scripts]
+cimulator = cimulator.cli:main
