@@ -1,0 +1,2 @@
+recursive-include NetDecom *.py
+include README.md
