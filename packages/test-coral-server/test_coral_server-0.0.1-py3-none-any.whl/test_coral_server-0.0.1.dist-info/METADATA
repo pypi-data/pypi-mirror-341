@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: test-coral-server
+Version: 0.0.1
+Summary: Python wrapper for Coral Protocol Server
+Home-page: https://github.com/Coral-Protocol/coral-server
+Author: Coral Protocol Team
+Project-URL: Bug Tracker, https://github.com/Coral-Protocol/coral-server/issues
+Keywords: coral,protocol,server,wrapper
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Coral Protocol Python Wrapper
+
+A Python wrapper for the Coral Protocol Server that makes it easy to run the server in different modes.
+
+## Installation
+
+```bash
+pip install .
+```
+
+## Usage
+
+The Coral server can be run in three different modes:
+
+1. Default SSE mode (port 3001):
+```bash
+coral-server
+```
+
+2. SSE mode with custom port:
+```bash
+coral-server --port 4000
+```
+
+3. STDIO mode:
+```bash
+coral-server --stdio
+```
+
+## Requirements
+
+- Python 3.7 or higher
+- Java Runtime Environment (JRE)
+
+
+
+## License
+
+See the LICENSE file for details. 

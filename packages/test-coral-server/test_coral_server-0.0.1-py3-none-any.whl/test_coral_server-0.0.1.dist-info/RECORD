@@ -1,0 +1,8 @@
+coral_protocol/__init__.py,sha256=-SfOAt6XujNokloZ65cw4jG1h_Wr5QL1tG1ZOQscZHM,65
+coral_protocol/cli.py,sha256=Ht1Y8EdA52jPDv02IU_t3Oef3F1210gM-JJ6RZ0Dssw,1833
+coral_protocol/jar/coral-server-1.0-SNAPSHOT.jar,sha256=x0gvYeG7p_fOnKPKa5b7ta2owo_brL_tEDjk6122RGQ,12248657
+test_coral_server-0.0.1.dist-info/METADATA,sha256=Jgn8goPwF2xgZzAhkYd9YVRs6wj_jNuf96K_cHeplVI,1369
+test_coral_server-0.0.1.dist-info/WHEEL,sha256=OVMc5UfuAQiSplgO0_WdW7vXVGAt9Hdd6qtN4HotdyA,91
+test_coral_server-0.0.1.dist-info/entry_points.txt,sha256=3PYPUZS53mSJlBXVtIb08cnPr_lPFUM7UDjqLNvXjDs,57
+test_coral_server-0.0.1.dist-info/top_level.txt,sha256=WBu009u9cq4M1vpjauiXg4rBt2GQ8hpeYn-aQIjLNYY,15
+test_coral_server-0.0.1.dist-info/RECORD,,
