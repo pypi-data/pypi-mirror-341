@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: qpg
+Version: 0.0.3
+Summary: Postgres queue
+Author-email: Aleksandr Panarin <panarin0290@ya.ru>
+License-Expression: MIT AND (Apache-2.0 OR BSD-2-Clause)
+Project-URL: Homepage, https://github.com/ap-71
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: psycopg2>=2.9.10
+Requires-Dist: pydantic>=2.11.3
+Requires-Dist: sqlalchemy>=2.0.40
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
