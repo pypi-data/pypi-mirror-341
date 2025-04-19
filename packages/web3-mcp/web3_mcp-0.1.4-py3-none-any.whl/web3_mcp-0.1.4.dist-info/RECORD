@@ -1,0 +1,15 @@
+web3_mcp/__init__.py,sha256=r9aPFKaum8ZHsvi4crC98i4acJMVi6YIxLIGhoFieVs,98
+web3_mcp/__main__.py,sha256=kQoYaMtEqXPkj5YqAHKoToRi_CqiElCCDnMpqUopojw,785
+web3_mcp/__version__.py,sha256=TnW0aR4o5fAxDGv1jscLuoFdn1YSWhvJ-Qvg5Tjw6kA,50
+web3_mcp/auth.py,sha256=hElbJUmMkGKMBAtHiilDm-FCa67h0P8tz3-E8WshZIc,1104
+web3_mcp/constants.py,sha256=MaPbDJPth8UTVqnciE6g4ZXSQ-34V7REgikGM2ss3_A,910
+web3_mcp/py.typed,sha256=Nqnn8clbgv-5l0PgxcTOldg8mkMKrFn4TvPL-rYUUGg,1
+web3_mcp/server.py,sha256=QA4qvjLQ4s0F3pjQW4ynLXWLEOaM1LHEnlRR3UhBZXA,8234
+web3_mcp/api/__init__.py,sha256=Bc18E9T3-tPKIeiuCODDgLuy76MRKl-sg7Fd20GPT_o,153
+web3_mcp/api/nft.py,sha256=oduz03YPVqgMvTHaUf75dH_xj5055ejFL9noLbcFi8o,4929
+web3_mcp/api/query.py,sha256=_l04U8cpFZmB6T5mlONq82MFcz9tlwBBLMfdNhG_rOE,6727
+web3_mcp/api/token.py,sha256=0tpUazWcO872Wy2-KxEpoI10Bi5DKCWisNxRq5XZVcE,6827
+web3_mcp-0.1.4.dist-info/METADATA,sha256=vpKhnsvdh6ew78lHUEG-X8i6JWxQ-3U_4WQnCv1zVfw,3450
+web3_mcp-0.1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+web3_mcp-0.1.4.dist-info/entry_points.txt,sha256=cE4BvaFY851sMAGm28CehTKb-0zo7_TDp3lMePkTjJ0,52
+web3_mcp-0.1.4.dist-info/RECORD,,

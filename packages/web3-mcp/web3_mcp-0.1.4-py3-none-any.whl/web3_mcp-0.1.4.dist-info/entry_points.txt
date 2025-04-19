@@ -1,0 +1,2 @@
+[console_scripts]
+web3-mcp = web3_mcp.__main__:main
