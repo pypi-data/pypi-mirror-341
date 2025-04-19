@@ -1,0 +1,8 @@
+README.rst
+pyproject.toml
+nidl/__init__.py
+nidl.egg-info/PKG-INFO
+nidl.egg-info/SOURCES.txt
+nidl.egg-info/dependency_links.txt
+nidl.egg-info/requires.txt
+nidl.egg-info/top_level.txt
