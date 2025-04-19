@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: qrhost
+Version: 1.0.1
+Summary: A tool for hosting files and directories with QR codes
+Home-page: https://github.com/ryanhamdaoui/qrhost
+Author: Hamdaoui Ryan
+Author-email: ryanhamdaoui45@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: qrcode
+Requires-Dist: netifaces
