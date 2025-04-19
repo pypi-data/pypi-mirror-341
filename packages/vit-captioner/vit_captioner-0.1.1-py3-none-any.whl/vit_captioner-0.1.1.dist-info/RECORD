@@ -1,0 +1,17 @@
+vit_captioner/__init__.py,sha256=VMbAOEdeGCmeFBS-URsLbi7QLZHGvBk4zKlzXyj_cYU,440
+vit_captioner/cli.py,sha256=K3iv1vc_WjO8fSCc_fqz5MdIfH8UbhU2sFL6cJ9DR6Y,5117
+vit_captioner/vit_captioner_video_example.py,sha256=DxUVtzCBVJ0EXelN-n3muVR9O9tODsp8ajXA5RqH28Y,9658
+vit_captioner/captioning/__init__.py,sha256=-kDIH7W6r-_QuVe3aDilfpH6O__M9Br_AGSB-wP7Cro,164
+vit_captioner/captioning/image.py,sha256=gz6jlPMuHkdGnDfhTOujyQZsUCOZ-ebi4Jor8Y5Z5Y8,4090
+vit_captioner/captioning/video.py,sha256=8D36w06s_I0MN3Rjrjj9Dd35F_0cL3mzdHvmZX9Ain8,8463
+vit_captioner/keyframes/__init__.py,sha256=s_e391pEab4GkSS_6WACGJL4pvPFxNNpRfpwFiFXGSQ,189
+vit_captioner/keyframes/extractor.py,sha256=HibFrIFOcf1A0xS1VBaWGopO8QIoKq2f4FyVtd4uuGI,1957
+vit_captioner/keyframes/matcher.py,sha256=PgXrr4eNDnr1Q2ffHMScnemAM2V_AahhudRPNfcl0hw,4502
+vit_captioner/utils/__init__.py,sha256=AC_4CMNcFszRoFpavtMgGjApBMxTrQUoo7Fw6O2ZRtU,184
+vit_captioner/utils/visualization.py,sha256=cb3lMGW1kFL23eT_t_aAc3x9gTqGKCJP7qpMW6bb8a4,5235
+vit_captioner-0.1.1.dist-info/licenses/LICENSE,sha256=O-0zMbcEi6wXz1DiSdVgzMlQjJcNqNe5KDv08uYzqR0,1055
+vit_captioner-0.1.1.dist-info/METADATA,sha256=HDzxu2oG4fgPjHRpLOW2CljoGEPVfyFve0T0owk8yeU,3396
+vit_captioner-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+vit_captioner-0.1.1.dist-info/entry_points.txt,sha256=yeh0HYJrM-1TRJU4Ei1DtBwmLL_tAKXOG3DVrhy8Kxk,57
+vit_captioner-0.1.1.dist-info/top_level.txt,sha256=QGQKHbl0Xv5qm8uqow3f3ilaf_1j6jjFuIyFNM-dkX0,14
+vit_captioner-0.1.1.dist-info/RECORD,,
