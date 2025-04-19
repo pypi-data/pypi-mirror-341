@@ -1,0 +1,6 @@
+palindrome.py
+setup.py
+mypackage_poojasen7.egg-info/PKG-INFO
+mypackage_poojasen7.egg-info/SOURCES.txt
+mypackage_poojasen7.egg-info/dependency_links.txt
+mypackage_poojasen7.egg-info/top_level.txt
