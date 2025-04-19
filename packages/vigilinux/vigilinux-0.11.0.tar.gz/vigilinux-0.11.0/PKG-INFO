@@ -1,0 +1,111 @@
+Metadata-Version: 2.4
+Name: vigilinux
+Version: 0.11.0
+Summary: Vigi is an AI assistant for running commands in natural language.
+Home-page: https://github.com/naumanAhmed3/VigiLinux-Shell-Interpreter
+Author: Subhan_Rauf
+Author-email: raufsubhan45@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-generativeai
+Requires-Dist: python-dotenv==0.19.2
+Requires-Dist: setuptools
+Requires-Dist: importlib_resources
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Okay, here's the formatted README file using standard Markdown practices for better readability and structure.
+
+```markdown
+# Vigi - Natural Language Terminal Assistant
+
+**Vigi** is an AI-powered terminal assistant that lets you interact with your operating system’s command-line interface using natural language. Just type what you want to do in plain English, and **Vigi** will handle the rest by generating safe, context-aware commands using Google Gemini.
+
+---
+
+## 🚀 Installation
+
+Install the package directly from PyPI:
+
+```bash
+pip install vigilinux
+```
+
+## ⚡ Usage
+
+Once installed, simply run `vigi` followed by your natural language command in quotes:
+
+```bash
+vigi "your natural language command here"
+```
+
+For example:
+
+```bash
+vigi "show me all Python files in the current directory"
+```
+
+**Vigi** will translate your request into the appropriate terminal command and execute it.
+
+## 🔐 API Key Setup
+
+**First-Time Use:**
+On your first run, **Vigi** will prompt you to enter your Gemini API key. This key is stored securely as an environment variable under the name `GEMINI_API_KEY`, so you don’t have to enter it again.
+
+**Changing the API Key:**
+If you ever need to change the key, you can set the environment variable directly:
+
+*   **On Linux/macOS:**
+    ```bash
+    export GEMINI_API_KEY="your_new_key"
+    ```
+    *(You might want to add this line to your shell's configuration file like `.bashrc` or `.zshrc` to make it permanent.)*
+
+*   **On Windows (PowerShell):**
+    ```powershell
+    $env:GEMINI_API_KEY = "your_new_key"
+    ```
+    *(To make this permanent in PowerShell, you'll need to modify your PowerShell profile or set it via System Properties.)*
+
+## 🧠 Features
+
+*   Cross-platform support (Linux, macOS, Windows)
+*   Context-aware memory for current working directory
+*   Gemini-powered command generation
+*   Built-in safeguards to prevent unsafe commands
+*   Lightweight and easy to use
+
+## 🛠️ Requirements
+
+*   Python `3.6` or higher
+*   A valid Gemini API key
+
+```
+
+**Key Changes Made:**
+
+1.  **Consistent Headings:** Used `##` (H2) for all major sections (Installation, Usage, API Key Setup, Features, Requirements).
+2.  **Code Blocks:** Ensured all commands (`pip install`, `vigi ...`, `export ...`, `$env:...`) are enclosed in proper Markdown code blocks (```bash ... ``` or ```powershell ... ```) for syntax highlighting and clarity.
+3.  **Spacing:** Added blank lines between sections and around code blocks to improve visual separation.
+4.  **Lists:** Formatted the Features and Requirements sections as bulleted lists (`*`).
+5.  **API Key Structure:** Clarified the "First-Time Use" and "Changing the API Key" parts under a single "API Key Setup" section. Used bullet points to separate instructions for different OSes when changing the key. Added hints about making the environment variable change permanent.
+6.  **Emphasis:** Kept the bolding of **Vigi**. Used backticks ` `` ` for inline code like `GEMINI_API_KEY` and `Python 3.6`.
+7.  **Clarity:** Added a sentence explaining *how* to use `vigi` before the example.
