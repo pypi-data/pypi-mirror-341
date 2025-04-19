@@ -1,0 +1,79 @@
+Metadata-Version: 2.4
+Name: autogen-oaiapi
+Version: 0.0.5
+Summary: An OpenAI-compatible API server for AutoGen.
+Author-email: SongChiYoung <stchuck2008@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/SongChiYoung/autogen-oaiapi
+Project-URL: Repository, https://github.com/SongChiYoung/autogen-oaiapi
+Project-URL: Issues, https://github.com/SongChiYoung/autogen-oaiapi/issues
+Keywords: autogen,openai,fastapi,llm,chat-completion
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: FastAPI
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi>=0.95.0
+Requires-Dist: uvicorn[standard]>=0.21.0
+Requires-Dist: autogen-core>=0.5.1
+Requires-Dist: autogen-ext>=0.5.1
+Requires-Dist: autogen-ext[openai]>=0.5.1
+Requires-Dist: autogen-agentchat>=0.5.1
+Dynamic: license-file
+
+# 🧠 autogen-oaiapi
+
+OpenAI-style Chat API server for [AutoGen](https://github.com/microsoft/autogen) teams.  
+Deploy your own `/v1/chat/completions` endpoint using any AutoGen-compatible team configuration.
+
+---
+
+## ✨ Features
+
+- ✅ **OpenAI-compatible** API interface
+- ✅ Plug in any AutoGen `GroupChat` or `SocietyOfMindAgent`
+- ✅ Session-aware execution (per session_id)
+- ✅ FastAPI-based server with `/v1/chat/completions` endpoint
+- ✅ `stream=True` response support (coming soon)
+
+---
+
+## 📦 Installation
+```shell
+pip install autogen-oaiapi
+```
+
+---
+
+## How to use?
+Using just `SIMPLE` api!
+
+example
+```python
+client = OpenAIChatCompletionClient(
+    model="claude-3-5-haiku-20241022"
+)
+agent1 = AssistantAgent(name="writer", model_client=client)
+agent2 = AssistantAgent(name="editor", model_client=client)
+team = RoundRobinGroupChat(
+    participants=[agent1, agent2],
+    termination_condition=TextMentionTermination("TERMINATE")
+)
+
+server = Server(team=team, source_select="writer")
+server.run()
+```
+
+Just write AutoGen team, and... Run it!
+
+---
+
+## Demo
+![Demo](./demo.gif)
