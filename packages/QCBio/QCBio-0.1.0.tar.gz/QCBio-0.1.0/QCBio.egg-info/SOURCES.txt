@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+QCBio/__init__.py
+QCBio/fasta_reader.py
+QCBio/gc_calculator.py
+QCBio/motif_finder.py
+QCBio/random_dna_gen.py
+QCBio/seq_reverser.py
+QCBio/simple_translator.py
+QCBio.egg-info/PKG-INFO
+QCBio.egg-info/SOURCES.txt
+QCBio.egg-info/dependency_links.txt
+QCBio.egg-info/top_level.txt
