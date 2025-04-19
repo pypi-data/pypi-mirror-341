@@ -1,0 +1,10 @@
+norman_mcp/__init__.py,sha256=ekYvuFAYkxwSLnMWG2c55-gt7yMWt5XtSfjSKO9T2uw,130
+norman_mcp/__main__.py,sha256=PhrwJz2W0Gjf0E-uVCDzh93jmpouYyLnv21yp5Jx8BI,187
+norman_mcp/cli.py,sha256=t5B8SxtdG_bJ7idwYLnPSDkuOMgImpz9OZJ0eWVkqTM,1929
+norman_mcp/server.py,sha256=A4Dn3R6tVigDUhgIW0eXINbNzuS_X54uFJPZKUzTdGc,68316
+norman_mcp_server-0.1.3.dist-info/licenses/LICENSE,sha256=DqlsIFhBFij9JOZNx2MjeJ6_aDfBKP5xwP-QieTsl7A,1071
+norman_mcp_server-0.1.3.dist-info/METADATA,sha256=mUdSnQzH2qZVmgOPHmfJXrzNb4RFrJKh1rYtPgN2Cuk,11000
+norman_mcp_server-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+norman_mcp_server-0.1.3.dist-info/entry_points.txt,sha256=AXLrSHyWX7itARnna2eoo4EIex0iDZmC-rOpeGZrkHc,51
+norman_mcp_server-0.1.3.dist-info/top_level.txt,sha256=6JUKf3kwKZoH9M_XN26HOf9KvqiF1fibAWeSpbzuErY,11
+norman_mcp_server-0.1.3.dist-info/RECORD,,
