@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-amadeus = mcp_amadeus.__init__:main
