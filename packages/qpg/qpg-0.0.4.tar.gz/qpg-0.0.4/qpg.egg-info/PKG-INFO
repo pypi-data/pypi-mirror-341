@@ -1,0 +1,72 @@
+Metadata-Version: 2.4
+Name: qpg
+Version: 0.0.4
+Summary: Postgres queue
+Author-email: Aleksandr Panarin <panarin0290@ya.ru>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/ap-71
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: psycopg2>=2.9.10
+Requires-Dist: pydantic>=2.11.3
+Requires-Dist: sqlalchemy>=2.0.40
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+
+# QPG: Queue Postgres
+
+Реализует возможность использования Postgres как брокер сообщений.
+
+## Использование
+
+```python
+from qpg import PGQueueBase
+
+# Пример использования:
+
+# Cлушаем сообщения
+pg_queue = PGQueueBase(session={__здесь_сессия_бд__})
+pg_queue.consume()
+
+# Публикуем сообщения
+pg_queue = PGQueueBase(session={__здесь_сессия_бд__})
+pg_queue.send_message(source="источник сообщения", queue="название очереди", message=dict(data="Привет!"))
+```
+
+## Настройка
+
+1. Убедитесь, что у вас установлен PostgreSQL.
+2. Создайте базу данных и таблицы, используя модель из `qpg.QueueModel`.
+
+## Структура проекта
+
+```
+qpg/
+├── __init__.py         # Главный файл инициализации
+├── schemas.py          # Схемы данных
+└── db/
+    ├── __init__.py     
+    ├── models.py       # Модели данных
+    └── utils.py        # Вспомогательные функции
+```
+
+## Установка
+
+```bash
+pip install qpg
+```
+
+## Лицензия
+
+```
+MIT License
+```
+
+## Контакты
+
+Для вопросов и предложений: panarin0290@ya.ru
+
+[Купить мне кофе](https://new.donatepay.ru/@1372454)

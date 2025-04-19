@@ -1,0 +1,29 @@
+[project]
+name = "qpg"
+version = "0.0.4"
+description = "Postgres queue"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+license = "MIT"
+dependencies = [
+    "psycopg2>=2.9.10",
+    "pydantic>=2.11.3",
+    "sqlalchemy>=2.0.40",
+]
+authors = [
+    { name = "Aleksandr Panarin", email = "panarin0290@ya.ru" },
+]
+
+[project.optional-dependencies]
+dev = ["black", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/ap-71"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
