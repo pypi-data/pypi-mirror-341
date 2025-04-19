@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: zhenyagreeting
+Version: 0.1.0
+Summary: Hello World util
+Author-email: Yevhenii Melnykov <evgeniy@workmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
